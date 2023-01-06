@@ -1,0 +1,340 @@
+<ion-card>
+  <!-- <ion-card-header class="custTextAlignCenter">
+    <span class="custFontFamilyMuliBold muli-16pt custLineHight22 custColorDark">{{'stepperHeader' | translate}}</span>
+  </ion-card-header> -->
+
+  <ion-card-content>
+    <ion-grid class="ion-no-padding">
+      <ion-row class="custCenter">
+        <ion-col size="7" class="m-1" >
+          <mat-form-field appearance="outline" class=" w-100"
+            [ngClass]="(showRequiredError ||showPatternError )?'mat-form-field-invalid custColorcustFadedRed':''">
+            <input matInput
+              class="custInputWidth custFontFamilyMuliRegular muli-14pt custLineHight24 custColorGreyish text-capitalize"
+              [placeholder]="'enterPAN' | translate" [type]="'text'" maxlength="10" value="currentInputPan"
+              [ngModel]="currentInputEncoded" (keyup)="onKeyPan($event)" >
+              <button mat-button matSuffix mat-icon-button
+              class="custBackgroundColorWhite custColorGreyish" (click)="changeInputType()" [disabled]="!isValid">
+              <ion-icon [name]="!currentType?'eye-outline':'eye-off-outline'" [ngClass]="!isValid?'custColorGreyish':'custColorDarkishBlue'"></ion-icon>
+              <!-- <img [src]="imageList?.eyeIcon" *ngIf="!currentType" >
+              <img [src]="imageList?.eyeIcon" *ngIf="currentType" > -->
+              <!-- <span class="custeye custColorGreyish custFontFamilyMuliBold muli-14pt custLineHight18 me-3" [ngClass]="!currentType?'eye-outline':'eye-off-outline'">Submit</span> -->
+            </button>
+            <!-- <button mat-button matSuffix mat-icon-button
+              class="custBackgroundColorWhite custColorGreyish mb-1"  [disabled]="!isValid" >
+              <ion-icon class="custeye" [name]="!currentType?'eye-outline':'eye-off-outline'" [ngClass]="!isValid?'custColorGreyish':'custColorDarkishBlue'"></ion-icon>
+            </button> -->
+          </mat-form-field>
+        </ion-col>
+        <ion-col size="4" class="mt-2">
+          <button class="btn w-100 custButtonOutLine vw text-center custColorBrightCyan" (click)="OpneOnbarding()" [disabled]="!isValid"><span class="custColorBrightCyan text-capitalize custFontFamilyMuliRegular muli-16pt">Submit</span></button>
+        </ion-col>
+        <ion-col [size]="'12'" *ngIf="showRequiredError || showPatternError">
+          <span *ngIf="showRequiredError"
+          class="muli-12pt custColorcustFadedRed custFontFamilyMuliBold">{{'panErrorMessage' |
+          translate }}</span>
+          <span *ngIf="showPatternError"
+          class="muli-12pt custColorcustFadedRed custFontFamilyMuliBold">{{'panPatternMessage'
+          | translate}}</span>
+        </ion-col>
+        
+         
+
+        <ion-col [size]="'12'" class="text-center">
+          <span class="custFontFamilyMuliRegular custLineHight24 custColorDark muli-12pt d-inline-flex"
+            (click)="selectImage()" >{{'or' | translate}}&nbsp; <ion-img
+              [src]="imageList?.scanIcon" class="custScan custMargin"></ion-img> &nbsp; <span
+              class="custFontFamilyMuliBold muli-14pt custLineHight18 custColorDarkishBlue">{{'scan' |
+              translate}}</span></span>
+
+          <!-- <span class="custFontFamilyMuliRegular custLineHight24 custColorDark muli-12pt d-inline-flex"
+            (click)="top.click()" *ngIf="!isCordovaStatus">
+            <span><input type="file" (change)="imagePreview($event,1)" #top
+                style="display: none; visibility: hidden; z-index: 0;" name="filename"></span>
+            {{'or' | translate}}&nbsp; <ion-img [src]="imageList?.scanIcon" class="custScan custMargin">
+            </ion-img> &nbsp; <span
+              class="custFontFamilyMuliBold muli-14pt custLineHight18 custColorDarkishBlue">{{'scan' |
+              translate}}</span></span> -->
+        </ion-col>
+      </ion-row>
+
+      <ion-col [size]="'12'" *ngIf="currentImg">
+        <ion-card class="custBackgroundColorWhite">
+          <ion-card-content>
+            <ion-grid class="ion-no-padding">
+              <ion-row>
+                <ion-col [size]="'12'">
+                  <ion-img class="custCurrentImg" [src]="currentImg"></ion-img>
+                </ion-col>
+                <ion-col [size]="'12'" class="pt-3">
+                  <button class="btn w-100 text-center custBackgroundColorBrightCyan" id="deletePanImg"
+                    (click)="deleteImg()">
+                    <span class="custColorWhite custFontFamilyMuliBold muli-16pt">{{'delete' | translate}}</span>
+                  </button>
+                </ion-col>
+              </ion-row>
+              </ion-grid>
+            </ion-card-content>
+          </ion-card>
+      </ion-col>
+    </ion-grid>
+   
+   <div class="container row d-block overflow-auto p-0 text-nowrap w-100 m-0">
+      <div class="row text-center d-block text-nowrap p-0 m-0">
+        <div class="col-4 d-inline-block no-padding no-margin">
+          <div class="w-100 position-relative d-block no-padding no-margin">
+            <span
+              class="mt-30 w-100 text-center d-block position-relative custFontFamilyMuliRegular custLineHight18 muli-10pt custColorGreyish">{{stepItems[0].stepNos}}</span>
+            <div class="custHeight text-center custProfile custBackgroundColorPaleBlue d-inline-block position-relative">
+              <ion-img class="custStepIcon text-center position-relative " [src]="stepItems[0].stepImg"></ion-img>
+            </div>
+            <span
+              class="mt-14 w-100 text-center text-wrap top-0 bottom-0 d-block position-relative custFontFamilyMuliSemiBold custLineHight18 muli-12pt custColorBattlePGry">{{stepItems[0].stepName}}</span>
+          </div>
+
+        </div>
+        <div class="col-4 d-inline-block no-padding no-margin" (click)="currentAadharStatus($event)">
+          <div class="w-100 testDiv position-relative d-block no-padding no-margin">
+            <span
+              class="mt-30 w-100 text-center d-block position-relative custFontFamilyMuliRegular custLineHight18 muli-10pt custColorGreyish">{{stepItems[1].stepNos}}</span>
+            <div class="custHeight text-center custProfile custBackgroundColorPaleBlue align-middle d-inline-block position-relative ">
+              <ion-img class="custStepIcon text-center position-relative " [src]="stepItems[1].stepImg"></ion-img>
+            </div>
+            <span
+              class="mt-14 w-100 text-center text-wrap top-0 bottom-0 d-block position-relative custFontFamilyMuliSemiBold custLineHight18 muli-12pt custColorBattlePGry">{{stepItems[1].stepName}}</span>
+          </div>
+
+        </div>
+        <div class="col-4 d-inline-block no-padding no-margin" (click)="currentBankStatus($event)">
+          <div class="w-100 position-relative d-block no-padding no-margin">
+            <span
+              class="mt-30 w-100 text-center d-block position-relative custFontFamilyMuliRegular custLineHight18 muli-10pt custColorGreyish">{{stepItems[2].stepNos}}</span>
+            <div class="custHeight text-center custProfile custBackgroundColorPaleBlue d-inline-block position-relative">
+              <ion-img class="custStepIcon text-center position-relative " [src]="stepItems[2].stepImg"></ion-img>
+            </div>
+            <span
+              class="mt-14 w-100 text-center text-wrap top-0 bottom-0 d-block position-relative custFontFamilyMuliSemiBold custLineHight18 muli-12pt custColorBattlePGry">{{stepItems[2].stepName}}</span>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </ion-card-content>
+</ion-card>
+<!-- <ion-row>
+  <span class="custFontFamilyMuliBold muli-16pt w-100 custLineHight22 custColorDark px-3 my-3">How to start investing</span>
+</ion-row> -->
+<!-- 
+<ion-row>
+  <ion-col>
+    <video class="px-1 py-1 w-100" controls src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"></video>
+  </ion-col>
+</ion-row> -->
+
+<!-- <ion-row class="px-2">
+  <ion-col>
+    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/pK7yX9QuMoM" allowfullscreen>
+    </iframe>
+  </ion-col>
+</ion-row> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!-- <mat-horizontal-stepper labelPosition="bottom" #stepper>
+      <mat-step [stepControl]="panFormGroup" state="pan">
+        <form [formGroup]="panFormGroup"  (ngSubmit)="onSubmitPAN()">
+
+          <mat-form-field appearance="outline" class="example-full-width w-100 ">
+            <mat-label class="text-capitalize">{{'enterPAN' | translate}}</mat-label>
+            <input matInput formControlName="PanNumber" class="custInputWidth custFontFamilyMuliRegular muli-12pt custLineHight24 custColorGreyish">
+            <button mat-button type="submit" [disabled]="!panFormGroup.valid" class="custButtonPosition">
+              <span class="custFontFamilyMuliBold muli-14pt custLineHight18 custColorGreyish">{{'submit' | translate}}</span>
+             </button>
+            <mat-error *ngIf="checkErrorPAN('PanNumber', 'required')"><span class="custFontFamilyMuliSemiBold muli-12pt text-start text-capitalize custLineHight16">{{'panErrorMessage' | translate}}</span></mat-error>
+            <mat-error *ngIf="checkErrorPAN('PanNumber', 'pattern')"><span class="custFontFamilyMuliSemiBold muli-12pt text-start text-capitalize custLineHight16">{{'panPatternMessage' | translate}}</span></mat-error>
+
+          </mat-form-field>
+            <ion-grid class="ion-no-padding">
+              <ion-row>
+                <ion-col [size]="'12'"  class="custTextAlignCenter">
+                  <ion-row>
+                    <ion-col [size]="'5'" class="text-end">
+                      <p class="custFontFamilyMuliRegular muli-12pt custLineHight24 custColorDarkShade">{{'or' | translate}}</p>
+                    </ion-col>
+                    <ion-col [size]="'7'" class="text-start">
+                      <span (click)="openCamra()" class="d-inline-flex custMarginLeft">
+                        <ion-img [src]="imageList?.scanIcon" class="custScanWidth"></ion-img>
+                        <span class="custFontFamilyMuliBold muli-14pt custLineHight18 custColorDarkishBlue custMarginLeft">{{'scan' | translate}}</span>
+                      </span>
+                    </ion-col>
+                  </ion-row>
+                </ion-col>
+                <ion-col [size]="'12'">
+
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+
+
+          <ng-template matStepLabel>Fill out your name</ng-template>
+        </form>
+      </mat-step>
+       <mat-step></mat-step>
+      <mat-step></mat-step>
+        Icon overrides.
+      <ng-template matStepperIcon="pan">
+        <mat-icon>{{imageList?.detailIcon}}</mat-icon>
+      </ng-template>
+      <ng-template matStepperIcon="chat">
+        <mat-icon>forum</mat-icon>
+      </ng-template>
+    </mat-horizontal-stepper> -->
+
+    <!--<ion-grid class="ion-no-padding">
+      <ion-row>
+        <ion-col [size]="'12'" class="custTextAlignCenter">
+          <ion-row>
+            <ion-col [size]="'5'" class="text-end">
+              <p class="custFontFamilyMuliRegular muli-12pt custLineHight24 custColorDarkShade">{{'or' | translate}}</p>
+            </ion-col>
+            <ion-col [size]="'7'" class="text-start">
+              <span (click)="openCamra()" class="d-inline-flex custMarginLeft">
+                <ion-img [src]="imageList?.scanIcon" class="custScanWidth"></ion-img>
+                <span
+                  class="custFontFamilyMuliBold muli-14pt custLineHight18 custColorDarkishBlue custMarginLeft">{{'scan'
+                  | translate}}</span>
+              </span>
+            </ion-col>
+          </ion-row>
+        </ion-col>
+        <ion-col [size]="'12'">
+
+        </ion-col>
+      </ion-row>
+    </ion-grid>-->
+
+    <!-- <div class="scrollmenu" *ngIf="stepItems != null">
+      <div class="custHeight custProfile">
+        <ion-img class="custStepIcon" [src]="stepItems[0].stepImg"></ion-img>
+      </div>
+       <div *ngFor="let steps of stepItems; let i = index; let fst = first; let lst = last">
+        <div class="custMenuDiv">
+          <span
+            class="pStepNos custFontFamilyMuliRegular custLineHight18 muli-10pt custColorGreyish">{{steps.stepNos}}</span>
+
+          <div class="custHeight custProfile">
+              <ion-img class="custStepIcon" [src]="steps.stepImg"></ion-img>
+            </div>
+
+
+          <ion-row class="custRow">
+            <ion-col *ngIf="!fst">
+              <span class="custLineHR"></span>
+            </ion-col>
+            <ion-col *ngIf="fst">
+              <span> </span>
+            </ion-col>
+            <ion-col class="custCol">
+              <div class="custHeight custProfile">
+                <ion-img class="custStepIcon" [src]="steps.stepImg"></ion-img>
+              </div>
+            </ion-col>
+            <ion-col *ngIf="!lst">
+              <span class="custLineHR"></span>
+            </ion-col>
+
+            <ion-col *ngIf="lst">
+              <span> </span>
+            </ion-col>
+          </ion-row>
+
+
+
+          <span
+            class="pStepName custFontFamilyMuliSemiBold custLineHight18 muli-12pt custColorBattlePGry">{{steps.stepName}}</span>
+        </div>
+      </div>
+    </div>-->
+
+    <!-- <div class="scrollmenu" *ngIf="stepItems != null">
+      <div class="testDiv">
+        <span
+          class="pStepNos custFontFamilyMuliRegular custLineHight18 muli-10pt custColorGreyish">{{stepItems[0].stepNos}}</span>
+        <div class="custDivDivider">
+          <div class="custHeight custProfile">
+            <ion-img class="custStepIcon" [src]="stepItems[0].stepImg"></ion-img>
+          </div>
+        </div>
+        <span
+          class="pStepName custFontFamilyMuliSemiBold custLineHight18 muli-12pt custColorBattlePGry">{{stepItems[0].stepName}}</span>
+      </div>
+
+      <div class="testDiv">
+        <span
+          class="pStepNos custFontFamilyMuliRegular custLineHight18 muli-10pt custColorGreyish">{{stepItems[1].stepNos}}</span>
+        <div class="custDivDivider">
+          <div class="custHeight custProfile">
+            <ion-img class="custStepIcon" [src]="stepItems[1].stepImg"></ion-img>
+          </div>
+        </div>
+        <span
+          class="pStepName custFontFamilyMuliSemiBold custLineHight18 muli-12pt custColorBattlePGry">{{stepItems[1].stepName}}</span>
+      </div>
+
+      <div class="testDiv">
+        <span
+          class="pStepNos custFontFamilyMuliRegular custLineHight18 muli-10pt custColorGreyish">{{stepItems[2].stepNos}}</span>
+        <div class="custDivDivider">
+          <div class="custHeight custProfile">
+            <ion-img class="custStepIcon" [src]="stepItems[2].stepImg"></ion-img>
+          </div>
+        </div>
+        <span
+          class="pStepName custFontFamilyMuliSemiBold custLineHight18 muli-12pt custColorBattlePGry">{{stepItems[2].stepName}}</span>
+      </div>
+
+
+
+    </div> -->
+
+    <!-- <ng-container *ngIf="panCardKYC === true;else two">
+      <lib-pan-card [imageList]="imageList" [errorList]="errorList" (getPanStatus)="currentPANStatus($event)" class="h-100 w-100 "></lib-pan-card>
+    </ng-container>
+
+    <ng-template #two>
+      <ng-container *ngIf="bankKYC === true;else three">
+        <lib-bank-details [imageList]="imageList" [errorList]="errorList" class="h-100 w-100 " (getBankStatus)="currentBankStatus($event)"></lib-bank-details>
+      </ng-container>
+    </ng-template>
+
+    <ng-template #three>
+      <p>test1</p>
+    </ng-template> -->

@@ -1,0 +1,828 @@
+{
+    "healthLabTest":{
+        "heading": {
+            "heading": "Explore",
+            "discription": "Discover all Lab test"
+        },
+        "pickupAndfilter": [
+            {
+                "pickUpIcon": "assets/health-page-logos/Icon material-location-on.svg",
+                "pickUpTitle": "Pickup from"
+            },
+            {
+                "filterIcon": "assets/Images/filterIcon.svg",
+                "filterTitle": "Filter"
+            }
+        ],
+        "card": [
+            {
+                "row1": {
+                    "icon": "",
+                    "title": "Fasting Blood Sugar",
+                    "description": "By Thyrocare Ltd. Pathology Test",
+                    "action": "assets/icon/leftArrowIcon.svg"
+                },
+                "row2": {
+                    "col1": "price",
+                    "val1": 1000,
+                    "col2": "E-reports Within",
+                    "val2": "24 to 30 hours",
+                    "col3": "No. of Tests",
+                    "val3": 1
+                }
+            },
+            {
+                "row1": {
+                    "icon": "",
+                    "title": "Fasting Blood Sugar",
+                    "description": "By Thyrocare Ltd. Pathology Test",
+                    "action": "assets/icon/leftArrowIcon.svg"
+                },
+                "row2": {
+                    "col1": "price",
+                    "val1": 1000,
+                    "col2": "E-reports Within",
+                    "val2": "24 to 30 hours",
+                    "col3": "No. of Tests",
+                    "val3": 1
+                }
+            }
+        ]
+    },
+    "healthMedicine":{
+        "heading": {
+            "heading": "Explore",
+            "discription": "Discover your medicine"
+        },
+        "pickup&filter": [
+            {
+                "icon": "",
+                "title": "Pickup from"
+            },
+            {
+                "icon": "",
+                "title": "Filter"
+            }
+        ],
+        "card": [
+            {
+                "row1": {
+                    "icon": "",
+                    "title": "Dolo-650 Tablet",
+                    "description": "by Micro Labs. 15 Tablets strip",
+                    "action": "assets/icon/leftArrowIcon.svg"
+                },
+                "row2": {
+                    "col1": "price",
+                    "val1": 25.00,
+                    "col2": "rating",
+                    "val2": "",
+                    "col3": "prescription",
+                    "val3": ""
+                }
+            },
+            {
+                "row1": {
+                    "icon": "",
+                    "title": "Dolo-650 Tablet",
+                    "description": "by Micro Labs. 15 Tablets strip",
+                    "action": "assets/icon/leftArrowIcon.svg"
+                },
+                "row2": {
+                    "col1": "price",
+                    "val1": 25.00,
+                    "col2":"rating",
+                    "val2":"",
+                    "col3":"prescription",
+                    "val3": ""
+                }
+            }
+        ]
+    },
+    "educationCourses":{
+        "heading": {
+            "heading": "Explore",
+            "discription": "Discover all Courses"
+        },
+        "card": [
+            {
+                "row1": {
+                    "icon": "",
+                    "title": "Life Insurance",
+                    "description": "max 15 sections. 135 lectures. 11 hours",
+                    "action": "assets/icon/leftArrowIcon.svg"
+                },
+                "row2": {
+                    "price": 1,
+                    "Ratings": 4,
+                    "Level": "Beginner",
+                    "col1": "Price",
+                    "val1": "₹1",
+                    "col2": "Ratings",
+                    "val2": 4,
+                    "col3": "Level",
+                    "val3": "Beginner"
+                }
+            },
+            {
+                "row1": {
+                    "icon": "",
+                    "title": "Life Insurance",
+                    "description": "max 15 sections. 135 lectures. 11 hours",
+                    "action": "assets/icon/leftArrowIcon.svg"
+                },
+                "row2": {
+                    "col1": "Price",
+                    "val1": "₹1",
+                    "col2": "Ratings",
+                    "val2": 4,
+                    "col3": "Level",
+                    "val3": "Beginner"
+                }
+            },
+            {
+                "row1": {
+                    "icon": "",
+                    "title": "Life Insurance",
+                    "description": "max 15 sections. 135 lectures. 11 hours",
+                    "action": "assets/icon/leftArrowIcon.svg"
+                },
+                "row2": {
+                    "col1": "Price",
+                    "val1": "₹1",
+                    "col2": "Ratings",
+                    "val2": 4,
+                    "col3": "Level",
+                    "val3": "Beginner"
+                }
+            },
+            {
+                "row1": {
+                    "icon": "",
+                    "title": "Life Insurance",
+                    "description": "max 15 sections. 135 lectures. 11 hours",
+                    "action": "assets/icon/leftArrowIcon.svg"
+                },
+                "row2": {
+                    "col1": "Price",
+                    "val1": "₹1",
+                    "col2": "Ratings",
+                    "val2": 4,
+                    "col3": "Level",
+                    "val3": "Beginner"
+                }
+            },
+            {
+                "row1": {
+                    "icon": "",
+                    "title": "Life Insurance",
+                    "description": "max 15 sections. 135 lectures. 11 hours",
+                    "action": "assets/icon/leftArrowIcon.svg"
+                },
+                "row2": {
+                    "col1": "Price",
+                    "val1": "₹1",
+                    "col2": "Ratings",
+                    "val2": 4,
+                    "col3": "Level",
+                    "val3": "Beginner"
+                }
+            }
+        ]
+    },
+    "educationAssessment":{
+        "heading": {
+            "heading": "Explore",
+            "discription": "Discover all Assesments"
+        },
+        "card": [
+            {
+                "row1": {
+                    "icon": "",
+                    "title": "How do mutual funds make you money?",
+                    "description": "",
+                    "action": "assets/icon/leftArrowIcon.svg"
+                },
+                "row2": {
+                    "col1": "Price",
+                    "val1": "₹1",
+                    "col2": "Ratings",
+                    "val2": 4,
+                    "col3": "Level",
+                    "val3": "Medium"
+                }
+            },
+            {
+                "row1": {
+                    "icon": "",
+                    "title": "What does stoke you mean?",
+                    "description": "",
+                    "action": "assets/icon/leftArrowIcon.svg"
+                },
+                "row2": {
+                    "col1": "Price",
+                    "val1": "₹1",
+                    "col2": "Ratings",
+                    "val2": 4,
+                    "col3": "Level",
+                    "val3": "Medium"
+                }
+            },
+            {
+                "row1": {
+                    "icon": "",
+                    "title": "How do you calculate gold price?",
+                    "description": "",
+                    "action": "assets/icon/leftArrowIcon.svg"
+                },
+                "row2": {
+                    "col1": "Price",
+                    "val1": "₹1",
+                    "col2": "Ratings",
+                    "val2": 4,
+                    "col3": "Level",
+                    "val3": "Hard"
+                }
+            }
+        ]
+    },
+    "educationJob":{
+        "heading": {
+            "heading": "Jobs",
+            "discription": "Discover all Jobs"
+        },
+        "card": [
+            {
+                "row1": {
+                    "icon": "",
+                    "title": "Chartered Accountant",
+                    "description": "Torus",
+                    "action": ""
+                },
+                "row2": {
+                    "col1": "Price",
+                    "val1": "₹40,000-₹90,000",
+                    "col2": "",
+                    "va12": "Apply Now"
+                }
+            },
+            {
+                "row1": {
+                    "icon": "",
+                    "title": "UI",
+                    "description": "Torus",
+                    "action": ""
+                },
+                "row2": {
+                    "col1": "Price",
+                    "val1": "₹40,000-₹90,000",
+                    "col2": "",
+                    "va12": "Apply Now"
+                }
+            },
+            {
+                "row1": {
+                    "icon": "",
+                    "title": "Backend Developer",
+                    "description": "Torus",
+                    "action": ""
+                },
+                "row2": {
+                    "col1": "Price",
+                    "val1": "₹40,000-₹90,000",
+                    "col2": "",
+                    "va12": "Apply Now"
+                }
+            }
+        ]
+    },
+    "insurance":{
+        "heading": {
+            "heading": "Explore Various Insurance",
+            "discription": "Discover various insurance types"
+        },
+        "grid": [
+            {
+                "icons": "assets/icon/genUmbrella.svg",
+                "tagName": "Health Insurance"
+            },
+            {
+                "icons": "assets/icon/lifeInsurance.svg",
+                "tagName": "Car Insurance"
+            },
+            {
+                "icons": "assets/icon/healthcare.svg",
+                "tagName": "Two Wheeler Insurance"
+            },
+            {
+                "icons": "assets/icon/TermInsurace.svg",
+                "tagName": "Travel Insurance"
+            },
+            {
+                "icons": "assets/icon/travelnsurance.svg",
+                "tagName": "Term Insurance"
+            },
+            {
+                "icons": "assets/icon/otherInsurance.svg",
+                "tagName": "Other Insurance"
+            }
+        ],
+        "card": [
+            {
+                "title": "Health Insurance",
+                "row1": {
+                    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjwR_qwwP-PgM2uGa5crh8YvIhpV_yc7LNXA&usqp=CAU",
+                    "title": "Supra Super Top - up",
+                    "action": "assets/icon/leftArrowIcon.svg"
+                },
+                "row2": {
+                    "col1": "Sum Assured",
+                    "val1": "₹30000.00",
+                    "col2": "Premium",
+                    "val2": "₹2,125.00"
+                }
+            },
+            {
+                "title": "Car Insurance",
+                "row1": {
+                    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjwR_qwwP-PgM2uGa5crh8YvIhpV_yc7LNXA&usqp=CAU",
+                    "title": "Supra Super Top - up",
+                    "action": "assets/icon/leftArrowIcon.svg"
+                },
+                "row2": {
+                    "col1": "Sum Assured",
+                    "val1": "₹30000.00",
+                    "col2": "Premium",
+                    "val2": "₹2,125.00"
+                }
+            },
+            {
+                "title": "Two Wheeler Insurance",
+                "row1": {
+                    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjwR_qwwP-PgM2uGa5crh8YvIhpV_yc7LNXA&usqp=CAU",
+                    "title": "Supra Super Top - up",
+                    "action": "assets/icon/leftArrowIcon.svg"
+                },
+                "row2": {
+                    "col1": "Sum Assured",
+                    "val1": "₹30000.00",
+                    "col2": "Premium",
+                    "val2": "₹2,125.00"
+                }
+            },
+            {
+                "title": "Travel Insurance",
+                "row1": {
+                    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjwR_qwwP-PgM2uGa5crh8YvIhpV_yc7LNXA&usqp=CAU",
+                    "title": "Supra Super Top - up",
+                    "action": "assets/icon/leftArrowIcon.svg"
+                },
+                "row2": {
+                    "col1": "Sum Assured",
+                    "val1": "₹30000.00",
+                    "col2": "Premium",
+                    "val2": "₹2,125.00"
+                }
+            },
+            {
+                "title": "Term Insurance",
+                "row1": {
+                    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjwR_qwwP-PgM2uGa5crh8YvIhpV_yc7LNXA&usqp=CAU",
+                    "title": "Supra Super Top - up",
+                    "action": "assets/icon/leftArrowIcon.svg"
+                },
+                "row2": {
+                    "col1": "Sum Assured",
+                    "val1": "₹30000.00",
+                    "col2": "Premium",
+                    "val2": "₹2,125.00"
+                }
+            },
+            {
+                "title": "Other Insurance",
+                "row1": {
+                    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjwR_qwwP-PgM2uGa5crh8YvIhpV_yc7LNXA&usqp=CAU",
+                    "title": "Supra Super Top - up",
+                    "action": "assets/icon/leftArrowIcon.svg"
+                },
+                "row2": {
+                    "col1": "Sum Assured",
+                    "val1": "₹30000.00",
+                    "col2": "Premium",
+                    "val2": "₹2,125.00"
+                }
+            }
+        ]
+    },
+    "lasStock":{
+        "heading": {
+            "heading": "Explore",
+            "discription": "Discover all shares"
+        },
+        "pickupAndfilter": [
+            {
+                "filterIcon": "assets/Images/filterIcon.svg",
+                "filterTitle": "Filter"
+            }
+        ],
+        "card": [
+            {
+                "row1": {
+                    "title": "Avenue Supermarts Limited"
+                },
+                "row2": {
+                    "col1": "availableQuantity",
+                    "val1": 50,
+                    "col2": "haircutRate",
+                    "val2": "20%"
+                }
+            },
+            {
+                "row1": {
+                    "title": "Dabur India Limited"
+                },
+                "row2": {
+                    "col1": "availableQuantity",
+                    "val1": 50,
+                    "col2": "haircutRate",
+                    "val2": "20%"
+                }
+            },
+            {
+                "row1": {
+                    "title": "Interglobe Aviation Limited"
+                },
+                "row2": {
+                    "col1": "availableQuantity",
+                    "val1": 50,
+                    "col2": "haircutRate",
+                    "val2": "20%"
+                }
+            },
+            {
+                "row1": {
+                    "title": "Mindtree Limited"
+                },
+                "row2": {
+                    "col1": "availableQuantity",
+                    "val1": 50,
+                    "col2": "haircutRate",
+                    "val2": "20%"
+                }
+            },
+            {
+                "row1": {
+                    "title": "Zydus Lifesciences Limited"
+                },
+                "row2": {
+                    "col1": "availableQuantity",
+                    "val1": 50,
+                    "col2": "haircutRate",
+                    "val2": "20%"
+                }
+            }
+        ]
+    },
+    "mutualFund":{
+        "heading": {
+            "heading": "Invest",
+            "discription": "Discover Mutual Funds for Investments"
+        },
+        "grid": [
+            {
+                "name": "Top Rated Fund",
+                "icon": "assets/icon/group1.svg"
+            },
+            {
+                "name": "Tax Savers",
+                "icon": "assets/icon/group2.svg"
+            },
+            {
+                "name": "New Fund Offers",
+                "icon": "assets/icon/group3.svg"
+            },
+            {
+                "name": "Annual Return Fund",
+                "icon": "assets/education/Group1.svg"
+            },
+            {
+                "name": "Wealth Builder",
+                "icon": "assets/education/Group2.svg"
+            },
+            {
+                "name": "Steady Income",
+                "icon": "assets/education/Group3.svg"
+            }
+        ],
+        "card": [
+            {
+                "title": "Top Rated Fund",
+                "row1": {
+                    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjwR_qwwP-PgM2uGa5crh8YvIhpV_yc7LNXA&usqp=CAU",
+                    "title": "HDFC Focused 30-G",
+                    "action": "assets/icon/leftArrowIcon.svg"
+                },
+                "row2": {
+                    "col1": "Min.Invest",
+                    "val1": "₹5000",
+                    "col2": "Category Return",
+                    "val2": "-7.10% - 20.25%",
+                    "col3": "Returns",
+                    "val3": "18.65%"
+                }
+            },
+            {
+                "title": "Tax Savers",
+                "row1": {
+                    "icon": "",
+                    "title": "HDFC Focused 30-G",
+                    "action": "assets/icon/leftArrowIcon.svg"
+                },
+                "row2": {
+                    "col1": "Min.Invest",
+                    "val1": "₹5000",
+                    "col2": "Category Return",
+                    "val2": "-7.10% - 20.25%",
+                    "col3": "Returns",
+                    "val3": "18.65%"
+                }
+            },
+            {
+                "title": "New Fund Offers",
+                "row1": {
+                    "icon": "",
+                    "title": "HDFC Focused 30-G",
+                    "action": "assets/icon/leftArrowIcon.svg"
+                },
+                "row2": {
+                    "col1": "Min.Invest",
+                    "val1": "₹5000",
+                    "col2": "Category Return",
+                    "val2": "-7.10% - 20.25%",
+                    "col3": "Returns",
+                    "val3": "18.65%"
+                }
+            },
+            {
+                "title": "Annual Return Fund",
+                "row1": {
+                    "icon": "",
+                    "title": "HDFC Focused 30-G",
+                    "action": "assets/icon/leftArrowIcon.svg"
+                },
+                "row2": {
+                    "col1": "Min.Invest",
+                    "val1": "₹5000",
+                    "col2": "Category Return",
+                    "val2": "-7.10% - 20.25%",
+                    "col3": "Returns",
+                    "val3": "18.65%"
+                }
+            },
+            {
+                "title": "Wealth Builder",
+                "row1": {
+                    "icon": "",
+                    "title": "HDFC Focused 30-G",
+                    "action": "assets/icon/leftArrowIcon.svg"
+                },
+                "row2": {
+                    "col1": "Min.Invest",
+                    "val1": "₹5000",
+                    "col2": "Category Return",
+                    "val2": "-7.10% - 20.25%",
+                    "col3": "Returns",
+                    "val3": "18.65%"
+                }
+            },
+            {
+                "title": "Steady Income",
+                "row1": {
+                    "icon": "",
+                    "title": "HDFC Focused 30-G",
+                    "action": "assets/icon/leftArrowIcon.svg"
+                },
+                "row2": {
+                    "col1": "Min.Invest",
+                    "val1": "₹5000",
+                    "col2": "Category Return",
+                    "val2": "-7.10% - 20.25%",
+                    "col3": "Returns",
+                    "val3": "18.65%"
+                }
+            },
+            {
+                "title": "Wealth Builder",
+                "row1": {
+                    "icon": "",
+                    "title": "HDFC Focused 30-G",
+                    "action": "assets/icon/leftArrowIcon.svg"
+                },
+                "row2": {
+                    "col1": "Min.Invest",
+                    "val1": "₹5000",
+                    "col2": "Category Return",
+                    "val2": "-7.10% - 20.25%",
+                    "col3": "Returns",
+                    "val3": "18.65%"
+                }
+            }
+
+        ]
+    },
+    "digiGold":{
+        "heading": {
+            "heading": "Explore Digital Commodities"
+        },
+        "card": [
+            {
+                "row1": {
+                    "icon": "",
+                    "title": "Augmont Digital Gold",
+                    "description": "24K. 99.99% Purity",
+                    "action": "assets/icon/leftArrowIcon.svg"
+                },
+                "row2": {
+                    "col1": "Buying Price/gm",
+                    "val1": "₹5251.16",
+                    "col2": "Selling Price/gm",
+                    "val2": "₹54.64"
+                }
+            },
+            {
+                "row1": {
+                    "icon": "",
+                    "title": "Augmont Digital Gold",
+                    "description": "24K. 99.99% Purity",
+                    "action": "assets/icon/leftArrowIcon.svg"
+                },
+                "row2": {
+                    "col1": "Buying Price/gm",
+                    "val1": "₹5251.16",
+                    "col2": "Selling Price/gm",
+                    "val2": "₹54.64"
+                }
+            }
+        ]
+    },
+    "stocks":{
+        "card": [
+            {
+                "row1": {
+                    "title": "TATA STEEL",
+                    "action": "₹5000.10"
+                },
+                "row2": {
+                    "col1": "Exchange Name",
+                    "val1": "NSE",
+                    "col2": "loss and gain",
+                    "val2": "₹22.62"
+                }
+            },
+            {
+                "row1": {
+                    "title": "HDFCLIFE",
+                    "action": "₹5000.10"
+                },
+                "row2": {
+                    "col1": "Exchange Name",
+                    "val1": "NSE",
+                    "col2": "loss and gain",
+                    "val2": "₹22.62"
+                }
+            },
+            {
+                "row1": {
+                    "title": "TATA STEEL",
+                    "action": "₹5000.10"
+                },
+                "row2": {
+                    "col1": "Exchange Name",
+                    "val1": "NSE",
+                    "col2": "loss and gain",
+                    "val2": "₹22.62"
+                }
+            },
+            {
+                "row1": {
+                    "title": "TATA STEEL",
+                    "action": "₹5000.10"
+                },
+                "row2": {
+                    "col1": "Exchange Name",
+                    "val1": "NSE",
+                    "col2": "loss and gain",
+                    "val2": "₹22.62"
+                }
+            },
+            {
+                "row1": {
+                    "title": "TATA STEEL",
+                    "action": "₹5000.10"
+                },
+                "row2": {
+                    "col1": "Exchange Name",
+                    "val1": "NSE",
+                    "col2": "loss and gain",
+                    "val2": "₹22.62"
+                }
+            },
+            {
+                "row1": {
+                    "title": "TATA STEEL",
+                    "action": "₹5000.10"
+                },
+                "row2": {
+                    "col1": "Exchange Name",
+                    "val1": "NSE",
+                    "col2": "loss and gain",
+                    "val2": "₹22.62"
+                }
+            },
+            {
+                "row1": {
+                    "title": "TATA STEEL",
+                    "action": "₹5000.10"
+                },
+                "row2": {
+                    "col1": "Exchange Name",
+                    "val1": "NSE",
+                    "col2": "loss and gain",
+                    "val2": "₹22.62"
+                }
+            },
+            {
+                "row1": {
+                    "title": "TATA STEEL",
+                    "action": "₹5000.10"
+                },
+                "row2": {
+                    "col1": "Exchange Name",
+                    "val1": "NSE",
+                    "col2": "loss and gain",
+                    "val2": "₹22.62"
+                }
+            },
+            {
+                "row1": {
+                    "title": "TATA STEEL",
+                    "action": "₹5000.10"
+                },
+                "row2": {
+                    "col1": "Exchange Name",
+                    "val1": "NSE",
+                    "col2": "loss and gain",
+                    "val2": "₹22.62"
+                }
+            },
+            {
+              "row1": {
+                  "title": "TATA STEEL",
+                  "action": "₹5000.10"
+              },
+              "row2": {
+                  "col1": "Exchange Name",
+                  "val1": "NSE",
+                  "col2": "loss and gain",
+                  "val2": "₹22.62"
+              }
+          },
+          {
+            "row1": {
+                "title": "TATA STEEL",
+                "action": "₹5000.10"
+            },
+            "row2": {
+                "col1": "Exchange Name",
+                "val1": "NSE",
+                "col2": "loss and gain",
+                "val2": "₹22.62"
+            }
+        },
+        {
+          "row1": {
+              "title": "TATA STEEL",
+              "action": "₹5000.10"
+          },
+          "row2": {
+              "col1": "Exchange Name",
+              "val1": "NSE",
+              "col2": "loss and gain",
+              "val2": "₹22.62"
+          }
+      },
+      {
+        "row1": {
+            "title": "TATA STEEL",
+            "action": "₹5000.10"
+        },
+        "row2": {
+            "col1": "Exchange Name",
+            "val1": "NSE",
+            "col2": "loss and gain",
+            "val2": "₹22.62"
+        }
+    }
+        ]
+    }
+}

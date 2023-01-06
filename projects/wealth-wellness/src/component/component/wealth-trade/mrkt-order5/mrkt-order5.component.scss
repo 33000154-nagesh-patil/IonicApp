@@ -1,0 +1,25 @@
+.custModalContainer {
+    z-index: 1;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    position: fixed;
+  }
+
+ 
+  .modal-content {
+    background-color: #fff;
+    margin: auto;
+    padding-top: 1px;
+    margin-top: 1px;
+    padding-bottom: 30px;
+    padding-right: 16px;
+    padding-left: 16px;
+    width: 100%;
+    height: max-content;
+    position: absolute;
+    bottom: 0px;
+    border-radius: 10px 10px 0px 0px;
+  }

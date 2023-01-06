@@ -1,0 +1,67 @@
+<ion-grid class="p-2 pt-4">
+  <ion-row>
+    <ion-col [size]="'12'">
+      <span class="custFontFamilyMuliBold muli-24pt custLineHight40 custColorDark custOpacity60">{{'hey' | translate}},
+        {{userFirstName}}</span>
+      <p class="custFontFamilyMuliRegular muli-14pt custLineHight28 custColorBattlePGry">{{'wellnessUserNotification' |
+        translate}}</p>
+    </ion-col>
+    <ion-col [size]="'12'">
+      <span class="muli-22pt custFontFamilyMuliBold custLineHight30 custColorDark text-capitalize">
+        {{'health' | translate}} {{'wellness' | translate}}
+      </span>
+    </ion-col>
+    <ion-col [size]="'12'">
+      <ion-row>
+        <ion-col [size]="'1'" class="custBackgroundColorDarkishBlue"></ion-col>
+      </ion-row>
+    </ion-col>
+    <ion-col [size]="'12'">
+      <p class="custFontFamilyMuliRegular muli-12pt custLineHight28 custColorDark">{{'healthWellnessPara' | translate}}
+      </p>
+    </ion-col>
+    <ion-col [size]="'12'">
+      <span class="custFontFamilyMuliBold muli-16pt custLineHight18 custColorDarkShade">{{'digitalHealthCareForYou' |
+        translate}}</span>
+    </ion-col>
+    <ion-col [size]="'12'">
+      <!-- <ion-row>
+        <ion-col [size]="'12'" *ngFor="let x of healthCategoryData">
+          <ion-card class="custBackgroundColorWhite" (click)="openHealthCategoryList(x?.Title)">
+            <ion-card-content>
+              <ion-row>
+                <ion-col [size]="'10'">
+                  <span
+                    class="custFontFamilyMuliSemiBold muli-12pt custLineHight18 custColorDarkShade">{{x?.Title}}</span>
+                </ion-col>
+                <ion-col [size]="'2'">
+                  <ion-img [src]="imageList?.healthcare" class="custHealthCategoryIcon"></ion-img>
+                </ion-col>
+              </ion-row>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row> -->
+
+      <div *ngIf="healthCategoryData">
+        <ion-row class="ion-no-padding p-0 m-0">
+          <ion-col class="ion-no-padding p-0 m-0" size="6" *ngFor="let x of healthCategoryData">
+            <ion-card class="ion-no-padding p-2 m-2" (click)="openHealthCategoryList(x?.Title)">
+              <ion-row class="ion-no-padding p-0 m-0">
+                <ion-col size="8">
+                  <ion-label class="custFontFamilyMuliSemiBold muli-12pt">{{x?.Title}}</ion-label>
+                </ion-col>
+                <ion-col size="4">
+                  <img class="custLogo" src={{x?.Logo}} />
+                </ion-col>
+              </ion-row>
+            </ion-card>
+          </ion-col>
+        </ion-row>
+      </div>
+    </ion-col>
+    <!-- <ion-col [size]="'12'">
+
+    </ion-col> -->
+  </ion-row>
+</ion-grid>

@@ -1,0 +1,95 @@
+.custGrid{
+    margin: 0 -24px -16px !important;
+    --margin: 0 -24px -16px !important;   
+}
+
+.coloredCard{
+    background-image: linear-gradient(#E2F4FF, #C4E9FF);
+    color: #FFFFFF;
+}
+
+.card{
+    height: 200px;
+}
+
+.sizing{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: nowrap;
+    height: auto;
+    overflow-x: auto;
+    width: auto;
+}
+
+.imageCss{
+    width: 30px;
+    height: 30px;
+}
+
+.mrginTopp {
+    margin-top: -28px;
+}
+
+.custBtnExplore{
+    height: 30px;
+    border:  1px solid var(--custBrightCyan) !important;
+    border-radius: 4px !important;
+    background: white !important;
+    text-align: center !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+}
+
+.cardHeight {
+    height: 66px;
+}
+
+.card-content-ios{
+    padding: 0px;
+    margin: 0px;
+}
+
+.mrgin {
+    margin-bottom: -5px;
+}
+
+.imgSize {
+    height: 40px;
+    width: 40px;
+    margin-left: 35px;
+}
+
+.pding {
+    padding: 35px;
+}
+
+.cardCustHeight {
+    height: 168px;
+}
+
+.bground {
+    background-color: #F1F1F1;
+}
+
+.mrginTop {
+    margin-top: -4px;
+}
+
+.pdingLeft {
+    padding-left: 35px;
+}
+
+.pdingLeftt {
+    padding-left: 25px;
+}
+
+.cardBottom {
+    margin-bottom: -10px;
+}

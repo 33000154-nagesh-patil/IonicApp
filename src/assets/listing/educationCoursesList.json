@@ -1,0 +1,93 @@
+{
+    "": {
+        "heading": {
+            "heading": "Explore",
+            "discription": "Discover all Courses"
+        },
+        "card": [
+            {
+                "row1": {
+                    "icon": "",
+                    "title": "Life Insurance",
+                    "description": "max 15 sections. 135 lectures. 11 hours",
+                    "action": "assets/icon/leftArrowIcon.svg"
+                },
+                "row2": {
+                    "price": 1,
+                    "Ratings": 4,
+                    "Level": "Beginner",
+                    "col1": "Price",
+                    "val1": "₹1",
+                    "col2": "Ratings",
+                    "val2": 4,
+                    "col3": "Level",
+                    "val3": "Beginner"
+                }
+            },
+            {
+                "row1": {
+                    "icon": "",
+                    "title": "Life Insurance",
+                    "description": "max 15 sections. 135 lectures. 11 hours",
+                    "action": "assets/icon/leftArrowIcon.svg"
+                },
+                "row2": {
+                    "col1": "Price",
+                    "val1": "₹1",
+                    "col2": "Ratings",
+                    "val2": 4,
+                    "col3": "Level",
+                    "val3": "Beginner"
+                }
+            },
+            {
+                "row1": {
+                    "icon": "",
+                    "title": "Life Insurance",
+                    "description": "max 15 sections. 135 lectures. 11 hours",
+                    "action": "assets/icon/leftArrowIcon.svg"
+                },
+                "row2": {
+                    "col1": "Price",
+                    "val1": "₹1",
+                    "col2": "Ratings",
+                    "val2": 4,
+                    "col3": "Level",
+                    "val3": "Beginner"
+                }
+            },
+            {
+                "row1": {
+                    "icon": "",
+                    "title": "Life Insurance",
+                    "description": "max 15 sections. 135 lectures. 11 hours",
+                    "action": "assets/icon/leftArrowIcon.svg"
+                },
+                "row2": {
+                    "col1": "Price",
+                    "val1": "₹1",
+                    "col2": "Ratings",
+                    "val2": 4,
+                    "col3": "Level",
+                    "val3": "Beginner"
+                }
+            },
+            {
+                "row1": {
+                    "icon": "",
+                    "title": "Life Insurance",
+                    "description": "max 15 sections. 135 lectures. 11 hours",
+                    "action": "assets/icon/leftArrowIcon.svg"
+                },
+                "row2": {
+                    "col1": "Price",
+                    "val1": "₹1",
+                    "col2": "Ratings",
+                    "val2": 4,
+                    "col3": "Level",
+                    "val3": "Beginner"
+                }
+            }
+        ]
+    }
+}

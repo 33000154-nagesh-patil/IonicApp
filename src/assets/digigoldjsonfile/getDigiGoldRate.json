@@ -1,0 +1,31 @@
+{
+    "statusCode": 200,
+    "message": "Rates retrieved successfully.",
+    "result": {
+        "data": {
+            "rates": {
+                "gBuy": "5270.54",
+                "gSell": "5131.42",
+                "sBuy": "65.95",
+                "sSell": "57.45",
+                "gBuyGst": "158.12",
+                "sBuyGst": "1.98"
+            },
+            "taxes": [
+                {
+                    "type": "CGSST",
+                    "taxPerc": "1.50"
+                },
+                {
+                    "type": "SGST",
+                    "taxPerc": "1.50"
+                },
+                {
+                    "type": "IGST",
+                    "taxPerc": "3.00"
+                }
+            ],
+            "blockId": "yqEDaeZX"
+        }
+    }
+}

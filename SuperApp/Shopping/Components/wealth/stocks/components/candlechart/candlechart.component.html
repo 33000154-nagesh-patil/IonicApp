@@ -1,0 +1,74 @@
+<ion-card class="mx-3 p-0">
+  <ion-row>
+    <ion-col [size]="'12'">
+      <ion-segment>
+        <ion-col [size]="'2'">
+          <ion-segment-button>
+            <img [src]="imageList?.modify">
+          </ion-segment-button>
+        </ion-col>
+        <ion-col [size]="'2'">
+          <ion-segment-button>
+            <img [src]="imageList?.plusIcon1">
+          </ion-segment-button>
+        </ion-col>
+        <ion-col [size]="'2'">
+          <ion-segment-button>
+            <img [src]="imageList?.candle">
+          </ion-segment-button>
+        </ion-col>
+        <ion-col [size]="'2'">
+          <ion-segment-button>
+            <img [src]="imageList?.plusIcon1">
+          </ion-segment-button>
+        </ion-col>
+        <ion-col [size]="'2'">
+          <ion-segment-button>
+            <img [src]="imageList?.candle">
+          </ion-segment-button>
+        </ion-col>
+        <ion-col [size]="'2'">
+          <ion-segment-button>
+            <ion-icon name="resize"></ion-icon>
+          </ion-segment-button>
+        </ion-col>
+        <ion-col [size]="'2'">
+          <ion-segment-button>
+            <ion-icon name="resize"></ion-icon>
+          </ion-segment-button>
+        </ion-col>
+      </ion-segment>
+    </ion-col>
+  </ion-row>
+
+  <div class="custH">
+    <apx-chart #chart [series]="chartOptions.series" [chart]="chartOptions.chart" [xaxis]="chartOptions.xaxis"
+      [yaxis]="chartOptions.yaxis" [title]="chartOptions.title">
+    </apx-chart>
+  </div>
+
+  <ion-row class="">
+    <ion-row>
+      <ion-col class="d-flex justify-content-between px-3">
+        <button class="Equity-btn btn w-100 custFontFamilyMuliBold muli-10pt px-3"
+          [ngClass]="{'active':Buttondata  == '1m'}" (click)="activebutton('1m',0)">1d</button>
+        <button class="Equity-btn btn w-100 custFontFamilyMuliBold muli-10pt px-3"
+          [ngClass]="{'active':Buttondata  == '3m'}" (click)="activebutton('3m',1)">1w</button>
+        <button class="Equity-btn btn w-100 custFontFamilyMuliBold muli-10pt px-3"
+          [ngClass]="{'active': Buttondata == '6m'}" (click)="activebutton('6m',2)">1m</button>
+        <button class="Equity-btn btn w-100 custFontFamilyMuliBold muli-10pt px-3"
+          [ngClass]="{'active':Buttondata  == '1y'}" (click)="activebutton('1y',3)">3m</button>
+        <button class="Equity-btn btn w-100 custFontFamilyMuliBold muli-10pt px-3"
+          [ngClass]="{'active': Buttondata == '3y'}" (click)="activebutton('3y',4)">1y</button>
+        <button class="Equity-btn btn w-100 custFontFamilyMuliBold muli-10pt px-3"
+          [ngClass]="{'active':Buttondata  == '5y'}" (click)="activebutton('5y',5)">3y</button>
+        <button class="Equity-btn btn w-100 custFontFamilyMuliBold muli-10pt px-3"
+          [ngClass]="{'active':Buttondata  == 'Max'}" (click)="activebutton('Max',6)">5y</button>
+      </ion-col>
+    </ion-row>
+  </ion-row>
+
+
+
+
+</ion-card>

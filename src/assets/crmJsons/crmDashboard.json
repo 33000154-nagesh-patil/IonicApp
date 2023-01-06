@@ -1,0 +1,867 @@
+{
+    "subHeader": {
+            
+                "id": "",
+                "title": "Dashboard",
+                "icon": "",
+                "type": "",
+                "cssx": "",
+                "uxClass": "muli-34pt",
+                "des": "",
+                "key": "",
+                "value": [
+                    {
+                        "url": "createLead",
+                        "title": "+ Create New Lead",
+                        "icon": "",
+                        "type": "",
+                        "cssx": "",
+                        "uxClass": "btn custColorWhite custBackgroundColorBrightCyan",
+                        "des": "",
+                        "key": "",
+                        "value": ""
+                    }
+                ]
+    },
+    "search": {
+        "id": "",
+        "title": "Search",
+        "icon": "",
+        "type": "",
+        "cssx": "",
+        "uxClass": "px-3",
+        "des": [],
+        "key": "",
+        "showHide": [],
+        "value": [
+            {
+                "id": "",
+                "title": "Period",
+                "icon": "",
+                "type": "dropDown",
+                "cssx": "",
+                "uxClass": "muli-16pt",
+                "des": [],
+                "key": "",
+                "validators": {
+                    "required": true
+                },
+                "value": "",
+                "options": [
+                    "Last 7 Days",
+                    "Last 30 Days",
+                    "Last 90 Days",
+                    "custom"
+                ],
+                "custom":[
+                    {
+                        "id": "",
+                        "title": "Period",
+                        "icon": "",
+                        "type": "dropDown",
+                        "cssx": "",
+                        "uxClass": "muli-16pt",
+                        "des": [],
+                        "key": "",
+                        "validators": {
+                            "required": true
+                        },
+                        "value": "",
+                        "options": [
+                            "Last 7 Days",
+                            "Last 30 Days",
+                            "Last 90 Days",
+                            "custom"
+                        ]
+                    },
+                    {
+                      "id": "",
+                      "title": "Starting Date",
+                      "icon": "",
+                      "type": "calender",
+                      "cssx": "",
+                      "uxClass": "muli-16pt",
+                      "des": [],
+                      "key": "",
+                      "validators": {
+                          "required": true
+                      },
+                      "value": "",
+                      "options": ""
+                  },
+                  {
+                    "id": "",
+                    "title": "End Date",
+                    "icon": "",
+                    "type": "calender",
+                    "cssx": "",
+                    "uxClass": "muli-16pt",
+                    "des": [],
+                    "key": "",
+                    "validators": {
+                        "required": true
+                    },
+                    "value": "",
+                    "options": ""
+                }
+                ]
+            },
+            {
+                "id": "",
+                "title": "",
+                "icon": "",
+                "type": "",
+                "cssx": "",
+                "uxClass": "",
+                "des": [],
+                "key": "",
+                "validators": "",
+                "value": ""
+            }
+        ]
+    },
+    "cards": {
+        "id": "",
+        "title": "",
+        "icon": "",
+        "type": "",
+        "cssx": "",
+        "uxClass": "",
+        "des": "",
+        "key": "card",
+        "value": [
+            {
+                "url": "crmtotalCase",
+                "title": "Total Cases",
+                "icon": "/assets/icon/totalLeads.svg",
+                "type": "",
+                "cssx": "muli-36pt",
+                "uxClass": "muli-18pt",
+                "des": "32",
+                "key": "",
+                "value": "",
+                "size":"3.5"
+            },
+            {
+                "url": "crmTodayLead",
+                "title": "Today's Leads",
+                "icon": "/assets/icon/todaysLeads.svg",
+                "type": "",
+                "cssx": "muli-36pt",
+                "uxClass": " muli-18pt",
+                "des": "59",
+                "key": "",
+                "value": "",
+                "size":"3.5"
+            },
+            {
+                "url": "",
+                "title": "Scheduled Activities",
+                "icon": "/assets/icon/scheduledActivities.svg",
+                "type": "",
+                "cssx": "muli-36pt",
+                "uxClass": " muli-18pt",
+                "des": "6",
+                "key": "",
+                "value": "",
+                "size":"3.5"
+            }
+        ]
+    },
+    "doughnut": {
+        "id": "",
+        "title": "Lead Status",
+        "icon": "",
+        "type": "",
+        "cssx": "",
+        "uxClass": "muli-16pt p-2 pt-2 custFontFamilyMuliSemiBold custColorDark",
+        "des": "",
+        "key": "doughnut",
+        "value": [
+            {
+                "id": "",
+                "title": "Call Ringing",
+                "icon": "",
+                "type": "",
+                "cssx": "#83E2CB",
+                "uxClass": "",
+                "des": "",
+                "key": "doughnut",
+                "value": "60"
+            },
+            {
+                "id": "",
+                "title": "Follow Up",
+                "icon": "",
+                "type": "",
+                "cssx": "#E3D56C",
+                "uxClass": "",
+                "des": "",
+                "key": "doughnut",
+                "value": "20"
+            },
+            {
+                "id": "",
+                "title": "Not Contactable",
+                "icon": "",
+                "type": "",
+                "cssx": "#E99191",
+                "uxClass": "",
+                "des": "",
+                "key": "doughnut",
+                "value": "10"
+            },
+            {
+                "id": "",
+                "title": "Interested",
+                "icon": "",
+                "type": "",
+                "cssx": "#8BDB78",
+                "uxClass": "",
+                "des": "",
+                "key": "doughnut",
+                "value": "40"
+            },
+            {
+                "id": "",
+                "title": "Not Interested",
+                "icon": "",
+                "type": "",
+                "cssx": "#B191D5",
+                "uxClass": "",
+                "des": "",
+                "key": "doughnut",
+                "value": "60"
+            },
+            {
+                "id": "",
+                "title": "Junk",
+                "icon": "",
+                "type": "",
+                "cssx": "#72B5E2",
+                "uxClass": "",
+                "des": "",
+                "key": "doughnut",
+                "value": "30"
+            },
+            {
+                "id": "",
+                "title": "Existing Customer",
+                "icon": "",
+                "type": "",
+                "cssx": "#BDDF6D",
+                "uxClass": "",
+                "des": "",
+                "key": "doughnut",
+                "value": "50"
+            },
+            {
+                "id": "",
+                "title": "KYC In Process",
+                "icon": "",
+                "type": "",
+                "cssx": "#8FD7DA",
+                "uxClass": "",
+                "des": "",
+                "key": "doughnut",
+                "value": "60"
+            },
+            {
+                "id": "",
+                "title": "KYC Under Security",
+                "icon": "",
+                "type": "",
+                "cssx": "#BFDCEF",
+                "uxClass": "",
+                "des": "",
+                "key": "doughnut",
+                "value": "30"
+            },
+            {
+                "id": "",
+                "title": "KYC Rejected",
+                "icon": "",
+                "type": "",
+                "cssx": "#87C5EE",
+                "uxClass": "",
+                "des": "",
+                "key": "doughnut",
+                "value": "20"
+            }
+        ]
+    },
+    "barChart": {
+        "id": "",
+        "title": "DIY Stage",
+        "icon": "",
+        "type": "",
+        "cssx": "",
+        "uxClass": "muli-16pt p-2 pt-2 custFontFamilyMuliSemiBold custColorDark",
+        "des": "",
+        "key": "barChart",
+        "value": [
+            {
+                "id": "",
+                "title": "Mobile Verification",
+                "icon": "",
+                "type": "",
+                "cssx": "",
+                "uxClass": "",
+                "des": "",
+                "key": "",
+                "value": "10"
+            },
+            {
+                "id": "",
+                "title": "Pan Verification",
+                "icon": "",
+                "type": "",
+                "cssx": "",
+                "uxClass": "",
+                "des": "",
+                "key": "",
+                "value": "40"
+            },
+            {
+                "id": "",
+                "title": "Add Personal Details",
+                "icon": "",
+                "type": "",
+                "cssx": "",
+                "uxClass": "",
+                "des": "",
+                "key": "",
+                "value": "20"
+            },
+            {
+                "id": "",
+                "title": "Bank Verification",
+                "icon": "",
+                "type": "",
+                "cssx": "",
+                "uxClass": "",
+                "des": "",
+                "key": "",
+                "value": "30"
+            },
+            {
+                "id": "",
+                "title": "Document Upload",
+                "icon": "",
+                "type": "",
+                "cssx": "",
+                "uxClass": "",
+                "des": "",
+                "key": "",
+                "value": "40"
+            },
+            {
+                "id": "",
+                "title": "Esign Verification",
+                "icon": "",
+                "type": "",
+                "cssx": "",
+                "uxClass": "",
+                "des": "",
+                "key": "",
+                "value": "50"
+            },
+            {
+                "id": "",
+                "title": "Payment Verification",
+                "icon": "",
+                "type": "",
+                "cssx": "",
+                "uxClass": "",
+                "des": "",
+                "key": "",
+                "value": "10"
+            },
+            {
+                "id": "",
+                "title": "Add Aadhar",
+                "icon": "",
+                "type": "",
+                "cssx": "",
+                "uxClass": "",
+                "des": "",
+                "key": "",
+                "value": "40"
+            }
+        ]
+    },
+    "table": {
+        "id": "",
+            "title": "Total Cases",
+            "icon": "",
+            "type": "",
+            "cssx": "",
+            "uxClass": "muli-30pt p-2 pt-2 custFontFamilyMuliSemiBold custColorDark",
+            "des": [
+            {
+                "id": "",
+                "title": "",
+                "icon": "assets/icon/menuIcon/Dashboard.svg",
+                "type": "icon",
+                "cssx": "",
+                "uxClass": "",
+                "des": [],
+                "key": "",
+                "validators": {
+                    "required": true
+                },
+                "value": ""
+            },
+            {
+                "id": "",
+                "title": "",
+                "icon": "assets/icon/menuIcon/Dashboard.svg",
+                "type": "icon",
+                "cssx": "",
+                "uxClass": "",
+                "des": [],
+                "key": "",
+                "validators": {
+                    "required": true
+                },
+                "value": ""
+            }],
+            "key": "",
+            "validators": "",
+            "options": "",
+            "value": [
+            {
+                "LeadID": {
+                    "id": "",
+                    "title": "L123456",
+                    "icon": "",
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "",
+                    "des": [],
+                    "key": "",
+                    "validators": "",
+                    "options": [],
+                    "value": ""
+                },
+                "LeadName": {
+                    "id": "",
+                    "title": "Pratham",
+                    "icon": "",
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "",
+                    "des": [],
+                    "key": "",
+                    "validators": "",
+                    "options": [],
+                    "value": ""
+                },
+                "EmailID": {
+                    "id": "",
+                    "title": "partham@gmail.com",
+                    "icon": "",
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "",
+                    "des": [],
+                    "key": "",
+                    "validators": "",
+                    "options": [],
+                    "value": ""
+                },
+                "LeadOwner": {
+                    "id": "",
+                    "title": "Partham",
+                    "icon": "",
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "",
+                    "des": [],
+                    "key": "",
+                    "validators": "",
+                    "options": [],
+                    "value": ""
+                },
+                "MobileNumber": {
+                    "id": "",
+                    "title": "7058982028",
+                    "icon": "",
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "",
+                    "des": [],
+                    "key": "",
+                    "validators": "",
+                    "options": [],
+                    "value": ""
+                },
+                "Product": {
+                    "id": "",
+                    "title": "Digital Gold",
+                    "icon": "",
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "",
+                    "des": [],
+                    "key": "",
+                    "validators": "",
+                    "options": [],
+                    "value": ""
+                },
+                "LeadSource": {
+                    "id": "",
+                    "title": "Facebook",
+                    "icon": "",
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "",
+                    "des": [],
+                    "key": "",
+                    "validators": "",
+                    "options": [],
+                    "value": ""
+                },
+                "Campaign": {
+                    "id": "",
+                    "title": "Social Media",
+                    "icon": "",
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "",
+                    "des": [],
+                    "key": "",
+                    "validators": "",
+                    "options": [],
+                    "value": ""
+                },
+                "KRAVerified": {
+                    "id": "",
+                    "title": "Yes",
+                    "icon": "",
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "",
+                    "des": [],
+                    "key": "",
+                    "validators": "",
+                    "options": [],
+                    "value": ""
+                },
+                "Status": {
+                    "id": "",
+                    "title": "Call Ringing",
+                    "icon": "",
+                    "type": "dropDown",
+                    "cssx": "",
+                    "uxClass": "",
+                    "des": [],
+                    "key": "",
+                    "validators": "",
+                    "options": [
+                        "Enable",
+                        "Disable"
+                    ],
+                    "value": ""
+                },
+                "CreatedOn": {
+                    "id": "",
+                    "title": "07/02/2022",
+                    "icon": "",
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "",
+                    "des": [],
+                    "key": "",
+                    "validators": "",
+                    "options": [],
+                    "value": ""
+                },
+                "CreatedBy": {
+                    "id": "",
+                    "title": "system",
+                    "icon": "",
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "",
+                    "des": [],
+                    "key": "",
+                    "validators": "",
+                    "options": [],
+                    "value": ""
+                },
+                "ModifiedOn": {
+                    "id": "",
+                    "title": "26/08/2022",
+                    "icon": "",
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "",
+                    "des": [],
+                    "key": "",
+                    "validators": "",
+                    "options": [],
+                    "value": ""
+                },
+                "ModifiedBy": {
+                    "id": "",
+                    "title": "System",
+                    "icon": "",
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "",
+                    "des": [],
+                    "key": "",
+                    "validators": "",
+                    "options": [],
+                    "value": ""
+                },
+                "Reason": {
+                    "id": "",
+                    "title": "Duplicate Mobile Number",
+                    "icon": "",
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "",
+                    "des": [],
+                    "key": "",
+                    "validators": "",
+                    "options": [],
+                    "value": ""
+                },
+                "Action": {
+                    "id": "",
+                    "title": "",
+                    "icon": [
+                        "call",
+                        "email"
+                    ],
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "",
+                    "des": [],
+                    "key": "",
+                    "validators": "",
+                    "options": [],
+                    "value": ""
+                }
+            },
+            {
+                "LeadID": {
+                    "id": "",
+                    "title": "L123456",
+                    "icon": "",
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "",
+                    "des": [],
+                    "key": "",
+                    "validators": "",
+                    "options": [],
+                    "value": ""
+                },
+                "LeadName": {
+                    "id": "",
+                    "title": "Pratham",
+                    "icon": "",
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "",
+                    "des": [],
+                    "key": "",
+                    "validators": "",
+                    "options": [],
+                    "value": ""
+                },
+                "EmailID": {
+                    "id": "",
+                    "title": "partham@gmail.com",
+                    "icon": "",
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "",
+                    "des": [],
+                    "key": "",
+                    "validators": "",
+                    "options": [],
+                    "value": ""
+                },
+                "LeadOwner": {
+                    "id": "",
+                    "title": "Partham",
+                    "icon": "",
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "",
+                    "des": [],
+                    "key": "",
+                    "validators": "",
+                    "options": [],
+                    "value": ""
+                },
+                "MobileNumber": {
+                    "id": "",
+                    "title": "7058982028",
+                    "icon": "",
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "",
+                    "des": [],
+                    "key": "",
+                    "validators": "",
+                    "options": [],
+                    "value": ""
+                },
+                "Product": {
+                    "id": "",
+                    "title": "Digital Gold",
+                    "icon": "",
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "",
+                    "des": [],
+                    "key": "",
+                    "validators": "",
+                    "options": [],
+                    "value": ""
+                },
+                "LeadSource": {
+                    "id": "",
+                    "title": "Facebook",
+                    "icon": "",
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "",
+                    "des": [],
+                    "key": "",
+                    "validators": "",
+                    "options": [],
+                    "value": ""
+                },
+                "Campaign": {
+                    "id": "",
+                    "title": "Social Media",
+                    "icon": "",
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "",
+                    "des": [],
+                    "key": "",
+                    "validators": "",
+                    "options": [],
+                    "value": ""
+                },
+                "KRAVerified": {
+                    "id": "",
+                    "title": "Yes",
+                    "icon": "",
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "",
+                    "des": [],
+                    "key": "",
+                    "validators": "",
+                    "options": [],
+                    "value": ""
+                },
+                "Status": {
+                    "id": "",
+                    "title": "Call Ringing",
+                    "icon": "",
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "",
+                    "des": [],
+                    "key": "",
+                    "validators": "",
+                    "options": [
+                        "Enable",
+                        "Disable"
+                    ],
+                    "value": ""
+                },
+                "CreatedOn": {
+                    "id": "",
+                    "title": "07/02/2022",
+                    "icon": "",
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "",
+                    "des": [],
+                    "key": "",
+                    "validators": "",
+                    "options": [],
+                    "value": ""
+                },
+                "CreatedBy": {
+                    "id": "",
+                    "title": "system",
+                    "icon": "",
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "",
+                    "des": [],
+                    "key": "",
+                    "validators": "",
+                    "options": [],
+                    "value": ""
+                },
+                "ModifiedOn": {
+                    "id": "",
+                    "title": "26/08/2022",
+                    "icon": "",
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "",
+                    "des": [],
+                    "key": "",
+                    "validators": "",
+                    "options": [],
+                    "value": ""
+                },
+                "ModifiedBy": {
+                    "id": "",
+                    "title": "System",
+                    "icon": "",
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "",
+                    "des": [],
+                    "key": "",
+                    "validators": "",
+                    "options": [],
+                    "value": ""
+                },
+                "Reason": {
+                    "id": "",
+                    "title": "Duplicate Mobile Number",
+                    "icon": "",
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "",
+                    "des": [],
+                    "key": "",
+                    "validators": "",
+                    "options": [],
+                    "value": ""
+                },
+                "Action": {
+                    "id": "",
+                    "title": "",
+                    "icon": [
+                        "call",
+                        "email"
+                    ],
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "",
+                    "des": [],
+                    "key": "",
+                    "validators": "",
+                    "options": [],
+                    "value": ""
+                }
+            }
+        ]
+    }
+}

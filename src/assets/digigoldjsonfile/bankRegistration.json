@@ -1,0 +1,6 @@
+{
+    "Status": 1,
+    "ErrorCode": 422,
+    "MessageType": "Fail",
+    "Message": "Same Bank Account Already taken Or UniqueId not Register"
+}

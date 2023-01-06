@@ -1,0 +1,7 @@
+"occupations" :[
+    {"value": "occupation-0","viewValue":"Business"},
+    {"value": "occupation-1","viewValue": "Service"},
+    {"value": "occupation-2","viewValue": "Self-employed"},
+    {"value": "occupation-3","viewValue": "Student"},
+    {"value": "occupation-4","viewValue": "Others"}
+]

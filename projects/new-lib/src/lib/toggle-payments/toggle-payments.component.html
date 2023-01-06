@@ -1,0 +1,47 @@
+
+<div *ngIf="showModal">
+  <div class="cusModalContainer">
+    <ion-grid class="fixed-bottom mb-5">
+        <ion-row>
+            <ion-col [size]="'12'" class="mb-2">
+                <button class="btn custBackgroundColorWhite custTextAlignCenter d-flex p-2" >
+                    <ion-img [src]="imageList?.startSipIcon" class="custPopImgHeight"></ion-img>
+                    <span class="custFontFamilyMuliSemiBold muli-10pt custColorDark custMarginSpace">{{'startSIP' | translate}}</span>
+                </button>
+            </ion-col>
+            <ion-col [size]="'12'" class="mb-2">
+                <button class="btn custBackgroundColorWhite custTextAlignCenter d-flex p-2">
+                    <ion-img [src]="imageList?.addToCard" class="custPopImgHeight"></ion-img>
+                <span class="custFontFamilyMuliSemiBold muli-10pt custColorDark custMarginSpace">{{'addToCart' | translate}}</span>
+                </button>
+            </ion-col>
+            <ion-col [size]="'12'" class="mb-2" >
+                <button class="btn custBackgroundColorWhite custTextAlignCenter d-flex p-2">
+                    <ion-img [src]="imageList?.compareicon" class="custPopImgHeight"></ion-img>
+                <span class="custFontFamilyMuliSemiBold muli-10pt custColorDark custMarginSpace">{{'compare' | translate}}</span>
+                </button>
+            </ion-col>
+            <ion-col [size]="'12'" class="mb-3" >
+                <button class="btn custBackgroundColorWhite custTextAlignCenter d-flex p-2">
+                    <ion-img [src]="imageList?.productShareIcon" class="custPopImgHeight"></ion-img>
+                    <span class="custFontFamilyMuliSemiBold muli-10pt custColorDark custMarginSpace">{{'share' | translate}}</span>
+                </button>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+  </div>
+  </div>
+<ion-grid class="fixed-bottom" >
+  <ion-row>
+      <ion-col [size]="'2'" (click)="openModal()">
+          <button type="button" class="btn custButtonOutLine custColorBrightCyan custButtonHeight custBackgroundColorWhite">
+              <img [src]="showModal?imageList?.closePopUpIcon:imageList?.addIcon" class="custAddIconHeight">
+          </button>
+      </ion-col>
+      <ion-col [size]="'10'" (click)="investNow()">
+        <button class="btn h-100 w-100 custBackgroundColorParakeetGreen">
+            <span class="custColorWhite custFontFamilyMuliBold muli-16pt">{{'investNow' | translate}}</span>
+        </button>
+    </ion-col>
+  </ion-row>
+</ion-grid>

@@ -1,0 +1,47 @@
+{
+    "controls":[
+ {
+        "name": "EnterYourName",
+        "label": "Enter your Namer",
+        "value": "",
+        "type": "text",
+        
+        "validators": {
+           "required": true
+        }
+      },
+ {
+        "name": "EmailId",
+        "label": "Enter your Email Id",
+        "value": "",
+        "type": "text",
+        "validators": {
+           "required": true
+        }
+      },
+
+      {
+        "name": "dOB",
+        "label": "DOB",
+        "value": "",
+        "type": "date",
+        "validators": {
+          "required": true
+          
+        }
+      },
+      
+      {
+        "name": "qualification",
+        "label": "Qualification",
+        "value": "",
+        "type": "select",
+        "options":[
+          "10th","12th","Undergraduate","Graduate","Post Graduate","Professional"
+        ],
+        "validators": {
+           "required": true
+        }
+      }
+    ]
+  }

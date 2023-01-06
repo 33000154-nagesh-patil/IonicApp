@@ -1,0 +1,81 @@
+  <ion-header>
+    <ion-toolbar class="custBackgroundDynamicColorWhite">
+      <ion-grid>
+        <ion-row>
+          <ion-col [size]="'1'" id="goBack" class=" ">
+            <div class="custTextAlignCenter  mt-2">
+              <ion-img [src]="imageList?.arrow" class="custWithoutTextImg "></ion-img>
+            </div>
+          </ion-col>
+          <ion-col [size]="'11'">
+            <span class="custFontFamilyMuliBold muli-16pt custColorDark custLineHight40">Our Services</span>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-toolbar>
+  </ion-header>
+
+
+  <ion-content>
+    <ion-grid class="mx-2 pb-5">
+      <ion-row class="mt-3 ">
+        <p class="custFontFamilyMuliRegular muli-16pt custColorDark">Choose the services you wish to avail</p>
+      </ion-row>
+      <form>
+        <ion-row class="mt-2" *ngFor="let item of oursdata ">
+          <mat-accordion class="w-100 py-2">
+            <mat-expansion-panel  [expanded]="true"
+              class="">
+              <mat-expansion-panel-header>
+                <mat-panel-title class="p-2">
+
+                  <ion-img [src]="item.icon" class="custwealtphIconImg border p-2 rounded-3 mt-1"></ion-img>
+                  <p class="custFontFamilyMuliBold muli-16pt ms-2  mt-3 ">{{item.Title}}</p>
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <ion-row class="mt-4" *ngFor="let x of item.Categories">
+                <ion-row class=" w-100">
+                  <p class="custFontFamilyMuliBold muli-14pt">{{x?.Title}}</p>
+                </ion-row>
+
+                <ion-row class="">
+                  <ion-row class="boxed" *ngFor="let y of x.Buttons">
+                    <div  class="p-2 border rounded-3 m-1"
+                    [ngClass]="(y.selected)?'custBackgroundColorBrightCyan':''"
+                    (click)="selectedButton(y)" (click)="ourService($event)">
+                      {{y.text}}
+                    </div>
+                  </ion-row>
+                </ion-row>
+
+              </ion-row>
+
+
+            </mat-expansion-panel>
+          </mat-accordion>
+        </ion-row>
+      </form>
+
+      <ion-col [size]="'6'" class="px-1" (click)="skip('OurServices')">
+        <ion-button
+          expand="block"
+          class="text-capitalize custTryButton d-flex justify-content-center"
+        >
+          <span
+            class="custFontFamilyMuliRegular text-center muli-14pt custColorBrightCyan"
+            >{{ "skipLabel" | translate }}</span
+          >
+        </ion-button>
+      </ion-col>
+
+      <ion-row class="custBackgroundColorWhite h-50 border">
+        <button class="btn  text-center custBackgroundColorBrightCyan fixed-bottom mx-2 mb-2" (click)="navigateToPage()"
+           [disabled]="enable" [disabled]="!ifChecked">
+          <span class="custColorWhite custFontFamilyMuliBold ">Continue</span>
+        </button>
+      </ion-row>
+
+
+    </ion-grid>
+
+  </ion-content>

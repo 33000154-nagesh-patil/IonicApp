@@ -1,0 +1,185 @@
+.custImgExpo{
+    height: 14px;
+    width: 14px;
+}
+
+// mutual fund card
+
+.backArrow{
+    height: 18px;
+    width: 10px;
+}
+
+.custHelpIcon{
+    height: 45px;
+    width:45px
+}
+
+.custMargin {
+    margin-top: 100px;
+}
+
+.custImgExpo{
+    height: 14px;
+    width: 14px;
+}
+
+.checkbox2{
+    height: 18px;
+    width: 18px;
+}
+
+.custBottom {
+    margin-bottom: -20px;
+}
+.something2 {
+  display: inline;
+  filter: invert(59%) sepia(31%) saturate(930%) hue-rotate(47deg) brightness(93%) contrast(84%);
+  height: 10px;
+}
+
+.custBookmark {
+    height: 28px;
+    width: 18px;
+    margin-right: 5px;
+    margin-top: -2px;
+}
+
+.muli-17pt {
+    font-size: 17px;
+}
+.something2 {
+    display: inline;
+    filter: invert(59%) sepia(31%) saturate(930%) hue-rotate(47deg) brightness(93%) contrast(84%);
+    height: 10px;
+}
+
+.something {
+    height: 45px;
+    width: 45px;
+}
+
+.custInvestArrow{
+    height: 14px;
+    width: 14px;
+    margin-top: 14px;
+}
+
+.checkbox2 input:checked {
+    // border-color: red;
+    background-color:red;
+}
+.returnPercent{
+    margin-top: 5px;
+}
+
+.StepProgress {
+    position: relative;
+    padding-left: 45px;
+    list-style: none;
+    &::before {
+      display: inline-block;
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 15px;
+      width: 30px;
+      height: 86%;
+      border-left: 2px dashed #DFDFDF;
+    }
+    
+    &-item {
+      position: relative;
+      counter-increment: list;
+      
+      &:not(:last-child) {
+        padding-bottom: 20px;
+      }
+      
+      &::before {
+        display: inline-block;
+        content: '';
+        position: absolute;
+        left: -30px;
+        height: 100%;
+        width: 10px;
+      }
+      
+      &::after {
+        content: ''!important;
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: -48px;
+      }
+      
+  
+      
+      &.is-done {
+        &::after {
+          width:36px!important;
+          height:36px!important;
+          text-align: center;
+        }
+      }
+      
+      &.current {
+        &::before {
+          border-left: 2px dashed  var(--custBattlePGry);
+          margin-top: 5px;
+        }
+        
+        &::after {
+          content: "";
+          padding-top: 1px;
+           width:20px;
+           height:20px;
+          top: -4px;
+          left: -39px;
+          font-size: 14px;
+          text-align: center;
+          color: var(--CustLightGreen);
+          border: 2px solid var(--custBattlePGry);
+          background-color: var(--custBattlePGry);
+        }
+      }
+    }
+    strong {
+        display: block;
+    }
+}
+.StepProgress{
+&-item:nth-child(1)::after{
+  background-image: url("../../../../../../../src/assets/Images/Group_21929.svg");
+}
+&-item:nth-child(2)::after{
+  background-image: url("../../../../../../../src/assets/Images/Group_21928.svg");
+}
+&-item:nth-child(3)::after{
+  background-image: url("../../../../../../../src/assets/Images/Group_21927.svg");
+}
+&-item:nth-child(4)::after{
+  background-image: url("../../../../../../../src/assets/Images/Group_21925.svg");
+}
+}
+
+.mat-expansion-panel {
+    background: transparent;
+    color: rgba(0,0,0,.87);
+}
+
+.mat-expansion-panel:not([class*=mat-elevation-z]) {
+    box-shadow: none;
+}
+
+::ng-deep .mat-expansion-panel-body {
+    padding: 0px !important;
+}
+
+.mat-expansion-panel:not(.mat-expanded):not([aria-disabled=true]) .mat-expansion-panel-header:hover {
+    background: transparent;
+}
+
+.mat-expansion-panel-header {
+    padding: 0px 15px !important;
+}

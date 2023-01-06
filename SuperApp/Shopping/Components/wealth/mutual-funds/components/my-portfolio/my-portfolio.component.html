@@ -1,0 +1,74 @@
+
+
+<!-- 
+<ion-content>
+  <ion-list-header color="light">My Portfolio</ion-list-header>
+  <ion-card class="welcome-card">
+    <ion-card-header>
+      <ion-card-subtitle>An overview of your MF investments
+</ion-card-subtitle>
+      <ion-card-title>Game of Thrones</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <canvas #barChart></canvas>
+    </ion-card-content>
+  </ion-card>
+</ion-content> -->
+
+
+  <ion-row>
+    <!-- <ion-col [size]="'1'">
+      <ion-img src="assets/icon/eyeIcon.svg" class="icon text-end mt-3 custColorDarkishBlue"></ion-img>
+    </ion-col>
+     -->
+     
+  </ion-row>
+ 
+  <ion-card>
+    <ion-card-header>
+      <ion-row class="custFontFamilyMuliRegular muli-10pt custLineHight28 custColorGreyish">Current Value</ion-row> 
+      <ion-row class="custFontFamilyRobotoCondensed muli-14pt  custColorDark">{{currencySymbol}} {{(SumOfCurrantValue).toFixed(2)}}
+      </ion-row>
+      <ion-row class="custFontFamilyMuliRegular muli-10pt custLineHight12 custColorGreyish">as on 19 Mar 2021,12:13pm
+      </ion-row>
+    </ion-card-header>
+    <ion-card-content>
+    <ion-row>
+      <!-- <div class="container px-0">
+        <canvas id="linechart"></canvas>
+       
+        <button class=" Equity-btn custFontFamilyMuliBold muli-10pt mx-2 p-1" [ngClass]="{'active':Buttondata  == '1m'}"  (click)="activebutton('1m',0)">1m</button>
+        <button class="Equity-btn custFontFamilyMuliBold muli-10pt mx-2 p-1" [ngClass]="{'active':Buttondata  == '3m'}" (click)="activebutton('3m',1)">3m</button>
+        <button class="Equity-btn custFontFamilyMuliBold muli-10pt mx-2 p-1" [ngClass]="{'active': Buttondata == '6m'}" (click)="activebutton('6m',2)">6m</button>
+        <button class="Equity-btn custFontFamilyMuliBold muli-10pt mx-2 p-1" [ngClass]="{'active':Buttondata  == '1y'}" (click)="activebutton('1y',3)">1y</button>
+        <button class="Equity-btn custFontFamilyMuliBold muli-10pt mx-2 p-1" [ngClass]="{'active': Buttondata == '3y'}" (click)="activebutton('3y',4)">3y</button>
+        <button class="Equity-btn custFontFamilyMuliBold muli-10pt mx-2 p-1" [ngClass]="{'active':Buttondata  == '5y'}" (click)="activebutton('5y',5)">5y</button>
+        <button class="Equity-btn custFontFamilyMuliBold muli-10pt mx-2 p-1" [ngClass]="{'active':Buttondata  == 'Max'}" (click)="activebutton('Max',6)">Max</button>
+
+
+      </div> -->
+
+      <ion-col [size]="'4'">
+       
+
+      </ion-col>
+
+    </ion-row>
+    <ion-row>
+      <ion-col [size]="'5'" class=" custFontFamilyMuliRegular muli-12pt custColorGreyish mt-1">Invested Amount
+      </ion-col>
+      <ion-col [size]="'4'" class=" muli-12pt custColorGreyish mt-1">Returns</ion-col>
+      <!-- <ion-col [size]="'3'" class=" muli-12pt custColorGreyish mt-1">XIRR <img [src]="imageList?.helpIcon" class="sizehelpicon" ></ion-col> -->
+
+
+
+      <ion-col [size]="'5'" class="custFontFamilyRobotoCondensed muli-14pt custColorDark "> {{currencySymbol}} {{InvestedAmount}}
+      </ion-col>
+      <ion-col [size]="'4'"  *ngIf="TotalReturnPer>0"class=" custFontFamilyRobotoCondensed muli-14pt custColorParakeetGreen"> <img [src]="imageList?.caretUpSharp"  class="something2"> {{TotalReturnPer}}%</ion-col>
+      <ion-col [size]="'4'"  *ngIf="TotalReturnPer<0"class=" custFontFamilyRobotoCondensed muli-14pt custColorcustFadedRed"><img [src]="imageList?.DownPerArrow"  >  {{TotalReturnPer}}%</ion-col>
+
+      <!-- <ion-col [size]="'3'" class=" custFontFamilyRobotoCondensed muli-14pt custColorGreyish">27.26%</ion-col> -->
+    </ion-row>
+  </ion-card-content>
+  </ion-card>
+

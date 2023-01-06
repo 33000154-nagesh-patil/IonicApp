@@ -1,0 +1,94 @@
+{
+    "KYCPending":[
+        {
+        "icon":"assets/icon/pendingIcon.svg",
+        "title":"KYC - Pending"
+    }
+],
+    "objectContent": [
+        {
+            "contentType": "3x2 Grid",
+            "Title": "Discover Mutual Funds for Investments",
+            "content": [
+                {
+                    "icon": "assets/icon/group3.svg",
+                    "name": "Tax Saver"
+                },
+                {
+                    "icon": "assets/icon/group2.svg",
+                    "name": "New Fund Offer"
+                },
+                {
+                    "icon": "assets/icon/group1.svg",
+                    "name": "Wealth Builder"
+                },
+                {
+                    "icon": "assets/icon/group4.svg",
+                    "name": "Top Rated Fund"
+                },
+                {
+                    "icon": "assets/icon/group5.svg",
+                    "name": "Annual Return Fund"
+                },
+                {
+                    "icon": "assets/icon/group6.svg",
+                    "name": "Steady Income"
+                }
+            ]
+        },
+        {
+            "contentType": "cardList",
+            "Title": "Explore Funds",
+            "card": [
+                {
+                    "row1": {
+                        "icon": "assets/icon/hdfc.png",
+                        "title": "HDFC Focused 30 Fund",
+                        "description": "",
+                        "action": "assets/icon/leftArrowIcon.svg"
+                    },
+                    "row2": {
+                        "col1": "Min Invest",
+                        "val1": 1000,
+                        "col2": "Categoury Return",
+                        "val2": "-7.60",
+                        "col3": "Returns",
+                        "val3": 18.65
+                    }
+                },
+                {
+                    "row1": {
+                        "icon": "assets/icon/hdfc.png",
+                        "title": "HDFC Focused 30 Fund",
+                        "description": "",
+                        "action": "assets/icon/leftArrowIcon.svg"
+                    },
+                    "row2": {
+                        "col1": "Min Invest",
+                        "val1": 1000,
+                        "col2": "Categoury Return",
+                        "val2": "-7.60",
+                        "col3": "Returns",
+                        "val3": 18.65
+                    }
+                },
+                {
+                    "row1": {
+                        "icon": "assets/icon/hdfc.png",
+                        "title": "HDFC Focused 30 Fund",
+                        "description": "",
+                        "action": "assets/icon/leftArrowIcon.svg"
+                    },
+                    "row2": {
+                        "col1": "Min Invest",
+                        "val1": 1000,
+                        "col2": "Categoury Return",
+                        "val2": "-7.60",
+                        "col3": "Returns",
+                        "val3": 18.65
+                    }
+                }
+            ]
+        }
+    ]
+}

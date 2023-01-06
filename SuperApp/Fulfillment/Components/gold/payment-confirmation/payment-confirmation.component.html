@@ -1,0 +1,101 @@
+<ion-header>
+  <ion-toolbar class="custBackgroundDynamicColorWhite">
+    <ion-grid>
+      <ion-row>
+        <ion-col [size]="'1'" (click)="dismiss()">
+         <ion-img [src]="imageList?.arrow" class="custInvestArrow"></ion-img>
+        </ion-col>
+        <ion-col [size]="'11'">
+          <span class="custFontFamilyMuliBold muli-16pt custColorDark custLineHight40">{{'paymentConfirmation' | translate}}</span>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="contentBackground">
+  <ion-grid class="align-items-center h-100">
+    <ion-row>
+      <ion-col [size]="'12'" class="custTextAlignCenter">
+        <ion-img [src]="imageList?.succsessIcon" class="custImgSucc"></ion-img>
+      </ion-col>
+      <ion-col [size]="'12'" class="custTextAlignCenter">
+        <span class="custFontFamilyMuliBold muli-16pt custLineHight22 custColorDark" *ngIf=" transactionData?.TransactionType=='Buy'&&transactionData?.type=='gold'">{{'successFullMessageGold' | translate}}</span>
+        <span class="custFontFamilyMuliBold muli-16pt custLineHight22 custColorDark" *ngIf="transactionData?.TransactionType=='Buy'&&transactionData?.type=='silver'">{{'successFullMessageSilver' | translate}}</span>
+        <span class="custFontFamilyMuliBold muli-16pt custLineHight22 custColorDark" *ngIf="transactionData?.TransactionType=='sell' && transactionData?.type=='gold' ">{{'successFullMessageGoldsell' | translate}}</span>
+        <span class="custFontFamilyMuliBold muli-16pt custLineHight22 custColorDark" *ngIf="transactionData?.TransactionType=='sell' && transactionData?.type=='silver' ">{{'successFullMessageSilversell' | translate}}</span>
+        <!-- <span class="custFontFamilyMuliBold muli-16pt custLineHight22 custColorDark" *ngIf="transactionData?.type!='Gold'">{{'paymentSuccess' | translate}}</span> -->
+      </ion-col>
+      <ion-col [size]="'12'" class="custTextAlignCenter">
+        <span class="custFontFamilyMuliBold muli-16pt custLineHight22 custColorDark">{{currencySymbol}}{{ transactionData?.totalAmount| currencyCommasHundreds}}</span>
+      </ion-col>
+      <ion-col [size]="'12'" class="custTextAlignCenter">
+        <span class="custFontFamilyMuliRegular muli-12pt custLineHight18 custColorBattlePGry" *ngIf="transactionData?.TransactionType=='Buy'&&transactionData?.type=='gold'">{{'successFullMessageGoldNotification' | translate}}</span>
+        <span class="custFontFamilyMuliRegular muli-12pt custLineHight18 custColorBattlePGry" *ngIf="transactionData?.TransactionType=='Buy'&&transactionData?.type=='silver'">{{'successFullMessageSilverNotification' | translate}}</span>
+        <span class="custFontFamilyMuliRegular muli-12pt custLineHight18 custColorBattlePGry" *ngIf="transactionData?.TransactionType=='sell'">Amount Will be deposited within two working days</span>
+      </ion-col>
+      <ion-col [size]="'12'">
+        <ion-card class="custBackgroundColorWhite">
+          <!-- Amount Will be deposited within two working days -->
+          <ion-card-content>
+            <ion-grid>
+              <ion-row>
+                <ion-col [size]="'12'">
+                  <span class="custFontFamilyMuliRegular muli-14pt custLineHight20 custColorDark">{{transactionData?.Title}}</span>
+                </ion-col>
+                <ion-col [size]="'12'">
+                  <span class="custFontFamilyRobotoCondensed muli-12pt custLineHight15 custColorGreyish">{{transactionData?.Date | date}}</span>
+                </ion-col>
+                <ion-col [size]="'12'">
+                 <ion-grid>
+                   <ion-row>
+                     <ion-col [size]="'4'">
+                       <span class="custFontFamilyMuliRegular muli-10pt custLineHight15 custColorWarmGrey">{{'units' | translate}}</span><br>
+                       <span class="custFontFamilyRobotoCondensed muli-14pt custLineHight18 custColorDark">{{transactionData?.quantity}}</span>
+                     </ion-col>
+                     <ion-col [size]="'4'">
+                      <span class="custFontFamilyMuliRegular muli-10pt custLineHight15 custColorWarmGrey" *ngIf="transactionData?.TransactionType=='Buy'">{{'buyPrice' | translate}}</span>
+                      <span class="custFontFamilyMuliRegular muli-10pt custLineHight15 custColorWarmGrey" *ngIf="transactionData?.TransactionType=='sell'">{{'sellPrice' | translate}}</span><br>
+                      <span  class="custFontFamilyRobotoCondensed muli-14pt custLineHight18 custColorDark">{{currencySymbol}}{{transactionData?.rate | currencyCommasHundreds}}</span><br>
+                      <!-- <span  class="custFontFamilyRobotoCondensed muli-10pt custLineHight15 custColorWarmGrey" *ngIf=" transactionData?.TransactionType=='buy'"> 3% GST</span> -->
+                     </ion-col>
+                     <ion-col [size]="'4'">
+                      <span class="custFontFamilyMuliRegular muli-10pt custLineHight15 custColorWarmGrey">{{'transactionType' | translate}}</span><br>
+                      <span class="custFontFamilyRobotoCondensed muli-14pt custLineHight18 custColorDark">{{transactionData?.TransactionType}}</span>
+                     </ion-col>
+                   </ion-row>
+                 </ion-grid>
+                </ion-col>
+                <ion-col [size]="'12'">
+                 <span class="custFontFamilyMuliRegular muli-10pt custLineHight15 custColorWarmGrey">{{'transactionID' | translate}}</span><br>
+                 <span class="custFontFamilyRobotoCondensed muli-14pt custLineHight18 custColorDark">{{transactionData.transactionId}}<img [src]="imageList?.copyimage" alt="" class="custCopyTwoPaper ms-1" (click)="copyToClipboard()">
+                  </span>
+                 
+                 
+                  
+ 
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col [size]="'12'" class="fixed-bottom">
+        <ion-grid>
+          <ion-row>
+            <!-- <ion-col [size]="'6'">
+              <button class="btn w-100 text-center custBackgroundColorWhite custButtonOutLine" (click)="trackOrder()">
+                <span class="custColorBrightCyan custFontFamilyMuliBold muli-16pt">{{'trackOrder' | translate}}</span>
+              </button>
+            </ion-col> -->
+            <ion-col [size]="'12'">
+              <button class="btn w-100 text-center custBackgroundColorBrightCyan" (click)="navigateTovault()">
+                <span class="custColorWhite custFontFamilyMuliBold muli-16pt">Explore More Jobs</span>
+              </button>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

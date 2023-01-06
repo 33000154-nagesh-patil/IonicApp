@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Group_22352" data-name="Group 22352" transform="translate(-2794 -4000)">
+    <g id="Group_22238" data-name="Group 22238" transform="translate(2794 4000)">
+      <rect id="Rectangle_9570" data-name="Rectangle 9570" width="24" height="24" fill="#fff"/>
+    </g>
+    <g id="Group_22240" data-name="Group 22240" transform="translate(2794 4002)">
+      <g id="Group_22181" data-name="Group 22181" transform="translate(0)">
+        <g id="Group_14372" data-name="Group 14372">
+          <g id="Group_548" data-name="Group 548" transform="translate(3.087 3.743)">
+            <path id="Path_21128" data-name="Path 21128" d="M.483-.716V10.862H17.844V-.716" transform="translate(-0.483 3.997)" fill="none" stroke="#41c1f1" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"/>
+          </g>
+          <g id="Group_546" data-name="Group 546">
+            <path id="Path_1035" data-name="Path 1035" d="M23.249,36.071,12.11,27.915a.61.61,0,0,0-.721,0L.249,36.071a.611.611,0,1,0,.721.985l10.779-7.892,10.779,7.892a.611.611,0,0,0,.721-.985Z" transform="translate(0.001 -27.797)" fill="#41c1f1"/>
+          </g>
+        </g>
+      </g>
+      <g id="Group_22239" data-name="Group 22239" transform="translate(7.533 12.253)">
+        <g id="Ellipse_1401" data-name="Ellipse 1401" fill="#fff" stroke="#039" stroke-width="0.8">
+          <circle cx="4.217" cy="4.217" r="4.217" stroke="none"/>
+          <circle cx="4.217" cy="4.217" r="3.817" fill="none"/>
+        </g>
+        <path id="loan" d="M23.811,27.973a.315.315,0,1,0,0,.629h.629a.941.941,0,0,1,.888.639H23.811a.315.315,0,1,0,0,.629h1.512a.942.942,0,0,1-.882.619h-.629a.315.315,0,0,0-.315.315.014.014,0,0,0,0,0,.311.311,0,0,0,.091.227l1.888,1.888a.315.315,0,0,0,.445-.445l-1.371-1.371a1.571,1.571,0,0,0,1.429-1.237h.349a.315.315,0,1,0,0-.629h-.345a1.56,1.56,0,0,0-.291-.639h.637a.315.315,0,1,0,0-.629H23.811Z" transform="translate(-20.81 -26.078)" fill="#039" stroke="#039" stroke-width="0.1"/>
+      </g>
+    </g>
+  </g>
+</svg>

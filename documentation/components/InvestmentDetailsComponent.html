@@ -1,0 +1,885 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>rsm documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">rsm documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  InvestmentDetailsComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>projects/gold-investment-details/components/investment-details/investment-details.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-investment-details</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./investment-details.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./investment-details.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#step" >step</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#redirectToDetails" >redirectToDetails</a>
+                            </li>
+                            <li>
+                                <a href="#setStep" >setStep</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Inputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#currentCountry" >currentCountry</a>
+                            </li>
+                            <li>
+                                <a href="#currentDigiData" >currentDigiData</a>
+                            </li>
+                            <li>
+                                <a href="#currentInvestmentDetails" >currentInvestmentDetails</a>
+                            </li>
+                            <li>
+                                <a href="#goldSilverData" >goldSilverData</a>
+                            </li>
+                            <li>
+                                <a href="#imageList" >imageList</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Outputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#sendToDetailPage" >sendToDetailPage</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor()</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">projects/gold-investment-details/components/investment-details/investment-details.component.ts:15</a></div>
+                            </td>
+                        </tr>
+
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    <h3 id="inputs">Inputs</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="currentCountry"></a>
+                        <b>currentCountry</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="10" class="link-to-prism">projects/gold-investment-details/components/investment-details/investment-details.component.ts:10</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="currentDigiData"></a>
+                        <b>currentDigiData</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="9" class="link-to-prism">projects/gold-investment-details/components/investment-details/investment-details.component.ts:9</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="currentInvestmentDetails"></a>
+                        <b>currentInvestmentDetails</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">projects/gold-investment-details/components/investment-details/investment-details.component.ts:12</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="goldSilverData"></a>
+                        <b>goldSilverData</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">projects/gold-investment-details/components/investment-details/investment-details.component.ts:13</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="imageList"></a>
+                        <b>imageList</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="11" class="link-to-prism">projects/gold-investment-details/components/investment-details/investment-details.component.ts:11</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
+    <section>
+    <h3 id="outputs">Outputs</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="sendToDetailPage"></a>
+                        <b>sendToDetailPage</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://angular.io/api/core/EventEmitter" target="_blank" >EventEmitter</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">projects/gold-investment-details/components/investment-details/investment-details.component.ts:14</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="18"
+                            class="link-to-prism">projects/gold-investment-details/components/investment-details/investment-details.component.ts:18</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="redirectToDetails"></a>
+                    <span class="name">
+                        <span ><b>redirectToDetails</b></span>
+                        <a href="#redirectToDetails"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>redirectToDetails()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="22"
+                            class="link-to-prism">projects/gold-investment-details/components/investment-details/investment-details.component.ts:22</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setStep"></a>
+                    <span class="name">
+                        <span ><b>setStep</b></span>
+                        <a href="#setStep"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>setStep(index: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="19"
+                            class="link-to-prism">projects/gold-investment-details/components/investment-details/investment-details.component.ts:19</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>index</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="step"></a>
+                    <span class="name">
+                        <span ><b>step</b></span>
+                        <a href="#step"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>0</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">projects/gold-investment-details/components/investment-details/investment-details.component.ts:15</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, EventEmitter, Input, OnInit, Output } from &#x27;@angular/core&#x27;;
+
+@Component({
+  selector: &#x27;app-investment-details&#x27;,
+  templateUrl: &#x27;./investment-details.component.html&#x27;,
+  styleUrls: [&#x27;./investment-details.component.scss&#x27;],
+})
+export class InvestmentDetailsComponent implements OnInit {
+@Input() currentDigiData:any;
+@Input() currentCountry:any;
+@Input() imageList:any;
+@Input() currentInvestmentDetails:any;
+@Input() goldSilverData:any;
+@Output() sendToDetailPage &#x3D; new EventEmitter();
+step &#x3D; 0;
+  constructor() { }
+
+  ngOnInit() {}
+  setStep(index: number) {
+    this.step &#x3D; index;
+  }
+  redirectToDetails(){
+    this.sendToDetailPage.emit(&#x27;send&#x27;)
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;ion-grid&gt;
+  &lt;ion-row&gt;
+    &lt;ion-col [size]&#x3D;&quot;&#x27;12&#x27;&quot;&gt;
+      &lt;ion-row&gt;
+        &lt;ion-col [size]&#x3D;&quot;&#x27;2&#x27;&quot;&gt;
+          &lt;ion-img [src]&#x3D;&quot;currentDigiData?.Logo&quot; class&#x3D;&quot;custInvestmentIcon&quot;&gt;&lt;/ion-img&gt;
+        &lt;/ion-col&gt;
+        &lt;ion-col [size]&#x3D;&quot;&#x27;10&#x27;&quot; class&#x3D;&quot;p-4&quot;&gt;
+          &lt;span class&#x3D;&quot;custFontFamilyMuliSemiBold muli-16pt custLineHight20 custColorDark&quot;&gt;{{currentDigiData?.Title}}&lt;/span&gt;
+        &lt;/ion-col&gt;
+      &lt;/ion-row&gt;
+    &lt;/ion-col&gt;
+    &lt;ion-col [size]&#x3D;&quot;&#x27;12&#x27;&quot;&gt;
+      &lt;ion-grid&gt;
+        &lt;ion-row&gt;
+          &lt;ion-col [size]&#x3D;&quot;&#x27;3&#x27;&quot; *ngFor&#x3D;&quot;let x of currentDigiData?.array1&quot; class&#x3D;&quot;custTextAlignCenter custButtonBorder&quot;&gt;
+            &lt;span class&#x3D;&quot;custFontFamilyMuliRegular muli-10pt custLineHight28 custColorBattlePGry&quot;&gt;{{x}}&lt;/span&gt;
+          &lt;/ion-col&gt;
+        &lt;/ion-row&gt;
+      &lt;/ion-grid&gt;
+    &lt;/ion-col&gt;
+    &lt;ion-col [size]&#x3D;&quot;&#x27;12&#x27;&quot;&gt;
+      &lt;ion-card class&#x3D;&quot;custBackgroundColorWhite&quot;&gt;
+        &lt;ion-card-content&gt;
+          &lt;ion-grid&gt;
+            &lt;ion-row&gt;
+              &lt;ion-col [size]&#x3D;&quot;&#x27;12&#x27;&quot;&gt;
+                &lt;span class&#x3D;&quot;custFontFamilyMuliRegular muli-12pt custLineHight28 custColorGreyish&quot;&gt;{{&#x27;currentValueGm&#x27; | translate}}&lt;/span&gt;&lt;br&gt;
+                &lt;span class&#x3D;&quot;custFontFamilyRobotoCondensed  muli-16pt custLineHight18 custColorDark&quot;&gt;{{currentCountry?.currencySymbol}}{{currentDigiData?.Price[0]?.Buy}}  &lt;span class&#x3D;&quot;custFontFamilyRobotoCondensed muli-12pt custLineHight18&quot; [ngClass]&#x3D;&quot;currentDigiData?.Price[0]?.Return &#x3D;&#x3D;&#x3D; 0 ?&#x27;custColorDark&#x27;:currentDigiData?.Price[0]?.Return &gt; 0?&#x27;custColorParakeetGreen&#x27;:&#x27;custColorcustFadedRed&#x27;&quot;&gt;
+                  &lt;ion-icon [name]&#x3D;&quot;currentDigiData?.Price?.Return &#x3D;&#x3D;&#x3D; 0?&#x27;&#x27;:currentDigiData?.Price[0]?.Return &gt; 0 ?&#x27;caret-up-outline&#x27;:&#x27;caret-down-outline&#x27;&quot; &gt;&lt;/ion-icon&gt;{{currentDigiData?.Price[0]?.Return}}%
+                 &lt;/span&gt;&lt;/span&gt;&lt;br&gt;
+               
+                &lt;span class&#x3D;&quot;custFontFamilyMuliRegular  muli-10pt  custColorGreyish&quot;&gt;as on {{currentDigiData?.Price[0]?.Date | date}}&lt;/span&gt;
+              &lt;/ion-col&gt;
+              &lt;ion-col [size]&#x3D;&quot;&#x27;12&#x27;&quot;&gt;&lt;/ion-col&gt;
+              &lt;ion-col [size]&#x3D;&quot;&#x27;12&#x27;&quot;&gt;
+                &lt;ion-grid&gt;
+                  &lt;ion-row&gt;
+                    &lt;ion-col [size]&#x3D;&quot;&#x27;6&#x27;&quot;&gt;
+                      &lt;span class&#x3D;&quot;custFontFamilyMuliRegular  muli-12pt custLineHight28 custColorGreyish&quot;&gt;{{&#x27;minimumAmt&#x27; |translate}}&lt;/span&gt;&lt;br&gt;
+                      &lt;span class&#x3D;&quot;custFontFamilyRobotoCondensed muli-14pt custLineHight18 custColorDark&quot;&gt;{{currentCountry?.currencySymbol}}{{currentDigiData?.Price[0]?.MinAmount}}&lt;/span&gt;
+                    &lt;/ion-col&gt;
+                    &lt;ion-col [size]&#x3D;&quot;&#x27;6&#x27;&quot;&gt;
+                      &lt;span class&#x3D;&quot;custFontFamilyMuliRegular  muli-12pt custLineHight28 custColorGreyish&quot;&gt;{{&#x27;purity&#x27; |translate}}&lt;/span&gt;&lt;br&gt;
+                      &lt;span class&#x3D;&quot;custFontFamilyRobotoCondensed muli-14pt custLineHight18 custColorParakeetGreen&quot;&gt;{{currentDigiData?.Props?.typeK}} | {{currentDigiData?.Props?.Purity}}%&lt;/span&gt;
+                    &lt;/ion-col&gt;
+                  &lt;/ion-row&gt;
+                &lt;/ion-grid&gt;
+              &lt;/ion-col&gt;
+            &lt;/ion-row&gt;
+          &lt;/ion-grid&gt;
+        &lt;/ion-card-content&gt;
+      &lt;/ion-card&gt;
+    &lt;/ion-col&gt;
+    &lt;ion-col [size]&#x3D;&quot;&#x27;12&#x27;&quot;&gt;
+      &lt;ion-grid&gt;
+        &lt;ion-row&gt;
+          &lt;ion-col [size]&#x3D;&quot;&#x27;8&#x27;&quot;&gt;
+            &lt;span class&#x3D;&quot;custFontFamilyMuliBold muli-16pt custLineHight40 custColorDark&quot;&gt;{{&#x27;yourExistingInvestments&#x27; | translate}}&lt;/span&gt;
+          &lt;/ion-col&gt;
+          &lt;ion-col [size]&#x3D;&quot;&#x27;4&#x27;&quot; class&#x3D;&quot;text-end mt-2&quot; (click)&#x3D;&quot;redirectToDetails()&quot;&gt;
+            &lt;span class&#x3D;&quot;custFontFamilyMuliBold muli-14pt custLineHight18 custColorDarkishBlue&quot;&gt;{{&#x27;viewLocker&#x27; | translate}} &lt;span class&#x3D;&quot;d-inline-flex&quot;&gt; &lt;ion-img [src]&#x3D;&quot;imageList?.arrow&quot; class&#x3D;&quot;custInvestArrow&quot;&gt;&lt;/ion-img&gt;&lt;/span&gt;&lt;/span&gt;
+          &lt;/ion-col&gt;
+        &lt;/ion-row&gt;
+      &lt;/ion-grid&gt;
+    &lt;/ion-col&gt;
+    &lt;ion-col [size]&#x3D;&quot;&#x27;12&#x27;&quot;&gt;
+      &lt;ion-card class&#x3D;&quot;custBackgroundColorWhite&quot;&gt;
+        &lt;ion-card-content&gt;
+          &lt;ion-grid&gt;
+            &lt;ion-row&gt;
+              &lt;ion-col [size]&#x3D;&quot;&#x27;4&#x27;&quot;&gt;
+                &lt;span class&#x3D;&quot;custFontFamilyMuliRegular  muli-12pt custLineHight28 custColorGreyish&quot;&gt;{{&#x27;investedAmt&#x27; |translate}}&lt;/span&gt;&lt;br&gt;
+                &lt;span class&#x3D;&quot;custFontFamilyRobotoCondensed  muli-14pt custLineHight18 custColorDark&quot;&gt;{{currentCountry?.currencySymbol}} {{currentInvestmentDetails?.InvestmentAmount}}  &lt;/span&gt;
+              &lt;/ion-col&gt;
+              &lt;ion-col [size]&#x3D;&quot;&#x27;4&#x27;&quot;&gt;
+                &lt;span class&#x3D;&quot;custFontFamilyMuliRegular  muli-12pt custLineHight28 custColorGreyish&quot;&gt;{{&#x27;quantity&#x27; | translate}}&lt;/span&gt;&lt;br&gt;
+                &lt;span class&#x3D;&quot;custFontFamilyRobotoCondensed  muli-14pt custLineHight18 custColorDark&quot;&gt;{{currentInvestmentDetails?.TotalProductWeight}} gm&lt;/span&gt;
+              &lt;/ion-col&gt;
+              &lt;ion-col [size]&#x3D;&quot;&#x27;4&#x27;&quot;&gt;
+                &lt;span class&#x3D;&quot;custFontFamilyMuliRegular  muli-12pt custLineHight28 custColorGreyish&quot;&gt;{{&#x27;purity&#x27; | translate}}&lt;/span&gt;&lt;br&gt;
+                &lt;span class&#x3D;&quot;custFontFamilyRobotoCondensed muli-14pt custLineHight18 custColorParakeetGreen&quot;&gt;{{currentInvestmentDetails?.KaratType}} | {{currentInvestmentDetails?.Purity}}%&lt;/span&gt;
+              &lt;/ion-col&gt;
+            &lt;/ion-row&gt;
+          &lt;/ion-grid&gt;
+        &lt;/ion-card-content&gt;
+      &lt;/ion-card&gt;
+    &lt;/ion-col&gt;
+    &lt;ion-col [size]&#x3D;&quot;&#x27;12&#x27;&quot;&gt;
+      &lt;span class&#x3D;&quot;custFontFamilyMuliBold muli-16pt custLineHight40 custColorDark&quot;&gt;{{&#x27;details&#x27; | translate}}&lt;/span&gt;
+    &lt;/ion-col&gt;
+    &lt;ion-col [size]&#x3D;&quot;&#x27;12&#x27;&quot;&gt;
+      &lt;mat-accordion class&#x3D;&quot;example-headers-align&quot;&gt;
+        &lt;mat-expansion-panel [expanded]&#x3D;&quot;step &#x3D;&#x3D;&#x3D; 0&quot; (opened)&#x3D;&quot;setStep(0)&quot; hideToggle&gt;
+          &lt;mat-expansion-panel-header&gt;
+            &lt;mat-panel-title&gt;
+            &lt;span class&#x3D;&quot;custFontFamilyMuliBold  muli-14pt custLineHight20 custColorDark&quot;&gt;{{&#x27;detailsViewHeader1&#x27; | translate}}&lt;/span&gt;
+            &lt;/mat-panel-title&gt;
+            &lt;mat-panel-description class&#x3D;&quot;flex-grow-0 mt-1&quot;&gt;
+              &lt;ion-img [src]&#x3D;&quot;imageList?.arrow&quot; class&#x3D;&quot;custInvestArrow custRotation&quot;&gt;&lt;/ion-img&gt;
+            &lt;/mat-panel-description&gt;
+           
+          &lt;/mat-expansion-panel-header&gt;
+          &lt;ion-grid&gt;
+            &lt;ion-row&gt;
+              &lt;ion-col [size]&#x3D;&quot;&#x27;12&#x27;&quot;&gt;
+                &lt;span class&#x3D;&quot;custFontFamilyMuliRegular  muli-14pt custLineHight20 custColorTint&quot;&gt;{{&#x27;detailsViewHeader1Detail1&#x27; | translate}}&lt;/span&gt;&lt;br&gt;
+                &lt;span class&#x3D;&quot;custFontFamilyMuliRegular  muli-12pt custLineHight18 custColorBattlePGry&quot;&gt;{{&#x27;detailsViewHeader1Detail2&#x27; | translate}}&lt;/span&gt;
+              &lt;/ion-col&gt;
+              &lt;ion-col [size]&#x3D;&quot;&#x27;12&#x27;&quot;&gt;
+                &lt;span class&#x3D;&quot;custFontFamilyMuliRegular  muli-14pt custLineHight20 custColorTint&quot;&gt;{{&#x27;detailsViewHeader1Detail3&#x27; | translate}}&lt;/span&gt;&lt;br&gt;
+                &lt;span class&#x3D;&quot;custFontFamilyMuliRegular  muli-12pt custLineHight18 custColorBattlePGry&quot;&gt;{{&#x27;detailsViewHeader1Detail4&#x27; | translate}}&lt;/span&gt;
+              &lt;/ion-col&gt;
+              &lt;ion-col [size]&#x3D;&quot;&#x27;12&#x27;&quot;&gt;
+                &lt;span class&#x3D;&quot;custFontFamilyMuliRegular  muli-14pt custLineHight20 custColorTint&quot;&gt;{{&#x27;detailsViewHeader1Detail5&#x27; | translate}}&lt;/span&gt;&lt;br&gt;
+                &lt;span class&#x3D;&quot;custFontFamilyMuliRegular  muli-12pt custLineHight18 custColorBattlePGry&quot;&gt;{{&#x27;detailsViewHeader1Detail6&#x27; | translate}}&lt;/span&gt;
+              &lt;/ion-col&gt;
+            &lt;/ion-row&gt;
+          &lt;/ion-grid&gt;
+        &lt;/mat-expansion-panel&gt;
+        &lt;mat-expansion-panel [expanded]&#x3D;&quot;step &#x3D;&#x3D;&#x3D; 1&quot; (opened)&#x3D;&quot;setStep(1)&quot; hideToggle&gt;
+          &lt;mat-expansion-panel-header&gt;
+            &lt;mat-panel-title&gt;
+              &lt;span class&#x3D;&quot;custFontFamilyMuliBold  muli-14pt custLineHight20 custColorDark&quot;&gt;{{&#x27;detailsViewHeader2&#x27; | translate}}&lt;/span&gt;
+            &lt;/mat-panel-title&gt;
+            &lt;mat-panel-description class&#x3D;&quot;flex-grow-0 mt-1&quot;&gt;
+              &lt;ion-img [src]&#x3D;&quot;imageList?.arrow&quot; class&#x3D;&quot;custInvestArrow custRotation&quot;&gt;&lt;/ion-img&gt;
+            &lt;/mat-panel-description&gt;
+          &lt;/mat-expansion-panel-header&gt;
+          &lt;ion-grid&gt;
+            &lt;ion-row&gt;
+              &lt;ion-col [size]&#x3D;&quot;&#x27;12&#x27;&quot;&gt;
+                &lt;span class&#x3D;&quot;custFontFamilyMuliRegular  muli-14pt custLineHight20 custColorTint&quot;&gt;{{&#x27;detailsViewHeader2Detail1&#x27; | translate}}&lt;/span&gt;&lt;br&gt;
+                &lt;span class&#x3D;&quot;custFontFamilyMuliRegular  muli-12pt custLineHight18 custColorBattlePGry&quot;&gt;{{&#x27;detailsViewHeader2Detail2&#x27; | translate}}&lt;/span&gt;
+              &lt;/ion-col&gt;
+              &lt;ion-col [size]&#x3D;&quot;&#x27;12&#x27;&quot;&gt;
+                &lt;span class&#x3D;&quot;custFontFamilyMuliRegular  muli-14pt custLineHight20 custColorTint&quot;&gt;{{&#x27;detailsViewHeader2Detail3&#x27; | translate}}&lt;/span&gt;&lt;br&gt;
+                &lt;span class&#x3D;&quot;custFontFamilyMuliRegular  muli-12pt custLineHight18 custColorBattlePGry&quot;&gt;{{&#x27;detailsViewHeader2Detail4&#x27; | translate}}&lt;/span&gt;
+              &lt;/ion-col&gt;
+            &lt;/ion-row&gt;
+          &lt;/ion-grid&gt;
+        &lt;/mat-expansion-panel&gt;
+        &lt;mat-expansion-panel [expanded]&#x3D;&quot;step &#x3D;&#x3D;&#x3D; 2&quot; (opened)&#x3D;&quot;setStep(2)&quot; hideToggle&gt;
+          &lt;mat-expansion-panel-header&gt;
+            &lt;mat-panel-title&gt;
+              &lt;span class&#x3D;&quot;custFontFamilyMuliBold  muli-14pt custLineHight20 custColorDark&quot;&gt;{{&#x27;detailsViewHeader3&#x27; | translate}}&lt;/span&gt;
+            &lt;/mat-panel-title&gt;
+            &lt;mat-panel-description class&#x3D;&quot;flex-grow-0 mt-1&quot;&gt;
+              &lt;ion-img [src]&#x3D;&quot;imageList?.arrow&quot; class&#x3D;&quot;custInvestArrow custRotation&quot;&gt;&lt;/ion-img&gt;
+            &lt;/mat-panel-description&gt;
+          &lt;/mat-expansion-panel-header&gt;
+          &lt;ion-grid&gt;
+            &lt;ion-row&gt;
+              &lt;ion-col [size]&#x3D;&quot;&#x27;12&#x27;&quot;&gt;
+                &lt;span class&#x3D;&quot;custFontFamilyMuliRegular  muli-14pt custLineHight20 custColorTint&quot;&gt;{{&#x27;detailsViewHeader3Detail1&#x27; | translate}}&lt;/span&gt;&lt;br&gt;
+                &lt;span class&#x3D;&quot;custFontFamilyMuliRegular  muli-12pt custLineHight18 custColorBattlePGry&quot;&gt;{{&#x27;detailsViewHeader3Detail2&#x27; | translate}}&lt;/span&gt;
+              &lt;/ion-col&gt;
+              &lt;ion-col [size]&#x3D;&quot;&#x27;12&#x27;&quot;&gt;
+                &lt;span class&#x3D;&quot;custFontFamilyMuliRegular  muli-10pt custLineHight15 custColorWarmGrey&quot;&gt;{{&#x27;detailsViewHeader3Detail3&#x27; | translate}}&lt;/span&gt;
+              &lt;/ion-col&gt;
+            &lt;/ion-row&gt;
+          &lt;/ion-grid&gt;
+        &lt;/mat-expansion-panel&gt;
+      &lt;/mat-accordion&gt;
+    &lt;/ion-col&gt;
+  &lt;/ion-row&gt;
+&lt;/ion-grid&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./investment-details.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.custInvestmentIcon{
+    height: 58px;
+    width: 58px;
+}
+.custButtonBorder{
+    border-color: var(--custGray) !important;
+    border: 1px solid;
+    margin-right: 10px;
+    border-radius: 4px;
+}
+.custInvestArrow{
+    height: 9px;
+    width: 7px;
+    transform: rotate(180deg);
+}
+.custRotation{
+    transform: rotate(-90deg);
+}</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><ion-grid>  <ion-row>    <ion-col [size]="\'12\'">      <ion-row>        <ion-col [size]="\'2\'">          <ion-img [src]="currentDigiData?.Logo" class="custInvestmentIcon"></ion-img>        </ion-col>        <ion-col [size]="\'10\'" class="p-4">          <span class="custFontFamilyMuliSemiBold muli-16pt custLineHight20 custColorDark">{{currentDigiData?.Title}}</span>        </ion-col>      </ion-row>    </ion-col>    <ion-col [size]="\'12\'">      <ion-grid>        <ion-row>          <ion-col [size]="\'3\'" *ngFor="let x of currentDigiData?.array1" class="custTextAlignCenter custButtonBorder">            <span class="custFontFamilyMuliRegular muli-10pt custLineHight28 custColorBattlePGry">{{x}}</span>          </ion-col>        </ion-row>      </ion-grid>    </ion-col>    <ion-col [size]="\'12\'">      <ion-card class="custBackgroundColorWhite">        <ion-card-content>          <ion-grid>            <ion-row>              <ion-col [size]="\'12\'">                <span class="custFontFamilyMuliRegular muli-12pt custLineHight28 custColorGreyish">{{\'currentValueGm\' | translate}}</span><br>                <span class="custFontFamilyRobotoCondensed  muli-16pt custLineHight18 custColorDark">{{currentCountry?.currencySymbol}}{{currentDigiData?.Price[0]?.Buy}}  <span class="custFontFamilyRobotoCondensed muli-12pt custLineHight18" [ngClass]="currentDigiData?.Price[0]?.Return === 0 ?\'custColorDark\':currentDigiData?.Price[0]?.Return > 0?\'custColorParakeetGreen\':\'custColorcustFadedRed\'">                  <ion-icon [name]="currentDigiData?.Price?.Return === 0?\'\':currentDigiData?.Price[0]?.Return > 0 ?\'caret-up-outline\':\'caret-down-outline\'" ></ion-icon>{{currentDigiData?.Price[0]?.Return}}%                 </span></span><br>                               <span class="custFontFamilyMuliRegular  muli-10pt  custColorGreyish">as on {{currentDigiData?.Price[0]?.Date | date}}</span>              </ion-col>              <ion-col [size]="\'12\'"></ion-col>              <ion-col [size]="\'12\'">                <ion-grid>                  <ion-row>                    <ion-col [size]="\'6\'">                      <span class="custFontFamilyMuliRegular  muli-12pt custLineHight28 custColorGreyish">{{\'minimumAmt\' |translate}}</span><br>                      <span class="custFontFamilyRobotoCondensed muli-14pt custLineHight18 custColorDark">{{currentCountry?.currencySymbol}}{{currentDigiData?.Price[0]?.MinAmount}}</span>                    </ion-col>                    <ion-col [size]="\'6\'">                      <span class="custFontFamilyMuliRegular  muli-12pt custLineHight28 custColorGreyish">{{\'purity\' |translate}}</span><br>                      <span class="custFontFamilyRobotoCondensed muli-14pt custLineHight18 custColorParakeetGreen">{{currentDigiData?.Props?.typeK}} | {{currentDigiData?.Props?.Purity}}%</span>                    </ion-col>                  </ion-row>                </ion-grid>              </ion-col>            </ion-row>          </ion-grid>        </ion-card-content>      </ion-card>    </ion-col>    <ion-col [size]="\'12\'">      <ion-grid>        <ion-row>          <ion-col [size]="\'8\'">            <span class="custFontFamilyMuliBold muli-16pt custLineHight40 custColorDark">{{\'yourExistingInvestments\' | translate}}</span>          </ion-col>          <ion-col [size]="\'4\'" class="text-end mt-2" (click)="redirectToDetails()">            <span class="custFontFamilyMuliBold muli-14pt custLineHight18 custColorDarkishBlue">{{\'viewLocker\' | translate}} <span class="d-inline-flex"> <ion-img [src]="imageList?.arrow" class="custInvestArrow"></ion-img></span></span>          </ion-col>        </ion-row>      </ion-grid>    </ion-col>    <ion-col [size]="\'12\'">      <ion-card class="custBackgroundColorWhite">        <ion-card-content>          <ion-grid>            <ion-row>              <ion-col [size]="\'4\'">                <span class="custFontFamilyMuliRegular  muli-12pt custLineHight28 custColorGreyish">{{\'investedAmt\' |translate}}</span><br>                <span class="custFontFamilyRobotoCondensed  muli-14pt custLineHight18 custColorDark">{{currentCountry?.currencySymbol}} {{currentInvestmentDetails?.InvestmentAmount}}  </span>              </ion-col>              <ion-col [size]="\'4\'">                <span class="custFontFamilyMuliRegular  muli-12pt custLineHight28 custColorGreyish">{{\'quantity\' | translate}}</span><br>                <span class="custFontFamilyRobotoCondensed  muli-14pt custLineHight18 custColorDark">{{currentInvestmentDetails?.TotalProductWeight}} gm</span>              </ion-col>              <ion-col [size]="\'4\'">                <span class="custFontFamilyMuliRegular  muli-12pt custLineHight28 custColorGreyish">{{\'purity\' | translate}}</span><br>                <span class="custFontFamilyRobotoCondensed muli-14pt custLineHight18 custColorParakeetGreen">{{currentInvestmentDetails?.KaratType}} | {{currentInvestmentDetails?.Purity}}%</span>              </ion-col>            </ion-row>          </ion-grid>        </ion-card-content>      </ion-card>    </ion-col>    <ion-col [size]="\'12\'">      <span class="custFontFamilyMuliBold muli-16pt custLineHight40 custColorDark">{{\'details\' | translate}}</span>    </ion-col>    <ion-col [size]="\'12\'">      <mat-accordion class="example-headers-align">        <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)" hideToggle>          <mat-expansion-panel-header>            <mat-panel-title>            <span class="custFontFamilyMuliBold  muli-14pt custLineHight20 custColorDark">{{\'detailsViewHeader1\' | translate}}</span>            </mat-panel-title>            <mat-panel-description class="flex-grow-0 mt-1">              <ion-img [src]="imageList?.arrow" class="custInvestArrow custRotation"></ion-img>            </mat-panel-description>                     </mat-expansion-panel-header>          <ion-grid>            <ion-row>              <ion-col [size]="\'12\'">                <span class="custFontFamilyMuliRegular  muli-14pt custLineHight20 custColorTint">{{\'detailsViewHeader1Detail1\' | translate}}</span><br>                <span class="custFontFamilyMuliRegular  muli-12pt custLineHight18 custColorBattlePGry">{{\'detailsViewHeader1Detail2\' | translate}}</span>              </ion-col>              <ion-col [size]="\'12\'">                <span class="custFontFamilyMuliRegular  muli-14pt custLineHight20 custColorTint">{{\'detailsViewHeader1Detail3\' | translate}}</span><br>                <span class="custFontFamilyMuliRegular  muli-12pt custLineHight18 custColorBattlePGry">{{\'detailsViewHeader1Detail4\' | translate}}</span>              </ion-col>              <ion-col [size]="\'12\'">                <span class="custFontFamilyMuliRegular  muli-14pt custLineHight20 custColorTint">{{\'detailsViewHeader1Detail5\' | translate}}</span><br>                <span class="custFontFamilyMuliRegular  muli-12pt custLineHight18 custColorBattlePGry">{{\'detailsViewHeader1Detail6\' | translate}}</span>              </ion-col>            </ion-row>          </ion-grid>        </mat-expansion-panel>        <mat-expansion-panel [expanded]="step === 1" (opened)="setStep(1)" hideToggle>          <mat-expansion-panel-header>            <mat-panel-title>              <span class="custFontFamilyMuliBold  muli-14pt custLineHight20 custColorDark">{{\'detailsViewHeader2\' | translate}}</span>            </mat-panel-title>            <mat-panel-description class="flex-grow-0 mt-1">              <ion-img [src]="imageList?.arrow" class="custInvestArrow custRotation"></ion-img>            </mat-panel-description>          </mat-expansion-panel-header>          <ion-grid>            <ion-row>              <ion-col [size]="\'12\'">                <span class="custFontFamilyMuliRegular  muli-14pt custLineHight20 custColorTint">{{\'detailsViewHeader2Detail1\' | translate}}</span><br>                <span class="custFontFamilyMuliRegular  muli-12pt custLineHight18 custColorBattlePGry">{{\'detailsViewHeader2Detail2\' | translate}}</span>              </ion-col>              <ion-col [size]="\'12\'">                <span class="custFontFamilyMuliRegular  muli-14pt custLineHight20 custColorTint">{{\'detailsViewHeader2Detail3\' | translate}}</span><br>                <span class="custFontFamilyMuliRegular  muli-12pt custLineHight18 custColorBattlePGry">{{\'detailsViewHeader2Detail4\' | translate}}</span>              </ion-col>            </ion-row>          </ion-grid>        </mat-expansion-panel>        <mat-expansion-panel [expanded]="step === 2" (opened)="setStep(2)" hideToggle>          <mat-expansion-panel-header>            <mat-panel-title>              <span class="custFontFamilyMuliBold  muli-14pt custLineHight20 custColorDark">{{\'detailsViewHeader3\' | translate}}</span>            </mat-panel-title>            <mat-panel-description class="flex-grow-0 mt-1">              <ion-img [src]="imageList?.arrow" class="custInvestArrow custRotation"></ion-img>            </mat-panel-description>          </mat-expansion-panel-header>          <ion-grid>            <ion-row>              <ion-col [size]="\'12\'">                <span class="custFontFamilyMuliRegular  muli-14pt custLineHight20 custColorTint">{{\'detailsViewHeader3Detail1\' | translate}}</span><br>                <span class="custFontFamilyMuliRegular  muli-12pt custLineHight18 custColorBattlePGry">{{\'detailsViewHeader3Detail2\' | translate}}</span>              </ion-col>              <ion-col [size]="\'12\'">                <span class="custFontFamilyMuliRegular  muli-10pt custLineHight15 custColorWarmGrey">{{\'detailsViewHeader3Detail3\' | translate}}</span>              </ion-col>            </ion-row>          </ion-grid>        </mat-expansion-panel>      </mat-accordion>    </ion-col>  </ion-row></ion-grid></div>'
+    var COMPONENTS = [{'name': 'AadharOnboardKycComponent', 'selector': 'app-aadhar-onboard-kyc'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'BankDetailsComponent', 'selector': 'lib-bank-details'},{'name': 'BuySellComponent', 'selector': 'app-buy-sell'},{'name': 'ContainerViewPage', 'selector': 'app-container-view'},{'name': 'CoreComponent', 'selector': 'lib-core'},{'name': 'CustomModalComponent', 'selector': 'lib-custom-modal'},{'name': 'DashboardPage', 'selector': 'app-dashboard'},{'name': 'DigiLockerAadharComponent', 'selector': 'app-digi-locker-aadhar'},{'name': 'EducationCategoryDashboardComponent', 'selector': 'app-education-category-dashboard'},{'name': 'EducationComponent', 'selector': 'lib-education'},{'name': 'EducationPage', 'selector': 'app-education'},{'name': 'EsignComponent', 'selector': 'app-esign'},{'name': 'ExchangeSelectionComponent', 'selector': 'app-exchange-selection'},{'name': 'ExploreFundsComponent', 'selector': 'app-explore-funds'},{'name': 'FabButtonComponent', 'selector': 'lib-fab-button'},{'name': 'FooterComponent', 'selector': 'lib-footer'},{'name': 'GoldComponent', 'selector': 'lib-gold'},{'name': 'GoldDashboardComponent', 'selector': 'lib-gold-dashboard'},{'name': 'GoldInvestmentDashboardComponent', 'selector': 'lib-gold-investment-dashboard'},{'name': 'GoldInvestmentDetailsComponent', 'selector': 'lib-goldInvestmentDetails'},{'name': 'GoldInvestmentDetailsPage', 'selector': 'app-gold-investment-details'},{'name': 'GoldPage', 'selector': 'app-gold'},{'name': 'HeaderComponent', 'selector': 'lib-header'},{'name': 'HealthCategoryComponent', 'selector': 'lib-health-category'},{'name': 'HealthComponent', 'selector': 'lib-health'},{'name': 'HealthPage', 'selector': 'app-health'},{'name': 'IncomeProofComponent', 'selector': 'app-income-proof'},{'name': 'InformationComponent', 'selector': 'lib-information'},{'name': 'IntroComponent', 'selector': 'lib-intro'},{'name': 'InvestmentDetailsComponent', 'selector': 'app-investment-details'},{'name': 'InvestmentDetailsTransactionComponent', 'selector': 'app-investment-details-transaction'},{'name': 'InvestmentPlanningComponent', 'selector': 'lib-investment-planning'},{'name': 'InvestmentPlanningTrackComponent', 'selector': 'lib-investment-planning-track'},{'name': 'InvestmentPlanningTransactComponent', 'selector': 'lib-investment-planning-transact'},{'name': 'InvestSIPComponent', 'selector': 'lib-invest-sip'},{'name': 'KycGoldComponent', 'selector': 'app-kyc-gold'},{'name': 'KycStepsMFComponent', 'selector': 'app-kyc-steps-mf'},{'name': 'LifestyleComponent', 'selector': 'lib-lifestyle'},{'name': 'LifestylePage', 'selector': 'app-lifestyle'},{'name': 'LoginAuthenticationComponent', 'selector': 'lib-login-authentication'},{'name': 'LoginListComponent', 'selector': 'lib-loginList'},{'name': 'LoginPage', 'selector': 'app-login'},{'name': 'ManuallySignComponent', 'selector': 'app-manually-sign'},{'name': 'MutualFundsComponent', 'selector': 'lib-mutualFunds'},{'name': 'MutualFundsPage', 'selector': 'app-mutual-funds'},{'name': 'NameAddressDetailsComponent', 'selector': 'app-name-address-details'},{'name': 'NomineeDetailsComponent', 'selector': 'app-nominee-details'},{'name': 'NsdlComponent', 'selector': 'app-nsdl'},{'name': 'OrderDetailsComponent', 'selector': 'app-order-details'},{'name': 'OrdersComponent', 'selector': 'app-orders'},{'name': 'PanadharComponent', 'selector': 'lib-panadhar'},{'name': 'PanCardComponent', 'selector': 'lib-pan-card'},{'name': 'PaymentConfirmationComponent', 'selector': 'app-payment-confirmation'},{'name': 'PersonalDetailsComponent', 'selector': 'app-personal-details'},{'name': 'PlanningRecommendedModalComponent', 'selector': 'lib-planning-recommended-modal'},{'name': 'PlanningTrackModalComponent', 'selector': 'lib-planning-track-modal'},{'name': 'PlanningTranslateModalComponent', 'selector': 'lib-planning-translate-modal'},{'name': 'PortfolioInsigthsComponent', 'selector': 'lib-portfolioInsigths'},{'name': 'PreviewImageComponent', 'selector': 'app-preview-image'},{'name': 'ProductDetailsComponent', 'selector': 'lib-productDetails'},{'name': 'ProductDetailsPage', 'selector': 'app-product-details'},{'name': 'ProductListComponent', 'selector': 'lib-product-list'},{'name': 'SelfieVerificationComponent', 'selector': 'app-selfie-verification'},{'name': 'SignatureUploadComponent', 'selector': 'app-signature-upload'},{'name': 'SignInComponent', 'selector': 'lib-sign-in'},{'name': 'SplashScreenComponent', 'selector': 'lib-splash-screen'},{'name': 'StepeerOnbordingComponent', 'selector': 'app-stepeer-onbording'},{'name': 'StocksComponent', 'selector': 'lib-stocks'},{'name': 'StocksPage', 'selector': 'app-stocks'},{'name': 'SubmenuComponent', 'selector': 'lib-submenu'},{'name': 'UpdateProfileComponent', 'selector': 'app-update-profile'},{'name': 'UploadAadharPanComponent', 'selector': 'app-upload-aadhar-pan'},{'name': 'VerificationCodeComponent', 'selector': 'lib-verification-code'},{'name': 'WealthRoboAdvisoryComponent', 'selector': 'lib-wealthRoboAdvisory'},{'name': 'WealthRoboAdvisoryPage', 'selector': 'app-wealth-robo-advisory'},{'name': 'WealthWellnessComponent', 'selector': 'lib-wealthWellness'},{'name': 'WebCamComponent', 'selector': 'web-cam'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'InvestmentDetailsComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'InvestmentDetailsComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

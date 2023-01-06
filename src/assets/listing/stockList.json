@@ -1,0 +1,414 @@
+{
+    "segment": [
+        {
+            "title": "Nifty 50",
+            "value": "Nifty50"
+        },
+        {
+            "title": "WatchList 1",
+            "value": "watchList1"
+        }
+    ],
+    "card": [
+        {
+            "row1": {
+                "title": "TATA STEEL",
+                "price": "107.75"
+            },
+            "row2": {
+                "ExchangeName": "NSE",
+                "lossAndGain": "0.63"
+            }
+        },
+        {
+            "row1": {
+                "title": "TCS",
+                "price": "3151.00"
+            },
+            "row2": {
+                "ExchangeName": "NSE",
+                "lossAndGain": "0.80"
+            }
+        },
+        {
+            "row1": {
+                "title": "HDFCLIFE",
+                "price": "573.80"
+            },
+            "row2": {
+                "ExchangeName": "NSE",
+                "lossAndGain": "0.04"
+            }
+        },
+        {
+            "row1": {
+                "title": "ICICIBANK",
+                "price": "875.20"
+            },
+            "row2": {
+                "ExchangeName": "NSE",
+                "lossAndGain": "0.97"
+            }
+        },
+        {
+            "row1": {
+                "title": "ONGC",
+                "price": "131.55"
+            },
+            "row2": {
+                "ExchangeName": "NSE",
+                "lossAndGain": "0.45"
+            }
+        },
+        {
+            "row1": {
+                "title": "SBILIFE",
+                "price": "1314.35"
+            },
+            "row2": {
+                "ExchangeName": "NSE",
+                "lossAndGain": "0.22"
+            }
+        },
+        {
+            "row1": {
+                "title": "RELIANCE",
+                "price": "2584.35"
+            },
+            "row2": {
+                "ExchangeName": "NSE",
+                "lossAndGain": "0.48"
+            }
+        },
+        {
+            "row1": {
+                "title": "WIPRO",
+                "price": "406.25"
+            },
+            "row2": {
+                "ExchangeName": "NSE",
+                "lossAndGain": "0.41"
+            }
+        },
+        {
+            "row1": {
+                "title": "TECHM",
+                "price": "1046.25"
+            },
+            "row2": {
+                "ExchangeName": "NSE",
+                "lossAndGain": "17.55"
+            }
+        },
+        {
+            "row1": {
+                "title": "INFY",
+                "price": "1450.00"
+            },
+            "row2": {
+                "ExchangeName": "NSE",
+                "lossAndGain": "10.10"
+            }
+        },
+        {
+            "row1": {
+                "title": "GOLDBEES",
+                "price": "43.10"
+            },
+            "row2": {
+                "ExchangeName": "NSE",
+                "lossAndGain": "0.62"
+            }
+        },
+        {
+            "row1": {
+                "title": "BHARTIARTL",
+                "price": "748.70"
+            },
+            "row2": {
+                "ExchangeName": "NSE",
+                "lossAndGain": "12.62"
+            }
+        },
+        {
+            "row1": {
+                "title": "BHEL",
+                "price": "61.60"
+            },
+            "row2": {
+                "ExchangeName": "NSE",
+                "lossAndGain": "0.90"
+            }
+        },
+        {
+            "row1": {
+                "title": "AXISBANK",
+                "price": "752.55"
+            },
+            "row2": {
+                "ExchangeName": "NSE",
+                "lossAndGain": "2.60"
+            }
+        },
+        {
+            "row1": {
+                "title": "ADANIENT",
+                "price": "3455.00"
+            },
+            "row2": {
+                "ExchangeName": "NSE",
+                "lossAndGain": "19.20"
+            }
+        },
+        {
+            "row1": {
+                "title": "BIOCON",
+                "price": "296.20"
+            },
+            "row2": {
+                "ExchangeName": "NSE",
+                "lossAndGain": "80.98"
+            }
+        },
+        {
+            "row1": {
+                "title": "JUSTDIAL",
+                "price": "607.70"
+            },
+            "row2": {
+                "ExchangeName": "NSE",
+                "lossAndGain": "2.00"
+            }
+        },
+        {
+            "row1": {
+                "title": "HCL-INSYS",
+                "price": "17.45"
+            },
+            "row2": {
+                "ExchangeName": "NSE",
+                "lossAndGain": "0.30"
+            }
+        },
+        {
+            "row1": {
+                "title": "TATAELXSI",
+                "price": "8820.00"
+            },
+            "row2": {
+                "ExchangeName": "NSE",
+                "lossAndGain": "22.00"
+            }
+        },
+        {
+            "row1": {
+                "title": "APOLLOHOSP",
+                "price": "4320.95"
+            },
+            "row2": {
+                "ExchangeName": "NSE",
+                "lossAndGain": "68.62"
+            }
+        },
+        {
+            "row1": {
+                "title": "BAJFINANCE",
+                "price": "7173.00"
+            },
+            "row2": {
+                "ExchangeName": "NSE",
+                "lossAndGain": "56.85"
+            }
+        },
+        {
+            "row1": {
+                "title": "ASIANPAINT",
+                "price": "3407.75"
+            },
+            "row2": {
+                "ExchangeName": "NSE",
+                "lossAndGain": "11.68"
+            }
+        },
+        {
+            "row1": {
+                "title": "NIFTYBEES",
+                "price": "191.99"
+            },
+            "row2": {
+                "ExchangeName": "NSE",
+                "lossAndGain": "0.50"
+            }
+        },
+        {
+            "row1": {
+                "title": "ADANIPOWER-BE",
+                "price": "410.50"
+            },
+            "row2": {
+                "ExchangeName": "NSE",
+                "lossAndGain": "4.75"
+            }
+        },
+        {
+            "row1": {
+                "title": "JPPOWER",
+                "price": "8.87"
+            },
+            "row2": {
+                "ExchangeName": "NSE",
+                "lossAndGain": "0,05"
+            }
+        },
+        {
+            "row1": {
+                "title": "LPDC",
+                "price": "6.95"
+            },
+            "row2": {
+                "ExchangeName": "NSE",
+                "lossAndGain": "0.00"
+            }
+        },
+        {
+            "row1": {
+                "title": "3IINFOLTD",
+                "price": "46.80"
+            },
+            "row2": {
+                "ExchangeName": "NSE",
+                "lossAndGain": "0.30"
+            }
+        },
+        {
+            "row1": {
+                "title": "INDINFO",
+                "price": "2.96"
+            },
+            "row2": {
+                "ExchangeName": "NSE",
+                "lossAndGain": "0.00"
+            }
+        },
+        {
+            "row1": {
+                "title": "VISAGAR",
+                "price": "1.67"
+            },
+            "row2": {
+                "ExchangeName": "NSE",
+                "lossAndGain": "0.01"
+            }
+        },
+        {
+            "row1": {
+                "title": "PARAS",
+                "price": "718.00"
+            },
+            "row2": {
+                "ExchangeName": "NSE",
+                "lossAndGain": "21.50"
+            }
+        },
+        {
+            "row1": {
+                "title": "HPBL",
+                "price": "460.01"
+            },
+            "row2": {
+                "ExchangeName": "NSE",
+                "lossAndGain": "11.50"
+            }
+        },
+        {
+            "row1": {
+                "title": "NATIONSTD",
+                "price": "5084.00"
+            },
+            "row2": {
+                "ExchangeName": "NSE",
+                "lossAndGain": "83.85"
+            }
+        },
+        {
+            "row1": {
+                "title": "FCSSOFT",
+                "price": "3.25"
+            },
+            "row2": {
+                "ExchangeName": "NSE",
+                "lossAndGain": "0.00"
+            }
+        },
+        {
+            "row1": {
+                "title": "POONAWALLA",
+                "price": "301.70"
+            },
+            "row2": {
+                "ExchangeName": "NSE",
+                "lossAndGain": "2.35"
+            }
+        },
+        {
+            "row1": {
+                "title": "ARIHANT",
+                "price": "38.00"
+            },
+            "row2": {
+                "ExchangeName": "NSE",
+                "lossAndGain": "0.00"
+            }
+        },
+        {
+            "row1": {
+                "title": "RPOWER",
+                "price": "22.25"
+            },
+            "row2": {
+                "ExchangeName": "NSE",
+                "lossAndGain": "0.30"
+            }
+        },
+        {
+            "row1": {
+                "title": "ELCIDIN",
+                "price": "2.31"
+            },
+            "row2": {
+                "ExchangeName": "NSE",
+                "lossAndGain": "0.00"
+            }
+        },
+        {
+            "row1": {
+                "title": "BIOCON",
+                "price": "295.40"
+            },
+            "row2": {
+                "ExchangeName": "NSE",
+                "lossAndGain": "3.05"
+            }
+        },
+        {
+            "row1": {
+                "title": "ICICIPRULI",
+                "price": "594.40"
+            },
+            "row2": {
+                "ExchangeName": "NSE",
+                "lossAndGain": "2.70"
+            }
+        },
+        {
+            "row1": {
+                "title": "HINDUNILVR",
+                "price": "2570.50"
+            },
+            "row2": {
+                "ExchangeName": "NSE",
+                "lossAndGain": "3.25"
+            }
+        }
+    ]
+}

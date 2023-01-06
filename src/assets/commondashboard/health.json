@@ -1,0 +1,41 @@
+{
+
+	"": {
+		"heading": "Details",
+		"discription": "Discover for Health",
+		"Product": "Health",
+		"name": "Fasting Blood Sugar",
+		"price": "80",
+		"action1": "Add to card",
+		"action2": "Book Now",
+		"Info": {
+			"heading": "E-Report",
+			"product": "health"
+		},
+		"Cards": {
+			"heading": "Basic Information",
+			"description": "",
+			"sub_heading": "Fasting Blood Sugar",
+			"image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0vRyqKz2OdMePYk8lNSzS4oVnAoJGBSV_yA&usqp=CAU",
+			"row": [{
+					"Sample required": "Blood",
+					"preparations": "Do not eat drink anything other thsan water for 8-12 hours before the test"
+				},
+				{
+					"Including all texs": "Rs.80"
+				}
+			]
+		},
+		"step": [{
+			"heading": "Medical Description",
+			"data": [{
+				"Icon": "",
+				"Steps": "",
+				"Disc": "Fasting Blood Sugar,aslo called the Fasting Plasma Gluose test,measures your fasting blood glucose level.Fasting means you should not eat or drink for 8 hours"
+			}]
+		}]
+
+
+	}
+
+}

@@ -1,0 +1,92 @@
+<!-- <ion-header class="sticky-top">
+  <ion-toolbar>
+    <ion-grid>
+      <ion-row>
+        <ion-col [size]="'1'" (click)="goToBack()" id="goBack">
+          <div class="custTextAlignCenter">
+            <ion-img [src]="imageList?.arrow" class="custArrorSize custWithoutTextImg mt-1"></ion-img>
+          </div>
+        </ion-col>
+        <ion-col  class="custFontFamilyMuliBold muli-16pt custColorDark">FAQs</ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>-->
+
+
+  <cap-header [title]="haederTitle" [otherTextName]="haederTitle" [imageList]="imageList" [showArrow]="true" [showLabel]="false" [showImg]="false" [showIndex]="false"
+  [showNotification]="false" [showCartWithName]="true"  [cartCount]="cartCount"
+  [showSideMenu]="false" [showSearch]="true" [showClose]="false" [showShare]="false" [showWatchList]="false"
+  [showCartWithoutName]="false" [showStories]="false" [padding]="true" [paddingSize]="'7'" [showOtherText]="true" [backUrlName]=""></cap-header>
+
+  <ion-content class="contentBackground w-100 h-100"> 
+    
+  <ion-grid *ngIf="noData">
+
+
+   <!-- <div class="ng-autocomplete w-100">
+     <ng-autocomplete 
+     [data]="dataStocks"
+     [searchKeyword]="keyword"
+     placeholder="Ask a question..."
+     (selected)='selectEvent($event)'
+     (inputChanged)='onChangeSearch($event)'
+     (inputFocused)='onFocused($event)'
+     historyIdentifier="dataStocks"
+     [itemTemplate]="itemTemplate"
+     [notFoundTemplate]="notFoundTemplate"
+     ></ng-autocomplete>
+
+     <ng-template #itemTemplate let-item>
+       <p class="custFont" [innerHTML]="item.question" ></p>
+     </ng-template>
+
+     <ng-template #notFoundTemplate let-item>
+      <b class="custFont" [innerHTML]="'Data not found...'"></b>
+    </ng-template>
+   </div> -->
+   
+      <div *ngFor="let z of Title">
+        <mat-accordion class="w-100 example-headers-align">
+          <mat-expansion-panel class="custBAckGround"  [expanded]="z=='Health'">
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                <span class="custFontFamilyMuliBold muli-14pt custLineHight20 custColorDarkShade">{{z}}
+                </span>
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <div>
+              <ion-grid class="ion-no-padding">
+                <ion-row class="bodycontent ">
+                  <ion-col [size]="'4'" *ngFor="let x of all[z]" class="text-center border pt-3" (click)="getData(x)">
+                    <ion-img class="imgSize " [src]="x?.productIconPath"></ion-img>
+                    <p class="muli-12pt custFontFamilyMuliSemiBold pt-1">{{x?.productName}}</p>
+                  </ion-col>                
+                </ion-row>
+              </ion-grid>
+            </div>
+          </mat-expansion-panel>
+        </mat-accordion>
+      </div>
+
+
+
+  </ion-grid>
+
+
+
+  <div class="container"  *ngIf="!noData">
+    <div class="center">
+  <ion-img class="faceImg" [src]="imageList?.faceEmptyIcon"></ion-img>
+  <ion-row>
+  <p  class="found custFontFamilyMuliBold"> 
+    We are working for you!
+  </p></ion-row>
+  <br>
+
+  <!-- <p>You have currently no Notification, we will notify you when something new arrives!</p> -->
+    </div>
+  </div>
+</ion-content>
+
+

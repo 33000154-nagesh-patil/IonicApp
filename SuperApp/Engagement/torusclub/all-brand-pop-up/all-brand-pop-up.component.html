@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-row>
+    <ion-col>
+      <span class="muli-16pt custColorDark custFontFamilyMuliBold pt-4">
+        {{ allData.Title }} </span
+      ><span class="muli-10pt custColorDarkishBlue pt-4"
+        >({{ allData.count }})</span
+      >
+    </ion-col>
+  </ion-row>
+  <ion-row class="px-2">
+    <span class="muli-10pt custColorBattlePGry custFontFamilyMuliRegular">
+      {{ allData.rewardDetail }}
+    </span>
+  </ion-row>
+
+  <ion-col [size]="'12'" class="py-3">
+    <input placeholder="search brand" style="width: 100%" />
+  </ion-col>
+</ion-header>
+<ion-grid class="mainContain">
+  <ion-row class="w-100">
+    <ion-col
+      [size]="'4'"
+      *ngFor="let c of allData.jackpotReward" (click)="goToSub(c)">
+      <ion-card
+        class="custBackGround custImgSize"
+        style="border-radius: 50%; height: 95%; width: 95%;">
+        <ion-img class="imgSize d-inline" [src]="c.brandImg"></ion-img>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+<ion-footer class="pb-4">
+  <ion-col [size]="'12'" class="fixed-bottom pb-3 px-3" (click)="goBack()">
+    <button class="btn w-100 text-center custBackgroundColorWhite">
+      <span class="custColorGreyish custFontFamilyMuliBold muli-16pt"
+        >Cancel</span
+      >
+    </button>
+  </ion-col>
+</ion-footer>

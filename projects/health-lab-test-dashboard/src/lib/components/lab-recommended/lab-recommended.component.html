@@ -1,0 +1,65 @@
+<ion-grid class="custGrid">
+  <ion-row>
+    <ion-col [size]="'12'" class="pdingleft">
+      <ion-row class="copltmargin">
+        <ion-col [size]="'1'">
+          <h1></h1>
+        </ion-col>
+      </ion-row>
+    </ion-col>
+    <ion-col [size]="'12'" class="copldtmargin">
+      <p class="muli-12pt custFontFamilyMuliRegular custLineHight22 custColorBattlePGry px-3 mb-0">An overview of our
+        top recommended test</p>
+    </ion-col>
+  </ion-row>
+
+
+  <ion-row class="container mrgtopCard">
+    <ion-col [size]="'11'" *ngFor="let x of data">
+      <ion-card class="custBackgroundColorWhite card cardItem">
+
+        <ion-card-content class="custPding">
+          <ion-row>
+            <ion-col [size]="'2'" class="">
+              <ion-img [src]="x?.icon"></ion-img>
+            </ion-col>
+            <ion-col [size]="'9'">
+              <ion-row class="muli-14pt custFontFamilyMuliRegular custLineHight22 custColorDark">{{x?.testname}}</ion-row>
+              <ion-row class="custFontFamilyMuliRegular muli-10pt  custColorWarmGrey mrgintop">{{x?.testdescription}}</ion-row>
+              <ion-row class="custFontFamilyMuliRegular muli-10pt  custColorWarmGrey mrgintop">{{x?.laboratoryname}}</ion-row>
+            </ion-col>
+            <ion-col [size]="'1'">
+              <ion-img [src]="imageList?.leftArrowIcon" class="custArrowIcon float-end mt-2"></ion-img>
+            </ion-col>
+          </ion-row>
+
+          <ion-row class="mt-2">
+            <ion-col [size]="'3.3'">
+              <ion-row>
+                <p class="custFontFamilyMuliRegular muli-12pt custLineHight15 custColorGreyish">Price</p>
+              </ion-row>
+              <ion-row>
+                <p class="custFontFamilyMuliSemiBold muli-14pt custLineHight20 text-center custColorDark">{{rupeesSymbol}}{{x?.price}}</p>
+              </ion-row>
+            </ion-col>
+            <ion-col [size]="'5.2'">
+              <ion-row>
+                <p class="custFontFamilyMuliRegular muli-12pt custLineHight15 custColorGreyish">E-Reports Within</p>
+              </ion-row>
+              <ion-row>
+                <p class="custFontFamilyMuliRegular muli-12pt custLineHight15 custColorGreyish">{{x?.ereportwithin}}</p>
+              </ion-row>
+            </ion-col>
+            <ion-col [size]="'3.5'" class="float-end">
+              <ion-row class="custFontFamilyMuliRegular muli-12pt custLineHight15 custColorGreyish float-end">No. of Tests</ion-row>
+              <ion-row class="custFontFamilyMuliSemiBold muli-14pt custLineHight15 custColorDark float-end pt-1">{{x?.nooftests}}</ion-row>
+            </ion-col>
+          </ion-row>
+
+        </ion-card-content>
+      </ion-card>
+
+    </ion-col>
+  </ion-row>
+
+</ion-grid>

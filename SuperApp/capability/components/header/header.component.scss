@@ -1,0 +1,123 @@
+.custProfile{
+    background: var(--custwhiteTwo);
+    border-radius: 50%;
+    padding: 21px;
+}
+.custHeight{
+    height: 42px;
+    width: 42px;
+}
+.custMarginLeft{
+    margin-left: 20px;
+}
+.custProfileName{
+    position: absolute;
+   top:7px;
+}
+
+.custMarginBottom{
+    margin-bottom: -25px;
+}
+
+.custSVGTiaIcon{
+    // position: absolute;
+    // margin: -8px;
+    margin: -24px;
+
+}
+
+.custSVGIcon{
+   position: absolute;
+    margin: -8px;
+
+}
+
+.custTorusClubSVGIcon{
+  position: absolute;
+  margin: -22px;
+}
+.custStoryIcon{
+    height: 38px;
+    width: 38px;
+    padding: 3px;
+    transform: rotate(-30deg);
+    border-radius: 50%;
+
+}
+
+.custStorieLine {
+    border-radius: 50%;
+    border: 2px solid transparent;
+    background-size: 100% 100%, 50% 50%, 50% 50%, 50% 50%, 50% 50%;
+    background-repeat: no-repeat;
+    background-position: center center, left top, right top, left bottom, right bottom;
+    background-origin: content-box, border-box, border-box, border-box, border-box;
+    background-clip: content-box, border-box, border-box, border-box, border-box;
+    transform: rotate(30deg);
+  }
+
+  .custSuperModeActive{
+    background-image: linear-gradient(var(--custWhite), var(--custWhite)),
+    linear-gradient(30deg, var(--custWhite) 36%, var(--custPinkishOrange) 30%),
+    linear-gradient(120deg, var(--custWhite) 36%, var(--custPinkishOrange) 30%),
+    linear-gradient(300deg, var(--custWhite) 36%, var(--custPinkishOrange) 30%),
+    linear-gradient(210deg, var(--custWhite) 36%, var(--custPinkishOrange) 30%);
+  }
+
+  .custSuperMode{
+    background-image: linear-gradient(var(--custWhite), var(--custWhite)),
+    linear-gradient(30deg, var(--custWhite) 36%, var(--custBrightCyan) 30%),
+    linear-gradient(120deg, var(--custWhite) 36%, var(--custBrightCyan) 30%),
+    linear-gradient(300deg, var(--custWhite) 36%, var(--custBrightCyan) 30%),
+    linear-gradient(210deg, var(--custWhite) 36%, var(--custBrightCyan) 30%);
+  }
+
+  .custWithoutTextImg{
+    height: 18px;
+    width: 18px;
+    margin-top: 1rem;
+  }
+
+  .custHeaderMarginTop{
+    margin-top: -20px;
+  }
+
+  .custBadge{
+    position: absolute;
+    border-radius: 9px;
+    background: #44C8F5 0% 0% no-repeat padding-box;
+  }
+  .custRight10{
+    right: 10px;
+  }
+  .custRight0{
+    right: 0px;
+  }
+
+  .custMarfinTopWealth{
+    margin-top: 16px;
+  }
+
+  .headerBg{
+    background-color: white;
+    background: white;
+  }
+  ::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
+    background-color: var(--custWhite);
+    border-radius: 5px;
+  }
+  .custCenter{
+    display: flex;
+    align-items: center;
+  }
+  .badgeCart{
+    width: 22px;
+    height: 22px;
+    z-index: 1;
+    position: absolute;
+    right: 5px;
+  }
+
+  .rowBg {
+    background-color: #eef1f5;
+    }

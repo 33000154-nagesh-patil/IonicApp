@@ -1,0 +1,31 @@
+ion-toggle {
+    height: 18px;
+    width:44px;
+    --background: var(--custBrightCyan);
+  
+    --background-checked: var(--custBrightCyan);
+    --handle-background-checked: #fff url(https://cdn1.iconfinder.com/data/icons/basic-ui-elements-coloricon/21/04-512.png) no-repeat center / contain;
+    --handle-background: #fff url(https://cdn1.iconfinder.com/data/icons/social-messaging-ui-color/254000/38-1024.png) no-repeat center / contain;
+   
+  }
+  
+  ion-toggle::part(track){
+      padding: 5px;
+  }
+  .custColorWarmGrey1{
+    color: #adb2bb;
+    }
+
+    .BtnBlue{
+        background-color: #44C8F5;
+    }
+
+    .custCol{
+        background-color: #F1F1F1;
+    }
+    .imgHeight{
+        height: 20px;
+    }
+    .imgH{
+        height: 25px;
+    }

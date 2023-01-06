@@ -1,0 +1,6 @@
+<ng-container *ngIf="investmentStatus == false;else second">
+  <lib-gold-dashboard [imageList]="imageList" [errorList]="errorList" [currentMoneySymbols]="currentMoneySymbols" [goldData]="goldData" [silverData]="silverData" [goldSilverData]="goldSilverData" [currentDigiDataOrderList]="currentDigiDataOrderList" (setDigiType)="reDirectToInvestMentPage($event)" class="h-100 w-100 "></lib-gold-dashboard>
+</ng-container>
+<ng-template #second>
+   <lib-gold-investment-dashboard [imageList]="imageList" [errorList]="errorList" [currentMoneySymbols]="currentMoneySymbols" class="h-100 w-100 "></lib-gold-investment-dashboard>
+</ng-template>

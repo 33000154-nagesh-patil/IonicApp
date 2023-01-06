@@ -1,0 +1,36 @@
+[
+    {
+
+        "medicineName": "Dolo- 650 Tablet",
+        "provider": "by Micro Labs. 15 Tablets Strip",
+        "price": "₹110.00",
+        "Date": "13 March 2022",
+        "pending": "Completed",
+        "track": "Reorder"
+      },
+      {
+        "medicineName": "Detol Antiseptic Liquid",
+        "provider": "by Dettol. Bottle of 550 ML",
+        "price": "₹250.00",
+        "Date": "01 May 2022",
+        "pending": "Pending",
+        "track": "Track Order"
+      },
+      {
+        "medicineName": "Detol Antiseptic Liquid",
+        "provider": "by Dettol. Bottle of 550 ML",
+        "price": "₹250.00",
+        "Date": "01 May 2022",
+        "pending": "Cancelled",
+        "track": "Reorder"
+      },
+      {
+        "medicineName": "Detol Antiseptic Liquid",
+        "provider": "by Dettol. Bottle of 550 ML",
+        "price": "₹250.00",
+        "Date": "01 May 2022",
+        "pending": "Successful",
+        "track": "Reorder"
+      }
+ 
+]

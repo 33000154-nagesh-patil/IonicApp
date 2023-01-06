@@ -1,0 +1,98 @@
+
+<ion-app>
+  <cap-header [title]="'Fill Details'" [otherTextName]="'Add Details'" [imageList]="imageList" [showArrow]="true"
+  [showLabel]="true" [showImg]="false" [showIndex]="false" [showNotification]="false" [showCartWithName]="true"
+  [cartCount]="cartCount" [showSideMenu]="false" [showSearch]="true" [showClose]="false" [showShare]="false"
+  [showWatchList]="false" [showCartWithoutName]="false" [showStories]="false" [paddingSize]="'7'"
+  [showOtherText]="true" [backUrlName]="">
+</cap-header>
+
+<ion-content class="custBackgroundDynamicColorWhite">
+  <ion-grid class="p-3">
+    <ion-row class="w-100 myROW">
+    </ion-row>
+    <form [formGroup]="myForm" >
+      <div *ngFor="let control of questionArray">
+
+        <ion-row *ngIf="
+        [
+          'ALPHANUMERIC',
+          'NUMERIC',
+          
+        ].includes(control.type)">
+           <ion-row class="pb-3">{{control.heading}}</ion-row>
+          <mat-form-field class="w-100" appearance="outline">
+            <mat-label>{{ control.label }}</mat-label>
+            <input matInput [type]="control.type" [formControlName]="control.label" [value]="control.value">
+          </mat-form-field>
+        </ion-row>
+
+        <ion-row *ngIf="['date' ].includes(control.type)">
+          <mat-form-field class="mat-form-field" appearance="outline" class="w-100">
+            <mat-label>{{control.label}}</mat-label>
+            <input matInput readonly [matDatepicker]="picker" max="{{todaysDate}}" [formControlName]="control.label"
+              placeholder=DD-MM-YYYY (click)="picker.open()">
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field>
+        </ion-row>
+        <ion-row *ngIf="
+            [
+              'select'
+            ].includes(control.type)
+          ">
+
+          <mat-form-field class="w-100" appearance="outline">
+
+            <mat-label>{{ control.label }}</mat-label>
+            <ion-icon matSuffix name="chevron-down-outline"></ion-icon>
+            <mat-select [formControlName]="control.label">
+              <mat-option *ngFor="let option of control.options;index as i" [value]="option">
+                {{ option }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </ion-row>
+
+        <ion-row *ngIf="
+        [
+        'radio'
+        ].includes(control.type)
+        ">
+
+        <ion-row class="pb-3">{{control.heading}}</ion-row>
+           <mat-radio-group class="mt-3 w-100 radioGroup" [name]="control.name" [formControlName]="control.label"
+            >
+            <mat-radio-button *ngFor="let item of control.radios"
+              [value]="control.radios[control.radios.indexOf(item)]" class="">{{
+              control.radios[control.radios.indexOf(item)]}}</mat-radio-button>
+          </mat-radio-group> 
+        </ion-row>
+     
+        <ion-row *ngIf="
+        [
+        'triangle'
+        ].includes(control.type)
+        ">
+        <ion-col [size]="'12'">
+          <ion-img [src]="imageList?.alert" class="center" ></ion-img>
+        </ion-col>
+        <ion-col [size]="'12'" class="" >
+          <span  class="custFontFamilyMuliBold muli-16pt custLineHight22 custColorBlack center">{{control.label}}</span>
+        </ion-col>
+        </ion-row>
+
+      </div>
+
+    </form>
+
+  </ion-grid>
+</ion-content>
+  <!-- <button *ngIf="prod=='Transfer Money'" [disabled]="!myForm.valid" (click)="onSubmit()"
+    class="w-100 custBackgroundColorBrightCyan btn custMyButton custColorWhite">Procedd To Pay</button> -->
+    <ion-row  class="p-3">
+  <button type="submit"  (click)="onSubmit()" [disabled]="!myForm.valid"
+    class="w-100 custBackgroundColorBrightCyan btn custMyButton custColorWhite">Continue</button>
+  </ion-row>
+</ion-app>
+

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="13.326" height="22.544" viewBox="0 0 13.326 22.544">
+  <g id="Group_21907" data-name="Group 21907" transform="translate(0.6 0.6)">
+    <g id="usb">
+      <path id="Path_21131" data-name="Path 21131" d="M24.849,11.9a1.049,1.049,0,0,0-1.15-.856c-.02,0-.038,0-.058,0H22.8V6.323a.632.632,0,0,0-.7-.53H15.382V5.8a.6.6,0,0,0-.575.52v4.728h-.851c-.017,0-.035,0-.052,0a1.048,1.048,0,0,0-1.15.856H12.74v14.36h0a1.044,1.044,0,0,0,1.153.875H23.7a1.043,1.043,0,0,0,1.153-.874V11.9h0Zm-4.12-.852H16.863V7.362h3.866Z" transform="translate(-12.74 -5.793)" fill="none" stroke="#44c8f5" stroke-width="1.2"/>
+      <path id="Path_21132" data-name="Path 21132" d="M17.1,10.056H19.17v.859H17.1Z" transform="translate(-12.08 -5.366)" fill="none" stroke="#039" stroke-width="1.2"/>
+    </g>
+    <g id="usb-2" data-name="usb" transform="translate(4.123 2.067)">
+      <path id="Path_21131-2" data-name="Path 21131" d="M20.187,12.446H16.321V7.588h3.866Z" transform="translate(-16.321 -7.588)" fill="none" stroke="#44c8f5" stroke-width="1.2"/>
+      <path id="Path_21132-2" data-name="Path 21132" d="M17.1,10.056H19.17v.859H17.1Z" transform="translate(-16.203 -7.214)" fill="none" stroke="#039" stroke-width="1.2"/>
+    </g>
+  </g>
+</svg>

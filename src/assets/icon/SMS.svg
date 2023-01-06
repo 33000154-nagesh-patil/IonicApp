@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="34" height="33" viewBox="0 0 34 33">
+  <g id="SMS" transform="translate(-50 -461)">
+    <g id="Group_19952" data-name="Group 19952" transform="translate(50 461.001)">
+      <ellipse id="Ellipse_782" data-name="Ellipse 782" cx="17" cy="16.5" rx="17" ry="16.5" transform="translate(0 -0.001)" fill="#d9f5ff"/>
+    </g>
+    <g id="Group_26430" data-name="Group 26430" transform="translate(65 1144)">
+      <path id="Icon_feather-message-square" data-name="Icon feather-message-square" d="M20.575,15.217A1.786,1.786,0,0,1,18.789,17H8.072L4.5,20.746V6.286A1.786,1.786,0,0,1,6.286,4.5h12.5a1.786,1.786,0,0,1,1.786,1.786Z" transform="translate(-10.5 -679.5)" fill="none" stroke="#0f4880" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <path id="Path_21379" data-name="Path 21379" d="M0,0H10.717" transform="translate(-3.321 -671.13)" fill="none" stroke="#0f4880" stroke-width="1"/>
+      <line id="Line_872" data-name="Line 872" x2="10.717" transform="translate(-3.321 -668.748)" fill="none" stroke="#0f4880" stroke-width="1"/>
+      <line id="Line_873" data-name="Line 873" x2="10.717" transform="translate(-3.321 -666.367)" fill="none" stroke="#0f4880" stroke-width="1"/>
+    </g>
+  </g>
+</svg>

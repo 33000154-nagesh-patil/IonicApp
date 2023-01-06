@@ -1,0 +1,152 @@
+{
+    "listofgold": [
+        {
+            "tRansaction": "buy",
+            "weight": 0.1846,
+            "amount": 970.87,
+            "createdOnDate": "2022-08-03 15:27:39.06",
+            "pricePerGram": 5259.12,
+            "trasactionId": "TD743816595206523350149450"
+        },
+        {
+            "tRansaction": "buy",
+            "weight": 0.1891,
+            "amount": 970.87,
+            "createdOnDate": "2022-07-15 12:21:50.127",
+            "pricePerGram": 5132.64,
+            "trasactionId": "TD418916578679097250149450"
+        },
+        {
+            "tRansaction": "buy",
+            "weight": 0.1891,
+            "amount": 970.87,
+            "createdOnDate": "2022-07-15 12:11:53.227",
+            "pricePerGram": 5133.15,
+            "trasactionId": "TD613116578673127250149450"
+        },
+        {
+            "tRansaction": "buy",
+            "weight": 0.5,
+            "amount": 2617.52,
+            "createdOnDate": "2022-06-29 18:06:58.14",
+            "pricePerGram": 5235.04,
+            "trasactionId": "TD385116565062178350149141"
+        },
+        {
+            "tRansaction": "buy",
+            "weight": 1.0,
+            "amount": 5208.42,
+            "createdOnDate": "2022-06-27 12:19:35.33",
+            "pricePerGram": 5208.42,
+            "trasactionId": "TD858916563125746350149141"
+        },
+        {
+            "tRansaction": "buy",
+            "weight": 2.8422,
+            "amount": 14745.55,
+            "createdOnDate": "2022-06-24 15:14:45.317",
+            "pricePerGram": 5187.92,
+            "trasactionId": "TD316016560638845350149141"
+        },
+        {
+            "tRansaction": "buy",
+            "weight": 1.8594,
+            "amount": 9708.74,
+            "createdOnDate": "2022-06-22 19:01:14.143",
+            "pricePerGram": 5221.17,
+            "trasactionId": "TD104316559046733350149141"
+        },
+        {
+            "tRansaction": "buy",
+            "weight": 1.0,
+            "amount": 5220.66,
+            "createdOnDate": "2022-06-22 18:59:28.317",
+            "pricePerGram": 5220.66,
+            "trasactionId": "TD249116559045678250149141"
+        },
+        {
+            "tRansaction": "buy",
+            "weight": 1.0,
+            "amount": 5220.66,
+            "createdOnDate": "2022-06-22 18:57:11.54",
+            "pricePerGram": 5220.66,
+            "trasactionId": "TD513716559044301250149141"
+        },
+        {
+            "tRansaction": "buy",
+            "weight": 2.3,
+            "amount": 12013.61,
+            "createdOnDate": "2022-06-22 18:54:43.427",
+            "pricePerGram": 5223.31,
+            "trasactionId": "TD276616559042827350149141"
+        },
+        {
+            "tRansaction": "buy",
+            "weight": 2.0,
+            "amount": 10451.52,
+            "createdOnDate": "2022-06-22 18:51:10.33",
+            "pricePerGram": 5225.76,
+            "trasactionId": "TD354016559040695350149141"
+        },
+        {
+            "tRansaction": "buy",
+            "weight": 1.0,
+            "amount": 5226.68,
+            "createdOnDate": "2022-06-22 18:45:23.32",
+            "pricePerGram": 5226.68,
+            "trasactionId": "TD510616559037224350149141"
+        },
+        {
+            "tRansaction": "buy",
+            "weight": 1.858,
+            "amount": 9708.74,
+            "createdOnDate": "2022-06-22 18:40:55.147",
+            "pricePerGram": 5225.25,
+            "trasactionId": "TD737116559034548350149141"
+        },
+        {
+            "tRansaction": "buy",
+            "weight": 1.8577,
+            "amount": 9708.74,
+            "createdOnDate": "2022-06-22 18:38:17.01",
+            "pricePerGram": 5225.97,
+            "trasactionId": "TD828116559032965150149141"
+        },
+        {
+            "tRansaction": "buy",
+            "weight": 1.0,
+            "amount": 5226.99,
+            "createdOnDate": "2022-06-22 18:37:10.947",
+            "pricePerGram": 5226.99,
+            "trasactionId": "TD760816559032301350149141"
+        },
+        {
+            "tRansaction": "buy",
+            "weight": 1.8553,
+            "amount": 9708.74,
+            "createdOnDate": "2022-06-22 18:24:27.52",
+            "pricePerGram": 5232.8,
+            "trasactionId": "TD871716559024666250149141"
+        },
+        {
+            "tRansaction": "buy",
+            "weight": 1.8592,
+            "amount": 9708.74,
+            "createdOnDate": "2022-06-22 18:11:26.213",
+            "pricePerGram": 5221.89,
+            "trasactionId": "TD930116559016854250149141"
+        },
+        {
+            "tRansaction": "buy",
+            "weight": 1.0,
+            "amount": 5222.8,
+            "createdOnDate": "2022-06-22 18:05:13.817",
+            "pricePerGram": 5222.8,
+            "trasactionId": "TD960716559013128250149141"
+        }
+    ],
+    "totalInvestmentAmount": 122610.73,
+    "totalgrams": 23.494598,
+    "availableQuantity": 23.31,
+    "availableAmount": 121639.85
+}

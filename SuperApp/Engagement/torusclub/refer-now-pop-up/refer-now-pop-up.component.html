@@ -1,0 +1,64 @@
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <div id="showModalSMGSucces" class="pt-2">
+        <div class="ms-2 px-3">
+          <ul class="StepProgress mt-2">
+            <span *ngFor="let x of steps">
+            <li class="w-100  is-done StepProgress-item d-flex flex-column">
+              <span class="custFontFamilyMuliRegular muli-12pt custColorDark custLineHeight15 m-0">Step{{x.step}}</span>
+              <p class="custFontFamilyMuliBold muli-16pt">{{x.description}}</p>
+            </li>
+          </span>
+          </ul>
+        </div>
+      </div>
+    </ion-row>
+    <hr style="height:6px; background-color: grey;">
+
+   <form [formGroup]="userMobileNumber">
+    <mat-form-field appearance="outline" class="w-100 px-2">
+      <input matInput placeholder="Enter Name" #username autocomplete="off">
+    </mat-form-field>
+      <mat-form-field appearance="outline" class="w-100 px-2">
+        <input matInput placeholder="Enter Mobile Number" formControlName="mobileNumber" autocomplete="off">
+        <span matSuffix class="custColorBrightCyan">Refer contacts</span>
+      </mat-form-field>
+      <p class="text-center">------  OR  ------</p>
+      <mat-form-field appearance="outline" class="w-100 px-2">
+        <input matInput placeholder="Enter Email Id">
+      </mat-form-field>
+
+      <ion-row>
+        <ion-col [size]="'6'">
+          <ion-button expand="block" class="text-capitalize text-center custLooksBtn" (click)="whatsappShare(username.value)">
+            <span class="custColorDark custFontFamilyMuliBold muli-18pt">Submit</span>
+        </ion-button>
+        </ion-col>
+        <ion-col [size]="'6'">
+          <ion-button expand="block" class="text-capitalize text-center custLooksBtn" (click)="socialSharing()">
+            <span class="custColorDark custFontFamilyMuliBold muli-18pt">Cancel</span>
+        </ion-button>
+        </ion-col>
+      </ion-row>
+    </form>
+  </ion-grid>
+</ion-content>
+
+<!-- <header style="height: 66px;background-color: #0F4880;">
+  <ion-row style="" class="text-start">
+  <img style="padding-top: 20px;padding-left:15px" src="/assets/icon/torusWhiteLogo.png"/>
+</ion-row>
+</header>
+<ion-content>
+  <ion-row style="">
+    <img style="width: 100%;padding-top: 100px;" src="/assets/icon/allPeople1.png">
+  </ion-row>
+  <ion-row class="d-flex justify-content-center">
+    <p class="custFontFamilyMuliBold muli-26pt custColorDarkishBlue text-center" style="padding-top: 100px;">You are in a QUEUE..</p>
+   <p class="custFontFamilyMuliBold muli-18pt custColorDark text-center py-3" style="padding-left: 80px;padding-right: 80px;">Something exciting is coming soon...</p>
+   <ion-button expand="block" class="text-capitalize text-center custSubmit" >
+    <span class="  custFontFamilyMuliRegular muli-14pt">Go To Login</span>
+  </ion-button>
+  </ion-row>
+</ion-content> -->

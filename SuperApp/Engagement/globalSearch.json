@@ -1,0 +1,205 @@
+{
+  "title": [
+    {
+      "title":"Search History"
+    },
+    {
+      "title": "Products"
+    },
+    {
+      "title": "Quick Search"
+    }
+   
+  ],
+  "Products": [
+    {
+      "title": "Mutual Fund",
+      "url": [
+        "Wealth",
+        "MF"
+      ]
+    },
+    {
+      "title": "Stock",
+      "url": [
+        "Wealth",
+        "ST"
+      ]
+    },
+    {
+      "title": "Digi Gold",
+      "url": [
+        "Wealth",
+        "DG"
+      ]
+    },
+    {
+      "title": "Courses",
+      "url": [
+        "Career",
+        "Courses"
+      ]
+    },
+    {
+      "title": "Jobs",
+      "url": [
+        "Career",
+        "Job"
+      ]
+    },
+    {
+      "title": "Assessment",
+      "url": [
+        "Career",
+        "Assessment"
+      ]
+    },
+    {
+      "title": "Lab Test",
+      "url": [
+        "Health",
+        "LabTest"
+      ]
+    },
+    {
+      "title": "Medicine",
+      "url": [
+        "Health",
+        "Medicine"
+      ]
+    },
+    {
+      "title": "Loans",
+      "url": [
+        "Wealth",
+        "Las"
+      ]
+    },
+    {
+      "title": "Bill Payments",
+      "url": [
+        "Wealth",
+        "BillPayment"
+      ]
+    },
+    {
+      "title": "Insurance",
+      "url": [
+        "Wealth",
+        "Insurance"
+      ]
+    },
+    {
+      "title": "Neo Bank",
+      "url": [
+        "Wealth",
+        "NB"
+      ]
+    },
+    {
+      "title": "ETFs",
+      "url": []
+    },
+    {
+      "title": "Baskets",
+      "url": []
+    },
+    {
+      "title": "Fixed Deposits",
+      "url": []
+    },
+    {
+      "title": "Bonds",
+      "url": []
+    },
+    {
+      "title": "International Equities",
+      "url": []
+    },
+    {
+      "title": "USA Stocks",
+      "url": []
+    }
+  ],
+  "Quick Search": [
+    {
+      "title": "Mutual Fund",
+      "url": [
+        "Wealth",
+        "MF"
+      ]
+    },
+    {
+      "title": "Stock",
+      "url": [
+        "Wealth",
+        "ST"
+      ]
+    },
+    {
+      "title": "Digi Gold",
+      "url": [
+        "Wealth",
+        "DG"
+      ]
+    },
+    {
+      "title": "Courses",
+      "url": [
+        "Career",
+        "Courses"
+      ]
+    },
+    {
+      "title": "Jobs",
+      "url": [
+        "Career",
+        "Job"
+      ]
+    },
+    {
+      "title": "Assessment",
+      "url": [
+        "Career",
+        "Assessment"
+      ]
+    },
+    {
+      "title": "Lab Test",
+      "url": [
+        "Health",
+        "LabTest"
+      ]
+    },
+    {
+      "title": "Medicine",
+      "url": [
+        "Health",
+        "Medicine"
+      ]
+    }
+  ],
+  "Search History": [
+    {
+      "title": "Quant Small Cap Fund Direct Plan Growth",
+      "url": [
+        "Wealth",
+        "MF"
+      ]
+    },
+    {
+      "title": "ICICI Prudential Focused Bluechip Equity Fund",
+      "url": [
+        "Wealth",
+        "DG"
+      ]
+    },
+    {
+      "title": "Infosys Ltd",
+      "url": [
+        "Wealth",
+        "ST"
+      ]
+    }
+  ]
+}

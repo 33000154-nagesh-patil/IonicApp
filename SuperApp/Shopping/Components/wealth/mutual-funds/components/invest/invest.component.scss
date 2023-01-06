@@ -1,0 +1,77 @@
+.mfBackground{
+    background-image: var(--mf);
+    background-repeat: no-repeat;
+    background-size: cover;
+    // background-size: 1200px;
+}
+
+.mfBackground2{
+    background-image: var(--mf2);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.imgSize {
+    width: 25.83px;
+    height: 25.64px;
+    padding-top: 0.25rem;
+}
+
+.custMFImg{
+    height: 90px;
+    width: 100px;
+    padding-top: 20px;
+}
+
+.custImgExpo{
+    height: 14px;
+    width: 14px;
+}
+
+::ng-deep ion-slides {
+    .swiper-pagination {
+        position: relative;
+        background-color: var(--custGray);
+    }
+    .swiper-pagination.swiper-pagination-bullets {
+        bottom: 0px !important;
+        width: fit-content;
+        border-radius: 3px;
+        margin-left: 43%;
+        height: 16px;
+        line-height: 4px;
+        top: 8px;
+    }
+    .swiper-pagination-bullet {
+        width: 30px;
+        border-radius: 3px;
+        opacity: 1;
+        height: 6px;
+        border:  none ; 
+        background-color: var(--custGray);
+    }
+    .swiper-pagination-bullet-active {
+        width: 30px;
+        border-radius: 3px;
+        height: 6px;
+        background: var(--custBrightCyan);
+    }
+}
+
+::ng-deep .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0;
+}
+
+ion-badge {
+    margin-bottom: -4px;
+    background-color: var(--custBrightCyan);
+    line-height: 0.7;
+    text-size-adjust: auto;
+    border-radius: 50%;
+}
+
+.custBox{
+    height: 4px;
+    width: 20px;
+    border-radius: 0.5px;
+}

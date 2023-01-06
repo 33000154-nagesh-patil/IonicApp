@@ -1,0 +1,38 @@
+<ion-app>
+  <ion-content class="contentBackground">
+    <ion-grid class="p-3">
+
+      <ion-row class="w-100 myROW">
+        <ion-img src="assets/icon/bharatBillPay.svg" class="img my-3"> </ion-img>
+      </ion-row>
+      <form [formGroup]="myForm">
+      
+        <div *ngFor="let control of sub">
+          <ion-row *ngIf="['text','number', ].includes(control.type)">
+            <mat-form-field class="w-100" appearance="outline">
+              <mat-label>{{ control.label }}</mat-label>
+              <input matInput [type]="control.type" [formControlName]="control.name" [value]="control.value">
+            </mat-form-field>
+          </ion-row>
+          <ion-row *ngIf="['select'].includes(control.type)">
+            <mat-form-field class="w-100" appearance="outline">
+              <mat-label>{{ control.label }}</mat-label>
+              <mat-select [formControlName]="control.name">
+                <mat-option *ngFor="let option of control.options;index as i" [value]="option">
+                  <img *ngIf="subCategory=='Credit Card'" width="45px" height="45px" src="{{control.path}}" />
+                  {{ option }}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </ion-row>
+        </div>
+      </form>
+    </ion-grid>
+  </ion-content>
+  <ion-footer class="p-3 custBackgroundColorWhite">
+    <ion-toolbar>
+      <button [disabled]="!myForm.valid && disable" (click)="onSubmit(json?.nextStep)"
+        class="w-100 custBackgroundColorBrightCyan btn custMyButton custColorWhite">{{json?.nextStep}}</button>
+    </ion-toolbar>
+  </ion-footer>
+</ion-app>

@@ -1,0 +1,41 @@
+<ion-header>  
+  <ion-toolbar> 
+    <ion-buttons slot="start">
+      <ion-icon name='chevron-back-outline' (click)='dismiss()' class="muli-25pt custBackColor custColorDarkishBlue"></ion-icon>
+    </ion-buttons>
+    <h3 class="mfTitle custColorDark custLineHight30 custFontFamilyMuliBold muli-16pt">{{custHeader}}</h3>
+  </ion-toolbar>  
+</ion-header>  
+  
+<ion-content>  
+  <ion-grid class="ion-margin">
+    <ion-row>
+      <ion-col size="12" size-md>
+        <ion-card class="ion-no-margin">
+          <ion-card-content class="ion-no-padding">
+            <ion-row class="custFontFamilyMuliBold">
+              <ion-col class="ion-text-start">{{'name' | translate}}</ion-col>
+                <ion-col class="ion-text-end">{{'amount' | translate}}</ion-col>
+                <ion-col class="ion-text-end">{{'percentage' | translate}}</ion-col>
+            </ion-row>
+            <ion-row *ngFor="let x of dummyData?.trackModal; index as i"  class="custFontFamilyMuliRegular">
+              <ion-col class="custDecoration ion-text-start">{{ x.name }}</ion-col>
+              <ion-col class="ion-text-end">{{ x.amount }}</ion-col>
+              <ion-col class="ion-text-end">{{ x.percentage }}</ion-col>
+            </ion-row>
+            <ion-row class="custFontFamilyMuliSemiBold">
+              <ion-col  class="ion-text-start">{{'total' | translate}}</ion-col>
+                <ion-col  class="ion-text-end">{{collectionData?.total | currencyCommasHundreds}}</ion-col>
+                <ion-col  class="ion-text-end">{{collectionData?.percentage}}%</ion-col>
+            </ion-row>
+          </ion-card-content>
+        </ion-card>
+        
+      </ion-col>
+      <ion-col size="12" size-md>
+        <canvas #barCanvasModal></canvas>
+      </ion-col>
+    </ion-row>
+    
+  </ion-grid>
+</ion-content>  

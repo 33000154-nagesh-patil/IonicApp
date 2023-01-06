@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="83" height="15" viewBox="0 0 83 15">
+  <g id="Group_12096" data-name="Group 12096" transform="translate(-120 -324.236)">
+    <text id="KYC_-_Pending" data-name="KYC - Pending" transform="translate(135 336.236)" fill="#d23d50" font-size="10" font-family="Muli-Regular, Muli"><tspan x="0" y="0">KYC - Pending</tspan></text>
+    <g id="Group_11793" data-name="Group 11793" transform="translate(-24 -9.764)">
+      <path id="Path_15939" data-name="Path 15939" d="M394.607,748a4.573,4.573,0,1,0,3.229,1.339A4.57,4.57,0,0,0,394.607,748Zm0,8.374a3.81,3.81,0,1,1,2.69-1.116A3.807,3.807,0,0,1,394.607,756.374Z" transform="translate(-246.04 -410)" fill="#d23d50"/>
+      <path id="Path_15940" data-name="Path 15940" d="M401.42,753a.381.381,0,0,0-.381.381v3.045a.381.381,0,0,0,.761,0v-3.045a.381.381,0,0,0-.381-.381Z" transform="translate(-252.852 -413.097)" fill="#d23d50"/>
+      <path id="Path_15941" data-name="Path 15941" d="M401.8,765.381a.381.381,0,1,0-.381.381A.381.381,0,0,0,401.8,765.381Z" transform="translate(-252.852 -420.529)" fill="#d23d50"/>
+    </g>
+  </g>
+</svg>

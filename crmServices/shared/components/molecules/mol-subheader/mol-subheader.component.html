@@ -1,0 +1,4 @@
+<ion-row class="pt-4" *ngFor="let buttonDet of menuTitleDetils.value">
+      <app-label [labelDetail]="menuTitleDetils" class="colSize6"></app-label>
+      <app-buttons *ngIf="buttonDet" [buttonText]="buttonDet" (click)="getcreateForm(buttonDet)" class="colSize6 text-end px-3"></app-buttons>
+</ion-row>

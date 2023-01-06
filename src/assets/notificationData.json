@@ -1,0 +1,39 @@
+{
+    "data":[
+        {
+            "icon":"assets/icon/allSucess.svg",
+            "days":"Today",
+            "title":"Order Confirmed",
+            "type":"Education",
+            "detail":"Advance Java course has been allocated to you.",
+            "id":"1",
+            "message":"Read"
+        },
+        {
+            "icon":"assets/icon/notificationCal.svg",
+            "days":"Yesterday",
+            "title":"Order Cancelled",
+            "type":"Education",
+            "detail":"Sorry ! to say that Python course hasn't allocated to you",
+            "id":"2",
+            "message":"Unread"
+        },
+        {
+            "icon":"assets/icon/allSucess.svg",
+            "days":"06/04/2022",
+            "title":"Order Confirmed",
+            "type":"Education",
+            "detail":"Advance Java course has been allocated to you.",
+            "id":"3",
+            "message":"Read"
+        },
+        {
+            "icon":"assets/icon/notificationCal.svg",
+            "title":"Order Cancelled",
+            "type":"Education",
+            "detail":"Sorry ! to say that Python course hasn't allocated to you",
+            "id":"4",
+            "message":"Unread"
+        }
+    ]
+}

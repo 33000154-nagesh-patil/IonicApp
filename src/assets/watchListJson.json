@@ -1,0 +1,405 @@
+ 
+ {
+
+  "nifty50":[
+    {
+      "title": "ITC",
+      "description": "NSE",
+      "amount": "₹3251.00",
+      "rate": 22.62,
+      "percent": " (0.23%)"
+    },
+    {
+      "title": "TATAMOTORS",
+      "description": "NSE",
+      "amount": "₹3251.00",
+      "rate": 22.62,
+      "percent": " (0.23%)"
+    },
+    {
+      "title": "TCS",
+      "description": "NFO",
+      "amount": "₹234.00",
+      "rate": 22.62,
+      "percent": " (0.23%)"
+    },
+    {
+      "title": "ONGC",
+      "description": "NSE",
+      "amount": "₹3200.00",
+      "rate": 22.62,
+      "percent": " (0.23%)"
+    },
+    {
+      "title": "IOC",
+      "description": "NSE",
+      "amount": "₹3200.00",
+      "rate": 22.62,
+      "percent": " (0.23%)"
+    },
+    {
+      "title": "AXISBANK",
+      "description": "NSE",
+      "amount": "₹3200.00",
+      "rate": 22.62,
+      "percent": " (0.23%)"
+    },
+    {
+      "title": "Nifty",
+      "description": "NSE",
+      "amount": "₹3200.00",
+      "rate": 12.62,
+      "percent": " (0.20%)"
+    }
+  ],
+
+  "watchlist1":[
+    {
+      "title": "ITC",
+      "description": "NSE",
+      "amount": "₹21.00",
+      "rate": 221.62,
+      "percent": " (0.23%)"
+    },
+    {
+      "title": "TATAMOTORS",
+      "description": "NSE",
+      "amount": "₹51.00",
+      "rate": 222.62,
+      "percent": " (0.23%)"
+    },
+    {
+      "title": "AXISBANK",
+      "description": "NSE",
+      "amount": "₹31.00",
+      "rate": 22.62,
+      "percent": " (0.23%)"
+    },
+    {
+      "title": "IOC",
+      "description": "NSE",
+      "amount": "₹251.00",
+      "rate": 22.62,
+      "percent": " (0.23%)"
+    },
+    {
+      "title": "AXISBANK",
+      "description": "NSE",
+      "amount": "₹31.00",
+      "rate": 22.62,
+      "percent": " (0.23%)"
+    },
+    {
+      "title": "SBIN",
+      "description": "NSE",
+      "amount": "₹321.00",
+      "rate": 22.62,
+      "percent": " (0.23%)"
+    }
+  ],
+  "watchlist2":[
+    {
+      "title": "AXISBANK",
+      "description": "NSE",
+      "amount": "₹31.00",
+      "rate": 22.62,
+      "percent": " (0.23%)"
+    },
+    {
+      "title": "AXISBANK",
+      "description": "NSE",
+      "amount": "₹31.00",
+      "rate": 22.62,
+      "percent": " (0.23%)"
+    },
+    {
+      "title": "AXISBANK",
+      "description": "NSE",
+      "amount": "₹31.00",
+      "rate": 22.62,
+      "percent": " (0.23%)"
+    },
+    {
+      "title": "AXISBANK",
+      "description": "NSE",
+      "amount": "₹31.00",
+      "rate": 22.62,
+      "percent": " (0.23%)"
+    },
+    {
+      "title": "AXISBANK",
+      "description": "NSE",
+      "amount": "₹31.00",
+      "rate": 22.62,
+      "percent": " (0.23%)"
+    }
+  ],
+  
+  
+     "editOptions" : [
+     {
+       "bankNames":"Sensex",
+       "description":"NSE" 
+     },
+     {
+       "bankNames":"USD",
+       "description":"NSE"
+     },
+     {
+       "bankNames":"SGX Nifty",
+       "description":"NSE"
+     },
+     {
+       "bankNames":"Nifty 100",
+       "description":"NSE"
+     },
+     {
+       "bankNames":"Nifty 200",
+       "description":"NSE"
+     },
+     {
+       "bankNames":"Nifty 300",
+       "description":"NSE"
+     },
+     {
+       "bankNames":"Nifty 300",
+       "description":"NSE"
+     }
+   ],
+
+   "index":[
+    {
+     "bankName":"Nifty",
+     "description":"NSE",
+     "Money":24522.04,
+     "LiveMoney":343.03,
+     "PrecentegIncrement":0.43,
+     "date":"25 jun 2021, 01:02:31 pm"
+   },
+   {
+     "bankName":"Bank Nifty",
+     "description":"BSE",
+     "Money":24522.03,
+     "LiveMoney":343.03,
+     "imag":"assets/icon/editPenIcon.svg",
+     "img2":"assets/icon/recycleBinIcon.svg",
+     "PrecentegIncrement":0.43,
+     "date":"20 jan 2021, 03:04:41 pm"
+   }
+   ],
+   
+  "options" : [
+    {
+      "title": "ITC",
+      "description": "NSE",
+      "amount": "₹3251.00",
+      "rate": 22.62,
+      "percent": " (0.23%)"
+    },
+    {
+      "title": "TATAMOTORS",
+      "description": "NSE",
+      "amount": "₹3251.00",
+      "rate": 22.62,
+      "percent": " (0.23%)"
+    },
+    {
+      "title": "TCS",
+      "description": "NFO",
+      "amount": "₹234.00",
+      "rate": 22.62,
+      "percent": " (0.23%)"
+    },
+    {
+      "title": "ONGC",
+      "description": "NSE",
+      "amount": "₹3200.00",
+      "rate": 22.62,
+      "percent": " (0.23%)"
+    },
+    {
+      "title": "IOC",
+      "description": "NSE",
+      "amount": "₹3200.00",
+      "rate": 22.62,
+      "percent": " (0.23%)"
+    },
+    {
+      "title": "AXISBANK",
+      "description": "NSE",
+      "amount": "₹3200.00",
+      "rate": 22.62,
+      "percent": " (0.23%)"
+    },
+    {
+      "title": "Nifty",
+      "description": "NSE",
+      "amount": "₹3200.00",
+      "rate": 12.62,
+      "percent": " (0.20%)"
+    }
+  ],
+  "portfolio" : [
+    {
+      "title": "ITC ",
+      "description": "NSE",
+      "amount": "₹3200.00",
+      "rate": 22.62,
+      "percent": " (0.23%)"
+    },
+    {
+      "title": "TATAMOTORS",
+      "description": "NFO",
+      "amount": "₹3200.00",
+      "rate": 22.62,
+      "percent": " (0.23%)"
+    },
+    {
+      "title": "IOC",
+      "description": "NSE",
+      "amount": "₹234.33",
+      "rate": 22.26,
+      "percent": " (0.23%)"
+    },
+    {
+      "title": "AXISBANK",
+      "description": "NSE",
+      "amount": "₹3200.00",
+      "rate": 22.62,
+      "percent": " (0.23%)"
+    },
+    {
+      "title":"ONGC",
+      "description":"NSE",
+      "amount":"₹3200.00",
+      "rate":22.62,
+      "percent":" (0.23%)"
+    }
+  ],
+  "Edit1":[
+    {
+        "id":"SBIN",
+        "name":"NSE",
+        "img":"assets/icon/navbarIcon.svg",
+        "img2":"assets/icon/recycleBinIcon.svg"
+
+    },
+    {
+        "id":"PNB",
+        "name":"NSE",
+        "img":"assets/icon/navbarIcon.svg",
+        "img2":"assets/icon/recycleBinIcon.svg"
+
+    },
+    {
+        "id":"BODALCHEM",
+        "name":"NSE",
+        "img":"assets/icon/navbarIcon.svg",
+        "img2":"assets/icon/recycleBinIcon.svg"
+
+    },
+    {
+        "id":"AMARAJABAT",
+        "name":"NSE",
+        "img":"assets/icon/navbarIcon.svg",
+        "img2":"assets/icon/recycleBinIcon.svg"
+
+    }
+
+
+  ],
+  
+  "DerivativesPage":[
+    {
+        "id":"Nifty 24 JUN 21 FUT",
+        "name":"NFO",
+        "amount":"₹15735.65",
+        "decimal":"22.14",
+        "percantage":"(0.23%)",
+        "charts":"View Charts",
+        "set":"Set Alerts"
+
+    }
+
+  ],
+  "USDINR":[
+    {
+        "id":"USDINR 17th SEP 68.25 CE",
+        "name":"CDS",
+        "amount":"₹79.7750",
+        "decimal":"22.14",
+        "percantage":"(0.23%)",
+        "charts":"View Charts",
+        "set":"Set Alerts"
+
+    }
+
+  ],
+  "DerivativesPage2":[
+    {
+        "id":"Average Traded Price",
+        "id1":"Last Traded Quantity",
+        "num":"112.57",
+        "num2":"19.00"
+    },
+    {
+        "id":"Last Traded Time",
+        "id1":"Volume (In Lacs)",
+        "num":"6/4/21 13:01",
+        "num2":"34.01"
+    },
+    {
+        "id":"Open Interest (In lacs)",
+        "id1":"Open Interest Change %",
+        "num":"44.10",
+        "num2":"2.10%"
+    },
+    {
+        "id":"Market Lot",
+        "id1":"Rollover Cost",
+        "num":"75",
+        "num2":"75.20"
+    },
+    {
+        "id":"Rollover %",
+        "id1":"Spot",
+        "num":"19.00%",
+        "num2":"15,345.44"
+    },
+    {
+        "id":"Expiry",
+        "num":"6/4/2021"
+    }
+
+  ],
+  "spot":[
+    {
+        "id":"Spot Price",
+        "ruppess":"₹234.65",
+        "ratio":"22.14",
+        "per":"(0.23%)"
+    }
+],
+  "table1":{
+    "buyBid":[100,100,100,100,100],
+    "buyOrders":[1,1,1,1,1],
+    "buyQty":[18,18,18,18,18],
+    "sellBid":[100,100,100,100,100],
+    "sellOrders":[1,1,1,1,1],
+    "sellQty":[18,18,18,18,18]
+  },
+
+  "table2":
+{
+  "buyBid":[0.01,100.01,14700,0.01,100.01],
+  "buyOrders":[0.01,100.01,14750,0.01,100.01],
+  "buyQty":[0.01,100.01,14800,0.01,100.01],
+  "sellBid":[62.01,100.02,14850,100,100.09],
+  "sellOrders":[62.01,100.02,14850,100,100.01],
+  "sellQty":[22.01,100.02,14900,100,100.01],
+  "sellQty1":[82.01,100.02,14950,100,100.01],
+  "sellQty2":[82.01,105.02,15000,100,100.01]
+  
+}
+
+}

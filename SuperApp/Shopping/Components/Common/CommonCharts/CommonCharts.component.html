@@ -1,0 +1,170 @@
+<ion-card *ngIf="showGraph">
+  <ion-card-header>
+    <ion-row>
+      <ion-col class="d-flex flex-column">
+        <span
+          class="custFontFamilyMuliRegular muli-10pt w-100 custLineHight28 custColorGreyish">{{graphData?.label}}</span>
+        <span *ngIf="graphData?.value" class="custFontFamilyRobotoCondensed muli-14pt w-100 custColorDark">{{toString(graphData?.value)}}%</span>
+      </ion-col>
+    </ion-row>
+    <ion-row >
+      <ion-col *ngIf="graphData?.oneDayReturn" [size]="'2'" class="custFontFamilyRobotoCondensed muli-14pt w-100 custColorDark">
+        {{graphData?.oneDayReturn}}%</ion-col>
+      <ion-col *ngIf="graphData?.description" class="custFontFamilyRobotoCondensed muli-14pt w-100 custColorDark ms-1">
+        {{graphData?.description}}</ion-col>
+    </ion-row>
+  </ion-card-header>
+  <ion-card-content>
+
+    <div class="mb-1"  >
+      <canvas *ngIf="graphData" height="230px" id="linechart17" width="0"></canvas>
+      <ion-row class="w-100" *ngIf="graphData?.showButton">
+        <ion-col class="d-flex justify-content-between">
+          <button class="Equity-btn btn w-100 custFontFamilyMuliBold muli-10pt p-1"
+            [ngClass]="{'active':Buttondata  == '1m'}" (click)="activebutton('1m',30)">1m</button>
+          <button class="Equity-btn btn w-100 custFontFamilyMuliBold muli-10pt p-1"
+            [ngClass]="{'active':Buttondata  == '3m'}" (click)="activebutton('3m',90)">3m</button>
+          <button class="Equity-btn btn w-100 custFontFamilyMuliBold muli-10pt p-1"
+            [ngClass]="{'active': Buttondata == '6m'}" (click)="activebutton('6m',180)">6m</button>
+          <button class="Equity-btn btn w-100 custFontFamilyMuliBold muli-10pt p-1"
+            [ngClass]="{'active':Buttondata  == '1y'}" (click)="activebutton('1y',365)">1y</button>
+          <button class="Equity-btn btn w-100 custFontFamilyMuliBold muli-10pt p-1"
+            [ngClass]="{'active': Buttondata == '3y'}" (click)="activebutton('3y',900)">3y</button>
+          <button class="Equity-btn btn w-100 custFontFamilyMuliBold muli-10pt p-1"
+            [ngClass]="{'active':Buttondata  == '5y'}" (click)="activebutton('5y',1200)">5y</button>
+        </ion-col>
+      </ion-row>
+    </div>
+    <ion-row *ngFor="let x of graphData?.row2">
+      <ion-col class="d-flex flex-column" *ngFor="let y of x|keyvalue">
+        <span class="custFontFamilyMuliRegular muli-10pt w-100 custLineHight28 custColorGreyish">{{y?.key}}</span>
+        <span *ngIf="y?.value" class="custFontFamilyRobotoCondensed muli-14pt w-100 custColorDark">{{toString(y?.value)}}
+          <span *ngIf="y.key=='Rating'">
+          <ngb-rating [(rate)]="Ratingvalue" [readonly]="true" [starTemplate]="starTemplate" [max]="5"></ngb-rating>
+          <ng-template #starTemplate let-fill="fill">
+            <span class="star" [class.full]="fill === 100">
+              <span class="half" [style.width.%]="fill">&starf;</span>&starf;
+            </span>
+          </ng-template>
+        </span>
+        </span>
+      </ion-col>
+    </ion-row>
+    <!-- <ion-row>
+      <ion-col [size]="'5'" class=" custFontFamilyMuliRegular muli-12pt custColorGreyish mt-1">Invested Amount</ion-col>
+      <ion-col [size]="'4'" class="text-end li-12pt custColorGreyish mt-1">Returns</ion-col>
+      <ion-col [size]="'3'" class=" muli-12pt custColorGreyish mt-1">XIRR <img [src]="imageList?.helpIcon" class="sizehelpicon" ></ion-col>
+      <ion-col [size]="'5'" class="custFontFamilyRobotoCondensed muli-14pt custColorDark "> {{data?.chart?.investValue}}
+      </ion-col>
+      <ion-col [size]="'4'" class="text-end custFontFamilyRobotoCondensed muli-14pt custColorParakeetGreen"> <img
+          [src]="imageList?.caretUpSharp" class="something2"> {{data?.chart?.returnValue}}%</ion-col>
+      <ion-col [size]="'4'"  *ngIf="TotalReturnPer<0"class=" custFontFamilyRobotoCondensed muli-14pt custColorcustFadedRed"><img [src]="imageList?.DownPerArrow"  >  {{TotalReturnPer}}%</ion-col>
+
+      <ion-col [size]="'3'" class=" custFontFamilyRobotoCondensed muli-14pt custColorGreyish">27.26%</ion-col>
+    </ion-row> -->
+  </ion-card-content>
+  <ion-row class="backgrd" *ngIf="graphData?.Chart?.graph_footer">
+    <ion-col class="backgrd p-3" (click)="StartSip()"><span
+        class=" custFontFamilyMuliSemiBold muli-12pt custLineHight15 custColorDarkishBlue">{{graphData?.Chart?.graph_footer?.row?.col1}}</span>
+    </ion-col>
+    <ion-col class="text-end backgrd p-3" (click)="compareCompany()"><span
+        class=" custFontFamilyMuliSemiBold muli-12pt custLineHight15 custColorDarkishBlue">{{graphData?.Chart?.graph_footer?.row?.col2}}</span>
+    </ion-col>
+  </ion-row>
+</ion-card>
+
+<ion-row *ngIf="showDonut">
+  <ion-col class="text-start">
+    <span class="m-2 custFontFamilyMuliBold muli-18pt custLineHight22 custColorDark">PortFolio Summary</span>
+  </ion-col>
+</ion-row>
+
+<ion-card *ngIf="showDonut">
+  <ion-card-header>
+    <ion-card-title  *ngIf="donutData.title"> {{donutData.title}}</ion-card-title>
+  </ion-card-header>
+  <ion-card-content class="p-0">
+
+  <ion-row>
+
+    <ion-col [size]="'6'" class="m-0">
+      <apx-chart #chartObj *ngIf="chartShow" [series]="chartOptions.series" [chart]="chartOptions.chart"
+        [labels]="chartOptions.labels" [plotOptions]="chartOptions.plotOptions" [responsive]="chartOptions.responsive">
+      </apx-chart>
+    </ion-col>
+
+    <ion-col [size]="'6'" class="mt-3 ps-5">
+      <div class="custScroll">
+      <mat-radio-group [(ngModel)]="doughnutRadio">
+        <ion-row *ngFor="let x of this.donutData?.donutData" class="d-flex flex-column py-2">
+
+          <ion-col class="muli-10pt custFontFamilyMuliBold custColorPurple ">{{x?.label}}</ion-col>
+          <ion-col class="my-2 ">
+            <mat-radio-button   (click)="change(x?.label)" [value]="x?.label" color="primary" ></mat-radio-button>
+                <span *ngIf="donutData?.valueType == 'price'">
+                ₹{{x?.value}}
+            </span>
+            <span *ngIf="donutData?.valueType == 'percentage'">
+              {{x?.value}}%
+            </span>
+            <span *ngIf="donutData?.valueType == 'number'">
+              {{x?.value}}
+            </span>
+
+          </ion-col>
+
+        </ion-row>
+      </mat-radio-group>
+    </div>
+    </ion-col>
+
+  </ion-row>
+</ion-card-content>
+
+</ion-card><ion-row *ngIf="showBar">
+  <ion-col class="text-start">
+    <span class="m-2 custFontFamilyMuliBold muli-18pt custLineHight22 custColorDark">PortFolio Summary</span>
+  </ion-col>
+</ion-row>
+
+<ion-card *ngIf="showBar" class="my border">
+  <ion-card-content>
+  <div class="ion-padding">
+    <div style="width: 100%;">
+    <canvas #barCanvas  height="230px"  id="barChart" ></canvas>&nbsp;&nbsp;&nbsp;
+  </div>
+</div>
+   <ion-row >
+    <ion-col class="d-flex flex-column text-center" *ngFor="let i of barGraphData?.barData">
+
+      <span class="custFontFamilyMuliRegular muli-10pt w-100 custLineHight0 custColorBlack">{{i?.label}}</span>
+        <span class="custFontFamilyMuliRegular muli-10pt w-100 custLineHight0 custColorBlack">₹ {{i?.value}}</span>
+
+    </ion-col>
+
+
+      </ion-row>
+
+
+      <!-- <ion-card-content>
+        <div class="mb-1">
+          <div style="width: 100%; overflow-x: auto; overflow-y: hidden">
+            <canvas height="230px" id="linechart1" width="0"></canvas>
+          </div>
+        </div>
+
+        <ion-row *ngFor="let x of lineData?.row2">
+          <ion-col class="d-flex flex-column " *ngFor="let y of x | keyvalue">
+            <span
+              class="custFontFamilyMuliRegular muli-10pt w-100 custLineHight28 custColorGreyish "
+              >{{ y?.key }}</span
+            >
+            <span
+              class="custFontFamilyRobotoCondensed muli-14pt w-100 custColorDark"
+              >{{ toStirng(y?.value) }}
+            </span>
+          </ion-col>
+        </ion-row>
+      </ion-card-content> -->
+    </ion-card-content>
+</ion-card>

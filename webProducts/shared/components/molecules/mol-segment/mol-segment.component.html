@@ -1,0 +1,71 @@
+<app-segment [segmentData]="indiviualDetail" (setSegmentVlaue)="getSegmentValue($event)"></app-segment>
+
+<mat-accordion *ngFor="let segmentTitle of accordianData">
+  <mat-expansion-panel expanded="false">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        <app-label [labelDetail]="segmentTitle"></app-label>
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+
+    <ion-row *ngIf="segmentTitle.key=='planText'">
+      <ion-col *ngFor="let accordianVlaue of segmentTitle.value" [ngClass]="accordianVlaue.cssx">
+        <app-label [labelDetail]="accordianVlaue"></app-label>
+        <app-text [textDetail]="accordianVlaue"></app-text>
+        <app-icons [iconDetail]="accordianVlaue"></app-icons>
+      </ion-col>
+    </ion-row>
+
+    
+      <table *ngIf="segmentTitle.key=='table'">
+        <th *ngFor="let column of segmentTitle.value" [ngClass]="column.cssx">
+          <app-label [labelDetail]="column"></app-label>
+        </th>
+        <tr>
+          <td *ngFor="let column of segmentTitle.value" >
+            <div *ngFor="let row of column.value">
+            <app-label *ngIf="row.type=='text'" [labelDetail]="row"></app-label>
+            <app-buttons *ngIf="row.type=='button'" [buttonText]="row"></app-buttons>
+            <br>
+          </div>
+          </td>
+        </tr>
+      </table>
+
+      <div *ngIf="segmentTitle.key=='card'">
+      <ion-card *ngFor="let accordianVlaue of segmentTitle.value" style="background-color: #F8F9FC; box-shadow: none;">
+        <ion-row>
+        <ion-col size="1">
+        <app-icons [iconDetail]="accordianVlaue"></app-icons>
+      </ion-col>
+      <ion-col size="8">
+          <app-label [labelDetail]="accordianVlaue"></app-label>
+          <p>{{accordianVlaue.leadName}}</p>
+          <app-text [textDetail]="accordianVlaue"></app-text>
+        </ion-col>
+        <ion-col size="3" >
+          <span >{{accordianVlaue.date}}</span>
+        </ion-col>
+      </ion-row>
+      </ion-card>
+    </div>
+    
+    <div *ngIf="segmentTitle.key=='stepper'">
+      <ul class="StepProgress">
+        <li *ngFor="let accordianVlaue of segmentTitle.value"
+          [ngClass]="accordianVlaue?.status == 'Resolved' ?'StepProgress-item is-done':'StepProgress-item current' || accordianVlaue?.status == 'Pending' ?'StepProgress-item in-pending':'StepProgress-item current' || accordianVlaue?.status == 'On-hold' ?'StepProgress-item on-hold':'StepProgress-item current'">
+          <p *ngFor="let x of accordianVlaue | keyvalue">
+            <span
+              class="custFontFamilyMuliRegular muli-12pt d-block justify-content-start text-nowrap custColorDark mt-2">
+           {{x.key}}-{{x.value}}
+            </span>
+            <span class="custFontFamilyMuliBold muli-10pt d-block justify-content-start text-nowrap">
+              
+            </span>
+          </p>
+        </li>
+      </ul>
+    </div>
+
+  </mat-expansion-panel>
+</mat-accordion>

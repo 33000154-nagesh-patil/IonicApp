@@ -1,0 +1,252 @@
+
+<ion-content class="contentBackground">
+  <ion-grid class="w-100 p-4">
+    <ion-row class="custIndexTop">
+      <p class="custFontFamilyMuli muli-16pt custColorDark ion-no-padding">{{ 'nomineeDescription' | translate}}</p>
+    </ion-row>
+
+    <ion-row>
+      <mat-checkbox color="primary" class="pl-4" (change)="removeNominees($event)" [(ngModel)]="isShown">{{ 'nomineeCheckbox' | translate}}
+      </mat-checkbox>
+    </ion-row>
+
+    <div *ngIf="detailsOfNominee.length">
+
+      <ion-row class="mt-3">
+        <span>{{ 'addedNominee' | translate}}</span>
+      </ion-row>
+      <ul class="nomineeList">
+        <li *ngFor="let i of detailsOfNominee" class="nomineeList">
+          <ion-row class="mt-2">
+            <mat-form-field appearance="outline" class="w-100">
+              <ion-row class="mt-2">
+                <ion-col class="ion-no-padding">
+                  <label class="text-capitalize">{{'nominee' | translate}} {{detailsOfNominee.indexOf(i) + 1}}</label>
+                  <input matInput class=" custFontFamilyMuliRegular muli-16pt custLineHight18 custColorDark"
+                    readonly="readonly" value={{i.nomineeFullName}}>
+                </ion-col>
+                <ion-col class="ion-no-padding">
+                  <ion-icon name="trash" (click)="nullPan(i);" class="trashIcon"></ion-icon>
+                </ion-col>
+              </ion-row>
+            </mat-form-field>
+          </ion-row>
+        </li>
+      </ul>
+    </div>
+
+    <form [formGroup]="nomineeFormGroup" novalidate autocomplete="off">
+      <div *ngIf="!isShown && nomineeList">
+
+        <!-- Nominee -->
+        <ion-row class="mt-3">
+          <span>{{ 'addNominee' | translate}}&nbsp;{{detailsOfNominee.length + 1}}</span>
+        </ion-row>
+        <ion-row class="mt-2">
+          <mat-form-field appearance="outline" class="w-100 ">
+            <mat-label class="text-capitalize">{{'nomineeFullName' | translate}}</mat-label>
+            <input formControlName="nomineeFullName" matInput
+              class=" custFontFamilyMuliRegular muli-16pt custLineHight18 custColorDark">
+          </mat-form-field>
+        </ion-row>
+
+        <!-- Gender -->
+        <label for="gender">{{ 'gender' | translate }}</label>
+        <ion-row class="mt-2">
+          <mat-radio-group formControlName="gender">
+            <mat-radio-button value="male"
+              class="custFontFamilyMuliRegular muli-16pt custLineHight18 custColorBattlePGry paddingRadio">{{'male' |
+              translate}}</mat-radio-button>
+            <mat-radio-button class="custFontFamilyMuliRegular muli-16pt custLineHight18 custColorBattlePGry mt-3 px-4"
+              value="female">{{'female' | translate}}</mat-radio-button>
+          </mat-radio-group>
+        </ion-row>
+        <br>
+
+        <!-- Relationship with nominee -->
+        <ion-row>
+          <mat-form-field appearance="outline" class="w-100 ">
+            <mat-label class="text-capitalize">{{'relationshipNominee' | translate}}</mat-label>
+            <mat-select name="relationshipNominee" formControlName="relationshipNominee">
+              <mat-option value="father">Father</mat-option>
+              <mat-option value="mother">Mother</mat-option>
+              <mat-option value="brother">Brother</mat-option>
+              <mat-option value="sister">Sister</mat-option>
+              <!-- <mat-option value="guardian">Guardian</mat-option> -->
+              <mat-option value="husband">Husband</mat-option>
+              <mat-option value="wife">Wife</mat-option>
+              <mat-option value="child">Child</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </ion-row>
+
+        <!-- Nominee DOB -->
+        <ion-row>
+          <!-- <mat-form-field appearance="outline" class="w-100 ">
+            <mat-label class="text-capitalize">{{ 'nomineeDOB' | translate }}</mat-label>
+            <input matInput type="date" formControlName="nomineeDOB" max="{{todaysDate}}"
+              class="custInputWidth custFontFamilyMuliRegular muli-16pt custLineHight18 custColorDark" #userDOB
+              (change)="checkForGuardian(userDOB.value)">
+          </mat-form-field> -->
+
+          <mat-form-field class="mat-form-field" appearance="outline" class="w-100">
+            <mat-label>{{'nomineeDOB' | translate}}</mat-label>
+            <input matInput readonly [matDatepicker]="picker" max="{{todaysDate}}" formControlName="nomineeDOB" placeholder=DD-MM-YYYY
+                (dateInput)="checkForGuardian($event.value)" (click) = "picker.open()">
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field>
+        </ion-row>
+
+        <!-- Percentage Allocation -->
+        <ion-row>
+          <mat-form-field appearance="outline" class="w-100 ">
+            <mat-label class="text-capitalize">{{'percentageAllocation' | translate}}</mat-label>
+            <input matInput [value]="output" type="number" formControlName="percentageAllocation"
+              class="custInputWidth custFontFamilyMuliRegular muli-16pt custLineHight18 custColorDark" #box
+              >
+          </mat-form-field>
+          <!-- <input type="range" [value]="output" color="primary" min="0" max="100" class="w-100"
+            (change)="changeOutput($event)">    (keyup)="onKeyOutput(box.value)"
+          <ion-row class="w-100">
+            <div>
+              <span *ngFor="let number of [0,10,20,30,40,50,60,70,80,90,100]" class="rangeBar"
+                [ngClass]="output==number?'active':'inactive'">{{number}}</span>
+            </div>
+          </ion-row> -->
+        </ion-row>
+
+
+        <!-- PanCard/Aadhar Number -->
+        <ion-row [ngClass]="!isShown && isMinor == false?'marginBottom': 'noMargin'">
+          <mat-form-field appearance="outline" class="w-100 ">
+            <mat-label class="text-capitalize">{{'panOrAadharNumber' | translate}}</mat-label>
+            <input matInput formControlName="nomineePanOrAadharNumber"
+              class="custInputWidth custFontFamilyMuliRegular muli-16pt custLineHight18 custColorDark uppercase">
+          </mat-form-field>
+        </ion-row>
+
+
+        <!-- Nominee is minor -->
+
+        <div *ngIf="isMinor" class="guardianForm">
+
+          <ion-row class="mt-3">
+            <span>{{ 'nomineeMinor' | translate}}</span>
+          </ion-row>
+          <ion-row class="mt-2">
+            <mat-form-field appearance="outline" class="w-100 ">
+              <mat-label class="text-capitalize">{{'guardianName' | translate}}</mat-label>
+              <input matInput formControlName="guardianFullName"
+                class=" custFontFamilyMuliRegular muli-16pt custLineHight18 custColorDark">
+            </mat-form-field>
+          </ion-row>
+          <ion-row>
+            <mat-form-field appearance="outline" class="w-100 ">
+              <mat-label class="text-capitalize">{{'relationshipNomineeMinor' | translate}}</mat-label>
+              <mat-select name="relationshipNomineeMinor" formControlName="relationshipNomineeMinor">
+                <mat-option value="father">Father</mat-option>
+                <mat-option value="mother">Mother</mat-option>
+                <mat-option value="sister">Sister</mat-option>
+                <mat-option value="brother">Brother</mat-option>
+                <mat-option value="uncle">Uncle</mat-option>
+                <mat-option value="grandfather">Grandfather</mat-option>
+                <mat-option value="grandmother">GrandMother</mat-option>
+
+              </mat-select>
+            </mat-form-field>
+          </ion-row>
+          <ion-row>
+            <mat-form-field appearance="outline" class="w-100 ">
+              <mat-label class="text-capitalize">{{'panOrAadharNumber' | translate}}</mat-label>
+              <input matInput formControlName="guardianPanOrAadharNumber"
+                class="custInputWidth custFontFamilyMuliRegular muli-16pt custLineHight18 custColorDark uppercase">
+            </mat-form-field>
+          </ion-row>
+
+          <ion-row class="mt-3">
+            <span>{{ 'guardianAddress' | translate}}</span>
+          </ion-row>
+          <ion-row class="mt-2">
+            <mat-form-field appearance="outline" class="w-100 ">
+              <mat-label class="text-capitalize">{{'address' | translate}}</mat-label>
+              <input matInput formControlName="guardianAddress"
+                class=" custFontFamilyMuliRegular muli-16pt custLineHight18 custColorDark">
+            </mat-form-field>
+          </ion-row>
+
+          <ion-row>
+            <ion-col [size]="'6'">
+              <mat-form-field appearance="outline" class="w-100">
+                <mat-label class="text-capitalize">{{'pincode' | translate}}</mat-label>
+                <input type="text" inputmode="numeric" maxlength="6" [(ngModel)]="profileData.Pincode" matInput formControlName="guardianPincode"
+                  class=" custFontFamilyMuliRegular muli-16pt custLineHight18 custColorDark">
+              </mat-form-field>
+            </ion-col>
+
+            <ion-col [size]="'6'" class="text-center">
+              <mat-form-field appearance="outline" class="w-100" (click)="getCityMasterDetails('City',profileData.Pincode)">
+                <mat-label>{{'city' | translate}}</mat-label>
+                <mat-select formControlName="guardianCity" [(ngModel)]="profileData.City" name="city" id="city">
+                  <mat-option *ngFor="let item of city" [value]="item.district">
+                    {{item.district}} &nbsp; {{item.office}}
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+            </ion-col>
+
+
+          </ion-row>
+
+          <ion-row>
+            <mat-form-field appearance="outline" class="w-100 " >
+              <mat-label>{{'state' | translate}}</mat-label>
+              <mat-select formControlName="guardianState" [(ngModel)]="profileData.State" name="state" id="state"
+                >
+                <mat-option *ngFor="let item of city" [value]="item.statename">
+                  {{item.statename}}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </ion-row>
+
+
+          <ion-row class="bottom">
+            <mat-form-field appearance="outline" class="w-100 " >
+              <mat-label>{{'country' | translate}}</mat-label>
+              <mat-select formControlName="guardianCountry" [(ngModel)]="profileData.Country" name="country"
+                id="country">
+                <mat-option *ngFor="let item of city" [value]="item.country">
+                  {{item.country}}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+
+          </ion-row>
+        </div>
+      </div>
+
+      <!-- Button -->
+      <ion-row class="fixed-bottom p-2 custBackgroundColorWhite">
+        <ion-col [size]="'12'" *ngIf="!isShown && nomineeList">
+          <button class="btn w-100 text-center border-primary custBackgroundColorWhite" type="submit"
+            (click)="saveForm()" [disabled]="!nomineeFormGroup.valid"><span
+              class="custColorBlack custFontFamilyMuliBold muli-16pt">{{
+              'saveAndAddNominee' | translate}}</span></button>
+        </ion-col>
+        <ion-col [size]="'12'">
+          <button [disabled]="!(isShown || detailsOfNominee.length)" class="btn w-100 text-center custBackgroundColorBrightCyan" (click)="submitForm(); pushData();">
+            <span class="custColorWhite custFontFamilyMuliBold muli-16pt">{{
+              'submit' | translate}}</span></button>
+        </ion-col>
+      </ion-row>
+    </form>
+  </ion-grid>
+</ion-content>
+
+<div class="custModalContainer p-10" *ngIf="loggedInModal" (click)="successModalClose();">
+  <div  id="showModalSMGSucces" class="modal-content custCenterAlign">
+    <!-- <ion-icon [src]="imageList?.successKYCIcon" class="custImage"></ion-icon> -->
+    <p class="custFontFamilyMuliBold muli-16pt custColorDark text-center p-0 m-0 ion-no-padding">{{ErrorMsg}}</p>
+  </div>
+</div>

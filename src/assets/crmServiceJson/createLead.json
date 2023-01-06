@@ -1,0 +1,198 @@
+{
+    "search": {
+        "id": "",
+        "title": "Search",
+        "icon": "",
+        "type": "",
+        "cssx": "",
+        "uxClass": "px-3",
+        "des": [],
+        "key": "",
+        "showHide": [],
+        "value": [
+            {
+                "id": "",
+                "title": "Case Category",
+                "icon": "",
+                "type": "Radio",
+                "cssx": "",
+                "uxClass": "",
+                "des": [],
+                "key": "",
+                "validators": {
+                    "required": true
+                },
+                "value": "",
+                "options": [
+                  "Customer",
+                  "Employee"
+              ]
+            },
+            {
+              "id": "",
+              "title": "Customer Info",
+              "icon": "",
+              "type": "plainText",
+              "cssx": "",
+              "uxClass": "custFontFamilyMuliRegular muli-14pt custColorDark ",
+              "des": [],
+              "key": "",
+              "validators": "",
+              "value": ""
+          },
+            {
+                "id": "",
+                "title": "Customer ID*",
+                "icon": "",
+                "type": "ALPHANUMERIC",
+                "cssx": "",
+                "uxClass": "",
+                "des": [],
+                "key": "",
+                "validators": {
+                    "required": true
+                },
+                "value": ""
+            },
+            {
+                "id": "",
+                "title": "Product*",
+                "icon": "",
+                "type": "dropDown",
+                "cssx": "",
+                "uxClass": "",
+                "des": [],
+                "key": "",
+                "validators": {
+                  "required": true
+              },
+              "value": "",
+              "options": [
+                  "Stocks",
+                  "Mutul Funds",
+                  "Digi Gold",
+                  "LAb"
+              ]
+            },
+            {
+                "id": "",
+                "title": "Case Type*",
+                "icon": "",
+                "type": "dropDown",
+                "cssx": "",
+                "uxClass": "",
+                "des": [],
+                "key": "",
+                "validators": {
+                    "required": true
+                },
+                "value": "",
+                "options": [
+                    "Request",
+                    "Complaint",
+                    "Query",
+                    "Feedback"
+                ]
+            },
+            {
+                "id": "",
+                "title": "Case Source*",
+                "icon": "",
+                "type": "dropDown",
+                "cssx": "",
+                "uxClass": "",
+                "des": [],
+                "key": "",
+                "validators": {
+                  "required": true
+              },
+              "value": "",
+              "options": [
+                  "Email"
+              ]
+            },
+            {
+                "id": "",
+                "title": "Case Title*",
+                "icon": "",
+                "type": "dropDown",
+                "cssx": "",
+                "uxClass": "",
+                "des": [],
+                "key": "",
+                "validators": {
+                  "required": true
+              },
+              "value": "",
+              "options": [
+                  "Request For Account Info"
+              ]
+            },
+            {
+                "id": "",
+                "title": "Description*",
+                "icon": "",
+                "type": "textarea",
+                "cssx": "",
+                "uxClass": "",
+                "des": [],
+                "key": "",
+                "validators": "",
+                "value": ""
+            },
+            {
+              "id": "",
+              "title": "Please add files here",
+              "icon": "",
+              "type": "plainText",
+              "cssx": "",
+              "uxClass": "custFontFamilyMuliBold muli-14pt custColorDark ",
+              "des": "",
+              "key": "",
+              "validators": {
+                "required": true
+            },
+            "value": ""
+            },  
+            {
+              "id": "",
+              "title": "Attach file",
+              "icon": "assets/icon/attachPin.svg",
+              "type": "upload",
+              "cssx": "",
+              "uxClass": "custFontFamilyMuliBold muli-14pt custColorDarkishBlue ",
+              "des": "",
+              "key": "",
+              "validators": {
+                "required": true
+            },
+            "value": ""
+            },  
+            {
+              "id": "",
+              "title": "Submit",
+              "icon": "",
+              "type": "submit",
+              "cssx": "",
+              "uxClass": "custBackgroundColorBrightCyan btn custColorWhite pb-2",
+              "des": [],
+              "key": "",
+              "validators": "",
+              "value": ""
+          },
+          {
+            "id": "",
+            "title": "Cancel",
+            "icon": "",
+            "type": "submit",
+            "cssx": "",
+            "uxClass": "custBackgroundColorWhite btn custColorBrightCyan custButtonOutLine pb-2",
+            "des": [],
+            "key": "",
+            "validators": "",
+            "value": ""
+        }
+        ]
+    }
+}
+

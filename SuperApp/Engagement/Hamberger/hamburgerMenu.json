@@ -1,0 +1,466 @@
+{
+    "menuData": [
+        {
+            "icons": "assets/icon/wealthIconforMenu.svg",
+            "title": "Wealth",
+            "kycStatus": "KYC-Pending",
+            "url": "",
+            "subMenu": [
+                {
+                    "icons": "assets/icon/money-maker.svg",
+                    "title": "Money Maker",
+                    "kycStatus": "KYC-Pending",
+                    "notifyLine": "Your account is verified by Torus. Start Investing",
+                    "url": "",                 
+                    "subMenu": [
+                        {
+                            "icons": "assets/icon/mutual-fund.svg",
+                            "title": "Mutual Funds",
+                            "kycStatus": "KYC-Pending",
+                            "notifyLine": "Your account is verified by Aqube. Start Investing",
+                            "url": "Mutual Fund",                         
+                            "subMenu": ""
+                        },
+                        {
+                            "icons": "assets/icon/equity.svg",
+                            "title": "Equity",
+                            "kycStatus": "KYC-Pending",
+                            "notifyLine": "Get your KYC done today and start investing",
+                            "url": "",
+                            "hasLayer": [
+                                {
+                                    "icons": "assets/icon/stocks.svg",
+                                    "title": "Stocks",
+                                    "notifyLine": "Get your KYC done today and start investing",
+                                    "url": "Stock",
+                                    "kycStatus": "KYC-Pending",
+                                    "subMenu":""
+                                },
+                                {
+                                    "icons": "assets/icon/etf.svg",
+                                    "title": "ETFs",
+                                    "kycStatus": "KYC-Pending",
+                                    "notifyLine": "Get your KYC done today and start investing",
+                                    "url": "",
+                                    "subMenu": ""
+                                },
+                                {
+                                    "icons": "assets/icon/ipo.svg",
+                                    "title": "IPOs",
+                                    "kycStatus": "KYC-Pending",
+                                    "notifyLine": "Get your KYC done today and start investing",
+                                    "url": "",
+                                    "subMenu": ""
+                                },
+                                {
+                                    "icons": "assets/icon/us-stock.svg",
+                                    "title": "US Stocks",
+                                    "kycStatus": "KYC-Pending",
+                                    "notifyLine": "Get your KYC done today and start investing",
+                                    "url": "",
+                                    "subMenu": ""
+                                },
+                                {
+                                    "icons": "assets/icon/basket.svg",
+                                    "title": "Basket",
+                                    "kycStatus": "KYC-Pending",
+                                    "notifyLine": "Get your KYC done today and start investing",
+                                    "url": "",
+                                    "subMenu": ""
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "icons": "assets/icon/money-saver.svg",
+                    "title": "Money Saver",
+                    "kycStatus": "KYC-Pending",
+                    "notifyLine": "Get your KYC done today and start investing",
+                    "url": "",
+                    "subMenu": [
+                        {
+                            "icons": "assets/icon/gold.svg",
+                            "title": "Gold",
+                            "kycStatus": "KYC-Pending",
+                            "notifyLine": "Your account is verified by Aqube. Start Investing",
+                            "url": "Gold",
+                            "subMenu": ""
+                        },
+                        {
+                            "icons": "assets/icon/fixed-deposit.svg",
+                            "title": "Fixed Deposits",
+                            "kycStatus": "KYC-Pending",
+                            "notifyLine": "Get your KYC done today and start investing",
+                            "url": "",
+                            "subMenu": ""
+                        },
+                        {
+                            "icons": "assets/icon/bonds.svg",
+                            "title": "Bonds",
+                            "kycStatus": "KYC-Pending",
+                            "notifyLine": "Get your KYC done today and start investing",
+                            "url": "",
+                            "subMenu": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "icons": "assets/icon/healthiconforMenu.svg",
+            "title": "Health",
+            "kycStatus": "KYC-Pending",
+            "url": "",
+            "subMenu": [
+                {
+                    "icons": "assets/icon/healthLabTest.svg",
+                    "title": "Lab Test",
+                    "kycStatus": "",
+                    "notifyLine": "Your account is verified by Aqube. Start Investing",
+                    "url": "Lab Test",
+                    "subMenu": ""
+                },
+                {
+                    "icons": "assets/icon/healthMedicines.svg",
+                    "title": "Medicine",
+                    "kycStatus": "",
+                    "notifyLine": "Your account is verified by Aqube. Start Investing",
+                    "url": "Medicine",
+                    "subMenu": ""
+                }
+            ]
+        },
+        {
+            "icons": "assets/icon/careerIcon.svg",
+            "title": "Career",
+            "kycStatus": "KYC-Pending",
+            "url": "",
+            "subMenu": [
+                {
+                    "icons": "assets/icon/careerAssesment.svg",
+                    "title": "Assessment",
+                    "kycStatus": "",
+                    "notifyLine": "Your account is verified by Aqube. Start Investing",
+                    "url": "Assessment",
+                    "subMenu": ""
+                },
+                {
+                    "icons": "assets/icon/careerCourses.svg",
+                    "title": "Courses",
+                    "kycStatus": "",
+                    "notifyLine": "Your account is verified by Aqube. Start Investing",
+                    "url": "Courses",
+                    "subMenu": ""
+                },
+                {
+                    "icons": "assets/icon/careerJobs.svg",
+                    "title": "Jobs",
+                    "kycStatus": "",
+                    "notifyLine": "Your account is verified by Aqube. Start Investing",
+                    "url": "Jobs",
+                    "subMenu": ""
+                }
+            ]
+        },
+        {
+            "icons": "assets/icon/bank.svg",
+            "title": "Bank",
+            "kycStatus": "KYC-Pending",
+            "url": "",
+            "subMenu": [
+                {
+                    "icons": "assets/icon/Insurance.svg",
+                    "title": "Insurance Solutions",
+                    "kycStatus": "KYC-Pending",
+                    "notifyLine": "Get your KYC done today and start investing",
+                    "url": "",
+                    "subMenu": [
+                        {
+                            "icons": "assets/icon/healthInsurance.svg",
+                            "title": "Health Insurance",
+                            "kycStatus": "KYC-Pending",
+                            "notifyLine": "Get your KYC done today and start investing",
+                            "url": "",
+                            "subMenu": ""
+                        },
+                        {
+                            "icons": "assets/icon/term-insurance.svg",
+                            "title": "Term Insurance",
+                            "kycStatus": "KYC-Pending",
+                            "notifyLine": "Get your KYC done today and start investing",
+                            "url": "",
+                            "subMenu": ""
+                        },
+                        {
+                            "icons": "assets/icon/childInsurance.svg",
+                            "title": "Child Insurance",
+                            "kycStatus": "KYC-Pending",
+                            "notifyLine": "Get your KYC done today and start investing",
+                            "url": "",
+                            "subMenu": ""
+                        },
+                        {
+                            "icons": "assets/icon/pensionPlan.svg",
+                            "title": "Pension Plans",
+                            "kycStatus": "KYC-Pending",
+                            "notifyLine": "Get your KYC done today and start investing",
+                            "url": "",
+                            "subMenu": ""
+                        },
+                        {
+                            "icons": "assets/icon/vehicleInsurance.svg",
+                            "title": "Vehicle Insurance",
+                            "kycStatus": "KYC-Pending",
+                            "notifyLine": "Get your KYC done today and start investing",
+                            "url": "",
+                            "hasLayer": [
+                                {
+                                    "icons": "assets/icon/carInsurance.svg",
+                                    "title": "Car Insurance",
+                                    "kycStatus": "KYC-Pending",
+                                    "notifyLine": "Get your KYC done today and start investing",
+                                    "url": "",
+                                    "subMenu": ""
+                                },
+                                {
+                                    "icons": "assets/icon/twoWheelerInsurance.svg",
+                                    "title": "Two Wheeler Insurance",
+                                    "kycStatus": "KYC-Pending",
+                                    "notifyLine": "Get your KYC done today and start investing",
+                                    "url": "",
+                                    "subMenu": ""
+                                }
+                            ]
+                        },
+                        {
+                            "icons": "assets/icon/travelInsurance.svg",
+                            "title": "Travel Insurance",
+                            "kycStatus": "KYC-Pending",
+                            "notifyLine": "Get your KYC done today and start investing",
+                            "url": "",
+                            "subMenu": ""
+                        }
+                    ]
+                },
+                {
+                    "icons": "assets/icon/instant-loan.svg",
+                    "title": "Instant Loans",
+                    "kycStatus": "KYC-Pending",
+                    "notifyLine": "Get your KYC done today and start investing",
+                    "url": "",
+                    "subMenu": [
+                        {
+                            "icons": "assets/icon/personalLoan.svg",
+                            "title": "Personal Loan",
+                            "kycStatus": "KYC-Pending",
+                            "notifyLine": "Get your KYC done today and start investing",
+                            "url": "",
+                            "subMenu": ""
+                        },
+                        {
+                            "icons": "assets/icon/homeLoans.svg",
+                            "title": "Home Loan",
+                            "kycStatus": "KYC-Pending",
+                            "notifyLine": "Get your KYC done today and start investing",
+                            "url": "",
+                            "subMenu": ""
+                        },
+                        {
+                            "icons": "assets/icon/vehicleLoans.svg",
+                            "title": "Vehicle Loan",
+                            "kycStatus": "KYC-Pending",
+                            "notifyLine": "Get your KYC done today and start investing",
+                            "url": "",
+                            "subMenu": ""
+                        },
+                        {
+                            "icons": "assets/icon/gold.svg",
+                            "title": "Gold Loan",
+                            "kycStatus": "KYC-Pending",
+                            "notifyLine": "Get your KYC done today and start investing",
+                            "url": "",
+                            "subMenu": ""
+                        },
+                        {
+                            "icons": "assets/icon/businessLoans.svg",
+                            "title": "Business Loan",
+                            "kycStatus": "KYC-Pending",
+                            "notifyLine": "Get your KYC done today and start investing",
+                            "url": "",
+                            "subMenu": ""
+                        },
+                        {
+                            "icons": "assets/icon/educationLoan.svg",
+                            "title": "Education Loan",
+                            "kycStatus": "KYC-Pending",
+                            "notifyLine": "Get your KYC done today and start investing",
+                            "url": "",
+                            "subMenu": ""
+                        },
+                        {
+                            "icons": "assets/icon/las.svg",
+                            "title": "LAS",
+                            "kycStatus": "KYC-Pending",
+                            "notifyLine": "Get your KYC done today and start investing",
+                            "url": "",
+                            "subMenu": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "icons": "assets/icon/agent.svg",
+            "title": "Customer Support",
+            "kycStatus": "",
+            "url": "",
+            "subMenu": [
+                {
+                    "icons": "assets/icon/MyIssues.svg",
+                    "title": "My Issues",
+                    "kycStatus": "",
+                    "notifyLine": "",
+                    "url": "Engagement/EngagementMyIssues/issues",
+                    "subMenu": ""
+                },
+                {
+                    "icons": "assets/icon/FAQs.svg",
+                    "title": "FAQs",
+                    "kycStatus": "",
+                    "notifyLine": "",
+                    "url": "Engagement/EngagementFaqs/getFaq",
+                    "subMenu": ""
+                },
+                {
+                    "icons": "assets/icon/chatIcon.svg",
+                    "title": "Chat with Us",
+                    "kycStatus": "",
+                    "notifyLine": "",
+                    "url": "Engagement/EngagementChatbot/chatbot",
+                    "subMenu": ""
+                },
+                {
+                    "icons": "assets/icon/contactUs.svg",
+                    "title": "Contact Us",
+                    "kycStatus": "",
+                    "notifyLine": "",
+                    "url": "",
+                    "subMenu": ""
+                }
+            ]
+        },
+        {
+            "icons": "assets/icon/Refer&earn.svg",
+            "title": "Refer and Earn",
+            "kycStatus": "",
+            "url": "",
+            "subMenu": ""
+        },
+        {
+            "icons": "assets/icon/torusClubIcon.svg",
+            "title": "Torus Club",
+            "kycStatus": "",
+            "url": "Engagement/EngagementTorusClub/torusclub",
+            "subMenu": ""
+        },
+        {
+            "icons": "assets/icon/settings.svg",
+            "title": "Settings",
+            "kycStatus": "",
+            "url": "",
+            "subMenu": [
+                {
+                    "icons": "assets/icon/manageLock.svg",
+                    "title": "Manage App Lock",
+                    "kycStatus": "",
+                    "notifyLine": "",
+                    "url": "",
+                    "subMenu": [
+                        {
+                            "icons": "assets/icon/faceidIcon.svg",
+                            "title": "Face ID",
+                            "kycStatus": "",
+                            "notifyLine": "",
+                            "url": "",
+                            "subMenu": ""
+                        },
+                        {
+                            "icons": "assets/icon/fingerPrintIcon.svg",
+                            "title": "Fingerprint",
+                            "kycStatus": "",
+                            "notifyLine": "",
+                            "url": "",
+                            "subMenu": ""
+                        },
+                        {
+                            "icons": "assets/icon/passcodeIcon.svg",
+                            "title": "Passcode",
+                            "kycStatus": "",
+                            "notifyLine": "",
+                            "url": "",
+                            "subMenu": ""
+                        },
+                        {
+                            "icons": "assets/icon/mpinIcon.svg",
+                            "title": "MPIN",
+                            "kycStatus": "",
+                            "notifyLine": "",
+                            "url": "",
+                            "subMenu": ""
+                        }
+                    ]
+                },
+                {
+                    "icons": "assets/icon/siriShortCut.svg",
+                    "title": "Siri Shortcuts",
+                    "kycStatus": "",
+                    "notifyLine": "",
+                    "url": "",
+                    "subMenu": ""
+                },
+                {
+                    "icons": "assets/icon/aboutusIcon.svg",
+                    "title": "About Us",
+                    "kycStatus": "",
+                    "notifyLine": "",
+                    "url": "",
+                    "subMenu": [
+                        {
+                            "icons": "assets/icon/disclaimer.svg",
+                            "title": "Disclaimers",
+                            "kycStatus": "",
+                            "notifyLine": "",
+                            "url": "",
+                            "subMenu": ""
+                        },
+                        {
+                            "icons": "assets/icon/privacyPolicyIcon.svg",
+                            "title": "Privacy Policy",
+                            "kycStatus": "",
+                            "notifyLine": "",
+                            "url": "",
+                            "subMenu": ""
+                        },
+                        {
+                            "icons": "assets/icon/terms&conditionIcon.svg",
+                            "title": "Terms & Conditions",
+                            "kycStatus": "",
+                            "notifyLine": "",
+                            "url": "",
+                            "subMenu": ""
+                        }
+                    ]
+                },
+                {
+                    "icons": "assets/icon/RateUsIcon.svg",
+                    "title": "Rate Us",
+                    "kycStatus": "",
+                    "notifyLine": "",
+                    "url": "",
+                    "subMenu": ""
+                }
+            ]
+        }
+    ]
+}

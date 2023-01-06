@@ -1,0 +1,71 @@
+<ion-header [translucent]="true" class="custBackgroundColorWhite ">
+  <ion-toolbar class="custBackgroundDynamicColorWhite">
+    <ion-grid>
+      <ion-row>
+        <ion-col [size]="'1'" (click)="dismiss()" id="goBack">
+          <ion-img [src]="imageList?.arrow" class=" custWithoutTextImg mt-3"></ion-img>
+        </ion-col>
+        <ion-col [size]="3" class="custFontFamilyMuliBold muli-16pt custColorDark my-3 text-nowrap">
+          Market Indices
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="contentBackground">
+  <ion-grid>
+    <ion-row>
+      <ion-segment value="NSE" [(ngModel)]="segment" (ionChange)="segmentChanged()">
+        <ion-segment-button value="NSE">
+          <ion-label class="custFontFamilyMuliBold muli-14pt custColorDark">NSE</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="BSE">
+          <ion-label class="custFontFamilyMuliBold muli-14pt custColorDark">BSE</ion-label>
+        </ion-segment-button>
+      </ion-segment>
+    </ion-row>
+
+    <div class="my-2">
+      <ion-card class="custBackgroundColorWhite mx-2 my-0" *ngFor="let item of data">
+
+        <ion-row class="pb-0 mb-0">
+          <ion-col class="custColorDark muli-14pt custFontFamilyMuliSemiBold  text-nowrap">
+            {{item?.cmp_stock}}
+            <img *ngIf="item.img" src={{item.img}} style="height: 16px; margin-top: -16px;">
+          </ion-col>
+
+          <ion-col class="custFontFamilyMuliSemiBold custLineHight20 muli-14pt custColorDark text-end  text-nowrap">
+            {{item?.LTP}}
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col class="custFontFamilyMuliSemiBold muli-12pt custLineHight16 custColorBattlePGry  text-nowrap">
+            {{item?.exchange}}
+          </ion-col>
+
+          <ion-col [size]="'8'" class="d-flex justify-content-end text-end">
+            <span class="muli-12pt itemCol mb-1 text-end  text-nowrap">
+              <ion-icon name="caret-up" class="custGreenTick"></ion-icon>{{item?.change_in_price}}
+            </span>&nbsp;
+            <span class="muli-12pt itemCol mb-3 text-end  text-nowrap">({{item?.percent}})</span>
+          </ion-col>
+
+          <!-- <ion-col  class="d-flex justify-content-end">
+                  <ion-img [src]="imageList?.plusIcon" class="custAddIcon" *ngIf="!clickVal" (click)="ToggleImg()">
+                  </ion-img>
+                  <ion-img [src]="imageList?.greenTick" class="custAddIcon" *ngIf="clickVal" (click)="ToggleImg()">
+                  </ion-img>
+                </ion-col> -->
+        </ion-row>
+
+
+        <!-- </ion-card-content> -->
+      </ion-card>
+
+    </div>
+
+
+  </ion-grid>
+</ion-content>

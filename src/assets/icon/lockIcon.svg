@@ -1,0 +1,9 @@
+<svg id="lock" xmlns="http://www.w3.org/2000/svg" width="11.988" height="15.984" viewBox="0 0 11.988 15.984">
+    <defs>
+        <style>
+            .cls-1{fill:#b2b2b2}
+        </style>
+    </defs>
+    <path id="Path_127" data-name="Path 127" class="cls-1" d="M10.49 201.99H1.5a1.5 1.5 0 0 1-1.5-1.5v-6.99a1.5 1.5 0 0 1 1.5-1.5h8.99a1.5 1.5 0 0 1 1.5 1.5v6.993a1.5 1.5 0 0 1-1.5 1.497zM1.5 193a.5.5 0 0 0-.5.5v6.993a.5.5 0 0 0 .5.5h8.99a.5.5 0 0 0 .5-.5V193.5a.5.5 0 0 0-.5-.5zm0 0" transform="translate(0 -186.006)"/>
+    <path id="Path_128" data-name="Path 128" class="cls-1" d="M71.493 6.993a.5.5 0 0 1-.5-.5V4A3 3 0 0 0 65 4v2.5a.5.5 0 0 1-1 0V4a4 4 0 0 1 7.992 0v2.5a.5.5 0 0 1-.499.493zm0 0" transform="translate(-62.002)"/>
+</svg>

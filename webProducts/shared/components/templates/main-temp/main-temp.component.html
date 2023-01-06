@@ -1,0 +1,18 @@
+<div class="pt-3">
+  <ion-row>
+    <ion-col [size]="4">
+      <ng-content select=".segment" ></ng-content>
+    </ion-col>
+  </ion-row>
+  <ng-content select=".searchBar"></ng-content>
+  <ng-content select=".buttonCard"></ng-content>
+  <ion-row class="w-100">
+    <ion-col size="7">
+      <ng-content select=".doughnut"></ng-content>
+    </ion-col>
+    <ion-col size="5">
+      <ng-content select=".barChart"></ng-content>
+    </ion-col>
+  </ion-row>
+  <ng-content select=".table"></ng-content>
+</div>

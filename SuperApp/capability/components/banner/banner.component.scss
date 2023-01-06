@@ -1,0 +1,122 @@
+.mfBackground{
+    background-image: var(--mf);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contentCenter{
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.custMFImg{
+    height: 46px;
+    width: 46px;
+}
+
+.torusClubBackground {
+    background-image: url('/assets/icon/croma.png');
+    // D:\SUPERAPP\PROTO-UI\src\assets\icon\torusClubBanner.svg
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 218px;
+    margin-bottom: 25px;
+}
+
+
+
+.custColorBlue {
+    color: #003399;
+    opacity: 1;
+}
+
+.btnPlayNow {
+    background-color: #FBD210;
+    border: 1px solid #E6B400;
+    color: #000000;
+    height: 30px;
+    width: 96px;
+    font-weight: bold;
+    margin-top:11px;    
+}
+
+.custBannerDescription{
+    color:#676767;
+    opacity:1;
+}
+
+.custBanneContent{
+    margin-top:-160px;
+}
+
+.custImgCenter{
+    display: block;
+    margin: auto;
+}
+
+.custTorusClubIcon{
+    margin-top:-56px;
+}
+
+
+
+.custCardCss {
+
+    height: 326px;
+    
+    box-shadow: 0px 3px 6px #00000029;
+    
+    border-radius: 4px;
+    
+    }
+    
+    
+    
+    .custBtn {
+    
+    width: auto;
+    
+    margin-top: 29px;
+    
+    height: 45px;
+    
+    background: #44C8F5 0% 0% no-repeat padding-box;
+    
+    border-radius: 4px;
+    
+    }
+    
+    
+    
+    .custTextCss{
+    
+    margin-top: 39px;
+    
+    display: block;
+    
+    margin-left: auto;
+    
+    margin-right: auto;
+    
+    }
+    
+    
+    
+    .custImgCart {
+    
+      width: 163px;
+    
+      height: 145px;
+    
+      display: block;
+    
+      margin-left: auto;
+    
+      margin-right: auto;
+    
+    }
+
+

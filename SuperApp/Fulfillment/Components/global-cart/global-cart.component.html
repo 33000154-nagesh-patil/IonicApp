@@ -1,0 +1,54 @@
+<cap-header [title]="title" [otherTextName]="title" [imageList]="imageList" [showArrow]="true" [showLabel]="false" [showImg]="false" [showIndex]="false"
+  [showNotification]="false" [showCartWithName]="true"  [cartCount]="cartCount"
+  [showSideMenu]="false" [showSearch]="true" [showClose]="false" [showShare]="false" [showWatchList]="false"
+  [showCartWithoutName]="false" [showStories]="false" [padding]="true" [paddingSize]="'7'" [showOtherText]="true" [backUrlName]=""></cap-header>
+
+  <ion-content class="contentBackground">
+
+
+  <div (click)="gotoTorusClub()" style="z-index: 2;position: relative;">
+    <app-banner [torusClub]=" true" [banner]="false"> </app-banner>
+  </div>
+
+
+
+  <ion-grid *ngIf="basketArrays().length==0">
+    <ion-card>
+      <ion-card-content class="custCardCss">
+        <ion-col [size]="'12'" class="text-center">
+          <ion-row>
+            <img class="custImgCart" src="assets\icon\cartImage.svg" />
+          </ion-row>
+          <ion-row>
+            <span class="custTextCss custColorDarkishBlue muli-18pt custFontFamilyMuliBold">The world of wellness awaits
+              you..</span>
+          </ion-row>
+          <ion-row>
+            <button class="custBtn w-100" routerLink="/Engagement"><span
+                class="custColorWhite muli-16pt custFontFamilyMuliBoldss text-center">Click To Experience
+                !</span></button>
+          </ion-row>
+        </ion-col>
+      </ion-card-content>
+    </ion-card>
+  </ion-grid>
+
+
+  <ion-grid class="p-4 pt-4">
+    <div>
+      <ion-row *ngFor="let item of globalCart | keyvalue">
+        <app-basket [item]="item.value" class="w-100"  [name]="item.key" (removeFromCart)="removeFromCart($event)"></app-basket>
+      </ion-row>
+    </div>
+    
+  </ion-grid>
+</ion-content>
+
+<div *ngIf="basketArrays().length!=0">
+<ion-footer >
+  <ion-toolbar class="contentBackground px-3 py-1">
+    <button mat-raised-button (click)="allCheckout()" class="w-100 custBackgroundColorBrightCyan custColorWhite">Proceed
+      to Checkout</button>
+  </ion-toolbar>
+</ion-footer>
+</div>

@@ -1,0 +1,57 @@
+<ion-content>
+
+  <ion-grid class="px-3 h-100 w-100">
+
+    <div class="tab">
+      <ion-row>
+        <ion-col *ngFor="let text of buttonText">
+          <button [ngClass]="{'active': tabName === text}" (click)="onTabClick($event)">
+            {{text}}</button>
+        </ion-col>
+      </ion-row>
+    </div>
+
+
+
+  <div>
+   <div *ngFor="let x of data">
+    <ion-card [ngClass]="x.isRead==false?'custBackGroundLightBlue':''" (click)="readNotification(x.notificationId)">
+     <span
+      class="custFontFamilyMuliBold custHeaderPatch float-end custColorDark uppercase">{{x.offering}}</span> 
+     <ion-card-content>
+      <ion-row>
+       <ion-col size="2">
+        <img src="{{x.notificationIconPath?x.notificationIconPath:x.notificationIconSuccessPath}}" class="custImgSize" />
+       </ion-col>
+       <ion-col size="10">
+        <p class="muli-14pt custFontFamilyMuliRegular custColorDark">{{x.notificationTitle}}</p>
+        <p class="custColorDark custFontFamilyMuliBold muli-12pt">{{x.notificationDescription}}</p>
+        <p class="custFontFamilyMuliRegular muli-12pt d-block justify-content-start text-nowrap mt-2">
+         {{x.createdOnDate + x.timeStamp}}
+        </p>
+       </ion-col>
+      </ion-row>
+     </ion-card-content>
+    </ion-card>
+   </div>
+  </div>
+
+
+     <div class="container" *ngIf="noDataFound">
+      <div class="center">
+        <ion-row>
+          <ion-col [size]="'12'">
+            <ion-img class="faceImg" [src]="imageList?.noNotification"></ion-img>
+            <br>
+          </ion-col>
+          <ion-col>
+            <span class="found custFontFamilyMuliBold">No Notifications found !</span>
+            <br /><br />
+            <span>We will notify you when something new arrives !</span>
+          </ion-col>
+        </ion-row>
+      </div>
+    </div>
+
+  </ion-grid>
+</ion-content>

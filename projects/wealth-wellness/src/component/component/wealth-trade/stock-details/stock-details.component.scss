@@ -1,0 +1,102 @@
+.custButHeight {
+  height: 45px;
+  width: 66px;
+}
+
+::ng-deep th.mat-header-cell:first-of-type,
+td.mat-cell:first-of-type,
+td.mat-footer-cell:first-of-type {
+  padding: 0px !important;
+}
+
+::ng-deep th.mat-header-cell:last-of-type,
+td.mat-cell:last-of-type,
+td.mat-footer-cell:last-of-type {
+  padding: 0px !important;
+}
+
+.custButHeight {
+  height: 45px;
+  width: 66px;
+}
+
+::ng-deep th.mat-header-cell:first-of-type,
+td.mat-cell:first-of-type,
+td.mat-footer-cell:first-of-type {
+  padding-left: 10px !important;
+}
+
+::ng-deep th.mat-header-cell:last-of-type,
+td.mat-cell:last-of-type,
+td.mat-footer-cell:last-of-type {
+  padding-right: 10px !important;
+}
+
+ion-toggle {
+  height: 18px;
+  width: 44px;
+  --background: var(--custBrightCyan);
+
+  --background-checked: var(--custBrightCyan);
+  --handle-background-checked: #fff url(https://cdn1.iconfinder.com/data/icons/basic-ui-elements-coloricon/21/04-512.png) no-repeat center / contain;
+  --handle-background: #fff url(https://cdn1.iconfinder.com/data/icons/social-messaging-ui-color/254000/38-1024.png) no-repeat center / contain;
+
+}
+
+ion-toggle::part(track) {
+  padding: 5px;
+}
+
+.custColorWarmGrey1 {
+  color: #adb2bb;
+}
+
+.custWithoutTextImg {
+  height: 18px;
+  width: 18px;
+}
+
+.colorGreen {
+  color: #29AD00;
+}
+
+.colorRed {
+  color: #D23D50;
+}
+
+.greyColor {
+  background-color: #F8F8F8;
+}
+
+.custProgressBar {
+  width: 100%;
+  height: 5px;
+  border-radius: 20px;
+}
+
+.scrollable {
+  overflow: auto;
+}
+
+.margintoggle {
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.custPosition {
+  position: relative;
+  bottom: 10px;
+  right: 2px;
+}
+
+.custPosition1 {
+  position: relative;
+  bottom: 10px;
+  right: -5px;
+
+}
+
+::ng-deep .inner-scroll {
+  margin: 0px !important;
+  padding: 0px !important;
+}

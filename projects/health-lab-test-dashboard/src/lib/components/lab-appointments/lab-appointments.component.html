@@ -1,0 +1,145 @@
+<ion-grid class="custGrid">
+  <ion-row>
+    <ion-col [size]="'12'" class="pdingleft">
+      <ion-row class="copltmargin">
+        <ion-col [size]="'1'">
+          <h1></h1>
+        </ion-col>
+      </ion-row>
+    </ion-col>
+    <ion-col [size]="'12'" class="copldtmargin">
+      <p class="muli-12pt custFontFamilyMuliRegular custLineHight22 custColorBattlePGry px-3 mb-0">An overview of your appointments</p>
+    </ion-col>
+  </ion-row>
+
+
+  <ion-row>
+    <ion-segment (ionChange)="segmentChanged($event)" [(ngModel)]="segment">
+      <ion-segment-button value="Upcoming" (click)="Upcoming()">
+        <ion-label class="custFontFamilyMuliSemiBold muli-14pt custLineHight18 custColorDarkShade text"
+          >Upcoming</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="Completed" (click)="Completed()">
+        <ion-label class="custFontFamilyMuliSemiBold muli-14pt custLineHight18 custColorDarkShade text"
+          >Completed</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="Cancelled" (click)="Cancelled()">
+        <ion-label class="custFontFamilyMuliSemiBold muli-14pt custLineHight18 custColorDarkShade text"
+          >Cancelled</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+  </ion-row>
+
+  <div *ngIf="upcoming">
+    <div *ngFor="let x of data1">
+      <ion-row class="mrginbtm">
+        <ion-col>
+          <ion-card>
+            <ion-row>
+              <ion-col [size]="'2'" class="custBackgroundBlue h-100 custColorGreyish p-0 text-center">
+                <span class="custFontFamilyMuliSemiBold muli-10pt custLineHight13 custColorGray">{{x?.day}}</span>
+                <p class="custFontFamilyMuliBold muli-20pt custColorSky mb-0">{{x?.date}}</p>
+                <p class="custFontFamilyMuliBold muli-10pt custColorBliss w-100 mb-0">{{x?.month}}</p>
+              </ion-col> 
+  
+              <ion-col [size]="'9'" class="px-3">
+                <span class="custFontFamilyMuliBold muli-16pt custLineHight20 custColorDark mb-2">{{x?.testName}}</span>
+                <ion-row class="custFontFamilyMuliRegular muli-10pt custLineHight13 mb-2">{{x?.laboratoryname}}</ion-row>
+                <ion-row class="custFontFamilyMuliBold muli-10pt custLineHight13">{{x?.time}}</ion-row>
+              </ion-col>
+  
+              <ion-col [size]="'1'">
+                <ion-img [src]="imageList?.leftArrowIcon" class="custArrowIcon mt-4"></ion-img>
+              </ion-col>
+            </ion-row>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+
+    </div>
+  </div>
+
+
+
+
+  <div *ngIf="completed">
+    <div *ngFor="let y of data2">
+      <ion-row>
+        <ion-col>
+          <ion-card>
+            <ion-row>
+              <ion-col [size]="'2'" class="custBackgroundBlue h-100 custColorGreyish p-0 text-center">
+                <span class="custFontFamilyMuliSemiBold muli-10pt custLineHight13 custColorGray">{{y?.day}}</span>
+                <p class="custFontFamilyMuliBold muli-20pt custColorGreen mb-0">{{y?.date}}</p>
+                <p class="custFontFamilyMuliBold muli-10pt custColorBlis w-100 mb-0">{{y?.month}}</p>
+              </ion-col> 
+  
+              <ion-col [size]="'9'" class="px-3">
+                <span class="custFontFamilyMuliBold muli-16pt custLineHight20 custColorDark mb-2">{{y?.testName}}</span>
+                <ion-row class="custFontFamilyMuliRegular muli-10pt custLineHight13 mb-2">{{y?.laboratoryname}}</ion-row>
+                <ion-row class="custFontFamilyMuliBold muli-10pt custLineHight13">{{y?.time}}</ion-row>
+              </ion-col>
+  
+              <ion-col [size]="'1'">
+                <ion-img [src]="imageList?.leftArrowIcon" class="custArrowIcon mt-4"></ion-img>
+              </ion-col>
+            </ion-row>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+  
+    </div>
+  </div>
+
+
+
+  <div *ngIf="canceled">
+    <div  *ngFor="let z of data3">
+      <ion-row>
+        <ion-col>
+          <ion-card>
+            <ion-row>
+              <ion-col [size]="'2'" class="custBackgroundBlue h-100 custColorGreyish p-0 text-center">
+                <span class="custFontFamilyMuliSemiBold muli-10pt custLineHight13 custColorGray">{{z?.day}}</span>
+                <p class="custFontFamilyMuliBold muli-20pt custColorRed mb-0">{{z.date}}</p>
+                <p class="custFontFamilyMuliBold muli-10pt custColorBlisy w-100 mb-0">{{z?.month}}</p>
+              </ion-col> 
+  
+              <ion-col [size]="'9'" class="px-3">
+                <span class="custFontFamilyMuliBold muli-16pt custLineHight20 custColorDark mb-2">{{z?.testName}}</span>
+                <ion-row class="custFontFamilyMuliRegular muli-10pt custLineHight13 mb-2">{{z?.laboratoryname}}</ion-row>
+                <ion-row class="custFontFamilyMuliBold muli-10pt custLineHight13">{{z?.time}}</ion-row>
+              </ion-col>
+  
+              <ion-col [size]="'1'">
+                <ion-img [src]="imageList?.leftArrowIcon" class="custArrowIcon mt-4"></ion-img>
+              </ion-col>
+            </ion-row>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+  
+    </div>
+  </div>
+
+
+  <ion-row>
+    <ion-col [size]="'4.5'"></ion-col>
+    <ion-col [size]="'3'" class="text-center">
+      <button class="custBackgroundColorWhite">
+        <span class="custColorDarkishBlue custFontFamilyMuliBold muli-12pt custLineHight18">View More</span>
+      </button>
+    </ion-col>
+    <ion-col [size]="'4.5'"></ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col [size]="'5.5'"></ion-col>
+    <ion-col [size]="'1'" class="text-center">
+      <img src="assets\Images\Component 56 – 1 (1).svg" class="dropdown" />
+    </ion-col>
+    <ion-col [size]="'5.5'"></ion-col>
+  </ion-row>
+
+
+</ion-grid>

@@ -1,0 +1,70 @@
+<ion-app>
+<ion-header>
+  <ion-toolbar class="custBackgroundDynamicColorWhite">
+    <ion-grid>
+      <ion-row>
+        <ion-col [size]="'1'" class="text-center mt-1">
+          <ion-img [src]="imageList?.arrow" class="custKYCImg mt-2"></ion-img>
+        </ion-col>
+        <ion-col class="text-start mt-2">
+          <span class="custFontFamilyMuli muli-14pt left custColorBattlePGry">BBPS</span>
+        </ion-col>
+  
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-grid class=" h-100 align-items-center justify-content-center ">
+
+    <ion-row class=" d-flex justify-content-end">
+      <ion-img [src]="imageList?.bharatBillPay" class="img my-3"> </ion-img>&nbsp;
+    </ion-row>
+
+    <ion-col class="">
+      <ion-row class=" d-flex justify-content-center custTop">
+        <img [src]="imageList?.succsessIcon">
+      </ion-row>
+      <ion-row class=" d-flex justify-content-center custFontFamilyMuliBold">
+        {{message}}
+      </ion-row>
+    </ion-col>
+    <ion-row class="mt-0">
+      <ion-col class="text-center d-block text-nowrap custFontFamilyMuliBold">
+        <span>Postpaid Bill -
+        </span><br><span>876111110</span>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+</ion-content>
+
+
+<ion-footer>
+  <ion-row *ngIf="button" class="custPadding mb-2">
+    <button class="btn w-100 text-center custBackgroundColorWhite custHeightBtn custButtonOutLine" (click)="cancel()">
+      <span class="custColorBrightCyan custFontFamilyMuliBold muli-16pt">Payments</span>
+    </button>
+  </ion-row>
+
+  <ion-row *ngIf="button1" class="custPadding mb-2">
+    <button class="btn w-100 text-center custBackgroundColorWhite custHeightBtn custButtonOutLine" (click)="cancel()">
+      <span class="custColorBrightCyan custFontFamilyMuliBold muli-16pt">Cancel</span>
+    </button>
+  </ion-row>
+
+  <ion-row *ngIf="button" class="custPadding mb-2">
+    <button class="btn w-100 text-center custHeightBtn custBackgroundColorBrightCyan" (click)="navToAutoPay()">
+      <span class="custColorWhite custFontFamilyMuliBold muli-16pt">Set AutoPay</span>
+    </button>
+  </ion-row>
+
+  <ion-row *ngIf="button1" class="custPadding mb-2">
+    <button class="btn w-100 text-center custHeightBtn custBackgroundColorBrightCyan"  (click)="cancel()">
+      <span class="custColorWhite custFontFamilyMuliBold muli-16pt">Set Another AutoPay</span>
+    </button>
+  </ion-row>
+</ion-footer>
+</ion-app>

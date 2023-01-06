@@ -1,0 +1,479 @@
+<!-- <ion-content class="custShowData">
+  <ion-list id="inbox-list">
+    <ion-list-header>Inbox</ion-list-header>
+    <ion-note>hi@ionicframework.com</ion-note>
+
+    <ion-menu-toggle auto-hide="false" *ngFor="let p of submenuList; let i = index">
+      <ion-item routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" routerLinkActive="selected">
+        <ion-icon slot="start" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'"></ion-icon>
+        <ion-label>{{ p.title }}</ion-label>
+      </ion-item>
+    </ion-menu-toggle>
+  </ion-list>
+  {{version?.version}}
+  <div>
+    <ion-button (click)="logout()">{{'logout' | translate}}</ion-button>
+  </div>
+</ion-content> -->
+
+
+<ion-content class="custShowData">
+  <ion-header class="supperAppLandingpageHeaderMenu">
+      <ion-row class="ion-no-padding">
+          <ion-col size="3.5">
+              <div class="NameHolder custLineHight46 text-center p-0 align-content-center align-items-center">
+                  <p class="custFontFamilyMuliBold custColorDark muli-18pt d-inline-block custLineHight38 nameFlCenter">{{profileName}}</p>
+              </div>
+          </ion-col>
+
+          <ion-col class="d-flex align-items-center pl-10" size="8.5">
+              <div>
+                  <p class="custFontFamilyMuliBold custColorDark mt-0 mb-0 ml-20 muli-14pt ">hey, {{strFirstName}}</p>
+                  <p class="viewProfile custColorDarkishBlue custFontFamilyMuliBold mt-0 mb-0 ml-10 muli-12pt">View Profile</p>
+              </div>
+          </ion-col>
+
+      </ion-row>
+  </ion-header>
+      <ion-list>
+          <ion-item>
+              <div class="menuItem">
+                  <h2 class="custColorDark muli-14pt custFontFamilyMuliBold custLineHight46" (click)="toggleAccordion(0)">
+                      Money Makers
+                      <span class="custColorDarkishBlue" *ngIf="isMenuOpen">
+                          <img src="../../../assets/Images/down_arrow.svg">
+                      </span>
+                      <span class="custColorDarkishBlue" *ngIf="!isMenuOpen">
+                          <img style="transform: rotate(180deg)" src="../../../assets/Images/down_arrow.svg">
+                      </span>
+                  </h2>
+                  <ion-item class="ion-no-padding" *ngIf="isMenuOpen" (click)="navigateTo('MutualFunds')">
+                      <div class="menuChildDiv">
+                          <ion-row class="menuChildRow">
+                              <ion-col class="menuChildImgCol" size="1">
+                                  <img class="childImg"
+                                      src="https://cdn.zeplin.io/60a5fc059289442bc47e7527/assets/F785146A-EE85-424F-9528-B95B7FB7E9C6.svg">
+                              </ion-col>
+                              <ion-col class="menuChildTitleCol" size="11" *ngIf="isKycCompleted">
+
+                                  <ion-row class="menuChildTitleRow">
+                                      <!-- <p class="childTitle">Mutual Funds
+                                          <span> <img class="kycStateImg"
+                                                  src="https://cdn.zeplin.io/60a5fc059289442bc47e7527/assets/89A53882-4BE3-49C3-9C9C-9F7D831AFEA2.svg">
+                                          </span>
+                                          <span class="kycStateSubTitle"> KYC - Investment Ready</span>
+                                      </p> -->
+                                  </ion-row>
+
+                                  <h6 class="childSubTitle">Your account is verified by Aqube. Start Investing
+                                  </h6>
+
+                              </ion-col>
+                              <ion-col class="menuChildTitleCol" size="11" *ngIf="!isKycCompleted">
+
+                                <ion-row class="menuChildTitleRow">
+                                    <p class="childTitle">Mutual Funds
+                                        <span> <img class="kycStateImg"
+                                                src="https://cdn.zeplin.io/60a5fc059289442bc47e7527/assets/E0D60B18-A6EB-432D-8600-C81797205C27.svg">
+                                        </span>
+                                        <span class="kycStateSubTitleRed custColorcustFadedRed custFontFamilyMuliRegular"> KYC - Pending</span>
+                                    </p>
+                                </ion-row>
+
+                                <h6 class="childSubTitle custColorGreyish custFontFamilyMuliRegular">Get your KYC done today and start investing
+                                </h6>
+
+                            </ion-col>
+                          </ion-row>
+                      </div>
+                  </ion-item>
+
+                  <!-- <ion-item class="ion-no-padding" *ngIf="isMenuOpen">
+                      <div class="menuChildDiv">
+                          <ion-row class="menuChildRow">
+                              <ion-col class="menuChildImgCol" size="1">
+                                  <img class="childImg"
+                                      src="https://cdn.zeplin.io/60a5fc059289442bc47e7527/assets/3743A285-10D9-42BC-AC29-4DE0502587E0.svg">
+                              </ion-col>
+                              <ion-col class="menuChildTitleCol" size="11">
+                                  <ion-row class="menuChildTitleRow" (click)="toggleSubMenu()">
+                                      <p class="childTitle">Stocks
+                                          <span> <img class="kycStateImg"
+                                                  src="https://cdn.zeplin.io/60a5fc059289442bc47e7527/assets/E0D60B18-A6EB-432D-8600-C81797205C27.svg">
+                                          </span>
+                                          <span class="kycStateSubTitleRed">KYC - Pending
+                                              <span class="kycStateSubIconRed" *ngIf="!isSubMenuOpen">
+                                                  <img src="../../../assets/Images/down_arrow_line.svg">
+                                              </span>
+                                              <span class="kycStateSubIconRed" *ngIf="isSubMenuOpen">
+                                                  <img style="transform: rotate(180deg)"
+                                                      src="../../../assets/Images/down_arrow_line.svg">
+                                              </span>
+                                          </span>
+                                      </p>
+                                  </ion-row>
+
+                                  <h6 class="childSubTitle">Get your KYC done today and start investing
+                                  </h6>
+
+                                  <ion-list *ngIf="isSubMenuOpen">
+                                      <ion-item>
+                                          <div class="menuChildDiv" *ngIf="isMenuOpen">
+                                              <ion-row class="menuChildRow">
+                                                  <ion-col class="menuChildTitleCol" size="11">
+
+                                                      <ion-row class="menuChildTitleRow">
+                                                          <img class="childImg"
+                                                          src="https://cdn.zeplin.io/60a5fc059289442bc47e7527/assets/208EE24E-DD81-410D-A565-0558351DB9C5.svg">
+                                                          <p class="subChildTitle">ETFs</p>
+
+                                                      </ion-row>
+
+                                                      <h6 class="childSubTitle">Get your KYC done today and start investing
+                                                      </h6>
+                                                  </ion-col>
+                                              </ion-row>
+                                          </div>
+                                      </ion-item>
+
+                                      <ion-item no-lines lines="none">
+                                          <div class="menuChildDiv" *ngIf="isMenuOpen">
+                                              <ion-row class="menuChildRow">
+                                                  <ion-col class="menuChildTitleCol" size="11">
+
+                                                      <ion-row class="menuChildTitleRow">
+                                                          <img class="childImg"
+                                                          src="https://cdn.zeplin.io/60a5fc059289442bc47e7527/assets/49152AF9-67C6-477B-9617-6467F77E81E2.svg">
+                                                          <p class="subChildTitle">IPOs</p>
+
+                                                      </ion-row>
+
+                                                      <h6 class="childSubTitle">Get your KYC done today and start investing
+                                                      </h6>
+                                                  </ion-col>
+                                              </ion-row>
+                                          </div>
+                                      </ion-item>
+                                  </ion-list>
+                              </ion-col>
+                          </ion-row>
+                      </div>
+                  </ion-item>
+
+                  <ion-item class="ion-no-padding" *ngIf="isMenuOpen">
+                      <div class="menuChildDiv">
+                          <ion-row class="menuChildRow">
+                              <ion-col class="menuChildImgCol" size="1">
+                                  <img class="childImg"
+                                      src="https://cdn.zeplin.io/60a5fc059289442bc47e7527/assets/CE87E288-B070-4A76-8381-4D92C2DF94B9.svg">
+                              </ion-col>
+                              <ion-col class="menuChildTitleCol" size="11">
+
+                                  <ion-row class="menuChildTitleRow">
+                                      <p class="childTitle">US Stocks
+                                           <span> <img class="kycStateImg"
+                                              src="https://cdn.zeplin.io/60a5fc059289442bc47e7527/assets/E0D60B18-A6EB-432D-8600-C81797205C27.svg">
+                                      </span>
+                                      <span class="kycStateSubTitleRed">KYC - Pending</span>
+                                      </p>
+                                  </ion-row>
+
+                                  <h6 class="childSubTitle">Get your KYC done today and start investing
+                                  </h6>
+
+                              </ion-col>
+                          </ion-row>
+                      </div>
+                  </ion-item>
+
+                  <ion-item class="ion-no-padding" *ngIf="isMenuOpen">
+                      <div class="menuChildDiv">
+                          <ion-row class="menuChildRow">
+                              <ion-col class="menuChildImgCol" size="1">
+                                  <img class="childImg"
+                                      src="https://cdn.zeplin.io/60a5fc059289442bc47e7527/assets/1815909E-2240-4F1E-B74B-37D5AA0C5808.svg">
+                              </ion-col>
+                              <ion-col class="menuChildTitleCol" size="11">
+
+                                  <ion-row class="menuChildTitleRow">
+                                      <p class="childTitle">Baskets
+                                           <span> <img class="kycStateImg"
+                                              src="https://cdn.zeplin.io/60a5fc059289442bc47e7527/assets/E0D60B18-A6EB-432D-8600-C81797205C27.svg">
+                                      </span>
+                                      <span class="kycStateSubTitleRed">KYC - Pending</span>
+                                      </p>
+                                  </ion-row>
+
+                                  <h6 class="childSubTitle">Get your KYC done today and start investing
+                                  </h6>
+
+                              </ion-col>
+                          </ion-row>
+                      </div>
+                  </ion-item> -->
+              </div>
+
+          </ion-item>
+
+          <ion-item>
+              <div class="menuItem">
+                  <h2 class="custColorDark muli-14pt custFontFamilyMuliBold custLineHight46" (click)="toggleMenuSaver()">
+                      Money Saver
+                      <span class="custColorDarkishBlue" *ngIf="isMenuSaverOpen">
+                          <img src="../../../assets/Images/down_arrow.svg">
+                      </span>
+                      <span class="custColorDarkishBlue" *ngIf="!isMenuSaverOpen">
+                          <img style="transform: rotate(180deg)" src="../../../assets/Images/down_arrow.svg">
+                      </span>
+                  </h2>
+                  <ion-item class="ion-no-padding" *ngIf="isMenuSaverOpen" (click)="navigateTo('Gold')">
+                      <div class="menuChildDiv" >
+                          <ion-row class="menuChildRow">
+                              <ion-col class="menuChildImgCol" size="1">
+                                  <img class="childImg"
+                                      src="https://cdn.zeplin.io/60a5fc059289442bc47e7527/assets/453FC43B-F174-4FEC-914C-5CB34D5C85C1.svg">
+                              </ion-col>
+                              <ion-col class="menuChildTitleCol" size="11">
+
+                                  <ion-row class="menuChildTitleRow">
+                                      <p class="childTitle">Gold
+                                        <span> <img class="kycStateImg"
+                                          src="https://cdn.zeplin.io/60a5fc059289442bc47e7527/assets/E0D60B18-A6EB-432D-8600-C81797205C27.svg">
+                                  </span>
+                                  <span class="kycStateSubTitleRed custColorcustFadedRed custFontFamilyMuliRegular"> KYC - Pending</span>
+                              </p>
+                          </ion-row>
+
+                          <h6 class="childSubTitle custColorGreyish custFontFamilyMuliRegular">Get your KYC done today and start investing
+                          </h6>
+
+                              </ion-col>
+                          </ion-row>
+                      </div>
+                  </ion-item>
+
+                  <!-- <ion-item class="ion-no-padding" *ngIf="isMenuSaverOpen">
+                      <div class="menuChildDiv">
+                          <ion-row class="menuChildRow">
+                              <ion-col class="menuChildImgCol" size="1">
+                                  <img class="childImg"
+                                      src="https://cdn.zeplin.io/60a5fc059289442bc47e7527/assets/64CA2008-9942-40A5-B373-611F24869A52.svg">
+                              </ion-col>
+                              <ion-col class="menuChildTitleCol" size="11">
+
+                                  <ion-row class="menuChildTitleRow">
+                                      <p class="childTitle">Fixed Deposits
+                                           <span> <img class="kycStateImg"
+                                              src="https://cdn.zeplin.io/60a5fc059289442bc47e7527/assets/E0D60B18-A6EB-432D-8600-C81797205C27.svg">
+                                      </span>
+                                      <span class="kycStateSubTitleRed">KYC - Pending</span>
+                                      </p>
+                                  </ion-row>
+
+                                  <h6 class="childSubTitle">Get your KYC done today and start investing
+                                  </h6>
+
+                              </ion-col>
+                          </ion-row>
+                      </div>
+                  </ion-item>
+
+
+                  <ion-item class="ion-no-padding" *ngIf="isMenuSaverOpen">
+                      <div class="menuChildDiv">
+                          <ion-row class="menuChildRow">
+                              <ion-col class="menuChildImgCol" size="1">
+                                  <img class="childImg"
+                                      src="https://cdn.zeplin.io/60a5fc059289442bc47e7527/assets/B04C4BB4-64DC-4B6A-BDEA-3BDEBA17BE5B.svg">
+                              </ion-col>
+                              <ion-col class="menuChildTitleCol" size="11">
+
+                                  <ion-row class="menuChildTitleRow">
+                                      <p class="childTitle">Bonds
+                                           <span> <img class="kycStateImg"
+                                              src="https://cdn.zeplin.io/60a5fc059289442bc47e7527/assets/E0D60B18-A6EB-432D-8600-C81797205C27.svg">
+                                      </span>
+                                      <span class="kycStateSubTitleRed">KYC - Pending</span>
+                                      </p>
+                                  </ion-row>
+
+                                  <h6 class="childSubTitle">Get your KYC done today and start investing
+                                  </h6>
+
+                              </ion-col>
+                          </ion-row>
+                      </div>
+                  </ion-item> -->
+              </div>
+
+          </ion-item>
+
+          <!-- <ion-item>
+              <div class="menuItem">
+                  <h2>
+                      Insurance Solutions
+                      <span *ngIf="isMenuInsurenceOpen">
+                          <img src="../../../assets/Images/down_arrow.svg">
+                      </span>
+                      <span *ngIf="!isMenuInsurenceOpen">
+                          <img style="transform: rotate(180deg)" src="../../../assets/Images/down_arrow.svg">
+                      </span>
+                  </h2>
+              </div>
+          </ion-item>
+
+
+
+          <ion-item>
+              <div class="menuItem">
+                  <h2>
+                      Instant Loans
+                      <span *ngIf="isMenuInstantrOpen">
+                          <img src="../../../assets/Images/down_arrow.svg">
+                      </span>
+                      <span *ngIf="!isMenuInstantrOpen">
+                          <img style="transform: rotate(180deg)" src="../../../assets/Images/down_arrow.svg">
+                      </span>
+                  </h2>
+              </div>
+          </ion-item> -->
+
+          <ion-item>
+              <div class="menuItem">
+                  <h2 class="custColorDark muli-14pt custFontFamilyMuliBold custLineHight46" (click)="toggleOtherMenu()">
+                      Other Products
+                      <span class="custColorDarkishBlue" *ngIf="isMenuOtherOpen">
+                          <img src="../../../assets/Images/down_arrow.svg">
+                      </span>
+                      <span class="custColorDarkishBlue" *ngIf="!isMenuOtherOpen">
+                          <img style="transform: rotate(180deg)" src="../../../assets/Images/down_arrow.svg">
+                      </span>
+                  </h2>
+                  <div class="banner" *ngIf="isMenuOtherOpen">
+                      <ion-card >
+                          <ion-row>
+                              <img src="https://cdn.zeplin.io/60a5fc059289442bc47e7527/assets/1A22EB9A-4077-4819-BCE8-7F5D519E5B93.svg" />
+                              <ion-label class="cc_label">Wealth Robo Advisory</ion-label>
+                          </ion-row>
+                          <ion-row>
+                            <ion-col class="ion-no-padding" size="7">
+                              <p>Get real time assistance by our Robo advisory</p>
+                            </ion-col>
+                            <ion-col size="5" >
+                              <ion-button fill="outline" (click)="navigateTo('WealthRoboAdvisory')">Get Assist</ion-button>
+                            </ion-col>
+                          </ion-row>
+                        </ion-card>
+                  </div>
+              </div>
+          </ion-item>
+
+          <!-- <ion-item>
+              <div class="menuItem">
+                  <h2>
+                      Manage app lock
+                      <span >
+                          <img src="https://cdn.zeplin.io/60a5fc059289442bc47e7527/assets/C5F6316B-39FD-43BA-9976-E41D98C7452C.svg">
+                      </span>
+                  </h2>
+              </div>
+          </ion-item>
+
+          <ion-item>
+              <div class="menuItem">
+                  <h2>
+                      Refer & Earn
+                      <span >
+                          <img src="https://cdn.zeplin.io/60a5fc059289442bc47e7527/assets/C5F6316B-39FD-43BA-9976-E41D98C7452C.svg">
+                      </span>
+                  </h2>
+              </div>
+          </ion-item>
+
+          <ion-item>
+              <div class="menuItem">
+                  <h2>
+                      Siri Shortcuts
+                      <span >
+                          <img src="https://cdn.zeplin.io/60a5fc059289442bc47e7527/assets/C5F6316B-39FD-43BA-9976-E41D98C7452C.svg">
+                      </span>
+                  </h2>
+              </div>
+          </ion-item>
+
+          <ion-item>
+              <div class="menuItem">
+                  <h2>
+                      Customer Suppport
+                      <span >
+                          <img src="https://cdn.zeplin.io/60a5fc059289442bc47e7527/assets/C5F6316B-39FD-43BA-9976-E41D98C7452C.svg">
+                      </span>
+                  </h2>
+              </div>
+          </ion-item>
+
+          <ion-item>
+              <div class="menuItem">
+                  <h2>
+                      Rate Us
+                      <span >
+                          <img src="https://cdn.zeplin.io/60a5fc059289442bc47e7527/assets/C5F6316B-39FD-43BA-9976-E41D98C7452C.svg">
+                      </span>
+                  </h2>
+              </div>
+          </ion-item> -->
+
+          <ion-item no-lines lines="none" (click)="navigateTo('Logout')">
+              <div class="menuItem">
+                  <h2 class="custColorDark muli-14pt custFontFamilyMuliSemiBold custLineHight20 align-middle ">
+                    {{'logout' | translate}}
+                      <span class="no-padding custColorDark muli-12pt custFontFamilyMuliRegular custLineHight16 align-middle " >
+                        {{version?.version}}
+                      </span>
+                  </h2>
+              </div>
+          </ion-item>
+
+          <!-- <ion-item no-lines lines="none">
+              <div class="menuItem">
+                  <h2 class="equity">
+                      Equity
+                      <span class="spanEquity">
+                          <img src="https://cdn.zeplin.io/60a5fc059289442bc47e7527/assets/47DD4A88-E7F7-4D3A-80DE-23A2064B5F25.svg">
+                      </span>
+                      <p>SEBI Registration Nos.:- Stock Broker: INZ000172433;
+                          CDSL & NSDL - IN-DP-257-2016 | Research Analyst -
+                          INH000002384 | AMFI ARN - 29889 BSE MFD 12807</p>
+                  </h2>
+              </div>
+          </ion-item>
+
+
+          <ion-item no-lines lines="none">
+              <div class="menuItem">
+                  <h2 class="equity">
+                      Mutual funds
+                      <span >
+                          <img src="https://cdn.zeplin.io/60a5fc059289442bc47e7527/assets/98B7C660-D181-4F5F-B0EF-5F73C348C508.svg">
+                      </span>
+                  </h2>
+              </div>
+          </ion-item>
+
+
+          <ion-item no-lines lines="none">
+              <div class="menuItem">
+                  <h2 class="equity">
+                      IPO
+                      <span >
+                          <img src="https://cdn.zeplin.io/60a5fc059289442bc47e7527/assets/98B7C660-D181-4F5F-B0EF-5F73C348C508.svg">
+                      </span>
+                  </h2>
+              </div>
+          </ion-item> -->
+
+      </ion-list>
+<!-- </ion-menu> -->
+
+<!-- <ion-router-outlet id="main-content"></ion-router-outlet> -->
+</ion-content>

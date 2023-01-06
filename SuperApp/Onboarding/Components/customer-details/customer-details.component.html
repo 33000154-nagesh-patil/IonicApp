@@ -1,0 +1,128 @@
+
+
+<ion-content>
+  <ion-grid class="mt-3 custPAdd">
+
+    <form [formGroup]="custmerFormGroup" (ngSubmit)="onSubmit()">
+      <ion-row class="custFontFamilyMuliBold muli-14pt mx-2">Customer Details</ion-row>
+    <ion-row class="mx-2">
+
+    <mat-form-field appearance="outline" class="w-100">
+      <mat-label>Firstname</mat-label>
+      <input [ngModel]="profileDetails?.firstName" formControlName="firstName" matInput required (keypress)="ValidateAlpha($event)">
+      <mat-error *ngIf="custmerFormGroup.get('firstName').hasError('required')"><span
+        class="custFontFamilyMuliSemiBold muli-12pt text-start text-capitalize custLineHight16">{{'firstNameRequiredError'
+        | translate}}</span></mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="w-100">
+      <mat-label>Middlename</mat-label>
+      <input [ngModel]="profileDetails?.middleName"  formControlName="MiddleName" matInput (keypress)="ValidateAlpha($event)">
+
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="w-100">
+      <mat-label>Lastname</mat-label>
+      <input [ngModel]="profileDetails?.lastName"  formControlName="LastName"  matInput required (keypress)="ValidateAlpha($event)">
+      <mat-error *ngIf="custmerFormGroup.get('LastName').hasError('required')"><span
+        class="custFontFamilyMuliSemiBold muli-12pt text-start text-capitalize custLineHight16">{{'lastNameRequiredError'
+        | translate}}</span></mat-error>
+    </mat-form-field>
+
+
+
+
+
+
+    <mat-form-field appearance="outline" class="w-100">
+      <mat-label>Email Id</mat-label>
+      <input [ngModel]="profileDetails?.emailId"  formControlName="EmailId" matInput  >
+      <mat-error *ngIf="custmerFormGroup.get('EmailId').hasError('required')"><span
+        class="custFontFamilyMuliSemiBold muli-12pt text-start text-capitalize custLineHight16">{{'emailRequiredError'
+        | translate}}</span></mat-error>
+        <mat-error *ngIf="custmerFormGroup.get('EmailId').hasError('email')"><span
+          class="custFontFamilyMuliSemiBold muli-12pt text-start text-capitalize custLineHight16">{{'emailPatternError'
+          | translate}}</span></mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="w-100">
+      <mat-label>Mobile Number</mat-label>
+      <input [ngModel]="profileDetails?.contactDetails" formControlName="MobileNumber"   (keypress)="numberOnly($event)" maxlength="10" matInput required>
+      <mat-error *ngIf="custmerFormGroup.get('MobileNumber').hasError('required')"><span
+        class="custFontFamilyMuliSemiBold muli-12pt text-start text-capitalize custLineHight16">{{'mobileRequiredError'
+        | translate}}</span></mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="w-100">
+      <mat-label>Address Line 1</mat-label>
+      <input [ngModel]="profileDetails?.addressLine1" formControlName="AddressLine1" matInput required>
+      <mat-error *ngIf="custmerFormGroup.get('AddressLine1').hasError('required')"><span
+        class="custFontFamilyMuliSemiBold muli-12pt text-start text-capitalize custLineHight16">{{'addressLine1RequiredError'
+        | translate}}</span></mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="w-100">
+      <mat-label>Address Line 2</mat-label>
+      <input  [ngModel]="profileDetails?.addressLine2" formControlName="AddressLine2"  matInput required>
+      <mat-error *ngIf="custmerFormGroup.get('AddressLine2').hasError('required')"><span
+        class="custFontFamilyMuliSemiBold muli-12pt text-start text-capitalize custLineHight16">{{'addressLine2RequiredError'
+        | translate}}</span></mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="w-100 ">
+      <mat-label class="text-capitalize">{{'pincode' | translate}}</mat-label>
+      <input type="text" inputmode="numeric" maxlength="6" matInput formControlName="Pincode"
+        class=" custFontFamilyMuliRegular muli-16pt custLineHight18 custColorDark" [ngModel]="profileDetails?.pincode"
+        (ngModelChange)="getCityMasterDetails('City',custmerFormGroup.value.Pincode)">
+        <mat-error *ngIf="custmerFormGroup.get('Pincode').hasError('required')"><span
+          class="custFontFamilyMuliSemiBold muli-12pt text-start text-capitalize custLineHight16">{{'pinCodeRequiredError'
+          | translate}}</span></mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="w-100 ">
+      <mat-label>{{'city' | translate}}</mat-label>
+      <mat-select formControlName="City" [ngModel]="profileDetails?.city" name="city" id="city">
+        <mat-option *ngFor="let item of city" [value]="item.district">
+          {{item.district}}
+        </mat-option>
+      </mat-select>
+      <mat-error *ngIf="custmerFormGroup.get('City').hasError('required')"><span
+        class="custFontFamilyMuliSemiBold muli-12pt text-start text-capitalize custLineHight16">{{'cityRequiredError'
+        | translate}}</span></mat-error>
+    </mat-form-field>
+
+
+    <mat-form-field appearance="outline" class="w-100 ">
+      <mat-label>{{'state' | translate}}</mat-label>
+      <mat-select formControlName="State" [ngModel]="profileDetails?.state" name="state" id="state"
+        >
+        <mat-option *ngFor="let item of city" [value]="item.statename">
+          {{item.statename}}
+        </mat-option>
+      </mat-select>
+      <mat-error *ngIf="custmerFormGroup.get('State').hasError('required')"><span
+        class="custFontFamilyMuliSemiBold muli-12pt text-start text-capitalize custLineHight16">{{'atateRequiredError'
+        | translate}}</span></mat-error>
+    </mat-form-field>
+
+
+
+
+  </ion-row>
+
+  <ion-row>
+    <ion-col *ngIf="skipMe">
+      <ion-button  expand="block" (click)="skip('CustomerDetails')" class="text-capitalize custTryButton d-flex justify-content-center">
+        <span class="custFontFamilyMuliRegular text-center muli-16pt custColorBrightCyan">{{'skipLabel' |
+          translate}}</span>
+      </ion-button>
+    </ion-col>
+    <ion-col>
+      <button class="w-100 btn custBackgroundColorBrightCyan custColorWhite " type="submit" [disabled]="!custmerFormGroup.valid" >Continue</button>
+    </ion-col>
+  </ion-row>
+</form>
+
+  </ion-grid>
+</ion-content>
+

@@ -1,0 +1,115 @@
+.custActiveImg {
+    height: 4px;
+    width: auto;
+}
+
+.custSelected {
+    color: var(--custBrightCyan);
+}
+
+.custMarginBottom {
+    margin-bottom: -5px;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+}
+.basicmode {
+    // height: 100%;
+    text-align: start;
+    vertical-align: top;
+    ::-webkit-scrollbar,
+    *::-webkit-scrollbar {
+        display: none;
+    }
+    ion-segment {
+        min-width: auto;
+    }
+    ion-segment-button {
+        min-width: auto;
+    }
+    .segment-button.segment-activated {
+        border: 2px dashed red !important;
+    }
+    ion-searchbar {
+        background: var(--pale_grey);
+    }
+    hr {
+        padding: 0px;
+        margin: 0px;
+        height: 1px;
+        color: var(--kermit_green);
+    }
+}
+
+.mfPortfolio {
+    padding-left: 10px;
+    padding-right: 10px;
+    // margin-top: -20px;
+    padding-bottom: 15px;
+    height: 100%;
+    background: var(--pale_grey);
+    h2 {
+        color: var(--dark);
+        padding-top: 10px;
+        font-size: 17px;
+        line-height: 23px;
+        font-family: "Muli-Bold", sans-serif;
+        font-weight: bold;
+        margin-bottom: 8px;
+        span {
+            color: var(--darkish_blue);
+        }
+    }
+    .cc_hr {
+        margin-bottom: 8px;
+    }
+    // ion-card {
+    //     margin: 0px;
+    //     padding: 0px;
+    // }
+    .startInv {
+        .strInvCard {
+            padding: 15px;
+            // margin-top: 15px;
+            // margin: 0px;
+            // box-shadow: none;
+            background: white;
+
+            h2 {
+                margin: 0px;
+                padding: 0px;
+                text-align: center;
+                font-size: 14px;
+                font-family: "Muli-Bold", sans-serif;
+                color: #2d2d2d;
+            }
+            p {
+                // width: 90px;
+                margin: 0px;
+                padding-top: 10px;
+                padding-bottom: 12px;
+                text-align: center;
+                font-size: 10px;
+                font-family: "Muli-Regular", sans-serif;
+                color: var(--brownish_grey);
+            }
+            div {
+                text-align: center;
+                ion-button {
+                    padding-left: 12px;
+                    padding-right: 12px;
+                    font-size: 11px;
+                    text-transform: none;
+                    font-family: "Muli-Regular", sans-serif;
+                    color: white;
+                }
+            }
+        }
+    }
+}

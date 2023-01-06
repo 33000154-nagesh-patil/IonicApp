@@ -1,0 +1,11 @@
+<ion-app>
+    <lib-header [title]="title" [imageList]="imageList" [showArrow]="false" [showLabel]="true" [showImg]="false"
+    [imgURL]="labelIcon" [showIndex]="false" [showNotification]="true" [showCartWithName]="true"
+    [notificationCount]="notificationCount" [cardCount]="cartCount" [showSideMenu]="false" [showSearch]="true"
+    [showClose]="false" [showShare]="false" [showWatchList]="false" [showCartWithoutName]="false" [showStories]="false"
+    [otherTextName]="textName" [showOtherText]="true" [superMode]="currentMode" [backUrlName]="" [DigiGold]="true"></lib-header>
+    <ion-content>
+        <lib-invest routerLink="Invest"></lib-invest>
+    </ion-content>
+    <lib-footer [activeImg]="imageList?.activeTab" [selectedIndex]="'3'" [footerListData]="mfFooterData" [parentTab]="'Mutual Fund'"></lib-footer>
+</ion-app>

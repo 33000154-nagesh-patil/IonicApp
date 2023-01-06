@@ -1,0 +1,70 @@
+{
+  "Status": "1",
+  "Message": "Success",
+  "data": [
+      {
+          "custGuId": "0147F15C-3961-4F72-BAF5-1CAC09C757FA",
+          "first_Name": "Jee Debashish",
+          "middle_Name": null,
+          "last_Name": null,
+          "age": 21,
+          "gender": "Male",
+          "relation": "Self"
+      },
+      {
+          "custGuId": "0147F15C-3961-4F72-BAF5-1CAC09C757FA",
+          "first_Name": "Rupam ",
+          "middle_Name": "C",
+          "last_Name": "Chopde",
+          "age": 25,
+          "gender": "Male",
+          "relation": "Self"
+      },
+      {
+          "custGuId": "0147F15C-3961-4F72-BAF5-1CAC09C757FA",
+          "first_Name": "tabbu",
+          "middle_Name": "abc",
+          "last_Name": "patil",
+          "age": 20,
+          "gender": "Female",
+          "relation": "Self"
+      },
+      {
+          "custGuId": "0147F15C-3961-4F72-BAF5-1CAC09C757FA",
+          "first_Name": "Jee Debashish",
+          "middle_Name": null,
+          "last_Name": null,
+          "age": 21,
+          "gender": "Male",
+          "relation": "Self"
+      },
+      {
+          "custGuId": "0147F15C-3961-4F72-BAF5-1CAC09C757FA",
+          "first_Name": null,
+          "middle_Name": null,
+          "last_Name": null,
+          "age": 1,
+          "gender": null,
+          "relation": "Self"
+      },
+      {
+          "custGuId": "0147F15C-3961-4F72-BAF5-1CAC09C757FA",
+          "first_Name": null,
+          "middle_Name": null,
+          "last_Name": null,
+          "age": 1,
+          "gender": null,
+          "relation": "Self"
+      },
+      {
+          "custGuId": "0147F15C-3961-4F72-BAF5-1CAC09C757FA",
+          "first_Name": null,
+          "middle_Name": null,
+          "last_Name": null,
+          "age": 1,
+          "gender": null,
+          "relation": "Self"
+      }
+  ],
+  "ErrorCode": "0"
+}

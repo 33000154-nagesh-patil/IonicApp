@@ -1,0 +1,90 @@
+{
+  "objectContent": [
+      {
+          "contentType": "singleRowCard",
+          "title": "Market Movers",
+          "Orders": [
+              {
+                  "row1": {
+                      "symbol": "ITC",
+                      "price": "₹3251.00"
+                  },
+                  "row2": {
+                      "exchange": "NSE",
+                      "orderType":"CNC",
+                      "txn_type":"Buy",
+                      "Ltp":""
+                  },
+                  "row3": {
+                    "Qty": "0/2",
+                    "net_position":"Rs.590.80"
+                  }
+              }
+          ],
+          "Trades": [
+              {
+                  "row1": {
+                      "symbol": "LTI",
+                      "price": "₹501.00"
+                  },
+                  "row2": {
+                      "exchange": "NSE",
+                      "col2": "11.00(0.03%)"
+                  }
+              },
+              {
+                  "row1": {
+                      "symbol": "SBIN",
+                      "price": "₹603.40"
+                  },
+                  "row2": {
+                      "exchange": "NSE",
+                      "col2": "03.00(0.01%)"
+                  }
+              }
+          ],
+          "Positions": [
+              {
+                  "row1": {
+                      "symbol": "HP",
+                      "price": "₹120.10"
+                  },
+                  "row2": {
+                      "exchange": "NSE",
+                      "col2": "₹876.00"
+                  },
+                  "row3": {
+                      "col1": "Net Qty 2*240.20"
+                  }
+              },
+              {
+                  "row1": {
+                      "symbol": "KPMG",
+                      "price": "₹70.00"
+                  },
+                  "row2": {
+                      "exchange": "NSE",
+                      "col2": "10.44(0.21%)"
+                  },
+                  "row3": {
+                      "col1": "Net Qty 2*140.20"
+                  }
+              }
+          ],
+          "segmentValues": [
+              {
+                  "title": "Orders",
+                  "value": "Orders"
+              },
+              {
+                  "title": "Trades",
+                  "value": "Trades"
+              },
+              {
+                  "title": "Positions",
+                  "value": "Positions"
+              }
+          ]
+      }
+  ]
+}

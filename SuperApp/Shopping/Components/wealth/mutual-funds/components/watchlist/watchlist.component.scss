@@ -1,0 +1,78 @@
+
+.custProfile{
+  background: var(--custwhiteTwo);
+  border-radius: 50%;
+  padding: 21px;
+}
+.custHeight{
+  height: 42px;
+  width: 42px;
+}
+.segmentClass{
+  margin-top: 75px;
+}
+
+
+
+
+.custInvestArrow{
+  height: 14px;
+  width: 14px;
+  margin-top: 14px;
+}
+.custSVGIcon{
+position: absolute;
+margin: -8px;
+}
+.custKYCImg{
+height: 16px;
+width: 13px;
+}
+::ng-deep .mat-tab-label {
+height: 35px !important;
+min-height: 5px !important;
+margin: 3px !important;
+width: 100% !important;
+min-width: 5px !important;
+font-size: 14px !important;
+}
+
+::ng-deep .mat-ripple:not(:empty) {
+  padding: 25px !important;
+}
+.cusSuccess{
+width: 50px;
+
+}
+
+.custBox{
+height: 4px;
+width: 20px;
+border-radius: 0.5px;
+}
+.custModalContainer {
+z-index: 1;
+left: 0;
+// top: 0;
+bottom: 0;
+width: 100%;
+height: 100%;
+overflow: auto;
+// background-color: var(--custDark);
+//  opacity: 0.4;
+background-color: rgba(0, 0, 0, 0.4);
+position: fixed;
+}
+.modal-content {
+background-color: var(--custWhite);
+margin: auto;
+padding-top: 30px;
+padding-bottom: 15px;
+padding-right: 16px;
+padding-left: 16px;
+border: 1px solid #888;
+width: 100%;
+position: absolute;
+bottom: 0px;
+border-radius: 10px 10px 0px 0px;
+}

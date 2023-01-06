@@ -1,0 +1,538 @@
+{
+
+  "KYCPending": [
+
+    {
+
+      "icon": "assets/icon/pendingIcon.svg",
+
+      "title": "KYC - Pending"
+
+    }
+
+  ],
+
+  "objectContent": [
+
+    {
+
+      "contentType": "singleRowCard",
+      "funds":{
+        "availableMargin":"5000",
+        "action1":"Add Funds",
+        "action2":"withdraw"
+      },
+
+      "title": "Portfolio",
+
+      "": [
+
+        {
+
+          "row1": {
+
+            "col1": "Invested Value",
+
+            "col2": "Current Value"
+
+          },
+
+          "row2": {
+
+            "col1": "Rs 5000.00",
+
+            "col2": "Rs 6000.00"
+
+          }
+
+        },
+
+        {
+
+          "row1": {
+
+            "col1": "Unrealised Gain & Loss",
+
+            "col2": "Today’s Gain & Loss"
+
+          },
+
+          "row2": {
+
+            "col1": "Rs 5000.00",
+
+            "col2": "Rs 5011.00"
+
+          }
+
+        }
+
+      ],
+
+      "segmentValues": [
+
+        {
+
+          "title": ""
+
+        }
+
+      ]
+
+    },
+
+    {
+
+      "contentType": "singleRowCard",
+
+      "title": "Market Movers",
+
+      "Gainers": [
+
+        {
+
+          "row1": {
+
+            "col1": "ITC",
+
+            "col2": "Rs 3251.00"
+
+          },
+
+          "row2": {
+
+            "col1": "NSE",
+
+            "col2": "22.62(0.05%)"
+
+          }
+
+        },
+
+        {
+
+          "row1": {
+
+            "col1": "ONGC",
+
+            "col2": "Rs 368.00"
+
+          },
+
+          "row2": {
+
+            "col1": "NSE",
+
+            "col2": "67.60(0.2%)"
+
+          }
+
+        }
+
+      ],
+
+      "Losers": [
+
+        {
+
+          "row1": {
+
+            "col1": "LTI",
+
+            "col2": "Rs 501.00"
+
+          },
+
+          "row2": {
+
+            "col1": "NSE",
+
+            "col2": "11.00(0.03%)"
+
+          }
+
+        },
+
+        {
+
+          "row1": {
+
+            "col1": "SBIN",
+
+            "col2": "Rs 603.40"
+
+          },
+
+          "row2": {
+
+            "col1": "NSE",
+
+            "col2": "03.00(0.01%)"
+
+          }
+
+        }
+
+      ],
+
+      "Volume Shockers": [
+
+        {
+
+          "row1": {
+
+            "col1": "HP",
+
+            "col2": "Rs 120.10"
+
+          },
+
+          "row2": {
+
+            "col1": "NSE",
+
+            "col2": "33.61(0.23%)"
+
+          }
+
+        },
+
+        {
+
+          "row1": {
+
+            "col1": "KPMG",
+
+            "col2": "Rs 876.00"
+
+          },
+
+          "row2": {
+
+            "col1": "NSE",
+
+            "col2": "10.44(0.21%)"
+
+          }
+
+        }
+
+      ],
+
+      "segmentValues": [
+
+        {
+
+          "title": "Gainers",
+
+          "value": "Gainers"
+
+        },
+
+        {
+
+          "title": "Losers",
+
+          "value": "Losers"
+
+        },
+
+        {
+
+          "title": "Volume Shockers",
+
+          "value": "Volume Shockers"
+
+        }
+
+      ]
+
+    },
+
+    {
+
+      "contentType": "singleRowCard",
+
+      "title": "Events",
+
+      "Dividends": [
+
+        {
+
+          "row1": {
+
+            "col1": "HDFC",
+
+            "col2": "Rs 351.00"
+
+          },
+
+          "row2": {
+
+            "col1": "NSE",
+
+            "col2": "20.80(0.00%)"
+
+          }
+
+        },
+
+        {
+
+          "row1": {
+
+            "col1": "YESBANK",
+
+            "col2": "Rs 801.06"
+
+          },
+
+          "row2": {
+
+            "col1": "NSE",
+
+            "col2": "36.99(0.86%)"
+
+          }
+
+        }
+
+      ],
+
+      "Bonus": [
+
+        {
+
+          "row1": {
+
+            "col1": "INFO",
+
+            "col2": "Rs 4401.00"
+
+          },
+
+          "row2": {
+
+            "col1": "NSE",
+
+            "col2": "67.03(0.75%)"
+
+          }
+
+        },
+
+        {
+
+          "row1": {
+
+            "col1": "ICICI",
+
+            "col2": "Rs 33.08"
+
+          },
+
+          "row2": {
+
+            "col1": "NSE",
+
+            "col2": "25.09(0.23%)"
+
+          }
+
+        }
+
+      ],
+
+      "Stock Splits": [
+
+        {
+
+          "row1": {
+
+            "col1": "IDEA",
+
+            "col2": "Rs 301.00"
+
+          },
+
+          "row2": {
+
+            "col1": "NSE",
+
+            "col2": "20.22(0.21%)"
+
+          }
+
+        },
+
+        {
+
+          "row1": {
+
+            "col1": "NDTV",
+
+            "col2": "Rs 468.00"
+
+          },
+
+          "row2": {
+
+            "col1": "NSE",
+
+            "col2": "64.00(0.00%)"
+
+          }
+
+        }
+
+      ],
+
+      "segmentValues": [
+
+        {
+
+          "title": "Dividends",
+
+          "value": "Dividends"
+
+        },
+
+        {
+
+          "title": "Bonus",
+
+          "value": "Bonus"
+
+        },
+
+        {
+
+          "title": "Stock Splits",
+
+          "value": "Stock Splits"
+
+        }
+
+      ]
+
+    },
+
+    {
+
+      "contentType": "singleRowCard",
+
+      "title": "Block Deal",
+
+      "Block Deal": [
+
+        {
+
+          "row1": {
+
+            "col1": "LICI",
+
+            "col2": "Rs 653.00"
+
+          },
+
+          "row2": {
+
+            "col1": "NSE",
+
+            "col2": "12.02(0.23%)"
+
+          }
+
+        },
+
+        {
+
+          "row1": {
+
+            "col1": "SUZLON",
+
+            "col2": "Rs 10.00"
+
+          },
+
+          "row2": {
+
+            "col1": "NSE",
+
+            "col2": "20.00(0.13%)"
+
+          }
+
+        }
+
+      ],
+
+      "Bulk Deal": [
+
+        {
+
+          "row1": {
+
+            "col1": "MRF",
+
+            "col2": "Rs 85.66"
+
+          },
+
+          "row2": {
+
+            "col1": "NSE",
+
+            "col2": "98.78(0.33%)"
+
+          }
+
+        },
+
+        {
+
+          "row1": {
+
+            "col1": "DMART",
+
+            "col2": "Rs 444.01"
+
+          },
+
+          "row2": {
+
+            "col1": "NSE",
+
+            "col2": "63.99(0.00%)"
+
+          }
+
+        }
+
+      ],
+
+      "segmentValues": [
+
+        {
+
+          "title": "Block Deal",
+
+          "value": "Block Deal"
+
+        },
+
+        {
+
+          "title": "Bulk Deal",
+
+          "value": "Bulk Deal"
+
+        }
+
+      ]
+
+    }
+
+  ]
+
+}

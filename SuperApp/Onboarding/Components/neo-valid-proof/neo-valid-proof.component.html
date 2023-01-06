@@ -1,0 +1,72 @@
+<ion-app>
+<ion-header class="sticky-top ">
+  <ion-toolbar class="custBackgroundDynamicColorWhite">
+    <ion-grid class="header">
+      <ion-row>
+        <ion-col [size]="'1'" class="text-center " (click)="back()">
+          <ion-row class="backArrow">
+            <img [src]="imageList?.arrow" class="backArrow mt-2">
+          </ion-row>
+        </ion-col>
+        <ion-col [size]="'11'" class="">
+          <span class="custFontFamilyMuliBold muli-16pt custLineHight22 custColorBlack">Enter your valid ID proof</span>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+ <ion-content class="w-100 h-100 contentBackground" >
+  <ion-grid class="">
+    <form [formGroup]="validProof" (ngSubmit)="onSubmit()" novalidate>
+    <label  class="custFontFamilyMuliBold muli-16pt custLineHight22 custColorBlack heading">Select any valid ID proof</label>
+    <!-- <ion-row class="docSelect ion-text-left">
+        <input type="radio" formControlName = "document" class="outerCircle" name="document" value="male" >
+        <label for="document" class="ms-1 custFontFamilyMuliRegular muli-16pt custLineHight18 custColorBlack">PAN Number</label>
+    </ion-row> -->
+    <!-- <mat-radio-group formControlName="document">
+      <mat-radio-button value="dl" (click)="validateDoc('dl')"
+        class="custFontFamilyMuliRegular muli-16pt custLineHight18 custColorBlack docSelect">Driving License Number</mat-radio-button><br>
+      <mat-radio-button value="passport" (click)="validateDoc('passport')"
+        class="custFontFamilyMuliRegular muli-16pt custLineHight18 custColorBlack docSelect">Passport Number</mat-radio-button><br>
+      <mat-radio-button value="voter" (click)="validateDoc('voter')"
+        class="custFontFamilyMuliRegular muli-16pt custLineHight18 custColorBlack docSelect">Voter ID Number</mat-radio-button>
+      
+    </mat-radio-group> -->
+   <ion-row class="px-3">
+    <mat-form-field class="w-100" appearance="outline">
+
+      <mat-label>Select Id Proof</mat-label>
+      <mat-select formControlName="document">
+        <mat-option *ngFor="let x of docsArray" [value]="x.name" (click)="validateDoc(x.name)" >
+          {{ x.title }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </ion-row>
+    <label class="custFontFamilyMuliBold muli-16pt custLineHight22 custColorBlack mt-3 heading">Enter ID number</label>
+   
+      <mat-form-field appearance="outline" class="example-full-width w-100 inputField">
+        <mat-label class="text-capitalized">ID number</mat-label>
+        <input matInput (keyup)="onKeyDoc($event)"
+          class="custInputWidth custFontFamilyMuliRegular muli-14pt custLineHight24 custColorGreyish uppercase"
+          [placeholder]="'Enter ID Number'" [type]="'text'" >
+      </mat-form-field>
+    
+  </form>
+    <ion-row class="fixed-bottom">
+      <ion-col size="12">
+        <ion-row class="w-100 bottom">
+          <ion-checkbox color = "secondary" class = "mt-1 checkbox" [(ngModel)] = "acceptTerms">
+          </ion-checkbox>
+          <span class="custFontFamilyMuliRegular muli-10pt custLineHight15 custColorBattlePGry terms">I Authorize Torus to Conduct / Verify as per their <br><a class="clickTerms">Terms & Condition</a></span>
+        </ion-row>
+      </ion-col>
+      <ion-col class="px-3">
+        <button class="btn w-100 text-center custBackgroundColorBrightCyan" (click)="onSubmit()" 
+        [disabled]="!(acceptTerms&&isValid)"><span class="custColorWhite custFontFamilyMuliBold muli-16pt" 
+          >{{'continue'|translate}}</span></button>  
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+ </ion-content>
+</ion-app>

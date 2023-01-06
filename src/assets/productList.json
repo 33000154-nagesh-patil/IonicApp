@@ -1,0 +1,18 @@
+{
+    "id": "2",
+    "logo": "assets/health-page-logos/Group 20822.svg",
+    "title": "Urine",
+    "description": "Also known as Fasting Blood Sugar (FBS)",
+    "name": "By Core Diagnostics • Pathology Test",
+    "price": "120.00",
+    "report": "20-40 hrs",
+    "testNo": "1",
+    "discountedprice": "120",
+    "collectioncharges": "130",
+    "certificationanme": "120",
+    "samplerequired": "ISO",
+    "preparations": "Blood",
+    "summary": "Do not eat or drink anything other than water for 8-12 hours before the test",
+    "offers": "offers1",
+    "frequentlyasked": "what is name"
+}

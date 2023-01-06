@@ -1,0 +1,67 @@
+<ion-header>
+  <ion-toolbar class="custBackgroundDynamicColorWhite p-2">
+    <ion-grid>
+      <ion-row>
+        <ion-col [size]="'0.7'" class="text-center mt-2">
+          <ion-img [src]="imageList?.arrow" class="custKYCImg mt-1" (click)="dismiss()" ></ion-img>
+        </ion-col>
+        <ion-col [size]="'10'" class="px-3 mt-2">
+          <input type="text"   [(ngModel)]="search" autocomplete="off"
+            placeholder="Search Stocks" class="formControl" />
+        </ion-col>
+        <ion-col [size]="'1'" class="text-center float-end">
+          <ion-img [src]="imageList?.search" class="custKYCImg mt-2"></ion-img>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content class="contentBackground">
+  <ion-grid>
+    <div >
+      <ion-row >
+        <ion-col >
+          <ion-card class="custBackgroundColorWhite p-0 m-1" *ngFor="let item of addWatchlistData|filter:search; index as i">
+            <ion-card-content class="mb-0 pb-0">
+
+              <ion-row class="pb-0 mb-0">
+                <ion-col class="custColorDark muli-14pt custFontFamilyMuliSemiBold text-nowrap">
+                  {{item?.SYMBOL}}
+                  <img *ngIf="item.img" src={{item.img}} style="height: 16px; margin-top: -16px;">
+                </ion-col>
+
+                <!-- <ion-col
+                  class="custFontFamilyMuliSemiBold custLineHight20 muli-14pt custColorDark pe-5 text-end  text-nowrap">
+                  ₹{{setDecimal[i]}}
+                </ion-col> -->
+              </ion-row>
+
+              <ion-row>
+                <ion-col class="custFontFamilyMuliSemiBold muli-12pt custLineHight16 custColorBattlePGry  text-nowrap">
+                  {{item?.EXCHANGE}}
+                </ion-col>
+
+               <ion-col [size]="'8'" class="d-flex justify-content-end text-end">
+                  <span class="muli-12pt itemCol mb-1 text-end  text-nowrap"><ion-icon name="caret-up" class="custGreenTick"></ion-icon>₹{{item?.ISIN_CODE}}</span>&nbsp;
+                  <span class="muli-12pt itemCol mb-3 text-end  text-nowrap">({{item?.UPPER_LIMIT}})</span>
+                </ion-col> -->
+
+                <ion-col  class="d-flex justify-content-end">
+                  <ion-img [src]="imageList?.plusIcon" class="custAddIcon" *ngIf="!selectedStock.includes(item.SEC_ID)" (click)="ToggleImg(item)" >
+                  </ion-img>
+                  <ion-img [src]="imageList?.greenTick" class="custAddIcon" *ngIf="selectedStock.includes(item.SEC_ID)" (click)="ToggleImg(item)">
+                  </ion-img>
+                </ion-col>
+              </ion-row>
+
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </div>
+
+
+  </ion-grid>
+</ion-content>

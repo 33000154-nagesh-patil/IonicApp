@@ -1,0 +1,104 @@
+<ion-app>
+  <ion-header>
+    <ion-toolbar class="custBackgroundDynamicColorWhite">
+      <ion-grid>
+        <ion-row>
+          <!-- <ion-col [size]="'1'">
+            <ion-img [src]="imageList?.arrow" class="custArrorSize custCenterAlign"></ion-img>
+          </ion-col> -->
+          <ion-col [size]="'11'">
+            <span class="custFontFamilyMuliBold muli-14pt custColorDark custLineHight40">Personal Details</span>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content class="contentBackground">
+    
+    <ion-grid class="p-3 mb-5">
+      <ion-row class="custFontFamilyMuliBold muli-14pt custLineHight40 custColorDark">Details Required</ion-row>
+      <ion-row>
+        <mat-radio-button [checked]="true">
+          <span class="custFontFamilyMuliBold muli-14pt custLineHight40 custColorDark ">
+          {{res.Gender}}  </span>
+        </mat-radio-button>
+      </ion-row>
+      <ion-row class="w-100 mt-2">
+        <mat-form-field appearance="outline" class="w-100">
+          <mat-label>Mobile Number</mat-label>
+          <input matInput  [value]="res.mobileNo" readonly>
+        </mat-form-field>
+      </ion-row>
+      <ion-row class="w-100">
+        <mat-form-field appearance="outline" class="w-100">
+          <mat-label>First Name</mat-label>
+          <input matInput  [value]="res.firstName" readonly>
+        </mat-form-field>
+      </ion-row>
+      <ion-row class="w-100">
+        <mat-form-field appearance="outline" class="w-100">
+          <mat-label>Last Name</mat-label>
+          <input matInput  [value]="res.lastName" readonly>
+        </mat-form-field>
+      </ion-row>
+      <ion-row class="w-100">
+        <mat-form-field appearance="outline" class="w-100">
+          <mat-label>Date of Birth</mat-label>
+          <input matInput  [value]="res.DOB" readonly>
+        </mat-form-field>
+      </ion-row>
+      <ion-row>
+        <span>Address Details</span>
+      </ion-row>
+      <ion-row class="w-100 pt-2">
+        <mat-form-field appearance="outline" class="w-100">
+          <mat-label>Address</mat-label>
+          <input matInput  [value]="res.address" readonly>
+        </mat-form-field>
+      </ion-row>
+      <ion-row class="w-100">
+        <mat-form-field appearance="outline" class="w-100">
+          <mat-label>Country</mat-label>
+          <input matInput  [value]="res.country" readonly>
+        </mat-form-field>
+      </ion-row>
+      <ion-row class="w-100">
+        <mat-form-field appearance="outline" class="w-100">
+          <mat-label>State</mat-label>
+          <input matInput  [value]="res.state" readonly>
+        </mat-form-field>
+      </ion-row>
+      <ion-row class="w-100">
+        <mat-form-field appearance="outline" class="w-100">
+          <mat-label>City</mat-label>
+          <input matInput  [value]="res.city" readonly>
+        </mat-form-field>
+      </ion-row>
+      <ion-row class="w-100">
+        <mat-form-field appearance="outline" class="w-100">
+          <mat-label>District</mat-label>
+          <input matInput  [value]="res.district" readonly>
+        </mat-form-field>
+      </ion-row>
+      <ion-row class="w-100">
+        <mat-form-field appearance="outline" class="w-100">
+          <mat-label>Pincode</mat-label>
+          <input matInput  [value]="res.pincode" readonly>
+        </mat-form-field>
+      </ion-row>
+  
+  
+  
+    </ion-grid>
+  </ion-content>
+  <ion-footer class="fixed-bottom"> 
+    <ion-toolbar>
+      <ion-row class="px-3">
+    <button (click)="onContinue()" class="btn w-100 text-center custBackgroundColorBrightCyan" ><span
+      class="custColorWhite custFontFamilyMuliBold muli-16pt">Continue</span></button>
+    </ion-row>
+    </ion-toolbar>
+  </ion-footer>
+  </ion-app>
+  

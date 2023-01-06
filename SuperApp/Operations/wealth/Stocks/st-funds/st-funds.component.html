@@ -1,0 +1,123 @@
+<ion-header class="top-fixed">
+  <ion-toolbar class="custBackgroundDynamicColorWhite">
+    <ion-grid>
+      <ion-row>
+        <ion-col [size]="'0.7'" class="text-center mt-2  me-3">
+          <ion-img [src]="imageList?.arrow" class="custArrow" (click)="goBack()"></ion-img>
+        </ion-col>
+        <ion-col [size]="'8'">
+          <span class="custFontFamilyMuliBold muli-16pt custLineHight40 ml-10 custColorBlack">Funds</span>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-grid class="custBackgroundColorPaleGrey py-10">
+    <div *ngIf="isclose">
+      <ion-card>
+        <ion-row>
+          <ion-col [size]="'1'" class="mt-3 px-3">
+            <ion-img [src]="imageList?.piggy" class="piggyImage"></ion-img>
+          </ion-col>
+          <ion-col [size]="'9'" class="px-0">
+            <ion-card-content class="custColorDark muli-12pt custFontFamilyMuliBold custLineHight18">
+               {{stockInfo}}.
+              <a href="">Learn more</a>
+            </ion-card-content>
+          </ion-col>
+          <ion-col [size]="'1'" class="mt-3 px-3 text-end">
+            <ion-icon name="close" class="custCrossColor" (click)="close()"></ion-icon>
+          </ion-col>
+        </ion-row>
+      </ion-card>
+    </div>
+    <ion-card class="custBackgroundColorPaleGrey">
+      <ion-card-content>
+        <ion-grid>
+          <ion-row >
+            <ion-col [size]="'4'" *ngFor="let y of Funds.funds" class="text-center">
+              <div *ngFor="let x of y |keyvalue">
+              <span class="custFontFamilyMuliRegular  muli-10pt custLineHight28 custColorGreyish">{{x.key}}</span><br>
+              <span
+                class="custFontFamilyRobotoCondensed muli-14pt custLineHight18 custColorParakeetGreen">₹{{x.value}}</span>
+              </div>
+              </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col [size]="'12'" class="custColorGreyish muli-10pt">Funds include your Equity | Derivatives | Currency
+              | Commodity</ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-card-content>
+    </ion-card>
+    <ion-col [size]="'12'">
+      <ion-grid>
+        <ion-row>
+          <ion-col [size]="'6'">
+            <button  class="btn w-100  custBackgroundColorBrightCyan">
+              <ion-row>
+                <ion-img [src]="imageList?.withdraw1" class="custWithoutTextImg ps-2"></ion-img>
+                <ion-col [size]="'8'" (click)="goToWithdraw()">
+                  <span class="custColorWhite text-center custFontFamilyMuliBold muli-16pt text-nowrap">Withdraw</span>
+                </ion-col>
+              </ion-row>
+            </button>
+          </ion-col>
+          <ion-col [size]="'6'">
+            <button class="btn w-100  custBackgroundColorParakeetGreen">
+              <ion-row>
+                <ion-img [src]="imageList?.deposit" class="custWithoutTextImg ps-2"></ion-img>
+                <ion-col [size]="'8'" (click)="goToAddFunds()">
+                  <span class="custColorWhite text-center custFontFamilyMuliBold muli-16pt text-nowrap">AddFunds</span>
+                </ion-col>
+              </ion-row>
+            </button>
+          </ion-col>
+        </ion-row>
+
+
+        <ion-card>
+          <ion-row class="m-2 custBorder">
+            <ion-col [size]="'12'" class="">
+              <span class="muli-14pt custColorDark text-center custFontFamilyMuliSemiBold ">{{ marginInfo}}</span>
+            </ion-col>
+            <ion-col [size]="'5'">
+              <button type="button" (click)="IncreaseMargin()"
+                class="custBtnExplore text-capitalize px-5 custColorBrightCyan custFontFamilyMuliRegular muli-14pt custButtonOutLine text-nowrap"
+               id="wellnessStocke">{{marginbutton}}</button>
+            </ion-col>
+          </ion-row>
+        </ion-card>
+
+
+        <ion-row class="mt-2">
+          <ion-col [size]="'12'" class="text-center">
+            <span class="muli-12pt borderNone custColorDarkishBlue muli-12pt custFontFamilyMuliBold" (click)="transaction()">{{paymenthitsory}}</span>
+          </ion-col>
+        </ion-row>
+
+
+      </ion-grid>
+    </ion-col>
+
+    <ion-card>
+      <ion-row class="border" *ngFor="let x of stockFunds.detail">
+        <ion-col class="padtop1 padBot1 float-end custFontFamilyMuliBold muli-12pt px-3 custColorblack" [size]="'6'">
+          {{x.title}}</ion-col>
+        <ion-col class="text-end custFontFamilyMuliBold muli-14pt custColorDark py-1" [size]="'6'">
+          ₹{{x.value}}</ion-col>
+      </ion-row>
+    </ion-card>
+
+    <ion-card class="cardMargin">
+      <ion-row class="border" *ngFor="let x of stockFunds.collateralFunds" >
+        <ion-col class="padtop1 padBot1 float-end custFontFamilyMuliBold muli-12pt px-3 custColorblack" [size]="'6'">
+          {{x.title}}</ion-col>
+        <ion-col class="text-end custFontFamilyMuliBold muli-14pt custColorDark" [size]="'6'">
+          {{x.value}}</ion-col>
+      </ion-row>
+    </ion-card>
+
+  </ion-grid>
+</ion-content>

@@ -1,0 +1,6 @@
+<lib-header [title]="title" [imageList]="imageList" [showArrow]="false" [showLabel]="true" [showImg]="false" [imgURL]="labelIcon"
+[showIndex]="false" [showNotification]="true" [showCartWithName]="true" [notificationCount]="notificationCount" [cardCount]="cartCount" [showSideMenu]="false" [showSearch]="true" [showClose]="false" [showShare]="false" [showWatchList]="false" [showCartWithoutName]="false" [showStories]="false" [otherTextName]="textName" [showOtherText]="false" [superMode]="currentMode" [backUrlName]=""></lib-header>
+<ion-content class="h-100 w-100 contentBackground">
+    <lib-gold [imageList]="imageList" [errorList]="errorList" [investmentStatus]="investmentStatus" [currentMoneySymbols]="currentMoneySymbols" [goldData]="goldDataList" [silverData]="SilverDataList" [goldSilverData]="goldSilverData" [currentDigiDataOrderList]="currentDigiDataOrderList"></lib-gold>
+</ion-content>
+<lib-footer *ngIf="currentMode" [activeImg]="imageList?.activeTab" [selectedIndex]="'2'" [footerListData]="goldFooterData" [parentTab]="'mf'"></lib-footer>

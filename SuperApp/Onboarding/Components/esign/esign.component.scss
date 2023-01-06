@@ -1,0 +1,75 @@
+.btn {
+  color: white;
+}
+
+.custModalContainer {
+  z-index: 1;
+  left: 0;
+  // top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  // background-color: var(--custDark);
+  //  opacity: 0.4;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+}
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 16px;
+  padding-left: 16px;
+  border: 1px solid #888;
+  width: 100%;
+  height: max-content;
+  position: absolute;
+  bottom: 0px;
+  border-radius: 10px 10px 0px 0px;
+}
+.custpdfviewer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: drop-shadow(5px 5px 5px #222222);
+}
+.pdfv-control {
+  background: #f3f3f3;
+  padding: 10px;
+  border-bottom: 1px solid #cccc;
+  display: flex;
+}
+.pdfv-control button {
+  background: #cccc;
+  border: none;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.pdfv-control span{
+  align-self: flex-end;
+}
+.pdf-viewer-controls {
+  overflow: auto;
+}
+.pdf-viewer-viewer-window {
+  border: 1px solid #cccccc;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+.custZIndex{
+  z-index: 1;
+}
+
+.custCenter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

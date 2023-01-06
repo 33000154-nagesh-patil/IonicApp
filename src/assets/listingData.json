@@ -1,0 +1,95 @@
+{
+    "id": "1",
+    "title1": "Index",
+    "nifty": {
+        "title": "Nifty50",
+        "exchange": "NSE",
+        "current_price": "2347",
+        "increase_price": "23",
+        "increase_price_percent": "44",
+        "performance_date": [
+            {
+                "performance_id": "1",
+                "performance_day": "today",
+                "graph": "/path"
+            },
+            {
+                "performance_id": "2",
+                "performance_week": "5w",
+                "graph": "/path"
+            },
+            {
+                "performance_id": "3",
+                "performance_month": "2m",
+                "graph": "/path"
+            },
+            {
+                "performance_id": "4",
+                "performance_year": "5y",
+                "graph": "/path"
+            }
+        ]
+    },
+    "id2": "1",
+    "title2": "Index",
+    "SENSEX": {
+        "title": " SENSEX ",
+        "exchange": "NSE",
+        "current_price": "1424",
+        "increase_price": "24",
+        "increase_price_percent": "10%",
+        "performance_date": [
+            {
+                "performance_id": "1",
+                "performance_day": "today",
+                "graph": "/path"
+            },
+            {
+                "performance_id": "2",
+                "performance_week": "5w",
+                "graph": "/path"
+            },
+            {
+                "performance_id": "3",
+                "performance_month": "2m",
+                "graph": "/path"
+            },
+            {
+                "performance_id": "4",
+                "performance_year": "5y",
+                "graph": "/path"
+            }
+        ]
+    },
+    "id3": "1",
+    "title3": "Index",
+    "bank_nifty": {
+        "title": " BANK NIFTY ",
+        "exchange": "NSE",
+        "current_price": "4155",
+        "increase_price": "7468",
+        "increase_price_percent": "7428",
+        "performance_date": [
+            {
+                "performance_id": "1",
+                "performance_day": "today",
+                "graph": "/path"
+            },
+            {
+                "performance_id": "2",
+                "performance_week": "5w",
+                "graph": "/path"
+            },
+            {
+                "performance_id": "3",
+                "performance_month": "2m",
+                "graph": "/path"
+            },
+            {
+                "performance_id": "4",
+                "performance_year": "5y",
+                "graph": "/path"
+            }
+        ]
+    }
+}

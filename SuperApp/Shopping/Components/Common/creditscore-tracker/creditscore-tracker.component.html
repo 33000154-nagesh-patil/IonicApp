@@ -1,0 +1,32 @@
+<!-- <ion-row>Your Credit Score</ion-row> -->
+<ion-card>
+
+      <ion-card-header>
+
+        <ion-card-title >
+          <ion-row class="muli-14pt">creadit Score</ion-row>
+
+        </ion-card-title>
+
+      </ion-card-header>
+      <ion-card-content class="paddingBtm">
+        <ion-row><ion-col class="muli-24pt custFontFamilyMuliSemiBold custColorDark  text-center">{{data.score}}</ion-col> </ion-row>
+        <ion-row><ion-col class="muli-12pt custFontFamilyMuliSemiBold custColorDark text-center">{{data.title}}</ion-col> </ion-row>
+        <ion-row><ion-col class="muli-12pt custFontFamilyMuliRegular custColorBrownishGrey text-center">{{data.subtitle}} {{data.score}}</ion-col></ion-row>
+        <ion-row><ion-col class="muli-12pt custFontFamilyMuliRegular custColorBrownishGrey text-center">{{data.description}}</ion-col> </ion-row>
+
+        <ion-row class="mt-2">
+          <ion-col class="text-center ">
+            <ion-img class="statsBar" [src]="data?.barIcon"></ion-img>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col>
+            <ion-img [ngStyle]="alwaysTrue && { 'left': (range) + '%'}" class="statsArrow" [src]="data?.pointerIcon"></ion-img>
+          </ion-col>
+        </ion-row>
+      </ion-card-content>
+
+    </ion-card>
+

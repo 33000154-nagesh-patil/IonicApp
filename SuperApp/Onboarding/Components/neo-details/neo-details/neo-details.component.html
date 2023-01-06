@@ -1,0 +1,149 @@
+
+<ion-app>
+  <ion-header>
+    <ion-toolbar class="custBackgroundDynamicColorWhite">
+      <ion-grid>
+        <ion-row>
+          <!-- <ion-col [size]="'1'">
+            <ion-img [src]="imageList?.arrow" class="custArrorSize custCenterAlign"></ion-img>
+          </ion-col> -->
+          <ion-col [size]="'11'">
+            <span class="custFontFamilyMuliBold muli-14pt custColorDark custLineHight40">Personal Details</span>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-toolbar>
+  </ion-header>
+
+
+<ion-content class="contentBackground">
+  <ion-grid class="w-100 p-2">
+    <ion-row class="px-2">
+      <p class="custFontFamilyMuliBold muli-16pt custColorDark ion-no-padding">Add Details</p>
+    </ion-row>
+
+    <form [formGroup]="nomineeFormGroup">
+        <ion-row class="px-2 mt-2"> 
+        <mat-form-field appearance="outline" class="w-100 ">
+          <mat-label class="text-capitalize">First Name</mat-label>
+          <input matInput formControlName="firstName"
+            class=" custFontFamilyMuliRegular muli-16pt custLineHight18 custColorDark">
+        </mat-form-field>
+
+      </ion-row>
+      <ion-row class="px-2 mt-2">
+        <mat-form-field appearance="outline" class="w-100 ">
+          <mat-label class="text-capitalize">Last Name</mat-label>
+          <input matInput formControlName="lastName"
+            class=" custFontFamilyMuliRegular muli-16pt custLineHight18 custColorDark">
+        </mat-form-field>
+        </ion-row> 
+        <ion-row class="px-2 mt-2">
+          <mat-form-field class="mat-form-field" appearance="outline" class="w-100">
+            <mat-label>DOB</mat-label>
+            <input matInput readonly [matDatepicker]="picker" max="{{todaysDate}}" formControlName="DOB" placeholder=DD-MM-YYYY
+            (dateInput)="checkForAge($event.value)"  (click) = "picker.open()">
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field>
+        </ion-row>
+        <ion-row class="px-2 mt-2">
+          <mat-form-field appearance="outline" class="w-100 ">
+            <mat-label class="text-capitalize">Father's Name</mat-label>
+            <input matInput formControlName="father"
+              class=" custFontFamilyMuliRegular muli-16pt custLineHight18 custColorDark">
+          </mat-form-field>
+        </ion-row>
+        <ion-row class="px-2 mt-2">
+          <mat-form-field appearance="outline" class="w-100 ">
+            <mat-label class="text-capitalize">Mother Name</mat-label>
+            <input matInput formControlName="mother"
+              class=" custFontFamilyMuliRegular muli-16pt custLineHight18 custColorDark">
+          </mat-form-field>
+        </ion-row>
+       
+
+      
+      <ion-row class="px-2 mt-2">
+        <mat-form-field appearance="outline" class="w-100 ">
+          <mat-label class="text-capitalize">Address1</mat-label>
+          <input matInput formControlName="Address1"
+            class=" custFontFamilyMuliRegular muli-16pt custLineHight18 custColorDark">
+        </mat-form-field>
+      </ion-row>
+
+      <ion-row class="px-2 mt-2">
+        <mat-form-field appearance="outline" class="w-100 ">
+          <mat-label class="text-capitalize">Address2</mat-label>
+          <input matInput formControlName="Address2"
+            class=" custFontFamilyMuliRegular muli-16pt custLineHight18 custColorDark">
+        </mat-form-field>
+      </ion-row>
+
+      <ion-row class="px-2 mt-2">
+        <ion-col [size]="'6'">
+          <mat-form-field appearance="outline" class="w-100">
+            <mat-label class="text-capitalize">{{'pincode' | translate}}</mat-label>
+            <input type="text" inputmode="numeric" maxlength="6" [(ngModel)]="profileData.Pincode" matInput formControlName="Pincode"
+              class=" custFontFamilyMuliRegular muli-16pt custLineHight18 custColorDark">
+          </mat-form-field>
+        </ion-col>
+
+        <ion-col [size]="'6'" class="text-center">
+          <mat-form-field appearance="outline" class="w-100" (click)="getCityMasterDetails('City',profileData.Pincode)">
+            <mat-label>{{'city' | translate}}</mat-label>
+            <mat-select formControlName="City" [(ngModel)]="profileData.City" name="city" id="city">
+              <mat-option *ngFor="let item of city" [value]="item.district">
+                {{item.district}} &nbsp; {{item.office}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </ion-col>
+
+        
+      </ion-row>
+
+      <ion-row class="px-2 mt-2">
+        <mat-form-field appearance="outline" class="w-100 " >
+          <mat-label>{{'state' | translate}}</mat-label>
+          <mat-select formControlName="State" [(ngModel)]="profileData.State" name="state" id="state"
+            >
+            <mat-option *ngFor="let item of city" [value]="item.statename">
+              {{item.statename}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </ion-row>
+
+
+      <ion-row class="px-2 mt-2">
+        <mat-form-field appearance="outline" class="w-100 " >
+          <mat-label>{{'country' | translate}}</mat-label>
+          <mat-select formControlName="Country" [(ngModel)]="profileData.Country" name="country"
+            id="country">
+            <mat-option *ngFor="let item of city" [value]="item.country">
+              {{item.country}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+        
+      </ion-row>
+    </form>
+    
+  </ion-grid>
+</ion-content>
+<ion-footer>
+  <ion-row >
+    <button class="btn w-100 text-center custBackgroundColorBrightCyan cuatMargin" type="submit" (click)="onSubmit()"  [disabled]="!nomineeFormGroup.valid">
+      <span class="custColorWhite custFontFamilyMuliBold muli-16pt">Continue</span>
+    </button>
+  </ion-row>
+</ion-footer>
+
+</ion-app>
+
+
+
+
+<!-- [disabled]="!addressForm.valid"
+expand="block" (click)="onContinue()" -->

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+    <defs>
+        <style>
+            .cls-4{fill:none;stroke:#44c8f5;stroke-linecap:round;stroke-width:1.2px}
+        </style>
+    </defs>
+    <g id="Group_14293" data-name="Group 14293" transform="translate(-16 -353)">
+        <g id="Group_11983" data-name="Group 11983" transform="translate(16 353)">
+            <g id="Ellipse_611" data-name="Ellipse 611" style="stroke:#d9dee3;fill:none">
+                <circle cx="20" cy="20" r="20" style="stroke:none"/>
+                <circle cx="20" cy="20" r="19.5" style="fill:none"/>
+            </g>
+            <g id="Group_11980" data-name="Group 11980" transform="translate(6.266 10.161)">
+                <path id="Path_16640" data-name="Path 16640" d="M14.72 194.341a3.771 3.771 0 0 0-3.726-3.189h-.653a3.771 3.771 0 0 0-3.726 3.189l-.429 2.745a1.543 1.543 0 0 0 1.525 1.781h5.913a1.543 1.543 0 0 0 1.525-1.781zm-4.052-9.361a2.7 2.7 0 1 0 2.7 2.7 2.7 2.7 0 0 0-2.7-2.7z" transform="translate(-1.634 -184.98)" style="fill:#039;fill-rule:evenodd"/>
+                <path id="Path_16641" data-name="Path 16641" d="M11520.784 1597.8h-3.483v15.029h27.469V1597.8h-12.939" transform="translate(-11517.301 -1595.539)" style="stroke-linejoin:round;stroke:#44c8f5;stroke-linecap:round;stroke-width:1.2px;fill:none"/>
+                <path id="Path_16642" data-name="Path 16642" class="cls-4" d="M11535.53 1604.877h6.932" transform="translate(-11519.114 -1594.442)"/>
+                <path id="Path_16644" data-name="Path 16644" class="cls-4" d="M11535.53 1604.877h6.932" transform="translate(-11519.114 -1597.143)"/>
+                <path id="Path_16643" data-name="Path 16643" class="cls-4" d="M11535.53 1604.877h6.932" transform="translate(-11519.114 -1591.74)"/>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,147 @@
+<ng-container *ngIf="panCardKYCFlag == 'False';else second">
+  <lib-pan-card [imageList]="imageList" [errorList]="errorList" [panDetails]="_panCardKYCData"
+    (getPanStatus)="currentPANStatus($event)" (getPanName)="panName($event)" (getPanNumber)="panNumber($event)"
+    (getCivilKraStatus)="getCivilKraStatus($event)" class="h-100 w-100 " [currentModuleType]="_currentModuleType"
+    [loginCustomerGuId]="loginCustomerGuId"></lib-pan-card>
+</ng-container>
+
+<!-- <ng-template #second>
+  <ng-container *ngIf="aadharKYCFlag == 'False';else third">
+    <lib-aadhar-details [imageList]="imageList" [errorList]="errorList" [name]="name" class="h-100 w-100 "
+      (getAadharStatus)="currentAadharStatus($event)" [currentModuleType]="_currentModuleType"
+      [aadharDetails]="_aadharKYCData" [loginCustomerGuId]="loginCustomerGuId"></lib-aadhar-details>
+  </ng-container>
+</ng-template> -->
+
+<!-- <ng-template #second>
+  <ng-container *ngIf="aadharKYCFlag == 'False';else third">
+    <app-aadhar-onboard-kyc [imageList]="imageList" [errorList]="errorList" [name]="name" class="h-100 w-100 "
+      (getAadharStatus)="currentAadharStatus($event)" [currentModuleType]="_currentModuleType" (skippedAdhaar)="skipAdhaarUpload($event)"
+      [aadharDetails]="_aadharKYCData" [loginCustomerGuId]="loginCustomerGuId"></app-aadhar-onboard-kyc>
+  </ng-container>
+</ng-template> -->
+
+
+<ng-template #second>
+  <ng-container *ngIf="aadharKYCFlag == 'False';else third">
+    <app-digi-locker-aadhar [imageList]="imageList" [errorList]="errorList" [name]="name" class="h-100 w-100 "
+      (getAadharStatus)="currentAadharStatus($event)" [currentModuleType]="_currentModuleType" (skippedAdhaar)="skipAdhaarUpload($event)"
+      [aadharDetails]="_aadharKYCData" [loginCustomerGuId]="loginCustomerGuId"></app-digi-locker-aadhar>
+  </ng-container>
+</ng-template>
+
+<ng-template #third>
+  <ng-container *ngIf="nameAddressKYCFlag == 'False';else fourth">
+    <app-name-address-details [imageList]="imageList" [errorList]="errorList" [name]="name" class="h-100 w-100 "
+      (getNameAddress)="currentNameAddressStatus($event)" [currentModuleType]="_currentModuleType"
+      [nameAddressKYCData]="_nameAddressKYCData" [loginCustomerGuId]="loginCustomerGuId"></app-name-address-details>
+  </ng-container>
+</ng-template>
+
+<ng-template #fourth>
+  <ng-container *ngIf="bankKYCFlag == 'False';else fifth">
+    <lib-bank-details [imageList]="imageList" [errorList]="errorList" [name]="customerPanName" class="h-100 w-100 "
+      [userPanNumber]="userPanNumber" (getBankStatus)="currentBankStatus($event)"
+      [currentModuleType]="_currentModuleType" [bankDetails]="_bankKYCData" [loginCustomerGuId]="loginCustomerGuId">
+    </lib-bank-details>
+  </ng-container>
+</ng-template>
+
+<ng-template #fifth>
+  <ng-container *ngIf="exchangeKYCFlag == 'False';else sixth">
+    <app-exchange-selection [imageList]="imageList" [errorList]="errorList" class="h-100 w-100 "
+      (getExchangeStatus)="currentExchangeStatus($event)" [currentModuleType]="_currentModuleType"
+      [exchangeKYC]="_exchangeKYCData" [loginCustomerGuId]="loginCustomerGuId"></app-exchange-selection>
+  </ng-container>
+</ng-template>
+
+<ng-template #sixth>
+  <ng-container *ngIf="incomeProofKYCFlag == 'False';else seventh">
+    <!-- <app-income-proof [imageList]="imageList" [errorList]="errorList" class="h-100 w-100 "
+      (getIncomeProofStatus)="currentIncomeProofStatus($event)" [currentModuleType]="_currentModuleType"
+      [incomeProofKYC]="_incomeProofKYCData" [loginCustomerGuId]="loginCustomerGuId"></app-income-proof> -->
+  </ng-container>
+</ng-template>
+
+<ng-template #seventh>
+  <ng-container *ngIf="personalDetailsKYCFlag == 'False';else eight">
+    <app-personal-details [imageList]="imageList" [errorList]="errorList" class="h-100 w-100 "
+      (getPersonalStatus)="currentPersonalStatus($event)" [currentModuleType]="_currentModuleType"
+      [personalDetails]="_personalDetailsKYCData" [loginCustomerGuId]="loginCustomerGuId"></app-personal-details>
+  </ng-container>
+</ng-template>
+
+<ng-template #eight>
+  <ng-container *ngIf="nomineeKYCFlag == 'False';else nineth">
+    <app-nominee-details [imageList]="imageList" [errorList]="errorList" class="h-100 w-100 "
+      (getNomineeStatus)="currentNomineeStatus($event)" [currentModuleType]="_currentModuleType"
+      [nomineeDetails]="_nomineeKYCData" [loginCustomerGuId]="loginCustomerGuId"></app-nominee-details>
+  </ng-container>
+</ng-template>
+
+<ng-template #nineth>
+  <ng-container *ngIf="selfieKYCFlag == 'False';else tenth">
+    <app-selfie-verification [imageList]="imageList" [errorList]="errorList" class="h-100 w-100 "
+      (getSelfieStatus)="currentSelfieStatus($event)" [currentModuleType]="_currentModuleType"
+      [selfieDetails]="_selfieKYCData" [loginCustomerGuId]="loginCustomerGuId"></app-selfie-verification>
+  </ng-container>
+</ng-template>
+
+<ng-template #tenth>
+  <ng-container *ngIf="signatureKYCFlag == 'False';else eleven">
+    <app-signature-upload [imageList]="imageList" [errorList]="errorList" class="h-100 w-100 "
+      (getSignatureStatus)="currentSignatureStatus($event)" [currentModuleType]="_currentModuleType"
+      [signatureDetails]="_signatureKYCData" [loginCustomerGuId]="loginCustomerGuId"></app-signature-upload>
+  </ng-container>
+</ng-template>
+
+<ng-template #eleven>
+  <ng-container *ngIf="uploadPanAadharFlag == 'False';else twelve">
+    <app-upload-aadhar-pan [imageList]="imageList" [errorList]="errorList" class="h-100 w-100 " [name]="name"
+      (getUploadPanAadharStatus)="currentUploadPanAadharStatus($event)" [currentModuleType]="_currentModuleType"
+      [uploadPanAadharDetails]="_uploadPanAadharData" [loginCustomerGuId]="loginCustomerGuId"></app-upload-aadhar-pan>
+  </ng-container>
+</ng-template>
+
+<ng-template #twelve>
+  <ng-container *ngIf="esignKYCFlag == 'False';else thirteen">
+    <app-esign [imageList]="imageList" [errorList]="errorList" class="h-100 w-100 " [name]="customerPanName"
+      (getESignStatus)="currentESignStatus($event)" [currentModuleType]="_currentModuleType"
+      [esignDetails]="_esignKYCData" [loginCustomerGuId]="loginCustomerGuId"></app-esign>
+  </ng-container>
+</ng-template>
+
+<ng-template #thirteen>
+  <ion-content class="contentBackground">
+    <ion-grid class="d-flex align-items-center h-100">
+      <ion-row>
+        <ion-col [size]="'12'" class="custTextAlignCenter">
+          <ion-img [src]="imageList?.succsessIcon" class="custImgSucc"></ion-img>
+        </ion-col>
+        <ion-col [size]="'12'" class="custTextAlignCenter custPadding">
+          <span *ngIf="appName != 'Aqube'"
+            class="custFontFamilyMuliBold muli-22pt custLineHight30 custColorDark">{{'successFullMessage' |
+            translate}}</span>
+          <!-- <span *ngIf="appName == 'Aqube'" class="custFontFamilyMuliBold muli-22pt custLineHight30 custColorDark">{{'successFullMessageAq' |
+            translate}}</span> -->
+          <span *ngIf="appName == 'Aqube'"
+            class="custFontFamilyMuliBold muli-22pt custLineHight30 custColorDark text-center">Hi {{customerPanName}},</span><br>
+          <span *ngIf="appName == 'Aqube'"
+            class="custFontFamilyMuliSemiBold muli-16pt custLineHight30 custColorDark text-center">{{'successFullMessageAq1'
+            | translate}}</span><br>
+          <span *ngIf="appName == 'Aqube'"
+            class="custFontFamilyMuliSemiBold muli-16pt custLineHight30 custColorDark text-center">{{'successFullMessageAq2'
+            | translate}}</span>
+        </ion-col>
+        <ion-col [size]="'12'" class="fixed-bottom custPadding">
+          <button class="btn w-100 text-center custBackgroundColorBrightCyan" (click)="sendToMF()">
+            <span *ngIf="appName != 'Aqube'"
+              class="custColorWhite custFontFamilyMuliBold muli-16pt">{{'continueAccountSetup' | translate}}</span>
+            <span *ngIf="appName == 'Aqube'" class="custColorWhite custFontFamilyMuliBold muli-16pt">{{'ExploreApp' |
+              translate}}</span>
+          </button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-content>
+</ng-template>

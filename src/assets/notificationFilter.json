@@ -1,0 +1,75 @@
+{
+    "Orderlist":["Category","Sub-Category"],
+    
+  "Category":[
+      {
+          "name":"Wealth",
+          "id": 1,
+          "select":true
+        },
+        {
+            "name":"Health",
+            "id": 1,
+            "select":false
+        },
+        {
+            "name":"Education",
+            "id": 1,
+            "select":false
+        },
+        {
+            "name":"Lifestyle",
+            "id": 1,
+            "select":false
+        },
+        {
+            "name":"Bank",
+            "id": 1,
+            "select":false
+        }
+    ],
+    "SubCategory":[
+        {
+            "name":"Mutual Funds",
+            "id": 1,
+            "select":true
+          },
+          {
+              "name":"Stocks",
+              "id": 1,
+              "select":false
+          },
+          {
+              "name":"Digi Gold",
+              "id": 1,
+              "select":false
+          },
+          {
+            "name":"U.S.Stocks",
+            "id": 1,
+            "select":false
+        }, {
+            "name":"Fixed Deposits",
+            "id": 1,
+            "select":false
+        }
+, {
+    "name":"Bonds & SGBs",
+    "id": 1,
+    "select":false
+}
+, {
+    "name":"Robo Advisory",
+    "id": 1,
+    "select":false
+}
+, {
+    "name":"ETFs",
+    "id": 1,
+    "select":false
+}
+      ]
+      
+
+  
+}

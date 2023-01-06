@@ -1,0 +1,13 @@
+{
+  "name": "rsm",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular",
+  "proxies": [
+    {
+      "path": "/api",
+      "proxyUrl": "https://my-api-domain.com/api"
+    }
+  ]
+}

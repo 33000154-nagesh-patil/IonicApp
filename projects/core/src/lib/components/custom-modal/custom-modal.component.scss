@@ -1,0 +1,22 @@
+.cusModalContainer{
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+   // background-color: var(--custDark);
+  //  opacity: 0.4;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+}
+
+
+
+.custPopImgHeight{
+    height: 18px;
+    width: 18px;
+}
+.custMarginSpace{
+    margin: 2px 0 0 10px;
+}

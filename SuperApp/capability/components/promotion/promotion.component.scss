@@ -1,0 +1,21 @@
+.coloredCard{
+    background-image: linear-gradient(#E2F4FF, #C4E9FF);
+    color: #FFFFFF;
+    height: 260px;
+}
+.paddingLeft {
+    padding-left: 25px;
+}
+.marginTop{
+    margin-top: -28px;
+}
+
+.custBtnExplorer{
+    height: 30px;
+    border:  1px solid var(--custBrightCyan) !important;
+    border-radius: 4px !important;
+    background: white !important;
+    text-align: center !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+}

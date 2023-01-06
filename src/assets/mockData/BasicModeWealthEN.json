@@ -1,0 +1,10 @@
+{
+"titleLabel":"My Wealth Portfolio",
+ "startInvestment":[
+      {
+         "title":"You haven't invested in any funds",
+         "subTitle":"Today is a good day to start investing",
+         "btn":"Start investing"
+      }
+   ]
+}

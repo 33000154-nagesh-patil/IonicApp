@@ -1,0 +1,108 @@
+{
+    "subHeader": {
+
+                "id": "",
+                "title": "Contact",
+                "icon": "",
+                "type": "",
+                "cssx": "",
+                "uxClass": "muli-34pt",
+                "des": "",
+                "key": "",
+                "value": [
+                    {
+                        "id": "",
+                        "title": "",
+                        "icon": "",
+                        "type": "",
+                        "cssx": "",
+                        "uxClass": "",
+                        "des": "",
+                        "key": "",
+                        "value": ""
+                    }
+                ]
+    },
+    "search": {
+        "id": "",
+        "title": "Search",
+        "icon": "",
+        "type": "",
+        "cssx": "",
+        "uxClass": "px-3",
+        "des": [],
+        "key": "",
+        "showHide": [],
+        "value": [
+          {
+            "id": "",
+            "title": "Client Code",
+            "icon": "",
+            "type": "ALPHANUMERIC",
+            "cssx": "",
+            "uxClass": "",
+            "des": [],
+            "key": "",
+            "validators": {
+                "required": true
+            },
+            "value": ""
+          },
+           {
+            "id": "",
+            "title": "Mobile Number/Email ID",
+            "icon": "",
+            "type": "ALPHANUMERIC",
+            "cssx": "",
+            "uxClass": "",
+            "des": [],
+            "key": "",
+            "validators": {
+                "required": true
+            },
+            "value": ""
+            },
+            {
+                "id": "",
+                "title": "From Date",
+                "icon": "",
+                "type": "calender",
+                "cssx": "",
+                "uxClass": "",
+                "des": [],
+                "key": "",
+                "validators": {
+                    "required": true
+                },
+                "value": ""
+            },
+            {
+                "id": "",
+                "title": "To Date",
+                "icon": "",
+                "type": "calender",
+                "cssx": "",
+                "uxClass": "",
+                "des": [],
+                "key": "",
+                "validators": {
+                    "required": true
+                },
+                "value": ""
+            },
+            {
+                "id": "",
+                "title": "Submit",
+                "icon": "",
+                "type": "submit",
+                "cssx": "",
+                "uxClass": "",
+                "des": [],
+                "key": "",
+                "validators": "",
+                "value": ""
+            }
+        ]
+    }
+
+}

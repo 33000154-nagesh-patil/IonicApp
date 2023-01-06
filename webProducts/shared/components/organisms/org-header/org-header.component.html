@@ -1,0 +1,4 @@
+<header [ngStyle]="headerCommon.cssx">
+    <app-mol-header [header]="headerCon" (getValue)="getHeaderValue($event)"></app-mol-header>
+</header>
+<app-mol-profile class="float-end" [profileDetail]="listDetail" *ngIf="showDropDown"></app-mol-profile>

@@ -1,0 +1,37 @@
+{
+  "data":[
+    {
+        "lable":"Post Tax Take Home Salary of Ram Prasad",
+        "FormControlName":"Post-Tax-Take-Home-Salary-Prasad"
+    },
+    {
+        "lable":"Post Tax Take Home Salary of Vasant Goswami",
+        "FormControlName":"Post-Tax-Take-Home-Salary-Goswami"
+    },
+    {
+        "lable":"Sign-on bonus",
+        "FormControlName":"Sign-on-bonus"
+    },
+    {
+        "lable":"Pensions",
+        "FormControlName":"Pensions"
+    },
+    {
+        "lable":"Interest earned on savings",
+        "FormControlName":"Interest-earned-on-savings"
+    },
+    {
+        "lable":"Income from Investments (Deposits, Securities)",
+        "FormControlName":"Income-from-Investments"
+    }
+    ,
+    {
+        "lable":"Rental Income",
+        "FormControlName":"Rental-Income"
+    },
+    {
+        "lable":"Performance award / bonus",
+        "FormControlName":"Performance-award/bonus"
+    }
+]
+}

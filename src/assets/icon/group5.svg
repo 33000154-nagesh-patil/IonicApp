@@ -1,0 +1,31 @@
+<svg id="Group_22141" data-name="Group 22141" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <rect id="Rectangle_9512" data-name="Rectangle 9512" width="24" height="24" transform="translate(3 3)" fill="none"/>
+  <g id="Group_22109" data-name="Group 22109" transform="translate(4 2.999)">
+    <g id="Group_22106" data-name="Group 22106" transform="translate(14.666 0) rotate(14)">
+      <path id="Path_732" data-name="Path 732" d="M2.33,6.571A3.368,3.368,0,1,0,.17,2.326h0A3.354,3.354,0,0,0,2.3,6.562l.025.008ZM.779,2.525a2.707,2.707,0,1,1-.011.034l.011-.034Zm0,0" fill="#039"/>
+      <g id="india-rupee-currency-symbol" transform="matrix(0.966, -0.259, 0.259, 0.966, 1.905, 2.41)">
+        <path id="Path_739" data-name="Path 739" d="M2.037.671H1.8A.731.731,0,0,0,1.667.312h.37a.156.156,0,1,0,0-.312H.16a.156.156,0,1,0,0,.312H.872a.517.517,0,0,1,.522.359H.16a.161.161,0,0,0,0,.321H1.378a.564.564,0,0,1-.573.326H.3a.157.157,0,0,0,0,.313H.776c.316.012.456.149.536.523.063.278.109.459.146.568a.783.783,0,0,0,.175.342.189.189,0,0,0,.274-.258.016.016,0,0,0,0,0,4.524,4.524,0,0,1-.212-.757.726.726,0,0,0-.385-.561.749.749,0,0,0,.47-.493h.258a.161.161,0,0,0,0-.321Z" transform="translate(0 0)" fill="#039"/>
+      </g>
+    </g>
+    <path id="Polygon_85" data-name="Polygon 85" d="M1.874,0,3.749,3.749H0Z" transform="translate(10.891 8.652) rotate(-162)" fill="#039"/>
+    <path id="Path_20933" data-name="Path 20933" d="M-20184.051,5546.438a19.354,19.354,0,0,1,4.5-3.851,21.769,21.769,0,0,1,5.748-2.162" transform="translate(20184.404 -5534.875)" fill="none" stroke="#039" stroke-linecap="round" stroke-width="0.8"/>
+    <g id="Rectangle_9508" data-name="Rectangle 9508" transform="translate(16.533 9.573)" fill="none" stroke="#44c8f5" stroke-width="1">
+      <rect width="3.817" height="13.996" rx="0.5" stroke="none"/>
+      <rect x="0.5" y="0.5" width="2.817" height="12.996" fill="none"/>
+    </g>
+    <g id="Rectangle_9509" data-name="Rectangle 9509" transform="translate(11.443 11.563)" fill="none" stroke="#44c8f5" stroke-width="1">
+      <rect width="3.817" height="12.076" rx="0.5" stroke="none"/>
+      <rect x="0.5" y="0.5" width="2.817" height="11.076" fill="none"/>
+    </g>
+    <g id="Rectangle_9510" data-name="Rectangle 9510" transform="translate(6.355 13.966)" fill="none" stroke="#44c8f5" stroke-width="1">
+      <rect width="3.817" height="9.531" rx="0.5" stroke="none"/>
+      <rect x="0.5" y="0.5" width="2.817" height="8.531" fill="none"/>
+    </g>
+    <g id="Rectangle_9511" data-name="Rectangle 9511" transform="translate(1.264 16.583)" fill="none" stroke="#44c8f5" stroke-width="1">
+      <rect width="3.817" height="6.986" rx="0.5" stroke="none"/>
+      <rect x="0.5" y="0.5" width="2.817" height="5.986" fill="none"/>
+    </g>
+    <path id="Path_20934" data-name="Path 20934" d="M-20201.355,5519.379h-21.205" transform="translate(20222.561 -5495.883)" fill="none" stroke="#44c8f5" stroke-linecap="round" stroke-width="0.8"/>
+  </g>
+  <rect id="Rectangle_9525" data-name="Rectangle 9525" width="30" height="30" fill="none"/>
+</svg>

@@ -1,0 +1,55 @@
+[
+    {  
+        "id":"1",
+        "comany":"TCS",
+        "OdType":"NSE | Delivery",
+        "Price":"3251.00",
+        "QTY":"8*3250.00",
+        "percentage":"22.62(0.23%)"
+    },
+
+    {
+        "id":"1",
+        "comany":"TCS",
+        "OdType":"NSE | Intraday",
+        "Price":"3251.00",
+        "QTY":"-10*3250.00",
+        "percentage":"22.62(0.23%)"
+       },
+
+    {
+        "id":"3",
+        "comany":"TCS",
+        "OdType":"NSE | Intraday",
+        "Price":"3251.00",
+        "QTY":"10*3250.00",
+        "percentage":"22.62(0.23%)"
+    },
+
+
+    {
+        "id":"4",
+        "comany":"TCS",
+        "OdType":"NSE | Intraday",
+        "Price":"3251.00",
+        "QTY":"0",
+        "percentage":"22.62(0.23%)"   
+    },
+    {
+        "id":"5",
+        "comany":"TCS",
+        "OdType":"NSE | Bracket",
+        "Price":"3251.00",
+        "QTY":"10*3250.00",
+        "percentage":"22.62(0.23%)"  
+    },
+    {
+        "id":"5",
+        "comany":"TCS",
+        "OdType":"NSE | Cover",
+        "Price":"3251.00",
+        "QTY":"10*3250.00",
+        "percentage":"22.62(0.23%)" 
+    }
+   
+]

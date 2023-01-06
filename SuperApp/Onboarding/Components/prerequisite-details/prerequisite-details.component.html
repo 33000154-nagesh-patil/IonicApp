@@ -1,0 +1,54 @@
+<ion-app>
+  <cap-header [title]="'Members Details'" [otherTextName]="'Members Details'" [imageList]="imageList" [showArrow]="true"
+  [showLabel]="true" [showImg]="false" [showIndex]="false" [showNotification]="false" [showCartWithName]="true"
+  [cartCount]="cartCount" [showSideMenu]="false" [showSearch]="true" [showClose]="false" [showShare]="false"
+  [showWatchList]="false" [showCartWithoutName]="false" [showStories]="false" [paddingSize]="'7'"
+  [showOtherText]="true" [backUrlName]="">
+</cap-header>
+  <ion-content class="w-100 h-100 contentBackground">
+    <ion-row>
+      <ion-col class="text-start">Recharge Details</ion-col>
+      <ion-col class="text-end" (click)="back()">
+        <img
+          [src]="imageList?.addMoreIcon"
+          class="ion-float-right mt-1"
+          width="50px"
+          height="20px"
+        />
+      </ion-col>
+    </ion-row>
+    <!-- (click)="getcopm(i)" -->
+
+    <ion-row class="w-100 p-1">
+      <ion-card
+        *ngFor="let x of Prerequsite;index as i"
+        class="w-100 custBackgroundDynamicColorWhite"
+      >
+        <ion-card-content>
+
+            <ion-row class="d-flex justify-content-end mb-3" (click)="goToForm(i)">
+              <ion-img [src]="imageList?.editIcon" class="custImgSucc mt-1">
+              </ion-img>
+            </ion-row>
+            <ion-row>
+            <ion-col *ngFor="let y of x | keyvalue" [size]="'6'">
+              <span class="custFontFamilyMuliBold custColorBattlePGry muli-12pt"
+              >{{y.key}}
+            </span>
+            <span class="custFontFamilyMuliBold d-block custColorBlack muli-12pt">{{y.value}}</span>
+            
+            </ion-col>
+            </ion-row>
+            <ion-row>
+
+          </ion-row>
+          
+        </ion-card-content>
+      </ion-card>
+    </ion-row>
+  </ion-content>
+  
+  <ion-row  class="m-2" (click)="navigateToOrderBook()">
+    <button class="btn w-100 text-center custBackgroundColorBrightCyan"><span class="custColorWhite custFontFamilyMuliBold text-capitalize muli-16pt">Continue</span></button>
+  </ion-row>
+</ion-app>

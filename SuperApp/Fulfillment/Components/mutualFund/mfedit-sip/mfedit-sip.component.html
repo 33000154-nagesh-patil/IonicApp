@@ -1,0 +1,177 @@
+
+<ion-header>
+  <ion-toolbar class="custBackgroundDynamicColorWhite ion-no-padding">
+    <ion-grid>
+      <ion-row>
+        <ion-col [size]="'1'" (click)="dismissInvest()">
+         <ion-img [src]="imageList?.arrow" class="custInvestArrow"></ion-img>
+        </ion-col>
+        <ion-col [size]="'11'">
+          <ion-row>
+            <!-- <ion-col [size]="'2'">
+              <ion-img [src]="x[0].logo" class="custSIPIcon mt-1"></ion-img>
+            </ion-col> -->
+            <ion-col [size]="'10'" class="d-flex flex-column mt-2">
+              <span class="custFontFamilyMuliSemiBold muli-12pt custColorDark custLineHight16">Edit SIP</span>
+             
+              <!-- <span class="custFontFamilyMuliSemiBold muli-12pt custColorDark custLineHight16">{{x[0].title1}} {{x[0].title2}}</span> -->
+            </ion-col>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="h-100 w-100 contentBackground">
+  <form  [formGroup]="ValidationForm" (ngSubmit)="submitInvest()" >
+  <ion-grid>
+    <ion-card>
+      <ion-row class="p-3 w-100">
+        <ion-col size="2" class="me-2">
+          <ion-img [src]="x[0].logo" class="custSIPIcon mt-1"></ion-img>
+        </ion-col>
+        <ion-col>
+          <p class="custFontFamilyMuliBold muli-14pt custColorDark custLineHight0 ion-no-margin">ICICI Bank Limited</p>
+          <p class="custFontFamilyMuliBold muli-10pt custColorBattlePGry ion-no-margin">vis upi on 17 jan 2020</p>
+        </ion-col>
+      </ion-row>
+    </ion-card>
+    <ion-row>
+      <ion-col [size]="'12'" class="custTextAlignCenter ion-no-padding">
+        <span class="custFontFamilyMuliRegular muli-12pt custLineHight18 custColorBattlePGry">
+          {{'enterInvestmentAmount' | translate}}
+        </span>
+      </ion-col>
+      <ion-col [size]="'12'" class="custTextAlignCenter ion-no-padding">
+        <mat-form-field appearance="fill" class="custBackgroundColorPaleGrey text-center w-50" [ngClass]="showError?'mat-form-field-invalid custColorcustFadedRed':''">
+              <!-- <span class="custFontFamilyRobotoCondensed muli-22pt custColorDark" [ngClass]="showError?'custColorcustFadedRed':'custColorDark'">{{currentCountry?.currencySymbol}}</span> ₹ -->
+             <span class="custFontFamilyRobotoCondensed muli-22pt custColorDark" [ngClass]="showError?'custColorcustFadedRed':'custColorDark'">₹</span> 
+
+              <input #commaInput matInput [ngModel]="currentAmount | currencyCommasHundreds"   formControlName="Payment"
+              (focus)="onFocusCommaInput(); " (keyup)="checkPayment($event)"
+              (blur)="onBlurCommaInput();" class="custFontFamilyRobotoCondensed muli-22pt custLineHight40 custColorDark w-75 text-center m-1">
+        </mat-form-field>
+      </ion-col>
+     
+      <ion-col [size]="'12'" class="custTextAlignCenter">
+        <ion-row>
+          <ion-col [size]="'3'">
+            <button class="btn custBackgroundColorCyanBlue" (click)="setAmount(1000)" type="button">
+              <span class="custFontFamilyRobotoCondensed muli-12pt custLineHight18 custColorBattlePGry">+ {{currentCountry?.currencySymbol}} 1000</span>
+            </button>
+          </ion-col>
+          <ion-col [size]="'3'">
+            <button class="btn custBackgroundColorCyanBlue" (click)="setAmount(2000)" type="button">
+              <span class="custFontFamilyRobotoCondensed muli-12pt custLineHight18 custColorBattlePGry">+ {{currentCountry?.currencySymbol}} 2000</span>
+            </button>
+          </ion-col>
+          <ion-col [size]="'3'">
+            <button class="btn custBackgroundColorCyanBlue" (click)="setAmount(5000)" type="button">
+              <span class="custFontFamilyRobotoCondensed muli-12pt custLineHight18 custColorBattlePGry">+ {{currentCountry?.currencySymbol}} 5000</span>
+            </button>
+          </ion-col>
+          <ion-col [size]="'3'">
+            <button class="btn custBackgroundColorCyanBlue" (click)="setAmount(10000)" type="button" >
+              <span class="custFontFamilyRobotoCondensed muli-12pt custLineHight18 custColorBattlePGry">+ {{currentCountry?.currencySymbol}} 10000</span>
+            </button>
+          </ion-col>
+        </ion-row>
+        <ion-row class="m-3">
+          <ion-col [size]="'12'" class="custTextAlignCenter" *ngIf="showError">
+            <span class="muli-12pt custLineHight18 custColorcustFadedRed custFontFamilyMuliBold">{{'MinInvt' | translate}} {{currentData?.Props?.minInvestment}}</span>
+          </ion-col>
+          <ion-col [size]="'12'" class="custTextAlignCenter" *ngIf="currentTypeSIP === 'sip' && !showError">
+            <span class="custFontFamilyMuliRegular muli-12pt custLineHight18 custColorBattlePGry">{{'SIPInfo' | translate}} </span>
+          </ion-col>
+          <ion-col [size]="'12'" class="custTextAlignCenter" *ngIf="currentTypeSIP === 'lumpsum' && !showError">
+            <span class="custFontFamilyMuliRegular muli-12pt custLineHight18 custColorBattlePGry">{{'LumpsumInfo' | translate}} </span>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+      <ion-col [size]="'12'" class="custTextAlignCenter mt-3" *ngIf="currentTypeSIP === 'sip'">
+        <mat-form-field appearance="outline" class="w-100 px-3">
+          <mat-icon matPrefix>
+            <img [src]="imageList?.calenderIcon">
+        </mat-icon>
+          <mat-label class="mt-1">Select instalment date</mat-label>
+          <input matInput [matDatepicker]="datepicker" class="mb-1" formControlName="Date">
+          <mat-datepicker-toggle matSuffix [for]="datepicker">
+            <mat-icon matDatepickerToggleIcon>
+                <img [src]="imageList?.dropDownArrow">
+            </mat-icon>
+          </mat-datepicker-toggle>
+          <mat-datepicker #datepicker>
+            <mat-datepicker-actions>
+              <ion-button mat-button color="secondary" class="w-100 text-capitalize" matDatepickerApply>Confirm</ion-button>
+            </mat-datepicker-actions>
+          </mat-datepicker>
+        </mat-form-field>
+      </ion-col>
+      <ion-row  class="text-center d-flex justify-content-center w-100">
+      
+          <p  class="custFontFamilyRobotoCondensed muli-12pt custLineHight18 custColorDarkishBlue border-end px-2 "><img [src]="imageList?.cancel" class="me-2">Cancel</p>
+          <p (click)="PauseSIP()"  class="custFontFamilyRobotoCondensed muli-12pt border-start custLineHight18 px-2 custColorDarkishBlue"> <img [src]="imageList?.delete" class="me-2">Pause</p>
+      </ion-row>
+
+
+    </ion-row>
+    <ion-row  class="fixed-bottom" >
+      <ion-col [size]="'12'">
+        <ion-item lines="none" class="contentBackground">
+          <ion-checkbox color="secondary" mode="md" checked slot="start" class="ion-margin mt-0" (ionChange)="checkboxClick($event)" id="checkBoxPolicy"></ion-checkbox>
+            <p class="custFontFamilyMuliRegular muli-10pt custColorWarmGrey custLineHight15">
+              {{'sipInfo2' | translate}}&nbsp;
+              <a (click)="clickDisclaimerURL()" class="custColorDarkishBlue">{{'disclaimers' | translate}}</a>&nbsp;{{'and' | translate}}
+              <a (click)="clickTncUrl()"class="custColorDarkishBlue">{{'termsConditions' | translate}}</a>&nbsp;{{'ofTorus' | translate}}
+            </p>
+        </ion-item>
+      </ion-col>
+      <ion-col [size]="'12'" class="btnPadding">
+        <button class="btn custBackgroundColorBrightCyan w-100"  [disabled]="!(ValidationForm.valid && this.policyCheckBox)" >
+          <span class="text-capitalized custFontFamilyMuliBold muli-16pt custLineHight20 custColorWhite">Save</span>
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  </form>
+</ion-content>
+<!-- //////////////////////first -->
+  <div class="custModalContainer" *ngIf="PauseSIPPopUp">
+    <div id="showModalSMGSucces" class="modal-content">
+     
+      <ion-row class="mt-5">
+        <ion-col class="text-center d-flex flex-column">
+          <span class="custFontFamilyMuliBold muli-16pt custLineHeight22 custColorDark">Pause SIP</span>
+          <span class="custFontFamilyMuliRegular muli-12pt custLineHeight20 custColorBattlePGry mt-1">For how many months do you want to pause SIP?</span>
+        </ion-col>
+      </ion-row>
+    
+      <ion-row class="mt-2">
+        <ion-col class="text-center">
+          <button class="btn disable text-center" (click)="enable('clicked')" [ngClass]="{'active': btnEnable == 'clicked'}"><span class="text-capitalize custFontFamilyMuliRegular custLineHight16  muli-12pt">1m</span></button>
+          <button class="btn disable text-center mx-2" (click)="enable('clicked1')" [ngClass]="{'active': btnEnable == 'clicked1'}"><span class="text-capitalize custFontFamilyMuliRegular custLineHight16 muli-12pt">2m</span></button>
+          <button class="btn disable text-center" (click)="enable('clicked2')" [ngClass]="{'active': btnEnable == 'clicked2'}"><span class="text-capitalize custFontFamilyMuliRegular custLineHight16 muli-12pt">3m</span></button>
+        </ion-col>
+      </ion-row>
+    
+      <ion-row class="ms-3 mt-2">
+        <ion-col [size]="'1'" class="text-end pt-2">
+          <img [src]="y.Banner[0].img18">
+        </ion-col>
+        <ion-col [size]="'11'" class="text-start d-flex flex-column px-2">
+          <span class="custFontFamilyMuliRegular muli-12pt custLineHeight18 custColorBattlePGry">SIPs create wealth over long term.</span>
+          <span class="custFontFamilyMuliRegular muli-12pt custLineHeight18 custColorBattlePGry">Pause your SIP only if it is unavoidable</span>
+        </ion-col>
+      </ion-row>
+    
+      <ion-row class="mt-1 mx-2">
+        <ion-col [size]="'6'" class="px-2" (click)="pauseNow()">
+          <button class="btn custButtonOutLine w-100 text-center custColorBrightCyan"><span class="custColorBrightCyan text-capitalize  custFontFamilyMuliBold muli-16pt">Pause SIP</span></button>
+        </ion-col>
+        <ion-col [size]="'6'" class="px-2" (click)="cancelSIP()">
+          <button class="btn w-100 text-center custBackgroundColorBrightCyan"><span class="custColorWhite custFontFamilyMuliBold text-capitalize muli-16pt">Cancel</span></button>
+        </ion-col>
+      </ion-row>
+      </div>
+    </div>
+  

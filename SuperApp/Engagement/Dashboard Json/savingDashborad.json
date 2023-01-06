@@ -1,0 +1,107 @@
+{
+    "KYCPending":[
+        {
+        "icon":"assets/icon/pendingIcon.svg",
+        "title":"KYC - Pending"
+    }
+],
+        "objectContent": [
+            {
+                "contentType": "3x2 Grid",
+                "content": [
+                    {
+                        "icon": "assets/icon/healthInsurance.svg",
+                        "name": "Transfer Money"
+                       
+                    },
+             
+                    {
+                        "icon": "assets/icon/twoWheelerInsurance.svg",
+                        "name": "Manage Beneficiary"
+                        
+                    },
+                    {
+                        "icon":"assets/icon/travelInsurance.svg",
+                        "name": "Account Details"
+                      
+                    }
+                
+        
+                ]
+            },
+            {
+                
+                "contentType": "cardList",
+                "Title": "Last Transactions",
+                "card": [
+                    {
+                        "row1": {
+                            "title": "ICICI Bank via UPI",
+                            "description": "₹100.00"
+                          
+                        },
+                        "row2": {
+                            "col1": "17 June 2022, 4:55 PM",
+                            "col2": "assets/icon/otherInsurance",
+                            "val2": "Success"
+                
+                        }
+                    },
+                    {
+                        "row1": {
+                           
+                            "title": "Axis Bank via UPI",
+                            "description": "₹400.00"
+                            
+                        },
+                        "row2": {
+                            "col1": "17 June 2022, 4:55 PM",
+                            "col2": "assets/icon/otherInsurance",
+                            "val2": "Failed"
+                        }
+                    },
+                    {
+                        "row1": {
+                           
+                            "title": "ICICI Bank via NetBanking",
+                            "description": "₹2000.00"
+                            
+                        },
+                        "row2": {
+                            "col1": "17 June 2022, 4:55 PM",
+                            "col2": "assets/icon/otherInsurance",
+                            "val2": "Success"
+                        }
+                    },
+                    {
+                        "row1": {
+                           
+                            "title": "Axis Bank via UPI",
+                            "description": "₹2000.00"
+                            
+                        },
+                        "row2": {
+                            "col1": "17 June 2022, 4:55 PM",
+                            "col2": "assets/icon/otherInsurance",
+                            "val2": "Failed"
+                        }
+                    },
+                    {
+                        "row1": {
+                           
+                            "title": "ICICI Bank via UPI",
+                            "description": "₹2000.00"
+                            
+                        },
+                        "row2": {
+                            "col1": "17 June 2022, 4:55 PM",
+                            "col2": "assets/icon/otherInsurance",
+                            "val2": "Success"
+                        }
+                    }
+                ]
+            }
+        
+        ]
+    
+    }

@@ -1,0 +1,26 @@
+<ion-app>
+  <cap-header [title]="'Ped'" [otherTextName]="'Ped'" [imageList]="imageList" [showArrow]="true" [showLabel]="true"
+    [showImg]="false" [showIndex]="false" [showNotification]="false" [showCartWithName]="true" [cartCount]="cartCount"
+    [showSideMenu]="false" [showSearch]="true" [showClose]="false" [showShare]="false" [showWatchList]="false"
+    [showCartWithoutName]="false" [showStories]="false" [paddingSize]="'7'" [showOtherText]="true" [backUrlName]="">
+  </cap-header>
+  <ion-content class="w-100 h-100 contentBackground">
+
+
+
+    <div *ngFor="let item of pedQuestions">
+      <ion-card class="mt-4">
+        <ion-card-content>
+          <ion-row>
+            <ion-col class="text-start">{{item?.question}}</ion-col>
+            <ion-checkbox (click)="onContinue(item)" color="light" mode="ios" [checked]="item.checked"></ion-checkbox>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+    </div>
+  </ion-content>
+  <ion-footer class="p-3 custBackgroundColorWhite">
+    <button (click)="onSubmit()"
+      class="w-100 custBackgroundColorBrightCyan btn custMyButton custColorWhite">Submit</button>
+  </ion-footer>
+</ion-app>

@@ -1,0 +1,66 @@
+<ion-header >
+  <ion-toolbar class="custBackgroundDynamicColorWhite">
+    <ion-grid>
+      <ion-row>
+        <ion-col [size]="'1'" class="text-center mt-1" (click)="backF()">
+          <ion-img [src]="imageList?.arrow" class="backArrow mt-2"></ion-img>
+        </ion-col>
+        <ion-col [size]="'8'">
+          <span
+            class="custFontFamilyMuliBold muli-16pt custLineHight40 custColorDark"
+            > {{ConfirmtionValue?.heading}}</span
+          >
+        </ion-col>
+        <ion-col [size]="'3'" class="mt-2 text-end">
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="contentBackground">
+  <ion-row>
+    <ion-col [size]="'12'" class="custTextAlignCenter mt-4">
+      <ion-img [src]="imageList?.succsessIcon" class="custImgSucc"></ion-img>
+    </ion-col>
+    <ion-col [size]="'12'" class="custTextAlignCenter">
+      <span class="custFontFamilyMuliBold muli-16pt custLineHight22 custColorDark" >{{ConfirmtionValue?.confirmationTitle}}</span>
+    </ion-col>
+  </ion-row>
+
+  <ion-card >
+    <ion-card-content>
+      <ion-row >
+        <ion-col [size]="'12'" class="d-flex flex-column">
+          <span *ngIf="ConfirmtionValue?.card?.sub_heading" class="custFontFamilyRobotoCondensed custFontFamilyMuliITF-Rupee muli-20pt custLineHight18 custColorDark m-1"><img [src]="ConfirmtionValue?.image" *ngIf="ConfirmtionValue?.image" width="50px" height="50px" class="me-2" >{{ConfirmtionValue?.sub_heading}}</span>
+          <span *ngIf="ConfirmtionValue?.card?.description" class="custFontFamilyMuliRegular muli-14pt custLineHight15 custColorBattlePGry m-1">{{ConfirmtionValue?.description}}</span>
+        </ion-col>
+      </ion-row>
+      <ion-row *ngFor="let x of ConfirmtionValue?.card?.row">
+        <ion-col class="d-flex flex-column" *ngFor="let y of x|keyvalue">
+          <span class="custFontFamilyMuliBold muli-12pt custLineHight15 custColorDark m-1 ">{{y.key}}</span>
+          <span  class="custFontFamilyRobotoCondensed custFontFamilyMuliITF-Rupee muli-16pt custLineHight18 custColorBattlePGry     m-1">{{y.value}}
+
+      </span>
+        </ion-col>
+      </ion-row>
+    </ion-card-content>
+  </ion-card>
+  <ion-card *ngIf="ConfirmtionValue?.redeemCard " class="muli-12p custFontFamilyMuliSemiBold custColorDark p-3 text-center">
+
+      <span class="">
+      {{ConfirmtionValue?.redeemCard}}
+    </span>
+    </ion-card>
+
+  <!-- <div *ngIf=""> 
+  <app-reedemtranscation></app-reedemtranscation>
+</div> -->
+
+    <!-- <button (click)="click()">clci</button> -->
+</ion-content>
+<div class="custBackgroundColorPaleGrey">
+
+  <ion-row  class="m-2" (click)="openPortfolio()">
+    <button class="btn w-100 text-center custBackgroundColorBrightCyan"><span class="custColorWhite custFontFamilyMuliBold text-capitalize muli-16pt">{{ConfirmtionValue?.actionButton}}</span></button>
+  </ion-row>
+</div>

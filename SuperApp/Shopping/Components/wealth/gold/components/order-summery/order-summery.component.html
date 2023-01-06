@@ -1,0 +1,89 @@
+
+<ion-header class="fixed-top">
+  <ion-toolbar class="custBackgroundDynamicColorWhite">
+    <ion-grid>
+      <ion-row>
+        
+        <ion-col [size]="'1'" (click)="dismiss()">
+          <ion-img [src]="imageList?.arrow" class="custInvestArrow "></ion-img>
+        </ion-col>
+        <ion-col class="custFontFamilyMuliBold muli-16pt custColorDark">Order Summary</ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="custIonContentBackgroundColorPaleGrey">
+  <ion-grid class="mx-3">
+    <ion-row class="custMargin" *ngIf="metalType == 'gold'" >
+
+   <ion-img  [src]="imageList?.Logogold" class="custSIPIcon ms-2 "></ion-img>
+    <ion-col class="custFontFamilyMuliSemiBold muli-16pt custColorDark mt-2 ms-1">Augmont Digital Gold</ion-col>
+
+
+
+    </ion-row>
+    <ion-row class="custMargin" *ngIf="metalType == 'silver'" >
+      <ion-img  [src]="imageList?.digitelSilver" class="custSIPIcon ms-2 "></ion-img>
+      <ion-col class="custFontFamilyMuliSemiBold muli-16pt custColorDark mt-2 ms-1">Augmont Digital Silver</ion-col>
+
+    </ion-row>
+    <ion-card class="">
+      <ion-card-content >
+        <p class="custFontFamilyMuliBold muli-14pt custColorDark">Purchase Details</p>
+<ion-row class="w-100" >
+<ion-col class="custFontFamilyMuliRegular muli-14pt custColorDark" *ngIf="metalType == 'gold'">
+  Weight of Gold
+</ion-col>
+<ion-col class="custFontFamilyMuliRegular muli-14pt custColorDark" *ngIf="metalType == 'silver'">
+  Weight of Silver
+</ion-col>
+<ion-col class="text-end custFontFamilyMuliRegular custColorDark"> {{weight}}</ion-col>
+<ion-row class="w-100">
+  <ion-col class="custFontFamilyMuliRegular muli-14pt custColorDark">
+  Amount
+</ion-col>
+<ion-col class="text-end custFontFamilyMuliRegular custColorDark">{{currencySymbol}}{{amount }}</ion-col></ion-row>
+<ion-row class="w-100"><ion-col class="custFontFamilyMuliRegular muli-14pt custColorDark">
+  GST 3%
+</ion-col>
+<ion-col class="text-end custFontFamilyMuliRegular custColorDark">{{currencySymbol}}{{gst }}</ion-col></ion-row>
+<ion-row class="w-100"><ion-col class="custFontFamilyMuliBold muli-14pt custColorDark">
+  Grand Total
+</ion-col>
+<ion-col class="text-end custFontFamilyMuliBold custColorDark">{{currencySymbol}}{{totalAmount }}</ion-col></ion-row>
+        
+
+</ion-row>
+
+ 
+      </ion-card-content>
+      <ion-row class="border custBackgroundColorPaleGrey custColorParakeetGreen py-2 "><ion-col class="text-center">This price will be valid for next {{min}}:{{sec}}</ion-col> 
+      
+        </ion-row>
+    </ion-card>
+   <ion-row class="mx-2 fixed-bottom mb-2">
+     <ion-col><button class="py-2 custBackgroundColorBrightCyan w-100 custColorWhite rounded-2" (click)="submitInvest()">Proceed To Payment</button></ion-col>
+   </ion-row>
+  </ion-grid>
+</ion-content>
+
+
+<div class="custModalContainer  rounded-3 " *ngIf="alert">
+  <div id="showModalSMGSucces" class="modal-content modConmart p-10" >
+   <ion-row class="">
+     <ion-col class="text-center custColorcustFadedRed mt-1 custFontFamilyMuliBold muli-18pt">
+      The price for the item has been updated. Buy at an updated price!
+     
+     </ion-col>
+
+     <ion-row class="w-100 mx-3">
+      <button class="custBackgroundColorBrightCyan custColorWhite custFontFamilyMuliBold muli-16pt w-100 btnwidth rounded-2" (click)="dismiss()">Ok</button>
+      </ion-row>
+   
+   </ion-row>
+
+  </div>
+</div>
+
+

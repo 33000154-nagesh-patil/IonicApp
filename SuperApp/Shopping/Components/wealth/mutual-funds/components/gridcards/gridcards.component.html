@@ -1,0 +1,48 @@
+<!-- <ion-row *ngIf="SIPLumsum">
+  <ion-col [size]="'12'" class="p-3 text-start" >
+    <span class="muli-16pt custFontFamilyMuliBold custLineHight22 custColorDark">{{'mfDashboardInvestHeader' | translate}}</span>
+  </ion-col>
+  <ion-col [size]="'12'">
+    <ion-row>
+      <ion-col [size]="'6'" (click)="getCol('All Mutual Fund')">
+        <ion-card class="custBackgroundColorWhite ion-no-margin" >
+          <ion-card-header class="custTextAlignCenter">
+           <span class="custFontFamilyMuliSemiBold muli-14pt custLineHight18 custColorDark">{{'sip' | translate}}</span>
+          </ion-card-header>
+
+          <ion-card-content class="custTextAlignCenter">
+           <p class="custFontFamilyMuliRegular muli-12pt custLineHight16 custColorBattlePGry">{{'sipInfo' | translate}}</p>
+          </ion-card-content>
+
+        </ion-card>
+
+      </ion-col>
+      <ion-col [size]="'6'"  (click)="getCol('All Mutual Fund')">
+        <ion-card class="custBackgroundColorWhite ion-no-margin">
+          <ion-card-header class="custTextAlignCenter">
+           <span class="custFontFamilyMuliSemiBold muli-14pt custLineHight18 custColorDark">{{'lumpsum' | translate}}</span>
+          </ion-card-header>
+
+          <ion-card-content class="custTextAlignCenter">
+           <p class="custFontFamilyMuliRegular muli-12pt custLineHight16 custColorBattlePGry">{{'lumpsumInfo' | translate}}</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-col>
+</ion-row> -->
+<ion-card>
+  <ion-row class="w-100 d-flex flex-row ion-no-margin ion-no-padding">
+        <ion-col [size]="'4'" class="text-center border" *ngFor="let x of DummayTitle;let indexOfelement=index;"  (click)="getCol(x?.name)">
+      <img class="imgSize" *ngIf="indexOfelement===0" [src]="imageList?.group1MF">
+      <img class="imgSize" *ngIf="indexOfelement===1" [src]="imageList?.group2MF">
+      <img class="imgSize" *ngIf="indexOfelement===2" [src]="imageList?.group3MF">
+      <img class="imgSize" *ngIf="indexOfelement===3" [src]="imageList?.group4">
+      <img class="imgSize" *ngIf="indexOfelement===4" [src]="imageList?.group5">
+      <img class="imgSize" *ngIf="indexOfelement===5" [src]="imageList?.group6">
+
+      <p class="muli-12pt custFontFamilyMuliSemiBold custLineHight18 p-2 px-4 m-0">{{x?.name}}</p>
+    </ion-col>
+  </ion-row>
+</ion-card>
+

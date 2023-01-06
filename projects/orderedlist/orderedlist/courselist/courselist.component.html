@@ -1,0 +1,220 @@
+<ion-header *ngIf="showHeader">
+  <ion-toolbar class="custBackgroundDynamicColorWhite p-2">
+    <ion-grid>
+      <ion-row class="py-2">
+
+        <ion-col [size]="'6'" class="text-center">
+          <span class="custFontFamilyMuliBold muli-16pt d-flex custPadding flex-start custColorDark">Education</span>
+        </ion-col>
+        <ion-col [size]="'2'" class="">
+
+          <ion-img [src]="imageList?.search" (click)="toggleID()" class="custSVGIcon  "></ion-img>
+          <span class="custheaderNameSearch">Search</span>
+        </ion-col>
+
+        <ion-col [size]="'2'">
+          <div class="custTextAlignCenter">
+          <ion-badge class="custBadge">{{notificationCount}}</ion-badge>
+        
+          <ion-img [src]="imageList?.notificationIcon" class="custSVGIcon " (click)="gotoNotification()"></ion-img>
+    
+          <span class="custheaderName">Notification</span>
+        </div>
+        </ion-col>
+
+        <ion-col [size]="'2'">
+          <ion-img [src]="imageList?.CartRadius" (click)="navigateToCart()" class="custSVGIcon float-end"></ion-img>
+          <span class="custheaderNameCart">Cart</span>
+
+        </ion-col>
+
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+<ion-header *ngIf="showSerchBar">
+  <ion-toolbar class="custBackgroundDynamicColorWhite p-2">
+    <ion-grid>
+      <ion-row>
+        <ion-col [size]="'0.7'" class="text-center mt-2">
+          <ion-img [src]="imageList?.arrow" class="custKYCImg mt-1" (click)="searchBarBack()"></ion-img>
+        </ion-col>
+        <ion-col [size]="'10'" class="px-3 mt-2">
+          <input type="text" #search (keyup)="clearSearchIcon()" [(ngModel)]="searchBar" autocomplete="off"
+            placeholder="Search Courses" class="formControl" />
+        </ion-col>
+        <ion-col [size]="'1'" class="text-center float-end" *ngIf="searchIcon">
+          <ion-img [src]="imageList?.search" class="custKYCImg mt-2"></ion-img>
+        </ion-col>
+        <ion-col [size]="'1'" class="text-center mt-3" *ngIf="closeIcon">
+          <ion-img [src]="imageList?.close" class="custCloseIcon float-end" (click)="searchBar=''"></ion-img>
+        </ion-col>
+        <!-- <ion-col [size]="'1.3'" class="text-center mt-2" *ngIf="clearIcon">
+          <span class="custFontFamilyMuliBold muli-12pt custLineHight18 custColorDarkishBlue float-end">Clear</span>         
+        </ion-col> -->
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="eduHeight">
+
+  <ion-grid class="p-3 mt-1 custBackgroundColorPaleGrey ">
+    <ion-row class="">
+      <ion-row>
+        <span class="mb-2 muli-22pt custFontFamilyMuliBold custLineHight32 custColorDark text-capitalize">
+          {{'explore' | translate}}
+        </span>
+      </ion-row>
+      <ion-col [size]="'12'" class="ion-no-padding ">
+        <ion-row>
+          <ion-col [size]="'2'" class="text-start p-0 m-0">
+            <div class="custBackgroundColorDarkishBlue custBox p-0 m-0"></div>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+      <ion-col size="8" class="mt-2">
+        <span class="muli-12pt custLineHight18 custColorBattlePGry" (mouseup)="myfun1($event)"
+          (mousedown)="myfun($event)">Discover all courses</span>
+      </ion-col>
+      <ion-col *ngIf="filterIcon">
+        <ion-row class="Left_side_filter ">
+          <ion-badge color="secondary" class="custnum" mode="ios">{{filter.length}}</ion-badge>
+          <span> <img src="assets/icon/filterIcon.svg" class="custKYCImg" /></span>
+          &nbsp;
+          <span class="custFontFamilyMuliBold muli-12pt mt-1 custLineHight18 custColorDarkishBlue custFilter
+        " (click)="filterComponent()">Filter</span>
+        </ion-row>
+
+      </ion-col>
+    </ion-row>
+
+    <!-- <ion-grid class="custBackgroundColorPaleGrey "> -->
+    <!-- dont remove this code, code for searching functionality
+         <mat-form-field appearance="outline" class="custBackgroundColorWhite">
+        <ion-icon matPrefix name="search-outline" class="ms-1 muli-20pt custColorGreyish"></ion-icon>
+        <input matInput type="text" autocomplete="on"
+          class="custFontFamilyMuliRegular custColorGreyish muli-14pt ms-3" (ngModel)="search"
+          #top (keyup)="onKeySearch(top.value)" placeholder="Search Stocks" autofill="false">
+          <img src="assets/educationIcon/mic.svg" matSuffix>       
+      </mat-form-field> -->
+
+    <!-- <ion-row>
+        <ion-searchbar placeholder={{placeholder}}  show-clear-button="never" [(ngModel)]="filterTerm" enterkeyhint="search" ></ion-searchbar>
+        <ion-row class="d-flex justify-content-end w-100">
+          <img [src]="imageList?.filterIcon" class="custFilterPosition"> 
+        </ion-row>
+      </ion-row> -->
+
+    <!-- <ion-searchbar placeholder="Search Courses" show-clear-button="never" class="sc-ion-searchbar-md-h" enterkeyhint="search"></ion-searchbar>
+    <ion-row class="d-flex justify-content-end w-100"><img src="assets/educationIcon/mic.svg"
+        class="custFilterPosition">
+    </ion-row> -->
+
+    <!-- <ion-row *ngIf="filterIcon">
+      <ion-col class="d-flex justify-content-end me-3">
+        <span> <img src="assets/icon/filterIcon.svg" class="custKYCImg" /></span>
+        &nbsp;
+        <span class="custFontFamilyMuliBold muli-12pt mt-1 custLineHight18 custColorDarkishBlue custFilter
+        " (click)="filterComponent()">Filter</span>
+      </ion-col> -->
+    <!-- 
+        dont remove sort UI 
+        <ion-col [size]="'6'" class="custsort">
+        <span> <img src="assets/icon/sortIcon.svg" class="custKYCImg" />
+        </span>
+        &nbsp;
+        <span class="custFontFamilyMuliBold muli-12pt custLineHight18 custColorDarkishBlue">Sort</span>
+      </ion-col> -->
+    <!-- </ion-row>
+  </ion-grid> -->
+
+
+    <ion-row *ngIf="filterIcon">
+      <!-- <ion-col class="d-flex justify-content-end me-3">
+        <span> <img src="assets/icon/filterIcon.svg" class="custKYCImg" /></span>
+        &nbsp;
+        <span class="custFontFamilyMuliBold muli-12pt mt-1 custLineHight18 custColorDarkishBlue custFilter
+        " (click)="filterComponent()">Filter</span>
+      </ion-col> -->
+
+    </ion-row>
+    <div *ngFor="let item of data | filter:searchBar">
+      <div>
+
+        <ion-card (click)="navigateEducationFulfillment(item)" class="">
+          <ion-card-content class="custHeightc">
+
+
+            <ion-row class="w-100 px-1">
+
+              <ion-col size="3">
+                <div class="courseIcon">
+                  <img [src]="item.icon">
+                </div>
+              </ion-col>
+
+              <ion-col class="">
+                <p class="custFontFamilyMuliSemiBold custLineHight20 muli-14pt custColorDark custTitle">
+                  {{item.displayename}}
+                </p>
+                <p class="custFontFamilyMuliRegular muli-10pt custLineHight15 custTitle text-nowrap">{{item.author}}
+                </p>
+                <p class="custFontFamilyMuliRegular muli-10pt 
+                custLineHight15 custColorlightgray  custTitle">15 Sections • 146 Lectures • 05 Hours
+                </p>
+              </ion-col>
+
+              <ion-col size="1" class="d-flex justify-content-end">
+                <ion-img [src]="imageList?.leftArrowIcon" class="mt-3 custArrowIcon "></ion-img>
+              </ion-col>
+            </ion-row>
+
+
+            <ion-row class="w-100 px-1 custPositiontop">
+              <ion-col class="d-flex justify-content-start">
+                <p class="custFontFamilyMuliRegular muli-12pt custLineHight15 text-nowrap">Price</p>
+              </ion-col>
+              <ion-col class="d-flex justify-content-start">
+                <p class="custFontFamilyMuliRegular muli-12pt custLineHight15 custRatings text-nowrap">Ratings
+                </p>
+
+              </ion-col>
+              <ion-col class="d-flex justify-content-end">
+                <p class="custFontFamilyMuliRegular muli-12pt custLineHight15 float-end text-nowrap">Level</p>
+              </ion-col>
+            </ion-row>
+
+
+            <ion-row class="w-100 px-1 custLineHight10 custPositionbtm mb-2 ">
+              <ion-col class="d-flex justify-content-start">
+                <p class="custFontFamilyMuliBold   muli-14pt custLineHight18 custColorDark text-nowrap" #price>₹
+                  {{item.price}}
+                </p>
+              </ion-col>
+              <ion-col class="d-flex justify-content-start">
+                <p class="custFontFamilyMuliRegular custLineHight15  ">
+                  <ion-img [src]="imageList?.educationRatings" class="mt-2 custRatings text-nowrap"></ion-img>
+                </p>
+              </ion-col>
+              <ion-col class="d-flex justify-content-end ">
+                <p
+                  class="custFontFamilyMuliBold custColorDark muli-14pt custLineHight18 custColorDark float-end text-nowrap">
+                  {{item.level}}
+                </p>
+              </ion-col>
+            </ion-row>
+
+          </ion-card-content>
+        </ion-card>
+
+      </div>
+    </div>
+  </ion-grid>
+
+</ion-content>
+<footer>
+  <lib-education-footer [activeImg]="imageList?.activeTab" [selectedIndex]="'3'" [imageList]="imageList"
+    [footerListData]="wellnessFooterData" [parentTab]="'explore'"></lib-education-footer>
+</footer>

@@ -1,0 +1,47 @@
+
+
+<ion-content class="contentBackground">
+  <ion-grid>
+    <form [formGroup]="dobValidationForm" (ngSubmit)="onDobContinue()" novalidate>
+      <ion-row class="custIndexBottom">
+  
+        <ion-col>
+          <p class="custFontFamilyMuliBold muli-16pt custLineHight22 custColorDark ion-padding-horizontal"> {{'enterDOB'
+            | translate }}</p>
+          <p class="custFontFamilyMuliRegular muli-12pt custLineHight16 custColorDark ion-padding-horizontal pb-3">
+            {{'dobPAN' | translate }}</p>
+  
+          <mat-form-field class="mat-form-field" appearance="outline" class="w-100">
+            <mat-label>{{'dob' | translate}}</mat-label>
+            <input matInput readonly [matDatepicker]="picker" max="{{maxDate}}" formControlName="dob"
+              placeholder=DD-MM-YYYY required (click)="picker.open()">
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field>
+        </ion-col>
+      </ion-row>
+      <ion-row class="fixed-bottom">
+        <ion-col [size]="'12'" class="text-center">
+          <span class="custFontFamilyMuliRegular muli-14pt custColorGreyish custLineHight15 d-inline-flex">
+            <ion-icon name="gift-outline" class="custLock"></ion-icon>
+            {{'dobGifts' | translate }}
+          </span>
+        </ion-col>
+
+        <ion-col [size]="'6'" class="pb-3" (click)="skip('KRA')">
+          <ion-button expand="block" class="text-capitalize custTryButton d-flex justify-content-center">
+            <span class="custFontFamilyMuliRegular text-center muli-14pt custColorBrightCyan">{{'skipLabel' |
+              translate}}</span>
+          </ion-button>
+        </ion-col>
+
+        <ion-col [size]="'6'" class="pb-3">
+          <ion-button type= "submit" [disabled]="dobValidationForm.invalid" expand="block" class="text-capitalize text-center custLooksBtn"><span
+              class="custColorWhite custFontFamilyMuliBold muli-16pt">{{'continue' | translate}}</span></ion-button>
+        </ion-col>
+        
+      </ion-row>
+    </form>
+  </ion-grid>
+</ion-content>
+

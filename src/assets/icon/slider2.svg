@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="87" height="297" viewBox="0 0 87 297">
+  <g id="slider2" transform="translate(-6848 8488.891)">
+    <g id="Group_24336" data-name="Group 24336">
+      <path id="Rectangle_10877" data-name="Rectangle 10877" d="M3.867,0H83.133A3.867,3.867,0,0,1,87,3.867V253.5A43.5,43.5,0,0,1,43.5,297h0A43.5,43.5,0,0,1,0,253.5V3.867A3.867,3.867,0,0,1,3.867,0Z" transform="translate(6848 -8488.892)" fill="#e1e5e9"/>
+      <g id="Group_24333" data-name="Group 24333" transform="translate(6352 -8183.653) rotate(-90)">
+        <g id="Group_20273" data-name="Group 20273" transform="translate(154.238 531)">
+          <path id="Union_20" data-name="Union 20" d="M7.3.292.291,7.3a.994.994,0,0,0,0,1.406L7.3,15.709a.994.994,0,1,0,1.407-1.4L2.4,8,8.709,1.7A.994.994,0,0,0,7.3.292Z" transform="translate(9 16) rotate(180)" fill="#44c8f5"/>
+        </g>
+        <g id="Group_21142" data-name="Group 21142" transform="translate(167.238 531)" opacity="0.4">
+          <path id="Union_20-2" data-name="Union 20" d="M7.3.292.291,7.3a.994.994,0,0,0,0,1.406L7.3,15.709a.994.994,0,1,0,1.407-1.4L2.4,8,8.709,1.7A.994.994,0,0,0,7.3.292Z" transform="translate(9 16) rotate(180)" fill="#44c8f5"/>
+        </g>
+        <g id="Group_21145" data-name="Group 21145" transform="translate(180.238 531)" opacity="0.2">
+          <path id="Union_20-3" data-name="Union 20" d="M7.3.292.291,7.3a.994.994,0,0,0,0,1.406L7.3,15.709a.994.994,0,1,0,1.407-1.4L2.4,8,8.709,1.7A.994.994,0,0,0,7.3.292Z" transform="translate(9 16) rotate(180)" fill="#44c8f5"/>
+        </g>
+        <g id="Group_21143" data-name="Group 21143" transform="translate(141.238 531)" opacity="0.4">
+          <path id="Union_20-4" data-name="Union 20" d="M7.3.292.291,7.3a.994.994,0,0,0,0,1.406L7.3,15.709a.994.994,0,1,0,1.407-1.4L2.4,8,8.709,1.7A.994.994,0,0,0,7.3.292Z" transform="translate(9 16) rotate(180)" fill="#44c8f5"/>
+        </g>
+        <g id="Group_21144" data-name="Group 21144" transform="translate(128.238 531)" opacity="0.2">
+          <path id="Union_20-5" data-name="Union 20" d="M7.3.292.291,7.3a.994.994,0,0,0,0,1.406L7.3,15.709a.994.994,0,1,0,1.407-1.4L2.4,8,8.709,1.7A.994.994,0,0,0,7.3.292Z" transform="translate(9 16) rotate(180)" fill="#44c8f5"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

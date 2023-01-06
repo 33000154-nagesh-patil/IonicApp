@@ -1,0 +1,52 @@
+{
+    "": {
+        "heading": {
+            "heading": "Explore",
+            "discription": "Discover all Lab test"
+        },
+        "pickupAndfilter": [
+            {
+                "pickUpIcon": "assets/health-page-logos/Icon material-location-on.svg",
+                "pickUpTitle": "Pickup from"
+            },
+            {
+                "filterIcon": "assets/Images/filterIcon.svg",
+                "filterTitle": "Filter"
+            }
+        ],
+        "card": [
+            {
+                "row1": {
+                    "icon": "",
+                    "title": "Fasting Blood Sugar",
+                    "description": "By Thyrocare Ltd. Pathology Test",
+                    "action": "assets/icon/leftArrowIcon.svg"
+                },
+                "row2": {
+                    "col1": "price",
+                    "val1": 1000,
+                    "col2": "E-reports Within",
+                    "val2": "24 to 30 hours",
+                    "col3": "No. of Tests",
+                    "val3": 1
+                }
+            },
+            {
+                "row1": {
+                    "icon": "",
+                    "title": "Fasting Blood Sugar",
+                    "description": "By Thyrocare Ltd. Pathology Test",
+                    "action": "assets/icon/leftArrowIcon.svg"
+                },
+                "row2": {
+                    "col1": "price",
+                    "val1": 1000,
+                    "col2": "E-reports Within",
+                    "val2": "24 to 30 hours",
+                    "col3": "No. of Tests",
+                    "val3": 1
+                }
+            }
+        ]
+    }
+}

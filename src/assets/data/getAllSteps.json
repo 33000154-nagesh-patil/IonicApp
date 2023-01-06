@@ -1,0 +1,135 @@
+{
+    "Status": 1,
+    "ErrorCode": 0,
+    "MessageType": "I",
+    "Message": "Success",
+    "DocumentList": [
+        {
+            "Sequence": "1",
+            "Condition": "Pan:Fail",
+            "DocumentGuId": "4afad26b-1ee6-4de3-bf13-c2d4b4ffeefd",
+            "Document": "PAN",
+            "path":"/PAN",
+            "Status": "Pending"
+        },
+        {
+            "Sequence": "2",
+            "Condition":"Pan:Pass",
+            "DocumentGuId": "c946fbc3-ff03-4185-adbb-50b03d68b3c1",
+            "Document": "CVLKRA",
+            "path":"/DOB",
+            "Status": "Pending"
+        },
+        {
+            "Sequence": "3",
+            "Condition":"Pan:Pass",
+            "DocumentGuId": "c946fbc3-ff03-4185-adbb-50b03d68b3c1",
+            "Document": "ConfirmPanDetail",
+            "path":"/ConfirmPanDetail",
+            "Status": "Pending"
+        },
+        {   
+            "Sequence": "4",
+            "Condition":"Pan:Pass,CVLKRA:Fail",
+            "DocumentGuId": "d2c1b8e5-2319-46fc-883d-beff9f68c981",
+            "Document": "DigiLockerAadhar",
+            "path":"/DigiLockerAadhar",
+            "Status": "Pending"
+        },
+        {
+            "Sequence": "5",
+            "Condition":"CVLKRA:Fail",
+            "DocumentGuId": "b196712c-bba5-4e17-931b-37ed23fffb77",
+            "Document": "NameAddressDetails",
+            "path":"/NameAddressDetails",
+            "Status": "Pending"
+        },
+        {
+            "Sequence": "6",
+            "Condition":"Pan:Pass",
+            "DocumentGuId": "0dbf360e-340b-4416-828c-244d8cf8f452",
+            "Document": "BankDetails",
+            "path":"/BankDetails",
+            "Status": "Pending"
+        },
+        {
+            "Sequence": "7",
+            "Condition":"Pan:Pass",
+            "DocumentGuId": "0dbf360e-340b-4416-828c-244d8cf8f452",
+            "Document": "DisplayBankDetails",
+            "path":"/DisplayBankDetails",
+            "Status": "Pending"
+        },
+        {
+            "Sequence": "8",
+            "Condition":"Pan:Pass",
+            "DocumentGuId": "43ce03d2-dc5c-4962-b15f-14ea88247ec1",
+            "Document": "ProductSelection",
+            "path":"/ProductSelection",
+            "Status": "Pending"
+        },
+        {
+            "Sequence": "9",
+            "Condition":"Pan:Pass,ProductSelection:Pass",
+            "DocumentGuId": "92f8b269-dfe9-4ac5-b5d9-5225dd19e27c",
+            "Document": "IncomeProof",
+            "path":"/IncomeProof",
+            "Status": "Pending"
+        },
+        {
+            "Sequence": "10",
+            "Condition":"Pan:Pass",
+            "DocumentGuId": "4aecd238-aa1b-45b2-bab6-98c336510107",
+            "Document": "PersonalDetails",
+            "path":"/PersonalDetails",
+            "Status": "Pending"
+        },
+        {
+            "Sequence": "11",
+            "Condition":"Pan:Pass",
+            "DocumentGuId": "a6ccddbe-8c87-410f-a139-b0c269fdc693",
+            "Document": "Nominee",
+            "path":"/Nominee",
+            "Status": "Pending"
+        },
+        {
+            "Sequence": "12",
+            "Condition":"Pan:Pass",
+            "DocumentGuId": "60ddfd1a-5f48-4bb9-a6a7-2df1cb3d33ab",
+            "Document": "Selfie",
+            "path":"/Selfie",
+            "Status": "Pending"
+        },
+        {
+            "Sequence": "13",
+            "Condition":"Pan:Pass",
+            "DocumentGuId": "bce5674b-711e-4ac5-a2ef-9329e9d4527a",
+            "Document": "WetSign",
+            "path":"/WetSign",
+            "Status": "Pending"
+        },
+        {
+            "Sequence": "14",
+            "Condition": "Pan:Pass,CVLKRA:Fail,AadharDigiLocker:Fail",
+            "DocumentGuId": "74dc49aa-cbc1-4321-a7e2-2541fb60abfa",
+            "Document": "PanAadharUpload",
+            "path":"/PanAadharUpload",
+            "Status": "Pending"
+        },
+        {
+            "Sequence": "15",
+            "Condition": "Pan:Pass",
+            "DocumentGuId": "ee66199c-7807-4483-8dda-016163c59ba9",
+            "Document": "AadharEsign",
+            "path":"/AadharEsign",
+            "Status": "Pending"
+        }
+    ],
+    "EsignStatus": 0,
+    "PdfPath": null,
+    "FirstName": "",
+    "MiddleName": "",
+    "LastName": "",
+    "CustomerPanName": "HIMANSHU SHARMA",
+    "IsKra": 0
+}

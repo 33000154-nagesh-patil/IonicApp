@@ -1,0 +1,23 @@
+
+
+<!-- <lib-header [title]="title" [imageList]="imageList" [showArrow]="false" [showLabel]="true" [showImg]="false"
+    [imgURL]="labelIcon" [showIndex]="false" [showNotification]="true" [showCartWithName]="true"
+    [notificationCount]="notificationCount" [cardCount]="cartCount" [showSideMenu]="false" [showSearch]="true"
+    [showClose]="false" [showShare]="false" [showWatchList]="false" [showCartWithoutName]="false" [showStories]="false"
+    [otherTextName]="textName" [showOtherText]="false" [superMode]="currentMode" [backUrlName]=""></lib-header> -->
+
+
+    <ion-content>
+      <lib-lab-test></lib-lab-test>
+      </ion-content>
+
+      <!-- <ion-content>
+        <lib-product-desc-lab></lib-product-desc-lab>
+      </ion-content> -->
+
+      <!-- <ion-content>
+        <lib-prod-desc-lab-two></lib-prod-desc-lab-two>
+      </ion-content> -->
+
+      <lib-footer *ngIf="currentMode" [activeImg]="imageList?.activeTab" [selectedIndex]="'3'"
+          [footerListData]="LabFooterData" [parentTab]="'Health'"></lib-footer>

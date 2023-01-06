@@ -1,0 +1,28 @@
+
+<ion-row>
+  <ion-col class="px-3 custFontFamilyMuliBold custColorDark">
+    Update Your Email Id
+  </ion-col>
+</ion-row>
+  <ion-row>
+  <ion-col class="px-3">
+    <mat-form-field appearance="outline" class="w-100">
+      <mat-label>Mobile Number</mat-label>
+      <input matInput />
+    </mat-form-field>
+  </ion-col>
+</ion-row>
+
+
+<ion-row class="p-0">
+  <ion-col [size]="'6'" class="px-3">
+    <button class="btn w-100 text-center custBackgroundColorWhite custButtonOutLine p-2"(click)="cancel()">
+      <span class="custColorBrightCyan custFontFamilyMuliBold muli-16pt">cancel</span>
+    </button>
+  </ion-col>
+  <ion-col [size]="'6'" class="px-3">
+    <button class="btn w-100 text-center custBackgroundColorBrightCyan p-2"(click)="updatedMobileNumber()">
+      <span class="custColorWhite custFontFamilyMuliBold muli-16pt">update</span>
+    </button>
+  </ion-col>
+</ion-row>

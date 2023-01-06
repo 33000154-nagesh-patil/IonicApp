@@ -1,0 +1,72 @@
+<ion-content>
+<ion-grid class="px-4" *ngIf="false">
+  <ion-row>
+    <ion-col [size]="'10'">
+      <span class="custFontFamilyMuliSemiBold muli-12pt custColorDark">{{title.slice(0,85)}}...</span>
+    </ion-col>
+    <ion-col [size]="'2'" (click)="dataPass(res)">
+      <img [src]="whatsappShare?.icon" />
+    </ion-col>
+  </ion-row>
+
+  
+  <ion-row class="pt-3">
+    <ion-col><span class="custFontFamilyMuliBold muli-12pt custColorDark">{{whatsappShare?.subtitle}}</span></ion-col>
+    <ion-col class="text-end"><span class="custFontFamilyMuliRegular muli-12pt custColorDarkishBlue">{{whatsappShare?.viewBtn}}</span></ion-col>
+  </ion-row>
+
+  <ion-row class="pt-1">
+    <ion-col [size]="'4'" *ngFor="let x of contacts">
+      <ion-row ><ion-col class="text-center"><img [src]="x?.icon" /></ion-col></ion-row>
+      <ion-row ><ion-col class="text-center"><span class="custFontFamilyMuliRegular muli-14pt custColorDark">{{x?.name}}</span></ion-col></ion-row>
+      <ion-row><ion-col class="text-center custReduceMargin"><span class="custFontFamilyMuliRegular muli-10pt custColorDark">{{x?.mobile}}</span></ion-col></ion-row>
+    </ion-col>
+
+    <!-- <ion-col [size]="'4'">
+      <ion-row ><ion-col class="text-center"><img src="assets\icon\profile.png" /></ion-col></ion-row>
+      <ion-row ><ion-col class="text-center"><span class="custFontFamilyMuliRegular muli-14pt custColorDark">Pratik</span></ion-col></ion-row>
+      <ion-row><ion-col class="text-center custReduceMargin"><span class="custFontFamilyMuliRegular muli-10pt custColorDark">+91 9922224499</span></ion-col></ion-row>
+    </ion-col>
+
+    <ion-col [size]="'4'">
+      <ion-row ><ion-col class="text-center"><img src="assets\icon\profile.png" /></ion-col></ion-row>
+      <ion-row ><ion-col class="text-center"><span class="custFontFamilyMuliRegular muli-14pt custColorDark">Pratik</span></ion-col></ion-row>
+      <ion-row><ion-col class="text-center custReduceMargin"><span class="custFontFamilyMuliRegular muli-10pt custColorDark">+91 9922224499</span></ion-col></ion-row>
+    </ion-col> -->
+  </ion-row>
+</ion-grid>
+
+
+
+<!-- <div *ngIf="getCardDetails.cardType=='cashBack'"> -->
+  <ion-grid *ngIf="true">
+    <ion-row>
+      <ion-col size="12" class="fixed-top mt-3">
+        <ion-img [src]="sucessDetail.sucessIcon" class="custTick"></ion-img>
+      </ion-col>
+    </ion-row>
+    <ion-row class="custMargin justify-content-center fixed-top">
+      <p class="custFontFamilyMuliSemiBold muli-22pt">
+        {{sucessDetail?.title}} {{contact}}
+      </p>
+    </ion-row>
+    <ion-row class=" custMarginn justify-content-center fixed-top text-center px-2">
+      <p class="custFontFamilyMuliRegular muli-16pt">
+        {{sucessDetail?.description}} 
+      </p>
+    </ion-row>
+  <ion-row class="w-100 pb-3 px-3 fixed-bottom" >
+    <ion-col [size]="'6'" class="ion-no-padding" (click)="onCancel()">
+      <ion-button expand="block" class="text-capitalize custTryButton d-flex justify-content-center">
+        <span class="custFontFamilyMuliRegular text-center muli-18pt custColorGreyish "> {{sucessDetail?.exploreBtn}}</span>
+      </ion-button>
+    </ion-col>
+    <ion-col  [size]="'6'"  class="ion-no-padding" (click)="goToRewards()">
+      <ion-button expand="block" class="text-capitalize d-flex justify-content-center custLooksBtn" (click)="whatsappShare()">
+        <span class="custColorDark custFontFamilyMuliBold muli-18pt"> {{sucessDetail?.rewardBtn}}</span>
+      </ion-button>
+    </ion-col>
+  </ion-row>
+  </ion-grid>
+<!-- </div> -->
+</ion-content>

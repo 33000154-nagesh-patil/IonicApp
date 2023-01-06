@@ -1,0 +1,37 @@
+
+
+
+  ::ng-deep .mat-form-field-appearance-outline .mat-form-field-wrapper{
+    margin: 0px !important;
+  }
+  ::ng-deep .mat-form-field-wrapper {
+    padding: 0px !important;
+  }
+
+
+
+  .marginb{
+      margin-top: 180px;
+  }
+
+::ng-deep .mat-select-arrow {
+      color: #fff !important;
+  }
+
+  ::ng-deep .mat-checkbox-checked.mat-accent .mat-checkbox-background {
+    background-color: #44C8F5 !important;
+  }
+
+  ::ng-deep .mat-select-panel{
+    margin-top: 50px !important;
+  }
+
+  .custWithoutTextImg{
+    height: 18px;
+    width: 18px;
+  }
+
+  ::ng-deep .mat-datepicker-content .mat-calendar {
+    height:400px !important;
+    width: 355px !important;
+  }

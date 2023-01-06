@@ -1,0 +1,93 @@
+<ion-header>
+  <ion-toolbar class="custBackgroundDynamicColorWhite">
+    <ion-grid>
+      <ion-row>
+        <ion-col [size]="'1'" class="text-center mt-1" (click)="goBack()">
+          <ion-img [src]="imageList?.arrow" class="custKYCImg mt-1"></ion-img>
+        </ion-col>
+        <ion-col [size]="'7'" class="text-start">
+          <span
+            class="custFontFamilyMuliBold muli-18pt custLineHight40 custColorDark custCSS">{{title}}</span>
+        </ion-col>
+        <ion-col [size]="'4'" class="mrginTops text-end">
+          <img [src]="headerData?.coinImg" class="px-2"/>
+          <span class="custFontFamilyMuliRegular muli-16pt custColorDark">{{coins.toLocaleString("en-US")}}</span>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid class="h-100 w-100">
+    <div class="heighttBase">
+    <ion-card class="p-0 m-2" [ngClass]="{'custOp3':slideValue == 100 || animeRot == 100}"
+      [ngClass]="getCardDetails.rewardBackgroundColor">
+      <ion-row>
+        <ion-col size="8">
+          <ion-img [src]="getCardDetails.title" class="commonBrandImg" *ngIf="getCardDetails.cardType!='cashBack'">
+          </ion-img>
+          <span class="custFontFamilyMuliBold muli-10pt px-3">{{getCardDetails.des}}</span>
+          <span class="custFontFamilyMuliBold muli-10pt">{{getCardDetails.title1}}</span>
+          <p *ngIf="getCardDetails.cardType == 'jackPot' || getCardDetails.cardType == 'cashBack'"
+            class="custFontFamilyMuliBold custColorDark muli-34pt pt-2 ps-3">₹{{getCardDetails.prize}}</p>
+          <p *ngIf="getCardDetails.cardType == 'voucher' || getCardDetails.cardType == 'gift'"
+            class="custFontFamilyMuliBold custColorDark muli-34pt pt-2 ps-3">{{getCardDetails.prize}}</p>
+        </ion-col>
+        <ion-col size="4" class="pt-4">
+          <ion-img class="custDesImg" [src]="getCardDetails.desImg"></ion-img>
+        </ion-col>
+      </ion-row>
+    </ion-card>
+
+    <ion-row>
+      <ion-img [ngClass]="{'cardCust':slideValue == 100 || animeRot == 100}" class="custOp3" src="assets\icon\fataka.svg"></ion-img>
+    </ion-row>
+    <ion-row *ngIf="cardTypeDet == 'gift'" class="cardCust">
+      <ion-col [size]="8" class="text-center">
+        <ion-row><span [ngClass]="{'cardCust':slideValue == 100 }"
+            class="custFontFamilyMuliBold custColorDark muli-22pt custOp3">{{RedeemPrizeData?.description}}</span></ion-row>
+        <ion-row><span [ngClass]="{'cardCust':slideValue == 100}"
+            class="custFontFamilyMuliBold  muli-34pt custColorDarkishBlue custOp3">{{RedeemPrizeData?.prize}}</span></ion-row>
+      </ion-col>
+    </ion-row>
+
+    <ion-row *ngIf="cardTypeDet == 'cashBack' || cardTypeDet == 'voucher' || cardTypeDet == 'jackPot'" class="fixed-top mrginTop cardCust">
+      <ion-col [size]="5" class="text-center">
+        <ion-row><span [ngClass]="{'cardCust':slideValue == 100  || animeRot == 100}"
+            class="custFontFamilyMuliBold custColorDark muli-22pt custOp3">{{RedeemPrizeData?.description}}</span>
+            <!-- <span *ngIf="error" [ngClass]="{'cardCust':slideValue == 100  || animeRot == 100}"
+            class="custFontFamilyMuliBold custColorDark muli-22pt custOp3">{{error?.description}}</span> -->
+          </ion-row>
+        <ion-row><span *ngIf="RedeemPrizeData?.prize != '0'" [ngClass]="{'cardCust':slideValue == 100  || animeRot == 100}"
+            class="custFontFamilyMuliBold  muli-34pt custColorDarkishBlue custOp3">{{RedeemPrizeData?.prize}}</span></ion-row>
+      </ion-col>
+    </ion-row>
+  </div>
+
+      <!-- <ion-row *ngIf="cardTypeDet == 'voucher'" class="fixed-top mrginTop">
+    <ion-col [size]="12">
+      <ion-row><span [ngClass]="isGreen ? 'custOp3' : 'cardCust'" class="custFontFamilyMuliBold custColorDark muli-22pt">Yay! You won a</span></ion-row>
+      <ion-row><span [ngClass]="isGreen ? 'custOp3' : 'cardCust'" class="custFontFamilyMuliBold custColorDark muli-22pt">shopping gift card worth</span></ion-row>
+      <ion-row><span [ngClass]="isGreen ? 'custOp3' : 'cardCust'" class="custFontFamilyMuliBold  muli-34pt custColorDarkishBlue">₹38,000</span></ion-row>
+    </ion-col>
+  </ion-row> -->
+
+
+    <div [ngSwitch]="cardTypeDet">
+      <div *ngSwitchCase="'voucher'">
+        <lib-voucher-spinner (getslideValue)="getAllSlideValue($event)"></lib-voucher-spinner>
+      </div>
+      <div *ngSwitchCase="'jackPot'">
+        <lib-jackpot-spinner (getslideValue)="getAllSlideValue($event)"></lib-jackpot-spinner>
+      </div>
+      <div *ngSwitchCase="'gift'">
+        <lib-gift-card-spinner (getslideValue)="getAllSlideValue($event)"></lib-gift-card-spinner>
+      </div>
+      <div *ngSwitchCase="'cashBack'">
+        <lib-cash-back-spinner (getslideValues)="getAllSlideValues($event)"></lib-cash-back-spinner>
+      </div>
+    </div>
+    <!-- <router-outlet></router-outlet> -->
+  </ion-grid>
+</ion-content>

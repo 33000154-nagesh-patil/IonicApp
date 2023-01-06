@@ -1,0 +1,108 @@
+{
+  "businessCategory" : {
+    "data": [
+      {
+				"ID": "5ab974f4-bae9-4eaa-8bbf-ead949234482",
+				"TEXT": "Ecommerce",
+				"Type": "businessCategory"
+			},
+			{
+				"ID": "5ab974f4-bae9-4eaa-8bbf-ead94955482",
+				"TEXT": "Education",
+				"Type": "businessCategory"
+			},
+			{
+				"ID": "5ab974f4-bae9-4eaa-8bbf-ead949572282",
+				"TEXT": "Fashion and Lifestyle",
+				"Type": "businessCategory"
+			},
+			{
+				"ID": "5ab974f4-bae9-4eaa-8bbf-ead949572382",
+				"TEXT": "Food and Beverage",
+				"Type": "businessCategory"
+			},
+			{
+				"ID": "5ab974f4-bae9-4eaa-8bbf-ead949555482",
+				"TEXT": "Grocery",
+				"Type": "businessCategory"
+			},
+			{
+				"ID": "5ab974f4-bae9-4eaa-8bbf-ead949575s2",
+				"TEXT": "IT and Software",
+				"Type": "businessCategory"
+			},
+			{
+				"ID": "5ab974f4-bae9-4eaa-8bbf-ead9495754d2",
+				"TEXT": "Healthcare Services",
+				"Type": "businessCategory"
+			},
+			{
+				"ID": "5ab974f4-bae9-4eaa-8bbf-ead9495754v2",
+				"TEXT": "Web Designing/ Development",
+				"Type": "businessCategory"
+			},
+                        {
+				"ID": "5ab974f4-bae9-4eaa-8bbf-ead9495754v2",
+				"TEXT": "Financial Services",
+				"Type": "businessCategory"
+			},
+                        {
+				"ID": "5ab974f4-bae9-4eaa-8bbf-ead9495754v2",
+				"TEXT": "Gaming",
+				"Type": "businessCategory"
+			},
+
+                        {
+				"ID": "5ab974f4-bae9-4eaa-8bbf-ead9495754v2",
+				"TEXT": "Government Bodies",
+				"Type": "businessCategory"
+			},
+                        {
+				"ID": "5ab974f4-bae9-4eaa-8bbf-ead9495754v2",
+				"TEXT": "Housing and Real Estate",
+				"Type": "businessCategory"
+			},
+                        {
+				"ID": "5ab974f4-bae9-4eaa-8bbf-ead9495754v2",
+				"TEXT": "Logistics",
+				"Type": "businessCategory"
+			},
+                        {
+				"ID": "5ab974f4-bae9-4eaa-8bbf-ead9495754v2",
+				"TEXT": "Media and Entertainment",
+				"Type": "businessCategory"
+			},
+                        {
+				"ID": "5ab974f4-bae9-4eaa-8bbf-ead9495754v2",
+				"TEXT": "NOt for Profit",
+				"Type": "businessCategory"
+			},
+                         {
+				"ID": "5ab974f4-bae9-4eaa-8bbf-ead9495754v2",
+				"TEXT": "Social",
+				"Type": "businessCategory"
+			},
+                        {
+				"ID": "5ab974f4-bae9-4eaa-8bbf-ead9495754v2",
+				"TEXT": "Tours and TRavels",
+				"Type": "businessCategory"
+			},
+                        {
+				"ID": "5ab974f4-bae9-4eaa-8bbf-ead9495754v2",
+				"TEXT": "Transport",
+				"Type": "businessCategory"
+			},
+                        {
+				"ID": "5ab974f4-bae9-4eaa-8bbf-ead9495754v2",
+				"TEXT": "Utilities and General",
+				"Type": "businessCategory"
+			}
+
+    
+    ],
+    "Status": 1,
+    "ErrorCode": 0,
+    "Message": "Success",
+    "MessageType": "I"
+  }
+}

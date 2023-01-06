@@ -1,0 +1,37 @@
+{
+    "productName":"LAS",
+    "name":"Stock Title",
+    "segments":[
+        {
+            "name":"Quantity",
+            "value":"quantity",
+            "placeHolder":"Enter Quantity"
+        },
+        {
+            "name":"Amount",
+            "value":"amountLas",
+            "placeHolder":"Enter Amount",
+            "unit":"₹"
+        }
+    ],
+    "pricePerUnit":"46.3",
+    "taxes":[
+        {"type":"CGST","taxPercentage":"1.5"},
+        {"type":"SGST","taxPercentage":"1.5"},
+        {"type":"IGST","taxPercentage":"3.0"}
+    ],
+    "buttons":{
+       "quantity":[
+            {"name":"+1","value":1},
+            {"name":"+2","value":2},
+            {"name":"+5","value":5}
+        ]
+    },
+       
+        "stopWatch":false,
+        "stocks":false,
+        "mf":false,
+        "edCourses":false
+}
+
+

@@ -1,0 +1,96 @@
+{
+  "Status": 1,
+  "ErrorCode": 0,
+  "MessageType": "I",
+  "Message": "Success",
+  "DocumentList": [
+      {
+          "Sequence": "1",
+          "Condition": "Pan:Fail",
+          "DocumentGuId": "4afad26b-1ee6-4de3-bf13-c2d4b4ffeefd",
+          "Document": "PAN",
+          "PageUrl":"/PAN",
+          "Status": "Pass"
+      },
+      {   
+          "Sequence": "2",
+          "Condition":"Pan:Pass",
+          "DocumentGuId": "d2c1b8e5-2319-46fc-883d-beff9f68c981",
+          "Document": "mPin",
+          "PageUrl":"/mPin",
+          "Status": "Pass"
+      },
+      {
+          "Sequence": "3",
+          "Condition":"simBinding:Fail",
+          "DocumentGuId": "b196712c-bba5-4e17-931b-37ed23fffb77",
+          "Document": "SimBinding",
+          "PageUrl":"/simBinding",
+          "Status": "Pass"
+      },
+      {
+          "Sequence": "4",
+          "Condition":"simBinding:Pass,Pan:Pass",
+          "DocumentGuId": "0dbf360e-340b-4416-828c-244d8cf8f452",
+          "Document": "Selfie",
+          "PageUrl":"/Selfie",
+          "Status": "Pass"
+      },
+     {
+          "Sequence": "5",
+          "Condition":"Pan:Pass",
+          "DocumentGuId": "bce5674b-711e-4ac5-a2ef-9329e9d4527a",
+          "Document": "WetSign",
+          "PageUrl":"/WetSign",
+          "Status": "Pass"
+      },
+      {
+          "Sequence": "6",
+          "Condition":"Pan:Pass",
+          "DocumentGuId": "4aecd238-aa1b-45b2-bab6-98c336510107",
+          "Document": "NeoPersonalDetail",
+          "PageUrl":"/neoPersonalDetails",
+          "Status": "Pass"
+      },
+      {
+          "Sequence": "7",
+          "Condition":"Pan:Pass",
+          "DocumentGuId": "4aecd238-aa1b-45b2-bab6-98c336510107",
+          "Document": "OtherDetails",
+          "PageUrl":"/otherDetails",
+          "Status": "Pass"
+      },
+      {
+          "Sequence": "8",
+          "Condition":"Pan:Pass",
+          "DocumentGuId": "a6ccddbe-8c87-410f-a139-b0c269fdc693",
+          "Document": "Nominee",
+          "PageUrl":"/Nominee",
+          "Status": "Pass"
+      },
+      {
+        "Sequence": "8",
+        "Condition":"Pan:Pass",
+        "DocumentGuId": "a6ccddbe-8c87-410f-a139-b0c269fdc693",
+        "Document": "neoOtpVerification",
+        "PageUrl":"/neoOtpVerification",
+        "Status": "Pass"
+    },
+ 
+      {
+          "Sequence": "9",
+          "Condition": "Pan:Pass",
+          "DocumentGuId": "ee66199c-7807-4483-8dda-016163c59ba9",
+          "Document": "AadharEsign",
+          "PageUrl":"/AadharEsign",
+          "Status": "Pass"
+      }
+  ],
+  "EsignStatus": 0,
+  "PdfPath": null,
+  "FirstName": "",
+  "MiddleName": "",
+  "LastName": "",
+  "CustomerPanName": "HIMANSHU SHARMA",
+  "IsKra": 0
+}

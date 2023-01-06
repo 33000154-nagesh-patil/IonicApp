@@ -1,0 +1,42 @@
+{
+    "productName":"DigiGold",
+    "name":"Augmont Digi Gold",
+    "subTitle":"",
+    "maxLimit":200000,
+    "segments":[
+        {
+            "name":"Buy in Grams",
+            "value":"quantity",
+            "placeHolder":"Enter Quantity",
+            "unit":"gm"
+        },
+        {
+            "name":"Buy in Amount",
+            "value":"amount",
+            "placeHolder":"Enter Amount",
+            "unit":"₹"
+        }
+    ],
+    "pricePerUnit":"5251.16",
+    "taxes":[
+        {"type":"CGST","taxPercentage":"1.5"},
+        {"type":"SGST","taxPercentage":"1.5"},
+        {"type":"IGST","taxPercentage":"3.0"}
+    ],
+    "buttons":{
+        "amount":[
+            {"name":"+ ₹1000","value":1000},
+            {"name":"+ ₹5000","value":5000},
+            {"name":"+ ₹10000","value":10000}
+        ],
+        "quantity":[
+            {"name":"+1","value":1},
+            {"name":"+2","value":2},
+            {"name":"+5","value":5}
+        ]
+    },
+    "stopWatch":true,
+    "stocks":false,
+    "mf":true,
+    "edCourses":false
+}

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="37.646" height="49.001" viewBox="0 0 37.646 49.001">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" y1="0.023" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ad582d"/>
+      <stop offset="1" stop-color="#6d3c23"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ffc033"/>
+      <stop offset="1" stop-color="#ef8e2e"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="0.5" y1="0" x2="0.5" y2="1" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-4" x1="0.5" y1="0" x2="0.5" y2="1" xlink:href="#linear-gradient-2"/>
+  </defs>
+  <g id="money_bag_icon" data-name="money bag icon" transform="translate(-9.581 -2.64)">
+    <path id="Path_23976" data-name="Path 23976" d="M40.114,6.93a4.2,4.2,0,0,0-5.936-.252l-.168.16a4.2,4.2,0,1,0-8.4,0l-.168-.16a4.2,4.2,0,1,0-5.676,6.188l2.754,2.46a.84.84,0,0,0,.579.21H36.537a.84.84,0,0,0,.563-.21l2.8-2.468a4.2,4.2,0,0,0,.218-5.928Z" transform="translate(-1.416 0)" fill="url(#linear-gradient)"/>
+    <path id="Path_23977" data-name="Path 23977" d="M36.5,14H23.9a4.592,4.592,0,0,0-3.131,1.234l2.149,1.915a.84.84,0,0,0,.563.21H36.916a.84.84,0,0,0,.563-.21l2.149-1.914A4.6,4.6,0,0,0,36.5,14Z" transform="translate(-1.795 -1.822)" fill="#422011"/>
+    <path id="Path_23978" data-name="Path 23978" d="M36.533,16H23.939a2.939,2.939,0,0,0,0,5.877H36.533a2.939,2.939,0,1,0,0-5.877Z" transform="translate(-1.831 -2.143)" fill="url(#linear-gradient-2)"/>
+    <path id="Path_23979" data-name="Path 23979" d="M46.347,37.364,41.779,25.786A7.557,7.557,0,0,0,34.752,21H22.057a7.557,7.557,0,0,0-7.028,4.786L10.462,37.364A12.594,12.594,0,0,0,22.174,54.585h12.46A12.594,12.594,0,0,0,46.347,37.364Z" transform="translate(0 -2.945)" fill="url(#linear-gradient-3)"/>
+    <path id="Union_94" data-name="Union 94" d="M3.3,15.127A25.9,25.9,0,0,1,6.125,14.5L6.1,4.693,1.914,4.682l-.49,3.8H.5q-.09-.449-.18-1.145T.159,5.9Q.09,5.161.046,4.431T0,3.185H14.369q0,.539-.045,1.257T14.211,5.9q-.068.741-.158,1.425t-.181,1.156h-.926l-.46-3.824-4.3.041-.01,9.841,1.742.312,1.156.274v.759l-7.759.053ZM.065,1.476V0H14.433V1.476Z" transform="translate(21.187 26.701)" fill="url(#linear-gradient-4)"/>
+  </g>
+</svg>

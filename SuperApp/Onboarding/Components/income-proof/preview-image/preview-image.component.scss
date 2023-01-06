@@ -1,0 +1,22 @@
+.custTryButton {
+    height: 45px;
+    border: 1px solid var(--custBrightCyan);
+    border-radius: 4px;
+    --background: var(--custWhite);
+    --box-shadow: none;
+    text-align: center !important;
+    margin-right: 8px;
+}
+.custLooksBtn {
+    height: 45px;
+    --background: var(--custBrightCyan) !important;
+    --box-shadow: none;
+    margin-left: 8px;
+}
+.preview{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 500px;
+}

@@ -1,0 +1,72 @@
+<div class=" p-10">
+  <div id="" class="">
+    <div>
+      <ion-row>
+        <ion-col [size]="'12'" class="text-center">
+          <img *ngIf="isSuccess" [src]="imageList?.SuccessCheck" class=" text-center" />
+          <img *ngIf="isfailed" [src]="imageList?.alert" class=" text-center" />
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col *ngIf="StatusPending" [size]="'12'" class="text-center muli-12pt">
+          order Status:Pending
+        </ion-col>
+        <ion-col *ngIf="StatusCancelled" [size]="'12'" class="text-center muli-12pt">
+          order Status:Cancelled
+        </ion-col>
+        <ion-col *ngIf="StatusExecuted" [size]="'12'" class="text-center muli-12pt">
+          order Status:Executed
+        </ion-col>
+        <ion-col *ngIf="StatusRejected" [size]="'12'" class="text-center muli-12pt">
+          order Status:Rejected
+        </ion-col>
+      </ion-row>
+      <ion-row class="mb-4" *ngIf="StatusPending">
+        <ion-col class="text-center w-30">
+          <p class="muli-22pt m-1 custFontFamilyMuliBold custColorDark text-center custLineHight30">Your Order has been
+          </p>
+          <p class="muli-22pt custFontFamilyMuliBold custColorDark text-center custLineHight30">Placed successfully!</p>
+        </ion-col>
+      </ion-row>
+      <ion-row class="mb-4" *ngIf="StatusExecuted">
+        <ion-col class="text-center w-30">
+          <p class="muli-22pt m-1 custFontFamilyMuliBold custColorDark text-center custLineHight30">Your Order has been
+          </p>
+          <p *ngIf="" class="muli-22pt custFontFamilyMuliBold custColorDark text-center custLineHight30">modified
+            successfully!</p>
+          <p class="muli-22pt custFontFamilyMuliBold custColorDark text-center custLineHight30">placed successfully!</p>
+        </ion-col>
+      </ion-row>
+      <ion-row class="mb-4" *ngIf="StatusCancelled">
+        <ion-col class="text-center w-30">
+          <p class="muli-22pt m-1 custFontFamilyMuliBold custColorDark text-center custLineHight30">Your Order has been
+          </p>
+          <p class="muli-22pt custFontFamilyMuliBold custColorDark text-center custLineHight30">Cancelled successfully!
+          </p>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col [size]="'6'">
+          <button *ngIf="StatusPending || StatusCancelled" (click)="ReOrder()"
+            class="btn w-100 text-center custBackgroundColorBrightCyan py-2 custButtonOutLine">
+            <span class="custColorWhite custFontFamilyMuliBold muli-16pt">Buy More</span>
+          </button>
+          <button *ngIf="StatusExecuted" (click)="Trades()"
+            class="btn w-100 text-center custBackgroundColorBrightCyan py-2 custButtonOutLine">
+            <span class="custColorWhite custFontFamilyMuliBold muli-16pt">Trades</span>
+          </button>
+        </ion-col>
+        <ion-col [size]="'6'">
+          <button *ngIf="StatusPending || StatusCancelled" (click)="Order('')"
+            class="btn w-100 h-100 py-2 text-center custColorWhite  custBackgroundColorBrightCyan">
+            Orders
+          </button>
+          <button *ngIf="StatusExecuted"
+            class="btn w-100 h-100 py-2 text-center custColorWhite  custBackgroundColorBrightCyan">
+            Position
+          </button>
+        </ion-col>
+      </ion-row>
+    </div>
+  </div>
+</div>

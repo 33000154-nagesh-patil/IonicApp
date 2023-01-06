@@ -1,0 +1,29 @@
+{
+    "productName":"Insurance",
+    "name":"ICICI Lombard Car Insurance",
+    "segments":[
+        {
+            "name":"Enter Amount",
+            "value":"amount",
+            "placeHolder":"Enter Amount",
+            "unit":"₹"
+        }
+    ],
+    "pricePerUnit":"1",
+    "taxes":[
+        {"type":"CGST","taxPercentage":"1.5"},
+        {"type":"SGST","taxPercentage":"1.5"},
+        {"type":"IGST","taxPercentage":"3.0"}
+    ],
+    "buttons":{
+        "amount":[
+            {"name":"+ ₹1000","value":1000},
+            {"name":"+ ₹5000","value":5000},
+            {"name":"+ ₹10000","value":10000}
+        ]
+    },
+    "stopWatch":false,
+    "stocks":false,
+    "mf":false,
+    "edCourses":false
+}

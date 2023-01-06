@@ -1,0 +1,948 @@
+{
+    "filterData": [
+        {
+            "title": "Wellness Offering",
+            "child": [
+                {
+                    "title": "Wealth",
+                    "child": [
+                        {
+                            "title": "Mutual Funds",
+                            "child": [
+                                {
+                                    "title": "AMC",
+                                    "child": [
+                                        {
+                                            "title": "ICICI Mutual Fund",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "Axis Mutual Fund",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "DSP Mutual Fund",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "Edelwesis Mutual Fund",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "Canara Robeco Mutual Fund",
+                                            "child": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "Scheme Name",
+                                    "child": [
+                                        {
+                                            "title": "ICICI Prudential Technology Fund - Growth",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "SBI Equity Hybrid Fund-Growth",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "SBI Infrastructure Fund - Growth",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "UTI India Consumer Fund Regular Plan - Growth",
+                                            "child": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "Category",
+                                    "child": [
+                                        {
+                                            "title": "Debt Schemes",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "Equity Schemes",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "Contra",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "Dividend Yield",
+                                            "child": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "Rating",
+                                    "child": [
+                                        {
+                                            "title": "fiveStar",
+                                            "icon": "assets/icon/fiveStarRating.svg",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "fourStar",
+                                            "icon": "assets/icon/fourStarRating.svg",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "threeStar",
+                                            "icon": "assets/icon/threeStarRating.svg",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "twoStar",
+                                            "icon": "assets/icon/twoStarRating.svg",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "oneStar",
+                                            "icon": "assets/icon/oneStarRating.svg",
+                                            "child": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "Risk",
+                                    "child": [
+                                        {
+                                            "title": "Low",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "Moderately",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "High",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "Very High",
+                                            "child": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "Investment Type",
+                                    "child": [
+                                        {
+                                            "title": "SIP",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "One Time",
+                                            "child": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "Plan Type",
+                                    "child": [
+                                        {
+                                            "title": "Direct",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "Regular",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "All",
+                                            "child": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "Sort By",
+                                    "child": [
+                                        {
+                                            "title": "Ratings - High to Low",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "Returns - High to Low",
+                                            "child": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Stock",
+                            "child": [
+                                {
+                                    "title": "Exchange",
+                                    "child": [
+                                        {
+                                            "title": "NSE",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "BSE",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "NSECDS",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "MCX",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "NCDEX",
+                                            "child": []
+                                        }
+
+                                    ]
+                                },
+                                {
+                                    "title": "Action",
+                                    "child": [
+                                        {
+                                            "title": "Buy",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "Sell",
+                                            "child": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "Product",
+                                    "child": [
+                                        {
+                                            "title": "Delivery",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "Intraday",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "MTF",
+                                            "child": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "Order status",
+                                    "child": [
+                                        {
+                                            "title": "Pending",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "Executed",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "Cancelled",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "Modified",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "Rejected",
+                                            "child": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "Asset class",
+                                    "child": [
+                                        {
+                                            "title": "Equity",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "Derivative",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "Currency",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "Commodity",
+                                            "child": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "Sort By",
+                                    "child": [
+                                        {
+                                            "title": "A to Z",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "Z to A",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "High Price- Low",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "Low Price-High",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "By Date",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "By Volume",
+                                            "child": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Digi Gold",
+                            "child": [
+                                {
+                                    "title": "",
+                                    "child": [
+                                        {
+                                            "title": "",
+                                            "child": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Health",
+                    "child": [
+                        {
+                            "title": "Lab Test",
+                            "child": [
+                                {
+                                    "title": "By Concern",
+                                    "child": [
+                                        {
+                                            "title": "Diabetes",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "Thyroid",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "Covid 19",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "Bone & Joint Pain",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "Women Care",
+                                            "child": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "Discount",
+                                    "child": [
+                                        {
+                                            "title": "Less than 10%",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "10% and above",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "20% and above",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "30% and above",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "40% and above",
+                                            "child": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "Test Type",
+                                    "child": [
+                                        {
+                                            "title": "Radiology Tests",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "Pathology Tests",
+                                            "child": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "By Labs",
+                                    "child": [
+                                        {
+                                            "title": "Metropolis Healthcare",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "Thyrocare Technologies",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "Care Diagnostics",
+                                            "child": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "Sort By",
+                                    "child": [
+                                        {
+                                            "title": "Popularity",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "Relevance",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "Price - High to Low",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "Price - Low to High",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "Discount - High to Low",
+                                            "child": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Medicine",
+                            "child": [
+                                {
+                                    "title": "Brand",
+                                    "child": [
+                                        {
+                                            "title": "Dr. Med",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "Dr. Ortho",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "Flemingo",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "Cipla",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "Rexo",
+                                            "child": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "Discount",
+                                    "child": [
+                                        {
+                                            "title": "Less than 10%",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "10% and above",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "20% and above",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "30% and above",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "40% and above",
+                                            "child": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "Uses",
+                                    "child": [
+                                        {
+                                            "title": "Cough and Cold",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "Women Care",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "Kidney Care",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "Stomach Care",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "Immunity Booster",
+                                            "child": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "Product Type",
+                                    "child": [
+                                        {
+                                            "title": "Liquid",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "Tablet",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "Gel",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "Oil",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "Capsule",
+                                            "child": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "Availability",
+                                    "child": [
+                                        {
+                                            "title": "Including out of stock",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "Excluding out of stock",
+                                            "child": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "Age",
+                                    "child": [
+                                        {
+                                            "title": "All",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "Elderly",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "Adult",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "Child",
+                                            "child": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "Sort By",
+                                    "child": [
+                                        {
+                                            "title": "Popularity",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "Relevance",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "Price - High to Low",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "Price - Low to High",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "Discount - High to Low",
+                                            "child": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Education",
+                    "child": [
+                        {
+                            "title": "Jobs",
+                            "child": [
+                                {
+                                    "title": "Package",
+                                    "child": [
+                                        {
+                                            "title": "₹0 - 3 LPA",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "₹3 - 6 LPA",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "₹6 - 10 LPA",
+                                            "child": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "Experience",
+                                    "child": [
+                                        {
+                                            "title": "0-2 Years",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "2-4 Years",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "4-6 Years",
+                                            "child": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "Location",
+                                    "child": [
+                                        {
+                                            "title": "Bangalore",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "Delhi",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "Hyderabad",
+                                            "child": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Courses",
+                            "child": [
+                                {
+                                    "title": "Course Category",
+                                    "child": [
+                                        {
+                                            "title": "Mutual Funds",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "Beauty and Wellness",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "Life Insurance",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "Basic of Computer",
+                                            "child": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "Level",
+                                    "child": [
+                                        {
+                                            "title": "Beginner",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "Intermediate",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "Advanced",
+                                            "child": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "Price",
+                                    "child": [
+                                        {
+                                            "title": "0 - 1000",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "1000 - 2000",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "2000 - 3000",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "3000 - 4000",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "4000 above",
+                                            "child": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "Status",
+                                    "child": [
+                                        {
+                                            "title": "Yet to Start",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "Ongoing",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "Completed",
+                                            "child": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "Rating",
+                                    "child": [
+                                        {
+                                            "title": "fiveStar",
+                                            "icon": "assets/icon/fiveStarRating.svg",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "fourStar",
+                                            "icon": "assets/icon/fourStarRating.svg",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "threeStar",
+                                            "icon": "assets/icon/threeStarRating.svg",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "twoStar",
+                                            "icon": "assets/icon/twoStarRating.svg",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "oneStar",
+                                            "icon": "assets/icon/oneStarRating.svg",
+                                            "child": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "Sort By",
+                                    "child": [
+                                        {
+                                            "title": "Date - Recent to Old",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "Date - Old to Recent",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "Price - High to Low",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "Price - Low to High",
+                                            "child": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Assesment",
+                            "child": [
+                                {
+                                    "title": "Assesment Category",
+                                    "child": [
+                                        {
+                                            "title": "Mutual Funds",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "Beauty and Wellness",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "Life Insurance",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "Basic of Computer",
+                                            "child": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "Level",
+                                    "child": [
+                                        {
+                                            "title": "Beginner",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "Intermediate",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "Advanced",
+                                            "child": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "Price",
+                                    "child": [
+                                        {
+                                            "title": "0 - 1000",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "1000 - 2000",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "2000 - 3000",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "3000 - 4000",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "4000 above",
+                                            "child": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "Status",
+                                    "child": [
+                                        {
+                                            "title": "Yet to Start",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "Ongoing",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "Completed",
+                                            "child": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "Rating",
+                                    "child": [
+                                        {
+                                            "title": "fiveStar",
+                                            "icon": "assets/icon/fiveStarRating.svg",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "fourStar",
+                                            "icon": "assets/icon/fiveStarRating.svg",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "threeStar",
+                                            "icon": "assets/icon/fiveStarRating.svg",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "twoStar",
+                                            "icon": "assets/icon/fiveStarRating.svg",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "oneStar",
+                                            "icon": "assets/icon/fiveStarRating.svg",
+                                            "child": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "Sort By",
+                                    "child": [
+                                        {
+                                            "title": "Date - Recent to Old",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "Date - Old to Recent",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "Price - High to Low",
+                                            "child": []
+                                        },
+                                        {
+                                            "title": "Price - Low to High",
+                                            "child": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Lifestyle",
+                    "child": []
+                }
+            ]
+        }
+        
+    ]
+   
+}

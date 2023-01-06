@@ -1,0 +1,63 @@
+{
+    "statusCode": 200,
+    "message": "Invoice fetched successfully",
+    "result": {
+        "data": {
+            "invoiceNumber": "GTD062347",
+            "userInfo": {
+                "name": "MaheshVishwakarmaa",
+                "address": null,
+                "city": null,
+                "state": "Maharashtra",
+                "pincode": "400013",
+                "email": "maheshv@heytorus.com",
+                "mobileNumber": "9137106264",
+                "uniqueId": "123456"
+            },
+            "transactionId": "TD371016546712586250148157",
+            "quantity": "0.1000",
+            "metalType": "gold",
+            "hsnCode": "711419",
+            "rate": "5205.87",
+            "unitType": "Gram",
+            "grossAmount": "520.59",
+            "netAmount": "536.21",
+            "taxes": {
+                "totalTaxAmount": "15.62",
+                "taxSplit": [
+                    {
+                        "type": "CGST",
+                        "taxPerc": "1.50",
+                        "taxAmount": "7.80"
+                    },
+                    {
+                        "type": "SGST",
+                        "taxPerc": "1.50",
+                        "taxAmount": "7.80"
+                    },
+                    {
+                        "type": "IGST",
+                        "taxPerc": "0.00",
+                        "taxAmount": "0.00"
+                    }
+                ]
+            },
+            "tcsInfo": {
+                "tcsPerc": "0",
+                "tcsAmount": "0"
+            },
+            "discount": [
+                {
+                    "type": "percentage",
+                    "title": "tcs",
+                    "value": "0",
+                    "amount": "0",
+                    "description": "TCS discount"
+                }
+            ],
+            "invoiceDate": "08-06-2022 12:24:18",
+            "purity": "999",
+            "karat": "24K"
+        }
+    }
+}

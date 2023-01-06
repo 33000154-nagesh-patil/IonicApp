@@ -1,0 +1,261 @@
+<!------------------------------------------ My SIP detail cancel ---------------------------------------------------->
+
+<ion-content class="w-100 h-100">
+  <ion-row>
+    <ion-col class="text-center">
+      <img [src]="x.Banner[0].img16" class="manImg">
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col class="text-center d-flex flex-column">
+      <span class="custFontFamilyMuliBold muli-16pt custLineHeight22 custColorDark">"{{x.Banner[1].thebiggestrisk}}"</span>
+      <span class="custFontFamilyMuliRegular muli-12pt custLineHeight12 mt-2">{{x.Banner[1].warrenbuffet}}</span>
+      <span class="custFontFamilyMuliRegular muli-12pt custLineHeight12 mt-4 mx-5">{{x.Banner[1].upsanddowns}}</span>
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="mt-3 mx-4">
+    <ion-col [size]="'6'" class="px-2">
+      <button class="btn custButtonOutLine w-100 text-center custColorBrightCyan"><span class="custColorBrightCyan text-capitalize  custFontFamilyMuliBold muli-16pt">{{'cancelSip' | translate}}</span></button>
+    </ion-col>
+    <ion-col [size]="'6'" class="px-2">
+      <button class="btn w-100 text-center custBackgroundColorBrightCyan"><span class="custColorWhite custFontFamilyMuliBold text-capitalize muli-16pt">{{x.Banner[1].dontcancel}}</span></button>
+    </ion-col>
+  </ion-row>
+
+
+  <!------------------------------------------------ edit SIP – 1 ---------------------------------------------->
+
+
+  <ion-row class="mt-5">
+    <ion-col [size]="'3'" class="text-center">
+      <img [src]="x.Banner[0].img17" class="mt-2">
+    </ion-col>
+    <ion-col [size]="'9'" class="text-start d-flex flex-column">
+      <span class="custFontFamilyMuliBold muli-16pt custLineHeight22 custColorDark">SIPs help build wealth</span>
+      <span class="custFontFamilyMuliRegular muli-12pt custLineHeight20 custColorBattlePGry mt-2">Contribute towards your investment goals with monthly SIPs</span>
+    </ion-col>
+  </ion-row>
+
+
+<ion-radio-group>
+  <ion-row class="mt-5 mx-3">
+    <ion-col [size]="'1'" class="text-end pt-2">
+        <ion-radio color="tertiary" mode="md"></ion-radio>
+    </ion-col>
+    <ion-col [size]="'11'" class="text-start d-flex flex-column">
+      <span class="custFontFamilyMuliBold muli-14pt custLineHeight22 custColorDark">Pause SIP for few months</span>
+      <span class="custFontFamilyMuliRegular muli-12pt custLineHeight20 custColorBattlePGry mt-2">It is recommended you pause SIP for few months instead of deleting SIP forever</span>
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="mt-3 mx-3">
+    <ion-col [size]="'1'" class="text-end pt-2">
+        <ion-radio color="tertiary" mode="md"></ion-radio>
+    </ion-col>
+    <ion-col [size]="'11'" class="text-start d-flex flex-column">
+      <span class="custFontFamilyMuliBold muli-14pt custLineHeight22 custColorDark">Delete SIP Forever</span>
+      <span class="custFontFamilyMuliRegular muli-12pt custLineHeight20 custColorBattlePGry mt-2">This SIP will be deleted permanently and you will not receive further reminders to invest from next time</span>
+    </ion-col>
+  </ion-row>
+</ion-radio-group>
+
+  <ion-row class="mt-4 mx-3">
+    <button class="btn w-100 text-center custBackgroundColorBrightCyan"><span class="custColorWhite custFontFamilyMuliBold text-capitalize muli-16pt">Proceed To Pause</span></button>
+  </ion-row>
+
+
+  <!------------------------------------------------ edit SIP – 2 ---------------------------------------------->
+
+
+  <ion-row class="mt-5">
+    <ion-col class="text-center d-flex flex-column">
+      <span class="custFontFamilyMuliBold muli-16pt custLineHeight22 custColorDark">Pause SIP</span>
+      <span class="custFontFamilyMuliRegular muli-12pt custLineHeight20 custColorBattlePGry mt-1">For how many months do you want to pause SIP?</span>
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="mt-2">
+    <ion-col class="text-center">
+      <button class="btn disable text-center" (click)="enable('clicked')" [ngClass]="{'active': btnEnable == 'clicked'}"><span class="text-capitalize custFontFamilyMuliRegular custLineHight16  muli-12pt">1m</span></button>
+      <button class="btn disable text-center mx-2" (click)="enable('clicked1')" [ngClass]="{'active': btnEnable == 'clicked1'}"><span class="text-capitalize custFontFamilyMuliRegular custLineHight16 muli-12pt">2m</span></button>
+      <button class="btn disable text-center" (click)="enable('clicked2')" [ngClass]="{'active': btnEnable == 'clicked2'}"><span class="text-capitalize custFontFamilyMuliRegular custLineHight16 muli-12pt">3m</span></button>
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="ms-3 mt-2">
+    <ion-col [size]="'1'" class="text-end pt-2">
+      <img [src]="x.Banner[0].img18">
+    </ion-col>
+    <ion-col [size]="'11'" class="text-start d-flex flex-column px-2">
+      <span class="custFontFamilyMuliRegular muli-12pt custLineHeight18 custColorBattlePGry">SIPs create wealth over long term.</span>
+      <span class="custFontFamilyMuliRegular muli-12pt custLineHeight18 custColorBattlePGry">Pause your SIP only if it is unavoidable</span>
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="mt-1 mx-2">
+    <ion-col [size]="'6'" class="px-2">
+      <button class="btn custButtonOutLine w-100 text-center custColorBrightCyan"><span class="custColorBrightCyan text-capitalize  custFontFamilyMuliBold muli-16pt">Pause SIP</span></button>
+    </ion-col>
+    <ion-col [size]="'6'" class="px-2">
+      <button class="btn w-100 text-center custBackgroundColorBrightCyan"><span class="custColorWhite custFontFamilyMuliBold text-capitalize muli-16pt">Cancel</span></button>
+    </ion-col>
+  </ion-row>
+
+  <!------------------------------------------------- autopay ----------------------------------------------------->
+
+
+<ion-row class="mt-5">
+  <ion-col class="text-center">
+    <img [src]="x.Banner[0].img17" class="mt-2 imgLarge">
+  </ion-col>
+</ion-row>
+
+<ion-row>
+  <ion-col class="text-center mt-3 d-flex flex-column">
+    <span class="custFontFamilyMuliBold muli-22pt custLineHeight30 custColorDark">Setup automatic payments</span>
+    <span class="custFontFamilyMuliRegular muli-12pt custLineHeight18 custColorBattlePGry mt-1">setup automatic payments for </span>
+    <span class="custFontFamilyMuliRegular muli-12pt custLineHeight18 custColorBattlePGry">upcoming investments</span>
+  </ion-col>
+</ion-row>
+
+<ion-card>
+  <ion-col class="d-flex flex-column p-3">
+    <span class="custFontFamilyMuliRegular muli-10pt custLineHeight15 custColorBattlePGry">For automatic deduction if money for you investment (SIP).</span>
+    <span class="custFontFamilyMuliRegular muli-10pt custLineHeight15 custColorBattlePGry">we will set up an auto-pay mandate with your bank</span>
+  </ion-col>
+</ion-card>
+
+<ion-row>
+  <ion-col class="px-2">
+    <button class="btn w-100 text-center custBackgroundColorBrightCyan"><span class="custColorWhite custFontFamilyMuliBold text-capitalize custLineHeight20 muli-16pt">Add New Mandate</span></button>
+  </ion-col>
+</ion-row>
+
+<!--------------------------------------- create mandate process ---------------------------------------------->
+
+<ion-card class="mt-5 p-3">
+  <ion-row>
+    <ion-col class="text-center">
+      <img [src]="x.Banner[0].img19" class="imgLarge1">
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col class="text-start mt-3">
+      <span class="custFontFamilyMuliBold muli-12pt custLineHeight15 custColorBattlePGry">The procedure for creating auto pay is as below:</span>
+    </ion-col>
+  </ion-row>
+
+  <div *ngIf="progressBarModal" class="ms-2">
+    <ul class="StepProgress mt-2">
+      <li class="w-100 mb-4 is-done StepProgress-item">
+        <span class="custFontFamilyMuliBold muli-12pt custLineHeight18 custColorTint">Login to net banking to initiate auto pay creation</span>
+      </li>
+      <li class="w-100 mb-4 is-done StepProgress-item d-flex flex-column">
+        <span class="custFontFamilyMuliBold muli-12pt custLineHeight18 custColorTint">Authorize D1 transaction to confirm</span>
+        <span class="custFontFamilyMuliRegular muli-10pt custColorBattlePGry custLineHeight15">₹1 will be reversed by your bank</span>
+      </li>
+      <li class="w-100 is-done StepProgress-item">
+        <span class="custFontFamilyMuliBold muli-12pt custLineHeight18 custColorTint">Your auto pay request will be activated by your bank in 3 - 7 working days</span>
+      </li>
+    </ul>
+  </div>
+</ion-card>
+
+<ion-row>
+  <ion-col class="px-3">
+    <button class="btn w-100 text-center custBackgroundColorBrightCyan"><span class="custColorWhite custFontFamilyMuliBold text-capitalize custLineHeight20 muli-16pt">Login To Net Banking</span></button>
+  </ion-col>
+</ion-row>
+
+
+<!----------------------------------------------- sip and one time info ----------------------------------------------------->
+<ion-row class="p-2">
+  <ion-col>
+    <span class="custFontFamilyMuliSemiBold muli-14pt custLineHeight22 custColorDark">Systematic Investment Plan (SIP)</span>
+  </ion-col>
+</ion-row>
+<ion-row class="px-2">
+  <ion-col>
+    <span class="custFontFamilyMuliRegular muli-12pt custLineHeight20 custColorBattlePGry">Systematic Investment Plan is an investment strategy where in an investor needs to invest the same amount of money in a particular mutual fund at every stipulated time period.</span>
+  </ion-col>
+</ion-row>
+
+<ion-row class="p-2">
+  <ion-col>
+    <span class="custFontFamilyMuliSemiBold muli-14pt custLineHeight22 custColorDark">One Time (Lumpsum)</span>
+  </ion-col>
+</ion-row>
+<ion-row class="px-2">
+  <ion-col>
+    <span class="custFontFamilyMuliRegular muli-12pt custLineHeight20 custColorBattlePGry">One Time, it means a single, bulk amount locked into a one-time mutual fund investment. This is as opposed to spreading it out over time, like in SIP (Systematic Investment Plans).</span>
+  </ion-col>
+</ion-row>
+
+
+<!--------------------------------------- Transaction history -  process – 1 ---------------------------------------------->
+
+<ion-row class="mt-3">
+  <ion-col [size]="'1'">
+    <img [src]="imageList?.sipCalenderIcon">
+  </ion-col>
+  <ion-col [size]="'8'">
+    <span class="custFontFamilyMuliSemiBold muli-14pt custColorDark custLineHight20">Payment</span>
+  </ion-col>
+  <ion-col [size]="'3'" class="text-end">
+    <span class="custFontFamilyMuliRegular muli-12pt custColorBrightCyan custLineHight18">Instant</span>
+  </ion-col>
+</ion-row>
+<ion-row class="mt-2">
+  <ion-col [size]="'1'">
+    <img [src]="imageList?.blueCartIcon">
+  </ion-col>
+  <ion-col [size]="'8'" class="d-flex flex-column">
+    <span class="custFontFamilyMuliSemiBold muli-14pt custColorDark custLineHight20">Order Placement</span>
+    <span class="custFontFamilyMuliRegular muli-12pt custLineHeight20 custColorBattlePGry pt-1">Aqube verifies the investment details. Valid transactions are then sent to mutual fund company for further processing.</span>
+  </ion-col>
+  <ion-col [size]="'3'" class="d-flex flex-column text-end">
+    <span class="custFontFamilyMuliRegular muli-12pt custColorBrightCyan custLineHight18">Same day</span>
+  </ion-col>
+</ion-row>
+<ion-row class="mt-2">
+  <ion-col [size]="'1'">
+    <img [src]="imageList?.analyticsIcon">
+  </ion-col>
+  <ion-col [size]="'8'" class="d-flex flex-column">
+    <span class="custFontFamilyMuliSemiBold muli-14pt custColorDark custLineHight20">Unit Allotment</span>
+    <span class="custFontFamilyMuliRegular muli-12pt custLineHeight20 custColorBattlePGry pt-1">Mutual Fund company allots units at the applicable price of a unit of the scheme (ie. NAV). Applicable NAV is based on the type of scheme (liquid / non-liquid)</span>
+  </ion-col>
+  <ion-col [size]="'3'" class="d-flex flex-column text-end">
+    <span class="custFontFamilyMuliRegular muli-12pt custColorBrightCyan custLineHight18">Same day*</span>
+  </ion-col>
+</ion-row>
+<ion-row class="mt-2">
+  <ion-col [size]="'1'">
+    <img [src]="imageList?.portfolioIcon">
+  </ion-col>
+  <ion-col [size]="'7'" class="d-flex flex-column">
+    <span class="custFontFamilyMuliSemiBold muli-14pt custColorDark custLineHight20">Portfolio Update</span>
+    <span class="custFontFamilyMuliRegular muli-12pt custLineHeight20 custColorBattlePGry pt-1">Mutual Fund company confirms the investment status, units allotted and applicable NAV to Aqube. Based on the confirmation, Aqube updates your portfolio on the app</span>
+  </ion-col>
+  <ion-col [size]="'4'" class="d-flex flex-column text-end">
+    <span class="custFontFamilyMuliRegular muli-12pt custColorBrightCyan custLineHight18">2 - 3 business days</span>
+  </ion-col>
+</ion-row>
+
+<ion-row class="mt-2">
+  <ion-col>
+    <span class="custFontFamilyMuliRegular muli-10pt custColorDarkishBlue custLineHight15">Note</span>
+  </ion-col>
+</ion-row>
+
+<ion-row>
+  <span class="custFontFamilyMuliRegular muli-10pt custColorBattlePGry custLineHight15">*Purchase transactions via UPI (all banks) and NB (ICICI, HDFC, Axis, Kotak, IDBI, SBI & Yes Bank) will be processed on the same day if completed before the cut-off time (12.00 PM for liquid & overnight schemes and 02.00 PM for all others). Investments via other modes or beyond the cut-off time will be processed when the mutual fund company gets money in the bank account.</span>
+</ion-row>
+<ion-row class="mt-2">
+  <span class="custFontFamilyMuliRegular muli-10pt custColorBattlePGry custLineHight15"> HeyTorus submits the orders to mutual fund companies only if they are valid in terms of KYC information, bank verification & payment status.</span>
+</ion-row>
+
+</ion-content>

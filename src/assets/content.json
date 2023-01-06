@@ -1,0 +1,396 @@
+[
+    
+    {
+        "type": "grid",
+        "icon": "",
+        "label": "Grid",
+        "rightLabel": "",
+        "config": {
+            "row": "1",
+            "col": "5",
+            "width": "",
+            "height": "165px",
+            "layoutType": ""
+        },
+        "data": [
+            {
+                "logo": "assets/icon/Courses.svg",
+                "title": "Courses",
+                "description":"Skill courses for you",
+                "author": "By Abrar Husain",
+                "price": "1,920",
+                "action":"Explore"
+            },
+            {
+                "logo": "assets/icon/Assesment.svg",
+                "title": "Assessment",
+                "description":"Learn interesting courses",
+                "author": "By Abrar Husain",
+                "price": "1,920",
+                "action":"Explore"
+            }
+        ]
+    },
+    {
+        "type": "list",
+        "icon": "",
+        "label": "Grid",
+        "rightLabel": "",
+        "config": {
+            "row": "1",
+            "col": "5",
+            "width": "",
+            "height": "165px",
+            "layoutType": ""
+        },
+        "data": [
+            {
+                "logo": "assets/icon/xd.svg",
+                "title": "Introduction to Web Design",
+                "author": "By Abrar Husain",
+                "price": "1,920",
+                "level": "Beginner"
+            },
+            {
+                "logo": "assets/icon/java.svg",
+                "title": "Introduction to Java",
+                "author": "By 28MinutesOfficial",
+                "price": "3,449",
+                "level": "Beginner"
+
+            },
+            {
+                "logo": "assets/icon/datascience.svg",
+                "title": "Beware of Data Science",
+                "author": "By Abrar Husain",
+                "price": "3,999",
+                "level": "Advanced"
+
+            },
+            {
+                "logo": "assets/icon/datascience.svg",
+                "title": "Introduction to Python",
+                "author": "By Abrar Husain",
+                "price": "Free",
+                "level": "Intermediate"
+
+            },
+            {
+                "logo": "assets/icon/datascience.svg",
+                "title": "Introduction to Java",
+                "author": "By Abrar Husain",
+                "price": "3,499",
+                "level": "Beginner"
+
+            }
+        ],
+        "Assesment": [
+            {
+                "logo": "assets/icon/xd.svg",
+                "title": "Introduction to Web Design",
+                "author": "By Abrar Husain",
+                "price": "1,920",
+                "level": "Medium"
+            },
+            {
+                "logo": "assets/icon/java.svg",
+                "title": "Introduction to Java",
+                "author": "By 28MinutesOfficial",
+                "price": "3,449",
+                "level": "Medium"
+
+            },
+            {
+                "logo": "assets/icon/datascience.svg",
+                "title": "Beware of Data Science",
+                "author": "By Abrar Husain",
+                "price": "3,999",
+                "level": "Medium"
+
+            },
+            {
+                "logo": "assets/icon/datascience.svg",
+                "title": "Introduction to Python",
+                "author": "By Abrar Husain",
+                "price": "Free",
+                "level": "Medium"
+
+            },
+            {
+                "logo": "assets/icon/datascience.svg",
+                "title": "Introduction to Java",
+                "author": "By Abrar Husain",
+                "price": "3,499",
+                "level": "Medium"
+
+            }
+        ]
+    },
+    {
+        "type": "gridslider",
+        "icon": "",
+        "label": "Grid",
+        "rightLabel": "",
+        "config": {
+            "row": "1",
+            "col": "5",
+            "width": "",
+            "height": "165px",
+            "layoutType": "horizontal"
+        },
+        "data": [
+            {
+                "logo": "assets/icon/TrendingCoursePython.svg",
+                "title": "Introduction to Python",                
+                "description":"",
+                "author": "By Abrar Husain",
+                "ratings":"4.6",
+                "content":"2,671",
+                "price": "1,920",
+                "action":"",
+                "level": "Beginner"
+
+            },
+            {
+                "logo": "assets/icon/TrendingCourseJava.svg",
+                "title": "Introduction to Java",                
+                "description":"",
+                "author": "By Abrar Husain",
+                "ratings":"4.6",
+                "content":"2,671",
+                "price": "3,449",
+                "action":"",
+                "level": "Intermediate"
+
+            },
+            {
+                "logo": "assets/icon/TrendingCourseDataScience.svg",
+                "title": "Beware of Data Science",                
+                "description":"",
+                "author": "By Abrar Husain",
+                "ratings":"4.6",
+                "content":"2,671",
+                "price": "2,120",
+                "action":"",
+                "level": "Advanced"
+
+            }
+        ],
+        "Assesment": [
+            {
+                "logo": "assets/icon/TrendingCoursePython.svg",
+                "title": "Introduction to Python",                
+                "description":"",
+                "author": "By Abrar Husain",
+                "ratings":"4.6",
+                "content":"2,671",
+                "price": "1,920",
+                "action":"",
+                "level": "Beginner"
+
+            },
+            {
+                "logo": "assets/icon/TrendingCourseJava.svg",
+                "title": "Introduction to Java",                
+                "description":"",
+                "author": "By Abrar Husain",
+                "ratings":"4.6",
+                "content":"2,671",
+                "price": "3,449",
+                "action":"",
+                "level": "Intermediate"
+
+            },
+            {
+                "logo": "assets/icon/TrendingCourseDataScience.svg",
+                "title": "Beware of Data Science",                
+                "description":"",
+                "author": "By Abrar Husain",
+                "ratings":"4.6",
+                "content":"2,671",
+                "price": "2,120",
+                "action":"",
+                "level": "Advanced"
+
+            }
+        ]
+    },
+
+    {
+        "type": "gridcoursecontent",
+        "icon": "",
+        "label": "Grid",
+        "rightLabel": "",
+        "config": {
+            "row": "1",
+            "col": "5",
+            "width": "",
+            "height": "165px",
+            "layoutType": ""
+        },
+        "data": [
+            {
+                "logo": "assets/educationIcon/MutualFunds.svg",
+                "title": "Mutual Fund",                
+                "description":"",
+                "author": "",
+                "ratings":"",
+                "content":"",
+                "price": "",
+                "action":""
+            },
+            {
+                "logo": "assets/educationIcon/LifeInsurance.svg",
+                "title": "Life Insurance",                
+                "description":"",
+                "author": "",
+                "ratings":"",
+                "content":"",
+                "price": "",
+                "action":""
+            },
+            {
+                "logo": "assets/educationIcon/BeautyWellness.svg",
+                "title": "Beauty & Wellness",                
+                "description":"",
+                "author": "",
+                "ratings":"",
+                "content":"",
+                "price": "",
+                "action":""
+            },
+            {
+                "logo": "assets/educationIcon/BasicOfComputers.svg",
+                "title": "Basics of Computer",                
+                "description":"",
+                "author": "",
+                "ratings":"",
+                "content":"",
+                "price": "",
+                "action":""
+            },
+            {
+                "logo": "assets/educationIcon/TravelHospitality.svg",
+                "title": "Travel & Hospitality",                
+                "description":"",
+                "author": "",
+                "ratings":"",
+                "content":"",
+                "price": "",
+                "action":""
+            },
+            {
+                "logo": "assets/educationIcon/EquityDealer.svg",
+                "title": "Equity Dealer",                
+                "description":"",
+                "author": "",
+                "ratings":"",
+                "content":"",
+                "price": "",
+                "action":""
+            }, {
+                "logo": "assets/educationIcon/GoodsServiceTax.svg",
+                "title": "Goods & Service Tax",                
+                "description":"",
+                "author": "",
+                "ratings":"",
+                "content":"",
+                "price": "",
+                "action":""
+            },
+            {
+                "logo": "assets/educationIcon/RetailSales.svg",
+                "title": "Retail Sales",                
+                "description":"",
+                "author": "",
+                "ratings":"",
+                "content":"",
+                "price": "",
+                "action":""
+            }
+            
+        ],
+        "AssesmentData": [
+            {
+                "logo": "assets/educationIcon/MutualFunds.svg",
+                "title": "Mutual Fund",                
+                "description":"",
+                "author": "",
+                "ratings":"",
+                "content":"",
+                "price": "",
+                "action":""
+            },
+            {
+                "logo": "assets/educationIcon/LifeInsurance.svg",
+                "title": "Life Insurance",                
+                "description":"",
+                "author": "",
+                "ratings":"",
+                "content":"",
+                "price": "",
+                "action":""
+            },
+            {
+                "logo": "assets/educationIcon/BeautyWellness.svg",
+                "title": "Beauty & Wellness",                
+                "description":"",
+                "author": "",
+                "ratings":"",
+                "content":"",
+                "price": "",
+                "action":""
+            },
+            {
+                "logo": "assets/educationIcon/BasicOfComputers.svg",
+                "title": "Basics of Computer",                
+                "description":"",
+                "author": "",
+                "ratings":"",
+                "content":"",
+                "price": "",
+                "action":""
+            },
+            {
+                "logo": "assets/educationIcon/TravelHospitality.svg",
+                "title": "Travel & Hospitality",                
+                "description":"",
+                "author": "",
+                "ratings":"",
+                "content":"",
+                "price": "",
+                "action":""
+            },
+            {
+                "logo": "assets/educationIcon/EquityDealer.svg",
+                "title": "Equity Dealer",                
+                "description":"",
+                "author": "",
+                "ratings":"",
+                "content":"",
+                "price": "",
+                "action":""
+            }, {
+                "logo": "assets/educationIcon/GoodsServiceTax.svg",
+                "title": "Goods & Service Tax",                
+                "description":"",
+                "author": "",
+                "ratings":"",
+                "content":"",
+                "price": "",
+                "action":""
+            },
+            {
+                "logo": "assets/educationIcon/RetailSales.svg",
+                "title": "Retail Sales",                
+                "description":"",
+                "author": "",
+                "ratings":"",
+                "content":"",
+                "price": "",
+                "action":""
+            }
+            
+        ]
+    }
+]

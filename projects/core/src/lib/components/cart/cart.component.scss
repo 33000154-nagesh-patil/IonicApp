@@ -1,0 +1,22 @@
+.segment{
+    margin-top: 100px;
+}
+
+.custBadge{
+    position: absolute;
+    // border-radius: 2px;
+   
+  }
+  .custRight10{
+    right: 10px;
+  }
+  .custRight0{
+    right: 0px;
+  }
+
+  .contentClass{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

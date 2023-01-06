@@ -1,0 +1,249 @@
+<ion-header>
+  <ion-toolbar class="custHeading">
+    <ion-row>
+      <ion-col size="6" class="mt-3">
+        <ion-title><span class="custFontFamilyMuliBold custLineHight25 muli-16pt custColorDark">
+            Stock
+          </span></ion-title>
+      </ion-col>
+      <ion-col size="3">
+        <div class="custTextAlignCenter">
+          <div class="custHeight custProfile">
+            <div *ngIf="!hideIndex; else conditionFalse">
+              <ion-img [src]="imageList?.index" class="custSVGIcon" (click)="showIndex()"></ion-img>
+            </div>
+            <ng-template #conditionFalse>
+              <ion-img [src]="imageList?.indexBlue" class="custSVGIcon" (click)="showIndex()"></ion-img>
+            </ng-template>
+          </div>
+          <p class="muli-10pt custLineHight28 custFontFamilyMuliSemiBold custColorBattlePGry">{{'indexes' |
+            translate}}</p>
+        </div>
+      </ion-col>
+      <ion-col size="3">
+        <div class="custTextAlignCenter">
+          <div class="custHeight custProfile">
+            <ion-img [src]="imageList?.notificationIcon" class="custSVGIcon"></ion-img>
+          </div>
+          <p class="muli-10pt custLineHight28 custFontFamilyMuliSemiBold custColorBattlePGry">{{'notifications' |
+            translate}}</p>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-toolbar>
+
+  <div>
+    <div *ngIf="hideIndex" class="myClass">
+
+      <ion-slides>
+        <ion-slide class="border-right">
+
+          <ion-col class="text-center" *ngFor="let x of json2" class="border-bottom p-3 border-end">
+            <ion-col class="muli-14pt custFontFamilyMuliBold  custLineHight20 custColorDark text-center ms-4 m-2">
+              {{x?.bankName}}
+            </ion-col>
+            <ion-col>
+              <img [src]="imageList?.greyPensil" *ngIf="json2.indexOf(x)>0" width="20px" height="25px"
+                (click)="goToEditIndex()">
+            </ion-col>
+            <p class="m-1 custColorDark muli-14pt">₹{{x?.Money}}</p>
+            <p class="muli-18pt custFontFamilyMuliBold custColorParakeetGreen m-1">
+              <span *ngIf="x?.PrecentegIncrement>0"><img [src]="imageList?.greenIcon" width="50px" height="50px"></span>
+              <span *ngIf="x?.PrecentegIncrement<0"><img [src]="imageList?.redarrow" width="20px" height="20px"></span>
+              <span [ngClass]="x?.PrecentegIncrement<0?'custColorRed':'custColorParakeetGreen muli-14pt m-0'">
+                {{x?.LiveMoney}}({{x?.PrecentegIncrement}}%)</span>
+            </p>
+            <p class="muli-10pt custFontFamilyMuliBold custColorGreyish">{{x.date}}</p>
+
+          </ion-col>
+        </ion-slide>
+      </ion-slides>
+      <ion-row class="mt-3">
+
+        <ion-col [size]="'2.5'" class="custColorGreyish muli-14pt custFontFamilyMuliBold	text-start m-0 p-0 mt-1 ms-3">
+          My Funds
+        </ion-col>
+        <ion-col [size]="'4'" class="muli-14pt">
+          <span [ngClass]="(CurrentFund > 0)?'custColorParakeetGreen':'custColorcustFadedRed'">₹{{CurrentFund}}</span>
+        </ion-col>
+
+        <ion-col class="custBackgroundColorWhite text-end me-3 mb-3">
+
+          <button [ngClass]="(CurrentFund > 0)?'custBackgroundColorWhite':'custBackgroundColorBrightCyan'"
+            class="custBackgroundColorWhite custColorBrightCyan border text-start rounded" (click)="goToAddFunds()">
+
+            <ion-icon name="add-circle-outline" [ngClass]="(CurrentFund > 0)?'custColorBrightCyan':'custColorWhite'">
+            </ion-icon>
+            &nbsp;<span class="muli-14pt custFontFamilyMuliBold custLineHeight18 "
+              [ngClass]="(CurrentFund > 0)?'custColorBrightCyan':'custColorWhite'">Add funds</span>
+          </button>
+        </ion-col>
+      </ion-row>
+    </div>
+  </div>
+</ion-header>
+
+
+
+
+
+
+<ion-content>
+  <ion-row class="mt-2">
+    <span class="muli-22pt ms-2 custFontFamilyMuliBold">Profile</span>
+  </ion-row>
+  <ion-col [size]="'12'" class="pdingleft">
+    <ion-row class="copltmargin">
+      <ion-col [size]="'1'">
+        <h1></h1>
+      </ion-col>
+    </ion-row>
+  </ion-col>
+
+  <ion-row class="mt-2">
+    <img [src]="imageList?.photo" class=" custCircle custFontFamilyMuliBold" />
+    <ion-col [size]="'10'">
+      <ion-row class="muli-16pt custLineHight18 custColorDark custFontFamilyMuliBold text-nowrap">
+        Hey Rajesh
+      </ion-row>
+      <ion-row class="text-nowrap">
+        <span class="muli-16pt custLineHight18 custColorDark custFontFamilyMuliBold mt-2"> View Profile</span>
+        <!-- <span><ion-img [src]="imageList?.arrow" class="custWithoutTextImg"></ion-img></span> -->
+        <span class="marginleft mt-2 custFontFamilyMuliBold"><img [src]="imageList?.SuccessCheck"
+            class="Check custFontFamilyMuliBold" /></span>
+        <span class="custColorParakeetGreen mt-2 marginleft custFontFamilyMuliBold ">KYC - Investment Ready</span>
+      </ion-row>
+    </ion-col>
+  </ion-row>
+
+  <ion-card class="custIonContentBackgroundColorPaleGrey shadow-sm pb-2">
+    <ion-row class="mt-3">
+      <ion-col class="text-center  muli-16pt custLineHight18 custColorDark custFontFamilyMuliBold text-nowrap">
+        You haven't invested in any stocks
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="text-center  muli-12pt custLineHight18 custColorWarmGrey1 custFontFamilyMuliBold text-nowrap">
+        Today is a good day to start investing
+      </ion-col>
+    </ion-row>
+    <ion-row class="px-5 mt-3">
+      <ion-col [size]="'3'"></ion-col>
+      <ion-col [size]="'6'">
+        <button (click)="goToWatchlist()"
+          class="btn w-100 text-center custBackgroundColorBrightCyan custColorWhite muli-12pt text-nowrap">Start
+          Investing</button>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+
+
+  <ion-row class="mt-5" (click)="goToClientDetails()">
+    <ion-col [size]="'8'">
+      <img [src]="imageList?.clientDetails" class=" custFontFamilyMuliBold px-3" />
+      <span class="muli-16pt custLineHight18 custColorDark custFontFamilyMuliBold">Client Details</span>
+    </ion-col>
+
+    <ion-col [size]="'4'" class="text-end pe-3">
+      <!-- <img  [src]="imageList?.profileImg2" class=" custFontFamilyMuliBold" /> -->
+      <ion-icon name="chevron-forward-outline"></ion-icon>
+    </ion-col>
+  </ion-row>
+  <hr>
+
+  <ion-row (click)="goToDematFunds()">
+    <ion-col [size]="'8'">
+      <img [src]="imageList?.profileImg2" class=" custFontFamilyMuliBold px-3" />
+      <span class="muli-16pt custLineHight18 custColorDark custFontFamilyMuliBold">Funds</span>
+    </ion-col>
+
+    <ion-col [size]="'4'" class="text-end pe-3">
+      <ion-icon name="chevron-forward-outline"></ion-icon>
+    </ion-col>
+  </ion-row>
+
+  <hr>
+
+  <ion-row (click)="goToHistoricalReports()">
+    <ion-col [size]="'8'">
+      <img [src]="imageList?.profileImg3" class=" custFontFamilyMuliBold px-3" />
+      <span class="muli-16pt custLineHight18 custColorDark custFontFamilyMuliBold">Historical Reports</span>
+    </ion-col>
+
+    <ion-col [size]="'4'" class="text-end pe-3">
+      <ion-icon name="chevron-forward-outline"></ion-icon>
+    </ion-col>
+  </ion-row>
+  <hr>
+
+
+  <ion-row (click)="goToSetting()">
+    <ion-col [size]="'8'">
+      <img [src]="imageList?.settings" class=" custFontFamilyMuliBold px-3" />
+      <span class="muli-16pt custLineHight18 custColorDark custFontFamilyMuliBold">Settings</span>
+    </ion-col>
+
+    <ion-col [size]="'4'" class="text-end pe-3">
+      <ion-icon name="chevron-forward-outline"></ion-icon>
+    </ion-col>
+  </ion-row>
+  <hr>
+
+
+  <ion-row>
+    <ion-col [size]="'8'">
+      <img [src]="imageList?.referAndEarn" class=" custFontFamilyMuliBold px-3" />
+      <span class="muli-16pt custLineHight18 custColorDark custFontFamilyMuliBold">Refer & Earn</span>
+    </ion-col>
+
+    <ion-col [size]="'4'" class="text-end pe-3">
+      <ion-icon name="chevron-forward-outline"></ion-icon>
+    </ion-col>
+  </ion-row>
+  <hr>
+
+
+  <ion-row>
+    <ion-col [size]="'8'">
+      <img [src]="imageList?.profileImg3" class=" custFontFamilyMuliBold px-3" />
+      <span class="muli-16pt custLineHight18 custColorDark custFontFamilyMuliBold"> Customer Suppport</span>
+    </ion-col>
+
+    <ion-col [size]="'4'" class="text-end pe-3">
+      <ion-icon name="chevron-forward-outline"></ion-icon>
+    </ion-col>
+  </ion-row>
+  <hr>
+
+
+
+
+  <!-- <ion-row>
+    <ion-col (click)="goToSetting()" [size]="'6'" class="muli-14pt custLineHight18 custColorDark custFontFamilyMuliBold">
+      Settings
+    </ion-col>
+    <ion-col [size]="'6'" class="text-end">
+      <ion-icon name="chevron-forward-outline"></ion-icon>
+    </ion-col>
+  </ion-row> -->
+  <!-- <ion-row>
+    <ion-col [size]="'6'" class="muli-14pt custLineHight18 custColorDark custFontFamilyMuliBold">
+      Refer & Earn
+    </ion-col>
+    <ion-col [size]="'6'" class="text-end">
+      <ion-icon name="chevron-forward-outline"></ion-icon>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col [size]="'6'" class="muli-14pt custLineHight18 custColorDark custFontFamilyMuliBold">
+      Customer Suppport
+    </ion-col>
+    <ion-col [size]="'6'" class="text-end">
+      <ion-icon name="chevron-forward-outline"></ion-icon>
+    </ion-col>
+  </ion-row> -->
+
+</ion-content>
+
+<lib-footer [activeImg]="imageList?.activeTab" [selectedIndex]="'5'" [footerListData]="stocksTab"
+  [parentTab]="'wealthStocks'"></lib-footer>

@@ -1,0 +1,42 @@
+.custBtn{
+    border: 1px solid var(--custBrightCyan);
+    border-radius: 4px;
+    width: 100%;
+}
+.custHeaderPatch{
+    font-size: 8px;
+    background-color: #E4E5EB;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+  
+}
+.custDet{
+    text-overflow: ellipsis;
+white-space: nowrap;
+overflow: hidden;
+}
+.custStatus{
+    // padding-left: 10px;
+    margin-right: 25px;
+}
+.custArrorSize{
+    height: 16px;
+    width: 13px;
+  }
+.custGreen{
+    color: #29AD00;
+}
+.custOrange{
+    color: #EE9C15;
+}
+.custHold{
+    color: #C04C31;
+}
+.custPending{
+    color: #FC750E;
+}

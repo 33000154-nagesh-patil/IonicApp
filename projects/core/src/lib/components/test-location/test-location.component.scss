@@ -1,0 +1,130 @@
+
+.custScan{
+    height: 18px;
+    width: 18px;
+}
+.custMargin{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.custLock{
+    height: 12px;
+    width: 16px;
+}
+
+.custSuccessIcon{
+    height: 12px;
+    width: 12px;
+}
+
+.custPAnIcon{
+    height: 40px;
+    width: 40px;
+}
+.custMargin5{
+    margin-left: 5px;
+}
+.custKYCImg{
+    height: 16px;
+    width: 13px;
+}
+
+.custBottomButton{
+    position: fixed;
+    bottom: 0;
+}
+.custBottomButtonPosition{
+    position: relative;
+}
+.custIndexTop{
+    z-index: 1;
+}
+.custIndexBottom{
+    z-index: -1;
+}
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
+    background-color: var(--custWhite);
+    border-radius: 5px;
+  }
+
+  :host ::ng-deep .mat-radio-outer-circle{
+    border-color: var(--custDarkishBlue) !important ;
+  }
+  :host ::ng-deep .mat-radio-inner-circle{
+    background-color: var(--custBrightCyan) !important ;
+  }
+.abc{
+    padding-right: 5%;
+}
+
+
+
+
+
+.container {
+    display: flex;
+    flex-wrap: nowrap;
+    height: auto;
+    overflow-x: auto;
+    width: 100%;
+}
+
+.mrgtopCard {
+    margin-top: -15px;
+}
+
+.custPding {
+    padding: 10px;
+}
+
+.coloredCard{
+    color: #FFFFFF;
+}
+
+.lineThrough {
+    text-decoration: line-through;
+    color: #44C8F5;
+}
+.mat-form-field-appearance-outline .mat-form-field-wrapper {
+    margin: 0; 
+    padding-bottom: 22px;
+ }
+ .custModalContainer {
+    z-index: 1;
+    left: 0;
+    // top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    // background-color: var(--custDark);
+    //  opacity: 0.4;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+  }
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 16px;
+    padding-left: 16px;
+    border: 1px solid #888;
+    width: 100%;
+    height: max-content;
+    position: absolute;
+    bottom: 0px;
+    border-radius: 10px 10px 0px 0px;
+  }
+
+  .card{
+    height: 160px;
+}
+.cardItem{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    // align-items: center;
+
+}

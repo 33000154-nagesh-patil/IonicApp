@@ -1,0 +1,121 @@
+{
+"insurance": {
+    "banner": {
+        "contentType": "banner",
+        "Title": "Complete Wealth Wellness Offerings",
+        "data": [
+            {
+                "icon": "assets/health-page-logos/Confidential.svg",
+                "subTitle": "Neo Banking"
+            },
+            {
+                "icon": "assets/health-page-logos/Access to Doctor.svg",
+                "subTitle": "Broking"
+            },
+            {
+                "icon": "assets/health-page-logos/Integrated lab.svg",
+                "subTitle": "Insurance"
+            }
+        ]
+    },
+    "heading": [
+        {
+            "heading": "Explore Various Insurance",
+            "discription": "Which insurance you would like to buy"
+        }
+    ],
+    "objectContent": [
+        {
+            "contentType": "3x2 Grid",
+            "content": [
+                {
+                    "icon": "assets/icon/healthInsurance.svg",
+                    "name": "Health Insurance"
+                   
+                },
+                {
+                    "icon": "assets/icon/carInsurance.svg",
+                    "name": "Car Insurance"
+                   
+                },
+                {
+                    "icon": "assets/icon/twoWheelerInsurance.svg",
+                    "name": "Two Wheeler Insurance"
+                    
+                },
+                {
+                    "icon":"assets/icon/travelInsurance.svg",
+                    "name": "Travel Insurance"
+                  
+                },
+                {
+                    "icon": "assets/icon/lifeInsurance.svg",
+                    "name": "Life Insurance"
+                    
+                },
+                {
+                    "icon": "assets/icon/otherInsurance.svg",
+                    "name": "Other Insurance"
+                
+                }
+            ]
+        },
+        {
+            
+            "contentType": "cardList",
+            "Title": "My Policies",
+            "card": [
+                {
+                    "row1": {
+                        "icon": "assets/icon/CareHealthInsurance.svg",
+                        "title": "Health Gain Top Up",
+                        "description": "Policy Number - 2351111",
+                        "action": "assets/icon/leftArrowIcon.svg"
+                    },
+                    "row2": {
+                        "col1": "person Assured",
+                        "val1": "Sagar Pathak",
+                        "col2": "",
+                        "val2": "",
+                        "col3": "",
+                        "val3": ""
+                    }
+                },
+                {
+                    "row1": {
+                        "icon": "assets/icon/kotak.svg",
+                        "title": "Gain Insurance",
+                        "description": "Policy Number - 2351111",
+                        "action": "assets/icon/leftArrowIcon.svg"
+                    },
+                    "row2": {
+                        "col1": "person Assured",
+                        "val1": "Sagar Pathak",
+                        "col2": "",
+                        "val2": "",
+                        "col3": "",
+                        "val3": ""
+                    }
+                },
+                {
+                    "row1": {
+                        "icon": "assets/icon/GainReassure.svg",
+                        "title": "Gain ReAssure",
+                        "description": "Policy Number - 2351111",
+                        "action": "assets/icon/leftArrowIcon.svg"
+                    },
+                    "row2": {
+                        "col1": "person Assured",
+                        "val1": "Sagar Pathak",
+                        "col2": "",
+                        "val2": "",
+                        "col3": "",
+                        "val3": ""
+                    }
+                }
+            ]
+        }
+    
+    ]
+}
+}

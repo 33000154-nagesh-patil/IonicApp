@@ -1,0 +1,249 @@
+<ion-header [translucent]="true" class="custBackgroundColorWhite">
+  <ion-toolbar class="custBackgroundDynamicColorWhite">
+    <ion-grid>
+      <ion-row>
+        <ion-col [size]="'1'" (click)="goBack()" id="goBack">
+          <ion-img
+            [src]="imageList?.arrow"
+            class="custWithoutTextImg mt-3"
+          ></ion-img>
+        </ion-col>
+        <ion-col
+          [size]="3"
+          class="custFontFamilyMuliBold muli-16pt custColorDark my-3 text-nowrap"
+        >
+          Apply for IPO
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="overflow-scroll contentBackground">
+  <ion-row class="d-flex justify-content-between mt-4 mx-3">
+    <ion-col size="6" class="">
+      <ion-row>
+        <ion-col
+          size="6"
+          class="custFontFamilyMuliRegular custColorWarmGrey1 muli-10pt pb-0 custFontFamilyMuliBold"
+        >
+          No of Lots</ion-col
+        >
+        <ion-col
+          size="6"
+          class="custFontFamilyMuliRegular muli-10pt custLineHight18 custColorWarmGrey1 custFontFamilyRobotoCondensed text-end pb-0"
+        >
+          Lot:1</ion-col
+        >
+        <mat-form-field class="newClass">
+          <button
+            matPrefix
+            class="custColorBrightCyan text-end muli-20pt Muli-Bold btnBg"
+            (click)="decrement()"
+          >
+            -
+          </button>
+
+          <input
+            matInput
+            type="number"
+            inputmode="numeric"
+            [(ngModel)]="counter"
+            class="example-right-align Roboto-Condensed custLineHight22 muli-20pt text-center w-100 custin"
+          />
+          <button
+            matSuffix
+            class="custColorBrightCyan text-end muli-20pt Muli-Bold btnBg"
+            (click)="increment()"
+          >
+            +
+          </button>
+        </mat-form-field>
+      </ion-row>
+    </ion-col>
+    <ion-col [size]="'1'"> </ion-col>
+
+    <ion-col size="5" class="mt-5">
+      <ion-row class="newClass1">
+        <input
+          type="number"
+          inputmode="numeric"
+          [(ngModel)]="checkHere"
+          class="w-100 example-right-align colorBack custMuliFont Muli-regular text-center"
+          [ngStyle]="{ 'width.px': width }"
+          (keydown)="resize($event)"
+        />
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <mat-checkbox
+            class="custFontFamilyMuliRegular muli-12pt custColorWarmGrey1 custLineHight20"
+            (click)="cutOffPrice()"
+            >Cut off price</mat-checkbox
+          >
+        </ion-col>
+      </ion-row>
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="mx-2">
+    <ion-col [size]="'6'" class="px-2">
+      <mat-form-field
+        appearance="outline"
+        class="w-100 m-0 p-0 custBackgroundColorWhite"
+      >
+        <mat-label class="muli-14pt custFontFamilyMuliBold"
+          >Investor Type</mat-label
+        >
+        <ion-icon
+          matSuffix
+          name="chevron-down-outline"
+          class="p-0 m-0 custColorBattlePGry"
+        ></ion-icon>
+        <mat-select placeholder="All">
+          <mat-option value="2022" class="custFontFamilyMuliRegular muli-14pt"
+            >Retail</mat-option
+          >
+          <mat-option value="2022" class="custFontFamilyMuliRegular muli-14pt"
+            >Shareholder</mat-option
+          >
+          <mat-option value="2021" class="custFontFamilyMuliRegular muli-14pt"
+            >Employee</mat-option
+          >
+        </mat-select>
+      </mat-form-field>
+    </ion-col>
+
+    <ion-col [size]="'2'"> </ion-col>
+    <ion-col size="4" class="">
+      <ion-row>
+        <ion-col
+          class="text-center custFontFamilyMuliBold custColorWarmGrey1 muli-12pt mt-3"
+        >
+          Total Amount
+        </ion-col>
+        <ion-row class="newClass1">
+          <input
+            type="number"
+            inputmode="numeric"
+            [(ngModel)]="checkHere"
+            class="w-100 example-right-align colorBack custMuliFont Muli-regular text-center"
+            [ngStyle]="{ 'width.px': width }"
+            (keydown)="resize($event)"
+          />
+        </ion-row>
+      </ion-row>
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="">
+    <ion-col [size]="'.5'"></ion-col>
+    <ion-col [size]="'11'">
+      <mat-form-field appearance="outline" class="w-100">
+        <mat-label>Virtual payment address(UPI ID)</mat-label>
+        <input matInput />
+      </mat-form-field>
+    </ion-col>
+    <ion-col [size]="'.5'"></ion-col>
+  </ion-row>
+
+  <ion-row (click)="create()">
+    <ion-col class="text-center">
+      <span
+        class="custFontFamilyMuliRegular muli-12pt custLineHight28 custColorWarmGrey1 custFontFamilyMuliBold"
+        >Don't have a upi id ?</span
+      >
+      <span
+        class="custFontFamilyMuliRegular muli-12pt custLineHight28 custColordarkBlue custFontFamilyMuliBold px-1"
+        (click)="goToCreatePop()"
+      >
+        know how to create</span
+      >
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="mx-2">
+    <ion-card class="w-100 mt-4">
+      <ion-card-content>
+        <ion-grid>
+          <ion-row class="">
+            <ion-col [size]="'12'">
+              <mat-radio-group>
+                <ion-row class="GapyMar1">
+                  <ion-col [size]="'12'">
+                    <mat-radio-button
+                      checked="true"
+                      value="1"
+                      class="custFontFamilyMuliRegular muli-12pt custLineHight18 custColorWarmGrey1 paddingRadio text-end custFontFamilyMuliBold"
+                    >
+                      <ion-img
+                        [src]="imageList?.gPay"
+                        class="custWithoutTextImgPayment heightGpay"
+                      ></ion-img>
+                    </mat-radio-button>
+                  </ion-col>
+                </ion-row>
+                <hr class="w-100" />
+                <ion-row class="GapyMar">
+                  <mat-radio-button
+                    class="custFontFamilyMuliRegular muli-12pt custLineHight18 custColorWarmGrey1 px-1 custFontFamilyMuliBold"
+                    value="2"
+                  >
+                    <ion-img
+                      [src]="imageList?.PhonePe"
+                      class="custWithoutTextImgPayment heightGpay"
+                    ></ion-img>
+                  </mat-radio-button>
+                </ion-row>
+                <hr />
+                <ion-row class="GapyMar">
+                  <mat-radio-button
+                    class="custFontFamilyMuliRegular muli-12pt custLineHight18 custColorWarmGrey1 px-1 custFontFamilyMuliBold"
+                    value="3"
+                  >
+                    <ion-img
+                      [src]="imageList?.Bhim"
+                      class="custWithoutTextImgPayment heightGpay"
+                    ></ion-img>
+                  </mat-radio-button>
+                </ion-row>
+              </mat-radio-group>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-card-content>
+    </ion-card>
+  </ion-row>
+</ion-content>
+
+<ion-footer class="colorBack">
+  <ion-row class="mx-3 mt-3">
+    <ion-col [size]="'1'" class="ps-2">
+      <mat-checkbox
+        class="custFontFamilyMuliRegular muli-16pt custColorDark custLineHight20"
+        (click)="confirmnApply()"
+      ></mat-checkbox>
+    </ion-col>
+    <ion-col [size]="'11'">
+      <p
+        class="custFontFamilyMuliRegular muli-10pt custColorWarmGrey custLineHight15"
+      >
+        I hereby undertake that, I have read the Red Herring Prospectus and I am
+        an eligible UPI bidder as per the applicable provisions of the SEBI
+        Regulations (Issue of Capital & Disclosure Agreement, 2009)
+      </p>
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="mb-2">
+    <ion-col [size]="'12'" class="px-3">
+      <button
+        class="btn w-100 h-100 custFontFamilyMuliBold muli-16pt custLineHight20 custColorWhite custBackgroundColorBrightCyan"
+        [disabled]="DisableconfirmButton"
+        (click)="confirmation()"
+      >
+        Apply
+      </button>
+    </ion-col>
+  </ion-row>
+</ion-footer>

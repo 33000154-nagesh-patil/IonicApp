@@ -1,0 +1,103 @@
+.custInvestArrow{
+    height: 50%;
+    width: 20px;
+    transform: rotate(90deg);
+    
+}
+.custRotation{
+    transform: rotate(90deg);
+}
+
+
+
+.mat-expansion-panel-header {
+    height: 108px;
+
+//     height: 79px;
+//     width: 270px;
+// }
+}
+::ng-deep .mat-expansion-indicator::after {
+    background-image: url("/AppSource//src/assets/Images/down_arrow.svg") ;
+
+    color: #003399 ;
+}
+.custArrowIcon{
+    height: 6px;
+    width: 11px;
+    color: #003399 ;
+
+}
+.button{
+    width: 86px;
+    height: 30px;
+    background: #44C8F5 0% 0% no-repeat padding-box;
+    border-radius: 4px;
+    opacity: 1;
+    text-align: center;  
+}
+
+.custWithoutTextImg{
+    height: 18px;
+    width: 18px;
+    margin-top: 17px;
+  }
+
+  .custSVGIcon{
+    position: absolute;
+    margin: -8px;
+ }
+
+ .custHeight{
+    height: 42px;
+    width: 42px;
+ }
+
+ .custBadge{
+    position: absolute;
+  }
+
+  .custProfile{
+    background: var(--custwhiteTwo);
+    border-radius: 50%;
+    padding: 21px;
+ }
+
+ .example-headers-align{
+     position: relative;
+     top: 65px;
+ }
+
+ .custHeightSet{
+     height: 90px;
+ }
+ ::ng-deep .mat-expansion-panel-body {
+    padding: 0px !important;
+    background-color: var(--custPaleGrey);
+}
+
+.myClass{
+    z-index: 9;
+    position: absolute;
+    width: 100%;
+    height: fit-content;
+    background-color: white;
+   box-shadow: #141B2F 0px 0px 10px;
+   box-sizing: border-box;
+   border-top: #888 solid 1px;
+ }
+
+ .custHeading{
+    height: 80px;
+ }
+ .custBtnExplore{
+    // width: 80px;
+    height: 30px;
+    border:  1px solid var(--custBrightCyan) !important;
+    border-radius: 4px !important;
+    background: white !important;
+    text-align: center !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    float: right;
+}

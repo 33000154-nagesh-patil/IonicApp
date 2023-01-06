@@ -1,0 +1,21 @@
+<lib-header [title]="title" [imageList]="imageList" [showArrow]="false" [showLabel]="false" [showImg]="false" [imgURL]="labelIcon"
+[showIndex]="false" [showNotification]="true" [showCartWithName]="true" [notificationCount]="notificationCount" [cardCount]="cartCount" [showSideMenu]="true" [showSearch]="false" [showClose]="false" [showShare]="false" [showWatchList]="false" [showCartWithoutName]="false" [showStories]="true" [otherTextName]="textName" [showOtherText]="false" [superMode]="currentMode" [Wealth]="true" [backUrlName]=""></lib-header>
+<ion-content class="h-100 w-100 contentBackground">
+
+  <!-- <app-aadhar-onboard-kyc></app-aadhar-onboard-kyc> -->
+    <div *ngIf="!currentMode;else other_content">
+        <lib-portfolioInsigths [activeImg]="imageList?.activeTab" [selectedIndex]="'1'" [footerListData]="wellnessFooterData" [parentTab]="'wellness'"></lib-portfolioInsigths>
+    </div>
+    <ng-template #other_content>
+        <lib-wealthWellness [imageList]="imageList" (reDirectMutualFund)="reDirectPage($event)"></lib-wealthWellness>
+    </ng-template>
+    <!-- <div class="custModalContainer p-10" *ngIf="loggedInModal" (click)="successModalClose();">
+        <div  id="showModalSMGSucces" class="modal-content custCenterAlign">
+           <ion-icon [src]="imageList?.successKYCIcon" class="custImage"></ion-icon>
+          <p class="custFontFamilyMuliBold muli-16pt custColorDark text-center p-0 m-0 ion-no-padding">{{ErrorMsg}}</p>
+        </div>
+      </div> -->
+</ion-content>
+<lib-fab-button [superMode]="currentMode" [fabIcon]="imageList?.fabLogo"></lib-fab-button>
+<lib-footer *ngIf="currentMode" [activeImg]="imageList?.activeTab" [selectedIndex]="'1'" [footerListData]="wellnessFooterData" [parentTab]="'wellness'"></lib-footer>
+<!-- <lib-footer [activeImg]="imageList?.activeTab" [selectedIndex]="'1'" [footerListData]="wellnessFooterData" [parentTab]="'wellness'"></lib-footer> -->

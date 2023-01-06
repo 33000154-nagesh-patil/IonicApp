@@ -1,0 +1,33 @@
+.Equity-btn {
+  padding: 8px 15px 7px 15px;
+  border-radius: 4px;
+  border: 1px solid #0000001F;
+  cursor: pointer;
+  color: #727682;
+  background-color: transparent;
+}
+.reset-btn {
+  padding-top: 10px;
+}
+.active {
+  background-color: #44c8f5;
+  color: #fff;
+}
+
+// .imageCustom{ filter: invert(39%) sepia(46%) saturate(12%) hue-rotate(6deg) brightness(95%) contrast(94%);}
+// .imageCustom1{ filter: invert(69%) sepia(90%) saturate(1286%) hue-rotate(162deg) brightness(100%) contrast(93%);}
+
+.custKYCImg{
+  height: 16px;
+  width: 13px;
+}
+::ng-deep .sc-ion-searchbar-md-h{
+ --border-radius:0px !important;
+ --box-shadow: none !important;
+}
+::ng-deep .searchbar-search-icon.sc-ion-searchbar-md{
+  display: none !important;
+}
+::ng-deep .searchbar-input.sc-ion-searchbar-md {
+  padding-left: 20px;
+}

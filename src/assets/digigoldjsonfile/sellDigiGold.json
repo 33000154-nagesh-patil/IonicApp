@@ -1,0 +1,26 @@
+{
+    "statusCode": 200,
+    "message": "Successfully Sold 0.01 grams of gold @ 5121.17",
+    "result": {
+        "data": {
+            "merchantId": 11147,
+            "quantity": "0.0100",
+            "totalAmount": "51.21",
+            "preTaxAmount": "51.21",
+            "metalType": "gold",
+            "rate": "5121.17",
+            "uniqueId": "TOR97684306",
+            "transactionId": "TD101016595210143350148665",
+            "userName": "VISHAL BHARDWAJ DFGDFG",
+            "merchantTransactionId": "CaKtj9XRJCkksJ7QlXbYS0kIyWEYE",
+            "mobileNumber": "7054123145",
+            "goldBalance": "139.3085",
+            "silverBalance": "3778.4714",
+            "bankInfo": {
+                "accountName": "UNION BANK OF INDIA",
+                "accountNumber": "399402010953614",
+                "ifscCode": "UBIN0539945"
+            }
+        }
+    }
+}

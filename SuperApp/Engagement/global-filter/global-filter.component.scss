@@ -1,0 +1,76 @@
+.custBorder{
+    border-right:solid rgb(221, 219, 219) 1px;
+    height: 75%;
+}
+.activeClass{
+    color: var(--custBrightCyan);
+}
+.custTryButton {
+    height: 45px;
+    border: 1px solid var(--custBrightCyan);
+    border-radius: 4px;
+    --background: var(--custWhite);
+    --box-shadow: none;
+    color: var(--custBrightCyan);
+    text-align: center !important;
+    margin-right: 8px;
+}
+.custLooksBtn {
+    height: 45px;
+    --background: var(--custBrightCyan) !important;
+    --box-shadow: none;
+    margin-left: 8px;
+}
+.custInvestArrow{
+    height: 18px;
+    width: 18px;
+    
+}
+.custClass{
+    overflow-y:scroll;
+       scroll-behavior: smooth;
+}
+::ng-deep .sc-ion-searchbar-md-h{
+    --border-radius:0px !important;
+    --box-shadow: none !important;
+    --placeholder-font-style:3px !important;
+   }
+
+::ng-deep .searchbar-input.sc-ion-searchbar-md{
+    padding-inline-end: 0px;
+    padding-inline-start: 30px;
+    }   
+    ::ng-deep .searchbar-search-icon.sc-ion-searchbar-md{
+        left: 5px;
+        color: rgba(50, 50, 248, 0.76);
+    }
+    // class="searchbar-search-icon sc-ion-searchbar-ios ios hydrated"
+
+    .custCheckBox{
+        width:22px ;
+        height: auto;
+    }
+
+    .text{
+        display: block;
+        width: 165px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    .mat-expansion-panel{
+        box-shadow: none !important;
+    }
+
+
+    .custCss{
+  background-color: #F0F0F0;
+
+    }
+
+    .custIcon1{
+        width: 19px;
+        height: 19px;
+        margin: 14px;
+      }

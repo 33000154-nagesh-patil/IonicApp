@@ -1,0 +1,84 @@
+ <ion-header >
+  <ion-toolbar class="custBackgroundDynamicColorWhite">
+    <ion-grid>
+      <ion-row>
+        <ion-col  [size]="'1'" (click)="dismiss()" class="text-center mt-1">
+          <ion-img [src]="imageList?.arrow" class="custKYCImg mt-2"></ion-img>
+        </ion-col>
+        <ion-col [size]="'10'">
+          <span class="custFontFamilyMuliBold muli-14pt custLineHight40 custColorDark ">Automatic Payments</span>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="contentBackground">
+  <ion-grid class="w-100 h-100 ">
+<ion-row class="mt-5">
+  <ion-col class="text-center">
+    <img [src]="x.Banner[0].img17" class="mt-2 imgLarge">
+  </ion-col>
+</ion-row>
+
+<ion-row>
+  <ion-col class="text-center mt-3 d-flex flex-column">
+    <span class="custFontFamilyMuliBold muli-22pt custLineHeight30 custColorDark">Setup automatic payments</span>
+    <span class="custFontFamilyMuliRegular muli-12pt custLineHeight18 custColorBattlePGry mt-1">setup automatic payments for </span>
+    <span class="custFontFamilyMuliRegular muli-12pt custLineHeight18 custColorBattlePGry">upcoming investments</span>
+  </ion-col>
+</ion-row>
+
+<!-- ????????????????????????????????????????????????????second -->
+<ion-card class="mt-5 p-3">
+  <ion-row>
+    <ion-col class="text-center">
+      <img [src]="x.Banner[0].img19" class="imgLarge1">
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col class="text-start mt-3">
+      <span class="custFontFamilyMuliBold muli-12pt custLineHeight15 custColorBattlePGry">The procedure for creating auto pay is as below:</span>
+    </ion-col>
+  </ion-row>
+
+  <div  class="ms-2">
+    <ul class="StepProgress mt-2">
+      <li class="w-100 mb-4 is-done StepProgress-item">
+        <span class="custFontFamilyMuliBold muli-12pt custLineHeight18 custColorTint">Login to net banking to initiate auto pay creation</span>
+      </li>
+      <li class="w-100 mb-4 is-done StepProgress-item d-flex flex-column">
+        <span class="custFontFamilyMuliBold muli-12pt custLineHeight18 custColorTint">Authorize D1 transaction to confirm</span>
+        <span class="custFontFamilyMuliRegular muli-10pt custColorBattlePGry custLineHeight15">₹1 will be reversed by your bank</span>
+      </li>
+      <li class="w-100 is-done StepProgress-item">
+        <span class="custFontFamilyMuliBold muli-12pt custLineHeight18 custColorTint">Your auto pay request will be activated by your bank in 3 - 7 working days</span>
+      </li>
+    </ul>
+  </div>
+</ion-card>
+
+<ion-row>
+  <ion-col class="px-3">
+    <button class="btn w-100 text-center custBackgroundColorBrightCyan"><span class="custColorWhite custFontFamilyMuliBold text-capitalize custLineHeight20 muli-16pt">Login To Net Banking</span></button>
+  </ion-col>
+</ion-row>
+
+
+</ion-grid>
+</ion-content>
+<ion-col class="fixed-bottom">
+<ion-card>
+  <ion-col class="d-flex flex-column p-3">
+    <span class="custFontFamilyMuliRegular muli-10pt custLineHeight15 custColorBattlePGry">For automatic deduction if money for you investment (SIP).</span>
+    <span class="custFontFamilyMuliRegular muli-10pt custLineHeight15 custColorBattlePGry">we will set up an auto-pay mandate with your bank</span>
+  </ion-col>
+</ion-card>
+
+<ion-row>
+  <ion-col class="px-2">
+    <button class="btn w-100 text-center custBackgroundColorBrightCyan"><span class="custColorWhite custFontFamilyMuliBold text-capitalize custLineHeight20 muli-16pt">Add New Mandate</span></button>
+  </ion-col>
+</ion-row>
+</ion-col>

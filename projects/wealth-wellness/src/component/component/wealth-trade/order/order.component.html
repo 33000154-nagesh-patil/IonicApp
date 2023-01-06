@@ -1,0 +1,527 @@
+<ion-app>
+  <ion-header>
+    <ion-toolbar>
+      <ion-row>
+        <ion-col size="6" class="mt-3">
+          <ion-title><span class="custFontFamilyMuliBold custLineHight25 muli-16pt custColorDark">
+              Trade
+            </span></ion-title>
+        </ion-col>
+        <ion-col size="3">
+          <div class="custTextAlignCenter">
+            <div class="custHeight custProfile">
+              <div *ngIf="!hideIndex; else conditionFalse">
+                <ion-img [src]="imageList?.index" class="custSVGIcon" (click)="showIndex()"></ion-img>
+              </div>
+              <ng-template #conditionFalse>
+                <ion-img [src]="imageList?.indexBlue" class="custSVGIcon" (click)="showIndex()"></ion-img>
+              </ng-template>
+            </div>
+            <p class="muli-10pt custLineHight28 custFontFamilyMuliSemiBold custColorBattlePGry">{{'indexes' |
+              translate}}</p>
+          </div>
+        </ion-col>
+        <ion-col size="3">
+          <div class="custTextAlignCenter">
+            <div class="custHeight custProfile">
+              <ion-img [src]="imageList?.notificationIcon" class="custSVGIcon"></ion-img>
+            </div>
+            <p class="muli-10pt custLineHight28 custFontFamilyMuliSemiBold custColorBattlePGry">{{'notifications' |
+              translate}}</p>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-toolbar>
+
+    <div>
+      <div *ngIf="hideIndex" class="myClass">
+        <ion-slides>
+          <ion-slide class="border-right">
+            <ion-col class="text-center" *ngFor="let x of json2" class="border-bottom p-3 border-end">
+              <ion-col class="muli-14pt custFontFamilyMuliBold  custLineHight20 custColorDark text-center ms-4 m-2">
+                {{x?.bankName}}
+              </ion-col>
+              <ion-col>
+                <img [src]="imageList?.greyPensil" *ngIf="json2.indexOf(x)>0" width="20px" height="25px"
+                  (click)="goToEditIndex()">
+              </ion-col>
+              <p class="m-1 custColorDark muli-14pt">₹{{x?.Money}}</p>
+              <p class="muli-18pt custFontFamilyMuliBold custColorParakeetGreen m-1">
+                <span *ngIf="x?.PrecentegIncrement>0"><img [src]="imageList?.greenIcon" width="50px"
+                    height="50px"></span>
+                <span *ngIf="x?.PrecentegIncrement<0"><img [src]="imageList?.redarrow" width="20px"
+                    height="20px"></span>
+                <span [ngClass]="x?.PrecentegIncrement<0?'custColorRed':'custColorParakeetGreen muli-14pt m-0'">
+                  {{x?.LiveMoney}}({{x?.PrecentegIncrement}}%)</span>
+              </p>
+              <p class="muli-10pt custFontFamilyMuliBold custColorGreyish">{{x.date}}</p>
+            </ion-col>
+          </ion-slide>
+        </ion-slides>
+        <ion-row class="mt-3">
+          <ion-col [size]="'2.5'"
+            class="custColorGreyish muli-14pt custFontFamilyMuliBold	text-start m-0 p-0 mt-1 ms-3">
+            My Funds
+          </ion-col>
+          <ion-col [size]="'4'" class="muli-14pt">
+            <span [ngClass]="(CurrentFund > 0)?'custColorParakeetGreen':'custColorcustFadedRed'">₹{{CurrentFund}}</span>
+          </ion-col>
+          <ion-col class="custBackgroundColorWhite text-end me-3 mb-3">
+            <button [ngClass]="(CurrentFund > 0)?'custBackgroundColorWhite':'custBackgroundColorBrightCyan'"
+              class="custBackgroundColorWhite custColorBrightCyan border text-start rounded" (click)="goToAddFunds()">
+              <ion-icon name="add-circle-outline" [ngClass]="(CurrentFund > 0)?'custColorBrightCyan':'custColorWhite'">
+              </ion-icon>
+              &nbsp;<span class="muli-14pt custFontFamilyMuliBold custLineHeight18 "
+                [ngClass]="(CurrentFund > 0)?'custColorBrightCyan':'custColorWhite'">Add funds</span>
+            </button>
+          </ion-col>
+        </ion-row>
+      </div>
+    </div>
+  </ion-header>
+
+  <ion-content class="contentBackground">
+    <ion-grid class="">
+      <ion-segment (ionChange)="segmentChanged($event)" [(ngModel)]="segment" class="custBorderSegment">
+        <ion-segment-button value="order" class="text">
+          <ion-label>Orders</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="trade" class="text">
+          <ion-label>Trade</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="position" class="text">
+          <ion-label>Position</ion-label>
+        </ion-segment-button>
+      </ion-segment>
+
+      <ion-row class="w-100 px-3">
+        <mat-form-field appearance="outline" class="custBackgroundColorWhite w-100 ms-0" floatLabel="never">
+          <ion-icon matPrefix name="search-outline" class="ms-1 mt-1 muli-20pt custColorGreyish"></ion-icon>
+          <input matInput type="text" autocomplete="on" (click)="goToAddStocks()"
+            class="custFontFamilyMuliRegular custColorGreyish muli-14pt custLineHight20 text-start ms-3"
+            [(ngModel)]="searchStocks" placeholder="Search Stocks" autofill="false">
+          <ion-icon matSuffix name="funnel-outline" class="me-1 muli-20pt custColorDarkishBlue" (click)=" gotoFilter()">
+          </ion-icon>
+        </mat-form-field>
+      </ion-row>
+
+      <!-- order -->
+
+      <ion-row class="mx-2" *ngIf="segment=='order'">
+        <ion-card class="w-100 p-1 py-1" (click)="showPopUpCard(stock)"
+          *ngFor="let stock of orderStockData |filter:search ">
+          <ion-row class="mx-2">
+            <ion-col class="custFontFamilyMuliRegular muli-14pt custColorDark">{{stock.symbol}}</ion-col>
+            <ion-col class="text-end custFontFamilyRobotoCondensed muli-14pt  custColorDark">₹{{stock?.traded_price}}
+            </ion-col>
+          </ion-row>
+          <ion-row class="mx-2">
+            <ion-col size="" class="custFontFamilyMuliRegular muli-12pt custColorGreyish">{{stock?.exchange}} |
+              {{(stock?.product=='C')?'CNC':(stock?.product=='M')?'Margin':(stock?.product=='I')?'Intraday':'Normal-Hybrid'}}<span><button
+                  class="rounded-2 custFontFamilyRobotoCondensed muli-10pt custBackgroundColorCyanBlue custColorBattlePGry ms-1">{{(stock.txn_type=='B')?'Buy':'Sell'}}</button></span>
+            </ion-col>
+            <ion-col class="text-end custColorParakeetGreen"><span><img
+                  [src]="imageList?.greenIcon"></span>{{stock?.traded_price}}(0.23%)
+            </ion-col>
+          </ion-row>
+          <hr class="mx-2">
+          <ion-row class="mx-2">
+            <ion-col class="custFontFamilyMuliRegular muli-10pt custColorWarmGrey">Qty</ion-col>
+            <ion-col class="text-center custFontFamilyMuliRegular muli-10pt custColorWarmGrey">Price
+            </ion-col>
+            <ion-col class="text-end custFontFamilyRobotoCondensed muli-12pt "
+              [ngClass]="(stock.status=='Traded'|| stock.status=='Modified' )?'custColorParakeetGreen':'text-warning'">
+              {{stock?.status}}</ion-col>
+          </ion-row>
+          <ion-row class="mx-2">
+            <ion-col size="5.4" class="custFontFamilyRobotoCondensed muli-12pt custColorGreyish">
+              {{stock.rem_qty_tot_qty}}</ion-col>
+            <ion-col class="custFontFamilyRobotoCondensed muli-12pt custColorGreyish">₹{{stock?.traded_price}}
+            </ion-col>
+          </ion-row>
+          <ion-row class="custBorder mx-2 mt-4 mb-4" *ngIf="stock.sl_abstick_value>0">
+            <ion-row class="mx-2 w-100 custFontFamilyMuliRegular  muli-12pt">Stop Loss Sell Order</ion-row>
+            <ion-row class="w-100 mx-1">
+              <ion-col class="custFontFamilyMuliRegular  muli-10pt">{{'qty' |translate}}</ion-col>
+              <ion-col class="text-center custFontFamilyMuliRegular  muli-10pt">{{'price' | translate}}</ion-col>
+              <ion-col class="text-end custFontFamilyRobotoCondensed muli-12pt text-warning"
+                [ngClass]="(stock.status=='Traded' || stock.status=='Modified' )?'custColorParakeetGreen':'text-warning'">
+                {{stock?.status}}</ion-col>
+            </ion-row>
+            <ion-row class="w-100 mx-2">
+              <ion-col size="5.3" class="custFontFamilyMuliRegular muli-10pt custColorWarmGrey">{{stock?.traded_qty}}
+              </ion-col>
+              <ion-col class="custFontFamilyRobotoCondensed muli-12pt custColorGreyish">
+                ₹{{stock?.traded_price}}</ion-col>
+            </ion-row>
+          </ion-row>
+        </ion-card>
+      </ion-row>
+
+      <!-- trade -->
+
+      <ion-row class="mx-2" *ngIf="segment=='trade'">
+
+        <ion-card class="w-100 p-1 py-2" (click)="openPopUpTrade(x)" *ngFor="let x of tradeData |filter:search ">
+          <ion-row class="mx-2">
+            <ion-col class="custFontFamilyMuliRegular muli-14pt custColorDark">{{x?.symbol}}</ion-col>
+            <ion-col class="text-end custFontFamilyRobotoCondensed muli-14pt  custColorDark">₹{{x?.traded_price}}
+            </ion-col>
+          </ion-row>
+          <ion-row class="mx-2">
+            <ion-col size="" class="custFontFamilyMuliRegular muli-12pt custColorGreyish">{{x?.exchange}} |
+              {{(x?.product=='C')?'CNC':(x?.product=='M')?'Margin':(x?.product=='I')?'Intraday':'Normal-Hybrid'}}
+              <span><button
+                  class="rounded-2 custFontFamilyRobotoCondensed muli-10pt custBackgroundColorCyanBlue custColorBattlePGry ms-1">{{(x?.txn_type=='B')?'Buy':'Sell'}}</button></span>
+            </ion-col>
+            <ion-col class="text-end custColorParakeetGreen"><span><img
+                  [src]="imageList?.greenIcon"></span>{{x?.trade_value}}({{x.mkt_pro_value}}%)
+            </ion-col>
+          </ion-row>
+          <hr class="mx-2">
+          <ion-row class="mx-2">
+            <ion-col class="custFontFamilyMuliRegular muli-10pt custColorWarmGrey">Qty</ion-col>
+            <ion-col class="text-center custFontFamilyMuliRegular muli-10pt custColorWarmGrey">Price
+            </ion-col>
+            <ion-col class="text-end custFontFamilyRobotoCondensed muli-12pt custColorParakeetGreen">Executed</ion-col>
+          </ion-row>
+          <ion-row class="mx-2">
+            <ion-col size="5.4" class="custFontFamilyRobotoCondensed muli-12pt custColorGreyish">
+              {{x?.quantity}}</ion-col>
+            <ion-col class="custFontFamilyRobotoCondensed muli-12pt custColorGreyish">₹{{x?.traded_price}}</ion-col>
+          </ion-row>
+
+        </ion-card>
+      </ion-row>
+
+      <!-- Position -->
+
+      <ion-row class="custBackgroundColorPaleGrey mt-3 py-2  mx-3 rounded-3">
+        <ion-col class="text-center">Total P&L <span class="custColorParakeetGreen">+50.00%</span></ion-col>
+      </ion-row>
+      <ion-row class="mx-2" *ngIf="segment=='position'">
+        <ion-card class="w-100 p-2" (click)="openPopUp(item)" *ngFor="let item of positionData | filter:search">
+          <ion-row class="mx-2">
+            <ion-col class="custFontFamilyMuliRegular muli-14pt custColorDark">{{item?.symbol}} <span
+                class="custFontFamilyMuliRegular muli-12pt custColorGreyish">{{item?.exchange}} |
+                {{(item?.product=='C')?'CNC':(item?.product=='M')?'Margin':(item?.product=='I')?'Intraday':'Normal-Hybrid'}}</span>
+            </ion-col>
+            <ion-col size="4" class="text-end custFontFamilyMuliRegular muli-12pt  custColorDark">
+              ₹{{item?.last_traded_price}}</ion-col>
+          </ion-row>
+          <ion-row class="mx-2">
+            <ion-col size="" class="custFontFamilyMuliRegular  muli-10pt">Net Qty <span> {{item?.net_qty}} x
+                {{item?.buy_avg}}</span></ion-col>
+            <ion-col class="text-end custColorParakeetGreen"><span><img
+                  [src]="imageList?.greenIcon"></span>{{item.realised_profit}}
+              ({{(item?.tot_buy_val-item.gross_val)/100}}%)
+            </ion-col>
+          </ion-row>
+        </ion-card>
+      </ion-row>
+    </ion-grid>
+  </ion-content>
+
+  <div class="custModalContainer  rounded-3 " *ngIf="pop">
+    <div id="showModalSMGSucces" class="modal-content modConmart p-10">
+      <ion-row>
+        <ion-col class="text-center">
+          <ion-icon name="chevron-down-outline" style="height:25px; width:25px; color:grey;" (click)="hidePopUpCard()">
+          </ion-icon>
+        </ion-col>
+      </ion-row>
+      <ion-row class="mx-2">
+        <ion-col class="custFontFamilyMuliRegular muli-14pt custColorDark">{{orderDataPopup?.symbol}}</ion-col>
+        <ion-col class="text-end custFontFamilyRobotoCondensed muli-14pt  custColorDark">₹{{orderDataPopup?.price}}
+        </ion-col>
+      </ion-row>
+      <ion-row class="mx-2">
+        <ion-col size="" class="custFontFamilyMuliRegular muli-12pt custColorGreyish">{{orderDataPopup?.exchange}} |
+          {{orderDataPopup?.order_type}}<span><button
+              class="rounded-2 custFontFamilyRobotoCondensed muli-10pt custBackgroundColorCyanBlue custColorBattlePGry ms-1">{{(orderDataPopup.txn_type=='B')?'Buy':'Sell'}}</button></span>
+        </ion-col>
+        <ion-col class="text-end custColorParakeetGreen"><span><img
+              [src]="imageList?.greenIcon"></span>{{orderDataPopup?.traded_price}}(0.23%)
+        </ion-col>
+      </ion-row>
+      <hr class="mx-2">
+      <ion-row class="mx-2">
+        <ion-col class="custFontFamilyMuliRegular muli-10pt custColorWarmGrey">{{'qty' |translate}}</ion-col>
+        <ion-col class="text-center custFontFamilyMuliRegular muli-10pt custColorWarmGrey">{{'price' | translate}}
+        </ion-col>
+        <ion-col class="text-end custFontFamilyMuliRegular muli-10pt custColorWarmGrey">Status</ion-col>
+      </ion-row>
+      <ion-row class="mx-2">
+        <ion-col size="5.4" class="custFontFamilyRobotoCondensed muli-12pt custColorGreyish">
+          {{orderDataPopup.rem_qty_tot_qty}}</ion-col>
+        <ion-col class="custFontFamilyRobotoCondensed muli-12pt custColorGreyish">₹{{orderDataPopup.price}}</ion-col>
+        <ion-col class="text-end custFontFamilyRobotoCondensed muli-12pt text-warning">{{orderDataPopup.status}}
+        </ion-col>
+      </ion-row>
+      <ion-row class="mx-2 py-1 custBackground mt-1">
+        <ion-col class="custFontFamilyMuliSemiBold muli-12pt custColorBattlePGry">
+          Order Type
+        </ion-col>
+        <ion-col class="text-end custFontFamilyRobotoCondensed muli-14pt custColorDark">
+          {{orderDataPopup.order_type}}
+        </ion-col>
+      </ion-row>
+      <ion-row class="mx-2 py-1">
+        <ion-col class="custFontFamilyMuliSemiBold muli-12pt custColorBattlePGry">
+          Order Value
+        </ion-col>
+        <ion-col class="text-end custFontFamilyRobotoCondensed muli-14pt custColorDark">
+          ₹{{orderDataPopup.price}}
+        </ion-col>
+      </ion-row>
+      <ion-row class="mx-2 custBackground py-1 ">
+        <ion-col class="custFontFamilyMuliSemiBold muli-12pt custColorBattlePGry">
+          Internal Order No.
+        </ion-col>
+        <ion-col class="text-end custFontFamilyRobotoCondensed muli-14pt custColorDark">
+          {{orderDataPopup?.order_no}}
+        </ion-col>
+      </ion-row>
+      <ion-row class="mx-2 py-1">
+        <ion-col class="custFontFamilyMuliSemiBold muli-12pt custColorBattlePGry">
+          Exchange Order No.
+        </ion-col>
+        <ion-col class="text-end custFontFamilyRobotoCondensed muli-14pt custColorDark">
+          {{orderDataPopup.exch_order_no}}
+        </ion-col>
+      </ion-row>
+      <ion-row class="mx-2 custBackground py-1">
+        <ion-col class="custFontFamilyMuliSemiBold muli-12pt custColorBattlePGry">
+          Order Date & Time
+        </ion-col>
+        <ion-col class="text-end custFontFamilyRobotoCondensed muli-14pt custColorDark">
+          {{orderDataPopup.order_date_time}}
+        </ion-col>
+      </ion-row>
+      <ion-row class="mx-2 py-1">
+        <ion-col class="custFontFamilyMuliSemiBold muli-12pt custColorBattlePGry">
+          Validity
+        </ion-col>
+        <ion-col class="text-end custFontFamilyRobotoCondensed muli-14pt custColorDark">
+          {{orderDataPopup.validity}}
+        </ion-col>
+      </ion-row>
+      <ion-row
+        *ngIf=" orderDataPopup.status =='Traded'||orderDataPopup.status =='Cancelled'||orderDataPopup.status =='Rejected' "
+        class="w-100">
+        <button (click)="buyMore(orderDataPopup)"
+          class="w-100 custWidth custBackgroundColorBrightCyan custColorWhite custFontFamilyMuliBold muli-16pt rounded-3">Buy
+          More</button>
+      </ion-row>
+      <div *ngIf="orderDataPopup.status=='Pending'|| orderDataPopup.status=='Modified'">
+        <ion-row class=" mx-2 mt-2">
+          <ion-col class=""><button
+              class="w-100 custWidth custBackgroundColorBrightCyan custColorWhite custFontFamilyMuliBold muli-16pt rounded-3"
+              (click)="cancelOrder(orderDataPopup)">Cancel</button>
+          </ion-col>
+          <ion-col><button
+              class="w-100 custWidth custBackgroundColorBrightCyan custColorWhite custFontFamilyMuliBold muli-16pt rounded-3 "
+              (click)="goToModify(orderDataPopup)">Modify</button></ion-col>
+        </ion-row>
+      </div>
+    </div>
+  </div>
+
+  <!-- netPositionPopUp -->
+
+  <div class="custModalContainer   " *ngIf="popUp">
+    <div id="showModalSMGSucces" class="modal-content modConmart p-10">
+      <ion-row>
+        <ion-col class="text-center">
+          <ion-icon name="chevron-down-outline" style="height:25px; width:25px; color:grey;"
+            (click)="hidePopUpConvert()">
+          </ion-icon>
+        </ion-col>
+      </ion-row>
+      <ion-row class="mx-2">
+        <ion-col size="8" class="custFontFamilyMuliRegular muli-14pt custColorDark">{{netPositionPopUp?.symbol}}
+        </ion-col>
+        <ion-col class="text-end custFontFamilyMuliRegular muli-14pt custColorDark">₹{{netPositionPopUp?.buy_avg}}
+        </ion-col>
+      </ion-row>
+      <ion-row class="mx-2">
+        <ion-col size="" class="custFontFamilyMuliRegular muli-12pt custColorGreyish">{{netPositionPopUp?.exchange}} |
+          {{(netPositionPopUp?.product_name=='CNC')?'Delivery':netPositionPopUp?.product_name}}
+          <button
+            class="rounded-2 custFontFamilyRobotoCondensed muli-10pt custBackgroundColorCyanBlue custColorBattlePGry ms-1">{{(netPositionPopUp.txn_type=='B')?'Buy':'Sell'}}</button>
+        </ion-col>
+        <ion-col class="text-end custFontFamilyRobotoCondensed muli-14pt custColorParakeetGreen"><span><img
+              [src]="imageList?.greenIcon"></span>{{netPositionPopUp?.change_in_price}}({{netPositionPopUp?.percentage}}%)
+        </ion-col>
+      </ion-row>
+      <hr class="mx-2">
+      <ion-row class="mx-2">
+        <ion-col class="custFontFamilyMuliRegular muli-10pt custColorWarmGrey">Net Qty</ion-col>
+        <ion-col class="text-end custFontFamilyMuliRegular muli-10pt custColorWarmGrey">Avg. Trade Price</ion-col>
+      </ion-row>
+      <ion-row class="mx-2">
+        <ion-col size="5.4" class="custFontFamilyRobotoCondensed muli-14pt custColorDark">{{netPositionPopUp?.net_qty}}
+        </ion-col>
+        <ion-col class="text-end custFontFamilyRobotoCondensed muli-14pt custColorDark">₹{{netPositionPopUp?.net_avg}}
+        </ion-col>
+      </ion-row>
+      <ion-row class="custBackground mx-2 py-2">
+
+        <ion-row class="w-100 ">
+          <ion-col class="custcolorCircleIcon custFontFamilyMuliRegular muli-10pt">Total P&L
+            <ion-icon name="information-circle-outline" (click)="openmsg1()" style="height: 15px; width: 15px;">
+            </ion-icon>
+          </ion-col>
+          <ion-col class=" custcolorCircleIcon custFontFamilyMuliRegular muli-10pt">Realised P&L
+            <ion-icon name="information-circle-outline" (click)="openmsg2()" style="height: 15px; width: 15px;">
+            </ion-icon>
+          </ion-col>
+          <ion-col class="text-end custcolorCircleIcon custFontFamilyMuliRegular muli-10pt">Unrealised P&L
+            <ion-icon name="information-circle-outline" (click)="openmsg3()" style="height: 15px; width: 15px;">
+            </ion-icon>
+          </ion-col>
+        </ion-row>
+
+        <ion-row class="w-100">
+          <ion-col class="custColorParakeetGreen custFontFamilyRobotoCondensed muli-12pt"><span><img
+                [src]="imageList?.greenIcon" style="height: 6px; width: 6px;"></span>₹{{0}}
+          </ion-col>
+          <ion-col class="text-center custColorcustFadedRed custFontFamilyRobotoCondensed muli-12pt"><span><img
+                [src]="imageList?.redDownArrow"
+                style="height: 6px; width: 6px;"></span>₹{{netPositionPopUp.realised_profit}}</ion-col>
+          <ion-col class="text-end custColorParakeetGreen custFontFamilyRobotoCondensed muli-12pt"><span><img
+                [src]="imageList?.greenIcon"
+                style="height: 6px; width: 6px;"></span>₹{{netPositionPopUp.unrealised_profit}}</ion-col>
+        </ion-row>
+      </ion-row>
+
+      <ion-row class="mt-2  m-2 ">
+        <ion-col class="custBackground custFontFamilyMuliSemiBold muli-12pt me-2 p-2 custcolorCircleIcon">Total Buy Qty
+          {{netPositionPopUp.tot_buy_qty}}</ion-col>
+        <ion-col class="custBackground custFontFamilyMuliSemiBold muli-12pt p-2 text-end custcolorCircleIcon">Total Sell
+          Qty {{netPositionPopUp.tot_sell_qty}}</ion-col>
+      </ion-row>
+      <ion-row class="mt-2  mx-2 ">
+        <ion-row class="w-100 custFontFamilyMuliSemiBold muli-12pt custcolorCircleIcon">
+          <ion-col>Buy Avg Price</ion-col>
+          <ion-col class="text-end">Sell Avg Price</ion-col>
+        </ion-row>
+        <ion-row class="w-100 custFontFamilyRobotoCondensed custColorDark  muli-14pt">
+          <ion-col>₹{{netPositionPopUp.buy_avg}}</ion-col>
+          <ion-col class="text-end">₹{{netPositionPopUp.sell_avg}}</ion-col>
+        </ion-row>
+      </ion-row>
+
+      <ion-row class="mt-2  mx-2 ">
+        <ion-col class="custBackground me-2 custFontFamilyMuliSemiBold muli-12pt custcolorCircleIcon">
+          <ion-row>
+            <ion-col>Buy Value</ion-col>
+          </ion-row>
+          <ion-row class="custColorDark">
+            <ion-col>₹{{netPositionPopUp.tot_buy_val}}</ion-col>
+          </ion-row>
+        </ion-col>
+        <ion-col class="custBackground text-end custFontFamilyMuliSemiBold muli-12pt custcolorCircleIcon">
+          <ion-row>
+            <ion-col class="text-end"> Sell Value</ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col class="text-end custColorDark">₹{{netPositionPopUp.tot_sell_val}}</ion-col>
+          </ion-row>
+        </ion-col>
+
+        <ion-row class="w-100">
+          <ion-col class=""><button (click)="addMore(netPositionPopUp)"
+              class="custButtonborder custBackgroundColorWhite py-3 rounded-3 w-100 custColorBrightCyan custFontFamilyMuliBold muli-14pt">Add
+              More</button>
+          </ion-col>
+          <ion-col class="text-center  "><button (click)="goToConvert()"
+              class="custBackgroundColorBrightCyan py-3 rounded-3 w-100 custColorWhite custFontFamilyMuliBold muli-14pt">Convert</button>
+          </ion-col>
+          <ion-col class="text-end "><button (click)="buyMore(netPositionPopUp)"
+              class="custBackgroundColorBrightCyan py-3 rounded-3 w-100 custColorWhite custFontFamilyMuliBold muli-14pt">Squre
+              Off</button>
+          </ion-col>
+        </ion-row>
+      </ion-row>
+    </div>
+  </div>
+
+  <!-- tradePopUP -->
+
+  <div class="custModalContainer" *ngIf="tradePopUp">
+    <div id="showModalSMGSucces" class="modal-content modConmart p-10">
+      <ion-row>
+        <ion-col class="text-center">
+          <ion-icon name="chevron-down-outline" style="height:25px; width:25px; color:grey;" (click)="hidePopUp()">
+          </ion-icon>
+        </ion-col>
+      </ion-row>
+      <ion-row class="mx-2">
+        <ion-col class="custFontFamilyMuliRegular muli-14pt custColorDark">{{tradeDataPopUp?.symbol}}</ion-col>
+        <ion-col class="text-end custFontFamilyMuliRegular muli-14pt custColorDark">₹{{tradeDataPopUp?.trade_value}}
+        </ion-col>
+      </ion-row>
+      <ion-row class="mx-2">
+        <ion-col size="" class="custFontFamilyMuliRegular muli-12pt custColorGreyish">{{tradeDataPopUp?.exchange}} |
+          {{(tradeDataPopUp?.product_name=='CNC')?'Delivery':tradeDataPopUp?.product_name}}
+          <button
+            class="rounded-2 custFontFamilyRobotoCondensed muli-10pt custBackgroundColorCyanBlue custColorBattlePGry ms-1">{{(tradeDataPopUp.txn_type=='B')?'Buy':'Sell'}}</button>
+        </ion-col>
+        <ion-col class="text-end custFontFamilyRobotoCondensed muli-14pt custColorParakeetGreen"><span><img
+              [src]="imageList?.greenIcon"></span>{{tradeDataPopUp?.change_in_price}}({{tradeDataPopUp?.percentage}}%)
+        </ion-col>
+      </ion-row>
+      <hr class="mx-2">
+      <ion-row class="mx-2">
+        <ion-col class="custFontFamilyMuliRegular muli-10pt custColorWarmGrey">Net Qty</ion-col>
+        <ion-col class="text-center custFontFamilyMuliRegular muli-10pt custColorWarmGrey">Avg. Trade Price</ion-col>
+        <ion-col class="text-end custFontFamilyMuliRegular muli-10pt custColorWarmGrey">Status</ion-col>
+      </ion-row>
+      <ion-row class="mx-2">
+        <ion-col class="custFontFamilyRobotoCondensed muli-14pt custColorDark">{{tradeDataPopUp?.quantity}}</ion-col>
+        <ion-col class="text-center custFontFamilyRobotoCondensed muli-14pt custColorDark">
+          ₹{{tradeDataPopUp?.traded_price}}</ion-col>
+        <ion-col class="text-end custFontFamilyRobotoCondensed muli-14pt custColorParakeetGreen">Executed</ion-col>
+      </ion-row>
+      <ion-row class="custDetails">
+        <ion-col>Order Type</ion-col>
+        <ion-col class="text-end">{{tradeDataPopUp.order_type}}</ion-col>
+      </ion-row>
+      <ion-row class="custDetails">
+        <ion-col>Avg. Trade Price</ion-col>
+        <ion-col class="text-end">{{tradeDataPopUp.trade_value}}</ion-col>
+      </ion-row>
+      <ion-row class="custDetails">
+        <ion-col>Internal Order No.</ion-col>
+        <ion-col class="text-end">{{tradeDataPopUp.order_no}}</ion-col>
+      </ion-row>
+      <ion-row class="custDetails">
+        <ion-col>Exchange order No.</ion-col>
+        <ion-col class="text-end">{{tradeDataPopUp.exch_order_no}}</ion-col>
+      </ion-row>
+      <ion-row class="custDetails">
+        <ion-col>Trade No.</ion-col>
+        <ion-col class="text-end">{{tradeDataPopUp.trade_no}}</ion-col>
+      </ion-row>
+      <ion-row class="custDetails">
+        <ion-col>Executed Date & Time</ion-col>
+        <ion-col class="text-end">{{tradeDataPopUp.exch_trade_time}}</ion-col>
+      </ion-row>
+      <ion-row class="custDetails">
+        <ion-col>Validity</ion-col>
+        <ion-col class="text-end">{{(tradeDataPopUp.product_name=='CNC')?'IOC':'DAY'}}</ion-col>
+      </ion-row>
+      <ion-row class="w-100">
+        <button class="custBackgroundColorBrightCyan w-100 text-center custColorWhite p-2 rounded-1"
+          (click)="buyMore(tradeDataPopUp)">Add more</button>
+      </ion-row>
+    </div>
+  </div>
+
+
+  <ion-footer>
+    <lib-footer *ngIf="!pop&&!popUp&&!tradePopUp" [activeImg]="imageList?.activeTab" [selectedIndex]="'4'"
+      [footerListData]="stocksTab" [parentTab]="'wealthStocks'"></lib-footer>
+  </ion-footer>
+</ion-app>

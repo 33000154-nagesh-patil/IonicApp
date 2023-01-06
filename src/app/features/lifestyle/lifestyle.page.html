@@ -1,0 +1,10 @@
+<lib-header [title]="title" [imageList]="imageList" [showArrow]="false" [showLabel]="false" [showImg]="false" [imgURL]="labelIcon"
+[showIndex]="false" [showNotification]="true" [showCartWithName]="true" [notificationCount]="notificationCount" [cardCount]="cartCount" [showSideMenu]="true" [showSearch]="false" [showClose]="false" [showShare]="false" [showWatchList]="false" [showCartWithoutName]="false" [showStories]="true" [otherTextName]="textName" [showOtherText]="false" [superMode]="currentMode" [backUrlName]=""></lib-header>
+<ion-content class="h-100 w-100 contentBackground">
+    <lib-lifestyle [imageList]="imageList"></lib-lifestyle>
+</ion-content>
+<!-- <lib-fab-button [superMode]="currentMode" [fabIcon]="imageList?.fabLogo"></lib-fab-button> -->
+<lib-footer *ngIf="currentMode" [activeImg]="imageList?.activeTab" [selectedIndex]="'4'" [footerListData]="wellnessFooterData" [parentTab]="'Lifestyle'"></lib-footer>
+
+
+

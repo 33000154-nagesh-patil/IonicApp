@@ -1,0 +1,124 @@
+
+<ion-header>
+  <ion-toolbar class="custBackgroundDynamicColorWhite">
+    <ion-grid>
+      <ion-row>
+        <ion-col [size]="'1'" (click)="dismiss()">
+         <ion-img [src]="imageList?.arrow" class="custInvestArrow"></ion-img>
+        </ion-col>
+        <ion-col [size]="'11'">
+          <span class="custFontFamilyMuliBold muli-16pt custColorDark custLineHight40">Profile</span>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-grid class="mt-4 custPAdd">
+    <form [formGroup]="custmerFormGroup" (ngSubmit)="onSubmit()">
+    <ion-row class="mx-2">
+
+    <mat-form-field appearance="outline" class="w-100">
+      <mat-label>Firstname</mat-label>
+      <input  [value]="Firstname" [(ngModel)]="Firstname" formControlName="firstName" matInput required>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="w-100">
+      <mat-label>Middlename</mat-label>
+      <input [(ngModel)]="Middlename"  formControlName="MiddleName" matInput>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="w-100">
+      <mat-label>Lastname</mat-label>
+      <input [(ngModel)]="Lastname"  formControlName="LastName"  matInput required>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="w-100" (click)="picker.open()">
+      <mat-label>Date Of Birth</mat-label>
+      <input matInput [matDatepicker]="picker" formControlName="DateOfBirth" max="{{maxDate}}" required readonly >
+      <mat-datepicker-toggle matSuffix [for]="picker" dateFormat = "yyyy-mm-dd"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+
+    <!-- <mat-form-field appearance="fill">
+      <mat-label>Different locale</mat-label>
+      <input matInput [matDatepicker]="dp">
+      <mat-hint>{{getDateFormatString()}}</mat-hint>
+      <mat-datepicker-toggle matSuffix [for]="dp"></mat-datepicker-toggle>
+      <mat-datepicker #dp></mat-datepicker>
+    </mat-form-field> -->
+
+    
+
+    <mat-form-field appearance="outline" class="w-100">
+      <mat-label>Email Id</mat-label>
+      <input [(ngModel)]="EmailId"  formControlName="EmailId" matInput  required>
+      <mat-error ><span
+        class="custFontFamilyMuliSemiBold muli-12pt text-start text-capitalize custLineHight16">{{'emailRequiredError'
+        | translate}}</span></mat-error>
+        <mat-error ><span
+          class="custFontFamilyMuliSemiBold muli-12pt text-start text-capitalize custLineHight16">{{'emailPatternError'
+          | translate}}</span></mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="w-100">
+      <mat-label>Mobile Number</mat-label>
+      <input [(ngModel)]="MobileNumber" formControlName="MobileNumber"  (keypress)="numberOnly($event)" maxlength="10" matInput required>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="w-100">
+      <mat-label>Address Line 1</mat-label>
+      <input formControlName="AddressLine1" matInput required>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="w-100">
+      <mat-label>Address Line 2</mat-label>
+      <input  formControlName="AddressLine2"  matInput required>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="w-100">
+      <mat-label>Address Line 3</mat-label>
+      <input  formControlName="AddressLine3" matInput id="address" name="address" required>
+
+      <!-- <mat-error *ngIf="!custmerFormGroup.get('AddressLine3')?.hasError('address', 'required')">Address is required</mat-error>
+      <mat-error *ngIf="!custmerFormGroup.get('AddressLine3')?.hasError('address', 'maxlength')">You have more than 100 characters</mat-error> -->
+    </mat-form-field>
+
+
+
+
+
+    
+    <mat-form-field appearance="outline" class="w-100 ">
+      <mat-label>{{'state' | translate}}</mat-label>
+      <mat-select formControlName="State" [(ngModel)]="profileData.State" name="state" id="state"
+        (ngModelChange)="getCityMasterDetails('City',profileData.State)">
+        <mat-option *ngFor="let item of state" [value]="item.ID">
+          {{item.TEXT}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="w-100 ">
+      <mat-label>{{'city' | translate}}</mat-label>
+      <mat-select formControlName="City" [(ngModel)]="profileData.City" name="city" id="city">
+        <mat-option *ngFor="let item of city" [value]="item.ID">
+          {{item.TEXT}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="w-100 ">
+      <mat-label class="text-capitalize">{{'pincode' | translate}}</mat-label>
+      <input type="text" inputmode="numeric" maxlength="6" matInput formControlName="Pincode"
+        class=" custFontFamilyMuliRegular muli-16pt custLineHight18 custColorDark">
+    </mat-form-field>
+  </ion-row>
+
+  <ion-row>
+    <button class="w-100 btn custBackgroundColorBrightCyan custColorWhite " [disabled]="!custmerFormGroup.valid"   (click)="navigateTobuySell()">Continue</button>
+  </ion-row>
+</form>
+
+  </ion-grid>
+</ion-content>

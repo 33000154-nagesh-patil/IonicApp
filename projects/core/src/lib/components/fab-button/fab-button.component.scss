@@ -1,0 +1,34 @@
+.custMarginBottom{
+    margin-bottom: 4rem;
+}
+
+.custFabImg{
+    height: 32px;
+    width: 32px;
+    --color: white;
+}
+
+.custFabBgBasic{
+    --background: var(--custWarmGrey) !important;
+    --background-Activated: var(--custWarmGrey) !important;
+    --background-focused: var(--custWarmGrey) !important;
+}
+.custFabBgSuper{
+    --background: var(--custDarkishBlue) !important;
+    --background-Activated: var(--custDarkishBlue) !important;
+    --background-focused: var(--custDarkishBlue) !important;
+}
+
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-height: 992px) {
+    .custMarginBottom{
+        margin-bottom: 4rem;
+    }    
+  }
+  
+  /* On screens that are 600px or less, set the background color to olive */
+  @media screen and (max-height: 600px) {
+    .custMarginBottom{
+        margin-bottom: 100px;
+    }
+  }

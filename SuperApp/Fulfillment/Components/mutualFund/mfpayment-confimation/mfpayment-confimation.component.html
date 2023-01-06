@@ -1,0 +1,151 @@
+<ion-app>
+  <ion-header >
+    <ion-toolbar class="custBackgroundDynamicColorWhite">
+      <ion-grid>
+        <ion-row>
+          <ion-col [size]="'1'" class="text-center mt-1" (click)="backF()">
+            <ion-img [src]="imageList?.arrow" class="backArrow mt-2"></ion-img>
+          </ion-col>
+          <ion-col [size]="'8'">
+            <span
+              class="custFontFamilyMuliBold muli-16pt custLineHight40 custColorDark"
+              >Payment confirmation</span
+            >
+          </ion-col>
+          <ion-col [size]="'3'" class="mt-2 text-end">
+            <!-- <ion-img class="custHelpIcon" [src]="imageList?.helpIcon"></ion-img> -->
+            <!-- <span
+            class="custFontFamilyMuliBold muli-12pt custLineHight18 custColorDarkishBlue"
+            >{{ "process" | translate }}</span -->
+          <!-- > -->
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="contentBackground">
+    <ion-row>
+      <ion-col [size]="'12'" class="custTextAlignCenter mt-4">
+        <ion-img [src]="imageList?.succsessIcon" class="custImgSucc"></ion-img>
+      </ion-col>
+      <ion-col [size]="'12'" class="custTextAlignCenter">
+        <!-- <span class="custFontFamilyMuliBold muli-16pt custLineHight22 custColorDark" *ngIf="transactionData?.type=='Gold'">{{'successFullMessageGold' | translate}}</span> -->
+        <span class="custFontFamilyMuliBold muli-16pt custLineHight22 custColorDark" >You've Invested</span>
+      </ion-col>
+      <ion-col [size]="'12'" class="custTextAlignCenter">
+        <span class="custFontFamilyMuliBold muli-16pt custLineHight22 custColorDark">₹ {{InvestAmount}}</span>
+      </ion-col>
+      <ion-col [size]="'12'" class="custTextAlignCenter d-flex flex-column">
+        <span class="custFontFamilyMuliRegular muli-12pt custLineHight18 custColorBattlePGry" >it usually take 2-3 business day for unit</span>
+        <span class="custFontFamilyMuliRegular muli-12pt custLineHight18 custColorBattlePGry" >allocation after payment confirmation</span>
+      </ion-col>
+      </ion-row>
+  
+    <ion-row class="mt-5 pt-2">
+    <ion-card class="w-100">
+      <ion-card-content>
+      <ion-row class="text-start ">
+        <span class="custFontFamilyMuliRegular muli-14pt custLineHight20 custColorDark">{{FundTitle}}</span>
+      </ion-row>
+      <span class="custFontFamilyMuliRegular muli-14pt custLineHight20 custColorDark">{{'equityfund' | translate}}</span> 
+    <ion-row class="mt-2">
+    <span class="custFontFamilyRobotoCondensed muli-12pt custColorGreyish custLineHight15">{{CurrentTime | date}}</span>
+  </ion-row>
+  <ion-row class="pt-2">
+    <ion-col class="d-flex flex-column text-start">
+      <span class="custFontFamilyMuliRegular muli-10pt custLineHight15 custColorWarmGrey">{{'investmentamount' | translate}}</span>
+      <span class="custFontFamilyMuliITF-Rupee custFontFamilyRobotoCondensed muli-14pt custLineHight18 custColorDark">{{InvestAmount}}</span>
+    </ion-col>
+    <ion-col class="d-flex flex-column text-start">
+      <span class="custFontFamilyMuliRegular muli-10pt custLineHight15 custColorWarmGrey">{{'investmenttype' | translate}}</span>
+      <span class="custFontFamilyMuliITF-Rupee custFontFamilyRobotoCondensed muli-14pt custLineHight18 custColorDark">{{SuccessData?.TransType}}</span>
+    </ion-col>
+  </ion-row>
+  <ion-row class="pt-2">
+    <ion-col class="d-flex flex-column text-start" *ngIf="SuccessData?.TransType !='Lumpsum'">
+      <span class="custFontFamilyMuliRegular muli-10pt custLineHight15 custColorWarmGrey">{{'1stSIp' | translate}}</span>
+      <span class="custFontFamilyMuliITF-Rupee custFontFamilyRobotoCondensed muli-14pt custLineHight18 custColorDark">{{"done" | translate}}</span>
+    </ion-col>
+
+    <ion-col class="d-flex flex-column text-start" *ngIf="SuccessData?.TransType !='Lumpsum'">
+      <span class="custFontFamilyMuliRegular muli-10pt custLineHight15 custColorWarmGrey">{{'nextSIP' | translate}}</span>
+      <span class="custFontFamilyMuliITF-Rupee custFontFamilyRobotoCondensed muli-14pt custLineHight18 custColorDark">{{SuccessData?.startDate}}</span>
+    </ion-col>
+  </ion-row>
+  <!-- <ion-row class="pt-2">
+    <ion-col class="d-flex flex-column text-start">
+      <span class="custFontFamilyMuliRegular muli-10pt custLineHight15 custColorWarmGrey">{{'navdate' | translate}}</span>
+      <span class="custFontFamilyMuliITF-Rupee custFontFamilyRobotoCondensed muli-14pt custLineHight18 custColorDark">{{"'navdatedate'" | translate}}</span>
+    </ion-col>
+    <ion-col class="d-flex flex-column text-start">
+      <span class="custFontFamilyMuliRegular muli-10pt custLineHight15 custColorWarmGrey">{{"units" | translate}}</span>
+      <span class="custFontFamilyMuliITF-Rupee custFontFamilyRobotoCondensed muli-14pt custLineHight18 custColorDark">{{"'unitsnumber'" | translate}}</span>
+    </ion-col>
+  </ion-row> -->
+  <ion-row class="pt-2">
+    <ion-col class="d-flex flex-column text-start">
+      <span class="custFontFamilyMuliRegular muli-10pt custLineHight15 custColorWarmGrey">{{'transactionID' | translate}}</span>
+      <span class="custFontFamilyMuliITF-Rupee custFontFamilyRobotoCondensed muli-14pt custLineHight18 custColorDark">{{RezerPayPaymentId}}</span>
+    </ion-col> 
+    <!-- <ion-col class="d-flex flex-column justify-content-center text-start pt-3" (click)="copyToClipboard()">
+      <ion-img [src]="imageList?.copyTwoPaper" class="custCopyTwoPaper" ></ion-img>
+    </ion-col> -->
+  </ion-row>
+  </ion-card-content>
+    </ion-card>
+  </ion-row>
+  
+  <!-- <ion-row class="mt-3 px-2">
+    <ion-col class="text-start">
+      <span class="custFontFamilyMuliBold muli-14pt custLineHight20 custColorBattlePGry">Order Status</span>
+    </ion-col>
+    <ion-col class="text-end">
+      <span class="custFontFamilyMuliRegular muli-12pt custLineHight18 custColorParakeetGreen">In Progress</span>
+    </ion-col>
+  </ion-row> -->
+  
+  <!-- <div *ngIf="progressBarModal" class="mx-2">
+    <ul class="StepProgress mt-3">
+      <li class="w-100 mb-2 is-done StepProgress-item">
+        <ion-row>
+          <ion-col [size]="'10'" class="text-start d-flex flex-column">
+            <span class="custFontFamilyMuliRegular muli-12pt custLineHight18 custColorTint">Mutual Fund Payment</span>
+            <span class="custFontFamilyMuliRegular muli-10pt custLineHight15 custColorBattlePGry">Done17 Mar 2021, 4:55 PM via UPI</span>
+          </ion-col>
+          <ion-col [size]="'2'" class="text-end d-flex flex-column">
+            <span class="custFontFamilyMuliRegular muli-12pt custLineHight18 custColorParakeetGreen">Done</span>
+          </ion-col>
+        </ion-row>
+      </li>
+      <li class="w-100 mb-2 is-done StepProgress-item">
+        <ion-row>
+          <ion-col [size]="'10'" class="text-start d-flex flex-column">
+            <span class="custFontFamilyMuliRegular muli-12pt custLineHight18 custColorTint">Track your Investment</span>
+          </ion-col>
+          <ion-col [size]="'2'" class="text-end d-flex flex-column">
+            <span class="custFontFamilyMuliRegular muli-12pt custLineHight18 custColorParakeetGreen">Done</span>
+          </ion-col>
+         
+        </ion-row>
+      </li> -->
+  
+  
+  
+   
+    <!-- </ul>
+  </div> -->
+  <ion-row class="mb-4"></ion-row>
+  </ion-content>
+  <ion-row class="custBackgroundColorWhite">
+    <ion-col [size]="'12'" class="" (click)="ExploreFund()">
+      
+      <button class="btn custButtonOutLine w-100 text-center custColorBrightCyan"><span class="custColorBrightCyan text-capitalize custFontFamilyMuliBold muli-16pt">Explore Funds</span></button>
+    </ion-col>
+  
+    <ion-col [size]="'12'" class="" (click)="TrackYourOrder()">
+      <button class="btn w-100 text-center custBackgroundColorBrightCyan"><span class="custColorWhite custFontFamilyMuliBold text-capitalize muli-16pt">Track Order</span></button>
+    </ion-col>
+  </ion-row>
+  
+  </ion-app>
+  

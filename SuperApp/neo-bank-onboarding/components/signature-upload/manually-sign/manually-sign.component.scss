@@ -1,0 +1,50 @@
+.signature-pad-canvas {
+    border: 3px dashed var(--lightGray);
+    height: 400px;
+    vertical-align: middle;
+}
+.custKYCImg {
+    height: 16px;
+    width: 13px;
+}
+.custUrSign {
+    margin-top: 25px !important;
+}
+.custSignMandatoryMsg {
+    margin-top: 10px !important;
+}
+.signature-pad {
+    padding-left: 16px;
+    padding-right: 16px;
+    vertical-align: middle;
+    height: 400px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.custFooterDiv {
+    padding-left: 16px;
+    padding-right: 16px;
+    margin: 0px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+}
+.custTryButton {
+    height: 45px;
+    border: 1px solid var(--custBrightCyan);
+    border-radius: 4px;
+    --background: var(--custWhite);
+    --box-shadow: none;
+    text-align: center !important;
+    margin-right: 8px;
+}
+.custContinueBtn {
+    height: 45px;
+    --background: var(--custBrightCyan) !important;
+    --box-shadow: none;
+    margin-left: 8px;
+}

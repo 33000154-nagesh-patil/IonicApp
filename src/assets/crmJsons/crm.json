@@ -1,0 +1,340 @@
+{
+    "mainContain": {
+        "header": {
+            "id": "",
+            "title": "",
+            "icon": "",
+            "type": "",
+            "uxClass": "headerBackGround",
+            "cssx": {
+                "background-color": "#0F4880",
+                "height": "60px",
+                "padding-top": "13px",
+                "padding-left": "13px"
+            },
+            "des": "",
+            "key": "true",
+            "value": [
+                {
+                    "url": "crmProdSelection",
+                    "title": "",
+                    "icon": "assets/icon/menuHeader.svg",
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "colSize03",
+                    "des": "",
+                    "key": "menu",
+                    "value": ""
+                },
+                {
+                    "id": "",
+                    "title": "",
+                    "value": "",
+                    "icon": "assets/icon/torusCRM.svg",
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "colSize2",
+                    "des": "",
+                    "key": ""
+                },
+                {
+                    "id": "",
+                    "title": "",
+                    "value": "",
+                    "icon": "",
+                    "type": "",
+                    "cssx": {
+                        "width": "782px",
+                        "height": "35px",
+                        "border-radius": "5px"
+                    },
+                    "uxClass": "colSize8",
+                    "des": "Search Here",
+                    "key": "input"
+                },
+                {
+                    "id": "",
+                    "title": "",
+                    "value": "",
+                    "icon": "assets/icon/notification.svg",
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "colSize03",
+                    "des": "",
+                    "key": ""
+                },
+                {
+                    "id": "",
+                    "title": "Pratham",
+                    "value": "",
+                    "icon": "assets/icon/profilePicture.svg",
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "colSize1 custColorWhite",
+                    "des": "Customer",
+                    "key": ""
+                },
+                {
+                    "id": "",
+                    "title": "",
+                    "key": "",
+                    "value": {
+                        "id": "",
+                        "title": "",
+                        "key": "",
+                        "value": [
+                            {
+                                "id": "",
+                                "title": "E123456",
+                                "value": "",
+                                "icon": "assets/icon/profilePicture.svg",
+                                "type": "",
+                                "cssx": "",
+                                "uxClass": "colSize12",
+                                "des": "",
+                                "key": ""
+                            },
+                            {
+                                "id": "",
+                                "title": "abc@heytorus.com",
+                                "value": "",
+                                "icon": "assets/icon/Email.svg",
+                                "type": "",
+                                "cssx": "",
+                                "uxClass": "colSize12",
+                                "des": "",
+                                "key": ""
+                            },
+                            {
+                                "id": "",
+                                "title": "Logout",
+                                "value": "",
+                                "icon": "assets/icon/logout.svg",
+                                "type": "",
+                                "cssx": "",
+                                "uxClass": "colSize12",
+                                "des": "",
+                                "key": ""
+                            }
+                        ],
+                        "icon": "",
+                        "type": "",
+                        "cssx": {
+                            "width": "200px",
+                            "height": "120px",
+                            "border": "solid 2px #44C8F5",
+                            "border-radius": "5px"
+                        },
+                        "uxClass": "",
+                        "des": ""
+                    },
+                    "icon": "assets/icon/whiteAccordianHeader.svg",
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "colSize03",
+                    "des": ""
+                }
+            ]
+        },
+        "menuBar": {
+            "id": "",
+            "title": "",
+            "icon": "",
+            "type": "",
+            "cssx": {
+                "width":"240px"
+            },
+            "uxClass": "menuBar",
+            "des": "",
+            "key": "true",
+            "value": [
+                {
+                    "id": "",
+                    "title": "Sales",
+                    "icon": "",
+                    "type": "expand",
+                    "cssx": "",
+                    "uxClass": "",
+                    "des": "",
+                    "key": "true",
+                    "value": [
+                        {
+                            "url": "crmDashboard",
+                            "title": "Dashboard",
+                            "icon": "assets/icon/menuIcon/Dashboard.svg",
+                            "type": "",
+                            "cssx": "",
+                            "uxClass": "",
+                            "des": "",
+                            "key": "true",
+                            "value": ""
+                        },
+                        {
+                            "url": "crmLeadDetail",
+                            "title": "Lead Details",
+                            "icon": "assets/icon/menuIcon/LeadDetails.svg",
+                            "type": "",
+                            "cssx": "",
+                            "uxClass": "",
+                            "des": [],
+                            "key": "true",
+                            "value": ""
+                        },
+                        {
+                            "url": "crmLeadUpload",
+                            "title": "Lead Bulk Upload",
+                            "icon": "assets/icon/menuIcon/LeadBulkUpload.svg",
+                            "type": "",
+                            "cssx": "",
+                            "uxClass": "",
+                            "des": "",
+                            "key": "true",
+                            "value": ""
+                        },
+                        {
+                            "url": "crmLeadAssignment",
+                            "title": "Lead Assignment",
+                            "icon": "assets/icon/menuIcon/LeadAssignment.svg",
+                            "type": "",
+                            "cssx": "",
+                            "uxClass": "",
+                            "des": "",
+                            "key": "true",
+                            "showHide": [],
+                            "value": ""
+                        },
+                        {
+                            "url": "crmLeadTransfer",
+                            "title": "Lead Transfer",
+                            "icon": "assets/icon/menuIcon/LeadTransfer.svg",
+                            "type": "",
+                            "cssx": "",
+                            "uxClass": "",
+                            "des": "",
+                            "key": "true",
+                            "showHide": [],
+                            "value": ""
+                        },
+                        {
+                            "url": "",
+                            "title": "Configuration",
+                            "icon": "assets/icon/menuIcon/Dashboard.svg",
+                            "type": "",
+                            "cssx": "",
+                            "uxClass": "",
+                            "des": "",
+                            "key": "false",
+                            "showHide": [],
+                            "value": ""
+                        },
+                        {
+                            "url": "crmDelegation",
+                            "title": "Delegation",
+                            "icon": "assets/icon/menuIcon/Dashboard.svg",
+                            "type": "",
+                            "cssx": "",
+                            "uxClass": "",
+                            "des": "",
+                            "key": "true",
+                            "showHide": [],
+                            "value": ""
+                        },
+                        {
+                            "url": "crmReports",
+                            "title": "Reports",
+                            "icon": "assets/icon/menuIcon/Reports.svg",
+                            "type": "",
+                            "cssx": "",
+                            "uxClass": "",
+                            "des": "",
+                            "key": "true",
+                            "showHide": [],
+                            "value": ""
+                        },
+                        {
+                            "url": "",
+                            "title": "Escalation Rule",
+                            "icon": "assets/icon/menuIcon/Dashboard.svg",
+                            "type": "",
+                            "cssx": "",
+                            "uxClass": "",
+                            "des": "",
+                            "key": "true",
+                            "showHide": [],
+                            "value": ""
+                        },
+                        {
+                            "url": "",
+                            "title": "Contacts",
+                            "icon": "assets/icon/menuIcon/Dashboard.svg",
+                            "type": "",
+                            "cssx": "",
+                            "uxClass": "",
+                            "des": "",
+                            "key": "true",
+                            "showHide": [],
+                            "value": ""
+                        }
+                    ]
+                },
+                {
+                    "id": "",
+                    "title": "Services",
+                    "icon": "",
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "",
+                    "des": "",
+                    "key": "true",
+                    "value": [
+                        {
+                            "id": "",
+                            "title": "Services1",
+                            "icon": "assets/icon/menuIcon/Dashboard.svg",
+                            "type": "",
+                            "cssx": "",
+                            "uxClass": "",
+                            "des": "",
+                            "key": "true",
+                            "showHide": [],
+                            "value": ""
+                        },
+                        {
+                            "id": "",
+                            "title": "Service2",
+                            "icon": "assets/icon/menuIcon/Dashboard.svg",
+                            "type": "",
+                            "cssx": "",
+                            "uxClass": "",
+                            "des": "",
+                            "key": "true",
+                            "value": ""
+                        }
+                    ]
+                },
+                {
+                    "id": "",
+                    "title": "Settings",
+                    "icon": "assets/icon/menuIcon/Settings.svg",
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "",
+                    "des": "",
+                    "key": "",
+                    "value": ""
+                },
+                {
+                    "id": "",
+                    "title": "Help",
+                    "icon": "assets/icon/menuIcon/Help.svg",
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "",
+                    "des": "",
+                    "key": "",
+                    "value": ""
+                }
+            ]
+        } 
+    }
+}

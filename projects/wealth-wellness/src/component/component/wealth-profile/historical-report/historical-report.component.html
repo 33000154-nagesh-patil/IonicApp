@@ -1,0 +1,171 @@
+<ion-header [translucent]="true" class="custBackgroundColorWhite ">
+  <ion-toolbar class="custBackgroundDynamicColorWhite">
+    <ion-grid>
+      <ion-row>
+        <ion-col [size]="'1'" (click)="goBack()" id="goBack">
+          <ion-img [src]="imageList?.arrow" class=" custWithoutTextImg mt-3"></ion-img>
+        </ion-col>
+        <ion-col [size]="3" class="custFontFamilyMuliBold muli-16pt custColorDark my-3 text-nowrap">
+          Historical Report
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="contentBackground">
+
+  <ion-row class="mt-3">
+    <ion-col class="px-3">
+      <mat-form-field appearance="outline" class="w-100 m-0 p-0 custBackgroundColorWhite">
+        <mat-label class="muli-14pt custFontFamilyMuliBold">Report type</mat-label>
+        <ion-icon matSuffix name="chevron-down-outline" class="p-0 m-0 custColorBattlePGry"></ion-icon>
+        <mat-select placeholder="All">
+          <mat-option value="2022" class="custFontFamilyMuliRegular muli-14pt">Ledger</mat-option>
+          <mat-option value="2022" class="custFontFamilyMuliRegular muli-14pt">Contract Notes</mat-option>
+          <mat-option value="2021" class="custFontFamilyMuliRegular muli-14pt">Sauda Summary</mat-option>
+          <mat-option value="2021" class="custFontFamilyMuliRegular muli-14pt">Bills & Statements</mat-option>
+          <mat-option value="2021" class="custFontFamilyMuliRegular muli-14pt">DPI</mat-option>
+          <mat-option value="2021" class="custFontFamilyMuliRegular muli-14pt">Charges Report</mat-option>
+          <mat-option value="2021" class="custFontFamilyMuliRegular muli-14pt">Debit Report (T+7)</mat-option>
+          <mat-option value="2021" class="custFontFamilyMuliRegular muli-14pt">Limit Card</mat-option>
+          <mat-option value="2021" class="custFontFamilyMuliRegular muli-14pt">DP Reports</mat-option>
+          <mat-option value="2021" class="custFontFamilyMuliRegular muli-14pt">Scrip Basket</mat-option>
+          <mat-option value="2021" class="custFontFamilyMuliRegular muli-14pt">Back Office Reports</mat-option>
+          <mat-option value="2021" class="custFontFamilyMuliRegular muli-14pt">P&L Reports</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="mt-3">
+    <ion-col class="px-3">
+      <mat-form-field appearance="outline" class=" w-100 m-0 p-0 custBackgroundColorWhite">
+        <mat-label class="muli-14pt custFontFamilyMuliBold">Segment</mat-label>
+        <ion-icon matSuffix name="chevron-down-outline" class="p-0 m-0 custColorBattlePGry"></ion-icon>
+        <mat-select placeholder="Segment">
+          <mat-option value="2022" class="custFontFamilyMuliRegular muli-14pt">All</mat-option>
+          <mat-option value="2022" class="custFontFamilyMuliRegular muli-14pt">Equity</mat-option>
+          <mat-option value="2021" class="custFontFamilyMuliRegular muli-14pt">Commodity</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="mt-3">
+    <ion-col class="px-3">
+      <mat-form-field appearance="outline" class=" w-100 m-0 p-0 custBackgroundColorWhite">
+        <mat-label class="muli-14pt custFontFamilyMuliBold">Financial Year</mat-label>
+        <ion-icon matSuffix name="chevron-down-outline" class="p-0 m-0 custColorBattlePGry"></ion-icon>
+        <mat-select placeholder="Financial Year">
+          <mat-option value="2022" class="custFontFamilyMuliRegular muli-14pt">2021–22</mat-option>
+          <mat-option value="2022" class="custFontFamilyMuliRegular muli-14pt">2020–21</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </ion-col>
+  </ion-row>
+
+
+  <ion-row class="mt-3 ">
+    <ion-col [size]="'6'" class="w-100 pe-3">
+      <!-- <mat-form-field appearance="outline" class=" w-100 m-0 p-0 custBackgroundColorWhite">
+        <mat-label>From Date</mat-label>
+        <ion-icon matSuffix name="chevron-down-outline" class="p-0 m-0 custColorBattlePGry"></ion-icon>
+        <mat-select placeholder="From Date">
+
+          <mat-form-field class="example-full-width">
+            <input matInput [matDatepicker]="picker" placeholder="Choose a date">
+            <mat-datepicker-toggle matSuffix [for]="picker">
+              <mat-icon matDatepickerToggleIcon>keyboard_arrow_down</mat-icon>
+            </mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field>
+
+        </mat-select>
+      </mat-form-field> -->
+
+      <mat-form-field appearance="outline" class="example-form-field w-100 custBackgroundColorWhite">
+        <mat-label class="muli-14pt custFontFamilyMuliBold">From Date</mat-label>
+        <input matInput [matDatepicker]="picker" #my (dateChange)="dateSelected($event)" [min]="minFromDate"
+          [max]="maxToDate">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker>
+          <mat-datepicker-actions>
+            <button class="btn w-100 text-center custBackgroundColorBrightCyan"><span
+                class="custColorWhite custFontFamilyMuliBold muli-16pt" matDatepickerApply>Confirm</span></button>
+          </mat-datepicker-actions>
+        </mat-datepicker>
+      </mat-form-field>
+
+
+    </ion-col>
+
+    <ion-col [size]="'6'" class="w-100 pe-3">
+
+      <mat-form-field appearance="outline" class="example-form-field w-100 custBackgroundColorWhite">
+        <mat-label class="muli-14pt custFontFamilyMuliBold">To Date</mat-label>
+        <input matInput [matDatepicker]="pickertwo" #my (dateChange)="dateSelected($event)" [min]="minFromDate"
+          [max]="maxToDate">
+        <mat-datepicker-toggle matSuffix [for]="pickertwo"></mat-datepicker-toggle>
+        <mat-datepicker #pickertwo>
+          <mat-datepicker-actions>
+            <button class="btn w-100 text-center custBackgroundColorBrightCyan"><span
+                class="custColorWhite custFontFamilyMuliBold muli-16pt" matDatepickerApply>Confirm</span></button>
+          </mat-datepicker-actions>
+        </mat-datepicker>
+      </mat-form-field>
+
+    </ion-col>
+  </ion-row>
+
+
+
+
+  <!-- <mat-form-field class="example-full-width">
+  <input matInput [matDatepicker]="picker" placeholder="Choose a date">
+  <mat-datepicker-toggle matSuffix [for]="picker">
+    <mat-icon matDatepickerToggleIcon>keyboard_arrow_down</mat-icon>
+  </mat-datepicker-toggle>
+  <mat-datepicker #picker></mat-datepicker>
+</mat-form-field>
+<mat-form-field class="example-full-width">
+  <input matInput [matDatepicker]="picker" placeholder="Choose a date">
+  <mat-datepicker-toggle matSuffix [for]="picker">
+    <mat-icon matDatepickerToggleIcon>keyboard_arrow_down</mat-icon>
+  </mat-datepicker-toggle>
+  <mat-datepicker #picker></mat-datepicker>
+</mat-form-field> -->
+
+
+
+  <ion-row>
+    <ion-col class="px-4 ">
+      <p class=" m-0 p-0 custFontFamilyMuliRegular muli-12pt custColorBattlePGry custLineHight15">Choose Report Format
+      </p>
+    </ion-col>
+  </ion-row>
+
+
+  <mat-radio-group class="px-4">
+    <mat-checkbox class="custFontFamilyMuliRegular muli-16pt custColorDark custLineHight20 ">PDF</mat-checkbox>
+    <mat-checkbox class="custFontFamilyMuliRegular muli-16pt custColorDark custLineHight20 ps-5">Excel</mat-checkbox>
+  </mat-radio-group>
+
+  <div class="fixed-bottom">
+    <ion-row>
+      <ion-col class="p-0">
+        <p class=" text-center custFontFamilyMuliBold muli-12pt custColorDarkishBlue custLineHight15">
+          <img [src]="imageList?.downloadIcon"><span>&nbsp;&nbsp;Download</span>
+        </p>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col class="p-3">
+        <button class="btn p-2 w-100 text-center custBackgroundColorBrightCyan"><span
+            class="custColorWhite custFontFamilyMuliBold muli-16pt">Email Report</span></button>
+      </ion-col>
+    </ion-row>
+  </div>
+
+</ion-content>

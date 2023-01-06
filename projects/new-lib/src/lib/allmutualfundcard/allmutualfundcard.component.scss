@@ -1,0 +1,125 @@
+.backArrow {
+    height: 18px;
+    width: 10px;
+  }
+  
+  .custHelpIcon {
+    height: 45px;
+    width: 45px;
+  }
+  
+  .custMargin {
+    margin-top: 100px;
+  }
+  .custcss {
+    border-radius: 40%;
+  }
+  
+  .custImgExpo {
+    height: 18px;
+    width: 18px;
+  }
+  
+  .checkbox2 {
+    height: 18px;
+    width: 18px;
+  }
+  
+  .custBottom {
+    margin-bottom: -20px;
+  }
+  
+  .custBookmark {
+    height: 28px;
+    width: 18px;
+    margin-right: 5px;
+    margin-top: -2px;
+  }
+  
+  .muli-17pt {
+    font-size: 17px;
+  }
+  .filterFixed {
+    position: fixed;
+    z-index: 5;
+    background-color: white;
+    width: 95%;
+    // top: 187px;
+    top: 54px;
+  }
+  .custmargin {
+    margin-top: 30px;
+  }
+  
+  .something2 {
+    display: inline;
+    margin-top: 10px;
+    filter: invert(59%) sepia(31%) saturate(930%) hue-rotate(47deg)
+      brightness(93%) contrast(84%);
+    height: 10px;
+  }
+  
+  .something {
+    height: 45px;
+    width: 45px;
+  }
+  
+  .custInvestArrow {
+    height: 14px;
+    width: 34px;
+    margin-top: 14px;
+  }
+  
+  .checkbox2 input:checked {
+    // border-color: red;
+    background-color: red;
+  }
+  .returnPercent {
+    margin-top: 5px;
+  }
+  
+  ion-badge {
+    text-size-adjust: auto;
+    border-radius: 50%;
+  }
+  
+  .align {
+    margin-top: 6px;
+    margin-left: 9px;
+  }
+  
+  .custModalContainer {
+    z-index: 1;
+    left: 0;
+    // top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    // background-color: var(--custDark);
+    //  opacity: 0.4;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+  }
+  .modal-content {
+    background-color: var(--custWhite);
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    padding-right: 16px;
+    padding-left: 16px;
+    border: 1px solid #888;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    border-radius: 10px 10px 0px 0px;
+  }
+  
+  .negative {
+    margin-left: -18px;
+    padding-top: 8px;
+  }
+  .negative2 {
+    margin-left: -45px;
+    padding-top: 8px;
+  }

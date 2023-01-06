@@ -1,0 +1,240 @@
+<ion-header class="sticky-top fixed-top">
+  <ion-toolbar>
+    <ion-grid>
+      <ion-row>
+        <ion-col (click)="goBack()" [size]="'1'" id="goBack">
+          <div class="custTextAlignCenter">
+            <ion-img [src]="imageList?.arrow" class=" custArrorSize"></ion-img>
+          </div>
+        </ion-col>
+        <ion-col class="custFontFamilyMuliBold muli-16pt custColorDark mt-1 ms-1">Sim Binding</ion-col>
+
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="contentBackground h-100 w-100 ">
+  <ion-grid>
+    <ion-img [src]="imageList.simBinding" class="center-block p-2 w-50 mt-3"></ion-img>
+
+    <ion-row class="muli-16pt custFontFamilyMuliBold ion-justify-content-center m-2">Verify your mobile number
+    </ion-row>
+    <ion-row class="muli-12pt custFontFamilyMuliBold ion-justify-content-center col">We need to send a one - time SMS
+      to
+      the</ion-row>
+    <ion-row class="muli-12pt custFontFamilyMuliBold ion-justify-content-center col">mobile number. Please select the
+      mobile</ion-row>
+    <ion-row class="muli-12pt custFontFamilyMuliBold ion-justify-content-center col">number registered with us and
+      press
+    </ion-row>
+    <ion-row class="muli-12pt custFontFamilyMuliBold ion-justify-content-center col">confirm to send an SMS*</ion-row>
+
+
+    <!-- <ion-card class="mt-5 personalDetailsPagebutton me-3">
+      <ion-item>
+        <input type="radio"name="contact" > 
+        <span class="ms-3 muli-14pt">SIM 1</span>
+      </ion-item>
+    </ion-card>
+
+  
+    <ion-card class="mt-2 personalDetailsPagebutton me-3">
+      <ion-item>
+        <input type="radio"name="contact" >
+        <span class="ms-3 muli-14pt">SIM 2</span>
+      </ion-item>
+    </ion-card> -->
+
+    <mat-radio-group name="sim ">
+      <ion-card class="px-2 py-3" *ngFor="let x of items">
+        <ion-col [size]="'12'" class="custMatRadio ps-2">
+          <mat-radio-button [checked]="x.checked" [name]="x.name" [value]="x.name" (click)="getSimDetails(x)">
+            {{x.name}}
+          </mat-radio-button>
+        </ion-col>
+      </ion-card>
+      <!-- <ion-card class="px-2 py-3">
+          <ion-col [size]="'12'" class="custMatRadi ps-2">
+            <mat-radio-button name="Sim" value="Sim 2" (click)="getSimDet($event)">Sim 2</mat-radio-button>
+          </ion-col>
+        </ion-card> -->
+    </mat-radio-group>
+
+
+
+    <ion-row class="fixed-bottom px-2">
+
+      <ion-col [size]="'1'" class="w-100 bottom">
+        <ion-checkbox color="secondary" class="mt-1" (click)="terms($event)">
+        </ion-checkbox>
+      </ion-col>
+      <ion-col [size]="'11'">
+        <span class="custFontFamilyMuliRegular muli-10pt custLineHight15 custColorBattlePGry">We send SMS to verify
+          your
+          Mobile Number and provide secure access to you</span>
+      </ion-col>
+
+      <ion-col [size]="'1'" class="w-100 bottom">
+        <ion-checkbox color="secondary" class="mt-1" (click)="terms($event)">
+        </ion-checkbox>
+      </ion-col>
+      <ion-col [size]="'11'">
+        <span class="custFontFamilyMuliRegular muli-10pt custLineHight15 custColorBattlePGry">I am not a politically
+          exposed person</span>
+
+      </ion-col>
+
+      <ion-col [size]="'12'">
+        <button (click)="bindingFun()" [disabled]="ifChecked"
+          class="btn w-100 mt-2 text-center custBackgroundColorBrightCyan me-3">
+          <span class="custColorWhite custFontFamilyMuliBold muli-16pt">Continue</span>
+        </button>
+      </ion-col>
+
+    </ion-row>
+
+
+  </ion-grid>
+</ion-content>
+
+<div class="custModalContainer" *ngIf="sendingSMS">
+  <div class="modal-content">
+    <ion-grid class="">
+      <ion-row class="custCenterAlign">
+        <ion-img [src]="imageList?.chatIcon" class="chatIMG"></ion-img>
+      </ion-row>
+      <ion-row class="justify-content-center ">
+
+        <span class=" px-5 custFontFamilyMuliBold muli-16pt custColorDark">Torus will send an SMS from your
+          Mobile Number</span>
+
+      </ion-row>
+      <ion-row class="py-2 w-100">
+
+        <span class="custFontFamilyMuliRegular pb-4 muli-14pt custLineHight22 custColorDark">Please ensure that the SIM
+          with
+          which you wish to register is present in the handset. SMS charges as per your operator shall apply.</span>
+
+      </ion-row>
+
+    </ion-grid>
+    <ion-row class="w-100 p-3 fixed-bottom">
+      <button class="btn w-100  text-center custColorWhite custBackgroundColorBrightCyan"
+        (click)="writeToFile()">Ok</button>
+    </ion-row>
+
+  </div>
+</div>
+
+
+
+<div class="custModalContainer" *ngIf="smsSentSuccess">
+  <div class="modal-content">
+    <ion-grid class="">
+      <ion-row class="custCenterAlign mb-3">
+        <ion-img [src]="imageList?.successKYCIcon" class="chatIMG"></ion-img>
+      </ion-row>
+      <ion-row class="justify-content-center ">
+
+        <span class="custFontFamilyMuliBold muli-16pt custColorDark">Your device registration is Successful</span>
+
+      </ion-row>
+      <ion-row class="py-2 w-100">
+
+        <span class="custFontFamilyMuliRegular px-4 pb-4 muli-14pt custLineHight22 custColorDark">Kindly proceed with further account opening process</span>
+
+      </ion-row>
+
+    </ion-grid>
+    <ion-row class="w-100 p-3 fixed-bottom">
+      <button class="btn w-100  text-center custColorWhite custBackgroundColorBrightCyan"
+        (click)="goToSelfie()">OK</button>
+    </ion-row>
+
+  </div>
+</div>
+
+
+<div class="custModalContainer" *ngIf="smsSentFail">
+  <div class="modal-content">
+    <ion-grid class="">
+      <ion-row class="custCenterAlign mb-3">
+        <ion-img [src]="imageList?.alertTriangle" class="chatIMG"></ion-img>
+      </ion-row>
+      <ion-row class="justify-content-center ">
+
+        <span class="custFontFamilyMuliBold muli-16pt custColorDark">Your device registration is
+          Unsuccessful</span>
+
+      </ion-row>
+      <ion-row class="py-2 w-100">
+
+        <span class="custFontFamilyMuliRegular pb-4 muli-14pt custLineHight22 custColorDark">Kindly proceed with device
+          registration again or add another number present in device</span>
+
+      </ion-row>
+
+    </ion-grid>
+    <ion-row class="w-100 p-3 fixed-bottom">
+      <button class="btn w-100  text-center custColorWhite custBackgroundColorBrightCyan"
+        (click)="writeToFile()">Retry</button>
+    </ion-row>
+
+  </div>
+</div>
+
+
+
+
+
+<!-- <div class="custModalContainer" *ngIf="smsSentSuccess">
+
+  <div class="modal-content">
+    <ion-grid>
+      <ion-row>
+        <ion-col [size]="'12'" class="custTextAlignCenter">
+          <ion-img [src]="imageList?.alertTriangle" class="chatIMG"></ion-img>
+        </ion-col>
+        <ion-col [size]="'12'" class="custTextAlignCenter">
+          <span class="custFontFamilyMuliBold muli-16pt custLineHight30 custColorDark">Your device registration is
+            Unsuccessful
+          </span>
+        </ion-col>
+        <ion-col [size]="'12'" class="px-2">
+          <span class="custFontFamilyMuliSemiBold muli-14pt custColorBattlePGry">Kindly proceed with device registration
+            again or add another number present in device</span>
+        </ion-col>
+        <ion-col [size]="'12'" class="px-2">
+          <span class="custFontFamilyMuliSemiBold muli-14pt custColorBattlePGry">We could not detect the SIM in same
+            device so we cannot proceed with device registration.</span>
+        </ion-col>
+        <ion-col [size]="'12'" class="px-2">
+          <span class="custFontFamilyMuliSemiBold muli-14pt custColorBattlePGry">Do you want to open free trading
+            account ?</span>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+      <ion-row class="w-100 py-2">
+
+        <button class="btn py-2 w-100 text-center custBackgroundColorBrightCyan">
+
+          <span class="custColorWhite custFontFamilyMuliBold muli-16pt">Open Trading Account</span>
+
+        </button>
+
+      </ion-row>
+      <ion-row class="w-100 mb-0">
+        <button class="btn w-100 text-center custBackgroundColorWhite custButtonOutLine">
+
+          <span class="custColorBrightCyan custFontFamilyMuliBold muli-16pt">Explore App</span>
+
+        </button>
+
+      </ion-row>
+
+  
+
+  </div>
+</div> -->

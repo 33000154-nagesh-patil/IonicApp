@@ -1,0 +1,430 @@
+<ion-content>
+  <ion-header class="fixed-top">
+    <ion-toolbar class="custBackgroundDynamicColorWhite p-2">
+      <ion-grid>
+        <ion-row>
+          <ion-col [size]="'0.7'" class="text-center mt-1">
+            <ion-img [src]="imageList?.arrow" class="custKYCImg mt-2" (click)="goToBack()"></ion-img>
+          </ion-col>
+          <ion-col [size]="'8'" class="px-3 mt-1">
+            <span class="custFontFamilyMuliBold muli-16pt custLineHight40 custColorDark">Product Description</span>
+          </ion-col>
+          <ion-col [size]="'1'" class="text-center mt-1">
+            <ion-img [src]="imageList?.share" class="custKYCImg mt-2"></ion-img>
+          </ion-col>
+          <ion-col [size]="'1'"></ion-col>
+          <ion-col [size]="'1'" class="text-center mt-1" *ngIf="cartItem; else emptyCart" (click)="handleOnClick()">
+            <ion-badge class="custBadge custRight0" *ngIf="cardCount > 0">{{cardCount}}</ion-badge>
+            <ion-img [src]="imageList?.cartIcon" class="custKYCImg mt-2"></ion-img>
+          </ion-col>
+
+          <ng-template #emptyCart>
+
+            <ion-col [size]="'1'" class="text-center mt-1" (click)="handleOnClick()">
+              <ion-badge class="custBadge custRight0" *ngIf="cardCount > 0">{{cardCount}}</ion-badge>
+              <ion-img [src]="imageList?.cartIcon" class="custKYCImg mt-2"></ion-img>
+            </ion-col>
+            <!-- <p>no item found</p> -->
+          </ng-template>
+        </ion-row>
+      </ion-grid>
+    </ion-toolbar>
+  </ion-header>
+
+
+  <ion-grid>
+    <ion-row class="segment">
+      <ion-col [size]="'0.7'">
+        <ion-img [src]="imageList?.location" class="custImgExpo"></ion-img>
+      </ion-col>
+      <ion-col [size]="'11.3'">
+        <p class="custFontFamilyMuliRegular muli-10pt custLineHight18 custColorBattlePGry">Pickup From <span
+            class="custColorBrightCyan">{{PinCode}}</span></p>
+      </ion-col>
+    </ion-row>
+
+    <ion-card>
+      <ion-card-content class="custBackgroundDynamicColorWhite">
+        <ion-row>
+          <ion-col [size]="'12'">
+            <ion-row><span
+                class="custFontFamilyMuliSemiBold muli-16pt custLineHight18 custColorDark">{{title}}</span>
+            </ion-row>
+            <ion-row><span
+                class="custFontFamilyMuliRegular muli-11pt custLineHight18 custColorBattlePGry mt-2">{{description}}</span>
+            </ion-row>
+            <ion-row class="mt-3"><span
+                class="custFontFamilyMuliRegular muli-10pt custLineHight18 custColorDark">Inclusive of all taxes</span>
+            </ion-row>
+            <ion-row class="mt-3"><span
+                class="custFontFamilyMuliSemiBold muli-13pt custLineHight19 custColorDark">{{rupeesSymbol}}
+                {{price}}</span></ion-row>
+
+            <!-- <span> class="px-4 custFontFamilyMuliRegular muli-14pt custLineHight18 custColorBattlePGry">MRP <del>{{rupeesSymbol}}130.00</del></span> -->
+
+          </ion-col>
+        </ion-row>
+      </ion-card-content>
+    </ion-card>
+
+    <!-- "imageList?.metropolish" -->
+
+    <ion-card>
+      <ion-card-content>
+        <ion-row>
+          <ion-col [size]="'2'">
+            <ion-img [src]="imageList?.thyroCare"></ion-img>
+          </ion-col>
+          <ion-col [size]="'10'">
+            <ion-row>{{name}}</ion-row>
+
+            <!-- <ion-row>NABL, ISO, CAP certified</ion-row> -->
+
+          </ion-col>
+        </ion-row>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card class="custBackgroundDynamicColorWhite">
+      <ion-card-content>
+        <ion-row>
+          <ion-col [size]="'12'">
+            <p><span class="custFontFamilyMuliSemiBold muli-12pt custLineHight18 custColorBattlePGry">E-Reports within
+              </span><span
+                class="px-1 custFontFamilyMuliSemiBold muli-12pt custLineHight18 custColorDark">{{report}}</span></p>
+          </ion-col>
+        </ion-row>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card class="custBackgroundDynamicColorWhite">
+      <ion-card-content>
+        <ion-row>
+          <ion-col [size]="4"><span class="custFontFamilyMuliRegular muli-12pt custLineHight18 custColorGreyish">Sample
+              required:</span></ion-col>
+          <ion-col [size]="8"><span
+              class="custFontFamilyMuliRegular muli-12pt custLineHight18 custColorDark">{{samplerequired}}</span>
+          </ion-col>
+        </ion-row>
+        <ion-row class="mt-2">
+          <ion-col [size]="4"><span
+              class="custFontFamilyMuliRegular muli-11pt custLineHight18 custColorGreyish">preparations:</span>
+          </ion-col>
+          <ion-col [size]="8" class="custFontFamilyMuliRegular muli-12pt custLineHight18 custColorDark">
+
+            <!-- <ion-row><span>Do not eat or drink anything</span></ion-row>
+        <ion-row><span>other than water for 8-12</span></ion-row>
+        <ion-row><span>hours before the test</span></ion-row> -->
+
+            <p>{{preparations}}</p>
+          </ion-col>
+        </ion-row>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-row class="mt-3 mb-3 px-2">
+      <ion-col [size]="'12'"><span class="custFontFamilyMuliSemiBold muli-16pt custLineHight18 custColorDark">Medical
+          Description</span></ion-col>
+    </ion-row>
+
+    <ion-card class="custBackgroundDynamicColorWhite">
+      <ion-card-content>
+        <ion-row>
+          <ion-col [size]="'12'">
+            <ion-row class="custFontFamilyMuliRegular muli-12pt custLineHight18 custColorDark">
+
+              <!-- <p>Fasting Blood Sugar, also called the Fasting Plasma Glucose test, measures your fasting blood glucose level. Fasting means you should not eat or drink (anything except water) for 8 hours. This test is used to screen for prediabetes and diabetes and check the effectiveness of medications or dietary changes for people diagnosed with diabetes.</p> 
+            <p class="mt-2">Apart from diabetes, higher levels of glucose can be seen in insulin resistance, hormonal imbalances, and pancreatic, liver, or kidney disease.</p>
+            <p class="mt-2">Engaging in physical activity and consuming a balanced diet is a great way to control your sugar levels.</p> -->
+
+              <p>{{summary}}</p>
+            </ion-row>
+          </ion-col>
+        </ion-row>
+      </ion-card-content>
+    </ion-card>
+
+    <!-- <ion-row class="mt-3 mb-3 px-2">
+      <ion-col [size]="'12'"><span class="custFontFamilyMuliSemiBold muli-16pt custLineHight18 custColorDark">Frequently
+          Bought Together</span></ion-col>
+    </ion-row> -->
+<!-- 
+    <ion-row class="container">
+      <ion-col [size]="'11'" *ngFor="let x of data">
+        <ion-card class="card cardItem">
+          <ion-card-content>
+            <ion-row>
+              <ion-col [size]="'1.5'">
+                <ion-img [src]="x?.logo"></ion-img>
+              </ion-col>
+              <ion-col [size]="'9.8'">
+                <ion-row><span
+                    class="custFontFamilyMuliRegular muli-14pt custLineHight15 custColorDark">{{x?.title}}</span>
+                </ion-row>
+                <ion-row><span
+                    class="custFontFamilyMuliRegular muli-10pt custLineHight20 custColorWarmGrey">{{x?.description}}</span>
+                </ion-row>
+                <ion-row><span
+                    class="custFontFamilyMuliRegular muli-10pt custLineHight20 custColorWarmGrey">{{x?.name}}</span>
+                </ion-row>
+              </ion-col>
+              <ion-col [size]="'0.7'">
+                <ion-img [src]="imageList?.leftArrowIcon"></ion-img>
+              </ion-col>
+            </ion-row>
+            <ion-row class="mt-3">
+              <ion-col [size]="'4'">
+                <ion-row><span class="custFontFamilyMuliRegular muli-10pt custLineHight15 custColorGreyish">Price</span>
+                </ion-row>
+                <ion-row class="mt-1"><span
+                    class="custFontFamilyMuliSemiBold muli-14pt custLineHight20 custColorDark">{{rupeesSymbol}}{{x?.price}}</span>
+                </ion-row>
+              </ion-col>
+              <ion-col [size]="'4'">
+                <ion-row><span class="custFontFamilyMuliRegular muli-10pt custLineHight15 custColorWarmGrey">E-reports
+                    Within</span></ion-row>
+                <ion-row class="mt-1"><span
+                    class="custFontFamilyMuliRegular muli-14pt custLineHight18 custColorDark">{{x?.report}}</span>
+                </ion-row>
+              </ion-col>
+              <ion-col [size]="'4'">
+                <ion-row class="flex-end">No. of Tests </ion-row>
+                <ion-row class="flex-end">{{x?.testNo}} </ion-row>
+              </ion-col>
+            </ion-row>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row> -->
+
+
+
+    <!-- <ion-row>
+  <button type="button"
+  class="custBtnExplore text-capitalize custColorBrightCyan custFontFamilyMuliRegular muli-14pt custButtonOutLine float-end" id="wellnessMutualFund">{{x?.btnText}}</button>
+</ion-row> -->
+    <!-- <ion-card>
+  <ion-card-content>
+    <ion-row>
+      <ion-col [size]="1">
+        <ion-img [src]="imageList?.similar"></ion-img>
+      </ion-col>
+      <ion-col [size]="5"><span>View Similar Products</span></ion-col>
+      <ion-col [size]="1"></ion-col>
+      <ion-img [src]="imageList?.compare"></ion-img>
+      <ion-col [size]="5"><span>Add to Compare</span></ion-col>
+    </ion-row>
+  </ion-card-content>
+</ion-card> -->
+
+    <!-- <ion-card>
+  <ion-card-content> -->
+
+    <!-- <ion-row class="">
+      <ion-col [size]="'0.7'">
+        <ion-img [src]="imageList?.similar" class="custImgExpo mt-1"></ion-img>
+      </ion-col>
+      <ion-col [size]="'6'"><span class="custFontFamilyMuliSemiBold muli-12pt custLineHight18 custColorDarkishBlue">View similar products</span></ion-col>
+      <ion-col [size]="'0.7'">
+        <ion-img [src]="imageList?.compare" class="custImgExpo mt-1"></ion-img>
+      </ion-col>
+      <ion-col [size]="'4.6'"><span class="custFontFamilyMuliSemiBold muli-12pt text-end custLineHight18 custColorDarkishBlue">Add to compare</span></ion-col>
+    </ion-row> -->
+
+    <!-- <ion-row >
+      <ion-col [size]="'0.7'">
+        <ion-img [src]="imageList?.similar" class="custImgExpo mt-1"></ion-img>
+      </ion-col>
+      <ion-col [size]="'6'"><span class="custFontFamilyMuliSemiBold muli-12pt custLineHight18 custColorDarkishBlue">View similar products</span></ion-col> -->
+    <!-- <ion-col [size]="'0.7'">
+        <ion-img [src]="imageList?.compare" class="custImgExpo mt-1"></ion-img>
+      </ion-col> -->
+    <!-- <ion-col [size]="'3.6'"><span class="custFontFamilyMuliSemiBold muli-12pt text-end float-end custLineHight18 custColorDarkishBlue">Add to compare</span></ion-col> -->
+    <!-- <ion-col [size]="'5.3'">
+     <span class="float-end">
+     <img [src]="imageList?.compare" class="custImgExpo mb-1" >
+     <span class="custFontFamilyMuliSemiBold muli-12pt text-end float-end custLineHight18 custColorDarkishBlue px-1">Add to compare</span>
+   </span>
+   </ion-col>    
+  </ion-row> -->
+
+    <!-- </ion-card-content>
+</ion-card> -->
+
+    <div class="px-2">
+
+      <!-- <mat-accordion class="example-headers-align w-100 custColorDarkishBlue h-5">
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        <span class="custFontFamilyMuliSemiBold muli-12pt custLineHight18 custColorDark">Additional Information</span>
+      </mat-panel-title>            
+    </mat-expansion-panel-header>
+    <p>
+      <span class="custFontFamilyMuliBold  muli-10pt custLineHight20 custColorDark">Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Repellat sit neque non, saepe iusto
+        maiores perferendis mollitia soluta illo debitis consequuntur rem vitae
+        officiis! Molestias corporis sint reprehenderit, rerum accusantium voluptatem
+         dicta nostrum praesentium fugiat earum adipisci autem alias eius.
+         Incidunt quis debitis perspiciatis reprehenderit distinctio numquam,
+          quidem corporis officia.
+        </span>           
+    </p>
+  </mat-expansion-panel>
+</mat-accordion> -->
+      <!-- 
+<ion-row class="mt-3 mb-3">
+  <ion-col [size]="'12'">
+    <span class="custFontFamilyMuliSemiBold  muli-16pt custLineHight24 custColorDark">Frequently Asked Questions (FAQs)</span>
+  </ion-col>
+</ion-row>
+
+<mat-accordion class="example-headers-align w-100 custColorDarkishBlue h-5">
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        <span class="custFontFamilyMuliRegular muli-12pt custLineHight18 custColorTint">{{frequentlyasked}}</span>
+      </mat-panel-title>            
+    </mat-expansion-panel-header>
+    
+    <div class="custBackgroundColorCyanBlue p-2 border">
+      <span class="custFontFamilyMuliBold  muli-10pt custLineHight15 custColorWarmGrey">yes, Dolo 650 tablets can be used for headache.
+        However, if you are feeling to get the headache too often and there is not much relief in the headache after taking this medicine,
+        consult your doctor.
+        
+        </span>            
+      </div>
+  </mat-expansion-panel>
+</mat-accordion>
+
+<mat-accordion class="example-headers-align w-100 custColorDarkishBlue h-5">
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        <span class="custFontFamilyMuliRegular muli-12pt custLineHight18 custColorTint">Can Dolo 650 be used for a headache?</span>
+      </mat-panel-title>            
+    </mat-expansion-panel-header>
+    
+    <div class="custBackgroundColorCyanBlue p-2 border">
+      <span class="custFontFamilyMuliBold  muli-10pt custLineHight15 custColorWarmGrey">yes, Dolo 650 tablets can be used for headache.
+        However, if you are feeling to get the headache too often and there is not much relief in the headache after taking this medicine,
+        consult your doctor.
+        
+        </span>            
+      </div>
+  </mat-expansion-panel>
+</mat-accordion>
+
+<mat-accordion class="example-headers-align w-100 custColorDarkishBlue h-5">
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        <span class="custFontFamilyMuliRegular muli-12pt custLineHight18 custColorTint">Can I take Dolo 650 for cold and fever?</span>
+      </mat-panel-title>            
+    </mat-expansion-panel-header>
+    
+    <div class="custBackgroundColorCyanBlue p-2 border">
+      <span class="custFontFamilyMuliBold  muli-10pt custLineHight15 custColorWarmGrey">You can take Dolo 650 for controlling fever,
+        it may not have any action in reducing cold as colds usually happen due to viral infection.
+        </span>            
+      </div>
+  </mat-expansion-panel>
+</mat-accordion> -->
+
+
+      <ion-row class="mt-3">
+        <ion-col [size]="'12'">
+          <button type="button" (click)="handleClick()"
+            class="w-100 custBtnExplore text-capitalize custColorBrightCyan custFontFamilyMuliRegular muli-14pt custButtonOutLine float-end">Proceed to Buy
+          </button>
+        </ion-col>
+      </ion-row>
+
+    </div>
+
+    <!-- <ion-row class="mt-3 mb-3 px-2">
+  <ion-col [size]="'12'">
+    <span class="custFontFamilyMuliBold muli-16pt custLineHight24 custColorDark">Feedback</span>
+  </ion-col>
+</ion-row> -->
+    <!-- 
+<ion-row>
+  <ion-col [size]="'9'">
+    <ion-row><span class="custFontFamilyMuliSemiBold muli-14pt custLineHight20 custColorDarkShade">We'd love to hear from you</span></ion-row>
+    <ion-row><span class="custFontFamilyMuliSemiBold muli-12pt custLineHight18 custColorWarmGrey">This will just take two mins of your time</span></ion-row>
+  </ion-col>
+
+  <ion-col [size]="'2'">
+  </ion-col>
+  <ion-col [size]="'0.7'" class="mt-1">
+    <ion-img [src]="imageList?.leftArrowIcon"></ion-img>
+  </ion-col>
+</ion-row> -->
+
+    <!-- <ion-card>
+  <ion-card-content>
+  
+    <ion-row>
+ 
+      <ion-col [size]="11.3">
+        <span class="custFontFamilyMuliSemiBold muli-14pt custLineHight20 custColorDarkShade">We'd love to hear from you</span>
+      </ion-col>
+      <ion-col [size]="'0.7'" class="mt-1">
+        <ion-img [src]="imageList?.leftArrowIcon"></ion-img>
+      </ion-col>
+
+
+    </ion-row>
+    <ion-row>
+      <ion-col [size]="'12'">
+        <span class="custFontFamilyMuliSemiBold muli-12pt custLineHight18 custColorWarmGrey">This will just take two mins of your time</span>
+      </ion-col>
+    </ion-row>
+
+  </ion-card-content>
+</ion-card> -->
+
+
+    <!-- <ion-row class="mt-3 mb-3 px-2">
+  <ion-col [size]="'6'"><span>References</span></ion-col>
+  <ion-col [size]="'6'" class="text-end"><span>View All</span></ion-col>
+</ion-row> -->
+
+    <!-- <ion-row class="mt-3 mb-3 px-2">
+  <ion-col [size]="'5'"><span class="custFontFamilyMuliSemiBold muli-14pt custLineHight20 custColorDarkShade">References</span></ion-col>
+  <ion-col [size]="'4.5'"></ion-col>
+  <ion-col [size]="'2.5'"><span class="custFontFamilyMuliSemiBold muli-12pt custLineHight18 float-end custColorDarkishBlue">View All</span></ion-col>
+</ion-row> 
+
+
+
+<ion-card>
+  <ion-card-content>
+    <ion-row>
+      <ion-col [size]="'12'">
+        <p>GlaxoSmithKline Pharmaceuticals Ltd [Internet]. Crocin.com. 2021 [cited 10 January 2022]</p>
+        <p class="mt-3">Paracetamol [Internet]. Ncbi.nlm.nih.gov. 2021 [cited 10 January 2022]</p>
+      </ion-col>
+    </ion-row>
+   
+  </ion-card-content>
+</ion-card> -->
+
+
+
+  </ion-grid>
+
+
+  <ion-card class="m-0 p-0">
+    <ion-card-content>
+      <ion-row>
+        <ion-col [size]="'12'">
+          <button (click)="handleOnAdd()" class="btn w-100 text-center custBackgroundColorBrightCyan"><span
+              class="custColorWhite custFontFamilyMuliBold muli-16pt">Add to Cart</span></button>
+        </ion-col>
+      </ion-row>
+    </ion-card-content>
+  </ion-card>
+
+
+</ion-content>

@@ -1,0 +1,58 @@
+{
+    "Orderlist":["ByLabs","SortBy"],
+
+  "ByLabs":[
+      {
+          "name":"Metropolis Healthcare ...",
+          "id": 1,
+          "select":true
+        },
+        {
+            "name":"Thyrocare Technologie ...",
+            "id": 2,
+            "select":false
+        },
+        {
+            "name":"Core Diagnostics",
+            "id": 3,
+            "select":false
+        },
+        {
+            "name":"Tata 1mg Labs",
+            "id": 4,
+            "select":false
+        }
+    ],
+    "SortBy":[
+        {
+            "name":"Popular",
+            "id": 1,
+            "select":true
+          },
+          {
+              "name":"Price - low to high",
+              "id": 2,
+              "select":false
+          },
+          {
+              "name":"Price - high to low",
+              "id": 3,
+              "select":false
+          },
+          {
+            "name":"Report delivery time - earliest to latest",
+            "id": 4,
+            "select":false
+        },
+        {
+            "name":"No. of tests - high to low",
+            "id": 5,
+            "select":false
+        },
+        {
+            "name":"No. of tests - low to high",
+            "id": 5,
+            "select":false
+        }
+      ]
+}

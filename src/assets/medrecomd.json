@@ -1,0 +1,29 @@
+[
+    {
+        "id": "1",
+        "logo": "assets/Images/Group 20574.png",
+        "title": "Dolo- 650 Tablet",
+        "description": "by Micro Labs. 15 Tablets Strip",
+        "price": "25",
+        "rating": "assets/Images/ratings (1).svg",
+        "prescription": "Required"
+    },
+    {
+        "id": "2",
+        "logo": "assets/Images/Group 20759.png",
+        "title": "Dettol Antiseptic Liquid",
+        "description": "by Dettol. Bottle Of 550 ML",
+        "price": "250",
+        "rating": "assets/Images/ratings (1).svg",
+        "prescription": "Required"
+    },
+    {
+        "id": "3",
+        "logo": "assets/Images/Group 20574.png",
+        "title": "Dolo- 650 Tablet",
+        "description": "by Micro Labs. 15 Tablets Strip",
+        "price": "25",
+        "rating": "assets/Images/ratings (1).svg",
+        "prescription": "Required"
+    }
+]

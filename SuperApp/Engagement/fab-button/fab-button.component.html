@@ -1,0 +1,113 @@
+<!-- <ion-row class="mb-5 sticky-top" class="custBackground">
+
+  <div id="hamburger" >
+
+       <img src="assets\icon\coconut water icon (1) (1).svg" />
+
+  </div>
+
+  <div class="nav" id="settings" >
+
+    <img class="material-icons" src="assets\icon\close.svg" />
+
+  </div>
+
+  <div class="nav" id="setting1" >
+
+    <img class="material-icons" src="assets\icon\close.svg" />
+
+  </div>
+
+  <div class="nav" id="thumb">
+
+    <img class="material-icons" src="assets\icon\close.svg" />
+
+  </div>
+
+  <div class="nav" id="create" >
+
+    <img class="material-icons" src="assets\icon\close.svg" />
+
+  </div>
+
+  <div class="nav" id="share" >
+
+    <img class="material-icons" src="assets\icon\close.svg" />
+
+  </div>
+
+
+
+</ion-row>  -->
+
+
+  
+  <!-- Rizwan fab button start -->
+
+<ion-fab horizontal="end" vertical="bottom"   class="custMarginBottom"  >
+  <ion-fab-button  [ngClass]="superMode?'custFabBgSuper':'custFabBgBasic'" (click)="toggleSuperMode(!superMode = superMode);"   id="superMode" >
+       <ion-img [src]="fabIcon"  ></ion-img>
+  </ion-fab-button>
+</ion-fab>
+
+<div class="stickyTop" >
+
+  <div class="nav" id="settings" >
+    <img class="material-icons" src="assets\icon\fabSocial.svg" />
+  </div>
+  <div class="nav" id="setting1"  (click)="navigateToLink('torusClub')" >
+    <img class="material-icons"  src="assets\icon\fabTorusClub.svg" />
+  </div>
+  <div class="nav" id="thumb" (click)="navigateToLink('chatBot')">
+    <img class="material-icons"  src="assets\icon\fabChatbot.svg" />
+  </div>
+  <div class="nav" id="create" (click)="redflag()">
+    <!-- <img class="material-icons"  src="assets\icon\fabTIA.svg" /> -->
+    <img class="material-icons"  src="assets\icon\redFlag.svg"  />
+
+  </div>
+  <div class="nav" id="share" >
+    <img class="material-icons"  src="assets\icon\fabOffer.svg" />
+  </div>
+
+</div> 
+
+
+  <!-- Rizwan fab button end -->
+
+
+
+
+
+<!-- 
+<div id="main-wrapper">
+  <div id="floating-snap-btn-wrapper">
+    
+    <div class="fab-btn">
+       <ion-icon name="share-social"></ion-icon>
+    </div>
+   
+    <ul>
+      <li>
+        <ion-icon name="logo-twitter"></ion-icon>
+      </li>
+      <li>
+        <ion-icon name="logo-facebook"></ion-icon>
+      </li>
+      <li>
+        <ion-icon name="logo-whatsapp"></ion-icon>
+      </li>
+    </ul>
+   
+  </div>
+</div>  -->
+
+
+<!-- Anirudh Code start
+<ion-fab *ngIf="flag" horizontal="end" vertical="bottom"   class="custMarginBottom"  >
+  <ion-fab-button  [ngClass]="superMode?'custFabBgSuper':'custFabBgBasic'" (click)="redflag()"   id="superMode" >
+   
+    <ion-img [src]="fabIcon"  ></ion-img>
+  </ion-fab-button>
+</ion-fab>
+Anirudh Code end -->

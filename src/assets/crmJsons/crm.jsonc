@@ -1,0 +1,2054 @@
+{
+    "mainContain": {
+        "header": {
+            "id": "",
+            "title": "",
+            "icon": "",
+            "type": "",
+            "uxClass": "headerBackGround",
+            "cssx": {
+                "background-color": "#0F4880",
+                "height": "60px",
+                "padding-top": "13px",
+                "padding-left": "13px"
+            },
+            "des": "",
+            "key": "true",
+            "value": [
+                {
+                    "id": "",
+                    "title": "",
+                    "icon": "assets/icon/menuHeader.svg",
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "colSize03",
+                    "des": "",
+                    "key": "menu",
+                    "value": 
+                    [
+                        {
+                            "id": "",
+                            "title": "Prise",
+                            "icon": "/assets/icon/totalLeads.svg",
+                            "type": "",
+                            "cssx": "",
+                            "uxClass": "muli-16pt custFontFamilyMuliSemiBold",
+                            "des": "",
+                            "key": "",
+                            "value": "",
+                            "size":"6"
+                        },
+                        {
+                            "id": "",
+                            "title": "CRM Services",
+                            "icon": "/assets/icon/todaysLeads.svg",
+                            "type": "",
+                            "cssx": "",
+                            "uxClass": "muli-16pt custFontFamilyMuliSemiBold",
+                            "des": "",
+                            "key": "",
+                            "value": "",
+                            "size":"6"
+                        },
+                        {
+                            "id": "",
+                            "title": "Tone",
+                            "icon": "/assets/icon/scheduledActivities.svg",
+                            "type": "",
+                            "cssx": "",
+                            "uxClass": "muli-16pt custFontFamilyMuliSemiBold",
+                            "des": "",
+                            "key": "",
+                            "value": "",
+                            "size":"6"
+                        },
+                         {
+                            "id": "",
+                            "title": "CRM Sales",
+                            "icon": "/assets/icon/totalLeads.svg",
+                            "type": "",
+                            "cssx": "",
+                            "uxClass": "muli-16pt custFontFamilyMuliSemiBold",
+                            "des": "",
+                            "key": "",
+                            "value": "",
+                            "size":"6"
+                        },
+                        {
+                            "id": "",
+                            "title": "DBO",
+                            "icon": "/assets/icon/todaysLeads.svg",
+                            "type": "",
+                            "cssx": "",
+                            "uxClass": "muli-16pt custFontFamilyMuliSemiBold",
+                            "des": "",
+                            "key": "",
+                            "value": "",
+                            "size":"6"
+                        },
+                        {
+                            "id": "",
+                            "title": "Connect",
+                            "icon": "/assets/icon/scheduledActivities.svg",
+                            "type": "",
+                            "cssx": "",
+                            "uxClass": "muli-16pt custFontFamilyMuliSemiBold",
+                            "des": "",
+                            "key": "",
+                            "value": "",
+                            "size":"6"
+                        }
+                    ]
+                },
+                {
+                    "id": "",
+                    "title": "",
+                    "value": "",
+                    "icon": "assets/icon/torusCRM.svg",
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "colSize2",
+                    "des": "",
+                    "key": ""
+                },
+                {
+                    "id": "",
+                    "title": "",
+                    "value": "",
+                    "icon": "",
+                    "type": "",
+                    "cssx": {
+                        "width": "782px",
+                        "height": "35px",
+                        "border-radius": "5px"
+                    },
+                    "uxClass": "colSize8",
+                    "des": "Search Here",
+                    "key": "input"
+                },
+                {
+                    "id": "",
+                    "title": "",
+                    "value": "",
+                    "icon": "assets/icon/notification.svg",
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "colSize03",
+                    "des": "",
+                    "key": ""
+                },
+                {
+                    "id": "",
+                    "title": "Pratham",
+                    "value": "",
+                    "icon": "assets/icon/profilePicture.svg",
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "colSize1 custColorWhite",
+                    "des": "Customer",
+                    "key": ""
+                },
+                {
+                    "id": "",
+                    "title": "",
+                    "key": "",
+                    "value": {
+                        "id": "",
+                        "title": "",
+                        "key": "",
+                        "value": [
+                            {
+                                "id": "",
+                                "title": "E123456",
+                                "value": "",
+                                "icon": "assets/icon/profilePicture.svg",
+                                "type": "",
+                                "cssx": "",
+                                "uxClass": "colSize12",
+                                "des": "",
+                                "key": ""
+                            },
+                            {
+                                "id": "",
+                                "title": "abc@heytorus.com",
+                                "value": "",
+                                "icon": "assets/icon/Email.svg",
+                                "type": "",
+                                "cssx": "",
+                                "uxClass": "colSize12",
+                                "des": "",
+                                "key": ""
+                            },
+                            {
+                                "id": "",
+                                "title": "Logout",
+                                "value": "",
+                                "icon": "assets/icon/logout.svg",
+                                "type": "",
+                                "cssx": "",
+                                "uxClass": "colSize12",
+                                "des": "",
+                                "key": ""
+                            }
+                        ],
+                        "icon": "",
+                        "type": "",
+                        "cssx": {
+                            "width": "200px",
+                            "height": "120px",
+                            "border": "solid 2px #44C8F5",
+                            "border-radius": "5px"
+                        },
+                        "uxClass": "",
+                        "des": ""
+                    },
+                    "icon": "assets/icon/whiteAccordianHeader.svg",
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "colSize03",
+                    "des": ""
+                }
+            ]
+        },
+        "menuBar": {
+            "id": "",
+            "title": "",
+            "icon": "",
+            "type": "",
+            "cssx": {
+                "width":"240px"
+            },
+            "uxClass": "menuBar",
+            "des": "",
+            "key": "true",
+            "value": [
+                {
+                    "id": "",
+                    "title": "Sales",
+                    "icon": "",
+                    "type": "expand",
+                    "cssx": "",
+                    "uxClass": "",
+                    "des": "",
+                    "key": "true",
+                    "value": [
+                        {
+                            "id": "",
+                            "title": "Dashboard",
+                            "icon": "assets/icon/menuIcon/Dashboard.svg",
+                            "type": "",
+                            "cssx": "",
+                            "uxClass": "",
+                            "des": "",
+                            "key": "true",
+                            "showHide": [
+                                "search",
+                                "card",
+                                "doughnut",
+                                "barChart"
+                            ],
+                            "value": {
+                                "search": {
+                                    "id": "",
+                                    "title": "Search",
+                                    "icon": "",
+                                    "type": "",
+                                    "cssx": "",
+                                    "uxClass": "px-3",
+                                    "des": [],
+                                    "key": "",
+                                    "showHide": [],
+                                    "value": [
+                                        {
+                                            "id": "",
+                                            "title": "Period",
+                                            "icon": "",
+                                            "type": "dropDown",
+                                            "cssx": "",
+                                            "uxClass": "muli-16pt",
+                                            "des": [],
+                                            "key": "",
+                                            "validators": {
+                                                "required": true
+                                            },
+                                            "value": "",
+                                            "options": [
+                                                "Last 7 Days",
+                                                "Last 30 Days",
+                                                "Last 90 Days",
+                                                "custom"
+                                            ]
+                                        },
+                                        {
+                                            "id": "",
+                                            "title": "",
+                                            "icon": "",
+                                            "type": "",
+                                            "cssx": "",
+                                            "uxClass": "",
+                                            "des": [],
+                                            "key": "",
+                                            "validators": "",
+                                            "value": ""
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "id": "",
+                            "title": "Lead Details",
+                            "icon": "assets/icon/menuIcon/LeadDetails.svg",
+                            "type": "",
+                            "cssx": "",
+                            "uxClass": "",
+                            "des": [],
+                            "key": "true",
+                            "showHide": [
+                                "search"
+                            ],
+                            "value": {
+                                "search": {
+                                    "id": "",
+                                    "title": "Search",
+                                    "icon": "",
+                                    "type": "",
+                                    "cssx": "",
+                                    "uxClass": "px-3",
+                                    "des": [],
+                                    "key": "",
+                                    "showHide": [],
+                                    "value": [
+                                        {
+                                            "id": "",
+                                            "title": "From Date",
+                                            "icon": "",
+                                            "type": "calender",
+                                            "cssx": "",
+                                            "uxClass": "",
+                                            "des": [],
+                                            "key": "",
+                                            "validators": {
+                                                "required": true
+                                            },
+                                            "value": ""
+                                        },
+                                        {
+                                            "id": "",
+                                            "title": "To Date",
+                                            "icon": "",
+                                            "type": "calender",
+                                            "cssx": "",
+                                            "uxClass": "",
+                                            "des": [],
+                                            "key": "",
+                                            "validators": {
+                                                "required": true
+                                            },
+                                            "value": ""
+                                        },
+                                        {
+                                            "id": "",
+                                            "title": "Mobile Number/Email ID",
+                                            "icon": "",
+                                            "type": "ALPHANUMERIC",
+                                            "cssx": "",
+                                            "uxClass": "",
+                                            "des": [],
+                                            "key": "",
+                                            "validators": {
+                                                "required": true
+                                            },
+                                            "value": ""
+                                        },
+                                        {
+                                            "id": "",
+                                            "title": "Submit",
+                                            "icon": "",
+                                            "type": "submit",
+                                            "cssx": "",
+                                            "uxClass": "",
+                                            "des": [],
+                                            "key": "",
+                                            "validators": "",
+                                            "value": ""
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "id": "",
+                            "title": "Lead Bulk Upload",
+                            "icon": "assets/icon/menuIcon/LeadBulkUpload.svg",
+                            "type": "",
+                            "cssx": "",
+                            "uxClass": "",
+                            "des": "",
+                            "key": "true",
+                            "showHide": [
+                                "search"
+                            ],
+                            "value": {
+                                "search": {
+                                    "id": "",
+                                    "title": "Search",
+                                    "icon": "",
+                                    "type": "",
+                                    "cssx": "",
+                                    "uxClass": "px-3",
+                                    "des": [],
+                                    "key": "",
+                                    "showHide": [],
+                                    "value": [
+                                        {
+                                            "id": "",
+                                            "title": "",
+                                            "icon": "",
+                                            "type": "file",
+                                            "cssx": "",
+                                            "uxClass": "",
+                                            "des": [],
+                                            "key": "",
+                                            "validators": {
+                                                "required": true
+                                            },
+                                            "value": ""
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "id": "",
+                            "title": "Lead Assignment",
+                            "icon": "assets/icon/menuIcon/LeadAssignment.svg",
+                            "type": "",
+                            "cssx": "",
+                            "uxClass": "",
+                            "des": "",
+                            "key": "false",
+                            "showHide": [],
+                            "value": ""
+                        },
+                        {
+                            "id": "",
+                            "title": "Lead Transfer",
+                            "icon": "assets/icon/menuIcon/LeadTransfer.svg",
+                            "type": "",
+                            "cssx": "",
+                            "uxClass": "",
+                            "des": "",
+                            "key": "true",
+                            "showHide": [],
+                            "value": ""
+                        },
+                        {
+                            "id": "",
+                            "title": "Configuration",
+                            "icon": "assets/icon/menuIcon/Dashboard.svg",
+                            "type": "",
+                            "cssx": "",
+                            "uxClass": "",
+                            "des": "",
+                            "key": "false",
+                            "showHide": [],
+                            "value": ""
+                        },
+                        {
+                            "id": "",
+                            "title": "Delegation",
+                            "icon": "assets/icon/menuIcon/Dashboard.svg",
+                            "type": "",
+                            "cssx": "",
+                            "uxClass": "",
+                            "des": "",
+                            "key": "true",
+                            "showHide": [],
+                            "value": ""
+                        },
+                        {
+                            "id": "",
+                            "title": "Reports",
+                            "icon": "assets/icon/menuIcon/Reports.svg",
+                            "type": "",
+                            "cssx": "",
+                            "uxClass": "",
+                            "des": "",
+                            "key": "true",
+                            "showHide": [],
+                            "value": ""
+                        },
+                        {
+                            "id": "",
+                            "title": "Escalation Rule",
+                            "icon": "assets/icon/menuIcon/Dashboard.svg",
+                            "type": "",
+                            "cssx": "",
+                            "uxClass": "",
+                            "des": "",
+                            "key": "true",
+                            "showHide": [],
+                            "value": ""
+                        },
+                        {
+                            "id": "",
+                            "title": "Contacts",
+                            "icon": "assets/icon/menuIcon/Dashboard.svg",
+                            "type": "",
+                            "cssx": "",
+                            "uxClass": "",
+                            "des": "",
+                            "key": "true",
+                            "showHide": [],
+                            "value": ""
+                        }
+                    ]
+                },
+                {
+                    "id": "",
+                    "title": "Services",
+                    "icon": "",
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "",
+                    "des": "",
+                    "key": "true",
+                    "value": [
+                        {
+                            "id": "",
+                            "title": "Services1",
+                            "icon": "assets/icon/menuIcon/Dashboard.svg",
+                            "type": "",
+                            "cssx": "",
+                            "uxClass": "",
+                            "des": "",
+                            "key": "true",
+                            "showHide": [],
+                            "value": ""
+                        },
+                        {
+                            "id": "",
+                            "title": "Service2",
+                            "icon": "assets/icon/menuIcon/Dashboard.svg",
+                            "type": "",
+                            "cssx": "",
+                            "uxClass": "",
+                            "des": "",
+                            "key": "true",
+                            "value": ""
+                        }
+                    ]
+                },
+                {
+                    "id": "",
+                    "title": "Settings",
+                    "icon": "assets/icon/menuIcon/Settings.svg",
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "",
+                    "des": "",
+                    "key": "",
+                    "value": ""
+                },
+                {
+                    "id": "",
+                    "title": "Help",
+                    "icon": "assets/icon/menuIcon/Help.svg",
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "",
+                    "des": "",
+                    "key": "",
+                    "value": ""
+                }
+            ]
+        },
+        "subHeader": {
+            "id": "",
+            "title": "",
+            "icon": "",
+            "type": "",
+            "cssx": {
+                "height": "78px",
+                "background-color": "white;"
+            },
+            "uxClass": "",
+            "des": "",
+            "key": "true",
+            "value": [
+                {
+                    "id": "",
+                    "title": "Dashboard",
+                    "icon": "",
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "muli-34pt",
+                    "des": "",
+                    "key": "",
+                    "value": [
+                        {
+                            "id": "",
+                            "title": "+ Create New Lead",
+                            "icon": "",
+                            "type": "",
+                            "cssx": "",
+                            "uxClass": "btn custColorWhite custBackgroundColorBrightCyan",
+                            "des": "",
+                            "key": "",
+                            "value": [
+                                {
+                                    "id": "",
+                                    "title": "First Name",
+                                    "icon": "",
+                                    "type": "ALPHANUMERIC",
+                                    "cssx": "",
+                                    "uxClass": "",
+                                    "des": [],
+                                    "key": "",
+                                    "validators": {
+                                        "required": true
+                                    },
+                                    "value": ""
+                                },
+                                {
+                                    "id": "",
+                                    "title": "Last Name",
+                                    "icon": "",
+                                    "type": "ALPHANUMERIC",
+                                    "cssx": "",
+                                    "uxClass": "",
+                                    "des": [],
+                                    "key": "",
+                                    "validators": "",
+                                    "value": ""
+                                },
+                                {
+                                    "id": "",
+                                    "title": "Mobile Number",
+                                    "icon": "",
+                                    "type": "ALPHANUMERIC",
+                                    "cssx": "",
+                                    "uxClass": "",
+                                    "des": [],
+                                    "key": "",
+                                    "validators": {
+                                        "required": true
+                                    },
+                                    "value": ""
+                                },
+                                {
+                                    "id": "",
+                                    "title": "Eamil",
+                                    "icon": "",
+                                    "type": "ALPHANUMERIC",
+                                    "cssx": "",
+                                    "uxClass": "",
+                                    "des": [],
+                                    "key": "",
+                                    "validators": "",
+                                    "value": ""
+                                },
+                                {
+                                    "id": "",
+                                    "title": "Select Product",
+                                    "icon": "",
+                                    "type": "dropDown",
+                                    "cssx": "",
+                                    "uxClass": "",
+                                    "des": [],
+                                    "key": "",
+                                    "validators": {
+                                        "required": true
+                                    },
+                                    "value": "",
+                                    "options": [
+                                        "Stocks",
+                                        "Mutul Funds",
+                                        "Health",
+                                        "Education"
+                                    ]
+                                },
+                                {
+                                    "id": "",
+                                    "title": "Select Source",
+                                    "icon": "",
+                                    "type": "ALPHANUMERIC",
+                                    "cssx": "",
+                                    "uxClass": "",
+                                    "des": [],
+                                    "key": "",
+                                    "validators": "",
+                                    "value": ""
+                                },
+                                {
+                                    "id": "",
+                                    "title": "Remarks",
+                                    "icon": "",
+                                    "type": "ALPHANUMERIC",
+                                    "cssx": "",
+                                    "uxClass": "",
+                                    "des": [],
+                                    "key": "",
+                                    "validators": "",
+                                    "value": ""
+                                },
+                                {
+                                    "id": "",
+                                    "title": "Submit",
+                                    "icon": "",
+                                    "type": "submit",
+                                    "cssx": "",
+                                    "uxClass": "",
+                                    "des": [],
+                                    "key": "",
+                                    "validators": "",
+                                    "value": ""
+                                },
+                                {
+                                    "id": "",
+                                    "title": "Cancel",
+                                    "icon": "",
+                                    "type": "submit",
+                                    "cssx": "",
+                                    "uxClass": "",
+                                    "des": [],
+                                    "key": "",
+                                    "validators": "",
+                                    "value": ""
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "",
+                    "title": "Lead Details",
+                    "icon": "",
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "muli-34pt",
+                    "des": "",
+                    "key": "",
+                    "value": [
+                        {
+                            "id": "",
+                            "title": "+ Create New Lead",
+                            "icon": "",
+                            "type": "",
+                            "cssx": "",
+                            "uxClass": "btn custColorWhite custBackgroundColorBrightCyan",
+                            "des": "",
+                            "key": "",
+                            "value": ""
+                        }
+                    ]
+                },
+                {
+                    "id": "",
+                    "title": "Lead Bulk Upload",
+                    "icon": "",
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "muli-34pt",
+                    "des": "",
+                    "key": "",
+                    "value": [
+                        {
+                            "id": "",
+                            "title": "",
+                            "icon": "",
+                            "type": "",
+                            "cssx": "",
+                            "uxClass": "",
+                            "des": "",
+                            "key": "",
+                            "value": ""
+                        }
+                    ]
+                },
+                {
+                    "id": "",
+                    "title": "Lead Assignment",
+                    "icon": "",
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "muli-34pt",
+                    "des": "",
+                    "key": "",
+                    "value": [
+                        {
+                            "id": "",
+                            "title": "",
+                            "icon": "",
+                            "type": "",
+                            "cssx": "",
+                            "uxClass": "",
+                            "des": "",
+                            "key": "",
+                            "value": ""
+                        }
+                    ]
+                },
+                {
+                    "id": "",
+                    "title": "Lead Transfer",
+                    "icon": "",
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "muli-34pt",
+                    "des": "",
+                    "key": "",
+                    "value": [
+                        {
+                            "id": "",
+                            "title": "",
+                            "icon": "",
+                            "type": "",
+                            "cssx": "",
+                            "uxClass": "",
+                            "des": "",
+                            "key": "",
+                            "value": ""
+                        }
+                    ]
+                },
+                {
+                    "id": "",
+                    "title": "Configuration",
+                    "icon": "",
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "muli-34pt",
+                    "des": "",
+                    "key": "",
+                    "value": [
+                        {
+                            "id": "",
+                            "title": "",
+                            "icon": "",
+                            "type": "",
+                            "cssx": "",
+                            "uxClass": "",
+                            "des": "",
+                            "key": "",
+                            "value": ""
+                        }
+                    ]
+                },
+                {
+                    "id": "",
+                    "title": "Delegation",
+                    "icon": "",
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "muli-34pt",
+                    "des": "",
+                    "key": "",
+                    "value": [
+                        {
+                            "id": "",
+                            "title": "",
+                            "icon": "",
+                            "type": "",
+                            "cssx": "",
+                            "uxClass": "",
+                            "des": "",
+                            "key": "",
+                            "value": ""
+                        }
+                    ]
+                },
+                {
+                    "id": "",
+                    "title": "Reports",
+                    "icon": "",
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "muli-34pt",
+                    "des": "",
+                    "key": "",
+                    "value": [
+                        {
+                            "id": "",
+                            "title": "",
+                            "icon": "",
+                            "type": "",
+                            "cssx": "",
+                            "uxClass": "",
+                            "des": "",
+                            "key": "",
+                            "value": ""
+                        }
+                    ]
+                },
+                {
+                    "id": "",
+                    "title": "Escalation Rule",
+                    "icon": "",
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "muli-34pt",
+                    "des": "",
+                    "key": "",
+                    "value": [
+                        {
+                            "id": "",
+                            "title": "",
+                            "icon": "",
+                            "type": "",
+                            "cssx": "",
+                            "uxClass": "",
+                            "des": "",
+                            "key": "",
+                            "value": ""
+                        }
+                    ]
+                },
+                {
+                    "id": "",
+                    "title": "Contacts",
+                    "icon": "",
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "muli-34pt",
+                    "des": "",
+                    "key": "",
+                    "value": [
+                        {
+                            "id": "",
+                            "title": "",
+                            "icon": "",
+                            "type": "",
+                            "cssx": "",
+                            "uxClass": "",
+                            "des": "",
+                            "key": "",
+                            "value": ""
+                        }
+                    ]
+                },
+                {
+                    "id": "",
+                    "title": "Services1",
+                    "icon": "",
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "muli-34pt",
+                    "des": "",
+                    "key": "",
+                    "value": [
+                        {
+                            "id": "",
+                            "title": "",
+                            "icon": "",
+                            "type": "",
+                            "cssx": "",
+                            "uxClass": "",
+                            "des": "",
+                            "key": "",
+                            "value": ""
+                        }
+                    ]
+                },
+                {
+                    "id": "",
+                    "title": "Service2",
+                    "icon": "",
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "muli-34pt",
+                    "des": "",
+                    "key": "",
+                    "value": [
+                        {
+                            "id": "",
+                            "title": "",
+                            "icon": "",
+                            "type": "",
+                            "cssx": "",
+                            "uxClass": "",
+                            "des": "",
+                            "key": "",
+                            "value": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        "dashboard": {
+            "id": "",
+            "title": "",
+            "icon": "",
+            "type": "",
+            "cssx": "",
+            "uxClass": "",
+            "des": "",
+            "key": "",
+            "value": {
+                "cards": {
+                    "id": "",
+                    "title": "",
+                    "icon": "",
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "",
+                    "des": "",
+                    "key": "card",
+                    "value": [
+                        {
+                            "id": "",
+                            "title": "Total Cases",
+                            "icon": "/assets/icon/totalLeads.svg",
+                            "type": "",
+                            "cssx": "muli-36pt",
+                            "uxClass": " muli-16pt",
+                            "des": "32",
+                            "key": "",
+                            "value": "",
+                            "size":"3.5"
+                        },
+                        {
+                            "id": "",
+                            "title": "Today's Leads",
+                            "icon": "/assets/icon/todaysLeads.svg",
+                            "type": "",
+                            "cssx": "muli-36pt",
+                            "uxClass": " muli-16pt",
+                            "des": "59",
+                            "key": "",
+                            "value": "",
+                            "size":"3.5"
+                        },
+                        {
+                            "id": "",
+                            "title": "Scheduled Activities",
+                            "icon": "/assets/icon/scheduledActivities.svg",
+                            "type": "",
+                            "cssx": "muli-36pt",
+                            "uxClass": " muli-16pt",
+                            "des": "6",
+                            "key": "",
+                            "value": "",
+                            "size":"3.5"
+                        }
+                    ]
+                },
+                "doughnut": {
+                    "id": "",
+                    "title": "Lead Status",
+                    "icon": "",
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "muli-16pt p-2 pt-2 custFontFamilyMuliSemiBold custColorDark",
+                    "des": "",
+                    "key": "doughnut",
+                    "value": [
+                        {
+                            "id": "",
+                            "title": "Call Ringing",
+                            "icon": "",
+                            "type": "",
+                            "cssx": "#83E2CB",
+                            "uxClass": "",
+                            "des": "",
+                            "key": "doughnut",
+                            "value": "60"
+                        },
+                        {
+                            "id": "",
+                            "title": "Follow Up",
+                            "icon": "",
+                            "type": "",
+                            "cssx": "#E3D56C",
+                            "uxClass": "",
+                            "des": "",
+                            "key": "doughnut",
+                            "value": "20"
+                        },
+                        {
+                            "id": "",
+                            "title": "Not Contactable",
+                            "icon": "",
+                            "type": "",
+                            "cssx": "#E99191",
+                            "uxClass": "",
+                            "des": "",
+                            "key": "doughnut",
+                            "value": "10"
+                        },
+                        {
+                            "id": "",
+                            "title": "Interested",
+                            "icon": "",
+                            "type": "",
+                            "cssx": "#8BDB78",
+                            "uxClass": "",
+                            "des": "",
+                            "key": "doughnut",
+                            "value": "40"
+                        },
+                        {
+                            "id": "",
+                            "title": "Not Interested",
+                            "icon": "",
+                            "type": "",
+                            "cssx": "#B191D5",
+                            "uxClass": "",
+                            "des": "",
+                            "key": "doughnut",
+                            "value": "60"
+                        },
+                        {
+                            "id": "",
+                            "title": "Junk",
+                            "icon": "",
+                            "type": "",
+                            "cssx": "#72B5E2",
+                            "uxClass": "",
+                            "des": "",
+                            "key": "doughnut",
+                            "value": "30"
+                        },
+                        {
+                            "id": "",
+                            "title": "Existing Customer",
+                            "icon": "",
+                            "type": "",
+                            "cssx": "#BDDF6D",
+                            "uxClass": "",
+                            "des": "",
+                            "key": "doughnut",
+                            "value": "50"
+                        },
+                        {
+                            "id": "",
+                            "title": "KYC In Process",
+                            "icon": "",
+                            "type": "",
+                            "cssx": "#8FD7DA",
+                            "uxClass": "",
+                            "des": "",
+                            "key": "doughnut",
+                            "value": "60"
+                        },
+                        {
+                            "id": "",
+                            "title": "KYC Under Security",
+                            "icon": "",
+                            "type": "",
+                            "cssx": "#BFDCEF",
+                            "uxClass": "",
+                            "des": "",
+                            "key": "doughnut",
+                            "value": "30"
+                        },
+                        {
+                            "id": "",
+                            "title": "KYC Rejected",
+                            "icon": "",
+                            "type": "",
+                            "cssx": "#87C5EE",
+                            "uxClass": "",
+                            "des": "",
+                            "key": "doughnut",
+                            "value": "20"
+                        }
+                    ]
+                },
+                "barChart": {
+                    "id": "",
+                    "title": "DIY Stage",
+                    "icon": "",
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "muli-16pt p-2 pt-2 custFontFamilyMuliSemiBold custColorDark",
+                    "des": "",
+                    "key": "barChart",
+                    "value": [
+                        {
+                            "id": "",
+                            "title": "Mobile Verification",
+                            "icon": "",
+                            "type": "",
+                            "cssx": "",
+                            "uxClass": "",
+                            "des": "",
+                            "key": "",
+                            "value": "10"
+                        },
+                        {
+                            "id": "",
+                            "title": "Pan Verification",
+                            "icon": "",
+                            "type": "",
+                            "cssx": "",
+                            "uxClass": "",
+                            "des": "",
+                            "key": "",
+                            "value": "40"
+                        },
+                        {
+                            "id": "",
+                            "title": "Add Personal Details",
+                            "icon": "",
+                            "type": "",
+                            "cssx": "",
+                            "uxClass": "",
+                            "des": "",
+                            "key": "",
+                            "value": "20"
+                        },
+                        {
+                            "id": "",
+                            "title": "Bank Verification",
+                            "icon": "",
+                            "type": "",
+                            "cssx": "",
+                            "uxClass": "",
+                            "des": "",
+                            "key": "",
+                            "value": "30"
+                        },
+                        {
+                            "id": "",
+                            "title": "Document Upload",
+                            "icon": "",
+                            "type": "",
+                            "cssx": "",
+                            "uxClass": "",
+                            "des": "",
+                            "key": "",
+                            "value": "40"
+                        },
+                        {
+                            "id": "",
+                            "title": "Esign Verification",
+                            "icon": "",
+                            "type": "",
+                            "cssx": "",
+                            "uxClass": "",
+                            "des": "",
+                            "key": "",
+                            "value": "50"
+                        },
+                        {
+                            "id": "",
+                            "title": "Payment Verification",
+                            "icon": "",
+                            "type": "",
+                            "cssx": "",
+                            "uxClass": "",
+                            "des": "",
+                            "key": "",
+                            "value": "10"
+                        },
+                        {
+                            "id": "",
+                            "title": "Add Aadhar",
+                            "icon": "",
+                            "type": "",
+                            "cssx": "",
+                            "uxClass": "",
+                            "des": "",
+                            "key": "",
+                            "value": "40"
+                        }
+                    ]
+                }
+            }
+        },
+        "table": {
+            "id": "",
+            "title": "",
+            "icon": "",
+            "type": "",
+            "cssx": "",
+            "uxClass": "",
+            "des": [],
+            "key": "",
+            "validators": "",
+            "options": "",
+            "value": [
+                {
+                    "LeadID": {
+                        "id": "",
+                        "title": "L123456",
+                        "icon": "",
+                        "type": "",
+                        "cssx": "",
+                        "uxClass": "",
+                        "des": [],
+                        "key": "",
+                        "validators": "",
+                        "options": [],
+                        "value": ""
+                    },
+                    "LeadName": {
+                        "id": "",
+                        "title": "Pratham",
+                        "icon": "",
+                        "type": "",
+                        "cssx": "",
+                        "uxClass": "",
+                        "des": [],
+                        "key": "",
+                        "validators": "",
+                        "options": [],
+                        "value": ""
+                    },
+                    "EmailID": {
+                        "id": "",
+                        "title": "partham@gmail.com",
+                        "icon": "",
+                        "type": "",
+                        "cssx": "",
+                        "uxClass": "",
+                        "des": [],
+                        "key": "",
+                        "validators": "",
+                        "options": [],
+                        "value": ""
+                    },
+                    "LeadOwner": {
+                        "id": "",
+                        "title": "Partham",
+                        "icon": "",
+                        "type": "",
+                        "cssx": "",
+                        "uxClass": "",
+                        "des": [],
+                        "key": "",
+                        "validators": "",
+                        "options": [],
+                        "value": ""
+                    },
+                    "MobileNumber": {
+                        "id": "",
+                        "title": "7058982028",
+                        "icon": "",
+                        "type": "",
+                        "cssx": "",
+                        "uxClass": "",
+                        "des": [],
+                        "key": "",
+                        "validators": "",
+                        "options": [],
+                        "value": ""
+                    },
+                    "Product": {
+                        "id": "",
+                        "title": "Digital Gold",
+                        "icon": "",
+                        "type": "",
+                        "cssx": "",
+                        "uxClass": "",
+                        "des": [],
+                        "key": "",
+                        "validators": "",
+                        "options": [],
+                        "value": ""
+                    },
+                    "LeadSource": {
+                        "id": "",
+                        "title": "Facebook",
+                        "icon": "",
+                        "type": "",
+                        "cssx": "",
+                        "uxClass": "",
+                        "des": [],
+                        "key": "",
+                        "validators": "",
+                        "options": [],
+                        "value": ""
+                    },
+                    "Campaign": {
+                        "id": "",
+                        "title": "Social Media",
+                        "icon": "",
+                        "type": "",
+                        "cssx": "",
+                        "uxClass": "",
+                        "des": [],
+                        "key": "",
+                        "validators": "",
+                        "options": [],
+                        "value": ""
+                    },
+                    "KRAVerified": {
+                        "id": "",
+                        "title": "Yes",
+                        "icon": "",
+                        "type": "",
+                        "cssx": "",
+                        "uxClass": "",
+                        "des": [],
+                        "key": "",
+                        "validators": "",
+                        "options": [],
+                        "value": ""
+                    },
+                    "Status": {
+                        "id": "",
+                        "title": "Call Ringing",
+                        "icon": "",
+                        "type": "dropDown",
+                        "cssx": "",
+                        "uxClass": "",
+                        "des": [],
+                        "key": "",
+                        "validators": "",
+                        "options": [
+                            "Enable",
+                            "Disable"
+                        ],
+                        "value": ""
+                    },
+                    "CreatedOn": {
+                        "id": "",
+                        "title": "07/02/2022",
+                        "icon": "",
+                        "type": "",
+                        "cssx": "",
+                        "uxClass": "",
+                        "des": [],
+                        "key": "",
+                        "validators": "",
+                        "options": [],
+                        "value": ""
+                    },
+                    "CreatedBy": {
+                        "id": "",
+                        "title": "system",
+                        "icon": "",
+                        "type": "",
+                        "cssx": "",
+                        "uxClass": "",
+                        "des": [],
+                        "key": "",
+                        "validators": "",
+                        "options": [],
+                        "value": ""
+                    },
+                    "ModifiedOn": {
+                        "id": "",
+                        "title": "26/08/2022",
+                        "icon": "",
+                        "type": "",
+                        "cssx": "",
+                        "uxClass": "",
+                        "des": [],
+                        "key": "",
+                        "validators": "",
+                        "options": [],
+                        "value": ""
+                    },
+                    "ModifiedBy": {
+                        "id": "",
+                        "title": "System",
+                        "icon": "",
+                        "type": "",
+                        "cssx": "",
+                        "uxClass": "",
+                        "des": [],
+                        "key": "",
+                        "validators": "",
+                        "options": [],
+                        "value": ""
+                    },
+                    "Reason": {
+                        "id": "",
+                        "title": "Duplicate Mobile Number",
+                        "icon": "",
+                        "type": "",
+                        "cssx": "",
+                        "uxClass": "",
+                        "des": [],
+                        "key": "",
+                        "validators": "",
+                        "options": [],
+                        "value": ""
+                    },
+                    "Action": {
+                        "id": "",
+                        "title": "",
+                        "icon": [
+                            "call",
+                            "email"
+                        ],
+                        "type": "",
+                        "cssx": "",
+                        "uxClass": "",
+                        "des": [],
+                        "key": "",
+                        "validators": "",
+                        "options": [],
+                        "value": ""
+                    }
+                },
+                {
+                    "LeadID": {
+                        "id": "",
+                        "title": "L123456",
+                        "icon": "",
+                        "type": "",
+                        "cssx": "",
+                        "uxClass": "",
+                        "des": [],
+                        "key": "",
+                        "validators": "",
+                        "options": [],
+                        "value": ""
+                    },
+                    "LeadName": {
+                        "id": "",
+                        "title": "Pratham",
+                        "icon": "",
+                        "type": "",
+                        "cssx": "",
+                        "uxClass": "",
+                        "des": [],
+                        "key": "",
+                        "validators": "",
+                        "options": [],
+                        "value": ""
+                    },
+                    "EmailID": {
+                        "id": "",
+                        "title": "partham@gmail.com",
+                        "icon": "",
+                        "type": "",
+                        "cssx": "",
+                        "uxClass": "",
+                        "des": [],
+                        "key": "",
+                        "validators": "",
+                        "options": [],
+                        "value": ""
+                    },
+                    "LeadOwner": {
+                        "id": "",
+                        "title": "Partham",
+                        "icon": "",
+                        "type": "",
+                        "cssx": "",
+                        "uxClass": "",
+                        "des": [],
+                        "key": "",
+                        "validators": "",
+                        "options": [],
+                        "value": ""
+                    },
+                    "MobileNumber": {
+                        "id": "",
+                        "title": "7058982028",
+                        "icon": "",
+                        "type": "",
+                        "cssx": "",
+                        "uxClass": "",
+                        "des": [],
+                        "key": "",
+                        "validators": "",
+                        "options": [],
+                        "value": ""
+                    },
+                    "Product": {
+                        "id": "",
+                        "title": "Digital Gold",
+                        "icon": "",
+                        "type": "",
+                        "cssx": "",
+                        "uxClass": "",
+                        "des": [],
+                        "key": "",
+                        "validators": "",
+                        "options": [],
+                        "value": ""
+                    },
+                    "LeadSource": {
+                        "id": "",
+                        "title": "Facebook",
+                        "icon": "",
+                        "type": "",
+                        "cssx": "",
+                        "uxClass": "",
+                        "des": [],
+                        "key": "",
+                        "validators": "",
+                        "options": [],
+                        "value": ""
+                    },
+                    "Campaign": {
+                        "id": "",
+                        "title": "Social Media",
+                        "icon": "",
+                        "type": "",
+                        "cssx": "",
+                        "uxClass": "",
+                        "des": [],
+                        "key": "",
+                        "validators": "",
+                        "options": [],
+                        "value": ""
+                    },
+                    "KRAVerified": {
+                        "id": "",
+                        "title": "Yes",
+                        "icon": "",
+                        "type": "",
+                        "cssx": "",
+                        "uxClass": "",
+                        "des": [],
+                        "key": "",
+                        "validators": "",
+                        "options": [],
+                        "value": ""
+                    },
+                    "Status": {
+                        "id": "",
+                        "title": "Call Ringing",
+                        "icon": "",
+                        "type": "",
+                        "cssx": "",
+                        "uxClass": "",
+                        "des": [],
+                        "key": "",
+                        "validators": "",
+                        "options": [
+                            "Enable",
+                            "Disable"
+                        ],
+                        "value": ""
+                    },
+                    "CreatedOn": {
+                        "id": "",
+                        "title": "07/02/2022",
+                        "icon": "",
+                        "type": "",
+                        "cssx": "",
+                        "uxClass": "",
+                        "des": [],
+                        "key": "",
+                        "validators": "",
+                        "options": [],
+                        "value": ""
+                    },
+                    "CreatedBy": {
+                        "id": "",
+                        "title": "system",
+                        "icon": "",
+                        "type": "",
+                        "cssx": "",
+                        "uxClass": "",
+                        "des": [],
+                        "key": "",
+                        "validators": "",
+                        "options": [],
+                        "value": ""
+                    },
+                    "ModifiedOn": {
+                        "id": "",
+                        "title": "26/08/2022",
+                        "icon": "",
+                        "type": "",
+                        "cssx": "",
+                        "uxClass": "",
+                        "des": [],
+                        "key": "",
+                        "validators": "",
+                        "options": [],
+                        "value": ""
+                    },
+                    "ModifiedBy": {
+                        "id": "",
+                        "title": "System",
+                        "icon": "",
+                        "type": "",
+                        "cssx": "",
+                        "uxClass": "",
+                        "des": [],
+                        "key": "",
+                        "validators": "",
+                        "options": [],
+                        "value": ""
+                    },
+                    "Reason": {
+                        "id": "",
+                        "title": "Duplicate Mobile Number",
+                        "icon": "",
+                        "type": "",
+                        "cssx": "",
+                        "uxClass": "",
+                        "des": [],
+                        "key": "",
+                        "validators": "",
+                        "options": [],
+                        "value": ""
+                    },
+                    "Action": {
+                        "id": "",
+                        "title": "",
+                        "icon": [
+                            "call",
+                            "email"
+                        ],
+                        "type": "",
+                        "cssx": "",
+                        "uxClass": "",
+                        "des": [],
+                        "key": "",
+                        "validators": "",
+                        "options": [],
+                        "value": ""
+                    }
+                }
+            ]
+        },
+        "details": {
+            "id": "",
+            "title": "L123456",
+            "icon": "",
+            "type": "",
+            "cssx": "",
+            "uxClass": "",
+            "des": "",
+            "key": "true",
+            "value": [
+                {
+                    "id": "",
+                    "title": "Case Info",
+                    "icon": "",
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "",
+                    "des": "",
+                    "key": "",
+                    "value": [
+                        {
+                            "id": "",
+                            "title": "General",
+                            "icon": "",
+                            "type": "",
+                            "cssx": "",
+                            "uxClass": "",
+                            "des": "",
+                            "key": "planText",
+                            "value": [
+                                {
+                                    "id": "",
+                                    "title": "Customer Name",
+                                    "icon": "",
+                                    "type": "",
+                                    "cssx": "colSize6",
+                                    "uxClass": "",
+                                    "des": "Prathamesh",
+                                    "key": "",
+                                    "value": []
+                                },
+                                {
+                                    "id": "",
+                                    "title": "Case Status",
+                                    "icon": "",
+                                    "type": "",
+                                    "cssx": "colSize6",
+                                    "uxClass": "",
+                                    "des": "FollowUp",
+                                    "key": "",
+                                    "value": []
+                                },
+                                {
+                                    "id": "",
+                                    "title": "Case Number",
+                                    "icon": "",
+                                    "type": "",
+                                    "cssx": "colSize6",
+                                    "uxClass": "",
+                                    "des": "C123456",
+                                    "key": "",
+                                    "value": []
+                                },
+                                {
+                                    "id": "",
+                                    "title": "Case Type",
+                                    "icon": "",
+                                    "type": "",
+                                    "cssx": "colSize6",
+                                    "uxClass": "",
+                                    "des": "Request",
+                                    "key": "",
+                                    "value": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "",
+                            "title": "History",
+                            "icon": "",
+                            "type": "",
+                            "cssx": "",
+                            "uxClass": "",
+                            "des": "",
+                            "key": "table",
+                            "value": [
+                                {
+                                    "id": "",
+                                    "title": "Case Number",
+                                    "icon": "",
+                                    "type": "",
+                                    "cssx": "colSize3",
+                                    "uxClass": "",
+                                    "des": "",
+                                    "key": "",
+                                    "value": [
+                                        {
+                                            "id": "",
+                                            "title": "CH-123456",
+                                            "icon": "",
+                                            "type": "text",
+                                            "cssx": "",
+                                            "uxClass": "",
+                                            "des": "",
+                                            "key": "",
+                                            "value": []
+                                        },
+                                        {
+                                            "id": "",
+                                            "title": "CH-123456",
+                                            "icon": "",
+                                            "type": "text",
+                                            "cssx": "",
+                                            "uxClass": "",
+                                            "des": "",
+                                            "key": "",
+                                            "value": []
+                                        },
+                                        {
+                                            "id": "",
+                                            "title": "CH-123456",
+                                            "icon": "",
+                                            "type": "text",
+                                            "cssx": "",
+                                            "uxClass": "",
+                                            "des": "",
+                                            "key": "",
+                                            "value": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "",
+                                    "title": "Subject",
+                                    "icon": "",
+                                    "type": "",
+                                    "cssx": "colSize6",
+                                    "uxClass": "",
+                                    "des": "",
+                                    "key": "",
+                                    "value": [
+                                        {
+                                            "id": "",
+                                            "title": "QRC-Wealth-Equity-Account Information",
+                                            "icon": "",
+                                            "type": "text",
+                                            "cssx": "",
+                                            "uxClass": "",
+                                            "des": "",
+                                            "key": "",
+                                            "value": []
+                                        },
+                                        {
+                                            "id": "",
+                                            "title": "QRC-Wealth-Equity-Account Information",
+                                            "icon": "",
+                                            "type": "text",
+                                            "cssx": "",
+                                            "uxClass": "",
+                                            "des": "",
+                                            "key": "",
+                                            "value": []
+                                        },
+                                        {
+                                            "id": "",
+                                            "title": "QRC-Wealth-Equity-Account Information",
+                                            "icon": "",
+                                            "type": "text",
+                                            "cssx": "",
+                                            "uxClass": "",
+                                            "des": "",
+                                            "key": "",
+                                            "value": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "",
+                                    "title": "",
+                                    "icon": "",
+                                    "type": "",
+                                    "cssx": "colSize3",
+                                    "uxClass": "",
+                                    "des": "",
+                                    "key": "",
+                                    "value": [
+                                        {
+                                            "id": "",
+                                            "title": "close",
+                                            "icon": "",
+                                            "type": "button",
+                                            "cssx": "",
+                                            "uxClass": "closeBtn custColorWhite custBackgroundColorBrightCyan",
+                                            "des": "",
+                                            "key": "",
+                                            "value": []
+                                        },
+                                        {
+                                            "id": "",
+                                            "title": "close",
+                                            "icon": "",
+                                            "type": "button",
+                                            "cssx": "",
+                                            "uxClass": "closeBtn custColorWhite custBackgroundColorBrightCyan",
+                                            "des": "",
+                                            "key": "",
+                                            "value": []
+                                        },
+                                        {
+                                            "id": "",
+                                            "title": "close",
+                                            "icon": "",
+                                            "type": "button",
+                                            "cssx": "",
+                                            "uxClass": "closeBtn custColorWhite custBackgroundColorBrightCyan",
+                                            "des": "",
+                                            "key": "",
+                                            "value": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "",
+                            "title": "Other Information",
+                            "icon": "",
+                            "type": "",
+                            "cssx": "",
+                            "uxClass": "",
+                            "des": "",
+                            "key": "planText",
+                            "value": [
+                                {
+                                    "id": "",
+                                    "title": "Created On",
+                                    "icon": "",
+                                    "type": "",
+                                    "cssx": "colSize6",
+                                    "uxClass": "",
+                                    "des": "04/10/1998",
+                                    "key": "",
+                                    "value": []
+                                },
+                                {
+                                    "id": "",
+                                    "title": "Creadted By",
+                                    "icon": "",
+                                    "type": "",
+                                    "cssx": "colSize6",
+                                    "uxClass": "",
+                                    "des": "Prathamesh",
+                                    "key": "",
+                                    "value": []
+                                },
+                                {
+                                    "id": "",
+                                    "title": "Modify On",
+                                    "icon": "",
+                                    "type": "",
+                                    "cssx": "colSize6",
+                                    "uxClass": "",
+                                    "des": "- -",
+                                    "key": "",
+                                    "value": []
+                                },
+                                {
+                                    "id": "",
+                                    "title": "Modify By",
+                                    "icon": "",
+                                    "type": "",
+                                    "cssx": "colSize6",
+                                    "uxClass": "",
+                                    "des": "- -",
+                                    "key": "",
+                                    "value": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "",
+                    "title": "Customer Profile",
+                    "icon": "",
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "",
+                    "des": "",
+                    "key": "",
+                    "value": [
+                        {
+                            "id": "",
+                            "title": "Case Type",
+                            "icon": "",
+                            "type": "",
+                            "cssx": "",
+                            "uxClass": "",
+                            "des": "",
+                            "key": "card",
+                            "value": [
+                                {
+                                    "id": "",
+                                    "title": "Created On",
+                                    "icon": "assets/icon/Mail.svg",
+                                    "type": "",
+                                    "cssx": "colSize6",
+                                    "uxClass": "muli-16pt custFontFamilyMuliSemiBold custColorDark",
+                                    "date": "04/10/1998",
+                                    "leadName": " L123456 Pratham",
+                                    "des": "Lead status has been changed to Follow up",
+                                    "key": "",
+                                    "value": []
+                                },
+                                {
+                                    "id": "",
+                                    "title": "Creadted By",
+                                    "icon": "assets/icon/Mail.svg",
+                                    "type": "",
+                                    "cssx": "colSize6",
+                                    "uxClass": "",
+                                    "date": "04/10/1998",
+                                    "leadName": " L123456 Pratham",
+                                    "key": "",
+                                    "des": "Lead status has been changed to Follow up",
+                                    "value": []
+                                },
+                                {
+                                    "id": "",
+                                    "title": "Modify On",
+                                    "icon": "assets/icon/Mail.svg",
+                                    "type": "",
+                                    "cssx": "colSize6",
+                                    "uxClass": "",
+                                    "leadName": " L123456 Pratham",
+                                    "date": "- -",
+                                    "key": "",
+                                    "des": "Lead status has been changed to Follow up",
+                                    "value": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

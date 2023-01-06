@@ -1,0 +1,19 @@
+[
+    {
+        "image":"assets/icon/Group 13011.svg",
+        "title":"Face ID"
+        
+    },
+    {
+        "image":"assets/icon/Group 13012.svg",
+        "title":"Fingerprint"
+    },
+    {
+        "image":"assets/icon/Group 13017.svg",
+        "title":"Passcode"
+    },
+  {
+    "image":"assets/icon/Group 13015.svg",
+    "title":"MPIN"
+  }
+]

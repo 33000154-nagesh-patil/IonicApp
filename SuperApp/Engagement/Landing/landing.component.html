@@ -1,0 +1,117 @@
+
+    <cap-header  [title]="headerTitle" [otherTextName]="headerTitle" [imageList]="imageList" [showArrow]="false"
+    [showLabel]="false" [showImg]="false" [showIndex]="false" [showNotification]="true" [showCartWithName]="true"
+    [notificationCount]="notificationCount" [cartCount]="cartCount" [showSideMenu]="headerProfile" [showSearch]="true"
+    [showClose]="false" [showShare]="false" [showWatchList]="false" [paddingSize]="padding" [showCartWithoutName]="false"
+    [showStories]="showStories" [showOtherText]="true" [backUrlName]=""></cap-header>
+
+<ion-content class="contentBackground">
+<!-- <div>
+        <svg  xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 288 288">
+            <linearGradient id="PSgrad_0" x1="70.711%" x2="0%" y1="70.711%" y2="0%">
+              <stop offset="0%" stop-color="rgb(95,54,152)" stop-opacity="1" />
+              <stop offset="100%" stop-color="rgb(247,109,138)" stop-opacity="1" />
+            </linearGradient>
+            <path fill="rgb(95,54,152)"/>
+            </svg>
+      </div> -->
+
+      <!-- <div *ngIf="db|async as stockDB">
+        <div *ngFor="let x of stockDB">
+          {{x.SEC_ID}}
+          <div *ngIf="x.SEC_ID == secId">
+            <ion-row *ngFor="let c of x.MBP">
+              <ion-col class="d-flex justify-content-between">
+                <span class="custColorParakeetGreen">{{c[0]}} &nbsp;</span>
+                <span class="custColorParakeetGreen">{{c[1].toFixed(2)}} &nbsp;</span>
+                <span class="custColorParakeetGreen">{{c[2]}} &nbsp;</span>
+              </ion-col>
+              <span style="border-left:1px solid #000;height:25pt"></span>
+              <ion-col  class="d-flex justify-content-between">
+                <span class="custColorcustFadedRed">{{c[3]}} &nbsp;</span>
+                <span class="custColorcustFadedRed">{{c[4].toFixed(2)}} &nbsp;</span>
+                <span class="custColorcustFadedRed">{{c[5]}} &nbsp;</span>
+              </ion-col>
+            </ion-row>
+          </div>
+        </div>
+      </div> -->
+    <app-banner *ngIf="enableBanner" [banner]="bannerData"></app-banner>
+
+  
+    <!-- <ion-card >
+        <ion-row>
+            <ion-col class="muli-12pt custFontFamilyMuliSemiBold custColorBattlePGry p-2">
+               <div>Hello,<span class="muli-16pt custFontFamilyMuliBold custColorBold p-2" *ngIf="userName|async as name">{{name.firstName}}</span></div> 
+                <div>your {{category}} score went up </div>
+                Great job !
+            </ion-col>
+            <ion-col class="d-flex justify-content-end align-item-center p-2">
+                <div class="CustCss d-flex flex-column justify-content-center align-item-center">
+                    <div class="result-grid">
+            <div class="result__score">
+              <div>
+                <div class="inner-circle">
+                  <span class="score">80%</span>
+                  <span class="total">Good</span>
+                </div>
+                <div class="circle">
+                  <div class="line"></div>
+                </div>
+              </div>
+              
+              <svg width="80px" height="60px" viewBox="0 0 161 139" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="junior_test" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="landing" transform="translate(-1188.000000, -641.000000)" stroke-width="10">
+                        <g id="Group-2" transform="translate(1162.000000, 615.000000)">
+                            <path d="M106.066017,181.066017 C147.487373,181.066017 181.066017,147.487373 181.066017,106.066017 C181.066017,64.6446609 147.487373,31.0660172 106.066017,31.0660172 C64.6446609,31.0660172 31.0660172,64.6446609 31.0660172,106.066017" id="3" stroke="#FF7078" stroke-linecap="round" transform="translate(106.066017, 106.066017) rotate(-45.000000) translate(-106.066017, -106.066017) "></path>
+                            <path d="M90.5330086,68.5330086 C49.1116524,68.5330086 15.5330086,102.111652 15.5330086,143.533009" id="1" stroke="#4BDA9F" stroke-linecap="round" transform="translate(53.033009, 106.033009) rotate(-45.000000) translate(-53.033009, -106.033009) "></path>
+                            <path d="M143.533009,90.5330086 C143.533009,49.1116524 109.954365,15.5330086 68.5330086,15.5330086" id="2" stroke="#FFC800" transform="translate(106.033009, 53.033009) rotate(-45.000000) translate(-106.033009, -53.033009) "></path>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+              </div>
+              
+            </div>
+                </div>
+            </ion-col>
+        </ion-row>
+        
+            
+            
+            
+            
+    </ion-card> -->
+ 
+
+
+
+
+
+
+
+    <app-heading *ngIf="enableHeading" [heading]="headingData"></app-heading>
+
+    <ion-row *ngIf="response!='SuperApp'">
+        <ion-col class="my-2" (click)="Kyc()">
+            <img class="mx-2" [src]="kycIcon"/><span class="muli-16pt custFontFamilyMuliBold custColorDarkishBlue">{{kycContent}}</span>    
+        </ion-col>
+    </ion-row>
+    
+    <!-- <app-semigridtype></app-semigridtype>
+    <app-promotion [promotion]="promotionData"></app-promotion> -->
+    <app-body *ngIf="objectContent"  [objectContent]="objectContent" [portFolioSummary]="portFolioSummary" [snapshot]="snapshot"></app-body>
+    
+    
+
+    <!-- <app-fab-button [superMode]="currentMode" [fabIcon]="imageList?.fabTorusIcon"></app-fab-button> -->
+    
+      
+     
+
+</ion-content>
+
+ 
+
+<cap-footer *ngIf="footerListData"  [footerListData]="footerListData" [activeImg]="imageList.activeTab" [selectedIndex]="selectedIndex" [parentTab]="'wellness'" (activeLanding)="activeLanding($event)" (homeEvent)="homeEvent($event)"></cap-footer>

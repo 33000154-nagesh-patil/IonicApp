@@ -1,0 +1,37 @@
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-wrapper {
+    margin: 0px !important;
+    padding: 6px;
+}
+.rotateArrow{
+    transform: rotate(180deg);
+    height: 18px;
+    width: 18px;
+}
+.downArrow{
+    transform: rotate(-90deg);
+    height: 18px;
+    width: 18px;
+}
+
+.custWithoutTextImg{
+    height: 18px;
+    width: 18px;
+}
+
+:host ::ng-deep .mat-select-arrow {
+    opacity: 0;
+}
+
+.mat-form-field-appearance-outline .mat-form-field-wrapper {
+    margin: 0;
+}
+
+.custArrorSize {
+    height: 16px;
+    width: 13px;
+}
+
+.custPadding {
+    margin: 16px;
+}
+

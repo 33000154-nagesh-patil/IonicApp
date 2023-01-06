@@ -1,0 +1,6 @@
+<ion-fab horizontal="end" vertical="bottom" slot="fixed" class="custMarginBottom">
+  <ion-fab-button [ngClass]="superMode?'custFabBgSuper':'custFabBgBasic'"  (click)="toggleSuperMode(!superMode = superMode);" id="superMode">
+    <!-- <ion-img [src]="fabIcon" class="custFabImg"></ion-img> -->
+    <ion-img [src]="fabIcon" class="custFabImg"></ion-img>
+  </ion-fab-button>
+</ion-fab>

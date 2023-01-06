@@ -1,0 +1,128 @@
+{
+  "productLanding": {
+    "Stock": {
+      "objectContent": [
+        {
+          "contentType": "cardList",
+          "Title": "Market Movers",
+          "card": [
+            {
+              "row1": {
+                "col1": "ITC",
+                "val1": "₹ 3251.00"
+              },
+              "row2": {
+                "col1": "NSE",
+                "col2": "22.62",
+                "col3": "(0.23%)"
+              }
+            },
+            {
+              "row1": {
+                "col1": "ONGC",
+                "val1": "₹ 3251.00"
+              },
+              "row2": {
+                "col1": "NSE",
+                "col2": "22.62",
+                "col3": "(0.23%)"
+              }
+            },
+            {
+              "row1": {
+                "col1": "HDFCLIFE",
+                "val1": "₹ 3251.00"
+              },
+              "row2": {
+                "col1": "NSE",
+                "col2": "22.62",
+                "col3": "(0.23%)"
+              }
+            }
+          ]
+        },
+        {
+          "contentType": "cardList",
+          "Title": "EVENTS",
+          "card": [
+            {
+              "row1": {
+                "col1": "ITC",
+                "COL2": "Final: 575%"
+              },
+              "row2": {
+                "col1": "2021 Jun 01",
+                "COL2": "Ex Date: 2021 Jun 10"
+              }
+            },
+            {
+              "row1": {
+                "col1": "ITC",
+                "COL2": "Final: 575%"
+              },
+              "row2": {
+                "col1": "2021 Jun 01",
+                "COL2": "Ex Date: 2021 Jun 10"
+              }
+            },
+            {
+              "row1": {
+                "col1": "ITC",
+                "COL2": "Final: 575%"
+              },
+              "row2": {
+                "col1": "2021 Jun 01",
+                "COL2": "Ex Date: 2021 Jun 10"
+              }
+            }
+          ]
+        },
+        {
+          "contentType": "cardList",
+          "Title": "Block Deal",
+          "card": [
+            {
+              "row1": {
+                "col1": "ITC",
+                "col2": "Bought",
+                "col3": "2,44,00,000 @ 627.00"
+              },
+              "row2": {
+                "col1": "NSE",
+                "col2": "2021 May 28",
+                "col3": "Ex Date: 2021 Jun 10"
+              }
+            },
+            {
+              "row1": {
+                "col1": "ONGC",
+                "col2": "Bought",
+                "col3": "2,44,00,000 @ 627.00"
+              },
+              "row2": {
+                "col1": "NSE",
+                "col2": "2021 May 28",
+                "col3": "Ex Date: 2021 Jun 10"
+              }
+            }
+          ]
+        },
+        {
+          "contentType": "cardList",
+          "Title": "Investment product",
+          "card": [
+            {
+              "row1": {
+                "icon":""
+              },
+              "row2": {
+               "col1":"Invest in company before they are listed on stock exchange"
+              }
+            }
+
+          ]
+        }
+      ]
+    }
+  }
+}

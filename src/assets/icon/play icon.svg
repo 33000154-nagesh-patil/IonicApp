@@ -1,0 +1,7 @@
+<svg id="Play_Icon" data-name="Play Icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <path id="Polygon_210" data-name="Polygon 210" d="M6.152,1.357a1,1,0,0,1,1.7,0l5.2,8.313A1,1,0,0,1,12.2,11.2H1.8A1,1,0,0,1,.956,9.67Z" transform="translate(19.2 5) rotate(90)" fill="#0f4880"/>
+  <g id="Ellipse_1305" data-name="Ellipse 1305" fill="none" stroke="#0f4880" stroke-width="1">
+    <circle cx="12" cy="12" r="12" stroke="none"/>
+    <circle cx="12" cy="12" r="11.5" fill="none"/>
+  </g>
+</svg>

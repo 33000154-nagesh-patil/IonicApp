@@ -1,0 +1,374 @@
+
+
+  <!-- <ion-header [translucent]="true" class="custBackgroundColorWhite">
+    <ion-toolbar class="custBackgroundDynamicColorWhite">
+      <ion-grid>
+        <ion-row>
+          <ion-col [size]="'1'" (click)="dismiss()" id="goBack">
+
+            <ion-img [src]="imageList?.arrow" class=" custKYCImg custWithoutTextImg mt-4"></ion-img>
+
+          </ion-col>
+          <ion-col [size]="3" class="custFontFamilyMuliBold custLineHight25 muli-16pt custColorDark my-4 pb-3">
+            Watchlist
+          </ion-col>
+
+          <ion-col [size]="'2'" id="index" class="m-1">
+            <div class="custTextAlignCenter">
+              <div class="custHeight custProfile">
+                <div *ngIf="!hide; else conditionFalse">
+                  <ion-img [src]="imageList?.index" class="custSVGIcon" (click)="ngIfCtrl()"></ion-img>
+                </div>
+                <ng-template #conditionFalse>
+                  <ion-img [src]="imageList?.indexBlue" class="custSVGIcon" (click)="ngIfCtrl()"></ion-img>
+                </ng-template>
+
+              </div>
+              <p class="muli-10pt custLineHight28 custFontFamilyMuliSemiBold custColorBattlePGry">{{'indexes' |
+                translate}}</p>
+            </div>
+          </ion-col>
+
+
+          <ion-col [size]="'3'" id="notification" class="m-1">
+            <div class="custTextAlignCenter">
+              <div class="custHeight custProfile">
+                <ion-img [src]="imageList?.notificationIcon" class="custSVGIcon"></ion-img>
+              </div>
+              <p class="muli-10pt custLineHight28 custFontFamilyMuliSemiBold custColorBattlePGry">{{'notifications' |
+                translate}}</p>
+            </div>
+          </ion-col>
+
+          <ion-col [size]="'2'" class="mt-1">
+            <div class="custTextAlignCenter">
+              <div class="custHeight custProfile">
+                <ion-img [src]="imageList?.cartIcon" class="custSVGIcon "></ion-img>
+              </div>
+              <p class="muli-10pt custLineHight28 custFontFamilyMuliSemiBold custColorBattlePGry">{{'myCart' |
+                translate}}
+              </p>
+            </div>
+          </ion-col>
+
+        </ion-row>
+      </ion-grid>
+    </ion-toolbar>
+  </ion-header> -->
+  <ion-app>
+    <cap-header [title]="title" [imageList]="imageList" [showArrow]="false" [showLabel]="true" [showImg]="false" [imgURL]="labelIcon"
+    [showIndex]="false" [showNotification]="true" [showCartWithName]="true" [notificationCount]="notificationCount" 
+    [showSideMenu]="false" [showSearch]="true" [showClose]="false" [showShare]="false" [showWatchList]="false" [showCartWithoutName]="false" 
+    [showStories]="false" [otherTextName]="'Watchlist'" [showOtherText]="true" [superMode]="currentMode" [backUrlName]=""></cap-header>
+  
+
+  
+  <ion-content  class=" contentBackground h-100 w-100 ">
+
+    <ion-row class="pt-4 px-2">
+      <ion-col [size]="'12'">
+        <span class="muli-22pt custFontFamilyMuliBold custLineHight30 custColorDark text-capitalize">
+          Watchlist
+        </span>
+      </ion-col>
+      <ion-col [size]="'12'">
+        <ion-row>
+          <ion-col [size]="'2'" class="text-start p-0 m-0">
+            <div class="custBackgroundColorDarkishBlue custBox p-0 m-0"></div>
+        </ion-col>
+        </ion-row>
+      </ion-col>
+      <ion-col [size]="'12'">
+        <span class="custFontFamilyMuliRegular muli-12pt custLineHight18 custColorBattlePGry">Track your chosen funds</span>
+      </ion-col>
+    </ion-row>
+
+
+  <!-- <mat-tab-group  >
+    <mat-tab label="Bookmark" class="p-5 mt-3"> 
+      <div class="py-4">
+        <lib-allmutualfundcard [jsonData]="watchlistdataforshowa"  [imageList]="imageList"></lib-allmutualfundcard>
+
+      </div>
+    </mat-tab>
+    <mat-tab label="Recently Viewed" > 
+      <div class="py-4">
+        <lib-allmutualfundcard [jsonData]="DummayAPiData"  [filterWant]='false' [imageList]="imageList"></lib-allmutualfundcard>
+
+      </div>
+    
+    </mat-tab>
+   
+  </mat-tab-group> -->
+  <ion-grid class="p-2">
+    <ion-row class="w-100">
+      <ion-col [size]="11">
+        <ion-segment color="primary" [value]="currentWatchList"  scrollable="true"
+          (ionChange)="watchListChanged($event)" class="custBorderSegment px-3">
+          <ion-segment-button *ngFor="let x of WatchlistArray"   longPress (mouseLongPress)="editWatchList(x)"
+            [value]="x" class="text">
+            <ion-label class="custFontFamilyMuliBoldmuli-14pt custColorDark">{{x | titlecase}}</ion-label>
+          </ion-segment-button>
+        </ion-segment>
+
+      </ion-col>
+      <ion-col [size]="1">
+        <ion-img [src]="imageList?.AddMore" class="custSVGIcon mt-2" (click)="addWatchList()"></ion-img>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <!-- Search Bar -->
+      <ion-row class="w-100 custSearchButton">
+        <mat-form-field appearance="outline" class="custBackgroundColorWhite w-100 ms-0" floatLabel="never">
+          <ion-icon matPrefix name="search-outline" class="ms-1 mt-1 muli-20pt custColorGreyish"></ion-icon>
+
+          <input matInput type="text" autocomplete="on" (click)="goToAddStocks()"
+            class="custFontFamilyMuliRegular custColorGreyish muli-14pt custLineHight20 text-start ms-3"
+            placeholder="Search MutualFunds" autofill="false">
+
+          <!-- <ion-icon matSuffix name="funnel-outline" class="me-1 muli-20pt custColorDarkishBlue"
+            (click)=" gotoFilter()">
+          </ion-icon> -->
+        </mat-form-field>
+      </ion-row>
+      <!-- 
+<ion-row class="mx-3">
+
+  <mat-form-field appearance="outline" class="pb-0 custBackgroundColorWhite"
+    floatLabel="never">
+    <ion-icon matPrefix name="search-outline" class="ms-1 muli-20pt custColorGreyish"></ion-icon>
+    <input matInput type="text" autocomplete="on"
+      class="custFontFamilyMuliRegular custColorGreyish muli-14pt custLineHight20 text-start ms-3"
+      [(ngModel)]="search" #top (keyup)="onKeySearch(top.value)" placeholder="Search Stocks" autofill="false">
+    <ion-icon matSuffix name="funnel-outline" class="me-1 muli-20pt custColorDarkishBlue">
+    </ion-icon>
+  </mat-form-field>
+</ion-row> -->
+
+      <div *ngIf="showNullMessage" class="custCenter custCenterText">
+        <ion-img src="assets\icon\emptyWatchlist.svg" class="noDataICON"></ion-img>
+        <span class="">Use the search bar to add instruments to your watchlist</span>
+      </div>
+
+
+      <ion-row class="w-100">
+
+        <ion-row *ngFor="let item of watchlistData; index as i"
+        
+          class="w-100 ion-no-padding animate">
+          <ion-col class="ion-no-padding">
+            <ion-card class="custBackgroundColorWhite w-100 mx-0 mb-0 custCard ion-no-padding px-1"
+              (click)="openStockDetails(item)" [ngClass]="(watchlistData.indexOf(item)>0)?'mt-0':''">
+
+              <ion-row class="">
+                <ion-col class="custColorDark muli-14pt custFontFamilyMuliSemiBold  text-nowrap">
+                  {{item?.SYMBOL}}
+                  <img *ngIf="item.img" src={{item.img}} style="height: 16px; margin-top: -16px;">
+                </ion-col>
+
+                <ion-col
+                  class="custFontFamilyMuliSemiBold custLineHight20 muli-14pt custColorDark  text-end  text-nowrap">
+                  ₹{{setDecimal[i]}}
+                </ion-col>
+              </ion-row>
+
+              <ion-row>
+                <ion-col
+                  class="custFontFamilyMuliSemiBold muli-12pt custLineHight16 custColorBattlePGry  text-nowrap">
+                  {{item?.EXCHANGE}}
+                </ion-col>
+
+                <ion-col [size]="'8'" class="d-flex justify-content-end text-end">
+                  <span class="muli-12pt itemCol  text-end  text-nowrap">
+                    <ion-icon name="caret-up" class="custGreenTick"></ion-icon>{{item?.INST}}
+                  </span>&nbsp;
+                  <span class="muli-12pt itemCol  text-end  text-nowrap">(<span>+</span>{{item?.SEGMENT}})</span>
+                </ion-col>
+              </ion-row>
+            </ion-card>
+          </ion-col>
+        </ion-row>
+      </ion-row>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+
+
+<cap-footer *ngIf="currentMode" [activeImg]="imageList?.activeTab" [selectedIndex]="'4'" [footerListData]="mfFooterData" [parentTab]="'Mutual Fund'"></cap-footer>
+</ion-app>
+<div class="custModalContainer p-10" *ngIf="create">
+  <div id="showModalSMGSucces" class="modal-content custCenterAlign">
+  <ion-row class="w-100">
+    <ion-col class="mb-3">
+      <span class="custColorDark custFontFamilyMuliBold muli-18pt">Create Watchlist</span>
+    </ion-col>
+  </ion-row>
+  <ion-row class="mb-1"  class="w-100">
+    <mat-form-field class="w-100 h-100" appearance="outline">
+      <input class="custFontFamilyMuliRegular muli-16pt" (keyup)="NewTabCreat($event)" name="watchlistName"
+        matInput placeholder="Watchlist Name" required="true">
+    </mat-form-field>
+  </ion-row>
+  <ion-row  class="w-100">
+    <ion-col class=" mb-5 ">
+      <button class="btn w-100 text-center custBackgroundColorBrightCyan" [disabled]="!newTabName" (click)="CreatebuttonWatchList()" >
+        <span class="custColorWhite custFontFamilyMuliBold muli-16pt">Create</span>
+      </button>
+    </ion-col>
+  </ion-row>
+</div>
+</div>
+
+  <div class="custModalContainer p-10" *ngIf="SuccesFullCreate">
+    <div id="showModalSMGSucces" class="modal-content custCenterAlign">
+  <ion-img [src]="imageList?.succsessIcon" class="cusSuccess mt-2 "></ion-img>
+  <span class="custFontFamilyMuliBold d-flex justify-content-center muli-18pt mt-2 w-100">Succesfully Created</span>
+  <ion-row class="w-100">
+    <ion-col class="myButton">
+      <button class="btn w-100 text-center custBackgroundColorBrightCyan" (click)="dismiss()">
+        <span class="custColorWhite custFontFamilyMuliBold muli-16pt">Ok</span>
+      </button>
+    </ion-col>
+  </ion-row>
+</div>
+</div>
+<div class="custModalContainer  rounded-3 " *ngIf="moreError" >
+  <div id="showModalSMGSucces" class="modal-content modConmart p-10" >
+    <!-- <ion-row>
+    <ion-col class="text-center">
+    <img [src]="imageList?.alertTriangle">
+  </ion-col>
+</ion-row>
+    <p class="custFontFamilyMuliBold muli-16pt custColorDark text-center">You cannot create more than 5 watchlists.</p>
+    <ion-col class="p-3" (click)="ViewAll()">
+      <button class="btn w-100 text-center custBackgroundColorBrightCyan"><span
+        class="custColorWhite custFontFamilyMuliBold muli-16pt">Ok</span></button>
+      </ion-col> -->
+      <ion-row class="custFontFamilyMuliRegular d-flex justify-content-center w-100 text-center muli-16pt custLineHight20 custColorBattlePGry">
+        From
+     </ion-row>
+     
+<ion-card  >
+  <ion-card-content>
+    <ion-row>
+      <ion-col [size]="'2'">
+        <ion-img [src]="'data:image/jpeg;base64,'+x.image"></ion-img>
+      </ion-col>
+      <ion-col [size]="'8'">
+        <ion-row><span class="custFontFamilyMuliSemiBold muli-14pt custLineHight20 custColorDark">Name
+        </span></ion-row>
+        <!-- <ion-row><span class="custFontFamilyMuliSemiBold muli-14pt custLineHight20 custColorDark">Solution Fund Direct Growth
+        </span></ion-row> -->
+      </ion-col>
+      <!-- <ion-col [size]="'2'">
+        <ion-img [src]="imageList?.leftArrowIcon" class="m-3 custArrowIcon"></ion-img>
+      </ion-col> -->
+    </ion-row>
+    <ion-row>
+      <ion-col [size]="'4'">
+      <ion-row><p class="custFontFamilyMuliRegular muli-10pt custColorGreyish">Invested Amount</p></ion-row>
+      <ion-row><p class="custFontFamilyRobotoCondensed muli-14pt custColorDark">amount</p></ion-row>
+    </ion-col>
+    <ion-col [size]="'4'">
+      <ion-row><p class="custFontFamilyMuliRegular muli-10pt custColorGreyish">Current value</p></ion-row>
+      <ion-row>
+        <ion-row><p class="custFontFamilyRobotoCondensed muli-14pt custColorDark">value</p></ion-row>
+      </ion-row>
+    </ion-col>
+    <ion-col [size]="'4'">
+      <ion-row><p class="custFontFamilyMuliRegular muli-10pt custColorGreyish">Returns</p></ion-row>
+      <ion-row *ngIf="x?.returnsPercent>0" class="custFontFamilyRobotoCondensed muli-14pt  custColorParakeetGreen"> <span><img [src]="imageList?.caretUpSharp" class=" something2 me-2" > </span>{{x?.returnsPercent}}%
+      </ion-row>
+      <ion-row  *ngIf="x?.returnsPercent<0" class="custFontFamilyRobotoCondensed muli-14pt  custColorcustFadedRed"> <span><img [src]="imageList?.DownPerArrow" class=" me-2" ></span> {{x?.returnsPercent}}%
+      </ion-row>
+    </ion-col>
+    </ion-row>
+  
+  <!-- <ion-row class="custBackgroundColorPaleGrey ">
+   <ion-col [size]="'10'" class="custFontFamilyMuliRegular  muli-10pt custColorWarmGrey text-center pt-4"> Set-up Auto pay to experience one-tap investments</ion-col>
+   <ion-col [size]="'2'">
+    <ion-img [src]="imageList?.leftArrowIcon" class="m-3 custArrowIcon custColorDarkishBlue"></ion-img>
+  </ion-col>
+  </ion-row> -->
+  </ion-card-content>
+  </ion-card>
+      <ion-row class="custFontFamilyMuliRegular d-flex justify-content-center 100 text-center muli-16pt custLineHight20 custColorBattlePGry">
+         To
+      </ion-row>
+      <ion-card class="mb-3 custmargin">
+        <ion-card-header class="pt-0 ">
+          <div  class="custBottom d-flex justify-content-end">
+            <ion-img [src]="imageList?.saveIcon" *ngIf="x?.plan_id" class="custBookmark" (click)="changeBookmark(x)"></ion-img>
+            <ion-img [src]="imageList?.saveIcon2" *ngIf="!x?.plan_id" class="custBookmark" (click)="changeBookmark(x)"></ion-img>
+          </div>
+        </ion-card-header>
+        <ion-card-content >
+          <ion-row>
+      
+              <ion-col [size]="'2'" class="ps-0 w-100 d-flex justify-content-end">
+               <ion-img  *ngIf="x?.img" [src]="x.img" class="something"></ion-img>
+                <!-- <ion-img *ngIf="!(x?.icon)" src="http://www.logotaglines.com/wp-content/uploads/2016/08/ICICI-Logo.png" class="something"></ion-img> -->
+      
+              </ion-col>
+              <ion-col [size]="'8'">
+                <ion-row><p class="custFontFamilyMuliRegular muli-24pt custLineHight20 custColorDark" *ngIf="x?.Funds_title">{{x?.Funds_title}}</p></ion-row>
+                <ion-row><p class="custFontFamilyMuliRegular muli-24pt custLineHight20 custColorDark" *ngIf="x?.short_name">{{x?.short_name}}</p></ion-row>
+      
+                <!-- <ion-row><p class="custFontFamilyMuliRegular muli-24pt custLineHight20 custColorDark">{{x.title2}}</p></ion-row> -->
+              </ion-col>
+              <ion-col [size]="'2'" class="ps-4 text-end">
+                <ion-img [src]="imageList?.leftArrowIcon" class="custInvestArrow"></ion-img>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col [size]="'3'" class="px-0">
+              <ion-row><p class="custFontFamilyMuliRegular muli-10pt custLineHight15 mb-0">Min.Invest</p></ion-row>
+              <ion-row class="mt-2" *ngIf="x?.minInvest"><p class="custFontFamilyRobotoCondensed custFontFamilyMuliITF-Rupee muli-14pt custLineHight18 text-center custColorDark" >₹{{x?.minInvest}}</p></ion-row>
+              <ion-row class="mt-2" *ngIf="x?.min_initial_investment"><p class="custFontFamilyRobotoCondensed custFontFamilyMuliITF-Rupee muli-14pt custLineHight18 text-center custColorDark">₹{{x?.min_initial_investment}}</p></ion-row>
+      
+            </ion-col>
+            <ion-col [size]="'6'">
+              <ion-row class=" text-start" size="'6'"  >
+              <p class="custFontFamilyMuliRegular muli-10pt custLineHight15 ion-no-padding ms-2">Category Return</p>
+              </ion-row>
+               <ion-row class="align text-start" size="'6'">
+  
+              <ion-col   class="muli-14pt custColorDark text-end custFontFamilyRobotoCondensed ion-no-padding " >{{x?.minPer}}</ion-col>
+              <ion-col  class=" custColorDark text-center"><ion-progress-bar color="secondary" value="0.6"></ion-progress-bar></ion-col>
+              <ion-col   class="muli-14pt custColorDark custFontFamilyRobotoCondensed text-start ion-no-padding" >{{x?.maxPer}}</ion-col>
+      
+              </ion-row>
+            </ion-col>
+            <ion-col [size]="'3'">
+              <ion-row class="ms-2"><p class="custFontFamilyMuliRegular muli-10pt custLineHight15">Returns</p></ion-row>
+              <ion-row class="text-end"> 
+                <ion-img [src]="imageList?.caretUpSharp" class=" something2 mt-2"></ion-img>&nbsp;
+                <span class="returnPercent muli-14pt custColorParakeetGreen custFontFamilyRobotoCondensed"  >{{x?.fundPer  }}</span>
+  
+                <!-- <span class="returnPercent muli-14pt custColorParakeetGreen custColorcustFadedRed" *ngIf="(x?.fundPer | number) == '0'" >{{x?.fundPer | number}}</span> -->
+                <!-- <ion-img *ngIf="(x?.fundPer)<0" [src]="imageList?.DownPerArrow" class="mt-2"></ion-img>&nbsp; -->
+                
+      
+              </ion-row>
+            </ion-col>
+            </ion-row>
+          </ion-card-content>
+        </ion-card>
+        <ion-row class="w-100">
+          <ion-col class="myButton">
+            <button class="btn w-100 text-center custBackgroundColorBrightCyan" (click)="dismiss()">
+              <span class="custColorWhite custFontFamilyMuliBold muli-16pt">Ok</span>
+            </button>
+          </ion-col>
+        </ion-row>
+
+    </div>
+  </div>
+ 
+
+
+
+
+
+

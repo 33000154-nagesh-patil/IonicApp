@@ -1,0 +1,203 @@
+<ion-header class="sticky">
+  <ion-toolbar class="custBackgroundDynamicColorWhite">
+    <ion-grid>
+      <ion-row class="py-2">
+        <ion-col [size]="'1'" class="text-center">
+          <ion-img [src]="imageList?.arrow" (click)="goBack()" class="custKYCImgone"></ion-img>
+        </ion-col>
+        <ion-col [size]="'11'" class="text-center">
+          <span class="custFontFamilyMuliBold muli-16pt d-flex custPadding flex-start custColorDark">Track Status</span>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="contentBackground">
+  <ion-card *ngFor="let card of cards">
+    <ion-card-title class="p-2 custColorDark muli-18pt">{{card.cardTitle}}</ion-card-title>
+    <ion-card-subtitle class="p-2 custColorDark muli-18pt">{{card.cardSubTitle}}</ion-card-subtitle>
+    <ion-card-content>
+      <div [ngClass]="card.grayBackGround?'p-2 custBackgroundColorPaleGrey':''">
+        <ion-grid>
+          <ion-row *ngFor="let item of card.cardRowData">
+            <ion-col>
+              <p [ngClass]="item.col1.pconfig">{{item.col1.p}}</p>
+              <span [ngClass]="item.col1.spanConfig">{{item.col1.span}}</span>
+            </ion-col>
+            <ion-col>
+              <p [ngClass]="item.col2.pconfig">{{item.col2.p}}</p>
+              <span [ngClass]="item.col2.spanConfig">{{item.col2.span}}</span>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </div>
+    </ion-card-content>
+    <div *ngIf="card.cardBottom">
+      <ion-row *ngFor="let item of card.cardBottom" class="custBackgroundColorPaleGrey custbottomheight w-100  text-end p-2">
+        <ion-col [ngClass]="item.col1Config">{{item.col1}}</ion-col>
+        <ion-col [ngClass]="item.col2Config">{{item.col2}}</ion-col>
+      </ion-row>
+    </div>
+  </ion-card>
+
+  <!-- <ion-card class="custBackgroundColorWhite" *ngFor="let card of cards">
+    <ion-card-content>
+      <ion-grid class="ion-no-padding">
+        <ion-row *ngFor="let item of card.cardRowData">
+
+          <ion-col [size]="'6'" class="d-block justify-content-start">
+            <span [ngClass]="">qwert</span>
+
+            <span
+              class="custFontFamilyMuliRegular d-block muli-14pt custLineHight22 custColorGreyish">{{dataForOrderDetails?.purchaseDate}}</span>
+          </ion-col>
+          <ion-col [size]="'6'">
+            <span class="custFontFamilyMuliRegular  muli-14pt custLineHight15 custColorDark"> by Metropolis Lab</span>
+          </ion-col>
+
+          <ion-col [size]="'6'" class="pt-2 d-block justify-content-start">
+            <span class="custFontFamilyMuliRegular muli-12pt custLineHight20 custColorGreyish">Order Id
+            </span>
+
+            <span
+              class="custFontFamilyMuliBold d-block muli-14pt custLineHight22 custColorDark">{{dataForOrderDetails?.transactionsID}}</span>
+          </ion-col>
+          <ion-col [size]="'6'" class="pt-2 d-block justify-content-end text-end">
+            <span class="custFontFamilyMuliRegular muli-12pt custLineHight20 custColorGreyish ">Time Slot
+            </span>
+
+            <span
+              class="custFontFamilyMuliBold d-block muli-14pt custLineHight22 custColorDark text-end">{{dataForOrderDetails?.timeSlot}}</span>
+          </ion-col>
+          <ion-col [size]="'6'" class="d-block justify-content-start">
+            <span class="custFontFamilyMuliRegular muli-12pt custLineHight20 custColorGreyish">Price</span>
+
+            <span
+              class="custFontFamilyMuliBold d-block muli-14pt custLineHight22 custColorDark">{{dataForOrderDetails?.price}}</span>
+          </ion-col>
+
+          <ion-col [size]="'6'" class="d-block justify-content-end text-end">
+            <span class="custFontFamilyMuliRegular muli-12pt custLineHight20 custColorGreyish ">No. of tests</span>
+
+            <span
+              class="custFontFamilyMuliBold d-block muli-14pt custLineHight22 custColorDark text-end ">{{dataForOrderDetails?.orderQuantity}}</span>
+          </ion-col>
+
+          <ion-col [size]="'12'">
+            <span class="custFontFamilyMuliRegular muli-12pt custLineHight20 custColorGreyish">Transaction
+              ID</span><br>
+            <ion-row class="custFontFamilyMuliBold muli-14pt custColorDark custTextAlignCenter">
+              <span>{{dataForOrderDetails?.transactionsID}}</span>&nbsp;&nbsp;<ion-img [src]="imageList?.copy"
+                class="custCopy"></ion-img>
+            </ion-row>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+    <ion-row class="custBackgroundColorPaleGrey custbottomheight w-100  text-end p-2">
+      <ion-col class="text-start custFontFamilyMuliBold muli-12pt custColorDarkishBlue">Download Invoice</ion-col>
+      <ion-col class="text-start custFontFamilyMuliBold muli-12pt custColorDarkishBlue text-end">Download Report
+      </ion-col>
+    </ion-row>
+  </ion-card>
+
+
+  <ion-card class="custBackgroundColorWhite">
+    <ion-card-content>
+      <ion-grid class="ion-no-padding mb-2">
+        <ion-row>
+          <span
+            class="custFontFamilyMuliBold muli-14pt d-block justify-content-start custLineHight20 custColorDarkShade">Price
+            Details</span>
+        </ion-row>
+        <ion-row>
+          <ion-col [size]="'9'" class="pt-3">
+            <span class="custFontFamilyMuliRegular muli-12pt custLineHight20 custColorDark">Item MRP (
+              70 item )</span>
+          </ion-col>
+          <ion-col [size]="'3'" class="pt-3">
+
+            <span
+              class="custFontFamilyMuliBold text-end muli-12pt custLineHight22 custColorDark">{{dataForOrderDetails?.price}}</span>
+          </ion-col>
+          <ion-col [size]="'9'">
+            <span class="custFontFamilyMuliRegular muli-12pt custLineHight22 custColorDark">Collection Charges
+            </span>
+          </ion-col>
+          <ion-col [size]="'3'">
+
+            <span
+              class="custFontFamilyMuliBold  muli-12pt custLineHight22 custColorDark px-2">{{dataForOrderDetails?.collectionCharges}}</span>
+          </ion-col>
+          <ion-col [size]="'9'">
+            <span class="custFontFamilyMuliBold muli-14pt custLineHight22 custColorDark">Grand Total</span>
+          </ion-col>
+          <ion-col [size]="'3'">
+            <span class="custFontFamilyMuliBold  muli-14pt custLineHight22 custColorDark">70</span>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+    <div class="bottomcontent custBackgroundColorPaleGrey custbottomheight w-100  text-end">
+      <p
+        class="text-start custFontFamilyMuliBold muli-10pt custColorParakeetGreen d-flex justify-content-start align-items-center ">
+        <span>
+          <ion-img [src]="imageList?.successTrack" class="px-2 custImgSucc"></ion-img>
+        </span>
+        <span class="py-2">{{dataForOrderDetails?.msg}}</span>
+      </p>
+    </div>
+  </ion-card>
+
+
+  <ion-card class="custBackgroundColorWhite">
+    <ion-card-title class="p-2 custColorDark muli-18pt">Details</ion-card-title>
+    <ion-card-content>
+      <div class="p-2 custBackgroundColorPaleGrey">
+        <h2 class="custColorDark">Patient Name 1</h2>
+        <ion-card-subtitle>Swapnil Vasant Joshi</ion-card-subtitle>
+        <ion-row>
+          <ion-col>
+            <div>Age</div>
+            <div>34</div>
+          </ion-col>
+          <ion-col>
+            <div>Relation</div>
+            <div>Self</div>
+          </ion-col>
+          <ion-col>
+            <div>Gender</div>
+            <div>Male</div>
+          </ion-col>
+        </ion-row>
+      </div>
+    </ion-card-content>
+  </ion-card> -->
+
+  <div class="contentBackground p-2">
+    <ion-row>
+      <ion-col class="custFontFamilyMuliBold custColorDark muli-18pt">Order Status</ion-col>
+      <ion-col *ngIf="inProgress" class="custFontFamilyMuliBold muli-14pt custColorlightRed text-end"> In Progress</ion-col>
+    </ion-row>
+    <ul class="StepProgress mt-3">
+      <li *ngFor="let x of progressBar" class="w-100"
+        [ngClass]="x?.Status==='Pass' ?'StepProgress-item is-done':'StepProgress-item current'">
+        <p class="custFontFamilyMuliBold muli-16pt">{{x?.Document}}
+          <span *ngIf="x?.Status==='Pass'" class="float-end custColorParakeetGreen">Done</span>
+        </p>
+        <p class="custFontFamilyMuliRegular muli-10pt custLineHight22 custColorGreyish">{{x?.span}}</p>
+      </li>
+    </ul>
+  </div>
+
+
+</ion-content>
+
+<ion-row class="w-100 ">
+  <ion-col class="p-3">
+    <button class="btn h-100 w-100 red">
+      <span  (click)="goBack()" class="custColorWhite custFontFamilyMuliBold muli-16pt">Cancel</span>
+    </button>
+  </ion-col>
+</ion-row>

@@ -1,0 +1,180 @@
+
+<cap-header title="orderBook" otherTextName="orderBook" [imageList]="imageList" [showArrow]="true" [showLabel]="true"
+[showImg]="false" [showIndex]="false" [showNotification]="false" [showCartWithName]="true" [cartCount]="cartCount"
+[showSideMenu]="false" [showSearch]="true" [showClose]="false" [showShare]="false" [showWatchList]="false"
+[showCartWithoutName]="false" [showStories]="false" [paddingSize]="'7'" [showOtherText]="false" [backUrlName]="">
+</cap-header>
+
+<ion-content>
+  <ion-row class="mt-2">
+    <span class="muli-22pt ms-2 custFontFamilyMuliBold">Profile</span>
+  </ion-row>
+  <ion-col [size]="'12'" class="pdingleft">
+    <ion-row class="copltmargin">
+      <ion-col [size]="'1'">
+        <h1></h1>
+      </ion-col>
+    </ion-row>
+  </ion-col>
+
+  <ion-row class="mt-2">
+    <img [src]="imageList?.photo" class=" custCircle custFontFamilyMuliBold" />
+    <ion-col [size]="'10'">
+      <ion-row class="muli-16pt custLineHight18 custColorDark custFontFamilyMuliBold text-nowrap">
+        Hey Rajesh
+      </ion-row>
+      <ion-row class="text-nowrap">
+        <span class="muli-16pt custLineHight18 custColorDark custFontFamilyMuliBold mt-2"> View Profile</span>
+        <!-- <span><ion-img [src]="imageList?.arrow" class="custWithoutTextImg"></ion-img></span> -->
+        <span class="marginleft mt-2 custFontFamilyMuliBold"><img [src]="imageList?.SuccessCheck"
+            class="Check custFontFamilyMuliBold" /></span>
+        <span class="custColorParakeetGreen mt-2 marginleft custFontFamilyMuliBold ">KYC - Investment Ready</span>
+      </ion-row>
+    </ion-col>
+  </ion-row>
+
+  <ion-card class="custIonContentBackgroundColorPaleGrey shadow-sm pb-2">
+    <ion-row class="mt-3">
+      <ion-col class="text-center  muli-16pt custLineHight18 custColorDark custFontFamilyMuliBold text-nowrap">
+        You haven't invested in any stocks
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="text-center  muli-12pt custLineHight18 custColorWarmGrey1 custFontFamilyMuliBold text-nowrap">
+        Today is a good day to start investing
+      </ion-col>
+    </ion-row>
+    <ion-row class="px-5 mt-3">
+      <ion-col [size]="'3'"></ion-col>
+      <ion-col [size]="'6'">
+        <button
+          class="btn w-100 text-center custBackgroundColorBrightCyan custColorWhite muli-12pt text-nowrap">Start
+          Investing</button>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+
+<div  *ngFor="let x of Stjson.profile">
+  <ion-row class="mt-5" (click)="toDetail(x.title)">
+    <ion-col [size]="'8'">
+      <img [src]="imageList?.clientDetails" class=" custFontFamilyMuliBold px-3" />
+      <span class="muli-16pt custLineHight18 custColorDark custFontFamilyMuliBold">{{x?.title}}</span>
+    </ion-col>
+    <ion-col [size]="'4'" class="text-end pe-3">
+      <ion-icon name="chevron-forward-outline"></ion-icon>
+    </ion-col>
+  </ion-row>
+  <hr>
+</div>
+
+
+
+
+</ion-content>
+<cap-footer  [activeImg]="imageList?.activeTab" [selectedIndex]="'5'"
+  [footerListData]="footerListData" [parentTab]="'listing'"></cap-footer>
+
+  <!-- <div *ngIf="stStjson.profile.title == 'client Details' " >
+    <ion-row>
+      <ion-col>
+        <ion-card>
+          <ion-row class="ion-no-padding">
+            <ion-col size="3">
+              <div class="NameHolder custLineHight46 text-center p-0 align-content-center align-items-center">
+                <p class="custFontFamilyMuliBold custColorDark muli-18pt d-inline-block custLineHight38 nameFlCenter">Hr
+                </p>
+              </div>
+            </ion-col>
+            <ion-col class="d-flex align-items-center pl-10" size="8.5">
+              <div>
+                <p class="custFontFamilyMuliBold custColorDark mt-0 mb-0 ml-20 muli-14pt ">hey, Rajesh</p>
+              </div>
+            </ion-col>
+          </ion-row>
+
+          <ion-row class="my-1">
+            <ion-col>
+              <p class="px-3">User ID</p>
+              <p class="px-3 paragMarginTop custFontFamilyMuliBold muli-14pt custLineHight40  custColorDark">666666
+              </p>
+            </ion-col>
+          </ion-row>
+          <ion-row class="marginrow my-1">
+            <ion-col [size]="'10'">
+              <p class="px-3">Email ID</p>
+              <p class="px-3 paragMarginTop custFontFamilyMuliBold muli-14pt custLineHight40  custColorDark">
+                abc@gmail.com</p>
+            </ion-col>
+            <ion-col [size]="'2'">
+              <ion-img [src]="imageList?.modify" class="custWithoutTextImg" (click)="updateEmailId()"></ion-img>
+            </ion-col>
+          </ion-row>
+          <ion-row class="marginrow my-1">
+            <ion-col [size]="'10'">
+              <p class="px-3">Mobile Number</p>
+              <p class="px-3 paragMarginTop custFontFamilyMuliBold muli-14pt custLineHight40  custColorDark">7009131261
+              </p>
+            </ion-col>
+            <ion-col [size]="'2'">
+              <ion-img [src]="imageList?.modify" class="custWithoutTextImg" (click)="updateMobileNumber()"></ion-img>
+            </ion-col>
+          </ion-row>
+          <ion-row class="marginrow my-1">
+            <ion-col>
+              <p class="px-3">Date of Birth</p>
+              <p class="px-3 paragMarginTop custFontFamilyMuliBold muli-14pt custLineHight40  custColorDark">05 june 1997
+              </p>
+            </ion-col>
+          </ion-row>
+          <ion-row class="marginrow my-1">
+            <ion-col>
+              <p class="px-3">Correspondence Address</p>
+              <p class="px-3 paragMarginTop custFontFamilyMuliBold muli-14pt custLineHight40  custColorDark">
+                05/501 new mhada lake shore height </p>
+            </ion-col>
+          </ion-row>
+          <ion-row class="marginrow my-1">
+            <ion-col>
+              <p class="px-3">Permanent Address</p>
+              <p class="px-3 paragMarginTop custFontFamilyMuliBold muli-14pt custLineHight40  custColorDark">
+                05/501 new mhada lake shore height </p>
+            </ion-col>
+          </ion-row>
+          <ion-row class="marginrow my-1">
+            <ion-col>
+              <p class="px-3">Client Code</p>
+              <p class="px-3 paragMarginTop custFontFamilyMuliBold muli-14pt custLineHight40  custColorDark">
+                678690</p>
+            </ion-col>
+          </ion-row>
+          <ion-row class="marginrow my-1">
+            <ion-col>
+              <p class="px-3">PAN Number</p>
+              <p class="px-3 paragMarginTop custFontFamilyMuliBold muli-14pt custLineHight40  custColorDark">AKLE4040
+              </p>
+            </ion-col>
+          </ion-row>
+          <ion-row class="marginrow my-1">
+            <ion-col [size]="'10'">
+              <p class="px-3">Income Range</p>
+              <p class="px-3 paragMarginTop custFontFamilyMuliBold muli-14pt custLineHight40  custColorDark">Rs. 1 Lac to
+                5
+                Lac</p>
+            </ion-col>
+            <ion-col [size]="'2'">
+              <ion-img [src]="imageList?.modify" class="custWithoutTextImg text-end" (click)="updateIncome()"></ion-img>
+            </ion-col>
+          </ion-row>
+          <ion-row class="mb-2">
+            <ion-col class="px-3">
+              <button class="btn w-100 text-center custBackgroundColorWhite custButtonOutLine">
+                <span class="custColorBrightCyan custFontFamilyMuliBold muli-16pt"
+                  (click)="reActiveMob()">Reactivate</span>
+              </button>
+            </ion-col>
+          </ion-row>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </div>
+ -->

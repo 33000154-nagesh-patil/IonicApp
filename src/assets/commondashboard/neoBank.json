@@ -1,0 +1,32 @@
+{
+    "neoBank":[
+      {
+          "row1": {
+              "title": "Jio",
+              "action": "assets/icon/leftArrowIcon.svg"
+          }
+  
+      },
+      {
+          "row1": {
+              "title": "Airtel",
+              "action": "assets/icon/leftArrowIcon.svg"
+          }
+  
+      },
+      {
+          "row1": {
+              "title": "Vodafone",
+              "action": "assets/icon/leftArrowIcon.svg"
+          }
+  
+      },  {
+          "row1": {
+              "title": "Idea",
+              "action": "assets/icon/leftArrowIcon.svg"
+          }
+  
+      }
+    
+  ]
+}

@@ -1,0 +1,128 @@
+.custBackArrow{
+    height: 20px;
+    width: 20px;
+}
+.custCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.custBtnExplore{
+    height: 35px;
+    border:  1px solid var(--custBrightCyan) !important;
+    border-radius: 4px !important;
+    background: white !important;
+    text-align: center !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    float: right;
+}
+.custBadge{
+    position: absolute;
+  }
+  .custRight0{
+    right: 0px;
+  }
+  .decrement {
+    .mat-raised-button{
+        border-radius: 50% 0% 0% 50%;
+      }
+  }
+  .increment{
+    .mat-raised-button{
+        border-radius: 0% 50% 50% 0%;
+    }
+
+  }
+.mat-raised-button{
+    min-width: 50px!important;
+
+}
+
+  .custSegment{
+    border-radius: 24px;
+    --indicator-color: none;
+    width: 30px;
+    }
+  ion-segment-button{
+    min-width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: auto;
+    border-radius: 20px;
+  }
+  ion-segment{
+    height: 35px;
+    border-radius: 20px;
+    background-color: var(--custGray);
+  }
+/////////@at-root
+/// 
+/// 
+/// 
+ .custBackgroundRedButton{
+  color: var(--custWhite) !important;
+  background-color: var(--custFadedRed);
+  border-radius: 5px;
+}
+
+.productImage{
+  justify-content: center !important;
+  text-align: center !important;
+  border: 1px solid var(--custPaleGrey) !important;
+  border-radius: 5px !important;  
+  width: 3rem !important;
+  height: 3rem !important;
+}
+.matCol{
+  .mat-form-field {
+    
+    min-width: 9em;
+  }
+}
+.custCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button:disabled{
+  filter: grayscale(59);
+}
+.segmant{
+  // box-shadow: inset 0px 0px 6px -3px !important;
+  background-color: var(--custPaleGrey);
+  border-radius: 1000px;
+  ion-segment-button{
+    min-height: 1.5rem;
+   
+    min-width: 2rem;
+  }
+  // border-top-right-radius: 10px;
+  .segment-button-checked {
+    --color-checked: var(--custWhite);
+    color: var(--custWhite);
+    --indicator-color: none !important;
+    background-color: var(--custBrightCyan);
+    border-radius: 1000px !important;
+  }
+}
+
+.backdrop{
+  .modal-wrapper{
+    --background: rgb(255, 255, 255);
+    position: fixed;
+    bottom: -5px !important;
+    left: 0px;
+    height: auto;
+    min-height: calc(var(--world) * var(--hey));
+    min-width: 100%;
+    width: 100%;
+    border: 0px solid white;
+    padding: 5px;
+    border-radius: 10px 10px 0px 0px;
+.ion-page{
+    overflow-y: scroll;
+  }
+  }
+}

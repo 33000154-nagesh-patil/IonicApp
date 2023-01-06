@@ -1,0 +1,69 @@
+{
+    "heading": {
+        "heading": "Explore",
+        "discription": "Discover all shares"
+    },
+    "pickupAndfilter": [
+        {
+            "filterIcon": "assets/Images/filterIcon.svg",
+            "filterTitle": "Filter"
+        }
+    ],
+    "card": [
+        {
+            "row1": {
+                "title": "Avenue Supermarts Limited"
+            },
+            "row2": {
+                "col1": "availableQuantity",
+                "val1": 50,
+                "col2": "haircutRate",
+                "val2": "20%"
+            }
+        },
+        {
+            "row1": {
+                "title": "Dabur India Limited"
+            },
+            "row2": {
+                "col1": "availableQuantity",
+                "val1": 50,
+                "col2": "haircutRate",
+                "val2": "20%"
+            }
+        },
+        {
+            "row1": {
+                "title": "Interglobe Aviation Limited"
+            },
+            "row2": {
+                "col1": "availableQuantity",
+                "val1": 50,
+                "col2": "haircutRate",
+                "val2": "20%"
+            }
+        },
+        {
+            "row1": {
+                "title": "Mindtree Limited"
+            },
+            "row2": {
+                "col1": "availableQuantity",
+                "val1": 50,
+                "col2": "haircutRate",
+                "val2": "20%"
+            }
+        },
+        {
+            "row1": {
+                "title": "Zydus Lifesciences Limited"
+            },
+            "row2": {
+                "col1": "availableQuantity",
+                "val1": 50,
+                "col2": "haircutRate",
+                "val2": "20%"
+            }
+        }
+    ]
+}

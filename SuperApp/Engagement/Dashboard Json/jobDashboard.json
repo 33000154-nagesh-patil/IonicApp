@@ -1,0 +1,92 @@
+
+{
+    "objectContent": [
+
+        {
+            "contentType": "cardList",
+            "Title": "Jobs Saved",
+            "card": [
+                {
+                    "row1": {
+                        "icon": "assets/icon/Commonicon1.png",
+                        "title": "Associate DTP Specialist",
+                        "description": "GOLS Group",
+                        "action": "assets/icon/leftArrowIcon.svg",
+                        "action1": ""
+                    },
+                    "row2": {
+                        "col1":  "Package",
+                        "val1": "RS4-7LPA",
+                        "col2": "Experience",
+                        "val2": "0-2 Years",
+                        "col3": "Location",
+                        "val3": "Navi Mumbai"
+                    }
+                },
+                {
+                    "row1": {
+                        "icon": "assets/icon/Commonicon2.png",
+                        "title": "Web Designer and Developer",
+                        "description": "GOLS Group",
+                        "action": "assets/icon/leftArrowIcon.svg",
+                        "action1": ""
+                    },
+                    "row2": {
+                        "col1":  "Package",
+                        "val1": "RS4-7LPA",
+                        "col2": "Experience",
+                        "val2": "2-5 Years",
+                        "col3": "Location",
+                        "val3": "Mumbai"
+                    }
+                }
+              
+               
+            ]
+        }, {
+            "contentType": "cardList",
+            "Title": "Recommended Jobs",
+            "card": [
+                {
+                    "row1": {
+                        "icon": "assets/icon/Commonicon2.png",
+                        "title": "BA",
+                        "description": "GOLS Group",
+                        "action": "assets/icon/leftArrowIcon.svg",
+                        "action1": ""
+                    },
+                    "row2": {
+                        "col1":  "Package",
+                        "val1": "RS4-7LPA",
+                        "col2": "Experience",
+                        "val2": "2-5 Years",
+                        "col3": "Location",
+                        "val3": "Mumbai"
+                    }
+                },
+                {
+                    "row1": {
+                        "icon": "assets/icon/Commonicon2.png",
+                        "title": "Senior Development",
+                        "description": "GOLS Group",
+                        "action": "assets/icon/leftArrowIcon.svg",
+                        "action1": ""
+                    },
+                    "row2": {
+                        "col1":  "Package",
+                        "val1": "RS4-7LPA",
+                        "col2": "Experience",
+                        "val2": "2-5 Years",
+                        "col3": "Location",
+                        "val3": "Mumbai"
+                    }
+                }
+            
+               
+            ]
+        }
+       
+       
+      
+    ]
+}

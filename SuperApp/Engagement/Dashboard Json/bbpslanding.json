@@ -1,0 +1,83 @@
+{
+    "objectContent": [
+        {
+            "contentType": "Header",
+            "Title": "",
+            "data": [
+                {
+                    "icon": "assets/icon/arrow.svg",
+                    "subTitle": "arrow"
+                }
+            ]
+        },
+        {
+            "contentType": "3x2 Grid",
+            "Title": "",
+            "content": [
+                {
+                    "icon": "assets/icon/prepaid.svg",
+                    "name": "Prepaid Mobile"
+                },
+                {
+                    "icon": "assets/icon/postpaid.svg",
+                    "name": "Postpaid Mobile"
+                },
+                {
+                    "icon": "assets/icon/DTH.svg",
+                    "name": "DTH"
+                },
+                {
+                    "icon": "assets/icon/electricity.svg",
+                    "name": "Electricity"
+                },
+                {
+                    "icon": "assets/icon/pipedGas.svg",
+                    "name": "Piped Gas"
+                },
+                {
+                    "icon": "assets/icon/landline.svg",
+                    "name": "Landline"
+                }
+            ] 
+        },
+        {
+            "contentType": "cardList",
+            "Title": "Transcation",
+            "card": [
+                {
+                    "row1": {
+                        "icon": "",
+                        "title": "Electricity",
+                        "description": "Paid",
+                        "action": "assets/icon/electricity.svg"
+                    },
+                    "row2": {
+                        "col1": "price",
+                        "val1": 1000,
+                        "col2": "Time",
+                        "val2": "10:00 am",
+                        "col3": "Date",
+                        "val3": "23-May-2022"
+                    }
+                },
+                {
+                    "row1": {
+                        "icon": "",
+                        "title": "Landline",
+                        "description": "Paid",
+                        "action": "assets/icon/landline.svg"
+                    },
+                    "row2": {
+                        "col1": "price",
+                        "val1": 1000,
+                        "col2": "Time",
+                        "val2": "10:00 am",
+                        "col3": "Date",
+                        "val3": "23-May-2022"
+                    }
+                }
+            ]
+        }
+        
+    ]
+}

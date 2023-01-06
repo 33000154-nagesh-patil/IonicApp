@@ -1,0 +1,62 @@
+[
+    {   
+        "id":"1",
+        "logo":"assets/health-page-logos/Group 20574 (2).svg",
+        "title":"Dolo-650 Tablet",
+        "description":"by Micro Labs. 15 Tablets strip",
+        "price":"25.00",
+        "rating":"assets/health-page-logos/ratings (1).svg",
+        "prescription":"prescription",
+        "btnText":"required"
+    },
+    {   
+        "id":"2",
+        "logo":"assets/health-page-logos/dettol.svg",
+        "title":"Dettol Antiseptic liquid",
+        "description":"by Dettol Bottle of 550 ml",
+        "price":"25.00",
+        "rating":"assets/health-page-logos/ratings (1).svg",
+        "prescription":"prescription",
+        "btnText":"not required"
+    },
+    {   
+        "id":"3",
+        "logo":"assets/health-page-logos/dettol.svg",
+        "title":"Dettol Hand Sanitizer",
+        "description":"1,00,000+ medicines",
+        "price":"25.00",
+        "prescription":"prescription",
+        "rating":"assets/health-page-logos/ratings (1).svg",
+        "btnText":"required"
+    },
+    {   
+        "id":"4",
+        "logo":"assets/health-page-logos/Group 20574 (2).svg",
+        "title":"Dettol Antiseptic liquid",
+        "description":"by Dettol Bottle of 550 ml",
+        "price":"250.00",
+        "rating":"assets/health-page-logos/ratings (1).svg",
+        "prescription":"prescription",
+        "btnText":"required"
+    },
+    {   
+        "id":"5",
+        "logo":"assets/health-page-logos/Group 20574 (2).svg",
+        "title":"Dolo-650 Tablet",
+        "description":"by Micro Labs. 15 Tablets strip",
+        "price":"250.00",
+        "rating":"assets/health-page-logos/ratings (1).svg",
+        "prescription":"prescription",
+        "btnText":"required"
+    },
+    {   
+        "id":"6",
+        "logo":"assets/health-page-logos/Group 20574 (2).svg",
+        "title":"Dolo-650 Tablet",
+        "description":"by Micro Labs. 15 Tablets strip",
+        "price":"25.00",
+        "rating":"assets/health-page-logos/ratings (1).svg",
+        "prescription":"prescription",
+        "btnText":"not required"
+    }
+]

@@ -1,0 +1,86 @@
+<ion-header>
+  <ion-toolbar class="custBackgroundDynamicColorWhite">
+    <ion-grid>
+      <ion-row>
+        <ion-col *ngIf="appName != 'Aqube'" [size]="'1'" (click)="gotoBack()" class="text-center mt-1">
+          <ion-img [src]="imageList?.arrow" class="custKYCImg mt-2"></ion-img>
+        </ion-col>
+        <ion-col *ngIf="appName != 'Aqube'" [size]="'10'" class="text-center">
+          <span class="custFontFamilyMuliBold muli-14pt custLineHight40 custColorDark ">{{'setupInvestmentAccount'
+            | translate}}</span>
+        </ion-col>
+        <ion-col *ngIf="appName == 'Aqube'" [size]="'12'" class="text-center">
+          <span class="custFontFamilyMuliBold muli-14pt custLineHight40 custColorDark ">{{'setupInvestmentAccount'
+            | translate}}</span>
+        </ion-col>
+        <ion-col *ngIf="appName != 'Aqube'" [size]="'1'" class="text-center mt-1" (click)="dismiss(false)">
+          <ion-img [src]="imageList?.close" class="custKYCImg mt-2"></ion-img>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="contentBackground">
+  <p class="custFontFamilyMuliBold muli-16pt custLineHight18 custColorDark custUrSign text-center">{{'urSign' |
+    translate}}</p>
+  <p class="custFontFamilyMuliRegular muli-14pt custLineHight20 custColorDark custSignMandatoryMsg text-center">
+    {{'signMandatoryMsg'
+    | translate}}</p>
+  <ion-card class="custBackgroundColorWhite custCard">
+    <ion-card-content>
+
+      <div class="d-flex justify-content-center custSignDiv">
+        <ion-img *ngIf="!currentSign" [src]="imageList?.sign" class="custImgSample"></ion-img>
+        <ion-img *ngIf="currentSign" [src]="currentSign" class="custSignImg"></ion-img>
+      </div>
+
+      <ion-button expand="block" class="text-capitalize custButton d-flex justify-content-center"
+        (click)="clickSignManually()">
+        <span class="custFontFamilyMuliRegular muli-12pt custColorBrightCyan">{{'topSignManually'
+          | translate}}</span>
+      </ion-button>
+    </ion-card-content>
+
+    <h1 class="custOr"><span class="custFontFamilyMuliRegular muli-12pt custLineHight24 custOrSpan">{{'or' |
+        translate}}</span></h1>
+
+    <ion-card-content>
+
+      <div class="d-flex justify-content-center custUploadSignDiv">
+        <ion-img *ngIf="!currentImg" [src]="imageList?.uploadSign" class="custImgSample"></ion-img>
+
+        <ion-img *ngIf="currentImg" [src]="currentImg" class="custSignImg"></ion-img>
+      </div>
+
+      <p class="custFontFamilyMuliRegular text-center muli-10pt custLineHight15 custColorGreyish custUploadSignMsg">
+        {{'uploadSignMsg' | translate}} {{'uploadSignMsg1' | translate}}</p>
+      <!-- <p class="custFontFamilyMuliRegular text-center muli-10pt custLineHight15 custColorGreyish">{{'uploadSignMsg1' | translate}}</p> -->
+
+      <ion-button expand="block" *ngIf="!isCordovaStatus"class="text-capitalize custUploadButton d-flex justify-content-center"
+      (click)="top.click()">
+        <input type="file" (change)="imagePreview($event,1)" #top style="display: none;" name="filename">
+        <span class="custFontFamilyMuliRegular text-center muli-14pt custColorBrightCyan">{{'uploadSign'
+          | translate}}</span>
+      </ion-button>
+      <ion-button expand="block"  *ngIf="isCordovaStatus" class="text-capitalize custUploadButton d-flex justify-content-center"
+      (click)="selectImage()">
+      <span class="custFontFamilyMuliRegular text-center muli-14pt custColorBrightCyan">{{'uploadSign'
+        | translate}}</span>
+    </ion-button>
+
+    </ion-card-content>
+  </ion-card>
+  <div class="custModalContainer p-10" *ngIf="loggedInModal" (click)="successModalClose();">
+    <div  id="showModalSMGSucces" class="modal-content custCenterAlign">
+      <!-- <ion-icon [src]="imageList?.successKYCIcon" class="custImage"></ion-icon> -->
+      <p class="custFontFamilyMuliBold muli-16pt custColorDark text-center p-0 m-0 ion-no-padding">{{ErrorMsg}}</p>
+    </div>
+  </div>
+</ion-content>
+
+<div class="custFooterDiv">
+  <ion-button expand="block" class="text-capitalize text-center custContinueBtn m-0 p-0"
+    [disabled]="btnContinueDisabled" (click)="onContinue()"><span
+      class="custColorWhite custFontFamilyMuliBold muli-16pt">{{'continue' |
+      translate}}</span></ion-button>
+</div>

@@ -1,0 +1,51 @@
+{
+  "data": [
+      {
+          "title": "BSE Cash",
+          "amount": "2360.00",
+          "value": [
+              {
+                  "row1": {
+                      "Fee": "Exchange Fee",
+                      "amount1": 2000.00
+                  },
+                  "row2": {
+                      "GST": "18% GST",
+                      "amount2": "360.00"
+                  },
+                  "row3": {
+                      "total": "Grand Total",
+                      "amount3": "2360.00"
+                  }
+              }
+          ]
+      },
+      {
+          "title": "NSE Cash",
+          "amount": "2360.00",
+          "value": [
+              {
+                  "row1": {
+                      "Fee": "Exchange Fee",
+                      "amount1": 2000.00
+                  },
+                  "row2": {
+                      "GST": "18% GST",
+                      "amount2": "360.00"
+                  },
+                  "row3": {
+                      "total": "Grand Total",
+                      "amount3": "2360.00"
+                  }
+              }
+          ]
+      }
+
+  ],
+  "deposit": {
+   "cash" : "50,000",
+   "stock" : "25,000"
+  }
+
+}
+

@@ -1,0 +1,52 @@
+{
+    "controls":[
+ {
+        "name": "mobileNo",
+        "label": "Mobile Number",
+        "value": "",
+        "type": "number",
+        "validators": {
+           "required": true
+        }
+      },
+      {
+        "name": "beneficiaryName",
+        "label": "Beneficiary Name",
+        "value": "",
+        "type": "text",
+        "validators": {
+           "required": true
+        }
+      },
+      {
+        "name": "accountNumber",
+        "label": "Account Number",
+        "value": "",
+        "type": "number",
+        "validators": {
+           "required": true
+        }
+      },
+      {
+        "name": "ConfirmaccountNumber",
+        "label": "Confirm Account Number",
+        "value": "",
+        "type": "number",
+        "validators": {
+           "required": true
+        }
+      },
+      {
+        "name": "selectAccountType",
+        "label": "Select Account Type",
+        "value": "",
+        "type": "select",
+        "options":[
+          "Savings","current"
+        ],
+        "validators": {
+           "required": true
+        }
+      }
+    ]
+  }

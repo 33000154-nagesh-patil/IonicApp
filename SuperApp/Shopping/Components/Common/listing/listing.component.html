@@ -1,0 +1,125 @@
+<cap-header [title]="headerTitle" [otherTextName]="headerTitle" [imageList]="imageList" [showArrow]="false"
+  [showLabel]="false" [showImg]="false" [showIndex]="false" [showNotification]="true" [showCartWithName]="true"
+  [notificationCount]="notificationCount" [cartCount]="cartCount" [showSideMenu]="false" [showSearch]="true"
+  [showClose]="false" [showShare]="false" [showWatchList]="false" [paddingSize]="5" [showCartWithoutName]="false"
+  [showStories]="false" [showOtherText]="true" [backUrlName]=""></cap-header>
+
+<ion-content class="contentBackground">
+
+  <app-heading *ngIf="Data?.heading" [heading]="Data.heading"></app-heading>
+
+  <app-3x2grid *ngIf="Data?.grid" [grid]="Data.grid"></app-3x2grid>
+
+
+  <!-- Pickup and Filter -->
+  <ion-row>
+    <ion-col *ngFor="let x of Data?.pickupAndfilter" ngClass="(Data?.pickupAndfilter.length>0)?'':'text-end'">
+      <!-- <div *ngIf="x?.pickUpTitle" class="d-flex justify-content-start" >
+        <img [src]="x?.pickUpIcon" class="custImgExpo">
+        <p class="custFontFamilyMuliRegular muli-10pt custLineHight18 custColorBattlePGry px-2">{{x?.pickUpTitle}}</p>
+      </div> -->
+      <div class="text-end mr-2" *ngIf="x?.filterTitle">
+        <span class="px-2 custFontFamilyMuliBold muli-12pt custLineHight18 custColorDarkishBlue"
+          (click)="filterPage(routing)">{{x?.filterTitle}}</span>
+        <img [src]="x?.filterIcon" class=" custImgExpo">
+      </div>
+    </ion-col>
+  </ion-row>
+  <div>
+
+    <div *ngIf="routing != 'ST'">
+      <div *ngFor="let x of Data?.card">
+        <ion-row [size]="'12'" *ngIf="x?.title" class="pl-2">
+          <span class="muli-14pt custFontFamilyMuliBold custLineHight33 custColorDark text-capitalize">
+            {{x?.title}}
+          </span>
+        </ion-row>
+
+        <!-- CARD -->
+        <cap-card *ngIf="Data?.card" [card]="x" [Redirect]="'Detail'"></cap-card>
+
+        <ion-row [size]="'12'" *ngIf="x?.cta" class="text-center pb-2 cta">
+          <button class="custheight text-center custBtnExplore custLineHight14 custLineHight18 px-3 " (click)="snapShot(x?.title)">{{x.cta}}</button>
+          <!-- (click)="snapShot(x)" -->
+        </ion-row>
+
+      </div>
+    </div>
+
+    <div *ngIf="routing == 'ST'">
+      <ion-row>
+        <ion-col [size]="10.5" class="border-bott">
+          <ion-segment scrollable [(ngModel)]="watchList" (ngModelChange)="changeSegment()">
+            <ion-segment-button *ngFor="let x of Data?.watchList" [id]="x.value" [value]="x.value" appLongPress
+              (mouseLongPress)="editWatchList(x)">{{x.title}}
+            </ion-segment-button>
+          </ion-segment>
+        </ion-col>
+        <ion-col [size]="1.5" class="border-bott">
+          <ion-img [src]="imageList?.plusIcon" class="custSVGIcon mt-2" (click)="addWatchList()"></ion-img>
+          <!-- <ion-icon name="add-circle-outline" (click)="addWatchList()"></ion-icon> -->
+        </ion-col>
+      </ion-row>
+
+      <div>
+        <cap-card [card]="Data" [Redirect]="'Detail'"></cap-card>
+      </div>
+      <div class="custModalContainer p-10" *ngIf="create">
+        <div id="showModalSMGSucces" class="modal-content">
+          <ion-row>
+            <ion-col class="mb-3">
+              <span class="custColorDark custFontFamilyMuliBold muli-18pt">Create Watchlist</span>
+            </ion-col>
+            <ion-col class="text-end">
+              <ion-icon name="close" (click)="closePopup()"></ion-icon>
+            </ion-col>
+          </ion-row>
+          <ion-row class="mb-1">
+            <mat-form-field class="w-100 h-100" appearance="outline">
+              <input class="custFontFamilyMuliRegular muli-16pt" [(ngModel)]="APIWatchlistName" name="watchlistName"
+                matInput placeholder="Watchlist Name">
+            </mat-form-field>
+          </ion-row>
+          <ion-row>
+            <ion-col class=" mb-5 ">
+              <button class="btn w-100 text-center custBackgroundColorBrightCyan" [disabled]="!APIWatchlistName" (click)="CreatebuttonWatchList()">
+                <span class="custColorWhite custFontFamilyMuliBold muli-16pt">Create</span>
+              </button>
+            </ion-col>
+          </ion-row>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="custModalContainer p-10" *ngIf="success">
+    <div id="showModalSMGSucces" class="modal-content">
+      <ion-row>
+        <ion-col class="text-center  mb-5">
+          <img [src]="imageList?.succsessIcon" class="custSVGIcon mt-2" />
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col class="text-center mb-4">
+          <span class="custFontFamilyMuliBold d-flex justify-content-center muli-18pt mt-2">{{orderMessage}}</span>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col class="myButton  mb-5">
+          <button class="btn w-100 text-center custBackgroundColorBrightCyan" (click)="close()">
+            <span class="custColorWhite custFontFamilyMuliBold muli-16pt">Ok</span>
+          </button>
+        </ion-col>
+      </ion-row>
+    </div>
+  </div>
+  <ion-infinite-scroll *ngIf="routing != 'ST'" threshold="100px" (ionInfinite)="onScroll($event)">
+    <ion-infinite-scroll-content style="--color: #56a1ce;" loadingSpinner="crescent" loadingText=" Please Wait...">
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+</ion-content>
+
+<!-- <cap-footer [activeImg]="imageList?.activeTab" [selectedIndex]="'3'" [footerListData]="coursesFooterData"></cap-footer> -->
+<cap-footer [activeImg]="imageList?.activeTab" [selectedIndex]="'3'" (homeEvent)="homeEvent($event)"
+  [footerListData]="footerListData" [parentTab]="'listing'"></cap-footer>

@@ -1,0 +1,193 @@
+
+<ion-grid>
+  <ion-row>
+    <ion-col [size]="'12'">
+      <ion-row>
+        <ion-col [size]="'3'">
+          <ion-img *ngIf="currentProductDatalib?.currentModule == 'Health'" [src]="imageList?.healthcare"  class="custProductImg"></ion-img>
+          <ion-img *ngIf="currentProductDatalib?.currentModule == 'Education'" [src]="imageList?.education"  class="custProductImg"></ion-img>
+          <ion-img *ngIf="currentProductDatalib?.currentModule != 'Education' && currentProductDatalib?.currentModule != 'Health'"[src]="currentProductDatalib?.productDetails?.Logo" class="custProductImg"></ion-img>
+        </ion-col>
+        <ion-col [size]="'9'" class="custMarginLeft">
+          <span class="custFontFamilyMuliSemiBold muli-16pt custColorDark custLineHight20">{{currentProductDatalib?.productDetails?.Title}}</span>
+        </ion-col>
+      </ion-row>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+<ion-card *ngIf="currentProductDatalib?.currentModule == 'Mutual Fund'">
+  <ion-grid class="p-4 custBackgroundColorWhite">
+    <ion-row class="ion-no-padding">
+      <ion-col class="ion-no-padding">
+        <p class="ion-no-padding m-0 custFontFamilyMuliRegular muli-10pt custColorGreyish">{{'nav' | translate}}</p>
+      </ion-col>
+      <ion-col class="ion-no-padding">
+        <p class="ion-no-padding m-0 custFontFamilyMuliRegular muli-10pt custColorGreyish">{{'rating' | translate}}</p>
+      </ion-col>
+      <ion-col class="ion-no-padding">
+        <p class="ion-no-padding m-0 custFontFamilyMuliRegular muli-10pt custColorGreyish">{{'fundSize' | translate}}</p>
+      </ion-col>
+    </ion-row>
+    <ion-row class="ion-no-padding">
+      <ion-col class="ion-no-padding ">
+        <p class="ion-no-padding custFontFamilyRobotoCondensed muli-14pt">{{productData?.Props?.mF_FundDetail?.navRs}}</p>
+      </ion-col>
+      <ion-col class="ion-no-padding">
+        <p class="ion-no-padding custFontFamilyRobotoCondensed muli-14pt">{{productData?.Props?.schemeDetail?.schemeRating || '-'}}</p>
+      </ion-col>
+      <ion-col class="ion-no-padding">
+        <p class="ion-no-padding custFontFamilyRobotoCondensed muli-14pt">{{productData?.Props?.mF_FundDetail?.fundSize}} Cr</p>
+      </ion-col>
+    </ion-row>
+    <ion-row class="ion-no-padding">
+      <ion-col class="ion-no-padding">
+        <p class="ion-no-padding custFontFamilyMuliSemiBold muli-14pt">{{'returns' | translate}}</p>
+      </ion-col>
+      <ion-col class="ion-no-padding">
+        <p class="ion-no-padding custFontFamilyMuliRegular muli-12pt custColorGreyish custCenterAlign">{{'oneYear' | translate}}</p>
+      </ion-col>
+      <ion-col class="ion-no-padding">
+        <p class="ion-no-padding custFontFamilyMuliRegular muli-12pt custColorGreyish custCenterAlign">{{'threeYear' | translate}}</p>
+      </ion-col>
+      <ion-col class="ion-no-padding">
+        <p class="ion-no-padding custFontFamilyMuliRegular muli-12pt custColorGreyish custCenterAlign">{{'fiveYear' | translate}}</p>
+      </ion-col>
+      <ion-col class="ion-no-padding">
+        <p class="ion-no-padding custFontFamilyMuliRegular muli-12pt custColorGreyish custCenterAlign">{{'allYear' | translate}}</p>
+      </ion-col>
+    </ion-row>
+    <ion-row class="ion-no-padding">
+      <ion-col class="ion-no-padding ">
+        <p class="ion-no-padding custFontFamilyMuliSemiBold muli-10pt custColorGreyish">{{'fundReturn' | translate}}</p>
+      </ion-col>
+      <ion-col class="ion-no-padding">
+        <p class="ion-no-padding custFontFamilyRobotoCondensed muli-12pt custCenterAlign">{{returnPercent?returnPercent[0]?._oneYearReturn:'-'}}</p>
+      </ion-col>
+      <ion-col class="ion-no-padding">
+        <p class="ion-no-padding custFontFamilyRobotoCondensed muli-12pt custCenterAlign">{{returnPercent?returnPercent[0]?._threeYearReturn:'-'}}</p>
+      </ion-col>
+      <ion-col class="ion-no-padding">
+        <p class="ion-no-padding custFontFamilyRobotoCondensed muli-12pt custCenterAlign">{{returnPercent?returnPercent[0]?._fiveYearReturn:'-'}}</p>
+      </ion-col>
+      <ion-col class="ion-no-padding">
+        <p class="ion-no-padding custFontFamilyRobotoCondensed muli-12pt custCenterAlign">{{returnPercent?returnPercent[0]?._sinceInception:'-'}}</p>
+      </ion-col>
+    </ion-row>
+    <ion-row class="ion-no-padding">
+      <ion-col class="ion-no-padding ">
+        <p class="ion-no-padding custFontFamilyMuliSemiBold muli-10pt custColorGreyish">{{'categoryAvg' | translate}}</p>
+      </ion-col>
+      <ion-col class="ion-no-padding">
+        <p class="ion-no-padding custFontFamilyRobotoCondensed muli-12pt custCenterAlign">{{category?category[0]?._oneYearReturn:'-'}}</p>
+      </ion-col>
+      <ion-col class="ion-no-padding">
+        <p class="ion-no-padding custFontFamilyRobotoCondensed muli-12pt custCenterAlign">{{category?category[0]?._threeYearReturn:'-'}}</p>
+      </ion-col>
+      <ion-col class="ion-no-padding">
+        <p class="ion-no-padding custFontFamilyRobotoCondensed muli-12pt custCenterAlign">{{category?category[0]?._fiveYearReturn:'-'}}</p>
+      </ion-col>
+      <ion-col class="ion-no-padding">
+        <p class="ion-no-padding custFontFamilyRobotoCondensed muli-12pt custCenterAlign">{{category?category[0]?._sinceInception:'-'}}</p>
+      </ion-col>
+    </ion-row>
+    <ion-row class="ion-no-padding">
+      <ion-col class="ion-no-padding ">
+        <p class="ion-no-padding custFontFamilyMuliSemiBold muli-10pt custColorGreyish">{{'rankWithin' | translate}}</p>
+      </ion-col>
+      <ion-col class="ion-no-padding">
+        <p class="ion-no-padding custFontFamilyRobotoCondensed muli-12pt custCenterAlign">{{rank?rank[0]?.oneYearReturn:'-'}}</p>
+      </ion-col>
+      <ion-col class="ion-no-padding">
+        <p class="ion-no-padding custFontFamilyRobotoCondensed muli-12pt custCenterAlign">{{rank?rank[0]?.threeYearReturn:'-'}}</p>
+      </ion-col>
+      <ion-col class="ion-no-padding">
+        <p class="ion-no-padding custFontFamilyRobotoCondensed muli-12pt custCenterAlign">{{rank?rank[0]?.fiveYearReturn:'-'}}</p>
+      </ion-col>
+      <ion-col class="ion-no-padding">
+        <p class="ion-no-padding custFontFamilyRobotoCondensed muli-12pt custCenterAlign">{{rank?rank[0]?.sinceInception:'-'}}</p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-card>
+<div class="p-2" *ngIf="currentProductDatalib?.currentModule == 'Mutual Fund'">Scheme details</div>
+<ion-card *ngIf="currentProductDatalib?.currentModule == 'Mutual Fund'">
+<ion-grid class="p-4 custBackgroundColorWhite">
+  <ion-row class="ion-no-padding">
+    <ion-col class="ion-no-padding">
+      <p class="ion-no-padding m-0 custFontFamilyMuliRegular muli-10pt custColorGreyish">{{'expenseRatio' | translate}}</p>
+    </ion-col>
+    <ion-col class="ion-no-padding">
+      <p class="ion-no-padding m-0 custFontFamilyMuliRegular muli-10pt custColorGreyish">{{'exitLoad' | translate}}</p>
+    </ion-col>
+    <ion-col class="ion-no-padding">
+      <p class="ion-no-padding m-0 custFontFamilyMuliRegular muli-10pt custColorGreyish">{{'aum' | translate}}</p>
+    </ion-col>
+  </ion-row>
+  <ion-row class="ion-no-padding">
+    <ion-col class="ion-no-padding ">
+      <p class="ion-no-padding custFontFamilyRobotoCondensed muli-14pt">{{productData?.Props?.mF_FundDetail?.expenseRatio}}%</p>
+    </ion-col>
+    <ion-col class="ion-no-padding">
+      <p class="ion-no-padding custFontFamilyRobotoCondensed muli-14pt">1%</p>
+    </ion-col>
+    <ion-col class="ion-no-padding">
+      <p class="ion-no-padding custFontFamilyRobotoCondensed muli-14pt">{{productData?.Props?.mF_FundDetail?.fundSize}} Cr</p>
+    </ion-col>
+  </ion-row>
+  <ion-row class="ion-no-padding">
+    <ion-col class="ion-no-padding">
+      <p class="ion-no-padding m-0 custFontFamilyMuliRegular muli-10pt custColorGreyish">{{'age' | translate}}</p>
+    </ion-col>
+    <ion-col class="ion-no-padding">
+      <p class="ion-no-padding m-0 custFontFamilyMuliRegular muli-10pt custColorGreyish">{{'minLumpsum' | translate}}</p>
+    </ion-col>
+    <ion-col class="ion-no-padding">
+      <p class="ion-no-padding m-0 custFontFamilyMuliRegular muli-10pt custColorGreyish">{{'minSip' | translate}}</p>
+    </ion-col>
+  </ion-row>
+  <ion-row class="ion-no-padding">
+    <ion-col class="ion-no-padding">
+      <p class="ion-no-padding custFontFamilyRobotoCondensed muli-14pt">8yrs 3m</p>
+    </ion-col>
+    <ion-col class="ion-no-padding">
+      <p class="ion-no-padding custFontFamilyRobotoCondensed muli-14pt">1,000</p>
+    </ion-col>
+    <ion-col class="ion-no-padding">
+      <p class="ion-no-padding custFontFamilyRobotoCondensed muli-14pt">{{productData?.Props?.mF_FundDetail?.minSIPAmount}}</p>
+    </ion-col>
+  </ion-row>
+  <ion-row class="ion-no-padding">
+    <ion-col class="ion-no-padding">
+      <p class="ion-no-padding m-0 custFontFamilyMuliRegular muli-10pt custColorGreyish">{{'doubledIn' | translate}}</p>
+    </ion-col>
+    <ion-col class="ion-no-padding">
+      <p class="ion-no-padding m-0 custFontFamilyMuliRegular muli-10pt custColorGreyish">{{'benchmark' | translate}}</p>
+    </ion-col>
+  </ion-row>
+  <ion-row class="ion-no-padding">
+    <ion-col class="ion-no-padding">
+      <p class="ion-no-padding custFontFamilyRobotoCondensed muli-14pt">1yr</p>
+    </ion-col>
+    <ion-col class="">
+      <p class="ion-no-padding custFontFamilyRobotoCondensed muli-14pt">Nifty Large, Midcap 250 TRI</p>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+</ion-card>
+<div *ngIf="showModal">
+<lib-custom-modal [imageList]="imageList" (statusStartSIP)="openSIPEvent($event)" [moduleView]="currentProductDatalib?.currentModule"></lib-custom-modal>
+</div>
+<ion-grid class="fixed-bottom" *ngIf="currentProductDatalib?.currentModule == 'Mutual Fund' || currentProductDatalib?.currentModule == 'Health'">
+  <ion-row>
+      <ion-col [size]="'2'" (click)="openModal()">
+          <button type="button" class="btn custButtonOutLine custColorBrightCyan custButtonHeight custBackgroundColorWhite">
+              <img [src]="showModal?imageList?.closePopUpIcon:imageList?.addIcon" class="custAddIconHeight">
+          </button>
+      </ion-col>
+      <ion-col [size]="'10'" (click)="investNow()">
+          <button class="btn h-100 w-100 custBackgroundColorParakeetGreen">
+              <span class="custColorWhite custFontFamilyMuliBold muli-16pt">{{'investNow' | translate}}</span>
+          </button>
+      </ion-col>
+  </ion-row>
+</ion-grid>

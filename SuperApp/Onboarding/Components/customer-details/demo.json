@@ -1,0 +1,211 @@
+{
+    "": {
+        "KYCPending": [
+            {
+                "icon": "assets/icon/pendingIcon.svg",
+                "title": "KYC - Pending"
+            }
+        ],
+        "objectContent": [
+            {
+                "contentType": "heading",
+                "row1": {
+                    "heading": "Your Financial Health Score",
+                    "box": false
+                }
+            },
+            {
+                "contentType": "FusionChart",
+                "Chart": {
+                    "type": "angulargauge",
+                    "renderAt": "chart-container",
+                    "width": "300",
+                    "height": "250",
+                    "dataFormat": "json",
+                    "dataSource": {
+                        "chart": {
+                            "caption": "",
+                            "subcaption": "",
+                            "lowerLimit": "0",
+                            "upperLimit": "1000",
+                            "lowerLimitDisplay": "Poor",
+                            "upperLimitDisplay": "Excellent",
+                            "showValue": "1",
+                            "valueBelowPivot": "1",
+                            "theme": "fusion",
+                            "gaugeFillMix": "",
+                            "gaugeFillRatio": "0",
+                            "showGaugeBorder": "0",
+                            "showTickMarks": "0",
+                            "showTickValues": "0",
+                            "pivotRadius": "10",
+                            "pivotBorderColor": "#44C8F5",
+                            "pivotBorderAlpha": "100",
+                            "pivotFillColor": "#003399",
+                            "pivotFillAlpha": "100",
+                            "labelDisplay": "stagger"
+                        },
+                        "colorRange": {
+                            "color": [
+                                {
+                                    "minValue": "0",
+                                    "maxValue": "250",
+                                    "code": "#D23D50"
+                                },
+                                {
+                                    "minValue": "250",
+                                    "maxValue": "500",
+                                    "code": "#F8BD19"
+                                },
+                                {
+                                    "minValue": "500",
+                                    "maxValue": "750",
+                                    "code": "#EE8D3C"
+                                },
+                                {
+                                    "minValue": "750",
+                                    "maxValue": "1000",
+                                    "code": "#29AD00"
+                                }
+                            ]
+                        },
+                        "dials": {
+                            "dial": [
+                                {
+                                    "value": "742",
+                                    "bgColor": "#44C8F5",
+                                    "radius": "135",
+                                    "rearExtension": "15"
+                                }
+                            ]
+                        }
+                    }
+                },
+                "graph_footer": {
+                    "row": {
+                        "col1": "",
+                        "col2": ""
+                    }
+                }
+            },
+            {
+                "contentType": "singleRowCard",
+                "title": "My Insights",
+                "": [
+                    {
+                        "row1": {
+                            "col1": "Your Current Financial standing is good. review your insight here",
+                            "col2": "icon"
+                        }
+                    }
+                ]
+            },
+            {
+                "contentType": "singleRowCard",
+                "title": "Your Goal",
+                "": [
+                    {
+                        "row1": {
+                            "col1": "Goal Achiveable",
+                            "maxValue":"6",
+                            "minValue":"4",
+                            "col2": "icon"
+                        }
+                    }
+                ]
+            },
+            {
+                "contentType": "segment",
+                "title": "Your Historical Growth",
+                "segmentValues": [
+                    "Income & Expense",
+                    "Assets & Liabilities"
+                ],
+                "Income & Expense":{
+                    "contentType": "Donut",
+                    "heading": "Donut Chart",
+                    "valueType": "percentage",
+                    "colors": [
+                        "#9579DA",
+                        "#FA6C51",
+                        "#FA6C51"
+                    ],
+                    "timlineSegment":["Dec-2021","Feb-2021","Jan-2020"],
+                    "Dec-2021":{
+                        "donutData": [
+                            {
+                                "value": 70,
+                                "label": "Income"
+                            },
+                            {
+                                "value": 30,
+                                "label": "Expenses"
+                            }
+                            ,
+                            {
+                                "value": 30,
+                                "label": "Surplus"
+                            }
+                        ]
+                    },
+                    "Feb-2021":{
+                        "donutData": [
+                            {
+                                "value": 70,
+                                "label": "Income"
+                            },
+                            {
+                                "value": 30,
+                                "label": "Expenses"
+                            }
+                            ,
+                            {
+                                "value": 30,
+                                "label": "Surplus"
+                            }
+                        ]
+                    },
+                    "Jan-2020":{
+                        "donutData": [
+                            {
+                                "value": 70,
+                                "label": "Income"
+                            },
+                            {
+                                "value": 30,
+                                "label": "Expenses"
+                            }
+                            ,
+                            {
+                                "value": 30,
+                                "label": "Surplus"
+                            }
+                        ]
+                    }
+                    
+                }
+            },
+            {
+               
+                
+                
+            },
+            {
+                "contentType": "Step",
+                "heading": "Benefits Of Digital Commodities",
+                "data": [
+                    {
+                        "Icon": "assets/icon/secureIcon.svg",
+                        "Steps": "100% Secure",
+                        "Disc": "Stored in insured & guarded vaults"
+                    },
+                    {
+                        "Icon": "assets/icon/diversifyPortfolioIcon.svg",
+                        "Steps": "Diversify Portfolio",
+                        "Disc": "Balance your portfolio. Reduce risk concentration"
+                    }
+                ]
+            }
+        ]
+    }
+}

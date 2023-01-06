@@ -1,0 +1,132 @@
+{
+    "id": "",
+    "title": "+ Create New Lead",
+    "icon": "",
+    "type": "",
+    "cssx": "",
+    "uxClass": "btn custColorWhite custBackgroundColorBrightCyan",
+    "des": "",
+    "key": "",
+    "value": [
+        {
+            "id": "",
+            "title": "First Name",
+            "icon": "",
+            "type": "ALPHANUMERIC",
+            "cssx": "",
+            "uxClass": "",
+            "des": [],
+            "key": "",
+            "validators": {
+                "required": true
+            },
+            "value": ""
+        },
+        {
+            "id": "",
+            "title": "Last Name",
+            "icon": "",
+            "type": "ALPHANUMERIC",
+            "cssx": "",
+            "uxClass": "",
+            "des": [],
+            "key": "",
+            "validators": "",
+            "value": ""
+        },
+        {
+            "id": "",
+            "title": "Mobile Number",
+            "icon": "",
+            "type": "ALPHANUMERIC",
+            "cssx": "",
+            "uxClass": "",
+            "des": [],
+            "key": "",
+            "validators": {
+                "required": true
+            },
+            "value": ""
+        },
+        {
+            "id": "",
+            "title": "Eamil",
+            "icon": "",
+            "type": "ALPHANUMERIC",
+            "cssx": "",
+            "uxClass": "",
+            "des": [],
+            "key": "",
+            "validators": "",
+            "value": ""
+        },
+        {
+            "id": "",
+            "title": "Select Product",
+            "icon": "",
+            "type": "dropDown",
+            "cssx": "",
+            "uxClass": "",
+            "des": [],
+            "key": "",
+            "validators": {
+                "required": true
+            },
+            "value": "",
+            "options": [
+                "Stocks",
+                "Mutul Funds",
+                "Health",
+                "Education"
+            ]
+        },
+        {
+            "id": "",
+            "title": "Select Source",
+            "icon": "",
+            "type": "ALPHANUMERIC",
+            "cssx": "",
+            "uxClass": "",
+            "des": [],
+            "key": "",
+            "validators": "",
+            "value": ""
+        },
+        {
+            "id": "",
+            "title": "Remarks",
+            "icon": "",
+            "type": "ALPHANUMERIC",
+            "cssx": "",
+            "uxClass": "",
+            "des": [],
+            "key": "",
+            "validators": "",
+            "value": ""
+        },
+        {
+            "id": "",
+            "title": "Submit",
+            "icon": "",
+            "type": "submit",
+            "cssx": "",
+            "uxClass": "",
+            "des": [],
+            "key": "",
+            "validators": "",
+            "value": ""
+        },
+        {
+            "id": "",
+            "title": "Cancel",
+            "icon": "",
+            "type": "submit",
+            "cssx": "",
+            "uxClass": "",
+            "des": [],
+            "key": "",
+            "validators": "",
+            "value": ""
+        }
+    ]
+}

@@ -1,0 +1,139 @@
+{
+    "Header":{
+        "title":"TorusCRM",
+        "ProdIcon":"assets/icon/torusCRM.svg",
+        "subProdIcon":{
+            "bellIcon":"",
+            "menuIcon":""
+        }
+    },
+"Menu":[
+
+    {
+    "text":"Sales",
+    "icon":"",
+    "key":true,
+    "children":[
+        {
+            "text": "Dashboard",
+            "icon": "assets/icon/menuIcon/Dashboard.svg",
+            "subHeaderBtn":"Cerate New Lead",
+            "key":true
+           },
+        {
+            "text": "Lead Details",
+            "icon": "assets/icon/menuIcon/LeadDetails.svg",
+            "subHeaderBtn":"Cerate New Lead",
+            "key":true
+        },
+        {
+            "text": "Lead Bulk Upload",
+            "icon": "assets/icon/menuIcon/LeadBulkUpload.svg",
+            "subHeaderBtn":"",
+            "key":false
+        },
+        {
+            "text": "Lead Assignment",
+            "icon": "assets/icon/menuIcon/LeadAssignment.svg",
+            "subHeaderBtn":"",
+            "key":true
+        },
+        {
+            "text": "Lead Transfer",
+            "icon": "assets/icon/menuIcon/LeadTransfer.svg",
+            "subHeaderBtn":"Create New",
+            "key":true
+        },
+
+        {
+            "text": "Configuration",
+            "icon": "assets/icon/menuIcon/Dashboard.svg",
+            "key":true,
+            "subChildren": [{
+                    "text": "Lead Source",
+                    "icon": "category",
+                    "subHeaderBtn":""
+                },
+                {
+                    "text": "Product",
+                    "icon": "layers",
+                    "subHeaderBtn":""
+                },
+                {
+                    "text": "Campaign",
+                    "icon": "all_inbox",
+                    "subHeaderBtn":""
+                },
+                {
+                    "text": " Lead Status",
+                    "icon": "all_inbox",
+                    "subHeaderBtn":""
+                }       
+            ]
+        },
+
+        {
+            "text": "Delegation",
+            "icon": "assets/icon/menuIcon/Dashboard.svg",
+            "subHeaderBtn":"",
+            "key":false
+        },
+        {
+            "text": "Reports",
+            "icon": "assets/icon/menuIcon/Reports.svg",
+            "subHeaderBtn":"",
+            "key":true
+        },
+        {
+            "text": "Escalation Rule",
+            "icon": "assets/icon/menuIcon/Reports.svg",
+            "subHeaderBtn":"",
+            "key":true
+        },
+        {
+            "text": "Contacts",
+            "icon": "assets/icon/menuIcon/Reports.svg",
+            "subHeaderBtn":"",
+            "key":false
+        }
+        
+        
+    ]
+},
+
+{
+    "text":"Services",
+    "icon":"",
+    "key":true,
+    "children":[
+        {
+            "text": "Service1",
+            "icon": "people",
+            "key":true
+        },
+        {
+            "text": "Service2",
+            "icon": "people",
+            "key":false
+        }
+        
+    ]
+},
+
+{
+    "text": "Settings",
+    "icon": "assets/icon/menuIcon/Settings.svg",
+    "key":true
+},
+{
+    "text": "Help",
+    "icon": "assets/icon/menuIcon/Help.svg",
+    "key":true
+}
+    
+    
+    
+    
+
+]
+}

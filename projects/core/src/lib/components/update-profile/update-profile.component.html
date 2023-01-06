@@ -1,0 +1,265 @@
+<div class="custModalContainer p-10">
+  <div id="showModalSMGSucces" class="modal-content custCenterAlignUpdate">
+    <div class="footer">
+      <form [formGroup]="authenticationFormGroup" (ngSubmit)="updateProfile()">
+      <ion-grid class="w-100">
+        <ion-row>
+          <ion-col [size]="'10'" class="text-center p-0 m-0 ion-no-padding">
+            <p class="custFontFamilyMuliBold muli-16pt custColorDark text-center p-0 m-0 ion-no-padding">{{'updateProfile' | translate}}</p>
+          </ion-col>
+          <ion-col size="'2'" class="text-end bg-none">
+          <button type="submit" class="custBtnClose" [disabled]="!declareInfo">
+          <span>
+           <ion-img [src]="imageList?.close" class="custKYCImg"></ion-img>
+          </span>
+          </button>
+        </ion-col>
+        </ion-row>
+      </ion-grid>
+
+    <ion-grid class="custGrid">
+     
+        <ion-row>
+          <ion-col [size]="'12'" class="text-center">
+            <mat-form-field appearance="outline" class="w-100 "
+              [ngClass]="(showRequiredError ||showPatternError )?'mat-form-field-invalid custColorcustFadedRed':''">
+              <mat-label class="text-capitalize">{{'firstName' | translate}}</mat-label>
+              <input matInput formControlName="firstName"
+                class="custInputWidth custFontFamilyMuliRegular muli-16pt custLineHight18 custColorDark" id="firstName"
+                [placeholder]="'firstName' | translate" [type]="'text'" name="profileData.FirstName"
+                [(ngModel)]="profileData.firstName">
+              <mat-error *ngIf="checkError('firstName', 'required')"><span
+                  class="custFontFamilyMuliSemiBold muli-12pt text-start text-capitalize custLineHight16">{{'firstNameRequiredError'
+                  | translate}}</span></mat-error>
+            </mat-form-field>
+          </ion-col>
+        </ion-row>
+          <ion-row>
+          <ion-col [size]="'12'" class="text-center">
+            <mat-form-field appearance="outline" class="w-100 "
+              [ngClass]="(showRequiredError ||showPatternError )?'mat-form-field-invalid custColorcustFadedRed':''">
+              <mat-label class="text-capitalize">{{'middleName' | translate}}</mat-label>
+              <input matInput formControlName="middleName"
+                class="custInputWidth custFontFamilyMuliRegular muli-16pt custLineHight18 custColorDark" id="middleName"
+                [placeholder]="'middleName' | translate" [type]="'text'" [(ngModel)]="profileData.middleName">
+            </mat-form-field>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col [size]="'12'" class="text-center">
+            <mat-form-field appearance="outline" class="w-100 "
+              [ngClass]="(showRequiredError ||showPatternError )?'mat-form-field-invalid custColorcustFadedRed':''">
+              <mat-label class="text-capitalize">{{'lastName' | translate}}</mat-label>
+              <input matInput formControlName="lastName"
+                class="custInputWidth custFontFamilyMuliRegular muli-16pt custLineHight18 custColorDark" id="lastName"
+                [placeholder]="'lastName' | translate" [type]="'text'" name="profileData.LastName"
+                [(ngModel)]="profileData.lastName">
+              <mat-error *ngIf="checkError('lastName', 'required')"><span
+                  class="custFontFamilyMuliSemiBold muli-12pt text-start text-capitalize custLineHight16">{{'lastNameRequiredError'
+                  | translate}}</span></mat-error>
+            </mat-form-field>
+          </ion-col>
+        </ion-row>
+
+       
+           
+         
+         
+     
+       
+        <!-- <ion-row>
+        <ion-col [size]="'12'">
+          <mat-form-field appearance="outline" class="w-100 ">
+            <mat-label>{{'dob' | translate}}</mat-label>
+            <input matInput formControlName="dobirth" [matDatepicker]="picker" [max]="today" id="dob" [(ngModel)]="profileData.DateOfBirth" name="profileData.DateOfBirth">
+            <mat-datepicker-toggle matSuffix [for]="picker">
+            </mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+             <mat-error *ngIf="checkError('dob', 'required')"><span
+                class="custFontFamilyMuliSemiBold muli-12pt text-start text-capitalize custLineHight16">{{'mobileRequiredError'
+                | translate}}</span></mat-error>
+            <mat-error *ngIf="checkError('dob', 'pattern')"><span
+                class="custFontFamilyMuliSemiBold muli-12pt text-start text-capitalize custLineHight16">{{'mobilePatternError'
+                | translate}}</span></mat-error>
+          </mat-form-field>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col [size]="'6'" class="text-center">
+          <mat-form-field appearance="outline" class="w-100 ">
+            <mat-label>{{'maritalStatus' | translate}}</mat-label>
+            <mat-select [(ngModel)]="selectedmaritalStatus" [ngModelOptions]="{standalone: true}" name="maritalStatus"
+              id="maritalStatus">
+              <mat-option *ngFor="let item of maritalStatus" [value]="item.value">
+                {{item.viewValue}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </ion-col>
+        <ion-col [size]="'6'" class="text-center">
+          <mat-form-field appearance="outline" class="w-100 ">
+            <mat-label>{{'gender' | translate}}</mat-label>
+            <mat-select [(ngModel)]="profileData.Gender" [ngModelOptions]="{standalone: true}" name="gender"
+              id="gender">
+              <mat-option *ngFor="let item of gender" [value]="item.value">
+                {{item.viewValue}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </ion-col>
+      </ion-row> -->
+        <ion-row>
+          <ion-col [size]="'12'" class="text-center">
+            <mat-form-field appearance="outline" class="w-100"
+              [ngClass]="(showRequiredError ||showPatternError )?'mat-form-field-invalid custColorcustFadedRed':''">
+              <mat-label class="text-capitalize">{{'emailLabel' | translate}}</mat-label>
+              <input matInput formControlName="emailID" type="text" id="emailId"
+                class="custInputWidth custFontFamilyMuliRegular muli-16pt custLineHight18 custColorDark"
+                [placeholder]="'emailAdd' | translate" [(ngModel)]="profileData.emailId">
+              <mat-error *ngIf="checkError('emailID', 'required')"><span
+                  class="custFontFamilyMuliSemiBold muli-12pt text-start text-capitalize custLineHight16">{{'emailRequiredError'
+                  | translate}}</span></mat-error>
+              <mat-error *ngIf="checkError('emailID', 'email')"><span
+                  class="custFontFamilyMuliSemiBold muli-12pt text-start text-capitalize custLineHight16">{{'emailPatternError'
+                  | translate}}</span></mat-error>
+            </mat-form-field>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <mat-form-field appearance="outline" class="w-100">
+              <mat-label class="text-capitalize">{{'mobileLabel' | translate}}</mat-label>
+              <span matPrefix class="custSpan custInputWidth custFontFamilyMuliRegular muli-16pt custLineHight18 custColorDark">+91 &nbsp;</span>
+
+              <input matInput formControlName="mobileNumber" type="number" id="mobileNumber" [disabled]="true"
+              class="custInputWidth custInput custFontFamilyMuliRegular muli-16pt custLineHight18 custColorDark"
+                [(ngModel)]="profileData.contactDetails" >
+
+              <mat-error *ngIf="checkError('mobileNumber', 'required')"><span
+                  class="custFontFamilyMuliSemiBold muli-12pt text-start text-capitalize custLineHight16">{{'mobileRequiredError'
+                  | translate}}</span></mat-error>
+              <mat-error *ngIf="checkError('mobileNumber', 'pattern')"><span
+                  class="custFontFamilyMuliSemiBold muli-12pt text-start text-capitalize custLineHight16">{{'mobilePatternError'
+                  | translate}}</span></mat-error>
+            </mat-form-field>
+          </ion-col>
+        </ion-row>
+        <!-- <ion-row>
+        <ion-col [size]="'12'" class="text-center">
+          <mat-form-field appearance="outline" class="w-100 "
+            [ngClass]="(showRequiredError ||showPatternError )?'mat-form-field-invalid custColorcustFadedRed':''">
+            <mat-label class="text-capitalize">{{'addressLine1' | translate}}</mat-label>
+            <input matInput formControlName="addLine1" id="addLine1"
+              class="custInputWidth custFontFamilyMuliRegular muli-16pt custLineHight18 custColorDark"
+              [placeholder]="'addressLine1' | translate" [type]="'text'" [(ngModel)]="profileData.AddressLine1">
+            <mat-error *ngIf="checkError('addLine1', 'required')"><span
+                class="custFontFamilyMuliSemiBold muli-12pt text-start text-capitalize custLineHight16">{{'mobileRequiredError'
+                | translate}}</span></mat-error>
+            <mat-error *ngIf="checkError('addLine1', 'pattern')"><span
+                class="custFontFamilyMuliSemiBold muli-12pt text-start text-capitalize custLineHight16">{{'mobilePatternError'
+                | translate}}</span></mat-error>
+          </mat-form-field>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col [size]="'12'" class="text-center">
+          <mat-form-field appearance="outline" class="w-100 "
+            [ngClass]="(showRequiredError ||showPatternError )?'mat-form-field-invalid custColorcustFadedRed':''">
+            <mat-label class="text-capitalize">{{'addressLine2' | translate}}</mat-label>
+            <input matInput formControlName="addLine2" id="addLine2"
+              class="custInputWidth custFontFamilyMuliRegular muli-16pt custLineHight18 custColorDark"
+              [placeholder]="'addressLine2' | translate" [type]="'text'" [(ngModel)]="profileData.AddressLine2">
+          </mat-form-field>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <mat-form-field appearance="outline" class="w-100 ">
+            <mat-label>{{'country' | translate}}</mat-label>
+            <mat-select [(ngModel)]="profileData.Country" [ngModelOptions]="{standalone: true}" name="country"
+              id="country">
+              <mat-option *ngFor="let item of country" [value]="item.ID">
+                {{item.TEXT}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <mat-form-field appearance="outline" class="w-100 ">
+            <mat-label>{{'state' | translate}}</mat-label>
+            <mat-select [(ngModel)]="profileData.State" [ngModelOptions]="{standalone: true}" name="state" id="state"
+              (ngModelChange)="getCityMasterDetails('City',profileData.State)">
+              <mat-option *ngFor="let item of state" [value]="item.ID">
+                {{item.TEXT}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col [size]="'6'" class="text-center">
+          <mat-form-field appearance="outline" class="w-100 ">
+            <mat-label>{{'city' | translate}}</mat-label>
+            <mat-select [(ngModel)]="profileData.City" [ngModelOptions]="{standalone: true}" name="city" id="city">
+              <mat-option *ngFor="let item of city" [value]="item.ID">
+                {{item.TEXT}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </ion-col>
+        <ion-col [size]="'6'" class="text-center">
+          <mat-form-field appearance="outline" class="w-100 "
+            [ngClass]="(showRequiredError ||showPatternError )?'mat-form-field-invalid custColorcustFadedRed':''">
+            <mat-label class="text-capitalize">{{'pincode' | translate}}</mat-label>
+            <input formControlName="pincode" matInput id="pincode"
+              class="custInputWidth custFontFamilyMuliRegular muli-16pt custLineHight18 custColorDark"
+              [placeholder]="'pincode' | translate" [type]="'number'" [(ngModel)]="profileData.Pincode">
+          </mat-form-field>
+        </ion-col>
+      </ion-row> -->
+
+      <ion-row class="margintp">
+        <ion-col [size]="'1'">
+          <ion-checkbox color="secondary" [checked]="IsWhatsApp" class=" mt-0"
+                (ionChange)="whatsAppUpdateCheck($event)" id="whatsAppUpdate"></ion-checkbox>
+        </ion-col>
+        <ion-col>
+          <p class="custFontFamilyMuliBold muli-10pt custColorWarmGrey custLineHight15">
+            Receive WhatsApp updates </p>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col size="1">
+          <ion-checkbox color="secondary" [checked]="declareInfo" class=" mt-0"
+                (ionChange)="declareInfoCheck($event)" ></ion-checkbox>
+        </ion-col>
+        <ion-col>
+          <p class="custFontFamilyMuliBold muli-10pt custColorWarmGrey custLineHight15">
+            I hereby declare that above information is true & belongs to me </p>
+        </ion-col>
+      </ion-row>
+
+
+
+        <ion-row>
+          <ion-col>
+            <button type="submit" [disabled]="!(authenticationFormGroup.valid && declareInfo)"
+              class="btn w-100 custBtn btnBoxShadow custBackgroundColorBrightCyan muli-16pt custFontFamilyMuliBold custColorWhite">{{'continue'
+              | translate}}</button>
+          </ion-col>
+        </ion-row>
+     
+    </ion-grid>
+    <div class="custModalContainer p-10" *ngIf="loggedInModal" (click)="successModalClose();">
+      <div  id="showModalSMGSucces" class="modal-content custCenterAlign">
+        <!-- <ion-icon [src]="imageList?.successKYCIcon" class="custImage"></ion-icon> -->
+        <p class="custFontFamilyMuliBold muli-16pt custColorDark text-center p-0 m-0 ion-no-padding">{{ErrorMsg}}</p>
+      </div>
+    </div>
+  </form>
+  </div>
+  </div>
+</div>

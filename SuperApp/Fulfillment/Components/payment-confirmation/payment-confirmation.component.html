@@ -1,0 +1,101 @@
+<ion-app>
+  <ion-header>
+    <ion-toolbar class="custBackgroundDynamicColorWhite">
+      <ion-grid>
+        <ion-row>
+          <ion-col [size]="'1'" (click)="dismiss()">
+            <ion-img [src]="imageList?.arrow" class="custInvestArrow"></ion-img>
+          </ion-col>
+          <ion-col [size]="'11'">
+            <span class="custFontFamilyMuliBold muli-16pt custColorDark custLineHight40">Payment Confirmation</span>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-toolbar>
+  </ion-header>
+  
+  
+  <ion-content class="contentBackground">
+    <ion-grid class="align-items-center h-100 pb-5">
+      <ion-row class="custbody">
+        <ion-row>
+          <ion-col [size]="'12'" class="custTextAlignCenter mt-4">
+            <ion-img [src]="imageList?.succsessIcon" class="custImgSucc topmargin"></ion-img>
+          </ion-col>
+          <ion-col [size]="'12'" class="custTextAlignCenter">
+            <span class="custFontFamilyMuliBold muli-16pt custLineHight22 custColorDark"
+             >Your Transaction is Successful</span>
+          </ion-col>
+          
+  
+  
+  <ion-card>
+    <!-- <ion-row>
+      <ion-label class="custFontFamilyMuliBold muli-16pt custColorDark">Items</ion-label>
+    </ion-row> -->
+    <!-- <ion-row *ngFor="let item of collection" >
+      <ion-col>
+            <ion-row>
+              
+                  <p class="custFontFamilyMuliBold muli-16pt custColorDark">{{item.itemName}}</p>
+                
+            </ion-row>
+      </ion-col>
+      <ion-col>
+        <ion-row>
+       
+              <p class="custFontFamilyMuliBold muli-16pt custColorDark">₹&nbsp;{{item.totalAmount}}</p>
+           
+        </ion-row>
+      </ion-col>
+    </ion-row> -->
+    <ion-row>
+      <ion-col>
+        <ion-item lines="none">
+          <p class="mb-0 custFontFamilyMuliBold muli-16pt custColorDark">Transaction Id</p>
+        </ion-item>
+      </ion-col>
+      <ion-col>
+        <ion-item lines="none">
+          <ion-label class="m-0 custFontFamilyMuliBold muli-16pt custColorDark">{{transactionId}}</ion-label>
+          <!-- <ion-label class="m-0 custFontFamilyMuliBold muli-16pt custColorDark">TD12345678901230976567</ion-label> -->
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-item lines="none">
+          <ion-label class="custFontFamilyMuliBold muli-16pt custColorDark">Total Amount</ion-label>
+        </ion-item>
+      </ion-col>
+      <ion-col>
+        <ion-item lines="none">
+          <ion-label class="custFontFamilyMuliBold muli-16pt custColorDark">₹&nbsp;{{grandTotal}}</ion-label>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+        </ion-row>
+  
+  
+      </ion-row>
+    </ion-grid>
+  </ion-content>
+  <ion-footer class="fixed-bottom">
+    <ion-toolbar>
+      <ion-col [size]="'12'">
+        <ion-button expand="block" class="text-capitalize custTryButton d-flex justify-content-center"
+          (click)="CourseView()">
+          <span class="custFontFamilyMuliBold text-center muli-16pt custColorBrightCyan">Continue To Dashboard</span>
+        </ion-button>
+      </ion-col>
+    </ion-toolbar>
+  
+    <!-- <ion-col [size]="'12'">
+      <button class="btn w-100 text-center custBackgroundColorBrightCyan" (click)="mylearning()">
+        <span class="custColorWhite
+            custFontFamilyMuliBold muli-16pt">Proceed To Learn</span>
+      </button>
+    </ion-col> -->
+  </ion-footer>
+</ion-app>

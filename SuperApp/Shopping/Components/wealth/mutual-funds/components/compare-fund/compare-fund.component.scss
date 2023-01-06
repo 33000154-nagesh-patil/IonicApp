@@ -1,0 +1,129 @@
+.backArrow{
+    height: 18px;
+    width: 10px;
+}
+
+.custHelpIcon{
+    height: 45px;
+    width:45px
+}
+
+.custMargin {
+    margin-top: 100px;
+}
+
+.custImgExpo{
+    height: 14px;
+    width: 14px;
+}
+
+.checkbox2{
+    height: 18px;
+    width: 18px;
+}
+
+.custBottom {
+    margin-bottom: -20px;
+}
+
+.custBookmark {
+    height: 28px;
+    width: 18px;
+    margin-right: 5px;
+}
+
+.muli-17pt {
+    font-size: 17px;
+}
+.something2 {
+    display: inline;
+    margin-top: 10px;
+    filter: invert(59%) sepia(31%) saturate(930%) hue-rotate(47deg)
+      brightness(93%) contrast(84%);
+    height: 10px;
+  }
+
+.something {
+    height: 45px;
+    width: 45px;
+}
+
+.custInvestArrow{
+    height: 14px;
+    width: 14px;
+    margin-top: 14px;
+}
+
+.checkbox2 input:checked {
+    // border-color: red;
+    background-color:red;
+}
+.custModalContainer {
+    z-index: 1;
+    left: 0;
+    // top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    // background-color: var(--custDark);
+    //  opacity: 0.4;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+  }
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding-top: 1px;
+    margin-top: 1px;
+    padding-bottom: 30px;
+    padding-right: 16px;
+    padding-left: 16px;
+    border: 1px solid #888;
+    width: 100%;
+    height: max-content;
+    position: absolute;
+    bottom: 0px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.custLooksBtn {
+    height: 45px;
+    --background: var(--custBrightCyan) !important;
+    --box-shadow: none;
+    margin-left: 8px;
+}
+
+::ng-deep .sc-ion-searchbar-md-h{
+    --border-radius:0px !important;
+    --box-shadow: none !important;
+   }
+   ::ng-deep .searchbar-search-icon.sc-ion-searchbar-md{
+     display: none !important;
+   }
+   ::ng-deep .searchbar-input.sc-ion-searchbar-md {
+     padding-left: 20px;
+   }
+
+.alert {
+    width: 36px;
+    height: 37px;
+}
+
+.negative {
+    margin-left: -18px;
+    padding-top: 8px;
+  }
+  .negative2 {
+    margin-left: -45px;
+    padding-top: 8px;
+  }
+
+  .align {
+    margin-top: 6px;
+    margin-left: 9px;
+  }
+
+  .returnPercent {
+    margin-top: 5px;
+  }

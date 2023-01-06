@@ -1,0 +1,6 @@
+<div *ngIf="showSplashScreen" class="h-100 w-100">
+  <lib-splash-screen [allData]="allData" (loadIntro)="getSplashData($event)"></lib-splash-screen>
+</div>
+<div *ngIf="showIntroductionScreen" class="h-100 w-100">
+  <lib-information [allData]="allData" (getOutPutDetails)="getOutPut($event)"></lib-information>
+</div>

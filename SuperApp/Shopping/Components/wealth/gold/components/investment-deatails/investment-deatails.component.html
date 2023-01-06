@@ -1,0 +1,233 @@
+<ion-app>
+<ion-header >
+  <ion-toolbar class="custBackgroundDynamicColorWhite">
+    <ion-grid>
+      <ion-row>
+        <ion-col [size]="'1'" class="text-center mt-1" (click)="dissmis()">
+          <ion-img [src]="imageList?.arrow" class="backArrow"></ion-img>
+        </ion-col>
+        <ion-col [size]="'3'" class="custFontFamilyMuliBold">
+          Invest
+        </ion-col>
+        <!-- <ion-col [size]="'8'" class="text-end">
+          <img [src]="imageList?.share" class="mx-3">
+         
+          <img [src]="imageList?.cartIcon"  class="ms-3">
+          
+        </ion-col> -->
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="contentBackground">
+<ion-grid class="custPadd">
+  <ion-row>
+    <ion-col [size]="'12'">
+      <ion-row>
+        <ion-col [size]="'2'">
+          <ion-img [src]="imageList?.Logogold" class="custInvestmentIcon" *ngIf="metalType == 'gold'" ></ion-img>
+          <ion-img [src]="imageList?.digitelSilver" class="custInvestmentIcon" *ngIf="metalType == 'silver'"></ion-img>
+        </ion-col>
+        <ion-col [size]="'10'" class="p-4">
+          <span class="custFontFamilyMuliSemiBold muli-16pt custLineHight20 custColorDark" *ngIf="metalType == 'gold'">Augmont Digital Gold</span>
+          <span class="custFontFamilyMuliSemiBold muli-16pt custLineHight20 custColorDark" *ngIf="metalType == 'silver'">Augmont Digital Silver</span>
+        </ion-col>
+      </ion-row>
+    </ion-col>
+    <ion-col [size]="'12'">
+      <ion-grid>
+        <ion-row>
+          <ion-col [size]="'3'"  class="custTextAlignCenter custButtonBorder">
+            <span class="custFontFamilyMuliRegular muli-10pt custLineHight28 custColorBattlePGry">FAAA</span>
+          </ion-col>
+          <ion-col [size]="'3'"  class="custTextAlignCenter custButtonBorder">
+            <span class="custFontFamilyMuliRegular muli-10pt custLineHight28 custColorBattlePGry">99.99% Purity</span>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-col>
+
+    <ion-row class="w-100 ">
+      <!-- <ion-card class="w-100 p-3">
+       <ion-row>
+         Current Rate/Gm
+       </ion-row>
+       <ion-row>
+        {{currencySymbol}}{{data?.buy}} 
+      </ion-row>
+      <ion-row>
+        as on 19 Mar 2021 
+      </ion-row>
+
+      <ion-row>
+        <ion-col>Maximum Amt.</ion-col>
+  <ion-col class="text-end">Purity</ion-col>
+      </ion-row>
+  
+      <ion-row>
+  <ion-col>{{currencySymbol}}100</ion-col>
+  <ion-col class="text-end custColorParakeetGreen">24K 99.99%</ion-col>
+     
+      </ion-row>
+      
+      </ion-card> -->
+      <ion-card class="p-2 w-100">
+    
+        <ion-row>
+          <ion-col [size]="'12'" class="mx-2">
+            <ion-row class="custFontFamilyMuliRegular muli-12pt custColorGreyish ">Current Rate/gm</ion-row>
+            <ion-row>
+              <ion-col [size]="'2.5'" class="custFontFamilyRobotoCondensed muli-16pt  custColorDark px-0" *ngIf="metalType == 'gold'">{{rupeesSymbol}}{{GoldSilverData?.gBuy}} </ion-col>
+              <ion-col [size]="'2.5'" class="custFontFamilyRobotoCondensed muli-16pt  custColorDark px-0" *ngIf="metalType == 'silver'">{{rupeesSymbol}}{{GoldSilverData?.sBuy}} </ion-col>
+            </ion-row>
+            <ion-row class="custFontFamilyMuliRegular muli-10pt custColorGreyish ">as on {{Date | date}}</ion-row>
+          </ion-col>
+        </ion-row>
+    
+    
+        
+    <div style="width: 100%; overflow-x: auto; overflow-y: hidden" *ngIf="metalType == 'gold'">
+      <div style="width: 3000px; height: 300px">
+        <div class="container"  >
+          <canvas height="230px" id="linechartlive" width="0"></canvas>
+      </div>
+    </div>
+    </div>
+  
+      <div  *ngIf="metalType == 'gold'">
+        <ion-col>
+          <ion-row >
+            <ion-col [size]="'6'" class=" custFontFamilyMuliRegular muli-12pt custColorGreyish mt-1">Minimum Amount</ion-col>
+            <ion-col [size]="'6'" class=" muli-12pt custColorGreyish mt-1 text-end">Purity</ion-col>
+            <!-- <ion-col [size]="'3.5'" class=" muli-12pt custColorGreyish mt-1 text-end">P&L</ion-col> -->
+          </ion-row>
+          <ion-row>
+            <ion-col [size]="'6'" class="custFontFamilyRobotoCondensed muli-16pt custColorDark pt-0">{{rupeesSymbol}}1</ion-col>
+            <!-- <ion-col [size]="'4'" class=" custFontFamilyRobotoCondensed muli-16pt custColorParakeetGreen pt-0  text-center">{{rupeesSymbol}}79,388.25</ion-col> -->
+            <ion-col [size]="'6'" class=" custFontFamilyRobotoCondensed muli-16pt custColorParakeetGreen pt-0 text-end">24K | 99.99%</ion-col>
+          </ion-row>
+        </ion-col>
+      </div>
+
+
+    <div style="width: 100%; overflow-x: auto; overflow-y: hidden"  *ngIf="metalType == 'silver'">
+      <div style="width: 3000px; height: 300px">
+      <div class="container">                           
+        <canvas height="230px" id="linechart3" width="0"></canvas>
+      </div>
+      </div>
+    </div>
+  
+  
+      <ion-row *ngIf="metalType == 'silver'">
+        <ion-col [size]="'6'" class=" custFontFamilyMuliRegular muli-12pt custColorGreyish mt-1">Minimum Amount</ion-col>
+        <!-- <ion-col [size]="'4'" class=" muli-12pt custColorGreyish mt-1 text-center">Current Value</ion-col> -->
+        <ion-col [size]="'6'" class=" muli-12pt custColorGreyish mt-1 text-end">Purity</ion-col>
+      </ion-row>
+      <ion-row *ngIf="metalType == 'silver'">
+        <ion-col [size]="'6'" class="custFontFamilyRobotoCondensed muli-14pt custColorDark pt-0">{{rupeesSymbol}}1</ion-col>
+        <!-- <ion-col [size]="'4'" class=" custFontFamilyRobotoCondensed muli-14pt custColorParakeetGreen pt-0  text-center">{{rupeesSymbol}}79,388.25</ion-col> -->
+        <ion-col [size]="'6'" class=" custFontFamilyRobotoCondensed muli-14pt custColorRed  pt-0 text-end">24K | 99.99%</ion-col>
+      </ion-row>
+           
+      </ion-card>
+
+
+      
+
+
+
+
+    </ion-row>
+    
+  
+    <ion-col [size]="'12'">
+      <span class="custFontFamilyMuliBold muli-16pt custLineHight40 custColorDark">{{'details' | translate}}</span>
+    </ion-col>
+    <ion-col [size]="'12'">
+      <mat-accordion class="example-headers-align">
+        <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)" hideToggle="true">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+            <span class="custFontFamilyMuliBold  muli-14pt custLineHight20 custColorDark">{{'detailsViewHeader1' | translate}}</span>
+            </mat-panel-title>
+            <mat-panel-description class="flex-grow-0 mt-1">
+              <ion-img [src]="imageList?.arrow" class="custInvestArrow custRotation"></ion-img>
+            </mat-panel-description>
+           
+          </mat-expansion-panel-header>
+          <ion-grid>
+            <ion-row>
+              <ion-col [size]="'12'">
+                <span class="custFontFamilyMuliRegular  muli-14pt custLineHight20 custColorTint">{{'detailsViewHeader1Detail1' | translate}}</span><br>
+                <span class="custFontFamilyMuliRegular  muli-12pt custLineHight18 custColorBattlePGry">{{'detailsViewHeader1Detail2' | translate}}</span>
+              </ion-col>
+              <ion-col [size]="'12'">
+                <span class="custFontFamilyMuliRegular  muli-14pt custLineHight20 custColorTint">{{'detailsViewHeader1Detail3' | translate}}</span><br>
+                <span class="custFontFamilyMuliRegular  muli-12pt custLineHight18 custColorBattlePGry">{{'detailsViewHeader1Detail4' | translate}}</span>
+              </ion-col>
+              <ion-col [size]="'12'">
+                <span class="custFontFamilyMuliRegular  muli-14pt custLineHight20 custColorTint">{{'detailsViewHeader1Detail5' | translate}}</span><br>
+                <span class="custFontFamilyMuliRegular  muli-12pt custLineHight18 custColorBattlePGry">{{'detailsViewHeader1Detail6' | translate}}</span>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </mat-expansion-panel>
+        <mat-expansion-panel [expanded]="step === 1" (opened)="setStep(1)" hideToggle>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <span class="custFontFamilyMuliBold  muli-14pt custLineHight20 custColorDark">{{'detailsViewHeader2' | translate}}</span>
+            </mat-panel-title>
+            <mat-panel-description class="flex-grow-0 mt-1">
+              <ion-img [src]="imageList?.arrow" class="custInvestArrow custRotation"></ion-img>
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          <ion-grid>
+            <ion-row>
+              <ion-col [size]="'12'">
+                <span class="custFontFamilyMuliRegular  muli-14pt custLineHight20 custColorTint">{{'detailsViewHeader2Detail1' | translate}}</span><br>
+                <span class="custFontFamilyMuliRegular  muli-12pt custLineHight18 custColorBattlePGry">{{'detailsViewHeader2Detail2' | translate}}</span>
+              </ion-col>
+              <ion-col [size]="'12'">
+                <span class="custFontFamilyMuliRegular  muli-14pt custLineHight20 custColorTint">{{'detailsViewHeader2Detail3' | translate}}</span><br>
+                <span class="custFontFamilyMuliRegular  muli-12pt custLineHight18 custColorBattlePGry">{{'detailsViewHeader2Detail4' | translate}}</span>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </mat-expansion-panel>
+        <mat-expansion-panel [expanded]="step === 2" (opened)="setStep(2)" hideToggle>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <span class="custFontFamilyMuliBold  muli-14pt custLineHight20 custColorDark">{{'detailsViewHeader3' | translate}}</span>
+            </mat-panel-title>
+            <mat-panel-description class="flex-grow-0 mt-1">
+              <ion-img [src]="imageList?.arrow" class="custInvestArrow custRotation"></ion-img>
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          <ion-grid>
+            <ion-row>
+              <ion-col [size]="'12'">
+                <span class="custFontFamilyMuliRegular  muli-14pt custLineHight20 custColorTint">{{'detailsViewHeader3Detail1' | translate}}</span><br>
+                <span class="custFontFamilyMuliRegular  muli-12pt custLineHight18 custColorBattlePGry">{{'detailsViewHeader3Detail2' | translate}}</span>
+              </ion-col>
+              <ion-col [size]="'12'">
+                <span class="custFontFamilyMuliRegular  muli-10pt custLineHight15 custColorWarmGrey">{{'detailsViewHeader3Detail3' | translate}}</span>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </mat-expansion-panel>
+      </mat-accordion>
+    </ion-col>
+  </ion-row>
+  <ion-row class="fixed-bottom mx-2 custBackgroundColorWhite ">
+    <!-- <ion-col [size]="'2'" class="custborder custBackgroundColorWhite text-center mt-1 "><img [src]="imageList?.addIcon" alt="" class="custplus mt-2"></ion-col> -->
+    <ion-col [size]="'12'">
+      <button class="w-100 custFontFamilyMuliBold custBackgroundColorParakeetGreen mb-2 py-3 rounded-2 custColorWhite" (click)="Buy()">Invest Now</button>
+    </ion-col>
+
+    
+  </ion-row>
+</ion-grid>
+</ion-content>
+</ion-app>

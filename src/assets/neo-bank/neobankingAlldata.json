@@ -1,0 +1,2567 @@
+{
+  "Prepaid Mobile": {
+    "normal": {
+      "controls": [
+        {
+          "name": "state",
+          "label": "Select State",
+          "value": "",
+          "type": "select",
+          "options": [
+            "Maharashtra",
+            "Uttar-pradesh",
+            "Jharkhand",
+            "Goa"
+          ],
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "moNumber",
+          "label": "Mobile number",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+    
+        {
+          "name": "nickname",
+          "label": "Nick Name",
+          "value": "",
+          "type": "text",
+          "validators": {}
+        }
+      ],
+      "nextStep": "Proceed To Pay"
+    }
+  },
+  "Postpaid Mobile": {
+    "normal": {
+      "controls": [
+        {
+          "name": "state",
+          "label": "Select State",
+          "value": "",
+          "type": "select",
+          "options": [
+            "Maharashtra",
+            "Uttar-pradesh",
+            "Jharkhand",
+            "Goa"
+          ],
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "moNumber",
+          "label": "Mobile number",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "AmountType",
+          "label": "Enter Amount",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "nickname",
+          "label": "Nick Name",
+          "value": "",
+          "type": "text",
+          "validators": {}
+        }
+      ],
+      "nextStep": "Fetch Bill"
+    },
+    "AutoPay": {
+      "controls": [
+        {
+          "name": "operator",
+          "label": "Operator name",
+          "value": "",
+          "type": "select",
+          "options": [
+            "Vodafone-IDEA",
+            "Airtel",
+            "JIO",
+            "BSNL"
+          ],
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "state",
+          "label": "Select State",
+          "value": "",
+          "type": "select",
+          "options": [
+            "Maharashtra",
+            "Uttar-pradesh",
+            "Jharkhand",
+            "Goa"
+          ],
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "moNumber",
+          "label": "Mobile number",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "AmountType",
+          "label": "Enter Amount",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "nickname",
+          "label": "Nick Name",
+          "value": "",
+          "type": "text",
+          "validators": {}
+        }
+      ]
+    }
+  },
+  "Broadband": {
+    "normal": {
+      "options": [
+        "Air-Connect",
+        "ACT-Fibernet",
+        "Asia Net Broadband",
+        "DEN Broadband"
+      ],
+      "Air-Connect": [
+        {
+          "name": "Username",
+          "label": "User Name",
+          "value": "",
+          "type": "text",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "YearMonth",
+          "label": "Year Month (YYYY-MM)",
+          "value": "",
+          "type": "text",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "nickname",
+          "label": "Nick Name",
+          "value": "",
+          "type": "text",
+          "validators": {}
+        }
+      ],
+      "Asia Net Broadband": [
+        {
+          "name": "SubCode",
+          "label": "Sub Code",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "nickname",
+          "label": "Nick Name",
+          "value": "",
+          "type": "text",
+          "validators": {}
+        }
+      ],
+      "DEN Broadband": [
+        {
+          "name": "AccountNumber",
+          "label": "Account Number",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "nickname",
+          "label": "Nick Name",
+          "value": "",
+          "type": "text",
+          "validators": {}
+        }
+      ],
+      "ACT-Fibernet": [
+        {
+          "name": "AccountNumber",
+          "label": "Account Number",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "nickname",
+          "label": "Nick Name",
+          "value": "",
+          "type": "text",
+          "validators": {}
+        }
+      ],
+      "nextStep": "Fetch Bill"
+    },
+    "AutoPay": {
+      "options": [
+        "Air-Connect",
+        "ACT-Fibernet",
+        "Asia Net Broadband",
+        "DEN Broadband"
+      ],
+      "Air-Connect": [
+        {
+          "name": "Username",
+          "label": "User Name",
+          "value": "",
+          "type": "text",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "YearMonth",
+          "label": "Year Month (YYYY-MM)",
+          "value": "",
+          "type": "text",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "nickname",
+          "label": "Nick Name",
+          "value": "",
+          "type": "text",
+          "validators": {}
+        }
+      ],
+      "Asia Net Broadband": [
+        {
+          "name": "AccountNumber",
+          "label": "Account Number",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "nickname",
+          "label": "Nick Name",
+          "value": "",
+          "type": "text",
+          "validators": {}
+        }
+      ],
+      "DEN Broadband": [
+        {
+          "name": "UserID",
+          "label": "User ID",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "nickname",
+          "label": "Nick Name",
+          "value": "",
+          "type": "text",
+          "validators": {}
+        }
+      ],
+      "ACT-Fibernet": [
+        {
+          "name": "AccountNumber",
+          "label": "Account Number",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "nickname",
+          "label": "Nick Name",
+          "value": "",
+          "type": "text",
+          "validators": {}
+        }
+      ]
+    }
+  },
+  "DTH": {
+    "normal": {
+      "controls": [
+        {
+          "name": "operator",
+          "label": "Operator name",
+          "value": "",
+          "type": "select",
+          "options": [
+            "Airtel DTH",
+            "TATA DTH",
+            "Dish TV DTH"
+          ],
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "SubscriberNumber",
+          "label": "Subscriber Number",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "moNumber",
+          "label": "Mobile number",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "AmountType",
+          "label": "Enter Amount",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "nickname",
+          "label": "Nick Name",
+          "value": "",
+          "type": "text",
+          "validators": {}
+        }
+      ],
+      "nextStep": "Proceed To Pay"
+    }
+  },
+  "Electricity": {
+    "AutoPay": {
+      "controls": [
+        {
+          "name": "ProviderName",
+          "label": "Provider Name",
+          "value": "",
+          "type": "select",
+          "options": [
+            "Adani Electricity Mumbai LTD",
+            "Tata Power LTD",
+            "CESC LTD",
+            "B.E.S.T Mumbai"
+          ],
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "ConsumerNumber",
+          "label": "Consumer Number",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "nickname",
+          "label": "Nick Name",
+          "value": "",
+          "type": "text",
+          "validators": {}
+        }
+      ]
+    },
+    "normal": {
+      "controls": [
+        {
+          "name": "ProviderName",
+          "label": "Provider Name",
+          "value": "",
+          "type": "select",
+          "options": [
+            "Adani Electricity Mumbai LTD",
+            "Tata Power LTD",
+            "CESC LTD",
+            "B.E.S.T Mumbai"
+          ],
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "ConsumerNumber",
+          "label": "Consumer Number",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "nickname",
+          "label": "Nick Name",
+          "value": "",
+          "type": "text",
+          "validators": {}
+        }
+      ],
+      "nextStep": "Fetch Bill"
+    }
+  },
+  "Piped Gas": {
+    "normal": {
+      "controls": [
+        {
+          "name": "operator",
+          "label": "Select Operator",
+          "value": "",
+          "type": "select",
+          "options": [
+            "Avantika Gas Ltd.",
+            "Assam Gas Company Ltd.",
+            "GAIL Gas Ltd.",
+            "GAIL India Ltd.",
+            "Adani Total Gas Ltd."
+          ],
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "SubscriberNumber",
+          "label": "Consumer Number",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "nickname",
+          "label": "Nick Name",
+          "value": "",
+          "type": "text",
+          "validators": {}
+        }
+      ],
+      "nextStep": "Fetch Bill"
+    },
+    "AutoPay": {
+      "controls": [
+        {
+          "name": "operator",
+          "label": "Select Operator",
+          "value": "",
+          "type": "select",
+          "options": [
+            "Avantika Gas Ltd.",
+            "Assam Gas Company Ltd.",
+            "GAIL Gas Ltd.",
+            "GAIL India Ltd.",
+            "Adani Total Gas Ltd."
+          ],
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "SubscriberNumber",
+          "label": "Consumer Number",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "nickname",
+          "label": "Nick Name",
+          "value": "",
+          "type": "text",
+          "validators": {}
+        }
+      ]
+    }
+  },
+  "Landline": {
+    "normal": {
+      "controls": [
+        {
+          "name": "ProviderName",
+          "label": "Provider Name",
+          "value": "",
+          "type": "select",
+          "options": [
+            "Airtel Landline",
+            "Jio Landline"
+          ],
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "LandlineNumber",
+          "label": "Landline Number with STD code",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "nickname",
+          "label": "Nick Name",
+          "value": "",
+          "type": "text",
+          "validators": {}
+        }
+      ],
+      "nextStep": "Fetch Bill"
+    },
+    "AutoPay": {
+      "controls": [
+        {
+          "name": "ProviderName",
+          "label": "Provider Name",
+          "value": "",
+          "type": "select",
+          "options": [
+            "Airtel Landline",
+            "Jio Landline"
+          ],
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "LandlineNumber",
+          "label": "Landline Number with STD code",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "nickname",
+          "label": "Nick Name",
+          "value": "",
+          "type": "text",
+          "validators": {}
+        }
+      ]
+    }
+  },
+  "Water": {
+    "normal": {
+      "controls": [
+        {
+          "name": "ProviderName",
+          "label": "Select Provider",
+          "value": "",
+          "type": "select",
+          "options": [
+            "Bangalore Water Supply and Sewerage",
+            "BMC"
+          ],
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "RRNumber",
+          "label": "RR Nmuber",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "consumerNumber",
+          "label": "Consumer Number/ K Number",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "nickname",
+          "label": "Nick Name",
+          "value": "",
+          "type": "text",
+          "validators": {}
+        }
+      ],
+      "nextStep": "Fetch Bill"
+    },
+    "AutoPay": {
+      "controls": [
+        {
+          "name": "ProviderName",
+          "label": "Select Provider",
+          "value": "",
+          "type": "select",
+          "options": [
+            "Bangalore Water Supply and Sewerage",
+            "BMC"
+          ],
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "RRNumber",
+          "label": "RR Nmuber",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "consumerNumber",
+          "label": "Consumer Number/ K Number",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "nickname",
+          "label": "Nick Name",
+          "value": "",
+          "type": "text",
+          "validators": {}
+        }
+      ]
+    }
+  },
+  "Datacard": {
+    "normal": {
+      "controls": [
+        {
+          "name": "mobile",
+          "label": "Mobile number",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "operator",
+          "label": " Select Operator",
+          "value": "",
+          "type": "select",
+          "options": [
+            "vodafone",
+            "idea",
+            "jio"
+          ],
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "StateType",
+          "label": "Select State",
+          "value": "",
+          "type": "select",
+          "options": [
+            "Maharashtra",
+            "Uttar-pradesh",
+            "Jharkhand",
+            "Goa",
+            "Bihar",
+            "Mizoram"
+          ],
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "AmountType",
+          "label": "Enter Amount",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "nickname",
+          "label": "Nick Name",
+          "value": "",
+          "type": "text",
+          "validators": {}
+        }
+      ],
+      "nextStep": "Proceed To Pay"
+    }
+  },
+  "Book a Cylinder": {
+    "normal": {
+      "options": [
+        "LPG (HPCL)",
+        "Indane Gas (Indian Oil)",
+        "Bharat Gas (BPCL)",
+        "HP Gas (HPCL)"
+      ],
+      "LPG (HPCL)": [
+        {
+          "name": "mobileNumber",
+          "label": "Mobile number",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "LPGNumber",
+          "label": "LPG Number",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "nickname",
+          "label": "Nick Name",
+          "value": "",
+          "type": "text",
+          "validators": {}
+        }
+      ],
+      "Indane Gas (Indian Oil)": [
+        {
+          "name": "LPGNumber",
+          "label": "LPG Number",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "mobileNumber",
+          "label": "Mobile number",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "nickname",
+          "label": "Nick Name",
+          "value": "",
+          "type": "text",
+          "validators": {}
+        }
+      ],
+      "Bharat Gas (BPCL)": [
+        {
+          "name": "LPGNumber",
+          "label": "LPG Number",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "mobileNumber",
+          "label": "Mobile number",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "nickname",
+          "label": "Nick Name",
+          "value": "",
+          "type": "text",
+          "validators": {}
+        }
+      ],
+      "HP Gas (HPCL)": [
+        {
+          "name": "mobileNumber",
+          "label": "Mobile number",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "distributorNumber",
+          "label": "Distributor Number",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "consumerNumber",
+          "label": "Consumer Number",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "uniqueNumber",
+          "label": "Unique Number",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "nickname",
+          "label": "Nick Name",
+          "value": "",
+          "type": "text",
+          "validators": {}
+        }
+      ],
+      "nextStep": "Fetch Bill"
+    },
+    "AutoPay": {
+      "options": [
+        "LPG (HPCL)",
+        "Indane Gas (Indian Oil)",
+        "Bharat Gas (BPCL)",
+        "HP Gas (HPCL)"
+      ],
+      "LPG (HPCL)": [
+        {
+          "name": "mobileNumber",
+          "label": "Mobile number",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "LPGNumber",
+          "label": "LPG Number",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "nickname",
+          "label": "Nick Name",
+          "value": "",
+          "type": "text",
+          "validators": {}
+        }
+      ],
+      "Indane Gas (Indian Oil)": [
+        {
+          "name": "LPGNumber",
+          "label": "LPG Number",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "mobileNumber",
+          "label": "Mobile number",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "nickname",
+          "label": "Nick Name",
+          "value": "",
+          "type": "text",
+          "validators": {}
+        }
+      ],
+      "Bharat Gas (BPCL)": [
+        {
+          "name": "LPGNumber",
+          "label": "LPG Number",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "mobileNumber",
+          "label": "Mobile number",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "nickname",
+          "label": "Nick Name",
+          "value": "",
+          "type": "text",
+          "validators": {}
+        }
+      ],
+      "HP Gas (HPCL)": [
+        {
+          "name": "mobileNumber",
+          "label": "Mobile number",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "distributorNumber",
+          "label": "Distributor Number",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "consumerNumber",
+          "label": "Consumer Number",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "uniqueNumber",
+          "label": "Unique Number",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "nickname",
+          "label": "Nick Name",
+          "value": "",
+          "type": "text",
+          "validators": {}
+        }
+      ]
+    }
+  },
+  "Loan Repayment": {
+    "normal": {
+      "options": [
+        "Aavas Financiers Limited",
+        "APCA Financial Services Pvt Ltd",
+        "Aadhar Housing Finance Limited",
+        "ICICI Bank Ltd- Loans"
+      ],
+      "Aadhar Housing Finance Limited": [
+        {
+          "name": "ApplicationId",
+          "label": "Application ID",
+          "value": "",
+          "type": "text",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "nickname",
+          "label": "Nick Name",
+          "value": "",
+          "type": "text",
+          "validators": {}
+        }
+      ],
+      "ICICI Bank Ltd- Loans": [
+        {
+          "name": "LoanaccountNumber",
+          "label": "Loan Account Number",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "nickname",
+          "label": "Nick Name",
+          "value": "",
+          "type": "text",
+          "validators": {}
+        }
+      ],
+      "Aavas Financiers Limited": [
+        {
+          "name": "ApplicationId",
+          "label": "Application ID",
+          "value": "",
+          "type": "text",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "nickname",
+          "label": "Nick Name",
+          "value": "",
+          "type": "text",
+          "validators": {}
+        }
+      ],
+      "nextStep": "Fetch Bill"
+    },
+    "AutoPay": {
+      "options": [
+        "Aavas Financiers Limited",
+        "APCA Financial Services Pvt Ltd",
+        "Aadhar Housing Finance Limited",
+        "ICICI Bank Ltd- Loans"
+      ],
+      "Aadhar Housing Finance Limited": [
+        {
+          "name": "ApplicationId",
+          "label": "Application ID",
+          "value": "",
+          "type": "text",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "nickname",
+          "label": "Nick Name",
+          "value": "",
+          "type": "text",
+          "validators": {}
+        }
+      ],
+      "ICICI Bank Ltd- Loans": [
+        {
+          "name": "LoanaccountNumber",
+          "label": "Loan Account Number",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "nickname",
+          "label": "Nick Name",
+          "value": "",
+          "type": "text",
+          "validators": {}
+        }
+      ],
+      "Aavas Financiers Limited": [
+        {
+          "name": "ApplicationId",
+          "label": "Application ID",
+          "value": "",
+          "type": "text",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "nickname",
+          "label": "Nick Name",
+          "value": "",
+          "type": "text",
+          "validators": {}
+        }
+      ]
+    }
+  },
+  "Insurance": {
+    "normal": {
+      "options": [
+        "Aditya Birla Health Insurance Co Limited",
+        "BHARTI AXA Life Insurance",
+        "Aviva Life Insurance"
+      ],
+      "Aditya Birla Health Insurance Co Limited": [
+        {
+          "name": "policyNumber",
+          "label": "Policy Number",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "Dob",
+          "label": "DOB (DD-MM-YYYY)",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "mobileNumber",
+          "label": "Customer Mobile Number",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "nickname",
+          "label": "Nick Name",
+          "value": "",
+          "type": "text",
+          "validators": {}
+        }
+      ],
+      "BHARTI AXA Life Insurance": [
+        {
+          "name": "policyNumber",
+          "label": "Policy Number",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "Dob",
+          "label": "DOB (DD-MM-YYYY)",
+          "value": "",
+          "type": "text",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "nickname",
+          "label": "Nick Name",
+          "value": "",
+          "type": "text",
+          "validators": {}
+        }
+      ],
+      "Aviva Life Insurance": [
+        {
+          "name": "policyNumber",
+          "label": "Policy Number",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "Dob",
+          "label": "DOB (DD-MM-YYYY)",
+          "value": "",
+          "type": "text",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "nickname",
+          "label": "Nick Name",
+          "value": "",
+          "type": "text",
+          "validators": {}
+        }
+      ],
+      "nextStep": "Fetch Bill"
+    },
+    "AutoPay": {
+      "options": [
+        "Aditya Birla Health Insurance Co Limited",
+        "BHARTI AXA Life Insurance",
+        "Aviva Life Insurance"
+      ],
+      "Aditya Birla Health Insurance Co Limited": [
+        {
+          "name": "policyNumber",
+          "label": "Policy Number",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "Dob",
+          "label": "DOB (DD-MM-YYYY)",
+          "value": "",
+          "type": "text",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "mobileNumber",
+          "label": "Customer Mobile Number",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "nickname",
+          "label": "Nick Name",
+          "value": "",
+          "type": "text",
+          "validators": {}
+        }
+      ],
+      "BHARTI AXA Life Insurance": [
+        {
+          "name": "policyNumber",
+          "label": "Policy Number",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "Dob",
+          "label": "DOB (DD-MM-YYYY)",
+          "value": "",
+          "type": "text",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "nickname",
+          "label": "Nick Name",
+          "value": "",
+          "type": "text",
+          "validators": {}
+        }
+      ],
+      "Aviva Life Insurance": [
+        {
+          "name": "policyNumber",
+          "label": "Policy Number",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "Dob",
+          "label": "DOB (DD-MM-YYYY)",
+          "value": "",
+          "type": "text",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "nickname",
+          "label": "Nick Name",
+          "value": "",
+          "type": "text",
+          "validators": {}
+        }
+      ]
+    }
+  },
+  "Fastag": {
+    "normal": {
+      "options": [
+        "Axis Bank Fast Tag",
+        "HDFC Bank Fast Tag",
+        "Karnataka Bank Fast Tag"
+      ],
+      "Axis Bank Fast Tag": [
+        {
+          "name": "vehicleRegNumber",
+          "label": "Vehicle Registration Number",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "amount",
+          "label": "Amount",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "nickname",
+          "label": "Nick Name",
+          "value": "",
+          "type": "text",
+          "validators": {}
+        }
+      ],
+      "Karnataka Bank Fast Tag": [
+        {
+          "name": "vehicleRegNumber",
+          "label": "Vehicle Registration Number",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "nickname",
+          "label": "Nick Name",
+          "value": "",
+          "type": "text",
+          "validators": {}
+        }
+      ],
+      "HDFC Bank Fast Tag": [
+        {
+          "name": "vehicleRegNumber",
+          "label": "Vehicle Registration Number",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "amount",
+          "label": "Amount",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "nickname",
+          "label": "Nick Name",
+          "value": "",
+          "type": "text",
+          "validators": {}
+        }
+      ],
+      "nextStep": "Fetch Bill"
+    },
+    "AutoPay": {
+      "options": [
+        "Axis Bank Fast Tag",
+        "HDFC Bank Fast Tag",
+        "Karnataka Bank Fast Tag"
+      ],
+      "Axis Bank Fast Tag": [
+        {
+          "name": "vehicleRegNumber",
+          "label": "Vehicle Registration Number",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "amount",
+          "label": "Amount",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "nickname",
+          "label": "Nick Name",
+          "value": "",
+          "type": "text",
+          "validators": {}
+        }
+      ],
+      "Karnataka Bank Fast Tag": [
+        {
+          "name": "vehicleRegNumber",
+          "label": "Vehicle Registration Number",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "nickname",
+          "label": "Nick Name",
+          "value": "",
+          "type": "text",
+          "validators": {}
+        }
+      ],
+      "HDFC Bank Fast Tag": [
+        {
+          "name": "vehicleRegNumber",
+          "label": "Vehicle Registration Number",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "amount",
+          "label": "Amount",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "nickname",
+          "label": "Nick Name",
+          "value": "",
+          "type": "text",
+          "validators": {}
+        }
+      ]
+    }
+  },
+  "Education Fees": {
+    "normal": {
+      "controls": [
+        {
+          "name": "providerName",
+          "label": " Select Provider",
+          "value": "",
+          "type": "select",
+          "options": [
+            "Sri Chaitanya Schools - Wagholi",
+            "D.R. International School",
+            "Grizzly Vidyalaya"
+          ],
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "AdmissionNumber",
+          "label": "Admission Number",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "Feetype",
+          "label": "Fee Type ",
+          "value": "",
+          "type": "select",
+          "options": [
+            "Partially",
+            "Annually"
+          ],
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "AcademicYear",
+          "label": "Academic Year (YYYY-YYYY)",
+          "value": "",
+          "type": "text",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "nickname",
+          "label": "Nick Name",
+          "value": "",
+          "type": "text",
+          "validators": {}
+        }
+      ],
+      "nextStep": "Fetch Bill"
+    },
+    "AutoPay": {
+      "controls": [
+        {
+          "name": "providerName",
+          "label": " Select Provider",
+          "value": "",
+          "type": "select",
+          "options": [
+            "Sri Chaitanya Schools - Wagholi",
+            "D.R. International School",
+            "Grizzly Vidyalaya"
+          ],
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "AdmissionNumber",
+          "label": "Admission Number",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "Feetype",
+          "label": "Fee Type ",
+          "value": "",
+          "type": "select",
+          "options": [
+            "Partially",
+            "Annually"
+          ],
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "AcademicYear",
+          "label": "Academic Year (YYYY-YYYY)",
+          "value": "",
+          "type": "text",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "nickname",
+          "label": "Nick Name",
+          "value": "",
+          "type": "text",
+          "validators": {}
+        }
+      ]
+    }
+  },
+  "Cable TV": {
+    "normal": {
+      "options": [
+        "Asianet Digital",
+        "VDV Digital"
+      ],
+      "Asianet Digital": [
+        {
+          "name": "subscriberCode",
+          "label": "Subscriber Code",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "nickname",
+          "label": "Nick Name",
+          "value": "",
+          "type": "text",
+          "validators": {}
+        }
+      ],
+      "VDV Digital": [
+        {
+          "name": "customerID",
+          "label": "Customer ID",
+          "value": "",
+          "type": "text",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "nickname",
+          "label": "Nick Name",
+          "value": "",
+          "type": "text",
+          "validators": {}
+        }
+      ]
+    },
+    "AutoPay": {
+      "options": [
+        "Asianet Digital",
+        "VDV Digital"
+      ],
+      "Asianet Digital": [
+        {
+          "name": "subscriberCode",
+          "label": "Subscriber Code",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "nickname",
+          "label": "Nick Name",
+          "value": "",
+          "type": "text",
+          "validators": {}
+        }
+      ],
+      "VDV Digital": [
+        {
+          "name": "customerID",
+          "label": "Customer ID",
+          "value": "",
+          "type": "text",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "nickname",
+          "label": "Nick Name",
+          "value": "",
+          "type": "text",
+          "validators": {}
+        }
+      ],
+      "nextStep": "Fetch Bill"
+    }
+  },
+  "Municipal Taxes": {
+    "normal": {
+      "options": [
+        "Ahmedabad Municipal Corporation",
+        "Mira Bhayander Municipal Corporation",
+        "Nagar Pallika Palia Kalan",
+        "Ponda Municipal Council"
+      ],
+      "Ahmedabad Municipal Corporation": [
+        {
+          "name": "tenementNumber",
+          "label": "Tenement Number",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "nickname",
+          "label": "Nick Name",
+          "value": "",
+          "type": "text",
+          "validators": {}
+        }
+      ],
+      "Nagar Pallika Palia Kalan": [
+        {
+          "name": "UniqueIdcode",
+          "label": "Unique ID Code",
+          "value": "",
+          "type": "text",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "nickname",
+          "label": "Nick Name",
+          "value": "",
+          "type": "text",
+          "validators": {}
+        }
+      ],
+      "Ponda Municipal Council": [
+        {
+          "name": "houseNumber",
+          "label": "House Number",
+          "value": "",
+          "type": "text",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "nickname",
+          "label": "Nick Name",
+          "value": "",
+          "type": "text",
+          "validators": {}
+        }
+      ],
+      "Mira Bhayander Municipal Corporation": [
+        {
+          "name": "propertyCode",
+          "label": "Property Code",
+          "value": "",
+          "type": "text",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "nickname",
+          "label": "Nick Name",
+          "value": "",
+          "type": "text",
+          "validators": {}
+        }
+      ],
+      "nextStep": "Fetch Bill"
+    },
+    "AutoPay": {
+      "options": [
+        "Ahmedabad Municipal Corporation",
+        "Mira Bhayander Municipal Corporation",
+        "Nagar Pallika Palia Kalan",
+        "Ponda Municipal Council"
+      ],
+      "Ahmedabad Municipal Corporation": [
+        {
+          "name": "tenementNumber",
+          "label": "Tenement Number",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "nickname",
+          "label": "Nick Name",
+          "value": "",
+          "type": "text",
+          "validators": {}
+        }
+      ],
+      "Nagar Pallika Palia Kalan": [
+        {
+          "name": "UniqueIdcode",
+          "label": "Unique ID Code",
+          "value": "",
+          "type": "text",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "nickname",
+          "label": "Nick Name",
+          "value": "",
+          "type": "text",
+          "validators": {}
+        }
+      ],
+      "Ponda Municipal Council": [
+        {
+          "name": "houseNumber",
+          "label": "House Number",
+          "value": "",
+          "type": "text",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "nickname",
+          "label": "Nick Name",
+          "value": "",
+          "type": "text",
+          "validators": {}
+        }
+      ],
+      "Mira Bhayander Municipal Corporation": [
+        {
+          "name": "propertyCode",
+          "label": "Property Code",
+          "value": "",
+          "type": "text",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "nickname",
+          "label": "Nick Name",
+          "value": "",
+          "type": "text",
+          "validators": {}
+        }
+      ]
+    }
+  },
+  "Housing Societies": {
+    "normal": {
+      "options": [
+        "Abhushan Residency - C Wing",
+        "Association of Apartment Owners of Star",
+        "Mayfield Gardens RWA - C Block",
+        "Someshwar Ashirwad Co Operative Housing"
+      ],
+      "Abhushan Residency - C Wing": [
+        {
+          "name": "flatNo",
+          "label": "Flat No.",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "wingBlockNo",
+          "label": "Wing Block No.",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "nickname",
+          "label": "Nick Name",
+          "value": "",
+          "type": "text",
+          "validators": {}
+        }
+      ],
+      "Association of Apartment Owners of Star": [
+        {
+          "name": "flatNo",
+          "label": "Flat No.",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "nickname",
+          "label": "Nick Name",
+          "value": "",
+          "type": "text",
+          "validators": {}
+        }
+      ],
+      "Mayfield Gardens RWA - C Block": [
+        {
+          "name": "header",
+          "label": "Header",
+          "value": "",
+          "type": "text",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "customerUniqueId",
+          "label": "Customer Unique ID",
+          "value": "",
+          "type": "text",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "nickname",
+          "label": "Nick Name",
+          "value": "",
+          "type": "text",
+          "validators": {}
+        }
+      ],
+      "Someshwar Ashirwad Co Operative Housing": [
+        {
+          "name": "flatNo",
+          "label": "Flat No.",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "nickname",
+          "label": "Nick Name",
+          "value": "",
+          "type": "text",
+          "validators": {}
+        }
+      ],
+      "nextStep": "Fetch Bill"
+    },
+    "AutoPay": {
+      "options": [
+        "Abhushan Residency - C Wing",
+        "Association of Apartment Owners of Star",
+        "Mayfield Gardens RWA - C Block",
+        "Someshwar Ashirwad Co Operative Housing"
+      ],
+      "Abhushan Residency - C Wing": [
+        {
+          "name": "flatNo",
+          "label": "Flat No.",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "wingBlockNo",
+          "label": "Wing Block No.",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "nickname",
+          "label": "Nick Name",
+          "value": "",
+          "type": "text",
+          "validators": {}
+        }
+      ],
+      "Association of Apartment Owners of Star": [
+        {
+          "name": "flatNo",
+          "label": "Flat No.",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "nickname",
+          "label": "Nick Name",
+          "value": "",
+          "type": "text",
+          "validators": {}
+        }
+      ],
+      "Mayfield Gardens RWA - C Block": [
+        {
+          "name": "header",
+          "label": "Header",
+          "value": "",
+          "type": "text",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "customerUniqueId",
+          "label": "Customer Unique ID",
+          "value": "",
+          "type": "text",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "nickname",
+          "label": "Nick Name",
+          "value": "",
+          "type": "text",
+          "validators": {}
+        }
+      ],
+      "Someshwar Ashirwad Co Operative Housing": [
+        {
+          "name": "flatNo",
+          "label": "Flat No.",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "nickname",
+          "label": "Nick Name",
+          "value": "",
+          "type": "text",
+          "validators": {}
+        }
+      ]
+    }
+  },
+  "Credit Card": {
+    "normal": {
+      "controls": [
+        {
+          "name": "ProviderName",
+          "label": "Credit Card Provider",
+          "value": "",
+          "path": "assets/icon/icicibank.png",
+          "type": "select",
+          "options": [
+            "SBI Bank Ltd",
+            "ICICI Bank Ltd"
+          ],
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "cardNumber",
+          "label": "Enter Card Number",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "AmountType",
+          "label": "Enter Amount",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        }
+
+      ],
+      "nextStep": "Proceed To Pay"
+
+    }
+  },
+  "Clubs and Associations": {
+    "normal": {
+      "options": [
+        "Madhya Pradesh Chamber of Commerce",
+        "Naval Officers Institute",
+        "The Institute of Indian Foundrymen"
+      ],
+      "Madhya Pradesh Chamber of Commerce": [
+        {
+          "name": "groupNumber",
+          "label": "Group Number",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "serialNumber",
+          "label": "Serial Number",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "nickname",
+          "label": "Nick Name",
+          "value": "",
+          "type": "text",
+          "validators": {}
+        }
+      ],
+      "Naval Officers Institute": [
+        {
+          "name": "membershipNumber",
+          "label": "Membership Number",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "nickname",
+          "label": "Nick Name",
+          "value": "",
+          "type": "text",
+          "validators": {}
+        }
+      ],
+      "The Institute of Indian Foundrymen": [
+        {
+          "name": "membershipNumber",
+          "label": "Membership Number",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "nickname",
+          "label": "Nick Name",
+          "value": "",
+          "type": "text",
+          "validators": {}
+        }
+      ],
+      "nextStep": "Fetch Bill"
+    },
+    "AutoPay": {
+      "options": [
+        "Madhya Pradesh Chamber of Commerce",
+        "Naval Officers Institute",
+        "The Institute of Indian Foundrymen"
+      ],
+      "Madhya Pradesh Chamber of Commerce": [
+        {
+          "name": "groupNumber",
+          "label": "Group Number",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "serialNumber",
+          "label": "Serial Number",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "nickname",
+          "label": "Nick Name",
+          "value": "",
+          "type": "text",
+          "validators": {}
+        }
+      ],
+      "Naval Officers Institute": [
+        {
+          "name": "membershipNumber",
+          "label": "Membership Number",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "nickname",
+          "label": "Nick Name",
+          "value": "",
+          "type": "text",
+          "validators": {}
+        }
+      ],
+      "The Institute of Indian Foundrymen": [
+        {
+          "name": "membershipNumber",
+          "label": "Membership Number",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "nickname",
+          "label": "Nick Name",
+          "value": "",
+          "type": "text",
+          "validators": {}
+        }
+      ]
+    }
+  },
+  "Hospital and Pathology": {
+    "normal": {
+      "options": [
+        "B.K. Arogyam and Research Pvt. Ltd.",
+        "Billroth Hospitals Pvt. Ltd."
+      ],
+      "B.K. Arogyam and Research Pvt. Ltd.": [
+        {
+          "name": "mobileNumber",
+          "label": "Mobile Number",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "nickname",
+          "label": "Nick Name",
+          "value": "",
+          "type": "text",
+          "validators": {}
+        }
+      ],
+      "Billroth Hospitals Pvt. Ltd.": [
+        {
+          "name": "Uhid",
+          "label": "UHID",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "nickname",
+          "label": "Nick Name",
+          "value": "",
+          "type": "text",
+          "validators": {}
+        }
+      ],
+      "nextStep": "Fetch Bill"
+    },
+    "AutoPay": {
+      "options": [
+        "B.K. Arogyam and Research Pvt. Ltd.",
+        "Billroth Hospitals Pvt. Ltd."
+      ],
+      "B.K. Arogyam and Research Pvt. Ltd.": [
+        {
+          "name": "mobileNumber",
+          "label": "Mobile Number",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "nickname",
+          "label": "Nick Name",
+          "value": "",
+          "type": "text",
+          "validators": {}
+        }
+      ],
+      "Billroth Hospitals Pvt. Ltd.": [
+        {
+          "name": "Uhid",
+          "label": "UHID",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "nickname",
+          "label": "Nick Name",
+          "value": "",
+          "type": "text",
+          "validators": {}
+        }
+      ]
+    }
+  },
+  "Municipal Services": {
+    "normal": {
+      "options": [
+        "Port Blair Municipal Council",
+        "Directorate of Municipal Administration Karnataka"
+      ],
+      "Port Blair Municipal Council": [
+        {
+          "name": "shopId",
+          "label": "Shop ID",
+          "value": "",
+          "type": "text",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "nickname",
+          "label": "Nick Name",
+          "value": "",
+          "type": "text",
+          "validators": {}
+        }
+      ],
+      "Directorate of Municipal Administration Karnataka": [
+        {
+          "name": "challanNumber",
+          "label": "Challan Number",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "nickname",
+          "label": "Nick Name",
+          "value": "",
+          "type": "text",
+          "validators": {}
+        }
+      ],
+      "nextStep": "Fetch Bill"
+    },
+    "AutoPay": {
+      "options": [
+        "Port Blair Municipal Council",
+        "Directorate of Municipal Administration Karnataka"
+      ],
+      "Port Blair Municipal Council": [
+        {
+          "name": "shopId",
+          "label": "Shop ID",
+          "value": "",
+          "type": "text",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "nickname",
+          "label": "Nick Name",
+          "value": "",
+          "type": "text",
+          "validators": {}
+        }
+      ],
+      "Directorate of Municipal Administration Karnataka": [
+        {
+          "name": "challanNumber",
+          "label": "Challan Number",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "nickname",
+          "label": "Nick Name",
+          "value": "",
+          "type": "text",
+          "validators": {}
+        }
+      ]
+    }
+  },
+  "Subscription": {
+    "normal": {
+      "options": [
+        "Ashok Book Centre",
+        "FITPASS",
+        "ZEE 5"
+      ],
+      "Ashok Book Centre": [
+        {
+          "name": "billNo",
+          "label": "Bill Number",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "nickname",
+          "label": "Nick Name",
+          "value": "",
+          "type": "text",
+          "validators": {}
+        }
+      ],
+      "FITPASS": [
+        {
+          "name": "mobileNumber",
+          "label": "Enter Mobile Number",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "nickname",
+          "label": "Nick Name",
+          "value": "",
+          "type": "text",
+          "validators": {}
+        }
+      ],
+      "ZEE 5": [
+        {
+          "name": "mobileNumber",
+          "label": "Enter Mobile Number",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "packname",
+          "label": "Pack Name",
+          "value": "",
+          "type": "text",
+          "validators": {}
+        },
+        {
+          "name": "nickname",
+          "label": "Nick Name",
+          "value": "",
+          "type": "text",
+          "validators": {}
+        }
+      ],
+      "nextStep": "Fetch Bill"
+    },
+    "AutoPay": {
+      "options": [
+        "Ashok Book Centre",
+        "FITPASS",
+        "ZEE 5"
+      ],
+      "Ashok Book Centre": [
+        {
+          "name": "billNo",
+          "label": "Bill Number",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "nickname",
+          "label": "Nick Name",
+          "value": "",
+          "type": "text",
+          "validators": {}
+        }
+      ],
+      "FITPASS": [
+        {
+          "name": "mobileNumber",
+          "label": "Enter Mobile Number",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "nickname",
+          "label": "Nick Name",
+          "value": "",
+          "type": "text",
+          "validators": {}
+        }
+      ],
+      "ZEE 5": [
+        {
+          "name": "mobileNumber",
+          "label": "Enter Mobile Number",
+          "value": "",
+          "type": "number",
+          "validators": {
+            "required": true
+          }
+        },
+        {
+          "name": "packname",
+          "label": "Pack Name",
+          "value": "",
+          "type": "text",
+          "validators": {}
+        },
+        {
+          "name": "nickname",
+          "label": "Nick Name",
+          "value": "",
+          "type": "text",
+          "validators": {}
+        }
+      ]
+    }
+  }
+}

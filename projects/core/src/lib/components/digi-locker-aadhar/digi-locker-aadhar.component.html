@@ -1,0 +1,82 @@
+<ion-header>
+  <ion-toolbar class="custBackgroundDynamicColorWhite">
+    <ion-grid>
+      <ion-row>
+        <ion-col *ngIf="appName != 'Aqube'" [size]="'1'" (click)="gotoBack()" class="text-center mt-1">
+          <ion-img [src]="imageList?.arrow" class="custKYCImg mt-2"></ion-img>
+        </ion-col>
+        <ion-col *ngIf="appName != 'Aqube'" [size]="'10'" class="text-center">
+          <span class="custFontFamilyMuliBold muli-14pt custLineHight40 custColorDark ">{{'setupInvestmentAccount'
+            | translate}}</span>
+        </ion-col>
+        <ion-col *ngIf="appName == 'Aqube'" [size]="'12'" class="text-center">
+          <span class="custFontFamilyMuliBold muli-14pt custLineHight40 custColorDark ">{{'setupInvestmentAccount'
+            | translate}}</span>
+        </ion-col>
+        <ion-col *ngIf="appName != 'Aqube'" [size]="'1'" class="text-center mt-1" (click)="dismiss(false)">
+          <ion-img [src]="imageList?.close" class="custKYCImg mt-2"></ion-img>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid class="p-3 d-flex center w-100" *ngIf="adhaarStatus">
+    <ion-col class="text-center " size="12" >
+      <ion-row class="custCenterAlign icon" >
+        <ion-icon [src]="imageList?.successKYCIcon" class="custImage"></ion-icon>
+      </ion-row>
+      <h1 class="custFontFamilyMuliBold muli-22pt custLineHight30 custColorBlack">
+        Sucessfull!
+      </h1>
+      <h1 class="custFontFamilyMuliRegular muli-20pt custLineHight30 custColorGreyish">
+        Your Adhaar registration is Successful
+      </h1>
+    </ion-col>
+  </ion-grid>
+  
+  <!-- <iframe  name= "eventsPage" [src]="nsdlUrlSani" width="100%" height="80%"></iframe> -->
+
+  <!-- <ion-row class="fixed-bottom" *ngIf="">
+    <ion-col [size]="'12'" class="pb-3 px-3">
+      <button (click)="close()" [disabled]="continue" class="btn w-100 text-center custBackgroundColorBrightCyan"><span
+          class="custColorWhite custFontFamilyMuliBold muli-16pt">{{'close' | translate}}</span></button>
+    </ion-col>
+  </ion-row> -->
+  <ion-row class="fixed-bottom" *ngIf="sucess">
+    <ion-col [size]="'6'" class="ion-no-padding" (click)="getSkip()">
+      <ion-button expand="block" class="text-capitalize custTryButton d-flex justify-content-center"
+        >
+        <span class="custFontFamilyMuliRegular text-center muli-14pt custColorBrightCyan" >{{'skipLable'
+          | translate}}</span>
+      </ion-button>
+    </ion-col>
+
+    <ion-col [size]="'6'" class="ion-no-padding" (click)="getDigilocker()">
+      <ion-button expand="block" class="text-capitalize text-center custLooksBtn" ><span
+          class="custColorWhite custFontFamilyMuliBold muli-16pt" >Retry</span></ion-button>
+    </ion-col>
+  </ion-row>
+</ion-content>
+<div class="custModalContainer p-10" *ngIf="skipFlag">
+  <div class="modal-content">
+    <ion-row class="text-center">
+      <p class="custFontFamilyMuliBold muli-16pt px-2">{{'aadharskip' | translate}}</p>
+    </ion-row>
+    <br>
+    <ion-row class=" ion-no-padding w-100">
+      <ion-col [size]="'6'" class="ion-no-padding" (click)="skipCancel()">
+        <ion-button expand="block" class="text-capitalize custTryButton d-flex justify-content-center">
+          <span class="custFontFamilyMuliRegular text-center muli-14pt custColorBrightCyan">{{'cancel' |
+            translate}}</span>
+        </ion-button>
+      </ion-col>
+
+      <ion-col [size]="'6'" class="ion-no-padding" (click)="yesSkip()">
+        <ion-button expand="block" class="text-capitalize text-center custLooksBtn"><span
+            class="custColorWhite custFontFamilyMuliBold muli-16pt">{{'yesskip' | translate}}</span></ion-button>
+      </ion-col>
+    </ion-row>
+  </div>
+</div>

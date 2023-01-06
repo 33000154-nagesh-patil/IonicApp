@@ -1,0 +1,55 @@
+<!-- <ion-header class="fixed-top">
+  <ion-toolbar class="custBackgroundDynamicColorWhite">
+    <ion-grid>
+      <ion-row>
+        <ion-col [size]="'1'" class="text-center mt-1" (click)="onCancelSIP()">
+          <ion-img [src]="imageList?.arrow" class="backArrow mt-2"></ion-img>
+        </ion-col>
+        <ion-col [size]="'9'">
+          <span
+            class="custFontFamilyMuliBold muli-16pt custLineHight40 custColorDark"
+            >{{ "allmutualfund" | translate }}</span
+          >
+        </ion-col>
+        <ion-col [size]="'2'" class="">
+          <ion-img class="custHelpIcon" [src]="imageList?.editIcon"></ion-img>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content class="contentBackground">
+<ion-row class="pt-5 mt-3">
+  <ion-col [size]="'12'">
+    <ion-row> 
+      <ion-col [size]="'6'">
+        <ion-row class="d-flex justify-content-center">
+          <ion-col [size]="'2'" class="pe-0">
+            <ion-img [src]="imageList?.filterIcon" class="custImgExpo mt-2"></ion-img>
+          </ion-col>
+          <ion-col [size]="'10'" class="ps-0">
+            <span class="custFontFamilyMuliBold muli-12pt custLineHight18 custColorDarkishBlue">{{'filter' | translate}}</span>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+      <ion-col [size]="'6'">
+        <ion-row class="d-flex justify-content-center">
+          <ion-col [size]="'10'" class="text-end pe-0 ps-3"><span class="custFontFamilyMuliBold muli-12pt custLineHight18 custColorDarkishBlue">{{'1YReturns' | translate}}</span></ion-col>
+          <ion-col [size]="'2'" class="text-end ps-2">
+            <ion-img [src]="imageList?.sortIcon" class="custImgExpo mt-2"></ion-img>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+  </ion-col>
+</ion-row>
+
+
+  <lib-allmutualfundcard [jsonData]="jsonData.Mfcard" [imageList]="imageList"></lib-allmutualfundcard>
+
+<lib-footer *ngIf="currentMode" [activeImg]="imageList?.activeTab" [selectedIndex]="'2'" [footerListData]="mfFooterData" [parentTab]="'Mutual Fund'"></lib-footer>
+</ion-content>
+
+ -->

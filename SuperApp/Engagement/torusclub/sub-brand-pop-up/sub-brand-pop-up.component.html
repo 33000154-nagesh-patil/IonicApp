@@ -1,0 +1,113 @@
+<div>
+<div *ngIf="getCardDetails.cardType=='jackPot' || getCardDetails.cardType=='voucher' || getCardDetails.cardType=='gift'">
+  <ion-card
+  [ngClass]="{'custOp3':slideValue == 100}" [ngClass]="getCardDetails.rewardBackgroundColor">
+  <ion-card-content>
+    <ion-row class="p-2">
+      <ion-col [size]="'8'">
+        <img
+          class="custFontFamilyMuliBold custColorBlack custImg"
+          [src]="getCardDetails.title"
+        />
+      </ion-col>
+      <ion-col [size]="'4'" class="text-end">
+        <img
+          class="custFontFamilyMuliBold custColorBlack brandImg"
+          [src]="getCardDetails.desImg"
+        />
+      </ion-col>
+    </ion-row>
+  </ion-card-content>
+</ion-card>
+<ion-row class="justify-content-center">
+  <ion-col size="5" class="custPos">
+    <ion-img src="/assets/icon/yellowTick.svg" class="custTick"></ion-img>
+  </ion-col>
+</ion-row>
+<ion-row class="text-center px-2" style="margin-top: -37px;">
+  <span class="custFontFamilyMuliSemiBold muli-22pt">
+{{redeem.title}} ₹{{redeem.prize}}
+  </span><span class="custFontFamilyMuliSemiBold muli-22pt"></span>
+</ion-row>
+<ion-row class="custcardCode" style="border: 2px dashed grey;">
+  <ion-col></ion-col>
+  <ion-col size="7" class="py-3">
+    <span class="custColorDark custFontFamilyMuliRegular muli-8pt">{{redeem.subtitle}}</span>
+    <span class="custColorDark d-block custFontFamilyMuliBold muli-16pt">{{redeem.code}}</span>
+  </ion-col>
+  <ion-col size="4" class="text-end py-3">
+    <button class="custFontFamilyMuliBold muli-14pt" style="background-color: transparent;padding-top: 10px;" (click)="(allData.notificationType)">
+    <ion-img src="/assets/icon/copyIcon.svg" class="custCopy"></ion-img>
+    </button>
+  </ion-col>
+</ion-row>
+<ion-list class="marginTop">
+  <ion-item *ngFor="let x of multipleQuestion">
+    <ion-row class="w-100 align-items-center" (click)="goToRedeem()">
+      <ion-col [size]="'1'" class="text-start">
+        <ion-img [src]="x.icon" class="ion-no-padding"></ion-img>
+      </ion-col>
+      <ion-col [size]="'9'" class="ps-3 py-3">
+        <span class="custFontFamilyMuliRegular muli-12pt custColorDark">{{x.question}}</span>
+      </ion-col>
+      <ion-col [size]="'2'" class="text-end">
+        <img [src]="imageList?.next">
+      </ion-col>
+    </ion-row>
+  </ion-item>
+</ion-list>
+<p class="custBack ion-no-margin"></p>
+
+<ion-row class="w-100 pt-3 px-3">
+  <ion-col [size]="'6'" class="ion-no-padding" (click)="onCancel()">
+    <ion-button expand="block" class="text-capitalize custTryButton d-flex justify-content-center">
+      <span class="custFontFamilyMuliRegular text-center muli-18pt custColorGreyish ">Explore More</span>
+    </ion-button>
+  </ion-col>
+
+  <ion-col [size]="'6'" class="ion-no-padding" (click)="onConfirmNo()">
+    <ion-button expand="block" class="text-capitalize text-center custLooksBtn"><span
+        class="custColorDark custFontFamilyMuliBold muli-18pt">Redeem Now</span></ion-button>
+  </ion-col>
+</ion-row>
+
+
+
+<ion-row class="justify-content-center pt-3">
+  <span class="custFontFamilyMuliRegular muli-12pt custColorGreyish">Expires in {{redeem.validity}}</span>
+</ion-row>
+</div>
+</div>
+
+
+
+<!--"'cashBack'" -->
+
+
+
+<div *ngIf="getCardDetails.cardType=='cashBack'">
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12" class="fixed-top mt-3">
+        <ion-img src="/assets/icon/yellowTick.svg" class="custTick"></ion-img>
+      </ion-col>
+    </ion-row>
+    <ion-row class="custMargin justify-content-center fixed-top">
+      <p class="custFontFamilyMuliSemiBold muli-22pt">
+        You won ₹{{getCardDetails.prize}}
+      </p>
+    </ion-row>
+    <ion-row class=" custMarginn justify-content-center fixed-top">
+      <p class="custFontFamilyMuliRegular muli-16pt">
+        Cashback credited your ICICI Bank
+      </p>
+    </ion-row>
+  <ion-row class="w-100 pb-3 px-3 fixed-bottom" >
+    <ion-col [size]="'12'" class="ion-no-padding" (click)="onCancel()">
+      <ion-button expand="block" class="text-capitalize custTryButton d-flex justify-content-center">
+        <span class="custFontFamilyMuliRegular text-center muli-18pt custColorGreyish ">Explore More</span>
+      </ion-button>
+    </ion-col>
+  </ion-row>
+  </ion-grid>
+</div>

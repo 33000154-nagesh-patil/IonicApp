@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="https://checkout.razorpay.com/v1/checkout.js" async></script>
+  <script src="//d3js.org/d3.v4.min.js" charset="utf-8" async></script>
+
+  <script src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js" async></script>
+  <meta charset="utf-8"/>
+
+  <title>HeyTorus</title>
+
+  <base href="/"/>
+
+  <meta name="color-scheme" content="light"/>
+  <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <!-- <meta name="viewport" content="width=500, initial-scale=1"> -->
+  <meta name="format-detection" content="telephone=no"/>
+  <meta name="msapplication-tap-highlight" content="no"/>
+  <!-- <meta name="x-frame-options" content="allowall" /> -->
+  <!-- <meta http="Content-Security-Policy" content="script-src 'self'"> -->
+  <!-- <meta http-equiv="Content-Security-Policy"  content="default-src 'self'; img-src https://*; child-src 'none';"> -->
+  <link rel="icon" type="image/PNG" href="assets/icon/group_100_torus.png"/>
+
+  <!-- add to homescreen for ios -->
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+  <!-- <link rel="manifest" href="manifest.webmanifest"> -->
+  <meta name="theme-color" content="#1976d2">
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@0.0.3/dist/confetti.browser.min.js" async></script>
+
+  <script  async>
+    var ipAddress;
+    var RTCPeerConnection = window.webkitRTCPeerConnection;
+    if(RTCPeerConnection)(function(){
+      var rtc = new RTCPeerConnection({iceServers:[]});
+        rtc.createDataChannel('', {reliable:false});
+        rtc.onicecandidate = function(evt){
+          if(evt.candidate) grepSDP(evt.candidate.address);
+        };
+        rtc.createOffer(function(offerDesc){
+          rtc.setLocalDescription(offerDesc);
+        }, function(e){ console.warn("offer failed", e); });
+
+        function grepSDP(sdp){
+          // var ip = /(192\.168\.(0|\d{0,3})\.(0|\d{0,3}))/i;
+          // sdp.split('\r\n').forEach(function(line) {
+          //   if(line){
+          //     ipAddress = line.match(ip);
+          //     console.log(ipAddress);
+          //     alert(ipAddress);
+          //   }
+          // });
+          localStorage.setItem('ipAddress', sdp);
+          console.log(sdp);
+        }
+    })();
+  </script>
+  <style>
+
+@media (max-width: 10000px) {
+
+
+
+body{
+
+
+
+  width: 500px !important;
+
+
+
+
+
+  margin-left: 30% !important;
+
+
+
+}
+
+
+
+}
+
+
+
+
+
+@media (max-width: 768px) {
+
+
+
+body{
+
+
+
+  width: 100% !important;
+
+
+
+
+
+  margin-left: 0% !important;
+
+
+
+}
+
+
+
+  /* start of medium tablet styles */
+
+
+
+}
+
+
+  </style>
+  <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src https://*; child-src 'none';"> -->
+  <!-- <meta http-equiv="Content-Security-Policy" content="default-src https://betadigi.dl6.in https://ribstgnew.icicibank.com https://infinity.icicibank.com http://10.78.31.62:9081"> -->
+  <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://*.razorpay.com data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *"> -->
+</head>
+
+<body>
+  <app-root></app-root>
+  <script type="text/javascript" src="https://app.digio.in/sdk/v10/digio.js" async></script>
+
+  <noscript>Please enable JavaScript to continue using this application.</noscript>
+</body>
+
+</html>

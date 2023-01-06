@@ -1,0 +1,83 @@
+[
+    {   
+        "id":"1",
+        "logo":"assets/health-page-logos/Group 20822.svg",
+        "title":"Glucose-Fasting",
+        "description":"Also known as Fasting Blood Sugar (FBS)",
+        "name":"By Metropolis Healthcare Ltd. • Pathology Test",
+        "price":"120.00",
+        "report":"20-40 hrs",
+        "testNo":"1"
+    },
+    {   
+        "id":"2",
+        "logo":"assets/health-page-logos/Group 20822.svg",
+        "title":"Urine",
+        "description":"Also known as Fasting Blood Sugar (FBS)",
+        "name":"By Core Diagnostics • Pathology Test",
+        "price":"120.00",
+        "report":"20-40 hrs",
+        "testNo":"1"
+    },
+    {   
+        "id":"3",
+        "logo":"assets/health-page-logos/Group 20822.svg",
+        "title":"palllav",
+        "description":"Also known as CBP",
+        "name":"By Thyrocare Technologies Ltd. • Pathology Test",
+        "price":"120.00",
+        "report":"20-40 hrs",
+        "testNo":"20"
+    },
+    {   
+        "id":"4",
+        "logo":"assets/health-page-logos/Group 20822.svg",
+        "title":"Glucose-Fasting",
+        "description":"Also known as Fasting Blood Sugar (FBS)",
+        "name":"By Metropolis Healthcare Ltd. • Pathology Test",
+        "price":"120.00",
+        "report":"20-40 hrs",
+        "testNo":"3"
+    },
+    {   
+        "id":"5",
+        "logo":"assets/health-page-logos/Group 20822.svg",
+        "title":"Glucose-Fasting",
+        "description":"Also known as Fasting Blood Sugar (FBS)",
+        "name":"By Metropolis Healthcare Ltd. • Pathology Test",
+        "price":"120.00",
+        "report":"20-40 hrs",
+        "testNo":"3"
+    },
+    
+{
+    "id":"6",
+    "logo":"assets/health-page-logos/Group 20822.svg",
+    "title":"Glucose-Fasting",
+    "description":"By Core Diagnostics • Pathology Test",
+    "name":"",
+    "price":"120.00",
+    "report":"20-40 hrs",
+    "testNo":"10"
+},
+{
+    "id":"7",
+    "logo":"assets/health-page-logos/Group 20822.svg",
+    "title":"Glucose-Fasting",
+    "description":"Also known as Electrocardiogram",
+    "name":"By Metropolis Healthcare Ltd. • Radiology Test",
+    "price":"120.00",
+    "report":"20-40 hrs",
+    "testNo":"1"
+},
+{
+    "id":"8",
+    "logo":"assets/health-page-logos/Group 20822.svg",
+    "title":"Glucose-Fasting",
+    "description":"",
+    "name":"By Metropolis Healthcare Ltd. • Radiology Test",
+    "price":"120.00",
+    "report":"20-40 hrs",
+    "testNo":"1"
+}
+]

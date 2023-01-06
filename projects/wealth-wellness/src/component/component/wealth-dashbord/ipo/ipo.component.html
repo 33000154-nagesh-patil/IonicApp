@@ -1,0 +1,555 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-grid>
+      <ion-row>
+        <ion-col [size]="'0.7'" class="text-center mt-2" (click)="goBack()">
+          <ion-img [src]="imageList?.arrow" class="custWithoutTextImg"></ion-img>
+        </ion-col>
+        <ion-col [size]="'8'">
+          <span class="custFontFamilyMuliBold muli-16pt custLineHight40 ml-10 custColorBlack px-3">IPOs</span>
+        </ion-col>
+      </ion-row>
+
+    </ion-grid>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-header [translucent]="true" class="custBackgroundColorWhite ">
+  <ion-toolbar class="custBackgroundDynamicColorWhite">
+    <ion-grid>
+      <ion-row>
+        <ion-col [size]="'1'" (click)="goBack()" id="goBack">
+          <ion-img [src]="imageList?.arrow" class=" custWithoutTextImg mt-3"></ion-img>
+        </ion-col>
+        <ion-col [size]="3" class="custFontFamilyMuliBold muli-16pt custColorDark my-3 text-nowrap">
+          IPOs
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-row class="segmentmargin mt-0">
+    <ion-col [size]="'12'" class="">
+      <ion-segment [(ngModel)]="segments" (ngModelChange)="handleOnClick()">
+        <ion-segment-button *ngFor="let x of segmentArray" [value]="x">
+          <ion-label class="custFontFamilyMuliSemiBold muli-12pt custLineHight18 custColorDarkShade text">{{x}}
+          </ion-label>
+        </ion-segment-button>
+      </ion-segment>
+    </ion-col>
+  </ion-row>
+
+
+
+
+
+
+  <div *ngIf="segments=='current'">
+    <ion-row>
+      <ion-col>
+        <ion-card>
+          <ion-card-content>
+            <ion-row>
+              <ion-col [size]="'2'">
+                <img [src]="imageList?.tatva" class="Check custFontFamilyMuliBold" />
+              </ion-col>
+              <ion-col [size]="'10'" class="custColorDark muli-14pt custFontFamilyMuliBold">
+                {{Name}}
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col [size]="'4'" class="custColorWarmGrey1 muli-12pt  ">Min. Shares</ion-col>
+              <ion-col [size]="'4'" class="custColorWarmGrey1 muli-12pt text-center ">Min. Invest</ion-col>
+              <ion-col [size]="'4'" class="custColorWarmGrey1 muli-12pt  text-end">Price Range</ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col [size]="'4'" class="custColorDark muli-14pt custFontFamilyMuliBold ">100</ion-col>
+              <ion-col [size]="'4'" class="custColorDark muli-14pt text-center custFontFamilyMuliBold ">15000</ion-col>
+              <ion-col [size]="'4'" class="custColorDark muli-14pt  text-end custFontFamilyMuliBold">15000-20000
+              </ion-col>
+            </ion-row>
+            <ion-row class="custBackgroundColorPaleGrey1 mt-3">
+              <ion-col [size]="'6'">
+                <span class="custColorDark">Open</span>
+                <span class="px-2 custColorParakeetGreen">Jul 14, 2021</span>
+              </ion-col>
+              <ion-col [size]="'6'">
+                <span class="custColorDark">Close</span>
+                <span class="px-2 custColorParakeetGreen">Jul 16, 2021</span>
+              </ion-col>
+            </ion-row>
+            <div *ngIf="tatvaCh">
+              <ion-row class="text-center mt-2">
+                <ion-col [size]="'3'"></ion-col>
+                <ion-col [size]="'6'">
+                  <button class="btn w-100 text-center custBackgroundColorBrightCyan custColorWhite muli-12pt"
+                    (click)="applyIpo()">Apply
+                    Now</button>
+                </ion-col>
+                <ion-col [size]="'3'"></ion-col>
+              </ion-row>
+            </div>
+            <ion-row>
+              <ion-col [size]="'5.5'"></ion-col>
+              <ion-col [size]="'1'">
+                <img [src]="imageList?.downArrow" class="Check custFontFamilyMuliBold" *ngIf="ShowLess"
+                  (click)="showLessContent()" />
+                <img [src]="imageList?.downArrow" class="Check custFontFamilyMuliBold rotateArrow" *ngIf="ShowMore" />
+              </ion-col>
+              <ion-col [size]="'5.5'"></ion-col>
+            </ion-row>
+
+
+
+          </ion-card-content>
+          <ion-footer class="custBackgroundColorPaleGrey1">
+            <ion-row>
+              <ion-col [size]="'2'" class="ipoicon">
+                <img [src]="imageList?.ipoIcon" class="Check px-2 ipoicon" />
+              </ion-col>
+              <ion-col [size]="'10'">
+                IPO is subscribed 6.22 times in retail category as of 04 Aug, 5:05 PM.
+              </ion-col>
+            </ion-row>
+          </ion-footer>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-card>
+          <ion-card-content>
+            <ion-row>
+              <ion-col [size]="'2'" class="border" (click)="CompanyInfo()">
+                <img [src]="imageList?.zomato" class="Check custFontFamilyMuliBold" />
+              </ion-col>
+              <ion-col [size]="'10'" class="custColorDark muli-14pt custFontFamilyMuliBold">
+
+                Zomato Limited IPO
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col [size]="'4'" class="custColorWarmGrey1 muli-12pt  ">Min. Shares</ion-col>
+              <ion-col [size]="'4'" class="custColorWarmGrey1 muli-12pt text-center ">Min. Invest</ion-col>
+              <ion-col [size]="'4'" class="custColorWarmGrey1 muli-12pt  text-end">Price Range</ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col [size]="'4'" class="custColorDark muli-14pt custFontFamilyMuliBold ">100</ion-col>
+              <ion-col [size]="'4'" class="custColorDark muli-14pt text-center custFontFamilyMuliBold ">15000</ion-col>
+              <ion-col [size]="'4'" class="custColorDark muli-14pt  text-end custFontFamilyMuliBold">15000-20000
+              </ion-col>
+            </ion-row>
+            <ion-row class="custBackgroundColorPaleGrey1 mt-3">
+              <ion-col [size]="'6'">
+                <span class="custColorDark">Open</span>
+                <span class="px-2 custColorParakeetGreen">Jul 14, 2021</span>
+              </ion-col>
+              <ion-col [size]="'6'">
+                <span class="custColorDark">Close</span>
+                <span class="px-2 custColorParakeetGreen">Jul 16, 2021</span>
+              </ion-col>
+            </ion-row>
+            <ion-row class="text-center mt-2">
+              <ion-col [size]="'3'"></ion-col>
+              <ion-col [size]="'6'">
+                <button class="btn w-100 text-center custBackgroundColorBrightCyan custColorWhite muli-12pt "
+                  (click)="applyIpo()">Apply
+                  Now</button>
+              </ion-col>
+              <ion-col [size]="'3'"></ion-col>
+            </ion-row>
+            <hr>
+            <ion-row>
+              <ion-col [size]="'4'" class="custColorWarmGrey1 muli-12pt  ">Min. Shares</ion-col>
+              <ion-col [size]="'4'" class="custColorWarmGrey1 muli-12pt text-center ">Min. Invest</ion-col>
+              <ion-col [size]="'4'" class="custColorWarmGrey1 muli-12pt  text-end">Price Range</ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col [size]="'4'" class="custColorDark muli-14pt custFontFamilyMuliBold ">100</ion-col>
+              <ion-col [size]="'4'" class="custColorDark muli-14pt text-center custFontFamilyMuliBold">15000</ion-col>
+              <ion-col [size]="'4'" class="custColorDark muli-14pt  text-end custFontFamilyMuliBold">15000-20000
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col [size]="'5.5'"></ion-col>
+              <ion-col [size]="'1'">
+                <img [src]="imageList?.downArrow" class="Check rotateArrow custFontFamilyMuliBold" />
+              </ion-col>
+              <ion-col [size]="'5.5'"></ion-col>
+            </ion-row>
+          </ion-card-content>
+          <ion-footer class="custBackgroundColorPaleGrey1">
+            <ion-row>
+              <ion-col [size]="'2'" class="ipoicon">
+                <img [src]="imageList?.ipoIcon" class="Check px-2 ipoicon" />
+              </ion-col>
+              <ion-col [size]="'10'">
+                IPO is subscribed 6.22 times in retail category as of 04 Aug, 5:05 PM.
+              </ion-col>
+            </ion-row>
+          </ion-footer>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+
+    <ion-row>
+      <ion-col>
+        <ion-card>
+          <ion-card-content>
+            <ion-row>
+              <ion-col [size]="'2'">
+                <img [src]="imageList?.Marklife" class="Check custFontFamilyMuliBold" />
+              </ion-col>
+              <ion-col [size]="'10'" class="custColorDark muli-14pt custFontFamilyMuliBold">
+                Glenmark Life Sciences
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col [size]="'4'" class="custColorWarmGrey1 muli-12pt  ">Min. Shares</ion-col>
+              <ion-col [size]="'4'" class="custColorWarmGrey1 muli-12pt text-center ">Min. Invest</ion-col>
+              <ion-col [size]="'4'" class="custColorWarmGrey1 muli-12pt  text-end">Price Range</ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col [size]="'4'" class="custColorDark muli-14pt custFontFamilyMuliBold ">100</ion-col>
+              <ion-col [size]="'4'" class="custColorDark muli-14pt text-center custFontFamilyMuliBold ">15000</ion-col>
+              <ion-col [size]="'4'" class="custColorDark muli-14pt  text-end custFontFamilyMuliBold">15000-20000
+              </ion-col>
+            </ion-row>
+            <ion-row class="custBackgroundColorPaleGrey1 mt-3">
+              <ion-col [size]="'6'">
+                <span class="custColorDark">Open</span>
+                <span class="px-2 custColorParakeetGreen">Jul 14, 2021</span>
+              </ion-col>
+              <ion-col [size]="'6'">
+                <span class="custColorDark">Close</span>
+                <span class="px-2 custColorParakeetGreen">Jul 16, 2021</span>
+              </ion-col>
+            </ion-row>
+            <ion-row class="text-center mt-2">
+              <ion-col [size]="'2'"></ion-col>
+              <ion-col [size]="'8'">
+                <button class="btn w-100 text-center custBackgroundColorBrightCyan custColorWhite muli-12pt ">Track
+                  Application Status</button>
+              </ion-col>
+              <ion-col [size]="'2'"></ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col [size]="'5.5'"></ion-col>
+              <ion-col [size]="'1'">
+                <img [src]="imageList?.downArrow" class="Check custFontFamilyMuliBold" />
+              </ion-col>
+              <ion-col [size]="'5.5'"></ion-col>
+            </ion-row>
+          </ion-card-content>
+          <ion-footer class="custBackgroundColorPaleGrey1">
+            <ion-row>
+              <ion-col [size]="'2'" class="ipoicon">
+                <img [src]="imageList?.ipoIcon" class="Check px-2 ipoicon" />
+              </ion-col>
+              <ion-col [size]="'10'">
+                IPO is subscribed 6.22 times in retail category as of 04 Aug, 5:05 PM.
+              </ion-col>
+            </ion-row>
+          </ion-footer>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </div>
+
+
+  <div *ngIf="segments=='upcoming'">
+
+    <ion-row>
+      <ion-col class="custColorDark muli-16pt custFontFamilyMuliBold px-4">
+        To Be Announced (01)
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-card>
+          <ion-card-content>
+            <ion-row>
+              <ion-col [size]="'2'">
+                <img [src]="imageList?.tatva" class="Check custFontFamilyMuliBold" />
+              </ion-col>
+              <ion-col [size]="'10'" class="custColorDark muli-14pt custFontFamilyMuliBold">
+                Tatva Chintan Pharma
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col [size]="'6'" class="custColorWarmGrey1 muli-12pt  ">(D)RHP</ion-col>
+              <ion-col [size]="'6'" class="custColorWarmGrey1 muli-12pt">About Company</ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col [size]="'6'" class="custColorText muli-14pt custFontFamilyMuliBold ">View</ion-col>
+              <ion-col [size]="'6'" class="custColorText muli-14pt  custFontFamilyMuliBold ">View</ion-col>
+            </ion-row>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="custColorDark muli-16pt custFontFamilyMuliBold px-4">
+        Announced (02)
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-card>
+          <ion-card-content>
+            <ion-row>
+              <ion-col [size]="'2'" class="border" (click)="CompanyInfo()">
+                <img [src]="imageList?.zomato" class="Check custFontFamilyMuliBold" />
+              </ion-col>
+              <ion-col [size]="'10'" class="custColorDark muli-14pt custFontFamilyMuliBold">
+                Zomato Limited IPO
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col [size]="'4'" class="custColorWarmGrey1 muli-12pt  ">Min. Shares</ion-col>
+              <ion-col [size]="'4'" class="custColorWarmGrey1 muli-12pt text-center ">Min. Invest</ion-col>
+              <ion-col [size]="'4'" class="custColorWarmGrey1 muli-12pt  text-end">Price Range</ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col [size]="'4'" class="custColorDark muli-14pt custFontFamilyMuliBold ">100</ion-col>
+              <ion-col [size]="'4'" class="custColorDark muli-14pt text-center custFontFamilyMuliBold ">15000</ion-col>
+              <ion-col [size]="'4'" class="custColorDark muli-14pt  text-end custFontFamilyMuliBold">15000-20000
+              </ion-col>
+            </ion-row>
+            <ion-row class="custBackgroundColorPaleGrey1 mt-3">
+              <ion-col [size]="'6'" class="ps-4">
+                <span class="custColorDark">Open</span>
+                <span class="px-2 custColorParakeetGreen">Jul 14, 2021</span>
+              </ion-col>
+              <ion-col [size]="'6'">
+                <span class="custColorDark">Close</span>
+                <span class="px-2 custColorParakeetGreen">Jul 16, 2021</span>
+              </ion-col>
+            </ion-row>
+            <ion-row class="text-center mt-2">
+              <ion-col [size]="'3'"></ion-col>
+              <ion-col [size]="'6'">
+                <button class="btn w-100 text-center custBackgroundColorBrightCyan custColorWhite muli-12pt "
+                  (click)="applyIpo()">Apply
+                  Now</button>
+              </ion-col>
+              <ion-col [size]="'3'"></ion-col>
+            </ion-row>
+            <hr>
+            <ion-row>
+              <ion-col [size]="'4'" class="custColorWarmGrey1 muli-12pt  ">To Be Listed On</ion-col>
+              <ion-col [size]="'4'" class="custColorWarmGrey1 muli-12pt text-center ">Issue Size</ion-col>
+              <ion-col [size]="'4'" class="custColorWarmGrey1 muli-12pt  text-end">Lot Size</ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col [size]="'4'" class="custColorDark muli-14pt custFontFamilyMuliBold ">01 May 2021</ion-col>
+              <ion-col [size]="'4'" class="custColorDark muli-14pt text-center custFontFamilyMuliBold">₹1.5Cr Shares
+              </ion-col>
+              <ion-col [size]="'4'" class="custColorDark muli-14pt  text-end custFontFamilyMuliBold">90</ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col [size]="'4'" class="custColorWarmGrey1 muli-12pt  ">Floor Price</ion-col>
+              <ion-col [size]="'4'" class="custColorWarmGrey1 muli-12pt text-center ">Cap Price</ion-col>
+              <ion-col [size]="'4'" class="custColorWarmGrey1 muli-12pt  text-end">Issue Type</ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col [size]="'4'" class="custColorDark muli-14pt custFontFamilyMuliBold ">100</ion-col>
+              <ion-col [size]="'4'" class="custColorDark muli-14pt text-center custFontFamilyMuliBold">15000</ion-col>
+              <ion-col [size]="'4'" class="custColorDark muli-14pt  text-end custFontFamilyMuliBold">15000-20000
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col [size]="'4'" class="custColorWarmGrey1 muli-12pt  ">Multiple Price</ion-col>
+              <ion-col [size]="'4'" class="custColorWarmGrey1 muli-12pt text-center ">Max Appl. Amt.</ion-col>
+              <ion-col [size]="'4'" class="custColorWarmGrey1 muli-12pt  text-end">Face Value</ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col [size]="'4'" class="custColorDark muli-14pt custFontFamilyMuliBold ">₹1</ion-col>
+              <ion-col [size]="'4'" class="custColorDark muli-14pt text-center custFontFamilyMuliBold">₹500</ion-col>
+              <ion-col [size]="'4'" class="custColorDark muli-14pt  text-end custFontFamilyMuliBold">Book Building
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col [size]="'4'" class="custColorWarmGrey1 muli-12pt  ">Application Timing</ion-col>
+              <ion-col [size]="'4'" class="custColorWarmGrey1 muli-12pt text-center ">(D)RHP</ion-col>
+              <ion-col [size]="'4'" class="custColorWarmGrey1 muli-12pt  text-end">(D)RHP</ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col [size]="'4'" class="custColorDark muli-14pt custFontFamilyMuliBold ">10am - 5pm</ion-col>
+              <ion-col [size]="'4'" class="custColorDark muli-14pt text-center custFontFamilyMuliBold">View</ion-col>
+              <ion-col [size]="'4'" class="custColorDark muli-14pt  text-end custFontFamilyMuliBold">View</ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col [size]="'5.5'"></ion-col>
+              <ion-col [size]="'1'">
+                <img [src]="imageList?.downArrow" class="Check rotateArrow custFontFamilyMuliBold" />
+              </ion-col>
+              <ion-col [size]="'5.5'"></ion-col>
+            </ion-row>
+          </ion-card-content>
+          <ion-footer class="custBackgroundColorPaleGrey1">
+            <ion-row>
+              <ion-col [size]="'2'" class="ipoicon">
+                <img [src]="imageList?.ipoIcon" class="Check px-2 ipoicon" />
+              </ion-col>
+              <ion-col [size]="'10'">
+                IPO is subscribed 6.22 times in retail category as of 04 Aug, 5:05 PM.
+              </ion-col>
+            </ion-row>
+          </ion-footer>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </div>
+
+
+  <div *ngIf="segments=='closed'">
+    <ion-row>
+      <ion-col>
+        <ion-card>
+          <ion-card-content>
+            <ion-row>
+              <ion-col [size]="'2'">
+                <img [src]="imageList?.tatva" class="Check custFontFamilyMuliBold" />
+              </ion-col>
+              <ion-col [size]="'10'" class="custColorDark muli-14pt custFontFamilyMuliBold">
+                Tatva Chintan Pharma
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col [size]="'4'" class="custColorWarmGrey1 muli-12pt  ">Min. Shares</ion-col>
+              <ion-col [size]="'4'" class="custColorWarmGrey1 muli-12pt text-center ">Min. Invest</ion-col>
+              <ion-col [size]="'4'" class="custColorWarmGrey1 muli-12pt  text-end">Price Range</ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col [size]="'4'" class="custColorDark muli-14pt custFontFamilyMuliBold ">100</ion-col>
+              <ion-col [size]="'4'" class="custColorDark muli-14pt text-center custFontFamilyMuliBold ">15000</ion-col>
+              <ion-col [size]="'4'" class="custColorDark muli-14pt  text-end custFontFamilyMuliBold">15000-20000
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col [size]="'5.5'"></ion-col>
+              <ion-col [size]="'1'">
+                <img [src]="imageList?.downArrow" class="Check custFontFamilyMuliBold" />
+              </ion-col>
+              <ion-col [size]="'5.5'"></ion-col>
+            </ion-row>
+          </ion-card-content>
+          <ion-footer class="custBackgroundColorPaleGrey1">
+            <ion-row>
+              <ion-col [size]="'2'" class="ipoicon">
+                <img [src]="imageList?.ipoIcon" class="Check px-2 ipoicon" />
+              </ion-col>
+              <ion-col [size]="'10'">
+                IPO is subscribed 6.22 times in retail category as of 04 Aug, 5:05 PM.
+              </ion-col>
+            </ion-row>
+          </ion-footer>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-card>
+          <ion-card-content>
+            <ion-row>
+              <ion-col [size]="'2'" class="border" (click)="CompanyInfo()">
+                <img [src]="imageList?.zomato" class="Check custFontFamilyMuliBold" />
+              </ion-col>
+              <ion-col [size]="'10'" class="custColorDark muli-14pt custFontFamilyMuliBold">
+
+                Zomato Limited IPO
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col [size]="'4'" class="custColorWarmGrey1 muli-12pt  ">Min. Shares</ion-col>
+              <ion-col [size]="'4'" class="custColorWarmGrey1 muli-12pt text-center ">Min. Invest</ion-col>
+              <ion-col [size]="'4'" class="custColorWarmGrey1 muli-12pt  text-end">Price Range</ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col [size]="'4'" class="custColorDark muli-14pt custFontFamilyMuliBold ">100</ion-col>
+              <ion-col [size]="'4'" class="custColorDark muli-14pt text-center custFontFamilyMuliBold ">15000</ion-col>
+              <ion-col [size]="'4'" class="custColorDark muli-14pt  text-end custFontFamilyMuliBold">15000-20000
+              </ion-col>
+            </ion-row>
+            <ion-row class="custBackgroundColorPaleGrey1 mt-3">
+              <ion-col [size]="'6'">
+                <span class="custColorDark">Open</span>
+                <span class="px-2 custColorParakeetGreen">Jul 14, 2021</span>
+              </ion-col>
+              <ion-col [size]="'6'">
+                <span class="custColorDark">Close</span>
+                <span class="px-2 custColorParakeetGreen">Jul 16, 2021</span>
+              </ion-col>
+            </ion-row>
+            <ion-row class="text-center mt-2">
+              <ion-col [size]="'3'"></ion-col>
+              <ion-col [size]="'6'">
+                <button class="btn w-100 text-center custBackgroundColorBrightCyan custColorWhite muli-12pt "
+                  (click)="applyIpo()">Apply
+                  Now</button>
+              </ion-col>
+              <ion-col [size]="'3'"></ion-col>
+            </ion-row>
+            <hr>
+            <ion-row>
+              <ion-col [size]="'4'" class="custColorWarmGrey1 muli-12pt  ">Min. Shares</ion-col>
+              <ion-col [size]="'4'" class="custColorWarmGrey1 muli-12pt text-center ">Min. Invest</ion-col>
+              <ion-col [size]="'4'" class="custColorWarmGrey1 muli-12pt  text-end">Price Range</ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col [size]="'4'" class="custColorDark muli-14pt custFontFamilyMuliBold ">100</ion-col>
+              <ion-col [size]="'4'" class="custColorDark muli-14pt text-center custFontFamilyMuliBold">15000</ion-col>
+              <ion-col [size]="'4'" class="custColorDark muli-14pt  text-end custFontFamilyMuliBold">15000-20000
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col [size]="'5.5'"></ion-col>
+              <ion-col [size]="'1'">
+                <img [src]="imageList?.downArrow" class="Check rotateArrow custFontFamilyMuliBold" />
+              </ion-col>
+              <ion-col [size]="'5.5'"></ion-col>
+            </ion-row>
+          </ion-card-content>
+          <ion-footer class="custBackgroundColorPaleGrey1">
+            <ion-row>
+              <ion-col [size]="'2'" class="ipoicon">
+                <img [src]="imageList?.ipoIcon" class="Check px-2 ipoicon" />
+              </ion-col>
+              <ion-col [size]="'10'">
+                IPO is subscribed 6.22 times in retail category as of 04 Aug, 5:05 PM.
+              </ion-col>
+            </ion-row>
+          </ion-footer>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </div>
+</ion-content>
+
+
+
+
+
+
+<div class="custModalContainer p-10" *ngIf="AboutCompany">
+  <div id="showModalSMGSucces" class="modal-content">
+    <ion-row>
+      <ion-col class="custColorText muli-14pt custFontFamilyMuliBold custLineHight15">
+        About Company
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="custColorInfo muli-10pt custColorWarmGrey1 custLineHight18">
+        Zomato is an Indian multinational restaurant aggregator and food delivery company founded by Pankaj Chaddah and
+        Deepinder Goyal in 2008. Zomato provides information, menus and user-reviews of restaurants as well as food
+        delivery options from partner restaurants in select cities
+      </ion-col>
+    </ion-row>
+  </div>
+</div>

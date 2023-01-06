@@ -1,0 +1,7 @@
+<ion-row>
+    <div *ngFor="let item of header" [ngClass]="item.uxClass">
+        <app-icons (click)="getHeaderValue(item)" [iconDetail]="item" *ngIf="item.icon"></app-icons>
+        <app-label [labelDetail]="item" *ngIf="item.title"></app-label>
+        <input *ngIf="item.key=='input'" [placeholder]="item.des" [ngStyle]="item.cssx">
+    </div>
+</ion-row>

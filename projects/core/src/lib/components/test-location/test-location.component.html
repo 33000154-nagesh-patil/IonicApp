@@ -1,0 +1,121 @@
+<div class="custModalContainer ">
+  <div id="showModalSMGSucces" class="modal-content">
+    <ion-row>
+      <ion-col [size]="'6'" class="custColorDark pt-3 muli-12pt custFontFamilyMuliBold">
+        Choose your location
+      </ion-col>
+
+      <ion-col [size]="'6'" class="custColorDark pt-3 muli-12pt custFontFamilyMuliBold">
+        Use Current Location
+      </ion-col>
+
+
+      <!-- <ion-col [size]="'12'">
+        <mat-form-field  class="example-full-width w-100">
+          <input matInput
+            class="custInputWidth custFontFamilyMuliRegular muli-14pt custLineHight24 custColorGreyish "
+            [placeholder]="'enterPIN'  | translate">
+          <button mat-button matSuffix mat- -button class="custBackgroundColorWhite custColorGreyish mb-4"
+          (click)="changeInputType()">Submit
+        
+         </button>  -->
+
+        <!-- </mat-form-field> --> 
+
+        <!-- *ngIf="pinTrue" -->
+        <ion-col [size]="'12'">
+          <mat-form-field appearance="outline" class="example-full-width w-100">
+            <input matInput class="custInputWidth custFontFamilyMuliRegular muli-14pt custLineHight24 custColorGreyish" value={{pinCode}}   [placeholder]="'enter pin code'" 
+            
+            >
+            <button mat-button matSuffix  mat-icon-button class="custBackgroundColorWhite custColorDark b-1" [disabled]="pinTrue" (click)="handleBack()">Submit
+              <!-- <ion-icon [name]="!currentType?'eye-outline':'eye-off-outline'"></ion-icon> -->
+            </button>
+
+          </mat-form-field>
+      </ion-col>
+    </ion-row>
+
+
+
+
+    <ion-row class="container">
+      <ion-col [size]="11"  *ngFor="let items of data">
+        <ion-card class="custBackgroundColorWhite">
+          <ion-card-content class="custPding coloredCard card cardItem">
+
+
+            <!-- <ion-grid class="custBackgroundColorWhite px-2"> -->
+              <ion-row>
+
+                <ion-col [size]="'6'" class="custColorDark pt-3 muli-12pt custFontFamilyMuliBold">
+                  {{items.addressType}}
+                </ion-col>
+
+                <ion-col [size]="'6'" class="text-end">
+                  <mat-radio-group name="1">
+                    <mat-radio-button name="1" value="1" (click)="handlePincode(items)"
+                      class="custFontFamilyMuliRegular muli-12pt custColorDarkishBlue custLineHight18">
+                    </mat-radio-button>
+                  </mat-radio-group>
+                </ion-col>
+              </ion-row>
+
+
+              <ion-row>
+                <!-- <ion-col [size]="'6'" class="pt-2">
+                  <span class="custFontFamilyMuliRegular muli-10pt custLineHight15 custColorGreyish">Name</span>
+                  <span
+                    class="custFontFamilyRubikRegular d-block muli-12pt custLineHight18 custColorDark">{{items.name}}</span>
+                </ion-col> -->
+
+
+                <ion-col [size]="'9'" >
+                  <span class="custFontFamilyMuliRegular muli-10pt custLineHight20 custColorGreyish">Address
+                  </span>
+                  <span class="custFontFamilyRubikRegular muli-12pt custLineHight18 custColorDark ">
+                    {{items.addressType}} 
+                  </span>
+                  <span class="custFontFamilyRubikRegular muli-12pt custLineHight18 custColorDark ">
+                    {{items.addressLine1}} 
+                  </span>
+                  <span class="custFontFamilyRubikRegular muli-12pt custLineHight18 custColorDark ">
+                    {{items.addressLine2}} 
+                  </span>
+                  <span class="custFontFamilyRubikRegular muli-12pt custLineHight18 custColorDark ">
+                    {{items.addressLine3}} 
+                  </span>
+                  <span class="custFontFamilyRubikRegular muli-12pt custLineHight18 custColorDark ">
+                    {{items.city}} 
+                  </span>
+                  <span class="custFontFamilyRubikRegular muli-12pt custLineHight18 custColorDark ">
+                    {{items.pincode}} 
+                  </span>
+                  <span class="custFontFamilyRubikRegular muli-12pt custLineHight18 custColorDark ">
+                    {{items.state}} 
+                  </span>
+                  <span class="custFontFamilyRubikRegular muli-12pt custLineHight18 custColorDark ">
+                    {{items.country}} 
+                  </span>
+
+                </ion-col>
+
+                <!-- <ion-row>
+                  <ion-col [size]="'12'" class="text-center pt-2">
+                    <span class="custFontFamilyMuliRegular muli-10pt custLineHight15 custColorGreyish">Phone
+                      Number</span>
+                    <span
+                      class="custFontFamilyRubikRegular d-block muli-12pt custLineHight18 custColorDark">{{items.phoneNumber}}</span>
+                  </ion-col>
+                </ion-row> -->
+
+              </ion-row>
+            <!-- </ion-grid> -->
+
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+  </div>
+</div>

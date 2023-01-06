@@ -1,0 +1,76 @@
+.custArrorSize{
+    height: 16px;
+    width: 13px;
+  }
+  .custCopy{
+    height: 14px;
+  
+  }
+  .success{
+    position: absolute;
+   top: 50%;
+    font-size: 12px;
+  }
+  .custImgSucc{
+    height: 16px;
+    
+}
+
+  .custpadding{
+    padding: 10px 10px 0 10px;
+  }
+  ::ng-deep .mat-expansion-panel-body {
+    padding: 0 16px 16px !important;
+  }
+  mat-expansion-panel-header{
+     padding: 0 16px !important;
+   }
+  .bottomcontent{
+    // outline: 25px solid #E9EBF0;
+    // background-color: #E9EBF0;
+    // margin-bottom: -20px;
+    // margin-top: 20px;
+    outline: 0px solid #E9EBF0;
+    background-color: #E9EBF0;
+    margin-bottom: -18px;
+    margin-left: -24px;
+    margin-right: -24px;
+    display: flex;
+    vertical-align: middle;
+   padding-left: 16px;
+    padding-top: 12px;
+    height: 41px;
+    border-radius: 0px 0px 4px 4px;
+}
+.custAdd{
+ margin-bottom: 0px;  
+}
+.custHollow{
+  width: 20px;
+  height: 20px;
+  padding-top: 3px;
+}
+
+.custG{
+  height: 40px;
+  width: 60px;
+  transform: rotate(90deg);
+  position: relative;
+  top: 12.5px;
+  left: -26px;
+}
+
+.custMarg{
+  margin-top: 27px;
+}
+
+.custDoneMargin{
+  margin-top: 45px;
+}
+.OrderPadding{
+  margin-bottom: 50px;
+}
+.OrderPaddingCol{
+  margin-bottom: 100px;
+  
+}

@@ -1,0 +1,31 @@
+{
+    "details": [
+        {
+            "x": "Bank Name:",
+            " y": "HDFC Bank"
+        },
+        {
+            "x": "Account No: ",
+            " y": "00600340067574"
+        },
+        {
+            " x": "Account Type:",
+            " y": "Current Account"
+        },
+        {
+            " x": "IFSC Code:",
+            " y": "HDFC000060"
+        },
+        {
+            "x": "Name:",
+            " y": "Manjari"
+        }
+    ],
+    "detailsIcon":[
+        {
+            "group": "assets/icon/group.svg",
+            "logo": "assets/icon/logoo.png",
+            "bankIcon": "assets/icon/bank.svg"
+        }
+    ]
+}

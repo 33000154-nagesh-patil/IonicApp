@@ -1,0 +1,68 @@
+{
+    "heading": [
+        {
+            "heading": "Track",
+            "box": true,
+            "discription": "Track your orders"
+        }
+    ],
+    
+    "card": [
+        {
+            "row1": {
+                "icon": "assets/Images/Thyrocare.png",
+                "title": "Glucose - Fasting",
+                "subTitle":"Also known as Fasting Blood Sugar",
+                "description": "By Metropolis Healthcare Ltd. Pathology",
+                "action": "assets/icon/leftArrowIcon.svg"
+            },
+            "row2": {
+                "Price": "Rs.240",
+                "E-reports By": "16 Mar 2022",
+                "Status": "Pending"
+            }
+        },
+        {
+            "row1": {
+                "icon": "assets/Images/Thyrocare.png",
+                "title": "Glucose - Fasting",
+                "subTitle":"Also known as Fasting Blood Sugar",
+                "description": "By Metropolis Healthcare Ltd. Pathology",
+                "action": "assets/icon/leftArrowIcon.svg"
+            },
+            "row2": {
+                "Price": "Rs.120",
+                "E-reports By": "16 Mar 2022",
+                "Status": "Completed"
+            }
+        },
+        {
+            "row1": {
+                "icon": "assets/Images/Thyrocare.png",
+                "title": "Glucose - Fasting",
+                "subTitle":"Also known as Fasting Blood Sugar",
+                "description": "By Metropolis Healthcare Ltd. Pathology",
+                "action": "assets/icon/leftArrowIcon.svg"
+            },
+            "row2": {
+                "Price": "Rs.200",
+                "E-reports By": "19 Mar 2022",
+                "Status": "Completed"
+            }
+        },
+        {
+            "row1": {
+                "icon": "assets/Images/Thyrocare.png",
+                "title": "Glucose - Fasting",
+                "subTitle":"Also known as Fasting Blood Sugar",
+                "description": "By Metropolis Healthcare Ltd. Pathology",
+                "action": "assets/icon/leftArrowIcon.svg"
+            },
+            "row2": {
+                "Price": "Rs.100",
+                "E-reports By": "18 Mar 2022",
+                "Status": "Pending"
+            }
+        }
+    ]
+}

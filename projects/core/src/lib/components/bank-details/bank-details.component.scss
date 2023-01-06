@@ -1,0 +1,89 @@
+.custKYCImg{
+    height: 16px;
+    width: 13px;
+}
+
+.custScan{
+    height: 18px;
+    width: 18px;
+}
+.custMargin{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.custLock{
+    height: 12px;
+    width: 16px;
+}
+
+.custSuccessIcon{
+    height: 12px;
+    width: 12px;
+}
+
+.custPAnIcon{
+    height: 40px;
+    width: 40px;
+}
+.custMargin5{
+    margin-left: 5px;
+}
+.custKYCImg{
+    height: 16px;
+    width: 13px;
+}
+
+.banckIcon{
+    height: 38px;
+    width: 38px;
+}
+.custVerification1{
+    height: 39px;
+    width: 36px;
+}
+.custVerification2{
+    height: 19px;
+    width: 80px;
+}
+.custVerification3{
+    height: 38px;
+    width: 35px;
+}
+
+.custGridCenter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.custImgMargin{
+    margin-left: 25%;
+    margin-top: 7%;
+}
+.custRow{
+    margin-top: -30%;
+}
+:host ::ng-deep .mat-radio-outer-circle{
+    border-color: var(--custDarkishBlue) !important ;
+  }
+  :host ::ng-deep .mat-radio-inner-circle{
+    background-color: var(--custBrightCyan) !important ;
+  }
+
+.paddingRadio{
+  padding-right: 5px;
+}
+
+.custMarTop{
+  margin-top: 24px;
+}
+::ng-deep .mat-form-field-infix {
+    border-top: 3px solid transparent;
+}
+.fontStyle{
+    font-weight: bold;
+}
+.ifsc{
+    position: relative;
+    bottom: 5px;
+}

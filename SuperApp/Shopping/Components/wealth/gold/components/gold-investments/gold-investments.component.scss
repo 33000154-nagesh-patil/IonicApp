@@ -1,0 +1,69 @@
+.custGrid{
+    margin: 0 -24px -16px !important;
+    --margin: 0 -24px -16px !important;
+    
+}
+
+.pdingleft {
+    padding-left: 17px;
+}
+
+.copltmargin{
+    margin-top: -50px;
+} 
+
+.copldtmargin{
+    margin-top: -40px;
+}
+
+h1{
+    border-bottom: 4px  solid darkblue;
+}
+
+.custMatForm {
+    width: 156px;
+    height: 56px;
+}
+
+.container {
+  
+    margin: 15px;
+    overflow:auto;
+    position: relative;
+    right: 15px;
+    width: 100%;
+  }
+
+:host ::ng-deep .mat-select-arrow {
+    opacity: 0;
+}
+.mat-form-field-appearance-outline .mat-form-field-wrapper {
+    margin: 0;
+ }
+.custArrorSize{
+    height: 16px;
+    width: 13px;
+}
+
+.inputPdig {
+    padding-left: 17px;
+}
+
+.inputPdigg {
+    padding-right: 17px;
+}
+
+.custColorReddish {
+    color: #D23D50;
+}
+
+.custHeight {
+    height: 400px;
+}
+
+.containerMain {
+    width: 100%; 
+    overflow-x: auto; 
+    overflow-y: hidden;
+}
+

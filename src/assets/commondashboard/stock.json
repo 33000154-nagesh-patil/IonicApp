@@ -1,0 +1,91 @@
+{
+
+	"": {
+		"heading": "Detail",
+		"discription": "Discover for Investments",
+		"Product": "ITC",
+		"action1": "Sell",
+		"action2": "Buy",
+		"name": "TATA STEEL",
+		"price": "270",
+		"Chart": {
+			"row1": [{
+				"Nifty 50": "17,635.70"
+			}],
+			"graph": [{
+					"nav": 20
+				},
+				{
+					"nav": 10
+				},
+				{
+					"nav": 60
+				},
+				{
+					"nav": 25
+				},
+				{
+					"nav": 54
+				},
+				{
+					"nav": 20
+				},
+				{
+					"nav": 30
+				}
+			]
+		},
+		"Cards": {
+			"heading": "Basic Information",
+			"description": "",
+			"sub_heading": "TATA STEEL",
+			"image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYfuXve65rbaj8VdLppNHD8a-dyraDH9W0lA&usqp=CAU",
+			"row": [{
+					"Current Price": "Rs.270",
+					"Current percenteg": "20%"
+				},
+				{
+					"open": "Rs.270.00",
+					"High": "Rs.275.00"
+				},
+				{
+					"Low": "Rs.265.00",
+					"Return Gread": "NA"
+				},
+				{
+					"Pre Close": "Rs.260.00",
+					"Lower-circut": "Rs.281.65"
+				},
+				{
+					"Upper-circut": "Rs.290.00",
+					"52-weeke": "Low-High"
+				}
+			]
+		},
+		"step": [{
+			"heading": "News",
+			"data": [{
+					"Icon": "",
+					"Steps": "1 Day ago 30:04:09",
+					"Disc": "the Download of corporate actions data is done after close"
+				},
+				{
+					"Icon": "",
+					"Steps": "1 Day ago 30:04:09",
+					"Disc": "Closerse Ex.Dates etc. for the week is downloads on fridays"
+				},
+				{
+					"Icon": "",
+					"Steps": "1 Day ago 30:04:09",
+					"Disc": "HeyTorus submits transaction to mutual fund company"
+				},
+				{
+					"Icon": "",
+					"Steps": "1 Day ago 30:04:09",
+					"Disc": "the data will not be updateed on that PC. Further . they are advised"
+				}
+			]
+		}]
+	}
+
+}

@@ -1,0 +1,9 @@
+<svg id="torusClubIcon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Group_23890" data-name="Group 23890" transform="translate(-383 -2441)">
+    <rect id="Rectangle_9620" data-name="Rectangle 9620" width="24" height="24" transform="translate(383 2441)" fill="#fff"/>
+    <g id="Group_23888" data-name="Group 23888" transform="translate(385 2445)">
+      <path id="Union_1_-_Outline" data-name="Union 1 - Outline" d="M4.633-.75h8.615a.652.652,0,0,1,.477.209l4.725,5.07a.681.681,0,0,1-.015.94L9.4,14.561a.649.649,0,0,1-.924,0L-.554,5.469a.681.681,0,0,1-.015-.94L4.157-.541A.652.652,0,0,1,4.633-.75ZM12.966.592H4.916L.83,4.976l8.111,8.165,8.11-8.165Z" transform="translate(0.75 0.75)" fill="#44c8f5"/>
+      <path id="Union_1" data-name="Union 1" d="M2.5,7.62a.2.2,0,0,1-.138-.214l.268-2.578-.573.284a.181.181,0,0,1-.193-.02.206.206,0,0,1-.074-.19l.469-3.29H.189A.2.2,0,0,1,0,1.413V.2A.2.2,0,0,1,.189,0H6.18a.2.2,0,0,1,.189.2V1.413a.194.194,0,0,1-.189.2h-2.2L3.676,3.159l.646-.231a.184.184,0,0,1,.2.055.207.207,0,0,1,.033.215L2.721,7.51a.189.189,0,0,1-.172.117A.182.182,0,0,1,2.5,7.62Z" transform="translate(6.506 2.782)" fill="#039"/>
+    </g>
+  </g>
+</svg>

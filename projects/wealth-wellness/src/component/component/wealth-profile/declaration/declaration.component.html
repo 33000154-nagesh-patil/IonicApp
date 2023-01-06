@@ -1,0 +1,125 @@
+<ion-content class="contentBackground">
+  <ion-header>
+    <ion-toolbar>
+      <ion-grid>
+        <ion-row>
+          <ion-col [size]="'0.7'" class="text-center mt-2" (click)="back()">
+            <ion-img [src]="imageList?.arrow" class="custWithoutTextImg"></ion-img>
+          </ion-col>
+          <ion-col [size]="'8'">
+            <span class="custFontFamilyMuliBold muli-16pt custLineHight40 ml-10 custColorBlack">Declaration</span>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-row class="ps-3 mt-3">
+    <ion-col class="custColorDark muli-16pt custFontFamilyMuliBold custLineHight18">
+      Income Range
+    </ion-col>
+  </ion-row>
+
+
+  <ion-row class="ps-3 ">
+    <mat-radio-group>
+      <!-- <ion-col [size]="'6'"> -->
+      <ion-row>
+        <ion-col [size]="'6'">
+          <mat-radio-button value="1" class="custFontFamilyMuliRegular muli-14pt custLineHight18 custColorDark  px-1"
+            (click)="stepperBracket()">0-5L</mat-radio-button>
+        </ion-col>
+        <ion-col [size]="'6'">
+          <mat-radio-button value="2"
+            class="custFontFamilyMuliRegular muli-14pt custLineHight18 custColorDark  text-end  px-1"
+            (click)="stepperBracket()">5-10L</mat-radio-button>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col [size]="'6'">
+          <mat-radio-button value="3"
+            class="custFontFamilyMuliRegular muli-14pt custLineHight18 custColorDark  text-end  px-1"
+            (click)="stepperBracket()">10-25L</mat-radio-button>
+        </ion-col>
+        <ion-col [size]="'6'">
+          <mat-radio-button value="4"
+            class="custFontFamilyMuliRegular muli-14pt custLineHight18 custColorDark paddingRadio text-end  px-1"
+            (click)="stepperBracket()">25L & above</mat-radio-button>
+        </ion-col>
+      </ion-row>
+      <!-- </ion-col> -->
+    </mat-radio-group>
+  </ion-row>
+
+  <ion-row class="mt-3 ps-3">
+    <ion-col [size]="'2'" class="custColorDark muli-14pt custFontFamilyMuliBold custLineHight18 iconPadding">
+      FATCA
+      <!-- <span class="iconPadding"><ion-icon name="information-circle-outline" class="infoColor mt-1 iconPadding"></ion-icon></span> -->
+    </ion-col>
+    <ion-col [size]="'1'">
+      <ion-icon name="information-circle-outline" class="infoColor mt-0 px-0 iconPadding"></ion-icon>
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="ps-3">
+    <ion-col class="custColorDark muli-14pt custFontFamilyMuliBold custLineHight18">
+      Residence for Tax purpose outside India
+    </ion-col>
+  </ion-row>
+
+
+
+  <ion-row class="ps-2 mt-1">
+    <mat-radio-group>
+      <ion-row>
+        <ion-col [size]="'6'">
+          <mat-radio-button value="5"
+            class="custFontFamilyMuliRegular muli-16pt custLineHight18 custColorWarmGrey1 paddingRadio text-end custFontFamilyMuliRegular px-1"
+            (click)="stepperBracket()">Yes</mat-radio-button>
+        </ion-col>
+        <ion-col [size]="'6'" class="text-end">
+          <mat-radio-button value="6"
+            class="custFontFamilyMuliRegular muli-16pt custLineHight18 custColorWarmGrey1 paddingRadio text-end custFontFamilyMuliRegular px-1"
+            (click)="stepperBracket()">No</mat-radio-button>
+        </ion-col>
+      </ion-row>
+    </mat-radio-group>
+  </ion-row>
+
+
+
+  <ion-row class="ps-3 mt-3">
+    <ion-col class="custColorDark muli-16pt custFontFamilyMuliBold custLineHight18">
+      Political Connection
+    </ion-col>
+  </ion-row>
+
+
+
+  <ion-row class="ps-2 mt-1">
+    <mat-radio-group>
+
+      <ion-row>
+        <ion-col [size]="'6'">
+          <mat-radio-button value="7"
+            class="custFontFamilyMuliRegular muli-16pt custLineHight18 custColorWarmGrey1 paddingRadio text-end custFontFamilyMuliBold px-1"
+            (click)="stepperBracket()">Politically Exposed</mat-radio-button>
+        </ion-col>
+        <ion-col [size]="'6'" class="text-end">
+          <mat-radio-button value="8"
+            class="custFontFamilyMuliRegular muli-16pt custLineHight18 custColorWarmGrey1 paddingRadio text-end custFontFamilyMuliBold px-1"
+            (click)="stepperBracket()">Not Related</mat-radio-button>
+        </ion-col>
+      </ion-row>
+
+    </mat-radio-group>
+  </ion-row>
+
+
+  <ion-row class="mt-4 fixed-bottom px-2">
+    <ion-col>
+      <button class="btn w-100 text-center custBackgroundColorBrightCyan">
+        <span class="custColorWhite custFontFamilyMuliBold muli-16pt">Proceed To E-Sign</span>
+      </button>
+    </ion-col>
+  </ion-row>

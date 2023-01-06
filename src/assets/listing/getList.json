@@ -1,0 +1,1357 @@
+{
+    "healthLabTest": {
+        "heading": [
+            {
+                "heading": "Explore",
+                "box": true,
+                "discription": "Discover all Lab test"
+            }
+        ],
+        "pickupAndfilter": [
+            {
+                "pickUpIcon": "assets/health-page-logos/Icon material-location-on.svg",
+                "pickUpTitle": "Pickup from"
+            },
+            {
+                "filterIcon": "assets/Images/filterIcon.svg",
+                "filterTitle": "Filter"
+            }
+        ],
+        "card": [
+            {
+                "row1": {
+                    "icon": "assets/Images/Thyrocare.png",
+                    "title": "Fasting Blood Sugar",
+                    "description": "By Thyrocare Ltd. Pathology Test",
+                    "action": "assets/icon/leftArrowIcon.svg"
+                },
+                "row2": {
+                    "price": "1000",
+                    "E-reports Within": "24 to 30 hours",
+                    "No. of Tests": 1
+                }
+            },
+            {
+                "row1": {
+                    "icon": "assets/Images/Thyrocare.png",
+                    "title": "Fasting Blood Sugar",
+                    "description": "By Thyrocare Ltd. Pathology Test",
+                    "action": "assets/icon/leftArrowIcon.svg"
+                },
+                "row2": {
+                    "price": "1000",
+                    "E-reports Within": "24 to 30 hours",
+                    "No. of Tests": 1
+                }
+            }
+        ]
+    },
+    "healthMedicine": {
+        "heading": [
+            {
+                "heading": "Explore",
+                "box": true,
+                "discription": "Discover your medicine"
+            }
+        ],
+        "pickupAndfilter": [
+            {
+                "pickUpIcon": "assets/health-page-logos/Icon material-location-on.svg",
+                "pickUpTitle": "Pickup from"
+            },
+            {
+                "filterIcon": "assets/Images/filterIcon.svg",
+                "filterTitle": "Filter"
+            }
+        ],
+        "card": [
+            {
+                "row1": {
+                    "icon": "assets/Images/Thyrocare.png",
+                    "title": "Dolo-650 Tablet",
+                    "description": "by Micro Labs. 15 Tablets strip",
+                    "action": "assets/icon/leftArrowIcon.svg",
+                    "selectWatchList": false
+                },
+                "row2": {
+                    "price": "25.00",
+                    "rating": "",
+                    "prescription": ""
+                }
+            },
+            {
+                "row1": {
+                    "icon": "assets/Images/Thyrocare.png",
+                    "title": "Dolo-650 Tablet",
+                    "description": "by Micro Labs. 15 Tablets strip",
+                    "action": "assets/icon/leftArrowIcon.svg",
+                    "selectWatchList": false
+                },
+                "row2": {
+                    "price": "25.00",
+                    "rating": "",
+                    "prescription": ""
+                }
+            }
+        ]
+    },
+    "educationCourses": {
+        "heading": [
+            {
+                "heading": "Explore",
+                "box": true,
+                "discription": "Discover all Courses"
+            }
+        ],
+        "card": [
+            {
+                "row1": {
+                    "icon": "assets/icon/EducationIcon1.svg",
+                    "title": "Life Insurance",
+                    "subTitle": "max",
+                    "description": "15 sections. 135 lectures. 11 hours",
+                    "action": "assets/icon/leftArrowIcon.svg",
+                    "selectWatchList": false
+                },
+                "row2": {
+                    "Price": "Rs.1",
+                    "Ratings": "4",
+                    "Level": "Beginner"
+                }
+            },
+            {
+                "row1": {
+                    "icon": "assets/icon/EducationIcon1.svg",
+                    "title": "Mutual Funds",
+                    "subTitle": "max",
+                    "description": "15 sections. 135 lectures. 11 hours",
+                    "action": "assets/icon/leftArrowIcon.svg",
+                    "selectWatchList": false
+                },
+                "row2": {
+                    "Price": "Rs.1",
+                    "Ratings": "4",
+                    "Level": "Beginner"
+                }
+            },
+            {
+                "row1": {
+                    "icon": "assets/icon/EducationIcon1.svg",
+                    "title": "Equity Dealer",
+                    "subTitle": "john",
+                    "description": "15 sections. 135 lectures. 11 hours",
+                    "action": "assets/icon/leftArrowIcon.svg",
+                    "selectWatchList": false
+                },
+                "row2": {
+                    "Price": "Rs.1",
+                    "Ratings": "4",
+                    "Level": "Intermediate"
+                }
+            },
+            {
+                "row1": {
+                    "icon": "assets/icon/EducationIcon1.svg",
+                    "title": "Goods & Services Tax",
+                    "subTitle": "salman",
+                    "description": "15 sections. 135 lectures. 11 hours",
+                    "action": "assets/icon/leftArrowIcon.svg",
+                    "selectWatchList": false
+                },
+                "row2": {
+                    "Price": "Rs.1",
+                    "Ratings": "4",
+                    "Level": "Advanced"
+                }
+            },
+            {
+                "row1": {
+                    "icon": "assets/icon/EducationIcon1.svg",
+                    "title": "Basic Computer",
+                    "subTitle": "sandeep",
+                    "description": "15 sections. 135 lectures. 11 hours",
+                    "action": "assets/icon/leftArrowIcon.svg",
+                    "selectWatchList": false
+                },
+                "row2": {
+                    "Price": "Rs.1",
+                    "Ratings": "4",
+                    "Level": "Beginner"
+                }
+            }
+        ]
+    },
+    "educationAssessment": {
+        "heading": [
+            {
+                "heading": "Explore",
+                "box": true,
+                "discription": "Discover all Assesments"
+            }
+        ],
+        "card": [
+            {
+                "row1": {
+                    "icon": "assets/icon/EducationIcon1.svg",
+                    "title": "How do mutual funds make you money?",
+                    "description": "",
+                    "action": "assets/icon/leftArrowIcon.svg",
+                    "selectWatchList": false
+                },
+                "row2": {
+                    "Price": "Rs.1",
+                    "Ratings": "4",
+                    "Level": "Medium"
+                }
+            },
+            {
+                "row1": {
+                    "icon": "assets/icon/EducationIcon1.svg",
+                    "title": "What does stoke you mean?",
+                    "description": "",
+                    "action": "assets/icon/leftArrowIcon.svg",
+                    "selectWatchList": false
+                },
+                "row2": {
+                    "Price": "Rs.1",
+                    "Ratings": "4",
+                    "Level": "Medium"
+                }
+            },
+            {
+                "row1": {
+                    "icon": "assets/icon/EducationIcon1.svg",
+                    "title": "How do you calculate gold price?",
+                    "description": "",
+                    "action": "assets/icon/leftArrowIcon.svg",
+                    "selectWatchList": false
+                },
+                "row2": {
+                    "Price": "Rs.1",
+                    "Ratings": "4",
+                    "Level": "Medium"
+                }
+            }
+        ]
+    },
+    "educationJob": {
+        "heading": [
+            {
+                "heading": "Jobs",
+                "box": true,
+                "discription": "Discover all Jobs"
+            }
+        ],
+        "card": [
+            {
+                "row1": {
+                    "icon": "assets/icon/EducationIcon1.svg",
+                    "title": "Associate DTP Specialist",
+                    "description": "GOLS Group",
+                    "action": "assets/icon/leftArrowIcon.svg",
+                    "selectWatchList": false
+                },
+                "row2": {
+                    "Package": "4-7 LPA",
+                    "Experience": "0-2 Years",
+                    "Location": "Mumbai"
+                }
+            },
+            {
+                "row1": {
+                    "icon": "assets/icon/EducationIcon1.svg",
+                    "title": "Web Designer and Developer",
+                    "description": "GOLS Group",
+                    "action": "assets/icon/leftArrowIcon.svg",
+                    "selectWatchList": false
+                },
+                "row2": {
+                    "Package": "3-6 LPA",
+                    "Experience": "0-2 Years",
+                    "Location": "Navi Mumbai"
+                }
+            },
+            {
+                "row1": {
+                    "icon": "assets/icon/EducationIcon1.svg",
+                    "title": "Web Designer and Developer",
+                    "description": "GOLS Group",
+                    "action": "assets/icon/leftArrowIcon.svg",
+                    "selectWatchList": false
+                },
+                "row2": {
+                    "Package": "3-6 LPA",
+                    "Experience": "0-2 Years",
+                    "Location": "Navi Mumbai"
+                }
+            }
+        ]
+    },
+    "insurance": {
+        "heading": [
+            {
+                "heading": "Explore Various Insurance",
+                "box": true,
+                "discription": "Discover various insurance types"
+            }
+        ],
+        "card": [
+            {
+                "title": "Health Insurance",
+                "cardList": [
+                    {
+                        "row1": {
+                            "icon": "assets/icon/insuranceIcon1.svg",
+                            "title": "Health Infinity",
+                            "action": "assets/icon/leftArrowIcon.svg",
+                            "selectWatchList": false
+                        },
+                        "row2": {
+                            "Sum Assured": "Rs.30000.00",
+                            "Premium": "Rs.2,125.00"
+                        }
+                    },
+                    {
+                        "row1": {
+                            "icon": "assets/icon/insuranceIcon1.svg",
+                            "title": "Health Gain",
+                            "action": "assets/icon/leftArrowIcon.svg",
+                            "selectWatchList": false
+                        },
+                        "row2": {
+                            "Sum Assured": "Rs.30000.00",
+                            "Premium": "Rs.2,125.00"
+                        }
+                    }
+                ]
+            },
+            {
+                "title": "Car Insurance",
+                "cardList": [
+                    {
+                        "row1": {
+                            "icon": "assets/icon/insuranceIcon1.svg",
+                            "title": "Kotak Four Wheeler Insurance",
+                            "action": "assets/icon/leftArrowIcon.svg",
+                            "selectWatchList": false
+                        },
+                        "row2": {
+                            "Sum Assured": "Rs.30000.00",
+                            "Premium": "Rs.2,125.00"
+                        }
+                    },
+                    {
+                        "row1": {
+                            "icon": "assets/icon/insuranceIcon1.svg",
+                            "title": "HDFC ERGO Car Insurance",
+                            "action": "assets/icon/leftArrowIcon.svg",
+                            "selectWatchList": false
+                        },
+                        "row2": {
+                            "Sum Assured": "Rs.30000.00",
+                            "Premium": "Rs.2,125.00"
+                        }
+                    }
+                ]
+            },
+            {
+                "title": "Two Wheeler Insurance",
+                "cardList": [
+                    {
+                        "row1": {
+                            "icon": "assets/icon/insuranceIcon1.svg",
+                            "title": "Supra Super Top - up",
+                            "action": "assets/icon/leftArrowIcon.svg",
+                            "selectWatchList": false
+                        },
+                        "row2": {
+                            "Sum Assured": "Rs.30000.00",
+                            "Premium": "Rs.2,125.00"
+                        }
+                    },
+                    {
+                        "row1": {
+                            "icon": "assets/icon/insuranceIcon1.svg",
+                            "title": "Health Recharge",
+                            "action": "assets/icon/leftArrowIcon.svg",
+                            "selectWatchList": false
+                        },
+                        "row2": {
+                            "Sum Assured": "Rs.30000.00",
+                            "Premium": "Rs.2,125.00"
+                        }
+                    }
+                ]
+            },
+            {
+                "title": "Travel Insurance",
+                "cardList": [
+                    {
+                        "row1": {
+                            "icon": "assets/icon/insuranceIcon1.svg",
+                            "title": "Supra Super Top - up",
+                            "action": "assets/icon/leftArrowIcon.svg",
+                            "selectWatchList": false
+                        },
+                        "row2": {
+                            "Sum Assured": "Rs.30000.00",
+                            "Premium": "Rs.2,125.00"
+                        }
+                    },
+                    {
+                        "row1": {
+                            "icon": "assets/icon/insuranceIcon1.svg",
+                            "title": "Health Super Top Up",
+                            "action": "assets/icon/leftArrowIcon.svg",
+                            "selectWatchList": false
+                        },
+                        "row2": {
+                            "Sum Assured": "Rs.30000.00",
+                            "Premium": "Rs.2,125.00"
+                        }
+                    }
+                ]
+            },
+            {
+                "title": "Term Insurance",
+                "cardList": [
+                    {
+                        "row1": {
+                            "icon": "assets/icon/insuranceIcon1.svg",
+                            "title": "Supra Super Top - up",
+                            "action": "assets/icon/leftArrowIcon.svg",
+                            "selectWatchList": false
+                        },
+                        "row2": {
+                            "Sum Assured": "Rs.30000.00",
+                            "Premium": "Rs.2,125.00"
+                        }
+                    },
+                    {
+                        "row1": {
+                            "icon": "assets/icon/insuranceIcon1.svg",
+                            "title": "Health Recharge",
+                            "action": "assets/icon/leftArrowIcon.svg",
+                            "selectWatchList": false
+                        },
+                        "row2": {
+                            "Sum Assured": "Rs.30000.00",
+                            "Premium": "Rs.2,125.00"
+                        }
+                    }
+                ]
+            },
+            {
+                "title": "Other Insurance",
+                "cardList": [
+                    {
+                        "row1": {
+                            "icon": "assets/icon/insuranceIcon1.svg",
+                            "title": "Supra Super Top - up",
+                            "action": "assets/icon/leftArrowIcon.svg",
+                            "selectWatchList": false
+                        },
+                        "row2": {
+                            "Sum Assured": "Rs.30000.00",
+                            "Premium": "Rs.2,125.00"
+                        }
+                    },
+                    {
+                        "row1": {
+                            "icon": "assets/icon/insuranceIcon1.svg",
+                            "title": "Health Recharge",
+                            "action": "assets/icon/leftArrowIcon.svg",
+                            "selectWatchList": false
+                        },
+                        "row2": {
+                            "Sum Assured": "Rs.30000.00",
+                            "Premium": "Rs.2,125.00"
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    "las": {
+        "heading": [
+            {
+                "heading": "Explore",
+                "box": true,
+                "discription": "Discover all shares"
+            }
+        ],
+        "pickupAndfilter": [
+            {
+                "filterIcon": "assets/Images/filterIcon.svg",
+                "filterTitle": "Filter"
+            }
+        ],
+        "card": [
+            {
+                "row1": {
+                    "title": "Avenue Supermarts Limited",
+                    "selectWatchList": false
+                },
+                "row2": {
+                    "availableQuantity": "50",
+                    "haircutRate": "20%"
+                }
+            },
+            {
+                "row1": {
+                    "title": "Dabur India Limited",
+                    "selectWatchList": false
+                },
+                "row2": {
+                    "availableQuantity": "50",
+                    "haircutRate": "20%"
+                }
+            },
+            {
+                "row1": {
+                    "title": "Interglobe Aviation Limited",
+                    "selectWatchList": false
+                },
+                "row2": {
+                    "availableQuantity": "50",
+                    "haircutRate": "20%"
+                }
+            },
+            {
+                "row1": {
+                    "title": "Mindtree Limited",
+                    "selectWatchList": false
+                },
+                "row2": {
+                    "availableQuantity": "50",
+                    "haircutRate": "20%"
+                }
+            },
+            {
+                "row1": {
+                    "title": "Zydus Lifesciences Limited",
+                    "selectWatchList": false
+                },
+                "row2": {
+                    "availableQuantity": "50",
+                    "haircutRate": "20%"
+                }
+            }
+        ]
+    },
+    "mutualFund": {
+        "heading": [
+            {
+                "heading": "Invest",
+                "box": true,
+                "discription": "Discover Mutual Funds for Investments"
+            }
+        ],
+        "grid": [
+            {
+                "name": "Top Rated Fund",
+                "icon": "assets/icon/group1.svg"
+            },
+            {
+                "name": "Tax Savers",
+                "icon": "assets/icon/group2.svg"
+            },
+            {
+                "name": "New Fund Offers",
+                "icon": "assets/icon/group3.svg"
+            },
+            {
+                "name": "Annual Return Fund",
+                "icon": "assets/education/Group1.svg"
+            },
+            {
+                "name": "Wealth Builder",
+                "icon": "assets/education/Group2.svg"
+            },
+            {
+                "name": "Steady Income",
+                "icon": "assets/education/Group3.svg"
+            }
+        ],
+        "card": [
+            {
+                "title": "Top Rated Fund",
+                "cardList": [
+                    {
+                        "row1": {
+                            "icon": "assets/icon/icici.png",
+                            "title": "HDFC Focused 30-G",
+                            "action": "assets/icon/leftArrowIcon.svg",
+                            "selectWatchList": false
+                        },
+                        "row2": {
+                            "Min.Invest": "Rs.5000",
+                            "Category Return": "-7.10% - 20.25%",
+                            "Returns": "18.65%"
+                        }
+                    },
+                    {
+                        "row1": {
+                            "icon": "assets/icon/icici.png",
+                            "title": "HDFC Focused 30-G",
+                            "action": "assets/icon/leftArrowIcon.svg",
+                            "selectWatchList": false
+                        },
+                        "row2": {
+                            "Min.Invest": "Rs.5000",
+                            "Category Return": "-7.10% - 20.25%",
+                            "Returns": "18.65%"
+                        }
+                    }
+                ]
+            },
+            {
+                "title": "Tax Savers",
+                "cardList": [
+                    {
+                        "row1": {
+                            "icon": "assets/icon/icici.png",
+                            "title": "HDFC Focused 30-G",
+                            "action": "assets/icon/leftArrowIcon.svg",
+                            "selectWatchList": false
+                        },
+                        "row2": {
+                            "Min.Invest": "Rs.5000",
+                            "Category Return": "-7.10% - 20.25%",
+                            "Returns": "18.65%"
+                        }
+                    },
+                    {
+                        "row1": {
+                            "icon": "assets/icon/icici.png",
+                            "title": "HDFC Focused 30-G",
+                            "action": "assets/icon/leftArrowIcon.svg",
+                            "selectWatchList": false
+                        },
+                        "row2": {
+                            "Min.Invest": "Rs.5000",
+                            "Category Return": "-7.10% - 20.25%",
+                            "Returns": "18.65%"
+                        }
+                    }
+                ]
+            },
+            {
+                "title": "New Fund Offers",
+                "cardList": [
+                    {
+                        "row1": {
+                            "icon": "assets/icon/icici.png",
+                            "title": "HDFC Focused 30-G",
+                            "action": "assets/icon/leftArrowIcon.svg",
+                            "selectWatchList": false
+                        },
+                        "row2": {
+                            "Min.Invest": "Rs.5000",
+                            "Category Return": "-7.10% - 20.25%",
+                            "Returns": "18.65%"
+                        }
+                    },
+                    {
+                        "row1": {
+                            "icon": "assets/icon/icici.png",
+                            "title": "HDFC Focused 30-G",
+                            "action": "assets/icon/leftArrowIcon.svg",
+                            "selectWatchList": false
+                        },
+                        "row2": {
+                            "Min.Invest": "Rs.5000",
+                            "Category Return": "-7.10% - 20.25%",
+                            "Returns": "18.65%"
+                        }
+                    }
+                ]
+            },
+            {
+                "title": "Annual Return Fund",
+                "cardList": [
+                    {
+                        "row1": {
+                            "icon": "assets/icon/icici.png",
+                            "title": "HDFC Focused 30-G",
+                            "action": "assets/icon/leftArrowIcon.svg",
+                            "selectWatchList": false
+                        },
+                        "row2": {
+                            "Min.Invest": "Rs.5000",
+                            "Category Return": "-7.10% - 20.25%",
+                            "Returns": "18.65%"
+                        }
+                    },
+                    {
+                        "row1": {
+                            "icon": "assets/icon/icici.png",
+                            "title": "HDFC Focused 30-G",
+                            "action": "assets/icon/leftArrowIcon.svg",
+                            "selectWatchList": false
+                        },
+                        "row2": {
+                            "Min.Invest": "Rs.5000",
+                            "Category Return": "-7.10% - 20.25%",
+                            "Returns": "18.65%"
+                        }
+                    }
+                ]
+            },
+            {
+                "title": "Wealth Builder",
+                "cardList": [
+                    {
+                        "row1": {
+                            "icon": "assets/icon/icici.png",
+                            "title": "HDFC Focused 30-G",
+                            "action": "assets/icon/leftArrowIcon.svg",
+                            "selectWatchList": false
+                        },
+                        "row2": {
+                            "Min.Invest": "Rs.5000",
+                            "Category Return": "-7.10% - 20.25%",
+                            "Returns": "18.65%"
+                        }
+                    },
+                    {
+                        "row1": {
+                            "icon": "assets/icon/icici.png",
+                            "title": "HDFC Focused 30-G",
+                            "action": "assets/icon/leftArrowIcon.svg",
+                            "selectWatchList": false
+                        },
+                        "row2": {
+                            "Min.Invest": "Rs.5000",
+                            "Category Return": "-7.10% - 20.25%",
+                            "Returns": "18.65%"
+                        }
+                    }
+                ]
+            },
+            {
+                "title": "Steady Income",
+                "cardList": [
+                    {
+                        "row1": {
+                            "icon": "assets/icon/icici.png",
+                            "title": "HDFC Focused 30-G",
+                            "action": "assets/icon/leftArrowIcon.svg",
+                            "selectWatchList": false
+                        },
+                        "row2": {
+                            "Min.Invest": "Rs.5000",
+                            "Category Return": "-7.10% - 20.25%",
+                            "Returns": "18.65%"
+                        }
+                    },
+                    {
+                        "row1": {
+                            "icon": "assets/icon/icici.png",
+                            "title": "HDFC Focused 30-G",
+                            "action": "assets/icon/leftArrowIcon.svg",
+                            "selectWatchList": false
+                        },
+                        "row2": {
+                            "Min.Invest": "Rs.5000",
+                            "Category Return": "-7.10% - 20.25%",
+                            "Returns": "18.65%"
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    "digiGold": {
+        "heading": [
+            {
+                "heading": "Explore Digital Commodities"
+            }
+        ],
+        "card": [
+            {
+                "row1": {
+                    "icon": "assets/icon/Augmont.svg",
+                    "title": "Augmont Digital Gold",
+                    "description": "24K. 99.99% Purity",
+                    "action": "assets/icon/leftArrowIcon.svg",
+                    "selectWatchList": false
+                },
+                "row2": {
+                    "Buying Price/gm": "Rs.5251.16",
+                    "Selling Price/gm": "Rs.54.64"
+                }
+            },
+            {
+                "row1": {
+                    "icon": "assets/icon/Augmont.svg",
+                    "title": "Augmont Digital Silver",
+                    "description": "24K. 99.99% Purity",
+                    "action": "assets/icon/leftArrowIcon.svg",
+                    "selectWatchList": false
+                },
+                "row2": {
+                    "Buying Price/gm": "Rs.5251.16",
+                    "Selling Price/gm": "Rs.54.64"
+                }
+            }
+        ]
+    },
+    "stock": {
+        "watchList": [
+            {
+                "title": "Nifty 50",
+                "value": "Nifty 50"
+            },
+            {
+                "title": "WatchList 1",
+                "value": "WatchList 1"
+            }
+        ],
+        "card": [
+            {
+                "row1": {
+                    "title": "TATA STEEL",
+                    "price": "Rs.107.75"
+                },
+                "row2": {
+                    "ExchangeName": "NSE",
+                    "lossAndGain": "0.63",
+                    "lossAndGainPer": "(0.2%)"
+                }
+            },
+            {
+                "row1": {
+                    "title": "TCS",
+                    "price": "Rs.3151.00"
+                },
+                "row2": {
+                    "ExchangeName": "NSE",
+                    "lossAndGain": "0.80",
+                    "lossAndGainPer": "(1.4%)"
+                }
+            },
+            {
+                "row1": {
+                    "title": "HDFCLIFE",
+                    "price": "Rs.573.80"
+                },
+                "row2": {
+                    "ExchangeName": "NSE",
+                    "lossAndGain": "0.04",
+                    "lossAndGainPer": "(-40.2%)"
+                }
+            },
+            {
+                "row1": {
+                    "title": "ICICIBANK",
+                    "price": "Rs.875.20"
+                },
+                "row2": {
+                    "ExchangeName": "NSE",
+                    "lossAndGain": "0.97",
+                    "lossAndGainPer": "(30.2%)"
+                }
+            },
+            {
+                "row1": {
+                    "title": "ONGC",
+                    "price": "Rs.131.55"
+                },
+                "row2": {
+                    "ExchangeName": "NSE",
+                    "lossAndGain": "0.45",
+                    "lossAndGainPer": "(7.7%)"
+                }
+            },
+            {
+                "row1": {
+                    "title": "SBILIFE",
+                    "price": "Rs.1314.35"
+                },
+                "row2": {
+                    "ExchangeName": "NSE",
+                    "lossAndGain": "0.22",
+                    "lossAndGainPer": "(8.5%)"
+                }
+            },
+            {
+                "row1": {
+                    "title": "RELIANCE",
+                    "price": "Rs.2584.35"
+                },
+                "row2": {
+                    "ExchangeName": "NSE",
+                    "lossAndGain": "0.48",
+                    "lossAndGainPer": "(10.00%)"
+                }
+            },
+            {
+                "row1": {
+                    "title": "WIPRO",
+                    "price": "Rs.406.25"
+                },
+                "row2": {
+                    "ExchangeName": "NSE",
+                    "lossAndGain": "0.41",
+                    "lossAndGainPer": "(3.1%)"
+                }
+            },
+            {
+                "row1": {
+                    "title": "TECHM",
+                    "price": "Rs.1046.25"
+                },
+                "row2": {
+                    "ExchangeName": "NSE",
+                    "lossAndGain": "17.55",
+                    "lossAndGainPer": "(4.3%)"
+                }
+            },
+            {
+                "row1": {
+                    "title": "INFY",
+                    "price": "Rs.1450.00"
+                },
+                "row2": {
+                    "ExchangeName": "NSE",
+                    "lossAndGain": "10.10",
+                    "lossAndGainPer": "(-5.1%)"
+                }
+            },
+            {
+                "row1": {
+                    "title": "GOLDBEES",
+                    "price": "Rs.43.10"
+                },
+                "row2": {
+                    "ExchangeName": "NSE",
+                    "lossAndGain": "0.62",
+                    "lossAndGainPer": "(1.3%)"
+                }
+            },
+            {
+                "row1": {
+                    "title": "BHARTIARTL",
+                    "price": "Rs.748.70"
+                },
+                "row2": {
+                    "ExchangeName": "NSE",
+                    "lossAndGain": "12.62",
+                    "lossAndGainPer": "(-4.1%)"
+                }
+            },
+            {
+                "row1": {
+                    "title": "BHEL",
+                    "price": "Rs.61.60"
+                },
+                "row2": {
+                    "ExchangeName": "NSE",
+                    "lossAndGain": "0.90",
+                    "lossAndGainPer": "(5.7%)"
+                }
+            },
+            {
+                "row1": {
+                    "title": "AXISBANK",
+                    "price": "Rs.752.55"
+                },
+                "row2": {
+                    "ExchangeName": "NSE",
+                    "lossAndGain": "2.60",
+                    "lossAndGainPer": "(-4.6%)"
+                }
+            },
+            {
+                "row1": {
+                    "title": "ADANIENT",
+                    "price": "Rs.3455.00"
+                },
+                "row2": {
+                    "ExchangeName": "NSE",
+                    "lossAndGain": "19.20",
+                    "lossAndGainPer": "(5.0%)"
+                }
+            },
+            {
+                "row1": {
+                    "title": "BIOCON",
+                    "price": "Rs.296.20"
+                },
+                "row2": {
+                    "ExchangeName": "NSE",
+                    "lossAndGain": "80.98",
+                    "lossAndGainPer": "(-7.1%)"
+                }
+            },
+            {
+                "row1": {
+                    "title": "JUSTDIAL",
+                    "price": "Rs.607.70"
+                },
+                "row2": {
+                    "ExchangeName": "NSE",
+                    "lossAndGain": "2.00",
+                    "lossAndGainPer": "(-0.1%)"
+                }
+            },
+            {
+                "row1": {
+                    "title": "HCL-INSYS",
+                    "price": "Rs.17.45"
+                },
+                "row2": {
+                    "ExchangeName": "NSE",
+                    "lossAndGain": "0.30",
+                    "lossAndGainPer": "(-1.6%)"
+                }
+            },
+            {
+                "row1": {
+                    "title": "TATAELXSI",
+                    "price": "Rs.8820.00"
+                },
+                "row2": {
+                    "ExchangeName": "NSE",
+                    "lossAndGain": "22.00",
+                    "lossAndGainPer": "(-4.0%)"
+                }
+            },
+            {
+                "row1": {
+                    "title": "APOLLOHOSP",
+                    "price": "Rs.4320.95"
+                },
+                "row2": {
+                    "ExchangeName": "NSE",
+                    "lossAndGain": "68.62",
+                    "lossAndGainPer": "(3.2%)"
+                }
+            },
+            {
+                "row1": {
+                    "title": "BAJFINANCE",
+                    "price": "Rs.7173.00"
+                },
+                "row2": {
+                    "ExchangeName": "NSE",
+                    "lossAndGain": "56.85",
+                    "lossAndGainPer": "(5.8%)"
+                }
+            },
+            {
+                "row1": {
+                    "title": "ASIANPAINT",
+                    "price": "Rs.3407.75"
+                },
+                "row2": {
+                    "ExchangeName": "NSE",
+                    "lossAndGain": "11.68",
+                    "lossAndGainPer": "(-4.3%)"
+                }
+            },
+            {
+                "row1": {
+                    "title": "NIFTYBEES",
+                    "price": "Rs.191.99"
+                },
+                "row2": {
+                    "ExchangeName": "NSE",
+                    "lossAndGain": "0.50",
+                    "lossAndGainPer": "(8.1%)"
+                }
+            },
+            {
+                "row1": {
+                    "title": "ADANIPOWER-BE",
+                    "price": "Rs.410.50"
+                },
+                "row2": {
+                    "ExchangeName": "NSE",
+                    "lossAndGain": "4.75",
+                    "lossAndGainPer": "(0.25%)"
+                }
+            },
+            {
+                "row1": {
+                    "title": "JPPOWER",
+                    "price": "Rs.8.87"
+                },
+                "row2": {
+                    "ExchangeName": "NSE",
+                    "lossAndGain": "0,05",
+                    "lossAndGainPer": "(-0.32%)"
+                }
+            },
+            {
+                "row1": {
+                    "title": "LPDC",
+                    "price": "Rs.6.95"
+                },
+                "row2": {
+                    "ExchangeName": "NSE",
+                    "lossAndGain": "0.00",
+                    "lossAndGainPer": "(0.0%)"
+                }
+            },
+            {
+                "row1": {
+                    "title": "3IINFOLTD",
+                    "price": "Rs.46.80"
+                },
+                "row2": {
+                    "ExchangeName": "NSE",
+                    "lossAndGain": "0.30",
+                    "lossAndGainPer": "(-0.23%)"
+                }
+            },
+            {
+                "row1": {
+                    "title": "INDINFO",
+                    "price": "Rs.2.96"
+                },
+                "row2": {
+                    "ExchangeName": "NSE",
+                    "lossAndGain": "0.00",
+                    "lossAndGainPer": "(0.24%)"
+                }
+            },
+            {
+                "row1": {
+                    "title": "VISAGAR",
+                    "price": "Rs.1.67"
+                },
+                "row2": {
+                    "ExchangeName": "NSE",
+                    "lossAndGain": "0.01",
+                    "lossAndGainPer": "(2.2%)"
+                }
+            },
+            {
+                "row1": {
+                    "title": "PARAS",
+                    "price": "Rs.718.00"
+                },
+                "row2": {
+                    "ExchangeName": "NSE",
+                    "lossAndGain": "21.50",
+                    "lossAndGainPer": "(-1.0%)"
+                }
+            },
+            {
+                "row1": {
+                    "title": "HPBL",
+                    "price": "Rs.460.01"
+                },
+                "row2": {
+                    "ExchangeName": "NSE",
+                    "lossAndGain": "11.50",
+                    "lossAndGainPer": "(0.42%)"
+                }
+            },
+            {
+                "row1": {
+                    "title": "NATIONSTD",
+                    "price": "Rs.5084.00"
+                },
+                "row2": {
+                    "ExchangeName": "NSE",
+                    "lossAndGain": "83.85",
+                    "lossAndGainPer": "(-0.12%)"
+                }
+            },
+            {
+                "row1": {
+                    "title": "FCSSOFT",
+                    "price": "Rs.3.25"
+                },
+                "row2": {
+                    "ExchangeName": "NSE",
+                    "lossAndGain": "0.00",
+                    "lossAndGainPer": "(0.23%)"
+                }
+            },
+            {
+                "row1": {
+                    "title": "POONAWALLA",
+                    "price": "Rs.301.70"
+                },
+                "row2": {
+                    "ExchangeName": "NSE",
+                    "lossAndGain": "2.35",
+                    "lossAndGainPer": "(0.7%)"
+                }
+            },
+            {
+                "row1": {
+                    "title": "ARIHANT",
+                    "price": "Rs.38.00"
+                },
+                "row2": {
+                    "ExchangeName": "NSE",
+                    "lossAndGain": "0.00",
+                    "lossAndGainPer": "(0.2%)"
+                }
+            },
+            {
+                "row1": {
+                    "title": "RPOWER",
+                    "price": "Rs.22.25"
+                },
+                "row2": {
+                    "ExchangeName": "NSE",
+                    "lossAndGain": "0.30",
+                    "lossAndGainPer": "(-0.1%)"
+                }
+            },
+            {
+                "row1": {
+                    "title": "ELCIDIN",
+                    "price": "Rs.2.31"
+                },
+                "row2": {
+                    "ExchangeName": "NSE",
+                    "lossAndGain": "0.00",
+                    "lossAndGainPer": "(0.0%)"
+                }
+            },
+            {
+                "row1": {
+                    "title": "BIOCON",
+                    "price": "Rs.295.40"
+                },
+                "row2": {
+                    "ExchangeName": "NSE",
+                    "lossAndGain": "3.05",
+                    "lossAndGainPer": "(-0.11%)"
+                }
+            },
+            {
+                "row1": {
+                    "title": "ICICIPRULI",
+                    "price": "Rs.594.40"
+                },
+                "row2": {
+                    "ExchangeName": "NSE",
+                    "lossAndGain": "2.70",
+                    "lossAndGainPer": "(0.8%)"
+                }
+            },
+            {
+                "row1": {
+                    "title": "HINDUNILVR",
+                    "price": "Rs.2570.50"
+                },
+                "row2": {
+                    "ExchangeName": "NSE",
+                    "lossAndGain": "3.25",
+                    "lossAndGainPer": "(-0.5%)"
+                }
+            }
+        ]
+    },
+    "billPayment": {
+        "heading": [
+            {
+                "heading": "Explore Bill Payment Categories",
+                "icon": "assets/icon/bharatBillPay.svg",
+                "discription": "Discover various type of Bill Payment"
+            }
+        ],
+        "grid": [
+            {
+                "icon": "assets/icon/prepaid.svg",
+                "name": "Prepaid Mobile"
+            },
+            {
+                "icon": "assets/icon/postpaid.svg",
+                "name": "Postpaid Mobile"
+            },
+            {
+                "icon": "assets/icon/DTH.svg",
+                "name": "DTH"
+            },
+            {
+                "icon": "assets/icon/electricity.svg",
+                "name": "Electricity"
+            },
+            {
+                "icon": "assets/icon/pipedGas.svg",
+                "name": "Piped Gas"
+            },
+            {
+                "icon": "assets/icon/landline.svg",
+                "name": "Landline"
+            },
+            {
+                "icon": "assets/icon/water.svg",
+                "name": "Water"
+            },
+            {
+                "icon": "assets/icon/datacard.svg",
+                "name": "Datacard"
+            },
+            {
+                "icon": "assets/icon/broadband.svg",
+                "name": "Broadband"
+            },
+            {
+                "icon": "assets/icon/cylinder.svg",
+                "name": "Book a Cylinder"
+            },
+            {
+                "icon": "assets/icon/loanRepayment.svg",
+                "name": "Loan Repayment"
+            },
+            {
+                "icon": "assets/icon/insurance.svg",
+                "name": "Insurance"
+            },
+            {
+                "icon": "assets/icon/fasttag.svg",
+                "name": "Fastag"
+            },
+            {
+                "icon": "assets/icon/education-fees.svg",
+                "name": "Education Fees"
+            },
+            {
+                "icon": "assets/icon/cable.svg",
+                "name": "Cable TV"
+            },
+            {
+                "icon": "assets/icon/muncipalTaxes.svg",
+                "name": "Municipal Taxes"
+            },
+            {
+                "icon": "assets/icon/housingSocieties.svg",
+                "name": "Housing Societies"
+            },
+            {
+                "icon": "assets/icon/creditCard.svg",
+                "name": "Credit Card"
+            },
+            {
+                "icon": "assets/icon/clubsAndAssociation.svg",
+                "name": "Clubs and Associations"
+            },
+            {
+                "icon": "assets/icon/healthInsurance.svg",
+                "name": "Health Insurance"
+            },
+            {
+                "icon": "assets/icon/hospital&pathalogy.svg",
+                "name": "Hospital and Pathology"
+            },
+            {
+                "icon": "assets/icon/MunicipalService.svg",
+                "name": "Municipal Services"
+            },
+            {
+                "icon": "assets/icon/subscription.svg",
+                "name": "Subscription"
+            }
+        ]
+    }
+}

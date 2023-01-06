@@ -1,0 +1,140 @@
+{
+  "CustGuId": 1001,
+    "wealthCart": [
+      {
+        "globalid": "1",
+        "name": "HDFC Bank",
+        "currentMarketPrice": "100",
+        "limitPrice": "100",
+        "selected": false,
+        "quantity": "1",
+        "total": "100",
+        "type": "stock"
+      },{
+        "globalid": "2",
+        "name": "TCS",
+        "currentMarketPrice": "200",
+        "limitPrice": "100",
+        "selected": false,
+        "quantity": "2",
+        "total": "400",
+        "type": "stock"
+      },
+      {
+        "globalid": "3",
+        "name": "HDFC Bank",
+        "currentMarketPrice": "100",
+        "limitPrice": "100",
+        "selected": false,
+        "quantity": "1",
+        "total": "100",
+        "type": "stock"
+      }
+    ],
+    "educationCart": [
+      {
+        "globalid": "1",
+        "name": "Web Development",
+        "selected": false,
+        "quantity": "1",
+        "type": "course",
+        "productSchemeID": null,
+        "unitPrice": "100",
+        "offerID": "2.00",
+        "discount": "12.12",
+        "igst": "1.00",
+        "sgst": "5.00",
+        "cgst": "5.00",
+        "total": "98.88"
+      },
+      {
+        "globalid": "2",
+        "name": "Game Development",
+        "selected": false,
+        "quantity": "1",
+        "type": "course",
+        "productSchemeID": null,
+        "unitPrice": "200",
+        "offerID": "2.00",
+        "discount": "12.12",
+        "igst": "1.00",
+        "sgst": "5.00",
+        "cgst": "5.00",
+        "total": "198.88"
+      },
+      {
+        "globalid": "3",
+        "name": "UX Design",
+        "selected": false,
+        "quantity": "1",
+        "type": "course",
+        "productSchemeID": null,
+        "unitPrice": "255",
+        "offerID": "2.00",
+        "discount": "11",
+        "igst": "1.00",
+        "sgst": "5.00",
+        "cgst": "5.00",
+        "total": "255.00"
+      }
+    ],
+    "mutualfund":{
+      "lumpsum":[
+        {
+          "globalid": "123",
+          "name": "ICICI Prudential Focused Bluechip Equity Direct Fund",
+          "selected": false,
+          "investmentType": "lumpsum",
+          "totalInvestment": "5000",
+          "instalmentDate": null,
+          "type": "mutualfund"
+        }
+      ],
+      "SIP":[
+        {
+          "globalid": "514",
+          "name": "HDFC Focused Bluechip Equity Direct Fund",
+          "selected": false,
+          "investmentType": "SIP",
+          "instalment": "5000",
+          "instalmentDate": "15th of every month",
+          "type": "mutualfund"
+        }
+      ]
+    },
+    "digiGold":[
+      {
+        "globalid": "1",
+        "name": "Digi Gold",
+        "selected": false,
+        "quantity": "1.2gm",
+        "type": "commodity",
+        "productSchemeID": null,
+        "currentMarketPrice": "4,298.00/gm",
+        "unitPrice":"5157.60",
+        "offerID": "2.00",
+        "discount": "15.00",
+        "igst": "1.00",
+        "sgst": "5.00",
+        "cgst": "5.00",
+        "total": "5153.60"
+      },
+      {
+        "globalid": "2",
+        "name": "Digi Gold",
+        "selected": false,
+        "quantity": "3gm",
+        "type": "commodity",
+        "productSchemeID": null,
+        "currentMarketPrice": "4,298.00/gm",
+        "unitPrice":"12894.00",
+        "offerID": "2.00",
+        "discount": "15.00",
+        "igst": "1.00",
+        "cgst": "193.41",
+        "sgst": "193.41",
+        "total": "13266.82"
+      }
+    ]
+
+  }

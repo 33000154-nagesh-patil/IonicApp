@@ -1,0 +1,118 @@
+<ion-header>
+  <ion-toolbar class="custBackgroundDynamicColorWhite">
+    <ion-grid>
+      <ion-row>
+        <ion-col [size]="'1'" (click)="dismiss()">
+          <ion-img [src]="imageList?.arrow" class="custInvestArrow"></ion-img>
+        </ion-col>
+        <ion-col [size]="'11'">
+          <span class="custFontFamilyMuliBold muli-16pt custColorDark custLineHight40">Payment confirmation</span>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="contentBackground">
+  <ion-grid class="align-items-center h-100">
+    <ion-row class="py-2">
+      <ion-col [size]="'12'" class="custTextAlignCenter">
+        <ion-img [src]="imageList?.succsessIcon" class="custImgSucc"></ion-img>
+      </ion-col>
+      <ion-col [size]="'12'" class="custTextAlignCenter">
+        <span class="custFontFamilyMuliBold muli-16pt custLineHight22 custColorDark">Order placed
+          successfully</span>
+      </ion-col>
+
+      <ion-col [size]="'12'" class="custTextAlignCenter px-5">
+        <span class="custFontFamilyMuliRegular muli-10pt custLineHight18 custColorBattlePGry">A licensed phlebotomist
+          will visit you for taking your samples. </span>
+      </ion-col>
+
+      <ion-col [size]="'12'">
+        <ion-card class="custBackgroundColorWhite">
+          <ion-card-content>
+            <ion-grid class="ion-no-padding">
+              <ion-row>
+                <ion-col [size]="'12'" class="d-block justify-content-start">
+                  <span
+                    class="custFontFamilyMuliBold muli-14pt custLineHight20 custColorDark">{{dataForSuccess?.medicineTitle}}</span>
+                  <span
+                    class="custFontFamilyMuliBold muli-10pt custLineHight20 custColorDark">{{dataForSuccess?.medicineName}}</span>
+                  <span
+                    class="custFontFamilyMuliRegular d-block muli-10pt custLineHight22 custColorGreyish">{{dataForSuccess?.purchaseDate}}</span>
+                </ion-col>
+                <ion-col [size]="'12'" class="py-2 d-block justify-content-start">
+                  <span class="custFontFamilyMuliRegular muli-12pt custLineHight20 custColorGreyish">Patient's Name
+                  </span><br>
+
+
+                  <span class="custFontFamilyMuliBold muli-12pt custLineHight18 custColorDark custAdd ">
+                    {{dataForSuccess?.userName}}
+
+                  </span>
+
+
+                </ion-col>
+                <ion-col [size]="'12'" class="py-2 d-block justify-content-start">
+                  <span class="custFontFamilyMuliRegular muli-12pt custLineHight20 custColorGreyish">Patient's Address
+                  </span>
+
+
+                  <address class="custFontFamilyMuliBold muli-12pt custLineHight18 custColorDark custAdd ">
+                    {{dataForSuccess?.userAddress}}
+
+                  </address>
+
+
+                </ion-col>
+                <ion-col [size]="'7'" class="d-block justify-content-start">
+                  <span class="custFontFamilyMuliRegular muli-12pt custLineHight20 custColorGreyish">Time Slot
+            </span>
+
+                  <span
+                    class="custFontFamilyMuliBold d-block muli-12pt custLineHight22 custColorDark">{{dataForSuccess?.estimatedDate}}</span>
+                </ion-col>
+                <ion-col [size]="'5'" class="d-block justify-content-start">
+                  <span class="custFontFamilyMuliRegular muli-12pt custLineHight20 custColorGreyish">Price</span>
+
+                  <span class="custFontFamilyMuliBold d-block muli-12pt custLineHight22 custColorDark">{{InitialPrice}}</span>
+                </ion-col>
+
+                <ion-col [size]="'12'" class="py-2">
+                  <span class="custFontFamilyMuliRegular muli-8pt custLineHight20 custColorGreyish">Transaction
+                    ID</span><br>
+                  <ion-row class="custFontFamilyMuliBold  muli-10pt custColorDark custTextAlignCenter">
+                    <span>{{transactionId?.transactionsID}}</span>&nbsp;&nbsp;<ion-img [src]="imageList?.copy"
+                      class="custCopy" (click)="copyText(transactionId?.transactionsID)"></ion-img>
+                  </ion-row>
+
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </ion-card-content>
+        </ion-card>
+      </ion-col> 
+
+    </ion-row>
+  </ion-grid>
+</ion-content>
+
+
+
+<ion-col class="fixed-bottom">
+  <ion-row class="px-2 w-100">
+    <ion-col [size]="'12'">
+      <button class="btn w-100 text-center custButtonOutLine custBtnExplore" (click)="handleClick()">
+        <span class=" custColorBrightCyan custColorWhite custFontFamilyMuliBold muli-16pt">Continue Shopping</span>
+      </button>
+    </ion-col>
+  </ion-row>
+  <ion-row class="px-2 w-100">
+    <ion-col [size]="'12'" (click)="openOrderComponent()">
+      <button class="btn w-100 text-center custBackgroundColorBrightCyan"><span
+          class="custColorWhite custFontFamilyMuliBold muli-16pt">Track Order</span></button>
+    </ion-col>
+
+  </ion-row>
+</ion-col>

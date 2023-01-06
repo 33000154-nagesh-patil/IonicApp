@@ -1,0 +1,174 @@
+<ion-content>
+  <ion-header>
+    <ion-toolbar>
+      <ion-grid>
+        <ion-row>
+          <ion-col [size]="'0.7'" class="text-center mt-2" (click)="goBack()">
+            <ion-img [src]="imageList?.arrow" class="custWithoutTextImg"></ion-img>
+          </ion-col>
+          <ion-col [size]="'8'">
+            <span class="custFontFamilyMuliBold muli-16pt custLineHight40 ml-10 custColorBlack">Margin Pledge Transaction</span>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-toolbar>
+  </ion-header>
+
+
+  <ion-row class="segmentmargin mt-0">
+    <ion-col [size]="'12'" class="">
+      <!-- <ion-segment value="PledgeTransactions">
+        <ion-segment-button value="PledgeTransactions" (click)="handleOnClick()" >
+          <ion-label class="custFontFamilyMuliSemiBold muli-12pt custLineHight18 custColorDarkShade text"
+             >Pledge Transactions</ion-label>
+        </ion-segment-button>
+        <ion-segment-button  value="UnpledgeTransactions"  (click)="handleOnClick()" >
+          <ion-label class="custFontFamilyMuliSemiBold muli-12pt custLineHight18 custColorDarkShade text"
+            >Unpledge Transactions</ion-label>
+        </ion-segment-button>
+      </ion-segment> -->
+
+
+
+      <ion-segment value="PledgeTransactions" [(ngModel)]="segment" (ionChange)="segmentChanged()">
+        <ion-segment-button value="PledgeTransactions">
+          <ion-label class="custFontFamilyMuliSemiBold muli-12pt custLineHight18 custColorDarkShade text">Pledge Transactions</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="UnpledgeTransactions">
+          <ion-label class="custFontFamilyMuliSemiBold muli-12pt custLineHight18 custColorDarkShade text">Unpledge Transactions</ion-label>
+        </ion-segment-button>
+      </ion-segment>
+
+
+    </ion-col>
+  </ion-row>
+
+
+  <div *ngIf="pledgeT">
+    <ion-row>
+      <ion-col>
+        <ion-card>
+          <div  (click)="show()" *ngIf="close">
+          <ion-row>
+            <ion-col class="muli-12pt custFontFamilyMuliRegular custColorDark custColorDark">
+              14 Jul 2022, 10.30 AM
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col [size]="'6'">
+              Transaction ID
+            </ion-col>
+            <ion-col [size]="'6'" class="text-end">
+              ₹32,227.56
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col [size]="'6'" class="muli-14pt idTxtClr ">
+              LZ38K77EDEMNK9RS
+            </ion-col>
+            <ion-col [size]="'6'" class="text-end textColor custFontFamilyMuliBold muli-14pt ">
+              Cancelled
+            </ion-col>
+          </ion-row>
+        </div>
+        <div *ngIf="history"> 
+        <ion-row class="px-1">
+          Transaction ID
+        </ion-row>
+        <ion-row class="px-1 muli-14pt idTxtClr custFontFamilyMuliBold mt-2">
+          9GDEK77EDEMNK8QP
+        </ion-row>
+        <ion-row class="px-1 mt-2">
+          Date | Time 
+        </ion-row>
+        <ion-row class="px-1 muli-14pt idTxtClr custFontFamilyMuliBold mb-3 ">
+          14 Jul 2022 at 10.30 am
+        </ion-row> 
+             
+          <ion-row *ngFor="let x of data" class="bgColor" >
+            <ion-col [size]="'6'">
+              {{x.title}}
+            </ion-col>
+            <ion-col [size]="'6'" class="text-end">
+              {{x.amount}}
+            </ion-col>
+            <ion-col  [size]="'12'" class=" text-end textColor custFontFamilyMuliBold muli-14pt ">
+              Cancelled
+            </ion-col>
+            <hr class="w-100 px-2">
+          </ion-row>
+        </div>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+</div>
+
+
+
+
+<div *ngIf="UpledgeT">
+  <ion-row>
+    <ion-col>
+      <ion-card>
+        <div  (click)="show()" *ngIf="close">
+        <ion-row>
+          <ion-col class="muli-12pt custFontFamilyMuliRegular custColorDark custColorDark">
+            14 Jul 2022, 10.30 AM
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col [size]="'6'">
+            Transaction ID
+          </ion-col>
+          <ion-col [size]="'6'" class="text-end">
+            ₹32,227.56
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col [size]="'6'" class="muli-14pt idTxtClr ">
+            LZ38K77EDEMNK9RS
+          </ion-col>
+          <ion-col [size]="'6'" class="text-end custColorParakeetGreen custFontFamilyMuliBold muli-14pt  ">
+            Complete
+          </ion-col>
+        </ion-row>
+      </div>
+      <div *ngIf="history"> 
+      <ion-row class="px-1">
+        Transaction ID
+      </ion-row>
+      <ion-row class="px-1 muli-14pt idTxtClr custFontFamilyMuliBold mt-2">
+        9GDEK77EDEMNK8QP
+      </ion-row>
+      <ion-row class="px-1 mt-2">
+        Date | Time 
+      </ion-row>
+      <ion-row class="px-1 muli-14pt idTxtClr custFontFamilyMuliBold mb-3 ">
+        14 Jul 2022 at 10.30 am
+      </ion-row> 
+           
+        <ion-row *ngFor="let x of data" class="bgColor" >
+          <ion-col [size]="'6'">
+            {{x.title}}
+          </ion-col>
+          <ion-col [size]="'6'" class="text-end">
+            {{x.amount}}
+          </ion-col>
+          <ion-col  [size]="'12'" class=" text-end custColorParakeetGreen custFontFamilyMuliBold muli-14pt ">
+            Complete
+          </ion-col>
+          <hr class="w-100 px-2">
+        </ion-row>
+      </div>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+</div>
+
+   
+
+
+    
+
+    
+ 

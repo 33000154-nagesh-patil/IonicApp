@@ -1,0 +1,880 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-grid>
+      <ion-row>
+        <ion-col [size]="'0.7'" class="text-center mt-2">
+          <ion-img
+            [src]="imageList?.arrow"
+            class="custWithoutTextImg"
+            (click)="back()"
+          ></ion-img>
+        </ion-col>
+        <ion-col [size]="'8'">
+          <span
+            class="custFontFamilyMuliBold muli-16pt custLineHight40 ml-10 custColorBlack px-3"
+            >{{ stockData?.SYMBOL }}</span
+          >
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="contentBackground">
+  <ion-row class="mt-0 mx-3">
+    <ion-col
+      [size]="6"
+      class=" "
+      [ngClass]="stockText == 'BSE' ? 'custColorDark' : 'custColorWarmGrey1'"
+    >
+      <span
+        class="muli-14pt mx-1 custPosition custLineHight18 custFontFamilyMuliBold"
+        >BSE</span
+      >
+      <span>
+        <ion-toggle
+          class="me-1 custPsitiontoggle"
+          [checked]="stockData.EXCHANGE === 'NSE' ? true : false"
+          (click)="changeColorr(color)"
+        ></ion-toggle>
+      </span>
+      <span
+        class=" "
+        [ngClass]="stockText == 'NSE' ? 'custColorDark' : 'custColorWarmGrey1'"
+      >
+        <span
+          class="muli-14pt custLineHight18 custPosition1 custFontFamilyMuliBold"
+          >{{ stockData?.EXCHANGE }}
+        </span>
+      </span>
+    </ion-col>
+    <ion-col class="text-end mt-3" [size]="6">
+      <img [src]="imageList?.clockIcon" class="custIMG pb-1" />
+      <span class="text-nowrap px-1 mt-1 text-end custColorDarkishBlue"
+        >Set Alert</span
+      >
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="mt-0 mx-3">
+    <ion-col class="mt-0">
+      <span class="muli-14pt text-nowrap custFontFamilyMuliSemiBold"
+        >₹{{ stockData?.LTPvalue }}</span
+      ><span class="px-1">
+        <ion-icon
+          name="caret-up"
+          class="custGreenTick custMoveIcon mt-2"
+        ></ion-icon>
+      </span>
+      <span
+        class="muli-14pt me-1 text-start text-nowrap custFontFamilyMuliSemiBold custColorParakeetGreen"
+        >{{ stockData?.change }}</span
+      >
+      <span class="muli-12pt custFontFamilyMuliSemiBold custColorParakeetGreen"
+        >({{ stockData?.percentChange }})</span
+      >
+    </ion-col>
+
+
+
+
+
+
+<!-- /////////////// -->
+
+
+    <!-- <ion-col class="muli-14pt text-nowrap custFontFamilyMuliSemiBold">
+      ₹{{ stockData?.LTPvalue }}
+    </ion-col> -->
+
+    <!-- <ion-col class="">
+      <span
+        class="muli-14pt me-1 text-start text-nowrap custFontFamilyMuliSemiBold"
+        [ngClass]="stockData?.change > 0 ? 'custColorParakeetGreen' : 'custColorcustFadedRed'">
+        <ion-icon
+          [name]="stockData?.change > 0 ? 'caret-up' : 'caret-down'"
+          [ngClass]="
+            stockData?.change > 0
+              ? 'custColorParakeetGreen'
+              : 'custColorcustFadedRed'
+          "
+        ></ion-icon
+        >{{ stockData?.change }} </span
+      >&nbsp;
+      <span
+        class="muli-12pt custFontFamilyMuliSemiBold "
+        [ngClass]="
+          stockData?.change > 0
+            ? 'custColorParakeetGreen'
+            : 'custColorcustFadedRed'
+        "
+        >({{ stockData?.percentChange }}%)</span
+      >
+    </ion-col> -->
+  </ion-row>
+
+  <div>
+    <lib-candlechart></lib-candlechart>
+  </div>
+
+  <ion-row class="w-100">
+    <ion-segment
+      scrollable
+      value="Overview"
+      class="w-100"
+      [(ngModel)]="segmentModel1"
+      (ngModelChange)="segmentChanged($event)"
+    >
+      <ion-segment-button class="custSegmentBtn" value="Overview">
+        <ion-label class="muli-12pt Muli-SemiBold">Overview</ion-label>
+      </ion-segment-button>
+      <ion-segment-button class="custSegmentBtn" value="Technicals">
+        <ion-label class="muli-12pt Muli-SemiBold"
+          >Fundamentals & Technicals</ion-label
+        >
+      </ion-segment-button>
+      <ion-segment-button class="custSegmentBtn" value="News">
+        <ion-label class="muli-12pt Muli-SemiBold">News</ion-label>
+      </ion-segment-button>
+      <ion-segment-button class="custSegmentBtn" value="Option Chain">
+        <ion-label class="muli-12pt Muli-SemiBold">Option Chain</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+  </ion-row>
+
+  <ion-card>
+    <ion-row *ngIf="segmentModel1 == 'Overview'" class="w-100">
+      <table mat-table [dataSource]="buyTable" class="w-100 text-center">
+        <ng-container matColumnDef="bid">
+          <th mat-header-cell *matHeaderCellDef class="">Bid</th>
+          <td mat-cell *matCellDef="let element" class="colorGreen text-start">
+            339.94
+          </td>
+        </ng-container>
+
+        <ng-container matColumnDef="orders">
+          <th mat-header-cell *matHeaderCellDef class="text-center">Orders</th>
+          <td mat-cell *matCellDef="let element" class="colorGreen">4</td>
+        </ng-container>
+
+        <ng-container matColumnDef="Qty">
+          <th
+            mat-header-cell
+            *matHeaderCellDef
+            class="text-end custColorParakeetGreen"
+          >
+            Qty
+          </th>
+          <td mat-cell *matCellDef="let element" class="colorGreen">1,235</td>
+        </ng-container>
+        <ng-container matColumnDef="sellOffer">
+          <th mat-header-cell *matHeaderCellDef class="text-center">Offer</th>
+          <td mat-cell *matCellDef="let element" class="colorRed">339.94</td>
+        </ng-container>
+        <ng-container matColumnDef="sellOrders">
+          <th mat-header-cell *matHeaderCellDef class="text-end">Orders</th>
+          <td mat-cell *matCellDef="let element" class="colorRed text-center">
+            3
+          </td>
+        </ng-container>
+        <ng-container matColumnDef="sellQty">
+          <th mat-header-cell *matHeaderCellDef class="text-end">Qty</th>
+          <td mat-cell *matCellDef="let element" class="colorRed text-end">
+            1,235
+          </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+      </table>
+      <hr />
+
+      <ion-col [size]="3">
+        <p
+          class="muli-12pt custColorBattlePGry custFontFamilyMuliRegular m-0 p-2"
+        >
+          Open
+        </p>
+        <p class="muli-14pt custColorDark custFontFamilyMuliSemiBold m-0 p-2">
+          {{ stockData?.fOpen }}
+        </p>
+      </ion-col>
+      <ion-col [size]="3">
+        <p
+          class="muli-12pt custColorBattlePGry custFontFamilyMuliRegular text-end m-0 p-2"
+        >
+          High
+        </p>
+        <p
+          class="muli-14pt custColorDark custFontFamilyMuliSemiBold text-end m-0 p-2"
+        >
+          {{ stockData?.fHigh }}
+        </p>
+      </ion-col>
+      <ion-col [size]="3">
+        <p
+          class="muli-12pt custColorBattlePGry custFontFamilyMuliRegular m-0 p-2"
+        >
+          Low
+        </p>
+        <p class="muli-14pt custColorDark custFontFamilyMuliSemiBold m-0 p-2">
+          {{ stockData?.fLow }}
+        </p>
+      </ion-col>
+      <ion-col [size]="3">
+        <p
+          class="muli-12pt custColorBattlePGry custFontFamilyMuliRegular m-0 p-2 text-end"
+        >
+          Prev Close
+        </p>
+        <p
+          class="muli-14pt custColorDark custFontFamilyMuliSemiBold m-0 p-2 text-end"
+        >
+          {{ stockData?.fClose }}
+        </p>
+      </ion-col>
+      <hr />
+      <ion-col [size]="12">
+        <p
+          class="muli-10pt custColorBattlePGry custFontFamilyMuliSemiBold m-0 p-2"
+        >
+          Lower-Upper Circuit
+        </p>
+      </ion-col>
+
+      <ion-col [size]="3" class="mt-1">
+        <p class="muli-14pt custColorDark custFontFamilyMuliSemiBold m-0 p-2">
+          {{ stockData?.LCkt }}
+        </p>
+      </ion-col>
+      <ion-col [size]="6" class="mt-1">
+        <ion-progress-bar
+          color="secondary"
+          class="custProgressBar mt-2"
+          value="0.35"
+        ></ion-progress-bar>
+      </ion-col>
+      <ion-col [size]="3" class="mt-1">
+        <p
+          class="muli-14pt custColorDark custFontFamilyMuliSemiBold m-0 text-end p-2"
+        >
+          {{ stockData?.UCkt }}
+        </p>
+      </ion-col>
+
+      <ion-col [size]="6" class="greyColor">
+        <p class="muli-12pt custColorDark custFontFamilyMuliSemiBold m-0 p-2">
+          Average Traded Price
+        </p>
+      </ion-col>
+      <ion-col [size]="6" class="greyColor">
+        <p
+          class="muli-14pt custColorDark custFontFamilyMuliSemiBold m-0 text-end p-2"
+        >
+          {{ stockData?.ATP }}
+        </p>
+      </ion-col>
+      <ion-col [size]="6" class="">
+        <p class="muli-12pt custColorDark custFontFamilyMuliSemiBold m-0 p-2">
+          Last Traded Quantity
+        </p>
+      </ion-col>
+      <ion-col [size]="6" class="">
+        <p
+          class="muli-14pt custColorDark custFontFamilyMuliSemiBold m-0 text-end p-2"
+        >
+          {{ stockData?.LTQ }}
+        </p>
+      </ion-col>
+      <ion-col [size]="6" class="greyColor">
+        <p class="muli-12pt custColorDark custFontFamilyMuliSemiBold m-0 p-2">
+          Last Traded Time
+        </p>
+      </ion-col>
+      <ion-col [size]="6" class="greyColor">
+        <p
+          class="muli-14pt custColorDark custFontFamilyMuliSemiBold m-0 text-end p-2"
+        >
+          {{ stockData?.LTT }}
+        </p>
+      </ion-col>
+      <ion-col [size]="6" class="">
+        <p class="muli-12pt custColorDark custFontFamilyMuliSemiBold m-0 p-2">
+          Volume (In Lacs)
+        </p>
+      </ion-col>
+      <ion-col [size]="6" class="">
+        <p
+          class="muli-14pt custColorDark custFontFamilyMuliSemiBold m-0 text-end p-2"
+        >
+          {{ stockData?.VOL }}
+        </p>
+      </ion-col>
+
+      <ion-col [size]="12">
+        <p
+          class="muli-10pt custColorBattlePGry custFontFamilyMuliSemiBold m-0 p-2"
+        >
+          52-Week Low High
+        </p>
+      </ion-col>
+
+      <ion-col [size]="2" class="mt-1">
+        <p class="muli-14pt custColorDark custFontFamilyMuliSemiBold m-0 p-2">
+          110
+        </p>
+      </ion-col>
+      <ion-col [size]="8" class="mt-1">
+        <ion-progress-bar
+          color="secondary"
+          class="custProgressBar mt-2"
+          value="0.35"
+        ></ion-progress-bar>
+      </ion-col>
+      <ion-col [size]="2" class="mt-1">
+        <p
+          class="muli-14pt custColorDark custFontFamilyMuliSemiBold m-0 text-end p-2"
+        >
+          220
+        </p>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+
+  <ion-card>
+    <ion-row *ngIf="segmentModel1 == 'Technicals'" class="w-100">
+      <ion-col [size]="6">
+        <span
+          class="muli-12pt custColorBattlePGry custFontFamilyMuliBold custLineHight16 p-2"
+        >
+          Turnover (In lacs)</span
+        >
+      </ion-col>
+      <ion-col [size]="6">
+        <span
+          class="muli-12pt custColorDark custFontFamilyMuliBold custLineHight16 d-flex p-2 justify-content-end"
+        >
+          18,234.23</span
+        >
+      </ion-col>
+      <ion-col [size]="6">
+        <span
+          class="muli-12pt custColorBattlePGry custFontFamilyMuliBold p-2 custLineHight16"
+        >
+          Mkt Cap (In crs)</span
+        >
+      </ion-col>
+      <ion-col [size]="6">
+        <span
+          class="muli-12pt custColorDark custFontFamilyMuliBold p-2 custLineHight16 d-flex justify-content-end"
+        >
+          18,234.23</span
+        >
+      </ion-col>
+      <ion-col [size]="6">
+        <span
+          class="muli-12pt custColorBattlePGry p-2 custFontFamilyMuliBold custLineHight16"
+        >
+          Face Value</span
+        >
+      </ion-col>
+      <ion-col [size]="6">
+        <span
+          class="muli-12pt custColorDark p-2 custFontFamilyMuliBold custLineHight16 d-flex justify-content-end"
+        >
+          18,3</span
+        >
+      </ion-col>
+      <ion-col [size]="6">
+        <span
+          class="muli-12pt custColorBattlePGry p-2 custFontFamilyMuliBold custLineHight16"
+        >
+          Price / Book</span
+        >
+      </ion-col>
+      <ion-col [size]="6">
+        <span
+          class="muli-12pt custColorDark p-2 custFontFamilyMuliBold custLineHight16 d-flex justify-content-end"
+        >
+          18,234.23</span
+        >
+      </ion-col>
+      <ion-col [size]="6">
+        <span
+          class="muli-12pt custColorBattlePGry p-2 custFontFamilyMuliBold custLineHight16"
+        >
+          EPS (TTM)</span
+        >
+      </ion-col>
+      <ion-col [size]="6">
+        <span
+          class="muli-12pt custColorDark p-2 custFontFamilyMuliBold custLineHight16 d-flex justify-content-end"
+        >
+          18,234</span
+        >
+      </ion-col>
+      <ion-col [size]="6">
+        <span
+          class="muli-12pt custColorBattlePGry p-2 custFontFamilyMuliBold custLineHight16"
+        >
+          P/E</span
+        >
+      </ion-col>
+      <ion-col [size]="6">
+        <span
+          class="muli-12pt custColorDark p-2 custFontFamilyMuliBold custLineHight16 d-flex justify-content-end"
+        >
+          4.23</span
+        >
+      </ion-col>
+      <ion-col [size]="6">
+        <span
+          class="muli-12pt custColorBattlePGry p-2 custFontFamilyMuliBold custLineHight16"
+        >
+          Industry P/E</span
+        >
+      </ion-col>
+      <ion-col [size]="6">
+        <span
+          class="muli-12pt custColorDark p-2 custFontFamilyMuliBold custLineHight16 d-flex justify-content-end"
+        >
+          18,23</span
+        >
+      </ion-col>
+      <ion-col [size]="6">
+        <span
+          class="muli-12pt custColorBattlePGry p-2 custFontFamilyMuliBold custLineHight16"
+        >
+          Dividend %</span
+        >
+      </ion-col>
+      <ion-col [size]="6">
+        <span
+          class="muli-12pt custColorDark p-2 custFontFamilyMuliBold custLineHight16 d-flex justify-content-end"
+        >
+          18,234.23</span
+        >
+      </ion-col>
+      <ion-col [size]="6">
+        <span
+          class="muli-12pt custColorBattlePGry p-2 custFontFamilyMuliBold custLineHight16"
+        >
+          Dividend Yield %</span
+        >
+      </ion-col>
+      <ion-col [size]="6">
+        <span
+          class="muli-12pt custColorDark p-2 custFontFamilyMuliBold custLineHight16 d-flex justify-content-end"
+        >
+          18</span
+        >
+      </ion-col>
+      <ion-col [size]="6">
+        <span
+          class="muli-12pt custColorBattlePGry p-2 custFontFamilyMuliBold custLineHight16"
+        >
+          1M Return</span
+        >
+      </ion-col>
+      <ion-col [size]="6">
+        <span
+          class="muli-12pt custColorDark pe-2 custFontFamilyMuliBold custLineHight16 d-flex justify-content-end"
+        >
+          18,234.23</span
+        >
+      </ion-col>
+      <ion-col [size]="6">
+        <span
+          class="muli-12pt custColorBattlePGry p-2 custFontFamilyMuliBold custLineHight16"
+        >
+          Beta</span
+        >
+      </ion-col>
+      <ion-col [size]="6">
+        <span
+          class="muli-12pt custColorDark pe-2 custFontFamilyMuliBold custLineHight16 d-flex justify-content-end"
+        >
+          18,234.23</span
+        >
+      </ion-col>
+      <ion-col [size]="6">
+        <span
+          class="muli-12pt custColorBattlePGry p-2 custFontFamilyMuliBold custLineHight16"
+        >
+          Deliverables %</span
+        >
+      </ion-col>
+      <ion-col [size]="6">
+        <span
+          class="muli-12pt custColorDark pe-2 custFontFamilyMuliBold custLineHight16 d-flex justify-content-end"
+        >
+          18,234.23</span
+        >
+      </ion-col>
+    </ion-row>
+  </ion-card>
+
+  <ion-card>
+    <ion-row *ngIf="segmentModel1 == 'News'" class="w-100">
+      <ion-row class="">
+        <ion-col class="p-2">
+          <p
+            class="m-0 custFontFamilyMuliSemiBold muli-12pt custLineHight33 custColorDark"
+          >
+            The Download of corporate actions data is done after close
+          </p>
+          <p
+            class="m-1 custFontFamilyMuliRegular muli-10pt custLineHight13 custColorBattlePGry text-end"
+          >
+            1 Day ago 3:04:09
+          </p>
+        </ion-col>
+      </ion-row>
+      <hr class="" />
+      <ion-row>
+        <ion-col class="p-2">
+          <p
+            class="m-0 custFontFamilyMuliSemiBold muli-12pt custLineHight33 custColorDark"
+          >
+            Closures, Ex-Dates etc. for the week is downloaded on Fridays
+          </p>
+          <p
+            class="m-1 custFontFamilyMuliRegular muli-10pt custLineHight13 custColorBattlePGry text-end"
+          >
+            1 Day ago 3:04:09
+          </p>
+        </ion-col>
+      </ion-row>
+      <hr class="" />
+      <ion-row>
+        <ion-col class="p-2">
+          <p
+            class="m-0 custFontFamilyMuliSemiBold muli-12pt custLineHight33 custColorDark"
+          >
+            Members are advised to remain logged into all user IDs at that
+          </p>
+          <p
+            class="m-1 custFontFamilyMuliRegular muli-10pt custLineHight13 custColorBattlePGry text-end"
+          >
+            1 Day ago 3:04:09
+          </p>
+        </ion-col>
+      </ion-row>
+      <hr class="" />
+      <ion-row>
+        <ion-col class="p-2">
+          <p
+            class="m-0 custFontFamilyMuliSemiBold muli-12pt custLineHight33 custColorDark"
+          >
+            The data will not be updated on that PC. Further, they are advised
+          </p>
+          <p
+            class="m-1 custFontFamilyMuliRegular muli-10pt custLineHight13 custColorBattlePGry text-end"
+          >
+            1 Day ago 3:04:09
+          </p>
+        </ion-col>
+      </ion-row>
+      <hr class="mt-2" />
+    </ion-row>
+  </ion-card>
+
+  <ion-card>
+    <ion-row *ngIf="segmentModel1 == 'Option Chain'" class="w-100">
+      <ion-col class="pt-2" [size]="6">
+        <span
+          class="custFontFamilyMuliBold muli-11pt custLineHight14 custColorDark p-2"
+          >Future Price</span
+        >
+      </ion-col>
+      <ion-col class="p-2" [size]="6">
+        <span
+          class="custFontFamilyMuliSemiBold muli-13pt custLineHight16 custColorDark d-flex justify-content-end"
+          >₹234.65
+          <span
+            class="custFontFamilyMuliSemiBold muli-13pt custLineHight16 custColorParakeetGreen d-flex justify-content-end"
+          >
+            &nbsp;&nbsp;22.14</span
+          >
+          <span
+            class="custFontFamilyMuliSemiBold muli-12pt custLineHight14 custColorParakeetGreen d-flex justify-content-end"
+          >
+            &nbsp;(0.23%)</span
+          ></span
+        >
+      </ion-col>
+
+      <ion-col class="" [size]="6">
+        <span
+          class="custFontFamilyMuliBold muli-11pt custLineHight14 custColorDark p-2"
+          >24 Mar 2021</span
+        >
+      </ion-col>
+
+      <ion-col
+        [size]="'2'"
+        class="text-center mt-2 custFontFamilyMuliBold"
+        [ngClass]="
+          currentTextType === 'Yes' ? 'custColorDark' : 'custColorWarmGrey1'
+        "
+      >
+        LTP
+      </ion-col>
+      <ion-col [size]="'2'" class="text-center">
+        <ion-toggle (click)="changeColor(color)" class="mt-0"></ion-toggle>
+      </ion-col>
+      <ion-col
+        [size]="'2'"
+        class="text-center mt-2 custFontFamilyMuliBold"
+        [ngClass]="
+          currentTextType === 'No' ? 'custColorDark' : 'custColorWarmGrey1'
+        "
+      >
+        OI
+      </ion-col>
+
+      <hr />
+
+      <ion-col [size]="4">
+        <span
+          class="custFontFamilyMuliSemiBold muli-12pt custLineHight15 custColorBattlePGry p-2"
+          >Call LTP OI</span
+        >
+      </ion-col>
+      <ion-col [size]="4">
+        <span
+          class="custFontFamilyMuliSemiBold muli-12pt d-flex justify-content-center custLineHight15 custColorBattlePGry p-2"
+          >Strike</span
+        >
+      </ion-col>
+      <ion-col [size]="4">
+        <span
+          class="custFontFamilyMuliSemiBold muli-12pt custLineHight15 d-flex justify-content-end custColorBattlePGry p-2"
+          >PUT LTP OI</span
+        >
+      </ion-col>
+
+      <ion-col [size]="4" class="px-3">
+        <span
+          class="custFontFamilyMuliSemiBold muli-12pt custLineHight15 custColorDark"
+          >0.00
+          <span
+            class="custFontFamilyMuliSemiBold muli-12pt custLineHight15 custColorlightRed"
+            >100.00%</span
+          >
+        </span>
+      </ion-col>
+      <ion-col [size]="4">
+        <span
+          class="custFontFamilyMuliSemiBold muli-14pt d-flex justify-content-center custLineHight18 custColorDark"
+          >216</span
+        >
+      </ion-col>
+      <ion-col [size]="4" class="px-3">
+        <span
+          class="custFontFamilyMuliSemiBold muli-12pt custLineHight15 d-flex justify-content-end custColorDark"
+          >0.00
+          <span
+            class="custFontFamilyMuliSemiBold muli-12pt custLineHight15 custColorlightRed"
+          >
+            &nbsp;100.00%</span
+          ></span
+        >
+      </ion-col>
+
+      <ion-col [size]="4" class="px-3">
+        <span
+          class="custFontFamilyMuliSemiBold muli-12pt custLineHight15 custColorDark"
+          >0.00
+          <span
+            class="custFontFamilyMuliSemiBold muli-12pt custLineHight15 custColorlightRed"
+          >
+            &nbsp;100.00%</span
+          >
+        </span>
+      </ion-col>
+      <ion-col [size]="4">
+        <span
+          class="custFontFamilyMuliSemiBold muli-14pt d-flex justify-content-center custLineHight18 custColorDark"
+          >218</span
+        >
+      </ion-col>
+      <ion-col [size]="4" class="px-3">
+        <span
+          class="custFontFamilyMuliSemiBold muli-12pt custLineHight15 d-flex justify-content-end custColorDark"
+          >0.00
+          <span
+            class="custFontFamilyMuliSemiBold muli-12pt custLineHight15 custColorlightRed"
+          >
+            &nbsp;100.00%</span
+          ></span
+        >
+      </ion-col>
+
+      <ion-col [size]="4" class="px-3">
+        <span
+          class="custFontFamilyMuliSemiBold muli-12pt custLineHight15 custColorDark"
+          >0.00
+          <span
+            class="custFontFamilyMuliSemiBold muli-12pt custLineHight15 custColorlightRed"
+          >
+            &nbsp;000%</span
+          >
+        </span>
+      </ion-col>
+      <ion-col [size]="4">
+        <span
+          class="custFontFamilyMuliSemiBold muli-14pt d-flex justify-content-center custLineHight18 custColorDark"
+          >221</span
+        >
+      </ion-col>
+      <ion-col [size]="4" class="px-3">
+        <span
+          class="custFontFamilyMuliSemiBold muli-12pt custLineHight15 d-flex justify-content-end custColorDark"
+          >0.00
+          <span
+            class="custFontFamilyMuliSemiBold muli-12pt custLineHight15 custColorlightRed"
+          >
+            &nbsp;000%</span
+          ></span
+        >
+      </ion-col>
+
+      <ion-col [size]="4" class="px-3">
+        <span
+          class="custFontFamilyMuliSemiBold muli-12pt custLineHight15 custColorDark"
+          >0.00
+          <span
+            class="custFontFamilyMuliSemiBold muli-12pt custLineHight15 custColorlightRed"
+          >
+            &nbsp;000%</span
+          >
+        </span>
+      </ion-col>
+      <ion-col [size]="4">
+        <span
+          class="custFontFamilyMuliSemiBold muli-14pt d-flex justify-content-center custLineHight18 custColorDark"
+          >224</span
+        >
+      </ion-col>
+      <ion-col [size]="4" class="px-3">
+        <span
+          class="custFontFamilyMuliSemiBold muli-12pt custLineHight15 d-flex justify-content-end custColorDark"
+          >0.00
+          <span
+            class="custFontFamilyMuliSemiBold muli-12pt custLineHight15 custColorlightRed"
+          >
+            &nbsp;000%</span
+          ></span
+        >
+      </ion-col>
+
+      <ion-col [size]="4" class="px-3">
+        <span
+          class="custFontFamilyMuliSemiBold muli-12pt custLineHight15 custColorDark"
+          >0.00
+          <span
+            class="custFontFamilyMuliSemiBold muli-12pt custLineHight15 custColorlightRed"
+          >
+            &nbsp;000%</span
+          >
+        </span>
+      </ion-col>
+      <ion-col [size]="4">
+        <span
+          class="custFontFamilyMuliSemiBold muli-14pt d-flex justify-content-center custLineHight18 custColorDark"
+          >228</span
+        >
+      </ion-col>
+      <ion-col [size]="4" class="px-3">
+        <span
+          class="custFontFamilyMuliSemiBold muli-12pt custLineHight15 d-flex justify-content-end custColorDark"
+          >0.00
+          <span
+            class="custFontFamilyMuliSemiBold muli-12pt custLineHight15 custColorlightRed"
+          >
+            &nbsp;000%</span
+          ></span
+        >
+      </ion-col>
+
+      <ion-col [size]="4" class="px-3">
+        <span
+          class="custFontFamilyMuliSemiBold muli-12pt custLineHight15 custColorDark"
+          >0.00
+          <span
+            class="custFontFamilyMuliSemiBold muli-12pt custLineHight15 custColorlightRed"
+          >
+            &nbsp;100.00%</span
+          >
+        </span>
+      </ion-col>
+      <ion-col [size]="4">
+        <span
+          class="custFontFamilyMuliSemiBold muli-14pt d-flex justify-content-center custLineHight18 custColorDark"
+          >232</span
+        >
+      </ion-col>
+      <ion-col [size]="4" class="px-3">
+        <span
+          class="custFontFamilyMuliSemiBold muli-12pt custLineHight15 d-flex justify-content-end custColorDark"
+          >0.00
+          <span
+            class="custFontFamilyMuliSemiBold muli-12pt custLineHight15 custColorlightRed"
+          >
+            &nbsp;100.00%</span
+          ></span
+        >
+      </ion-col>
+      <ion-col [size]="4" class="px-3">
+        <span
+          class="custFontFamilyMuliSemiBold muli-12pt custLineHight15 custColorDark"
+          >0.00
+          <span
+            class="custFontFamilyMuliSemiBold muli-12pt custLineHight15 custColorlightRed"
+          >
+            &nbsp;000%</span
+          >
+        </span>
+      </ion-col>
+      <ion-col [size]="4">
+        <span
+          class="custFontFamilyMuliSemiBold muli-14pt d-flex justify-content-center custLineHight18 custColorDark"
+          >236</span
+        >
+      </ion-col>
+      <ion-col [size]="4" class="px-3">
+        <span
+          class="custFontFamilyMuliSemiBold muli-12pt custLineHight15 d-flex justify-content-end custColorDark"
+          >0.00
+          <span
+            class="custFontFamilyMuliSemiBold muli-12pt custLineHight15 custColorlightRed"
+          >
+            &nbsp;000%</span
+          ></span
+        >
+      </ion-col>
+    </ion-row>
+  </ion-card>
+</ion-content>
+
+<ion-footer>
+  <ion-row class="mx-2 mt-2">
+    <ion-col (click)="openBuySellModal('B')">
+      <ion-button
+        color="success"
+        class="custBackgroundColorGreen w-100 custButHeight custColorWhite rounded-3"
+      >
+        Buy</ion-button
+      >
+    </ion-col>
+    <ion-col (click)="openBuySellModal('S')">
+      <ion-button
+        color="danger"
+        class="custBackgroundColorRed w-100 custButHeight custBackgroundColorRed custColorWhite rounded-3"
+      >
+        SELL</ion-button
+      >
+    </ion-col>
+  </ion-row>
+</ion-footer>

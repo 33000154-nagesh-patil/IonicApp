@@ -1,0 +1,28 @@
+.custBox{
+    height: 4px;
+    width: 20px;
+    border-radius: 0.5px;
+}
+
+.Left_side_filter{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.custKYCImgone{
+    height: 16px;
+    width: 17px;
+    margin-left: 5px;
+    margin-top: 3px;
+    cursor: pointer;
+}
+
+.custFilter{
+    cursor: pointer;
+}
+.courseIcon{
+    display: flex;
+    justify-content:end;
+}

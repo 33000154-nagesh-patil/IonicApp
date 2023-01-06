@@ -1,0 +1,38 @@
+.custGreenTick {
+  color: #33cf03;
+  height: 12px;
+  width: 12px;
+}
+
+.custRedTick {
+  color: #d60000;
+  height: 12px;
+  width: 12px;
+}
+.custBtnExplore{
+  // width: 80px;
+  height: 30px;
+  border:  1px solid var(--custBrightCyan) !important;
+  border-radius: 4px !important;
+  background: var(--custPaleGrey) !important;
+  text-align: center !important;
+  padding-left: 16px !important;
+  padding-right: 16px !important;
+  float: right;
+}
+.cta{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ion-segment-button {
+  text-transform: capitalize;
+}
+.border-bottom {
+  border-bottom: 1px solid #dedede;
+}
+
+.arrow {
+  height: 5px;
+}

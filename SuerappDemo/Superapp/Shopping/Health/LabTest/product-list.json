@@ -1,0 +1,2284 @@
+{
+  "productlist": [
+      {
+          "name": "FASTING BLOOD SUGAR",
+          "description": "",
+          "testcount": "1",
+          "b2c": "80",
+          "id": "11313",
+          "ereportwithin": ""
+      },
+      {
+          "name": "HbA1c",
+          "description": "",
+          "testcount": "1",
+          "b2c": "300",
+          "id": "11281",
+          "ereportwithin": ""
+      },
+      {
+          "name": "POSTPRANDIAL BLOOD SUGAR",
+          "description": "",
+          "testcount": "1",
+          "b2c": "80",
+          "id": "11462",
+          "ereportwithin": ""
+      },
+      {
+          "name": "THYROID STIMULATING HORMONE (TSH)",
+          "description": "",
+          "testcount": "1",
+          "b2c": "200",
+          "id": "11282",
+          "ereportwithin": ""
+      },
+      {
+          "name": "ERYTHROCYTE SEDIMENTATION RATE (ESR)",
+          "description": "",
+          "testcount": "1",
+          "b2c": "200",
+          "id": "11447",
+          "ereportwithin": ""
+      },
+      {
+          "name": "CALCIUM",
+          "description": "",
+          "testcount": "1",
+          "b2c": "200",
+          "id": "11482",
+          "ereportwithin": ""
+      },
+      {
+          "name": "RANDOM BLOOD SUGAR",
+          "description": "",
+          "testcount": "1",
+          "b2c": "80",
+          "id": "11516",
+          "ereportwithin": ""
+      },
+      {
+          "name": "CREATININE - SERUM",
+          "description": "",
+          "testcount": "1",
+          "b2c": "200",
+          "id": "11389",
+          "ereportwithin": ""
+      },
+      {
+          "name": "C-REACTIVE PROTEIN (CRP)",
+          "description": "",
+          "testcount": "1",
+          "b2c": "400",
+          "id": "11555",
+          "ereportwithin": ""
+      },
+      {
+          "name": "HEMOGLOBIN",
+          "description": "",
+          "testcount": "1",
+          "b2c": "150",
+          "id": "11791",
+          "ereportwithin": ""
+      },
+      {
+          "name": "URIC ACID",
+          "description": "",
+          "testcount": "1",
+          "b2c": "200",
+          "id": "11461",
+          "ereportwithin": ""
+      },
+      {
+          "name": "SEX HORMONE BINDING GLOBULIN (SHBG)",
+          "description": "",
+          "testcount": "1",
+          "b2c": "1000",
+          "id": "12889",
+          "ereportwithin": ""
+      },
+      {
+          "name": "25-OH VITAMIN D (TOTAL)",
+          "description": "",
+          "testcount": "1",
+          "b2c": "1000",
+          "id": "11338",
+          "ereportwithin": ""
+      },
+      {
+          "name": "VITAMIN B-12",
+          "description": "",
+          "testcount": "1",
+          "b2c": "650",
+          "id": "11339",
+          "ereportwithin": ""
+      },
+      {
+          "name": "PROLACTIN (PRL)",
+          "description": "",
+          "testcount": "1",
+          "b2c": "380",
+          "id": "11402",
+          "ereportwithin": ""
+      },
+      {
+          "name": "RHEUMATOID FACTOR (RF)",
+          "description": "",
+          "testcount": "1",
+          "b2c": "500",
+          "id": "11559",
+          "ereportwithin": ""
+      },
+      {
+          "name": "POTASSIUM",
+          "description": "",
+          "testcount": "1",
+          "b2c": "200",
+          "id": "11704",
+          "ereportwithin": ""
+      },
+      {
+          "name": "TESTOSTERONE",
+          "description": "",
+          "testcount": "1",
+          "b2c": "390",
+          "id": "11612",
+          "ereportwithin": ""
+      },
+      {
+          "name": "TOTAL CHOLESTEROL",
+          "description": "",
+          "testcount": "1",
+          "b2c": "200",
+          "id": "11483",
+          "ereportwithin": ""
+      },
+      {
+          "name": "FERRITIN",
+          "description": "",
+          "testcount": "1",
+          "b2c": "520",
+          "id": "11611",
+          "ereportwithin": ""
+      },
+      {
+          "name": "FREE THYROXINE (FT4)",
+          "description": "",
+          "testcount": "1",
+          "b2c": "250",
+          "id": "11387",
+          "ereportwithin": ""
+      },
+      {
+          "name": "BETA HCG",
+          "description": "",
+          "testcount": "1",
+          "b2c": "500",
+          "id": "11722",
+          "ereportwithin": ""
+      },
+      {
+          "name": "ALANINE TRANSAMINASE (SGPT)",
+          "description": "",
+          "testcount": "1",
+          "b2c": "200",
+          "id": "11512",
+          "ereportwithin": ""
+      },
+      {
+          "name": "SODIUM",
+          "description": "",
+          "testcount": "1",
+          "b2c": "200",
+          "id": "11518",
+          "ereportwithin": ""
+      },
+      {
+          "name": "ANTI MULLERIAN HORMONE (AMH)",
+          "description": "",
+          "testcount": "1",
+          "b2c": "2000",
+          "id": "11609",
+          "ereportwithin": ""
+      },
+      {
+          "name": "ANTI CCP (ACCP)",
+          "description": "",
+          "testcount": "1",
+          "b2c": "1200",
+          "id": "11580",
+          "ereportwithin": ""
+      },
+      {
+          "name": "BLOOD UREA NITROGEN (BUN)",
+          "description": "",
+          "testcount": "1",
+          "b2c": "200",
+          "id": "11464",
+          "ereportwithin": ""
+      },
+      {
+          "name": "FOLLICLE STIMULATING HORMONE (FSH)",
+          "description": "",
+          "testcount": "1",
+          "b2c": "390",
+          "id": "11556",
+          "ereportwithin": ""
+      },
+      {
+          "name": "INSULIN - FASTING",
+          "description": "",
+          "testcount": "1",
+          "b2c": "500",
+          "id": "11718",
+          "ereportwithin": ""
+      },
+      {
+          "name": "ANTI MICROSOMAL ANTIBODY (AMA)",
+          "description": "",
+          "testcount": "1",
+          "b2c": "1100",
+          "id": "11727",
+          "ereportwithin": ""
+      },
+      {
+          "name": "LUTEINISING HORMONE (LH)",
+          "description": "",
+          "testcount": "1",
+          "b2c": "390",
+          "id": "11573",
+          "ereportwithin": ""
+      },
+      {
+          "name": "PROSTATE SPECIFIC ANTIGEN (PSA)",
+          "description": "",
+          "testcount": "1",
+          "b2c": "400",
+          "id": "11517",
+          "ereportwithin": ""
+      },
+      {
+          "name": "FREE TRIIODOTHYRONINE (FT3)",
+          "description": "",
+          "testcount": "1",
+          "b2c": "250",
+          "id": "11448",
+          "ereportwithin": ""
+      },
+      {
+          "name": "RUBELLA - IgM",
+          "description": "",
+          "testcount": "1",
+          "b2c": "300",
+          "id": "12225",
+          "ereportwithin": ""
+      },
+      {
+          "name": "RUBELLA - IgG",
+          "description": "",
+          "testcount": "1",
+          "b2c": "300",
+          "id": "12153",
+          "ereportwithin": ""
+      },
+      {
+          "name": "HIGH SENSITIVITY C-REACTIVE PROTEIN (HS-CRP)",
+          "description": "",
+          "testcount": "1",
+          "b2c": "400",
+          "id": "11875",
+          "ereportwithin": ""
+      },
+      {
+          "name": "VDRL (RPR) FOR SYPHILIS",
+          "description": "",
+          "testcount": "1",
+          "b2c": "200",
+          "id": "11749",
+          "ereportwithin": ""
+      },
+      {
+          "name": "URINARY MICROALBUMIN",
+          "description": "",
+          "testcount": "1",
+          "b2c": "600",
+          "id": "11558",
+          "ereportwithin": ""
+      },
+      {
+          "name": "ESTRADIOL/OESTROGEN (E2)",
+          "description": "",
+          "testcount": "1",
+          "b2c": "550",
+          "id": "11792",
+          "ereportwithin": ""
+      },
+      {
+          "name": "FREE TESTOSTERONE",
+          "description": "",
+          "testcount": "1",
+          "b2c": "750",
+          "id": "12082",
+          "ereportwithin": ""
+      },
+      {
+          "name": "IMMUNOGLOBULIN E (IGE)",
+          "description": "",
+          "testcount": "1",
+          "b2c": "1200",
+          "id": "12669",
+          "ereportwithin": ""
+      },
+      {
+          "name": "MAGNESIUM",
+          "description": "",
+          "testcount": "1",
+          "b2c": "250",
+          "id": "11871",
+          "ereportwithin": ""
+      },
+      {
+          "name": "ASPARTATE AMINOTRANSFERASE (SGOT )",
+          "description": "",
+          "testcount": "1",
+          "b2c": "200",
+          "id": "11514",
+          "ereportwithin": ""
+      },
+      {
+          "name": "AMYLASE",
+          "description": "",
+          "testcount": "1",
+          "b2c": "450",
+          "id": "11771",
+          "ereportwithin": ""
+      },
+      {
+          "name": "HOMOCYSTEINE",
+          "description": "",
+          "testcount": "1",
+          "b2c": "1100",
+          "id": "11812",
+          "ereportwithin": ""
+      },
+      {
+          "name": "HLA-B27",
+          "description": "",
+          "testcount": "1",
+          "b2c": "1500",
+          "id": "11770",
+          "ereportwithin": ""
+      },
+      {
+          "name": "CA-125",
+          "description": "",
+          "testcount": "1",
+          "b2c": "750",
+          "id": "11665",
+          "ereportwithin": ""
+      },
+      {
+          "name": "LIPASE",
+          "description": "",
+          "testcount": "1",
+          "b2c": "590",
+          "id": "11796",
+          "ereportwithin": ""
+      },
+      {
+          "name": "CORTISOL",
+          "description": "",
+          "testcount": "1",
+          "b2c": "500",
+          "id": "11813",
+          "ereportwithin": ""
+      },
+      {
+          "name": "DHEA - SULPHATE (DHEAS)",
+          "description": "",
+          "testcount": "1",
+          "b2c": "500",
+          "id": "12109",
+          "ereportwithin": ""
+      },
+      {
+          "name": "INSULIN - PP",
+          "description": "",
+          "testcount": "1",
+          "b2c": "400",
+          "id": "12172",
+          "ereportwithin": ""
+      },
+      {
+          "name": "TOTAL IgE ",
+          "description": "",
+          "testcount": "1",
+          "b2c": "520",
+          "id": "11513",
+          "ereportwithin": ""
+      },
+      {
+          "name": "ALKALINE PHOSPHATASE",
+          "description": "",
+          "testcount": "1",
+          "b2c": "200",
+          "id": "11666",
+          "ereportwithin": ""
+      },
+      {
+          "name": "D-DIMER",
+          "description": "",
+          "testcount": "1",
+          "b2c": "1200",
+          "id": "12084",
+          "ereportwithin": ""
+      },
+      {
+          "name": "ANTI STREPTOLYSIN - O (ASO)",
+          "description": "",
+          "testcount": "1",
+          "b2c": "500",
+          "id": "11940",
+          "ereportwithin": ""
+      },
+      {
+          "name": "IRON",
+          "description": "",
+          "testcount": "1",
+          "b2c": "200",
+          "id": "11751",
+          "ereportwithin": ""
+      },
+      {
+          "name": "MEASLES ANTIBODY - IGG",
+          "description": "",
+          "testcount": "1",
+          "b2c": "600",
+          "id": "12972",
+          "ereportwithin": ""
+      },
+      {
+          "name": "ANTI THYROGLOBULIN ANTIBODY (ATG)",
+          "description": "",
+          "testcount": "1",
+          "b2c": "650",
+          "id": "12009",
+          "ereportwithin": ""
+      },
+      {
+          "name": "FOLATE",
+          "description": "",
+          "testcount": "1",
+          "b2c": "750",
+          "id": "11814",
+          "ereportwithin": ""
+      },
+      {
+          "name": "ALBUMIN - SERUM",
+          "description": "",
+          "testcount": "1",
+          "b2c": "200",
+          "id": "11702",
+          "ereportwithin": ""
+      },
+      {
+          "name": "MUMPS ANTIBODY - IGG",
+          "description": "",
+          "testcount": "1",
+          "b2c": "600",
+          "id": "12996",
+          "ereportwithin": ""
+      },
+      {
+          "name": "BILIRUBIN - TOTAL",
+          "description": "",
+          "testcount": "1",
+          "b2c": "200",
+          "id": "11560",
+          "ereportwithin": ""
+      },
+      {
+          "name": "TSH - ULTRASENSITIVE",
+          "description": "",
+          "testcount": "1",
+          "b2c": "200",
+          "id": "12126",
+          "ereportwithin": ""
+      },
+      {
+          "name": "TOTAL THYROXINE (T4)",
+          "description": "",
+          "testcount": "1",
+          "b2c": "200",
+          "id": "11664",
+          "ereportwithin": ""
+      },
+      {
+          "name": "PROGESTERONE",
+          "description": "",
+          "testcount": "1",
+          "b2c": "500",
+          "id": "12017",
+          "ereportwithin": ""
+      },
+      {
+          "name": "PROTEIN - TOTAL",
+          "description": "",
+          "testcount": "1",
+          "b2c": "200",
+          "id": "11650",
+          "ereportwithin": ""
+      },
+      {
+          "name": "CARCINO EMBRYONIC ANTIGEN (CEA)",
+          "description": "",
+          "testcount": "1",
+          "b2c": "500",
+          "id": "11797",
+          "ereportwithin": ""
+      },
+      {
+          "name": "COVID ANTIBODY IGG - ELISA",
+          "description": "",
+          "testcount": "1",
+          "b2c": "390",
+          "id": "12211",
+          "ereportwithin": ""
+      },
+      {
+          "name": "CA 19.9",
+          "description": "",
+          "testcount": "1",
+          "b2c": "750",
+          "id": "12145",
+          "ereportwithin": ""
+      },
+      {
+          "name": "TOTAL TRIIODOTHYRONINE (T3)",
+          "description": "",
+          "testcount": "1",
+          "b2c": "200",
+          "id": "11720",
+          "ereportwithin": ""
+      },
+      {
+          "name": "DIHYDROTESTOSTERONE (DHT)",
+          "description": "",
+          "testcount": "1",
+          "b2c": "1000",
+          "id": "12943",
+          "ereportwithin": ""
+      },
+      {
+          "name": "VARICELLA ZOSTER VIRUS ANTIBODY - IGG",
+          "description": "",
+          "testcount": "1",
+          "b2c": "700",
+          "id": "12988",
+          "ereportwithin": ""
+      },
+      {
+          "name": "ALPHA FETO PROTEIN (AFP)",
+          "description": "",
+          "testcount": "1",
+          "b2c": "500",
+          "id": "12047",
+          "ereportwithin": ""
+      },
+      {
+          "name": "CHLORIDE",
+          "description": "",
+          "testcount": "1",
+          "b2c": "200",
+          "id": "11653",
+          "ereportwithin": ""
+      },
+      {
+          "name": "VALPROIC ACID",
+          "description": "",
+          "testcount": "1",
+          "b2c": "500",
+          "id": "12878",
+          "ereportwithin": ""
+      },
+      {
+          "name": "LACTATE DEHYDROGENASE (LDH)",
+          "description": "",
+          "testcount": "1",
+          "b2c": "330",
+          "id": "11872",
+          "ereportwithin": ""
+      },
+      {
+          "name": "FREE PSA",
+          "description": "",
+          "testcount": "1",
+          "b2c": "750",
+          "id": "12460",
+          "ereportwithin": ""
+      },
+      {
+          "name": "TROPONIN I RAPID TEST",
+          "description": "",
+          "testcount": "1",
+          "b2c": "500",
+          "id": "12976",
+          "ereportwithin": ""
+      },
+      {
+          "name": "TRIGLYCERIDES",
+          "description": "",
+          "testcount": "1",
+          "b2c": "200",
+          "id": "11614",
+          "ereportwithin": ""
+      },
+      {
+          "name": "TSH RECEPTOR ANTIBODIES",
+          "description": "",
+          "testcount": "1",
+          "b2c": "1200",
+          "id": "12942",
+          "ereportwithin": ""
+      },
+      {
+          "name": "URINE PREGNANCY RAPID TEST",
+          "description": "",
+          "testcount": "1",
+          "b2c": "200",
+          "id": "13090",
+          "ereportwithin": ""
+      },
+      {
+          "name": "HEPATITIS B SURFACE ANTIGEN(HBSAG) RAPID TEST",
+          "description": "",
+          "testcount": "1",
+          "b2c": "200",
+          "id": "12164",
+          "ereportwithin": ""
+      },
+      {
+          "name": "LDL CHOLESTEROL - DIRECT",
+          "description": "",
+          "testcount": "1",
+          "b2c": "200",
+          "id": "11656",
+          "ereportwithin": ""
+      },
+      {
+          "name": "PLATELET COUNT",
+          "description": "",
+          "testcount": "1",
+          "b2c": "150",
+          "id": "12963",
+          "ereportwithin": ""
+      },
+      {
+          "name": "GLUCOSE-6-PHOSPHATE DEHYDROGENASE",
+          "description": "",
+          "testcount": "1",
+          "b2c": "500",
+          "id": "12358",
+          "ereportwithin": ""
+      },
+      {
+          "name": "CA 15.3",
+          "description": "",
+          "testcount": "1",
+          "b2c": "750",
+          "id": "12788",
+          "ereportwithin": ""
+      },
+      {
+          "name": "HERPES SIMPLEX VIRUS (HSV)-IgG",
+          "description": "",
+          "testcount": "1",
+          "b2c": "300",
+          "id": "12643",
+          "ereportwithin": ""
+      },
+      {
+          "name": "COMPLEMENT 3 (C3)",
+          "description": "",
+          "testcount": "1",
+          "b2c": "500",
+          "id": "12568",
+          "ereportwithin": ""
+      },
+      {
+          "name": "HDL CHOLESTEROL - DIRECT",
+          "description": "",
+          "testcount": "1",
+          "b2c": "200",
+          "id": "11655",
+          "ereportwithin": ""
+      },
+      {
+          "name": "IONIC CALCIUM",
+          "description": "",
+          "testcount": "1",
+          "b2c": "300",
+          "id": "12196",
+          "ereportwithin": ""
+      },
+      {
+          "name": "FREE BETA HCG",
+          "description": "",
+          "testcount": "1",
+          "b2c": "300",
+          "id": "12880",
+          "ereportwithin": ""
+      },
+      {
+          "name": "BICARBONATE",
+          "description": "",
+          "testcount": "1",
+          "b2c": "300",
+          "id": "12654",
+          "ereportwithin": ""
+      },
+      {
+          "name": "BILIRUBIN -DIRECT",
+          "description": "",
+          "testcount": "1",
+          "b2c": "200",
+          "id": "11581",
+          "ereportwithin": ""
+      },
+      {
+          "name": "ANGIOTENSIN CONVERTING ENZYME",
+          "description": "",
+          "testcount": "1",
+          "b2c": "600",
+          "id": "12834",
+          "ereportwithin": ""
+      },
+      {
+          "name": "HEPATITIS C ANTIBODY(HCVAB) RAPID TEST",
+          "description": "",
+          "testcount": "1",
+          "b2c": "200",
+          "id": "12412",
+          "ereportwithin": ""
+      },
+      {
+          "name": "PROTEIN ELECTROPHORESIS",
+          "description": "",
+          "testcount": "1",
+          "b2c": "750",
+          "id": "12162",
+          "ereportwithin": ""
+      },
+      {
+          "name": "TOTAL IRON BINDING CAPACITY (TIBC)",
+          "description": "",
+          "testcount": "1",
+          "b2c": "225",
+          "id": "11920",
+          "ereportwithin": ""
+      },
+      {
+          "name": "TOTAL BILE ACID",
+          "description": "",
+          "testcount": "1",
+          "b2c": "500",
+          "id": "12935",
+          "ereportwithin": ""
+      },
+      {
+          "name": "COMPLEMENT 4 (C4)",
+          "description": "",
+          "testcount": "1",
+          "b2c": "500",
+          "id": "12775",
+          "ereportwithin": ""
+      },
+      {
+          "name": "LITHIUM",
+          "description": "",
+          "testcount": "1",
+          "b2c": "400",
+          "id": "12257",
+          "ereportwithin": ""
+      },
+      {
+          "name": "FRUCTOSAMINE",
+          "description": "",
+          "testcount": "1",
+          "b2c": "300",
+          "id": "12169",
+          "ereportwithin": ""
+      },
+      {
+          "name": "TREPONEMA PALLIDUM HAEMAGGLUTINATION",
+          "description": "",
+          "testcount": "1",
+          "b2c": "500",
+          "id": "12394",
+          "ereportwithin": ""
+      },
+      {
+          "name": "TISSUE TRANSGLUTAMINASE - IGA (TTG)",
+          "description": "",
+          "testcount": "1",
+          "b2c": "750",
+          "id": "12150",
+          "ereportwithin": ""
+      },
+      {
+          "name": "ANTI NUCLEAR ANTIBODIES (ANA)",
+          "description": "",
+          "testcount": "1",
+          "b2c": "520",
+          "id": "11723",
+          "ereportwithin": ""
+      },
+      {
+          "name": "HEPATITIS C VIRUS (HCV) QUALITATIVE PCR",
+          "description": "",
+          "testcount": "1",
+          "b2c": "2500",
+          "id": "13005",
+          "ereportwithin": ""
+      },
+      {
+          "name": "HERPES SIMPLEX VIRUS II (HSV)-IGG",
+          "description": "",
+          "testcount": "1",
+          "b2c": "300",
+          "id": "12731",
+          "ereportwithin": ""
+      },
+      {
+          "name": "INDIRECT COOMBS TEST",
+          "description": "",
+          "testcount": "1",
+          "b2c": "300",
+          "id": "12144",
+          "ereportwithin": ""
+      },
+      {
+          "name": "ANTINUCLEAR ANTIBODIES-17 BLOT",
+          "description": "",
+          "testcount": "1",
+          "b2c": "2500",
+          "id": "12444",
+          "ereportwithin": ""
+      },
+      {
+          "name": "DENGUE NS1 ANTIGEN RAPID TEST",
+          "description": "",
+          "testcount": "1",
+          "b2c": "300",
+          "id": "13008",
+          "ereportwithin": ""
+      },
+      {
+          "name": "VITAMIN D 1,25 - DIHYDROXY",
+          "description": "",
+          "testcount": "1",
+          "b2c": "2500",
+          "id": "12968",
+          "ereportwithin": ""
+      },
+      {
+          "name": "HERPES SIMPLEX VIRUS (HSV)-IgM",
+          "description": "",
+          "testcount": "1",
+          "b2c": "300",
+          "id": "12641",
+          "ereportwithin": ""
+      },
+      {
+          "name": "ANTI PHOSPHOLIPID ANTIBODY (APL) - IGG",
+          "description": "",
+          "testcount": "1",
+          "b2c": "750",
+          "id": "12170",
+          "ereportwithin": ""
+      },
+      {
+          "name": "ANTI - DSDNA",
+          "description": "",
+          "testcount": "1",
+          "b2c": "500",
+          "id": "12218",
+          "ereportwithin": ""
+      },
+      {
+          "name": "ANTI HEPATITIS B SURFACE ANTIGEN - TOTAL",
+          "description": "",
+          "testcount": "1",
+          "b2c": "500",
+          "id": "12651",
+          "ereportwithin": ""
+      },
+      {
+          "name": "ANDROSTENEDIONE (A4)",
+          "description": "",
+          "testcount": "1",
+          "b2c": "750",
+          "id": "12951",
+          "ereportwithin": ""
+      },
+      {
+          "name": "ERYTHROPOIETIN",
+          "description": "",
+          "testcount": "1",
+          "b2c": "750",
+          "id": "12999",
+          "ereportwithin": ""
+      },
+      {
+          "name": "PROCALCITONIN",
+          "description": "",
+          "testcount": "1",
+          "b2c": "750",
+          "id": "12599",
+          "ereportwithin": ""
+      },
+      {
+          "name": "HUMAN GROWTH HORMONE (HGH)",
+          "description": "",
+          "testcount": "1",
+          "b2c": "500",
+          "id": "12684",
+          "ereportwithin": ""
+      },
+      {
+          "name": "17 OH PROGESTERONE",
+          "description": "",
+          "testcount": "1",
+          "b2c": "750",
+          "id": "12686",
+          "ereportwithin": ""
+      },
+      {
+          "name": "ACETYLCHOLINE RECEPTOR AUTOANTIBODY",
+          "description": "",
+          "testcount": "1",
+          "b2c": "2000",
+          "id": "13012",
+          "ereportwithin": ""
+      },
+      {
+          "name": "ANTI PHOSPHOLIPID ANTIBODY (APL) - IGM",
+          "description": "",
+          "testcount": "1",
+          "b2c": "750",
+          "id": "12157",
+          "ereportwithin": ""
+      },
+      {
+          "name": "CYTOMEGALO VIRUS (CMV) - IgM",
+          "description": "",
+          "testcount": "1",
+          "b2c": "300",
+          "id": "12866",
+          "ereportwithin": ""
+      },
+      {
+          "name": "TOTAL LEUCOCYTES COUNT",
+          "description": "",
+          "testcount": "1",
+          "b2c": "150",
+          "id": "13095",
+          "ereportwithin": ""
+      },
+      {
+          "name": "RETICULOCYTE COUNT (%)",
+          "description": "",
+          "testcount": "1",
+          "b2c": "300",
+          "id": "12507",
+          "ereportwithin": ""
+      },
+      {
+          "name": "NEONATAL THYROID STIMULATING HORMONE #  (TSH)",
+          "description": "",
+          "testcount": "1",
+          "b2c": "200",
+          "id": "13003",
+          "ereportwithin": ""
+      },
+      {
+          "name": "HEPATITIS B VIRUS (HBV) QUALITATIVE PCR",
+          "description": "",
+          "testcount": "1",
+          "b2c": "2500",
+          "id": "13032",
+          "ereportwithin": ""
+      },
+      {
+          "name": "GAMMA GLUTAMYL TRANSFERASE (GGT)",
+          "description": "",
+          "testcount": "1",
+          "b2c": "200",
+          "id": "11835",
+          "ereportwithin": ""
+      },
+      {
+          "name": "HIV - WESTERN BLOT",
+          "description": "",
+          "testcount": "1",
+          "b2c": "3000",
+          "id": "12966",
+          "ereportwithin": ""
+      },
+      {
+          "name": "HERPES SIMPLEX VIRUS II (HSV)-IGM",
+          "description": "",
+          "testcount": "1",
+          "b2c": "300",
+          "id": "12777",
+          "ereportwithin": ""
+      },
+      {
+          "name": "HEPATITIS C VIRUS - IGG",
+          "description": "",
+          "testcount": "1",
+          "b2c": "300",
+          "id": "13108",
+          "ereportwithin": ""
+      },
+      {
+          "name": "HEPATITIS C VIRUS - IGM",
+          "description": "",
+          "testcount": "1",
+          "b2c": "750",
+          "id": "12165",
+          "ereportwithin": ""
+      },
+      {
+          "name": "LACTATE",
+          "description": "",
+          "testcount": "1",
+          "b2c": "400",
+          "id": "13027",
+          "ereportwithin": ""
+      },
+      {
+          "name": "LIVER KIDNEY MICROSOMES",
+          "description": "",
+          "testcount": "1",
+          "b2c": "750",
+          "id": "13029",
+          "ereportwithin": ""
+      },
+      {
+          "name": "FILARIA ANTIGEN RAPID TEST",
+          "description": "",
+          "testcount": "1",
+          "b2c": "1200",
+          "id": "13037",
+          "ereportwithin": ""
+      },
+      {
+          "name": "ANTI CHLAMYDIA ANTIBODY IGG",
+          "description": "",
+          "testcount": "1",
+          "b2c": "300",
+          "id": "13017",
+          "ereportwithin": ""
+      },
+      {
+          "name": "ADRENOCORTICOTROPIC HORMONE (ACTH)",
+          "description": "",
+          "testcount": "1",
+          "b2c": "750",
+          "id": "12923",
+          "ereportwithin": ""
+      },
+      {
+          "name": "BETA2 MICROGLOBULIN",
+          "description": "",
+          "testcount": "1",
+          "b2c": "600",
+          "id": "13039",
+          "ereportwithin": ""
+      },
+      {
+          "name": "MPO - ANCA ( P - ANCA )",
+          "description": "",
+          "testcount": "1",
+          "b2c": "750",
+          "id": "12671",
+          "ereportwithin": ""
+      },
+      {
+          "name": "PR3 - ANCA ( C-ANCA )",
+          "description": "",
+          "testcount": "1",
+          "b2c": "750",
+          "id": "12642",
+          "ereportwithin": ""
+      },
+      {
+          "name": "NICOTINE METABOLITES",
+          "description": "",
+          "testcount": "1",
+          "b2c": "1800",
+          "id": "13071",
+          "ereportwithin": ""
+      },
+      {
+          "name": "SERUM GLOBULIN",
+          "description": "",
+          "testcount": "1",
+          "b2c": "200",
+          "id": "11726",
+          "ereportwithin": ""
+      },
+      {
+          "name": "ZINC",
+          "description": "",
+          "testcount": "1",
+          "b2c": "1000",
+          "id": "12978",
+          "ereportwithin": ""
+      },
+      {
+          "name": "ANTI HEPATITIS A VIRUS (ANTI HAV) - IGM",
+          "description": "",
+          "testcount": "1",
+          "b2c": "750",
+          "id": "12212",
+          "ereportwithin": ""
+      },
+      {
+          "name": "COVID ANTIBODY IGG - C.L.I.A",
+          "description": "",
+          "testcount": "1",
+          "b2c": "400",
+          "id": "12281",
+          "ereportwithin": ""
+      },
+      {
+          "name": "A1C PLUS",
+          "description": "",
+          "testcount": "1",
+          "b2c": "880",
+          "id": "12867",
+          "ereportwithin": ""
+      },
+      {
+          "name": "CBC PLUS",
+          "description": "",
+          "testcount": "1",
+          "b2c": "880",
+          "id": "12868",
+          "ereportwithin": ""
+      },
+      {
+          "name": "SMALL DENSE LDL",
+          "description": "",
+          "testcount": "1",
+          "b2c": "470",
+          "id": "13106",
+          "ereportwithin": ""
+      },
+      {
+          "name": "HERPES SIMPLEX VIRUS I (HSV)-IGM",
+          "description": "",
+          "testcount": "1",
+          "b2c": "300",
+          "id": "12851",
+          "ereportwithin": ""
+      },
+      {
+          "name": "CYTOMEGALO VIRUS (CMV) - IgG",
+          "description": "",
+          "testcount": "1",
+          "b2c": "300",
+          "id": "12879",
+          "ereportwithin": ""
+      },
+      {
+          "name": "IMMUNOGLOBULIN G (IGG)",
+          "description": "",
+          "testcount": "1",
+          "b2c": "750",
+          "id": "12697",
+          "ereportwithin": ""
+      },
+      {
+          "name": "SERUM ZINC",
+          "description": "",
+          "testcount": "1",
+          "b2c": "300",
+          "id": "11958",
+          "ereportwithin": ""
+      },
+      {
+          "name": "LP-PLA2",
+          "description": "",
+          "testcount": "1",
+          "b2c": "390",
+          "id": "13033",
+          "ereportwithin": ""
+      },
+      {
+          "name": "UNCONJUGATED ESTRIOL (E3)",
+          "description": "",
+          "testcount": "1",
+          "b2c": "300",
+          "id": "13066",
+          "ereportwithin": ""
+      },
+      {
+          "name": "IMMUNOGLOBULIN A (IGA)",
+          "description": "",
+          "testcount": "1",
+          "b2c": "750",
+          "id": "12965",
+          "ereportwithin": ""
+      },
+      {
+          "name": "ANTI HEPATITIS B CORE ANTIGEN (AHBC) - IGM",
+          "description": "",
+          "testcount": "1",
+          "b2c": "500",
+          "id": "12937",
+          "ereportwithin": ""
+      },
+      {
+          "name": "CARDIOLIPIN ANTIBODY (ACL) - IgA ",
+          "description": "",
+          "testcount": "1",
+          "b2c": "500",
+          "id": "12938",
+          "ereportwithin": ""
+      },
+      {
+          "name": "ACID PHOSPHATASE",
+          "description": "",
+          "testcount": "1",
+          "b2c": "400",
+          "id": "13011",
+          "ereportwithin": ""
+      },
+      {
+          "name": "ALPHA HYDROXYBUTYRATE DEHYDROGENASE",
+          "description": "",
+          "testcount": "1",
+          "b2c": "200",
+          "id": "13121",
+          "ereportwithin": ""
+      },
+      {
+          "name": "ASPERGILLUS GALACTOMANNAN ANTIGEN",
+          "description": "",
+          "testcount": "1",
+          "b2c": "2000",
+          "id": "13082",
+          "ereportwithin": ""
+      },
+      {
+          "name": "ANTI DEAMIDATED GLIADIN PEPTIDE - IGA",
+          "description": "",
+          "testcount": "1",
+          "b2c": "300",
+          "id": "13083",
+          "ereportwithin": ""
+      },
+      {
+          "name": "ANTI SACCHAROMYCES CEREVISIAE IGA ANTIBODIES",
+          "description": "",
+          "testcount": "1",
+          "b2c": "1000",
+          "id": "13107",
+          "ereportwithin": ""
+      },
+      {
+          "name": "ANTI SACCHAROMYCES CEREVISIAE IGG ANTIBODIES",
+          "description": "",
+          "testcount": "1",
+          "b2c": "1000",
+          "id": "13120",
+          "ereportwithin": ""
+      },
+      {
+          "name": "CARDIOLIPIN ANTIBODY (ACL) -IgG",
+          "description": "",
+          "testcount": "1",
+          "b2c": "500",
+          "id": "12380",
+          "ereportwithin": ""
+      },
+      {
+          "name": "CARDIOLIPIN ANTIBODY (ACL) - IgM",
+          "description": "",
+          "testcount": "1",
+          "b2c": "500",
+          "id": "12294",
+          "ereportwithin": ""
+      },
+      {
+          "name": "HEPATITIS B ENVELOPE ANTIGEN (HBEAG)",
+          "description": "",
+          "testcount": "1",
+          "b2c": "500",
+          "id": "12226",
+          "ereportwithin": ""
+      },
+      {
+          "name": "TOXO GONDII - IgG",
+          "description": "",
+          "testcount": "1",
+          "b2c": "300",
+          "id": "12240",
+          "ereportwithin": ""
+      },
+      {
+          "name": "TOXO GONDII - IgM",
+          "description": "",
+          "testcount": "1",
+          "b2c": "300",
+          "id": "12194",
+          "ereportwithin": ""
+      },
+      {
+          "name": "VITAMIN E",
+          "description": "",
+          "testcount": "1",
+          "b2c": "2000",
+          "id": "13016",
+          "ereportwithin": ""
+      },
+      {
+          "name": "NEONATAL HEMOGLOBIN ELECTROPHORESIS",
+          "description": "",
+          "testcount": "1",
+          "b2c": "750",
+          "id": "12744",
+          "ereportwithin": ""
+      },
+      {
+          "name": "TOTAL RBC",
+          "description": "",
+          "testcount": "1",
+          "b2c": "150",
+          "id": "13092",
+          "ereportwithin": ""
+      },
+      {
+          "name": "TRANSFERRIN SERUM",
+          "description": "",
+          "testcount": "1",
+          "b2c": "400",
+          "id": "13025",
+          "ereportwithin": ""
+      },
+      {
+          "name": "SICKLE CELL TEST",
+          "description": "",
+          "testcount": "1",
+          "b2c": "300",
+          "id": "12508",
+          "ereportwithin": ""
+      },
+      {
+          "name": "PREGNANCY ASSOCIATED PLASMA PROTEIN A",
+          "description": "",
+          "testcount": "1",
+          "b2c": "300",
+          "id": "13010",
+          "ereportwithin": ""
+      },
+      {
+          "name": "LEPTOSPIRA-IgM",
+          "description": "",
+          "testcount": "1",
+          "b2c": "500",
+          "id": "11944",
+          "ereportwithin": ""
+      },
+      {
+          "name": "ANTITHROMBIN III",
+          "description": "",
+          "testcount": "1",
+          "b2c": "1200",
+          "id": "13116",
+          "ereportwithin": ""
+      },
+      {
+          "name": "CALCITONIN",
+          "description": "",
+          "testcount": "1",
+          "b2c": "600",
+          "id": "12960",
+          "ereportwithin": ""
+      },
+      {
+          "name": "HEPATITIS A VIRUS ANTIBODY IGM(HAVM) RAPID TEST",
+          "description": "",
+          "testcount": "1",
+          "b2c": "350",
+          "id": "13067",
+          "ereportwithin": ""
+      },
+      {
+          "name": "DIRECT COOMBS TEST",
+          "description": "",
+          "testcount": "1",
+          "b2c": "300",
+          "id": "12828",
+          "ereportwithin": ""
+      },
+      {
+          "name": "LAMBDA LIGHT CHAIN",
+          "description": "",
+          "testcount": "1",
+          "b2c": "600",
+          "id": "13065",
+          "ereportwithin": ""
+      },
+      {
+          "name": "KAPPA LIGHT CHAIN",
+          "description": "",
+          "testcount": "1",
+          "b2c": "600",
+          "id": "13063",
+          "ereportwithin": ""
+      },
+      {
+          "name": "HEPATITIS C VIRUS (HCV) QUANTITATIVE PCR",
+          "description": "",
+          "testcount": "1",
+          "b2c": "3800",
+          "id": "12928",
+          "ereportwithin": ""
+      },
+      {
+          "name": "HEPATITIS E VIRUS ANTIBODY IGM(HEVM) RAPID TEST",
+          "description": "",
+          "testcount": "1",
+          "b2c": "350",
+          "id": "13096",
+          "ereportwithin": ""
+      },
+      {
+          "name": "HEPATITIS E VIRUS IGG",
+          "description": "",
+          "testcount": "1",
+          "b2c": "400",
+          "id": "13059",
+          "ereportwithin": ""
+      },
+      {
+          "name": "HIV 1/2 ANTIBODY RAPID TEST",
+          "description": "",
+          "testcount": "1",
+          "b2c": "200",
+          "id": "12310",
+          "ereportwithin": ""
+      },
+      {
+          "name": "HIV-1, RNA QUANTITATIVE PCR",
+          "description": "",
+          "testcount": "1",
+          "b2c": "3800",
+          "id": "12891",
+          "ereportwithin": ""
+      },
+      {
+          "name": "IGM LOW CONCENTRATION",
+          "description": "",
+          "testcount": "1",
+          "b2c": "1800",
+          "id": "13156",
+          "ereportwithin": ""
+      },
+      {
+          "name": "HIV-1, RNA QUALITATIVE PCR",
+          "description": "",
+          "testcount": "1",
+          "b2c": "2500",
+          "id": "12971",
+          "ereportwithin": ""
+      },
+      {
+          "name": "INHIBIN A",
+          "description": "",
+          "testcount": "1",
+          "b2c": "2000",
+          "id": "13073",
+          "ereportwithin": ""
+      },
+      {
+          "name": "INSULIN ANTIBODIES",
+          "description": "",
+          "testcount": "1",
+          "b2c": "1200",
+          "id": "13031",
+          "ereportwithin": ""
+      },
+      {
+          "name": "INSULIN LIKE GROWTH FACTOR 1",
+          "description": "",
+          "testcount": "1",
+          "b2c": "800",
+          "id": "12980",
+          "ereportwithin": ""
+      },
+      {
+          "name": "HIGH RISK HPV GENOTYPING",
+          "description": "",
+          "testcount": "1",
+          "b2c": "1800",
+          "id": "13161",
+          "ereportwithin": ""
+      },
+      {
+          "name": "KETAMINE",
+          "description": "",
+          "testcount": "1",
+          "b2c": "200",
+          "id": "13143",
+          "ereportwithin": ""
+      },
+      {
+          "name": "KALA AZAR ANTIBODY RAPID TEST",
+          "description": "",
+          "testcount": "1",
+          "b2c": "600",
+          "id": "13118",
+          "ereportwithin": ""
+      },
+      {
+          "name": "MANGANESE",
+          "description": "",
+          "testcount": "1",
+          "b2c": "1000",
+          "id": "13128",
+          "ereportwithin": ""
+      },
+      {
+          "name": "LEAD",
+          "description": "",
+          "testcount": "1",
+          "b2c": "1000",
+          "id": "12931",
+          "ereportwithin": ""
+      },
+      {
+          "name": "MEASLES ANTIBODY - IGM",
+          "description": "",
+          "testcount": "1",
+          "b2c": "600",
+          "id": "13075",
+          "ereportwithin": ""
+      },
+      {
+          "name": "MERCURY",
+          "description": "",
+          "testcount": "1",
+          "b2c": "1000",
+          "id": "13146",
+          "ereportwithin": ""
+      },
+      {
+          "name": "METHADONE",
+          "description": "",
+          "testcount": "1",
+          "b2c": "200",
+          "id": "13038",
+          "ereportwithin": ""
+      },
+      {
+          "name": "METHAMPHETAMINE",
+          "description": "",
+          "testcount": "1",
+          "b2c": "200",
+          "id": "13070",
+          "ereportwithin": ""
+      },
+      {
+          "name": "MOLYBDENUM",
+          "description": "",
+          "testcount": "1",
+          "b2c": "1000",
+          "id": "13157",
+          "ereportwithin": ""
+      },
+      {
+          "name": "DIRECT RENIN",
+          "description": "",
+          "testcount": "1",
+          "b2c": "300",
+          "id": "12944",
+          "ereportwithin": ""
+      },
+      {
+          "name": "ECHINOCOCCUS - IGG",
+          "description": "",
+          "testcount": "1",
+          "b2c": "300",
+          "id": "13062",
+          "ereportwithin": ""
+      },
+      {
+          "name": "ENTAMOEBA HISTOLYTICA - IGG",
+          "description": "",
+          "testcount": "1",
+          "b2c": "300",
+          "id": "13110",
+          "ereportwithin": ""
+      },
+      {
+          "name": "EPSTEIN BARR VIRAL CAPSID ANTIGEN - IgG",
+          "description": "",
+          "testcount": "1",
+          "b2c": "1200",
+          "id": "13104",
+          "ereportwithin": ""
+      },
+      {
+          "name": "ETHANOL",
+          "description": "",
+          "testcount": "1",
+          "b2c": "500",
+          "id": "13114",
+          "ereportwithin": ""
+      },
+      {
+          "name": "GASTRIN",
+          "description": "",
+          "testcount": "1",
+          "b2c": "700",
+          "id": "13111",
+          "ereportwithin": ""
+      },
+      {
+          "name": "HAPTOGLOBIN",
+          "description": "",
+          "testcount": "1",
+          "b2c": "400",
+          "id": "13079",
+          "ereportwithin": ""
+      },
+      {
+          "name": "HEPATITIS B CORE ANTIBODY RAPID TEST",
+          "description": "",
+          "testcount": "1",
+          "b2c": "500",
+          "id": "13078",
+          "ereportwithin": ""
+      },
+      {
+          "name": "HEPATITIS B ENEVELOPE ANTIGEN(HBEAG) RAPID TEST",
+          "description": "",
+          "testcount": "1",
+          "b2c": "350",
+          "id": "13097",
+          "ereportwithin": ""
+      },
+      {
+          "name": "HEPATITIS B ENVELOPE ANTIBODY RAPID TEST",
+          "description": "",
+          "testcount": "1",
+          "b2c": "500",
+          "id": "13087",
+          "ereportwithin": ""
+      },
+      {
+          "name": "HEPATITIS B VIRUS (HBV) QUANTITATIVE PCR",
+          "description": "",
+          "testcount": "1",
+          "b2c": "4600",
+          "id": "12152",
+          "ereportwithin": ""
+      },
+      {
+          "name": "CHOLINESTERASE",
+          "description": "",
+          "testcount": "1",
+          "b2c": "300",
+          "id": "12975",
+          "ereportwithin": ""
+      },
+      {
+          "name": "CHROMIUM",
+          "description": "",
+          "testcount": "1",
+          "b2c": "1000",
+          "id": "13144",
+          "ereportwithin": ""
+      },
+      {
+          "name": "COBALT",
+          "description": "",
+          "testcount": "1",
+          "b2c": "1000",
+          "id": "13164",
+          "ereportwithin": ""
+      },
+      {
+          "name": "COCAINE",
+          "description": "",
+          "testcount": "1",
+          "b2c": "200",
+          "id": "12991",
+          "ereportwithin": ""
+      },
+      {
+          "name": "COPPER",
+          "description": "",
+          "testcount": "1",
+          "b2c": "1000",
+          "id": "13141",
+          "ereportwithin": ""
+      },
+      {
+          "name": "COTININE",
+          "description": "",
+          "testcount": "1",
+          "b2c": "300",
+          "id": "13103",
+          "ereportwithin": ""
+      },
+      {
+          "name": "DIGOXIN",
+          "description": "",
+          "testcount": "1",
+          "b2c": "300",
+          "id": "13088",
+          "ereportwithin": ""
+      },
+      {
+          "name": "CADMIUM",
+          "description": "",
+          "testcount": "1",
+          "b2c": "1000",
+          "id": "13142",
+          "ereportwithin": ""
+      },
+      {
+          "name": "CAESIUM",
+          "description": "",
+          "testcount": "1",
+          "b2c": "1000",
+          "id": "13149",
+          "ereportwithin": ""
+      },
+      {
+          "name": "ARSENIC",
+          "description": "",
+          "testcount": "1",
+          "b2c": "1000",
+          "id": "13127",
+          "ereportwithin": ""
+      },
+      {
+          "name": "ANTI CHLAMYDIA ANTIBODY IGM",
+          "description": "",
+          "testcount": "1",
+          "b2c": "300",
+          "id": "13007",
+          "ereportwithin": ""
+      },
+      {
+          "name": "BISMUTH",
+          "description": "",
+          "testcount": "1",
+          "b2c": "1000",
+          "id": "13169",
+          "ereportwithin": ""
+      },
+      {
+          "name": "NICKEL",
+          "description": "",
+          "testcount": "1",
+          "b2c": "1000",
+          "id": "13117",
+          "ereportwithin": ""
+      },
+      {
+          "name": "MUMPS ANTIBODY - IGM",
+          "description": "",
+          "testcount": "1",
+          "b2c": "600",
+          "id": "13098",
+          "ereportwithin": ""
+      },
+      {
+          "name": "MYOGLOBIN",
+          "description": "",
+          "testcount": "1",
+          "b2c": "1000",
+          "id": "13099",
+          "ereportwithin": ""
+      },
+      {
+          "name": "N ACETYL BETA D GLUCOSAMINIDASE",
+          "description": "",
+          "testcount": "1",
+          "b2c": "400",
+          "id": "13126",
+          "ereportwithin": ""
+      },
+      {
+          "name": "PROPERDIN FACTOR B",
+          "description": "",
+          "testcount": "1",
+          "b2c": "1000",
+          "id": "13172",
+          "ereportwithin": ""
+      },
+      {
+          "name": "PROPOXYPHENE",
+          "description": "",
+          "testcount": "1",
+          "b2c": "200",
+          "id": "13069",
+          "ereportwithin": ""
+      },
+      {
+          "name": "PREALBUMIN",
+          "description": "",
+          "testcount": "1",
+          "b2c": "400",
+          "id": "13158",
+          "ereportwithin": ""
+      },
+      {
+          "name": "OPIATES",
+          "description": "",
+          "testcount": "1",
+          "b2c": "200",
+          "id": "12983",
+          "ereportwithin": ""
+      },
+      {
+          "name": "PHENCYCLIDINE",
+          "description": "",
+          "testcount": "1",
+          "b2c": "200",
+          "id": "12993",
+          "ereportwithin": ""
+      },
+      {
+          "name": "PHENOBARBITAL/GARDENAL SERUM",
+          "description": "",
+          "testcount": "1",
+          "b2c": "700",
+          "id": "13124",
+          "ereportwithin": ""
+      },
+      {
+          "name": "SILVER",
+          "description": "",
+          "testcount": "1",
+          "b2c": "1000",
+          "id": "13168",
+          "ereportwithin": ""
+      },
+      {
+          "name": "STRONTIUM",
+          "description": "",
+          "testcount": "1",
+          "b2c": "1000",
+          "id": "13150",
+          "ereportwithin": ""
+      },
+      {
+          "name": "SYPHILIS RAPID TEST",
+          "description": "",
+          "testcount": "1",
+          "b2c": "200",
+          "id": "13068",
+          "ereportwithin": ""
+      },
+      {
+          "name": "TETRAHYDROCANNABINOL",
+          "description": "",
+          "testcount": "1",
+          "b2c": "200",
+          "id": "12992",
+          "ereportwithin": ""
+      },
+      {
+          "name": "THALLIUM",
+          "description": "",
+          "testcount": "1",
+          "b2c": "1000",
+          "id": "13167",
+          "ereportwithin": ""
+      },
+      {
+          "name": "TIN",
+          "description": "",
+          "testcount": "1",
+          "b2c": "1000",
+          "id": "13165",
+          "ereportwithin": ""
+      },
+      {
+          "name": "SELENIUM",
+          "description": "",
+          "testcount": "1",
+          "b2c": "1000",
+          "id": "13102",
+          "ereportwithin": ""
+      },
+      {
+          "name": "SERUM AMYLOID A PROTEIN",
+          "description": "",
+          "testcount": "1",
+          "b2c": "600",
+          "id": "13115",
+          "ereportwithin": ""
+      },
+      {
+          "name": "PYRUVATE",
+          "description": "",
+          "testcount": "1",
+          "b2c": "300",
+          "id": "13122",
+          "ereportwithin": ""
+      },
+      {
+          "name": "SIALIC ACID",
+          "description": "",
+          "testcount": "1",
+          "b2c": "300",
+          "id": "13166",
+          "ereportwithin": ""
+      },
+      {
+          "name": "VITAMIN K",
+          "description": "",
+          "testcount": "1",
+          "b2c": "2000",
+          "id": "13028",
+          "ereportwithin": ""
+      },
+      {
+          "name": "VARICELLA ZOSTER VIRUS ANTIBODY - IGM",
+          "description": "",
+          "testcount": "1",
+          "b2c": "700",
+          "id": "13091",
+          "ereportwithin": ""
+      },
+      {
+          "name": "VITAMIN A",
+          "description": "",
+          "testcount": "1",
+          "b2c": "2000",
+          "id": "13026",
+          "ereportwithin": ""
+      },
+      {
+          "name": "VANADIUM",
+          "description": "",
+          "testcount": "1",
+          "b2c": "1000",
+          "id": "13162",
+          "ereportwithin": ""
+      },
+      {
+          "name": "URINARY CORTISOL",
+          "description": "",
+          "testcount": "1",
+          "b2c": "300",
+          "id": "13119",
+          "ereportwithin": ""
+      },
+      {
+          "name": "URANIUM",
+          "description": "",
+          "testcount": "1",
+          "b2c": "1000",
+          "id": "13152",
+          "ereportwithin": ""
+      },
+      {
+          "name": "SERUM ELECTROLYTES",
+          "description": "",
+          "testcount": "1",
+          "b2c": "500",
+          "id": "11574",
+          "ereportwithin": ""
+      },
+      {
+          "name": "SERUM ELECTROLYTES",
+          "description": "",
+          "testcount": "1",
+          "b2c": "500",
+          "id": "11575",
+          "ereportwithin": ""
+      },
+      {
+          "name": "ADENOSINE DEAMINASE",
+          "description": "",
+          "testcount": "1",
+          "b2c": "500",
+          "id": "11904",
+          "ereportwithin": ""
+      },
+      {
+          "name": "MALARIAL ANTIGEN",
+          "description": "",
+          "testcount": "1",
+          "b2c": "450",
+          "id": "12046",
+          "ereportwithin": ""
+      },
+      {
+          "name": "ELEMENTS 22 (TOXIC AND NUTRIENTS)",
+          "description": "",
+          "testcount": "1",
+          "b2c": "1000",
+          "id": "11463",
+          "ereportwithin": ""
+      },
+      {
+          "name": "BETA-THALASSEMIA SCREENING",
+          "description": "",
+          "testcount": "1",
+          "b2c": "500",
+          "id": "11869",
+          "ereportwithin": ""
+      },
+      {
+          "name": "HEMOGLOBIN VARIANT ANALYSIS - HPLC",
+          "description": "",
+          "testcount": "1",
+          "b2c": "500",
+          "id": "11724",
+          "ereportwithin": ""
+      },
+      {
+          "name": "BLOOD ELEMENT ANALYSIS PROFILE",
+          "description": "",
+          "testcount": "1",
+          "b2c": "900",
+          "id": "11873",
+          "ereportwithin": ""
+      },
+      {
+          "name": "HEMOGRAM - 6 PART (DIFF)",
+          "description": "",
+          "testcount": "1",
+          "b2c": "300",
+          "id": "11280",
+          "ereportwithin": ""
+      },
+      {
+          "name": "ANTI SCL - 70 ANTIBODY",
+          "description": "",
+          "testcount": "1",
+          "b2c": "300",
+          "id": "13077",
+          "ereportwithin": ""
+      },
+      {
+          "name": "ANTIDNASE-B (DNB)",
+          "description": "",
+          "testcount": "1",
+          "b2c": "4000",
+          "id": "13155",
+          "ereportwithin": ""
+      },
+      {
+          "name": "ANTIMONY",
+          "description": "",
+          "testcount": "1",
+          "b2c": "1000",
+          "id": "13160",
+          "ereportwithin": ""
+      },
+      {
+          "name": "ANTI DEAMIDATED GLIADIN PEPTIDE - IGG",
+          "description": "",
+          "testcount": "1",
+          "b2c": "300",
+          "id": "13086",
+          "ereportwithin": ""
+      },
+      {
+          "name": "ANTI GLOMERULAR BASEMENT MEMBRANE PROTEIN - IgG",
+          "description": "",
+          "testcount": "1",
+          "b2c": "1800",
+          "id": "13101",
+          "ereportwithin": ""
+      },
+      {
+          "name": "ANTI HEPATITIS A VIRUS (HAV) - TOTAL",
+          "description": "",
+          "testcount": "1",
+          "b2c": "500",
+          "id": "12913",
+          "ereportwithin": ""
+      },
+      {
+          "name": "BARBITURATES",
+          "description": "",
+          "testcount": "1",
+          "b2c": "200",
+          "id": "13035",
+          "ereportwithin": ""
+      },
+      {
+          "name": "BARIUM",
+          "description": "",
+          "testcount": "1",
+          "b2c": "1000",
+          "id": "13170",
+          "ereportwithin": ""
+      },
+      {
+          "name": "BENZODIAZEPINES",
+          "description": "",
+          "testcount": "1",
+          "b2c": "200",
+          "id": "13036",
+          "ereportwithin": ""
+      },
+      {
+          "name": "BERYLLIUM",
+          "description": "",
+          "testcount": "1",
+          "b2c": "1000",
+          "id": "13159",
+          "ereportwithin": ""
+      },
+      {
+          "name": "BETA 2 GLYCOPROTEIN 1 - IGG",
+          "description": "",
+          "testcount": "1",
+          "b2c": "500",
+          "id": "12932",
+          "ereportwithin": ""
+      },
+      {
+          "name": "BETA 2 GLYCOPROTEIN 1 - IGM",
+          "description": "",
+          "testcount": "1",
+          "b2c": "500",
+          "id": "12933",
+          "ereportwithin": ""
+      },
+      {
+          "name": "ALPHA1 ACID GLYCOPROTEIN",
+          "description": "",
+          "testcount": "1",
+          "b2c": "600",
+          "id": "13147",
+          "ereportwithin": ""
+      },
+      {
+          "name": "ALPHA2 MACROGLOBULIN",
+          "description": "",
+          "testcount": "1",
+          "b2c": "600",
+          "id": "13145",
+          "ereportwithin": ""
+      },
+      {
+          "name": "ALUMINIUM",
+          "description": "",
+          "testcount": "1",
+          "b2c": "1000",
+          "id": "13123",
+          "ereportwithin": ""
+      },
+      {
+          "name": "AMPHETAMINE",
+          "description": "",
+          "testcount": "1",
+          "b2c": "200",
+          "id": "12985",
+          "ereportwithin": ""
+      },
+      {
+          "name": "ALDOLASE",
+          "description": "",
+          "testcount": "1",
+          "b2c": "1000",
+          "id": "13109",
+          "ereportwithin": ""
+      },
+      {
+          "name": "1,5 ANHYDROGLUCITOL",
+          "description": "",
+          "testcount": "1",
+          "b2c": "800",
+          "id": "13151",
+          "ereportwithin": ""
+      },
+      {
+          "name": "COVID ANTIBODY TOTAL- ELISA",
+          "description": "",
+          "testcount": "1",
+          "b2c": "300",
+          "id": "12890",
+          "ereportwithin": ""
+      },
+      {
+          "name": "COVID NEUTRALIZING ANTIBODY",
+          "description": "",
+          "testcount": "1",
+          "b2c": "500",
+          "id": "12998",
+          "ereportwithin": ""
+      },
+      {
+          "name": "SERUM COPPER",
+          "description": "",
+          "testcount": "1",
+          "b2c": "300",
+          "id": "12163",
+          "ereportwithin": ""
+      },
+      {
+          "name": "PHENYTOIN / DILANTIN / EPTOIN",
+          "description": "",
+          "testcount": "1",
+          "b2c": "500",
+          "id": "12967",
+          "ereportwithin": ""
+      },
+      {
+          "name": "CERULOPLASMIN",
+          "description": "",
+          "testcount": "1",
+          "b2c": "750",
+          "id": "12881",
+          "ereportwithin": ""
+      },
+      {
+          "name": "TREPONEMA PALLIDUM ANTIBODY (TPAB)",
+          "description": "",
+          "testcount": "1",
+          "b2c": "300",
+          "id": "13034",
+          "ereportwithin": ""
+      },
+      {
+          "name": "INTERLEUKIN-6",
+          "description": "",
+          "testcount": "1",
+          "b2c": "1000",
+          "id": "12882",
+          "ereportwithin": ""
+      },
+      {
+          "name": "ANTI HEPATITIS B ENVELOPE ANTIGEN (AHBE) -TOTAL",
+          "description": "",
+          "testcount": "1",
+          "b2c": "650",
+          "id": "12939",
+          "ereportwithin": ""
+      },
+      {
+          "name": "ANTI HEPATITIS E VIRUS (Anti HEV) - IgM",
+          "description": "",
+          "testcount": "1",
+          "b2c": "750",
+          "id": "12477",
+          "ereportwithin": ""
+      }
+  ]
+}

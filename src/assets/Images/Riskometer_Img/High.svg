@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="296" height="141.975" viewBox="0 0 296 141.975">
+  <g id="High" transform="translate(7723 10914)">
+    <text id="Very_High" data-name="Very
+High" transform="translate(-7454 -10789.026)" fill="#141b2f" font-size="12" font-family="Muli-SemiBold, Muli" font-weight="600"><tspan x="0" y="0">Very</tspan><tspan x="0" y="14">High</tspan></text>
+    <text id="Moderate" transform="translate(-7602 -10902)" fill="#141b2f" font-size="12" font-family="Muli-SemiBold, Muli" font-weight="600"><tspan x="0" y="0">Moderate</tspan></text>
+    <text id="Low" transform="translate(-7723 -10775.026)" fill="#141b2f" font-size="12" font-family="Muli-SemiBold, Muli" font-weight="600"><tspan x="0" y="0">Low</tspan></text>
+    <g id="Group_24664" data-name="Group 24664" transform="translate(629 2597.081)">
+      <path id="Union_46" data-name="Union 46" d="M-954.387-4215.5l-.279.278v-.556l-75.333-75a107.224,107.224,0,0,1,75.333-31.3h.559a107.22,107.22,0,0,1,75.333,31.3l-75.333,75v.556Z" transform="translate(-7249.822 -9157.452)" fill="#f8bd19" stroke="rgba(0,0,0,0)" stroke-miterlimit="10" stroke-width="1"/>
+      <path id="Path_16627" data-name="Path 16627" d="M193.815,1649.252H301.143l-75.892-75.893A106.992,106.992,0,0,0,193.815,1649.252Z" transform="translate(-8504.815 -15021.93)" fill="#29ad00"/>
+      <path id="Path_16629" data-name="Path 16629" d="M608.734,1649.252H501.406l75.892-75.893A106.992,106.992,0,0,1,608.734,1649.252Z" transform="translate(-8706.165 -15021.93)" fill="#d23d50"/>
+      <path id="Path_16630" data-name="Path 16630" d="M376.268,1599.255a66.874,66.874,0,0,0-66.874,66.874H443.142A66.873,66.873,0,0,0,376.268,1599.255Z" transform="translate(-8580.572 -15038.807)" fill="#dedede"/>
+      <path id="Path_16631" data-name="Path 16631" d="M386.612,1617.9c-34.05,0-61.653,28.068-61.653,60.379H448.265C448.265,1645.972,420.662,1617.9,386.612,1617.9Z" transform="translate(-8590.72 -15050.961)" fill="#fff"/>
+      <path id="Path_16599" data-name="Path 16599" d="M3799.889,2042.087l48.849-13.256-50.149,7.324-4.289,3.83Z" transform="translate(-12432.084 -14215.244) rotate(-17)" fill="#44c8f5"/>
+      <path id="Path_16598" data-name="Path 16598" d="M3777.19,2050.038a5.987,5.987,0,1,1,5.294,6.606A5.986,5.986,0,0,1,3777.19,2050.038Z" transform="translate(-11987.557 -15425.788)" fill="#039"/>
+    </g>
+  </g>
+</svg>

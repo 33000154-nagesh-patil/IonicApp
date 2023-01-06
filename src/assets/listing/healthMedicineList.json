@@ -1,0 +1,50 @@
+{
+    "heading": {
+        "heading": "Explore",
+        "discription": "Discover your medicine"
+    },
+    "pickup&filter": [
+        {
+            "icon": "",
+            "title": "Pickup from"
+        },
+        {
+            "icon": "",
+            "title": "Filter"
+        }
+    ],
+    "card": [
+        {
+            "row1": {
+                "icon": "",
+                "title": "Dolo-650 Tablet",
+                "description": "by Micro Labs. 15 Tablets strip",
+                "action": "assets/icon/leftArrowIcon.svg"
+            },
+            "row2": {
+                "col1": "price",
+                "val1": 25.00,
+                "col2": "rating",
+                "val2": "",
+                "col3": "prescription",
+                "val3": ""
+            }
+        },
+        {
+            "row1": {
+                "icon": "",
+                "title": "Dolo-650 Tablet",
+                "description": "by Micro Labs. 15 Tablets strip",
+                "action": "assets/icon/leftArrowIcon.svg"
+            },
+            "row2": {
+                "col1": "price",
+                "val1": 25.00,
+                "col2":"rating",
+                "val2":"",
+                "col3":"prescription",
+                "val3": ""
+            }
+        }
+    ]
+}

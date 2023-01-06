@@ -1,0 +1,81 @@
+<div class="contentBackground">
+  <ion-row>
+  
+
+    <ion-segment [(ngModel)]="segment" (click)="chengeSegment()" *ngIf="digiBenifit.objectContent[0].segmentValues" class="custHeight mb-3">
+      <ion-segment-button class="muli-14pt  custColorDark custFontFamilyMuliBold "
+        *ngFor="let x of digiBenifit.objectContent[0].segmentValues" [value]="x">{{x}}</ion-segment-button>
+    </ion-segment>
+  </ion-row>
+  <ion-row *ngIf="digiBenifit.objectContent[0][segment][0] as heading" class="m-2">
+    <ion-row>
+      <span class="mb-2 px-1 muli-22pt custFontFamilyMuliBold custLineHight32 custColorDark text-capitalize leftside">
+        {{heading.row1.heading}}
+      </span>
+    </ion-row>
+    <ion-col [size]="'12'" *ngIf="heading.row1.box" class="ion-no-padding pl-1">
+      <ion-row>
+        <ion-col [size]="'2'" class="text-start p-0 m-0">
+          <div class="custBackgroundColorDarkishBlue custBox p-0 m-0"></div>
+        </ion-col>
+      </ion-row>
+    </ion-col>
+    <ion-col [size]="'12'" class="mt-2">
+      <span class="muli-12pt custLineHight18 custColorBattlePGry">{{heading.row1.description}}</span>
+    </ion-col>
+  </ion-row>
+  <app-carousel *ngIf="objg" [objectContent]="objg" [portFolioSummary]="objh"></app-carousel>
+  <ion-grid *ngFor="let data of digiBenifit.objectContent[0][segment]">
+    
+  
+
+    <!-- <ion-card *ngIf="data?.contentType=='linearGraph'">
+      <ion-card-header>
+        <ion-row *ngFor="let x of data?.row1">
+          <ion-col class="d-flex flex-column" *ngFor="let y of x|keyvalue">
+            <span class="custFontFamilyMuliRegular muli-10pt w-100 custLineHight28 custColorGreyish">{{y.key}}</span>
+            <span class="custFontFamilyRobotoCondensed muli-14pt w-100 custColorDark">{{toStirng(y.value)}}</span>
+          </ion-col>
+        </ion-row>
+      </ion-card-header>
+      <ion-card-content>
+        <div class="mb-1">
+          <div style="width: 100%; overflow-x: auto; overflow-y: hidden">
+            <canvas height="230px" id="linechart1" width="0"></canvas>
+          </div>
+        </div>
+        <ion-row *ngFor="let x of data?.row2">
+          <ion-col class="d-flex flex-column" *ngFor="let y of x|keyvalue">
+            <span class="custFontFamilyMuliRegular muli-10pt w-100 custLineHight28 custColorGreyish">{{y?.key}}</span>
+            <span class="custFontFamilyRobotoCondensed muli-14pt w-100 custColorDark">{{toStirng(y?.value)}}
+            </span>
+          </ion-col>
+        </ion-row>
+      </ion-card-content>
+    </ion-card>
+     -->
+    <!-- <app-CommonCharts *ngIf="data.contentType=='Donut'" [showDonut]="true" [donutData]="data"></app-CommonCharts> -->
+    <!-- <app-CommonCharts  *ngIf="data.contentType=='Donut'"  
+    [showBar]="true" [barGraphData]="portFolioSummary"
+  ></app-CommonCharts> -->
+    <div *ngIf="data.contentType== 'Step'">
+      <p class="muli-16pt custFontFamilyMuliBold custLineHight22 custColorDark px-2" *ngIf="data?.heading">{{data?.heading}}</p>
+    <ion-card class="mt-3 cusPadding">
+      <div >
+        <ul class="mt-2">
+          <li class="w-100 mb-4 pe-2 d-flex flex-row" *ngFor="let y of data?.data">
+            <!-- <p *ngIf="!y?.Icon" class="Icon"></p> -->
+            <img [src]="y?.Icon" class="custImage me-2" *ngIf="y?.Icon">
+            <!-- <img [src]="'data:image/png;base64,'+y?.Icon" class="custImage me-2" *ngIf="y?.Icon && !environment ">  -->
+            <div class="d-flex flex-column">
+            <span class="custFontFamilyMuliRegular muli-12pt custColorGreyish custLineHeight15">{{y?.Steps}}</span>
+            <span class="custFontFamilyMuliSemiBold muli-14pt custLineHeight18 custColorDark">{{y?.Disc}}</span>
+             </div>
+          </li>
+        </ul>
+      </div>
+     </ion-card>
+     </div>
+  </ion-grid> 
+  
+</div>

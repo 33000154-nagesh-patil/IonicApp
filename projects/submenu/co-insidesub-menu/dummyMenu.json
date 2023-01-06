@@ -1,0 +1,206 @@
+{
+  "Status": 1,
+  "ErrorCode": 0,
+  "MessageType": "",
+  "Message": "Success",
+  "Menu": [
+    {
+      "ProductId": 1,
+      "ProductName": "Wealth",
+      "ProductIconPath": null,
+      "ProductParentId": 0,
+      "HasLayer": false,
+      "RequireRedirection": false,
+      "ChildProducts": null,
+      "icons": "assets/icon/wealthIconforMenu.svg"
+    },
+    {
+      "ProductId": 2,
+      "ProductName": "Health",
+      "ProductIconPath": null,
+      "ProductParentId": 0,
+      "HasLayer": false,
+      "RequireRedirection": false,
+      "ChildProducts": null,
+      "icons": "assets/icon/healthiconforMenu.svg"
+    },
+    {
+      "ProductId": 3,
+      "ProductName": "Education",
+      "ProductIconPath": null,
+      "ProductParentId": 0,
+      "HasLayer": false,
+      "RequireRedirection": false,
+      "ChildProducts": null,
+      "icons": "assets/icon/education.svg"
+    },
+    {
+      "ProductId": 4,
+      "ProductName": "Bank",
+      "ProductIconPath": null,
+      "ProductParentId": 0,
+      "HasLayer": false,
+      "RequireRedirection": false,
+      "ChildProducts": null,
+      "icons": "assets/icon/bank.svg"
+    },
+    {
+      "ProductId": 5,
+      "ProductName": "Customer Support",
+      "ProductIconPath": null,
+      "ProductParentId": 0,
+      "HasLayer": false,
+      "RequireRedirection": false,
+      "ChildProducts": null,
+      "icons": "assets/icon/agent.svg"
+    },
+    {
+      "ProductId": 6,
+      "ProductName": "Refer and Earn",
+      "ProductIconPath": null,
+      "ProductParentId": 0,
+      "HasLayer": false,
+      "RequireRedirection": false,
+      "ChildProducts": null,
+      "icons": "assets/icon/Refer&earn.svg"
+    },
+    {
+      "ProductId": 7,
+      "ProductName": "Settings",
+      "ProductIconPath": null,
+      "ProductParentId": 0,
+      "HasLayer": false,
+      "RequireRedirection": false,
+      "ChildProducts": null,
+      "icons": "assets/icon/settings.svg"
+    },
+    {
+      "ProductId": 8,
+      "ProductName": "Money Maker",
+      "ProductIconPath": null,
+      "ProductParentId": 1,
+      "HasLayer": false,
+      "RequireRedirection": false,
+      "ChildProducts": null,
+
+    },
+    {
+      "ProductId": 9,
+      "ProductName": "Money Saver",
+      "ProductIconPath": null,
+      "ProductParentId": 1,
+      "HasLayer": false,
+      "RequireRedirection": false,
+      "ChildProducts": null
+    },
+    {
+      "ProductId": 10,
+      "ProductName": "Insurance Solutions",
+      "ProductIconPath": null,
+      "ProductParentId": 4,
+      "HasLayer": false,
+      "RequireRedirection": false,
+      "ChildProducts": null
+    },
+    {
+      "ProductId": 11,
+      "ProductName": "Instant Loans",
+      "ProductIconPath": null,
+      "ProductParentId": 4,
+      "HasLayer": false,
+      "RequireRedirection": false,
+      "ChildProducts": null
+    },
+    {
+      "ProductId": 12,
+      "ProductName": "My Issues",
+      "ProductIconPath": null,
+      "ProductParentId": 5,
+      "HasLayer": false,
+      "RequireRedirection": true,
+      "ChildProducts": null
+    },
+    {
+      "ProductId": 13,
+      "ProductName": "FAQs",
+      "ProductIconPath": null,
+      "ProductParentId": 5,
+      "HasLayer": false,
+      "RequireRedirection": true,
+      "ChildProducts": null
+    },
+    {
+      "ProductId": 14,
+      "ProductName": "Chat with Us",
+      "ProductIconPath": null,
+      "ProductParentId": 5,
+      "HasLayer": false,
+      "RequireRedirection": true,
+      "ChildProducts": null
+    },
+    {
+      "ProductId": 15,
+      "ProductName": "Contact Us",
+      "ProductIconPath": null,
+      "ProductParentId": 5,
+      "HasLayer": false,
+      "RequireRedirection": true,
+      "ChildProducts": null
+    },
+
+    {
+      "ProductId": 16,
+      "ProductName": "Manage App Lock",
+      "ProductIconPath": null,
+      "ProductParentId": 7,
+      "HasLayer": false,
+      "RequireRedirection": false,
+      "ChildProducts": null
+    },
+    {
+      "ProductId": 17,
+      "ProductName": "Siri Shortcuts",
+      "ProductIconPath": null,
+      "ProductParentId": 7,
+      "HasLayer": false,
+      "RequireRedirection": true,
+      "ChildProducts": null
+    },
+    {
+      "ProductId": 18,
+      "ProductName": "About Us",
+      "ProductIconPath": null,
+      "ProductParentId": 7,
+      "HasLayer": false,
+      "RequireRedirection": false,
+      "ChildProducts": null
+    },
+    {
+      "ProductId": 19,
+      "ProductName": "Rate Us",
+      "ProductIconPath": null,
+      "ProductParentId": 7,
+      "HasLayer": false,
+      "RequireRedirection": true,
+      "ChildProducts": null
+    },
+    {
+      "ProductId": 20,
+      "ProductName": "Dark Mode",
+      "ProductIconPath": null,
+      "ProductParentId": 7,
+      "HasLayer": false,
+      "RequireRedirection": false,
+      "ChildProducts": null
+    },
+    {
+      "ProductId": 21,
+      "ProductName": "Logout",
+      "ProductIconPath": null,
+      "ProductParentId": 7,
+      "HasLayer": false,
+      "RequireRedirection": true,
+      "ChildProducts": null
+    }
+  ]
+}

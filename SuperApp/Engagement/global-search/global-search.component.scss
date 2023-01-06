@@ -1,0 +1,191 @@
+.formControl{
+  border:none;
+  background-color: transparent;
+  resize: none;
+  outline: none;
+}
+.chips{
+  
+  border-radius: 25px;
+  border: 1px solid;
+  border-color: #003399;
+  display: inline;
+  padding: 5px;
+
+}
+.formControl::placeholder  {
+  font-size: 14px;
+  padding-top: 0px;
+}
+.tab button{
+  font-family: "Muli-Regular";
+  font-size: 12px !important;
+  height: 27px;
+  width: auto;
+  opacity:0.8;
+  background-color: #D9DEE3;
+  color:#727682;
+  border-radius: 4px;
+  border: 1px solid grey;
+}
+
+
+.overflow-information{
+overflow: hidden;
+display: inline-block;
+text-overflow: ellipsis;
+white-space: nowrap;
+width:150px; //change based on when you want the dots to appear
+}
+
+
+
+
+.tab button.active{
+ background-color: #44c8f5;
+ color:#FFFFFF;
+ border-color:#44C8F5;
+}
+.prefix{
+  white-space: nowrap;
+  background-color: #44c8f5;
+  color:#FFFFFF;
+  border-color:#44C8F5;
+  padding:4px 18px 4px 4px;
+}
+.text1{
+
+  display: block;
+
+
+  overflow: hidden;
+
+  white-space: nowrap;
+
+  text-overflow: ellipsis;
+
+}
+.custCloseIcon{
+  height: 12px;
+  width: 12px;
+}
+.closeIconPosition{
+  position: relative;
+  top:13px;
+  left: -13px;
+}
+
+
+.rotate {
+  -ms-transform: rotate(90deg); /* IE 9 */
+  -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+  transform: rotate(90deg);
+}
+
+.custIcon1{
+  width: 19px;
+  height: 19px;
+  margin: 14px;
+}
+
+.custViewMore {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.custCloseIconn {
+  position: absolute;
+  left: 220px;
+}
+
+.custHeaderPatch{
+font-size: 8px;
+background-color: #E4E5EB;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding-left: 7px;
+padding-right: 7px;
+padding-top: 3px;
+padding-bottom: 3px;
+
+}
+
+
+.bookmark {
+  color: darkorange;
+}
+
+
+// global search css start here
+.custPosition {
+  display: flex;
+  justify-content: center;
+}
+
+.custheight {
+  border: 1px solid #44C8F5;
+  color: #44C8F5;
+  border-radius: 4px;
+  background-color: #F6F7FB;
+  opacity: 1;
+}
+
+
+.custClearIcon{
+color:#003399;
+opacity: 1;
+}
+
+
+
+ .historyActive{
+  color: #D9DEE3;
+ // background-color:#727682;
+ }
+
+ .custImgExpo{
+  height: 14px;
+  width: 13px;
+}
+
+
+.custCss {
+  background-color: #F0F0F0;
+}
+
+.custIcon{
+  width: 22px;
+  height: 22px;
+  margin-left: -10px;
+  margin: 6px;
+}
+
+.custHeight{
+  height: 42px;
+  width: 42px;
+}
+
+.custBtnExplore{
+  // width: 80px;
+  height: 30px;
+  border:  1px solid var(--custBrightCyan) !important;
+  border-radius: 4px !important;
+  background: var(--custPaleGrey) !important;
+  text-align: center !important;
+  padding-left: 16px !important;
+  padding-right: 16px !important;
+  float: right;
+}
+
+.cta{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ion-skeleton-text {
+  --border-radius: 9999px;
+  --background: rgba(188, 0, 255, 0.065);
+  --background-rgb: 188, 0, 255;
+}

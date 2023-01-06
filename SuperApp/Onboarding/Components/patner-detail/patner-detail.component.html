@@ -1,0 +1,225 @@
+
+<ion-content class="contentBackground">
+
+  <ion-header>
+    <ion-toolbar>
+      <ion-grid>
+        <ion-row>
+          <ion-col [size]="'0.7'" class="text-center mt-2" (click)="goback()">
+            <ion-img [src]="imageList?.arrow" class="custWithoutTextImg"></ion-img>
+          </ion-col>
+          <ion-col [size]="'8'">
+            <span class="custFontFamilyMuliBold muli-16pt custLineHight40 ml-10 ms-2 custColorBlack">Other
+              Details</span>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-toolbar>
+  </ion-header>
+
+
+
+  <form [formGroup]="ionicForm" (ngSubmit)="onSubmit()">
+
+  <ion-row class="ps-3 mt-3">
+    <ion-col class="custColorDark muli-14pt custFontFamilyMuliBold custLineHight18">
+      Gender
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="ps-3 ">
+    <mat-radio-group>
+      <ion-row class="d-flex justify-content-between">
+        <ion-col>
+          <mat-radio-button value="1" class="custFontFamilyMuliRegular muli-14pt custLineHight18 custColorDark  px-1" formControlName="gender" value="male">
+            Male</mat-radio-button>
+        </ion-col>
+        <ion-col>
+          <mat-radio-button value="2"
+            class="custFontFamilyMuliRegular muli-14pt custLineHight18 custColorDark  text-end  px-1" formControlName="gender" value="female">Female
+          </mat-radio-button>
+        </ion-col>
+
+        <ion-col>
+          <mat-radio-button value="2"
+            class="custFontFamilyMuliRegular muli-14pt custLineHight18 custColorDark  text-end  px-1" formControlName="gender" value="others">Others
+          </mat-radio-button>
+        </ion-col>
+      </ion-row>
+    </mat-radio-group>
+  </ion-row>
+
+  <ion-row class="ps-3 mt-3">
+    <ion-col class="custColorDark muli-14pt custFontFamilyMuliBold custLineHight18">
+      Marital Status
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="ps-3 ">
+    <mat-radio-group>
+      <ion-row class="d-flex justify-content-between">
+        <ion-col>
+          <mat-radio-button value="1" class="custFontFamilyMuliRegular muli-14pt custLineHight18 custColorDark  px-1" formControlName="maritalStatus" value="married">
+            Married</mat-radio-button>
+        </ion-col>
+        <ion-col>
+          <mat-radio-button value="2"
+            class="custFontFamilyMuliRegular muli-14pt custLineHight18 custColorDark  text-end  px-1" formControlName="maritalStatus" value="unmarried">Unmarried
+          </mat-radio-button>
+        </ion-col>
+
+        <ion-col>
+          <mat-radio-button value="2"
+            class="custFontFamilyMuliRegular muli-14pt custLineHight18 custColorDark  text-end  px-1" formControlName="maritalStatus" value="others">Others
+          </mat-radio-button>
+        </ion-col>
+      </ion-row>
+    </mat-radio-group>
+  </ion-row>
+
+  <ion-row class="ps-3 mt-3">
+    <ion-col class="custColorDark muli-14pt custFontFamilyMuliBold custLineHight18">
+      Trading Experience
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="ps-3 ">
+    <mat-radio-group>
+      <ion-row class="d-flex justify-content-between">
+        <ion-col>
+          <mat-radio-button value="1" class="custFontFamilyMuliRegular muli-14pt custLineHight18 custColorDark  px-1" formControlName="TradingExp" value="0-1 year">
+            0-1 years</mat-radio-button>
+        </ion-col>
+        <ion-col>
+          <mat-radio-button value="2"
+            class="custFontFamilyMuliRegular muli-14pt custLineHight18 custColorDark  text-end  px-1" formControlName="TradingExp" value="1-3 years">1-3 years
+          </mat-radio-button>
+        </ion-col>
+      </ion-row>
+    </mat-radio-group>
+  </ion-row>
+  <ion-row class="ps-3 ">
+    <mat-radio-group>
+      <ion-row class="d-flex justify-content-between">
+        <ion-col>
+          <mat-radio-button value="1" class="custFontFamilyMuliRegular muli-14pt custLineHight18 custColorDark  px-1" formControlName="TradingExp" value="3-5 years">
+            3-5 years</mat-radio-button>
+        </ion-col>
+        <ion-col>
+          <mat-radio-button value="2"
+            class="custFontFamilyMuliRegular muli-14pt custLineHight18 custColorDark  text-end  px-1" formControlName="TradingExp" value="5 years above">5 & above
+          </mat-radio-button>
+        </ion-col>
+      </ion-row>
+    </mat-radio-group>
+  </ion-row>
+
+  <ion-row class="ps-3 mt-3">
+    <ion-col class="custColorDark muli-14pt custFontFamilyMuliBold custLineHight18">
+      Experience in Capacity of
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="ps-3 ">
+    <mat-radio-group>
+      <ion-row class="d-flex justify-content-between">
+        <ion-col>
+          <mat-radio-button value="1" class="custFontFamilyMuliRegular muli-14pt custLineHight18 custColorDark  px-1" formControlName="Experience" value="Stock Broker">
+            Stock Broker</mat-radio-button>
+        </ion-col>
+        <ion-col>
+          <mat-radio-button value="2"
+            class="custFontFamilyMuliRegular muli-14pt custLineHight18 custColorDark  text-end  px-1" formControlName="Experience" value="Remisier">Remisier
+          </mat-radio-button>
+        </ion-col>
+      </ion-row>
+    </mat-radio-group>
+  </ion-row>
+  <ion-row class="ps-3">
+    <mat-radio-group>
+      <ion-row class="d-flex justify-content-between">
+        <ion-col>
+          <mat-radio-button value="1" class="custFontFamilyMuliRegular muli-14pt custLineHight18 custColorDark  px-1" formControlName="Experience" value="Investor">
+            Investor</mat-radio-button>
+        </ion-col>
+        <ion-col>
+          <mat-radio-button value="2"
+            class="custFontFamilyMuliRegular muli-14pt custLineHight18 custColorDark  text-end  px-1" formControlName="Experience" value="Authorised Person">Authorised Person
+          </mat-radio-button>
+        </ion-col>
+      </ion-row>
+    </mat-radio-group>
+  </ion-row>
+  <ion-row class="ps-3 ">
+    <mat-radio-group>
+      <ion-row class="d-flex justify-content-between">
+        <ion-col>
+          <mat-radio-button value="1" class="custFontFamilyMuliRegular muli-14pt custLineHight18 custColorDark  px-1" formControlName="Experience" value="Any Others">
+            Any Others</mat-radio-button>
+        </ion-col>
+      </ion-row>
+    </mat-radio-group>
+  </ion-row>
+
+
+  <ion-row class="ps-3 mt-3">
+    <ion-col class="custColorDark muli-14pt custFontFamilyMuliBold custLineHight18">
+      NISM Certificate
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="ps-3 ">
+    <mat-radio-group>
+      <ion-row class="d-flex justify-content-between">
+        <ion-col>
+          <mat-checkbox class="custFontFamilyMuliRegular muli-14pt custLineHight18 custColorDark  px-1" formControlName="NISMCertificate" value="VIII - Derivatives (Dealer)">VIII - Derivatives (Dealer)</mat-checkbox>
+        </ion-col>
+        <ion-col>
+          <mat-checkbox class="custFontFamilyMuliRegular muli-14pt custLineHight18 custColorDark  px-1" formControlName="NISMCertificate" value="XIII - Currency & FO">XIII - Currency & FO</mat-checkbox>
+        </ion-col>
+      </ion-row>
+    </mat-radio-group>
+  </ion-row>
+  <ion-row class="ps-3 ">
+      <ion-row class="d-flex justify-content-between">
+        <ion-col>
+          <mat-checkbox class="custFontFamilyMuliRegular muli-14pt custLineHight18 custColorDark  px-1" formControlName="NISMCertificate" value="VII - Risk & Operation">VII - Risk & Operation</mat-checkbox>
+        </ion-col>
+        <ion-col>
+          <mat-checkbox class="custFontFamilyMuliRegular muli-14pt custLineHight18 custColorDark  px-1" formControlName="NISMCertificate" value="I - Currency">I - Currency</mat-checkbox>
+        </ion-col>
+      </ion-row>
+      <ion-row class="d-flex justify-content-between">
+        <ion-col>
+          <mat-checkbox class="custFontFamilyMuliRegular muli-14pt custLineHight18 custColorDark  px-1" formControlName="NISMCertificate" value="VI DP Operation">VI DP Operation</mat-checkbox>
+        </ion-col>
+      </ion-row>
+  </ion-row>
+
+  <ion-row class="ps-3 mt-3">
+    <ion-col class="custColorDark muli-14pt custFontFamilyMuliBold custLineHight18">
+      Occupation Details
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="ps-3 ">
+    <mat-form-field appearance="fill" class="w-100">
+      <mat-label>Occupation</mat-label>
+      <mat-select class="w-100">
+        <mat-option *ngFor="let food of foods" [value]="food.viewValue" formControlName="Occupation">
+          {{food.viewValue}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </ion-row>
+
+  </form>
+
+  <ion-row class="mt-5 fixed-bottom px-2">
+    <ion-col>
+      <button class="btn w-100 text-center custBackgroundColorBrightCyan">
+        <span  (click)="NavToSelfie()" class="custColorWhite custFontFamilyMuliBold muli-16pt">Continue</span>
+      </button>
+    </ion-col>
+  </ion-row>
+</ion-content>

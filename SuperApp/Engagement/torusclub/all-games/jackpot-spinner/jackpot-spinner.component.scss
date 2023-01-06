@@ -1,0 +1,122 @@
+.base {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 1;
+  transform: translate(15px, 0px);
+}
+
+  .svgImg {
+   position: relative;
+   z-index: 0;
+  }
+
+  table{
+      border-collapse: collapse;
+  }
+  .letter-one, .letter-two, .letter-three{
+      height: 200px;
+      width: 100px;
+      overflow: hidden;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      font-size: 95px;
+      margin-top: 0px;
+      padding-top: 20px;
+  }
+  // .letter-one tr{
+  //   --ch:-5;
+  //   animation: scroll 1s 1s linear forwards;
+  // }
+  // .letter-two tr{
+  //   --ch:-20;
+  //   animation: scroll 3s 1s linear forwards;
+  // }
+  // .letter-three tr{
+  //   --ch:-13;
+  //   animation: scroll 2s 1s linear forwards;
+  // }
+  // @keyframes scroll {
+  //   to{
+  //     transform: translateY(calc(var(--ch) * 100%));
+  //   }
+  // }
+/* CSS rules for youtube link (start) */
+  .yt{
+    height : 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 20px;
+   }
+  .yt > a{
+    display : flex;
+    align-items : center;
+    text-decoration : none;
+    color : white;
+    font-size : 1.2em;
+    border-radius: 5px;
+    padding: 0.4em 1em;
+    background-color: red;
+  }
+
+  .imgSize {
+    height: 60px;
+    width: 60px;
+}
+.custCenter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.custCenterMargin {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.custBackground {
+  background-color: #EDF1F5;
+  width: 75px;
+  height: 31px;
+  bottom: -4px;
+}
+
+.custMargin {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.custBackgroundColorYellow{
+    background-color: #FDE20B;
+    border: 2px solid #FBD210;
+    border-radius: 5px  ;
+}
+
+.custclass{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+
+
+@media only screen and (max-width: 375px) {
+ .clasRest {
+  margin-top: 0.8rem!important;
+ }
+
+ .custBackground {
+  bottom: -11px;
+}
+
+.custclass{
+  margin-top: 20px;
+}
+}

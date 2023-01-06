@@ -1,0 +1,41 @@
+{
+    "listofgold": [
+        {
+            "tRansaction": "buy",
+            "weight": 0.1,
+            "amount": 536.21,
+            "createdOnDate": "2022-06-08",
+            "pricePerGram": 5205.87
+        },
+        {
+            "tRansaction": "buy",
+            "weight": 0.1,
+            "amount": 536.82,
+            "createdOnDate": "2022-06-07",
+            "pricePerGram": 5211.79
+        },
+        {
+            "tRansaction": "buy",
+            "weight": 0.1,
+            "amount": 536.19,
+            "createdOnDate": "2022-06-06",
+            "pricePerGram": 5205.67
+        },
+        {
+            "tRansaction": "buy",
+            "weight": 0.1,
+            "amount": 535.99,
+            "createdOnDate": "2022-06-06",
+            "pricePerGram": 5203.83
+        },
+        {
+            "tRansaction": "buy",
+            "weight": 0.1,
+            "amount": 536.1,
+            "createdOnDate": "2022-06-06",
+            "pricePerGram": 5204.85
+        }
+    ],
+    "totalInvestmentAmount": 2145.21,
+    "totalgrams": 0.4
+}

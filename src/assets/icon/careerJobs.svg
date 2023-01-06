@@ -1,0 +1,18 @@
+<svg id="jobs" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Rectangle_9237" data-name="Rectangle 9237" fill="none" stroke="#707070" stroke-width="1" opacity="0">
+    <rect width="24" height="24" stroke="none"/>
+    <rect x="0.5" y="0.5" width="23" height="23" fill="none"/>
+  </g>
+  <g id="Group_27075" data-name="Group 27075" transform="translate(-1200 -3327)">
+    <g id="Rectangle_9621" data-name="Rectangle 9621" transform="translate(1203 3333)" fill="none" stroke="#44c8f5" stroke-width="1">
+      <rect width="18" height="14" rx="2" stroke="none"/>
+      <rect x="0.5" y="0.5" width="17" height="13" rx="1.5" fill="none"/>
+    </g>
+    <g id="Rectangle_9622" data-name="Rectangle 9622" transform="translate(1208.41 3330)" fill="none" stroke="#44c8f5" stroke-width="1">
+      <rect width="7.266" height="3.633" rx="1" stroke="none"/>
+      <rect x="0.5" y="0.5" width="6.266" height="2.633" rx="0.5" fill="none"/>
+    </g>
+    <ellipse id="Ellipse_1450" data-name="Ellipse 1450" cx="5.5" cy="5" rx="5.5" ry="5" transform="translate(1211 3338)" fill="#fff"/>
+    <path id="search_FILL0_wght400_GRAD0_opsz48" d="M14.53,15.032l-2.308-2.12a3.311,3.311,0,0,1-1.054.617,3.69,3.69,0,0,1-1.28.221A3.729,3.729,0,0,1,7.13,12.608,3.779,3.779,0,0,1,6,9.85,3.779,3.779,0,0,1,7.13,7.093,3.712,3.712,0,0,1,9.871,5.95a3.67,3.67,0,0,1,2.719,1.143A3.792,3.792,0,0,1,13.713,9.85a3.839,3.839,0,0,1-.211,1.265,3.88,3.88,0,0,1-.633,1.143l2.213,2.133Zm-4.658-2.2a2.8,2.8,0,0,0,2.079-.876,3.022,3.022,0,0,0,0-4.22,2.8,2.8,0,0,0-2.079-.876,2.845,2.845,0,0,0-2.1.876,3,3,0,0,0,0,4.22,2.845,2.845,0,0,0,2.1.876Z" transform="translate(1206.913 3333.083)" fill="#039"/>
+  </g>
+</svg>

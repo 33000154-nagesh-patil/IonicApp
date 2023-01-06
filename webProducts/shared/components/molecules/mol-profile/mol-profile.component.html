@@ -1,0 +1,7 @@
+<ion-row class="" [ngStyle]="profileDetail.cssx">
+  <div *ngFor="let text of profileDetail.value;index as i" [ngClass]="text.uxClass">
+    <hr *ngIf="i == profileDetail.value.length-1">
+    <app-icons [iconDetail]="text"></app-icons>
+    <app-label [labelDetail]="text"></app-label>
+  </div>
+</ion-row>

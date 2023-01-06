@@ -1,0 +1,66 @@
+
+<!-- <ion-col [size]="'12'">
+  <ion-row>
+    <ion-col [size]="'12'">
+      <ion-row>
+        <ion-col [size]="'6'">
+          <ion-row>
+            <ion-col [size]="'2'">
+              <ion-img [src]="imageList?.filterIcon" class="custImgExpo mt-1"></ion-img>
+            </ion-col>
+            <ion-col [size]="'10'" (click)="FilterItem()">
+              <span class="custFontFamilyMuliBold muli-12pt custLineHight18 custColorDarkishBlue">{{'filter' | translate}}</span>
+            </ion-col>
+          </ion-row>
+        </ion-col>
+        <ion-col [size]="'6'">
+          <ion-row>
+            <ion-col [size]="'10'" class="text-end"><span class="custFontFamilyMuliBold muli-12pt custLineHight18 custColorDarkishBlue">{{'1YReturns' | translate}}</span></ion-col>
+            <ion-col [size]="'2'">
+              <ion-img [src]="imageList?.sortIcon" class="custImgExpo mt-1"></ion-img>
+            </ion-col>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+    </ion-col>
+  </ion-row>
+</ion-col> -->
+
+
+<lib-allmutualfundcard [jsonData]="productData"  [filterWant]='false' [imageList]="imageList" [header]="'All'" [MutualFundPage]="true" [header]="'All Mutual Funds'"></lib-allmutualfundcard>
+
+
+<ion-row class="m-2 mt-3">
+       <span class="custFontFamilyMuliBold  muli-16pt custLineHight22 custColorDark">
+         How your money gets invested</span>
+       </ion-row>
+     <!-- <mat-panel-description class="flex-grow-0 mt-1">
+       <ion-img [src]="imageList?.arrow" class="custInvestArrow custRotation"></ion-img>
+     </mat-panel-description> -->
+
+<ion-card class="p-3 mt-3">
+ <div class="ms-2">
+   <ul class="StepProgress mt-2">
+     <li class="w-100 mb-4 is-done StepProgress-item d-flex flex-column">
+       <span class="custFontFamilyMuliRegular muli-12pt custColorGreyish custLineHeight15">Step 1</span>
+       <span class="custFontFamilyMuliSemiBold muli-14pt custLineHeight18 custColorDark">Select a scheme</span>
+     </li>
+     <li class="w-100 mb-4 is-done StepProgress-item d-flex flex-column">
+       <span class="custFontFamilyMuliRegular muli-12pt custColorGreyish custLineHeight15">Step 2</span>
+       <span class="custFontFamilyMuliSemiBold muli-14pt custLineHeight18 custColorDark">Open investment account and make payment</span>
+     </li>
+     <li class="w-100 mb-4 is-done StepProgress-item d-flex flex-column">
+       <span class="custFontFamilyMuliRegular muli-12pt custColorGreyish custLineHeight15">Step 3</span>
+       <span class="custFontFamilyMuliSemiBold muli-14pt custLineHeight18 custColorDark">HeyTorus submits transaction to mutual fund company</span>
+     </li>
+     <li class="w-100 is-done StepProgress-item d-flex flex-column">
+       <span class="custFontFamilyMuliRegular muli-12pt custColorGreyish custLineHeight15">Step 4</span>
+       <span class="custFontFamilyMuliSemiBold muli-14pt custLineHeight18 custColorDark">Mutual fund company sends confirmation to you via email and text in 1 working day</span>
+     </li>
+   </ul>
+ </div>
+</ion-card>
+
+
+
+

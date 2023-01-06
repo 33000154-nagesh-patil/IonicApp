@@ -1,0 +1,126 @@
+<ion-header>  
+  <ion-toolbar> 
+    <ion-buttons slot="start">
+      <ion-icon name='chevron-back-outline' (click)='dismiss()' class="muli-25pt custBackColor custColorDarkishBlue"></ion-icon>
+    </ion-buttons>
+    <h3 class="mfTitle custColorDark custLineHight30 custFontFamilyMuliBold muli-16pt">{{custHeader | translate}}</h3>
+  </ion-toolbar>  
+</ion-header>  
+<ion-content>
+ <div *ngIf="type===1">
+  <h6 class="custFontFamilyMuliBold">{{'summary' | translate}}</h6>
+ </div>
+ <div *ngIf="type===2">
+  <ion-card>
+    <ion-card-content>
+      <ion-list> 
+        <ion-item>
+          <ion-grid>
+            <ion-row>
+              <ion-col [size]="12" [sizeMd]="3">
+                <span class="custFontFamilyMuliSemiBold"> {{'summarySub' | translate}}</span>
+              </ion-col>
+              <ion-col [size]="12" [sizeMd]="6">
+                <div class="ion-padding-vertical"><ion-progress-bar color="primary" value="0.5"></ion-progress-bar></div>
+                <div class="ion-padding-vertical"><ion-progress-bar color="secondary" value="0.7"></ion-progress-bar></div>
+                <div>
+                  <ion-grid>
+                    <ion-row>
+                      <ion-col size="6">
+                        <label class="custFontFamilyMuliSemiBold">{{'startDate' | translate}}</label><br>
+                        <label class="custFontFamilyMuliSemiBold">{{dummyData?.startDate | date:'fullDate'}}</label>
+                      </ion-col>
+                      <ion-col size="6">
+                        <label class="custFontFamilyMuliSemiBold">{{'endDate' | translate}</label><br>
+                        <label class="custFontFamilyMuliSemiBold">{{dummyData?.endDate | date:'fullDate'}}</label>
+  
+                      </ion-col>
+                    </ion-row>
+                  </ion-grid>
+                </div>
+              </ion-col>
+              <ion-col [size]="12" [sizeMd]="3">
+                <span class="custFontFamilyMuliSemiBold">{{'totalCorpus' | translate}}</span><br>
+                <span class="custFontFamilyMuliSemiBold">{{currentMoneySymbols?.currencySymbol}} {{dummyData?.totalCorpus}}</span>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+
+  </ion-card>
+ </div>
+
+ <div *ngIf="type===3">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle class="custFontFamilyMuliBold">
+        {{'lifeInsurance' | translate}}
+      </ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-row class="custFontFamilyMuliBold">
+        <ion-col class="ion-text-start" [size]="1">{{'sNo' | translate}}</ion-col>
+        <ion-col class="ion-text-start" [size]="3">{{'policyName' | translate}}</ion-col>
+        <ion-col class="ion-text-start" [size]="2">{{'planType' | translate}}</ion-col>
+        <ion-col class="ion-text-end" [size]="3">{{'premium' | translate}}</ion-col>
+        <ion-col class="ion-text-end" [size]="3">{{'status' | translate}}</ion-col>
+      </ion-row>
+      <div class="custHight">
+        <ion-row *ngFor="let x of dummyData?.trackModal; index as i"  class="custFontFamilyMuliRegular">
+          <ion-col class="ion-text-start" [size]="1">{{ i+1 }}</ion-col>
+          <ion-col class="ion-text-start" [size]="3">{{ x.name }}</ion-col>
+          <ion-col class="ion-text-start" [size]="2">{{ x.name }}</ion-col>
+          <ion-col class="ion-text-end" [size]="3">{{ x.amount }}</ion-col>
+          <ion-col class="ion-text-end" [size]="3">
+            <ion-select placeholder="Select One">
+            <ion-select-option value="No Status Update">{{'noStatusUpdate' | translate}}</ion-select-option>
+          </ion-select>
+        </ion-col>
+        </ion-row>
+      </div>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle class="custFontFamilyMuliBold">
+       {{'healthInsurance' | translate}}
+      </ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content >
+      <ion-row class="custFontFamilyMuliBold">
+        <ion-col class="ion-text-start" [size]="1">{{'sNo' | translate}}</ion-col>
+        <ion-col class="ion-text-start" [size]="3">{{'policyName' | translate}}</ion-col>
+        <ion-col class="ion-text-start" [size]="2">{{'planType' | translate}}</ion-col>
+        <ion-col class="ion-text-end" [size]="3">{{'premium' | translate}}</ion-col>
+        <ion-col class="ion-text-end" [size]="3">{{'status' | translate}}</ion-col>
+      </ion-row>
+      <div class="custHight">
+        <ion-row *ngFor="let x of dummyData?.trackModal; index as i"  class="custFontFamilyMuliRegular">
+          <ion-col class="ion-text-start" [size]="1">{{ i+1 }}</ion-col>
+          <ion-col class="ion-text-start" [size]="3">{{ x.name }}</ion-col>
+          <ion-col class="ion-text-start" [size]="2">{{ x.name }}</ion-col>
+          <ion-col class="ion-text-end" [size]="3">{{ x.amount }}</ion-col>
+          <ion-col class="ion-text-end" [size]="3">
+            <ion-select placeholder="Select One">
+            <ion-select-option value="No Status Update">{{'noStatusUpdate' | translate}}</ion-select-option>
+          </ion-select>
+        </ion-col>
+        </ion-row>
+      </div>
+      
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle class="custFontFamilyMuliBold">
+        {{'generalInsurance' | translate}}
+      </ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <p>{{'noStatusUpdate' | translate}}</p>
+    </ion-card-content>
+  </ion-card>
+ </div>
+</ion-content>

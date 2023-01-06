@@ -1,0 +1,26 @@
+.mfBackground{
+    background-image: var(--mf);
+    background-repeat: no-repeat;
+    background-size: cover;
+    // background-size: 1200px;
+}
+.custMFImg{
+    height: 46px;
+    width: 46px;
+    border-radius: 50%;
+    padding: 10px;
+}
+.custImgGold{
+    height: 38px;
+    width: 38px;
+   
+}
+.custArrowIcon{
+    height: 10px;
+    width: 6px;
+}
+.dot{
+    height: 5px;
+    width: 5px;;
+    border-radius: 50%;
+}

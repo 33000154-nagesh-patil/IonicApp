@@ -1,0 +1,8 @@
+.custIndexBottom{
+    z-index: -1;
+}
+
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
+    background-color: var(--custWhite);
+    border-radius: 5px;
+  }

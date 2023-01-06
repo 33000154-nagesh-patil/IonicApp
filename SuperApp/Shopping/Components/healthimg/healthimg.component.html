@@ -1,0 +1,24 @@
+<ion-grid class="w-100">
+  <ion-row >
+  
+   <ion-card class="w-100 h-100">
+   
+    <ion-img [src]="Selectimage"></ion-img>
+   </ion-card>
+    
+    </ion-row>
+    </ion-grid>
+    <ion-row class="fixed-bottom">
+      <ion-col [size]="'12'" (click)="deleteimg(Selectimage)">
+        <ion-button expand="block" class="text-capitalize custTryButton d-flex justify-content-center">
+          <span class="custFontFamilyMuliBold text-center muli-16pt custColorBrightCyan">Delete</span>
+        </ion-button>
+      </ion-col>
+    
+      <ion-col [size]="'12'" (click)="confirm(Selectimage)">
+        <!-- <button class="btn w-100 text-center custBackgroundColorBrightCyan" >
+          <span class="custColorWhite
+              custFontFamilyMuliBold muli-16pt">selected</span>
+        </button> -->
+      </ion-col>
+    </ion-row>

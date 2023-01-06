@@ -1,0 +1,65 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-grid>
+      <ion-row>
+        <ion-col [size]="'0.7'" class="text-center mt-2">
+          <ion-img [src]="imageList?.arrow" class="custWithoutTextImg" (click)="goBack()"></ion-img>
+        </ion-col>
+        <ion-col [size]="'8'">
+          <span class="custFontFamilyMuliBold muli-16pt custLineHight40  custColorBlack px-3">Theme Change</span>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+
+
+  <ion-row class="mt-2 ">
+    <ion-col [size]="'6'" class="mt-2 px-2">
+      Light
+    </ion-col>
+    <ion-col [size]="'2'" class="text-center mt-2 custFontFamilyMuliBold">
+      No
+    </ion-col>
+    <ion-col [size]="'2'" class="text-center">
+      <ion-toggle (click)="changeColor()" class="mt-0"></ion-toggle>
+    </ion-col>
+    <ion-col [size]="'2'" class="text-center mt-2 custFontFamilyMuliBold">
+      yes
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="mt-2 ">
+    <ion-col [size]="'6'" class="mt-2 px-2">
+      Dark
+    </ion-col>
+    <ion-col [size]="'2'" class="text-center mt-2 custFontFamilyMuliBold">
+      No
+    </ion-col>
+    <ion-col [size]="'2'" class="text-center">
+      <ion-toggle class="mt-0"></ion-toggle>
+    </ion-col>
+    <ion-col [size]="'2'" class="text-center mt-2 custFontFamilyMuliBold">
+      yes
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="mt-2">
+    <ion-col [size]="'6'" class="mt-2 px-2">
+      System theme
+    </ion-col>
+    <ion-col [size]="'2'" class="text-center mt-2 custFontFamilyMuliBold">
+      No
+    </ion-col>
+    <ion-col [size]="'2'" class="text-center">
+      <ion-toggle class="mt-0"></ion-toggle>
+    </ion-col>
+    <ion-col [size]="'2'" class="text-center mt-2 custFontFamilyMuliBold">
+      yes
+    </ion-col>
+  </ion-row>
+
+</ion-content>

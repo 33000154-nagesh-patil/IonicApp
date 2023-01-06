@@ -1,0 +1,78 @@
+{
+  "unitOfAmount":"₹",
+  "url":"Fullfilment/stock",
+  "info":" Only 80% of the amount after selling holdings will be available to trade on the same day.Reamining 20%,on the next day",
+  "text":"Increase your trading limit by pledging your stocks",
+  "action":"Increase Margin",
+  "Redirect":"View Your Payment history",
+  "addNwithdrawAction":["Add Funds","Withdraw"],
+  "card":["funds include your Equity","Derivatives","Currency","Commodity"],
+  "funds":[
+    {
+     "AvailableToInvest":"912"
+    },
+    {
+     "UsedFunds":"30123"
+    },
+    {
+      "TotalFunds":"31101"
+    }
+  ],
+  "detail":[
+    {
+      "title":"Opening Balance",
+      "value":"23,000.00"
+    },
+    {
+      "title":"Payin",
+      "value":"23,000.00"
+    },
+    {
+      "title":"SPAN",
+      "value":"23,000.00"
+    },
+    {
+      "title":"Delivery Margin",
+      "value":"0.00"
+    },
+    {
+      "title":"Exposure",
+      "value":"₹23,000.00"
+    },
+    {
+      "title":"Option Premium",
+      "value":"23,000.00"
+    }
+  ],
+  "collateralFunds":[
+    {
+      "title":"Collateral (Liquid Funds)",
+      "value":"0.00"
+    },
+    {
+      "title":"Collateral (Equity)",
+      "value":"29.00"
+    },
+    {
+      "title":"Total Collateral",
+      "value":"29.00"
+    }
+  ],
+  "AddFunds":{
+      "Amount":"978",
+      "action":"Add Funds",
+      "unitOfAmount":"₹",
+      "Title":"How much would you like add?",
+      "chips":["1000","5000","10000"]
+  },
+  "withdrawFunds":{
+      "Amount":"978",
+      "action":"Withdaw",
+      "unitOfAmount":"₹",
+      "Title":"How much would you like withdraw?",
+      "chips":["1000","5000","10000"]
+
+  }
+
+
+}

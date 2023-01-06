@@ -1,0 +1,142 @@
+<ion-content class="contentBackground">
+  <ion-grid class="scrollConetent">
+    <form [formGroup]="FatcaFormGroup" (ngSubmit)="onSubmit()">
+    <ion-row class="px-4 py-2 contentBackground custFontFamilyMuliBold muli-16pt w-100">
+      Please fill in the required details</ion-row>
+    <ion-row>
+      <mat-form-field appearance="outline" class="w-100 ">
+        <mat-label class="text-capitalize">{{'pincode' | translate}}</mat-label>
+        <input type="text" inputmode="numeric" maxlength="6" matInput formControlName="PinCode"
+          class=" custFontFamilyMuliRegular muli-16pt custLineHight18 custColorDark"  (ngModelChange)="getCityMasterDetails('City',FatcaFormGroup.value.PinCode)"
+         >
+      </mat-form-field>
+
+      <mat-form-field  appearance="outline" class="w-100 ">
+        <mat-label>Country of Birth</mat-label>
+        <mat-select placeholder="Country of Birth" formControlName="CountryBirth" required>
+          <mat-option [value]="item.country"  *ngFor="let item of city" >
+            {{item.country}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+
+
+      <mat-form-field  appearance="outline" class="w-100 ">
+        <mat-label>City of Birth</mat-label>
+        <mat-select placeholder="Country" formControlName="CityOfBirth" required>
+          <!-- <mat-option>--</mat-option> -->
+          <mat-option  [value]="item.district" *ngFor="let item of city" >
+           {{item.district}} 
+          </mat-option>
+        </mat-select>
+        <!-- <mat-error *ngIf="CountryControl.hasError('required')">Please choose an City</mat-error> -->
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="w-100 ">
+        <mat-label>Nationality</mat-label>
+        <mat-select formControlName="Country"  name="Country" id="Country" required>
+          <mat-option *ngFor="let item of city" [value]="item.country">
+            {{item.country}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </ion-row>
+
+    <ion-row>
+      <!-- <mat-form-field appearance="outline" class="w-100 ">
+        <mat-label>Source of Wealth</mat-label>
+        <mat-select>
+          <mat-option value="Salary">
+            Salary
+          </mat-option>
+        </mat-select>
+      </mat-form-field> -->
+
+      <mat-form-field  appearance="outline" class="w-100 ">
+        <mat-label>Source of Wealth</mat-label>
+        <mat-select placeholder="Country" formControlName="SourceOfWealth" required>
+          <!-- <mat-option>--</mat-option> -->
+          <mat-option *ngFor="let dataval of wealth" [value]="dataval">
+            {{dataval}}
+          </mat-option>
+        </mat-select>
+        <mat-error *ngIf="CountryControl.hasError('required')">Please choose an Source of Wealth</mat-error>
+      </mat-form-field>
+    </ion-row>
+
+
+    <ion-row class="px-4 py-2 contentBackground custFontFamilyMuliBold muli-16pt w-100">
+      Is your Tax Residency Other then india</ion-row>
+
+    <ion-row class="px-4">
+      <!-- <mat-radio-group  formControlName="taxResidency">
+        <ion-col class="px-2">
+          <mat-radio-button class="custFontFamilyMuliRegular muli-16pt " color="primary" ng-model="checkpoint"  value="1" checked="checked">Yes
+          </mat-radio-button>
+        </ion-col>
+
+        <ion-col class="pding">
+          <mat-radio-button class="custFontFamilyMuliRegular muli-16pt" ng-model="checkpoint" color="primary"  value="2">No</mat-radio-button>
+        </ion-col>
+      </mat-radio-group> -->
+      <mat-radio-group formControlName="taxResidency">
+        <mat-radio-button value="Yes" 
+          class="custFontFamilyMuliRegular muli-16pt custLineHight18 custColorBattlePGry paddingRadio">Yes</mat-radio-button>
+        <mat-radio-button class="custFontFamilyMuliRegular muli-16pt custLineHight18 custColorBattlePGry mt-3 px-4" 
+          value="No">No</mat-radio-button>
+      </mat-radio-group>
+
+    </ion-row>
+
+
+    <ion-row class="px-4 py-2 contentBackground custFontFamilyMuliBold muli-16pt w-100">
+      Politically Exposed Person(PEP)</ion-row>
+
+    <ion-row class="px-4">
+   <mat-radio-group formControlName="PEP">
+    <mat-radio-button value="Yes"
+    class="custFontFamilyMuliRegular muli-16pt custLineHight18 custColorBattlePGry paddingRadio">Yes</mat-radio-button>
+  <mat-radio-button class="custFontFamilyMuliRegular muli-16pt custLineHight18 custColorBattlePGry mt-3 px-4"
+    value="No">No</mat-radio-button>
+      </mat-radio-group>
+    </ion-row>
+
+    <ion-row class="px-4 py-2 contentBackground custFontFamilyMuliBold muli-16pt w-100">
+      Related to PEP</ion-row>
+
+    <ion-row class="px-4">
+      <mat-radio-group formControlName="relatedPep">
+        <mat-radio-button value="Yes"
+        class="custFontFamilyMuliRegular muli-16pt custLineHight18 custColorBattlePGry paddingRadio">Yes</mat-radio-button>
+      <mat-radio-button class="custFontFamilyMuliRegular muli-16pt custLineHight18 custColorBattlePGry mt-3 px-4"
+        value="No">No</mat-radio-button>
+      </mat-radio-group>
+    </ion-row>
+    <ion-row class="custommargin d-flex">
+      <span class="me-3 ">
+        <ion-checkbox color="secondary" class="custTermCheckbox" [disabled]="true" [checked]="true"></ion-checkbox>
+      </span>
+      <span>
+        <p class="w-100 custFontFamilyMuliBold muli-12pt custColorWarmGrey">I have read and
+          <span class="custFontFamilyMuliBold custColorWarmGrey">accepted the Declaration</span>
+        </p>
+      </span>
+      <button [disabled]="!FatcaFormGroup.valid" type="submit" class="btn w-100 text-center custBackgroundColorBrightCyan rounded-2 " > <span
+          class="custColorWhite custFontFamilyMuliBold muli-16pt">Save</span></button>
+    </ion-row>
+    </form>
+  </ion-grid>
+</ion-content>
+
+<div class="custModalContainer p-10" *ngIf="loggedInModal" (click)="successModalClose();">
+  <div  id="showModalSMGSucces" class="modal-content custCenterAlign">
+    <!-- <ion-icon [src]="imageList?.successKYCIcon" class="custImage"></ion-icon> -->
+    <p class="custFontFamilyMuliBold muli-16pt custColorDark text-center p-0 m-0 ion-no-padding">{{ErrorMsg}}</p>
+  </div>
+</div>
+
+
+
+
+
+

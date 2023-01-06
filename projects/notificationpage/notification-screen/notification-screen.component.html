@@ -1,0 +1,210 @@
+<!-- <sort start here> -->
+
+<ion-content class="contentBackground">
+  <ion-grid class="ion-no-padding">
+
+    <ion-segment scrollable="true" scrollbar="true" value="all" [(ngModel)]="segmentModel">
+      <ion-segment-button class="w-100" *ngFor="let category of categroies" (click)="segmentchanged(category)"
+        value="{{category}}">
+        <ion-label class="muli-14pt text-capitalize pt-3 custFontFamilyMuliBold">{{category}}</ion-label>
+        <span class="bagde">
+          <ion-badge color="secondary" mode="ios" class="allBagde" *ngIf="category =='All' && counter > 0">{{counter}}</ion-badge>
+          <ion-badge color="secondary" mode="ios" *ngIf="category == 'Unread' && unreadCounter > 0">{{unreadCounter}}</ion-badge>
+        </span>       
+      </ion-segment-button>
+    </ion-segment>
+
+    <div *ngIf="counter!=0 || unreadCounter!=0 ">
+
+<!-- Icons Start  -->
+      <ion-row class="mt-3">
+        <ion-col class="px-3 d-flex justify-content-start align-items-center" *ngIf="selectIcon && segmentModel=='All'">
+          <span class="custColorDarkishBlue muli-12pt ps-2 custFontFamilyMuliBold"
+            (click)="select($event)">Select</span>
+        </ion-col>
+
+        <ion-col class="px-3 d-flex justify-content-start align-items-center" *ngIf="selectAll && segmentModel=='All'">
+          <span class="custColorDarkishBlue muli-12pt ps-2 custFontFamilyMuliBold" (click)="selectAllCheckBox()">Select all</span>
+        </ion-col>
+
+        <ion-col class="px-3 d-flex justify-content-start align-items-center"
+          *ngIf="cancelIcon  && segmentModel=='All'">
+          <span class="custColorDarkishBlue muli-12pt ps-2 custFontFamilyMuliBold" (click)="cancel('')">Cancel</span>
+        </ion-col>
+
+        <ion-col class="px-3 d-flex justify-content-start align-items-center"
+          *ngIf="deSelectIcon && segmentModel=='All'">
+          <span class="custColorDarkishBlue muli-12pt ps-2 custFontFamilyMuliBold" (click)="deSelectAll()">Deselect all</span>
+        </ion-col>
+
+        <ion-col class="d-flex justify-content-end align-items-center px-3"
+          *ngIf="filterIcon && segmentModel=='All' || segmentModel=='Unread' || segmentModel=='Promotional' ">
+          <label><img src="assets/icon/filterIcon.svg" class="filterimg"></label>
+          <span class="custFontFamilyMuliBold muli-12pt m-1 custColorDarkishBlue" 
+            (click)="filterComponent()">Filter</span>
+          <ion-badge color="secondary" mode="ios" class="filterBagde" *ngIf="filterCount > 0">{{filterCount}}</ion-badge>
+        </ion-col>
+
+        <ion-col class="d-flex justify-content-end align-items-center px-3" *ngIf="delete1 && segmentModel=='All'">
+          <ion-img class="delete" [src]="imageList?.delete"></ion-img>
+          <span class="custColorDarkishBlue muli-12pt custFontFamilyMuliBold px-1" (click)="deleteData()">Delete</span>
+        </ion-col>
+      </ion-row>
+<!-- Icons End  -->
+
+<!-- All Notification Logic Start -->
+      <div *ngIf="segmentModel == 'All'">
+        <ion-col [size]="'12'" *ngFor="let x of data1; let index of data" class="mb-2">
+          <ion-card [id]="x.notificationId" [ngClass]="!(filterIcon && segmentModel=='All')?'alerts-border1':''"
+            [ngClass]="x?.isRead == false?'custCol':''" (click)="off(x.notificationId)"
+            [ngClass]="active===x?'hidepopup':''">
+            <ion-card-content>
+              <ion-grid class="ion-no-padding">
+                <ion-row>
+                  <ion-col [size]="'12'">
+                    <ion-row>
+                      <ion-col [size]="'2'" class="py-2">
+                        <ion-row *ngIf="!valueData.includes(x.notificationId)">
+                          <img [src]="x?.notificationIconSuccessPath">
+                        </ion-row>
+                        <ion-row *ngIf="valueData.includes(x.notificationId)">
+                          <img [src]="imageList?.tickIcon" />
+                        </ion-row>
+                      </ion-col>
+                      <ion-col [size]="'7'">
+                        <span class="muli-14pt custFontFamilyMuliBold">{{x?.notificationTitle}}</span>
+                        <p class="muli-10pt custFontFamilyMuliRegular">{{x?.offering}}</p>
+                        <p class="muli-10pt custFontFamilyMuliRegular py-1">{{x?.notificationDescription}}</p>
+                      </ion-col>
+                      <ion-col [size]="'3'">
+                        <p class="custFontFamilyMuliRegular muli-10pt float-end">{{x?.timeStamp}}</p>
+                      </ion-col>
+                    </ion-row>
+                  </ion-col>
+                </ion-row>
+              </ion-grid>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </div>
+<!-- All Notification Logic End -->
+
+<!-- Unread Notification Logic Start -->
+      <div *ngFor="let x of data1">
+        <div *ngIf="segmentModel == 'Unread' && x?.isRead == false">
+          <ion-col [size]="'12'" class="mb-2">
+            <!-- <ion-row class="muli-12pt custFontFamilyMuliRegular px-3 pt-2"> {{x?.days}} </ion-row>   -->
+            <ion-card class="custCol" (click)="read(x.notificationId)">
+              <ion-card-content>
+                <ion-grid class="ion-no-padding">
+                  <ion-row>
+                    <ion-col [size]="'12'">
+                      <ion-row>
+                        <ion-col [size]="'2'" class="py-2">
+                          <ion-row>
+                            <img src="{{x?.notificationIconPath}}">
+                          </ion-row>
+                        </ion-col>
+                        <ion-col [size]="'7'">
+                          <span class="muli-14pt custFontFamilyMuliBold">{{x?.notificationTitle}}</span>
+                          <p class="muli-10pt custFontFamilyMuliRegular">{{x?.offering}}</p>
+                          <p class="muli-10pt custFontFamilyMuliRegular py-1">{{x?.notificationDescription}}</p>
+                        </ion-col>
+                        <ion-col [size]="'2'">
+                          <p class="custFontFamilyMuliRegular muli-10pt">{{x?.timeStamp}}</p>
+                        </ion-col>
+                        <ion-col [size]="'1'" class="ps-1">
+                        </ion-col>
+                      </ion-row>
+                    </ion-col>
+                  </ion-row>
+                </ion-grid>
+              </ion-card-content>
+            </ion-card>
+          </ion-col>
+        </div>
+      </div>
+<!-- Unread Notification Logic End -->
+
+    </div>
+
+<!-- Start No notification found for Unread -->
+    <div class="container" *ngIf="unreadCounter==0 && segmentModel=='Unread'">
+      <div class="center">
+        <ion-row>
+          <ion-col [size]="'12'">
+            <ion-img class="faceImg" [src]="imageList?.noNotification"></ion-img>
+            <br>
+          </ion-col>
+          <ion-col>
+            <span class="found custFontFamilyMuliBold">No Notifications found !</span>
+            <br /><br />
+            <span>We will notify you when something new arrives !</span>
+          </ion-col>
+        </ion-row>
+      </div>
+    </div>
+<!-- End No notification found for Unread -->
+
+<!-- Start No notification found for All -->
+    <div class="container" *ngIf="counter==0 && segmentModel=='All' ">
+      <div class="center">
+        <ion-row>
+          <ion-col [size]="'12'">
+            <ion-img class="faceImg" [src]="imageList?.noNotification"></ion-img>
+            <br>
+          </ion-col>
+          <ion-col>
+            <span class="found custFontFamilyMuliBold">No Notifications found !</span>
+            <br /><br />
+            <span>We will notify you when something new arrives !</span>
+          </ion-col>
+        </ion-row>
+      </div>
+    </div>
+<!-- End No notification found for All -->
+
+
+    <!-- Start Page Under Construction for Promotional -->
+    <div class="container" *ngIf="segmentModel=='Promotional'">
+      <div class="center">
+        <ion-row>
+          <ion-col [size]="'12'">
+            <ion-img class="faceImg" [src]="imageList?.pageUnderConstruction"></ion-img>
+            <br>
+          </ion-col>
+          <ion-col>
+            <span class="found custFontFamilyMuliBold">Page is under construction </span>
+          </ion-col>
+        </ion-row>
+      </div>
+    </div>
+    <!-- End Page Under Construction for Promotional -->
+
+  </ion-grid>
+</ion-content>
+
+<!-- Delete Prompt box start -->
+<div class="custModalContainer" *ngIf="seedings">
+  <div class="modal-content">
+    <div class="custCenterAlign">
+      <ion-icon [src]="imageList?.alertTriangle" class="custImage"></ion-icon>
+    </div>
+    <p class="custFontFamilyMuliBold muli-22pt custColorDark text-center p-0 m-0 ion-no-padding">Do you really want to
+      Delete this Notification
+    </p>
+    <ion-row class=" ion-no-padding w-100">
+      <ion-col [size]="'6'" class="ion-no-padding" (click)="skipCancel()">
+        <ion-button expand="block" class="text-capitalize custTryButton d-flex justify-content-center">
+          <span class="custFontFamilyMuliRegular text-center muli-14pt custColorBrightCyan">Cancel</span>
+        </ion-button>
+      </ion-col>
+
+      <ion-col [size]="'6'" class="ion-no-padding" (click)="yesSkip()">
+        <ion-button expand="block" class="text-capitalize text-center custLooksBtn"><span
+            class="custColorWhite custFontFamilyMuliBold muli-16pt">Yes</span></ion-button>
+      </ion-col>
+    </ion-row>
+  </div>
+</div>
+<!-- Delete Prompt box End -->

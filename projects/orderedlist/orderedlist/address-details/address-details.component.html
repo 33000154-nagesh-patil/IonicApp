@@ -1,0 +1,134 @@
+<ion-header>
+  <ion-row>
+    <ion-col [size]="'1'" (click)="closeAddPage()">
+      <ion-img [src]="imageList?.arrow" class="custInvestArrow"></ion-img>
+    </ion-col>
+    <ion-col [size]="'11'">
+      <span class="custFontFamilyMuliBold muli-16pt custColorDark custLineHight40">Checkout</span>
+    </ion-col>
+  </ion-row>
+</ion-header>
+
+
+
+<div class="custModalContainer p-12">
+
+  <div id="showModalSMGSucces" class="modal-content">
+    <div class="footer">
+      <form [formGroup]="addressForm" (ngSubmit)="getAddressDetails()">
+        <ion-grid>
+          <ion-row>
+            <p class="custFontFamilyMuliBold muli-16pt custColorDark">Add Patient Address</p>
+            <p class="custFontFamilyMuliRegular muli-14pt custColorDark">This information will be used as your
+              shipping related communication address
+            </p>
+          </ion-row>
+
+          <ion-row>
+
+            <mat-form-field appearance="outline" class="w-100">
+              <mat-label>Address Type</mat-label>
+
+              <mat-select name="addressType" formControlName="addressType">
+                <mat-option value="Home">Home</mat-option>
+                <mat-option value="Office">Office</mat-option>
+                <mat-option value="Other">Other</mat-option>
+              </mat-select>
+              <mat-error *ngIf="checkError('addressType','required')">
+                AddressType is Required
+              </mat-error>
+            </mat-form-field>
+
+        <mat-form-field appearance="outline" class="w-100">
+              <mat-label>Full Name</mat-label>
+              <input class="w-100" type="text" matInput matInput formControlName="fullName">
+              <mat-error *ngIf="checkError('fullName','required')">
+                Full Name is Required
+              </mat-error>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline" class="w-100 ">
+              <mat-label>Mobile No.</mat-label>
+              <input class="w-100 " type="text" matInput formControlName="mobileNo" maxlength="10" minlength="10"
+                inputmode="numeric">
+              <mat-error *ngIf="checkError('mobileNo','required')">
+                Mobile no. is Required
+              </mat-error>
+              <mat-error *ngIf="checkError('mobileNo','pattern')">
+                Mobile no. is invalid
+              </mat-error>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline" class="w-100 ">
+              <mat-label>Address Line 1</mat-label>
+              <input class="w-100" type="text" matInput formControlName="addressLine1" minlength="10">
+              <mat-error *ngIf="checkError('addressLine1','required')">
+                Address is Required
+              </mat-error>
+              <mat-error *ngIf="checkError('addressLine1','minlength')">
+                Your address must be at least 10 characters long
+              </mat-error>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline" class="w-100 ">
+              <mat-label>Address Line 2</mat-label>
+              <input class="w-100" type="text" formControlName="addressLine2" matInput>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline" class="w-100 custHeightCss">
+              <mat-label>Pincode</mat-label>
+              <input class="w-100" type="text" matInput formControlName="pincode" maxlength="6" minlength="6"
+                inputmode="numeric">
+              <mat-error *ngIf="checkError('pincode','required')">
+                Pincode is Required
+              </mat-error>
+              <mat-error *ngIf="checkError('pincode','pattern')">
+                Pincode is invalid
+              </mat-error>
+            </mat-form-field>
+
+
+            <mat-form-field appearance="outline" class="w-100 custHeightCss">
+              <mat-label>State</mat-label>
+              <mat-select name="StateType" formControlName="state" name="state" id="state"
+                [(ngModel)]="addressForm.value.state" (ngModelChange)="getCityMasterDetails('City',addressForm.value.state)">
+
+                <mat-option *ngFor="let item of state" [value]="item.ID" (click)="getstate(item.TEXT)"> {{item.TEXT}}
+                </mat-option>
+                <!-- <mat-option>44</mat-option> -->
+              </mat-select>
+              <mat-error *ngIf="checkError('state','required')">
+                State is Required
+              </mat-error>
+            </mat-form-field>
+
+
+            <mat-form-field appearance="outline" class="w-100 custHeightCss">
+              <mat-label>City</mat-label>
+              <mat-select name="StateType" formControlName="city" [(ngModel)]="addressForm.value.city" name="city" id="city">
+                <mat-option *ngFor="let item of city" [value]="item.ID" (click)="getcity(item.TEXT)"> {{item.TEXT}}
+                </mat-option>
+              </mat-select>
+              <!-- <input  class="w-100" type="text" matInput formControlName="city"> -->
+              <mat-error *ngIf="checkError('city','required')">
+                City is Yequired
+              </mat-error>
+            </mat-form-field>
+
+
+          </ion-row>
+
+          <ion-row class="px-3 fixed-bottom">
+            <ion-button class="w-100 custFontFamilyMuliBold muli-16pt" type="submit" [disabled]="!addressForm.valid" (click)="saveAddressData()"
+
+          color="secondary">Save & Continue</ion-button>
+          </ion-row>
+        </ion-grid>
+
+      </form>
+
+
+
+    </div>
+  </div>
+</div>

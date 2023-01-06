@@ -1,0 +1,283 @@
+// .custWidth {
+//     max-width: 100%;
+// }
+
+::ng-deep .mat-tab-label
+{
+  height: 35px !important;
+  min-height: 5px!important;
+  margin: 3px!important;
+  width: 100%!important;
+  min-width: 5px!important;
+}
+.myClass{
+  z-index: 9;
+  position: absolute;
+  width: 100%;
+  height: fit-content;
+  background-color: white;
+ box-shadow: #141B2F 0px 0px 10px;
+ box-sizing: border-box;
+ border-top: #888 solid 1px;
+}
+
+
+.custSearch{
+    top: 15px;
+    width: 100%;
+}
+.custBorder{
+    border-left:solid rgb(221, 219, 219) 3px;
+}
+.custBorderSegment{
+  border-bottom: 1px solid rgb(230, 228, 228);
+}
+
+
+.text{
+  text-transform:capitalize;
+  --indicator-color:#0f3fa0;
+  color:black;
+
+}
+.custModalContainer {
+    z-index: 1;
+    left: 0;
+    // top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    // background-color: var(--custDark);
+    //  opacity: 0.4;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+  }
+  // .custpadding{
+  //   padding-bottom: 200px;
+  // }
+ 
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding-top: 1px;
+    margin-top: 1px;
+    padding-bottom: 30px;
+    padding-right: 16px;
+    padding-left: 16px;
+    border: 1px solid #888;
+    width: 100%;
+    height: max-content;
+    position: absolute;
+    bottom: 0px;
+    border-radius: 10px 10px 0px 0px;
+  }
+  .custWidth{
+      height: 60px;
+  }
+  .custButtonborder{
+border: 1px solid #44c8f5;
+  }
+  .custBackground{
+    background:#F8F8F8;
+  }
+  .custSizeicon{
+    width: 12px;
+    height: 14px;
+  }
+  .custmodifyIconSize{
+    width: 14px;
+    height:14px;
+  }
+  .custcolorCircleIcon{
+    color: #999999;
+  }
+
+  .custHeightSet{
+    height: 90px;
+}
+
+
+.custDetails:nth-child(odd){
+background-color: var(--custPaleGrey);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .custmFilterPosition{
+    position: relative;
+    top: -30px;
+    left: -25px;
+}
+
+// .search{
+//     height: 40px;
+//     margin-right: 5px;
+// }
+.custRate{
+   margin-top: -30px;
+  margin-left: 220px;
+}
+.custRate2{
+   margin-top: -30px;
+   margin-left: 265px
+}
+
+ion-searchbar {
+   transform: scale(1.3);
+   margin: 0 auto;
+   width: 77%; 
+}
+
+.iconFIL {
+   height: 17px;
+   margin-top: -10px;
+}
+.itemCol{
+   color: rgb(41,173,0);
+  
+}
+//////////////////
+.custProfile{
+   background: var(--custwhiteTwo);
+   border-radius: 50%;
+   padding: 21px;
+}
+.custHeight{
+   height: 42px;
+   width: 42px;
+}
+.segmentClass{
+   margin-top: 75px;
+}
+
+
+.custSVGIcon{
+   position: absolute;
+   margin: -8px;
+}
+
+
+
+ .custWithoutTextImg{
+   height: 18px;
+   width: 18px;
+   margin-top: 17px;
+ }
+ .custWithoutTextImg2{
+   height: 12px;
+   width: 18px;
+   margin-top: -17px;
+ }
+ .custHeaderMarginTop{
+   margin-top: 2px;
+ }
+
+ .custBadge{
+   position: absolute;
+  
+ }
+ p{
+     margin-bottom: 0;
+ }
+ 
+ .segment-button-checked {
+   color: #000000 !important;
+   font-weight: bold !important;
+}
+.segment-button-indicator-background {
+   background: #0a1932 !important;
+}
+
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-wrapper {
+    margin: 0 !important;
+    padding: 0; 
+}
+
+mat-form-field {
+   width: 95%;
+   margin-left: 5px;
+}
+.border {
+   border: 1px solid #44c8f5!important;
+}
+.custColorDark{
+   color: #141b2f;
+   
+}
+.custOnlineCircle{
+    border-radius: 100%;
+    height: 10px;
+    width: 10px;
+   background: var(--custBrightCyan); 
+   color: var(--custBrightCyan) !important;
+ 
+ }
+ .custCircle{
+   border-radius: 100%;
+   height: 15px;
+   width: 15px;
+ }
+ .custApplybtn{
+  
+   text-align: center !important;
+   padding-left: 16px !important;
+   padding-right: 16px !important;
+   height: 40px;
+  
+   background: var(--custBrightCyan); 
+
+}
+
+.custBtnExplore{
+
+   color: white;
+   height: 40px;
+   border:  1px solid var(--custBrightCyan) !important;
+   border-radius: 4px !important;
+   background: white !important;
+   text-align: center !important;
+   padding-left: 16px !important;
+   padding-right: 16px !important;
+  
+}
+.custColor{
+   color: rgb( 0 51 153);
+}
+li {
+   list-style-type: none;
+}
+.vl {
+   border-left: 1px solid gray;
+   height: 135px;
+   position: absolute;
+   left: 45%;
+   margin-left: 20px;
+   margin-top: 340px;
+   top: 0;
+ }
+
+
+ .custImageGroup{
+   position: absolute;
+   margin-top: 5px;
+ }
+ .custColorlightWhite{
+   background-color: #F8F8F8;
+ }
+ .custColorBlack{
+   color: #141B2F;
+ }
+
+ 
+  

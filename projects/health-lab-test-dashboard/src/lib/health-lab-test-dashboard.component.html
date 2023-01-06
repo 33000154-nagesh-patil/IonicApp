@@ -1,0 +1,81 @@
+<lib-header [title]="title" [imageList]="imageList" [showArrow]="false" [showLabel]="true" [showImg]="false"
+  [imgURL]="labelIcon" [showIndex]="false" [showNotification]="true" [showCartWithName]="true"
+  [notificationCount]="notificationCount" [cardCount]="cartCount" [showSideMenu]="false" [showSearch]="true"
+  [showClose]="false" [showShare]="false" [showWatchList]="false" [showCartWithoutName]="false" [showStories]="false"
+  [otherTextName]="textName" [showOtherText]="true" [superMode]="currentMode" [backUrlName]=""></lib-header>
+
+<!--
+<ion-content class="contentBackground">
+  <div class="segment">
+  <ion-col [size]="'12'">
+    <mat-accordion class="example-headers-align">
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <span class="custFontFamilyMuliBold  muli-22pt custLineHight40 custColorDark">Overview</span>
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+
+        <div class="custContent">
+          <lib-lab-overview></lib-lab-overview>
+        </div>
+
+      </mat-expansion-panel>
+
+
+
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <span class="custFontFamilyMuliBold  muli-22pt custLineHight20 custLineHight75 custColorDark pb-1">Appointments</span>
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+
+        <div class="custContent">
+          <lib-lab-appointments></lib-lab-appointments>
+        </div>
+
+      </mat-expansion-panel>
+
+
+
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <span class="custFontFamilyMuliBold  muli-22pt custColorDark pb-0">Lab Reports</span>
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+
+        <div class="custContent">
+         <lib-lab-reports></lib-lab-reports>
+        </div>
+
+      </mat-expansion-panel>
+
+
+
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <span class="custFontFamilyMuliBold  muli-22pt custColorDark">Recommended Tests</span>
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+
+        <div class="custContent">
+          <lib-lab-recommended></lib-lab-recommended>
+        </div>
+
+      </mat-expansion-panel>
+
+    </mat-accordion>
+  </ion-col>
+</div>
+</ion-content>  -->
+
+<ion-content>
+  <lib-labtestpackages></lib-labtestpackages>
+</ion-content>
+
+
+
+<lib-footer  [activeImg]="imageList?.activeTab"  [selectedIndex]="'2'" [footerListData]="mfFooterData" [parentTab]="'labTest'"></lib-footer>

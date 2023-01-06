@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+  <g id="Group_14316" data-name="Group 14316" transform="translate(-197 -479.5)">
+    <g id="Group_13387" data-name="Group 13387" transform="translate(197 479.5)">
+      <g id="Group_13386" data-name="Group 13386" transform="translate(5 4)">
+        <path id="Path_18572" data-name="Path 18572" d="M1050.71,1907.333a.674.674,0,0,0,.461-.193.7.7,0,0,0,.189-.473v-4a.7.7,0,0,0-.189-.473.674.674,0,0,0-.461-.193.662.662,0,0,0-.461.193.669.669,0,0,0-.188.473v4a.669.669,0,0,0,.188.473A.662.662,0,0,0,1050.71,1907.333Z" transform="translate(-1050.06 -1902)" fill="#039"/>
+        <path id="Path_18573" data-name="Path 18573" d="M1054.71,1907.333a.674.674,0,0,0,.462-.193.7.7,0,0,0,.188-.473v-4a.7.7,0,0,0-.188-.473.674.674,0,0,0-.462-.193.663.663,0,0,0-.462.193.67.67,0,0,0-.188.473v4a.67.67,0,0,0,.188.473A.663.663,0,0,0,1054.71,1907.333Z" transform="translate(-1051.46 -1902)" fill="#039"/>
+      </g>
+      <g id="Ellipse_1108" data-name="Ellipse 1108" fill="none" stroke="#039" stroke-width="1">
+        <circle cx="7" cy="7" r="7" stroke="none"/>
+        <circle cx="7" cy="7" r="6.5" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>

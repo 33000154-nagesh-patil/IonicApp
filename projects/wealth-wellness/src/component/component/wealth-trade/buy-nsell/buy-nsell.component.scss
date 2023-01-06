@@ -1,0 +1,914 @@
+.modConmart {
+  overflow-y: scroll;
+}
+
+
+.custModalContainer {
+  z-index: 1;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  // background-color: var(--custDark);
+  //  opacity: 0.4;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+}
+
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding-top: 1px;
+  margin-top: 1px;
+  padding-bottom: 30px;
+  padding-right: 16px;
+  padding-left: 16px;
+  border: 1px solid #888;
+  width: 100%;
+  height: max-content;
+  position: absolute;
+  bottom: 0px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.custInvestArrow {
+  height: 20px;
+  width: 50px;
+
+  transform: rotate(270deg);
+  text-align: center;
+  color: var(--custGreyish);
+}
+
+.custInvestArrow1 {
+  height: 18px;
+  width: 45px;
+
+  // transform: rotate(270deg);
+  text-align: center;
+  color: var(--custGreyish);
+}
+
+custRotation {
+  transform: rotate(90deg)
+}
+
+.MarketValuepl {
+  padding-left: 49px;
+}
+
+
+
+.custInvestArrow {
+  height: 14px;
+  width: 14px;
+  margin-top: 12px;
+}
+.scroll{
+  overflow:scroll;
+}
+
+.custSIPIcon {
+  height: 32px;
+}
+
+.custBorderRadious {
+  border-radius: 24px;
+}
+
+.custSegment {
+  border-radius: 25px;
+  --indicator-color: none;
+}
+
+ion-segment-button {
+  min-width: auto;
+  min-height: auto;
+}
+
+.custOptacity {
+  opacity: 25%;
+}
+
+::ng-deep .mat-form-field-appearance-fill .mat-form-field-flex {
+  background-color: var(--custPaleGrey);
+}
+
+.btnPadding {
+  padding: 13px;
+}
+
+.custZIndex {
+  z-index: -1;
+}
+
+.custborderBottom {
+  border-bottom: 1px solid var(--lightShadeGray);
+}
+
+.padlt {
+  padding-left: 20px;
+}
+
+//   h1 {
+//     border-bottom: 2px solid #44c8f5
+//   }
+.font-color {
+  color: #44c8f5;
+}
+
+bg-color {
+  background: grey;
+}
+
+brder {
+  padding: 0;
+  border: none;
+}
+
+.flex1 {
+  display: flex;
+}
+
+h1 {
+  border-bottom: 1px solid #dbdddd
+}
+
+.textEnd {
+  text-align: end;
+}
+
+// .bggrey1{
+//   background: grey;
+// }
+
+.bgSell {
+  background-color: #d23d50;
+}
+
+.custcolorModify {
+  color: #003399;
+}
+
+.confirmmargin5 {
+  margin-top: -47px;
+}
+
+.exchangeButton {
+  background: none;
+  border-radius: 10px;
+}
+
+.ValidityButton {
+  background: none;
+}
+
+.ProductButton {
+  background: none;
+}
+
+.bseButton {
+  border-radius: 6px;
+  color: red;
+}
+
+.mat-input-element {
+  width: 80%;
+  font-size: 22px;
+}
+
+.newClass {
+  width: 100%
+}
+
+.caretUpIcon {
+  display: inline;
+  filter: invert(59%) sepia(31%) saturate(930%) hue-rotate(47deg) brightness(93%) contrast(84%);
+  height: 10px;
+}
+
+.custMuliFont {
+  font-size: 26px;
+
+}
+
+::-webkit-input-placeholder {
+  text-align: center;
+}
+
+:-moz-placeholder {
+  text-align: center;
+}
+
+
+.custInvestArrow {
+  height: 16px;
+  width: 16px;
+  margin-top: 12px;
+}
+
+.custSIPIcon {
+  height: 32px;
+}
+
+ion-segment {
+  height: 25px;
+
+}
+
+.custBorderRadious {
+  border-radius: 24px;
+  // height: 35px;
+  // width: 300px;
+
+}
+
+.custSegment {
+  border-radius: 25px;
+  --indicator-color: none;
+}
+
+ion-segment-button {
+  min-width: auto;
+  min-height: auto;
+}
+
+.custOptacity {
+  opacity: 25%;
+}
+
+::ng-deep .mat-form-field-appearance-fill .mat-form-field-flex {
+  background-color: var(--custPaleGrey);
+}
+
+.mat-form-field {
+  height: 60px;
+}
+
+.mat-form-field-wrapper {
+  height: 50px !important;
+}
+
+.btnPadding {
+  padding: 13px;
+}
+
+.custZIndex {
+  z-index: -1;
+}
+
+.custsize {
+  height: 20px;
+  width: 100px;
+}
+
+.custMargin {
+  margin-top: -25px;
+}
+
+.custgm {
+  margin-left: 62px;
+}
+
+.custinputmargin {
+  margin-right: 70px;
+}
+
+.custGM {
+
+  right: 30px;
+}
+
+.custMargin1 {
+  margin-left: 10px;
+}
+
+.something {
+  margin-bottom: -10px;
+}
+
+.mat-input-element {
+  max-width: 86%;
+}
+
+.custWidthBtn {
+  width: 66px;
+}
+
+::ng-deep .mat-form-field-appearance-fill .mat-form-field-infix {
+  border-top: none;
+  padding: 0.25em 0 0.25em 0;
+}
+
+input {
+  margin-top: 6px;
+}
+
+// .custCurrency {
+//     left: 30px;
+// }
+
+.custImg2 {
+  padding-top: 50px;
+}
+
+::ng-deep .mat-form-field {
+  font-size: 22px; // example
+}
+
+.fontColor {
+  color: rgb(4, 42, 122);
+}
+
+.paddpro {
+  padding-bottom: 0px;
+}
+
+.marginPro1 {
+  margin-bottom: -15px;
+
+}
+
+.TRiggermarginTop {
+  margin-top: -75px;
+}
+
+.marginRequired {
+  color: #091586;
+}
+
+.thick {
+  font-weight: bold;
+}
+
+
+// .activeButton:active {
+//   color: #44c8f5
+// }
+
+// .activeButton:hover {
+//   color: hotpink;
+// }
+////////////////////////////////////////////////////intraday////////////
+// .button1 {
+//   background-color: lightGrey; 
+//   color: black; 
+//   border: none;
+// }
+
+// .button1:hover {
+//   background-color: #44c8f5;
+//   color: white;
+// }
+
+// .button2 {
+//   background-color: rgb(95, 94, 94); 
+//   color: black; 
+//   border: none;
+// }
+
+// .button2:hover {
+//   background-color: #44c8f5;
+//   color: white;
+// }
+// .button{
+//   padding: 5px 16px;
+//   font-size: 14px;
+//   border-radius: 4px;
+// }
+////////////////////////////////////////////////////////////
+
+
+
+
+.buttonDeliveryIntraday {
+  background-color: #e0e5eb;
+  /* Green */
+  border: none;
+  color: rgb(134, 130, 130);
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+
+.active {
+  background-color: #44c8f5;
+  color: white;
+}
+
+.btn1 {
+  background-color: #44c8f5;
+  color: white;
+}
+
+.custColorWarmGrey1 {
+  color: #adb2bb;
+}
+
+.custColorWarmGreyAdvance {
+  color: #151b2e;
+}
+
+.custColorWarmCover {
+  color: #727682;
+}
+
+.marginAdavance {
+  margin-top: 10px;
+}
+
+.margintogglrBottom {
+  margin-bottom: 11px;
+}
+
+.marginStepper {
+  margin-top: 9px;
+}
+
+.buttonPaddingleft {
+  padding-left: 1px;
+}
+
+input {
+  outline: 0;
+  border-width: 0 0 1.5px;
+  border-color: #89898a
+}
+
+input:focus {
+  border-color: #44c8f5;
+
+}
+
+.inputWidth {
+  width: 134px;
+}
+
+.addIcon {
+  margin-top: 5px;
+  padding-top: 2px;
+}
+
+.marginInputtriggerOn {
+  margin-top: -9px;
+}
+
+.plT {
+  padding-left: 29px;
+}
+
+.martAdd {
+  margin-bottom: 40px;
+}
+
+.exchangeButton {
+  background: none;
+  border-radius: 10px;
+}
+
+.ValidityButton {
+  background: none;
+}
+
+.ProductButton {
+  background: none;
+}
+
+.bseButton {
+  border-radius: 6px;
+  color: rgb(209, 210, 219);
+}
+
+.mat-input-element {
+  width: 80%;
+  font-size: 22px;
+}
+
+.newClass {
+  width: 100%
+}
+
+.caretUpIcon {
+  display: inline;
+  filter: invert(59%) sepia(31%) saturate(930%) hue-rotate(47deg) brightness(93%) contrast(84%);
+  height: 10px;
+}
+
+::ng-deep .mat-form-field-infix {
+  border-top: none;
+}
+
+.custBackground {
+  background-color: #f6f7fb;
+}
+
+.custKYCImg {
+  height: 16px;
+  width: 13px;
+}
+
+.custScan {
+  height: 18px;
+  width: 18px;
+}
+
+.custMargin {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.custLock {
+  height: 12px;
+  width: 16px;
+}
+
+.custSuccessIcon {
+  height: 12px;
+  width: 12px;
+}
+
+.custPAnIcon {
+  height: 40px;
+  width: 40px;
+}
+
+.custMargin5 {
+  margin-left: 5px;
+}
+
+.custKYCImg {
+  height: 16px;
+  width: 13px;
+}
+
+.banckIcon {
+  height: 38px;
+  width: 38px;
+}
+
+.custVerification1 {
+  height: 39px;
+  width: 36px;
+}
+
+.custVerification2 {
+  height: 19px;
+  width: 80px;
+}
+
+.custVerification3 {
+  height: 38px;
+  width: 35px;
+}
+
+.custGridCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custImgMargin {
+  margin-left: 25%;
+  margin-top: 7%;
+}
+
+.custRow {
+  margin-top: -30%;
+}
+
+:host ::ng-deep .mat-radio-outer-circle {
+  border-color: var(--custColorWarmGrey) !important;
+}
+
+:host ::ng-deep .mat-radio-inner-circle {
+  background-color: var(--custBrightCyan) !important;
+}
+
+.paddingRadio {
+  padding-right: 5px;
+}
+
+.custMarTop {
+  margin-top: 24px;
+}
+
+.custBackgroundColorBlue1 {
+  background-color: #44c8f5;
+
+}
+
+.heightbg {
+  height: 50px;
+}
+
+.custcurr {
+  padding-right: 4px;
+  // margin-right: 3px;
+}
+
+.bgblue {
+  background: #44c8f5;
+}
+
+
+
+
+
+
+
+
+
+
+.marbom {
+  margin-bottom: -25px;
+}
+
+.byuSellpadding {
+  padding-top: 22px;
+}
+
+
+.custHeightButton{
+  height: 45px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.limitmargin {
+  margin-top: -11px;
+}
+
+.margintoggle {
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.heighttog {
+  height: 10px;
+}
+
+.broderlive {
+  border: none;
+}
+
+.HnW {
+  height: 0%;
+  width: 0%;
+}
+
+.advanceIcon {
+  padding-top: 3px;
+}
+
+.radioPadding {
+  padding-left: 19px;
+}
+
+.custColormarket {
+  color: #aaadb4;
+}
+
+.togglePaddtOP {
+  padding-top: 0px;
+}
+
+.paddTop2 {
+  padding-bottom: 46px;
+}
+
+.borderLimit {
+  border: 1px;
+}
+
+.custPosition {
+  position: relative;
+  bottom: -9px;
+  right: 6px;
+}
+
+.custPosition1 {
+  position: relative;
+  bottom: -9px;
+  right: 20px;
+
+}
+
+.custPosition2 {
+  position: relative;
+  bottom: -9px;
+  right: 13px;
+}
+
+.custPsitiontoggle {
+  position: relative;
+  right: 8px;
+}
+
+
+
+ion-toggle {
+  height: 18px;
+  width: 44px;
+  --background: var(--custBrightCyan);
+
+  --background-checked: var(--custBrightCyan);
+  --handle-background-checked: #fff url(https://cdn1.iconfinder.com/data/icons/basic-ui-elements-coloricon/21/04-512.png) no-repeat center / contain;
+  --handle-background: #fff url(https://cdn1.iconfinder.com/data/icons/social-messaging-ui-color/254000/38-1024.png) no-repeat center / contain;
+
+}
+
+ion-toggle::part(track) {
+  padding: 5px;
+}
+
+.custIMAGE {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(239deg) brightness(104%) contrast(102%);
+}
+
+
+.custBuyBgc {
+  border-radius: 3px;
+  background-color: #e9e5e5;
+}
+
+.paddingNumber {
+  padding-left: 204px;
+}
+.scrollable{
+  overflow: auto;
+}
+
+::ng-deep .mat-checkbox-checked.mat-accent .mat-checkbox-background,
+.mat-checkbox-indeterminate.mat-accent .mat-checkbox-background {
+  background-color: #44C8F5;
+}
+
+:host ::ng-deep .mat-radio-outer-circle {
+  border-color: var(----custDarkishBlue) !important;
+}
+
+:host ::ng-deep .mat-radio-inner-circle {
+  background-color: var(--custBrightCyan) !important;
+}
+
+.StepProgress {
+  position: relative;
+  padding-left: 45px;
+  list-style: none;
+
+  &::before {
+    display: inline-block;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 15px;
+    width: 10px;
+    height: 75%;
+    border-left: 2px solid #CCC;
+  }
+
+  &-item {
+    position: relative;
+    counter-increment: list;
+
+    &:not(:last-child) {
+      padding-bottom: 20px;
+    }
+
+    &::before {
+      display: inline-block;
+      content: '';
+      position: absolute;
+      left: -30px;
+      height: 100%;
+      width: 10px;
+    }
+
+    &::after {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      left: -38px;
+      width: 18px;
+      height: 18px;
+      border: 2px solid #CCC;
+      border-radius: 50%;
+      background-color: #FFF;
+    }
+
+    &.is-done {
+      &::before {
+        border-left: 2px solid green;
+      }
+
+      &::after {
+        content: "✔";
+        font-size: 10px;
+        color: #FFF;
+        text-align: center;
+        border: 2px solid green;
+        background-color: green;
+      }
+    }
+
+    &.current {
+      &::before {
+        border-left: 2px solid green;
+      }
+
+      &::after {
+        content: counter(list);
+        padding-top: 1px;
+        width: 19px;
+        height: 18px;
+        top: -4px;
+        left: -40px;
+        font-size: 14px;
+        text-align: center;
+        color: green;
+        border: 2px solid green;
+        background-color: white;
+      }
+    }
+  }
+
+  strong {
+    display: block;
+  }
+}
+
+.stepper {
+  .nav-tabs {
+    position: relative;
+  }
+
+  .nav-tabs>li {
+    width: 33%;
+    position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      background: #DEDEDE;
+      display: block;
+      width: 100%;
+      height: 2px;
+      top: 10px;
+      left: 9%;
+      z-index: 1;
+    }
+
+    &:last-child {
+      &::after {
+        background: transparent;
+      }
+    }
+  }
+
+  ul {
+    border: none;
+  }
+
+  .round-tab {
+    width: 20px;
+    height: 20px;
+    line-height: 22px;
+    display: inline-block;
+    border-radius: 50%;
+    background: #fff;
+    border: 2px solid #DEDEDE;
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    text-align: center;
+    font-size: 14px;
+  }
+}
+
+.custBackgroundColor3 {
+  background-color: #F8F8F8;
+}

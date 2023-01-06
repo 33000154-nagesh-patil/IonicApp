@@ -1,0 +1,69 @@
+.custSpan{
+  position: relative;
+  top: -4px;
+}
+.custInput{
+  position: relative;
+  // top: -10px;
+}
+.custGrid{
+  margin: 0;
+  margin-top: 10px;
+  padding: 0px;
+  height: 90%;
+}
+.custModalContainer {
+  z-index: 1;
+  left: 0;
+  // top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  // background-color: var(--custDark);
+  //  opacity: 0.4;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+}
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 16px;
+  padding-left: 16px;
+  border: 1px solid #888;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0px;
+  border-radius: 10px 10px 0px 0px;
+}
+.custImage{
+  height: 45px;
+  width: 45px;
+  margin-bottom: 20px;
+}
+.custKYCImg {
+  height: 16px;
+  width: 13px;
+  background: --var(--custWhite);
+  background-color: --var(--custWhite);
+}
+.custBtnClose{
+  background: --var(--custWhite),no-repeat !important;
+  background-color: white !important;
+}
+.margintp{
+  margin-top: 6rem;
+}
+.footer{
+  // height: 400px;
+  overflow-y: scroll;
+}
+
+.custCenterAlignUpdate {
+  // align-items: center !important;
+  display: flex !important;
+  // justify-content: center !important;
+}

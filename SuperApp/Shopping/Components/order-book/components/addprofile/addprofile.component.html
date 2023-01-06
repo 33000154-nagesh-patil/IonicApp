@@ -1,0 +1,123 @@
+<ion-header class="sticky-top ">
+  <ion-toolbar class="custBackgroundDynamicColorWhite">
+    <ion-grid class="header">
+      <ion-row>
+        <ion-col [size]="'1'" class="text-center " (click)="goBack()">
+          <ion-row class="backArrow">
+            <img src="assets/icon/arrow.svg" class="backArrow mt-2">
+          </ion-row>
+        </ion-col>
+        <ion-col [size]="'6'" class="">
+          <span class="custFontFamilyMuliBold muli-16pt custLineHight22 custColorBlack">Add Profile Details</span>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="contentBackground w-100 h-100">
+  <ion-grid class="p-3">
+    <ion-row class="pb-4 pt-1">This information will be used for your report</ion-row>
+    
+    <form [formGroup]="ionicForm">
+      <ion-row class="">
+        <mat-form-field appearance="outline" class="w-100 yourMat">
+          <mat-label>First Name</mat-label>
+          <input formControlName="Firstname" matInput type="text" [(ngModel)]="firstName">
+        </mat-form-field>
+      </ion-row>
+      <ion-row class="">
+        <mat-form-field appearance="outline" class="w-100 yourMat">
+          <mat-label>Middle Name</mat-label>
+          <input formControlName="middleName" matInput type="text" [(ngModel)]="middleName">
+        </mat-form-field>
+      </ion-row>
+      <ion-row class="">
+        <mat-form-field appearance="outline" class="w-100 yourMat">
+          <mat-label>Last Name</mat-label>
+          <input formControlName="LastName" matInput type="text" [(ngModel)]="lastName">
+        </mat-form-field>
+      </ion-row>
+      <ion-row class="">
+        <mat-form-field appearance="outline" class="w-100" (click)="FromDate.open()">
+          <mat-label>DOB</mat-label>
+          <!-- <span matSuffix>1st of Every Month</span> -->
+          <input matInput readonly [matDatepicker]="FromDate" (dateChange)="onDateChange($event)">
+          <mat-datepicker-toggle matSuffix [for]="FromDate">
+            <mat-icon matDatepickerToggleIcon>
+              <svg *ngIf="!DatePicker" id="Group_12115" data-name="Group 12115"
+                xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19">
+                <path id="Path_15958" data-name="Path 15958"
+                  d="M16.551,1.484H14.844V.594a.594.594,0,0,0-1.187,0v.891H5.344V.594a.594.594,0,0,0-1.187,0v.891H2.449A2.452,2.452,0,0,0,0,3.934V16.551A2.452,2.452,0,0,0,2.449,19h14.1A2.452,2.452,0,0,0,19,16.551V3.934A2.452,2.452,0,0,0,16.551,1.484ZM2.449,2.672H4.156v.594a.594.594,0,0,0,1.188,0V2.672h8.313v.594a.594.594,0,0,0,1.188,0V2.672h1.707a1.263,1.263,0,0,1,1.262,1.262v1.41H1.188V3.934A1.263,1.263,0,0,1,2.449,2.672Zm14.1,15.141H2.449a1.263,1.263,0,0,1-1.262-1.262V6.531H17.813v10.02A1.263,1.263,0,0,1,16.551,17.813Z"
+                  fill="#b2b2b2" />
+                <path id="Path_15964" data-name="Path 15964"
+                  d="M12.84,16.922H10.461a.461.461,0,1,1,0-.922H12.84a.461.461,0,1,1,0,.922Z"
+                  transform="translate(-7.15 -6.5)" fill="#b2b2b2" />
+                <path id="Path_15967" data-name="Path 15967"
+                  d="M12.84,16.922H10.461a.461.461,0,1,1,0-.922H12.84a.461.461,0,1,1,0,.922Z"
+                  transform="translate(-7.15 -2.243)" fill="#b2b2b2" />
+                <path id="Path_15963" data-name="Path 15963"
+                  d="M12.84,16.922H10.461a.461.461,0,1,1,0-.922H12.84a.461.461,0,1,1,0,.922Z"
+                  transform="translate(-2.15 -6.5)" fill="#b2b2b2" />
+                <path id="Path_15966" data-name="Path 15966"
+                  d="M12.84,16.922H10.461a.461.461,0,1,1,0-.922H12.84a.461.461,0,1,1,0,.922Z"
+                  transform="translate(-2.15 -2.243)" fill="#b2b2b2" />
+                <path id="Path_15962" data-name="Path 15962"
+                  d="M12.84,16.922H10.461a.461.461,0,1,1,0-.922H12.84a.461.461,0,1,1,0,.922Z"
+                  transform="translate(2.85 -6.5)" fill="#b2b2b2" />
+                <path id="Path_15965" data-name="Path 15965"
+                  d="M12.84,16.922H10.461a.461.461,0,1,1,0-.922H12.84a.461.461,0,1,1,0,.922Z"
+                  transform="translate(2.85 -2.243)" fill="#b2b2b2" />
+              </svg>
+              <img src="assets/icon/glowCalendarIcon.svg" *ngIf="DatePicker">
+            </mat-icon>
+          </mat-datepicker-toggle>
+
+          <mat-datepicker #FromDate></mat-datepicker>
+        </mat-form-field>
+      </ion-row>
+      <ion-row class="">
+        <mat-form-field appearance="outline" class="w-100 yourMat">
+          <mat-label>Age</mat-label>
+          <input formControlName="Age" matInput type="number" [(ngModel)]="age">
+        </mat-form-field>
+      </ion-row>
+
+
+      <ion-row>
+        <mat-form-field class="w-100 h-100 yourMat" appearance="outline">
+          <mat-label>Relation</mat-label>
+          <!-- <ion-icon matSuffix name="chevron-down-outline"></ion-icon> -->
+          <mat-select formControlName="Disease">
+            <mat-option *ngFor="let option of options;index as i" [value]="option">
+              {{ option.item }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </ion-row>
+
+      <ion-row class="pb-3">Gender</ion-row>
+      <ion-row class="w-100 h-100">
+           <ion-col [size]="'6'" *ngFor="let items of controls">
+            <mat-radio-group name="gender" [(ngModel)]="gender" [ngModelOptions]="{standalone: true}">
+              <mat-radio-button class="custFontFamilyMuliRegular muli-16pt mb-2" name="gender" [value]="items.name"
+                >{{items.name}}</mat-radio-button>
+            </mat-radio-group>
+          </ion-col>
+        </ion-row>
+
+      <ion-row class="fixed-bottom" *ngIf="UpdateProfileApi===undefined">
+        <ion-col>
+        <button type="submit" [disabled]="!ionicForm.valid" (click)="profileAdd()" 
+          class="w-100 custBackgroundColorBrightCyan btn custMyButton custColorWhite">Confirm</button>
+        </ion-col>
+      </ion-row>
+      <ion-row class="fixed-bottom" *ngIf="UpdateProfileApi">
+      <ion-col>
+        <button type="submit" [disabled]="!ionicForm.valid" (click)="updateProfile()"
+        class="w-100 custBackgroundColorBrightCyan btn custMyButton custColorWhite">update</button>
+      </ion-col>
+    </ion-row>
+
+    </form>
+  </ion-grid>
+</ion-content>

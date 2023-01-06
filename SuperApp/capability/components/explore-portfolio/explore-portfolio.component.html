@@ -1,0 +1,261 @@
+<ion-header [translucent]="true" class="custBackgroundColorWhite">
+  <ion-toolbar class="custBackgroundDynamicColorWhite">
+    <ion-grid>
+      <ion-row>
+        <ion-col [size]="'1'" (click)="goBack()" id="goBack">
+          <ion-img [src]="imageList?.arrow" class=" custWithoutTextImg mt-3"></ion-img>
+        </ion-col>
+        <ion-col [size]="3" class="custFontFamilyMuliBold muli-16pt custColorDark my-3 text-nowrap">
+          Holdings
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="contentBackground">
+
+<ion-grid class="p-2">
+  <!-- <div *ngIf="singleRowCardData.title !='Portfolio'">
+    <ion-card class="custBackgroundColorWhite my-0">
+    <ion-card-content class="border-bottom" (click)="gotoDetails()" *ngFor="let x of singleRowCardData[segment]">
+      <ion-row class="">
+        <ion-col [size]="6" class="custColorDark muli-14pt custFontFamilyMuliSemiBold text-nowrap">
+          {{ x.row1.col1 }}
+        </ion-col>
+        <ion-col [size]="6"
+          class="custFontFamilyMuliSemiBold custLineHight20 muli-14pt custColorDark text-end text-nowrap">
+          {{ x.row1.col2 }}
+        </ion-col>
+      </ion-row>
+
+      <ion-row class="">
+        <ion-col class="custFontFamilyMuliSemiBold muli-12pt custLineHight16 custColorBattlePGry text-nowrap">
+          {{ x.row2.col1 }}
+        </ion-col>
+        <ion-col class="d-flex justify-content-end text-end">
+          <span class="muli-12pt itemCol mb-1 text-end text-nowrap">
+            <ion-icon name="caret-up" class="custGreenTick"></ion-icon>{{ x.row2.col2 }}
+          </span>&nbsp;
+        </ion-col>
+      </ion-row>
+    </ion-card-content>
+  </ion-card>
+</div> -->
+
+
+
+<!-- <div  *ngIf="singleRowCardData.title=='Portfolio'"> -->
+  <!-- <ion-card class="custBackgroundColorWhite my-0">
+    <ion-card-content class="border-bottom" (click)="gotoDetails()">
+      <ion-row class="">
+        <ion-col [size]="6" class="custColorDark muli-14pt custFontFamilyMuliSemiBold text-nowrap">
+          {{ x.row1.col1 }}
+        </ion-col>
+        <ion-col [size]="6"
+          class="custFontFamilyMuliSemiBold custLineHight20 muli-14pt custColorDark text-end text-nowrap">
+          {{ x.row1.col2 }}
+        </ion-col>
+      </ion-row>
+      <ion-row class="">
+        <ion-col class="custFontFamilyMuliSemiBold muli-12pt custLineHight16 custColorBattlePGry text-nowrap">
+          {{ x.row1.col1=="Invested Value" ? '₹' +getInvestedvalue():''  }}
+        </ion-col>
+        <ion-col class="custFontFamilyMuliSemiBold muli-12pt custLineHight16 custColorBattlePGry text-nowrap">
+          {{ x.row1.col1=="Invested Value" ? '₹' +getUnrealisedValue():''  }}
+        </ion-col>
+
+        <ion-col class="custFontFamilyMuliSemiBold muli-12pt custLineHight16 custColorBattlePGry text-nowrap">
+          {{ x.row1.col1=="Invested Value" ? '₹' +getTodaysGainLoss():''  }}
+        </ion-col>
+
+
+
+        <ion-col class="d-flex justify-content-end text-end">
+          <span class="muli-12pt itemCol mb-1 text-end text-nowrap">
+            {{ x.row1.col2=="Current Value" ? '₹ '+getCurrentValue():''}}
+          </span>&nbsp;
+        </ion-col>
+      </ion-row>
+    </ion-card-content>
+  </ion-card> -->
+
+
+
+  <ion-card class="custBackgroundColorWhite my-0">
+    <ion-card-content class="border-bottom">
+      <ion-row class="">
+        <ion-col [size]="6" class="custColorDark muli-14pt custFontFamilyMuliSemiBold text-nowrap">
+          Current value
+        </ion-col>
+        <ion-col [size]="6"
+          class="custFontFamilyMuliSemiBold custLineHight20 muli-14pt custColorDark text-end text-nowrap">
+          Invested value
+        </ion-col>
+      </ion-row>
+
+      <ion-row class="">
+        <ion-col [size]="6" class="custColorDark muli-14pt custFontFamilyMuliSemiBold text-nowrap">
+             {{getCurrentValue()?.toFixed(2)}}
+
+        </ion-col>
+        <ion-col [size]="6"
+          class="custFontFamilyMuliSemiBold custLineHight20 muli-14pt custColorDark text-end text-nowrap">
+          {{ getInvestedvalue()?.toFixed(2)}}
+
+        </ion-col>
+      </ion-row>
+
+      <ion-row class="">
+        <ion-col [size]="6" class="custColorDark muli-14pt custFontFamilyMuliSemiBold text-nowrap">
+          Unrealised Value
+        </ion-col>
+        <ion-col [size]="6"
+          class="custFontFamilyMuliSemiBold custLineHight20 muli-14pt custColorDark text-end text-nowrap">
+          Today's Gain & Loss
+        </ion-col>
+      </ion-row>
+
+      <ion-row class="">
+        <ion-col [size]="6" class="custColorDark muli-14pt custFontFamilyMuliSemiBold text-nowrap">
+          {{ getUnrealisedValue()?.toFixed(2)}}
+
+        </ion-col>
+        <ion-col [size]="6"
+          class="custFontFamilyMuliSemiBold custLineHight20 muli-14pt custColorDark text-end text-nowrap">
+          {{ getTodaysGainLoss()?.toFixed(2)}}
+
+        </ion-col>
+      </ion-row>
+
+
+      <!-- <ion-row class="">
+        <ion-col class="custFontFamilyMuliSemiBold muli-12pt custLineHight16 custColorBattlePGry text-nowrap">
+          {{ x.row1.col1=="Invested Value" ? '₹' +getInvestedvalue():''  }}
+        </ion-col>
+        <ion-col class="custFontFamilyMuliSemiBold muli-12pt custLineHight16 custColorBattlePGry text-nowrap">
+          {{ x.row1.col1=="Invested Value" ? '₹' +getUnrealisedValue():''  }}
+        </ion-col>
+
+        <ion-col class="custFontFamilyMuliSemiBold muli-12pt custLineHight16 custColorBattlePGry text-nowrap">
+          {{ x.row1.col1=="Invested Value" ? '₹' +getTodaysGainLoss():''  }}
+        </ion-col>
+
+
+
+        <ion-col class="d-flex justify-content-end text-end">
+          <span class="muli-12pt itemCol mb-1 text-end text-nowrap">
+            {{ x.row1.col2=="Current Value" ? '₹ '+getCurrentValue():''}}
+          </span>&nbsp;
+        </ion-col>
+      </ion-row> -->
+    </ion-card-content>
+  </ion-card>
+
+
+
+<!-- </div> -->
+
+
+
+
+
+
+  <div  class="mt-5">
+    <ion-card *ngFor="let x of holdingData" class="m-2"  (click)="x?.showDetails?gotoDetails(x):showDetails(x)">
+      <ion-card-content>
+        <ng-container>
+          <ion-row>
+            <ion-col>
+              <span class="custColorDark muli-16pt custFontFamilyMuliBold">{{x.symbol}}</span>
+            </ion-col>
+            <ion-col class="text-end">
+              <span class="custColorDark muli-16pt custFontFamilyMuliBold">{{x.price}}</span>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <span class="custColorBattlePGry muli-14pt ">
+                QTY <span class="custColorDark custFontFamilyMuliBold">&nbsp;{{x.qty}}</span>
+              </span>
+            </ion-col>
+            <ion-col class="text-end">
+              <span class=" muli-14pt custFontFamilyMuliBold" [ngClass]="x.MktUpDown>0?'custColorParakeetGreen':x.MktUpDown<0?'custColorcustFadedRed':'custColorBattlePGry'">{{x.MktUpDown}}({{x.percentChange}}%)</span>
+            </ion-col>
+          </ion-row>
+        </ng-container>
+        <hr *ngIf="x?.showDetails">
+        <ng-container (click)="gotoDetails(x)" *ngIf="x?.showDetails">
+          <ion-row>
+            <ion-col size="3">
+              <span class="custColorBattlePGry muli-14pt">Avg.Price</span>
+            </ion-col>
+            <ion-col>
+              <span class="custColorBattlePGry muli-14pt">Current Value</span>
+            </ion-col>
+            <ion-col class="text-end">
+              <span class="custColorBattlePGry muli-14pt">UnRealized P&L</span>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col size="3">
+              <span class="custColorDark muli-14pt custFontFamilyMuliBold">{{x.avgPrice}}</span>
+            </ion-col>
+            <ion-col>
+              <span class="custColorDark muli-14pt custFontFamilyMuliBold">{{(x.qty*x.price).toFixed(2)}}</span>
+            </ion-col>
+            <ion-col class="text-end">
+              <span class="muli-16pt custFontFamilyMuliSemiBold"
+              [ngClass]="x.priceChange>0?'custColorParakeetGreen':x.priceChange<0?'custColorcustFadedRed':'custColorBattlePGry'">
+              {{x.priceChange?.toFixed(2)}} &nbsp;({{x.price?((x.priceChange/x.price)*100).toFixed(2):'0.00'}}%)</span>
+            </ion-col>
+          </ion-row>
+        </ng-container>
+      </ion-card-content>
+    </ion-card>
+
+    <!-- <ion-card class="custBackgroundColorWhite mx-2 my-0" *ngFor="let x of holdingData" scrollable>
+      <ion-card-content>
+        <ion-row>
+          <ion-col class="custColorDark muli-14pt custFontFamilyMuliSemiBold text-nowrap">
+            {{x.symbol}}
+          </ion-col>
+          <ion-col class="custFontFamilyMuliSemiBold custLineHight20 muli-14pt custColorDark text-end text-nowrap">
+            {{x.price}}
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col class="custFontFamilyMuliSemiBold muli-14pt custLineHight16 custColorBattlePGry text-nowrap">
+            QTY {{x.qty}} | ₹{{x.avgPrice}}
+          </ion-col>
+          <ion-col class="d-flex justify-content-end text-end">
+            <span class="muli-12pt itemCol mb-1 text-end text-nowrap">
+              <ion-icon name="caret-up" class="custGreenTick"></ion-icon>{{x.MktUpDown}}({{x.percentChange}}%)
+            </span>&nbsp;
+          </ion-col>
+        </ion-row>
+        <hr>
+        <ion-row>
+          <ion-col class="custColorDark muli-14pt custFontFamilyMuliSemiBold text-nowrap">
+            CURRENT VALUE
+          </ion-col>
+          <ion-col class="custFontFamilyMuliSemiBold custLineHight20 muli-14pt custColorDark text-end text-nowrap">
+            UNREALIZED P&L
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col class="custColorDark muli-14pt custFontFamilyMuliSemiBold text-nowrap">
+            ₹ {{(x.qty*x.price).toFixed(2)}}    {{totalValue}}
+          </ion-col>
+          <ion-col class="custFontFamilyMuliSemiBold custLineHight20 muli-14pt custColorDark text-end text-nowrap">
+            {{(x.qty*x.priceChange).toFixed(2)}}(+0.03%)
+          </ion-col>
+        </ion-row>
+      </ion-card-content>
+    </ion-card> -->
+  </div>
+
+</ion-grid>
+
+
+</ion-content>

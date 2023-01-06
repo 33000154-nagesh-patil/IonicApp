@@ -1,0 +1,130 @@
+<div *ngIf="routing == 'ST' && routeToEngagement == '/Engagement'">
+  <ion-row class="p-3  rowBg muli-14pt">
+    <ion-col [size]="8" class="muli-16pt custLineHight18 custFontFamilyMuliBold custColorGreyish">
+      {{availableBalance}}:
+      <span class="muli-16pt custLineHight18 custFontFamilyMuliBold custColorDark">
+        ₹ {{availableFunds}}
+      </span>
+    </ion-col>
+    <ion-col [size]="4" class="text-end  muli-14pt" (click)="addFunds()">
+      <span>
+        <ion-icon name="add-circle-outline" class="custFontFamilyMuliBold addIcon custColorDarkishBlue"></ion-icon>
+      </span>
+      <span class="muli-16pt custLineHight18 custFontFamilyMuliBold custColorDarkishBlue">
+        {{addFundsAction}}
+      </span>
+    </ion-col>
+  </ion-row>
+</div>
+<!-- <app-advisory-card *ngIf="enableAdvisoryCard" [advisoryCardData]="advisoryCardData"></app-advisory-card> -->
+<app-investment-card *ngIf="enabledInvestmentCard" [investmentCard]="investmentCardData"></app-investment-card>
+<app-gridtype *ngIf="enableGrid" [objectContent]="objectContent"></app-gridtype>
+<app-carousel [objectContent]="objectContent"  [portFolioSummary]="portFolioSummary"></app-carousel>
+
+
+<!-- <ion-slides pager="true" [options]="slideOpts">
+  <ion-slide>
+    <app-CommonCharts class="chartwidth" *ngIf="enableDonut &&  !(enableDigiGoldComonent)" [donutData]="Donut"
+      [showDonut]="true"></app-CommonCharts>
+  </ion-slide>
+  <ion-slide>
+    <app-CommonCharts *ngIf="enableBar" [showBar]="true" [barGraphData]="portFolioSummary"></app-CommonCharts>
+  </ion-slide>
+</ion-slides> -->
+<!-- <app-CommonCharts [showBar]="true"></app-CommonCharts> -->
+
+
+
+
+
+
+
+
+<app-promotion *ngIf="enablePromotionCard" [promotion]="promotionData"></app-promotion>
+<app-3x2grid *ngIf="enable3x2Grid" [grid]="threeByTwoGridData" [threeByTwoGridLabel]="threeByTwoGridLabel"
+  [threeByTwoGridbtn]="threeByTwoGridbtn"></app-3x2grid>
+
+<div *ngFor="let data of cardData">
+  <ion-col [size]="'12'" *ngIf="data?.Title && enableCard">
+    <span class="m-2 custFontFamilyMuliBold muli-18pt custLineHight22 custColorDark">
+      {{data?.Title}}
+    </span>
+  </ion-col>
+  <div *ngFor="let i of data?.card">
+    <app-card1 *ngIf="enableCard" [card]="i"></app-card1>
+
+  </div>
+  <ion-row class="custPosition">
+    <button class="custheight text-center p-1 custLineHight14 custLineHight18 px-3 "
+      (click)="explore()">Explore</button>
+  </ion-row>
+</div>
+
+<app-digi-dashboard *ngIf="enableDigiGoldComonent" [digiBenifit]="digiBenifit"></app-digi-dashboard>
+
+<div *ngIf="routing == 'ST'">
+  
+      <h2 class="custColorDark muli-22pt custFontFamilyMuliBold mx-2">
+        <!-- {{ a?.title }} -->
+        Holding Summary
+      </h2>
+      <ion-card class="custBackgroundColorWhite my-0 holdingCard">
+        <ion-card-content class="border-bottom">
+          <ion-row class="">
+            <ion-col [size]="6" class="custColorDark muli-14pt custFontFamilyMuliSemiBold text-nowrap">
+              Current value
+            </ion-col>
+            <ion-col [size]="6"
+              class="custFontFamilyMuliSemiBold custLineHight20 muli-14pt custColorDark text-end text-nowrap">
+              Invested value
+            </ion-col>
+          </ion-row>
+          <ion-row class="">
+            <ion-col [size]="6" class="muli-14pt custFontFamilyMuliSemiBold text-nowrap" 
+            [ngClass]="unrealisedValue >= currentTotal? 'custColorParakeetGreen':'custColorFadedRed'"
+            >
+              {{"₹ "+currentTotal?.toFixed(2) }}
+    
+            </ion-col>
+            <ion-col [size]="6"
+              class=" custFontFamilyMuliSemiBold custLineHight20 muli-14pt custColorDark text-end text-nowrap"
+              >
+              {{"₹ "+ investedValue?.toFixed(2)}}
+            </ion-col>
+          </ion-row>
+          <ion-row class="">
+            <ion-col [size]="6" class="custColorDark muli-14pt custFontFamilyMuliSemiBold text-nowrap">
+              Unrealised Value
+            </ion-col>
+            <ion-col [size]="6"
+              class="custFontFamilyMuliSemiBold custLineHight20 muli-14pt custColorDark text-end text-nowrap">
+              Today's Gain & Loss
+            </ion-col>
+          </ion-row>
+          <ion-row class="">
+            <ion-col [size]="6" class=" muli-14pt custFontFamilyMuliSemiBold text-nowrap"
+            [ngClass]="unrealisedValue >= currentTotal ? 'custColorParakeetGreen':'custColorFadedRed'"
+            >
+              {{"₹ "+ unrealisedValue?.toFixed(2)}}
+            </ion-col>
+            <ion-col [size]="6"
+              class="custFontFamilyMuliSemiBold custLineHight20 muli-14pt  text-end text-nowrap"
+              [ngClass]="todaysGainLoss > 0 ? 'custColorParakeetGreen':'custColorFadedRed'"
+              >
+              {{"₹ "+ todaysGainLoss?.toFixed(2)}}
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-row [size]="'12'" class="text-center pb-2 cta">
+        <button class="custheight text-center custBtnExplore custLineHight14 custLineHight18 px-3 "
+          (click)="explorePortfolio()">Explore</button>
+      </ion-row>
+    
+</div>
+
+
+<div *ngIf="snapshot">
+  <app-snapshot [objectContent]="objectContent"></app-snapshot>
+</div>

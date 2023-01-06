@@ -1,0 +1,93 @@
+/* To learn more about this file see: https://angular.io/config/tsconfig. */
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "./dist/out-tsc",
+    "sourceMap": true,
+    "declaration": false,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "paths": {
+      "@Common/*":["./SuperApp/Common"],
+
+      "core": [
+        "dist/core/core",
+        "dist/core"
+      ],
+      "education": [
+        "dist/education/education",
+        "dist/education"
+      ],
+      "gold": [
+        "dist/gold/gold",
+        "dist/gold"
+      ],
+      "gold-investment-details": [
+        "dist/gold-investment-details/gold-investment-details",
+        "dist/gold-investment-details"
+      ],
+      "health": [
+        "dist/health/health",
+        "dist/health"
+      ],
+      "intro": [
+        "dist/intro/intro",
+        "dist/intro"
+      ],
+      "lib-config": [
+        "dist/lib-config/lib-config",
+        "dist/lib-config"
+      ],
+      "lifestyle": [
+        "dist/lifestyle/lifestyle",
+        "dist/lifestyle"
+      ],
+      "login-list": [
+        "dist/login-list/login-list",
+        "dist/login-list"
+      ],
+      "mutual-funds": [
+        "dist/mutual-funds/mutual-funds",
+        "dist/mutual-funds"
+      ],
+      "portfolio-insigths": [
+        "dist/portfolio-insigths/portfolio-insigths",
+        "dist/portfolio-insigths"
+      ],
+      "product-details": [
+        "dist/product-details/product-details",
+        "dist/product-details"
+      ],
+      "stocks": [
+        "dist/stocks/stocks",
+        "dist/stocks"
+      ],
+      "submenu": [
+        "dist/submenu/submenu",
+        "dist/submenu"
+      ],
+      "wealth-robo-advisory": [
+        "dist/wealth-robo-advisory/wealth-robo-advisory",
+        "dist/wealth-robo-advisory"
+      ],
+      "wealth-wellness": [
+        "dist/wealth-wellness/wealth-wellness",
+        "dist/wealth-wellness"
+      ]
+    },
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "es2020",
+    "lib": ["es2018","es2015", "dom"]
+  },
+  "angularCompilerOptions": {
+    "enableI18nLegacyMessageIdFormat": false,
+    "strictInjectionParameters": true,
+    "strictInputAccessModifiers": true,
+    "strictTemplates": true
+  }
+}

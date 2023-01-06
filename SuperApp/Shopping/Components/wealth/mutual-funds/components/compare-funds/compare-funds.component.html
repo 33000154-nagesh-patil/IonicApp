@@ -1,0 +1,99 @@
+<ion-header>
+  <ion-toolbar class="custBackgroundDynamicColorWhite">
+    <ion-grid class="m-1">
+      <ion-row class="mt-2">
+        <ion-col [size]="'1'" (click)="dissmis()">
+          <img [src]="imageList?.arrow">
+        </ion-col>
+        <ion-col [size]="'9'">
+          <span class="custFontFamilyMuliBold muli-16pt custLineHight18 custColorDarkShade ">Compare funds</span>
+        </ion-col>
+        <ion-col [size]="'2'">
+          <img [src]="imageList?.editPen" class="text-end">
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-card class="m-4" >
+    <ion-grid class="ion-no-padding">
+      <ion-row >
+        <ion-col  class="p-2 border" *ngFor="let x of ApiDataList;let indexOfelement=index;">
+          <div class="d-flex justify-content-end text-end w-100" *ngIf="indexOfelement!=0" (click)="deleteCompareCard(indexOfelement,x)">
+            <!-- <ion-img [src]="imageList?.bankIconAxis" class="bankFundIcon"></ion-img> -->
+            <ion-img [src]="imageList?.close" class="bankFundCross text-end"></ion-img>
+          </div>
+          <div class="d-flex justify-content-end text-end w-100" *ngIf="indexOfelement == 0">
+            <!-- <ion-img [src]="imageList?.bankIconAxis" class="bankFundIcon"></ion-img> -->
+            <div class="bankFundCross text-end"></div>
+          </div>
+          <img [src]="x?.img" class="bankFundIcon" />
+          <p class=" muli-12pt custFontFamilyMuliRegular custColorTint nameHeight">{{x?.short_name}}</p>
+
+          <p class="text-start pt-3 m-0 muli-12pt custColorDarkishBlue">Plan Details</p>
+
+
+
+          <div class="d-flex flex-column pt-3">
+            <span class="custLineHight12 muli-8pt custColorWarmGrey custFontFamilyMuliRegular">Rating</span>
+            <span>
+              <fieldset class="rating pt-1">
+                <input type="radio" id="star5" name="rating" value="5" /><label class="full " for="star5"
+                  title="Awesome - 5 stars"></label>
+                <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half"
+                  for="star4half" title="Pretty good - 4.5 stars"></label>
+                <input type="radio" id="star4" name="rating" value="4" /><label class="full" for="star4"
+                  title="Pretty good - 4 stars"></label>
+                <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half"
+                  for="star3half" title="Meh - 3.5 stars"></label>
+                <input type="radio" id="star3" name="rating" value="3" /><label class="full" for="star3"
+                  title="Meh - 3 stars"></label>
+                <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half"
+                  for="star2half" title="Kinda bad - 2.5 stars"></label>
+                <input type="radio" id="star2" name="rating" value="2" /><label class="full" for="star2"
+                  title="Kinda bad - 2 stars"></label>
+                <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half"
+                  for="star1half" title="Meh - 1.5 stars"></label>
+                <input type="radio" id="star1" name="rating" value="1" /><label class="full" for="star1"
+                  title="Sucks big time - 1 star"></label>
+                <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf"
+                  title="Sucks big time - 0.5 stars"></label>
+              </fieldset>
+            </span>
+          </div><br />
+          <div class="d-flex flex-column">
+            <span class="custLineHight12  muli-8pt custColorWarmGrey custFontFamilyMuliRegular">NAV</span>
+            <span class="custColorDark pt-1">₹{{x?.nav}}</span>
+          </div><br />
+          <div class="d-flex flex-column">
+            <span class="custLineHight15  muli-10pt custColorWarmGrey custFontFamilyMuliRegular">Min Investment</span>
+            <span class="custColorDark pt-1">₹{{x?.min_initial_investment}}</span>
+          </div><br />
+          <div class="d-flex flex-column">
+            <span class="custLineHight15  muli-10pt custColorWarmGrey custFontFamilyMuliRegular">Returns</span>
+            <span class="custColorDark pt-1">{{x?.oneYearReturs}}</span>
+          </div><br />
+          <div class="d-flex flex-column">
+            <span class="custLineHight15  muli-10pt custColorWarmGrey custFontFamilyMuliRegular">Expense ratio</span>
+            <span class="custColorDark pt-1">{{x?.expense_ratio}}%</span>
+          </div><br />
+          <div class="d-flex flex-column">
+            <span class="custLineHight15  muli-10pt custColorWarmGrey custFontFamilyMuliRegular">Exit load</span>
+            <span class="custColorDark pt-1" *ngIf="x?.exit_load == '0'">0%</span>
+            <span class="custColorDark pt-1" *ngIf="x?.exit_load != '0'">{{x?.exit_load}}</span>
+          </div><br />
+
+          <ion-row class="pt-1">
+            <ion-col class="text-center p-0">
+              <button class="btn w-100 text-center custBackgroundColorBrightCyan"><span
+                  class="custColorWhite custFontFamilyMuliBold muli-14pt">Buy</span></button>
+            </ion-col>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
+</ion-content>

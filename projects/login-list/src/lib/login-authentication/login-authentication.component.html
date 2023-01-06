@@ -1,0 +1,60 @@
+<ion-header>  
+  <ion-toolbar> 
+    <ion-buttons slot="start" class="ion-padding-end  muli-25pt custPointer">
+      <ion-icon *ngIf="appName == 'Aqube'" name='chevron-back-outline' (click)='dismiss()' class="custColorDarkishBlue"></ion-icon>
+    </ion-buttons>
+    <p class="custFontFamilyMuliBold muli-16pt custLineHight40 custColorDark text-capitalize text-start m-0">{{headerName | translate}}</p>
+  </ion-toolbar>  
+</ion-header> 
+<ion-content class="h-100 custIonContentBackgroundColorPaleGrey">
+  <div class="w-100 ion-padding-start p-3">
+    <div class=" pt-2">
+      <p class="custColorDark custFontFamilyMuliRegular muli-14pt custLineHight20 " *ngIf="!showVerificationCode">{{localHeader | translate}}</p>
+      <p class="custColorDark custFontFamilyMuliRegular muli-14pt custLineHight20 text-center" *ngIf="showVerificationCode">{{localHeader | translate}} {{(type === LoginType?.mobile)?currentCountryAuthentication?.mobileCode:''}} {{(type === LoginType?.mobile) ? authenticationFormGroup?.value?.mobileNumber :(type === LoginType?.other)?authenticationFormGroup?.value?.emailID:''}}</p>
+    </div>
+    <div class="h-100" *ngIf="!showVerificationCode">
+      <form [formGroup]="authenticationFormGroup"  (ngSubmit)="openREFER()" class="example-form w-100">
+        <div class="h-100">
+          <div *ngIf="type===LoginType?.mobile">
+            <mat-form-field appearance="outline" class="example-full-width w-100 custMargin">
+              <mat-label class="custFontFamilyMuliRegular muli-14pt custLabel">{{'mobileLabel' | translate}}</mat-label>
+              <span matPrefix class="custSpan">{{currentCountryAuthentication?.mobileCode}} &nbsp;</span>
+              <input matInput formControlName="mobileNumber" type="text" inputmode="numeric" maxlength="10" id="mobileNumber" (input)="inputValidator($event)">
+              <mat-error *ngIf="checkError('mobileNumber', 'required')"><span class="custFontFamilyMuliSemiBold muli-12pt text-start text-capitalize custLineHight16">{{'mobileRequiredError' | translate}}</span></mat-error>
+              <mat-error *ngIf="checkError('mobileNumber', 'pattern')"><span class="custFontFamilyMuliSemiBold muli-12pt text-start text-capitalize custLineHight16">{{'mobilePatternError' | translate}}</span></mat-error>
+            </mat-form-field>
+          </div>
+          <div *ngIf="type===LoginType?.other">
+            <mat-form-field appearance="outline" class="example-full-width w-100 custMargin">
+              <mat-label class="text-capitalize">{{'emailLabel' | translate}}</mat-label>
+              <input matInput formControlName="emailID" type="text" id="emailId" pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$">
+              <mat-error *ngIf="checkError('emailID', 'required')"><span class="custFontFamilyMuliSemiBold muli-12pt text-start text-capitalize custLineHight16">{{'emailRequiredError' | translate}}</span></mat-error>
+              <mat-error *ngIf="checkError('emailID', 'pattern')"><span class="custFontFamilyMuliSemiBold muli-12pt text-start text-capitalize custLineHight16">{{'emailPatternError' | translate}}</span></mat-error>
+            </mat-form-field>
+          </div>
+          <div class="mt-3">
+            <p class="muli-10pt custColorGreyish text-start text-capitalize custLineHight15 custMarginTop">
+              {{localSubHeader | translate}}
+            </p>
+          </div>
+        </div>
+        
+        <div class="position-absolute bottom-0 w-100">
+          <button type="submit" id="loginContinew" [disabled]="!authenticationFormGroup.valid"  class="btn custBtn btnBoxShadow custBackgroundColorBrightCyan muli-16pt custFontFamilyMuliBold custColorWhite" >{{'continue' | translate}}</button>
+          <!-- <ion-button type="submit" [disabled]="!authenticationFormGroup.valid"  class="custButton w-100" id="loginContinew"> <span class="custFontFamilyMuliBold muli-16pt text-center custColorWhite text-capitalize">{{'continue' | translate}}</span></ion-button> -->
+        </div>
+      </form>
+    </div>
+    
+    <div *ngIf="showVerificationCode">
+      <lib-verification-code [type]="_type" [errorList]="errorList" (otpVerification)="checkOTPValidationAuthentication($event)" (resendOTPVerification)="resendOTPButton($event)"></lib-verification-code>
+    
+    </div>
+  </div>
+  <div class="custModalContainer p-10" *ngIf="loggedInModal" (click)="successModalClose();">
+    <div  id="showModalSMGSucces" class="modal-content custCenterAlign">
+      <!-- <ion-icon [src]="imageList?.successKYCIcon" class="custImage"></ion-icon> -->
+      <p class="custFontFamilyMuliBold muli-16pt custColorDark text-center p-0 m-0 ion-no-padding">{{ErrorMsg}}</p>
+    </div>
+  </div> 
+</ion-content>

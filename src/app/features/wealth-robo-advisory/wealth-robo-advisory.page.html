@@ -1,0 +1,31 @@
+<lib-header
+  [title]="title"
+  [imageList]="imageList"
+  [showArrow]="true"
+  [showLabel]="true"
+  [showImg]="false"
+  [imgURL]=""
+  [showIndex]="false"
+  [showNotification]="false"
+  [showCartWithName]="false"
+  [notificationCount]=""
+  [cardCount]=""
+  [showSideMenu]="false"
+  [showSearch]="false"
+  [showClose]="false"
+  [showShare]="false"
+  [showWatchList]="false"
+  [showCartWithoutName]="false"
+  [showStories]="false"
+  [otherTextName]=""
+  [showOtherText]="false"
+  [superMode]="currentMode"
+  [backUrlName]="'Shopping/Wealth'"
+></lib-header>
+<ion-content class="h-100 w-100 contentBackground">
+  <lib-wealthRoboAdvisory
+    [currentMoneySymbols]="currentMoneySymbols"
+    [imageList]="imageList"
+    [errorList]="errorList"
+  ></lib-wealthRoboAdvisory>
+</ion-content>

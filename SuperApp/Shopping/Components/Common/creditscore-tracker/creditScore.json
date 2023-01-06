@@ -1,0 +1,12 @@
+{
+    "contentType": "creditScoreMeter",
+    "title":"Your Credit Score",
+    "content": {
+        "score": "657",
+        "title": "credit score",
+        "subtitle": "Your Credit Score is",
+        "description": "It will be updated as you add the data",
+        "barIcon": "/assets/icon/credit score bar.svg",
+        "pointerIcon": "/assets/icon/score point.svg"
+    }
+}

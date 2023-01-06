@@ -1,0 +1,51 @@
+{
+    "heading": [
+        {
+            "heading": "Jobs",
+            "box": true,
+            "discription": "An overview of your Jobs"
+        }
+    ],
+    
+    "card": [
+        {
+            "row1": {
+                "icon": "assets/icon/EducationIcon1.svg",
+                "title": "Introduction to Web & Graphic Design",
+                "description": "by Abrar Hussain",
+                "action": "assets/icon/leftArrowIcon.svg"
+            },
+            "row2": {
+                "Price": "Rs.1000",
+                "Level": "Beginner",
+                "Status": "Completed"
+            }
+        },
+        {
+            "row1": {
+                "icon": "assets/icon/EducationIcon1.svg",
+                "title": "Introduction to Java",
+                "description": "by Abrar Hussain",
+                "action": "assets/icon/leftArrowIcon.svg"
+            },
+            "row2": {
+                "Price": "Rs.1300",
+                "Level": "Medium",
+                "Status": "Completed"
+            }
+        },
+        {
+            "row1": {
+                "icon": "assets/icon/EducationIcon1.svg",
+                "title": "Beware of Data Science",
+                "description": "by Abrar Hussain",
+                "action": "assets/icon/leftArrowIcon.svg"
+            },
+            "row2": {
+                "Price": "Rs.1200",
+                "Level": "Intermediate",
+                "Status": "Completed"
+            }
+        }
+    ]
+}

@@ -1,0 +1,86 @@
+<ion-app>
+  <ion-content class=" contentBackground">
+    <ion-grid class="px-2 h-100 mb-2">
+      <ion-col [size]="'12'" class="custCenterAlign">
+        <ion-img [src]="imageList?.succsessIcon" class="custImage"></ion-img>
+      </ion-col>
+      <ion-row class="justify-content-center">
+        <p class="muli-22pt custFontFamilyMuliBold custLineHight30">Your Virtual Debit Card !!</p>
+
+      </ion-row>
+
+      <ion-row class="justify-content-center">
+        <ion-img [src]="imageList?.virtualDebitCard" class="custDebitIcon"></ion-img>
+      </ion-row>
+      <ion-row class="pt-3 mb-2 justify-content-center">
+        <p class="muli-16pt px-4 custLineHight23 custFontFamilyMuliBold">Your Saving & 7 other accounts are opened
+          successfully.</p>
+      </ion-row>
+
+
+      <ion-row class="mt-2">
+        <mat-expansion-panel expanded class="h-5 w-100 contentBackground">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <span class="custFontFamilyMuliBold  muli-22pt custLineHight40 custColorDark pb-1">Accounts</span>
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+
+          <ion-row *ngFor="let item of data">
+
+            <ion-col [size]="'1'" class="">
+              <span>
+                <ion-img [src]="imageList?.neoTick" class="imgIcon"> </ion-img>
+              </span>
+            </ion-col>
+            <ion-col [size]="9">
+              <span class="custFontFamilyMuliBold custExpColour ion-no-padding muli-14pt ">{{item.offering}}</span>
+            </ion-col>
+          </ion-row>
+
+        </mat-expansion-panel>
+
+      </ion-row>
+
+      <ion-row class="my-2">
+        <mat-expansion-panel class="h-5 w-100 contentBackground">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <span class="custFontFamilyMuliBold  muli-22pt custLineHight40 custColorDark pb-1">Features & Benefits</span>
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+
+          <ion-row *ngFor="let item of data1">
+
+            <ion-col [size]="'1'" class="">
+              <span>
+                <ion-img [src]="imageList?.neoTick" class="imgIcon"> </ion-img>
+              </span>
+            </ion-col>
+            <ion-col [size]="9">
+              <span class="custFontFamilyMuliBold custExpColour ion-no-padding muli-14pt ">{{item.offering}}</span>
+            </ion-col>
+          </ion-row>
+
+        </mat-expansion-panel>
+
+      </ion-row>
+
+
+    </ion-grid>
+  </ion-content>
+
+
+  <ion-footer class="mt-3">
+    <ion-toolbar>
+      <ion-row class="px-2 w-100 ">
+        <ion-col [size]="'12'">
+          <button class="btn w-100 text-center custBackgroundColorBrightCyan" (click)="dismiss()">
+            <span class="custColorWhite custFontFamilyMuliBold muli-16pt">Explore App</span>
+          </button>
+        </ion-col>
+
+      </ion-row>
+    </ion-toolbar>
+  </ion-footer>
+</ion-app>

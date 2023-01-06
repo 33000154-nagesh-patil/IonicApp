@@ -1,0 +1,33 @@
+<svg id="instagram_icon" data-name="instagram icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="38.037" height="38.038" viewBox="0 0 38.037 38.038">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.431" cy="1.139" r="1.162" gradientTransform="translate(0)" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ffc658"/>
+      <stop offset="0.366" stop-color="#f62b37"/>
+      <stop offset="0.64" stop-color="#c82091"/>
+      <stop offset="0.989" stop-color="#3542e0"/>
+    </radialGradient>
+    <linearGradient id="linear-gradient" x1="0.5" y1="1.622" x2="0.5" y2="-0.403" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0.033" stop-color="#e4e4e4"/>
+      <stop offset="0.098" stop-color="#b4b4b4"/>
+      <stop offset="0.168" stop-color="#898989"/>
+      <stop offset="0.243" stop-color="#646464"/>
+      <stop offset="0.323" stop-color="#454545"/>
+      <stop offset="0.41" stop-color="#2b2b2b"/>
+      <stop offset="0.505" stop-color="#181818"/>
+      <stop offset="0.616" stop-color="#0a0a0a"/>
+      <stop offset="0.753" stop-color="#020202"/>
+      <stop offset="1"/>
+    </linearGradient>
+  </defs>
+  <path id="Path_18288" data-name="Path 18288" d="M224.786,570.993a19.019,19.019,0,1,1-16.628-16.628A19.031,19.031,0,0,1,224.786,570.993Z" transform="translate(-186.883 -554.231)" fill-rule="evenodd" fill="url(#radial-gradient)"/>
+  <path id="Path_18289" data-name="Path 18289" d="M222.449,573.446A16.547,16.547,0,1,0,205.9,589.993,16.547,16.547,0,0,0,222.449,573.446Z" transform="translate(-186.883 -554.231)" fill-rule="evenodd" fill="url(#linear-gradient)" style="mix-blend-mode: screen;isolation: isolate"/>
+  <g id="Group_13123" data-name="Group 13123" transform="translate(9.006 9.011)">
+    <g id="Group_13121" data-name="Group 13121" style="mix-blend-mode: overlay;isolation: isolate">
+      <path id="Path_18290" data-name="Path 18290" d="M215.751,568.263a5.307,5.307,0,0,0-1.619-3.418,5.554,5.554,0,0,0-3.671-1.491,72.326,72.326,0,0,0-9.9.111,5.052,5.052,0,0,0-4.332,3.889c-.477,1.7-.383,9.557-.1,11.241a5.069,5.069,0,0,0,4.023,4.368c1.58.407,9.343.355,11.084.073a5.078,5.078,0,0,0,4.387-4.005C216.072,577.282,215.912,569.841,215.751,568.263Zm-1.843,10.006a3.389,3.389,0,0,1-3.187,3.025c-1.615.177-8.829.275-10.327-.144a3.285,3.285,0,0,1-2.491-2.829,67.143,67.143,0,0,1,0-10.106,3.383,3.383,0,0,1,3.173-3.011,70.617,70.617,0,0,1,9.858.039,3.39,3.39,0,0,1,3.018,3.193A71.783,71.783,0,0,1,213.908,578.269ZM205.9,568.117a5.134,5.134,0,1,0,5.132,5.137A5.133,5.133,0,0,0,205.9,568.117Zm-.035,8.451a3.32,3.32,0,1,1,3.35-3.29A3.319,3.319,0,0,1,205.868,576.568Zm6.572-8.646a1.2,1.2,0,1,1-1.2-1.205A1.2,1.2,0,0,1,212.44,567.922Z" transform="translate(-195.888 -563.241)" fill="#fff"/>
+    </g>
+    <g id="Group_13122" data-name="Group 13122" opacity="0.8">
+      <path id="Path_18291" data-name="Path 18291" d="M215.751,568.263a5.307,5.307,0,0,0-1.619-3.418,5.554,5.554,0,0,0-3.671-1.491,72.326,72.326,0,0,0-9.9.111,5.052,5.052,0,0,0-4.332,3.889c-.477,1.7-.383,9.557-.1,11.241a5.069,5.069,0,0,0,4.023,4.368c1.58.407,9.343.355,11.084.073a5.078,5.078,0,0,0,4.387-4.005C216.072,577.282,215.912,569.841,215.751,568.263Zm-1.843,10.006a3.389,3.389,0,0,1-3.187,3.025c-1.615.177-8.829.275-10.327-.144a3.285,3.285,0,0,1-2.491-2.829,67.143,67.143,0,0,1,0-10.106,3.383,3.383,0,0,1,3.173-3.011,70.617,70.617,0,0,1,9.858.039,3.39,3.39,0,0,1,3.018,3.193A71.783,71.783,0,0,1,213.908,578.269ZM205.9,568.117a5.134,5.134,0,1,0,5.132,5.137A5.133,5.133,0,0,0,205.9,568.117Zm-.035,8.451a3.32,3.32,0,1,1,3.35-3.29A3.319,3.319,0,0,1,205.868,576.568Zm6.572-8.646a1.2,1.2,0,1,1-1.2-1.205A1.2,1.2,0,0,1,212.44,567.922Z" transform="translate(-195.888 -563.241)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

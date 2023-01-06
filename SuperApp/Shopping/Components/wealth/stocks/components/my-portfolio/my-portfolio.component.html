@@ -1,0 +1,145 @@
+<ion-row class="m-3">
+  <ion-segment scrollable value="NIFTY 50" class="">
+    <ion-segment-button
+      class="custSegmentBtn"
+      value="NIFTY 50"
+      (click)="callNiftyApi()"
+    >
+      <ion-label class="muli-12pt Muli-SemiBold">NIFTY 50</ion-label>
+    </ion-segment-button>
+    <ion-segment-button
+      class="custSegmentBtn"
+      value="SENSEX"
+      (click)="callSensexApi()"
+    >
+      <ion-label class="muli-12pt Muli-SemiBold">SENSEX</ion-label>
+    </ion-segment-button>
+    <ion-segment-button
+      class="custSegmentBtn"
+      value="BANK NIFTY"
+      (click)="callBankNiftyApi()"
+    >
+      <ion-label class="muli-12pt Muli-SemiBold">BANK NIFTY</ion-label>
+    </ion-segment-button>
+    <ion-segment-button
+      class="custSegmentBtn"
+      value="OTHERS"
+      (click)="navigateMarketIndices()"
+    >
+      <ion-label class="muli-12pt Muli-SemiBold">OTHERS</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+</ion-row>
+
+<ion-card class="custCardHeight m-3">
+  <ion-card-content>
+    <ion-row>
+      <ion-col>
+        <ion-row class="custTitleValue mt-2"
+          ><span class="custTitleValue muli-12pt text-nowrap">{{ title }}</span>
+        </ion-row>
+        <ion-row class="mt-2"
+          ><span class="custCurrentPriceValue muli-14pt text-nowrap">{{
+            value
+          }}</span>
+          <span class="pricePercentValue muli-10pt text-nowrap ps-5">
+            + 59.20 (0.34%)</span
+          >
+        </ion-row>
+      </ion-col>
+      <ion-col size="4" class="d-flex justify-content-end pe-3 mt-2">
+        <button class="ExchangeValue">
+          <span class="muli-10pt text-nowrap">{{ excahngeValue }}</span>
+        </button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <span
+          class="muli-10pt custColorParakeetGreen custFontFamilyMuliRegular"
+        >
+          <span class="custFontFamilyMuliBold custColorParakeetGreen muli-22pt"
+            >.</span
+          >&nbsp; LIVE</span
+        >
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="">
+      <canvas class="custLineChart" id="linechart2"></canvas>
+      <ion-row>
+        <ion-col class="d-flex justify-content-between">
+          <button
+            class="Equity-btn btn w-100 custFontFamilyMuliBold muli-10pt px-3"
+            [ngClass]="{ active: Buttondata == '1m' }"
+            (click)="activebutton('1m', 0)"
+          >
+            1d
+          </button>
+          <button
+            class="Equity-btn btn w-100 custFontFamilyMuliBold muli-10pt px-3"
+            [ngClass]="{ active: Buttondata == '3m' }"
+            (click)="activebutton('3m', 1)"
+          >
+            1w
+          </button>
+          <button
+            class="Equity-btn btn w-100 custFontFamilyMuliBold muli-10pt px-3"
+            [ngClass]="{ active: Buttondata == '6m' }"
+            (click)="activebutton('6m', 2)"
+          >
+            1m
+          </button>
+          <button
+            class="Equity-btn btn w-100 custFontFamilyMuliBold muli-10pt px-3"
+            [ngClass]="{ active: Buttondata == '1y' }"
+            (click)="activebutton('1y', 3)"
+          >
+            3m
+          </button>
+          <button
+            class="Equity-btn btn w-100 custFontFamilyMuliBold muli-10pt px-3"
+            [ngClass]="{ active: Buttondata == '3y' }"
+            (click)="activebutton('3y', 4)"
+          >
+            1y
+          </button>
+          <button
+            class="Equity-btn btn w-100 custFontFamilyMuliBold muli-10pt px-3"
+            [ngClass]="{ active: Buttondata == '5y' }"
+            (click)="activebutton('5y', 5)"
+          >
+            3y
+          </button>
+          <button
+            class="Equity-btn btn w-100 custFontFamilyMuliBold muli-10pt px-3"
+            [ngClass]="{ active: Buttondata == 'Max' }"
+            (click)="activebutton('Max', 6)"
+          >
+            5y
+          </button>
+        </ion-col>
+      </ion-row>
+    </ion-row>
+    <!-- graph code -->
+
+    <!--
+<ion-row class="mx-2 mt-2" >
+  <ion-segment scrollable value="day" >
+    <ion-segment-button class="custSegmentBtnBtn" value="day" >
+      <ion-label class="muli-12pt Muli-SemiBold">{{day}}</ion-label>
+    </ion-segment-button>
+    <ion-segment-button class="custSegmentBtnBtn" value="week">
+      <ion-label class="muli-12pt Muli-SemiBold" >{{week}}</ion-label>
+    </ion-segment-button>
+    <ion-segment-button class="custSegmentBtnBtn" value="month">
+      <ion-label class="muli-12pt Muli-SemiBold">{{month}}</ion-label>
+    </ion-segment-button>
+    <ion-segment-button class="custSegmentBtnBtn" value="year">
+      <ion-label class="muli-12pt Muli-SemiBold">{{year}}</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+  </ion-row> -->
+  </ion-card-content>
+</ion-card>

@@ -1,0 +1,73 @@
+<ion-grid class="custGrid">
+  <ion-row>
+    <ion-col [size]="'12'" class="pdingleft">
+      <ion-row class="copltmargin">
+        <ion-col [size]="'1'">
+          <h1></h1>
+        </ion-col>
+      </ion-row>
+    </ion-col>
+    <ion-col [size]="'12'" class="copldtmargin">
+      <p class="muli-12pt custFontFamilyMuliRegular custLineHight22 custColorBattlePGry px-3 mb-0">An overview of your
+        spending</p>
+    </ion-col>
+  </ion-row>
+
+
+  <ion-row>
+    <ion-col [size]="'6'" class="inputPdig">
+      <mat-form-field appearance="outline" class="custMatForm w-100">
+        <mat-label>Patient's Name</mat-label>
+        <ion-icon matSuffix name="chevron-down-outline"></ion-icon>
+        <mat-select [(ngModel)]="patientName" (ngModelChange)="updateChart()">
+          <mat-option value="swapnil vasanth">Swapnil Vasanth</mat-option>
+          <mat-option value="rishikesh">Rishikesh</mat-option>
+          <mat-option value="debasis">Debasis</mat-option>
+        </mat-select>
+        
+        <!-- <mat-error *ngIf="checkError('annualIncome', 'required')">
+          {{ "annual income is required" | translate }}
+        </mat-error> -->
+
+      </mat-form-field>
+    </ion-col>
+
+    <ion-col [size]="'6'" class="inputPdigg">
+      <mat-form-field appearance="outline" class="custMatForm w-100 ">
+        <mat-label>Year</mat-label>
+        <ion-icon matSuffix name="chevron-down-outline"></ion-icon>
+        <mat-select [(ngModel)]="yearSelect" (ngModelChange)="updateChart()">
+          <mat-option value="2022">2022</mat-option>
+          <mat-option value="2021">2021</mat-option>
+          <mat-option value="2020">2020</mat-option>
+        </mat-select>
+        <!-- <mat-error *ngIf="checkError('annualIncome', 'required')">
+          {{ "annual income is required" | translate }}
+        </mat-error> -->
+      </mat-form-field>
+    </ion-col>
+
+  </ion-row>
+
+  <ion-card>
+    <ion-row>
+      <ion-col [size]="'7'">
+        <p class="muli-12pt custFontFamilyMuliRegular custLineHight22 custColorGreyish px-3 mb-0">Total tests</p>
+        <p class="muli-14pt custFontFamilyMuliRegular custLineHight22 custColorDark px-3 mb-0">{{count}}</p>
+      </ion-col>
+      <ion-col [size]="'5'">
+        <p class="muli-12pt custFontFamilyMuliRegular custLineHight22 custColorGreyish px-3 mb-0 float-end">Total
+          spendings</p>
+        <p class="muli-14pt custFontFamilyMuliRegular custLineHight22 custColorDark px-3 mb-0 float-end">
+          {{rupeesSymbol}}{{total.toLocaleString("en-US")}}</p>
+      </ion-col>
+    </ion-row>
+
+    <div class="container">
+      <div>
+        <canvas id="myChart"></canvas>
+      </div>
+    </div>
+  </ion-card>
+
+</ion-grid>

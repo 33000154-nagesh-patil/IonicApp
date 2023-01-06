@@ -1,0 +1,555 @@
+<ion-content class="custShowData" *ngIf="!JSONdata">
+
+  <ion-header class="supperAppLandingpageHeaderMenu">
+    <ion-row class="ion-no-padding">
+      <ion-col size="3.5">
+        <div class="NameHolder custLineHight46 text-center p-0 align-content-center align-items-center">
+          <p class="custFontFamilyMuliBold custColorDark muli-18pt d-inline-block custLineHight38 nameFlCenter ">{{profileName}}</p>
+        </div>
+      </ion-col>
+      <ion-col class="d-flex align-items-center ion-no-padding" size="8.5">
+        <div>
+          <p class="custFontFamilyMuliBold custColorDark mt-0 mb-0 ml-20 muli-14pt ">{{strFirstName}}</p>
+          <p class="viewProfile custColorDarkishBlue custFontFamilyMuliBold mt-0 mb-0 ml-10 muli-12pt">View Profile</p>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-header>
+
+  <ion-row class="pt-3 ps-2 align-items-center">
+    <ion-col [size]="'9'" class="ps-2">
+      <button class="btn w-100 text-center custButtonOutLine custBtnExplore py-4  d-flex align-items-center">
+        <span>
+          <ion-img [src]="imageList?.wallet" class="custIcons"></ion-img>
+        </span>
+        <span class=" custColorBrightCyan custColorWhite custFontFamilyMuliBold muli-16pt ps-3">Activate Wallet</span>
+      </button>
+    </ion-col>
+    <ion-col [size]="'3'" class="justify-content-end">
+      <span class="text-end">
+        <ion-img [src]="imageList?.scanner" class="custScanner ms-3"></ion-img>
+      </span>
+    </ion-col>
+  </ion-row>
+  <ion-grid class="px-3 pt-3">
+    <ion-row class="border rounded custBackgroundColorPaleGrey px-3 pt-2">
+      <ion-row class="align-items-center">
+        <ion-img [src]="imageList?.robo" class="custrobo"></ion-img>
+        <ion-label class="ps-2 custFontFamilyMuliBold">Wealth Robo Advisory</ion-label>
+      </ion-row>
+      <ion-row class="align-items-center justify-content-between my-2">
+        <ion-col class="ion-no-padding custFontFamilyMuliRegular muli-12pt custLineHight15 custColorGreyish" size="7">
+          Get real time assistance by our Robo advisory
+        </ion-col>
+        <ion-col size="5" class="text-end">
+          <button
+            class="border custButtonOutLine custBtnExplore  custColorBrightCyan text-center custColorWhite custFontFamilyMuliBold w-100 muli-12pt">
+            Get Assist
+          </button>
+        </ion-col>
+      </ion-row>
+    </ion-row>
+  </ion-grid>
+
+
+  <ion-list>
+    <ion-item *ngFor="let x of data; index as i">
+      <ion-row class="w-100 align-items-center" (click)="reDirectTo(mainMenu[i].ProductName)">
+        <ion-col [size]="'1'" class="text-start">
+          <ion-img [src]="x?.icons" class="custMenuIcons ion-no-padding"></ion-img>
+        </ion-col>
+        <ion-col [size]="'9'" class="ps-3">
+          <span class="custFontFamilyMuliRegular custColorDark">{{mainMenu[i].ProductName}}</span>
+        </ion-col>
+        <ion-col [size]="'1'" class="text-end">
+          <img
+            [src]="x?.kycStatus == 'KYC-Pending'?imageList?.kycpending :x?.kycStatus == 'KYC-Completed'?imageList?.kycdone:''"
+            class="custKYCimg">
+        </ion-col>
+        <ion-col [size]="'1'" class="text-end">
+          <img [src]="imageList?.next">
+        </ion-col>
+      </ion-row>
+    </ion-item>
+  </ion-list>
+</ion-content>
+
+<div *ngIf="JSONdata">
+  <lib-co-insidesub-menu [title]="title" [JSONdata]="JSONdata" [imageList]="imageList"></lib-co-insidesub-menu>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--  main menu-->
+
+
+<!-- wealth -->
+
+
+<!-- <ion-list>
+    <ion-item *ngFor="let x of wealthData">
+
+     <ion-row class="w-100">
+        <ion-col [size]="'1'" class="text-start">
+          <ion-img [src]="x?.icons" class="custWealthIcons ion-no-padding"></ion-img>
+        </ion-col>
+        <ion-col [size]="'5.5'" class="ps-3" (click)="reDirectTo($event)">
+     <span class="custFontFamilyMuliRegular custColorDark">{{x?.title}}</span>
+        </ion-col>
+      <ion-col [size]="'4.5'">
+            <ion-img [src]="x?.kycStatus"></ion-img>
+        </ion-col>
+        <ion-col [size]="'1'" class="text-end">
+          <img [src]="imageList?.next">
+        </ion-col>
+
+            <span class="custFontFamilyMuliRegular w-100 custpaddig muli-10pt custLineHight15 custColorGreyish"> {{x?.notifyLine}} </span>
+
+      </ion-row>
+    </ion-item>
+</ion-list> -->
+
+
+<!-- wealth -->
+
+
+<!-- <ion-list>
+    <ion-item *ngFor="let x of wealthData>
+
+     <ion-row class="w-100 custCenterAlign">
+        <ion-col [size]="'1'" class="text-start">
+          <ion-img [src]="x?.icons" class="custWealthIcons ion-no-padding"></ion-img>
+        </ion-col>
+        <ion-col [size]="'5.5'" class="ps-3" (click)="reDirectTo($event)">
+     <span class="custFontFamilyMuliRegular custColorDark">{{x?.title}}</span>
+        </ion-col>
+        <ion-col [size]="'4.5'">
+            <ion-img [src]="x?.kycStatus"></ion-img>
+        </ion-col>
+        <ion-col [size]="'1'" class="text-end">
+          <img [src]="imageList?.next">
+        </ion-col>
+
+            <span class="custFontFamilyMuliRegular w-100 custpaddig muli-10pt custLineHight15 custColorGreyish"> {{x?.notifyLine}} </span>
+
+      </ion-row>
+    </ion-item>
+</ion-list> -->
+
+<!-- wealth -->
+
+<!-- money maker -->
+
+<!-- <ion-list>
+    <ion-item *ngFor="let x of moneymaker">
+
+     <ion-row class="w-100 custCenterAlign">
+        <ion-col [size]="'1'" class="text-start">
+          <ion-img [src]="x?.icons" class="custWealthIcons ion-no-padding"></ion-img>
+        </ion-col>
+        <ion-col [size]="'5.5'" class="ps-3" (click)="reDirectTo($event)">
+     <span class="custFontFamilyMuliRegular custColorDark ">{{x?.title}}</span>
+        </ion-col>
+        <ion-col [size]="'4.5'">
+            <ion-img [src]="x?.kycStatus"></ion-img>
+        </ion-col>
+        <ion-col [size]="'1'" class="text-end">
+          <img [src]="imageList?.next">
+        </ion-col>
+            <span class="custFontFamilyMuliRegular w-100 custpaddig muli-10pt custLineHight15 custColorGreyish"> {{x?.notifyLine}} </span>
+             <ion-item *ngFor="let item of x?.submenu" class="ms-5  ion-no-padding ps-2 w-100 custBorder">
+                <ion-row class="w-100 custCenterAlign" *ngIf="x?.submenu" >
+                    <ion-col [size]="'1'" class="text-start ion-no-padding">
+                      <ion-img [src]="item?.icons" class="custWealthIcons"></ion-img>
+                    </ion-col>
+                    <ion-col  class="ps-3" (click)="reDirectTo($event)">
+                 <span class="custFontFamilyMuliRegular custColorDark ">{{item?.title}}</span>
+                    </ion-col>
+
+         <span class="custFontFamilyMuliRegular w-100 mb-2 muli-10pt custLineHight15 custColorGreyish">{{item?.notifyLine}}</span>
+
+            </ion-row>
+        </ion-item>
+      </ion-row>
+    </ion-item>
+</ion-list> -->
+
+<!-- money maker -->
+
+<!-- money saver -->
+
+<!-- <ion-list class="contentBackground">
+    <ion-item *ngFor="let x of moneysaver">
+
+     <ion-row class="w-100 custCenterAlign">
+        <ion-col [size]="'1'" class="text-start">
+          <ion-img [src]="x?.icons" class="custWealthIcons ion-no-padding"></ion-img>
+        </ion-col>
+        <ion-col [size]="'5.5'" class="ps-3" (click)="reDirectTo($event)">
+     <span class="custFontFamilyMuliRegular custColorDark">{{x?.title}}</span>
+        </ion-col>
+        <ion-col [size]="'4.5'">
+            <ion-img [src]="x?.kycStatus"></ion-img>
+        </ion-col>
+        <ion-col [size]="'1'" class="text-end">
+          <img [src]="imageList?.next">
+        </ion-col>
+
+            <span class="custFontFamilyMuliRegular w-100 custpaddig muli-10pt custLineHight15 custColorGreyish"> {{x?.notifyLine}} </span>
+
+      </ion-row>
+    </ion-item>
+</ion-list> -->
+
+<!-- money saver -->
+
+
+<!-- Bank -->
+<!-- <ion-list class="contentBackground">
+    <ion-item *ngFor="let x of bank">
+
+     <ion-row class="w-100 custCenterAlign">
+        <ion-col [size]="'1'" class="text-start">
+          <ion-img [src]="x?.icons" class="custWealthIcons ion-no-padding"></ion-img>
+        </ion-col>
+        <ion-col [size]="'5.5'" class="ps-3 ion-no-padding" (click)="reDirectTo($event)">
+     <span class="custFontFamilyMuliRegular custColorDark ">{{x?.title}}</span>
+        </ion-col>
+        <ion-col [size]="'4.5'" >
+            <ion-img [src]="x?.kycStatus"></ion-img>
+        </ion-col>
+        <ion-col [size]="'1'" class="text-end">
+          <img [src]="imageList?.next">
+        </ion-col>
+
+            <span class="custFontFamilyMuliRegular w-100 custpaddig muli-10pt custLineHight15 custColorGreyish"> {{x?.notifyLine}} </span>
+
+      </ion-row>
+    </ion-item>
+</ion-list>  -->
+
+<!-- bank -->
+
+<!-- insurance -->
+
+<!-- <ion-list>
+    <ion-item *ngFor="let x of insurance">
+
+     <ion-row class="w-100 custCenterAlign">
+        <ion-col [size]="'1'" class="text-start">
+          <ion-img [src]="x?.icons" class="custWealthIcons ion-no-padding"></ion-img>
+        </ion-col>
+        <ion-col [size]="'5.5'" class="ps-3" (click)="reDirectTo($event)">
+     <span class="custFontFamilyMuliRegular custColorDark">{{x?.title}}</span>
+        </ion-col>
+        <ion-col [size]="'4.5'">
+            <ion-img [src]="x?.kycStatus"></ion-img>
+        </ion-col>
+        <ion-col [size]="'1'" class="text-end">
+          <img [src]="imageList?.next">
+        </ion-col>
+            <span class="custFontFamilyMuliRegular w-100 custpaddig muli-10pt custLineHight15 custColorGreyish"> {{x?.notifyLine}} </span>
+             <ion-item *ngFor="let item of x?.submenu" class="ms-5  ion-no-padding ps-2 w-100 custBorder">
+                <ion-row class="w-100 custCenterAlign" *ngIf="x?.submenu" >
+                    <ion-col [size]="'1'" class="text-start ion-no-padding">
+                      <ion-img [src]="item?.icons" class="custWealthIcons"></ion-img>
+                    </ion-col>
+                    <ion-col  class="ps-3" (click)="reDirectTo($event)">
+                 <span class="custFontFamilyMuliRegular custColorDark ">{{item?.title}}</span>
+                    </ion-col>
+
+         <span class="custFontFamilyMuliRegular w-100 mb-2 muli-10pt custLineHight15 custColorGreyish">{{item?.notifyLine}}</span>
+
+            </ion-row>
+        </ion-item>
+      </ion-row>
+    </ion-item>
+</ion-list> -->
+
+
+<!-- insurance -->
+
+
+<!-- Loans -->
+
+<!-- <ion-list class="contentBackground">
+    <ion-item *ngFor="let x of loansdata">
+
+     <ion-row class="w-100 custCenterAlign">
+        <ion-col [size]="'1'" class="text-start">
+          <ion-img [src]="x?.icons" class="custWealthIcons ion-no-padding"></ion-img>
+        </ion-col>
+        <ion-col  [size]="'5.5'" class="ps-3 ion-no-padding" (click)="reDirectTo($event)">
+     <span class="custFontFamilyMuliRegular custColorDark ">{{x?.title}}</span>
+        </ion-col>
+        <ion-col [size]="'4.5'" >
+            <ion-img [src]="x?.kycStatus"></ion-img>
+        </ion-col>
+        <ion-col [size]="'1'" class="text-end">
+          <img [src]="imageList?.next">
+        </ion-col>
+
+            <span class="custFontFamilyMuliRegular w-100 custpaddig muli-10pt custLineHight15 custColorGreyish"> {{x?.notifyLine}} </span>
+
+      </ion-row>
+    </ion-item>
+</ion-list> -->
+
+<!-- loans -->
+
+<!-- customer support -->
+
+<!-- <ion-list>
+    <ion-item *ngFor="let x of customerSupport">
+      <ion-row class="w-100 align-items-center">
+        <ion-col [size]="'1'" class="text-start">
+          <ion-img [src]="x?.icons" class="custCustomerSupportIcons ion-no-padding"></ion-img>
+        </ion-col>
+        <ion-col [size]="'10'" class="ps-3 py-4" (click)="reDirectTo($event)">
+          <span class="custFontFamilyMuliRegular custColorDark">{{x?.title}}</span>
+        </ion-col>
+        <ion-col [size]="'1'" class="text-end">
+          <img [src]="imageList?.next">
+        </ion-col>
+      </ion-row>
+    </ion-item>
+  </ion-list> -->
+
+<!-- customer support -->
+
+<!-- settings -->
+
+<!-- <ion-list>
+    <ion-item *ngFor="let x of settingsData">
+      <ion-row class="w-100 align-items-center">
+        <ion-col [size]="'1'" class="text-start">
+          <ion-img [src]="x?.icons" class="custCustomerSupportIcons ion-no-padding"></ion-img>
+        </ion-col>
+        <ion-col [size]="'10'" class="ps-3 py-4" (click)="reDirectTo($event)">
+          <span class="custFontFamilyMuliRegular custColorDark">{{x?.title}}</span>
+        </ion-col>
+        <ion-col [size]="'1'" class="text-end">
+          <img [src]="imageList?.next">
+        </ion-col>
+      </ion-row>
+    </ion-item>
+
+    <ion-item>
+      <ion-row class="w-100 align-items-center">
+        <ion-col [size]="'1'" class="text-start">
+          <ion-img [src]="imageList?.logoutIcon" class="custCustomerSupportIcons ion-no-padding"></ion-img>
+        </ion-col>
+        <ion-col [size]="'8'" class="ps-3 py-4" (click)="reDirectTo($event)">
+          <span class="custFontFamilyMuliRegular custColorDark">Logout</span>
+        </ion-col>
+        <ion-col [size]="'3'" class="text-end">
+          <span class="custFontFamilyMuliRegular muli-12pt custColorGreyish">V1.213</span>
+        </ion-col>
+      </ion-row>
+    </ion-item>
+  </ion-list> -->
+
+<!-- settings -->
+
+<!-- <ion-list>
+    <ion-item *ngFor="let x of aboutusdata">
+      <ion-row class="w-100 align-items-center">
+        <ion-col [size]="'1'" class="text-start">
+          <ion-img [src]="x?.icons" class="custCustomerSupportIcons ion-no-padding"></ion-img>
+        </ion-col>
+        <ion-col class="ps-3 py-4" (click)="reDirectTo($event)">
+          <span class="custFontFamilyMuliRegular custColorDark">{{x?.title}}</span>
+        </ion-col>
+      </ion-row>
+    </ion-item>
+   </ion-list> -->
+
+<!-- settings -->

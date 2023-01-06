@@ -1,0 +1,46 @@
+<ion-grid>
+  <ion-row>
+    <ion-segment value="Gainers" [(ngModel)]="segment" (ionChange)="segmentChanged()">
+      <ion-segment-button value="Gainers">
+        <ion-label class="custFontFamilyMuliBold muli-14pt custColorDark">Gainers</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="Losers">
+        <ion-label class="custFontFamilyMuliBold muli-14pt custColorDark">Losers</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="Volume">
+        <ion-label class="custFontFamilyMuliBold muli-14pt custColorDark">Volume Shockers</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+  </ion-row>
+
+
+  <div class="my-2"  >
+    <ion-card class="custBackgroundColorWhite mx-2 my-0" *ngFor="let item of data">
+
+      <ion-row class="">
+        <ion-col class="custColorDark muli-14pt custFontFamilyMuliSemiBold  text-nowrap">
+          {{item.cmp_stock}}
+          <img *ngIf="item.img" src={{item.img}} style="height: 16px; margin-top: -16px;">
+        </ion-col>
+        <ion-col class="custFontFamilyMuliSemiBold custLineHight20 muli-14pt custColorDark  text-end  text-nowrap">
+          ₹{{item.LTP}}
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col class="custFontFamilyMuliSemiBold muli-12pt custLineHight16 custColorBattlePGry  text-nowrap">
+          {{item.exchange}}
+        </ion-col>
+        <ion-col class="d-flex justify-content-end text-end">
+          <span class="muli-12pt itemCol mb-1 text-end  text-nowrap">
+            <ion-icon name="caret-up" class="custGreenTick"></ion-icon>{{item.change_in_price}}
+          </span>&nbsp;
+          <span class="muli-12pt itemCol mb-3 text-end  text-nowrap">({{item.percent}})</span>
+        </ion-col>
+      </ion-row>
+
+    </ion-card>
+  </div>
+
+
+</ion-grid>

@@ -1,0 +1,45 @@
+{
+    "Consumer":[
+        {"name":"Akshay Patil","value":"1234567890"},
+        {"name":"Jayesh Mishra","value":"098765423"},
+        {"name":"Salman Dada","value":"321414414124"}
+    ],
+    "Locations": [
+        {"name":"Home","value":["AddressLine1","AddressLine2","400033"]},
+        {"name":"Office","value":["AddressLine1","AddressLine2","400605"]}
+    ],
+    "itemName":"Web Development",
+    "productName":"Career",
+    "productSubtitle":"By Abrar Hussain",
+    "productImage":"https://www.pngfind.com/pngs/m/170-1706361_web-development-icon-web-development-logo-png-transparent.png",
+    "itemCode":"1158",
+    "unitPrice":"206.00",
+    "taxes":[
+        {"type":"CGST","taxPercentage":"0"},
+        {"type":"SGST","taxPercentage":"0"},
+        {"type":"IGST","taxPercentage":"0"}
+    ],
+    "quantityRegEx":"^([1-9]|[1-9][0-9]|100)$",
+    "editable":"qty",
+    "unitOfQuantity":"Nos",
+    "unitOfAmount":"₹",
+    "tnc":["url","address"],
+    "Validity":0,
+    "walletMargin":false,
+    "availableMargin":5000.00,
+    "txnType":"BUY",
+    "OtherDetails":[],
+    "footerButton":[
+        {
+            "name":"Add To Cart",
+            "uxClass":"custBackgroundColorBrightCyan custColorWhite w-100 mx-3 my-2",
+            "value":"addToCart"
+        },
+        {
+            "name":"Proceed to Checkout",
+            "uxClass":"custBackgroundColorParakeetGreen custColorWhite w-100 mx-3 my-2",
+            "value":"buy"
+        }
+    ],
+    "disable":"!(this.quantity>0&&this.checkbox)"
+}

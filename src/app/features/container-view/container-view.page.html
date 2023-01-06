@@ -1,0 +1,127 @@
+<ng-container #introLib></ng-container>
+<ng-container #logging></ng-container>
+<!-- <div *ngIf="!isLogging">
+  <ion-router-outlet id="main-content"></ion-router-outlet>
+
+</div> -->
+<div *ngIf="isLogging">
+  <ion-app>
+    <ion-menu contentId="main-content" type="overlay">
+      <app-submenu [submenuList]="appPages" [version]="currentAppVersion" (reDirect)="reDirectPage($event)"
+        (callLogOut)="logOutEvent($event)"></app-submenu>
+    </ion-menu>
+    <ion-router-outlet id="main-content">
+      
+    </ion-router-outlet>
+    
+  </ion-app>
+  <router-outlet name="myModal">
+    
+  </router-outlet>
+  
+  
+
+  <!-- <div class="custModalContainer p-10" *ngIf="loggedInModal" (click)="successModalClose();">
+    <div  id="showModalSMGSucces" class="modal-content custCenterAlign">
+      <ion-icon [src]="imageList?.successKYCIcon" class="custImage"></ion-icon>
+      <p class="custFontFamilyMuliBold muli-16pt custColorDark text-center p-0 m-0 ion-no-padding">You are now logged in with</p>
+      <p class="custFontFamilyMuliBold muli-16pt custColorDark text-center p-0 m-0 ion-no-padding">{{loggedInWith}}</p>
+    </div>
+  </div> -->
+  <!--
+  <div class="custModalContainer  " *ngIf="loggedInModal">
+
+    <ion-content id="showModalSMGSucces" class="modal-content">
+      <ion-grid class="ps-4">
+        <ion-row class="custFontFamilyMuliBold muli-20pt mt-3">{{'registerUserMsg' | translate}}</ion-row>
+        <ul class="StepProgress mt-3">
+          <li *ngFor="let x of listOfKYC" class="w-100 mb-2 "
+            [ngClass]="x?.IsCompleted==='True' ?'StepProgress-item is-done':'StepProgress-item current'">
+            <p class="custFontFamilyMuliBold muli-18pt">{{x?.Document}}</p>
+          </li>
+        </ul>
+      </ion-grid>
+    </ion-content>
+
+    <ion-footer class="fixed-bottom custBackgroundColorWhite p-4">
+      <p class="custFontFamilyMuliBold muli-20pt w-100 text-center ">{{'wantResart' | translate}}</p>
+      <ion-row class="ion-no-padding w-100 mt-">
+        <ion-col [size]="'6'" class="ion-no-padding">
+          <ion-button expand="block" class="text-capitalize custTryButton d-flex justify-content-center">
+            <span class="custFontFamilyMuliRegular text-center muli-14pt custColorBrightCyan">{{'cancel' | translate}}</span>
+          </ion-button>
+        </ion-col>
+
+        <ion-col [size]="'6'" class="ion-no-padding">
+          <ion-button expand="block" class="text-capitalize text-center custLooksBtn"><span
+              class="custColorWhite custFontFamilyMuliBold muli-16pt">{{'resume' | translate}}</span></ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-footer>
+  </div>
+ -->
+
+
+  <div class="custModalContainer" *ngIf="progressBarModal" (click)="successModalClose();">
+    <div id="showModalSMGSucces" class="modal-content">
+      <div class="footer">
+        <ion-row class="custFontFamilyMuliBold muli-18pt mt-3">{{'registerUserMsg' | translate}}</ion-row>
+        <ul class="StepProgress mt-3">
+          <li *ngFor="let x of listOfKYC" class="w-100 mb-2 "
+            [ngClass]="x?.Status==='Pass' ?'StepProgress-item is-done':'StepProgress-item current'">
+            <p class="custFontFamilyMuliBold muli-16pt">{{x?.Document}}</p>
+          </li>
+        </ul>
+      </div>
+      <div class="custBackgroundColorWhite">
+        <p class="custFontFamilyMuliBold muli-18pt w-100 text-center ">{{'wantResart' | translate}}</p>
+        <ion-row class=" ion-no-padding w-100">
+          <ion-col [size]="'6'" class="ion-no-padding" (click)="getCancel()">
+            <ion-button expand="block" class="text-capitalize custTryButton d-flex justify-content-center">
+              <span class="custFontFamilyMuliRegular text-center muli-14pt custColorBrightCyan">{{'cancel' |
+                translate}}</span>
+            </ion-button>
+          </ion-col>
+
+          <ion-col [size]="'6'" class="ion-no-padding" (click)="Resume()">
+            <ion-button expand="block" class="text-capitalize text-center custLooksBtn"><span
+                class="custColorWhite custFontFamilyMuliBold muli-16pt">{{'resume' | translate}}</span></ion-button>
+          </ion-col>
+        </ion-row>
+      </div>
+    </div>
+  </div>
+
+  <div class="custModalContainer p-10" *ngIf="ConfirmErrorMsg">
+    <div id="showModalSMGSucces" class="modal-content custCenterAlign">
+      <ion-row class="custFontFamilyMuliBold muli-18pt pb-4">{{'wantcancel' | translate}}</ion-row>
+      <ion-row class=" ion-no-padding w-100">
+        <ion-col [size]="'6'" class="ion-no-padding" (click)="onCancel()">
+          
+          <ion-button expand="block" class="text-capitalize custTryButton d-flex justify-content-center">
+            <span class="custFontFamilyMuliRegular text-center muli-14pt custColorBrightCyan">{{'no' |
+              translate}}</span>
+          </ion-button>
+        </ion-col>
+
+        <ion-col [size]="'6'" class="ion-no-padding" (click)="onConfirmNo()">
+          <ion-button expand="block" class="text-capitalize text-center custLooksBtn"><span
+              class="custColorWhite custFontFamilyMuliBold muli-16pt">{{'yes' | translate}}</span></ion-button>
+        </ion-col>
+      </ion-row>
+    </div>
+  </div>
+
+  
+  <app-fab-button [superMode]="currentMode"  [fabIcon]="imageList?.fabTorusIcon"></app-fab-button>
+  <!-- <app-fab-button [superMode]="currentMode"  [fabIcon]="imageList?.redflag" *ngIf="appEnviron != 'prod'"></app-fab-button> -->
+
+
+
+  <app-update-profile *ngIf="profileModal" [imageList]="imageList"
+    [errorList]="errorList" (updateRecord)="updateRecord($event)" (closeModal)="closeModal($event)">
+  </app-update-profile>
+
+  
+  
+</div>

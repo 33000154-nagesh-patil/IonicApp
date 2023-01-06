@@ -1,0 +1,28 @@
+.mainContain{
+    height: 80%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.btn{
+    border-color: yellow;
+}
+
+  input {
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: #DEDEDE
+  }
+
+  .custImgSize{
+display: flex;
+   align-items: center;
+   justify-items: center ;
+    padding: 22px;
+  }
+  .custBackGround{
+    background-color: #EBEBEB;
+}
+.imgSize{
+  
+    z-index: 4;
+}

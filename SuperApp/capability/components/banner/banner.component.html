@@ -1,0 +1,48 @@
+<!-- <div *ngIf="!torusClubData"> -->
+<ion-row *ngIf="banner">
+  <ion-col [size]="'12'" class="mfBackground p-4">
+    <ion-row class="pt-4 pb-4" >
+      <ion-col [size]="'12'" class="custTextAlignCenter ">
+        <span class="custFontFamilyMuliBold muli-16pt custLineHight18 custColorWhite">{{banner?.Title}}</span>
+      </ion-col>
+    </ion-row>
+    <ion-row class="custTextAlignCenter">
+        <ion-col [size]="'4'" class="contentCenter" *ngFor="let el of banner?.data">
+          <ion-row  class="custTextAlignCenter">
+            <ion-img [src]="el.icon" class="custMFImg"></ion-img>
+          </ion-row>
+          <ion-row  class="custTextAlignCenter pt-2 pb-2">
+            <span class="custFontFamilyMuliSemiBold muli-12pt custLineHight16 custColorWhite">
+              {{el.subTitle}}
+            </span>
+          </ion-row>
+        </ion-col>
+    </ion-row>
+  </ion-col>
+</ion-row>
+<!-- </div> -->
+
+<div *ngIf="torusClub">
+<ion-grid  class="torusClubBackground">
+  <ion-row class="pt-2 pb-2">
+    <ion-col [size]="'6'">
+      <span class="custFontFamilyMuliBold muli-22pt custLineHight18 custColorBlue">{{torusClubData.Title}}</span>
+    </ion-col>
+    <ion-col [size]="'6'">
+      <ion-img [src]="torusClubData.data.giftBoxIcon"></ion-img>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col [size]="'8'" class="custBanneContent">
+      <span class="custFontFamilyMuliBold muli-14pt custLineHight18 custColorDark">{{torusClubData.data.subTitle}}</span>
+      <p class="custFontFamilyMuliBold muli-12pt custLineHight18 pt-2 custBannerDescription">{{torusClubData.data.contentDescription}}</p>
+      <button class="btnPlayNow rounded-2">{{torusClubData.data.action}}</button>
+    </ion-col>
+  </ion-row>
+  <ion-row class="custTorusClubIcon">
+    <ion-col>
+      <img class="custImgCenter" [src]="torusClubData.data.torusClubIcon">
+    </ion-col>
+  </ion-row>
+</ion-grid>
+</div>

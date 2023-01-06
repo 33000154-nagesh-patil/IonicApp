@@ -1,0 +1,19 @@
+.custActiveImg{
+    height: 4px;
+    width: auto;
+}
+
+.custSelected{
+    color:var(--custBrightCyan) ;
+  }
+
+.custMarginBottom{
+    margin-bottom: -5px;
+}
+.imageCustom{
+    filter: invert(39%) sepia(46%) saturate(12%) hue-rotate(6deg) brightness(95%) contrast(94%);
+}
+
+.imageCustom1{
+    filter: invert(69%) sepia(90%) saturate(1286%) hue-rotate(162deg) brightness(100%) contrast(93%);
+}

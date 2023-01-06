@@ -1,0 +1,67 @@
+<ion-header >
+  <ion-toolbar class="custBackgroundDynamicColorWhite">
+    <ion-grid>
+      <ion-row>
+        <ion-col [size]="'1'" class="text-center mt-1" (click)="backF()">
+          <ion-img [src]="imageList?.arrow" class="backArrow mt-2"></ion-img>
+        </ion-col>
+        <ion-col [size]="'8'">
+          <span
+            class="custFontFamilyMuliBold muli-16pt custLineHight40 custColorDark"
+            >Redeem Confirmation</span
+          >
+        </ion-col>
+        <ion-col [size]="'3'" class="mt-2 text-end">
+          <!-- <ion-img class="custHelpIcon" [src]="imageList?.helpIcon"></ion-img> -->
+          <!-- <span
+          class="custFontFamilyMuliBold muli-12pt custLineHight18 custColorDarkishBlue"
+          >{{ "process" | translate }}</span -->
+        <!-- > -->
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="contentBackground">
+  <ion-row>
+    <ion-col [size]="'12'" class="custTextAlignCenter mt-4">
+      <ion-img [src]="imageList?.succsessIcon" class="custImgSucc"></ion-img>
+    </ion-col>
+    <ion-col [size]="'12'" class="custTextAlignCenter">
+      <!-- <span class="custFontFamilyMuliBold muli-16pt custLineHight22 custColorDark" *ngIf="transactionData?.type=='Gold'">{{'successFullMessageGold' | translate}}</span> -->
+      <span class="custFontFamilyMuliBold muli-16pt custLineHight22 custColorDark" >Redeem order placed</span>
+    </ion-col>
+  </ion-row>
+
+
+  <ion-card class="mt-4">
+    <!-- <ion-row  class="custFontFamilyMuliRegular muli-22pt custColorDark custLineHight40  m-4">{{headerName}} </ion-row> -->
+    <ion-row class=" px-3 custBackgroundColorWhite">
+      <ion-col  >
+        <ion-row><p class="custFontFamilyMuliBold muli-14pt custColorDark custLineHight20 ">{{SelectedCard?.schemeName}}</p></ion-row>
+      </ion-col>
+        <ion-col class="text-end">
+            <ion-row><p class="custFontFamilyMuliRegular muli-22pt custColorDark custLineHight40 "> ₹{{CurrentValueFund}}</p></ion-row>
+          </ion-col>
+  </ion-row>
+    <ion-row class=" px-3 custBackgroundColorWhite">
+      <ion-col  >
+        <ion-row><p class="custFontFamilyMuliRegular muli-12pt custLineHight15 custColorBattlePGry mb-0">NAV Date</p></ion-row>
+        <ion-row class="mt-2"><p class="custFontFamilyRobotoCondensed custFontFamilyMuliITF-Rupee muli-16pt custLineHight18 text-center custColorDark">{{Currentdate}} </p></ion-row>
+      </ion-col>
+        <!-- <ion-col  >
+            <ion-row><p class="custFontFamilyMuliRegular muli-12pt custLineHight15 custColorBattlePGry mb-0">Expected Completion</p></ion-row>
+            <ion-row class="mt-2"><p class="custFontFamilyRobotoCondensed custFontFamilyMuliITF-Rupee muli-16pt custLineHight18 text-center custColorDark">15th Apr, 2022</p></ion-row>
+          </ion-col> -->
+  </ion-row>
+</ion-card>
+    
+</ion-content>
+<div class="custBackgroundColorPaleGrey">
+  <ion-row class="m-2" (click)="hendler()"  >
+    <button class="btn custButtonOutLine w-100 text-center custColorBrightCyan"><span class="custColorBrightCyan text-capitalize custFontFamilyMuliBold muli-16pt">Track Order</span></button>
+  </ion-row>
+  <ion-row  class="m-2" (click)="openPortfolio()">
+    <button class="btn w-100 text-center custBackgroundColorBrightCyan"><span class="custColorWhite custFontFamilyMuliBold text-capitalize muli-16pt">Portfolio</span></button>
+  </ion-row>
+</div>

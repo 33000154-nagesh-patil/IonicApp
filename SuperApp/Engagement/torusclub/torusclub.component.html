@@ -1,0 +1,163 @@
+<ion-header class="sticky-top headerCont">
+  <ion-toolbar>
+    <ion-grid>
+      <ion-row>
+        <ion-col [size]="'0.6'" ><img class="custImgArrow" src="assets/icon/arrow.svg" (click)="backPage()"/></ion-col>
+        <ion-col [size]="'0.3'"></ion-col>
+        <ion-col [size]="'8.5'">
+          <ion-row class="mrginTopHeading">
+            <ion-col [size]="'5'"><span class="muli-12pt">{{Header?.heading}}</span></ion-col>
+          </ion-row>
+          <ion-row class="mrginTopHeadings justify-content-start w-100">
+            <ion-col [size]="'6'" class="">
+              <img [src]="Header?.coinImg" class="px-2"/>
+              <span class="muli-14pt custFontFamilyMuliBold custColorDark">
+                {{coins}}
+              </span>
+            </ion-col>
+            <ion-col [size]="'6'" class="">
+              <img [src]="Header?.prizeImg" class="px-2"/>
+              <span class="muli-14pt custFontFamilyMuliBold custColorDark">
+                {{Header?.prize}}
+              </span>
+            </ion-col>
+          </ion-row>
+         <ion-row class="mrginTopHeading">
+          <ion-col [size]="'4.5'"><span class="muli-10pt">{{Header?.title}}</span></ion-col>
+          <ion-col [size]="'3'"><span class="muli-10pt">{{Header?.subtitle}}</span></ion-col>
+         </ion-row>
+        </ion-col>
+        <ion-col [size]="'2.5'" (click)="goToRewards()" class="mt-4">
+          <ion-row><ion-img [src]="Header?.rewardsImg" class="custImg1"></ion-img></ion-row>
+          <ion-row class="heightBase"><p class="muli-10pt custFontFamilyMuliSemiBold custColorBattlePGry">all rewards</p></ion-row>
+      </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid class="custBackGround  sticky-top">
+    <ion-row class="containerr">
+      <ion-col *ngFor="let text of scrollTitles" class="ion-no-padding mrgin">
+        <ion-card [ngClass]="{'active': tabName === text.title}" class="rounded-pill" (click)="categoryClick(text.title)">
+            <ion-row>
+              <ion-col><span class="custFontFamilyMuliSemiBold muli-14pt text-center mt-1 px-2">{{text.title}}</span></ion-col>
+            </ion-row>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <div *ngFor="let x of rewards">
+    <ion-grid class="custBackGround">
+      <ion-row>
+        <ion-col>
+          <span class="muli-16pt custColorDark custFontFamilyMuliBold pt-4">
+            {{ x.Title }} </span
+          ><span class="muli-10pt custColorDarkishBlue pt-4"
+            >({{ x.count }})</span
+          >
+        </ion-col>
+        <ion-col class="text-end">
+          <span
+            *ngIf="x.Title === 'Our Brand Partners'"
+            class="custFontFamilyMuliRegular muli-12pt custColorDarkishBlue"
+            (click)="openPopUp(x)"
+          >
+            See all
+          </span>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <span class="muli-10pt custColorBattlePGry custFontFamilyMuliRegular">
+          {{ x.rewardDetail }}
+        </span>
+      </ion-row>
+
+      <ion-row class="container">
+        <ion-col [size]="x.col" *ngFor="let y of x.jackpotReward">
+          <ion-card
+            [ngClass]="y.rewardBackgroundColor"
+            [ngStyle]="
+              x.Title == 'Our Brand Partners'
+                ? { 'border-radius': '50' + '%', height: '8.7rem' }
+                : {}
+            "
+          >
+            <ion-row class="d-flex justify-content-center">
+              <span class="custBackgroundColorAva muli-10pt">{{
+                y.availability
+              }}</span>
+            </ion-row>
+            <ion-card-content>
+              <ion-row class="justify-content-center">
+                <span
+                  class="custFontFamilyMuliBold custColorBlack muli-11pt custDes"
+                >
+                  {{ y.title1 }}
+                </span>
+              </ion-row>
+              <ion-row class="custImgSize" (click)="gotoBrandPage(y)">
+                <img style="padding-top: 24px" [src]="y.brandImg" />
+              </ion-row>
+              <ion-row *ngIf="y.title" class="p-2 justify-content-center">
+                <img
+                  class="custFontFamilyMuliBold custColorBlack commonBrandImg"
+                  [src]="y.title"
+                />
+              </ion-row>
+
+              <section>
+                <ion-row class="justify-content-center">
+                  <ion-row class=" text-center">
+                    <span class="custFontFamilyMuliRegular muli-10pt custDes">
+                      {{ y.des }}
+                    </span>
+                  </ion-row>
+                  <ion-row class="p-2">
+                    <span *ngIf="x.Title == 'JackPot Rewards' || x.Title == 'Upcoming JackPot Rewards' || x.Title == 'Cash Back Rewards'"
+                      class="custFontFamilyMuliBold custColorDark muli-22pt pb-3"
+                      >₹{{ y.prize}}
+                    </span>
+                  </ion-row>
+                  <ion-row class="p-2">
+                    <span *ngIf="x.Title == 'Vouchers' || x.Title == 'Gift Cards' || x.Title == 'Our Brand Partners' || x.Title == 'Refer & Earn'"
+                      class="custFontFamilyMuliBold custColorDark muli-22pt pb-3"
+                      >{{y.prize}}
+                    </span>
+                  </ion-row>
+                </ion-row>
+                <ion-row class="justify-content-center" *ngIf="x.Title == 'Cash Back Rewards'">
+                  <img [src]="y.desImg" class="custImg2" />
+                </ion-row>
+              </section>
+
+              <ion-col size="10" class="justify-content-center pt-1">
+                <button (click)="goToSpinner(y)" [ngStyle]="x.Title != 'Our Brand Partners'? { width: '100' + '%' }: {}"class="text-center" [ngClass]="y.btnColor" [disabled]="y.btnName=='🔒Locked'">
+                  <span
+                    class="custFontFamilyMuliBold muli-11pt"
+                    [ngClass]="
+                      y.btnName == 'Locked'
+                        ? 'custColorGreyish'
+                        : 'custColorDark'
+                    "
+                    >🔒{{ y.btnName}}</span>
+                    <span *ngIf="y.btnName == 'Claim Now' || y.btnName == 'Refer Now'"
+                    class="custFontFamilyMuliBold muli-11pt"
+                    [ngClass]="
+                      y.btnName == 'Locked'
+                        ? 'custColorGreyish'
+                        : 'custColorDark'
+                    "
+                    >{{ y.btnName}}</span>
+                </button>
+              </ion-col>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <p class="custBack ion-no-margin"></p>
+  </div>
+</ion-content>

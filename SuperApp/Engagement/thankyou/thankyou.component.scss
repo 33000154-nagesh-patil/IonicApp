@@ -1,0 +1,293 @@
+.commonBrandImg {
+  height: 5rem !important;
+  width: 8rem !important;
+}
+
+.custBtnn {
+  background-color: #FBD210;
+  border: 1px solid #E6B400;
+  color: #141B2F;
+  border-radius: 5px;
+  height: 30px;
+  width: 120px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+  height: auto;
+
+  overflow-x: scroll;
+
+  width: auto;
+}
+
+.mrginTopp {
+  //margin-top: -160px;
+  margin-top: -201px;
+}
+
+
+.cardCust {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.custImgTorus {
+  width: 21px;
+  height: 27px;
+}
+
+.custDesImg {
+  margin-top: 25px;
+}
+
+.custCardBack {
+  background-image: url('/assets/icon/croma.png');
+  background-size: 255px 271px;
+}
+
+.custCoinBack{
+  --background: #FFF5BE 0% 0% no-repeat padding-box;
+  --box-shadow: 0px 0px 5px #00000012;
+--border-radius: 4px;
+--opacity: 1;
+}
+
+
+
+
+.custBtnnss {
+  width: 156px;
+  height: 45px;
+  background-color: #FBD210;
+  border: 1px solid #E6B400;
+  color: #141B2F;
+  border-radius: 5px;
+}
+
+.custBtnns {
+  width: 156px;
+  height: 45px;
+  background-color: #fff;
+  border: 1px solid #44C8F5;
+  color: #141B2F;
+  border-radius: 5px;
+}
+
+.cardCusts {
+  display: block;
+  margin-left: auto;
+}
+
+.cardCustss {
+  display: block;
+  margin-right: auto;
+}
+
+.custArrow {
+  height: 20px;
+  width: 25px;
+}
+
+.custBackgroundLightGreen {
+
+  background-image: linear-gradient(#DBE9AC, #E8F6B9);
+}
+
+.custBackgroundBlue {
+
+  background-image: linear-gradient(#CDE0FF, #E1EDFF);
+}
+
+.custBackgrouncashBack {
+
+  background-image: linear-gradient(#BCF2CF, #C9FFDC);
+}
+
+.backArrow {
+  height: 18px;
+  width: 10px;
+}
+
+.custImgSucc {
+  height: 45px;
+}
+
+
+
+
+/*Stepper css start*/
+
+.custStatusMargin{
+  margin-left: 7rem !important;
+}
+
+.custColorParakeetOrange{
+  color:#EE9C15;
+}
+
+.custImgSucc{
+  height: 47px;
+  width: 47px;
+}
+
+.custPadding{
+  padding: 15px;
+}
+
+
+.StepProgress {
+  position: relative;
+  padding-left: 45px;
+  list-style: none;
+  
+  &::before {
+    display: inline-block;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 15px;
+    width: 30px;
+    height: 100%;
+    border-left: 2px dashed var(--custWhite);
+  }
+  
+  &-item {
+    position: relative;
+    counter-increment: list;
+    
+    &:not(:last-child) {
+      padding-bottom: 5px;
+      // padding-bottom: 20px;
+    }
+    
+    &::before {
+      display: inline-block;
+      content: '';
+      position: absolute;
+      left: -30px;
+      height: 100%;
+      width: 10px;
+    }
+    
+    &::after {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      left: -40px;
+      width: 12px;
+      height: 12px;
+      border: 2px solid var(--custWhite);
+      border-radius: 50%;
+      background-color: var(--custWhite);
+    }
+    
+    &.is-done {
+      &::before {
+        border-left: 2px dashed var(--CustLightGreen);
+        margin-top: 5px;
+      }
+      &::after {
+        content: "🗸";
+        font-size: 12px;
+        color: var(--custWhite);
+        width:20px;
+        height:20px;
+        text-align: center;
+        border: 2px solid var(--CustLightGreen);
+        background-color: var(--CustLightGreen);
+      }
+    }
+    
+    &.current {
+      &::before {
+        border-left: 2px dashed  #EE9C15;
+        margin-top: 5px;
+      }
+      
+      &::after {
+        content: "!";
+        padding-top: 1px;
+         width:20px;
+         height:20px;
+        top: -4px;
+        left: -39px;
+        font-size: 13px;
+        text-align: center;
+        color: var(--custWhite);
+        border: 2px solid #EE9C15;
+        background-color: #EE9C15;
+      }
+    }
+  }
+  
+  strong {
+    display: block;
+  }
+
+
+}
+
+.stepper_padding{
+  padding-bottom: 2em;
+}
+
+
+/*Stepper css end*/
+
+/*Recommendation css start*/
+.border-bottom{
+  border-bottom: 1px solid #DEDEDE;
+}
+
+.custGreenTick {
+  color: #29AD00;
+  height: 8px;
+  width: 8px;
+}
+
+.custPosition {
+  display: flex;
+  justify-content: center;
+}
+
+.custheight {
+  border: 1px solid #44C8F5;
+  color: #44C8F5;
+  border-radius: 4px;
+  background-color: #F6F7FB;
+  opacity: 1;
+}
+
+
+.coloredCard{
+    //background-image: linear-gradient(#E2F4FF, #C4E9FF);
+    background-color: #EDF9FD;
+    color: #FFFFFF;
+    height: auto;
+    opacity: 1;
+}
+
+/* Recommendation css end*/
+
+// Button css
+.custCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* accordian css start */
+
+.custBAckGround{
+  background-color:#F6F7FB;
+}
+
+/* accordian css end */

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="296" height="140" viewBox="0 0 296 140">
+  <g id="Group_22656" data-name="Group 22656" transform="translate(-33 -2428)">
+    <path id="Path_16626" data-name="Path 16626" d="M284.075,1518.4l85.588,85.211V1483.1A120.929,120.929,0,0,0,284.075,1518.4Z" transform="translate(-189.914 960.366)" fill="#f8bd19"/>
+    <path id="Path_16627" data-name="Path 16627" d="M193.815,1658.947H314.854l-85.588-85.589A120.661,120.661,0,0,0,193.815,1658.947Z" transform="translate(-134.815 905.026)" fill="#29ad00"/>
+    <path id="Path_16628" data-name="Path 16628" d="M586.994,1518.4l-85.588,85.211V1483.1A120.93,120.93,0,0,1,586.994,1518.4Z" transform="translate(-322.287 960.366)" fill="#ee8d3c"/>
+    <path id="Path_16629" data-name="Path 16629" d="M622.445,1658.947H501.406l85.588-85.589A120.661,120.661,0,0,1,622.445,1658.947Z" transform="translate(-322.593 905.026)" fill="#d23d50"/>
+    <path id="Path_16630" data-name="Path 16630" d="M384.812,1599.255a75.417,75.417,0,0,0-75.418,75.417H460.229A75.417,75.417,0,0,0,384.812,1599.255Z" transform="translate(-205.486 889.301)" fill="#dedede"/>
+    <path id="Path_16631" data-name="Path 16631" d="M394.488,1617.9c-38.4,0-69.529,31.654-69.529,68.092H464.018C464.018,1649.558,432.889,1617.9,394.488,1617.9Z" transform="translate(-214.94 877.977)" fill="#fff"/>
+    <g id="Group_11906" data-name="Group 11906" transform="matrix(-0.588, -0.809, 0.809, -0.588, 178.918, 2565.973)">
+      <path id="Path_16599" data-name="Path 16599" d="M6.3,0,61.393,14.95,4.836,6.689,0,2.37Z" fill="#44c8f5"/>
+    </g>
+    <text id="Very_High" data-name="Very
+High" transform="translate(302 2488.766)" fill="#141b2f" font-size="12" font-family="Muli-SemiBold, Muli" font-weight="600"><tspan x="0" y="0">Very</tspan><tspan x="0" y="14">High</tspan></text>
+    <text id="High" transform="translate(242.222 2440)" fill="#141b2f" font-size="12" font-family="Muli-SemiBold, Muli" font-weight="600"><tspan x="0" y="0">High</tspan></text>
+    <text id="Moderate" transform="translate(71 2440)" fill="#141b2f" font-size="12" font-family="Muli-SemiBold, Muli" font-weight="600"><tspan x="0" y="0">Moderate</tspan></text>
+    <text id="Low" transform="translate(33 2490.783)" fill="#141b2f" font-size="12" font-family="Muli-SemiBold, Muli" font-weight="600"><tspan x="0" y="0">Low</tspan></text>
+    <g id="Group_11905" data-name="Group 11905" transform="translate(172.449 2554.496)">
+      <path id="Path_16598" data-name="Path 16598" d="M3777.2,2050.719a6.751,6.751,0,1,1,5.97,7.45A6.751,6.751,0,0,1,3777.2,2050.719Z" transform="translate(-3777.154 -2044.707)" fill="#039"/>
+    </g>
+  </g>
+</svg>

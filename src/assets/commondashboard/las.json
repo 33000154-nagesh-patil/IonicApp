@@ -1,0 +1,66 @@
+{
+"" :{
+    "heading": "Details",
+    "discription": "Discover for Investments",
+    "Product":"LAS",
+    "action1":"Add to card",
+     "action2":"Pledge",
+    "Cards": [
+       
+        {
+            "card_Type": "value",
+            "heading": "Basic Information",
+            "description": "",
+            "rows": [
+                {
+                    "col_In_row": [
+                        {    
+                            "subheading":"Dabur India Limited",
+                             "img":""
+                        }
+                    ]
+                },
+                { 
+                    
+                    "col_In_row": [
+                        {
+                            "icon": "",
+                            "lable": "Available Quantity",
+                            "value": "50"
+                        },
+{
+                            "icon": "",
+                            "lable": "Haircut Rate",
+                            "value": "20%"
+                        }
+                    ]
+                },
+                {
+                    "col_In_row": [
+                        {
+                            "icon": "",
+                            "lable": "Total Loan",
+                            "value": "2315.50"
+                        },
+                        {
+                            "icon": "",
+                            "lable": "Interest Rate",
+                            "value": "5%"
+                        }
+                    ]
+                },
+                {
+                    "col_In_row": [
+                        {
+                            "icon": "",
+                            "lable": "EMI",
+                            "value": "810"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+   
+}
+}

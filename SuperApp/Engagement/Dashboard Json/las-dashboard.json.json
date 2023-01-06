@@ -1,0 +1,110 @@
+{
+    "productLanding": {
+        "LAS": {
+            "objectContent": [
+                {
+                    "contentType": "cardList",
+                    "Title": "Completed Loan",
+                    "card": [
+                        {
+                            "row1": {
+                                "title": "Avenue Supermarts Limited",
+                                "action": "assets/icon/leftArrowIcon.svg"
+                            },
+                            "row2": {
+                                "col1": "quantity",
+                                "val1": 20,
+                                "col2": "totalLOan",
+                                "val2": "1230",
+                                "col3": "status",
+                                "val3": "Success"
+                            }
+                        },
+                        {
+                            "row1": {
+                                "title": "Zydus Lifesciences Limited",
+                                "action": "assets/icon/leftArrowIcon.svg"
+                            },
+                            "row2": {
+                                "col1": "quantity",
+                                "val1": 20,
+                                "col2": "totalLOan",
+                                "val2": "1230",
+                                "col3": "status",
+                                "val3": "Success"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "contentType": "cardList",
+                    "Title": "Ongoing Loan",
+                    "card": [
+                        {
+                            "row1": {
+                                "title": "Dabur India Limited",
+                                "action": "assets/icon/leftArrowIcon.svg"
+                            },
+                            "row2": {
+                                "col1": "quantity",
+                                "val1": 20,
+                                "col2": "totalLOan",
+                                "val2": "1230",
+                                "col3": "AmountPending",
+                                "val3": "1230"
+                            }
+                        },
+                        {
+                            "row1": {
+                                "title": "Intergloble Aviation Limited",
+                                "action": "assets/icon/leftArrowIcon.svg"
+                            },
+                            "row2": {
+                                "col1": "quantity",
+                                "val1": 20,
+                                "col2": "totalLOan",
+                                "val2": "1230",
+                                "col3": "AmountPending",
+                                "val3": "1230"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "contentType": "cardList",
+                    "Title": "Payment History",
+                    "card": [
+                        {
+                            "row1": {
+                                "title": "Avenue Supermarts Limited",
+                                "action": "assets/icon/leftArrowIcon.svg"
+                            },
+                            "row2": {
+                                "col1": "quantity",
+                                "val1": 20,
+                                "col2": "totalLOan",
+                                "val2": "1230",
+                                "col3": "Status",
+                                "val3": "Success"
+                            }
+                        },
+                        {
+                            "row1": {
+                                "title": "Zydus Lifesciences Limited",
+                                "action": "assets/icon/leftArrowIcon.svg"
+                            },
+                            "row2": {
+                                "col1": "quantity",
+                                "val1": 20,
+                                "col2": "totalLOan",
+                                "val2": "1230",
+                                "col3": "Status",
+                                "val3": "Success"
+                            }
+                        }
+                    ]
+                }
+        ]
+    }
+}
+}

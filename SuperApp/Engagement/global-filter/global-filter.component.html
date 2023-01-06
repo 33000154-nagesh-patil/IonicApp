@@ -1,0 +1,109 @@
+<ion-header class="fixed-top">
+  <ion-toolbar>
+
+    <ion-row>
+      <ion-col [size]="'1'" id="goBack">
+        <div class="custTextAlignCenter">
+          <ion-img [src]="imageList?.arrow" class="mt-3 custInvestArrow" (click)="cancel()"></ion-img>
+        </div>
+      </ion-col>
+      <ion-col class="custFontFamilyMuliBold muli-16pt custColorDark mt-3">Filter</ion-col>
+      <ion-col size="3" class="custFontFamilyMuliBold muli-14pt custColorDarkishBlue  me-2 text-end mt-3"
+        (click)="clearAll()">Clear All</ion-col>
+
+
+
+      <ion-col class="custCss" [size]="'1.7'" (click)="gotoSearch()">
+        <img class="custIcon1" src="assets\icon\search.svg" />
+      </ion-col>
+
+    </ion-row>
+
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-grid class="pt-5 h-100">
+    <ion-row class="h-100 mt-3">
+
+      <ion-col [size]="'5'" class="custBorder">
+        <ion-row *ngFor="let item of filterKey" class="py-3 ps-3 border-bottom custFontFamilyMuliBold muli-14pt mt-2 "
+          (click)="keySelection(item)" [ngClass]="(filterKey1==item)?'custColorDarkishBlue':''">
+          {{item}}
+          <ion-icon *ngIf="filter[item] > 0" name="radio-button-on" class="custColorBrightCyan"></ion-icon>
+        </ion-row>
+
+     
+        <!-- code for take third layer as a key's
+          <ion-row  class="py-3 ps-3 border-bottom custFontFamilyMuliBold muli-14pt mt-2 "
+        *ngFor="let x of valueSelectionArray" [ngClass]="(filterKey1==item)?'custColorDarkishBlue':''" (click)="newKeySelection(x)">
+          {{x?.name}}
+          <ion-col *ngIf="filter[item] > 0" name="radio-button-on" class="custColorBrightCyan"></ion-col>
+        </ion-row> -->
+ 
+
+
+
+      </ion-col>
+
+      <ion-col [size]="'7'">
+        <ion-row>
+          <ion-searchbar class=" w-100  mx-3 px-1 border rounded" (ionInput)="getValue($event)"
+            *ngIf="filterKey1=='SchemeName' || filterKey1=='AMC'" [(ngModel)]="term" placeholder="Search by fund name">
+          </ion-searchbar>
+        </ion-row>
+
+        <div>
+          <!-- *ngIf="filterKey1 !=='Category'" -->
+          <ion-row class="py-2 ps-3 d-flex align-items-center  border-bottom custFontFamilyMuliBold mt-2 muli-12pt"
+            *ngFor="let x of filterVal">
+
+            <ion-checkbox color="secondary" mode="ios" class="me-2 custCheckBox" (click)="valueSelection(x)"
+              [(ngModel)]="filter[filterKey1][x.name]"></ion-checkbox>
+            <span class="custFontFamilyMuliBold muli-12pt py-2 text" *ngIf="filterKey1!='Rating'"
+              [ngClass]="(filterVal==x.name)?'custColorDarkishBlue':''">{{x.name}}</span>
+            <img *ngIf="x?.icon" [src]="x?.icon">
+          </ion-row>
+        </div>
+
+        <!--category mat-accordian start-->
+        <!-- <div *ngIf="filterKey1 ==='Category'" >         
+          <ion-row class="py-2 ps-3 d-flex align-items-center  border-bottom custFontFamilyMuliBold mt-2 muli-12pt" *ngFor="let item of filterVal">          
+            <mat-accordion class="w-100 example-headers-align" >
+              <mat-expansion-panel class="custBAckGround" [disabled]="item['hasLayer'].length==''" >                                                                                                                      
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    <span class="custFontFamilyMuliBold muli-12pt py-2 text" *ngIf="item?.name"
+                      [ngClass]="(filterVal==item.name)?'custColorDarkishBlue':''">
+                      <ion-checkbox color="secondary" mode="ios" class="me-2 custCheckBox" [ngModel]="filter[filterKey1][item.name]" (click)="valueSelection(item.name)" *ngIf="!(item['hasLayer'].length)"></ion-checkbox>
+                      {{item.name}}
+                    </span>                  
+                  </mat-panel-title>
+                </mat-expansion-panel-header>
+                
+                <div *ngFor="let x of item['hasLayer']" >                                   
+                  <ion-checkbox color="secondary" mode="ios" class="me-2 custCheckBox" ></ion-checkbox>                  
+                    <span class="custFontFamilyMuliBold muli-12pt" >{{x.name}}</span>
+                    <img *ngIf="x?.icon" [src]="x?.icon"> 
+                  </div>                                               
+              </mat-expansion-panel>
+            </mat-accordion>  
+          </ion-row>       
+        </div> -->
+
+      </ion-col>
+    </ion-row>
+    <ion-row class="fixed-bottom p-3">
+      <ion-col [size]="'6'" class="ion-no-padding" (click)="cancel()">
+        <ion-button expand="block" class="text-capitalize custTryButton d-flex justify-content-center">
+          <span class="custFontFamilyMuliRegular text-center muli-14pt custColorBrightCyan">cancel</span>
+        </ion-button>
+      </ion-col>
+
+      <ion-col [size]="'6'" class="ion-no-padding" (click)="apply()">
+        <ion-button expand="block" class="text-capitalize text-center custLooksBtn"><span
+            class="custColorWhite custFontFamilyMuliBold muli-16pt">apply</span></ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>

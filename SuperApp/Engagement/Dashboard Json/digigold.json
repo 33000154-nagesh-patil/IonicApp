@@ -1,0 +1,119 @@
+{
+  "KYCPending": [
+    {
+      "icon":"assets/icon/pendingIcon.svg",
+      "title": "KYC - Pending"
+    }
+  ],
+  "objectContent": [
+    {
+      "contentType": "heading",
+      "card": [
+        {
+          "row1": {
+            "heading": "My Investment",
+            "description": "An overview of your Investments",
+            "box": false
+          },
+          "row2": {
+            "heading": "My Silver Innvestment",
+            "description": "An overview of your Gold Investments",
+            "box": false
+
+          }
+        }
+      ]
+    },
+    {
+      "row1": [
+        {
+          "Current Rate/Gram":"₹5251.16"
+        }
+      ],
+      "row2": [
+        {
+            "Total Gold Holding": 4.5,
+            "Invested Amount": "65000"
+        }
+      ],
+      "graph": [
+        {
+          "nav": 20,
+          "nav_date": "2021-07-12",
+          "plan_id": 40818
+        },
+        {
+          "nav": 10,
+          "nav_date": "2021-07-12",
+          "plan_id": 40818
+        },
+        {
+          "nav": 60,
+          "nav_date": "2021-07-12",
+          "plan_id": 40818
+        },
+        {
+          "nav": 25,
+          "nav_date": "2021-07-12",
+          "plan_id": 40818
+        },
+        {
+          "nav": 54,
+          "nav_date": "2021-07-12",
+          "plan_id": 40818
+        },
+        {
+          "nav": 20,
+          "nav_date": "2021-07-12",
+          "plan_id": 40818
+        },
+        {
+          "nav": 30,
+          "nav_date": "2021-07-12",
+          "plan_id": 40818
+        }
+      ],
+      "graph_footer": {
+        "row": {
+            "col1": "Start SIP",
+            "col2": "Compare"
+        }
+    }
+    },
+    {
+      "contentType": "Step",
+      "heading": "Benefits Of Digital Commodities",
+      "data": [
+        {
+          "Icon": "assets/icon/secureIcon.svg",
+          "Steps": "100% Secure",
+          "Disc": "Stored in insured & guarded vaults"
+        },
+        {
+          "Icon": "assets/icon/diversifyPortfolioIcon.svg",
+          "Steps": "Diversify Portfolio",
+          "Disc": "Balance your portfolio. Reduce risk concentration"
+        }
+      ]
+    },
+    {
+    "contentType": "donntGraph",
+    "chartValue":[
+      {
+        "value":65000,
+        "percentage":50,
+        "label":"Gold" 
+      },
+      {
+        "value":65000,
+        "percentage":50,
+        "label":"Silver" 
+      }
+    ]
+  }
+  ]
+}
+
+
+
+

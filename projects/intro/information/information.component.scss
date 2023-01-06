@@ -1,0 +1,46 @@
+:host{
+    .cc_bg {
+        background-image: linear-gradient(to top, var(--slide-linearFirst),var(--slide-linearSecond));
+    }
+    ion-slides ion-slide .custButton {
+        --background: none !important;
+        --box-shadow: none;
+    }
+
+    .custPadding5 {
+        padding: 2.2rem!important;
+    }
+
+    .slideOneImg{
+        height: 72px;
+        width: 71px;
+    }
+    .custBox{
+        height: 25px;
+        width: 40px;
+        opacity: 0.4;
+    }
+
+    .custMarginBottom40{
+        margin-bottom: 40px;
+    }
+
+    .customMarginTop9{
+        margin-top: -9px;
+    }
+    .custSliderImg{
+        height: 142px;
+        opacity: 0.6;
+    }
+    .custColoum{
+        position: absolute;
+        bottom: 33px;
+        right: 0;
+    }
+
+    .custDivDisplay{
+        vertical-align: middle;
+        position: absolute;
+        display: inline-grid;
+    }
+}

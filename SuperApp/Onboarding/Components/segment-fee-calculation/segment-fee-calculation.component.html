@@ -1,0 +1,171 @@
+<!-- <ion-app> -->
+  <ion-header>
+    <ion-toolbar class="custBackgroundDynamicColorWhite">
+      <ion-grid>
+        <ion-row>
+          <ion-col [size]="'1'" id="goBack" class=" " (click)="goback()">
+            <div class="custTextAlignCenter  mt-2">
+              <ion-img [src]="imageList?.arrow" class="custWithoutTextImg "></ion-img>
+            </div>
+          </ion-col>
+          <ion-col [size]="'11'">
+            <span class="custFontFamilyMuliBold muli-16pt custColorDark custLineHight40">Segment Fee Calculation</span>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <!-- <mat-form-field appearance="outline" class="w-100">
+  <mat-label>Firstname</mat-label>
+  <input [ngModel]="profileDetails?.firstName" formControlName="firstName" matInput required>
+</mat-form-field> -->
+    <ion-row class="m-4" *ngFor="let item of segMentJsonData; index as i">
+
+      <mat-accordion class="example-headers-align w-100 custColorDarkishBlue h-5">
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <ion-col [size]="'6'" class="custFontFamilyMuliBold muli-14pt custLineHight20 custColorDark d-flex justify-content-start text-center">{{item?.title}}</ion-col>
+              <ion-col class="custFontFamilyMuliBold muli-14pt custLineHight20 custColorDark d-flex justify-content-end text-center">{{item?.amount}}</ion-col>
+            </mat-panel-title>
+
+          </mat-expansion-panel-header>
+
+          <!-- <div class="bodycontent px-3">
+      <p>
+        <span class="custFontFamilyMuliRegular  muli-12pt custLineHight20 custDetail">fdsfsd
+        </span>
+      </p>
+    </div> -->
+          <ion-row>
+            <ion-col [size]="6" >
+              {{item.value[0].row1.Fee}}
+            </ion-col>
+            <ion-col [size]="4"  class="custFontFamilyMuliSemiBold muli-15pt custLineHight20 custColorDark d-flex justify-content-end">
+              {{item.value[0].row1.amount1}}
+            </ion-col>
+          </ion-row>
+
+          <ion-row>
+            <ion-col [size]="6">
+              {{item.value[0].row2.GST}}
+            </ion-col>
+            <ion-col [size]="4" class="custFontFamilyMuliSemiBold muli-15pt custLineHight20 custColorDark d-flex justify-content-end">
+              {{item.value[0].row2.amount2}}
+            </ion-col>
+          </ion-row>
+
+          <ion-row>
+            <ion-col [size]="6" class="custFontFamilyMuliBold" >
+              {{item.value[0].row3.total}}
+            </ion-col>
+            <ion-col [size]="4" class="custFontFamilyMuliBold muli-15pt custLineHight20 custColorDark d-flex justify-content-end">
+              {{item.value[0].row3.amount3}}
+            </ion-col>
+          </ion-row>
+
+        </mat-expansion-panel>
+      </mat-accordion>
+    </ion-row>
+
+    <ion-row class="m-4">
+      <!-- <mat-radio-group> -->
+      <mat-radio-button (click)="getCal(cash)">
+        Sharing 70 - 30% for Security Deposit {{cash}}
+      </mat-radio-button>
+    <!-- </mat-radio-group> -->
+    </ion-row>
+
+    <ion-row class="m-4">
+    <!-- <mat-radio-group> -->
+      <mat-radio-button (click)="getCal(stock)">
+        Sharing 75 - 25% for Security Deposit {{stock}}
+      </mat-radio-button>
+    <!-- </mat-radio-group> -->
+    </ion-row>
+
+
+
+    <ion-row class="m-4">
+
+      <mat-accordion class="example-headers-align w-100 custColorDarkishBlue h-5">
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <span class="custFontFamilyMuliBold muli-14pt custLineHight20 custColorDark">Total Price Detail</span>
+              <!-- <span class="custFontFamilyMuliSemiBold muli-14pt custLineHight20 custColorDark">75000</span> -->
+            </mat-panel-title>
+
+          </mat-expansion-panel-header>
+
+          <!-- <div class="bodycontent px-3">
+      <p>
+        <span class="custFontFamilyMuliRegular  muli-12pt custLineHight20 custDetail">fdsfsd
+        </span>
+      </p>
+    </div> -->
+
+          <!-- <ion-row>
+            <ion-col [size]="6">
+              BSE Cash
+            </ion-col>
+            <ion-col [size]="6">
+              2360
+            </ion-col>
+          </ion-row> -->
+          <ion-row>
+            <ion-col [size]="6" >
+              NSE Cash
+            </ion-col>
+            <ion-col [size]="4"  class="custFontFamilyMuliSemiBold muli-15pt custLineHight20 custColorDark d-flex justify-content-end">
+              {{nse}}
+            </ion-col>
+          </ion-row>
+
+          <ion-row>
+            <ion-col [size]="6">
+              BSE Cash
+            </ion-col>
+            <ion-col [size]="4" class="custFontFamilyMuliSemiBold muli-15pt custLineHight20 custColorDark d-flex justify-content-end">
+              {{bse}}
+            </ion-col>
+          </ion-row>
+
+          <ion-row>
+            <ion-col [size]="6" class="custFontFamilyMuliBold" >
+              Sequrity Deposit
+            </ion-col>
+            <ion-col [size]="4" class="custFontFamilyMuliBold muli-15pt custLineHight20 custColorDark d-flex justify-content-end">
+              {{depositAmount}}
+            </ion-col>
+          </ion-row>
+
+          <ion-row>
+            <ion-col [size]="6" class="custFontFamilyMuliBold" >
+              Grand Total
+            </ion-col>
+            <ion-col [size]="4" class="custFontFamilyMuliBold muli-15pt custLineHight20 custColorDark d-flex justify-content-end">
+              {{placeAmount}}
+            </ion-col>
+          </ion-row>
+
+        </mat-expansion-panel>
+      </mat-accordion>
+    </ion-row>
+
+
+  </ion-content>
+
+  <ion-footer>
+    <ion-row>
+      <ion-col>
+        <button class="btn w-100 text-center custBackgroundColorBrightCyan" (click)="buttonClicked(1000)">
+          <span class="custColorWhite custFontFamilyMuliBold muli-16pt">Pay Now</span>
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-footer>
+
+<!-- </ion-app> -->

@@ -1,0 +1,178 @@
+<ion-app>
+<ion-header>
+  <ion-toolbar class="custBackgroundDynamicColorWhite">
+    <ion-grid>
+      <ion-row>
+        <ion-col [size]="'1'" class="text-center mt-1" (click)="goback()">
+          <ion-img [src]="imageList?.arrow" class="custKYCImg mt-2"></ion-img>
+        </ion-col>
+        <ion-col [size]="'10'" class="text-start mt-2">
+          <span class="custFontFamilyMuliBold muli-16pt ">Business Overview</span>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="m-4">
+  <form [formGroup]="businessOverviewForm" (ngSubmit)="getBusinessOverviewDetail()">
+    <ion-grid class="mx-2">
+
+      <ion-row class="muli-16pt custMargin custColorDark mt-2  custFontFamilyMuliBold custMargin10">
+        Contact Info
+      </ion-row>
+
+      <!-- <ion-row class="custColorDark muli-14pt mt-1">
+        Compelete and Submit Form
+      </ion-row> -->
+
+      <mat-form-field appearance="outline" class="w-100">
+        <mat-label class="custColorGreyish">Enter Bussiness name</mat-label>
+        <input class="w-100" type="text" matInput formControlName="businessName" minlength="10" />
+        <mat-error *ngIf="checkError('businessName','required')">
+          businessName is Required
+        </mat-error>
+      </mat-form-field>
+
+
+      <mat-form-field appearance="outline" class="w-100" *ngIf="SelectBussinessType" >
+        <mat-label class="custColorGreyish">Select Bussiness Type</mat-label>
+        <mat-select name="Bussiness Type" formControlName="bussinessType">
+          <mat-option [value]="item.ID" *ngFor="let item of businessType" (click)="getBusinessType()">{{item.TEXT}}
+          </mat-option>
+
+        </mat-select>
+        <mat-error *ngIf="checkError('bussinessType','required')">
+          BussinessType is Required
+        </mat-error>
+      </mat-form-field>
+      <!-- *ngIf="SelectBussinessCategory" -->
+      <mat-form-field appearance="outline" class="w-100" >
+        <mat-label class="custColorGreyish">Select Bussiness Category</mat-label>
+        <mat-select name="Bussiness Cotegory" formControlName="businessCategories" >
+          <mat-option  *ngFor="let item of businessCategory" [value]="item.ID" (click)="getBusinessSubCategory(item.TEXT)">{{item.TEXT}}
+          </mat-option>
+        </mat-select>
+        <mat-error *ngIf="checkError('businessCategories','required')">
+          BussinessCotegory is Required
+        </mat-error>
+      </mat-form-field>
+
+      <!-- *ngIf="SelectBussinessCategory" -->
+   <mat-form-field appearance="outline" class="w-100" >
+        <mat-label class="custColorGreyish">Select Bussiness SubCategory</mat-label>
+        <mat-select name="Bussiness Cotegory" formControlName="businessCategories">
+          <mat-option  *ngFor="let item of businessSubCategory" [value]="item.ID" (click)="businessSubCategory(item.TEXT)">{{item.TEXT}}
+          </mat-option>
+
+        </mat-select>
+        <mat-error *ngIf="checkError('businessCategories','required')">
+          BussinessCotegory is Required
+        </mat-error>
+      </mat-form-field>
+
+      <!-- <ion-row>
+          <mat-form-field appearance="outline" class="w-100">
+            <mat-label class="custColorGreyish">Select Sub Bussiness Category</mat-label>
+            <mat-select>
+              <mat-option value="College">College
+              </mat-option>
+              <mat-option value="Schools">Schools</mat-option>
+              <mat-option value="University">University
+              </mat-option>
+              <mat-option value="Professional Courses">Professional Courses
+              </mat-option>
+              <mat-option value="Distance Learning">Distance Learning
+              </mat-option>
+              <mat-option value="Pre-School/Day Care">Pre-School/Day Care
+              </mat-option>
+              <mat-option value="Coaching Institute">Coaching Institute
+              </mat-option>
+              <mat-option value="E-Learning">E-Learning
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </ion-row> -->
+      <!-- <textarea  rows="4" cols="50">At w3schools.com you will learn how to make a website. They offer free tutorials in all web development technologies.</textarea> -->
+
+      <mat-form-field appearance="outline" class="custTextArea" *ngIf="Description">
+        <mat-label class="custColorGreyish">Description</mat-label>
+        <textarea matInput cdkTextareaAutosize #autosize="cdkTextareaAutosize" cdkAutosizeMinRows="1"
+          cdkAutosizeMaxRows="3" formControlName="description"></textarea>
+          <mat-error *ngIf="checkError('description','required')">
+            description is Required
+          </mat-error>
+      </mat-form-field>
+
+
+      <label class="mx-2 mt-2" for="gender">How do you wish to accept payments</label>
+      <ion-row class="mt-3" *ngFor="let x of data">
+        <mat-radio-group name="On My Website/App" (ngModelChange)="checkBoxClicked($event)" (click)="checkBox()"
+          formControlName="paymentmethod">
+          <mat-radio-button value="x.name"
+            class="custFontFamilyMuliRegular muli-16pt custLineHight18 custColorBattlePGry paddingRadio">{{x.name}}
+          </mat-radio-button>
+        </mat-radio-group>
+      </ion-row>
+      <!-- <ion-row class="form-check mt-3">
+          <ion-checkbox class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+          <label class="form-check-label custColorGreyish" for="defaultCheck1">
+            Accept payments on Website/App
+          </label>
+        </ion-row> -->
+
+      <ion-row >
+        <mat-form-field appearance="outline" class="w-100" *ngIf="Urlinput">
+          <mat-label class="custColorGreyish">Url</mat-label>
+          <input type="text" matInput formControlName="Url" minlength="10" />
+        </mat-form-field>
+      </ion-row>
+
+
+      <!-- <ion-row class="w-100">
+        <ion-item lines="none" class="ion-no-padding contentBackground">
+          <ion-checkbox
+            color="secondary"
+            slot="start"
+            class="custCheckMargin custTer`mCheckbox"
+            checked="true"
+            mode="md"
+            id="checkBoxPolicy"
+          >
+          </ion-checkbox>
+          <p
+            class="custFontFamilyMuliBold muli-10pt custColorWarmGrey custLineHight15 ion-no-margin"
+          >
+          Accept payments on Website/ App
+            <span
+              ><a
+                href="https://proto.heytorus.com/RSL.pdf"
+                class="custColorDarkishBlue text-decoration-none"
+              >
+                Terms and Conditions</a
+              ></span
+            >
+          </p>
+        </ion-item>
+      </ion-row> -->
+
+      <!-- <ion-footer class="fixed-bottom"> -->
+
+      <!-- </ion-footer> -->
+
+
+    </ion-grid>
+  </form>
+</ion-content>
+<ion-footer>
+
+  <ion-row class="m-2" >
+    <!-- [disabled]="!businessOverviewForm.valid" -->
+    <button type="submit"  class="btn w-100 custHeightBtn text-center custBackgroundColorBrightCyan" [disabled]="!businessOverviewForm.valid" (click)="getBusinessOverviewDetail()">
+      <span class="custColorWhite custFontFamilyMuliBold muli-16pt">Continue</span>
+    </button>
+  </ion-row>
+</ion-footer>
+
+</ion-app>
+

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="29.129" height="30" viewBox="0 0 29.129 30">
+  <g id="Group_22922" data-name="Group 22922" transform="translate(-164.425 -940.732)">
+    <rect id="Rectangle_9749" data-name="Rectangle 9749" width="28.679" height="30" transform="translate(164.875 940.732)" fill="none"/>
+    <g id="Group_22919" data-name="Group 22919" transform="translate(3.985 98.761)">
+      <g id="policy" transform="translate(170.343 846.95)">
+        <path id="Path_21238" data-name="Path 21238" d="M28.8,17.772a4.277,4.277,0,1,0-7.128,3.179v5.374l2.851-1.349,2.851,1.349V20.951A4.263,4.263,0,0,0,28.8,17.772Zm-2.851,6.3L24.526,23.4l-1.426.675V21.8a4.2,4.2,0,0,0,2.851,0Zm-1.426-3.45a2.851,2.851,0,1,1,2.851-2.851A2.851,2.851,0,0,1,24.526,20.623Z" transform="translate(-9.578 -4.349)" fill="#039"/>
+        <path id="Path_21239" data-name="Path 21239" d="M10.125,15.75h4.989v1.426H10.125Z" transform="translate(-5.852 -6.265)" fill="#44c8f5"/>
+        <path id="Path_21240" data-name="Path 21240" d="M10.125,9h7.128v1.426H10.125Z" transform="translate(-5.72 -4.258)" fill="#44c8f5"/>
+        <path id="Path_21241" data-name="Path 21241" d="M6.195,24.226A1.637,1.637,0,0,1,4.5,22.656V3.82A1.637,1.637,0,0,1,6.195,2.25H19.754a1.637,1.637,0,0,1,1.695,1.57V6.959H19.754V3.82H6.195V22.656h8.474v1.57Z" transform="translate(-4.5 -2.25)" fill="#44c8f5"/>
+      </g>
+      <path id="Icon_awesome-stamp" data-name="Icon awesome-stamp" d="M.75,12.372h10.5V10.825H.75Zm9-6.186H8.192a.7.7,0,0,1-.69-.711V5.246A4.2,4.2,0,0,1,8,3.368a2.353,2.353,0,0,0,.212-1.46A2.3,2.3,0,0,0,6.406.037,2.274,2.274,0,0,0,3.751,2.32a2.328,2.328,0,0,0,.2.956,5.391,5.391,0,0,1,.546,2.2v0a.7.7,0,0,1-.69.711H2.251A2.286,2.286,0,0,0,0,8.506v.773a.762.762,0,0,0,.75.773h10.5A.762.762,0,0,0,12,9.279V8.506A2.286,2.286,0,0,0,9.752,6.186Z" transform="translate(160.89 856.333)" fill="#fff" stroke="#44c8f5" stroke-width="0.9"/>
+    </g>
+  </g>
+</svg>

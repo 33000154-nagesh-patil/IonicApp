@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Group_22358" data-name="Group 22358" transform="translate(5.063 0.219)">
+    <g id="Group_22253" data-name="Group 22253">
+      <g id="Group_22305" data-name="Group 22305" transform="translate(-6)">
+        <g id="Group_22252" data-name="Group 22252" transform="translate(0.938 -0.219)">
+          <rect id="Rectangle_9570" data-name="Rectangle 9570" width="24" height="24" fill="#fff"/>
+        </g>
+        <g id="Group_22251" data-name="Group 22251" transform="translate(2.396 0.781)">
+          <g id="Rectangle_9573" data-name="Rectangle 9573" transform="translate(0 10.083)" fill="#fff" stroke="#41c1f1" stroke-width="1">
+            <rect width="21.083" height="11.917" stroke="none"/>
+            <rect x="0.5" y="0.5" width="20.083" height="10.917" fill="none"/>
+          </g>
+          <g id="Group_22250" data-name="Group 22250" transform="translate(2.417 11.997)">
+            <path id="Path_21136" data-name="Path 21136" d="M-422.144,6731.088h13.312a2.547,2.547,0,0,0,.558,1.042,2.542,2.542,0,0,0,1.041.558v4.813a1.577,1.577,0,0,0-1.041.515,3.329,3.329,0,0,0-.558.956h-13.312a1.842,1.842,0,0,0-.334-.956,2.126,2.126,0,0,0-1-.687v-4.641a2.156,2.156,0,0,0,1-.558A1.853,1.853,0,0,0-422.144,6731.088Z" transform="translate(423.483 -6731.088)" fill="none" stroke="#41c1f1" stroke-width="1"/>
+            <g id="Group_22249" data-name="Group 22249" transform="translate(4.96 0.707)">
+              <g id="Ellipse_1401" data-name="Ellipse 1401" fill="#fff" stroke="#039" stroke-width="0.5">
+                <circle cx="3.165" cy="3.165" r="3.165" stroke="none"/>
+                <circle cx="3.165" cy="3.165" r="2.915" fill="none"/>
+              </g>
+              <path id="loan" d="M23.732,27.973a.236.236,0,1,0,0,.472H24.2a.706.706,0,0,1,.667.48H23.732a.236.236,0,0,0,0,.472h1.134a.707.707,0,0,1-.662.465h-.472a.236.236,0,0,0-.236.236.01.01,0,0,0,0,0,.233.233,0,0,0,.068.171l1.417,1.417a.236.236,0,0,0,.334-.334l-1.029-1.029a1.179,1.179,0,0,0,1.073-.929h.262a.236.236,0,1,0,0-.472h-.259a1.171,1.171,0,0,0-.219-.48h.478a.236.236,0,1,0,0-.472H23.732Z" transform="translate(-21.48 -26.551)" fill="#039" stroke="#039" stroke-width="0.1"/>
+            </g>
+          </g>
+          <line id="Line_863" data-name="Line 863" y1="3.667" transform="translate(5.958 6.875)" fill="none" stroke="#41c1f1" stroke-width="1.5"/>
+          <line id="Line_864" data-name="Line 864" y1="5.5" transform="translate(10.542 5.042)" fill="none" stroke="#41c1f1" stroke-width="1.5"/>
+          <line id="Line_865" data-name="Line 865" y1="8.708" transform="translate(15.125 1.375)" fill="none" stroke="#41c1f1" stroke-width="1.5"/>
+          <g id="Polygon_1" data-name="Polygon 1" transform="translate(12.833)" fill="#41c1f1">
+            <path d="M 3.681210279464722 3.166663408279419 L 0.9021233320236206 3.166663408279419 L 2.291666746139526 0.9434012770652771 L 3.681210279464722 3.166663408279419 Z" stroke="none"/>
+            <path d="M 2.291666746139526 1.886799097061157 L 1.80424976348877 2.666663646697998 L 2.779083728790283 2.666663646697998 L 2.291666746139526 1.886799097061157 M 2.291666746139526 3.576278686523438e-06 L 4.58333683013916 3.666663408279419 L -3.337860107421875e-06 3.666663408279419 L 2.291666746139526 3.576278686523438e-06 Z" stroke="none" fill="#41c1f1"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,157 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-grid>
+      <ion-row>
+        <ion-col [size]="'0.7'" class="text-center mt-2">
+          <ion-img [src]="imageList?.arrow" class="custWithoutTextImg" (click)="goBack()"></ion-img>
+        </ion-col>
+        <ion-col [size]="'8'">
+          <span class="custFontFamilyMuliBold muli-16pt custLineHight40  custColorBlack px-3">Nominee Details</span>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="contentBackground mt-5">
+  <ion-row>
+    <ion-col class="px-3">
+      <mat-form-field appearance="outline" class="w-100">
+        <mat-label>Nominee Full name</mat-label>
+        <input matInput />
+      </mat-form-field>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col
+      class="px-3 custFontFamilyMuliBold muli-16pt custLineHight40 custColorWarmGrey1"
+    >
+      Gender
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col class="custFontFamilyMuliBold muli-12pt px-3">
+      <mat-radio-group>
+        <span>
+          <mat-radio-button
+            value="1"
+            class="muli-12pt custLineHight18 custColorWarmGrey1 paddingRadio text-end custFontFamilyMuliBold px-1"
+          >
+            Male
+          </mat-radio-button>
+        </span>
+        <mat-radio-button
+          class="muli-12pt custLineHight18 custColorWarmGrey1 px-4 custFontFamilyMuliBold text text-end"
+          value="2"
+        >
+          Female
+        </mat-radio-button>
+      </mat-radio-group>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col class="px-3">
+      <mat-form-field appearance="outline" class="example-form-field w-100">
+        <mat-label>selected Date</mat-label>
+        <input
+          matInput
+          [matDatepicker]="picker"
+          #my
+          (dateChange)="dateSelected($event)"
+          [min]="minFromDate"
+          [max]="maxToDate"
+        />
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker>
+          <mat-datepicker-actions>
+            <button class="btn w-100 text-center custBackgroundColorBrightCyan">
+              <span
+                class="custColorWhite custFontFamilyMuliBold muli-16pt"
+                matDatepickerApply
+                >Confirm</span
+              >
+            </button>
+          </mat-datepicker-actions>
+        </mat-datepicker>
+      </mat-form-field>
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="mt-3">
+    <ion-col class="px-3">
+      <mat-form-field
+        appearance="outline"
+        class="w-100 m-0 p-0 custBackgroundColorWhite"
+      >
+        <mat-label>Select Relationship</mat-label>
+        <ion-icon
+          matSuffix
+          name="chevron-down-outline"
+          class="p-0 m-0 custColorBattlePGry"
+        ></ion-icon>
+        <mat-select placeholder="Segment">
+          <mat-option value="2022" class="custFontFamilyMuliRegular muli-14pt"
+            >Brother</mat-option
+          >
+          <mat-option value="2022" class="custFontFamilyMuliRegular muli-14pt"
+            >Father</mat-option
+          >
+          <mat-option value="2021" class="custFontFamilyMuliRegular muli-14pt"
+            >Mother</mat-option
+          >
+          <mat-option value="2021" class="custFontFamilyMuliRegular muli-14pt"
+            >Sister</mat-option
+          >
+          <mat-option value="2021" class="custFontFamilyMuliRegular muli-14pt"
+            >Wife</mat-option
+          >
+        </mat-select>
+      </mat-form-field>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col
+      class="px-3 custFontFamilyMuliBold muli-16pt custLineHight40 custColorWarmGrey1"
+    >
+      Percentage Allocation
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col class="px-3">
+      <mat-form-field appearance="outline" class="w-100">
+        <mat-label>Allocation in Percentage</mat-label>
+        <input matInput />
+      </mat-form-field>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col class="px-3">
+      <mat-form-field appearance="outline" class="w-100">
+        <mat-label>PAN / Aadhar Card Number</mat-label>
+        <input matInput />
+      </mat-form-field>
+    </ion-col>
+  </ion-row>
+</ion-content>
+
+<ion-footer>
+  <ion-row class="p-0 fixed-bottom">
+    <ion-col [size]="'6'" class="px-3">
+      <button
+        class="btn w-100 text-center custBackgroundColorWhite custButtonOutLine p-2"
+      >
+        <span class="custColorBrightCyan custFontFamilyMuliBold muli-16pt"
+          >cancel</span
+        >
+      </button>
+    </ion-col>
+    <ion-col [size]="'6'" class="px-3">
+      <button class="btn w-100 text-center custBackgroundColorBrightCyan p-2">
+        <span class="custColorWhite custFontFamilyMuliBold muli-16pt"
+          >update</span
+        >
+      </button>
+    </ion-col>
+  </ion-row>
+</ion-footer>

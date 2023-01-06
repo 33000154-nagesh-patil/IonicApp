@@ -1,0 +1,483 @@
+{
+    "SuperApp": {
+        "header": [
+
+        ],
+        "footer": [
+            {
+                "id":"1",
+                "name": "Wealth",
+                "icon": "assets/icon/wealthIcon.svg",
+                "url": "Engagement"
+            },
+            {
+              "id":"2",
+                "name": "Health",
+                "icon": "assets/icon/healthIcon.svg",
+                "url": "Engagement"
+            },
+            {
+              "id":"3",
+                "name": "Career",
+                "icon": "assets/icon/educationIcon.svg",
+                "url": "Engagement"
+            },
+            {
+              "id":"4",
+                "name": "Lifestyle",
+                "icon": "assets/bottom_tab/lifestyle.svg",
+                "url": "Engagement"
+            }
+        ]
+    },
+    "Stock": {
+        "header": [],
+        "footer": [
+            {
+              "id":"1",
+                "name": "home",
+                "icon": "assets/icon/homeIcon.svg",
+                "url": "Engagement"
+            },
+            {
+              "id":"2",
+                "name": "dashboard",
+                "icon": "assets/icon/dashboardIcon.svg",
+                "url": "Engagement"
+            },
+            {
+              "id":"3",
+                "name": "watchList",
+                "icon": "assets/icon/greyInvest.svg",
+                "url": "Shopping/listing"
+            },
+            {
+              "id":"4",
+                "name": "trades",
+                "icon": "assets/icon/watchListIcon.svg",
+                "url": "Operation/Vault"
+            },
+            {
+              "id":"5",
+                "name": "account",
+                "icon": "assets/icon/mfUserIcon.svg",
+                "url": "Operation/Account"
+            }
+        ]
+    },
+    "Mutual Fund": {
+        "header": [],
+        "footer": [
+              {
+                "id":"1",
+                "name": "home",
+                "icon": "assets/icon/homeIcon.svg",
+                "url": "Engagement"
+              },
+              {
+                "id":"2",
+                "name": "dashboard",
+                "icon": "assets/icon/dashboardIcon.svg",
+                "url": "Engagement"
+              },
+              {
+                "id":"3",
+                "name": "invest",
+                "icon": "assets/icon/investIcon.svg",
+                "url": "Shopping/listing"
+              },
+              {
+                "id":"4",
+                "name": "portfolio",
+                "icon": "assets/icon/watchListIcon.svg",
+                "url": "Operation/Vault"
+              },
+              {
+                "id":"5",
+                "name": "profile",
+                "icon": "assets/icon/mfUserIcon.svg",
+                "url": "Operation/Profile"
+              }
+        ]
+    },
+    "Gold": {
+        "header": [],
+        "footer": [
+              {
+                "id":"1",
+                "name": "home",
+                "icon": "assets/icon/homeIcon.svg",
+                "url": "Engagement"
+              },
+              {
+                "id":"2",
+                "name": "dashboard",
+                "icon": "assets/icon/dashboardIcon.svg",
+                "url": "Engagement"
+              },
+              {
+                "id":"3",
+                "name": "invest",
+                "icon": "assets/icon/investIcon.svg",
+                "url": "Shopping/listing"
+              },
+              {
+                "id":"4",
+                "name": "vault",
+                "icon": "assets/icon/vault.svg",
+                "url": "Operation/Vault"
+              },
+              {
+                "id":"5",
+                "name": "profile",
+                "icon": "assets/icon/mfUserIcon.svg",
+                "url": ""
+              }
+        ]
+    },
+    "Lab Test": {
+        "header": [],
+        "footer": [
+              {
+                "id":"1",
+                "name": "home",
+                "icon": "assets/icon/homeIcon.svg",
+                "url": "Engagement"
+              },
+              {
+                "id":"2",
+                "name": "dashboard",
+                "icon": "assets/icon/dashboardIcon.svg",
+                "url": "Engagement"
+              },
+              {
+                "id":"3",
+                "name": "explore",
+                "icon": "assets/icon/investIcon.svg",
+                "url": "Shopping/listing"
+              },
+              {
+                "id":"4",
+                "name": "track",
+                "icon": "assets/icon/watchListIcon.svg",
+                "url": "Operation/Track"
+              },
+              {
+                "id":"5",
+                "name": "profile",
+                "icon": "assets/icon/mfUserIcon.svg",
+                "url": ""
+              }
+        ]
+    },
+    "Medicine": {
+        "header": [],
+        "footer": [
+              {
+                "id":"1",
+                "name": "home",
+                "icon": "assets/icon/homeIcon.svg",
+                "url": "Engagement"
+              },
+              {
+                "id":"2",
+                "name": "dashboard",
+                "icon": "assets/icon/dashboardIcon.svg",
+                "url": "Engagement"
+              },
+              {
+                "id":"3",
+                "name": "explore",
+                "icon": "assets/icon/investIcon.svg",
+                "url": "Shopping/listing"
+              },
+              {
+                "id":"4",
+                "name": "track",
+                "icon": "assets/icon/watchListIcon.svg",
+                "url": "Operation/Track"
+              },
+              {
+                "id":"5",
+                "name": "profile",
+                "icon": "assets/icon/mfUserIcon.svg",
+                "url": ""
+              }
+        ]
+    },
+    "Courses": {
+        "header": [],
+        "footer": [
+              {
+                "id":"1",
+                "name": "home",
+                "icon": "assets/icon/homeIcon.svg",
+                "url": "Engagement"
+              },
+              {
+                "id":"2",
+                "name": "dashboard",
+                "icon": "assets/icon/dashboardIcon.svg",
+                "url": "Engagement"
+              },
+              {
+                "id":"3",
+                "name": "explore",
+                "icon": "assets/icon/investIcon.svg",
+                "url": "Shopping/listing"
+              },
+              {
+                "id":"4",
+                "name": "learn",
+                "icon": "assets/icon/watchListIcon.svg",
+                "url": "Operation/Learn"
+              },
+              {
+                "id":"5",
+                "name": "profile",
+                "icon": "assets/icon/mfUserIcon.svg",
+                "url": ""
+              }
+        ]
+    },
+    "Assessment": {
+        "header": [],
+        "footer": [
+              {
+                "id":"1",
+                "name": "home",
+                "icon": "assets/icon/homeIcon.svg",
+                "url": "Engagement"
+              },
+              {
+                "id":"2",
+                "name": "dashboard",
+                "icon": "assets/icon/dashboardIcon.svg",
+                "url": "Engagement"
+              },
+              {
+                "id":"3",
+                "name": "explore",
+                "icon": "assets/icon/investIcon.svg",
+                "url": "Shopping/listing"
+              },
+              {
+                "id":"4",
+                "name": "assessment",
+                "icon": "assets/icon/watchListIcon.svg",
+                "url": "Operation/Assessment"
+              },
+              {
+                "id":"5",
+                "name": "profile",
+                "icon": "assets/icon/mfUserIcon.svg",
+                "url": ""
+              }
+        ]
+    },
+    "Jobs": {
+        "header": [],
+        "footer": [
+              {
+                "id":"1",
+                "name": "home",
+                "icon": "assets/icon/homeIcon.svg",
+                "url": "Engagement"
+              },
+              {
+                "id":"2",
+                "name": "dashboard",
+                "icon": "assets/icon/dashboardIcon.svg",
+                "url": "Engagement"
+              },
+              {
+                "id":"3",
+                "name": "explore",
+                "icon": "assets/icon/investIcon.svg",
+                "url": "Shopping/listing"
+              },
+              {
+                "id":"4",
+                "name": "jobs",
+                "icon": "assets/icon/watchListIcon.svg",
+                "url": "Operation/Jobs"
+              },
+              {
+                "id":"5",
+                "name": "profile",
+                "icon": "assets/icon/mfUserIcon.svg",
+                "url": ""
+              }
+        ]
+    },
+    "Bill Payments":{
+      "footer":[
+        {
+          "id":"1",
+          "name": "home",
+          "icon": "assets/icon/homeIcon.svg",
+          "url": "Engagement"
+        },
+        {
+          "id":"2",
+          "name": "dashboard",
+          "icon": "assets/icon/dashboardIcon.svg",
+          "url": "Engagement"
+        },
+        {
+          "id":"3",
+          "name": "explore",
+          "icon": "assets/icon/investIcon.svg",
+          "url": "Shopping/listing"
+        },
+        {
+          "id":"4",
+          "name": "billPayment",
+          "icon": "assets/icon/watchListIcon.svg",
+          "url": "Operation/Vault"
+        },
+        {
+          "id":"5",
+          "name": "profile",
+          "icon": "assets/icon/mfUserIcon.svg",
+          "url": ""
+        }
+      ]
+    },
+
+    "Neo Bank":{
+      "header": [],
+      "footer":[
+        {
+          "id":"1",
+          "name": "home",
+          "icon": "assets/icon/homeIcon.svg",
+          "url": "Engagement"
+        },
+        {
+          "id":"2",
+          "name": "dashboard",
+          "icon": "assets/icon/dashboardIcon.svg",
+          "url": "Engagement"
+        },
+        {
+          "id":"3",
+          "name": "explore",
+          "icon": "assets/icon/investIcon.svg",
+          "url": "Shopping/listing"
+        },
+        {
+          "id":"4",
+          "name": "bank",
+          "icon": "assets/icon/watchListIcon.svg",
+          "url": "Operation/Vault"
+        },
+        {
+          "id":"5",
+          "name": "profile",
+          "icon": "assets/icon/mfUserIcon.svg",
+          "url": ""
+        }
+      ]
+    },
+    "Insurance":{
+      "footer":[
+        {
+          "id":"1",
+          "name": "home",
+          "icon": "assets/icon/homeIcon.svg",
+          "url": "Engagement"
+        },
+        {
+          "id":"2",
+          "name": "dashboard",
+          "icon": "assets/icon/dashboardIcon.svg",
+          "url": "Engagement"
+        },
+        {
+          "id":"3",
+          "name": "explore",
+          "icon": "assets/icon/investIcon.svg",
+          "url": "Shopping/listing"
+        },
+        {
+          "id":"4",
+          "name": "policy",
+          "icon": "assets/icon/watchListIcon.svg",
+          "url": "Operation/Vault"
+        },
+        {
+          "id":"5",
+          "name": "account",
+          "icon": "assets/icon/mfUserIcon.svg",
+          "url": ""
+        }
+      ]
+    },
+    "Wealth Robo Advisory":{
+      "footer":[
+        {
+          "id":"1",
+          "name": "home",
+          "icon": "assets/icon/homeIcon.svg",
+          "url": "Engagement"
+        },
+        {
+          "id":"2",
+          "name": "dashboard",
+          "icon": "assets/icon/dashboardIcon.svg",
+          "url": "Engagement"
+        },
+        {"id":"3",
+          "name": "explore",
+          "icon": "assets/icon/investIcon.svg",
+          "url": "Shopping/listing"
+        },
+        {
+          "id":"4",
+          "name": "loan",
+          "icon": "assets/icon/watchListIcon.svg",
+          "url": "Operation/Vault"
+        },
+        {
+          "id":"5",
+          "name": "account",
+          "icon": "assets/icon/mfUserIcon.svg",
+          "url": ""
+        }
+      ]
+    },
+    "Loans":{
+      "footer":[
+        {
+          "id":"1",
+          "name": "home",
+          "icon": "assets/icon/homeIcon.svg",
+          "url": "Engagement"
+        },
+        {
+          "id":"2",
+          "name": "dashboard",
+          "icon": "assets/icon/dashboardIcon.svg",
+          "url": "Engagement"
+        },
+        {"id":"3",
+          "name": "explore",
+          "icon": "assets/icon/investIcon.svg",
+          "url": "Shopping/listing"
+        },
+        {
+          "id":"4",
+          "name": "loan",
+          "icon": "assets/icon/watchListIcon.svg",
+          "url": "Operation/Vault"
+        },
+        {
+          "id":"5",
+          "name": "account",
+          "icon": "assets/icon/mfUserIcon.svg",
+          "url": ""
+        }
+      ]
+    }
+}

@@ -1,0 +1,105 @@
+<ion-header class="sticky-top ">
+  <ion-toolbar class="custBackgroundDynamicColorWhite">
+    <ion-grid class="header">
+      <ion-row>
+        <ion-col [size]="'1'" class="text-center " (click)="goBack()">
+          <ion-row class="backArrow">
+            <img src="assets/icon/arrow.svg" class="backArrow mt-2">
+          </ion-row>
+        </ion-col>
+        <ion-col [size]="'6'" class="">
+          <span class="custFontFamilyMuliBold muli-16pt custLineHight22 custColorBlack">Add Profile Address</span>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="contentBackground w-100 h-100">
+  <ion-grid class="p-3">
+    <ion-row class="pb-4 pt-1">This information will be used as your communication address</ion-row>
+    
+    <form [formGroup]="AddressFormGroup">
+      <ion-row>
+        <mat-form-field class="w-100 yourMat" appearance="outline">
+          <mat-label>Address type</mat-label>
+          <!-- <ion-icon matSuffix name="chevron-down-outline"></ion-icon> -->
+          <mat-select formControlName="Address" required>
+            <mat-option *ngFor="let option of Addressoptions;index as i" [value]="option.item">
+              {{ option.item }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </ion-row>
+      <ion-row class="">
+        <mat-form-field appearance="outline" class="w-100 yourMat">
+          <mat-label>Mobile No.</mat-label>
+          <input formControlName="Mobile" required matInput inputmode="numeric" maxlength="10" [(ngModel)]="Mobile">
+        </mat-form-field>
+      </ion-row>
+      <ion-row class="">
+        <mat-form-field appearance="outline" class="w-100 yourMat">
+          <mat-label>Address Line 1</mat-label>
+          <input formControlName="AddressLine1" matInput type="text" [(ngModel)]="AddressLine1">
+        </mat-form-field>
+      </ion-row>
+      <ion-row class="">
+        <mat-form-field appearance="outline" class="w-100 yourMat">
+          <mat-label>Address Line 2</mat-label>
+          <input formControlName="AddressLine2" matInput type="text" [(ngModel)]="AddressLine2">
+        </mat-form-field>
+      </ion-row>
+      <ion-row class="">
+        <mat-form-field appearance="outline" class="w-100 ">
+          <mat-label class="text-capitalize">{{'pincode' | translate}}</mat-label>
+          <input inputmode="numeric" maxlength="6" matInput formControlName="Pincode" required [(ngModel)]="Pincode"
+            class=" custFontFamilyMuliRegular muli-16pt custLineHight18 custColorDark"  (ngModelChange)="getCityMasterDetails('City',AddressFormGroup.value.Pincode)"
+           >
+        </mat-form-field>
+      </ion-row>
+      <ion-row class="">
+        <mat-form-field  appearance="outline" class="w-100">
+          <mat-label>City</mat-label>
+          <mat-select formControlName="City" required >
+            <mat-option  [value]="item.district" *ngFor="let item of city">
+             {{item.district}} 
+            </mat-option>
+          </mat-select>
+          <!-- <mat-error *ngIf="CountryControl.hasError('required')">Please choose an City</mat-error> -->
+        </mat-form-field>
+      </ion-row>
+
+
+      <ion-row>
+        <mat-form-field  appearance="outline" class="w-100 ">
+          <mat-label>State</mat-label>
+          <mat-select formControlName="State" required>
+            <mat-option [value]="item.statename"  *ngFor="let item of city" >
+              {{item.statename}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </ion-row>
+
+      <ion-row class="">
+        <mat-form-field  appearance="outline" class="w-100 ">
+          <mat-label>Country</mat-label>
+          <mat-select formControlName="Country" required>
+            <mat-option [value]="item.country"  *ngFor="let item of city" >
+              {{item.country}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </ion-row>
+
+      <ion-row class="p-3 fixed-bottom" *ngIf="updateaddress===undefined">
+        <button type="submit" [disabled]="!AddressFormGroup.valid" (click)="addAddress()"
+          class="w-100 custBackgroundColorBrightCyan btn custMyButton custColorWhite">Confirm</button>
+      </ion-row>
+      <ion-row class="p-3 fixed-bottom" *ngIf="updateaddress">
+        <button type="submit" [disabled]="!AddressFormGroup.valid" (click)="UpdateAdress()"
+          class="w-100 custBackgroundColorBrightCyan btn custMyButton custColorWhite">update</button>
+      </ion-row>
+
+    </form>
+  </ion-grid>
+</ion-content>

@@ -1,0 +1,63 @@
+<ion-header>
+  <ion-toolbar class="custBackgroundDynamicColorWhite">
+    <ion-grid>
+      <ion-row>
+        <ion-col [size]="'0.8'" class="text-center mt-1" (click)="goBack()">
+          <ion-img [src]="imageList?.arrow" class="custKYCImg mt-1"></ion-img>
+        </ion-col>
+        <ion-col [size]="'10'" class="text-start">
+          <span class="custFontFamilyMuliBold muli-18pt custLineHight40 custColorDark">Brand</span>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-grid class="custBackGround w-100 h-100">
+  <ion-img src="/assets/icon/MyntraBrandBackground.svg"></ion-img>
+  <ion-row class="justify-content-center">
+  <ion-col size="5" class="custPos">
+    <ion-card
+        class="custImgSize text-center aligin-self-center"
+        style="border-radius: 50%;height: 100%;">
+        <ion-img class="" [src]="getCardData.brandImg"></ion-img>
+      </ion-card>
+  </ion-col>
+</ion-row>
+<ion-row>
+  <span class="custFontFamilyMuliBold muli-16pt">Jackpots,Vouchers & Gift Cards (2)</span>
+</ion-row>
+<ion-row>
+  <span class="custFontFamilyMuliRegular muli-10pt custColorGreyish">Play and win assured rewards on each of the games below</span>
+</ion-row>
+
+
+<ion-row class="container">
+<ion-col size="9" *ngFor="let x of getCardData.subBrand">
+  <ion-card [ngClass]="x.rewardBackgroundColor">
+    <ion-card-content>
+      <ion-row class="p-2 justify-content-center">
+        <img class="custFontFamilyMuliBold custColorBlack commonBrandImg"
+          [src]="x.title">
+      </ion-row>
+      <ion-row class="justify-content-center">
+        <ion-row class="p-2 text-center">
+          <p class="custFontFamilyMuliRegular muli-10pt custDes">{{x.des}}
+          </p>
+        </ion-row>
+        <ion-row class="p-2 ">
+          <span class="custFontFamilyMuliBold custColorDark muli-22pt pb-3">{{x.prize}}
+          </span>
+        </ion-row>  
+        <ion-col  size="10" class="justify-content-center pt-1">
+          <button class="text-center w-100" [ngClass]="x.btnColor">
+            <span class="custColorDark custFontFamilyMuliBold muli-11pt">{{x.btnName}}</span></button>
+        </ion-col>
+      </ion-row>
+    </ion-card-content>
+  </ion-card>
+
+</ion-col>
+</ion-row>
+</ion-grid>
+</ion-content>

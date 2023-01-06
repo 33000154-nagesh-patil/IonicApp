@@ -1,0 +1,40 @@
+<svg id="wheel" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="282" height="282" viewBox="0 0 282 282">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" y1="1" x2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#afb1b3"/>
+      <stop offset="0.512" stop-color="#e1e4e8"/>
+      <stop offset="1" stop-color="#afb1b3"/>
+    </linearGradient>
+  </defs>
+  <circle id="Ellipse_1334" data-name="Ellipse 1334" cx="141" cy="141" r="141" opacity="0.4" fill="url(#linear-gradient)"/>
+  <g id="Group_23380" data-name="Group 23380" transform="translate(-7522.03 -94.034)">
+    <g id="_2" data-name="2" transform="translate(7531.03 367.18) rotate(-90)">
+      <g id="Group_23375" data-name="Group 23375" transform="translate(132.072 6.465)">
+        <path id="Path_23138" data-name="Path 23138" d="M0,124.9,40.583,0a130.952,130.952,0,0,1,65.576,47.768A130.982,130.982,0,0,1,131.323,124.9Z" transform="translate(0.252 0.035)" fill="#5dadec" stroke="#fff" stroke-width="2.5"/>
+        <path id="Path_23139" data-name="Path 23139" d="M41.215.8A131.394,131.394,0,0,1,77.254,19.268a131.268,131.268,0,0,1,29.082,29.075A131.077,131.077,0,0,1,125,84.983a131.262,131.262,0,0,1,6.433,39.989H.866L41.215.8m-.4-.8L0,125.61H132.074a132.094,132.094,0,0,0-25.227-77.633A132.073,132.073,0,0,0,40.81,0h0Z" stroke="#fff" stroke-width="2.5"/>
+        <text id="_10_off" data-name="10% off" transform="translate(61.441 78.305) rotate(45)" fill="#fff" font-size="18" font-family="Muli-ExtraBold, Muli" font-weight="800"><tspan x="-34.2" y="0">10% off</tspan></text>
+      </g>
+      <g id="Group_23376" data-name="Group 23376" transform="translate(25.226)">
+        <path id="Path_23140" data-name="Path 23140" d="M0,54.056a131.772,131.772,0,0,1,146.83-47.7l-40.583,124.9Z" transform="translate(0.436 0.316)" fill="#8252dd" stroke="#fff" stroke-width="2.5"/>
+        <path id="Path_23141" data-name="Path 23141" d="M106.848.632a131.227,131.227,0,0,1,40.014,6.237L106.513,131.051.878,54.3A131.389,131.389,0,0,1,106.848.632m0-.632A132.083,132.083,0,0,0,0,54.441l106.848,77.633,40.81-125.61A132.006,132.006,0,0,0,106.848,0Z" stroke="#fff" stroke-width="2.5"/>
+        <text id="_20_off" data-name="20% off" transform="matrix(0.966, -0.259, 0.259, 0.966, 85.257, 57.21)" fill="#fff" font-size="18" font-family="Muli-ExtraBold, Muli" font-weight="800"><tspan x="-34.209" y="0">20% off</tspan></text>
+      </g>
+      <g id="Group_23377" data-name="Group 23377" transform="translate(0 54.442)">
+        <path id="Path_23142" data-name="Path 23142" d="M24.98,154.382A131.752,131.752,0,0,1,24.98,0L131.221,77.191Z" transform="translate(0.316 0.442)" fill="#f8b95a" stroke="#fff" stroke-width="2.5"/>
+        <path id="Path_23143" data-name="Path 23143" d="M25.366.885,131,77.633,25.366,154.382a131.435,131.435,0,0,1,0-153.5M25.227,0a132.068,132.068,0,0,0,0,155.266L132.074,77.633,25.227,0Z" stroke="#fff" stroke-width="2.5"/>
+        <text id="Better_luck_next_time_" data-name="Better luck
+next time!" transform="translate(39.927 77.634) rotate(-90)" fill="#fff" font-size="16" font-family="Muli-ExtraBold, Muli" font-weight="800"><tspan x="-41.736" y="0">Better luck</tspan><tspan x="-38.312" y="20">next time!</tspan></text>
+      </g>
+      <g id="Group_23378" data-name="Group 23378" transform="translate(25.226 132.067)">
+        <path id="Path_23144" data-name="Path 23144" d="M106.412,131.247A131.559,131.559,0,0,1,65.7,124.8,130.936,130.936,0,0,1,0,77.191L106.241,0l40.583,124.9a131.543,131.543,0,0,1-40.419,6.351Z" transform="translate(0.436 0.518)" fill="#48c9a2" stroke="#fff" stroke-width="2.5"/>
+        <path id="Path_23145" data-name="Path 23145" d="M106.513,1.03l40.349,124.182a131.228,131.228,0,0,1-40.014,6.237,132.153,132.153,0,0,1-40.621-6.433,131.094,131.094,0,0,1-36.64-18.674A131.107,131.107,0,0,1,.878,77.772L106.513,1.024M106.848,0,0,77.64a132.073,132.073,0,0,0,66.037,47.977,132.046,132.046,0,0,0,81.621,0L106.848.006h0Z" stroke="#fff" stroke-width="2.5"/>
+        <text id="_30_off" data-name="30% off" transform="matrix(-0.966, -0.259, 0.259, -0.966, 87.964, 66.862)" fill="#fff" font-size="18" font-family="Muli-ExtraBold, Muli" font-weight="800"><tspan x="-34.2" y="0">30% off</tspan></text>
+      </g>
+      <g id="Group_23379" data-name="Group 23379" transform="translate(132.072 132.067)">
+        <path id="Path_23146" data-name="Path 23146" d="M0,0H131.323a130.924,130.924,0,0,1-25.164,77.128A130.952,130.952,0,0,1,40.583,124.9Z" transform="translate(0.436 0.322)" fill="#ef405b" stroke="#fff" stroke-width="2.5"/>
+        <path id="Path_23147" data-name="Path 23147" d="M131.443.638a131.263,131.263,0,0,1-6.433,39.989,131.415,131.415,0,0,1-18.667,36.64A131.133,131.133,0,0,1,77.26,106.342a131.219,131.219,0,0,1-36.039,18.471L.872.632h130.57M132.075,0H0L40.81,125.61a132.11,132.11,0,0,0,66.037-47.977A132.094,132.094,0,0,0,132.075,0h0Z" stroke="#fff" stroke-width="2.5"/>
+        <text id="_40_off" data-name="40% off" transform="translate(61.441 49.974) rotate(135)" fill="#fff" font-size="18" font-family="Muli-ExtraBold, Muli" font-weight="800"><tspan x="-34.2" y="0">40% off</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>

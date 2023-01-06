@@ -1,0 +1,194 @@
+<ion-app>
+  <!-- <ion-header>
+    <ion-toolbar>
+      <ion-grid>
+
+        <ion-row>
+          <ion-col [size]="'1'">
+            <ion-img [src]="imageList?.arrow" class="custArrorSize mt-1 custCenterAlign" (click)="goback()"></ion-img>
+          </ion-col>
+          <ion-col class="custFontFamilyMuliBold muli-16pt">ChatBot
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-toolbar>
+  </ion-header> -->
+
+  <cap-header [title]="Title" [otherTextName]="Title" [imageList]="imageList" [showArrow]="true" [showLabel]="false"
+    [showImg]="false" [showIndex]="false" [showNotification]="false" [showCartWithName]="true" [cartCount]="cartCount"
+    [showSideMenu]="false" [showSearch]="true" [showClose]="false" [showShare]="false" [showWatchList]="false"
+    [showCartWithoutName]="false" [showStories]="false" [padding]="true" [paddingSize]="'7'" [showOtherText]="true"
+    [backUrlName]="">
+  </cap-header>
+
+
+
+  <ion-content>
+        <div class="divide" #target>
+          <ion-grid>
+            <ion-card class="custCard">
+              <ion-row class="align-items-center ">
+                <ion-col size="2" class="">
+                  <ion-img [src]="imageList?.chatBot" class="custChat"></ion-img>
+                </ion-col>
+                <ion-col size="10">
+                  <span class="custFontFamilyMuliSemiBold muli-16pt custColorDarkishBlue">Hey User,</span><br>
+                  <span class="custFontFamilyMuliRegular muli-12pt">I am Bot, your Personal Digital Assistant</span>
+                </ion-col>
+              </ion-row>
+            </ion-card>
+
+            <div *ngFor="let message of messages;index as i">
+
+              <ion-row>
+                <ion-col [size]="9" *ngIf="currentUser == message.user && message.msg" class="message other-message">
+                  <span class="custFontFamilyMuliRegular muli-14pt">{{message.msg}}</span>
+                </ion-col>
+
+                <ion-col [size]="9" *ngIf="currentUser == message.user && message.msg1" class="message other-message">
+                  <span class="custFontFamilyMuliRegular muli-14pt">{{message.msg1}} {{ticketId}}</span>
+                </ion-col>
+                <ion-row *ngIf="currentUser == message.user && message.id==0 && message.input">
+                  <ion-col [size]="'12'" class="px-3" class="w-100 mb-2 ">
+                        <input class="btn w-100 text-center" [placeholder]="message.input" (keyup)="getDes($event)" [disabled]=" i != ArrayEnd">
+                  </ion-col>
+                </ion-row>
+                <ion-row *ngIf="currentUser == message.user && message.id==0 && message.upload">
+                  <ion-col [size]="'12'" class="px-3" class="w-100 mb-2 ">
+                        <input class="btn w-100 text-center" type="file" 
+                        (change)="onFileSelect($event)">
+                  </ion-col>
+                </ion-row>
+                <ion-row *ngIf="currentUser == message.user && message.id==0">
+                  <ion-col [size]="'12'" class="px-3" *ngFor="let btn of message.btn" class="w-100 mb-2 ">
+                    <button class="btn w-100 text-center custBackgroundColorWhite custTryButton" (click)="query(btn.name)"
+                    [disabled]=" i != ArrayEnd"><span
+                        class="custColorDark custFontFamilyMuliBold muli-14pt mb-1"
+                        [ngClass]="btn.css">{{btn.name}}</span></button>
+                  </ion-col>
+                </ion-row>
+                <ion-row *ngIf="currentUser == message.user && message.id==1">
+                  <ion-col [size]="'12'" class="px-3" *ngFor="let btn of message.btn">
+                    <button class="btn w-100 text-center custBackgroundColorWhite custTryButton"
+                      [disabled]="disabledButtons.includes(btn)" (click)="query(btn)"><span
+                        class="custColorDark custFontFamilyMuliBold muli-14pt mb-1"
+                        [ngClass]="btn.css">{{btn.name}}</span></button>
+                  </ion-col>
+                </ion-row>
+
+                <ion-col offset="3" [size]="9" *ngIf="currentUser != message.user && message.user == 'receiver'"
+                  class="message my-message">
+                  <span class="custFontFamilyMuliRegular muli-14pt">{{message.msg}}</span>
+                </ion-col>
+
+                <ion-col [size]="4" class="pb-2" *ngIf="currentUser == message.user && loader && i == indexVal" >
+                  <div id="container">
+                    <div id="loading-bubble" class="grey">
+                      <div class="spinner">
+                        <div class="bounce1"></div>
+                        <div class="bounce2"></div>
+                        <div class="bounce3"></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_aidqj9aw.json"  background="transparent"  speed="0.7"  style="width: 300px; height: 300px;"  loop controls autoplay></lottie-player> -->
+                </ion-col>
+
+              </ion-row>
+            </div>
+
+            <!-- <ion-row *ngIf="feedback" class="pb-1">
+              <ion-col offset="0" [size]="9">
+                <span class="custFontFamilyMuliRegular muli-14pt">Was this solution helpful ?</span>
+              </ion-col>
+            </ion-row> -->
+
+            <ion-row>
+              <ion-col offset="3" *ngIf="thumbs">
+                <button [disabled]="thumbDis" (click)="thumsUpDown('thumsUp')">
+                  <img src="assets/icon/thumbsUpGrey.svg" />
+                </button> &nbsp;&nbsp;
+                <button [disabled]="thumbDis" (click)="thumsUpDown('thumsDown')">
+                  <img src="assets/icon/thumbsDownGrey.svg" />
+                </button>
+              </ion-col>
+            </ion-row>
+
+            <ion-row>
+              <ion-col class="text-end">
+                <button *ngIf="thumsUp">
+                  <img src="assets/icon/thumbsUpLightBlue.svg" />
+                </button>
+                <button *ngIf="thumsDown">
+                  <img src="assets/icon/thumbsDownLightBlue.svg" />
+                </button>
+              </ion-col>
+            </ion-row>
+
+            <!-- <ion-row *ngIf="feedback" class="pb-1">
+              <ion-col offset="0" [size]="9">
+                <span class="custFontFamilyMuliRegular muli-14pt">Thanks for the Feedback !</span>
+              </ion-col>
+            </ion-row> -->
+
+
+
+
+            <ion-row *ngIf="thumsDown">
+              <ion-col [size]="'12'" class="px-3 w-100 mb-2">
+                <button class="btn w-100 text-center custBackgroundColorWhite custTryButton" (click)="thumbsDownRes('chat')"
+                  [disabled]="disabledButtons.includes('')"
+                  ><span
+                    class="custColorDark custFontFamilyMuliBold muli-14pt mb-1">Chat with Customer
+                    Support</span></button>
+              </ion-col>
+            </ion-row>
+            <ion-row *ngIf="thumsDown">
+              <ion-col [size]="'12'" class="px-3 w-100 mb-2">
+                <button class="btn w-100 text-center custBackgroundColorWhite custTryButton" (click)="thumbsDownRes('call')"
+                  [disabled]="disabledButtons.includes('')"
+                  ><span
+                    class="custColorDark custFontFamilyMuliBold muli-14pt mb-1">Request a Call
+                    back</span></button>
+              </ion-col>
+            </ion-row>
+            <ion-row *ngIf="thumsUp || sessionEnd">
+              <ion-col [size]="12" class="text-center">
+                <span class="custFontFamilyMuliBold muli-14pt custColorcustFadedRed">Chat Session has Ended</span>
+              </ion-col>
+            </ion-row>
+
+          </ion-grid>
+        </div>
+    <!-- </div>      -->
+  </ion-content>
+
+  <ion-footer class="custBackgroundColorWhite">
+
+    <ion-toolbar class="custBackgroundDynamicColorWhite p-2">
+
+      <ion-row>
+        <ion-col [size]="'10'" class="">
+          <input type="text" [(ngModel)]="newMsg" autocomplete="off" placeholder="Type your message here..."
+            class="formControl" [disabled]="isDisabled || sessionEnd" (keyup.enter)="query(newMsg)" />
+        </ion-col>
+
+        <ion-col [size]="'1'" class="text-center float-end  mt-2" (click)="query(newMsg)">
+
+          <button [disabled]="newMsg ===''" class="custBtn">
+        <ion-icon name="unlink-outline"></ion-icon>
+          </button>
+        </ion-col>
+        <ion-col [size]="'1'" class="text-center float-end  mt-2" (click)="query(newMsg)">
+
+          <button [disabled]="newMsg ===''" class="custBtn">
+            <ion-icon name="send" class=""></ion-icon>
+          </button>
+        </ion-col>
+
+      </ion-row>
+
+    </ion-toolbar>
+  </ion-footer>
+</ion-app>

@@ -1,0 +1,73 @@
+.custBox{
+    height: 4px;
+    width: 20px;
+    border-radius: 0.5px;
+}
+.demo-chart {
+    height: 400px;
+  }
+  .Equity-btn {
+    border-radius: 4px;
+    cursor: pointer;
+    color: #727682;
+    background-color: transparent;
+  }
+  .active {
+    background-color: #44c8f5;
+    color: #fff;
+  }
+  .sizehelpicon{
+    width: 15px;
+    height: 15px;
+  }
+
+
+  .something2 {
+
+    display: inline;
+
+    filter: invert(59%) sepia(31%) saturate(930%) hue-rotate(47deg) brightness(93%) contrast(84%);
+
+    height: 10px;
+
+}
+
+.backgrd {
+  background-color: #EEEEEE;
+}
+.container {
+  width: 100%;
+  margin: 15px auto;
+  overflow: auto;
+}
+.star {
+  top: -5px;
+  position: relative;
+  display: inline-block;
+  font-size: 1rem;
+  color: #d3d3d3;
+}
+.full {
+  top: -5px;
+  color: rgb(255, 197, 36);
+}
+.half {
+  position: absolute;
+  display: inline-block;
+  overflow: hidden;
+  color:  rgb(255, 197, 36);
+}
+.custScroll{
+  height: 200px;
+  overflow-y: scroll;
+}
+
+.mycss{
+  width: 21rem;
+  height: 17rem;
+  display: flex;
+  padding: 5px;
+}
+.my{
+  display: flex;
+}

@@ -1,0 +1,83 @@
+<ion-app>
+  <ion-header *ngIf="showHeader==false">
+    <ion-toolbar class="custBackgroundDynamicColorWhite">
+      <ion-grid>
+        <ion-row>
+          <ion-col [size]="'11'" class="text-center">
+            <span class="custFontFamilyMuliBold muli-14pt custLineHight40 custColorDark ">{{'setupInvestmentAccount'
+              | translate}}</span>
+          </ion-col>
+          <ion-col  [size]="'1'" class="text-center mt-1" (click)="dismiss()">
+            <ion-img [src]="imageList?.close" class="custKYCImg mt-2"></ion-img>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-router-outlet (activate)="onActivate($event)"></ion-router-outlet>
+  </ion-content>
+
+  <!-- <ion-row class="stepper_padding">
+    <ul class="StepProgress mt-3">
+      <li *ngFor="let x of onboardingStep.data" class="w-100"
+        [ngClass]="x?.status==='Y' ?'StepProgress-item is-done':'StepProgress-item current'">
+        <p class="custFontFamilyMuliBold muli-16pt">{{x?.OnboardingSteps}}
+        </p>
+        <p *ngIf="x?.span" class="custFontFamilyMuliRegular muli-10pt custLineHight22 custColorGreyish">{{x?.span}}</p>
+      </li>
+    </ul>
+  </ion-row> -->
+
+
+  <div class="custModalContainer"  *ngIf="progressBarModal && onboardingStep?.data">
+    <div id="showModalSMGSucces" class="modal-content">
+      <div class="footer">
+        <ion-row class="custFontFamilyMuliBold muli-18pt mt-3">{{'registerUserMsg' | translate}}</ion-row>
+        <ul class="StepProgress mt-3">
+          <li *ngFor="let x of onboardingStep?.data" class="d-flex justify-content-between w-100 mb-2 "
+            [ngClass]="x?.status==='Y' && !x.TransitionStep?'StepProgress-item is-done': !x.TransitionStep && x?.status==='N'?'StepProgress-item current':''">
+            <span *ngIf="!x.TransitionStep" class="custFontFamilyMuliBold muli-16pt">{{x?.OnboardingSteps}}</span>
+            <span *ngIf="x.status=='N' && !x.TransitionStep" class="custFontFamilyMuliBold mx-3 muli-12pt" (click)="retryNavigate(x)">Retry</span>
+          </li>
+        </ul>
+      </div>
+      <div class="custBackgroundColorWhite">
+        <p class="custFontFamilyMuliBold muli-18pt w-100 text-center ">{{'wantResart' | translate}}</p>
+        <ion-row class=" ion-no-padding w-100">
+          <ion-col [size]="'6'" class="ion-no-padding" (click)="getCancel()">
+            <ion-button expand="block" class="text-capitalize custTryButton d-flex justify-content-center">
+              <span class="custFontFamilyMuliRegular text-center muli-14pt custColorBrightCyan">{{'cancel' |
+                translate}}</span>
+            </ion-button>
+          </ion-col>
+
+          <ion-col [size]="'6'" class="ion-no-padding" (click)="Resume()">
+            <ion-button expand="block" class="text-capitalize text-center custLooksBtn"><span
+                class="custColorWhite custFontFamilyMuliBold muli-16pt">{{'resume' | translate}}</span></ion-button>
+          </ion-col>
+        </ion-row>
+      </div>
+    </div>
+  </div>
+
+  <div class="custModalContainer p-10" *ngIf="ConfirmErrorMsg">
+    <div id="showModalSMGSucces" class="modal-content custCenterAlign">
+      <ion-row class="custFontFamilyMuliBold muli-18pt pb-4">{{'wantcancel' | translate}}</ion-row>
+      <ion-row class=" ion-no-padding w-100">
+        <ion-col [size]="'6'" class="ion-no-padding" (click)="onCancel()">
+          
+          <ion-button expand="block" class="text-capitalize custTryButton d-flex justify-content-center">
+            <span class="custFontFamilyMuliRegular text-center muli-14pt custColorBrightCyan">{{'no' |
+              translate}}</span>
+          </ion-button>
+        </ion-col>
+
+        <ion-col [size]="'6'" class="ion-no-padding" (click)="onConfirmNo()">
+          <ion-button expand="block" class="text-capitalize text-center custLooksBtn"><span
+              class="custColorWhite custFontFamilyMuliBold muli-16pt">{{'yes' | translate}}</span></ion-button>
+        </ion-col>
+      </ion-row>
+    </div>
+  </div>
+</ion-app>

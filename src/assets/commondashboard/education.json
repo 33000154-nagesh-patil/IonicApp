@@ -1,0 +1,104 @@
+{
+    "":{
+    "heading": "Details",
+    "discription": "Discover for Investments",
+    "Product": "Education",
+    "action1":"Add to card",
+     "action2":"Buy",
+    "media": {
+        "mediatype": "video",
+        "url": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
+    },
+    "Cards": [
+       
+        {
+            "card_Type": "value",
+            "heading": "Basic Information",
+            "description": "",
+            "rows": [
+                {
+                    "col_In_row": [ 
+                        {    
+                            "subheading":"mutual Fund",
+                             "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjwR_qwwP-PgM2uGa5crh8YvIhpV_yc7LNXA&usqp=CAU"
+                        }
+                    ]
+                },
+                {
+                    "col_In_row": [
+                        {
+                           "icon": "",
+                            "lable": "Rating",
+                            "value": "4.1"
+                        },
+                        {
+                            "icon": "",
+                            "lable": "Including all texs price ",
+                            "value": "₹250"
+                        }
+                    ]
+                },
+                {
+                    "col_In_row": [
+                        {
+                            "icon": "",
+                            "lable": "enrolled",
+                            "value": "5"
+                        },
+                        {
+                            "icon": "",
+                            "lable": "Topics",
+                            "value": "10"
+                        }
+                    ]
+                },
+                {
+                    "col_In_row": [
+                        {
+                            "icon": "",
+                            "lable": "flexiblity",
+                            "value": "Flexible Deadlines"
+                        },
+                        {
+                            "icon": "",
+                            "lable": "availability",
+                            "value": "100% Online"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "Info": {
+        "heading": "Basic Information",
+        "product": "education"
+    },
+    "step": [
+        {
+            "heading": "Information Steps",
+            "data": [
+                {
+                    "Icon": "",
+                    "Steps": "Step 1",
+                    "Disc": "Select a scheme"
+                },
+                {
+                    "Icon": "",
+                    "Steps": "Step 2",
+                    "Disc": "Open investment account and make payment"
+                },
+                {
+                    "Icon": "",
+                    "Steps": "Step 3",
+                    "Disc": "HeyTorus submits transaction to mutual fund company"
+                },
+                {
+                    "Icon": "",
+                    "Steps": "Step 3",
+                    "Disc": "Mutual fund company sends confirmation to you via email and text in 1 working day"
+                }
+            ]
+        }
+    ]
+}
+}

@@ -1,0 +1,101 @@
+.custInvestmentIcon{
+    height: 58px;
+    width: 58px;
+}
+.custButtonBorder{
+    border-color: var(--custGray) !important;
+    border: 1px solid;
+    margin-right: 10px;
+    border-radius: 4px;
+}
+.custInvestArrow{
+    height: 9px;
+    width: 7px;
+    transform: rotate(180deg);
+}
+.custRotation{
+    transform: rotate(-90deg);
+}
+.custborder{
+
+    border: 1px solid green;
+    height: 52px;
+    width: 52px;
+
+}
+.custplus{
+    height: 20px;
+    width: 20px;
+}
+.backArrow{
+    height: 18px;
+    width: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+.custGrid{
+    margin: 0 -24px -16px !important;
+    --margin: 0 -24px -16px !important;
+    
+}
+
+.pdingleft {
+    padding-left: 17px;
+}
+
+.copltmargin{
+    margin-top: -50px;
+} 
+
+.copldtmargin{
+    margin-top: -40px;
+}
+
+h1{
+    border-bottom: 4px  solid darkblue;
+}
+
+.custMatForm {
+    width: 156px;
+    height: 56px;
+}
+
+.container {
+    width: 100%;
+    margin: 15px auto;
+    overflow: auto;
+  }
+
+:host ::ng-deep .mat-select-arrow {
+    opacity: 0;
+}
+.mat-form-field-appearance-outline .mat-form-field-wrapper {
+    margin: 0;
+ }
+.custArrorSize{
+    height: 16px;
+    width: 13px;
+}
+
+.inputPdig {
+    padding-left: 17px;
+}
+
+.inputPdigg {
+    padding-right: 17px;
+}
+
+.custColorReddish {
+    color: #D23D50;
+}
+.custPadd{
+ padding-bottom: 80px;
+}

@@ -1,0 +1,269 @@
+<ion-header *ngIf="showFirstStep || showSecondStep">
+  <ion-toolbar class="custBackgroundDynamicColorWhite">
+    <ion-grid>
+      <ion-row>
+        <ion-col *ngIf="appName != 'Aqube'" [size]="'1'" (click)="dismiss()" class="text-center mt-1">
+          <ion-img [src]="imageList?.arrow" class="custKYCImg mt-2"></ion-img>
+        </ion-col>
+        <ion-col *ngIf="appName != 'Aqube'" [size]="'10'" class="text-center">
+          <span class="custFontFamilyMuliBold muli-14pt custLineHight40 custColorDark ">{{'setupInvestmentAccount'
+            | translate}}</span>
+        </ion-col>
+        <ion-col *ngIf="appName == 'Aqube'" [size]="'12'" class="text-center">
+          <span class="custFontFamilyMuliBold muli-14pt custLineHight40 custColorDark ">{{'setupInvestmentAccount'
+            | translate}}</span>
+        </ion-col>
+        <ion-col *ngIf="appName != 'Aqube'" [size]="'1'" class="text-center mt-1" (click)="dismiss()">
+          <ion-img [src]="imageList?.close" class="custKYCImg mt-2"></ion-img>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="contentBackground" *ngIf="showFirstStep">
+  <ion-grid class="p-3">
+    <ion-row>
+      <ion-col [size]="'12'">
+        <span class="custFontFamilyMuliBold muli-16pt custLineHight18 custColorDark">{{'addBankDetails' |
+          translate}}</span>
+      </ion-col>
+      <ion-col [size]="'12'">
+        <span class="custFontFamilyMuliRegular muli-14pt custLineHight20 custColorDark">{{'addBankDetailsInfo' |
+          translate}}</span>
+      </ion-col>
+      <ion-col [size]="'12'" class="mt-3">
+        <span class="custFontFamilyMuliRegular muli-12pt custLineHight18 custColorBattlePGry">{{'addBankDetailsTitle' |
+          translate}}</span>
+      </ion-col>
+      <ion-col [size]="'12'">
+        <span class="custFontFamilyMuliBold muli-12pt custLineHight18 custColorDark">{{name}}</span>
+      </ion-col>
+      <ion-col [size]="'12'" class="mt-3">
+        <span class="custFontFamilyMuliRegular muli-12pt custLineHight18 custColorBattlePGry">{{'accountNumber' |
+          translate}}</span>
+      </ion-col>
+      <ion-col [size]="'12'" class="text-center">
+        <!-- <ion-col [size]="'12'"> -->
+        <mat-form-field appearance="outline" class="example-full-width w-100 "
+          [ngClass]="(showRequiredError ||showPatternError )?'mat-form-field-invalid custColorcustFadedRed':''">
+          <input matInput class="custInputWidth custFontFamilyMuliRegular muli-16pt custLineHight18 custColorDark"
+            [placeholder]="'enterAccount' | translate" [type]="'text'" inputmode="numeric"
+            [ngModel]="currentInputEncoded" (keyup)="onKeyBank($event)" [disabled]="currentType" id="accountNo">
+          <button mat-button matSuffix mat-icon-button class="custBackgroundColorPaleGrey" (click)="changeInputType()">
+            <ion-icon [name]="!currentType?'eye-outline':'eye-off-outline'"></ion-icon>
+          </button>
+        </mat-form-field>
+        <!-- </ion-col> -->
+        <ion-col [size]="'12'" *ngIf="showRequiredError || showPatternError">
+          <span style="float: left;" *ngIf="showRequiredError"
+            class="muli-12pt custLineHight18 custColorcustFadedRed custFontFamilyMuliBold">{{'accountErrorMessage' |
+            translate }}</span>
+          <span *ngIf="showPatternError"
+            class="muli-12pt custLineHight18 custColorcustFadedRed custFontFamilyMuliBold">{{'accountPatternMessage' |
+            translate}}</span>
+        </ion-col><br>
+        <ion-col [size]="'12'" class="text-center" *ngIf="isCordovaStatus">
+          <span class="custFontFamilyMuliRegular custLineHight24 custColorDarkShade muli-12pt d-inline-flex"
+            (click)="selectImage()">{{'or' | translate}}&nbsp; <ion-img [src]="imageList?.scanIcon"
+              class="custScan custMargin"></ion-img> &nbsp; <span
+              class="custFontFamilyMuliBold muli-14pt custLineHight18 custColorDarkishBlue">{{'checkScan' |
+              translate}}</span></span>
+        </ion-col>
+        <ion-col [size]="'12'" class="text-center" *ngIf="!isCordovaStatus">
+          <span class="custFontFamilyMuliRegular custLineHight24 custColorDarkShade muli-12pt d-inline-flex"
+            (click)="top.click()">
+            <input type="file" (change)="imagePreview($event)" #top style="display: none;">
+            {{'or' | translate}}&nbsp;
+            <ion-img [src]="imageList?.scanIcon" class="custScan custMargin"></ion-img> &nbsp;
+            <span class="custFontFamilyMuliBold muli-14pt custLineHight18 custColorDarkishBlue">{{'checkScan' |
+              translate}}</span>
+          </span>
+        </ion-col>
+      </ion-col>
+      <ion-col [size]="'12'">
+        <ion-col [size]="'12'" *ngIf="currentImg">
+          <ion-card class="custBackgroundColorWhite">
+            <ion-card-content>
+              <ion-grid class="ion-no-padding">
+                <ion-row>
+                  <ion-col [size]="'12'">
+                    <ion-img [src]="currentImg"></ion-img>
+                  </ion-col>
+                  <ion-col [size]="'12'" class="pt-3">
+                    <button class="btn w-100 text-center custBackgroundColorBrightCyan" (click)="deleteImg()">
+                      <span class="custColorWhite custFontFamilyMuliBold muli-16pt">{{'delete' | translate}}</span>
+                    </button>
+                  </ion-col>
+                </ion-row>
+              </ion-grid>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-col>
+      <ion-col [size]="'12'">
+        <span class="custFontFamilyMuliRegular muli-12pt custLineHight18 custColorBattlePGry">{{'bankType' |
+          translate}}</span>
+      </ion-col>
+      <ion-col [size]="'12'">
+        <mat-radio-group [(ngModel)]="bankType">
+          <mat-radio-button value="0"
+            class="custFontFamilyMuliRegular muli-12pt custLineHight18 custColorBattlePGry paddingRadio"><span
+              class="custFontFamilyMuliBold custColorDark">{{'savings' | translate}}</span></mat-radio-button>
+          <mat-radio-button class="custFontFamilyMuliRegular muli-12pt custLineHight18 custColorBattlePGry p-3"
+            value="1"><span class="custFontFamilyMuliBold custColorDark">{{'current' | translate}}</span>
+          </mat-radio-button>
+        </mat-radio-group>
+      </ion-col>
+      <ion-col [size]="'12'">
+        <span class="custFontFamilyMuliRegular muli-12pt custLineHight18 custColorBattlePGry">{{'branchCode' |
+          translate}}</span>
+      </ion-col>
+      <ion-col [size]="'12'">
+        <mat-form-field appearance="outline" class="example-full-width w-100 "
+          [ngClass]="(showRequiredErrorBranch ||showPatternErrorBranch )?'mat-form-field-invalid custColorcustFadedRed':''">
+          <input matInput
+            class="custInputWidth custFontFamilyMuliRegular muli-16pt custLineHight18 custColorDark uppercase mt-1"
+            [placeholder]="'enterIfsc' | translate" [type]="'text'" [ngModel]="currentInputBranch"
+            (keyup)="onKeyBranch($event)" id="ifsc">
+          <button mat-button matSuffix mat-icon-button class="custBackgroundColorPaleGrey">
+            <!-- <span class="ifsc">{{'findI' | translate}}</span> -->
+          </button>
+        </mat-form-field>
+      </ion-col>
+      <ion-col [size]="'12'" *ngIf="showRequiredErrorBranch || showPatternErrorBranch">
+        <span *ngIf="showRequiredErrorBranch"
+          class="muli-12pt custLineHight18 custColorcustFadedRed custFontFamilyMuliBold">{{'branchErrorMessage' |
+          translate }}</span>
+        <span *ngIf="showPatternErrorBranch"
+          class="muli-12pt custLineHight18 custColorcustFadedRed custFontFamilyMuliBold">{{'branchPatternMessage' |
+          translate}}</span>
+      </ion-col>
+
+      <ion-col [size]="'12'" class="text-center">
+        <span class="custFontFamilyMuliRegular muli-10pt custColorGreyish custLineHight15 d-inline-flex">
+          <ion-img [src]="imageList?.lockIcon" class="custLock"></ion-img> {{'banckInfo' | translate}}
+        </span>
+      </ion-col>
+      <ion-col [size]="'12'" class="pb-5">
+        <button class="btn w-100 text-center custBackgroundColorBrightCyan" (click)="onSubmitBank()"><span
+            class="custColorWhite custFontFamilyMuliBold muli-16pt">{{'cAc' | translate}}</span></button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+
+<ion-content class="contentBackground" *ngIf="showSecondStep">
+  <ion-grid class="p-3">
+    <ion-row>
+      <ion-col [size]="'12'">
+        <span>{{'bankNotification' | translate}}</span>
+      </ion-col>
+      <ion-col [size]="'12'" class="ion-no-padding">
+        <ion-card class="custBackgroundColorWhite">
+          <ion-card-header>
+            <ion-row class="align-middle">
+              <ion-col [size]="'2'">
+                <ion-img [src]="imageList?.bankIcon" class="banckIcon"></ion-img>
+              </ion-col>
+              <ion-col [size]="'10'" class="align-middle">
+                <span
+                  class="custFontFamilyMuliRegular muli-14pt align-middle custLineHight18 custColorDark">{{bankData?.msg['BankName']}}</span>
+              </ion-col>
+            </ion-row>
+          </ion-card-header>
+          <ion-card-content>
+            <div class="custMarTop">
+              <span
+                class="text-capitalized custFontFamilyMuliRegular muli-10pt custLineHight15 custColorWarmGrey">{{'accountNumber'
+                | translate}}</span><br>
+              <span
+                class="custFontFamilyMuliRegular muli-12pt custLineHight18 custColorTint">{{bankData?.msg['BankAccountNumber']}}</span>
+            </div>
+            <div class="custMarTop">
+              <span class="custFontFamilyMuliRegular muli-10pt custLineHight15 custColorWarmGrey">{{'IFSC' |
+                translate}}</span><br>
+              <span
+                class="custFontFamilyMuliRegular muli-12pt custLineHight18 custColorTint">{{bankData?.msg['IFSCCode']}}</span>
+            </div>
+            <div class="custMarTop">
+              <span class="custFontFamilyMuliRegular muli-10pt custLineHight15 custColorWarmGrey">{{'bankAddress' |
+                translate}}</span><br>
+              <span
+                class="custFontFamilyMuliRegular muli-12pt custLineHight18 custColorTint">{{bankData?.msg['BankBranchAddress']?.Address}}
+                {{bankData?.msg['BankBranchAddress']?.City}} {{bankData?.msg['BankBranchAddress']?.State}}</span>
+            </div>
+            <div class="custMarTop">
+              <span class="custFontFamilyMuliRegular muli-10pt  custLineHight15 custColorWarmGrey">{{'bankBranch' |
+                translate}}</span><br>
+              <span
+                class="custFontFamilyMuliRegular muli-12pt custLineHight18 custColorTint">{{bankData?.msg['BankBranchAddress']?.Branch}}</span>
+            </div>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col [size]="'12'" class="text-center">
+        <span class="custFontFamilyMuliRegular muli-10pt custColorGreyish custLineHight15 d-inline-flex">
+          <ion-img [src]="imageList?.lockIcon" class="custLock"></ion-img> {{'banckInfo' | translate}}
+        </span>
+      </ion-col>
+      <ion-col [size]="'12'" class="pb-5">
+        <button class="btn w-100 text-center custBackgroundColorBrightCyan" (click)="onVerifyBank()"><span
+            class="custColorWhite custFontFamilyMuliBold muli-16pt">{{'cAc' | translate}}</span></button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+
+<ion-content *ngIf="showThirdStep" class="contentBackground">
+  <ion-grid class="custGridCenter h-100">
+    <ion-row class="custRow">
+      <ion-col [size]="'12'" class="custTextAlignCenter">
+        <span class="custFontFamilyMuliBold muli-22pt custLineHight30 custColorDark">{{'verifyingBankAccount' |
+          translate}}</span>
+      </ion-col>
+      <ion-col [size]="'12'" class="custTextAlignCenter pb-5">
+        <p class="custFontFamilyMuliRegular muli-12pt custLineHight18 custColorBattlePGry pb-5">
+          {{'verifyingBankAccountSub' | translate}}</p>
+      </ion-col>
+      <ion-col [size]="'12'" class="custTextAlignCenter ">
+        <span class="custFontFamilyMuliRegular muli-14pt custLineHight20 custColorDark">{{'verifyingBankAccountInfo' |
+          translate}}</span>
+      </ion-col>
+      <ion-col [size]="'12'" class="pb-5">
+        <ion-row>
+          <ion-col [size]="'3'">
+            <ion-img [src]="imageList?.verificationIcon1" class="custVerification1 float-end mt-2"></ion-img>
+          </ion-col>
+          <ion-col [size]="'6'">
+            <ion-img [src]="imageList?.verificationIcon2" class="custVerification2 custImgMargin"></ion-img>
+          </ion-col>
+          <ion-col [size]="'3'">
+            <ion-img [src]="imageList?.verificationIcon3" class="custVerification3"></ion-img>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+      <ion-col [size]="'12'" class="fixed-bottom">
+        <ion-card class="custBackgroundColorWhite">
+          <ion-card-content>
+            <ion-row>
+              <ion-col [size]="'12'" class="custTextAlignCenter">
+                <span class="custFontFamilyMuliBold muli-16pt custLineHight22 custColorDarkishBlue">{{'didYouKnow' |
+                  translate}}</span>
+              </ion-col>
+              <ion-col [size]="'12'" class="custTextAlignCenter">
+                <span class="custFontFamilyMuliRegular muli-12pt custLineHight18 custColorTint">{{'didYouKnowInfo' |
+                  translate}}</span>
+              </ion-col>
+            </ion-row>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+<div class="custModalContainer p-10" *ngIf="loggedInModal" (click)="successModalClose();">
+  <div id="showModalSMGSucces" class="modal-content custCenterAlign">
+    <!-- <ion-icon [src]="imageList?.successKYCIcon" class="custImage"></ion-icon> -->
+    <p class="custFontFamilyMuliBold muli-16pt custColorDark text-center p-0 m-0 ion-no-padding">{{ErrorMsg}}</p>
+  </div>
+</div>

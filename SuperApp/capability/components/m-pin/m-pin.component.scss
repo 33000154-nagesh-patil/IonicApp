@@ -1,0 +1,30 @@
+::ng-deep .mat-form-field {
+    .mat-form-field-outline{
+        height: 56px;
+        //width: 48px;
+        background:var(--custWhite);
+    }
+}
+.custButton{
+    --background: var(--custBrightCyan);
+    height: 45px;
+}
+
+.custInput{
+    position: absolute;
+    top: 12px;
+    text-align: center;
+}
+.custMarginTop{
+    margin-top: -20px;
+}
+
+.custButtonBackground{
+    --background: none;
+    --box-shadow: none;
+}
+.custBtn{
+    margin-right: 100px;
+    width: 100%;
+    margin-bottom: 16px;
+}

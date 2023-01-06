@@ -1,0 +1,24 @@
+<ion-grid class="p-2 pt-4">
+  <ion-row>
+    <ion-col [size]="'12'">
+      <span class="custFontFamilyMuliBold muli-24pt custLineHight40 custColorDark custOpacity60">{{'hey' | translate}}, {{userFirstName}}</span>
+      <p class="custFontFamilyMuliRegular muli-14pt custLineHight28 custColorBattlePGry">{{'wellnessUserNotification' | translate}}</p>
+    </ion-col>
+    <ion-col [size]="'12'">
+      <span class="muli-22pt custFontFamilyMuliBold custLineHight30 custColorDark text-capitalize">
+        {{'education' | translate}} {{'wellness' | translate}}
+      </span>
+    </ion-col>
+    <ion-col [size]="'12'">
+      <ion-row>
+        <ion-col [size]="'1'" class="custBackgroundColorDarkishBlue"></ion-col>
+      </ion-row>
+    </ion-col>
+    <ion-col [size]="'12'">
+      <p class="custFontFamilyMuliRegular muli-12pt custLineHight18 custColorBattlePGry">{{'educationWellnessPara' | translate}}</p>
+    </ion-col>
+    <ion-col [sizeLg]="'12'">
+      <lib-product-list [imageList]="imageList" [listOfData]="educationData"  [currentMoneySymbols]="currentMoneySymbols" (sendDataToParent)="redirectTCardDetails($event)" [parentModule]="'Education'"></lib-product-list>
+    </ion-col>
+  </ion-row>
+</ion-grid>

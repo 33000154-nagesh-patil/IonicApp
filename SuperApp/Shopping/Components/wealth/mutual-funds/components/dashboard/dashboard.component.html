@@ -1,0 +1,210 @@
+
+
+<cap-header [title]="'Mutual Fund'" [imageList]="imageList" [showArrow]="false" [showLabel]="true" [showImg]="false" [imgURL]="labelIcon"
+[showIndex]="false" [showNotification]="true" [otherTextName]="'Mutual Fund'" [showCartWithName]="true" [notificationCount]="notificationCount"  [showSideMenu]="false" [showSearch]="true" [showClose]="false" [showShare]="false" [showWatchList]="false" [showCartWithoutName]="false" [showStories]="false"  [showOtherText]="true" [superMode]="currentMode" [backUrlName]="" [MutualFund]="true"></cap-header>
+<ion-content class="w-100 contentBackground">
+<ion-grid>
+  <ion-row class="pt-4 px-2"  *ngIf="kycComplete && !investMentStatus">
+    <ion-col [size]="'12'">
+      <span class="muli-22pt custFontFamilyMuliBold custLineHight30 custColorDark text-capitalize">
+       {{title}}
+      </span>
+    </ion-col>
+    <ion-col [size]="'12'">
+      <ion-row>
+        <ion-col [size]="'2'" class="text-start p-0 m-0">
+          <div class="custBackgroundColorDarkishBlue custBox p-0 m-0"></div>
+      </ion-col>
+      </ion-row>
+    </ion-col>
+    <ion-col [size]="'12'">
+      <span class="custFontFamilyMuliRegular muli-12pt custLineHight18 custColorBattlePGry" *ngIf="Build == false">Start investing in 3 easy steps</span>
+      <span class="custFontFamilyMuliRegular muli-12pt custLineHight18 custColorBattlePGry" *ngIf="Build == true">Today is a good day to start investing</span>
+    </ion-col>
+  </ion-row>
+  <ion-row class="pt-4 px-2"  *ngIf="!kycComplete && !investMentStatus">
+    <ion-col [size]="'12'">
+      <span class="muli-22pt custFontFamilyMuliBold custLineHight30 custColorDark text-capitalize">
+       {{title}}
+      </span>
+    </ion-col>
+    <ion-col [size]="'12'">
+      <ion-row>
+        <ion-col [size]="'2'" class="text-start p-0 m-0">
+          <div class="custBackgroundColorDarkishBlue custBox p-0 m-0"></div>
+      </ion-col>
+      </ion-row>
+    </ion-col>
+    <ion-col [size]="'12'">
+      <span class="custFontFamilyMuliRegular muli-12pt custLineHight18 custColorBattlePGry" *ngIf="Build == false">Start investing in 3 easy steps</span>
+      <span class="custFontFamilyMuliRegular muli-12pt custLineHight18 custColorBattlePGry" *ngIf="Build == true">Today is a good day to start investing</span>
+    </ion-col>
+  </ion-row>
+
+
+  <ion-row *ngIf="!kycComplete && !investMentStatus">
+    <ion-col [size]="'12'">
+      <app-stepeer-onbording [imageList]="imageList" [stepData]="stepData"></app-stepeer-onbording>
+    </ion-col>
+  </ion-row>
+  <ion-row *ngIf="kycComplete && !investMentStatus"  class="w-100">
+    <ion-card class="w-100">
+      <ion-card-content>
+      <ion-row>
+        <ion-col class="text-center">
+          <span class="custFontFamilyMuliBold muli-16pt custLineHight18 custColorDark">You haven't invested in any funds</span>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col class="text-center">
+          <span class="custFontFamilyMuliRegular muli-12pt custLineHight16 custColorBrownishGrey">Today is a good day to start investing</span>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col class="text-center">
+          <button class="btn text-center custBackgroundColorBrightCyan" (click)="StarInvesting()"><span class="custColorWhite custFontFamilyMuliRegular custLineHeight18 text-capitalize muli-14pt">Start Investing</span></button>
+        </ion-col>
+      </ion-row>
+    </ion-card-content>
+    </ion-card>
+  </ion-row>
+  <ion-row  *ngIf="investMentStatus">
+    <app-mflanding-afc></app-mflanding-afc>
+  </ion-row>
+  <ion-row *ngIf="kycComplete && !investMentStatus"  >
+    <span class="custFontFamilyMuliBold muli-16pt w-100 custLineHight22 custColorDark px-3 my-3">How to start investing</span>
+  </ion-row>
+  <ion-row class="px-2" *ngIf="kycComplete && !investMentStatus" >
+    <ion-col>
+      <iframe width="100%" height="100%" src="https://www.youtube.com/embed/pK7yX9QuMoM" allowfullscreen>
+      </iframe>
+    </ion-col>
+  </ion-row>
+  <ion-row *ngIf="kycComplete"  class="w-100">
+    <ion-card>
+      <ion-card-content>
+        <ion-row>
+          <ion-col [size]="'1'">
+            <img [src]="imageList?.downloadIcon" class="mt-3">
+          </ion-col>
+          <ion-col [size]="'11'">
+            <span class="custFontFamilyMuliSemiBold muli-14pt custLineHight20 custColorDark">Import your external Mutual fund investments</span>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col [size]="'9'">
+            <span class="custFontFamilyMuliRegular muli-12pt custLineHight16 custColorBattlePGry">Manage all your mutual funds in one application</span>
+          </ion-col>
+          <ion-col [size]="'3'">
+            <button class="btn text-center custBackgroundColorBrightCyan mt-1"><span class="custColorWhite custFontFamilyMuliRegular custLineHight18 text-capitalize muli-14pt">Import</span></button>
+          </ion-col>
+        </ion-row>
+      </ion-card-content>
+    </ion-card>
+  </ion-row>
+  <ion-row *ngIf="!investMentStatus">
+    <ion-col [size]="'12'" class="p-3 text-start" >
+      <span class="muli-16pt custFontFamilyMuliBold custLineHight22 custColorDark">Select plan type</span>
+    </ion-col>
+    <ion-col [size]="'12'">
+      <ion-row>
+        <ion-col [size]="'6'"  >
+          <ion-card class="custBackgroundColorWhite ion-no-margin h-100">
+            <ion-card-header >
+             <span class="custFontFamilyMuliBold muli-14pt custLineHight18 custColorDark">Direct</span>
+            </ion-card-header>
+  
+            <ion-card-content >
+             <p class="custFontFamilyMuliRegular muli-12pt custLineHight16 custColorBattlePGry">Lorem Ipsum is simply dummy text of the printing.</p>
+             <ion-row >
+              <ion-col class="text-start mt-2"  (click)="getCol('Direct Fund','Direct')">
+                <button class="btn btn-s custButtonOutLine text-center px-4 custColorBrightCyan" ><span class="custColorBrightCyan text-capitalize custFontFamilyMuliRegular muli-16pt">Explore</span></button>
+              </ion-col>
+            </ion-row>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+        <ion-col [size]="'6'" >
+          <ion-card class="custBackgroundColorWhite ion-no-margin" >
+            <ion-card-header >
+             <span class="custFontFamilyMuliBold muli-14pt custLineHight18 custColorDark">Regular</span>
+            </ion-card-header>
+  
+            <ion-card-content >
+             <p class="custFontFamilyMuliRegular muli-12pt custLineHight16 custColorBattlePGry">Lorem Ipsum is simply dummy text of the printing.</p>
+             <ion-row >
+              <ion-col class="text-start mt-2"  (click)="getCol('Regular Fund','Regular')">
+                <button class="btn btn-s custButtonOutLine text-center px-4 custColorBrightCyan" ><span class="custColorBrightCyan text-capitalize custFontFamilyMuliRegular muli-16pt">Explore</span></button>
+              </ion-col>
+            </ion-row>
+            </ion-card-content>
+  
+          </ion-card>
+  
+        </ion-col>
+        
+      </ion-row>
+    </ion-col>
+  </ion-row>
+
+
+
+
+
+  <ion-row *ngIf="!investMentStatus">
+    <ion-col [size]="'12'" class="p-3 text-start" >
+      <span class="muli-16pt custFontFamilyMuliBold custLineHight22 custColorDark">{{'mfDashboardInvestHeader' | translate}}</span>
+    </ion-col>
+    <ion-col [size]="'12'">
+      <ion-row>
+        <ion-col [size]="'6'">
+          <ion-card class="custBackgroundColorWhite ion-no-margin" >
+            <ion-card-header class="custTextAlignCenter">
+             <span class="custFontFamilyMuliBold muli-14pt custLineHight18 custColorDark">{{'sip' | translate}}</span>
+            </ion-card-header>
+  
+            <ion-card-content class="custTextAlignCenter">
+             <p class="custFontFamilyMuliRegular muli-12pt custLineHight16 custColorBattlePGry">{{'sipInfo' | translate}}</p>
+            </ion-card-content>
+  
+          </ion-card>
+  
+        </ion-col>
+        <ion-col [size]="'6'"  >
+          <ion-card class="custBackgroundColorWhite ion-no-margin h-100">
+            <ion-card-header class="custTextAlignCenter">
+             <span class="custFontFamilyMuliBold muli-14pt custLineHight18 custColorDark">{{'lumpsum' | translate}}</span>
+            </ion-card-header>
+  
+            <ion-card-content class="custTextAlignCenter">
+             <p class="custFontFamilyMuliRegular muli-12pt custLineHight16 custColorBattlePGry">{{'lumpsumInfo' | translate}}</p>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col class="text-center ion-no-padding">
+      <ion-row class="w-100">
+        <span class="custFontFamilyMuliBold muli-16pt w-100 custLineHight22 custColorDark   p-3 text-start   pt-4">Discover Mutual Funds for Investments</span>
+      </ion-row>
+      <lib-gridcards></lib-gridcards>
+    </ion-col>
+  </ion-row>
+  <ion-row class="m-2">
+    <ion-col [size]="'12'">
+      <span class="muli-16pt custFontFamilyMuliBold custLineHight22 custColorDark">{{'exploreFunds' | translate}}</span>
+    </ion-col>
+  </ion-row>
+  <app-explore-funds [imageList]="imageList" [fundData]="fundList" [currentMoneySymbols]="currentMoneySymbols" class="w-100 custMarginTop" (sendToLib)="reDirectToProduct($event)"></app-explore-funds>
+
+</ion-grid>
+<div class="custModalContainer p-10" *ngIf="loggedInModal" (click)="successModalClose();">
+  <div  id="showModalSMGSucces" class="modal-content custCenterAlign">
+    <p class="custFontFamilyMuliBold muli-16pt custColorDark text-center p-0 m-0 ion-no-padding">{{ErrorMsg}}</p>
+  </div>
+</div>
+</ion-content>
+
+<cap-footer *ngIf="currentMode" [activeImg]="imageList?.activeTab" [selectedIndex]="'2'" [footerListData]="mfFooterData" [parentTab]="'Mutual Fund'"></cap-footer>

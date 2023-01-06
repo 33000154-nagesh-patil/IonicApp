@@ -1,0 +1,16 @@
+<div >
+  <div class="custBoderBottom">
+    <button class="custAccordion custFontFamilyMuliBold text-capitalize muli-20pt custLineHight38 custColorDark custBackgroundColorPaleGrey p-2 custPointer w-100 " (click)="openAccordionPlanningDetails('transact')">{{'transact' | translate}} <span class="ion-float-end custColorDarkishBlue"><ion-icon [name]="showTransact?'caret-up':'caret-down'"></ion-icon></span></button>
+    <div class="custBorderDiv ion-margin-start" *ngIf="showTransact"></div>
+    <div class="custBackgroundColorWhite" *ngIf="showTransact">
+    <lib-investment-planning-transact [transactData]="trackData" [currentMoneySymbols]="currentMoneySymbols" [collectionData]="planningTransactData"></lib-investment-planning-transact>
+    </div>
+  </div>
+  <div class="custBoderBottom">
+    <button class="custAccordion custFontFamilyMuliBold text-capitalize muli-20pt custLineHight38 custColorDark custBackgroundColorPaleGrey p-2 custPointer w-100 " (click)="openAccordionPlanningDetails('track')">{{'track' | translate}} <span class="ion-float-end custColorDarkishBlue"><ion-icon [name]="showTrack?'caret-up':'caret-down'"></ion-icon></span></button>
+    <div class="custBorderDiv ion-margin-start" *ngIf="showTrack"></div>
+    <div class="custBackgroundColorWhite" *ngIf="showTrack">
+      <lib-investment-planning-track [trackData]="trackData" [currentMoneySymbols]="currentMoneySymbols"></lib-investment-planning-track>
+    </div>
+  </div>
+</div>

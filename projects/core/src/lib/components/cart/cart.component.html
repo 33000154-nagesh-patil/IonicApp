@@ -1,0 +1,116 @@
+<ion-header class="fixed-top">
+  <ion-toolbar class="custBackgroundDynamicColorWhite p-2">
+    <ion-grid>
+      <ion-row>
+        <ion-col [size]="'0.7'" class="text-center mt-1">
+          <ion-img [src]="imageList?.arrow" class="custKYCImg mt-2" (click)="goToBack()"></ion-img>
+        </ion-col>
+        <ion-col [size]="'10'" class="px-3 mt-1">
+          <span class="custFontFamilyMuliBold muli-16pt custLineHight40 custColorDark">Cart</span>
+        </ion-col>
+        <ion-col [size]="'1'" class="text-center mt-1">
+          <ion-badge class="custBadge custRight0" *ngIf="cardCount > 0">{{cardCount}}</ion-badge>
+          <ion-img [src]="imageList?.cartIcon" class="custKYCImg mt-2"></ion-img>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content *ngIf="cardCount > 0; else emptyCart">
+  <ion-grid class="segment">
+    <div *ngFor="let x of data">
+      <ion-card class="card cardItem">
+        <ion-card-content>
+          <ion-row>
+            <ion-col [size]="'1.5'">
+              <ion-img [src]="imageList?.thyroCare"></ion-img>
+            </ion-col>
+            <ion-col [size]="'10.5'">
+              <ion-row>
+                <ion-col [size]="'11'">
+                  <span class="custFontFamilyMuliRegular muli-14pt custLineHight15 custColorDark">{{x?.name}}</span>
+                </ion-col>
+                <ion-col [size]="'1'"  (click)="handleRemove()">
+                  <!-- <span class="custFontFamilyMuliRegular muli-14pt custLineHight15 custColorBrightCyan float-end"
+                    (click)="handleRemove()">Remove</span> -->
+                    <ion-img [src]="imageList?.deleteIcon"></ion-img>
+                </ion-col>
+              </ion-row>
+              <ion-row><span
+                  class="custFontFamilyMuliRegular muli-10pt custLineHight20 custColorWarmGrey">{{x?.description}}</span>
+              </ion-row>
+              <ion-row><span
+                  class="custFontFamilyMuliRegular muli-10pt custLineHight20 custColorWarmGrey">{{x?.title}}</span>
+              </ion-row>
+            </ion-col>
+          </ion-row>
+          <ion-row class="mt-3">
+            <ion-col [size]="'4.5'">
+              <ion-row><span class="custFontFamilyMuliRegular muli-10pt custLineHight15 custColorGreyish">Price</span>
+              </ion-row>
+              <ion-row class="mt-1"><span
+                  class="custFontFamilyMuliSemiBold muli-14pt custLineHight20 custColorDark">{{rupeesSymbol}}{{x?.itemList[0].item_rate}}</span>
+              </ion-row>
+            </ion-col>
+            <ion-col [size]="'4'">
+              <ion-row><span class="custFontFamilyMuliRegular muli-10pt custLineHight15 custColorWarmGrey">E-reports
+                  Within</span></ion-row>
+              <ion-row class="mt-1"><span
+                  class="custFontFamilyMuliRegular muli-14pt custLineHight18 custColorDark">24 to 30 hours</span>
+              </ion-row>
+            </ion-col>
+            <ion-col [size]="'3.5'">
+              <ion-row class="flex-end">No. of Tests </ion-row>
+              <ion-row class="flex-end">1</ion-row>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+    </div>
+
+
+  </ion-grid>
+
+
+  <ion-footer class="fixed-bottom">
+    <ion-row>
+      <ion-col [size]="'12'">
+        <button class="btn w-100 text-center custBackgroundColorBrightCyan" (click)="handleClick()"><span
+            class="custColorWhite custFontFamilyMuliBold muli-16pt">Proceed To Checkout</span></button>
+      </ion-col>
+    </ion-row>
+  </ion-footer>
+</ion-content>
+
+
+<ng-template #emptyCart>
+
+  <ion-content>
+    <div class="contentClass h-100 w-100">
+      <ion-row>
+        <ion-col [size]="'12'">
+          <ion-img [src]="imageList?.emptycartFace"></ion-img>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col [size]="'12'" class="custFontFamilyMuliBold muli-16pt custLineHight22 custColorDark">
+          Your cart is empty !
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col [size]="'12'" class="custFontFamilyMuliRegular muli-12pt custLineHight18 custColorDark">
+          You have currently no items added to your cart.
+        </ion-col>
+      </ion-row>
+    </div>
+  </ion-content>
+
+  <ion-row>
+    <ion-col [size]="'12'">
+      <button (click)="handleOnAdd()" class="btn w-100 text-center custBackgroundColorBrightCyan"><span
+          class="custColorWhite custFontFamilyMuliBold muli-16pt">Continue To Explore</span></button>
+    </ion-col>
+  </ion-row>
+</ng-template>

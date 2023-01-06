@@ -1,0 +1,384 @@
+
+<ion-header>
+  <ion-toolbar class="custBackgroundDynamicColorWhite">
+    <ion-grid>
+      <ion-row>
+        <ion-col [size]="'1'" (click)="dismiss()">
+          <ion-img [src]="imageList?.arrow" class="custInvestArrow"></ion-img>
+        </ion-col>
+        <ion-col [size]="'11'">
+          <span class="custFontFamilyMuliBold muli-16pt custColorDark custLineHight40">Checkout</span>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="contentBackground">
+
+  <!-- <ion-grid class="align-items-center h-100"> -->
+    <!-- <ion-row class="py-2"> -->
+      <ion-col [size]="'12'">
+        <ion-row class="custpadding">
+          <mat-accordion class="w-100">
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title class="d-flex flex-row mt-2">
+                  <span
+                    class="custFontFamilyMuliBold muli-12pt d-block justify-content-start custLineHight20 custColorDarkShade">Price
+                    Details</span>
+                  <span
+                    class="custFontFamilyMuliBold muli-10pt d-block custLineHight11 custColorParakeetGreen success"> You
+                    are
+                    saving ₹50 </span>
+                </mat-panel-title>
+                <mat-panel-description class="flex-grow-0 pt-3">
+                  <p  class="custFontFamilyMuliBold muli-12pt custLineHight20 custColorDarkShade ">
+                    {{InitialPrice}}</p>
+                </mat-panel-description>
+
+
+
+              </mat-expansion-panel-header>
+
+
+              <ion-grid class="ion-no-padding mb-2" >
+                <ion-row>
+                  <ion-col [size]="'9'" class="pt-3">
+                    <span class="custFontFamilyMuliRegular muli-10pt custLineHight20 custColorDark">Item MRP (
+                      {{dataForOrderSummary?.quantity}} item )</span>
+                  </ion-col>
+                  <ion-col [size]="'3'" class="pt-3">
+
+                    <span
+                      class="custFontFamilyMuliBold text-end muli-12pt custLineHight22 custColorDark">{{rupeesSymbol}}{{InitialPrice}}</span>
+                  </ion-col>
+                  <ion-col [size]="'9'">
+                    <span class="custFontFamilyMuliRegular muli-10pt custLineHight22 custColorDark">
+                      Collection Charges</span>
+                  </ion-col>
+                  <ion-col [size]="'3'">
+
+                    <span
+                      class="custFontFamilyMuliBold  muli-10pt custLineHight22 custColorDark px-2">{{dataForOrderSummary?.shippingCharge}}</span>
+                  </ion-col>
+                  <ion-col [size]="'9'">
+                    <span class="custFontFamilyMuliBold muli-14pt custLineHight22 custColorDark">Grand Total</span>
+                  </ion-col>
+                  <ion-col [size]="'3'">
+                    <span
+                      class="custFontFamilyMuliBold  muli-14pt custLineHight22 custColorDark">{{rupeesSymbol}}{{InitialPrice}}</span>
+                  </ion-col>
+                </ion-row>
+              </ion-grid>
+              <div class="bottomcontent" >
+                <p
+                  class="text-start custFontFamilyMuliBold muli-10pt custColorParakeetGreen d-flex justify-content-start align-items-center ">
+                  <span>
+                    <ion-img [src]="imageList?.successTrack" class="px-2 custImgSucc"></ion-img>
+                  </span>
+                  <span class="py-2">{{dataForOrderSummary?.msg}}</span>
+                </p>
+              </div>
+            </mat-expansion-panel>
+          </mat-accordion>
+        </ion-row>
+
+
+        <!-- <ion-card class="custBackgroundColorWhite" *ngIf="card" >
+          <ion-card-content>
+            <ion-grid class="ion-no-padding">
+
+              <ion-row>
+                <ion-col [size]="'2'">
+                  <ion-img [src]="imageList?.gold"></ion-img>
+                </ion-col>
+                <ion-col [size]="'10'">
+                  <ion-row>
+                    <ion-col [size]="'9'" class="custFontFamilyMuliBold muli-14pt custLineHight20 custColorDark px-2">
+                      {{dataForOrderSummary?.medicineName}}</ion-col>
+                    <ion-col [size]="'0.5'">
+                      <ion-img [src]="imageList?.remove"></ion-img>
+                    </ion-col>
+                    <ion-col [size]="'2.5'"><span
+                        class="custFontFamilyMuliBold muli-12pt custLineHight18 custColorDarkishBlue float-end"
+                        (click)="removeElement()">{{dataForOrderSummary?.remove}}</span>
+                    </ion-col>
+
+                  </ion-row>
+                  <ion-row>
+                    <ion-col [size]="'12'" class="px-2">
+                      <span class="d-flex">
+                        <p class="custFontFamilyMuliRegular muli-10pt custLineHight15 custColorGreyish ">
+                          {{dataForOrderSummary?.provider}}</p>
+                      </span>
+                      <span class="d-flex">
+                        <p class="custFontFamilyMuliRegular muli-10pt custLineHight15 custColorGreyish">
+                          {{dataForOrderSummary?.provider1}}</p>
+                      </span>
+                    </ion-col>
+                  </ion-row>
+                </ion-col>
+
+              </ion-row>
+
+              <ion-col [size]="'12'" class="py-2">
+                <ion-row>
+                  <ion-col [size]="'4'">
+                    <span class="custFontFamilyMuliRegular muli-10pt custLineHight15 custColorGreyish">Price</span><br>
+                    <span
+                      class="custFontFamilyRubikRegular muli-14pt custLineHight18 custColorDark">{{dataForOrderSummary?.price}}</span>
+                  </ion-col>
+
+                  <ion-col [size]="'5'">
+                    <span class="custFontFamilyMuliRegular muli-10pt custLineHight15 custColorGreyish">E-Reports Within
+                    </span><br>
+                    <span
+                      class="custFontFamilyRubikRegular muli-14pt custLineHight18 custColorDark">{{dataForOrderSummary?.estimatedDate}}</span>
+                  </ion-col>
+                  <ion-col [size]="'3'">
+                    <span class="custFontFamilyMuliRegular muli-10pt custLineHight15 custColorGreyish">No. of Tests
+                    </span><br>
+                    <span
+                      class="custFontFamilyRubikRegular muli-14pt custLineHight18 custColorDark px-5 ">{{dataForOrderSummary?.testNo}}</span>
+                  </ion-col>
+                </ion-row>
+              </ion-col>
+
+            </ion-grid>
+          </ion-card-content>
+        </ion-card> -->
+
+
+        <div *ngFor="let x of datas">
+          <ion-card class="card cardItem">
+            <ion-card-content>
+              <ion-row>
+                <ion-col [size]="'1.5'">
+                  <ion-img [src]="imageList?.thyroCare"></ion-img>
+                </ion-col>
+                <ion-col [size]="'10.5'">
+                  <ion-row>
+                    <ion-col [size]="'11'">
+                      <span class="custFontFamilyMuliRegular muli-14pt custLineHight15 custColorDark">{{x?.name}}</span>
+                    </ion-col>
+                    <ion-col [size]="'1'" (click)="handleRemove()">
+                      <!-- <span class="custFontFamilyMuliRegular muli-14pt custLineHight15 custColorBrightCyan float-end"
+                        (click)="handleRemove()">Remove</span> -->
+                        <ion-img [src]="imageList?.deleteIcon"></ion-img>
+                    </ion-col>
+                  </ion-row>
+                  <ion-row><span
+                      class="custFontFamilyMuliRegular muli-10pt custLineHight20 custColorWarmGrey">{{x?.description}}</span>
+                  </ion-row>
+                  <ion-row><span
+                      class="custFontFamilyMuliRegular muli-10pt custLineHight20 custColorWarmGrey">{{x?.title}}</span>
+                  </ion-row>
+                </ion-col>
+              </ion-row>
+              <ion-row class="mt-3">
+                <ion-col [size]="'4.5'">
+                  <ion-row><span class="custFontFamilyMuliRegular muli-10pt custLineHight15 custColorGreyish">Price</span>
+                  </ion-row>
+                  <ion-row class="mt-1"><span
+                      class="custFontFamilyMuliSemiBold muli-14pt custLineHight20 custColorDark">{{rupeesSymbol}}{{x?.itemList[0].item_rate}}</span>
+                  </ion-row>
+                </ion-col>
+                <ion-col [size]="'4'">
+                  <ion-row><span class="custFontFamilyMuliRegular muli-10pt custLineHight15 custColorWarmGrey">E-reports
+                      Within</span></ion-row>
+                  <ion-row class="mt-1"><span
+                      class="custFontFamilyMuliRegular muli-14pt custLineHight18 custColorDark">24 to 30 hours</span>
+                  </ion-row>
+                </ion-col>
+                <ion-col [size]="'3.5'">
+                  <ion-row class="flex-end">No. of Tests </ion-row>
+                  <ion-row class="flex-end">1 </ion-row>
+                </ion-col>
+              </ion-row>
+            </ion-card-content>
+          </ion-card>
+        </div>
+
+
+
+        <ion-row class="custpadding">
+          <mat-accordion class="w-100 example-headers-align">
+            <mat-expansion-panel [expanded]="dataForOrderSummary?.fullname.length>0">
+              <mat-expansion-panel-header>
+
+
+                <mat-panel-title>
+                  <span class="custFontFamilyMuliBold muli-14pt custLineHight20 custColorDarkShade">Patient's
+                    Details</span>
+                  <span *ngIf="dataForOrderSummary?.fullname.length==0"
+                    class="custFontFamilyMuliBold muli-12pt custLineHight20 custColorDarkishBlue change px-2"
+                    (click)="openPatientDetails()">Add</span>
+
+                  <span *ngIf="dataForOrderSummary?.fullname.length>0"
+                    class="custFontFamilyMuliBold muli-12pt custLineHight20 custColorDarkishBlue change px-2"
+                    (click)="openPatientDetailsChage()">Change</span>
+                </mat-panel-title>
+
+
+              </mat-expansion-panel-header>
+
+              <ion-grid class="ion-no-padding mb-2">
+
+                <ion-row>
+
+                  <ion-col [size]="'9'">
+
+                    <ion-col [size]="'4'">
+                      <span class="custFontFamilyMuliRegular muli-12pt custLineHight15 custColorGreyish">Patient
+                        Name</span><br>
+                      <span
+                        class="custFontFamilyRubikRegular muli-14pt custLineHight18 custColorDarkBlack" >{{dataForOrderSummary.fullname}}</span><br>
+                    </ion-col>
+
+
+                  </ion-col>
+                  <br>
+                  <ion-col [size]="'3'" class="pt-3">
+
+                  </ion-col>
+                  <ion-col [size]="'9'">
+                    <span class="custFontFamilyMuliRegular muli-12pt custLineHight15 custColorGreyish pt-5">Age
+                    </span><br>
+                    <span
+                      class="custFontFamilyMuliRegular muli-14pt custLineHight18 custColorDarkBlack" >{{dataForOrderSummary.age}}
+                    </span>
+                  </ion-col>
+                  <ion-col [size]="'3'">
+
+                    <span
+                      class="custFontFamilyMuliRegular  muli-12pt custLineHight15 custColorGreyish ">Gender</span><br>
+                    <span
+                      class="custFontFamilyMuliRegular  muli-14pt custLineHight18 custColorDarkBlack ">{{dataForOrderSummary.gender}}</span>
+                  </ion-col>
+
+
+                </ion-row>
+              </ion-grid>
+
+            </mat-expansion-panel>
+          </mat-accordion>
+        </ion-row>
+
+
+        <ion-row class="custpadding">
+
+          <mat-accordion class="w-100 example-headers-align">
+            <mat-expansion-panel [expanded]="dataForOrderSummary.pincode.length>0">
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  <span class="custFontFamilyMuliBold muli-14pt custLineHight20 custColorDarkShade">Patient's
+                    Address</span>
+                  <span *ngIf="dataForOrderSummary.pincode.length==0"
+                    class="custFontFamilyMuliBold muli-12pt custLineHight20 custColorDarkishBlue change"
+                    (click)="openPatientAddress()">Add</span>
+                  <span *ngIf="dataForOrderSummary.pincode.length>0"
+                    class="custFontFamilyMuliBold muli-12pt custLineHight20 custColorDarkishBlue change"
+                    (click)="openPatientAddressChange()">Change</span>
+
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <ion-grid class="ion-no-padding mb-2">
+                <ion-row>
+                  <ion-col [size]="'9'">
+
+                    <ion-col [size]="'9'">
+
+                      <span
+                        class="custFontFamilyMuliRegular muli-12pt custLineHight15 custColorGreyish">Address</span><br>
+                      <span
+                        class="custFontFamilyMuliRegular muli-14pt custLineHight18 custColorDarkBlack ">{{dataForOrderSummary.address1}}</span><br>
+                      <span
+                        class="custFontFamilyMuliRegular muli-14pt custLineHight18 custColorDarkBlack ">{{dataForOrderSummary.address2}}</span><br>
+                      <span
+                        class="custFontFamilyMuliRegular muli-14pt custLineHight15 custColorDarkBlack">{{dataForOrderSummary.address3}}
+                      </span><br>
+                      <span
+                        class="custFontFamilyMuliRegular muli-14pt custLineHight15 custColorDarkBlack">{{dataForOrderSummary.pincode}}
+                      </span><br>
+                      <span
+                        class="custFontFamilyMuliRegular muli-14pt custLineHight15 custColorDarkBlack">{{dataForOrderSummary.city}}
+                      </span>
+                      <span
+                        class="custFontFamilyMuliRegular muli-14pt custLineHight15 custColorDarkBlack">{{dataForOrderSummary.state}}
+                      </span>
+                      <span
+                        class="custFontFamilyMuliRegular muli-14pt custLineHight15 custColorDarkBlack">{{dataForOrderSummary.country}}
+                      </span>
+
+                    </ion-col>
+
+                  </ion-col>
+                  <br>
+
+                  <ion-col [size]="'9'">
+                    <span class="custFontFamilyMuliRegular muli-12pt custLineHight15 custColorGreyish pt-5">Phone Number
+                    </span><br>
+                    <span
+                      class="custFontFamilyMuliRegular muli-14pt custLineHight15 custColorDarkBlack">{{adressForm?.mobileNo}}
+                    </span>
+                  </ion-col>
+                </ion-row>
+              </ion-grid>
+
+            </mat-expansion-panel>
+          </mat-accordion>
+        </ion-row>
+
+        <ion-card class="custBackgroundColorWhite" *ngIf="checkUseraddress">
+          <ion-card-content>
+            <ion-grid class="ion-no-padding">
+              <ion-row>
+                <ion-col [size]="'9'">
+                  <span class="custFontFamilyMuliBold muli-12pt custLineHight22 custColorDark">Shipping Address</span>
+                </ion-col>
+
+                <ion-col [size]="'3'">
+                  <span class="custFontFamilyMuliBold muli-12pt custLineHight22 custColorDarkishBlue"
+                    (click)="openAddressPage()">change</span>
+                </ion-col>
+
+                <ion-col [size]="'12'" class="pt-3 mb-1">
+                  <span
+                    class="custFontFamilyMuliBold muli-10pt custLineHight22 custColorDark">{{checkUseraddress?.fullName}}</span>
+                </ion-col>
+
+                <ion-col [size]="'12'">
+                  <address class="custFontFamilyMuliBold muli-10pt custLineHight15 custColorDark custAdd">
+                    {{checkUseraddress?.addressLine1}}, {{checkUseraddress?.addressLine2}}, {{checkUseraddress?.city}},
+                    {{checkUseraddress?.state}} {{checkUseraddress?.pincode}}
+                    <p class="custFontFamilyMuliBold muli-10pt custLineHight15 custColorDark pt-2">
+                      {{checkUseraddress?.mobileNo}}</p>
+                  </address>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+</ion-content>
+
+<!-- class="fixed-bottom" -->
+<ion-footer>
+      <ion-col>
+
+        <ion-row class="px-2 w-100">
+          <ion-col [size]="'12'" (click)="addressTrue()">
+            <button class="btn w-100 text-center custBackgroundColorBrightCyan" [disabled]="ifAddressAdded"><span
+                class="custColorWhite custFontFamilyMuliBold muli-16pt">Proceed To schedule</span></button>
+
+                <!-- <button *ngIf = "BuyNow === 'False'" class="btn w-100 text-center custBackgroundColorBrightCyan" [disabled]="ifAddressAdded"><span
+                  class="custColorWhite custFontFamilyMuliBold muli-16pt">Add To Cart</span></button> -->
+          </ion-col>
+
+        </ion-row>
+      </ion-col>
+    </ion-footer>
+
+

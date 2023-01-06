@@ -1,0 +1,911 @@
+{
+    "mutualfund" :{
+        "heading": "Details",
+        "discription": "Discover for Investments",
+        "Product":"Mutualfund",
+        "action1":"Add to card",
+        "action2":"Invest Now",
+        "Chart": {
+            "chart_type": "graph",
+            "row1": [
+                {
+                    "value": "24.20%"
+                }
+            ],
+            "row2": [
+                {    
+                    "icon":"",
+                    "lable": "1-Day Return as on"
+                }
+            ],
+            "graph": [
+                {
+                    "nav": 20,
+                    "plan_id": 40818
+                },
+                {
+                    "nav": 10,
+                    "plan_id": 40818
+                },
+                {
+                    "nav": 60,
+                    "plan_id": 40818
+                },
+                {
+                    "nav": 25,
+                    "plan_id": 40818
+                },
+                {
+                    "nav": 54,
+                    "plan_id": 40818
+                },
+                {
+                    "nav": 20,
+                    "plan_id": 40818
+                },
+                {
+                    "nav": 30,
+                    "plan_id": 40818
+                }
+            ],
+            "graph_footer": {
+                "row": {
+                    "col1": "Start SIP",
+                    "col2": "Compare"
+                }
+            }
+        },
+        "Cards": [
+           
+            {
+                "card_Type": "value",
+                "heading": "Basic Information",
+                "description": "",
+                "rows": [
+                    {
+                        "col_In_row": [
+                            {
+                               "icon": "",
+                                "lable": "Age",
+                                "value": "23 Yrs 5M"
+                            },
+                            {
+                                "icon": "",
+                                "lable": "Expense rate",
+                                "value": "2.72%"
+                            }
+                        ]
+                    },
+                    {
+                        "col_In_row": [
+                            {
+                                "icon": "",
+                                "lable": "Type",
+                                "value": "open-ended"
+                            },
+                            {
+                                "icon": "",
+                                "lable": "AUM(fund Size)",
+                                "value": "₹25 Cr"
+                            }
+                        ]
+                    },
+                    {
+                        "col_In_row": [
+                            {
+                                "icon": "",
+                                "lable": "Risk Grade",
+                                "value": "NA"
+                            },
+                            {
+                                "icon": "",
+                                "lable": "Return Grade",
+                                "value": "NA"
+                            }
+                        ]
+                    },
+                    {
+                        "col_In_row": [
+                            {
+                                "icon": "",
+                                "lable": "Turnover",
+                                "value": "83%"
+                            },
+                            {
+                                "icon": "",
+                                "lable": "Return Since Launch",
+                                "value": "16.69%"
+                            }
+                        ]
+                    },
+                    {
+                        "col_In_row": [
+                            {
+                                "icon": "",
+                                "lable": "Beanchmark",
+                                "value": "313"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "step":
+        [ {
+            "heading": "How your money get invested",
+            "data": [
+                {
+                    "Icon": "",
+                    "Steps": "Step 1",
+                    "Disc": "Select a scheme"
+                },
+                {
+                    "Icon": "",
+                    "Steps": "Step 2",
+                    "Disc": "Open investment account and make payment"
+                },
+                {
+                    "Icon": "",
+                    "Steps": "Step 3",
+                    "Disc": "HeyTorus submits transaction to mutual fund company"
+                },
+                {
+                    "Icon": "",
+                    "Steps": "Step 3",
+                    "Disc": "Mutual fund company sends confirmation to you via email and text in 1 working day"
+                }
+            ]
+        }
+    ]
+    },
+    "las" :{
+        "heading": "Details",
+        "discription": "Discover for Investments",
+        "Product":"LAS",
+        "action1":"Add to card",
+         "action2":"Pledge",
+        "Cards": [
+           
+            {
+                "card_Type": "value",
+                "heading": "Basic Information",
+                "description": "",
+                "rows": [
+                    {
+                        "col_In_row": [
+                            {    
+                                "subheading":"Dabur India Limited",
+                                 "img":""
+                            }
+                        ]
+                    },
+                    { 
+                        
+                        "col_In_row": [
+                            {
+                                "icon": "",
+                                "lable": "Available Quantity",
+                                "value": "50"
+                            },
+    {
+                                "icon": "",
+                                "lable": "Haircut Rate",
+                                "value": "20%"
+                            }
+                        ]
+                    },
+                    {
+                        "col_In_row": [
+                            {
+                                "icon": "",
+                                "lable": "Total Loan",
+                                "value": "2315.50"
+                            },
+                            {
+                                "icon": "",
+                                "lable": "Interest Rate",
+                                "value": "5%"
+                            }
+                        ]
+                    },
+                    {
+                        "col_In_row": [
+                            {
+                                "icon": "",
+                                "lable": "EMI",
+                                "value": "810"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+       
+    },
+     "jobdescription" :{
+        "heading": "Jobs",
+        "discription": "Discover all Jobs",
+        "Product":"Jobs",
+        "action1":"Add to card",
+         "action2":"Apply Now",
+    
+        "Cards": [
+           
+            {
+                "card_Type": "value",
+                "heading": "Job Details 1",
+                "description": "",
+                "rows": [
+                    {
+                        "col_In_row": [
+                            {    
+                                "subheading":"Chartered Accountant"
+                            }
+                        ]
+                    },
+                    {
+                        "col_In_row": [
+                            {
+                                "icon": "",
+                                "lable": "Min_Exper",
+                                "value": "3 year"
+                            },
+                            {
+                                "icon": "",
+                                "lable": "Price",
+                                "value": "₹40,000-₹90,000"
+                            }
+                        ]
+                    },
+                    {
+                        "col_In_row": [
+                            {
+                                "icon": "",
+                                "lable": "Education",
+                                "value": "Post Graduate"
+                            },
+                            {
+                                "icon": "",
+                                "lable": "description",
+                                "value": "Torus"
+                            }
+                           
+                        ]
+                    },
+                    {
+                        "col_In_row": [
+                            {
+                                "icon": "",
+                                "lable": "Gender",
+                                "value": "Male only"
+                            },
+                            {
+                                "icon": "",
+                                "lable": "Experience",
+                                "value": "Min. 3 Years"
+                            }
+                          
+                        ]
+                    },
+                    {
+                        "col_In_row": [
+                            {
+                                "icon": "",
+                                "lable": "location",
+                                "value": "Gwalior"
+                            }
+                            
+                        ]
+                    }
+                    
+                ]
+            },
+            {
+                "card_Type": "value",
+                "heading": "Job Details 2",
+                "description": "",
+                "rows": [
+                    {
+                        "col_In_row": [
+                            {    
+                                "subheading":"Chartered Accountant"
+                            }
+                        ]
+                    },
+                    {
+                        "col_In_row": [
+                            {
+                                "icon": "",
+                                "lable": "Min_Exper",
+                                "value": "3 year"
+                            },
+                            {
+                                "icon": "",
+                                "lable": "Price",
+                                "value": "₹40,000-₹90,000"
+                            }
+                        ]
+                    },
+                    {
+                        "col_In_row": [
+                            {
+                                "icon": "",
+                                "lable": "Education",
+                                "value": "Post Graduate"
+                            },
+                            {
+                                "icon": "",
+                                "lable": "description",
+                                "value": "Torus"
+                            }
+                           
+                        ]
+                    },
+                    {
+                        "col_In_row": [
+                            {
+                                "icon": "",
+                                "lable": "Gender",
+                                "value": "Male only"
+                            },
+                            {
+                                "icon": "",
+                                "lable": "Experience",
+                                "value": "Min. 3 Years"
+                            }
+                          
+                        ]
+                    },
+                    {
+                        "col_In_row": [
+                            {
+                                "icon": "",
+                                "lable": "Gender",
+                                "value": "Male only"
+                            }
+                            
+                        ]
+                    }
+                    
+                ]
+            }
+        ]
+       
+    },
+    "insurance" :{
+        "heading": "Details",
+        "discription": "Discover for Investments",
+        "Product":"Insurance",
+        "action1":"Add to card",
+         "action2":"Invest Now",
+        "Info": {
+            "heading": {
+                "Subtitle": "Basic Information",
+                "Subdescription": "suminformation"
+            },
+            "StaticType": {
+                "Type": "Insurance"
+            }
+        },
+        "Cards": [
+            {
+                "cardType": "value",
+                "heading": "",
+                "description": "",
+                "button":"Buy Plan",
+               
+                 
+                "rows": [
+                    {
+                        "col_In_row": [
+                            {    
+                                
+                                "subheading":"Aditya Birla Supra Super Top - up",
+                                 "img":" "
+                            }
+                        ]
+                    },
+                    { 
+                        
+                        "col_In_row": [
+                            {
+                                "icon": "",
+                                "lable": "Sum Assured",
+                                "value": "₹45,000.00"
+                            },
+                            {
+                                "icon": "",
+                                "lable": "Yearly Premium",
+                                "value": "₹12,149.00"
+                            }
+                        ]
+                    },
+                    {
+                        "col_In_row": [
+                            {
+                                "icon": "",
+                                "lable": "Cashless Hosps.",
+                                "value": "1000"
+                            }
+                        ]
+                    }
+                ]
+        }
+    ],
+    "step":[
+     {
+        "heading": "Covered",
+        "data": [
+            {
+                "Icon": "",
+                "Disc": "Benefits if you don't claim"
+            },
+            {
+                "Icon": "",
+                "Disc": "Expenses before Admission"
+            },
+            {
+                "Icon": "",
+                "Disc": "Expenses after Discharge"
+            },
+            {
+                "Icon": "",
+                "Disc": "Restore benefits"
+            },
+            {
+                "Icon": "",
+                "Disc": "Organ donor"
+            },
+            {
+                "Icon": "",
+                "Disc": "Day care treatment"
+            },
+            {
+                "Icon": "",
+                "Disc": "Ayurveda / Homeopathy"
+            },
+            {
+                "Icon": "",
+                "Disc": "Home hospitalisation"
+            }
+        ]
+    },
+    {
+        "heading": "Not Covered",
+        "data": [
+            {
+                "Icon": "",
+                "Disc": "Pregnancy cover"
+            },
+            {
+                "Icon": "",
+                "Disc": "Daily hospitalisation allowance"
+            },
+            {
+                "Icon": "",
+                "Disc": "Regular medical expenses (OPD)"
+            }
+        ]
+    },
+    {
+        "heading": "Waiting Period",
+        "data": [
+            {
+                "Icon": "",
+                "Steps":"Covered since day 1",
+                "Disc": "Accidental injuries"
+            },
+            {
+                "Icon": "",
+                "Steps":"30 days cooling period",
+                "Disc": "No non- accidental medical condition will be covered for first 30 days"
+            }
+        ]
+    },
+    {
+        "heading": "Exclusions",
+        "data": [
+            {
+                "Icon": "",
+                "Steps":"War related injuries"
+            },
+            {
+                "Icon": "",
+                "Steps":"Cosmetic surgery"
+            },
+            {
+                "Icon": "",
+                "Steps":"Lasik eye treatments"
+            },
+            {
+                "Icon": "",
+                "Steps":"Drugs or alcohol abuse"
+            }, {
+                "Icon": "",
+                "Steps":"Administrative expenses"
+            },
+            {
+                "Icon": "",
+                "Steps":"Registration fees"
+            }
+        ]
+    },
+    {
+        "heading": "Main Features",
+        "data": [
+            {
+                "Icon": "",
+                "Disc": "Room Rent: Single Pvt. A/c Room"
+    
+            },
+            {
+                "Icon": "",
+                "Disc": "Copay: 0%"
+    
+            },
+            {
+                "Icon": "",
+                "Disc": "Waiting period: 3 years"
+    
+            },
+            {
+                "Icon": "",
+                "Disc": "Renewal Bonus: 50%"
+    
+            }
+        ]
+    }
+    ]
+    },
+    "health":{
+        "heading": "Details",
+        "discription": "Discover for Investments",
+        "Product":"Health",
+        "action1":"Add to card",
+         "action2":"Invest Now",
+        "Info": {
+            "heading": {
+                "Subtitle": "Basic Information",
+                "Subdescription": "suminformation"
+            },
+            "StaticType": {
+                "Type": "health"
+            }
+        },
+        "Cards": [
+            {
+                "card_Type": "value",
+                "heading": "",
+                "description": "",
+                "rows": [   
+                    {
+                        "col_In_row": [ 
+                            {    
+                                "subheading":"FASTING BLOOD SUGAR",
+                                 "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmmQQxURGXGX1ZZFS2sjZCLWMZ-kusr5y8rw&usqp=CAU"
+                            }
+                        ]
+                    },
+                    { 
+                        
+                        "col_In_row": [
+                            {
+                                "icon": "",
+                                "lable": "Sampal required",
+                                "value": "Blood"
+                            },
+                            {
+                                "icon": "",
+                                "lable": "preparations",
+                                "value": "Do not eat drink anything other thsan water for 8-12 hours before the test"
+                            }
+                        ]
+                    },
+                    {
+                        "col_In_row": [
+                            {
+                                "icon": "",
+                                "lable": "Including all texs",
+                                "value": "₹80"
+                            }
+                        ]
+                    }
+                ]
+        }
+    ],
+        "step": 
+        [{
+            "heading":"Medical Description",
+          "data":[
+            {
+                "Icon": "",
+                "Steps": "",
+                "Disc": "Fasting Blood Sugar,aslo called the Fasting Plasma Gluose test,measures your fasting blood glucose level.Fasting means you should not eat or drink for 8 hours"
+            }
+        ]
+    }
+        ]
+    },
+    "education":{
+        "heading": "Details",
+        "discription": "Discover for Investments",
+        "Product": "Education",
+        "action1":"Add to card",
+         "action2":"Buy",
+        "media": {
+            "mediatype": "video",
+            "url": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
+        },
+        "Cards": [
+           
+            {
+                "card_Type": "value",
+                "heading": "Basic Information",
+                "description": "",
+                "rows": [
+                    {
+                        "col_In_row": [ 
+                            {    
+                                "subheading":"mutual Fund",
+                                 "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjwR_qwwP-PgM2uGa5crh8YvIhpV_yc7LNXA&usqp=CAU"
+                            }
+                        ]
+                    },
+                    {
+                        "col_In_row": [
+                            {
+                               "icon": "",
+                                "lable": "Rating",
+                                "value": "4.1"
+                            },
+                            {
+                                "icon": "",
+                                "lable": "Including all texs price ",
+                                "value": "₹250"
+                            }
+                        ]
+                    },
+                    {
+                        "col_In_row": [
+                            {
+                                "icon": "",
+                                "lable": "enrolled",
+                                "value": "5"
+                            },
+                            {
+                                "icon": "",
+                                "lable": "Topics",
+                                "value": "10"
+                            }
+                        ]
+                    },
+                    {
+                        "col_In_row": [
+                            {
+                                "icon": "",
+                                "lable": "flexiblity",
+                                "value": "Flexible Deadlines"
+                            },
+                            {
+                                "icon": "",
+                                "lable": "availability",
+                                "value": "100% Online"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "Info": {
+            "heading": "Basic Information",
+            "product": "education"
+        },
+        "step": [
+            {
+                "heading": "Information Steps",
+                "data": [
+                    {
+                        "Icon": "",
+                        "Steps": "Step 1",
+                        "Disc": "Select a scheme"
+                    },
+                    {
+                        "Icon": "",
+                        "Steps": "Step 2",
+                        "Disc": "Open investment account and make payment"
+                    },
+                    {
+                        "Icon": "",
+                        "Steps": "Step 3",
+                        "Disc": "HeyTorus submits transaction to mutual fund company"
+                    },
+                    {
+                        "Icon": "",
+                        "Steps": "Step 3",
+                        "Disc": "Mutual fund company sends confirmation to you via email and text in 1 working day"
+                    }
+                ]
+            }
+        ]
+    },
+    "digigold":{
+        "heading": "Details",
+        "discription": "Discover for Investments",
+        "Product":"Digigold",
+        "action1":"Add to card",
+         "action2":"Buy",
+        "Chart": {
+            "chart_type": "graph",
+            "row1": [
+                {
+                    "lable": "Current Rate/Gram",
+                    "value": "₹5251.16"
+                }
+            ],
+            "row2": [
+                {
+                    "lable": " as on 19 Mar 2021,12:13pm"
+                }
+            ],
+            "graph": [
+                {
+                    "nav": 20,
+                    "nav_date": "2021-07-12",
+                    "plan_id": 40818
+                },
+                {
+                    "nav": 10,
+                    "nav_date": "2021-07-12",
+                    "plan_id": 40818
+                },
+                {
+                    "nav": 60,
+                    "nav_date": "2021-07-12",
+                    "plan_id": 40818
+                },
+                {
+                    "nav": 25,
+                    "nav_date": "2021-07-12",
+                    "plan_id": 40818
+                },
+                {
+                    "nav": 54,
+                    "nav_date": "2021-07-12",
+                    "plan_id": 40818
+                },
+                {
+                    "nav": 20,
+                    "nav_date": "2021-07-12",
+                    "plan_id": 40818
+                },
+                {
+                    "nav": 30,
+                    "nav_date": "2021-07-12",
+                    "plan_id": 40818
+                }
+            ],
+            "row3": [
+                {
+                    "icon": "",
+                    "lable": "Invested Amount",
+                    "value": "₹700"
+                },
+                {
+                    "icon": "DownPerArrow",
+                    "lable": "Total Gold Holding",
+                    "value": "20 Gm"
+                }
+            ]
+        },
+        "Info": {
+                "heading": "Basic Information",
+                "product": "digigold"
+        },
+        "step": [{
+            "heading":"Benefits Of Digital Commodities",
+            "data":[
+            {
+                "Icon": "",
+                "Steps": "100% Secure",
+                "Disc": "Stored in insured & guarded vaults"
+            },
+            {
+                "Icon": "",
+                "Steps": "Diversify Portfolio",
+                "Disc": "Balance your portfolio. Reduce risk concentration"
+            },
+            {
+                "Icon": "",
+                "Steps": "Step 3",
+                "Disc": "HeyTorus submits transaction to mutual fund company"
+            },
+            {
+                "Icon": "",
+                "Steps": "Step 3",
+                "Disc": "Mutual fund company sends confirmation to you via email and text in 1 working day"
+            }
+        ]
+    }
+        ]
+    },
+    "assessment": {
+        "heading": "Details",
+        "discription": "Discover for Investments",
+        "Product":"Assessment",
+        "action1":"Add to card",
+         "action2":"Start To Assissment",
+        "Cards":
+        [ {
+            "card_Type": "normal",
+            "heading": "Details",
+            "subheading": "mutual Fund",
+            "description": "Na",
+            "price": 250,
+            "rating": 4.1,
+            "data": [
+                {
+                    "icon": "assets/educationIcon/user.svg",
+                    "value": 4.6,
+                    "type": ""
+                },
+                {
+                    "icon": "assets/educationIcon/chat.svg",
+                    "value": 5,
+                    "type": "enrolled"
+                },
+                {
+                    "icon": "assets/educationIcon/online.svg",
+                    "value": "",
+                    "type": "Topics"
+                },
+                {
+                    "icon": "",
+                    "value": "",
+                    "type": "Flexible Deadlines"
+                },
+                {
+                    "icon": "assets/educationIcon/deadlines.svg",
+                    "value": "",
+                    "type": "100% Online"
+                }
+            ]
+        }
+    ],
+        "Info": {
+            "heading": {
+                "Subtitle": "Basic Information",
+                "Subdescription": "suminformation"
+            },
+            "StaticType": {
+                "Type": "education"
+            }
+        },
+        "step": 
+        [{
+            "heading":"Information Steps",
+            "data":[
+            {
+                "Icon": "",
+                "Steps": "Step 1",
+                "Disc": "Select a scheme"
+            },
+            {
+                "Icon": "",
+                "Steps": "Step 2",
+                "Disc": "Open investment account and make payment"
+            },
+            {
+                "Icon": "",
+                "Steps": "Step 3",
+                "Disc": "HeyTorus submits transaction to mutual fund company"
+            },
+            {
+                "Icon": "",
+                "Steps": "Step 3",
+                "Disc": "Mutual fund company sends confirmation to you via email and text in 1 working day"
+            }
+        ]
+    }
+        ]
+    }
+}

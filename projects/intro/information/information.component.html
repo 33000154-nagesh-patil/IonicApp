@@ -1,0 +1,121 @@
+<ion-content>
+    <ion-slides pager #mySlider class="h-100 w-100">
+        <ion-slide class="cc_bg">
+            <ion-grid class="h-100 w-100 ion-no-padding">
+                <ion-row>
+                    <ion-col [size]="'12'" class="ion-no-padding">
+                        <img [src]="allData?.sliderStar" class="custSliderImg w-100 " />
+                    </ion-col>
+                    <div class="custDivDisplay h-100 w-100">
+                        <ion-col [size]="'12'" class="text-start custMarginBottom40 align-self-md-end align-self-end">
+                            <ion-row>
+                                <ion-col [size]="'2'" class="text-start"></ion-col>
+                                <ion-col [size]="'10'" class="text-start">
+                                    <img [src]="allData?.splashLogo" class="slideOneImg" />
+                                </ion-col>
+                            </ion-row>
+                        </ion-col>
+                        <ion-col [size]="'12'" class="text-start">
+                            <ion-row>
+                                <ion-col [size]="'2'" class="text-start">
+                                    <div class="custBackgroundColorWhite custBox"></div>
+                                </ion-col>
+                                <ion-col [size]="'10'" class="text-start customMarginTop9">
+                                    <span class="text-capitalize muli-34pt custLineHight46 custColorWhite custFontFamilyMuliRegular ">{{'welcometo' | translate}}</span><br>
+                                    <span class="text-capitalize muli-34pt custLineHight46 custColorWhite custFontFamilyMuliRegular">{{'indiasFirst' | translate}}</span><br>
+                                    <span class="text-capitalize muli-34pt custLineHight46 custColorWhite custFontFamilyMuliRegular">
+                                        <strong>
+                                            {{'smart' | translate}} {{'wellness' | translate}} {{'platform' | translate}}
+                                        </strong>
+                                    </span>
+                                </ion-col>
+                            </ion-row>
+                          
+                        </ion-col>
+                    </div>
+                    
+                    <ion-col [size]="'12'" class="custColoum">
+                        <ion-row>
+                            <ion-col [size]="'6'" class="text-center">
+                                <ion-button (click)="skip()" class="custButton">
+                                    <span class="text-capitalize custFontFamilyMuliBold muli-16pt custColorBrightCyan">
+                                        {{'skipLabel' | translate}}
+                                    </span>
+                                </ion-button>
+                            </ion-col>
+                            <ion-col [size]="'6'" class="text-center">
+                                <ion-button (click)="next()" class="custButton">
+                                    <span class="text-capitalize custFontFamilyMuliBold muli-16pt custColorWhite">
+                                        {{'nextLabel' | translate}}
+                                    </span>
+                                </ion-button>
+                            </ion-col>
+                        </ion-row>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+        </ion-slide>
+        <ion-slide>
+            <ion-grid class="ion-no-padding">
+                <ion-row class="h-100 w-100 p-4">
+                    <ion-col [size]="'12'">
+                        <img [src]="allData?.slide1" class="text-start"/>
+                    </ion-col>
+                    <ion-col [size]="'12'" class="">
+                        <p class="text-capitalize muli-22pt custFontFamilyMuliBold custLineHight30 custColorDark text-start">{{'onemarketplace' | translate}}</p>
+                        <p class="text-capitalize custLineHight23 custColorBattlePGry muli-14pt text-start">{{'onemarketplaceParagraph' | translate}}</p>
+                    </ion-col>
+                    <ion-col [size]="'12'" class="custColoum">
+                        <ion-row>
+                            <ion-col [size]="'6'" class="text-center">
+                                <ion-button (click)="skip()" class="custButton">
+                                    <span class="text-capitalize custFontFamilyMuliBold muli-16pt custColorWarmGrey">
+                                        {{'skipLabel' | translate}}
+                                    </span>
+                                </ion-button>
+                            </ion-col>
+                            <ion-col [size]="'6'" class="text-center">
+                                <ion-button (click)="next()" class="custButton">
+                                    <span class="text-capitalize custFontFamilyMuliBold muli-16pt custColorDarkishBlue">
+                                        {{'nextLabel' | translate}}
+                                    </span>
+                                </ion-button>
+                            </ion-col>
+                        </ion-row>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+        </ion-slide>
+            <ion-slide>
+                <ion-grid class="ion-no-padding">
+                    <ion-row class="h-100 w-100 p-4">
+                        <ion-col [size]="'12'" class="pt-4">
+                            <img [src]="allData?.slide2" class="text-start"/>
+                        </ion-col>
+                        <ion-col [size]="'12'" class="">
+                            <p class="text-capitalize muli-22pt custFontFamilyMuliBold custLineHight30 custColorDark text-start">{{'oneplatform' | translate}}</p>
+                            <p class="text-capitalize custLineHight23 custColorBattlePGry muli-14pt text-start">{{'oneplatformParagraph' | translate}}</p>
+                        </ion-col>
+                        <ion-col [size]="'12'" class="custColoum">
+                            <ion-row>
+                                <ion-col [size]="'6'" class="text-center">
+                                    <!-- <ion-button (click)="skip()" class="custButton">
+                                        <span class="text-capitalize custFontFamilyMuliBold muli-16pt custColorWarmGrey">
+                                            {{'skipLabel' | translate}}
+                                        </span>
+                                    </ion-button> -->
+                                </ion-col>
+                                <ion-col [size]="'6'" class="text-center">
+                                    <ion-button (click)="sendOutput()" class="custButton">
+                                        <span class="text-capitalize custFontFamilyMuliBold muli-16pt custColorDarkishBlue">
+                                            {{'loginLabel' | translate}}
+                                        </span>
+                                    </ion-button>
+                                </ion-col>
+                            </ion-row>
+                        </ion-col>
+                    </ion-row>
+                </ion-grid>
+            </ion-slide>
+    </ion-slides>
+</ion-content>

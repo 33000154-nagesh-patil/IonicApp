@@ -1,0 +1,31 @@
+<cap-header [title]="headers" [otherTextName]="headers" [imageList]="imageList" [showArrow]="true" [showLabel]="false" [showImg]="false" [showIndex]="false"
+[showNotification]="false" [showCartWithName]="true"  [cartCount]="cartCount"
+[showSideMenu]="false" [showSearch]="true" [showClose]="false" [showShare]="false" [showWatchList]="false"
+[showCartWithoutName]="false" [showStories]="false" [padding]="true" [paddingSize]="'7'" [showOtherText]="true" [backUrlName]=""></cap-header>
+
+
+<ion-content>
+  <ion-grid>
+    <ion-card>
+      <ion-row class="px-3 pb-3 pt-2">
+         <span class="custFontFamilyMuliBold muli-16pt custLineHight20 custColorDarkShade">{{Header?.question}}
+              </span>
+      </ion-row>
+      <ion-row class="bodycontent1 p-2" style="border-radius: 4px;">
+        <p class="custFontFamilyMuliRegular muli-14pt mt-2 px-3 custColorDark"  [innerHTML]="Header?.answer"></p>
+         <ion-row class="p-2 w-100 justify-content-end" *ngIf="Header?.requireRedirectionURL!=null">
+            <a class="muli-14pt custFontFamilyMuliBold custColorDarkishBlue" href={{Header.requireRedirectionURL}} target="_blank">Click here</a>&nbsp;&nbsp;
+            <img class="imgSize" src="assets/icon/next.svg"/>
+        </ion-row>
+      </ion-row>
+    </ion-card>
+
+    <ion-row class="px-2 pt-3">
+      <span class="muli-16pt custFontFamilyMuliBold custColorDark">Was this solution helpful ?</span>
+    </ion-row>
+    <ion-row>
+      <ion-col [size]="'3'" class="px-2" (click)="goBack()"><span class="muli-14pt custFontFamilyMuliBold custColorDarkishBlue">Yes</span></ion-col>
+      <ion-col [size]="'8'" (click)="chatBot()"><span class="muli-14pt custFontFamilyMuliBold custColorDarkishBlue">Chat With Us</span></ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

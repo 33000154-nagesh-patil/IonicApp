@@ -1,0 +1,37 @@
+ 
+  .custLooksBtn {
+    height: 45px;
+    --background: var(--custBrightCyan) !important;
+    --box-shadow: none;
+    margin-left: 8px;
+}
+.center {
+  position: absolute;
+  top: 35%;
+}
+.custModalContainer {
+  z-index: 1;
+  left: 0;
+  // top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  // background-color: var(--custDark);
+  //  opacity: 0.4;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+}
+.modal-content {
+  background-color: var(--custModelWhite);
+  margin: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 16px;
+  padding-left: 16px;
+  border: 1px solid var(--custModelGray);
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  border-radius: 10px 10px 0px 0px;
+}

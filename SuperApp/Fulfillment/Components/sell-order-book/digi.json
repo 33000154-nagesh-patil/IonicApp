@@ -1,0 +1,20 @@
+{   
+    "name":"Augmont Digital gold",
+    "segments":[
+        {
+          "name":"Sell in Grams",
+          "value":"quantity",
+          "placeHolder":"Enter Quantity",
+          "unit":"gm"
+      },
+      {
+          "name":"Sell in Amount",
+          "value":"amount",
+          "placeHolder":"Enter Amount",
+          "unit":"₹"
+      }
+      ],
+      "pricePerUnit":5000,
+      "availableQuantity":12
+      
+}

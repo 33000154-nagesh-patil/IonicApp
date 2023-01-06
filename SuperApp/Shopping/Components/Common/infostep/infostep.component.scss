@@ -1,0 +1,30 @@
+.StepProgress{
+    &-item:nth-child(1)::after{
+      background-image: url("../../../../../src/assets/Images/Group_21929.svg");
+    }
+    &-item:nth-child(2)::after{
+      background-image: url("../../../../../src/assets/Images/Group_21928.svg");
+    }
+    &-item:nth-child(3)::after{
+      background-image: url("../../../../../src/assets/Images/Group_21927.svg");
+    }
+    &-item:nth-child(4)::after{
+      background-image: url("../../../../../src/assets/Images/Group_21925.svg");
+    }
+    }
+
+    .custImage{
+      width: 30px;
+      height: 32px;
+    }
+    .Icon{
+      width: 10px;
+      height: 10px;
+      background-color: gray;
+      margin-left: 10px ;
+      border-radius: 50%;
+      margin-top: 5px;
+    }
+    .cusPadding{
+      margin-bottom: 60px;
+    }

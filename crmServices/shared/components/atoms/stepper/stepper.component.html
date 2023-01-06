@@ -1,0 +1,25 @@
+<ul class="StepProgress mt-3">
+  <li *ngFor="let x of allDetails" class="w-100 mb-2 " [ngClass]="x?.status == title ?'StepProgress-item is-done':'StepProgress-item current'">
+    <p>
+      <span
+        class="custFontFamilyMuliRegular muli-12pt d-block justify-content-start text-nowrap mt-2 custColorDark">
+        Status - {{x?.status}}
+      </span>
+      <span class="custFontFamilyMuliBold muli-10pt d-block justify-content-start text-nowrap">
+        {{x?.issueDate}}
+      </span>
+    </p>
+    <p *ngIf="x.comments">
+      <span
+        class="custFontFamilyMuliRegular muli-12pt d-block justify-content-start text-nowrap mt-2 custColorDark">
+        Comments
+      </span>
+      <span class="custFontFamilyMuliBold muli-10pt d-block justify-content-start ">
+        {{x?.comments}}
+      </span>
+      <span class="custFontFamilyMuliBold muli-10pt d-block justify-content-start text-nowrap">
+        {{x?.issueDate}}
+      </span>
+    </p>
+  </li>
+</ul>

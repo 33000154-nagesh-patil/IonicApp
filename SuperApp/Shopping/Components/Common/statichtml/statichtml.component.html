@@ -1,0 +1,172 @@
+<!-- 
+ 
+ <ion-grid *ngIf="Data?.Info?.product=='education' ">
+  <ion-row class="mx-2" >
+    <ion-col size="12" *ngIf="Data?.Info?.heading">
+      <span class="custColorDark muli-16pt custFontFamilyMuliBold custMarginLeft">{{Data?.Info?.heading}}</span>
+    </ion-col>
+  </ion-row>
+      <ion-row class="w-100 ion-no-border p-2 " *ngIf="Data?.Info?.product=='education'" >
+        <mat-accordion class="example-headers-align w-100 custColorDarkishBlue h-5">
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                <span class="custFontFamilyMuliSemiBold muli-14pt custLineHight20 custColorDark">Course
+                  Description</span>
+              </mat-panel-title>
+
+            </mat-expansion-panel-header>
+
+            <div class="bodycontent px-3">
+              <p>
+                <span class="custFontFamilyMuliRegular  muli-12pt custLineHight20 custDetail">
+                  Learn about the best practices followed, financial market trends, software used, finance market-related concepts, and the role of a mutual funds agent – all information in one course.    
+
+This course is a perfect tool for aspirants who look forward to associating with the mutual fund sector. You will get to learn about various types of mutual funds, their roles in the economy and its advantages and disadvantages, which will further help you in guiding and educating your clients.   
+                </span>
+              </p>
+            </div>
+
+          </mat-expansion-panel>
+        </mat-accordion>
+
+        <mat-accordion class="example-headers-align w-100 custColorDarkishBlue h-5">
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                <span class="custFontFamilyMuliSemiBold muli-14pt custLineHight20 custColorDark">What you'll
+                  learn</span>
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+
+            <div class="bodycontent"> 
+              <ul *ngFor="let x of whatYouLearn">
+                <li>
+                  <span class="custFontFamilyMuliRegular  muli-12pt custLineHight20 px-3 custDetail">
+                    {{x}}
+                  </span>
+                </li>
+              </ul>
+
+            </div>
+          </mat-expansion-panel>
+        </mat-accordion>
+
+
+        <mat-accordion class="example-headers-align w-100 custColorDarkishBlue h-5">
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                <span class="custFontFamilyMuliSemiBold muli-14pt custLineHight20 custColorDark">Requirements</span>
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <div class="bodycontent">
+              <ul *ngFor="let x of requirement">
+                <li>
+                  <span class="custFontFamilyMuliRegular  muli-12pt custLineHight20 px-3 custDetail">
+                    {{x}}
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </mat-expansion-panel>
+        </mat-accordion>
+      </ion-row>
+    </ion-grid> -->
+
+<ion-grid *ngIf="Data?.Info?.product == 'digigold'" class="m-1">
+  <ion-col [size]="'12'">
+    <span class="custFontFamilyMuliBold muli-16pt custLineHight40 custColorDark">{{Data?.Info?.heading}}</span>
+  </ion-col>
+  <ion-col [size]="'12'">
+    <mat-accordion class="example-headers-align">
+      <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)" hideToggle="true">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+          <span class="custFontFamilyMuliBold  muli-14pt custLineHight20 custColorDark">{{'detailsViewHeader1' | translate}}</span>
+          </mat-panel-title>
+          <mat-panel-description class="flex-grow-0 mt-1">
+            <ion-img [src]="imageList?.arrow" class="custInvestArrow custRotation"></ion-img>
+          </mat-panel-description>
+         
+        </mat-expansion-panel-header>
+        <ion-grid>
+          <ion-row>
+            <ion-col [size]="'12'">
+              <span class="custFontFamilyMuliRegular  muli-14pt custLineHight20 custColorTint">{{'detailsViewHeader1Detail1' | translate}}</span><br>
+              <span class="custFontFamilyMuliRegular  muli-12pt custLineHight18 custColorBattlePGry">{{'detailsViewHeader1Detail2' | translate}}</span>
+            </ion-col>
+            <ion-col [size]="'12'">
+              <span class="custFontFamilyMuliRegular  muli-14pt custLineHight20 custColorTint">{{'detailsViewHeader1Detail3' | translate}}</span><br>
+              <span class="custFontFamilyMuliRegular  muli-12pt custLineHight18 custColorBattlePGry">{{'detailsViewHeader1Detail4' | translate}}</span>
+            </ion-col>
+            <ion-col [size]="'12'">
+              <span class="custFontFamilyMuliRegular  muli-14pt custLineHight20 custColorTint">{{'detailsViewHeader1Detail5' | translate}}</span><br>
+              <span class="custFontFamilyMuliRegular  muli-12pt custLineHight18 custColorBattlePGry">{{'detailsViewHeader1Detail6' | translate}}</span>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </mat-expansion-panel>
+      <mat-expansion-panel [expanded]="step === 1" (opened)="setStep(1)" hideToggle>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <span class="custFontFamilyMuliBold  muli-14pt custLineHight20 custColorDark">{{'detailsViewHeader2' | translate}}</span>
+          </mat-panel-title>
+          <mat-panel-description class="flex-grow-0 mt-1">
+            <ion-img [src]="imageList?.arrow" class="custInvestArrow custRotation"></ion-img>
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <ion-grid>
+          <ion-row>
+            <ion-col [size]="'12'">
+              <span class="custFontFamilyMuliRegular  muli-14pt custLineHight20 custColorTint">{{'detailsViewHeader2Detail1' | translate}}</span><br>
+              <span class="custFontFamilyMuliRegular  muli-12pt custLineHight18 custColorBattlePGry">{{'detailsViewHeader2Detail2' | translate}}</span>
+            </ion-col>
+            <ion-col [size]="'12'">
+              <span class="custFontFamilyMuliRegular  muli-14pt custLineHight20 custColorTint">{{'detailsViewHeader2Detail3' | translate}}</span><br>
+              <span class="custFontFamilyMuliRegular  muli-12pt custLineHight18 custColorBattlePGry">{{'detailsViewHeader2Detail4' | translate}}</span>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </mat-expansion-panel>
+      <mat-expansion-panel [expanded]="step === 2" (opened)="setStep(2)" hideToggle>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <span class="custFontFamilyMuliBold  muli-14pt custLineHight20 custColorDark">{{'detailsViewHeader3' | translate}}</span>
+          </mat-panel-title>
+          <mat-panel-description class="flex-grow-0 mt-1">
+            <ion-img [src]="imageList?.arrow" class="custInvestArrow custRotation"></ion-img>
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <ion-grid>
+          <ion-row>
+            <ion-col [size]="'12'">
+              <span class="custFontFamilyMuliRegular  muli-14pt custLineHight20 custColorTint">{{'detailsViewHeader3Detail1' | translate}}</span><br>
+              <span class="custFontFamilyMuliRegular  muli-12pt custLineHight18 custColorBattlePGry">{{'detailsViewHeader3Detail2' | translate}}</span>
+            </ion-col>
+            <ion-col [size]="'12'">
+              <span class="custFontFamilyMuliRegular  muli-10pt custLineHight15 custColorWarmGrey">{{'detailsViewHeader3Detail3' | translate}}</span>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </mat-expansion-panel>
+    </mat-accordion>
+  </ion-col>
+</ion-grid>
+
+<ion-grid *ngIf="Data?.Info?.product=='health'">
+  <ion-col [size]="'12'">
+    <span class="custFontFamilyMuliBold muli-16pt custLineHight40 custColorDark">{{Data?.Info?.heading}}</span>
+  </ion-col>
+  <ion-card class="custBackgroundDynamicColorWhite">
+    <ion-card-content>
+      <ion-row>
+        <ion-col [size]="'12'">
+          <p><span class="custFontFamilyMuliSemiBold muli-12pt custLineHight18 custColorBattlePGry">E-Reports within
+            </span><span
+              class="px-1 custFontFamilyMuliSemiBold muli-12pt custLineHight18 custColorDark">24-30 houre</span></p>
+        </ion-col>
+      </ion-row>
+    </ion-card-content>
+  </ion-card>
+</ion-grid>

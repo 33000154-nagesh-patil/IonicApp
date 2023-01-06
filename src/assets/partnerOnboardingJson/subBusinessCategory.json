@@ -1,0 +1,55 @@
+{
+  "subsubBusinessCategory" : {
+    "data": [
+      {
+        "ID": "5ab974f4-bae9-4eaa-8bbf-ead94957548n",
+        "TEXT": "College",
+        "Type": "subBusinessCategory"
+      },
+      {
+        "ID": "5ab974f4-bae9-4eaa-8bbf-ead94957548b",
+        "TEXT": "Schools",
+        "Type": "subBusinessCategory"
+      },
+      {
+        "ID": "5ab974f4-bae9-4eaa-8bbf-ead94957548d",
+        "TEXT": "University",
+        "Type": "subBusinessCategory"
+      },
+      {
+        "ID": "5ab974f4-bae9-4eaa-8bbf-ead94957548h",
+        "TEXT": "Professional Courses",
+        "Type": "subBusinessCategory"
+      },
+        {
+          "ID": "5ab974f4-bae9-4eaa-8bbf-ead94957548g",
+        "TEXT": "Distance Learning",
+        "Type": "subBusinessCategory"
+      },
+      {
+        "ID": "5ab974f4-bae9-4eaa-8bbf-ead949575486",
+        "TEXT": "Pre-School/ Day Care",
+        "Type": "subBusinessCategory"
+      },
+      {
+        "ID": "5ab974f4-bae9-4eaa-8bbf-ead949575485",
+        "TEXT": "Coaching Institute",
+        "Type": "subBusinessCategory"
+      },
+      {
+        "ID": "5ab974f4-bae9-4eaa-8bbf-ead949575484",
+        "TEXT": "E-Learning",
+        "Type": "subBusinessCategory"
+      },
+      {
+        "ID": "5ab974f4-bae9-4eaa-8bbf-ead949575483",
+        "TEXT": "Others",
+        "Type": "subBusinessCategory"
+      }
+    ],
+    "Status": 1,
+    "ErrorCode": 0,
+    "Message": "Success",
+    "MessageType": "I"
+  }
+}

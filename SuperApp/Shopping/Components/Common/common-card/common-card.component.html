@@ -1,0 +1,37 @@
+<ion-grid *ngFor="let x of CardValue">
+  <ion-row class="p-2">
+    <ion-col>
+      <span class="custFontFamilyMuliBold muli-16pt custLineHight40 custColorDark">{{x?.heading}}</span>
+    </ion-col>
+  </ion-row>
+  <ion-card>
+    <ion-card-content>
+      <ion-row>
+        <ion-col [size]="'12'" class="d-flex flex-column">
+          <!-- <img [src]="x?.icon" *ngIf="x?.icon == 'locked.svg'" >
+          <img [src]="x?.icon" *ngIf="!(x?.icon == 'locked.svg')" > -->
+          <span *ngIf="x?.title"
+            class="custFontFamilyRobotoCondensed custFontFamilyMuliITF-Rupee muli-20pt custLineHight18 custColorDark m-1"><img *ngIf="x?.image" [src]="x?.image" class="custImg">{{x?.title}}</span>
+          <span *ngIf="x?.description"
+            class="custFontFamilyMuliRegular muli-14pt custLineHight15 custColorBattlePGry m-1">{{x?.description}}</span>
+        </ion-col>
+      </ion-row>
+      <ion-row *ngFor="let y of x?.row">
+        <ion-col class="d-flex flex-column" *ngFor="let z of y|keyvalue">
+          <span
+            class="custFontFamilyMuliRegular muli-12pt custLineHight15 custColorBattlePGry m-1">{{z.key}}</span>
+          <span *ngIf="z?.value"
+            class="custFontFamilyRobotoCondensed custFontFamilyMuliITF-Rupee muli-16pt custLineHight18 custColorDark m-1">{{toString(z?.value)}}
+            <span *ngIf="z.key=='Rating'">
+              <ng-template #starTemplate let-fill="fill">
+                <span class="star" [class.full]="fill === 100">
+                  <span class="half" [style.width.%]="fill">&starf;</span>&starf;
+                </span>
+              </ng-template>
+            </span>
+          </span>
+        </ion-col>
+      </ion-row>
+    </ion-card-content>
+  </ion-card>
+</ion-grid>

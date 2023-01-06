@@ -1,0 +1,141 @@
+<ion-segment [(ngModel)]="segment" *ngIf="data.segmentValues[0].title" class="mb-3" mode="md">
+  <ion-segment-button class="muli-14pt custColorDark custFontFamilyMuliBold" *ngFor="let y of data.segmentValues"
+    [value]="y.title">{{ y.title }}</ion-segment-button>
+</ion-segment>
+
+<div *ngIf="routing != 'RoboAdvisory'">
+  <ion-card class="custBackgroundColorWhite mx-2">
+    <ion-card-content class="border-bottom" *ngFor="let y of data[segment]">
+      <ion-row class="">
+        <ion-col [size]="6" class="custColorDark muli-14pt p-0 custFontFamilyMuliSemiBold text-nowrap">
+          {{ y.row1.col1}}
+        </ion-col>
+        <ion-col [size]="6"
+          class="custFontFamilyMuliSemiBold p-0 custLineHight20 muli-14pt custColorDark text-end text-nowrap">
+          {{ y.row1.col2}}
+        </ion-col>
+      </ion-row>
+
+      <ion-row class="">
+        <ion-col class="custFontFamilyMuliSemiBold p-0 muli-12pt custLineHight16 custColorBattlePGry text-nowrap">
+          {{ y.row2.col1}}
+        </ion-col>
+        <ion-col class="d-flex justify-content-end p-0 text-end">
+          <span class="muli-12pt itemCol mb-1 text-end text-nowrap">
+            <ion-icon name="caret-up" class="custGreenTick"></ion-icon>{{ y.row2.col2}} </span>&nbsp;
+        </ion-col>
+      </ion-row>
+    </ion-card-content>
+  </ion-card>
+  <ion-row class="custPosition mt-4 cta">
+    <button class="custheight text-center p-1 custLineHight14 custLineHight18 px-3 custBtnExplore" (click)="
+        Explore(
+          data.segmentValues[0].title
+            ? data?.title + '-' + segment
+            : data?.title
+        )
+      ">
+      Explore
+    </button>
+  </ion-row>
+</div>
+
+<div *ngIf="routing == 'RoboAdvisory'">
+  <ion-card *ngFor="let y of data[segment]">
+    <!-- <ion-card-header class="pt-0 ">
+          <div class="custBottom d-flex justify-content-end">
+            <ion-img [src]="imageList?.saveIcon" *ngIf="!y?.row1.selectWatchList" class="custBookmark"
+            (click)="changeBookmark(y)"></ion-img>
+            <ion-img [src]="imageList?.saveIcon2" *ngIf="y?.row1.selectWatchList" class="custBookmark"
+            (click)="changeBookmark(y)"></ion-img>
+          </div>
+        </ion-card-header> -->
+        <ion-card-content class="border-bottom" *ngIf="this.segment=='Stock'" >
+          <ion-row class="">
+            <ion-col [size]="6" class="custColorDark muli-14pt p-0 custFontFamilyMuliSemiBold text-nowrap">
+              {{ y.row1.col1}}
+            </ion-col>
+            <ion-col [size]="6"
+              class="custFontFamilyMuliSemiBold p-0 custLineHight20 muli-14pt custColorDark text-end text-nowrap">
+              {{ y.row1.col2}}
+            </ion-col>
+          </ion-row>
+
+          <ion-row class="">
+            <ion-col class="custFontFamilyMuliSemiBold p-0 muli-12pt custLineHight16 custColorBattlePGry text-nowrap">
+              {{ y.row2.col1}}
+            </ion-col>
+            <ion-col class="d-flex justify-content-end p-0 text-end">
+              <span class="muli-12pt itemCol mb-1 text-end text-nowrap">
+                <ion-icon name="caret-up" class="custGreenTick"></ion-icon>{{ y.row2.col2}} </span>&nbsp;
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+    <ion-card-content *ngIf="this.segment!='Stock'">
+      <!-- ROW ONE -->
+      <ion-row class="w-100 px-1" size="12">
+        <ion-col size="3" *ngIf="y?.row1?.icon">
+          <div [ngClass]="y?.row1?.icon ? 'icon' : 'notIcon'">
+            <img [src]="y?.row1?.icon" *ngIf="y?.row1?.icon && environment" />
+
+            <img [src]="'data:image/png;base64,' + y?.row1?.icon" *ngIf="y?.row1?.icon && !environment" />
+          </div>
+        </ion-col>
+        <ion-col size="8">
+          <p class="custFontFamilyMuliSemiBold custLineHight20 muli-14pt custColorDark custTitle"
+            *ngIf="y?.row1?.title">
+            {{ y?.row1?.title }}
+          </p>
+          <p class="custFontFamilyMuliRegular muli-10pt custLineHight15 custTitle text-nowrap"
+            *ngIf="y?.row1?.subTitle">
+            {{ y?.row1?.subTitle }}
+          </p>
+          <p class="custFontFamilyMuliRegular muli-10pt custLineHight15 custTitle text-wrap"
+            *ngIf="y?.row1?.description">
+            {{ y?.row1?.description }}
+          </p>
+        </ion-col>
+        <ion-col *ngIf="y?.row1?.button">
+          <button
+            class="text-capitalize custBtnExplore custColorBrightCyan custFontFamilyMuliRegular muli-14pt custButtonOutLine">
+            {{ y?.row1?.button }}
+          </button>
+        </ion-col>
+      </ion-row>
+
+      <!-- ROW TWO -->
+      <ion-row class="w-100 px-1 custPositiontop">
+        <ion-col class="d-flex flex-column p-2 mx-2" *ngFor="let x of y?.row2 | keyvalue : originalOrder">
+          <p *ngIf="x.key" class="custFontFamilyMuliRegular muli-12pt custLineHight15 text-nowrap">
+            {{ x.key }}
+          </p>
+          <p class="custFontFamilyMuliBold custColorDark muli-14pt custLineHight18 custColorDark float-end text-nowrap"
+            *ngIf="x.key == 'Returns' && x.value != null" [ngClass]="
+              x.value < 0 ? 'custColorcustFadedRed' : 'custColorParakeetGreen'
+            ">
+            <img [src]="
+                x.value < 0
+                  ? 'assets/icon/redDownArrow.svg'
+                  : 'assets/icon/green-up-arrow.svg'
+              " class="arrow" />
+            {{ x.value }}
+          </p>
+          <p class="custFontFamilyMuliBold custColorDark muli-14pt custLineHight18 custColorDark float-end text-nowrap"
+            *ngIf="x.key != 'Returns'">
+            {{ x.value.toString().replace("â‚¹", "₹") }}
+          </p>
+        </ion-col>
+      </ion-row>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-row [size]="'12'" *ngIf="data?.cta" class="text-center pb-2 cta">
+    <button class="custheight text-center custBtnExplore custLineHight14 custLineHight18 px-3" (click)="Explore(
+      data.segmentValues[0].title
+        ? data?.title + '-' + segment
+        : data?.title
+    )">
+      {{ data.cta }}
+    </button>
+  </ion-row>
+</div>

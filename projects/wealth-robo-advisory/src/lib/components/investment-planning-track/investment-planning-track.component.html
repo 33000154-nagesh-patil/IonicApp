@@ -1,0 +1,28 @@
+<div class="card-content-md ion-margin-top custBackgroundColorWhite">
+  <ion-row class="ion-text-center">
+    <ion-col size="6" size-md>
+      <ion-row>
+        <ion-col size="12"><span class="custFontFamilyMuliRegular">{{'amountInvested' | translate}}</span></ion-col>
+        <ion-col size="12"><span class="custFontFamilyMuliBold"><span>{{currentMoneySymbols?.currencySymbol}}</span> {{ trackData?.amountInvested| currencyCommasHundreds}}</span></ion-col>
+      </ion-row>
+    </ion-col>
+    <ion-col size="6" size-md>
+      <ion-row>
+        <ion-col size="12"><span class="custFontFamilyMuliRegular">{{'bouquetValue' | translate}}</span></ion-col>
+        <ion-col size="12"><span class="custFontFamilyMuliBold"><span>{{currentMoneySymbols?.currencySymbol}}</span> {{ trackData?.amountInvested}} (%)</span></ion-col>
+      </ion-row>
+      
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col size="12" size-md (click)="openTrack('bouquet',1)">
+      <span class="custFontFamilyMuliBold custColorDarkishBlue custPointer text-decoration-none">{{'bouquet' | translate}}</span>
+    </ion-col>
+    <ion-col size="12" size-md (click)="openTrack('goals',2)">
+      <span class="custFontFamilyMuliBold custColorDarkishBlue custPointer text-decoration-none">{{'goals' | translate}}</span>
+    </ion-col>
+    <ion-col size="12" size-md (click)="openTrack('insurance',3)">
+      <span class="custFontFamilyMuliBold custColorDarkishBlue custPointer text-decoration-none">{{'insurance' | translate}}</span>
+    </ion-col>
+  </ion-row>
+</div>

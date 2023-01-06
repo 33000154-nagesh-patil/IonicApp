@@ -1,0 +1,41 @@
+<ion-content class="contentBackground">
+  <ion-grid>
+    <ion-row>
+      <!-- <ion-col [size]="'12'" class="custTextAlignCenter">
+        <ion-img [src]="imageList?.succsessIcon" class="custImgSucc"></ion-img>
+      </ion-col> -->
+      <ion-col [size]="'12'" class="custPadding">
+        <!-- <span *ngIf="appName != 'Aqube'"
+          class="custFontFamilyMuliBold muli-22pt custLineHight30 custColorDark">{{'successFullMessage' |
+          translate}}</span> -->
+        <!-- <span *ngIf="appName == 'Aqube'" class="custFontFamilyMuliBold muli-22pt custLineHight30 custColorDark">{{'successFullMessageAq' |
+          translate}}</span> -->
+        <span *ngIf="appName == 'Aqube'"
+          class="custFontFamilyMuliSemiBold muli-22pt custLineHight22 custColorDark text-start">Congratulations! TORUS
+          DIGITAL PRIVATE LIMITED has added you as a Partner</span><br>
+        <ion-col [size]="'12'" class="mt-0 text-start">
+          <ion-item lines="none" class=" ion-no-padding ">
+            <ion-button color="secondary" slot="start" class="custCheckMargin custTer`mCheckbox"
+              formControlName="termsAndConditions" mode="md" (click)="onTermsChecked($event)" id="checkBoxPolicy">
+              <p class="custFontFamilyMuliBold muli-10pt custColorWarmGrey custLineHight15 ion-no-margin ">
+                &nbsp;
+              <a href="https://reportscug.reliancesmartmoney.com/BPP/Login.aspx?FormDetails=abcjkjkjkjkkk@#kjkjkjkdjlkjsflkjlfkjsf" class="custColorDarkishBlue text-decoration-none">
+                Go to Business Partner Portal</a>
+              </p>
+            </ion-button>
+           
+          </ion-item>
+        </ion-col>
+        <!-- <br> -->
+        <!-- <span *ngIf="appName == 'Aqube'"
+          class="custFontFamilyMuliSemiBold muli-16pt custLineHight30 custColorDark text-center">{{'successFullMessageAq2'
+          | translate}}</span> -->
+      </ion-col>
+     
+    </ion-row>
+
+
+  </ion-grid>
+
+
+</ion-content>

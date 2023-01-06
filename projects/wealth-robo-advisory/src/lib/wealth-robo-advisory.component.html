@@ -1,0 +1,95 @@
+<ion-grid>
+  <ion-row class="ion-text-center">
+    <ion-col size="6" size-md>
+      <ion-row>
+        <ion-col size="12"><span class="custFontFamilyMuliRegular text-uppercase custColorDark">{{'yourIncome' | translate}}</span></ion-col>
+        <ion-col size="12"><span class="custFontFamilyMuliBold custColorDark"><span class="custColorDark">{{currentMoneySymbols?.currencySymbol}}</span> {{wealthRoboData?.yourIncome | currencyCommasHundreds}}</span></ion-col>
+      </ion-row>
+    </ion-col>
+    <ion-col size="6" size-md>
+      <ion-row>
+        <ion-col size="12"><span class="custFontFamilyMuliRegular text-uppercase custColorDark">{{'yourExpenses' | translate}}</span></ion-col>
+        <ion-col size="12"><span class="custFontFamilyMuliBold custColorDark"><span class="custColorDark">{{currentMoneySymbols?.currencySymbol}}</span> {{wealthRoboData?.yourExpenses | currencyCommasHundreds}}</span></ion-col>
+      </ion-row>
+    
+    </ion-col>
+    <ion-col size="6" size-md>
+      <ion-row>
+        <ion-col size="12"><span class="custFontFamilyMuliRegular text-uppercase custColorDark">{{'yourAssets' | translate}}</span></ion-col>
+        <ion-col size="12"><span class="custFontFamilyMuliBold custColorDark"><span class="custColorDark">{{currentMoneySymbols?.currencySymbol}}</span> {{wealthRoboData?.yourAssets | currencyCommasHundreds}}</span></ion-col>
+      </ion-row>
+    
+    </ion-col>
+    <ion-col size="6" size-md>
+      <ion-row>
+        <ion-col size="12"><span class="custFontFamilyMuliRegular text-uppercase custColorDark">{{'yourLiabilities' | translate}}</span></ion-col>
+        <ion-col size="12"><span class="custFontFamilyMuliBold custColorDark"><span class="custColorDark">{{currentMoneySymbols?.currencySymbol}}</span> {{wealthRoboData?.yourLiabilities | currencyCommasHundreds}}</span></ion-col>
+      </ion-row>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col [size]="'12'">
+      <ion-card class="custColorDark custBackgroundColorWhite">
+        <ion-card-content class="ion-no-padding">
+          <ion-row class="ion-text-center">
+            <ion-col size="6" size-md>
+              <ion-row>
+                <ion-col size="12"><span class="custFontFamilyMuliBold custColorDark">{{wealthRoboData?.goalsAchievable}}</span></ion-col>
+                <ion-col size="12"><span class="custFontFamilyMuliRegular text-uppercase custColorDark">{{'goalsAchievable' | translate}}</span></ion-col>
+              </ion-row>
+            </ion-col>
+            <ion-col size="6" size-md>
+              <ion-row>
+                <ion-col size="12"><span class="custFontFamilyMuliBold custColorDark"><span class="custColorDark">{{currentMoneySymbols?.currencySymbol}}</span>  {{wealthRoboData?.yourSurplus | currencyCommasHundreds}}</span></ion-col>
+                <ion-col size="12"><span class="custFontFamilyMuliRegular text-uppercase custColorDark">{{'yourSurplus' | translate}}</span></ion-col>
+              </ion-row>
+             
+            </ion-col>
+            <ion-col size="6" size-md>
+              <ion-row>
+                <ion-col size="12"><span class="custFontFamilyMuliBold custColorDark"><span class="custColorDark">{{currentMoneySymbols?.currencySymbol}}</span> {{wealthRoboData?.yourNetworth | currencyCommasHundreds}}</span></ion-col>
+                <ion-col size="12"><span class="custFontFamilyMuliRegular text-uppercase custColorDark">{{'yourNetworth' | translate}}</span></ion-col>
+              </ion-row>
+             
+            </ion-col>
+            <ion-col size="6" size-md>
+              <ion-row>
+                <ion-col size="12"><span class="custFontFamilyMuliBold custColorDark">{{wealthRoboData?.yourCreditScore | currencyCommasHundreds}}</span></ion-col>
+                <ion-col size="12"><span class="custFontFamilyMuliRegular text-uppercase custColorDark">{{'yourCreditScore' | translate}}</span></ion-col>
+              </ion-row>
+              
+            </ion-col>
+          </ion-row>
+        
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+    <ion-col [size]="'12'">
+      <ion-card class="custColorDark custBackgroundColorWhite">
+        <ion-card-header>
+          <ion-card-title class="custFontFamilyMuliBold custColorDark text-uppercase">{{'yourHistoricalGrowth' | translate}}</ion-card-title>
+          <ion-card-subtitle class="custFontFamilyMuliRegular custColorDark">{{'yourHistoricalGrowthSub' | translate}}</ion-card-subtitle>
+          
+        </ion-card-header>
+      
+        <ion-card-content>
+        <ion-button class="custFontFamilyMuliSemiBold custColorDark ">{{'viewGrowth' | translate}}</ion-button>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+    <ion-col [size]="'12'" class="custBoderBottom">
+      <button class="custAccordion custFontFamilyMuliBold text-capitalize muli-20pt custLineHight38 custColorDark custBackgroundColorPaleGrey p-2 custPointer w-100 " (click)="openAccordionPersonalDetails('plan')"> {{'plan' | translate}}<span class="ion-float-end custColorDarkishBlue"><ion-icon [name]="showPlan?'caret-up':'caret-down'"></ion-icon></span></button>
+      <div class="custBorderDiv ion-margin-start" *ngIf="showPlan"></div>
+      <div class="custBackgroundColorWhite" *ngIf="showPlan">
+       <lib-investment-planning [trackData]="planningData" [currentMoneySymbols]="currentMoneySymbols" [planningTransactData]="planningTransactData"></lib-investment-planning>
+      </div>
+    </ion-col>
+    <ion-col [size]="'12'">
+      <button class="custAccordion custFontFamilyMuliBold text-capitalize muli-20pt custLineHight38 custColorDark custBackgroundColorPaleGrey p-2 custPointer w-100 " (click)="openAccordionPersonalDetails('personalDetails')"> {{'myProfile' | translate}}<span class="ion-float-end custColorDarkishBlue"><ion-icon [name]="showPersonalDetail?'caret-up':'caret-down'"></ion-icon></span></button>
+      <div class="custBorderDiv custPanelMargin" *ngIf="showPersonalDetail"></div>
+      <div class="custBackgroundColorWhite" *ngIf="showPersonalDetail">
+        <p>Coming Soon</p>
+      </div>
+    </ion-col>
+  </ion-row>
+</ion-grid>

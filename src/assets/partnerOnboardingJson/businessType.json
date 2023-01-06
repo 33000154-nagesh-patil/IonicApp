@@ -1,0 +1,70 @@
+{
+  "businessType" : {
+    "data": [
+      {
+        "ID": "5ab974f4-bae9-4eaa-8bbf-ead949505482",
+        "TEXT": "Individual",
+        "Type": "  businessType"
+      },
+      {
+        "ID": "5ab974f4-bae9-4eaa-8bbf-csd949575482",
+        "TEXT": "Proprietorship",
+        "Type": "  businessType"
+      },
+      {
+        "ID": "5ab974f4-bae9-4eaa-8bbf-ead949598482",
+        "TEXT": "Partnership",
+        "Type": "businessType"
+      },
+      {
+        "ID": "5ab974f4-bae9-4eaa-8bbf-ead949523482",
+        "TEXT": "Private Limited",
+        "Type": "businessType"
+      },
+        {
+          "ID": "5ab974f4-bae9-4eaa-8bbf-ead945475482",
+        "TEXT": "Public Limited",
+        "Type": "businessType"
+      },
+      {
+        "ID": "5ab974f4-bae9-4eaa-8bbf-ead949543482",
+        "TEXT": "Corporate",
+        "Type": "businessType"
+      },
+      {
+        "ID": "5ab974f4-bae9-4eaa-8bbf-ead949575482",
+        "TEXT": "Professional",
+        "Type": "businessType"
+      },
+      {
+        "ID": "5ab974f4-bae9-4eaa-8bbf-ead9495754dcd",
+        "TEXT": "LLP",
+        "Type": "businessType"
+      },
+      {
+        "ID": "5ab974f4-bae9-4eaa-8bbf-ead9495754df",
+        "TEXT": "Trust",
+        "Type": "businessType"
+      },
+         {
+          "ID": "5ab974f4-bae9-4eaa-8bbf-ead949575g82",
+        "TEXT": "Society",
+        "Type": "businessType"
+      },
+      {
+        "ID": "5ab974f4-bae9-4eaa-8bbf-ead9495754t2",
+        "TEXT": "NGO",
+        "Type": "businessType"
+      },
+      {
+        "ID": "5ab974f4-bae9-4eaa-8bbf-ead949575432",
+        "TEXT": "Not Yet Registered",
+        "Type": "businessType"
+      }
+    ],
+    "Status": 1,
+    "ErrorCode": 0,
+    "Message": "Success",
+    "MessageType": "I"
+  }
+}

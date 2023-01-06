@@ -1,0 +1,19 @@
+.radioGroup{
+    display: flex;
+    justify-content: space-between;
+  }
+  .imgSize{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 56px;
+    width: 45px;
+
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 56px;
+}

@@ -1,0 +1,66 @@
+<ion-content class="contentBackground">
+  <ion-header>
+    <ion-toolbar>
+      <ion-grid>
+        <ion-row>
+          <ion-col [size]="'0.7'" class="text-center mt-2" (click)="backToSetting()">
+            <ion-img [src]="imageList?.arrow" class="custWithoutTextImg"></ion-img>
+          </ion-col>
+          <ion-col [size]="'8'">
+            <span class="custFontFamilyMuliBold muli-16pt custLineHight40  custColorBlack px-3">Links</span>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card>
+    <ion-row>
+      <ion-col [size]="11" class="mt-2 p-3" (click)="navigateToNse()">
+        <p class="m-0 p-0 custFontFamilyMuliRegular muli-12pt custLineHight15 custColorDarkishBlue">NSE</p>
+      </ion-col>
+      <ion-col [size]="1">
+        <img [src]="imageList?.arrow" class="text-end custWithoutTextImgArrow mt-2 rotateArrow">
+      </ion-col>
+    </ion-row>
+    <hr class="my-2" />
+    <ion-row>
+      <ion-col [size]="11" class="p-3" (click)="navigateToBse()">
+        <p class="m-0 p-0 custFontFamilyMuliRegular muli-12pt custLineHight15 custColorDarkishBlue">BSE</p>
+      </ion-col>
+      <ion-col [size]="1">
+        <img [src]="imageList?.arrow" class="text-end custWithoutTextImgArrow rotateArrow">
+      </ion-col>
+    </ion-row>
+    <hr class="my-2" />
+    <ion-row>
+      <ion-col [size]="11" class="p-3" (click)="navigateToMcx()">
+        <p class="m-0 p-0 custFontFamilyMuliRegular muli-12pt custLineHight15 custColorDarkishBlue">MCX</p>
+      </ion-col>
+      <ion-col [size]="1">
+        <img [src]="imageList?.arrow" class="text-end custWithoutTextImgArrow rotateArrow">
+      </ion-col>
+    </ion-row>
+    <hr class="my-2" />
+    <ion-row>
+      <ion-col [size]="11" class="p-3" (click)="navigateToNcdex()">
+        <p class="m-0 p-0 custFontFamilyMuliRegular muli-12pt custLineHight15 custColorDarkishBlue">NCDEX</p>
+      </ion-col>
+      <ion-col [size]="1">
+        <img [src]="imageList?.arrow" class="text-end custWithoutTextImgArrow rotateArrow">
+      </ion-col>
+    </ion-row>
+    <hr class="my-2" />
+    <ion-row>
+      <ion-col [size]="11" class="p-3" (click)="navigateToSebi()">
+        <p class="m-0 p-0 custFontFamilyMuliRegular muli-12pt custLineHight15 custColorDarkishBlue">SEBI</p>
+      </ion-col>
+      <ion-col [size]="1">
+        <img [src]="imageList?.arrow" class="text-end custWithoutTextImgArrow rotateArrow text-center">
+      </ion-col>
+    </ion-row>
+
+  </ion-card>
+
+
+</ion-content>

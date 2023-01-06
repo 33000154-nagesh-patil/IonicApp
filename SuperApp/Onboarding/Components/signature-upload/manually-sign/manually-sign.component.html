@@ -1,0 +1,33 @@
+
+
+<ion-content class="contentBackground h-100">
+  <p class="custFontFamilyMuliBold muli-16pt custLineHight18 custColorDark custUrSign text-center">{{'urSign' |
+    translate}}</p>
+  <p class="custFontFamilyMuliRegular muli-14pt custLineHight20 custColorDark custSignMandatoryMsg text-center">
+    {{'signMandatoryMsg'
+    | translate}}</p>
+  <div class="signature-pad w-100">
+    <div>
+      <canvas class="signature-pad-canvas w-100" #canvas height="400"></canvas>
+    </div>
+  </div>
+
+  <div class="custFooterDiv">
+    <ion-row class="ion-no-padding">
+      <ion-col [size]="'6'" class="ion-no-padding">
+        <ion-button expand="block" class="text-capitalize custTryButton d-flex justify-content-center"
+          (click)="clear()">
+          <span class="custFontFamilyMuliRegular text-center muli-14pt custColorBrightCyan">{{'tryAgain'
+            | translate}}</span>
+        </ion-button>
+      </ion-col>
+
+      <ion-col [size]="'6'" class="ion-no-padding">
+        <ion-button expand="block" class="text-capitalize text-center custContinueBtn" [disabled]="isCanvasBlank()" (click)="save()"><span
+            class="custColorWhite custFontFamilyMuliBold muli-16pt">{{'confirm' |
+            translate}}</span></ion-button>
+      </ion-col>
+    </ion-row>
+  </div>
+
+</ion-content>

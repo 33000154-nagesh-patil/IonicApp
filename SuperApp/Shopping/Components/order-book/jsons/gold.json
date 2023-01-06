@@ -1,0 +1,45 @@
+{
+    "Consumer":[
+        {"name":"Akshay Patil","value":"1234567890"},
+        {"name":"Jayesh Mishra","value":"098765423"},
+        {"name":"Salman Dada","value":"321414414124"}
+    ],
+    "Locations": [
+        {"name":"Home","value":["AddressLine1","AddressLine2","400033"]},
+        {"name":"Office","value":["AddressLine1","AddressLine2","400605"]}
+    ],
+    "itemName":"Augmont Digital Gold",
+    "productName":"DigiBullion",
+    "productSubtitle":"24K. 99.99% Purity",
+    "productImage":"https://www.abhi2you.com/wp-content/uploads/2017/11/augmont-app.png",
+    "itemCode":"1158",
+    "unitPrice":"5152.69",
+    "taxes":[
+        {"type":"CGST","taxPercentage":"1.50"},
+        {"type":"SGST","taxPercentage":"1.50"},
+        {"type":"IGST","taxPercentage":"3.0"}
+    ],
+    "quantityRegEx":"^-?\\d*(\\.\\d{0,4})?$",
+    "editable":"switch",
+    "unitOfQuantity":"gms",
+    "unitOfAmount":"₹",
+    "tnc":["url","address"],
+    "Validity":300,
+    "walletMargin":false,
+    "availableMargin":5000.00,
+    "txnType":"BUY",
+    "OtherDetails":[],
+    "footerButton":[
+        {
+            "name":"Add To Cart",
+            "uxClass":"custBackgroundColorBrightCyan custColorWhite w-100 mx-3 my-2",
+            "value":"addToCart"
+        },
+        {
+            "name":"Proceed to Checkout",
+            "uxClass":"custBackgroundColorParakeetGreen custColorWhite w-100 mx-3 my-2",
+            "value":"buy"
+        }
+    ],
+    "disable":"!(this.quantity>0&&this.checkbox)"
+}

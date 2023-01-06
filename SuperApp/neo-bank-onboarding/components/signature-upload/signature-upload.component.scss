@@ -1,0 +1,104 @@
+.custKYCImg{
+    height: 16px;
+    width: 13px;
+}
+.custUrSign{
+    margin-top: 25px !important;
+}
+.custSignMandatoryMsg{
+    margin-top: 10px !important;
+}
+.custSignImg{
+    height: 100px;
+}
+.custOr {
+    overflow: hidden;
+    text-align: center;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+  }
+  .custOrSpan{
+    background: white;
+    // border: var(--custwhiteTwo);
+    border-radius: 50%;
+    border: 1px solid var(--custwhiteTwo) !important;
+
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    height: 41px;
+    width: 41px;
+  }
+.custOr:before,
+.custOr:after {
+  background-color: var(--custwhiteTwo) !important;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+  padding: 0px;
+  margin: 0px;
+}
+.custOr:before {
+  margin-left: -50%;
+}
+.custOr:after {
+  margin-right: -50%;
+}
+.custImgSample{
+    width: 52px;
+    height: 34px;
+}
+.custSignDiv{
+    margin-top: 46px;
+}
+.custUploadSignDiv{
+    margin-top: 34px;
+}
+.custCard{
+    margin-bottom: 150px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+.custButton {
+    height: 30px;
+    border: 1px solid var(--custBrightCyan);
+    border-radius: 4px;
+    --background: var(--custWhite);
+    --box-shadow: none;
+    text-align: center !important;
+    margin-top: 30px !important;    
+}
+.custUploadButton {
+    height: 30px;
+    border: 1px solid var(--custBrightCyan);
+    border-radius: 4px;
+    --background: var(--custWhite);
+    --box-shadow: none;
+    text-align: center !important;
+    margin-top: 8px !important;
+    margin-bottom: 30px !important; 
+}
+.custUploadSignMsg{
+    margin-top: 30px !important;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.custContinueBtn{
+    height: 45px;
+    --background: var(--custBrightCyan) !important;
+}
+.custFooterDiv {
+    padding-left: 16px;
+    padding-right: 16px;
+    // margin: 0px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+}

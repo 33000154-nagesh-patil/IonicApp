@@ -1,0 +1,47 @@
+
+{
+    "objectContent": [
+
+        {
+            "contentType": "cardList",
+            "Title": "Completed Assessment",
+            "card": [
+                {
+                    "row1": {
+                        "icon": "assets/icon/Commonicon1.png",
+                        "title": "Account Executive",
+                        "description": "",
+                        "action": "assets/icon/leftArrowIcon.svg"
+                    },
+                    "row2": {
+                        "col1": "Completed Course",
+                        "val1": "18th Jan, 2022",
+                        "col2": "CompletionPercentage",
+                        "val2": "100% completed",
+                        "col3": "Watch Again",
+                        "val3": ""
+                    }
+                },
+                {
+                    "row1": {
+                        "icon": "assets/icon/Commonicon2.png",
+                        "title": "Equity Dealer",
+                        "description": "",
+                        "action": "assets/icon/leftArrowIcon.svg"
+                    },
+                    "row2": {
+                        "col1": "Completed Course",
+                        "val1": "18th Jan, 2022",
+                        "col2": "CompletionPercentage",
+                        "val2": "100% completed",
+                        "col3": "Watch Again",
+                        "val3": ""
+                    }
+                }
+              
+               
+            ]
+        }
+      
+    ]
+}

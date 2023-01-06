@@ -1,0 +1,43 @@
+.custArrorSize{
+    height: 16px;
+    width: 13px;
+  }
+  .custpop{
+    height: 500px;
+    border-radius: 10px;
+ }
+ .custDivSeedingFail{
+    overflow-y: scroll;
+    height: 500px;
+ }
+ .custStep{
+    margin-top: 15px !important;
+ }
+ .custTryButton {
+  height: 45px;
+  border: 1px solid var(--custBrightCyan);
+  border-radius: 4px;
+  --background: var(--custWhite);
+  --box-shadow: none;
+  text-align: center !important;
+  margin-right: 8px;
+}
+.custLooksBtn {
+  height: 45px;
+  --background: var(--custBrightCyan) !important;
+  --box-shadow: none;
+  margin-left: 8px;
+}
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 16px;
+  padding-left: 16px;
+  border: 1px solid #888;
+  width: 100%;
+  position:fixed;
+  bottom: 0px;
+  border-radius: 10px 10px 0px 0px;
+}

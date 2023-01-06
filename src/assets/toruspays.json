@@ -1,0 +1,21 @@
+{
+	"Req": {
+		"businessName": "john Deo",
+		"custGuId": "FD8E981C-0EA7-47F5-963B-01619FFAE79D"
+	},
+
+	"Res": {
+		"enterBusinessownersPan": "ABCTY1234D",
+		"panOftheDirector": "ABCDE1234F",
+		"panOwnersame": "johnDoe",
+		"enterCin": "U67190TN2014PTC096978",
+		"enterBillinglabel": "123456789",
+		"address": "63, Guru Nanak Marg, Kadhir Road, Chakala",
+		"city": "Mumbai",
+		"State": "Maharashtra",
+        "bussinesType":"Proprietorship",
+        "businessCategory":"Fashion and Lifestyle",
+        "Description":"I have started a new business"
+
+	}
+}

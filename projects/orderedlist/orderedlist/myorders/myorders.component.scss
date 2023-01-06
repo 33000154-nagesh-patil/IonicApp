@@ -1,0 +1,225 @@
+.shopingPadding{
+    // margin-top: 50px;
+    margin-bottom: 100px;
+
+  }
+
+  .custArrowIcon{
+    height: 10px;
+    width: 6px;
+}
+
+.custArrorSize{
+  height: 16px;
+  width: 13px;
+}
+ 
+.filterimg{
+    height: 15px;
+}
+
+.custColorPending{
+  color: #ee9c15;
+}
+.custColorSuccessful{
+  color: green;
+}
+.custColorReturned{
+  color:gray
+}
+.custColorCancelled{
+  color: #d23d50;
+  
+}
+.custImgGold{
+  height: 32px;
+  width: 32px;
+ 
+}
+.statusPadding{
+  padding-left: 32px;
+}
+
+
+
+.custBtnExplore{
+  width: 122px;
+  height: 33px;
+  border: 1px solid var(--custBrightCyan) !important;
+   border-radius: 4px !important;
+  background: white !important;
+  text-align: center !important;
+  padding-left: 16px !important;
+  padding-right: 16px !important;
+}
+// .arrow{
+//     padding-left: 20px;
+// }
+
+.custImgExpo{
+  height: 14px;
+  width: 14px;
+}
+
+.custFilterPosition{
+  position: relative;
+  top:-37px;
+  right: 30px;
+  width: 20px;
+  height: 20px;
+}
+
+.search{
+  margin-top: 91px;
+}
+
+.card{
+  height: 160px;
+}
+.cardItem{
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around;
+  // align-items: center;
+
+}
+.line{
+  padding-left:7px;
+}
+.upper-div{
+  padding-left: 6px;
+}
+
+
+custBtnExplore{
+  // width: 80px;
+  height: 30px;
+  border:  1px solid var(--custBrightCyan) !important;
+  border-radius: 4px !important;
+  background: white !important;
+  text-align: center !important;
+  padding-left: 16px !important;
+  padding-right: 16px !important;
+  float: right;
+}
+
+.btn{
+  line-height: 1.0 !important;
+  border-radius: 0.0rem;
+}
+
+.w-70 {
+  width: 70% !important;
+}
+
+.custArrowIcon{
+  height: 10px;
+  width: 6px;
+}
+
+.search{
+  height: 40px;
+  margin-right: 5px;
+}
+
+.logo{
+  width: 38px;
+height: 38px;
+}
+
+.custFilterPosition{
+  position: relative;
+  top:-37px;
+  right: 30px;
+  width: 20px;
+  height: 20px;
+  }
+
+.searchbar{
+  border-radius: 4px;
+  height: 46px;
+  box-shadow: 0px 9px -21px #ebebeb;
+}
+
+
+mat-form-field {
+ width: 95%;
+ margin-left: 5px;
+ height: 46px;
+}
+
+.border {
+ border: 1px solid #44c8f5!important;
+}
+
+.custsort{
+  padding-left: 110px;
+}
+
+
+sc-ion-searchbar-md-h {
+  --background: var(--ion-background-color, #fff);
+  --border-radius: 9px !important;
+  --box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  --cancel-button-color: var(--ion-color-step-900, #1a1a1a);
+  --clear-button-color: initial;
+  --color: var(--ion-color-step-850, #262626);
+  --icon-color: var(--ion-color-step-600, #666666);
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background: inherit;
+}
+.custTitle{
+  margin-left: -10px;
+}
+
+.formControl{
+  border:none;
+  background-color: transparent;
+  resize: none;
+  outline: none;
+}
+
+.formControl::placeholder  {
+  font-size: 14px;
+}
+
+.custKYCImgone{
+  height: 16px;
+  width: 17px;
+  margin-left: 5px;
+  margin-top: 3px;
+  cursor: pointer;
+}
+
+.custPadding{
+  padding-left: 5px;
+}
+
+
+
+.custCloseIcon{
+  height: 14px;
+  width: 14px;
+}
+
+.custSVGIcon{
+  position: absolute;
+  margin: -8px;
+}
+
+.custProfile{
+  background: var(--custwhiteTwo);
+  border-radius: 50%;
+  padding: 21px;
+}
+.custHeight{
+  height: 42px;
+  width: 42px;
+}
+
+.custHeaderMarginTop{
+  margin-top: -20px;
+}

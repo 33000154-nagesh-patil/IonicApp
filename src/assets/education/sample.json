@@ -1,0 +1,19 @@
+[
+        {
+            "id":"1",
+            "title":"Introduction to Python",
+            "name":"By Abrar Hussain",
+            "icon":"assets/education/lec.svg",
+            "url":"Profile",
+            "progress":0.01,
+            "Start":"Start Course",
+            "Date":"date 5th Feb,2022",
+            "completed":1,
+            "move":"assets/education/leftArrowIcon.svg"
+
+        }
+
+]
+
+
+

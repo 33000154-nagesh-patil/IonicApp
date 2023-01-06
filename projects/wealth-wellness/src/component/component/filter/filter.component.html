@@ -1,0 +1,105 @@
+<ion-header *ngIf="showHeader">
+  <ion-toolbar class="custBackgroundDynamicColorWhite">
+    <ion-grid>
+      <ion-row class="py-2 custCenterAlign">
+        <ion-col [size]="'1'" class="text-center">
+          <ion-img [src]="imageList?.arrow" class="custArrorSize" (click)="headerBack()"></ion-img>
+        </ion-col>
+        <ion-col [size]="'7'" class="text-center">
+          <span class="custFontFamilyMuliBold muli-16pt d-flex custPadding flex-start custColorDark">Filter</span>
+        </ion-col>
+        <ion-col [size]="'2.5'" class="custFontFamilyMuliBold muli-14pt custClear custColorDarkishBlue">Clear All
+        </ion-col>
+        <!-- <ion-col [size]="'1.5'">
+          <ion-img [src]="imageList?.search1" (click)="toggleID()" class="custsearch text-center"></ion-img>
+        </ion-col> -->
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+<ion-header *ngIf="showSerchBar">
+  <ion-toolbar class="custBackgroundDynamicColorWhite">
+    <ion-grid>
+      <ion-row>
+        <ion-col [size]="'0.7'" class="text-center mt-2">
+          <ion-img [src]="imageList?.arrow" class="custKYCImg mt-1" (click)="searchBarBack()"></ion-img>
+        </ion-col>
+        <ion-col [size]="'10'" class="px-3 mt-2">
+          <input type="text" #search [(ngModel)]="searchBar" autocomplete="off" class="formControl" />
+        </ion-col>
+        <ion-col [size]="'1'" class="text-center float-end" *ngIf="searchIcon">
+          <ion-img [src]="imageList?.search" class="custKYCImg mt-2"></ion-img>
+        </ion-col>
+        <ion-col [size]="'1'" class="text-center mt-3" *ngIf="closeIcon">
+          <ion-img [src]="imageList?.close" class="custCloseIcon float-end" (click)="search.value=''"></ion-img>
+        </ion-col>
+        <!-- <ion-col [size]="'1.3'" class="text-center mt-2" *ngIf="clearIcon">
+          <span class="custFontFamilyMuliBold muli-12pt custLineHight18 custColorDarkishBlue float-end">Clear</span>        
+        </ion-col> -->
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+
+
+
+<ion-content>
+  <ion-grid class="h-100">
+
+    <ion-row class="h-100 w-100">
+      <ion-col size='5' class="border-end" (click)="toggleColor('')">
+        <ion-row class="py-3 ps-2 border-bottom custFontFamilyMuliRegular muli-14pt darkBlueColor"
+          [ngClass]="active==='e'?'darkBlueColor':''" *ngFor="let x of Orderlist" (click)="getFilterItem(x)">
+          <ion-row>
+            {{x}}
+            <ion-badge *ngIf="showDot" color="secondary" mode="ios"></ion-badge>
+          </ion-row>
+        </ion-row>
+        <ion-row class="py-3 ps-2 border-bottom custFontFamilyMuliRegular muli-14pt darkBlueColor"
+          [ngClass]="active==='e'?'darkBlueColor':''" (click)="getFilter()">
+          <ion-row>
+            Date
+            <!-- <ion-badge *ngIf="showDot" color="secondary" mode="ios">2</ion-badge></ion-row> -->
+          </ion-row>
+        </ion-row>
+      </ion-col>
+      <ion-col *ngIf="! dateShow">
+        <ion-row class="d-flex align-items-center p-2 border-bottom custFontFamilyMuliRegular" *ngFor="let x of getItemArray | filter:searchBar">
+          <ion-checkbox #checkboxes color="secondary" mode="ios" class="me-3"></ion-checkbox>
+          <span (click)="getDetails(x?.name)" class="custFontFamilyMuliRegular muli-14pt py-2">{{x?.name}}</span>
+        </ion-row>
+      </ion-col>
+
+      <ion-col size='7' *ngIf="dateShow">
+        <ion-row class="d-flex align-items-center p-2 border-bottom custFontFamilyMuliRegular w-100">
+          <!-- <ion-checkbox #checkboxes color="secondary" mode="ios"></ion-checkbox> -->
+          <span class="custFontFamilyMuliRegular ps-1 muli-14pt">
+
+            <mat-form-field  appearance="outline" class="w-85">  
+            <input matInput readonly [matDatepicker]="datepicker" placeholder="dd/mm/yyyy">
+            <mat-datepicker-toggle matSuffix [for]="datepicker"></mat-datepicker-toggle>
+            <mat-datepicker #datepicker>
+              <!-- <mat-datepicker-actions>
+                <button mat-button matDatepickerCancel>Cancel</button>
+                <button mat-raised-button color="primary" matDatepickerApply>Apply</button>
+              </mat-datepicker-actions> -->
+            </mat-datepicker>
+            </mat-form-field>
+          </span>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+
+
+
+<ion-row class="custAlign p-2 fixed-bottom">
+  <ion-col [size]="'12'">
+    <button class="btn w-100 text-center custApplybtn">
+      <span class=" custColorWhite custFontFamilyMuliBold muli-16pt">Apply</span>
+    </button>
+  </ion-col>
+</ion-row>

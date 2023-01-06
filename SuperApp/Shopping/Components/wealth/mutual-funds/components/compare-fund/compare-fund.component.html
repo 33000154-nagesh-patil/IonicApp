@@ -1,0 +1,147 @@
+<ion-app>
+  <ion-header>
+<ion-row class="w-100 d-flex justify-content-center align-items-center" >
+  <ion-col size="'4'" class="text-center ms-3"><ion-img [src]="imageList?.arrow" (click)="redirectTo()" class="custKYCImg mt-2 text-center "></ion-img></ion-col>
+    <ion-col> <ion-searchbar (keyup)="getdata($event)" placeholder="Search by Funds name"></ion-searchbar></ion-col>
+</ion-row>
+</ion-header>
+
+
+
+
+<ion-content class="contentBackground">
+ 
+
+<ion-card class="mb-3" >
+  <ion-card-header class="pt-0">
+    <div  class="custBottom d-flex justify-content-end">
+      <ion-img [src]="imageList?.saveIcon" *ngIf="selectedCard?.plan_id" class="custBookmark" (click)="changeBookmark(selectedCard)"></ion-img>
+      <ion-img [src]="imageList?.saveIcon2" *ngIf="!selectedCard?.plan_id" class="custBookmark" (click)="changeBookmark(selectedCard)"></ion-img>
+    </div>
+  </ion-card-header>
+  <ion-card-content>
+    <ion-row>
+      <ion-col [size]="'1'" class="text-start mt-2 px-0" >
+        <!-- <input type="checkbox" class="checkbox2" (click)="checkboxClick($event)">     -->
+        <ion-checkbox color="secondary" class="mt-1 checkbox"   [disabled]="true"  mode="md" checked></ion-checkbox>
+
+        </ion-col>
+
+        <ion-col [size]="'2'" class="ps-0">
+          <!-- <ion-img [src]="selectedCard?.icon" class="something"></ion-img> -->
+          <ion-img  *ngIf="selectedCard?.img"[src]="selectedCard?.img" class="something"></ion-img>
+          <!-- <ion-img *ngIf="!(selectedCard?.icon)" src="http://www.logotaglines.com/wp-content/uploads/2016/08/ICICI-Logo.png" class="something"></ion-img> -->
+          
+        </ion-col>
+        <ion-col [size]="'9'">
+          <ion-row><p class="custFontFamilyMuliRegular muli-24pt custLineHight20 custColorDark mt-2">{{selectedCard?.short_name}}</p></ion-row>
+          <!-- <ion-row><p class="custFontFamilyMuliRegular muli-24pt custLineHight20 custColorDark">{{x.title2}}</p></ion-row> -->
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col [size]="'3'" class="px-0">
+        <ion-row><p class="custFontFamilyMuliRegular muli-10pt custLineHight15 mb-0">Min Invest</p></ion-row>
+        <ion-row class="mt-2"><p class="custFontFamilyRobotoCondensed custFontFamilyMuliITF-Rupee muli-14pt custLineHight18 text-center custColorDark">₹{{selectedCard?.min_initial_investment}}</p></ion-row>
+      </ion-col>
+      <ion-col [size]="'6'" class="d-flex flex-column">
+        <ion-row><p class="custFontFamilyMuliRegular muli-10pt custLineHight15 ion-no-padding ms-2">Category Return</p></ion-row>
+        <ion-row class="align">
+        <ion-col  class="muli-14pt custColorDark  custFontFamilyRobotoCondensed ion-no-padding ">{{selectedCard?.minPer}}%</ion-col>
+        <ion-col  [ngClass]="(selectedCard?.minPer == '0')?'negative2':'negative'"><ion-progress-bar color="secondary" [value]="(selectedCard?.fundPer / 100)"></ion-progress-bar></ion-col>
+        <ion-col  class="muli-14pt custColorDark custFontFamilyRobotoCondensed text-start ion-no-padding">{{selectedCard?.maxPer}}%</ion-col>
+        </ion-row>
+      </ion-col>
+      <ion-col [size]="'3'">
+        <ion-row class="ms-2"><p class="custFontFamilyMuliRegular muli-10pt custLineHight15">Returns</p></ion-row>
+        <ion-row>
+          <img [src]="imageList?.caretUpSharp" *ngIf="(selectedCard?.fundPer > 0)" class="something2 mx-1">
+          <span class="returnPercent muli-14pt custColorParakeetGreen custFontFamilyRobotoCondensed" *ngIf="(selectedCard?.fundPer > 0)">{{selectedCard?.fundPer}}%</span>
+          <img *ngIf="(selectedCard?.fundPer <= 0)" [src]="imageList?.redIcon" class="mt-2 mx-1">
+          <span class="returnPercent muli-14pt custFontFamilyRobotoCondensed custColorcustFadedRed" *ngIf="(selectedCard?.fundPer <= 0)" >{{selectedCard?.fundPer}}%</span>
+        </ion-row>
+      </ion-col>
+      </ion-row>
+    </ion-card-content>
+  </ion-card>
+
+
+<ion-card class="mb-3 mt-0" *ngFor="let x of DummayAPiData;let indexOfelement=index">
+  <ion-card-header class="pt-0">
+    <div  class="custBottom d-flex justify-content-end">
+      <ion-img [src]="imageList?.saveIcon" *ngIf="x?.plan_id" class="custBookmark" (click)="changeBookmark(x)"></ion-img>
+      <ion-img [src]="imageList?.saveIcon2" *ngIf="!x?.plan_id" class="custBookmark" (click)="changeBookmark(x)"></ion-img>
+    </div>
+  </ion-card-header>
+  <ion-card-content>
+    <ion-row>
+      <ion-col [size]="'1'" class="text-start mt-2 px-0" >
+        <!-- <input type="checkbox" class="checkbox2" (click)="checkboxClick($event)">     -->
+        <ion-checkbox color="secondary" class="mt-1 checkbox" (ionChange)="checkBox($event,x,indexOfelement)" mode="md" ></ion-checkbox>
+
+        </ion-col>
+
+        <ion-col [size]="'2'" class="ps-0">
+          <ion-img  *ngIf="x?.img" [src]="x?.img" class="something"></ion-img>
+          <!-- <ion-img *ngIf="!(x?.icon)" src="http://www.logotaglines.com/wp-content/uploads/2016/08/ICICI-Logo.png" class="something"></ion-img> -->
+        </ion-col>
+        <ion-col [size]="'9'">
+          <ion-row><p class="custFontFamilyMuliRegular muli-24pt custLineHight20 custColorDark mt-2">{{x?.short_name}}</p></ion-row>
+          <!-- <ion-row><p class="custFontFamilyMuliRegular muli-24pt custLineHight20 custColorDark">{{x.title2}}</p></ion-row> -->
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col [size]="'3'" class="px-0">
+        <ion-row><p class="custFontFamilyMuliRegular muli-10pt custLineHight15 mb-0">Min Invest</p></ion-row>
+        <ion-row class="mt-2"><p class="custFontFamilyRobotoCondensed custFontFamilyMuliITF-Rupee muli-14pt custLineHight18 text-center custColorDark">₹{{x?.min_initial_investment}}</p></ion-row>
+      </ion-col>
+      <ion-col [size]="'6'" class="d-flex flex-column">
+        <ion-row><p class="custFontFamilyMuliRegular muli-10pt custLineHight15 ion-no-padding ms-2">Category Return</p></ion-row>
+        <ion-row class="align">
+        <ion-col  class="muli-14pt custColorDark  custFontFamilyRobotoCondensed ion-no-padding ">{{x?.minPer}}%</ion-col>
+        <ion-col  [ngClass]="(x?.minPer == '0')?'negative2':'negative'"><ion-progress-bar color="secondary" [value]="(x?.fundPer / 100)"></ion-progress-bar></ion-col>
+        <ion-col  class="muli-14pt custColorDark custFontFamilyRobotoCondensed text-start ion-no-padding">{{x?.maxPer}}%</ion-col>
+        </ion-row>
+      </ion-col>
+      <ion-col [size]="'3'">
+        <ion-row class="ms-2"><p class="custFontFamilyMuliRegular muli-10pt custLineHight15">Returns</p></ion-row>
+        <ion-row>
+          <img [src]="imageList?.caretUpSharp" *ngIf="(x?.fundPer > 0)" class="something2 mx-1">
+          <span class="returnPercent muli-14pt custColorParakeetGreen custFontFamilyRobotoCondensed" *ngIf="(x?.fundPer > 0)">{{x?.fundPer}}%</span>
+          <img *ngIf="(x?.fundPer <= 0)" [src]="imageList?.redIcon" class="mt-2 mx-1">
+          <span class="returnPercent muli-14pt custFontFamilyRobotoCondensed custColorcustFadedRed" *ngIf="(x?.fundPer <= 0)" >{{x?.fundPer}}%</span>
+        </ion-row>
+      </ion-col>
+      </ion-row>
+    </ion-card-content>
+  </ion-card>
+  <ion-infinite-scroll threshold="100px" (ionInfinite)="onScroll($event)">
+    <ion-infinite-scroll-content style="--color: #56a1ce;"
+      loadingSpinner="crescent"
+      loadingText="Fetching More Mutual Funds Please Wait...">
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+</ion-content>
+<ion-row>
+  <ion-col class="pb-3 pe-2 ps-2">
+<button class="btn w-100 text-center custBackgroundColorBrightCyan" (click)="onSubmit()" [disabled]="ButtonDisabal" id="submitPan"><span class="custColorWhite custFontFamilyMuliBold text-capitalize muli-16pt">{{'compareNow' | translate}}</span></button>
+</ion-col>
+</ion-row>
+
+
+
+  <div class="custModalContainer  rounded-3 " *ngIf="MoreThan3error" (click)="successModalClose()">
+    <div id="showModalSMGSucces" class="modal-content modConmart p-10" >
+      <ion-row>
+      <ion-col class="text-center">
+      <img [src]="imageList?.alertTriangle">
+    </ion-col>
+  </ion-row>
+      <p class="custFontFamilyMuliBold muli-16pt custColorDark text-center">You cannot compare more than 3 Mutual Funds.</p>
+      <ion-col class="p-3" (click)="ViewAll()">
+        <button class="btn w-100 text-center custBackgroundColorBrightCyan"><span
+          class="custColorWhite custFontFamilyMuliBold muli-16pt">Ok</span></button>
+        </ion-col>
+      </div>
+    </div>
+   
+  </ion-app>

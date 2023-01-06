@@ -1,0 +1,87 @@
+{
+ "productSelection": {
+        "id": "",
+        "title": "Product Selection",
+        "icon": "assets/icon/close.svg",
+        "type": "",
+        "cssx": "",
+        "uxClass": "muli-34pt colSize03",
+        "des": "",
+        "key": "menu",
+        "value": [
+            {
+                "id": "",
+                "title": "Prise",
+                "icon": "/assets/icon/totalLeads.svg",
+                "type": "",
+                "cssx": "",
+                "uxClass": "muli-16pt custFontFamilyMuliSemiBold",
+                "des": "",
+                "key": "",
+                "value": "",
+                "size":"6"
+            },
+            {
+                "id": "",
+                "title": "CRM Services",
+                "icon": "/assets/icon/todaysLeads.svg",
+                "type": "",
+                "cssx": "",
+                "uxClass": "muli-16pt custFontFamilyMuliSemiBold",
+                "des": "",
+                "key": "",
+                "value": "",
+                "size":"6"
+            },
+            {
+                "id": "",
+                "title": "Tone",
+                "icon": "/assets/icon/scheduledActivities.svg",
+                "type": "",
+                "cssx": "",
+                "uxClass": "muli-16pt custFontFamilyMuliSemiBold",
+                "des": "",
+                "key": "",
+                "value": "",
+                "size":"6"
+            },
+             {
+                "id": "",
+                "title": "CRM Sales",
+                "icon": "/assets/icon/totalLeads.svg",
+                "type": "",
+                "cssx": "",
+                "uxClass": "muli-16pt custFontFamilyMuliSemiBold",
+                "des": "",
+                "key": "",
+                "value": "",
+                "size":"6"
+            },
+            {
+                "id": "",
+                "title": "DBO",
+                "icon": "/assets/icon/todaysLeads.svg",
+                "type": "",
+                "cssx": "",
+                "uxClass": "muli-16pt custFontFamilyMuliSemiBold",
+                "des": "",
+                "key": "",
+                "value": "",
+                "size":"6"
+            },
+            {
+                "id": "",
+                "title": "Connect",
+                "icon": "/assets/icon/scheduledActivities.svg",
+                "type": "",
+                "cssx": "",
+                "uxClass": "muli-16pt custFontFamilyMuliSemiBold",
+                "des": "",
+                "key": "",
+                "value": "",
+                "size":"6"
+            }
+        ]
+ }
+
+}

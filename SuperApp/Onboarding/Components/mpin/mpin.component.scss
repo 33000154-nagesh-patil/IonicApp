@@ -1,0 +1,49 @@
+.custArrorSize{
+    height: 16px;
+    width: 13px;
+    margin-top: 12px;
+  }
+
+
+  ::ng-deep .mat-form-field-wrapper {
+    padding-bottom: 8px !important;
+}
+  ::ng-deep .mat-form-field {
+    .mat-form-field-outline{
+        height: 56px;
+        //width: 48px;
+        background:var(--custWhite);
+    }
+}
+
+.custeye{
+    position: relative;
+    top: 4px;
+}
+
+.custButton{
+  --background: var(--custBrightCyan);
+  height: 45px;
+}
+
+.custInput{
+  position: absolute;
+  top: 12px;
+  text-align: center;
+}
+.custMarginTop{
+  margin-top: -20px;
+}
+
+.custButtonBackground{
+  --background: none;
+  --box-shadow: none;
+}
+.custBtn{
+  margin-right: 100px;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+
+

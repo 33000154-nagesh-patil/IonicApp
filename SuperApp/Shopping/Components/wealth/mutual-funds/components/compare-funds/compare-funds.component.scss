@@ -1,0 +1,58 @@
+.bankFundIcon{
+  height: 27px;
+  width: 27px;
+  margin-bottom: 10px;
+}
+.bankFundCross{
+  height: 10px;
+  width: 10px;
+}
+.box2{
+  border-left: 2px solid #f5f6fa;
+padding-left: 15px;
+}
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+
+/****** Style Star Rating Widget *****/
+
+.rating { 
+border: none;
+float: left;
+}
+
+.rating > input { display: none; } 
+.rating > label:before { 
+margin-right: 10px;
+font-size: 14px;
+font-family: FontAwesome;
+display: inline-block;
+height: 8px;
+width: 8px;
+content: "\f005";
+}
+
+.rating > .half:before { 
+content: "\f089";
+position: absolute;
+}
+
+.rating > label { 
+color: #ddd; 
+float: right; 
+}
+
+.nameHeight {
+height: 60px;
+}
+
+/***** CSS to Highlight Stars on Hover *****/
+
+.rating > input:checked ~ label, /* show gold star when clicked */
+.rating:not(:checked) > label:hover, /* hover current star */
+.rating:not(:checked) > label:hover ~ label { color: #ee9c15;  } /* hover previous stars in list */
+
+.rating > input:checked + label:hover, /* hover current star when changing rating */
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating > input:checked ~ label:hover ~ label { color: #ee9c15;  } 

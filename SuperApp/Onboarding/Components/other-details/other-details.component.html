@@ -1,0 +1,238 @@
+<ion-app>
+<ion-header >
+  <ion-toolbar>
+    <!-- <ion-buttons slot="start" class="ion-padding-end  muli-25pt custPointer" (click)='dismiss()'>
+      <ion-icon name='chevron-back-outline'  class="custColorDarkishBlue"></ion-icon>
+    </ion-buttons> -->
+    <p class="custFontFamilyMuliBold px-2 muli-16pt custLineHight40 custColorDark text-capitalize text-start m-0">Other Details</p>
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content class="contentBackground">
+
+  <form class="pt-3 pb-5" (ngSubmit)="submitted()">
+
+    <ion-grid class="w-100">
+      <ion-row class="px-4 py-2 contentBackground custFontFamilyMuliBold muli-16pt w-100">
+        {{'gender'| translate}}
+      </ion-row>
+      <ion-row class="px-4">
+        <ion-col *ngFor="let items of gender">
+          <mat-radio-group name="Male" [(ngModel)]="chosenItemForGender">
+            <mat-radio-button class="custFontFamilyMuliRegular muli-16pt" name="Male" [value]="items.name"
+              (click)="getGender(items.name)">{{items.name}}</mat-radio-button>
+          </mat-radio-group>
+        </ion-col>
+      </ion-row>
+
+    </ion-grid>
+
+
+    <ion-grid class="w-100">
+      <ion-row class="px-4 py-2 contentBackground custFontFamilyMuliBold muli-16pt w-100">
+        {{'maritalstatus'| translate}}
+      </ion-row>
+      <ion-row class="px-4">
+        <ion-col *ngFor="let items of maritalstatus">
+
+          <mat-radio-group name="marital" [(ngModel)]="chosenItemForMarital">
+            <mat-radio-button class="custFontFamilyMuliRegular muli-16pt" name="marital" [value]="items.name"
+              (click)="getMarital(items.name)">{{items.name}}</mat-radio-button>
+          </mat-radio-group>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+
+    <!-- <ion-grid class="w-100">
+      <ion-row class="px-4 py-2 contentBackground custFontFamilyMuliBold muli-16pt w-100">
+        {{'IncomeGroup'| translate}}
+      </ion-row>
+      <ion-row class="px-4">
+        <ion-col *ngFor="let items of income" size="6">
+          <mat-radio-group name="Incm" [(ngModel)]="chosenItemForIncome">
+            <mat-radio-button class="custFontFamilyMuliRegular muli-16pt" name="Incm" [value]="items.name"
+              (click)="getIncome(items.name)">{{items.name}}</mat-radio-button>
+          </mat-radio-group>
+        </ion-col>
+      </ion-row>
+    </ion-grid> -->
+
+    <ion-grid class="w-100">
+      <ion-row class="px-4 py-2 contentBackground custFontFamilyMuliBold muli-16pt w-100">
+        {{'Tradingexp'| translate}}
+      </ion-row>
+      <ion-row class="px-4">
+        <ion-col *ngFor="let items of tradingExp" size="6">
+
+          <mat-radio-group name="trading" [(ngModel)]="chosenItemForTradingExp">
+            <mat-radio-button class="custFontFamilyMuliRegular muli-16pt" [value]="items.name"
+              (click)="getExp(items.name)">{{items.name}}</mat-radio-button>
+          </mat-radio-group>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+
+    <!-- (click)="getIncome(items.name)" -->
+    <ion-grid class="w-100" >
+      <ion-row class="px-4 py-2 contentBackground custFontFamilyMuliBold muli-16pt w-100">
+        Experience in Capacity of
+      </ion-row>
+      <ion-row class="px-4">
+        <ion-col *ngFor="let items of expCapacity" size="6">
+          <mat-radio-group name="expcap" [(ngModel)]="chosenItemForExpCap">
+            <mat-radio-button class="custFontFamilyMuliRegular muli-16pt" name="expcap" [value]="items.name"
+            (click)="getExpCap(items.name)">{{items.name}}</mat-radio-button>
+          </mat-radio-group>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+
+    <ion-grid class="w-100">
+      <ion-row class="px-4 py-2 contentBackground custFontFamilyMuliBold muli-16pt w-100">
+        NISM Certificate
+      </ion-row>
+      <ion-row class="px-4">
+        <ion-col *ngFor="let items of NISMcertificate" size="6">
+          <mat-radio-group name="nism" [(ngModel)]="chosenItemForNism">
+            <mat-radio-button class="custFontFamilyMuliRegular muli-16pt" name="nism" [value]="items.name"
+            (click)="getNism(items.name)">{{items.name}}</mat-radio-button>
+          </mat-radio-group>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <!-- <ion-row>
+      <mat-form-field class="w-100" appearance="outline" (click)="getOccupation('occupation')">
+        <mat-label class="text-capitalize">Occupation</mat-label>
+        <mat-select name="occupation" formControlName="occupation">
+          <mat-option  *ngFor="let item of occupation" [value]="item.ID">{{item.TEXT}}</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </ion-row> -->
+
+
+  </form>
+
+  <div class="custModalContainer p-10" *ngIf="loggedInModal" (click)="successModalClose();">
+    <div  id="showModalSMGSucces" class="modal-content custCenterAlign">
+      <!-- <ion-icon [src]="imageList?.successKYCIcon" class="custImage"></ion-icon> -->
+      <p class="custFontFamilyMuliBold muli-16pt custColorDark text-center p-0 m-0 ion-no-padding">{{ErrorMsg}}</p>
+    </div>
+  </div>
+</ion-content>
+<ion-footer class="custBackgroundColorWhite fixed-bottom ">
+  <ion-row class="m-2">
+    <button (click)="onContinue()"
+      class="btn text-center w-100 personalDetailsPagebutton muli-16pt custFontFamilyMuliBold"
+      [disabled]="continueNextPage">{{'continue' |
+      translate}}</button>
+  </ion-row>
+</ion-footer>
+
+
+
+<!-- <ion-content class="contentBackground">
+
+  <form class="pt-3 pb-5" (ngSubmit)="submitted()">
+
+    <ion-grid class="w-100">
+      <ion-row class="px-2 py-2 contentBackground custFontFamilyMuliBold muli-16pt w-100">
+        {{'gender'| translate}}
+      </ion-row>
+      <ion-row class="px-2">
+        <ion-col *ngFor="let items of responseData" size="6">
+          <mat-radio-group name="Male" *ngIf="items.Type=='Gender'">
+            <mat-radio-button class="custFontFamilyMuliRegular muli-16pt" name="Male" [value]="items.TEXT"
+              (click)="getGender(items.TEXT)">{{items.TEXT}}</mat-radio-button>
+          </mat-radio-group>
+        </ion-col>
+      </ion-row>
+
+    </ion-grid>
+    <ion-grid class="w-100">
+      <ion-row class="px-2 py-2 contentBackground custFontFamilyMuliBold muli-16pt w-100">
+        {{'maritalstatus'| translate}}
+      </ion-row>
+      <ion-row class="px-2">
+        <ion-col *ngFor="let items of responseData" size="6">
+          <mat-radio-group name="Single" *ngIf="items.Type=='MaritalStatus'">
+            <mat-radio-button class="custFontFamilyMuliRegular muli-16pt" name="Single" [value]="items.TEXT"
+              (click)="getMarital(items.TEXT)">{{items.TEXT}}</mat-radio-button>
+          </mat-radio-group>
+        </ion-col>
+      </ion-row>
+
+    </ion-grid>
+    <ion-grid class="w-100">
+      <ion-row class="px-2 py-2 contentBackground custFontFamilyMuliBold muli-16pt w-100">
+        {{'Tradingexp'| translate}}
+      </ion-row>
+      <ion-row class="px-2">
+        <ion-col *ngFor="let items of responseData" size="6">
+          <mat-radio-group name="Experience" *ngIf="items.Type=='TradingExperience'">
+            <mat-radio-button class="custFontFamilyMuliRegular muli-16pt" name="Experience" [value]="items.TEXT"
+              (click)="getExp(items.TEXT)">{{items.TEXT}}</mat-radio-button>
+          </mat-radio-group>
+        </ion-col>
+      </ion-row>
+
+    </ion-grid>
+
+
+    <ion-row class="px-2">
+      <mat-form-field class="w-100" appearance="outline">
+        <mat-label>Income</mat-label>
+        <input matInput  type="text">
+      </mat-form-field>
+    </ion-row>
+    <ion-row class="px-2">
+    <p class="custFontFamilyMuliBold muli-16pt custLineHight30 custColorDark text-capitalize text-start">Your Occupation Details</p>
+    </ion-row>
+    <ion-row class="px-2">
+      <mat-form-field appearance="outline" class="w-100 ">
+        <mat-select  [(value)]="occupationStatus">
+          <mat-option *ngFor="let items of occupation" [value]="items.value">
+            {{items.name}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </ion-row>
+    <ion-row class="px-2">
+    <p class="custFontFamilyMuliBold muli-16pt custLineHight30 custColorDark text-capitalize text-start">Your Family Details</p>
+    </ion-row>
+    <ion-row class="px-2">
+      <mat-form-field appearance="outline" class="w-100 ">
+        <mat-label>Father's / Spouse Name</mat-label>
+        <input matInput placeholder="Father's / Spouse Name" type="text">
+      </mat-form-field>
+    </ion-row>
+    <ion-row class="px-2">
+      <mat-form-field appearance="outline" class="w-100 ">
+        <mat-label>Mother's Maiden Name</mat-label>
+        <input matInput placeholder="Mother's Maiden Name" type="text">
+      </mat-form-field>
+    </ion-row>
+
+    </form>
+</ion-content>
+
+<ion-row class="mt-5 fixed-bottom px-2">
+  <ion-col>
+    <button class="btn w-100 text-center custBackgroundColorBrightCyan">
+      <span  (click)="NavToSelfie()" class="custColorWhite custFontFamilyMuliBold muli-16pt">Continue</span>
+    </button>
+  </ion-col>
+</ion-row>
+</ion-app> -->
+
+
+<!-- <ion-footer>
+  <ion-toolbar class="p-3" >
+    <ion-button (click)="onContinue()" class="w-100 custButton">Continue</ion-button>
+  </ion-toolbar>
+</ion-footer> -->

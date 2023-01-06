@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="17.199" height="15.461" viewBox="0 0 17.199 15.461">
+  <g id="salesIcon" transform="translate(0.6 0.6)">
+    <g id="users">
+      <path id="Path_21011" data-name="Path 21011" d="M12.332,17.673V15.782c0-2.089-1.38-3.782-3.083-3.782H3.083C1.38,12,0,13.693,0,15.782v1.891" transform="translate(0 -3.411)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" fill-rule="evenodd"/>
+      <circle id="Ellipse_328" data-name="Ellipse 328" cx="2.719" cy="2.719" r="2.719" transform="translate(3.433)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+      <path id="Path_21012" data-name="Path 21012" d="M20.071,12.22V10.867A2.746,2.746,0,0,0,17.9,8.249M15,.13a2.747,2.747,0,0,1,2.179,2.622A2.747,2.747,0,0,1,15,5.373" transform="translate(-4.071 0.12)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" fill-rule="evenodd"/>
+    </g>
+  </g>
+</svg>

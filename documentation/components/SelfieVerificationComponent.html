@@ -1,0 +1,2694 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>rsm documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">rsm documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  SelfieVerificationComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>projects/core/src/lib/components/selfie-verification/selfie-verification.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-selfie-verification</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./selfie-verification.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./selfie-verification.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#appName" >appName</a>
+                            </li>
+                            <li>
+                                <a href="#blobImage" >blobImage</a>
+                            </li>
+                            <li>
+                                <a href="#currentImg" >currentImg</a>
+                            </li>
+                            <li>
+                                <a href="#currentNativeNetwork" >currentNativeNetwork</a>
+                            </li>
+                            <li>
+                                <a href="#currentWindowNetwork" >currentWindowNetwork</a>
+                            </li>
+                            <li>
+                                <a href="#environmentAPIList" >environmentAPIList</a>
+                            </li>
+                            <li>
+                                <a href="#ErrorMsg" >ErrorMsg</a>
+                            </li>
+                            <li>
+                                <a href="#isCordovaStatus" >isCordovaStatus</a>
+                            </li>
+                            <li>
+                                <a href="#loadingLocation" >loadingLocation</a>
+                            </li>
+                            <li>
+                                <a href="#locationCordinates" >locationCordinates</a>
+                            </li>
+                            <li>
+                                <a href="#loggedInModal" >loggedInModal</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#modalCtrl" >modalCtrl</a>
+                            </li>
+                            <li>
+                                <a href="#originalImage" >originalImage</a>
+                            </li>
+                            <li>
+                                <a href="#selfieImage" >selfieImage</a>
+                            </li>
+                            <li>
+                                <a href="#selfiUploaded" >selfiUploaded</a>
+                            </li>
+                            <li>
+                                <a href="#waterMarkImage" >waterMarkImage</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#b64toBlob" >b64toBlob</a>
+                            </li>
+                            <li>
+                                <a href="#callback" >callback</a>
+                            </li>
+                            <li>
+                                <a href="#checkNetworkConnectionPAN" >checkNetworkConnectionPAN</a>
+                            </li>
+                            <li>
+                                <a href="#detectWebcam" >detectWebcam</a>
+                            </li>
+                            <li>
+                                <a href="#dismiss" >dismiss</a>
+                            </li>
+                            <li>
+                                <a href="#errorShow" >errorShow</a>
+                            </li>
+                            <li>
+                                <a href="#getLatLong" >getLatLong</a>
+                            </li>
+                            <li>
+                                <a href="#gotoBack" >gotoBack</a>
+                            </li>
+                            <li>
+                                <a href="#looksGood" >looksGood</a>
+                            </li>
+                            <li>
+                                <a href="#nativeNetworkPAN" >nativeNetworkPAN</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#onTakePicture" >onTakePicture</a>
+                            </li>
+                            <li>
+                                <a href="#pickImage" >pickImage</a>
+                            </li>
+                            <li>
+                                <a href="#processSelfiePostData" >processSelfiePostData</a>
+                            </li>
+                            <li>
+                                <a href="#selfieImageSendToServer" >selfieImageSendToServer</a>
+                            </li>
+                            <li>
+                                <a href="#successModalClose" >successModalClose</a>
+                            </li>
+                            <li>
+                                <a href="#tryAgain" >tryAgain</a>
+                            </li>
+                            <li>
+                                <a href="#watermarkImage" >watermarkImage</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#WebCam" >WebCam</a>
+                            </li>
+                            <li>
+                                <a href="#windowNetworkPAN" >windowNetworkPAN</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Inputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#currentModuleType" >currentModuleType</a>
+                            </li>
+                            <li>
+                                <a href="#errorList" >errorList</a>
+                            </li>
+                            <li>
+                                <a href="#imageList" >imageList</a>
+                            </li>
+                            <li>
+                                <a href="#loginCustomerGuId" >loginCustomerGuId</a>
+                            </li>
+                            <li>
+                                <a href="#name" >name</a>
+                            </li>
+                            <li>
+                                <a href="#selfieDetails" >selfieDetails</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Outputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#getSelfieStatus" >getSelfieStatus</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(camera: Camera, geolocation: Geolocation, toastService: <a href="../injectables/ToastService.html" target="_self">ToastService</a>, actionSheetController: ActionSheetController, http: <a href="https://angular.io/api/common/http/HttpClient" target="_blank">HttpClient</a>, commonservice: <a href="../injectables/CommonService.html" target="_self">CommonService</a>, loaderService: <a href="../injectables/LoaderService.html" target="_self">LoaderService</a>, allConfigDataService: <a href="../injectables/AllConfigDataService.html" target="_self">AllConfigDataService</a>, cdn: <a href="https://angular.io/api/core/ChangeDetectorRef" target="_blank">ChangeDetectorRef</a>, commonFunctionService: <a href="../injectables/CommonFunctionService.html" target="_self">CommonFunctionService</a>, modalCtrl: ModalController, networkService: <a href="../injectables/NetworkService.html" target="_self">NetworkService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">projects/core/src/lib/components/selfie-verification/selfie-verification.component.ts:42</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>camera</td>
+                                                  
+                                                        <td>
+                                                                    <code>Camera</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>geolocation</td>
+                                                  
+                                                        <td>
+                                                                    <code>Geolocation</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>toastService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ToastService.html" target="_self" >ToastService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>actionSheetController</td>
+                                                  
+                                                        <td>
+                                                                    <code>ActionSheetController</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>http</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/common/http/HttpClient" target="_blank" >HttpClient</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>commonservice</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/CommonService.html" target="_self" >CommonService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>loaderService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/LoaderService.html" target="_self" >LoaderService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>allConfigDataService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/AllConfigDataService.html" target="_self" >AllConfigDataService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>cdn</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/core/ChangeDetectorRef" target="_blank" >ChangeDetectorRef</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>commonFunctionService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/CommonFunctionService.html" target="_self" >CommonFunctionService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>modalCtrl</td>
+                                                  
+                                                        <td>
+                                                                    <code>ModalController</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>networkService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/NetworkService.html" target="_self" >NetworkService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    <h3 id="inputs">Inputs</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="currentModuleType"></a>
+                        <b>currentModuleType</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">projects/core/src/lib/components/selfie-verification/selfie-verification.component.ts:23</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="errorList"></a>
+                        <b>errorList</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="21" class="link-to-prism">projects/core/src/lib/components/selfie-verification/selfie-verification.component.ts:21</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="imageList"></a>
+                        <b>imageList</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">projects/core/src/lib/components/selfie-verification/selfie-verification.component.ts:20</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="loginCustomerGuId"></a>
+                        <b>loginCustomerGuId</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">projects/core/src/lib/components/selfie-verification/selfie-verification.component.ts:25</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="name"></a>
+                        <b>name</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">projects/core/src/lib/components/selfie-verification/selfie-verification.component.ts:22</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="selfieDetails"></a>
+                        <b>selfieDetails</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">projects/core/src/lib/components/selfie-verification/selfie-verification.component.ts:24</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
+    <section>
+    <h3 id="outputs">Outputs</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="getSelfieStatus"></a>
+                        <b>getSelfieStatus</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://angular.io/api/core/EventEmitter" target="_blank" >EventEmitter</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">projects/core/src/lib/components/selfie-verification/selfie-verification.component.ts:26</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="b64toBlob"></a>
+                    <span class="name">
+                        <span ><b>b64toBlob</b></span>
+                        <a href="#b64toBlob"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>b64toBlob(b64Data: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, contentType: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="142"
+                            class="link-to-prism">projects/core/src/lib/components/selfie-verification/selfie-verification.component.ts:142</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>b64Data</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>contentType</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="callback"></a>
+                    <span class="name">
+                        <span ><b>callback</b></span>
+                        <a href="#callback"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>callback(hasWebcam)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="368"
+                            class="link-to-prism">projects/core/src/lib/components/selfie-verification/selfie-verification.component.ts:368</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>hasWebcam</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="checkNetworkConnectionPAN"></a>
+                    <span class="name">
+                        <span ><b>checkNetworkConnectionPAN</b></span>
+                        <a href="#checkNetworkConnectionPAN"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>checkNetworkConnectionPAN()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="323"
+                            class="link-to-prism">projects/core/src/lib/components/selfie-verification/selfie-verification.component.ts:323</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="detectWebcam"></a>
+                    <span class="name">
+                        <span ><b>detectWebcam</b></span>
+                        <a href="#detectWebcam"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>detectWebcam()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="357"
+                            class="link-to-prism">projects/core/src/lib/components/selfie-verification/selfie-verification.component.ts:357</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="dismiss"></a>
+                    <span class="name">
+                        <span ><b>dismiss</b></span>
+                        <a href="#dismiss"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>dismiss(e)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="270"
+                            class="link-to-prism">projects/core/src/lib/components/selfie-verification/selfie-verification.component.ts:270</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>e</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="errorShow"></a>
+                    <span class="name">
+                        <span ><b>errorShow</b></span>
+                        <a href="#errorShow"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>errorShow(message, functionName)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="217"
+                            class="link-to-prism">projects/core/src/lib/components/selfie-verification/selfie-verification.component.ts:217</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>message</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>functionName</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getLatLong"></a>
+                    <span class="name">
+                        <span ><b>getLatLong</b></span>
+                        <a href="#getLatLong"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getLatLong()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="66"
+                            class="link-to-prism">projects/core/src/lib/components/selfie-verification/selfie-verification.component.ts:66</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="gotoBack"></a>
+                    <span class="name">
+                        <span ><b>gotoBack</b></span>
+                        <a href="#gotoBack"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>gotoBack()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="262"
+                            class="link-to-prism">projects/core/src/lib/components/selfie-verification/selfie-verification.component.ts:262</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="looksGood"></a>
+                    <span class="name">
+                        <span ><b>looksGood</b></span>
+                        <a href="#looksGood"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>looksGood()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="318"
+                            class="link-to-prism">projects/core/src/lib/components/selfie-verification/selfie-verification.component.ts:318</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="nativeNetworkPAN"></a>
+                    <span class="name">
+                        <span ><b>nativeNetworkPAN</b></span>
+                        <a href="#nativeNetworkPAN"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>nativeNetworkPAN()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="330"
+                            class="link-to-prism">projects/core/src/lib/components/selfie-verification/selfie-verification.component.ts:330</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="48"
+                            class="link-to-prism">projects/core/src/lib/components/selfie-verification/selfie-verification.component.ts:48</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onTakePicture"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>onTakePicture</b></span>
+                        <a href="#onTakePicture"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>onTakePicture()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="222"
+                            class="link-to-prism">projects/core/src/lib/components/selfie-verification/selfie-verification.component.ts:222</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="pickImage"></a>
+                    <span class="name">
+                        <span ><b>pickImage</b></span>
+                        <a href="#pickImage"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>pickImage(sourceType)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="106"
+                            class="link-to-prism">projects/core/src/lib/components/selfie-verification/selfie-verification.component.ts:106</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>sourceType</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="processSelfiePostData"></a>
+                    <span class="name">
+                        <span ><b>processSelfiePostData</b></span>
+                        <a href="#processSelfiePostData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>processSelfiePostData()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="198"
+                            class="link-to-prism">projects/core/src/lib/components/selfie-verification/selfie-verification.component.ts:198</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="selfieImageSendToServer"></a>
+                    <span class="name">
+                        <span ><b>selfieImageSendToServer</b></span>
+                        <a href="#selfieImageSendToServer"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>selfieImageSendToServer(file)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="165"
+                            class="link-to-prism">projects/core/src/lib/components/selfie-verification/selfie-verification.component.ts:165</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>file</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="successModalClose"></a>
+                    <span class="name">
+                        <span ><b>successModalClose</b></span>
+                        <a href="#successModalClose"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>successModalClose()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="63"
+                            class="link-to-prism">projects/core/src/lib/components/selfie-verification/selfie-verification.component.ts:63</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="tryAgain"></a>
+                    <span class="name">
+                        <span ><b>tryAgain</b></span>
+                        <a href="#tryAgain"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>tryAgain()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="278"
+                            class="link-to-prism">projects/core/src/lib/components/selfie-verification/selfie-verification.component.ts:278</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="watermarkImage"></a>
+                    <span class="name">
+                        <span ><b>watermarkImage</b></span>
+                        <a href="#watermarkImage"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>watermarkImage()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="81"
+                            class="link-to-prism">projects/core/src/lib/components/selfie-verification/selfie-verification.component.ts:81</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="WebCam"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>WebCam</b></span>
+                        <a href="#WebCam"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>WebCam(id)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="283"
+                            class="link-to-prism">projects/core/src/lib/components/selfie-verification/selfie-verification.component.ts:283</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>unknown</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="windowNetworkPAN"></a>
+                    <span class="name">
+                        <span ><b>windowNetworkPAN</b></span>
+                        <a href="#windowNetworkPAN"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>windowNetworkPAN()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="342"
+                            class="link-to-prism">projects/core/src/lib/components/selfie-verification/selfie-verification.component.ts:342</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="appName"></a>
+                    <span class="name">
+                        <span ><b>appName</b></span>
+                        <a href="#appName"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">projects/core/src/lib/components/selfie-verification/selfie-verification.component.ts:29</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="blobImage"></a>
+                    <span class="name">
+                        <span ><b>blobImage</b></span>
+                        <a href="#blobImage"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>null</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>null</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">projects/core/src/lib/components/selfie-verification/selfie-verification.component.ts:40</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="currentImg"></a>
+                    <span class="name">
+                        <span ><b>currentImg</b></span>
+                        <a href="#currentImg"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">projects/core/src/lib/components/selfie-verification/selfie-verification.component.ts:28</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="currentNativeNetwork"></a>
+                    <span class="name">
+                        <span ><b>currentNativeNetwork</b></span>
+                        <a href="#currentNativeNetwork"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">projects/core/src/lib/components/selfie-verification/selfie-verification.component.ts:32</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="currentWindowNetwork"></a>
+                    <span class="name">
+                        <span ><b>currentWindowNetwork</b></span>
+                        <a href="#currentWindowNetwork"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">projects/core/src/lib/components/selfie-verification/selfie-verification.component.ts:36</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="environmentAPIList"></a>
+                    <span class="name">
+                        <span ><b>environmentAPIList</b></span>
+                        <a href="#environmentAPIList"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">projects/core/src/lib/components/selfie-verification/selfie-verification.component.ts:30</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ErrorMsg"></a>
+                    <span class="name">
+                        <span ><b>ErrorMsg</b></span>
+                        <a href="#ErrorMsg"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">projects/core/src/lib/components/selfie-verification/selfie-verification.component.ts:34</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isCordovaStatus"></a>
+                    <span class="name">
+                        <span ><b>isCordovaStatus</b></span>
+                        <a href="#isCordovaStatus"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">projects/core/src/lib/components/selfie-verification/selfie-verification.component.ts:35</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="loadingLocation"></a>
+                    <span class="name">
+                        <span ><b>loadingLocation</b></span>
+                        <a href="#loadingLocation"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">projects/core/src/lib/components/selfie-verification/selfie-verification.component.ts:42</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="locationCordinates"></a>
+                    <span class="name">
+                        <span ><b>locationCordinates</b></span>
+                        <a href="#locationCordinates"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="41" class="link-to-prism">projects/core/src/lib/components/selfie-verification/selfie-verification.component.ts:41</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="loggedInModal"></a>
+                    <span class="name">
+                        <span ><b>loggedInModal</b></span>
+                        <a href="#loggedInModal"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">projects/core/src/lib/components/selfie-verification/selfie-verification.component.ts:33</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="modalCtrl"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>modalCtrl</b></span>
+                        <a href="#modalCtrl"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>ModalController</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="44" class="link-to-prism">projects/core/src/lib/components/selfie-verification/selfie-verification.component.ts:44</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="originalImage"></a>
+                    <span class="name">
+                        <span ><b>originalImage</b></span>
+                        <a href="#originalImage"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>null</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>null</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">projects/core/src/lib/components/selfie-verification/selfie-verification.component.ts:39</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="selfieImage"></a>
+                    <span class="name">
+                        <span ><b>selfieImage</b></span>
+                        <a href="#selfieImage"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Blob</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">projects/core/src/lib/components/selfie-verification/selfie-verification.component.ts:31</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="selfiUploaded"></a>
+                    <span class="name">
+                        <span ><b>selfiUploaded</b></span>
+                        <a href="#selfiUploaded"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">projects/core/src/lib/components/selfie-verification/selfie-verification.component.ts:27</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="waterMarkImage"></a>
+                    <span class="name">
+                        <span ><b>waterMarkImage</b></span>
+                        <a href="#waterMarkImage"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://angular.io/api/core/ElementRef" target="_blank" >ElementRef</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <b>Decorators : </b>
+                        <br />
+                        <code>
+                            @ViewChild(&#x27;waterMarkedImage&#x27;)<br />
+                        </code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">projects/core/src/lib/components/selfie-verification/selfie-verification.component.ts:37</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, Input, OnInit, ViewChild, Output, EventEmitter, ElementRef, ChangeDetectorRef, AbstractType } from &#x27;@angular/core&#x27;;
+import { ActionSheetController, ModalController } from &#x27;@ionic/angular&#x27;;
+import { Camera, CameraOptions } from &#x27;@ionic-native/Camera/ngx&#x27;;
+import { AllConfigDataService } from &#x27;../../services/all-config-data.service&#x27;;
+import { Geolocation } from &#x27;@ionic-native/geolocation/ngx&#x27;;
+import { LoaderService } from &#x27;../../services/loader.service&#x27;;
+import { ToastService } from &#x27;../../services/toast.service&#x27;;
+import { HttpClient, HttpHeaders } from &#x27;@angular/common/http&#x27;;
+import { CommonFunctionService } from &#x27;../../services/common-function.service&#x27;;
+import { NetworkService } from &#x27;../../services/network.service&#x27;;
+import { CommonService } from &#x27;../../services/common.service&#x27;;
+import { WebCamComponent } from &#x27;../web-cam/web-cam.component&#x27;;
+import * as watermark from &#x27;watermarkjs&#x27;;
+@Component({
+  selector: &#x27;app-selfie-verification&#x27;,
+  templateUrl: &#x27;./selfie-verification.component.html&#x27;,
+  styleUrls: [&#x27;./selfie-verification.component.scss&#x27;],
+})
+export class SelfieVerificationComponent implements OnInit {
+  @Input() imageList: any;
+  @Input() errorList: any;
+  @Input() name: any;
+  @Input() currentModuleType: any;
+  @Input() selfieDetails: any;
+  @Input() loginCustomerGuId: any;
+  @Output() getSelfieStatus &#x3D; new EventEmitter();
+  selfiUploaded: boolean &#x3D; false;
+  currentImg: string;
+  appName: any;
+  environmentAPIList: any;
+  selfieImage: Blob;
+  currentNativeNetwork: any;
+  loggedInModal: any;
+  ErrorMsg: any;
+  isCordovaStatus: any;
+  currentWindowNetwork: any;
+  @ViewChild(&#x27;waterMarkedImage&#x27;) waterMarkImage: ElementRef;
+ 
+  originalImage &#x3D; null;
+  blobImage &#x3D; null;
+  locationCordinates:any;
+  loadingLocation:boolean;
+
+  constructor(private camera: Camera, private geolocation: Geolocation, private toastService: ToastService, private actionSheetController: ActionSheetController, private http: HttpClient, private commonservice: CommonService, private loaderService: LoaderService, private allConfigDataService: AllConfigDataService, private cdn: ChangeDetectorRef, private commonFunctionService: CommonFunctionService, public modalCtrl: ModalController, private networkService: NetworkService) {
+    
+   }
+
+  ngOnInit() {
+    this.loaderService.hideLoader()
+    this.appName &#x3D; this.allConfigDataService.getConfig(&#x27;appName&#x27;);
+    this.environmentAPIList &#x3D; this.allConfigDataService.getCurrentApiList();
+
+    this.networkService.onNetworkChange().subscribe((data: any) &#x3D;&gt; {
+      this.currentNativeNetwork &#x3D; data;
+    })
+    this.networkService.getCordovaStatus().subscribe((data) &#x3D;&gt; {
+      this.isCordovaStatus &#x3D; data;
+    })
+    this.networkService.updateNetworkStatusbrowserchange().subscribe((data) &#x3D;&gt; {
+      this.currentWindowNetwork &#x3D; data;
+    })
+  }
+  successModalClose() { }
+
+  
+  getLatLong() {
+    // debugger;
+    this.loadingLocation &#x3D; true;
+    
+    this.geolocation.getCurrentPosition().then((resp) &#x3D;&gt; {
+      console.log(resp);
+     
+      this.locationCordinates &#x3D; resp.coords;
+      this.loadingLocation &#x3D; false;
+    }).catch((error) &#x3D;&gt; {
+      this.loadingLocation &#x3D; false;
+      console.log(&#x27;Error getting location&#x27;, error);
+    });
+  }
+
+  watermarkImage() {
+    let date &#x3D; new Date();
+    const yyyy &#x3D; date.getFullYear();
+    let mm &#x3D; date.getMonth() + 1; // Months start at 0!
+    let dd &#x3D; date.getDate();
+    let hours &#x3D; date.getHours();
+    let second &#x3D; date.getSeconds();
+    let minutes &#x3D; date.getMinutes();
+let todayDate &#x3D; dd + &#x27;/&#x27; + mm + &#x27;/&#x27; + yyyy;
+    watermark([this.blobImage])
+    .image(watermark.text.lowerRight(&quot;(&quot;+todayDate+&quot;, &quot;+hours+&quot;:&quot;+second+&quot;:&quot;+minutes+&quot;, &quot;+this.locationCordinates.latitude+&quot;, &quot;+this.locationCordinates.longitude+&quot;)&quot;, &#x27;24px Arial bold&#x27;, &#x27;#fff&#x27;,1))
+      .then(img &#x3D;&gt; {
+        // debugger;
+        this.currentImg &#x3D; img.src;
+        console.log(&quot;currentImg&quot;,this.currentImg);
+        let realData &#x3D; this.currentImg.split(&quot;,&quot;)[1];
+        this.selfieImage &#x3D; this.b64toBlob(realData, &#x27;image/jpeg&#x27;);
+        // this.selfieImage&#x3D;&#x3D; this.b64toBlob(res._imageAsDataUrl, &#x27;image/jpeg&#x27;);
+        
+      });
+        
+        console.log(&quot;this.locationCordinates.lattitude&quot;,&quot;, &quot; +this.locationCordinates.latitude+&quot;, &quot;+this.locationCordinates.longitude);
+    }
+  
+
+  pickImage(sourceType) {
+    const options: CameraOptions &#x3D; {
+      quality: 40,
+      sourceType: sourceType,
+      destinationType: this.camera.DestinationType.DATA_URL,
+      encodingType: this.camera.EncodingType.JPEG,
+      mediaType: this.camera.MediaType.PICTURE,
+      correctOrientation: true
+      // cameraDirection: this.camera.Direction.FRONT
+    }
+    this.camera.getPicture(options).then((imageData) &#x3D;&gt; {
+      console.log(&quot;imageData&quot;, imageData)
+      // imageData is either a base64 encoded string or a file URI
+      this.currentImg &#x3D; &#x27;data:image/jpeg;base64,&#x27; + imageData;
+      console.log(this.currentImg);
+      fetch(this.currentImg).then(res &#x3D;&gt; res.blob())
+      .then(blob &#x3D;&gt; {
+        this.blobImage &#x3D; blob;
+        this.watermarkImage();
+      });
+      this.selfiUploaded &#x3D; true;
+
+      // this.toastService.showAutoToast(this.currentImg)
+
+      // let realData &#x3D; this.currentImg.split(&quot;,&quot;)[1];
+      // this.selfieImage &#x3D; this.b64toBlob(realData, &#x27;image/jpeg&#x27;);
+
+      // this.toastService.showAutoToast(selfieImage)
+
+      this.cdn.detectChanges();
+
+    }, (err) &#x3D;&gt; {
+      console.log(&quot;err&quot;, err)
+      // Handle error
+    });
+  }
+  b64toBlob(b64Data: string, contentType: string) {
+    contentType &#x3D; contentType || &#x27;&#x27;;
+    var sliceSize &#x3D; 512;
+    var byteCharacters &#x3D; atob(b64Data);
+    var byteArrays &#x3D; [];
+
+    for (var offset &#x3D; 0; offset &lt; byteCharacters.length; offset +&#x3D; sliceSize) {
+      var slice &#x3D; byteCharacters.slice(offset, offset + sliceSize);
+
+      var byteNumbers &#x3D; new Array(slice.length);
+      for (var i &#x3D; 0; i &lt; slice.length; i++) {
+        byteNumbers[i] &#x3D; slice.charCodeAt(i);
+      }
+
+      var byteArray &#x3D; new Uint8Array(byteNumbers);
+
+      byteArrays.push(byteArray);
+    }
+
+    var blob &#x3D; new Blob(byteArrays, { type: contentType });
+    return blob;
+  }
+
+  selfieImageSendToServer(file) {
+    // debugger;
+    const formData &#x3D; new FormData();
+    // formData.append(&#x27;image&#x27;, this.imageList.arrow);
+    // formData.append(&#x27;document&#x27;, this.imageList.arrow);
+    formData.append(&#x27;secretToken&#x27;, &#x27;14b352c2&#x27;)
+    formData.append(&#x27;image&#x27;, file);
+    formData.append(&#x27;document&#x27;, file);
+    formData.append(&#x27;CustGuId&#x27;, this.loginCustomerGuId)
+    formData.append(&#x27;tsTransID&#x27;, &#x27;TS-YUD-961374&#x27;);
+    let headers: HttpHeaders &#x3D; new HttpHeaders({
+      &quot;username&quot;: this.environmentAPIList?.selfieUsername,
+      &quot;Token&quot;: this.environmentAPIList?.token
+    });
+
+    console.log(&quot;formData&quot;,formData);
+
+    this.loaderService.showLoader();
+    this.http.post(this.environmentAPIList?.baseURL + this.environmentAPIList?.SelfieVerify, formData, { headers }).subscribe(
+      (data: any) &#x3D;&gt; {
+        console.log(&quot;Selfie details&quot;, data);
+        if (data &amp;&amp; data?.Status) {
+          // this.getSelfieStatus.emit(&quot;Selfie&quot;)
+          this.processSelfiePostData()
+        } else {
+          this.errorShow(data?.Message, &quot;getEsign -&gt; status&quot;);
+        }
+      }, (error: any) &#x3D;&gt; {
+        this.errorShow(error?.Message, &quot;getEsign -&gt; Http request&quot;);
+      })
+
+  }
+
+  processSelfiePostData() {
+    let localPostData &#x3D; {
+      &quot;CustGuId&quot;: this.loginCustomerGuId,
+      &quot;DocumentGuId&quot;: this.selfieDetails?.DocumentGuId,
+      &quot;OfferingGuId&quot;: this.currentModuleType?.OfferingGuId
+    }
+    // this.loaderService.showLoader();
+    this.commonservice.postPanDetails(localPostData).subscribe((data: any) &#x3D;&gt; {
+      this.loaderService.hideLoader();
+      if (data &amp;&amp; data?.Status) {
+        this.getSelfieStatus.emit(&quot;Selfie&quot;)
+      } else {
+        this.errorShow(data?.Message, &quot;processPANPostData -&gt; status&quot;);
+      }
+    }, (error: any) &#x3D;&gt; {
+      this.errorShow(error?.Message, &quot;processPANPostData -&gt; Http request&quot;);
+    })
+  }
+
+  errorShow(message, functionName) {
+    this.loaderService.hideLoader();
+    this.commonFunctionService.showErrorsService(this.errorList?.error, null, message, this.errorList?.okText);
+  }
+
+  async onTakePicture() {
+    // alert(&#x27;click&#x27;);
+    // debugger;
+    
+    const actionSheet &#x3D; await this.actionSheetController.create({
+      header: &quot;Select Image source&quot;,
+      buttons: [
+        {
+          text: &#x27;Use Camera&#x27;,
+          handler: () &#x3D;&gt; {
+            if (this.isCordovaStatus) {
+              this.pickImage(this.camera.PictureSourceType.CAMERA);
+            } else {
+              this.detectWebcam()
+            }
+          }
+        },
+        {
+          text: &#x27;Cancel&#x27;,
+          role: &#x27;cancel&#x27;
+        }
+      ]
+    });
+    // debugger;
+    if (!this.isCordovaStatus) {
+      navigator.permissions.query({ name: &#x27;geolocation&#x27; }).then((permission)&#x3D;&gt;{
+        console.log(&quot;permission&quot;,permission.state);
+        if(permission?.state &#x3D;&#x3D; &quot;denied&quot;){
+          return this.errorShow(&quot;please enable location in your browser&quot;, &quot;getEsign -&gt; Http request&quot;);
+        }else{
+          this.getLatLong();
+          actionSheet.present();
+        }
+      });
+    }else{
+      await actionSheet.present();
+    }
+   
+  }
+
+  gotoBack() {
+    if (this.selfiUploaded) {
+      this.selfiUploaded &#x3D; false;
+    } else {
+      this.modalCtrl.dismiss();
+    }
+  }
+
+  dismiss(e) {
+    if (this.selfiUploaded) {
+      this.selfiUploaded &#x3D; false;
+    } else {
+      this.modalCtrl.dismiss();
+    }
+  }
+
+  tryAgain() {
+    this.onTakePicture();
+  }
+
+
+  async WebCam(id) {
+    let eventEmitter &#x3D; new EventEmitter();
+    eventEmitter.subscribe(res &#x3D;&gt; {
+      // if(id&#x3D;&#x3D;&quot;pan&quot;)this.copPAN&#x3D;res;
+      if (id &#x3D;&#x3D; &quot;selfie&quot;) {
+        // this.currentImg &#x3D; res;
+        fetch(res).then(res &#x3D;&gt; res.blob())
+      .then(blob &#x3D;&gt; {
+        this.blobImage &#x3D; blob;
+        this.watermarkImage();
+      });
+        console.log(this.currentImg)
+        // let realData &#x3D; this.currentImg.split(&quot;,&quot;)[1];
+        // this.selfieImage &#x3D; this.b64toBlob(realData, &#x27;image/jpeg&#x27;);
+        // this.selfieImage&#x3D;&#x3D; this.b64toBlob(res._imageAsDataUrl, &#x27;image/jpeg&#x27;);
+      }
+      this.selfiUploaded &#x3D; true
+      // if(id&#x3D;&#x3D;&quot;adharFornt&quot;)this.copAdharFront&#x3D;res;
+      // if(id&#x3D;&#x3D;&quot;adharBack&quot;)this.copAdhar&#x3D;res;
+    })
+    const modal &#x3D; await this.modalCtrl.create({
+      component: WebCamComponent,
+      cssClass: &#x27;h-100 w-100 modal-fullscreen&#x27;,
+      componentProps: {
+        &#x27;webImage&#x27;: eventEmitter
+      },
+      backdropDismiss: false
+    });
+    modal.onDidDismiss()
+      .then((data) &#x3D;&gt; {
+        // this.router.navigate([&#x27;/Dashboard&#x27;]);
+      });
+    return await modal.present();
+  }
+
+  looksGood() {
+    // this.getSelfieStatus.emit(&quot;Selfie&quot;)
+    this.checkNetworkConnectionPAN();
+  }
+
+  checkNetworkConnectionPAN() {
+    if (this.isCordovaStatus) {
+      this.nativeNetworkPAN();
+    } else {
+      this.windowNetworkPAN();
+    }
+  }
+  nativeNetworkPAN() {
+    if (this.currentNativeNetwork) {
+      this.selfieImageSendToServer(this.selfieImage)
+    } else {
+      this.ErrorMsg &#x3D; this.errorList?.networkError
+      this.loggedInModal &#x3D; true
+      setTimeout(() &#x3D;&gt; {
+        this.loggedInModal &#x3D; false;
+      }, 3000);
+
+    }
+  }
+  windowNetworkPAN() {
+    if (this.currentWindowNetwork) {
+      this.selfieImageSendToServer(this.selfieImage)
+      // this.dummyNextStep();//by pass
+    } else {
+      this.ErrorMsg &#x3D; this.errorList?.networkError
+      this.loggedInModal &#x3D; true
+
+      setTimeout(() &#x3D;&gt; {
+        this.loggedInModal &#x3D; false;
+      }, 3000);
+
+    }
+  }
+
+  detectWebcam() {
+    // this.watermarkImage();
+    let md &#x3D; navigator.mediaDevices;
+    if (!md || !md.enumerateDevices) {
+      return this.callback(false);
+    }
+    md.enumerateDevices().then(devices &#x3D;&gt; {
+      this.callback(devices.some(device &#x3D;&gt; &#x27;videoinput&#x27; &#x3D;&#x3D;&#x3D; device.kind));
+    })
+  }
+
+  callback(hasWebcam) {
+    hasWebcam?this.WebCam(&quot;selfie&quot;):this.toastService.showAutoToast(this.errorList?.webCamError);
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;ion-header&gt;
+  &lt;ion-toolbar class&#x3D;&quot;custBackgroundDynamicColorWhite&quot;&gt;
+    &lt;ion-grid&gt;
+      &lt;ion-row&gt;
+        &lt;ion-col *ngIf&#x3D;&quot;appName !&#x3D; &#x27;Aqube&#x27;&quot; [size]&#x3D;&quot;&#x27;1&#x27;&quot; (click)&#x3D;&quot;gotoBack()&quot; class&#x3D;&quot;text-center mt-1&quot;&gt;
+          &lt;ion-img [src]&#x3D;&quot;imageList?.arrow&quot; class&#x3D;&quot;custKYCImg mt-2&quot;&gt;&lt;/ion-img&gt;
+        &lt;/ion-col&gt;
+        &lt;ion-col *ngIf&#x3D;&quot;appName !&#x3D; &#x27;Aqube&#x27;&quot; [size]&#x3D;&quot;&#x27;10&#x27;&quot; class&#x3D;&quot;text-center&quot;&gt;
+          &lt;span class&#x3D;&quot;custFontFamilyMuliBold muli-14pt custLineHight40 custColorDark &quot;&gt;{{&#x27;selfieVerification&#x27;
+            | translate}}&lt;/span&gt;
+        &lt;/ion-col&gt;
+        &lt;ion-col *ngIf&#x3D;&quot;appName &#x3D;&#x3D; &#x27;Aqube&#x27;&quot; [size]&#x3D;&quot;&#x27;12&#x27;&quot; class&#x3D;&quot;text-center&quot;&gt;
+          &lt;span class&#x3D;&quot;custFontFamilyMuliBold muli-14pt custLineHight40 custColorDark &quot;&gt;{{&#x27;setupInvestmentAccount&#x27;
+            | translate}}&lt;/span&gt;
+        &lt;/ion-col&gt;
+        &lt;ion-col *ngIf&#x3D;&quot;appName !&#x3D; &#x27;Aqube&#x27;&quot; [size]&#x3D;&quot;&#x27;1&#x27;&quot; class&#x3D;&quot;text-center mt-1&quot; (click)&#x3D;&quot;dismiss(false)&quot;&gt;
+          &lt;ion-img [src]&#x3D;&quot;imageList?.close&quot; class&#x3D;&quot;custKYCImg mt-2&quot;&gt;&lt;/ion-img&gt;
+        &lt;/ion-col&gt;
+      &lt;/ion-row&gt;
+    &lt;/ion-grid&gt;
+  &lt;/ion-toolbar&gt;
+&lt;/ion-header&gt;
+&lt;ion-content class&#x3D;&quot;contentBackground vertical-center&quot;&gt;
+  &lt;p class&#x3D;&quot;custFontFamilyMuliBold muli-16pt custLineHight18 custColorDark custUrSign text-center&quot;&gt;
+    {{&#x27;selfieVerificationLabel&#x27; | translate}}&lt;/p&gt;
+  &lt;p *ngIf&#x3D;&quot;!selfiUploaded&quot;
+    class&#x3D;&quot;custFontFamilyMuliRegular muli-14pt custLineHight20 custColorDark custSignMandatoryMsg text-center&quot;&gt;
+    {{&#x27;takePhotoYourself&#x27; | translate}}&lt;/p&gt;
+
+  &lt;p *ngIf&#x3D;&quot;selfiUploaded&quot;
+    class&#x3D;&quot;custFontFamilyMuliRegular muli-14pt custLineHight20 custColorDark custSignMandatoryMsg text-center&quot;&gt;
+    {{&#x27;takePhotoYourselfOrUpload&#x27; | translate}}&lt;/p&gt;
+
+  &lt;ion-img [src]&#x3D;&quot;!selfiUploaded? imageList?.selfieIcon : currentImg&quot;
+    [ngClass]&#x3D;&quot;(selfiUploaded)?&#x27;custSelfieImage m-50 text-center&#x27;:&#x27;custSelfieIcon m-50 text-center&#x27;&quot;
+    class&#x3D;&quot;custSelfieIcon m-50 text-center&quot;&gt;&lt;/ion-img&gt;
+&lt;/ion-content&gt;
+
+&lt;div class&#x3D;&quot;custFooterDiv&quot;&gt;
+  &lt;ion-button *ngIf&#x3D;&quot;!selfiUploaded&quot; expand&#x3D;&quot;block&quot; class&#x3D;&quot;text-capitalize text-center custContinueBtn m-0 p-0&quot;
+    (click)&#x3D;&quot;onTakePicture()&quot;&gt;&lt;span class&#x3D;&quot;custColorWhite custFontFamilyMuliBold muli-16pt&quot;&gt;{{&#x27;takePictureLabel&#x27; |
+      translate}}&lt;/span&gt;&lt;/ion-button&gt;
+
+  &lt;ion-row *ngIf&#x3D;&quot;selfiUploaded&quot; class&#x3D;&quot;ion-no-padding&quot;&gt;
+    &lt;ion-col [size]&#x3D;&quot;&#x27;6&#x27;&quot; class&#x3D;&quot;ion-no-padding&quot;&gt;
+      &lt;ion-button expand&#x3D;&quot;block&quot; class&#x3D;&quot;text-capitalize custTryButton d-flex justify-content-center&quot;
+        (click)&#x3D;&quot;tryAgain()&quot;&gt;
+        &lt;span class&#x3D;&quot;custFontFamilyMuliRegular text-center muli-14pt custColorBrightCyan&quot;&gt;{{&#x27;tryAgain&#x27;
+          | translate}}&lt;/span&gt;
+      &lt;/ion-button&gt;
+    &lt;/ion-col&gt;
+
+    &lt;ion-col [size]&#x3D;&quot;&#x27;6&#x27;&quot; class&#x3D;&quot;ion-no-padding&quot;&gt;
+      &lt;ion-button expand&#x3D;&quot;block&quot; class&#x3D;&quot;text-capitalize text-center custLooksBtn&quot; (click)&#x3D;&quot;looksGood()&quot;&gt;&lt;span
+          class&#x3D;&quot;custColorWhite custFontFamilyMuliBold muli-16pt&quot;&gt;{{&#x27;looksGoodLabel&#x27; |
+          translate}}&lt;/span&gt;&lt;/ion-button&gt;
+    &lt;/ion-col&gt;
+  &lt;/ion-row&gt;
+  &lt;div class&#x3D;&quot;custModalContainer p-10&quot; *ngIf&#x3D;&quot;loggedInModal&quot; (click)&#x3D;&quot;successModalClose();&quot;&gt;
+    &lt;div id&#x3D;&quot;showModalSMGSucces&quot; class&#x3D;&quot;modal-content custCenterAlign&quot;&gt;
+      &lt;!-- &lt;ion-icon [src]&#x3D;&quot;imageList?.successKYCIcon&quot; class&#x3D;&quot;custImage&quot;&gt;&lt;/ion-icon&gt; --&gt;
+      &lt;p class&#x3D;&quot;custFontFamilyMuliBold muli-16pt custColorDark text-center p-0 m-0 ion-no-padding&quot;&gt;{{ErrorMsg}}&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./selfie-verification.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.custKYCImg {
+    height: 16px;
+    width: 13px;
+}
+.custUrSign {
+    margin-top: 25px !important;
+}
+.custSignMandatoryMsg {
+    margin-top: 10px !important;
+}
+.custFooterDiv {
+    padding-left: 16px;
+    padding-right: 16px;
+    // margin: 0px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+}
+.custContinueBtn {
+    height: 45px;
+    --background: var(--custBrightCyan) !important;
+}
+.custSelfieIcon {
+    width: 104px;
+    height: 154px;
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    -ms-transform: translateY(-45%) translateX(-50%);
+    transform: translateY(-45%) translateX(-50%);
+}
+.custSelfieImage {
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    -ms-transform: translateY(-45%) translateX(-50%);
+    transform: translateY(-45%) translateX(-50%);
+}
+.vertical-center {
+    .fixed-content,
+    .scroll-content {
+        display: flex;
+        align-items: center;
+    }
+}
+.custTryButton {
+    height: 45px;
+    border: 1px solid var(--custBrightCyan);
+    border-radius: 4px;
+    --background: var(--custWhite);
+    --box-shadow: none;
+    text-align: center !important;
+    margin-right: 8px;
+}
+.custLooksBtn {
+    height: 45px;
+    --background: var(--custBrightCyan) !important;
+    --box-shadow: none;
+    margin-left: 8px;
+}</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><ion-header>  <ion-toolbar class="custBackgroundDynamicColorWhite">    <ion-grid>      <ion-row>        <ion-col *ngIf="appName != \'Aqube\'" [size]="\'1\'" (click)="gotoBack()" class="text-center mt-1">          <ion-img [src]="imageList?.arrow" class="custKYCImg mt-2"></ion-img>        </ion-col>        <ion-col *ngIf="appName != \'Aqube\'" [size]="\'10\'" class="text-center">          <span class="custFontFamilyMuliBold muli-14pt custLineHight40 custColorDark ">{{\'selfieVerification\'            | translate}}</span>        </ion-col>        <ion-col *ngIf="appName == \'Aqube\'" [size]="\'12\'" class="text-center">          <span class="custFontFamilyMuliBold muli-14pt custLineHight40 custColorDark ">{{\'setupInvestmentAccount\'            | translate}}</span>        </ion-col>        <ion-col *ngIf="appName != \'Aqube\'" [size]="\'1\'" class="text-center mt-1" (click)="dismiss(false)">          <ion-img [src]="imageList?.close" class="custKYCImg mt-2"></ion-img>        </ion-col>      </ion-row>    </ion-grid>  </ion-toolbar></ion-header><ion-content class="contentBackground vertical-center">  <p class="custFontFamilyMuliBold muli-16pt custLineHight18 custColorDark custUrSign text-center">    {{\'selfieVerificationLabel\' | translate}}</p>  <p *ngIf="!selfiUploaded"    class="custFontFamilyMuliRegular muli-14pt custLineHight20 custColorDark custSignMandatoryMsg text-center">    {{\'takePhotoYourself\' | translate}}</p>  <p *ngIf="selfiUploaded"    class="custFontFamilyMuliRegular muli-14pt custLineHight20 custColorDark custSignMandatoryMsg text-center">    {{\'takePhotoYourselfOrUpload\' | translate}}</p>  <ion-img [src]="!selfiUploaded? imageList?.selfieIcon : currentImg"    [ngClass]="(selfiUploaded)?\'custSelfieImage m-50 text-center\':\'custSelfieIcon m-50 text-center\'"    class="custSelfieIcon m-50 text-center"></ion-img></ion-content><div class="custFooterDiv">  <ion-button *ngIf="!selfiUploaded" expand="block" class="text-capitalize text-center custContinueBtn m-0 p-0"    (click)="onTakePicture()"><span class="custColorWhite custFontFamilyMuliBold muli-16pt">{{\'takePictureLabel\' |      translate}}</span></ion-button>  <ion-row *ngIf="selfiUploaded" class="ion-no-padding">    <ion-col [size]="\'6\'" class="ion-no-padding">      <ion-button expand="block" class="text-capitalize custTryButton d-flex justify-content-center"        (click)="tryAgain()">        <span class="custFontFamilyMuliRegular text-center muli-14pt custColorBrightCyan">{{\'tryAgain\'          | translate}}</span>      </ion-button>    </ion-col>    <ion-col [size]="\'6\'" class="ion-no-padding">      <ion-button expand="block" class="text-capitalize text-center custLooksBtn" (click)="looksGood()"><span          class="custColorWhite custFontFamilyMuliBold muli-16pt">{{\'looksGoodLabel\' |          translate}}</span></ion-button>    </ion-col>  </ion-row>  <div class="custModalContainer p-10" *ngIf="loggedInModal" (click)="successModalClose();">    <div id="showModalSMGSucces" class="modal-content custCenterAlign">      <!-- <ion-icon [src]="imageList?.successKYCIcon" class="custImage"></ion-icon> -->      <p class="custFontFamilyMuliBold muli-16pt custColorDark text-center p-0 m-0 ion-no-padding">{{ErrorMsg}}</p>    </div>  </div></div></div>'
+    var COMPONENTS = [{'name': 'AadharOnboardKycComponent', 'selector': 'app-aadhar-onboard-kyc'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'BankDetailsComponent', 'selector': 'lib-bank-details'},{'name': 'BuySellComponent', 'selector': 'app-buy-sell'},{'name': 'ContainerViewPage', 'selector': 'app-container-view'},{'name': 'CoreComponent', 'selector': 'lib-core'},{'name': 'CustomModalComponent', 'selector': 'lib-custom-modal'},{'name': 'DashboardPage', 'selector': 'app-dashboard'},{'name': 'DigiLockerAadharComponent', 'selector': 'app-digi-locker-aadhar'},{'name': 'EducationCategoryDashboardComponent', 'selector': 'app-education-category-dashboard'},{'name': 'EducationComponent', 'selector': 'lib-education'},{'name': 'EducationPage', 'selector': 'app-education'},{'name': 'EsignComponent', 'selector': 'app-esign'},{'name': 'ExchangeSelectionComponent', 'selector': 'app-exchange-selection'},{'name': 'ExploreFundsComponent', 'selector': 'app-explore-funds'},{'name': 'FabButtonComponent', 'selector': 'lib-fab-button'},{'name': 'FooterComponent', 'selector': 'lib-footer'},{'name': 'GoldComponent', 'selector': 'lib-gold'},{'name': 'GoldDashboardComponent', 'selector': 'lib-gold-dashboard'},{'name': 'GoldInvestmentDashboardComponent', 'selector': 'lib-gold-investment-dashboard'},{'name': 'GoldInvestmentDetailsComponent', 'selector': 'lib-goldInvestmentDetails'},{'name': 'GoldInvestmentDetailsPage', 'selector': 'app-gold-investment-details'},{'name': 'GoldPage', 'selector': 'app-gold'},{'name': 'HeaderComponent', 'selector': 'lib-header'},{'name': 'HealthCategoryComponent', 'selector': 'lib-health-category'},{'name': 'HealthComponent', 'selector': 'lib-health'},{'name': 'HealthPage', 'selector': 'app-health'},{'name': 'IncomeProofComponent', 'selector': 'app-income-proof'},{'name': 'InformationComponent', 'selector': 'lib-information'},{'name': 'IntroComponent', 'selector': 'lib-intro'},{'name': 'InvestmentDetailsComponent', 'selector': 'app-investment-details'},{'name': 'InvestmentDetailsTransactionComponent', 'selector': 'app-investment-details-transaction'},{'name': 'InvestmentPlanningComponent', 'selector': 'lib-investment-planning'},{'name': 'InvestmentPlanningTrackComponent', 'selector': 'lib-investment-planning-track'},{'name': 'InvestmentPlanningTransactComponent', 'selector': 'lib-investment-planning-transact'},{'name': 'InvestSIPComponent', 'selector': 'lib-invest-sip'},{'name': 'KycGoldComponent', 'selector': 'app-kyc-gold'},{'name': 'KycStepsMFComponent', 'selector': 'app-kyc-steps-mf'},{'name': 'LifestyleComponent', 'selector': 'lib-lifestyle'},{'name': 'LifestylePage', 'selector': 'app-lifestyle'},{'name': 'LoginAuthenticationComponent', 'selector': 'lib-login-authentication'},{'name': 'LoginListComponent', 'selector': 'lib-loginList'},{'name': 'LoginPage', 'selector': 'app-login'},{'name': 'ManuallySignComponent', 'selector': 'app-manually-sign'},{'name': 'MutualFundsComponent', 'selector': 'lib-mutualFunds'},{'name': 'MutualFundsPage', 'selector': 'app-mutual-funds'},{'name': 'NameAddressDetailsComponent', 'selector': 'app-name-address-details'},{'name': 'NomineeDetailsComponent', 'selector': 'app-nominee-details'},{'name': 'NsdlComponent', 'selector': 'app-nsdl'},{'name': 'OrderDetailsComponent', 'selector': 'app-order-details'},{'name': 'OrdersComponent', 'selector': 'app-orders'},{'name': 'PanadharComponent', 'selector': 'lib-panadhar'},{'name': 'PanCardComponent', 'selector': 'lib-pan-card'},{'name': 'PaymentConfirmationComponent', 'selector': 'app-payment-confirmation'},{'name': 'PersonalDetailsComponent', 'selector': 'app-personal-details'},{'name': 'PlanningRecommendedModalComponent', 'selector': 'lib-planning-recommended-modal'},{'name': 'PlanningTrackModalComponent', 'selector': 'lib-planning-track-modal'},{'name': 'PlanningTranslateModalComponent', 'selector': 'lib-planning-translate-modal'},{'name': 'PortfolioInsigthsComponent', 'selector': 'lib-portfolioInsigths'},{'name': 'PreviewImageComponent', 'selector': 'app-preview-image'},{'name': 'ProductDetailsComponent', 'selector': 'lib-productDetails'},{'name': 'ProductDetailsPage', 'selector': 'app-product-details'},{'name': 'ProductListComponent', 'selector': 'lib-product-list'},{'name': 'SelfieVerificationComponent', 'selector': 'app-selfie-verification'},{'name': 'SignatureUploadComponent', 'selector': 'app-signature-upload'},{'name': 'SignInComponent', 'selector': 'lib-sign-in'},{'name': 'SplashScreenComponent', 'selector': 'lib-splash-screen'},{'name': 'StepeerOnbordingComponent', 'selector': 'app-stepeer-onbording'},{'name': 'StocksComponent', 'selector': 'lib-stocks'},{'name': 'StocksPage', 'selector': 'app-stocks'},{'name': 'SubmenuComponent', 'selector': 'lib-submenu'},{'name': 'UpdateProfileComponent', 'selector': 'app-update-profile'},{'name': 'UploadAadharPanComponent', 'selector': 'app-upload-aadhar-pan'},{'name': 'VerificationCodeComponent', 'selector': 'lib-verification-code'},{'name': 'WealthRoboAdvisoryComponent', 'selector': 'lib-wealthRoboAdvisory'},{'name': 'WealthRoboAdvisoryPage', 'selector': 'app-wealth-robo-advisory'},{'name': 'WealthWellnessComponent', 'selector': 'lib-wealthWellness'},{'name': 'WebCamComponent', 'selector': 'web-cam'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'SelfieVerificationComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'SelfieVerificationComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

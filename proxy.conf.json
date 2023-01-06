@@ -1,0 +1,10 @@
+{
+  "/posts": {
+    "target": "https://apixproto.heytorus.com:8443/PrototypeSuperApp/",
+    "secure": true,
+    "pathRewrite": {
+    "^/posts": ""
+  },
+    "changeOrigin": true
+  }
+}

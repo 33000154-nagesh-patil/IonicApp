@@ -1,0 +1,24 @@
+<ion-grid>
+  <div *ngFor="let item of data">
+  <div *ngIf="item.type=='semigrid'">
+    <span class="custFontFamilyMuliBold muli-16pt custLineHight22 custColorDark">{{item.label}}</span>
+  <ion-row [ngClass]="item.config.layoutType == 'horizontal'?'container':''">
+    <ion-col [size]="item.config.col" *ngFor="let x of item.data">
+      <ion-card class="custBackgroundColorWhite p-0 m-0 ">
+        <ion-card-content>
+          <ion-row>
+            <ion-col [size]="'8'">
+              <span class="custFontFamilyMuliBold custLineHight16 muli-11pt custColorDark float-start">{{x.title}}</span>
+            </ion-col>
+            <ion-col [size]="'4'">
+              <img [src]="x.healthCarePic" class="float-end" />
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>   
+  </ion-row>
+  </div>
+  </div>
+</ion-grid>
+

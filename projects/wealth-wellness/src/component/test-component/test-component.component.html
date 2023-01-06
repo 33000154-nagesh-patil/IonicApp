@@ -1,0 +1,33 @@
+<ion-content>
+  <button (click)="goBack()">Go Back</button>
+  <ion-card
+    class="custBackgroundColorWhite w-100 mx-0 mb-0 custCard ion-no-padding px-1"
+  >
+    <ion-row class="">
+      <ion-col
+        class="custColorDark muli-14pt custFontFamilyMuliSemiBold text-nowrap"
+      >
+        Company Name
+      </ion-col>
+
+      <ion-col
+        class="custFontFamilyMuliSemiBold custLineHight20 muli-14pt custColorDark text-end text-nowrap"
+      >
+        ₹ {{LtpVal}}
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col
+        class="custFontFamilyMuliSemiBold muli-12pt custLineHight16 custColorBattlePGry text-nowrap"
+      >
+        Exchange Type
+      </ion-col>
+
+      <ion-col [size]="'8'" class="d-flex justify-content-end text-end">
+        <span class="muli-12pt itemCol text-end text-nowrap"> Data </span>&nbsp;
+        <span class="muli-12pt itemCol text-end text-nowrap">Data</span>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+</ion-content>

@@ -1,0 +1,216 @@
+<ion-app>
+  <ion-header>
+    <ion-toolbar>
+      <ion-row>
+        <ion-col size="6" class="mt-3">
+          <ion-title><span class="custFontFamilyMuliBold custLineHight25 muli-16pt custColorDark">
+              <!-- <p>{{LtpVal}}</p> -->
+              Watchlist
+            </span></ion-title>
+        </ion-col>
+
+        <!-- <button (click)="goToTCS()">Click to see TCS </button> -->
+
+        <ion-col size="3">
+          <div class="custTextAlignCenter">
+            <div class="custHeight custProfile">
+              <div *ngIf="!hideIndex; else conditionFalse">
+                <ion-img [src]="imageList?.index" class="custSVGIcon" (click)="showIndex()"></ion-img>
+              </div>
+              <ng-template #conditionFalse>
+                <ion-img [src]="imageList?.indexBlue" class="custSVGIcon" (click)="showIndex()"></ion-img>
+              </ng-template>
+            </div>
+            <p class="muli-10pt custLineHight28 custFontFamilyMuliSemiBold custColorBattlePGry">
+              {{ "indexes" | translate }}
+            </p>
+          </div>
+        </ion-col>
+
+        <ion-col size="3">
+          <div class="custTextAlignCenter">
+            <div class="custHeight custProfile">
+              <ion-img [src]="imageList?.notificationIcon" class="custSVGIcon"></ion-img>
+            </div>
+            <p class="muli-10pt custLineHight28 custFontFamilyMuliSemiBold custColorBattlePGry">
+              {{ "notifications" | translate }}
+            </p>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-toolbar>
+
+    <div>
+      <div *ngIf="hideIndex" class="myClass">
+        <ion-slides>
+          <ion-slide class="border-right">
+            <ion-col class="text-center" *ngFor="let x of json2" class="border-bottom p-3 border-end">
+              <ion-col class="muli-14pt custFontFamilyMuliBold custLineHight20 custColorDark text-center ms-4 m-2">
+                {{ x?.bankName }}
+              </ion-col>
+              <ion-col>
+                <img [src]="imageList?.greyPensil" *ngIf="json2.indexOf(x) > 0" width="20px" height="25px"
+                  (click)="goToEditIndex()" />
+              </ion-col>
+              <p class="m-1 custColorDark muli-14pt">₹{{ x?.Money }}</p>
+              <p class="muli-18pt custFontFamilyMuliBold custColorParakeetGreen m-1">
+                <span *ngIf="x?.PrecentegIncrement > 0"><img [src]="imageList?.greenIcon" width="50px"
+                    height="50px" /></span>
+                <span *ngIf="x?.PrecentegIncrement < 0"><img [src]="imageList?.redarrow" width="20px"
+                    height="20px" /></span>
+                <span [ngClass]="
+                    x?.PrecentegIncrement < 0
+                      ? 'custColorRed'
+                      : 'custColorParakeetGreen muli-14pt m-0'
+                  ">
+                  {{ x?.LiveMoney }}({{ x?.PrecentegIncrement }}%)</span>
+              </p>
+              <p class="muli-10pt custFontFamilyMuliBold custColorGreyish">
+                {{ x.date }}
+              </p>
+            </ion-col>
+          </ion-slide>
+        </ion-slides>
+        <ion-row class="mt-3">
+          <ion-col [size]="'2.5'"
+            class="custColorGreyish muli-14pt custFontFamilyMuliBold text-start m-0 p-0 mt-1 ms-3">
+            My Funds
+          </ion-col>
+          <ion-col [size]="'4'" class="muli-14pt">
+            <span [ngClass]="
+                CurrentFund > 0
+                  ? 'custColorParakeetGreen'
+                  : 'custColorcustFadedRed'
+              ">₹{{ CurrentFund }}</span>
+          </ion-col>
+
+          <ion-col class="custBackgroundColorWhite text-end me-3 mb-3">
+            <button [ngClass]="
+                CurrentFund > 0
+                  ? 'custBackgroundColorWhite'
+                  : 'custBackgroundColorBrightCyan'
+              " class="custBackgroundColorWhite custColorBrightCyan border text-start rounded"
+              (click)="goToAddFunds()">
+              <ion-icon name="add-circle-outline" [ngClass]="
+                  CurrentFund > 0 ? 'custColorBrightCyan' : 'custColorWhite'
+                ">
+              </ion-icon>
+              &nbsp;<span class="muli-14pt custFontFamilyMuliBold custLineHeight18" [ngClass]="
+                  CurrentFund > 0 ? 'custColorBrightCyan' : 'custColorWhite'
+                ">Add funds</span>
+            </button>
+          </ion-col>
+        </ion-row>
+      </div>
+    </div>
+  </ion-header>
+
+  <ion-content class="contentBackground">
+    <ion-grid class="p-2">
+      <ion-row class="w-100">
+        <ion-col [size]="11">
+          <ion-segment value="Nifty 50" [(ngModel)]="currentWatchList" scrollable="true"
+            (ionChange)="watchListChanged($event)" class="custBorderSegment px-3">
+            <ion-segment-button *ngFor="let x of WatchlistArray" longPress (mouseLongPress)="editWatchList(x)"
+              [value]="x" class="text">
+              <ion-label class="custFontFamilyMuliBoldmuli-14pt custColorDark">{{ x | titlecase }}</ion-label>
+            </ion-segment-button>
+          </ion-segment>
+        </ion-col>
+        <ion-col [size]="1">
+          <ion-img [src]="imageList?.plusIcon" class="custSVGIcon mt-2" (click)="addWatchList()"></ion-img>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <!-- Search Bar -->
+        <ion-row class="w-100 custSearchButton">
+          <mat-form-field appearance="outline" class="custBackgroundColorWhite w-100 ms-0" floatLabel="never">
+            <ion-icon matPrefix name="search-outline" class="ms-1 mt-1 muli-20pt custColorGreyish"></ion-icon>
+
+            <input matInput type="text" autocomplete="on" (click)="goToAddStocks()"
+              class="custFontFamilyMuliRegular custColorGreyish muli-14pt custLineHight20 text-start ms-3"
+              [(ngModel)]="searchStocks" placeholder="Search Stocks" autofill="false" />
+
+            <ion-icon matSuffix name="funnel-outline" class="me-1 muli-20pt custColorDarkishBlue"
+              (click)="gotoFilter()">
+            </ion-icon>
+          </mat-form-field>
+        </ion-row>
+
+        <div *ngIf="emptyList">
+          <div class="centerImg">
+            <ion-row>
+              <ion-col class="img">
+                <img [src]="imageList?.nullWatchListImg" />
+              </ion-col>
+            </ion-row>
+          </div>
+          <ion-row>
+            <ion-col>
+              <span class="custColorBattlePGry text-center muli-14pt custFontFamilyMuliSemiBold">Use the search bar to
+                add instruments to your watchlist</span>
+            </ion-col>
+          </ion-row>
+        </div>
+
+        <div *ngIf="showNullMessage" class="custCenter custCenterText">
+          <ion-img src="assets\icon\emptyWatchlist.svg" class="noDataICON"></ion-img>
+          <span class="">Use the search bar to add instruments to your watchlist</span>
+        </div>
+
+        <ion-row class="w-100">
+          <ion-row *ngFor="let item of watchlistData; index as i" [attr.style]="
+              sanitizer.bypassSecurityTrustStyle('--animation-order: ' + i)
+            " class="w-100 ion-no-padding animate">
+            <ion-col class="ion-no-padding">
+              <ion-card class="custBackgroundColorWhite w-100 mx-0 mb-0 custCard ion-no-padding px-1"
+                (click)="openStockDetails(item)" [ngClass]="watchlistData.indexOf(item) > 0 ? 'mt-0' : ''">
+                <ion-row class="">
+                  <ion-col class="custColorDark muli-14pt custFontFamilyMuliSemiBold text-nowrap">
+                    {{ item?.SYMBOL }}
+                    <img *ngIf="item.img" src="{{ item.img }}" style="height: 16px; margin-top: -16px" />
+                  </ion-col>
+
+                  <ion-col
+                    class="custFontFamilyMuliSemiBold custLineHight20 muli-14pt custColorDark text-end text-nowrap">
+                    ₹{{ item.LTPvalue }}
+                  </ion-col>
+                </ion-row>
+
+                <ion-row>
+                  <ion-col class="custFontFamilyMuliBold muli-12pt custLineHight16 custColorBattlePGry text-nowrap">
+                    {{ item?.EXCHANGE }}
+                  </ion-col>
+
+                  <ion-col [size]="'8'" class="d-flex justify-content-end text-end">
+                    <span class="muli-12pt text-end text-nowrap" [ngClass]="
+                        item?.change > 0
+                          ? 'custColorParakeetGreen'
+                          : 'custColorcustFadedRed'
+                      ">
+                      <ion-icon [name]="item?.change > 0 ? 'caret-up' : 'caret-down'" [ngClass]="
+                          item?.change > 0
+                            ? 'custColorParakeetGreen'
+                            : 'custColorcustFadedRed'
+                        "></ion-icon>{{ item?.change }}
+                    </span>&nbsp;
+                    <span class="muli-12pt text-end text-nowrap" [ngClass]="
+                        item?.change > 0
+                          ? 'custColorParakeetGreen'
+                          : 'custColorcustFadedRed'
+                      ">({{ item?.percentChange }}%)</span>
+                  </ion-col>
+                </ion-row>
+              </ion-card>
+            </ion-col>
+          </ion-row>
+        </ion-row>
+      </ion-row>
+    </ion-grid>
+  </ion-content>
+  <ion-footer>
+    <lib-footer [activeImg]="imageList?.activeTab" [selectedIndex]="'3'" [footerListData]="stocksTab"
+      [parentTab]="'wealthStocks'"></lib-footer>
+  </ion-footer>
+</ion-app>

@@ -1,0 +1,58 @@
+{
+    "banner":{
+        "contentType":"banner",
+        "Title": "Why Study In Torus Primero?",
+        "data":[
+                {
+                    "icon":"assets/health-page-logos/Confidential.svg",
+                    "subTitle":"Cost Effective"
+                },
+                {
+                    "icon":"assets/health-page-logos/Access to Doctor.svg",
+                    "subTitle":"Self Management"
+                },
+                {
+                    "icon":"assets/health-page-logos/Integrated lab.svg",
+                    "subTitle":"Flexible Schedule"
+                }
+            ]
+    },
+    "heading":[
+        {
+            "heading":"Education Wellness",
+            "discription":"Education product to ensure wellness"
+        }
+    ],
+    "objectContent": [
+        {
+            "contentType": "2x1 Grid",
+            "Title": "Courses",
+            "content": [
+                {
+                    "icon": "Example: course icon",
+                    "cardTitle": "Courses",
+                    "cardDescription": "Skill courses for you",
+                    "action": "Explore"
+                },
+                {
+                    "icon": "Example: assessment icon",
+                    "cardTitle": "Assessment",
+                    "cardDescription": "Learn intresting courses",
+                    "action": "Explore"
+                }
+            ]
+        },
+        {
+            "contentType": "2x1 Grid",
+            "Title": "Jobs",
+            "content": [
+                {
+                    "icon": "Example: job icon",
+                    "cardTitle": "Jobs",
+                    "cardDescription": "Get opportunrity to build your correct",
+                    "action": "Explore"
+                }
+            ]
+        }
+    ]
+}

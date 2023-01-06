@@ -1,0 +1,211 @@
+{
+    "Title": [
+        "Wealth",
+        "Health",
+        "Education",
+        "Lifestyle"
+    ],
+    "Wealth": [
+        {
+            "categoryName": "General",
+            "id": 1,
+            "icon": "assets/icon/generalIcon.svg"
+        },
+        {
+            "categoryName": "Mutual Funds",
+            "id": 2,
+            "icon": "assets/icon/mutualFundsIcon.svg"
+        },
+        {
+            "categoryName": "Stocks",
+            "id": 3,
+            "icon": "assets/icon/stocksIcon.svg"
+        },
+        {
+            "categoryName": "US Stocks",
+            "id": 4,
+            "icon": "assets/icon/USStocksIcon.svg"
+        },
+        {
+            "categoryName": "Baskets",
+            "id": 5,
+            "icon": "assets/icon/backetsIcon.svg"
+        },
+        {
+            "categoryName": "Gold",
+            "id": 6,
+            "icon": "assets/icon/goldIcon.svg"
+        },
+        {
+            "categoryName": "Fixed Deposit",
+            "id": 7,
+            "icon": "assets/icon/fixedDepositIcon.svg"
+        },
+        {
+            "categoryName": "Bonds",
+            "id": 8,
+            "icon": "assets/icon/bondsIcon.svg"
+        },
+        {
+            "categoryName": "International Equities",
+            "id": 9,
+            "icon": "assets/icon/internationalEquiIcon.svg"
+        },
+        {
+            "categoryName": "ETFs",
+            "id": 10,
+            "icon": "assets/icon/etfsIcon.svg"
+        },
+        {
+            "categoryName": "IPO",
+            "id": 11,
+            "icon": "assets/icon/ipoIcon.svg"
+        },
+        {
+            "categoryName": "Robo Wealth Advisory",
+            "id": 12,
+            "icon": "assets/icon/roboWealthAdvIcon.svg"
+        },
+        {
+            "categoryName": "Lab Test",
+            "id": 13,
+            "icon": "assets/icon/labTestIcon.svg"
+        },
+        {
+            "categoryName": "Doctor Consultant",
+            "id": 14,
+            "icon": "assets/icon/doctorConsulIcon.svg"
+        },
+        {
+            "categoryName": "Medicines",
+            "id": 15,
+            "icon": "assets/icon/medicinesIcon.svg"
+        },
+        {
+            "categoryName": "Fitness",
+            "id": 16,
+            "icon": "assets/icon/fitnessIcon.svg"
+        },
+        {
+            "categoryName": "Health Insurance",
+            "id": 17,
+            "icon": "assets/icon/healthInsureIcon.svg"
+        },
+        {
+            "categoryName": "Term Insurance",
+            "id": 18,
+            "icon": "assets/icon/termInsurIcon.svg"
+        },
+        {
+            "categoryName": "Child Insurance",
+            "id": 19,
+            "icon": "assets/icon/childInsurIcon.svg"
+        },
+        {
+            "categoryName": "Pension Plans",
+            "id": 20,
+            "icon": "assets/icon/pensionPlansIcon.svg"
+        },
+        {
+            "categoryName": "Car Insurance",
+            "id": 21,
+            "icon": "assets/icon/carInsurIcon.svg"
+        },
+        {
+            "categoryName": "Two-Wheeler Insurance",
+            "id": 22,
+            "icon": "assets/icon/twoWheelerInsurIcon.svg"
+        },
+        {
+            "categoryName": "Travel Insurance",
+            "id": 23,
+            "icon": "assets/icon/travelInsurIcon.svg"
+        },
+        {
+            "categoryName": "Personal Loan",
+            "id": 24,
+            "icon": "assets/icon/personalLoanIcon.svg"
+        },
+        {
+            "categoryName": "Home Loan",
+            "id": 25,
+            "icon": "assets/icon/homeLoanIcon.svg"
+        },
+        {
+            "categoryName": "Vehicle Loan",
+            "id": 26,
+            "icon": "assets/icon/vehicalIcon.svg"
+        },
+        {
+            "categoryName": "Gold Loan",
+            "id": 27,
+            "icon": "assets/icon/goldLoanIcon.svg"
+        },
+        {
+            "categoryName": "Business Loan",
+            "id": 28,
+            "icon": "assets/icon/businessIcon.svg"
+        },
+        {
+            "categoryName": "Education Loan",
+            "id": 29,
+            "icon": "assets/icon/educationLoanIcon.svg"
+        },
+        {
+            "categoryName": "LAS",
+            "id": 30,
+            "icon": "assets/icon/lasIcon.svg"
+        },
+        {
+            "categoryName": "Education",
+            "id": 31,
+            "icon": "assets/icon/educationLoanIcon.svg"
+        },
+        {
+            "categoryName": "LifeStyle",
+            "id": 32,
+            "icon": "assets/icon/lifeStyleIcon.svg"
+        }
+    ],
+    "Health": [
+        {
+            "categoryName": "Lab Test",
+            "id": 33,
+            "icon": "assets/icon/labTestIcon.svg"
+        },
+        {
+            "categoryName": "Doctor Consultant",
+            "id": 34,
+            "icon": "assets/icon/doctorConsul1Icon.svg"
+        },
+        {
+            "categoryName": "Medicines",
+            "id": 35,
+            "icon": "assets/icon/medicinesIcon.svg"
+        },
+        {
+            "categoryName": "Fitness",
+            "id": 36,
+            "icon": "assets/icon/fitnessIcon.svg"
+        }
+    ],
+    "Education": [
+        {
+            "categoryName": "Courses",
+            "id": 37,
+            "icon": "assets/icon/courcesIcon.svg"
+        },
+        {
+            "categoryName": "Assesment",
+            "id": 38,
+            "icon": "assets/icon/assesmentIcon.svg"
+        }
+    ],
+    "Lifestyle": [
+        {
+            "categoryName": "Lifestyle",
+            "id": 39,
+            "icon": "assets/icon/lifeStyle1Icon.svg"
+        }
+    ]
+}

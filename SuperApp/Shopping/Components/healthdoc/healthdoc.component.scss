@@ -1,0 +1,350 @@
+.addpebtn {
+    
+    margin-top: 18px;
+
+}
+.savedpretext{
+    
+    margin-top: 6px;
+
+}
+.custModalContainer {
+    z-index: 1;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+}
+.modal-content {
+    background-color: var(--custWhite);
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    padding-right: 16px;
+    padding-left: 16px;
+    border: 1px solid #888;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.custModalContainer1 {
+    z-index: 1;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+}
+.modal-content1 {
+    background-color: var(--custWhite);
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 66px;
+    padding-right: 40px;
+    padding-left: 20px;
+    border: 1px solid #888;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    border-radius: 10px 10px 0px 0px;
+    height: 70%;
+}
+ion-item {
+    --padding-start: 0;
+  }
+  
+  /* iOS places the subtitle above the title */
+  ion-card-header.ios {
+    display: flex;
+    flex-flow: column-reverse;
+  }
+
+  // .custBackArrow {
+//   height: 20px;
+//   width: 20px;
+// }
+
+
+
+// .custBtnExplore {
+//   height: 35px;
+//   border: 1px solid var(--custBrightCyan) !important;
+//   border-radius: 4px !important;
+//   background: white !important;
+//   text-align: center !important;
+//   padding-left: 16px !important;
+//   padding-right: 16px !important;
+//   float: right;
+// }
+
+// .custBadge {
+//   position: absolute;
+// }
+
+// .custRight0 {
+//   right: 0px;
+// }
+
+// .decrement {
+//   .mat-raised-button {
+//     border-radius: 50% 0% 0% 50%;
+//   }
+// }
+
+// .increment {
+//   .mat-raised-button {
+//     border-radius: 0% 50% 50% 0%;
+//   }
+// }
+
+// .mat-raised-button {
+//   min-width: 50px !important;
+// }
+
+// .custSegment {
+//   border-radius: 24px;
+//   --indicator-color: none;
+//   width: 30px;
+// }
+
+// ion-segment-button {
+//   min-width: 50%;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   min-height: auto;
+//   border-radius: 20px;
+// }
+
+// ion-segment {
+//   height: 35px;
+//   border-radius: 20px;
+//   background-color: var(--custGray);
+// }
+
+// ::ng-deep .cdk-overlay-backdrop {
+//   opacity: 0.7 !important;
+//   background-color: rgba(0, 0, 0, 0.4);
+// }
+
+// ::ng-deep .mat-datepicker-content {
+//   display: flex !important;
+//   position: fixed !important;
+//   width: 100% !important;
+//   left: 0 !important;
+//   bottom: -5px !important;
+//   justify-content: center !important;
+//   border: 5px solid white;
+//   border-radius: 15px 15px 0px 0px !important;
+//   --min-width: 100%;
+//   --max-width: 100%;
+//   --width: 100%;
+// }
+// .custAbsoluteBottom{
+//   position: sticky !important;
+//   bottom: 0;
+//   border-radius: 12px 12px 0px 0px !important;
+//   width: 100% !important;
+//   padding: 15px;
+// }
+// .custDarkGrey{
+//   background-color: rgb(173, 173, 173);
+// }
+// .myflex{
+//   display: flex !important;
+//   flex-direction: row;
+//   justify-content:space-between !important;
+//   width: 100% !important;
+// }
+// .myMat{
+//   .mat-form-field-appearance-outline .mat-form-field-prefix, .mat-form-field-appearance-outline .mat-form-field-suffix{
+//     top: unset !important;
+//   }
+//   .mat-form-field-infix {
+    
+//      border-top:unset !important;
+// }
+
+// }
+// .custSelect{
+//   color: var(--custWhite) !important;
+//   background-color: var(--custBrightCyan) !important;
+// }
+// .segment-button-checked {
+//   // background: var(--background-checked);
+//   color: var(--custWhite);
+//   --indicator-color: var(--custBrightCyan);
+//   background-color: var(--custBrightCyan);
+//   border-radius: 10px 10px 0px 0px !important;
+// }
+// ion-segment{
+//   box-shadow: inset 0px 0px 6px -3px !important;
+//   border-radius: 10px;
+//   // border-top-right-radius: 10px;
+// }
+
+
+////
+
+.custBackgroundRedButton{
+    color: var(--custWhite) !important;
+    background-color: var(--custFadedRed);
+    border-radius: 5px;
+  }
+  
+  .productImage{
+    justify-content: center !important;
+    text-align: center !important;
+    border: 1px solid var(--custPaleGrey) !important;
+    border-radius: 5px !important;  
+    width: 3rem !important;
+    height: 3rem !important;
+  }
+  .matCol{
+    .mat-form-field {
+      
+      min-width: 9em;
+    }
+  }
+  .custCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  button:disabled{
+    filter: grayscale(59);
+  }
+  .segmant{
+    // box-shadow: inset 0px 0px 6px -3px !important;
+    background-color: var(--custPaleGrey);
+    border-radius: 800px;
+    ion-segment-button{
+      min-height: 1.5rem;
+     
+      min-width: 3rem;
+    }
+    // border-top-right-radius: 10px;
+    .segment-button-checked {
+      --color-checked: var(--custWhite);
+      color: var(--custWhite);
+      --indicator-color: none !important;
+      background-color: var(--custBrightCyan);
+      border-radius: 1000px !important;
+    }
+  }
+  
+  .backdrop{
+    .modal-wrapper{
+      --background: rgb(255, 255, 255);
+      position: fixed;
+      bottom: -5px !important;
+      left: 0px;
+      height: auto;
+      min-height: calc(var(--world) * var(--hey) + 50px);
+      min-width: 100%;
+      width: 100%;
+      border: 0px solid white;
+      padding: 5px;
+      border-radius: 10px 10px 0px 0px;
+  .ion-page{
+      overflow-y: scroll;
+    }
+    }
+  }
+
+  .imgselecd{
+    .modal-wrapper{
+      --background: rgb(255, 255, 255);
+      position: fixed;
+      bottom: -5px !important;
+      left: 0px;
+      height: auto;
+      min-height: 50%;
+      min-width: 100%;
+      width: 100%;
+      border: 0px solid white;
+      padding: 5px;
+      border-radius: 10px 10px 0px 0px;
+  .ion-page{
+      overflow-y: scroll;
+    }
+    }
+  }
+
+
+  .redeemAll{
+    margin-right: 5px;
+  }
+  .informationIcon{
+    width: 15px;
+    height: 15px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+  }
+  .marginCard{
+    background-image: linear-gradient(to right,var(--custDarkishBlue), var(--custBrightCyan));
+    color: var(--custWhite);
+  }
+  
+  .loader{
+    display: flex !important;
+    justify-content: center;
+    padding: 5px !important;
+  }
+  // .spin{
+    .mat-progress-spinner circle, .mat-spinner circle {
+      stroke: var(--custWhite);
+      }
+  // }
+  
+  .datePickerH{
+    position: absolute;
+    top: -17px;
+    left: 0px;
+  }
+
+  .imagecss{
+    // height: 100%;
+    // width: 100%;
+    // overflow: auto;
+  }
+  .scrollimg{
+    // background-color: lightblue;
+    width: 100%;
+    height: 100%;
+    // border-style: double;
+    border-style: groove;
+    // overflow: auto;
+    // background-color: #888;
+  }
+  .options input{
+    margin:0;padding:0;
+    -webkit-appearance:none;
+       -moz-appearance:none;
+            appearance:none;
+}
+// .radio input[type='radio'] {
+//   display: none;
+//   /*removes original button*/
+// }
+
+// .radio label:before {
+//   /*styles outer circle*/
+//   content: " ";
+//   display: inline-block;
+//   position: relative;
+//   top: 5px;
+//   margin: 0 5px 0 0;
+//   width: 20px;
+//   height: 20px;
+//   border-radius: 11px;
+//   border: 2px solid grey;
+//   background-color: transparent;
+// }

@@ -1,0 +1,55 @@
+
+<ion-content>
+  <ion-grid *ngIf="!visibility" class="p-4">
+    <ion-row>
+      <ion-col [size]="'12'" class="text-center">
+        <span class="custFontFamilyMuliBold muli-14pt custLineHight18 custColorDark">{{'incomeSubheading' |
+          translate}}</span>
+      </ion-col>
+    </ion-row><br>
+    <form [formGroup]="incomeProofForm" autocomplete="off">
+
+      <ion-row>
+        <mat-form-field appearance="outline" class="w-100 ">
+          <mat-label>{{'selectIncomeProof' | translate}}</mat-label>
+          <mat-select (selectionChange)="incomeDoc($event.value)" formControlName="incomeProofDetails" [(ngModel)]="incomeProofData.IncomeProofList"
+            name="incomeProofList" id="incomeProofList">
+            <mat-option *ngFor="let item of incomeProofList" [value]="item.ID">
+              {{item.TEXT}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </ion-row>
+      <ion-row *ngIf="!incomeProoftest" class="justify-content-center" (click)="selectImage()">
+        <ion-img [src]="imageList?.scanIcon" class="custScan custMargin"></ion-img>&nbsp;
+        <span>{{'takePictureLabel' | translate}}/{{'uploadDocument' | translate}}</span>
+      </ion-row>
+      <ion-row *ngIf="incomeProoftest">
+        <img [src]="imageList?.successKYCIcon">&nbsp;
+        <span class="custColorParakeetGreen">{{'ducumentUploadSuccessMessage' | translate}}</span>
+      </ion-row>
+      <!-- <ion-img [src]="incomeProoftest" class="custScan custMargin"></ion-img> -->
+      <!-- <img [src]="incomeProof" class="custKYCImg mt-2 w-25 h-25"> -->
+    </form>
+    <ion-row class="fixed-bottom p-2 custBackgroundColorWhite">
+      <ion-col [size]="'12'">
+        <!-- <button class="w-100 custBackgroundColorBrightCyan text-capitalize text-center custLooksBtn"
+          (click)="looksGood()" [disabled]="incomeProoftest"><span
+            class="custColorWhite custFontFamilyMuliBold muli-16pt">{{'continue' |
+            translate}}</span></button> -->
+
+
+        <ion-button expand="block" [disabled]="visibility && incomeDocVal" (click)="continue()" [disabled]="!incomeProofForm.valid"
+          class="text-capitalize text-center custLooksBtn"><span
+            class="custColorWhite custFontFamilyMuliBold muli-16pt">{{'continue' |
+            translate}}</span></ion-button>
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <app-preview-image *ngIf="visibility" (caputuredImageStatus)="looksGood($event)" [caputuredImage]="incomeProof"
+    [visibility]="visibility"></app-preview-image>
+
+  <input #userInput style="position: absolute; width: 0; height: 0; opacity: 0" type="file"
+    (change)="imagePreview($event)" class="fileInput" accept="image/png, image/jpeg">
+</ion-content>

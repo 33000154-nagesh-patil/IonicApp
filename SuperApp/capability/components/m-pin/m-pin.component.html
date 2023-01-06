@@ -1,0 +1,94 @@
+<ion-header>
+  <ion-toolbar class="custBackgroundColorWhite">
+    <ion-row>
+      <ion-col size="2"></ion-col>
+      <ion-col class="custFontFamilyMuliBold custLineHight40 muli-16pt custColorDark">Enter Your MPIN</ion-col>
+      <ion-col size="2"></ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="contentBackground">
+  <form [formGroup]="otpVerificationCodeFormGroup">
+    <ion-grid>
+      <ion-row style="transform: translateY(10rem);">
+        <ion-col class="muli-12pt custFontFamilyMuliSemiBold custColorBattlePGry p-2">
+          <div>Hello,<span class="muli-16pt custFontFamilyMuliBold custColorBold p-2">{{UserName}}</span></div>
+
+        </ion-col>
+      </ion-row>
+      <ion-row class="px-1 pt-0" style="transform: translateY(10rem);">
+        <ion-col [size]="'3'">
+          <mat-form-field appearance="outline" class="example-full-width w-100">
+            <input matInput #otp1 id="otp1" formControlName="otp1" [type]="currentType?'text':'password'"
+              (keyup)="(otp1.value.length == 1)?otp2.focus() : ''" class="custInput" maxLength="1" inputmode="numeric">
+          </mat-form-field>
+        </ion-col>
+        <ion-col [size]="'3'">
+          <mat-form-field appearance="outline" class="example-full-width w-100">
+            <input matInput #otp2 id="otp2" formControlName="otp2" type="password"
+              [type]="currentType?'text':'password'"
+              (keyup)="onDigitInput($event);(otp2.value.length == 1)?otp3.focus() : ($event.code === 'Backspace')?otp1.focus():otp2.focus();($event.code === 'Backspace')?otp1.value = '':otp1.value"
+              class="custInput" maxLength="1" inputmode="numeric">
+          </mat-form-field>
+        </ion-col>
+        <ion-col [size]="'3'">
+          <mat-form-field appearance="outline" class="example-full-width w-100">
+            <input matInput #otp3 id="otp3" formControlName="otp3" type="password"
+              [type]="currentType?'text':'password'"
+              (keyup)="(otp3.value.length == 1)?otp4.focus() : ($event.code === 'Backspace')?otp2.focus():otp3.focus();($event.code === 'Backspace')?otp2.value = '':otp2.value"
+              class="custInput" maxLength="1" inputmode="numeric">
+          </mat-form-field>
+        </ion-col>
+        <ion-col [size]="'3'">
+          <mat-form-field appearance="outline" class="example-full-width w-100">
+            <!-- <input matInput #otp4 id="otp4" formControlName="otp4" type="password"
+              [type]="currentType?'text':'password'"
+              (keyup)="(otp4.value.length == 1)?otp4.focus() : ($event.code === 'Backspace')?otp3.focus():otp4.focus();($event.code === 'Backspace')?otp3.value = '':otp3.value"
+              class="custInput" maxLength="1" inputmode="numeric"> -->
+              <input matInput #otp4 id="otp4" formControlName="otp4" type="password"
+              [type]="currentType?'text':'password'"
+              (keyup)="($event.code === 'Backspace')?otp3.focus():otp4.focus();($event.code === 'Backspace')?otp3.value = '':otp3.value"
+              class="custInput" maxLength="1" inputmode="numeric">
+          </mat-form-field>
+        </ion-col>
+        <!-- <ion-col [size]="'2'">
+          <mat-form-field appearance="outline" class="example-full-width w-100">
+            <input matInput #otp5 id="otp5" formControlName="otp5" type="password"
+              [type]="currentType?'text':'password'"
+              (keyup)="(otp5.value.length == 1)?otp6.focus() : ($event.code === 'Backspace')?otp4.focus():otp5.focus();($event.code === 'Backspace')?otp4.value = '':otp4.value"
+              class="custInput" maxLength="1" inputmode="numeric">
+          </mat-form-field>
+        </ion-col>
+        <ion-col [size]="'2'">
+          <mat-form-field appearance="outline" class="example-full-width w-100">
+            <input matInput #otp6 id="otp6" formControlName="otp6" type="password"
+              [type]="currentType?'text':'password'"
+              (keyup)="($event.code === 'Backspace')?otp5.focus():otp6.focus();($event.code === 'Backspace')?otp5.value = '':otp5.value"
+              class="custInput" maxLength="1" inputmode="numeric">
+          </mat-form-field>
+        </ion-col> -->
+      </ion-row>
+
+      <ion-row>
+        <span style="transform: translateY(10rem);width: 100%;
+    display: flex;
+    justify-content: center;" (click)="forgotMpin()">Forgot Mpin?</span>
+      </ion-row>
+    </ion-grid>
+
+
+    <ion-col [size]="'12'" class="fixed-bottom">
+      <ion-row class="w-100">
+        <ion-col [size]="'12'">
+          <button [disabled]="!otpVerificationCodeFormGroup.valid"
+            class="btn w-100 text-center custBackgroundColorBrightCyan" (click)="verifyMpin()"><span
+              class="custColorWhite custFontFamilyMuliBold muli-16pt">Submit</span></button>
+        </ion-col>
+
+      </ion-row>
+    </ion-col>
+
+  </form>
+
+
+</ion-content>

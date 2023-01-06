@@ -1,0 +1,318 @@
+
+
+
+
+{
+
+    "las": {
+		"heading": "Transaction",
+        "product": "",
+        "actionButton": "Explore",
+        "confirmationTitle": "Transaction",
+        "card": {
+            "heading": "Basic Information",
+            "description": "",
+            "sub_heading": "HDFC Focused 30-G",
+            "image": "assets/Images/Thyrocare.png",
+            "row": [
+                {
+                    "P&L": "0",
+                    "XIRR": "2.72%"
+                },
+                {
+                    "Invesment Amount": "Rs.5000",
+                    "Current Amount": "Rs.5500"
+                },
+                {
+                    "Nav Date": "17 mar 2021",
+                    "Units": "24"
+                },
+                {
+                    "Folio Number": "53G$DH83",
+                    "Transaction ID": "A-dfrg-HGUGHJ-derff-dsdff"
+                }
+            ]
+        }
+    
+	}
+	,
+    "mutualFund": {
+		"heading": "Transaction",
+        "product": "",
+        "actionButton": "Explore",
+        "confirmationTitle": "Transaction",
+        "card": {
+            "heading": "Basic Information",
+            "description": "",
+            "sub_heading": "HDFC Focused 30-G",
+            "image": "assets/Images/Thyrocare.png",
+            "row": [
+                {
+                    "P&L": "0",
+                    "XIRR": "2.72%"
+                },
+                {
+                    "Invesment Amount": "Rs.5000",
+                    "Current Amount": "Rs.5500"
+                },
+                {
+                    "Nav Date": "17 mar 2021",
+                    "Units": "24"
+                },
+                {
+                    "Folio Number": "53G$DH83",
+                    "Transaction ID": "A-dfrg-HGUGHJ-derff-dsdff"
+                }
+            ]
+        }
+    
+	},
+    "educationJob": {
+		"heading": "Transaction",
+        "product": "",
+        "actionButton": "Explore",
+        "confirmationTitle": "Transaction",
+        "card": {
+            "heading": "Basic Information",
+            "description": "",
+            "sub_heading": "HDFC Focused 30-G",
+            "image": "assets/Images/Thyrocare.png",
+            "row": [
+                {
+                    "P&L": "0",
+                    "XIRR": "2.72%"
+                },
+                {
+                    "Invesment Amount": "Rs.5000",
+                    "Current Amount": "Rs.5500"
+                },
+                {
+                    "Nav Date": "17 mar 2021",
+                    "Units": "24"
+                },
+                {
+                    "Folio Number": "53G$DH83",
+                    "Transaction ID": "A-dfrg-HGUGHJ-derff-dsdff"
+                }
+            ]
+        }
+    
+	},
+    "insurance": {
+		"heading": "Transaction",
+        "product": "",
+        "actionButton": "Explore",
+        "confirmationTitle": "Transaction",
+        "card": {
+            "heading": "Basic Information",
+            "description": "",
+            "sub_heading": "HDFC Focused 30-G",
+            "image": "assets/Images/Thyrocare.png",
+            "row": [
+                {
+                    "P&L": "0",
+                    "XIRR": "2.72%"
+                },
+                {
+                    "Invesment Amount": "Rs.5000",
+                    "Current Amount": "Rs.5500"
+                },
+                {
+                    "Nav Date": "17 mar 2021",
+                    "Units": "24"
+                },
+                {
+                    "Folio Number": "53G$DH83",
+                    "Transaction ID": "A-dfrg-HGUGHJ-derff-dsdff"
+                }
+            ]
+        }
+    
+	},
+    "healthLabTest": {
+		"heading": "Transaction",
+        "product": "",
+        "actionButton": "Explore",
+        "confirmationTitle": "Transaction",
+        "card": {
+            "heading": "Basic Information",
+            "description": "",
+            "sub_heading": "HDFC Focused 30-G",
+            "image": "assets/Images/Thyrocare.png",
+            "row": [
+                {
+                    "P&L": "0",
+                    "XIRR": "2.72%"
+                },
+                {
+                    "Invesment Amount": "Rs.5000",
+                    "Current Amount": "Rs.5500"
+                },
+                {
+                    "Nav Date": "17 mar 2021",
+                    "Units": "24"
+                },
+                {
+                    "Folio Number": "53G$DH83",
+                    "Transaction ID": "A-dfrg-HGUGHJ-derff-dsdff"
+                }
+            ]
+        }
+    
+	},
+    "educationCourses": {
+		"heading": "Transaction",
+        "product": "",
+        "actionButton": "Explore",
+        "confirmationTitle": "Transaction",
+        "card": {
+            "heading": "Basic Information",
+            "description": "",
+            "sub_heading": "HDFC Focused 30-G",
+            "image": "assets/Images/Thyrocare.png",
+            "row": [
+                {
+                    "P&L": "0",
+                    "XIRR": "2.72%"
+                },
+                {
+                    "Invesment Amount": "Rs.5000",
+                    "Current Amount": "Rs.5500"
+                },
+                {
+                    "Nav Date": "17 mar 2021",
+                    "Units": "24"
+                },
+                {
+                    "Folio Number": "53G$DH83",
+                    "Transaction ID": "A-dfrg-HGUGHJ-derff-dsdff"
+                }
+            ]
+        }
+    
+	},
+    "digiGold": {
+		"heading": "Transaction",
+        "product": "",
+        "actionButton": "Explore",
+        "confirmationTitle": "Transaction",
+        "card": {
+            "heading": "Basic Information",
+            "description": "",
+            "sub_heading": "HDFC Focused 30-G",
+            "image": "assets/Images/Thyrocare.png",
+            "row": [
+                {
+                    "P&L": "0",
+                    "XIRR": "2.72%"
+                },
+                {
+                    "Invesment Amount": "Rs.5000",
+                    "Current Amount": "Rs.5500"
+                },
+                {
+                    "Nav Date": "17 mar 2021",
+                    "Units": "24"
+                },
+                {
+                    "Folio Number": "53G$DH83",
+                    "Transaction ID": "A-dfrg-HGUGHJ-derff-dsdff"
+                }
+            ]
+        }
+    
+	},
+    "educationAssessment": {
+		"heading": "Transaction",
+        "product": "",
+        "actionButton": "Explore",
+        "confirmationTitle": "Transaction",
+        "card": {
+            "heading": "Basic Information",
+            "description": "",
+            "sub_heading": "HDFC Focused 30-G",
+            "image": "assets/Images/Thyrocare.png",
+            "row": [
+                {
+                    "P&L": "0",
+                    "XIRR": "2.72%"
+                },
+                {
+                    "Invesment Amount": "Rs.5000",
+                    "Current Amount": "Rs.5500"
+                },
+                {
+                    "Nav Date": "17 mar 2021",
+                    "Units": "24"
+                },
+                {
+                    "Folio Number": "53G$DH83",
+                    "Transaction ID": "A-dfrg-HGUGHJ-derff-dsdff"
+                }
+            ]
+        }
+    
+	},
+    "stock": {
+		"heading": "Transaction",
+        "product": "",
+        "actionButton": "Explore",
+        "confirmationTitle": "Transaction",
+        "card": {
+            "heading": "Basic Information",
+            "description": "",
+            "sub_heading": "HDFC Focused 30-G",
+            "image": "assets/Images/Thyrocare.png",
+            "row": [
+                {
+                    "P&L": "0",
+                    "XIRR": "2.72%"
+                },
+                {
+                    "Invesment Amount": "Rs.5000",
+                    "Current Amount": "Rs.5500"
+                },
+                {
+                    "Nav Date": "17 mar 2021",
+                    "Units": "24"
+                },
+                {
+                    "Folio Number": "53G$DH83",
+                    "Transaction ID": "A-dfrg-HGUGHJ-derff-dsdff"
+                }
+            ]
+        }
+    
+	},
+    "healthMedicine": {
+		"heading": "Transaction",
+        "product": "",
+        "actionButton": "Explore",
+        "confirmationTitle": "Transaction",
+        "card": {
+            "heading": "Basic Information",
+            "description": "",
+            "sub_heading": "HDFC Focused 30-G",
+            "image": "assets/Images/Thyrocare.png",
+            "row": [
+                {
+                    "P&L": "0",
+                    "XIRR": "2.72%"
+                },
+                {
+                    "Invesment Amount": "Rs.5000",
+                    "Current Amount": "Rs.5500"
+                },
+                {
+                    "Nav Date": "17 mar 2021",
+                    "Units": "24"
+                },
+                {
+                    "Folio Number": "53G$DH83",
+                    "Transaction ID": "A-dfrg-HGUGHJ-derff-dsdff"
+                }
+            ]
+        }
+    
+	}
+}

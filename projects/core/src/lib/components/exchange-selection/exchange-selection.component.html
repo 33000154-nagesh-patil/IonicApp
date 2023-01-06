@@ -1,0 +1,67 @@
+<ion-header>
+  <ion-toolbar class="fixed-top">
+    <ion-grid>
+      <ion-row>
+        <ion-col size="4" size-lg>
+          <ion-img [src]="imageList?.arrow" *ngIf="appName != 'Aqube'" (click)="gotoBack()" class="custKYCImg mt-2">
+          </ion-img>
+        </ion-col>
+        <ion-col *ngIf="appName != 'Aqube'" [size]="'10'" class="text-center">
+          <span class="custFontFamilyMuliBold muli-14pt custLineHight40 custColorDark ">{{'exchangeSelection'
+            | translate}}</span>
+        </ion-col>
+        <ion-col *ngIf="appName == 'Aqube'" [size]="'12'" class="text-center">
+          <span class="custFontFamilyMuliBold muli-14pt custLineHight40 cus
+          tColorDark ">{{'exchangeSelection'
+            | translate}}</span>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="h-100 w-100 contentBackground">
+  <ion-grid class="d-flex flex-column customPadding CustomMargin">
+    <ion-row class="mx-4  mr-2">
+      <p class="custFontFamilyMuliBold muli-16pt">{{'segmentPara' | translate}}</p>
+    </ion-row>
+    <ion-row *ngFor="let x of segments; let i = index" class="custBackgroundColorWhite rounded-2 px-2 mx-4  my-2"
+      [ngClass]="(x?.IsChecked)?'customBorderColor':'' "
+      [ngClass]="(x?.IsDisable)?'customBorderColor custcheckbox customEquatiBorder':'' "
+      (click)="getSegmentPara(x?.IsChecked,x)">
+      <ion-col>
+        <p class="custFontFamilyMuliBold muli-16pt">{{x.Exchange}}</p>
+        <p class="custFontFamilyMuliBold muli-12pt ">{{x.Description}}</p>
+      </ion-col>
+      <ion-col class="d-flex align-items-center justify-content-end" size="2">
+        <ion-checkbox type="checkbox" mode="ios" class="custcheckbox" [checked]="(x?.IsChecked)"
+          [disabled]="(x?.IsChecked)"></ion-checkbox>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <div class="custModalContainer p-10" *ngIf="loggedInModal" (click)="successModalClose();">
+    <div  id="showModalSMGSucces" class="modal-content custCenterAlign">
+      <!-- <ion-icon [src]="imageList?.successKYCIcon" class="custImage"></ion-icon> -->
+      <p class="custFontFamilyMuliBold muli-16pt custColorDark text-center p-0 m-0 ion-no-padding">{{ErrorMsg}}</p>
+    </div>
+  </div>
+</ion-content>
+
+
+
+<ion-row class="custommargin d-flex fixed-bottom">
+  <span class="me-3 ">
+    <ion-checkbox color="secondary" (click)="termsCheck($event)" class="custTermCheckbox" [checked]="terms"></ion-checkbox>
+  </span>
+  <span>
+    <p class="w-100 custFontFamilyMuliBold muli-12pt custColorWarmGrey">{{'bycontinuing' | translate}}
+      <span class="custFontFamilyMuliBold custColorWarmGrey">{{'fATCADetails' | translate}}</span>
+    </p>
+  </span>
+  <button (click)="onContinue()" class="btn w-100 text-center custBackgroundColorBrightCyan rounded-2"
+    [disabled]="!continueNext"> <span class="custColorWhite custFontFamilyMuliBold muli-16pt">{{'continue' |
+      translate}}</span></button>
+</ion-row>
+
+
+

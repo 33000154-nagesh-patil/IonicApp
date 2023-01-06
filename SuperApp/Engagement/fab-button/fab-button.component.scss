@@ -1,0 +1,327 @@
+// #hamburger {
+//     z-index: 10;
+//     position: fixed;
+//     justify-content: center;
+//     align-items: center;
+//     right: 5%;
+//     width: 56px;
+//     height: 56px;
+//     border-radius: 50%;
+//     cursor: pointer;
+//   }
+
+//   .nav {
+//     z-index: 9;
+//     position: fixed;
+//     right: 10%;
+//     width: 48px;
+//     height: 48px;
+//     border-radius: 50%;
+//     background-color: #f9f9f9;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//     visibility: hidden;
+//     opacity: 0;
+//     cursor: pointer;
+//     border: 1px solid black;
+//     transition: all 0.3s ease-in;
+//   }
+
+
+//   #settings.show {
+//     transform: translateY(-170%);
+//   }
+//   #setting1.show {
+//     transform: translate(-118%,-114%);
+//   }
+//   #thumb.show {
+//     transform: translateY(170%);
+//   }
+//   #create.show {
+//     transform: translateX(-170%);
+//   }
+//   #share.show {
+//     transform: translate(-118%,114%);
+//   }
+
+//   .nav.show {
+//     visibility: visible;
+//     opacity: 1;
+//   }
+
+ 
+
+//   #share.show1 {
+//     transform: translate(118%,-114%);
+//   }
+//   #setting1.show1 {
+//     transform: translate(118%,114%);
+//   }
+//   #create.show1 {
+//     transform: translateX(170%);
+//   }
+
+//   #settings.show1 {
+//     transform: translateY(-170%);
+//   }
+
+//   #thumb.show1 {
+//     transform: translateY(170%);
+//   }
+
+//   .nav.show1 {
+//     visibility: visible;
+//     opacity: 1;
+//   }
+
+
+
+
+
+
+
+//   #settings.show2 {
+//     transform: translateY(-170%);
+//   }
+//   #setting1.show2 {
+//     transform: translate(-118%,-114%);
+//   }
+
+//   #create.show2 {
+//     transform: translateX(-170%);
+//   }
+
+//   .nav.show2 {
+//     visibility: visible;
+//     opacity: 1;
+//   }
+//   #share.show2 {
+//     transform: translate(118%,-114%);
+//   }
+
+//   #thumb.show2 {
+//     transform: translateX(170%);
+//   }
+
+//   .custBorderss {
+//     border: 3px solid black;
+//   }
+
+//   .custBackground {
+//     background-color: #99e67c;
+//   }
+
+
+.custMarginBottom{
+    margin-bottom: 4rem;
+    margin-right: 11px;
+}
+
+.backgroundClass{
+  background-color: #6B26BB;
+}
+
+.custFabImg{
+    height: 32px;
+    width: 32px;
+    --color: white;
+}
+
+.custFabBgBasic{
+    --background: var(--custWarmGrey) !important;    
+    --background-Activated: var(--custWarmGrey) !important;
+    --background-focused: var(--custWarmGrey) !important;
+}
+.custFabBgSuper{
+    --background: var(--custWhite) !important;
+
+    // --background: var(--custDarkishBlue) !important;
+    --background-Activated: var(--custDarkishBlue) !important;
+    --background-focused: var(--custDarkishBlue) !important;
+}
+
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-height: 992px) {
+    .custMarginBottom{
+        margin-bottom: 4rem;
+    }    
+  }
+  
+  /* On screens that are 600px or less, set the background color to olive */
+  @media screen and (max-height: 600px) {
+    .custMarginBottom{
+        margin-bottom: 100px;
+    }
+  }
+
+
+
+  .nav {
+    z-index: 9;
+    position: fixed;
+    right: 10%;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    cursor: pointer;
+    border: 1px solid black;
+    transition: all 0.3s ease-in;
+  }
+
+  #hamburger {
+    z-index: 10;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    right: 5%;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  #settings.show {
+    transform: translateY(-170%);
+  }
+  #setting1.show {
+    transform: translate(-118%,-114%);
+  }
+  #thumb.show {
+    transform: translateY(170%);
+  }
+  #create.show {
+    transform: translateX(-170%);
+  }
+  #share.show {
+    transform: translate(-118%,114%);
+  }
+
+  .nav.show {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .stickyTop{
+    // margin-top: -132px;
+    margin-top: 719px;
+  }
+
+  .example-boundary{
+    height: 704px;
+    width: 393px;
+    
+  }
+
+
+
+  /* Draggable css taking from js */
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  #main-wrapper{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #E1E8FD;
+    overflow: hidden;
+    #floating-snap-btn-wrapper {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 40%;
+      left: 30px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      .fab-btn {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background-color: #6B26BB;
+        color: white;
+        z-index: 1000;
+        box-shadow: 0px 2px 17px -1px rgba(0,0,0,0.3);
+      }
+      ul {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        li {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: #f7f7f7;
+          color: black;
+          list-style-type: none;
+          transform: scale(0.95);
+          transition: .5s;
+          border-radius: 50%;
+        }
+      }
+      &.fab-active {
+        li:hover{
+         background-color: #f8e487;
+        }
+      &.left {
+         li:nth-child(1) {
+          top: 0%;
+          left: 300%;
+          transition-delay: 0s;
+        }
+        li:nth-child(2) {
+          top: 0%;
+          left: 200%;
+          transition-delay: 0.2s;
+        }
+        li:nth-child(3) {
+          top: 0%;
+          left: 100%;
+          transition-delay: 0.4s;
+        }
+      }
+      &.right {
+        li:nth-child(1) {
+          top: 0%;
+          left: -300%;
+          transition-delay: 0s;
+        }
+        li:nth-child(2) {
+          top: 0%;
+          left: -200%;
+          transition-delay: 0.2s;
+        }
+        li:nth-child(3) {
+          top: 0%;
+          left: -100%;
+          transition-delay: 0.4s;
+        }
+      }
+    }
+    }
+  }
+
+  /* End Draggable css taking from js */

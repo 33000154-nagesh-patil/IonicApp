@@ -1,0 +1,510 @@
+{
+    "subHeader": {         
+        "id": "",
+        "title": "L123456",
+        "icon": "",
+        "type": "",
+        "cssx": "",
+        "uxClass": "muli-34pt",
+        "des": "",
+        "key": "",
+        "value": [
+            {
+                "id": "",
+                "title": "",
+                "icon": "",
+                "type": "",
+                "cssx": "",
+                "uxClass": "",
+                "des": "",
+                "key": "",
+                "value": ""
+            }
+        ]
+},
+    "details": {
+        "id": "",
+        "title": "L123456",
+        "icon": "",
+        "type": "",
+        "cssx": "",
+        "uxClass": "",
+        "des": "",
+        "key": "true",
+        "value": [
+            {
+                "url": "crmCaseInfo",
+                "title": "Case Info",
+                "icon": "",
+                "type": "",
+                "cssx": "",
+                "uxClass": "",
+                "des": "",
+                "key": "",
+                "value": ""
+            },
+            {
+                "url": "crmCustomerProfile",
+                "title": "Customer Profile",
+                "icon": "",
+                "type": "",
+                "cssx": "",
+                "uxClass": "",
+                "des": "",
+                "key": "",
+                "value":""
+            }
+        ]
+    },
+    "search": {
+        "id": "",
+        "title": "Search",
+        "icon": "",
+        "type": "",
+        "cssx": "",
+        "uxClass": "px-3",
+        "des": [],
+        "key": "",
+        "showHide": [],
+        "value": [
+            {
+                "id": "",
+                "title": "First Name",
+                "icon": "",
+                "type": "ALPHANUMERIC",
+                "cssx": "6",
+                "uxClass": "",
+                "des": [],
+                "key": "",
+                "validators": {
+                    "required": true
+                },
+                "value": ""
+            },
+            {
+                "id": "",
+                "title": "Last Name",
+                "icon": "",
+                "type": "ALPHANUMERIC",
+                "cssx": "6",
+                "uxClass": "",
+                "des": [],
+                "key": "",
+                "validators": "",
+                "value": ""
+            },
+            {
+                "id": "",
+                "title": "Mobile Number",
+                "icon": "",
+                "type": "ALPHANUMERIC",
+                "cssx": "6",
+                "uxClass": "",
+                "des": [],
+                "key": "",
+                "validators": {
+                    "required": true
+                },
+                "value": ""
+            },
+            {
+                "id": "",
+                "title": "Eamil",
+                "icon": "",
+                "type": "ALPHANUMERIC",
+                "cssx": "6",
+                "uxClass": "",
+                "des": [],
+                "key": "",
+                "validators": "",
+                "value": ""
+            },
+            {
+                "id": "",
+                "title": "Select Product",
+                "icon": "",
+                "type": "dropDown",
+                "cssx": "12",
+                "uxClass": "",
+                "des": [],
+                "key": "",
+                "validators": {
+                    "required": true
+                },
+                "value": "",
+                "options": [
+                    "Stocks",
+                    "Mutul Funds",
+                    "Health",
+                    "Education"
+                ]
+            },
+            {
+                "id": "",
+                "title": "Submit",
+                "icon": "",
+                "type": "submit",
+                "cssx": "6",
+                "uxClass": "",
+                "des": [],
+                "key": "",
+                "validators": "",
+                "value": ""
+            },
+            {
+                "id": "",
+                "title": "Cancel",
+                "icon": "",
+                "type": "submit",
+                "cssx": "6",
+                "uxClass": "",
+                "des": [],
+                "key": "",
+                "validators": "",
+                "value": ""
+            }
+        ]
+    },
+    "crmCaseInfo":[
+        {
+            "id": "",
+            "title": "General",
+            "icon": "",
+            "type": "",
+            "cssx": "",
+            "uxClass": "",
+            "des": "",
+            "key": "planText",
+            "value": [
+                {
+                    "id": "",
+                    "title": "Customer Name",
+                    "icon": "",
+                    "type": "",
+                    "cssx": "colSize6",
+                    "uxClass": "",
+                    "des": "Prathamesh",
+                    "key": "",
+                    "value": []
+                },
+                {
+                    "id": "",
+                    "title": "Case Status",
+                    "icon": "",
+                    "type": "",
+                    "cssx": "colSize6",
+                    "uxClass": "",
+                    "des": "FollowUp",
+                    "key": "",
+                    "value": []
+                },
+                {
+                    "id": "",
+                    "title": "Case Number",
+                    "icon": "",
+                    "type": "",
+                    "cssx": "colSize6",
+                    "uxClass": "",
+                    "des": "C123456",
+                    "key": "",
+                    "value": []
+                },
+                {
+                    "id": "",
+                    "title": "Case Type",
+                    "icon": "",
+                    "type": "",
+                    "cssx": "colSize6",
+                    "uxClass": "",
+                    "des": "Request",
+                    "key": "",
+                    "value": []
+                }
+            ]
+        },
+        {
+            "id": "",
+            "title": "History",
+            "icon": "",
+            "type": "",
+            "cssx": "",
+            "uxClass": "",
+            "des": "",
+            "key": "table",
+            "value": [
+                {
+                    "id": "",
+                    "title": "Case Number",
+                    "icon": "",
+                    "type": "",
+                    "cssx": "colSize3",
+                    "uxClass": "",
+                    "des": "",
+                    "key": "",
+                    "value": [
+                        {
+                            "id": "",
+                            "title": "CH-123456",
+                            "icon": "",
+                            "type": "text",
+                            "cssx": "",
+                            "uxClass": "",
+                            "des": "",
+                            "key": "",
+                            "value": []
+                        },
+                        {
+                            "id": "",
+                            "title": "CH-123456",
+                            "icon": "",
+                            "type": "text",
+                            "cssx": "",
+                            "uxClass": "",
+                            "des": "",
+                            "key": "",
+                            "value": []
+                        },
+                        {
+                            "id": "",
+                            "title": "CH-123456",
+                            "icon": "",
+                            "type": "text",
+                            "cssx": "",
+                            "uxClass": "",
+                            "des": "",
+                            "key": "",
+                            "value": []
+                        }
+                    ]
+                },
+                {
+                    "id": "",
+                    "title": "Subject",
+                    "icon": "",
+                    "type": "",
+                    "cssx": "colSize6",
+                    "uxClass": "",
+                    "des": "",
+                    "key": "",
+                    "value": [
+                        {
+                            "id": "",
+                            "title": "QRC-Wealth-Equity-Account Information",
+                            "icon": "",
+                            "type": "text",
+                            "cssx": "",
+                            "uxClass": "",
+                            "des": "",
+                            "key": "",
+                            "value": []
+                        },
+                        {
+                            "id": "",
+                            "title": "QRC-Wealth-Equity-Account Information",
+                            "icon": "",
+                            "type": "text",
+                            "cssx": "",
+                            "uxClass": "",
+                            "des": "",
+                            "key": "",
+                            "value": []
+                        },
+                        {
+                            "id": "",
+                            "title": "QRC-Wealth-Equity-Account Information",
+                            "icon": "",
+                            "type": "text",
+                            "cssx": "",
+                            "uxClass": "",
+                            "des": "",
+                            "key": "",
+                            "value": []
+                        }
+                    ]
+                },
+                {
+                    "id": "",
+                    "title": "",
+                    "icon": "",
+                    "type": "",
+                    "cssx": "colSize3",
+                    "uxClass": "",
+                    "des": "",
+                    "key": "",
+                    "value": [
+                        {
+                            "id": "",
+                            "title": "close",
+                            "icon": "",
+                            "type": "button",
+                            "cssx": "",
+                            "uxClass": "closeBtn custColorWhite custBackgroundColorBrightCyan",
+                            "des": "",
+                            "key": "",
+                            "value": []
+                        },
+                        {
+                            "id": "",
+                            "title": "close",
+                            "icon": "",
+                            "type": "button",
+                            "cssx": "",
+                            "uxClass": "closeBtn custColorWhite custBackgroundColorBrightCyan",
+                            "des": "",
+                            "key": "",
+                            "value": []
+                        },
+                        {
+                            "id": "",
+                            "title": "close",
+                            "icon": "",
+                            "type": "button",
+                            "cssx": "",
+                            "uxClass": "closeBtn custColorWhite custBackgroundColorBrightCyan",
+                            "des": "",
+                            "key": "",
+                            "value": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "",
+            "title": "Other Information",
+            "icon": "",
+            "type": "",
+            "cssx": "",
+            "uxClass": "",
+            "des": "",
+            "key": "planText",
+            "value": [
+                {
+                    "id": "",
+                    "title": "Created On",
+                    "icon": "",
+                    "type": "",
+                    "cssx": "colSize6",
+                    "uxClass": "",
+                    "des": "04/10/1998",
+                    "key": "",
+                    "value": []
+                },
+                {
+                    "id": "",
+                    "title": "Creadted By",
+                    "icon": "",
+                    "type": "",
+                    "cssx": "colSize6",
+                    "uxClass": "",
+                    "des": "Prathamesh",
+                    "key": "",
+                    "value": []
+                },
+                {
+                    "id": "",
+                    "title": "Modify On",
+                    "icon": "",
+                    "type": "",
+                    "cssx": "colSize6",
+                    "uxClass": "",
+                    "des": "- -",
+                    "key": "",
+                    "value": []
+                },
+                {
+                    "id": "",
+                    "title": "Modify By",
+                    "icon": "",
+                    "type": "",
+                    "cssx": "colSize6",
+                    "uxClass": "",
+                    "des": "- -",
+                    "key": "",
+                    "value": []
+                }
+            ]
+        },
+        {
+            "id": "",
+            "title": "History",
+            "icon": "",
+            "type": "",
+            "cssx": "",
+            "uxClass": "",
+            "des": "",
+            "key": "stepper",
+            "value": [
+                {
+                   "Remarks":"sdhvs,vfsva,hdva,v ,va.,mvanmvnamvvsdvvmsd.mnasvmv",
+                   "Status":"Unassigned"
+                },
+                {
+                    "Remarks":"sdhvs,vfsva,hdva,v ,va.,mvanmvnamvvsdvvmsd.mnasvmv",
+                   "Status":"Unassigned"
+                },
+                {
+                    "Remarks":"sdhvs,vfsva,hdva,v ,va.,mvanmvnamvvsdvvmsd.mnasvmv",
+                    "Status":"Unassigned"
+                },
+                {
+                    "Remarks":"sdhvs,vfsva,hdva,v ,va.,mvanmvnamvvsdvvmsd.mnasvmv",
+                    "Status":"Unassigned" 
+                }
+            ]
+        }
+    ],
+    "crmCustomerProfile": [
+        {
+            "id": "",
+            "title": "Case Type",
+            "icon": "",
+            "type": "",
+            "cssx": "",
+            "uxClass": "",
+            "des": "",
+            "key": "card",
+            "value": [
+                {
+                    "id": "",
+                    "title": "Created On",
+                    "icon": "assets/icon/Mail.svg",
+                    "type": "",
+                    "cssx": "colSize6",
+                    "uxClass": "muli-16pt custFontFamilyMuliSemiBold custColorDark",
+                    "date": "04/10/1998",
+                    "leadName": " L123456 Pratham",
+                    "des": "Lead status has been changed to Follow up",
+                    "key": "",
+                    "value": []
+                },
+                {
+                    "id": "",
+                    "title": "Creadted By",
+                    "icon": "assets/icon/Mail.svg",
+                    "type": "",
+                    "cssx": "colSize6",
+                    "uxClass": "",
+                    "date": "04/10/1998",
+                    "leadName": " L123456 Pratham",
+                    "key": "",
+                    "des": "Lead status has been changed to Follow up",
+                    "value": []
+                },
+                {
+                    "id": "",
+                    "title": "Modify On",
+                    "icon": "assets/icon/Mail.svg",
+                    "type": "",
+                    "cssx": "colSize6",
+                    "uxClass": "",
+                    "leadName": " L123456 Pratham",
+                    "date": "- -",
+                    "key": "",
+                    "des": "Lead status has been changed to Follow up",
+                    "value": []
+                }
+            ]
+        }
+    ]
+}

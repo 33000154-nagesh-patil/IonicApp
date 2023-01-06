@@ -1,0 +1,76 @@
+.custShowData{
+    display: contents;
+}
+.custArrorSize{
+    height: 16px;
+    width: 13px;
+  }
+   
+
+.custIcons{
+    height: 32px;
+    width: 24px;
+}
+.custScanner{
+    height: 38px;
+    width: 30px;
+}
+.custrobo{
+    height: 38px;
+    width: 28px;
+}
+.custMenuIcons{
+    height: 32px;
+    width: 24px;
+    position: relative;
+    left: -3px;
+}
+.custKYCimg{
+    height: 10px;
+}
+.custKYCImgone{
+    height: 19px;
+    width: 16px;
+    margin-left: 0px;
+    margin-top: 4px;
+    cursor: pointer;
+}
+
+.custKYCImgICON{
+    height: 19px;
+    width: 16px;
+
+}
+.custCustomerSupportIcons{
+    height: 26px;
+    width: 22px;
+}
+.custKycstatus{
+    height: 50px;
+    width: 16px;
+}
+.custBorder{
+    border-left: 1px dashed var(--custBrightCyan);
+}
+.custMarginL{
+    margin-left: 43px;
+
+    position: relative;
+    bottom: 25px;
+}
+.custpaddig{
+    padding-left: 40px;
+    margin-bottom: 16px;
+}
+
+.custWealthIcons{
+    height: 28px;
+    width: 20px;
+}
+.custColorKYC-Completed{
+    color: var(--custParakeetGreen);
+  }
+  .custColorKYC-Pending{
+    color: #d23d50;
+    
+  }

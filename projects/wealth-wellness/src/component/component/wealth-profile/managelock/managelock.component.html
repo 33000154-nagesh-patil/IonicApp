@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-grid>
+      <ion-row>
+        <ion-col [size]="'0.7'" class="text-center mt-2">
+          <ion-img [src]="imageList?.arrow" class="custWithoutTextImg" (click)="goBack()"></ion-img>
+        </ion-col>
+        <ion-col [size]="'8'">
+          <span class="custFontFamilyMuliBold muli-16pt custLineHight40  custColorBlack px-3">Settings</span>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-row class="mt-2 bottomb1" *ngFor="let x of data">
+    <ion-col [size]="'1.5'" class="px-2 mt-2">
+      <ion-img [src]="x.image" class="custWithoutTextImg px-2"></ion-img>
+    </ion-col>
+    <hr>
+    <ion-col [size]="'4.5'" class="mt-2">
+    {{x.title}}
+    </ion-col>
+    <ion-col [size]="'2'" class="text-center mt-2 custFontFamilyMuliBold" [ngClass]="currentTextType === 'Yes'?'custColorDark':'custColorWarmGrey1'">
+      No
+    </ion-col>
+    <ion-col [size]="'2'" class="text-center">
+      <ion-toggle (click)="changeColor(color)" class="mt-0"></ion-toggle>
+    </ion-col>
+    <ion-col [size]="'2'" class="text-center mt-2 custFontFamilyMuliBold" [ngClass]="currentTextType === 'No'?'custColorDark':'custColorWarmGrey1'">
+      yes
+    </ion-col>
+
+</ion-row>
+
+</ion-content>

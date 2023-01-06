@@ -1,0 +1,71 @@
+.CustomMargin {
+  margin-top: 35px;
+}
+.CustomPadding {
+  padding: 0 180px;
+}
+.custArrorSize {
+  height: 16px;
+  width: 13px;
+}
+.custModalContainer {
+  z-index: 1;
+  left: 0;
+  // top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  // background-color: var(--custDark);
+  //  opacity: 0.4;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+}
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 16px;
+  padding-left: 16px;
+  border: 1px solid #888;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  border-radius: 10px 10px 0px 0px;
+}
+.custImage{
+  height: 45px;
+  width: 45px;
+  margin-bottom: 20px;
+}
+.customBorderColor {
+  border: 1px solid var(--custBrightCyan);
+  --border-color: var(--custBrightCyan);
+}
+
+.customPadding {
+  padding-top: 60px;
+  padding-bottom: 150px;
+}
+
+.customEquatiBorder {
+  opacity: 0.6;
+}
+.custTermCheckbox {
+  --border-width: 1px;
+  --border-radius: 3px;
+}
+.custommargin {
+  margin: 10px;
+}
+.custKYCImg{
+  height: 20px;
+  width: 20px;
+}
+
+.custLooksBtn {
+  height: 45px;
+  --background: var(--custBrightCyan) !important;
+  --box-shadow: none;
+}

@@ -1,0 +1,42 @@
+
+<ion-app>
+<app-org-header *ngIf="headerCommon.key=='true'" [headerCon]="headerCommon.value" [headerCommon]="headerCommon"
+    (setHeaderDetail)="getHeaderDetail($event)"></app-org-header>
+
+<mat-drawer-container [ngClass]="menuDetail.uxClass">
+
+    <mat-drawer #snav mode="side" opened [ngStyle]="!showProduct ? {'width':'240px'} : {'width':'500px'}">
+        <app-org-menu-bar [menuDetail]="menuDetail.value" *ngIf="!showProduct"
+            (getMenuBarValue)="getMenuBarValue($event)"></app-org-menu-bar>
+        <ion-row *ngIf="showProduct">
+            <ion-col size="10">
+                <app-label [labelDetail]="productSelection"></app-label>
+            </ion-col>
+            <ion-col>
+                <app-icons [iconDetail]="productSelection" (click)="closeTab()"></app-icons>
+            </ion-col>
+        </ion-row>
+        <app-mol-card *ngIf="showProduct" [cardDetail]="productSelection" class="buttonCard"></app-mol-card>
+    </mat-drawer>
+
+    <mat-drawer-content class="cust-mat-drawer-content">
+        <app-org-subheader *ngIf="menuBarValue" [menuTitle]="subHeaderValue">
+        </app-org-subheader> 
+        <app-main-temp *ngIf="!showDetail">
+            <app-mol-segment *ngIf="segment" class="segment" [indiviualDetail]="segment.value" (segmentData)="segmentData($event)"></app-mol-segment>
+            <app-mol-search *ngIf="searchDetail" class="searchBar" [searchDetail]="searchDetail"></app-mol-search>
+            <app-mol-card *ngIf="cardDetail" [cardDetail]="cardDetail" class="buttonCard" (getCardValue)="getCardValue($event)"></app-mol-card>
+            <app-org-doughnut-chart *ngIf="doughnutDetail" [doughnutChartDetail]="doughnutDetail"
+                class="doughnut"></app-org-doughnut-chart>
+            <app-org-bar-chart *ngIf="barChartDeatil" [barChartDetail]="barChartDeatil" class="barChart">
+            </app-org-bar-chart>
+            <app-mol-table *ngIf="table" class="table" (setDetail)="getDetail($event)"></app-mol-table>
+        </app-main-temp>
+        <app-detail-temp *ngIf="showDetail">
+            <app-mol-segment class="segment" [indiviualDetail]="particularDetail"></app-mol-segment>
+            <app-create-form class="form"></app-create-form>
+        </app-detail-temp>
+    </mat-drawer-content>
+
+</mat-drawer-container>
+</ion-app>

@@ -1,0 +1,140 @@
+{
+    "cardType": "segment",
+    "heading": "Fund Rates",
+    "description": "",
+    "segment": [
+        {
+            "title": "Others"
+        },
+        {
+            "title": "Debt"
+        },
+        {
+            "title": "Equity"
+        }
+    ],
+    "data": {
+        "TOTAL": [
+            {
+                "opType": "TOTAL",
+                "asOnDate": "2021-08-31",
+                "typeDesc": "Debt",
+                "allocationPercentage": 0
+            },
+            {
+                "opType": "TOTAL",
+                "asOnDate": "2021-08-31",
+                "typeDesc": "Equity",
+                "allocationPercentage": 96
+            }
+        ],
+        "Others": [
+            {
+                "opType": "Others",
+                "asOnDate": "2021-08-31",
+                "typeDesc": "Others",
+                "allocationPercentage": 3.94
+            }
+        ],
+        "Debt": [
+            {
+                "opType": "Debt",
+                "asOnDate": "2021-08-31",
+                "typeDesc": "Britannia Inds.",
+                "allocationPercentage": 0.04
+            }
+        ],
+        "Equity": [
+            {
+                "opType": "Equity",
+                "asOnDate": "2021-08-31",
+                "typeDesc": "Aditya Birla Fashion and Retail",
+                "allocationPercentage": 4.5
+            },
+            {
+                "opType": "Equity",
+                "asOnDate": "2021-08-31",
+                "typeDesc": "Bajaj Consumer Care",
+                "allocationPercentage": 1.77
+            }
+        ]
+    }
+},
+"Cards": [
+    {
+        "card_Type": "value",
+        "heading": "",
+        "description": "",
+       
+         
+        "rows": [
+            {
+                "col_In_row": [
+                    {    
+                        "subheading":"FASTING BLOOD SUGAR",
+                         "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmmQQxURGXGX1ZZFS2sjZCLWMZ-kusr5y8rw&usqp=CAU"
+                    }
+                ]
+            },
+            { 
+                
+                "col_In_row": [
+                    {
+                        "icon": "",
+                        "lable": "Sampal required",
+                        "value": "Blood"
+                    },
+                    {
+                        "icon": "",
+                        "lable": "preparations",
+                        "value": "Do not eat drink anything other thsan water for 8-12 hours before the test"
+                    }
+                ]
+            },
+            {
+                "col_In_row": [
+                    {
+                        "icon": "",
+                        "lable": "Including all texs",
+                        "value": "₹80"
+                    }
+                ]
+            }
+        ]
+}
+],
+{
+    "card_Type": "normal",
+    "heading": "Details",
+    "subheading": "mutual Fund",
+    "description": "Na",
+    "price": 250,
+    "rating": 4.1,
+    "data": [
+        {
+            "icon": "assets/educationIcon/user.svg",
+            "value": 4.6,
+            "type": ""
+        },
+        {
+            "icon": "assets/educationIcon/chat.svg",
+            "value": 5,
+            "type": "enrolled"
+        },
+        {
+            "icon": "assets/educationIcon/online.svg",
+            "value": "",
+            "type": "Topics"
+        },
+        {
+            "icon": "",
+            "value": "",
+            "type": "Flexible Deadlines"
+        },
+        {
+            "icon": "assets/educationIcon/deadlines.svg",
+            "value": "",
+            "type": "100% Online"
+        }
+    ]
+},

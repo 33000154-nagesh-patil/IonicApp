@@ -1,0 +1,87 @@
+<!-- <ion-header class="sticky-top">
+    <ion-toolbar>
+      <ion-grid>
+        <ion-row>
+          <ion-col [size]="'1'" (click)="goToBack()" id="goBack">
+            <div class="custTextAlignCenter">
+              <ion-img [src]="imageList?.arrow" class="custArrorSize custWithoutTextImg mt-1"></ion-img>
+            </div>
+          </ion-col>
+          <ion-col class="custFontFamilyMuliBold muli-16pt custColorDark">My Issues</ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-toolbar>
+  </ion-header> -->
+
+  <cap-header [title]="Title" [otherTextName]="Title" [imageList]="imageList" [showArrow]="true" [showLabel]="false" [showImg]="false" [showIndex]="false"
+  [showNotification]="false" [showCartWithName]="true"  [cartCount]="cartCount"
+  [showSideMenu]="false" [showSearch]="true" [showClose]="false" [showShare]="false" [showWatchList]="false"
+  [showCartWithoutName]="false" [showStories]="false" [padding]="true" [paddingSize]="'7'" [showOtherText]="true" [backUrlName]="">
+  </cap-header>
+
+
+  <ion-content class="contentBackground w-100 h-100">
+    
+  <ion-row class="px-4 pt-2" (click)="filterPage()">
+    <ion-col [size]="'12'" class="text-end">
+      <span><img src="assets/icon/filterIcon.svg" class="px-1 custImgFilter" /></span><span class="muli-12pt custFontFamilyMuliBold text-end custColorDark">Filter</span>
+    </ion-col>
+  </ion-row> 
+
+      <!-- <ion-row class="pb-2 px-3">
+        <button class="btn text-center custColorWhite custBtn custBackgroundColorWhite" 
+          (click)="raisedTicket()"><span class="custColorBrightCyan custFontFamilyMuliBold muli-16pt">Raise a
+            Ticket</span></button>
+      </ion-row> -->
+      <!-- <p class="muli-16pt custFontFamilyMuliBold custColorDark px-3">Issues Raised</p> -->
+
+      <ion-grid class="w-100 h-100" *ngIf="issuesLength == 0">
+        <ion-row class="justify-content-center">
+          <span class="custFontFamilyMuliBold muli-20pt text-center">
+            Ticket Not Raised !!!
+          </span>
+        </ion-row>
+      </ion-grid>
+  
+    <ion-grid class="px-3 h-100 w-100" *ngIf="issuesLength > 0">
+  
+      <div *ngFor="let data of issues">
+        <ion-card (click)="getDetail(data)">
+          <span class="custFontFamilyMuliBold custHeaderPatch float-end custColorDark text-uppercase">{{data.prodType}}</span>
+          <ion-card-header>
+            <span class="muli-14pt custFontFamilyMuliBold custColorDark">Ticket ID - {{data.ticketId}}</span>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-row>
+              <span class="custDet custColorDark custFontFamilyMuliRegular muli-12pt">{{data.issueDetail}}</span>
+            </ion-row>
+  
+            <span class="custFontFamilyMuliRegular muli-12pt d-block justify-content-start text-nowrap mt-2">
+              Issue Type
+            </span>
+            <span class="custFontFamilyMuliBold muli-14pt d-block justify-content-start text-nowrap custColorDark">
+              {{data.issueType}}
+            </span>
+            <ion-row class="w-100">
+              <ion-col size="6">
+                <span class="custFontFamilyMuliRegular muli-12pt d-block justify-content-start text-nowrap mt-2">
+                  Issue Date
+                </span>
+                <span class="custFontFamilyMuliBold muli-14pt d-block justify-content-start text-nowrap custColorDark">
+                  {{data.issueDate}}
+                </span>
+              </ion-col>
+              <ion-col size="6" class="text-end">
+                <span class="custFontFamilyMuliRegular muli-12pt d-block   mt-2 custStatus">
+                  Status
+                </span>
+                <span class="custFontFamilyMuliBold muli-14pt d-block" [ngClass]="{'custGreen':data.status=='Resolved','custOrange':data.status=='In Progress','custHold':data.status=='On-hold','custPending':data.status=='Pending'}">
+                  {{data.status}}
+                </span>
+              </ion-col>
+            </ion-row>
+          </ion-card-content>
+        </ion-card>
+      </div>
+    </ion-grid>
+  </ion-content>

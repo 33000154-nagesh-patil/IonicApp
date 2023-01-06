@@ -1,0 +1,75 @@
+<ion-app>
+  <ion-header>
+    <ion-grid>
+      <ion-row class="align-items-center">
+        <ion-col [size]="'1'">
+    <button class="custBackgroundColorWhite custbutton">
+      <ion-icon name="chevron-back-outline" class="custColorDarkishBlue "></ion-icon>
+    </button>
+  </ion-col>
+  <ion-col>
+    <span class="custFontFamilyMuliBold muli-14pt custLineHight40 custColorDark ">
+      Add Favourite
+    </span>
+  </ion-col>
+  </ion-row>
+  </ion-grid>
+  </ion-header>
+  <ion-content class="contentBackground">
+    <ion-grid class="p-3">
+      <ion-row class="w-100 myROW">
+        <ion-img src="assets/icon/bharatBillPay.svg" class="img my-3"> </ion-img>
+      </ion-row>
+      <form [formGroup]="myForm" *ngIf="jsonFormData.controls" >
+        <div  *ngFor="let control of jsonFormData.controls">
+          
+          <ion-row *ngIf="
+          [
+            'text',
+            'number',
+            
+          ].includes(control.type)
+        ">
+            
+            <mat-form-field class="w-100" appearance="outline">
+              <mat-label>{{ control.label }}</mat-label>
+              <input matInput
+            
+            [type]="control.type"
+            [formControlName]="control.name"
+            [value]="control.value"
+          >
+            </mat-form-field>
+          </ion-row>
+
+
+          <ion-row
+          *ngIf="
+              [
+                'select'
+              ].includes(control.type)
+            ">
+            
+            <mat-form-field class="w-100" appearance="outline">
+              
+              <mat-label>{{ control.label }}</mat-label>
+              <mat-select [formControlName]="control.name">
+                <mat-option *ngFor="let option of control.options;index as i" [value]="option">
+                  {{ option }}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+            
+          </ion-row>
+          
+          
+          
+        </div>
+      </form>
+    </ion-grid>
+  </ion-content>
+  <ion-footer class="p-3" >
+    <button [disabled]="!myForm.valid" (click)="onSubmit()" class="w-100 custBackgroundColorBrightCyan btn custMyButton custColorWhite">Confirm</button>
+  
+  </ion-footer>
+</ion-app>

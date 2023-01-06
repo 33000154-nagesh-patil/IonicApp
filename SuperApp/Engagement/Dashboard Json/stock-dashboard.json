@@ -1,0 +1,358 @@
+{
+	"": {
+		"KYCPending": [{
+			"icon": "assets/icon/pendingIcon.svg",
+			"title": "KYC - Pending"
+		}],
+		"objectContent": [
+{
+      "type": "grid",
+      "config": {
+        "row": "1",
+        "col": "4",
+        "width": "165px",
+        "height": "165px",
+        "layoutType": "horizontal",
+        "row2col1": "8",
+        "row2col2": "4"
+      },
+      "contentType": "grid",
+      "class": "12",
+      "Title": "Index",
+      "content": [
+        {
+          "cardTitle": "NIFTY 50",
+          "cardDescription": "17,57.30",
+          "cardProfitLoss":"+59.20 (0.34%)"
+        },
+        {
+          "cardTitle": "SENSEX",
+          "cardDescription": "58,85.30",
+          "cardProfitLoss":"+49.20 (0.26%)"
+        },
+        {
+          "cardTitle": "NIFTY BANK",
+          "cardDescription": "39,05.30",
+          "cardProfitLoss":"+28.20 (0.58%)"
+        },
+        {
+          "cardTitle": "NIFTYBEES",
+          "cardDescription": "32,07.30",
+          "cardProfitLoss":"+19.56 (0.98%)"
+        },
+        {
+          "cardTitle": "NIFTY 200",
+          "cardDescription": "25,75.30",
+          "cardProfitLoss":"+49.20 (0.39%)"
+        },
+        {
+          "cardTitle": "INDINFO",
+          "cardDescription": "67,34.30",
+          "cardProfitLoss":"+78.09 (0.21%)"
+        }
+      ]
+    },
+    {
+      "contentType": "FundsAvailablity",
+      "availableMargin":"5000.00",
+      "action":[
+        {
+          "title":"Add Funds"
+        },
+        {
+          "title":"withdraw"
+        }
+      ]
+
+    },
+   {
+      "contentType": "Donut",
+       "heading": "Donut Chart",
+     "valueType":"percentage",
+      "colors":["#9579DA", "#FA6C51"],
+      "donutData": [
+          {
+              "value":"30",
+               "label": "Stock"
+           },
+           {
+               "value":"70",
+             "label": "Stock"
+          }
+       ]
+   },
+{
+				"contentType": "singleRowCard",
+				"title": "Portfolio",
+				"": [{
+						"row1": {
+							"col1": "Invested Value",
+							"col2": "Current Value"
+						},
+						"row2": {
+							"col1": "Rs 5000.00",
+							"col2": "Rs 6000.00"
+						}
+					},
+					{
+						"row1": {
+							"col1": "Unrealised Gain & Loss",
+							"col2": "Today Gain & Loss"
+						},
+						"row2": {
+							"col1": "Rs 5000.00",
+							"col2": "Rs 5011.00"
+						}
+					}
+				],
+				"segmentValues": [{
+					"title": ""
+				}]
+			},
+			{
+				"contentType": "singleRowCard",
+				"title": "Market Movers",
+				"Gainers": [{
+						"row1": {
+							"col1": "ITC",
+							"col2": "Rs 3251.00"
+						},
+						"row2": {
+							"col1": "NSE",
+							"col2": "22.62(0.05%)"
+						}
+					},
+					{
+						"row1": {
+							"col1": "ONGC",
+							"col2": "Rs 368.00"
+						},
+						"row2": {
+							"col1": "NSE",
+							"col2": "67.60(0.2%)"
+						}
+					}
+				],
+				"Losers": [{
+						"row1": {
+							"col1": "LTI",
+							"col2": "Rs 501.00"
+						},
+						"row2": {
+							"col1": "NSE",
+							"col2": "11.00(0.03%)"
+						}
+					},
+					{
+						"row1": {
+							"col1": "SBIN",
+							"col2": "Rs 603.40"
+						},
+						"row2": {
+							"col1": "NSE",
+							"col2": "03.00(0.01%)"
+						}
+					}
+				],
+				"Volume Shockers": [{
+						"row1": {
+							"col1": "HP",
+							"col2": "Rs 120.10"
+						},
+						"row2": {
+							"col1": "NSE",
+							"col2": "33.61(0.23%)"
+						}
+					},
+					{
+						"row1": {
+							"col1": "KPMG",
+							"col2": "Rs 876.00"
+						},
+						"row2": {
+							"col1": "NSE",
+							"col2": "10.44(0.21%)"
+						}
+					}
+				],
+				"segmentValues": [{
+						"title": "Gainers",
+						"value": "Gainers"
+					},
+					{
+						"title": "Losers",
+						"value": "Losers"
+					},
+					{
+						"title": "Volume Shockers",
+						"value": "Volume Shockers"
+					}
+				]
+			},
+			{
+				"contentType": "singleRowCard",
+				"title": "Events",
+				"Dividends": [{
+						"row1": {
+							"col1": "HDFC",
+							"col2": "Rs 351.00"
+						},
+						"row2": {
+							"col1": "NSE",
+							"col2": "20.80(0.00%)"
+						}
+					},
+					{
+						"row1": {
+							"col1": "YESBANK",
+							"col2": "Rs 801.06"
+						},
+						"row2": {
+							"col1": "NSE",
+							"col2": "36.99(0.86%)"
+						}
+					}
+				],
+				"Bonus": [{
+						"row1": {
+							"col1": "INFO",
+							"col2": "Rs 4401.00"
+						},
+						"row2": {
+							"col1": "NSE",
+							"col2": "67.03(0.75%)"
+						}
+					},
+					{
+						"row1": {
+							"col1": "ICICI",
+							"col2": "Rs 33.08"
+						},
+						"row2": {
+							"col1": "NSE",
+							"col2": "25.09(0.23%)"
+						}
+					}
+				],
+				"Stock Splits": [{
+						"row1": {
+							"col1": "IDEA",
+							"col2": "Rs 301.00"
+						},
+						"row2": {
+							"col1": "NSE",
+							"col2": "20.22(0.21%)"
+						}
+					},
+					{
+						"row1": {
+							"col1": "NDTV",
+							"col2": "Rs 468.00"
+						},
+						"row2": {
+							"col1": "NSE",
+							"col2": "64.00(0.00%)"
+						}
+					}
+				],
+				"segmentValues": [{
+						"title": "Dividends",
+						"value": "Dividends"
+					},
+					{
+						"title": "Bonus",
+						"value": "Bonus"
+					},
+					{
+						"title": "Stock Splits",
+						"value": "Stock Splits"
+					}
+				]
+			},
+			{
+				"contentType": "singleRowCard",
+				"title": "Block Deal",
+				"Block Deal": [{
+						"row1": {
+							"col1": "LICI",
+							"col2": "Rs 653.00"
+						},
+						"row2": {
+							"col1": "NSE",
+							"col2": "12.02(0.23%)"
+						}
+					},
+					{
+						"row1": {
+							"col1": "SUZLON",
+							"col2": "Rs 10.00"
+						},
+						"row2": {
+							"col1": "NSE",
+							"col2": "20.00(0.13%)"
+						}
+					}
+				],
+				"Bulk Deal": [{
+						"row1": {
+							"col1": "MRF",
+							"col2": "Rs 85.66"
+						},
+						"row2": {
+							"col1": "NSE",
+							"col2": "98.78(0.33%)"
+						}
+					},
+					{
+						"row1": {
+							"col1": "DMART",
+							"col2": "Rs 444.01"
+						},
+						"row2": {
+							"col1": "NSE",
+							"col2": "63.99(0.00%)"
+						}
+					}
+				],
+				"segmentValues": [{
+						"title": "Block Deal",
+						"value": "Block Deal"
+					},
+					{
+						"title": "Bulk Deal",
+						"value": "Bulk Deal"
+					}
+				]
+			},
+			{
+				"contentType": "3x2 Grid",
+				"Title": "Categories",
+				"content": [{
+						"icon": "assets/icon/equityST.svg",
+						"name": "Equity"
+
+					},
+					{
+						"icon": "assets/icon/f&oST.svg",
+						"name": "F&O"
+
+					},
+					{
+						"icon": "assets/icon/usST.svg",
+						"name": "US Stock"
+
+					},
+					{
+						"icon": "assets/icon/eqtyST.svg",
+						"name": "Equity SIP"
+
+					},
+					{
+						"icon": "assets/icon/nfoST.svg",
+						"name": "ETFs"
+					}
+				]
+			}
+		]
+	}
+}

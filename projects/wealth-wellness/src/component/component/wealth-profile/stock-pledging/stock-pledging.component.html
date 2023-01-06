@@ -1,0 +1,223 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-grid>
+      <ion-row>
+        <ion-col [size]="'0.7'" class="text-center mt-2">
+          <ion-img [src]="imageList?.arrow" class="custWithoutTextImg" (click)="goBack()"></ion-img>
+        </ion-col>
+        <ion-col [size]="'8'">
+          <span class="custFontFamilyMuliBold muli-16pt custLineHight40  custColorBlack px-3">Stock Pledging</span>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="custHeight">
+
+  <ion-row>
+    <ion-col>
+      <ion-card>
+        <ion-row>
+          <ion-col class="mx-2">
+            <p class="custColorGreyish muli-12pt m-0 custFontFamilyMuliBold custLineHight18">Client Code</p>
+            <p class=" custColorDark muli-14pt m-0 custFontFamilyMuliBold custLineHight18">Z00030635</p>
+          </ion-col> 
+        </ion-row>
+        <ion-row class="mx-2">
+          <ion-col>
+            <p class="custColorGreyish muli-12pt m-0 custFontFamilyMuliBold custLineHight18">Client BO/DP Id</p>
+            <p class=" custColorDark muli-14pt m-0 custFontFamilyMuliBold custLineHight18">Client BO/DP Id</p>
+          </ion-col>
+        </ion-row>
+        <ion-row class="mx-2">
+          <ion-col>
+            <p class="custColorGreyish muli-12pt m-0 custFontFamilyMuliBold custLineHight18">Client Name</p>
+            <p class=" custColorDark muli-14pt m-0 custFontFamilyMuliBold custLineHight18">Shashank Mishra</p>
+          </ion-col>
+        </ion-row>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <mat-radio-group>
+      <io-col [size]="'6'">
+        <mat-radio-button value="1" class="custColorGreyish muli-14pt custFontFamilyMuliBold custLineHight18 px-3">
+          Pledge</mat-radio-button>
+      </io-col>
+      <io-col [size]="'6'">
+        <mat-radio-button class="custColorGreyish muli-14pt custFontFamilyMuliBold custLineHight18 px-4" value="2">
+          De-Pledge</mat-radio-button>
+      </io-col>
+    </mat-radio-group>
+  </ion-row>
+  <div>
+    <ion-row>
+      <ion-col>
+        <ion-card>
+          <div class="">
+            <div class="containerr">
+              <ion-row class="custback">
+                <ion-col [size]="'1'">
+                  <mat-checkbox class=" " (click)="confirmnApply()"></mat-checkbox>
+                </ion-col>
+                <ion-col [size]="'3'">
+                  Stock Symbol
+                </ion-col>
+                <ion-col [size]="'2'" class="muli-10pt text-end">
+                  margin Benefits
+                </ion-col>
+                <ion-col [size]="'2'" class="muli-10pt">
+                  Quantity to be pledged
+                </ion-col>
+                <ion-col [size]="'2'" class="muli-10pt">
+                  pledge pending
+                </ion-col>
+                <ion-col [size]="'1'" class="muli-10pt">
+                  Action
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col [size]="'1'" class="mt-3">
+                  <mat-checkbox class=" " (click)="confirmnApply()"></mat-checkbox>
+                </ion-col>
+                <ion-col [size]="'4'">
+                  <ion-row>
+                    <ion-col>
+                      CESC-EQ
+                    </ion-col>
+                  </ion-row>
+                  <ion-row>
+                    <ion-col [size]="'2'" class="muli-10pt">
+                      Qty
+                    </ion-col>
+                    <ion-col [size]="'4'" class="muli-10pt">
+                      Pledged Qty.
+                    </ion-col>
+                    <ion-col [size]="'3'" class="muli-10pt">
+                      Free Qty.
+                    </ion-col>
+                    <ion-col [size]="'3'" class="muli-10pt">
+                      ISIN No.
+                    </ion-col>
+                  </ion-row>
+                  <ion-row>
+                    <ion-col [size]="'2'" class="muli-10pt">
+                      10
+                    </ion-col>
+                    <ion-col [size]="'4'" class="muli-10pt">
+                      0
+                    </ion-col>
+                    <ion-col [size]="'3'" class="muli-10pt">
+                      132
+                    </ion-col>
+                    <ion-col [size]="'3'" class="muli-10pt">
+                      ISIN1951
+                    </ion-col>
+                  </ion-row>
+                </ion-col>
+                <ion-col [size]="'2'">
+                  0.00
+                </ion-col>
+                <ion-col [size]="'2'" class="inputWidth">
+                  <input type="text" id="username" name="username" class="inputWidth">
+                </ion-col>
+                <ion-col [size]="'2'">
+                  10
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col [size]="'1'" class="mt-3">
+                  <mat-checkbox class=" " (click)="confirmnApply()"></mat-checkbox>
+                </ion-col>
+                <ion-col [size]="'4'">
+                  <ion-row>
+                    <ion-col>
+                      CESC-EQ
+                    </ion-col>
+                  </ion-row>
+                  <ion-row>
+                    <ion-col [size]="'2'" class="muli-10pt">
+                      Qty
+                    </ion-col>
+                    <ion-col [size]="'4'" class="muli-10pt">
+                      Pledged Qty.
+                    </ion-col>
+                    <ion-col [size]="'3'" class="muli-10pt">
+                      Free Qty.
+                    </ion-col>
+                    <ion-col [size]="'3'" class="muli-10pt">
+                      ISIN No.
+                    </ion-col>
+                  </ion-row>
+                  <ion-row>
+                    <ion-col [size]="'2'" class="muli-10pt">
+                      10
+                    </ion-col>
+                    <ion-col [size]="'4'" class="muli-10pt">
+                      0
+                    </ion-col>
+                    <ion-col [size]="'3'" class="muli-10pt">
+                      132
+                    </ion-col>
+                    <ion-col [size]="'3'" class="muli-10pt">
+                      ISIN1951
+                    </ion-col>
+                  </ion-row>
+                </ion-col>
+                <ion-col [size]="'2'">
+                  0.00
+                </ion-col>
+                <ion-col [size]="'2'" class="inputWidth">
+                  <input type="text" id="username" name="username" class="inputWidth">
+                </ion-col>
+                <ion-col [size]="'2'">
+                  10
+                </ion-col>
+              </ion-row>
+
+            </div>
+          </div>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </div>
+  <ion-row class="cardMargin">
+    <ion-col class="">
+      <ion-card class="custback">
+        <ion-row>
+          <ion-col [size]="'6'">Total Pledge Qty</ion-col>
+          <ion-col [size]="'6'">Total Margin Benefits</ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col [size]="'6'">150</ion-col>
+          <ion-col [size]="'6'">₹1000</ion-col>
+        </ion-row>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col class="px-3">
+      Total Margin Benefits : 0
+    </ion-col>
+  </ion-row>
+  <ion-row *ngFor="let x of data">
+    <ion-col class="px-3  custColorDark muli-14pt custFontFamilyMuliBold custLineHight18">
+      {{x.title}}
+    </ion-col>
+  </ion-row>
+</ion-content>
+
+<ion-footer>
+  <ion-row>
+    <ion-col [size]="'12'" class="">
+      <ion-grid>
+        <ion-row>
+          <button class="btn w-100 text-center custBackgroundColorBrightCyan" (click)="goToPledge240()">
+            <span class="custColorWhite custFontFamilyMuliBold muli-16pt">Submit</span>
+          </button>
+        </ion-row>
+      </ion-grid>
+    </ion-col>
+  </ion-row>
+</ion-footer>

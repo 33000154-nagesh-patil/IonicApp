@@ -1,0 +1,302 @@
+{
+  "giftpop": "/assets/icon/fataka.svg",
+  "tickIcon": "",
+  "heading": "Thank You!",
+  "title": "Your Order has been placed successfully...",
+  "prize": "2,300 coins",
+  "subtitle": "Win exciting rewards",
+  "subtitles": "Stand a chance to win coin, cashback, vouchers or gift.",
+  "exploreBtn": "Explore App",
+  "accordian1": "Transaction Details",
+  "accordian2": "Tracker",
+  "scrollingCard": [
+    {
+      "title": "/assets/icon/curefitIcon.svg",
+      "subtitle": "Win Cultpass Live free subscription for 6 months",
+      "icon": "/assets/icon/curefitDesIcon.svg",
+      "arrow": "/assets/icon/arrow1.svg",
+      "rewardBackgroundColor": "custBackgroundLightGreen"
+    },
+    {
+      "title": "/assets/icon/lakmeIcon.svg",
+      "subtitle": "Win discount voucher upto 40% off",
+      "icon": "/assets/icon/lakmeDesIcon.svg",
+      "arrow": "/assets/icon/arrow1.svg",
+      "rewardBackgroundColor": "custBackgroundBlue"
+    },
+    {
+      "title": "",
+      "subtitle": "Earn up to",
+      "icon": "/assets/icon/threeGreenNotesIcon.svg",
+      "arrow": "/assets/icon/arrow1.svg",
+      "rewardBackgroundColor": "custBackgrouncashBack"
+    }
+  ],
+  "bannerCard": [
+    {
+      "title": "/assets/icon/cromaIcon.svg",
+      "subtitle": "Win an air conditioner worth",
+      "prize": "38,000",
+      "icon": "/assets/icon/cromaDesIcon.svg",
+      "btn": "Claim Now"
+    }
+  ],
+  "torusCoinCard": [
+    {
+      "icon": "/assets/icon/torus coin icon (1) (1).svg",
+      "title": "Congrats! You won",
+      "coins": "2,300 coins"
+    }
+  ],
+  "trackerData": {
+    "Status": "1",
+    "Message": "success",
+    "data": [
+      {
+        "Id": 1,
+        "title": "Signup",
+        "status": "Done",
+        "subTitle": "19 Mar 2021, 4:55 PM"
+      },
+      {
+        "Id": 2,
+        "title": "CreateProfile",
+        "status": "Done",
+        "subTitle": "17 Mar 2021, 4:55 PM"
+      },
+      {
+        "Id": 3,
+        "title": "ProfileInfo",
+        "status": "Done",
+        "subTitle": "15 Mar 2021, 4:55 PM"
+      },
+      {
+        "Id": 4,
+        "title": "PAN",
+        "status": "Pending",
+        "subTitle": "14 Mar 2021, 4:55 PM"
+      },
+      {
+        "Id": 5,
+        "title": "DOB",
+        "status": "Pending",
+        "subTitle": "13 Mar 2021, 4:55 PM"
+      },
+      {
+        "Id": 6,
+        "title": "ConfirmPanDetail",
+        "status": "Pending",
+        "subTitle": "12 Mar 2021, 4:55 PM"
+      },
+      {
+        "Id": 7,
+        "title": "Correspondence Details",
+        "status": "Pending",
+        "subTitle": "11 Mar 2021, 4:55 PM"
+      },
+      {
+        "Id": 8,
+        "title": "Bank",
+        "status": "Pending",
+        "subTitle": "10 Mar 2021, 4:55 PM"
+      },
+      {
+        "Id": 9,
+        "title": "DisplayBankDetails",
+        "status": "Pending",
+        "subTitle": "9 Mar 2021, 4:55 PM"
+      },
+      {
+        "Id": 10,
+        "title": "Fatca Declaration",
+        "status": "Pending",
+        "subTitle": "8 Mar 2021, 4:55 PM"
+      },
+      {
+        "Id": 11,
+        "title": "PersonalDetails",
+        "status": "Pending",
+        "subTitle": "7 Mar 2021, 4:55 PM"
+      },
+      {
+        "Id": 12,
+        "title": "Nominee",
+        "status": "Pending",
+        "subTitle": "8 Mar 2021, 4:55 PM"
+      },
+      {
+        "Id": 13,
+        "title": "Selfie",
+        "status": "Pending",
+        "subTitle": "7 Mar 2021, 4:55 PM"
+      },
+      {
+        "Id": 14,
+        "title": "WetSign",
+        "status": "Pending",
+        "subTitle": "6 Mar 2021, 4:55 PM"
+      },
+      {
+        "Id": 15,
+        "title": "PanAadharUpload",
+        "status": "Pending",
+        "subTitle": "5 Mar 2021, 4:55 PM"
+      },
+      {
+        "Id": 16,
+        "title": "ThankYou",
+        "status": "Pending",
+        "subTitle": "4 Mar 2021, 4:55 PM"
+      }
+    ],
+    "ErrorCode": "0",
+    "MessageType": "I"
+  },
+  "transactionDetails": {
+    "title": "ICICI Prudential Focused Bluechip Equity Fund",
+    "date": "16 Mar 2021",
+    "description": [
+      {
+        "Investment Amount": "1,000",
+        "Investment Type": "SIP"
+      },
+      {
+        "1st SIP Payment": "Done",
+        "Next SIP Payment": "18th Apr 2021"
+      },
+      {
+        "NAV Date": "17 Mar 2021",
+        "Units": "5.235"
+      }
+    ]
+  },
+  "stockData": {
+    "title": "Recommendations for you..",
+    "Mutual Fund": [{
+      "card": [
+        {
+          "row1": {
+            "icon": "assets/icon/hdfc.png",
+            "title": "HDFC Focused 30-G",
+            "action": "assets/icon/leftArrowIcon.svg",
+            "selectWatchList": false
+          },
+          "row2": {
+            "Returns": 18.65,
+            "Category Return": "-7.10%-20.25%",
+            "Min.Invest": "₹500"
+          }
+        },
+        {
+          "row1": {
+            "icon": "assets/icon/hdfc.png",
+            "title": "HDFC Focused 30-G",
+            "action": "assets/icon/leftArrowIcon.svg",
+            "selectWatchList": false
+          },
+          "row2": {
+            "Returns": 18.65,
+            "Category Return": "-7.10%-20.25%",
+            "Min.Invest": "₹500"
+          }
+        }
+      ]
+    }],
+    "Stock": [{
+      "card": [
+        {
+          "row1": {
+            "title": "TATA STEEL",
+            "price": "107.75"
+          },
+          "row2": {
+            "ExchangeName": "NSE",
+            "lossAndGain": "0.63"
+          }
+        },
+        {
+          "row1": {
+            "title": "TATA STEEL",
+            "price": "107.75"
+          },
+          "row2": {
+            "ExchangeName": "NSE",
+            "lossAndGain": "0.63"
+          }
+        }
+      ]
+    }],
+    "Gold": [{
+      "card": [
+        {
+          "row1": {
+            "icon": "assets/icon/Augmont.svg",
+            "title": "Augmont Digital Gold",
+            "description": "24K. 99.99% Purity",
+            "action": "assets/icon/leftArrowIcon.svg",
+            "selectWatchList": false
+          },
+          "row2": {
+            "Buying Price/gm": "₹5251.16",
+            "Selling Price/gm": "₹5400.64"
+          }
+        },
+        {
+          "row1": {
+            "icon": "assets/icon/digitelSilver.svg",
+            "title": "Augmont Digital Silver",
+            "description": "24K. 99.99% Purity",
+            "action": "assets/icon/leftArrowIcon.svg",
+            "selectWatchList": false
+          },
+          "row2": {
+            "Buying Price/gm": "₹64.16",
+            "Selling Price/gm": "₹62.30"
+          }
+        }
+      ]
+    }],
+    "Loans": [{
+      "card": [
+        {
+          "row1": {
+            "title": "Avenue Supermarts Limited",
+            "selectWatchList": false
+          },
+          "row2": {
+            "availableQuantity": "50",
+            "haircutRate": "20%"
+          }
+        },
+        {
+          "row1": {
+            "title": "Avenue Supermarts Limited",
+            "selectWatchList": false
+          },
+          "row2": {
+            "availableQuantity": "50",
+            "haircutRate": "20%"
+          }
+        }
+      ]
+    }],
+    "segmentValues": [
+      {
+        "title": "Mutual Fund",
+        "value": "Mutual Fund"
+      },
+      {
+        "title": "Stock",
+        "value": "Stock"
+      },
+      {
+        "title": "Gold",
+        "value": "Gold"
+      },
+      {
+        "title": "Loans",
+        "value": "Loans"
+      }
+    ]
+  }
+}

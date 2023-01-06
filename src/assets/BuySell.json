@@ -1,0 +1,54 @@
+{
+
+    
+     "BestkAskSellvalue":"234.70",
+     "BestkAskBuyvalue":"234.65",
+     "BseExchange":"BSE",
+     "NseExchange":"NSE",
+     "BSECMP":"235.65",
+     "NSECMP":"240.65",
+     "triggerPriceValue":"240.65",
+"Intraday":{
+  "Bracket":[
+
+{
+     "SLprice":"S/L Trigger price",
+     "Range":"Range",
+     "RangeValue":" D 215-D 280",
+     "Slvalue":"₹ 260"
+},
+{
+     "SLprice":"S/L Limit price",
+     "Range":"Range",
+     "RangeValue":" D 215-D 260",
+     "Slvalue":"₹ 215"
+},
+{
+     "SLprice":"S/L Trigger price",
+     "Range":"Range",
+     "RangeValue":" D 215-D 230",
+     "Slvalue":"₹ 295"
+}
+
+  ],
+  "cover":[
+
+    {
+         "SLprice":"S/L Trigger price",
+         "Range":"Range",
+         "RangeValue":" D 215-D 220",
+         "Slvalue":"₹ 285"
+    },
+    {
+         "SLprice":"S/L Limit price",
+         "Range":"Range",
+         "RangeValue":" D 215-D 220",
+         "Slvalue":"₹ 265"
+    }
+    
+      ]  
+
+    }
+}
+
+

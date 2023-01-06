@@ -1,0 +1,110 @@
+<ion-grid class="ion-no-padding">
+  <ion-row>
+    <!-- <ion-col [size]="'12'">
+      popup remaining
+    </ion-col> -->
+    <ion-col [size]="'12'" class="mfBackground p-4">
+      <ion-row class="pt-4 pb-4">
+        <ion-col [size]="'12'" class="custTextAlignCenter ">
+          <span class="custFontFamilyMuliBold muli-16pt custLineHight18 custColorWhite">{{'benefitsDigitalGold' | translate}}</span>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col [size]="'4'">
+          <ion-row>
+            <ion-col [size]="'12'" class="custTextAlignCenter">
+              <ion-img [src]="imageList?.secureIcon" class="custBackgroundColorWater custMFImg"></ion-img>
+            </ion-col>
+            <ion-col [size]="'12'" class="custTextAlignCenter pt-2 pb-2">
+              <span class="custFontFamilyMuliSemiBold muli-12pt custLineHight16 custColorWhite">
+                {{'benefitsDigitalGoldSub1' | translate}}
+              </span>
+            </ion-col>
+          </ion-row>
+        </ion-col>
+        <ion-col [size]="'4'">
+          <ion-row>
+            <ion-col [size]="'12'" class="custTextAlignCenter">
+              <ion-img [src]="imageList?.zeroIcon" class="custBackgroundColorWater custMFImg"></ion-img>
+            </ion-col>
+            <ion-col [size]="'12'" class="custTextAlignCenter pt-2 pb-2">
+              <span class="custFontFamilyMuliSemiBold muli-12pt custLineHight16 custColorWhite">
+                {{'zeroMakingCharges' | translate}}
+              </span>
+            </ion-col>
+          </ion-row>
+        </ion-col>
+        <ion-col [size]="'4'">
+          <ion-row>
+            <ion-col [size]="'12'" class="custTextAlignCenter">
+              <ion-img [src]="imageList?.diversifyPortfolioIcon" class="custBackgroundColorWater custMFImg"></ion-img>
+            </ion-col>
+            <ion-col [size]="'12'" class="custTextAlignCenter pt-2 pb-2">
+              <span class="custFontFamilyMuliSemiBold muli-12pt custLineHight16 custColorWhite">
+                {{'diversifyPortfolio' | translate}}
+              </span>
+            </ion-col>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+    </ion-col>
+    <ion-col [size]="'12'" class=" ion-padding pt-5">
+      <span class="custFontFamilyMuliBold muli-16pt custLineHight18 custColorDarkShade">{{'exploreDigitalCommodities' | translate}}</span>
+    </ion-col>
+    <ion-col [size]="'12'" class="p-2">
+     <ion-card class="custBackgroundColorWhite" *ngFor="let x of goldSilverData" >
+      <ion-card-content (click)="gotoGoldDetailPage(x?.Type)">
+        <ion-grid>
+          <ion-row>
+            <ion-col [size]="'12'">
+              <ion-row>
+                <ion-col [size]="'2'">
+                  <ion-img [src]="x?.Logo" class="custImgGold"></ion-img>
+                </ion-col>
+                <ion-col [size]="'9'">
+                  <span class="custFontFamilyMuliRegular muli-14pt custLineHight20 custColorDark">{{x?.Title}}</span><br>
+                  <span class="d-flex">
+                    <p class="custFontFamilyMuliRegular muli-10pt custLineHight15 custColorWarmGrey custOpacity80">{{x?.Props?.typeK}}</p>
+                    <p class="custBackgroundColorWarmGrey custOpacity80 dot m-1"></p>
+                    <p class="custFontFamilyMuliRegular muli-10pt custLineHight15 custColorWarmGrey custOpacity80">{{x?.Props?.Purity}} % {{'purity' | translate}}</p>
+                  </span>
+                </ion-col>
+                <ion-col [size]="'1'">
+                  <ion-img [src]="imageList?.leftArrowIcon" class="m-3 custArrowIcon"></ion-img>
+                </ion-col>
+              </ion-row>
+            </ion-col>
+            <ion-col [size]="'12'">
+              <ion-row>
+                <ion-col [size]="'6'">
+                  <span class="custFontFamilyMuliRegular muli-10pt custLineHight15 custColorGreyish">{{'buyingPrice' | translate}}</span><br>
+                  <span class="custFontFamilyRubikRegular muli-14pt custLineHight18 custColorParakeetGreen">{{currentMoneySymbols?.currencySymbol}} {{x?.Price?.Buy | currencyCommasHundreds}}</span>
+                </ion-col>
+                <ion-col [size]="'6'">
+                  <span class="custFontFamilyMuliRegular muli-10pt custLineHight15 custColorGreyish">{{'sellingPrice' | translate}}</span><br>
+                  <span class="custFontFamilyRubikRegular muli-14pt custLineHight18 custColorDark">{{currentMoneySymbols?.currencySymbol}} {{x?.Price?.Sell | currencyCommasHundreds}}</span>
+                </ion-col>
+              </ion-row>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-card-content>
+     </ion-card>
+    </ion-col>
+    <ion-col [size]="'12'" class=" ion-padding" *ngIf="goldData?.Result">
+      <span class="custFontFamilyMuliBold muli-16pt custLineHight18 custColorDarkShade">{{'goldList' | translate}}</span>
+    </ion-col>
+    <ion-col [size]="'12'" *ngIf="goldData?.Result">
+      <lib-product-list [listOfData]="goldData" [imageList]="imageList" [currentMoneySymbols]="currentMoneySymbols" (sendDataToParent)="redirectTCardDetails($event)" [parentModule]="'Gold'"></lib-product-list>
+    </ion-col>
+    <ion-col [size]="'12'" class=" ion-padding" *ngIf="silverData?.Result">
+      <span class="custFontFamilyMuliBold muli-16pt custLineHight18 custColorDarkShade">{{'silverList' | translate}}</span>
+    </ion-col>
+    <ion-col [size]="'12'" *ngIf="silverData?.Result">
+      <lib-product-list [listOfData]="silverData" [imageList]="imageList" [currentMoneySymbols]="currentMoneySymbols" (sendDataToParent)="redirectTCardDetails($event)" [parentModule]="'Silver'"></lib-product-list>
+    </ion-col>
+     <!-- <ion-col [size]="'12'">
+      notification remaining
+    </ion-col> -->
+  </ion-row>
+</ion-grid>

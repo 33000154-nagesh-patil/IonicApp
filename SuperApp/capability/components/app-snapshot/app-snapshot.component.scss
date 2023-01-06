@@ -1,0 +1,98 @@
+.custGray {
+    background-color: rgb(222, 222, 222);
+}
+
+.custRight {
+    margin-left: 150px;
+    margin-top: 20px;
+
+}
+
+.custWithoutTextImg{
+    height: 20px;
+}
+
+.custheight {
+    border: 1px solid #44C8F5;
+    color: #44C8F5;
+    border-radius: 4px;
+    background-color: #F6F7FB;
+    opacity: 1;
+}
+
+.custColor {
+    background: #E1E5EA 0% 0% no-repeat padding-box;
+    border-radius: 4px;
+    opacity: 0.6;
+}
+
+.cardBackground {
+    background-color: #f8f8f8;
+}
+.cta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.custBtnExplore{
+    // width: 80px;
+    height: 30px;
+    border:  1px solid var(--custBrightCyan) !important;
+    border-radius: 4px !important;
+    background: var(--custPaleGrey) !important;
+    text-align: center !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    float: right;
+}
+
+// span {
+//     color: #29AD00;
+// }
+
+.custBookmark {
+    height: 28px;
+    width: 18px;
+    margin-right: 5px;
+    position: absolute;
+}
+
+.custColorGreen {
+    color: #29AD00;
+}
+.icon{
+    border: 2px solid #DEDEDE;
+    padding: 2px;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+}
+.notIcon{
+    display: none;
+}
+
+.custPosition {
+    display: flex;
+    justify-content: center;
+}
+
+.custGreenTick {
+    color: #29AD00;
+    height: 8px;
+    width: 8px;
+}
+.border-bottom{
+    border-bottom: 1px solid #DEDEDE;
+}
+
+.custcol {
+    color: #29AD00;
+}
+
+ion-segment-button {
+    text-transform: capitalize;
+}

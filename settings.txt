@@ -1,0 +1,8 @@
+"aot": false,
+"vendorChunk": false,
+"extractLicenses": true,
+"buildOptimizer": false,
+"sourceMap": false,
+"outputHashing": "all",
+"optimization": true,
+"namedChunks": false

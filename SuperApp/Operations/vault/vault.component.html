@@ -1,0 +1,270 @@
+<cap-header [imageList]="imageList" [showArrow]="false" [showLabel]="false" [showImg]="false" [showIndex]="false"
+  [showNotification]="true" [showCartWithName]="true" [notificationCount]="notificationCount" [cartCount]="cartCount"
+  [showSideMenu]="true" [showSearch]="true" [showClose]="false" [showShare]="false" [showWatchList]="false"
+  [paddingSize]="3" [showCartWithoutName]="false" [showStories]="false" [showOtherText]="false" [backUrlName]="">
+</cap-header>
+
+<ion-content class="contentBackground">
+  <app-heading *ngIf="Data?.heading" [heading]="Data.heading"></app-heading>
+
+  <!-- <ion-row class="p-2">
+    <ion-col>
+      <span class="custFontFamilyMuliBold muli-16pt custLineHight40 custColorDark">{{Data?.Cards?.heading}}</span>
+    </ion-col>
+  </ion-row> -->
+  <div *ngIf="routing == 'ST'">
+    <ion-segment [(ngModel)]="segment"  class="mb-3">
+      <ion-segment-button class="muli-14pt custColorDark custFontFamilyMuliBold "
+        *ngFor="let x of Data?.objectContent[0].segmentValues" [value]="x.title">{{x.title}}</ion-segment-button>
+    </ion-segment>
+    <ion-card *ngFor="let x of Data?.objectContent[0][segment];let i = index"
+      class="custBackgroundColorWhite mx-3 my-0 px-2" >
+      <ion-row (click)="ListCardAction(x.row1)">
+        <ion-col class="custColorDark muli-14pt custFontFamilyMuliSemiBold text-nowrap">
+          {{ x.row1.symbol }}
+        </ion-col>
+        <ion-col class="custFontFamilyMuliSemiBold custLineHight20 muli-14pt custColorDark text-end text-nowrap">
+          {{ x.row1.price }}
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col class="custFontFamilyMuliBold muli-12pt custLineHight16 custColorBattlePGry text-nowrap">
+          {{ x.row2.exchange }} | {{x.row2.product}} | {{x.row2.trade}}
+        </ion-col>
+        <ion-col class="d-flex justify-content-end text-end">
+            {{ x.row2.col2 }}
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col class="custFontFamilyMuliSemiBold muli-12pt custLineHight16 custColorBattlePGry text-nowrap">
+          {{ x?.row3?.col1 }}
+        </ion-col>
+      </ion-row>
+    </ion-card>
+  </div>
+
+
+  <div *ngIf="routing != 'ST' && Data?.card">
+    <ion-card *ngFor="let z of Data?.Cards; let i = index" (click)="MainCardAction(i)">
+      <ion-card-content>
+        <ion-row>
+          <ion-col [size]="'12'" class="d-flex flex-column">
+            <span *ngIf="z?.title"
+              class="custFontFamilyRobotoCondensed custFontFamilyMuliITF-Rupee muli-20pt custLineHight18 custColorDark m-1"><img
+                [src]="z?.image" *ngIf="z?.image" width="50px" height="50px" class="me-2">{{z?.title}}</span>
+            <span *ngIf="z?.description"
+              class="custFontFamilyMuliRegular muli-14pt custLineHight15 custColorBattlePGry m-1">{{z?.description}}</span>
+          </ion-col>
+        </ion-row>
+        <ion-row *ngFor="let x of z?.row">
+          <ion-col class="d-flex flex-column" *ngFor="let y of x|keyvalue">
+            <span class="custFontFamilyMuliRegular muli-12pt custLineHight15 custColorBattlePGry m-1">{{y.key}}</span>
+            <span *ngIf="y?.key=='Returns' && y?.value<0"
+              class="custFontFamilyRobotoCondensed custFontFamilyMuliITF-Rupee muli-16pt custLineHight18 custColorcustFadedRed m-1">
+              <img [src]="y?.value<0?'assets/icon/redDownArrow.svg':'assets/icon/green-up-arrow.svg'"
+                class="arrow me-1">{{y.value}}%</span>
+            <span *ngIf="y?.key=='Returns' && y?.value>=0"
+              class="custFontFamilyRobotoCondensed custFontFamilyMuliITF-Rupee muli-16pt custLineHight18 custColorParakeetGreen m-1">
+              <img [src]="y?.value<0?'assets/icon/redDownArrow.svg':'assets/icon/green-up-arrow.svg'"
+                class="arrow me-1">{{y.value}}%</span>
+            <span *ngIf="(y?.key!='Returns')"
+              class="custFontFamilyRobotoCondensed custFontFamilyMuliITF-Rupee muli-16pt custLineHight18 custColorDark m-1">{{toStirng(y.value)}}</span>
+          </ion-col>
+        </ion-row>
+      </ion-card-content>
+    </ion-card>
+  </div>
+  <ion-row *ngIf="!Data?.card && routing != 'ST'"  class="w-100">
+    <ion-card class="w-100">
+      <ion-card-content>
+      <ion-row>
+        <ion-col class="text-center">
+          <span class="custFontFamilyMuliBold muli-16pt custLineHight18 custColorDark">You haven't invested in any funds</span>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col class="text-center">
+          <span class="custFontFamilyMuliRegular muli-12pt custLineHight16 custColorBrownishGrey">Today is a good day to start investing</span>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col class="text-center">
+          <button class="btn text-center custBackgroundColorBrightCyan" (click)="StartInvesting()" ><span class="custColorWhite custFontFamilyMuliRegular custLineHeight18 text-capitalize muli-14pt">Start Investing</span></button>
+        </ion-col>
+      </ion-row>
+    </ion-card-content>
+    </ion-card>
+  </ion-row>
+
+
+
+
+
+  <div *ngIf="routing != 'ST'">
+    <div *ngFor="let x of Data?.card">
+      <ion-row  *ngIf="x?.title" class="pl-2">
+        <span class="muli-14pt custFontFamilyMuliBold custLineHight33 custColorDark text-capitalize">
+          {{x?.title}}
+        </span>
+      </ion-row>
+
+      <!-- CARD -->
+      <cap-card *ngIf="Data?.card" [card]="x" [Redirect]="'newServer'"></cap-card>
+
+      <ion-row *ngIf="x?.cta" class="text-center pb-2 cta">
+        <button class="custheight text-center custBtnExplore custLineHight14 custLineHight18 px-3 " (click)="snapShot(x?.title)">{{x.cta}}</button>
+        <!-- (click)="snapShot(x)" -->
+      </ion-row>
+
+    </div>
+  </div>
+
+
+</ion-content>
+<cap-footer [activeImg]="imageList?.activeTab" [selectedIndex]="'4'" (homeEvent)="homeEvent($event)"
+  [footerListData]="footerListData" [parentTab]="'listing'"></cap-footer>
+
+<!-- <ion-grid>
+    <ion-row>
+      <span class="muli-22pt custFontFamilyMuliBold custLineHight22 custColorDark px-3 mt-3">My Vault</span>
+    </ion-row>
+    <ion-row class="px-2">
+      <ion-col [size]="'12'">
+        <ion-row>
+          <ion-col [size]="'1'">
+            <h1></h1>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <span class="muli-12pt custFontFamilyMuliRegular custLineHight22 custColorBattlePGry px-3 mb-0">An overview of my
+        orders</span>
+    </ion-row>
+
+    <ion-row>
+      <ion-card class="w-100 px-2 custBackgroundColorCyanBlue">
+        <ion-row>
+          <ion-col class="muli-12pt custFontFamilyMuliRegular custLineHight22 custColorBattlePGry px-2">Invested Amount
+          </ion-col>
+
+          <ion-col class="muli-12pt custFontFamilyMuliRegular custLineHight22 custColorBattlePGry text-end">Grams
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col class="muli-16pt custFontFamilyMuliRegular custLineHight22 custColorDark pt-0">{{rupeesSymbol}}{{totalInvestmentAmount}}
+          </ion-col>
+          <ion-col class="muli-16pt custFontFamilyMuliRegular custLineHight22 custColorDark text-end pt-0">{{totalgrams}}
+          </ion-col>
+        </ion-row>
+      </ion-card>
+    </ion-row>
+
+
+
+
+
+    <ion-row>
+      <ion-segment class="custHeight" (ionChange)="segmentChanged($event)" [(ngModel)]="segment">
+        <ion-segment-button value="Gold" >
+          <ion-label class="custFontFamilyMuliSemiBold muli-14pt custLineHight18 custColorDarkShade text">Gold
+          </ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="Silver" >
+          <ion-label class="custFontFamilyMuliSemiBold muli-14pt custLineHight18 custColorDarkShade text">Silver
+          </ion-label>
+        </ion-segment-button>
+      </ion-segment>
+    </ion-row>
+
+    <ion-row class="mt-3 px-3 "><span
+        class="custFontFamilyMuliBold muli-18pt custLineHight18 custColorDarkShade ">Transactions</span></ion-row>
+
+
+    <div class="mrginTop">
+      <ion-col [size]="'12'">
+        <ion-row>
+          <ion-card class="w-100 px-2 pt-2">
+            <div *ngFor="let x of transactionData">
+
+              <ion-row>
+                <ion-col [size]="'4'"
+                  class="muli-12pt custFontFamilyMuliRegular custLineHight22 custColorcustFadedRed px-2" [ngClass]="(x.tRansaction=='buy')?'custColorParakeetGreen':'custColorcustFadedRed'" >{{x.tRansaction}}</ion-col>
+                <ion-col [size]="'4'" class="muli-12pt custFontFamilyMuliRegular custLineHight22 custColorBattlePGry ">
+                  Qty. {{x.weight}} gm</ion-col>
+                <ion-col [size]="'4'" class="muli-14pt custFontFamilyMuliRegular custLineHight22 custColorDark text-end">
+                  {{rupeesSymbol}}{{x.amount}}</ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col [size]="'4'"
+                  class="muli-12pt custFontFamilyMuliRegular custLineHight22 custColorBattlePGry pt-0">{{x.createdOnDate | date}}
+                </ion-col>
+                <ion-col [size]="'4'"
+                  class="muli-12pt custFontFamilyMuliRegular custLineHight22 custColorBattlePGry  pt-0 ">Price
+                  {{rupeesSymbol}}{{x.pricePerGram}}/gm</ion-col>
+                  <span
+                class="custFontFamilyMuliBold muli-18pt custLineHight18 custColorDarkShade ms-5" *ngIf="x.tRansaction=='buy'"  (click)="openinvoice(x)">Invoice</span>
+
+                <ion-col>TXN ID:{{x.trasactionId}}</ion-col>
+              </ion-row>
+              <ion-row class="mt-3 px-3 "></ion-row>
+
+              <ion-row>
+                <ion-col [size]="'12'">
+                  <h1 class="line"></h1>
+                </ion-col>
+              </ion-row>
+            </div>
+          </ion-card>
+        </ion-row>
+      </ion-col>
+    </div>
+  </ion-grid> -->
+
+<!-- <ion-infinite-scroll threshold="100px" (ionInfinite)="onScroll($event)">
+      <ion-infinite-scroll-content style="--color: #56a1ce;"
+        loadingSpinner="crescent"
+        loadingText="Fetching More Mutual Funds Please Wait...">
+      </ion-infinite-scroll-content>
+    </ion-infinite-scroll> -->
+
+
+
+
+
+<!-- <ion-toolbar>
+  <ion-row class=" sellButton">
+    <ion-col [size]="'12'" (click)="navigateToSell()">
+      <button class="btn w-100 text-center custBackgroundColorWhite custButtonOutLine">
+        <span class="custColorBrightCyan custFontFamilyMuliBold muli-16pt">Sell</span>
+      </button>
+    </ion-col>
+  </ion-row>
+
+  <ion-row class=" investButton">
+    <ion-col [size]="'12'">
+      <button class="btn w-100 text-center custBackgroundColorBrightCyan">
+        <span class="custColorWhite custFontFamilyMuliBold muli-16pt " (click)="navigateToBuy()">Invest
+          More</span>
+        </button>
+      </ion-col>
+    </ion-row>
+</ion-toolbar> -->
+<!-- <cap-footer [activeImg]="imageList?.activeTab" [selectedIndex]="'4'" [footerListData]="goldFooterData" [parentTab]="'Mutual Fund'">
+</cap-footer> -->
+
+<!-- <div class="custModalContainer  rounded-3 " *ngIf="errormsg">
+  <div id="showModalSMGSucces" class="modal-content modConmart p-10" >
+   <ion-row class="">
+     <ion-col class="text-center custColorcustFadedRed mt-1 custFontFamilyMuliBold muli-18pt">
+     First Complete Your Registration !
+     </ion-col>
+
+     <ion-row class="w-100 mx-3">
+      <button class="custBackgroundColorBrightCyan custColorWhite custFontFamilyMuliBold muli-16pt w-100 btnwidth rounded-2" (click)="navigateToprofile()">Ok</button>
+      </ion-row>
+
+   </ion-row>
+
+  </div>
+</div> -->

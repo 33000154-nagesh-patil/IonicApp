@@ -1,0 +1,15 @@
+.myROW{
+    display: flex;
+    justify-content: flex-end;
+}
+:host ::ng-deep .mat-radio-outer-circle{
+
+    border-color: var(--custDarkishBlue) !important ;
+
+  }
+
+  :host ::ng-deep .mat-radio-inner-circle{
+
+    background-color: var(--custBrightCyan) !important ;
+
+  }

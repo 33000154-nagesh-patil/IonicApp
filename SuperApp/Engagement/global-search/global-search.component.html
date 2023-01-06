@@ -1,0 +1,129 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-row>
+      <ion-col [size]="'10.3'">
+        <ion-row>
+          <ion-col [size]="'1'" class="mt-2">
+            <ion-img [src]="imageList?.arrow" class="custIcon" (click)="searchBarBack()"></ion-img>
+          </ion-col>
+          <ion-col [size]="'8'" class="px-3 mt-3 d-flex">
+            <span class="">
+              <ion-input type="text" (input)="term$.next($event)" autocomplete="off" placeholder="{{ placeholder }}"
+                [(ngModel)]="searchText" class="formControl ion-no-padding" [value]="test" enterkeyhint="search">
+              </ion-input>
+            </span>
+          </ion-col>
+          <ion-col [size]="'1.5'" class="mt-2 float-end" (click)="camera()">
+            <ion-img class="custIcon" src="assets\icon\cameraBlueIcon.svg"></ion-img>
+          </ion-col>
+          <ion-col [size]="'1.5'" class="float-end mt-2" (click)="voice()">
+            <ion-img class="custIcon" src="assets\icon\micBlueIcon.svg"></ion-img>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+      <ion-col class="custCss" [size]="'1.7'" (click)="gotoFilter(routing)">
+        <img class="custIcon1 mt-3" src="assets\icon\filterIcon.svg" />
+      </ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="p-3 custContent contentBackground">
+  <ion-grid>
+    <!-- <div class="chips">{{ selectedProduct }}&nbsp;&nbsp;<span>x</span></div> -->
+    <ion-row>
+      <ion-col>
+        <div class="text-end mr-2">
+          <span class="px-2 custFontFamilyMuliBold muli-12pt custLineHight18 custColorDarkishBlue"
+            (click)="closeSubProIn()">Clear All</span>
+        </div>
+      </ion-col>
+    </ion-row>
+
+    <!-- Akshay code start -->
+    <ng-container *ngIf="searching">
+      <ion-card *ngFor="let x of ' '.repeat(6).split('')">
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <ion-skeleton-text [animated]="true"></ion-skeleton-text>
+          </ion-thumbnail>
+          <ion-label>
+            <h3>
+              <ion-skeleton-text [animated]="true" style="width: 80%;"></ion-skeleton-text>
+            </h3>
+            <p>
+              <ion-skeleton-text [animated]="true" style="width: 60%;"></ion-skeleton-text>
+            </p>
+            <p>
+              <ion-skeleton-text [animated]="true" style="width: 30%;"></ion-skeleton-text>
+            </p>
+          </ion-label>
+        </ion-item>
+      </ion-card>
+    </ng-container>
+    <!-- <div *ngIf="results$|async|json"> -->
+    <div *ngIf="getListBreadCrumb.split('/')[1] != 'ST'">
+      <div *ngFor="let x of listCard?.card">
+        <ion-row *ngIf="x?.title" class="pl-2">
+          <span class="muli-14pt custFontFamilyMuliBold custLineHight33 custColorDark text-capitalize">
+            {{ x?.title }}
+          </span>
+        </ion-row>
+
+        <!-- CARD -->
+        <cap-card *ngIf="listCard?.card" [card]="x" [Redirect]="'Detail'"></cap-card>
+        <ion-row *ngIf="x?.cta" class="text-center pb-2 cta">
+          <button class="custheight text-center custBtnExplore custLineHight14 custLineHight18 px-3">
+            {{ x.cta }}
+          </button>
+        </ion-row>
+      </div>
+    </div>
+    <div *ngIf="getListBreadCrumb.split('/')[1] == 'ST'">
+      <cap-card *ngIf="listCard" [routing]="getListBreadCrumb.split('/')[1]" [card]="listCard" [Redirect]="'Detail'">
+      </cap-card>
+    </div>
+    <!-- Akshay code end -->
+
+    <div *ngIf="snapshot&&searchText&&!tabName">
+      <app-snapshot></app-snapshot>
+    </div>
+
+    <div *ngIf="!searchText">
+      <!--    !tabName && !searchText  -->
+      <!-- search history start here  -->
+      <div>
+        <p *ngIf="searchHistory" class="custColorDark muli-16pt custFontFamilyMuliBold pt-3 px-2">
+          Search History
+        </p>
+        <ion-list *ngFor="let text of searchHistory" (click)="getHistorySearch(text?.title)" class="ion-no-padding">
+          <ion-item lines="none">
+            <!--[ngClass]="{'historyActive': tabName === text.title}"             -->
+            <ion-img [src]="imageList?.recentHistory"></ion-img>&nbsp;
+            <ion-label>
+              <span class="custFontFamilyRubikRegular muli-16pt">
+                {{ text.title }}
+              </span>
+            </ion-label>
+          </ion-item>
+        </ion-list>
+      </div>
+      <!-- search history end here  -->
+
+      <!-- tab start here -->
+      <ion-row *ngFor="let x of data">
+        <p *ngIf="allData[x.title]" class="custColorDark muli-16pt custFontFamilyMuliBold pt-3 px-2">
+          {{ x?.title }}
+        </p>
+        <ion-row class="tab">
+          <ion-col *ngFor="let text of allData[x.title]" (click)="onTabClick(text)">
+            <button [ngClass]="{ active: tabName === text?.url[1] }" class="text-center">
+              <span class="custFontFamilyRubikRegular muli-12pt text1">{{text?.title}}</span>
+            </button>
+          </ion-col>
+        </ion-row>
+      </ion-row>
+    </div>
+    <!-- tab end here -->
+  </ion-grid>
+</ion-content>

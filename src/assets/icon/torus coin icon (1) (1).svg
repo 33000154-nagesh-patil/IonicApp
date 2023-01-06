@@ -1,0 +1,8 @@
+<svg id="torus_coin_icon" data-name="torus coin icon" xmlns="http://www.w3.org/2000/svg" width="49" height="49" viewBox="0 0 49 49">
+  <g id="Multicolor">
+    <path id="Path_21196" data-name="Path 21196" d="M47.5,26.062A21.437,21.437,0,1,1,26.062,47.5,21.462,21.462,0,0,1,47.5,26.062M47.5,23A24.5,24.5,0,1,0,72,47.5,24.5,24.5,0,0,0,47.5,23Z" transform="translate(-23 -23)" fill="#facb1b"/>
+    <path id="Path_21197" data-name="Path 21197" d="M48.438,69.875A21.438,21.438,0,1,1,69.875,48.438,21.462,21.462,0,0,1,48.438,69.875Z" transform="translate(-23.938 -23.938)" fill="#facb1b"/>
+    <path id="Path_21198" data-name="Path 21198" d="M48.438,27a21.422,21.422,0,0,0-14.8,36.922L63.922,33.636A21.37,21.37,0,0,0,48.438,27Z" transform="translate(-23.938 -23.938)" fill="#fbe158"/>
+  </g>
+  <path id="Union_48" data-name="Union 48" d="M4.1,18.8a32.2,32.2,0,0,1,3.514-.785L7.58,5.833l-5.2-.014L1.77,10.544H.618Q.506,9.986.393,9.122T.2,7.335q-.085-.92-.14-1.828T0,3.959H17.861q0,.67-.056,1.563t-.14,1.813q-.085.921-.2,1.772t-.225,1.437H16.092l-.572-4.753-5.35.051-.012,12.233,2.166.388,1.437.341v.944l-9.645.066ZM.081,1.835V0h17.86V1.835Z" transform="translate(15.529 14.594)" fill="#8e6134" stroke="rgba(0,0,0,0)" stroke-miterlimit="10" stroke-width="1"/>
+</svg>

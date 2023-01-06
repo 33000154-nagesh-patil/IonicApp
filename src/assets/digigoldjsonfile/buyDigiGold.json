@@ -1,0 +1,38 @@
+{
+    "statusCode": 200,
+    "message": "Successfully bought 0.1846 grams of gold @ 5259.12",
+    "result": {
+        "data": {
+            "quantity": "0.1846",
+            "totalAmount": "1000.00",
+            "preTaxAmount": "970.87",
+            "metalType": "gold",
+            "rate": "5259.12",
+            "uniqueId": "TOR35156861",
+            "transactionId": "TD743816595206523350149450",
+            "userName": "roopa",
+            "merchantTransactionId": "oxW2s6jXu6Qwlk5iZNsvstONcJGrl",
+            "mobileNumber": "9820538889",
+            "goldBalance": "9.8150",
+            "silverBalance": "5.2059",
+            "taxes": {
+                "totalTaxAmount": "29.13",
+                "taxSplit": [
+                    {
+                        "type": "CGST",
+                        "taxPerc": "1.50",
+                        "taxAmount": "14.56"
+                    },
+                    {
+                        "type": "SGST",
+                        "taxPerc": "1.50",
+                        "taxAmount": "14.56"
+                    }
+                ]
+            },
+            "invoiceNumber": "GTD082313",
+            "referenceType": null,
+            "referenceId": null
+        }
+    }
+}

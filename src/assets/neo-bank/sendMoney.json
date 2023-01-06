@@ -1,0 +1,109 @@
+{
+    "controls": [
+      {
+        "name": "accountholder",
+        "label": "Account Holder Name",
+        "value": "",
+        "type": "text",
+        "validators": {
+          "required": true
+        }
+      },
+     
+      {
+        "name": "ifsc",
+        "label": "IFSC Code",
+        "value": "",
+        "type": "text",
+        "validators": {
+          "required": true
+        }
+      },
+      {
+        "name": "bankaccount",
+        "label": "Bank account Number",
+        "value": "",
+        "type": "number",
+        "validators": {
+          "required": true
+          
+        }
+      },
+      {
+        "name": "confirmaccount",
+        "label": "Confirm account Number",
+        "value": "",
+        "type": "number",
+        "validators": {
+          "required": true
+          
+        }
+      },
+      {
+        "name": "accountType",
+        "label": "Select Account Type",
+        "value": "",
+        "type": "select",
+        "options":[
+          "Saving","Current"
+        ],
+        "validators": {
+          "required": true
+          
+        }
+      },
+      {
+        "name": "accountType",
+        "label": "Select Account Type",
+        "value": "",
+        "type": "selec",
+        "options":[
+          "Saving","Current"
+        ],
+        "validators": {
+          "required": true
+          
+        }
+      },
+      {
+        "name": "accountType",
+        "value": "IMPS",
+        "type": "radio",
+        "validators": {
+          "required": true
+          
+        },
+        "radios":[
+          "IMPS",
+          "NEFT",
+          "Schedule Payment"
+        ]
+      },
+      
+      {
+        "name":"card",
+        "label":"Available Balance",
+        "label1":"₹800",
+        "value":"",
+        "type":"available",
+        "validators":{}
+      },
+      {
+        "name": "amount",
+        "label": "Enter Amount",
+        "value": "",
+        "type": "number",
+        "validators": {
+          "required":true
+        }
+      },
+      {
+        "name": "remark",
+        "label": "Remarks (Optional)",
+        "value": "",
+        "type": "text",
+        "validators": {}
+      }
+     
+    ]
+  }

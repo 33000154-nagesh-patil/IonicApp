@@ -1,0 +1,81 @@
+.custArrorSize{
+    height: 16px;
+    width: 13px;
+  }
+  .custBtnExplore{
+
+    color: white;
+    height: 40px;
+    border:  1px solid var(--custBrightCyan) !important;
+    border-radius: 4px !important;
+    background: white !important;
+    text-align: center !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+   
+}
+
+.formControl{
+  border:none;
+  background-color: transparent;
+  resize: none;
+  outline: none;
+}
+.custFilter{
+  cursor: pointer;
+ 
+}
+    ion-checkbox {
+        height: 22px;
+        width: 22px;    
+          }   
+
+.custApplybtn{
+   
+    text-align: center !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    height: 40px;
+   
+    background: var(--custBrightCyan); 
+
+}
+
+.custOnlineCircle{
+  // position: relative;
+  // top: 2px;
+  background: var(--custBrightCyan); 
+  color: var(--custBrightCyan) !important;
+  border-radius: 50%;
+  height: 2px;
+
+}
+.custsearch{
+  height: 20px;
+    width: 13px;
+  }
+
+.custClear{
+  cursor: pointer;
+}
+
+.darkBlueColor{
+  color: var(--custDarkishBlue);
+}
+
+.darkBlueColor:focus{
+  color: var(--custDarkishBlue);
+}
+.custInputWidth{
+  width: 96px;
+}
+
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
+  background-color: var(--custWhite);
+  border-radius: 5px;
+}
+
+.w-85{
+  width: 85% !important;
+}
+

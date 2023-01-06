@@ -1,0 +1,138 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-grid>
+      <ion-row>
+        <ion-col [size]="'0.7'" class="text-center mt-2">
+          <ion-img [src]="imageList?.arrow" (click)="back()" class="custWithoutTextImg"></ion-img>
+        </ion-col>
+        <ion-col [size]="'8'">
+          <span class="custFontFamilyMuliBold muli-16pt custLineHight40 custColorBlack px-3">Transaction history</span>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="contentBackground">
+  <ion-row class="">
+    <ion-col [size]="'5'" class="text-end pt-4 muli-12pt custLineHight15 custFontFamilyMuliBold" [ngClass]="
+        currentTextType === 'No' ? 'custColorWarmGrey1' : 'custColorDark'">
+      Deposits
+    </ion-col>
+    <ion-col [size]="'2'" class="">
+      <ion-toggle (click)="changeColor(color)" class="mt-0"></ion-toggle>
+    </ion-col>
+    <ion-col [size]="'5'" class="ps-4 pt-4 muli-12pt custLineHight15 custFontFamilyMuliBold" [ngClass]="
+        currentTextType === 'Yes' ? 'custColorWarmGrey1' : 'custColorDark'
+      ">
+      Withdrawals
+    </ion-col>
+  </ion-row>
+
+  <div class="contentCenter" *ngIf="hideWithDrawals">
+    <ion-card class="mx-3" *ngFor="let data of BankDetailsDeposits">
+      <ion-row class="m-2">
+        <ion-col>
+          <p class="muli-14pt m-0 custLineHight18 custFontFamilyMuliRegular custColorDark">
+            {{data.BankName}}
+            <span class="muli-10pt custLineHight18 custFontFamilyMuliBold custColorWarmGrey1">via UPI</span>
+          </p>
+          <span class="muli-10pt custLineHight13 custFontFamilyMuliRegular custColorWarmGrey1">{{data.time}}</span>
+        </ion-col>
+
+        <ion-col>
+          <span class="d-flex justify-content-end">₹{{data.Amount}}</span>
+          <span
+            class="d-flex imgHeight justify-content-end muli-12pt custLineHight15 custFontFamilyMuliRegular custColorParakeetGreen">
+            <img [src]="imageList?.greenTick" />&nbsp; {{data.Progress}}</span>
+        </ion-col>
+      </ion-row>
+
+      <ion-row *ngIf="PaymentFails">
+        <ion-col>
+          <span class="d-flex justify-content-end">₹{{data.Amount}}</span>
+          <span
+            class="d-flex justify-content-end muli-12pt custLineHight15 custFontFamilyMuliRegular custColorcustFadedRed">
+            <img [src]="imageList?.RedTick" />&nbsp; {{data.Progress}}</span>
+        </ion-col>
+
+        <ion-row class="w-100 p-3 h-25 custCol ">
+          <span class="muli-10pt custLineHight13 custFontFamilyMuliRegular custColorWarmGrey1">Remarks - Payment failed
+            because UPI requested expired</span>
+        </ion-row>
+      </ion-row>
+    </ion-card>
+  </div>
+
+
+  <div class="contentCenter" *ngIf="hideAddFunds">
+    <ion-card class="mx-3" *ngFor="let data of BankDetailsWithdraw">
+      <ion-row class="m-2">
+        <ion-col [size]="7">
+          <p class="muli-14pt m-0 custLineHight18 custFontFamilyMuliRegular custColorDark">
+            {{data.BankName}}
+            <span class="muli-10pt custLineHight18 custFontFamilyMuliBold custColorWarmGrey1">via UPI</span>
+          </p>
+          <span class="muli-10pt custLineHight13 custFontFamilyMuliRegular custColorWarmGrey1">{{data.time}}</span>
+        </ion-col>
+        <ion-col [size]="4">
+          <p class="d-flex justify-content-end muli-14pt m-0 custLineHight18 custFontFamilySemiBold custColorDark">
+            ₹{{data.Amount}}</p>
+          <p
+            class="d-flex justify-content-end muli-12pt m-0 custLineHight15 custFontFamilyMuliRegular custColorParakeetGreen">
+            <img [src]="imageList?.inProcessImg" />&nbsp; {{data.Progress}}
+          </p>
+        </ion-col>
+        <ion-col [size]="1">
+          <img [src]="imageList?.bluePencile" />
+          <img [src]="imageList?.blueDlt" />
+        </ion-col>
+      </ion-row>
+      <hr />
+    </ion-card>
+  </div>
+
+
+
+
+  <div class="contentCenter" *ngIf="BankDetailsWithdraw==null">
+    <ion-row class="">
+      <ion-col [size]="''" class="text-center muli-16pt custLineHight20 custFontFamilyMuliBold custColorDark">
+        <p class="m-0">You’ve got nothing to see here as yet!</p>
+        <p class="m-0 text-center muli-12pt custLineHight33 custFontFamilyMuliRegular custColorDark">
+          Place your Deposits request and then <br />
+          see your history here!
+        </p>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="m-2">
+      <ion-col [size]="''">
+        <button class="btn w-75 mx-5 text-center custColorWhite custBackgroundColorParakeetGreen">
+          <span> <img [src]="imageList?.AddFund" class="imgHeight"></span>
+          Add Funds
+        </button>
+      </ion-col>
+    </ion-row>
+  </div>
+
+  <div class="contentCenter" *ngIf="!hideWithDrawals">
+    <ion-row class="">
+      <ion-col [size]="''" class="text-center muli-16pt custLineHight20 custFontFamilyMuliBold custColorDark">
+        <p class="m-0">You’ve got nothing to see here as yet!</p>
+        <p class="m-0 text-center muli-12pt custLineHight33 custFontFamilyMuliRegular custColorDark">
+          Place your Withdrawal request and <br />
+          then see your history here!
+        </p>
+      </ion-col>
+    </ion-row>
+    <ion-row class="m-2">
+      <ion-col [size]="''">
+        <button class="btn w-75 mx-5 text-center custColorWhite BtnBlue ">
+          <span> <img [src]="imageList?.withdraw1" class="imgH"></span>
+          Withdraw Funds
+        </button>
+      </ion-col>
+    </ion-row>
+  </div>
+</ion-content>

@@ -1,0 +1,70 @@
+{
+    "status": "success",
+    "data": [
+        {
+            "id": 112127,
+            "user_id": "XX0000",
+            "parent_trigger": null,
+            "type": "single",
+            "created_at": "2019-09-12 13:25:16",
+            "updated_at": "2019-09-12 13:25:16",
+            "expires_at": "2020-09-12 13:25:16",
+            "day_change": 22.32,
+            "day_change_percentage": 0.23,
+            "status": "Pending",
+            
+            "orders": [
+                {
+                    "exchange": "NSE",
+                    "tradingsymbol": "TCS",
+                    "product": "Cover",
+                    "order_type": "LIMIT",
+                    "transaction_type": "BUY",
+                    "quantity": 0,
+                    "price": 3251.65,
+                    "user_price":3250.00,
+                    "result": null
+                }
+            ],
+            "meta": {}
+        },
+        {
+            "id": 112127,
+            "user_id": "XX0000",
+            "parent_trigger": null,
+            "type": "single",
+            "created_at": "2019-09-12 13:25:16",
+            "updated_at": "2019-09-12 13:25:16",
+            "expires_at": "2020-09-12 13:25:16",
+            "day_change": 22.32,
+            "day_change_percentage": 0.23,
+            "status": "Executed",
+            "condition": {
+                "quantity":0,
+                "exchange": "NSE",
+                "status":"Pending",
+                "last_price": 798,
+                "tradingsymbol": "INFY",
+                "trigger_values": [
+                    3240.00
+                ],
+                "instrument_token": 408065
+            },
+            "orders": [
+                {
+                    "exchange": "NSE",
+                    "tradingsymbol": "TCS",
+                    "product": "Cover",
+                    "order_type": "LIMIT",
+                    "transaction_type": "BUY",
+                    "quantity": 10,
+                    "live_price": 3251.65,
+                    "user_price":3250,
+                    "result": null
+                }
+            ],
+            "meta": {}
+        }
+       
+    ]
+}

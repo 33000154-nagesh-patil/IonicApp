@@ -1,0 +1,1901 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>rsm documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">rsm documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  GoldInvestmentDetailsComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>projects/gold-investment-details/src/lib/gold-investment-details.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>lib-goldInvestmentDetails</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./gold-investment-details.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./gold-investment-details.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#_currentUserGoldData" >_currentUserGoldData</a>
+                            </li>
+                            <li>
+                                <a href="#_currentUserSilverData" >_currentUserSilverData</a>
+                            </li>
+                            <li>
+                                <a href="#currentFetcherModule" >currentFetcherModule</a>
+                            </li>
+                            <li>
+                                <a href="#currentInvestmentDetails" >currentInvestmentDetails</a>
+                            </li>
+                            <li>
+                                <a href="#getCurrentDigiType" >getCurrentDigiType</a>
+                            </li>
+                            <li>
+                                <a href="#isKYCCompleted" >isKYCCompleted</a>
+                            </li>
+                            <li>
+                                <a href="#listOfKYC" >listOfKYC</a>
+                            </li>
+                            <li>
+                                <a href="#loginCustomerGuId" >loginCustomerGuId</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#modalController" >modalController</a>
+                            </li>
+                            <li>
+                                <a href="#showModal" >showModal</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#getCurrentKYCData" >getCurrentKYCData</a>
+                            </li>
+                            <li>
+                                <a href="#getOfferingId" >getOfferingId</a>
+                            </li>
+                            <li>
+                                <a href="#investGold" >investGold</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#openDetailPage" >openDetailPage</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#openKYCModal" >openKYCModal</a>
+                            </li>
+                            <li>
+                                <a href="#openModal" >openModal</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#openOrderList" >openOrderList</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#openOrderPopup" >openOrderPopup</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#openPaymentPopUp" >openPaymentPopUp</a>
+                            </li>
+                            <li>
+                                <a href="#redirectToPage" >redirectToPage</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Inputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#currentCountry" >currentCountry</a>
+                            </li>
+                            <li>
+                                <a href="#currentDigiData" >currentDigiData</a>
+                            </li>
+                            <li>
+                                <a href="#currentDigiDataOrderList" >currentDigiDataOrderList</a>
+                            </li>
+                            <li>
+                                <a href="#currentDigiType" >currentDigiType</a>
+                            </li>
+                            <li>
+                                <a href="#currentProductDatalib" >currentProductDatalib</a>
+                            </li>
+                            <li>
+                                <a href="#currentUserGoldData" >currentUserGoldData</a>
+                            </li>
+                            <li>
+                                <a href="#currentUserSilverData" >currentUserSilverData</a>
+                            </li>
+                            <li>
+                                <a href="#errorList" >errorList</a>
+                            </li>
+                            <li>
+                                <a href="#goldSilverData" >goldSilverData</a>
+                            </li>
+                            <li>
+                                <a href="#imageList" >imageList</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <h6><b>Accessors</b></h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <ul class="index-list">
+                                <li>
+                                    <a href="#currentUserGoldData" >currentUserGoldData</a>
+                                </li>
+                                <li>
+                                    <a href="#currentUserSilverData" >currentUserSilverData</a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(commonService: <a href="../injectables/CommonService.html" target="_self">CommonService</a>, modalController: ModalController, loaderService: <a href="../injectables/LoaderService.html" target="_self">LoaderService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="46" class="link-to-prism">projects/gold-investment-details/src/lib/gold-investment-details.component.ts:46</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>commonService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/CommonService.html" target="_self" >CommonService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>modalController</td>
+                                                  
+                                                        <td>
+                                                                    <code>ModalController</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>loaderService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/LoaderService.html" target="_self" >LoaderService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    <h3 id="inputs">Inputs</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="currentCountry"></a>
+                        <b>currentCountry</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">projects/gold-investment-details/src/lib/gold-investment-details.component.ts:22</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="currentDigiData"></a>
+                        <b>currentDigiData</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">projects/gold-investment-details/src/lib/gold-investment-details.component.ts:20</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="currentDigiDataOrderList"></a>
+                        <b>currentDigiDataOrderList</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">projects/gold-investment-details/src/lib/gold-investment-details.component.ts:23</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="currentDigiType"></a>
+                        <b>currentDigiType</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">projects/gold-investment-details/src/lib/gold-investment-details.component.ts:18</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="currentProductDatalib"></a>
+                        <b>currentProductDatalib</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="21" class="link-to-prism">projects/gold-investment-details/src/lib/gold-investment-details.component.ts:21</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="currentUserGoldData"></a>
+                        <b>currentUserGoldData</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">projects/gold-investment-details/src/lib/gold-investment-details.component.ts:29</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="currentUserSilverData"></a>
+                        <b>currentUserSilverData</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">projects/gold-investment-details/src/lib/gold-investment-details.component.ts:36</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="errorList"></a>
+                        <b>errorList</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">projects/gold-investment-details/src/lib/gold-investment-details.component.ts:17</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="goldSilverData"></a>
+                        <b>goldSilverData</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">projects/gold-investment-details/src/lib/gold-investment-details.component.ts:24</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="imageList"></a>
+                        <b>imageList</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">projects/gold-investment-details/src/lib/gold-investment-details.component.ts:19</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getCurrentKYCData"></a>
+                    <span class="name">
+                        <span ><b>getCurrentKYCData</b></span>
+                        <a href="#getCurrentKYCData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getCurrentKYCData(type)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="199"
+                            class="link-to-prism">projects/gold-investment-details/src/lib/gold-investment-details.component.ts:199</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>type</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getOfferingId"></a>
+                    <span class="name">
+                        <span ><b>getOfferingId</b></span>
+                        <a href="#getOfferingId"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getOfferingId(type)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="70"
+                            class="link-to-prism">projects/gold-investment-details/src/lib/gold-investment-details.component.ts:70</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>type</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="investGold"></a>
+                    <span class="name">
+                        <span ><b>investGold</b></span>
+                        <a href="#investGold"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>investGold()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="99"
+                            class="link-to-prism">projects/gold-investment-details/src/lib/gold-investment-details.component.ts:99</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="49"
+                            class="link-to-prism">projects/gold-investment-details/src/lib/gold-investment-details.component.ts:49</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="openDetailPage"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>openDetailPage</b></span>
+                        <a href="#openDetailPage"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>openDetailPage()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="206"
+                            class="link-to-prism">projects/gold-investment-details/src/lib/gold-investment-details.component.ts:206</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>unknown</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="openKYCModal"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>openKYCModal</b></span>
+                        <a href="#openKYCModal"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>openKYCModal()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="134"
+                            class="link-to-prism">projects/gold-investment-details/src/lib/gold-investment-details.component.ts:134</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>unknown</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="openModal"></a>
+                    <span class="name">
+                        <span ><b>openModal</b></span>
+                        <a href="#openModal"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>openModal()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="95"
+                            class="link-to-prism">projects/gold-investment-details/src/lib/gold-investment-details.component.ts:95</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="openOrderList"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>openOrderList</b></span>
+                        <a href="#openOrderList"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>openOrderList()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="179"
+                            class="link-to-prism">projects/gold-investment-details/src/lib/gold-investment-details.component.ts:179</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>unknown</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="openOrderPopup"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>openOrderPopup</b></span>
+                        <a href="#openOrderPopup"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>openOrderPopup()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="109"
+                            class="link-to-prism">projects/gold-investment-details/src/lib/gold-investment-details.component.ts:109</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>unknown</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="openPaymentPopUp"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>openPaymentPopUp</b></span>
+                        <a href="#openPaymentPopUp"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>openPaymentPopUp(data)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="157"
+                            class="link-to-prism">projects/gold-investment-details/src/lib/gold-investment-details.component.ts:157</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>data</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>unknown</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="redirectToPage"></a>
+                    <span class="name">
+                        <span ><b>redirectToPage</b></span>
+                        <a href="#redirectToPage"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>redirectToPage(e)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="202"
+                            class="link-to-prism">projects/gold-investment-details/src/lib/gold-investment-details.component.ts:202</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>e</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_currentUserGoldData"></a>
+                    <span class="name">
+                        <span ><b>_currentUserGoldData</b></span>
+                        <a href="#_currentUserGoldData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">projects/gold-investment-details/src/lib/gold-investment-details.component.ts:15</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_currentUserSilverData"></a>
+                    <span class="name">
+                        <span ><b>_currentUserSilverData</b></span>
+                        <a href="#_currentUserSilverData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">projects/gold-investment-details/src/lib/gold-investment-details.component.ts:16</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="currentFetcherModule"></a>
+                    <span class="name">
+                        <span ><b>currentFetcherModule</b></span>
+                        <a href="#currentFetcherModule"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="41" class="link-to-prism">projects/gold-investment-details/src/lib/gold-investment-details.component.ts:41</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="currentInvestmentDetails"></a>
+                    <span class="name">
+                        <span ><b>currentInvestmentDetails</b></span>
+                        <a href="#currentInvestmentDetails"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="45" class="link-to-prism">projects/gold-investment-details/src/lib/gold-investment-details.component.ts:45</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getCurrentDigiType"></a>
+                    <span class="name">
+                        <span ><b>getCurrentDigiType</b></span>
+                        <a href="#getCurrentDigiType"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">projects/gold-investment-details/src/lib/gold-investment-details.component.ts:40</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isKYCCompleted"></a>
+                    <span class="name">
+                        <span ><b>isKYCCompleted</b></span>
+                        <a href="#isKYCCompleted"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="43" class="link-to-prism">projects/gold-investment-details/src/lib/gold-investment-details.component.ts:43</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="listOfKYC"></a>
+                    <span class="name">
+                        <span ><b>listOfKYC</b></span>
+                        <a href="#listOfKYC"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">projects/gold-investment-details/src/lib/gold-investment-details.component.ts:42</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="loginCustomerGuId"></a>
+                    <span class="name">
+                        <span ><b>loginCustomerGuId</b></span>
+                        <a href="#loginCustomerGuId"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="44" class="link-to-prism">projects/gold-investment-details/src/lib/gold-investment-details.component.ts:44</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="modalController"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>modalController</b></span>
+                        <a href="#modalController"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>ModalController</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="47" class="link-to-prism">projects/gold-investment-details/src/lib/gold-investment-details.component.ts:47</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showModal"></a>
+                    <span class="name">
+                        <span ><b>showModal</b></span>
+                        <a href="#showModal"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="46" class="link-to-prism">projects/gold-investment-details/src/lib/gold-investment-details.component.ts:46</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="accessors">
+        Accessors
+    </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="currentUserGoldData"></a>
+                        <span class="name"><b>currentUserGoldData</b><a href="#currentUserGoldData"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>currentUserGoldData()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">projects/gold-investment-details/src/lib/gold-investment-details.component.ts:26</a></div>
+                                </td>
+                            </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>set</b><code>currentUserGoldData(value: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">projects/gold-investment-details/src/lib/gold-investment-details.component.ts:29</a></div>
+                                </td>
+                            </tr>
+                    <tr>
+                        <td class="col-md-4">
+
+                                <div class="io-description">
+                                        <b>Parameters :</b>
+                                        <table class="params">
+                                            <thead>
+                                                <tr>
+                                                    <td>Name</td>
+                                                        <td>Type</td>
+                                                    <td>Optional</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                    <tr>
+                                                            <td>value</td>
+                                                    
+                                                            <td>
+                                                                            <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                                            </td>
+                                                    
+                                                        <td>
+                                                                No
+                                                        </td>
+                                                        
+                                                    </tr>
+                                            </tbody>
+                                        </table>
+                                </div>
+                                <div>
+                                </div>
+                                <div class="io-description">
+                                    <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                                </div>
+                        </td>
+                    </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="currentUserSilverData"></a>
+                        <span class="name"><b>currentUserSilverData</b><a href="#currentUserSilverData"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>currentUserSilverData()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">projects/gold-investment-details/src/lib/gold-investment-details.component.ts:33</a></div>
+                                </td>
+                            </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>set</b><code>currentUserSilverData(value: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">projects/gold-investment-details/src/lib/gold-investment-details.component.ts:36</a></div>
+                                </td>
+                            </tr>
+                    <tr>
+                        <td class="col-md-4">
+
+                                <div class="io-description">
+                                        <b>Parameters :</b>
+                                        <table class="params">
+                                            <thead>
+                                                <tr>
+                                                    <td>Name</td>
+                                                        <td>Type</td>
+                                                    <td>Optional</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                    <tr>
+                                                            <td>value</td>
+                                                    
+                                                            <td>
+                                                                            <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                                            </td>
+                                                    
+                                                        <td>
+                                                                No
+                                                        </td>
+                                                        
+                                                    </tr>
+                                            </tbody>
+                                        </table>
+                                </div>
+                                <div>
+                                </div>
+                                <div class="io-description">
+                                    <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                                </div>
+                        </td>
+                    </tr>
+            </tbody>
+        </table>
+</section>
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, Input, OnInit } from &#x27;@angular/core&#x27;;
+import { CommonService } from &#x27;projects/core/src/lib/services/common.service&#x27;;
+import { ModalController } from &#x27;@ionic/angular&#x27;;
+import { LoaderService } from &#x27;projects/core/src/lib/services/loader.service&#x27;;
+import { KycGoldComponent } from &#x27;projects/gold-investment-details/components/kyc-gold/kyc-gold.component&#x27;;
+import { BuySellComponent } from &#x27;projects/gold-investment-details/components/buy-sell/buy-sell.component&#x27;;
+import { PaymentConfirmationComponent } from &#x27;projects/gold-investment-details/components/payment-confirmation/payment-confirmation.component&#x27;;
+import { InvestmentDetailsTransactionComponent } from &#x27;projects/gold-investment-details/components/investment-details-transaction/investment-details-transaction.component&#x27;;
+@Component({
+  selector: &#x27;lib-goldInvestmentDetails&#x27;,
+  templateUrl: &#x27;./gold-investment-details.component.html&#x27;,
+  styleUrls: [&#x27;./gold-investment-details.component.scss&#x27;],
+})
+export class GoldInvestmentDetailsComponent implements OnInit {
+  _currentUserGoldData:any;
+  _currentUserSilverData:any;
+@Input() errorList:any;
+@Input() currentDigiType:any;
+@Input() imageList:any;
+@Input() currentDigiData:any;
+@Input() currentProductDatalib:any;
+@Input() currentCountry:any;
+@Input() currentDigiDataOrderList:any;
+@Input() goldSilverData:any;
+
+get currentUserGoldData(): any {
+  return this._currentUserGoldData;
+}
+@Input() set currentUserGoldData(value: any) {
+  console.log(&quot;_currentUserGoldData&quot;,value)
+  this._currentUserGoldData &#x3D; value;
+}
+get currentUserSilverData(): any {
+  return this._currentUserSilverData;
+}
+@Input() set currentUserSilverData(value: any) {
+  console.log(&quot;_currentUserGoldData&quot;,value)
+  this._currentUserSilverData &#x3D; value;
+}
+getCurrentDigiType:any;
+currentFetcherModule:any;
+listOfKYC:any;
+isKYCCompleted:any &#x3D; false;
+loginCustomerGuId:any;
+currentInvestmentDetails:any;
+showModal:any &#x3D; false;
+  constructor(private commonService:CommonService,public modalController: ModalController,private loaderService:LoaderService) { }
+
+  ngOnInit() {
+    console.log(&quot;currentDigiData&quot;,this.currentDigiData)
+    console.log(&quot;goldSilverData&quot;,this.goldSilverData)
+    this.commonService.getDigiType().subscribe((data:any)&#x3D;&gt;{
+      this.getCurrentDigiType &#x3D; data;
+      this.getOfferingId(data);
+    })
+
+
+    this.loginCustomerGuId &#x3D; localStorage.getItem(&#x27;CustGuId&#x27;)
+    if(!this.loginCustomerGuId){
+      this.commonService.getCustomerGuID().subscribe((data:any)&#x3D;&gt;{
+        if(data){
+          this.loginCustomerGuId &#x3D; data;
+        }
+      })
+    }
+    if(this.goldSilverData){
+    this.goldSilverData &#x3D; this.goldSilverData.filter(x&#x3D;&gt;x.type&#x3D;&#x3D;this.currentDigiType)
+    }
+  }
+  getOfferingId(type){
+    console.log(&quot;type&quot;,type)
+    this.commonService.getOfferListData().subscribe((data:any)&#x3D;&gt;{
+      console.log(&quot;getFetchParentModule&quot;,data)
+      if(data &amp;&amp; data?.OfferList &amp;&amp; data?.OfferList.length &gt; 0){
+        let localCurrentModule &#x3D; data.OfferList.filter(x &#x3D;&gt; x?.Offering &#x3D;&#x3D; type);
+        if(localCurrentModule &amp;&amp; localCurrentModule.length &gt;0){
+          console.log(&quot;localCurrentModule&quot;,localCurrentModule)
+          this.currentFetcherModule &#x3D; localCurrentModule[0]
+        }
+
+      }
+    })
+    this.commonService.getGetOfferingDocList().subscribe((data:any)&#x3D;&gt;{
+      console.log(&quot;getGetOfferingDocList&quot;,data)
+      if(data &amp;&amp; data?.length &gt; 0){
+
+        this.listOfKYC &#x3D; data;
+        let localKYCObject &#x3D; this.listOfKYC.filter(x &#x3D;&gt;(x?.Offering &#x3D;&#x3D; type &amp;&amp; x?.IsCompleted &#x3D;&#x3D; &#x27;False&#x27;));
+        if(localKYCObject &amp;&amp; localKYCObject.length &#x3D;&#x3D; 0){
+          this.isKYCCompleted &#x3D; true
+        }
+      }
+    })
+  }
+  openModal(){
+    this.showModal &#x3D; !this.showModal;
+    console.log(&quot;this.showModal&quot;,this.showModal)
+  }
+  investGold(){
+    console.log(&quot;iskyc&quot;)
+    if(this.isKYCCompleted){
+      this.openOrderPopup();
+    }else{
+      this.openKYCModal();
+    }
+    //this.openPaymentPopUp({ &#x27;currentAmount&#x27;:&#x27;1000&#x27;,&#x27;currentData&#x27;:{&#x27;Title&#x27;:&#x27;AugMont Digital Gold&#x27;,&#x27;Date&#x27;:new Date(),&#x27;Units&#x27;:&#x27;0.21&#x27;,&#x27;TotalPrice&#x27;:&#x27;4632&#x27;,&#x27;TransactionType&#x27;:&#x27;Buy&#x27;,&#x27;TransactionID&#x27;:&#x27;A-hm-Fh-347892&#x27;,&#x27;GSTPrice&#x27;:&#x27;3&#x27;}})
+  }
+
+  async openOrderPopup(){
+    this.loaderService.showLoader();
+    const modal &#x3D; await this.modalController.create({
+      component: BuySellComponent,
+      componentProps: {
+        &#x27;currentData&#x27;:this.currentProductDatalib?.productDetails,
+        &#x27;imageList&#x27;:this.imageList,
+        &#x27;currentCountry&#x27;:this.currentCountry,
+        &#x27;errorList&#x27;:this.errorList,
+        &#x27;type&#x27;:&#x27;buy&#x27;,
+        &#x27;paymentWay&#x27;:&#x27;nondirect&#x27;,
+        &quot;listIdData&quot;:{&#x27;CustGuId&#x27;:this.loginCustomerGuId,&#x27;currentModuleData&#x27;:this.currentFetcherModule}
+      },
+      backdropDismiss:false
+    });
+    modal.onDidDismiss()
+    .then((data) &#x3D;&gt; {
+      if(data &amp;&amp; data?.data){
+        this.openPaymentPopUp(data?.data)
+      }
+    });
+    this.loaderService.hideLoader();
+    return await modal.present();
+  }
+
+  async openKYCModal(){
+    this.loaderService.showLoader();
+    const modal &#x3D; await this.modalController.create({
+      component: KycGoldComponent,
+      componentProps: {
+        &#x27;panCardKYC&#x27;:this.getCurrentKYCData(&quot;PAN&quot;),
+        &#x27;bankKYC&#x27;:this.getCurrentKYCData(&quot;Cheque&quot;),
+        &#x27;imageList&#x27;:this.imageList,
+        &#x27;errorList&#x27;:this.errorList,
+        &#x27;currentModuleType&#x27;:this.currentFetcherModule,
+        &#x27;loginCustomerGuId&#x27;:this.loginCustomerGuId
+      },
+      backdropDismiss:false
+    });
+    modal.onDidDismiss()
+    .then((data) &#x3D;&gt; {
+      if(data &amp;&amp; data?.data){
+        this.openOrderPopup();
+      }
+    });
+    this.loaderService.hideLoader();
+    return await modal.present();
+  }
+  async openPaymentPopUp(data){
+    this.loaderService.showLoader();
+    const modal &#x3D; await this.modalController.create({
+      component: PaymentConfirmationComponent,
+      componentProps: {
+        &#x27;transactionData&#x27;:data,
+        &#x27;imageList&#x27;:this.imageList,
+        &#x27;currentCountry&#x27;:this.currentCountry,
+        &#x27;errorList&#x27;:this.errorList,
+      },
+      backdropDismiss:false
+    });
+    modal.onDidDismiss()
+    .then((data) &#x3D;&gt; {
+      if(data &amp;&amp; data?.data){
+        console.log(&quot;openOrderList&quot;)
+        this.openOrderList();
+      }
+    });
+    this.loaderService.hideLoader();
+    return await modal.present();
+  }
+  async openOrderList(){
+    this.loaderService.showLoader();
+    const modal &#x3D; await this.modalController.create({
+      component: InvestmentDetailsTransactionComponent,
+      componentProps: {
+        &#x27;imageList&#x27;:this.imageList,
+        &#x27;currentCountry&#x27;:this.currentCountry,
+        &#x27;errorList&#x27;:this.errorList,
+        &quot;investmentDetails&quot;:this.getCurrentDigiType &#x3D;&#x3D; &quot;Gold&quot;?this._currentUserGoldData:this.getCurrentDigiType &#x3D;&#x3D; &quot;Silver&quot;?this._currentUserSilverData:&#x27;&#x27;
+      },
+      backdropDismiss:false
+    });
+    modal.onDidDismiss()
+    .then((data) &#x3D;&gt; {
+      if(data &amp;&amp; data?.data){
+      }
+    });
+    this.loaderService.hideLoader();
+    return await modal.present();
+  }
+  getCurrentKYCData(type){
+    return this.listOfKYC?this.listOfKYC.filter(x &#x3D;&gt; x?.Document &#x3D;&#x3D; type):[]
+  }
+  redirectToPage(e){
+    this.openDetailPage()
+  }
+
+  async openDetailPage(){
+    this.loaderService.showLoader();
+    const modal &#x3D; await this.modalController.create({
+      component: InvestmentDetailsTransactionComponent,
+      componentProps: {
+        &#x27;imageList&#x27;:this.imageList,
+        &#x27;currentCountry&#x27;:this.currentCountry,
+        &#x27;errorList&#x27;:this.errorList,
+        &quot;investmentDetails&quot;:this.getCurrentDigiType &#x3D;&#x3D; &quot;Gold&quot;?this._currentUserGoldData:this.getCurrentDigiType &#x3D;&#x3D; &quot;Silver&quot;?this._currentUserSilverData:&#x27;&#x27;
+      },
+      backdropDismiss:false
+    });
+    modal.onDidDismiss()
+    .then((data) &#x3D;&gt; {
+      if(data &amp;&amp; data?.data){
+      }
+    });
+    this.loaderService.hideLoader();
+    return await modal.present();
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">
+&lt;app-investment-details [currentDigiData]&#x3D;&quot;currentDigiData&quot; [goldSilverData]&#x3D;&quot;goldSilverData&quot; [currentCountry]&#x3D;&quot;currentCountry&quot; [imageList]&#x3D;&quot;imageList&quot; (sendToDetailPage)&#x3D;&quot;redirectToPage($event)&quot; [currentInvestmentDetails]&#x3D;&quot;getCurrentDigiType &#x3D;&#x3D; &#x27;Gold&#x27;?_currentUserGoldData:_currentUserSilverData&quot;&gt;&lt;/app-investment-details&gt;
+&lt;div *ngIf&#x3D;&quot;showModal&quot;&gt;
+  &lt;lib-custom-modal [imageList]&#x3D;&quot;imageList&quot; [moduleView]&#x3D;&quot;&#x27;gold&#x27;&quot;&gt;&lt;/lib-custom-modal&gt;
+  &lt;/div&gt;
+  &lt;ion-grid&gt;
+    &lt;ion-row&gt;
+        &lt;ion-col [size]&#x3D;&quot;&#x27;2&#x27;&quot; (click)&#x3D;&quot;openModal()&quot;&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn custButtonOutLine custColorBrightCyan custButtonHeight custBackgroundColorWhite&quot;&gt;
+                &lt;img [src]&#x3D;&quot;showModal?imageList?.closePopUpIcon:imageList?.addIcon&quot; class&#x3D;&quot;custAddIconHeight&quot;&gt;
+            &lt;/button&gt;
+        &lt;/ion-col&gt;
+        &lt;ion-col [size]&#x3D;&quot;&#x27;10&#x27;&quot;&gt;
+            &lt;button class&#x3D;&quot;btn h-100 w-100 custBackgroundColorParakeetGreen&quot; (click)&#x3D;&quot;investGold()&quot;&gt;
+                &lt;span class&#x3D;&quot;custColorWhite custFontFamilyMuliBold muli-16pt&quot;&gt;{{&#x27;investNow&#x27; | translate}}&lt;/span&gt;
+            &lt;/button&gt;
+        &lt;/ion-col&gt;
+    &lt;/ion-row&gt;
+  &lt;/ion-grid&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./gold-investment-details.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss"></code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><app-investment-details [currentDigiData]="currentDigiData" [goldSilverData]="goldSilverData" [currentCountry]="currentCountry" [imageList]="imageList" (sendToDetailPage)="redirectToPage($event)" [currentInvestmentDetails]="getCurrentDigiType == \'Gold\'?_currentUserGoldData:_currentUserSilverData"></app-investment-details><div *ngIf="showModal">  <lib-custom-modal [imageList]="imageList" [moduleView]="\'gold\'"></lib-custom-modal>  </div>  <ion-grid>    <ion-row>        <ion-col [size]="\'2\'" (click)="openModal()">            <button type="button" class="btn custButtonOutLine custColorBrightCyan custButtonHeight custBackgroundColorWhite">                <img [src]="showModal?imageList?.closePopUpIcon:imageList?.addIcon" class="custAddIconHeight">            </button>        </ion-col>        <ion-col [size]="\'10\'">            <button class="btn h-100 w-100 custBackgroundColorParakeetGreen" (click)="investGold()">                <span class="custColorWhite custFontFamilyMuliBold muli-16pt">{{\'investNow\' | translate}}</span>            </button>        </ion-col>    </ion-row>  </ion-grid></div>'
+    var COMPONENTS = [{'name': 'AadharOnboardKycComponent', 'selector': 'app-aadhar-onboard-kyc'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'BankDetailsComponent', 'selector': 'lib-bank-details'},{'name': 'BuySellComponent', 'selector': 'app-buy-sell'},{'name': 'ContainerViewPage', 'selector': 'app-container-view'},{'name': 'CoreComponent', 'selector': 'lib-core'},{'name': 'CustomModalComponent', 'selector': 'lib-custom-modal'},{'name': 'DashboardPage', 'selector': 'app-dashboard'},{'name': 'DigiLockerAadharComponent', 'selector': 'app-digi-locker-aadhar'},{'name': 'EducationCategoryDashboardComponent', 'selector': 'app-education-category-dashboard'},{'name': 'EducationComponent', 'selector': 'lib-education'},{'name': 'EducationPage', 'selector': 'app-education'},{'name': 'EsignComponent', 'selector': 'app-esign'},{'name': 'ExchangeSelectionComponent', 'selector': 'app-exchange-selection'},{'name': 'ExploreFundsComponent', 'selector': 'app-explore-funds'},{'name': 'FabButtonComponent', 'selector': 'lib-fab-button'},{'name': 'FooterComponent', 'selector': 'lib-footer'},{'name': 'GoldComponent', 'selector': 'lib-gold'},{'name': 'GoldDashboardComponent', 'selector': 'lib-gold-dashboard'},{'name': 'GoldInvestmentDashboardComponent', 'selector': 'lib-gold-investment-dashboard'},{'name': 'GoldInvestmentDetailsComponent', 'selector': 'lib-goldInvestmentDetails'},{'name': 'GoldInvestmentDetailsPage', 'selector': 'app-gold-investment-details'},{'name': 'GoldPage', 'selector': 'app-gold'},{'name': 'HeaderComponent', 'selector': 'lib-header'},{'name': 'HealthCategoryComponent', 'selector': 'lib-health-category'},{'name': 'HealthComponent', 'selector': 'lib-health'},{'name': 'HealthPage', 'selector': 'app-health'},{'name': 'IncomeProofComponent', 'selector': 'app-income-proof'},{'name': 'InformationComponent', 'selector': 'lib-information'},{'name': 'IntroComponent', 'selector': 'lib-intro'},{'name': 'InvestmentDetailsComponent', 'selector': 'app-investment-details'},{'name': 'InvestmentDetailsTransactionComponent', 'selector': 'app-investment-details-transaction'},{'name': 'InvestmentPlanningComponent', 'selector': 'lib-investment-planning'},{'name': 'InvestmentPlanningTrackComponent', 'selector': 'lib-investment-planning-track'},{'name': 'InvestmentPlanningTransactComponent', 'selector': 'lib-investment-planning-transact'},{'name': 'InvestSIPComponent', 'selector': 'lib-invest-sip'},{'name': 'KycGoldComponent', 'selector': 'app-kyc-gold'},{'name': 'KycStepsMFComponent', 'selector': 'app-kyc-steps-mf'},{'name': 'LifestyleComponent', 'selector': 'lib-lifestyle'},{'name': 'LifestylePage', 'selector': 'app-lifestyle'},{'name': 'LoginAuthenticationComponent', 'selector': 'lib-login-authentication'},{'name': 'LoginListComponent', 'selector': 'lib-loginList'},{'name': 'LoginPage', 'selector': 'app-login'},{'name': 'ManuallySignComponent', 'selector': 'app-manually-sign'},{'name': 'MutualFundsComponent', 'selector': 'lib-mutualFunds'},{'name': 'MutualFundsPage', 'selector': 'app-mutual-funds'},{'name': 'NameAddressDetailsComponent', 'selector': 'app-name-address-details'},{'name': 'NomineeDetailsComponent', 'selector': 'app-nominee-details'},{'name': 'NsdlComponent', 'selector': 'app-nsdl'},{'name': 'OrderDetailsComponent', 'selector': 'app-order-details'},{'name': 'OrdersComponent', 'selector': 'app-orders'},{'name': 'PanadharComponent', 'selector': 'lib-panadhar'},{'name': 'PanCardComponent', 'selector': 'lib-pan-card'},{'name': 'PaymentConfirmationComponent', 'selector': 'app-payment-confirmation'},{'name': 'PersonalDetailsComponent', 'selector': 'app-personal-details'},{'name': 'PlanningRecommendedModalComponent', 'selector': 'lib-planning-recommended-modal'},{'name': 'PlanningTrackModalComponent', 'selector': 'lib-planning-track-modal'},{'name': 'PlanningTranslateModalComponent', 'selector': 'lib-planning-translate-modal'},{'name': 'PortfolioInsigthsComponent', 'selector': 'lib-portfolioInsigths'},{'name': 'PreviewImageComponent', 'selector': 'app-preview-image'},{'name': 'ProductDetailsComponent', 'selector': 'lib-productDetails'},{'name': 'ProductDetailsPage', 'selector': 'app-product-details'},{'name': 'ProductListComponent', 'selector': 'lib-product-list'},{'name': 'SelfieVerificationComponent', 'selector': 'app-selfie-verification'},{'name': 'SignatureUploadComponent', 'selector': 'app-signature-upload'},{'name': 'SignInComponent', 'selector': 'lib-sign-in'},{'name': 'SplashScreenComponent', 'selector': 'lib-splash-screen'},{'name': 'StepeerOnbordingComponent', 'selector': 'app-stepeer-onbording'},{'name': 'StocksComponent', 'selector': 'lib-stocks'},{'name': 'StocksPage', 'selector': 'app-stocks'},{'name': 'SubmenuComponent', 'selector': 'lib-submenu'},{'name': 'UpdateProfileComponent', 'selector': 'app-update-profile'},{'name': 'UploadAadharPanComponent', 'selector': 'app-upload-aadhar-pan'},{'name': 'VerificationCodeComponent', 'selector': 'lib-verification-code'},{'name': 'WealthRoboAdvisoryComponent', 'selector': 'lib-wealthRoboAdvisory'},{'name': 'WealthRoboAdvisoryPage', 'selector': 'app-wealth-robo-advisory'},{'name': 'WealthWellnessComponent', 'selector': 'lib-wealthWellness'},{'name': 'WebCamComponent', 'selector': 'web-cam'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'GoldInvestmentDetailsComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'GoldInvestmentDetailsComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

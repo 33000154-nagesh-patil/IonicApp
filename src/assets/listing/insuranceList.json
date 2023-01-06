@@ -1,0 +1,120 @@
+{
+    "": {
+        "heading": {
+            "heading": "Explore Various Insurance",
+            "discription": "Discover various insurance types"
+        },
+        "grid": [
+            {
+                "icons": "assets/icon/genUmbrella.svg",
+                "tagName": "Health Insurance"
+            },
+            {
+                "icons": "assets/icon/lifeInsurance.svg",
+                "tagName": "Car Insurance"
+            },
+            {
+                "icons": "assets/icon/healthcare.svg",
+                "tagName": "Two Wheeler Insurance"
+            },
+            {
+                "icons": "assets/icon/TermInsurace.svg",
+                "tagName": "Travel Insurance"
+            },
+            {
+                "icons": "assets/icon/travelnsurance.svg",
+                "tagName": "Term Insurance"
+            },
+            {
+                "icons": "assets/icon/otherInsurance.svg",
+                "tagName": "Other Insurance"
+            }
+        ],
+        "card": [
+            {
+                "title": "Health Insurance",
+                "row1": {
+                    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjwR_qwwP-PgM2uGa5crh8YvIhpV_yc7LNXA&usqp=CAU",
+                    "title": "Supra Super Top - up",
+                    "action": "assets/icon/leftArrowIcon.svg"
+                },
+                "row2": {
+                    "col1": "Sum Assured",
+                    "val1": "₹30000.00",
+                    "col2": "Premium",
+                    "val2": "₹2,125.00"
+                }
+            },
+            {
+                "title": "Car Insurance",
+                "row1": {
+                    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjwR_qwwP-PgM2uGa5crh8YvIhpV_yc7LNXA&usqp=CAU",
+                    "title": "Supra Super Top - up",
+                    "action": "assets/icon/leftArrowIcon.svg"
+                },
+                "row2": {
+                    "col1": "Sum Assured",
+                    "val1": "₹30000.00",
+                    "col2": "Premium",
+                    "val2": "₹2,125.00"
+                }
+            },
+            {
+                "title": "Two Wheeler Insurance",
+                "row1": {
+                    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjwR_qwwP-PgM2uGa5crh8YvIhpV_yc7LNXA&usqp=CAU",
+                    "title": "Supra Super Top - up",
+                    "action": "assets/icon/leftArrowIcon.svg"
+                },
+                "row2": {
+                    "col1": "Sum Assured",
+                    "val1": "₹30000.00",
+                    "col2": "Premium",
+                    "val2": "₹2,125.00"
+                }
+            },
+            {
+                "title": "Travel Insurance",
+                "row1": {
+                    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjwR_qwwP-PgM2uGa5crh8YvIhpV_yc7LNXA&usqp=CAU",
+                    "title": "Supra Super Top - up",
+                    "action": "assets/icon/leftArrowIcon.svg"
+                },
+                "row2": {
+                    "col1": "Sum Assured",
+                    "val1": "₹30000.00",
+                    "col2": "Premium",
+                    "val2": "₹2,125.00"
+                }
+            },
+            {
+                "title": "Term Insurance",
+                "row1": {
+                    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjwR_qwwP-PgM2uGa5crh8YvIhpV_yc7LNXA&usqp=CAU",
+                    "title": "Supra Super Top - up",
+                    "action": "assets/icon/leftArrowIcon.svg"
+                },
+                "row2": {
+                    "col1": "Sum Assured",
+                    "val1": "₹30000.00",
+                    "col2": "Premium",
+                    "val2": "₹2,125.00"
+                }
+            },
+            {
+                "title": "Other Insurance",
+                "row1": {
+                    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjwR_qwwP-PgM2uGa5crh8YvIhpV_yc7LNXA&usqp=CAU",
+                    "title": "Supra Super Top - up",
+                    "action": "assets/icon/leftArrowIcon.svg"
+                },
+                "row2": {
+                    "col1": "Sum Assured",
+                    "val1": "₹30000.00",
+                    "col2": "Premium",
+                    "val2": "₹2,125.00"
+                }
+            }
+        ]
+    }
+}

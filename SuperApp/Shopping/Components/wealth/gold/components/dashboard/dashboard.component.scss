@@ -1,0 +1,43 @@
+.custInvestArrow{
+    height: 50%;
+    width: 25px;
+    transform: rotate(90deg);
+    
+}
+.custRotation{
+    transform: rotate(90deg);
+}
+
+.mat-expansion-panel-header {
+    height: 110px;
+}
+
+.custContent{
+    padding: 0 -24px -16px !important;
+    --padding: 0 -24px -16px !important;
+}
+.mat-expansion-panel-body {
+    --padding: 0;
+}
+
+::ng-deep .mat-expansion-indicator::after {
+  
+
+    color: #003399 ;
+}
+
+.custBody{
+background-color: #4e6de6;
+}
+
+.custHeight {
+    height: 60px;
+}
+
+.mrginTop {
+    margin-top: -10px;
+}
+ion-segment-button {
+    // --background-checked: var(--ion-color-success);
+    --color-checked:var(--custDarkishBlue);
+  }

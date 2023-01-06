@@ -1,0 +1,71 @@
+{
+    "Consumer":[
+        {"name":"Akshay Patil","value":"1234567890"},
+        {"name":"Jayesh Mishra","value":"098765423"},
+        {"name":"Salman Dada","value":"321414414124"}
+    ],
+    "Locations": [
+        {"name":"Home","value":["AddressLine1","AddressLine2","400033"]},
+        {"name":"Office","value":["AddressLine1","AddressLine2","400605"]}
+    ],
+    "OrderType":{
+        "uxtype":"toggle",
+        "options":[
+            ["SIP","SIP"],
+            ["LumpSum","OneTime"]
+        ]
+    },
+    "itemName":"HDFC Limited",
+    "productName":"Education",
+    "productSubtitle":"Live Market",
+    "productImage":"https://pbs.twimg.com/profile_images/899609798299205633/DZLt0_e2_400x400.jpg",
+    "itemCode":"1158",
+    "quantity":"1-",
+    "unitPrice":"5000.00",
+    "taxes":[
+        {"type":"CGST","taxPercentage":"0"},
+        {"type":"SGST","taxPercentage":"0"},
+        {"type":"IGST","taxPercentage":"0"}
+    ],
+    "quantityRegEx":"^([1-9]|[1-9][0-9]|100)$",
+    "editable":"qty",
+    "unitOfQuantity":"gms",
+    "unitOfAmount":"₹",
+    "tnc":["url","address"],
+    "Validity":300,
+    "walletMargin":false,
+    "availableMargin":5000.00,
+    "txnType":"SUBSCRIBE/BUY/SELL/REDEEM/SWITCH/TRANSFER/INVEST/WITHDRAW",
+    "Frequency":[
+        {"name":"Start Date","value":"2022-01-01","uxType":"DatePicker"},
+        {"name":"Perpetual","value":"999","uxType":"numInput"},
+        {"name":"Custom","value":"","uxType":"numInput"},
+        {"name":"End Date","value":"DatePicker","uxType":"DatePicker"}
+    ],
+    "OtherDetails":[
+    [   
+        {"name":"Pathalogy Slot","uxType":"header"},
+        {"label":"Date","value":"2022-01-01","uxType":"DatePicker"},
+        {"label":"Slot Time","value":"01-01-am","uxType":"TimePicker"}
+       
+    ],
+    [
+        {"name":"Medicine Slot","uxType":"header"},
+        {"label":"Date","value":"2022-01-01","uxType":"DatePicker"},
+        {"label":"Slot Time","value":"12:00:PM","uxType":"TimePicker"}
+    ]
+],
+"footerButton":[
+    {
+        "name":"Add To Cart",
+        "uxClass":"custBackgroundColorBrightCyan custColorWhite w-100 mx-3 my-2",
+        "value":"addToCart"
+    },
+    {
+        "name":"Buy Now",
+        "uxClass":"custBackgroundColorParakeetGreen custColorWhite w-100 mx-3 my-2",
+        "value":"buy"
+    }
+],
+"disable":"!(quantity>0&&checkbox)"
+}

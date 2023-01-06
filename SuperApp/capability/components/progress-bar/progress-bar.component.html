@@ -1,0 +1,15 @@
+<div class="contentBackground p-2" *ngIf="progressBar">
+  <ion-row>
+    <ion-col class="custFontFamilyMuliBold custColorDark muli-18pt">Status</ion-col>
+    <ion-col *ngIf="inProgress" class="custFontFamilyMuliBold muli-14pt custColorlightRed text-end"> In Progress</ion-col>
+  </ion-row>
+  <ul class="StepProgress mt-3">
+    <li *ngFor="let x of progressBar" class="w-100"
+      [ngClass]="x?.Status==='Pass' ?'StepProgress-item is-done':'StepProgress-item current'">
+      <p class="custFontFamilyMuliBold muli-16pt">{{x?.Document}}
+        <span *ngIf="x?.Status==='Pass'" class="float-end custColorParakeetGreen">Done</span>
+      </p>
+      <p class="custFontFamilyMuliRegular muli-10pt custLineHight22 custColorGreyish">{{x?.span}}</p>
+    </li>
+  </ul>
+</div>

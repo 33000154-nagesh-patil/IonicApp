@@ -1,0 +1,39 @@
+[
+    {
+        "title":"Castrol India Ltd.",
+        "amountTitle":"Amount",
+        "amountValue":"₹1,018.58",
+        "FreeQty":"Free Qty.",
+        "FreeQtyValue":"1",
+        "EnterQty":"Enter Qty."
+
+    },
+    {
+        "title":"Sovereign Gold Bond",
+        "amountTitle":"Amount",
+        "amountValue":"₹4,316.04",
+        "FreeQty":"Free Qty.",
+        "FreeQtyValue":"1",
+        "EnterQty":"Enter Qty."
+
+    },
+    {
+        "title":"Bharat Petroleum Cor",
+        "amountTitle":"Amount",
+        "amountValue":"₹4,317.04",
+        "FreeQty":"Free Qty.",
+        "FreeQtyValue":"1",
+        "EnterQty":"Enter Qty."
+
+    },
+    {
+        "title":"DSP Midcap Fund",
+        "amountTitle":"Amount",
+        "amountValue":"₹4,318.04",
+        "FreeQty":"Free Qty.",
+        "FreeQtyValue":"1",
+        "EnterQty":"Enter Qty."
+
+    }
+   
+]

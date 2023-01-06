@@ -1,0 +1,450 @@
+{
+    "": {},
+    "getSearchKeywords": {
+        "title": [
+            {
+                "title": "Products"
+            },
+            {
+                "title": "Quick Search"
+            }
+        ],
+   
+        "Products": [
+            {
+                "title": "Mutual Fund",
+                "url": "MF"
+            },
+            {
+                "title": "Stock",
+                "url": "ST"
+            },
+            {
+                "title": "Digi Gold",
+                "url": "DG"
+            },            
+            {
+              "title": "Courses",
+              "url": "Courses"
+            },
+            {
+              "title": "Jobs",
+              "url": "Job"
+            },
+            {
+              "title": "Assessment",
+              "url": "Assessment"
+            },
+            {
+              "title": "Lab Test",
+              "url": "LabTest"
+            },
+            {
+              "title": "Medicine",
+              "url": "Medicine"
+            },
+            {
+              "title": "Loans",
+              "url": "Las"
+            },
+            {
+              "title": "Bill Payment",
+              "url": "BillPayment"
+            },
+            {
+              "title": "Insurance",
+              "url": "Insurance"
+            },
+            {
+              "title": "Neo Bank",
+              "url": "NB"
+            },
+            {
+              "title": "ETFs",
+              "url": ""
+          },
+          {
+              "title": "Baskets",
+              "url": ""
+          },
+          {
+              "title": "Fixed Deposits",
+              "url": ""
+          },
+          {
+              "title": "Bonds",
+              "url": ""
+          },
+          {
+              "title": "International Equities",
+              "url": ""
+          },
+          {
+              "title": "USA Stocks",
+              "url": ""
+          }
+
+        ],
+        "Quick Search": [
+            {
+              
+                "title": "Stock",
+                "url": "ST"
+            },
+            {
+                "title": "Mutual Fund",
+                "url": "MF"
+            },
+            {
+                "title": "Digi Gold",
+                "url": "DG"
+            },
+            {
+              "title": "Courses",
+              "url": "Courses"
+            },
+            {
+              "title": "Jobs",
+              "url": "Job"
+            },
+            {
+              "title": "Assessment",
+              "url": "Assessment"
+            },
+            {
+              "title": "Lab Test",
+              "url": "LabTest"
+            },
+            {
+              "title": "Medicine",
+              "url": "Medicine"
+            }
+           
+        ]
+    },
+    "getSearchSuggestions": {
+        "Mutual Fund": [{
+            "card": [
+              {
+                "row1": {
+                  "icon": "assets/icon/hdfc.png",
+                  "title": "HDFC Focused 30-G",
+                  "action": "assets/icon/leftArrowIcon.svg",
+                  "selectWatchList": false
+                },
+                "row2": {
+                  "Returns": 18.65,
+                  "Category Return": "-7.10%-20.25%",
+                  "Min.Invest": "₹500"
+                }
+              },
+              {
+                "row1": {
+                  "icon": "assets/icon/hdfc.png",
+                  "title": "Axis bank",
+                  "action": "assets/icon/leftArrowIcon.svg",
+                  "selectWatchList": false
+                },
+                "row2": {
+                  "Returns": 18.65,
+                  "Category Return": "-7.10%-20.25%",
+                  "Min.Invest": "₹500"
+                }
+              },
+              {
+                "row1": {
+                  "icon": "assets/icon/hdfc.png",
+                  "title": "UTI Flexi Cap",
+                  "action": "assets/icon/leftArrowIcon.svg",
+                  "selectWatchList": false
+                },
+                "row2": {
+                  "Returns": 18.65,
+                  "Category Return": "-7.10%-20.25%",
+                  "Min.Invest": "₹500"
+                }
+              }
+            ]
+          }],
+        "Digi Gold":[{
+            "card": [
+              {
+                "row1": {
+                  "icon": "assets/icon/Augmont.svg",
+                  "title": "Augmont Digital Gold",
+                  "description": "24K. 99.99% Purity",
+                  "action": "assets/icon/leftArrowIcon.svg",
+                  "selectWatchList": false
+                },
+                "row2": {
+                  "Buying Price/gm": "₹5251.16",
+                  "Selling Price/gm": "₹5400.64"
+                }
+              },
+              {
+                "row1": {
+                  "icon": "assets/icon/digitelSilver.svg",
+                  "title": "Augmont Digital Silver",
+                  "description": "24K. 99.99% Purity",
+                  "action": "assets/icon/leftArrowIcon.svg",
+                  "selectWatchList": false
+                },
+                "row2": {
+                  "Buying Price/gm": "₹64.16",
+                  "Selling Price/gm": "₹62.30"
+                }
+              }
+            ]
+          }],
+          "Loans": [{
+            "card": [
+              {
+                "row1": {
+                  "title": "Avenue Supermarts Limited",
+                  "selectWatchList": false
+                },
+                "row2": {
+                  "availableQuantity": "50",
+                  "haircutRate": "20%"
+                }
+              },
+              {
+                "row1": {
+                  "title": "Avenue Supermarts Limited",
+                  "selectWatchList": false
+                },
+                "row2": {
+                  "availableQuantity": "50",
+                  "haircutRate": "20%"
+                }
+              }
+            ]
+          }],
+          "Stock": [{
+            "card": [
+              {
+                "row1": {
+                  "title": "TATA STEEL",
+                  "price": "107.75"
+                },
+                "row2": {
+                  "ExchangeName": "NSE",
+                  "lossAndGain": "0.63"
+                }
+              },
+              {
+                "row1": {
+                  "title": "TCS",
+                  "price": "107.75"
+                },
+                "row2": {
+                  "ExchangeName": "BSE",
+                  "lossAndGain": "0.63"
+                }
+              },
+              {
+                "row1": {
+                  "title": "Reliance Ind",
+                  "price": "107.75"
+                },
+                "row2": {
+                  "ExchangeName": "NSE",
+                  "lossAndGain": "0.63"
+                }
+              },
+              {
+                "row1": {
+                  "title": "Infosys",
+                  "price": "107.75"
+                },
+                "row2": {
+                  "ExchangeName": "BSE",
+                  "lossAndGain": "0.63"
+                }
+              }
+            ]
+          }]
+        },
+
+
+        "getSearch":[
+            {
+                "productName": "Mutual Fund",
+                "card": [
+                    {
+                      "row1": {
+                        "icon": "assets/icon/hdfc.png",
+                        "title": "HDFC Focused 30-G",
+                        "action": "assets/icon/leftArrowIcon.svg",
+                        "selectWatchList": false
+                      },
+                      "row2": {
+                        "Returns": 18.65,
+                        "Category Return": "-7.10%-20.25%",
+                        "Min.Invest": "₹500"
+                      }
+                    },
+                    {
+                      "row1": {
+                        "icon": "assets/icon/hdfc.png",
+                        "title": "Axis bank",
+                        "action": "assets/icon/leftArrowIcon.svg",
+                        "selectWatchList": false
+                      },
+                      "row2": {
+                        "Returns": 18.65,
+                        "Category Return": "-7.10%-20.25%",
+                        "Min.Invest": "₹500"
+                      }
+                    },
+                    {
+                      "row1": {
+                        "icon": "assets/icon/hdfc.png",
+                        "title": "UTI Flexi Cap",
+                        "action": "assets/icon/leftArrowIcon.svg",
+                        "selectWatchList": false
+                      },
+                      "row2": {
+                        "Returns": 18.65,
+                        "Category Return": "-7.10%-20.25%",
+                        "Min.Invest": "₹500"
+                      }
+                    }
+                  ]
+            },
+            {
+                "productName": "Digi Gold",
+                "card": [
+                    {
+                      "row1": {
+                        "icon": "assets/icon/hdfc.png",
+                        "title": "HDFC Focused 30-G",
+                        "action": "assets/icon/leftArrowIcon.svg",
+                        "selectWatchList": false
+                      },
+                      "row2": {
+                        "Returns": 18.65,
+                        "Category Return": "-7.10%-20.25%",
+                        "Min.Invest": "₹500"
+                      }
+                    },
+                    {
+                      "row1": {
+                        "icon": "assets/icon/hdfc.png",
+                        "title": "Axis bank",
+                        "action": "assets/icon/leftArrowIcon.svg",
+                        "selectWatchList": false
+                      },
+                      "row2": {
+                        "Returns": 18.65,
+                        "Category Return": "-7.10%-20.25%",
+                        "Min.Invest": "₹500"
+                      }
+                    },
+                    {
+                      "row1": {
+                        "icon": "assets/icon/hdfc.png",
+                        "title": "UTI Flexi Cap",
+                        "action": "assets/icon/leftArrowIcon.svg",
+                        "selectWatchList": false
+                      },
+                      "row2": {
+                        "Returns": 18.65,
+                        "Category Return": "-7.10%-20.25%",
+                        "Min.Invest": "₹500"
+                      }
+                    }
+                  ]
+            },
+            {
+                "productName": "Stock",
+                "card": [
+                    {
+                      "row1": {
+                        "icon": "assets/icon/hdfc.png",
+                        "title": "HDFC Focused 30-G",
+                        "action": "assets/icon/leftArrowIcon.svg",
+                        "selectWatchList": false
+                      },
+                      "row2": {
+                        "Returns": 18.65,
+                        "Category Return": "-7.10%-20.25%",
+                        "Min.Invest": "₹500"
+                      }
+                    },
+                    {
+                      "row1": {
+                        "icon": "assets/icon/hdfc.png",
+                        "title": "Axis bank",
+                        "action": "assets/icon/leftArrowIcon.svg",
+                        "selectWatchList": false
+                      },
+                      "row2": {
+                        "Returns": 18.65,
+                        "Category Return": "-7.10%-20.25%",
+                        "Min.Invest": "₹500"
+                      }
+                    },
+                    {
+                      "row1": {
+                        "icon": "assets/icon/hdfc.png",
+                        "title": "UTI Flexi Cap",
+                        "action": "assets/icon/leftArrowIcon.svg",
+                        "selectWatchList": false
+                      },
+                      "row2": {
+                        "Returns": 18.65,
+                        "Category Return": "-7.10%-20.25%",
+                        "Min.Invest": "₹500"
+                      }
+                    }
+                  ]
+            },
+            {
+                "productName": "Loans",
+                "card": [
+                    {
+                      "row1": {
+                        "icon": "assets/icon/hdfc.png",
+                        "title": "HDFC Focused 30-G",
+                        "action": "assets/icon/leftArrowIcon.svg",
+                        "selectWatchList": false
+                      },
+                      "row2": {
+                        "Returns": 18.65,
+                        "Category Return": "-7.10%-20.25%",
+                        "Min.Invest": "₹500"
+                      }
+                    },
+                    {
+                      "row1": {
+                        "icon": "assets/icon/hdfc.png",
+                        "title": "Axis bank",
+                        "action": "assets/icon/leftArrowIcon.svg",
+                        "selectWatchList": false
+                      },
+                      "row2": {
+                        "Returns": 18.65,
+                        "Category Return": "-7.10%-20.25%",
+                        "Min.Invest": "₹500"
+                      }
+                    },
+                    {
+                      "row1": {
+                        "icon": "assets/icon/hdfc.png",
+                        "title": "UTI Flexi Cap",
+                        "action": "assets/icon/leftArrowIcon.svg",
+                        "selectWatchList": false
+                      },
+                      "row2": {
+                        "Returns": 18.65,
+                        "Category Return": "-7.10%-20.25%",
+                        "Min.Invest": "₹500"
+                      }
+                    }
+                  ]
+            }
+
+        ]
+        
+}

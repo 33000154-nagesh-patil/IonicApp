@@ -1,0 +1,31 @@
+{
+  "Status": "1",
+  "Message": "Success",
+  "data": [
+      {
+          "custGuId": "C83AD32B-F173-413E-9940-0C526F3560B7",
+          "addressLine1": "Pune",
+          "addressLine2": "",
+          "addressLine3": null,
+          "pincode": "2345",
+          "city": "Pandharpur",
+          "state": "Maharashtra",
+          "country": "India",
+          "addressType": null,
+          "addressDetailId": 65
+      },
+      {
+          "custGuId": "C83AD32B-F173-413E-9940-0C526F3560B7",
+          "addressLine1": "Indror indor",
+          "addressLine2": "India",
+          "addressLine3": "",
+          "pincode": "401105",
+          "city": "COORG",
+          "state": "Karnataka",
+          "country": "India",
+          "addressType": "Home",
+          "addressDetailId": 110
+      }
+  ],
+  "ErrorCode": "0"
+}

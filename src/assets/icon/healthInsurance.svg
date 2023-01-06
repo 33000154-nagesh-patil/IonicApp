@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22.635" height="24.54" viewBox="0 0 22.635 24.54">
+  <g id="Group_22798" data-name="Group 22798" transform="translate(-305.365 -1061.016)">
+    <path id="Path_21243" data-name="Path 21243" d="M46.4,7.746a.713.713,0,0,0-.74-.68h-.471a.713.713,0,0,0-.74.68V9.135h-1.52a.713.713,0,0,0-.74.68v.431a.713.713,0,0,0,.74.68h1.52v1.389a.713.713,0,0,0,.74.68h.471a.713.713,0,0,0,.74-.68V10.926h1.52a.713.713,0,0,0,.74-.68V9.815a.713.713,0,0,0-.74-.68H46.4Zm1.52,1.887a.193.193,0,0,1,.2.182v.431a.193.193,0,0,1-.2.182H46.127a.26.26,0,0,0-.269.249v1.638a.193.193,0,0,1-.2.182h-.471a.193.193,0,0,1-.2-.182V10.677a.26.26,0,0,0-.269-.249H42.925a.193.193,0,0,1-.2-.182V9.815a.193.193,0,0,1,.2-.182h1.789a.26.26,0,0,0,.269-.249V7.746a.193.193,0,0,1,.2-.182h.471a.193.193,0,0,1,.2.182V9.384a.26.26,0,0,0,.269.249ZM38.109,4.566C38.108,4.551,38.168,4.514,38.109,4.566Z" transform="translate(267.292 1060.013)" fill="#039"/>
+    <g id="Group_22796" data-name="Group 22796" transform="translate(146 1028.008)">
+      <g id="Group_20984" data-name="Group 20984" transform="translate(-52.385 -33.992)">
+        <path id="Path_21012" data-name="Path 21012" d="M-7898.4-11892.4s-1.517,6.146,0,9.59a7.32,7.32,0,0,0,2.671,3.531,6.266,6.266,0,0,0,3.4.656c3.124,0,4.822-.743,6.43-4.187s0-9.59,0-9.59" transform="translate(8111.459 11961.5)" fill="none" stroke="#44c8f5" stroke-width="1.1"/>
+        <path id="Path_21013" data-name="Path 21013" d="M-7892.132-11878.623s-1.041,4.737,2.159,6.892,7.343,1.152,8.953-.733a6.231,6.231,0,0,0,1.466-4.031c.023-.029,0-5.5,0-5.5" transform="translate(8111.459 11961.5)" fill="none" stroke="#44c8f5" stroke-width="1.1"/>
+        <g id="Ellipse_1338" data-name="Ellipse 1338" transform="translate(229.385 75)" fill="#039" stroke="#039" stroke-width="1">
+          <circle cx="2.5" cy="2.5" r="2.5" stroke="none"/>
+          <circle cx="2.5" cy="2.5" r="2" fill="none"/>
+        </g>
+        <g id="Ellipse_1341" data-name="Ellipse 1341" transform="translate(212.5 67)" fill="#039" stroke="#039" stroke-width="1">
+          <circle cx="2" cy="2" r="2" stroke="none"/>
+          <circle cx="2" cy="2" r="1.5" fill="none"/>
+        </g>
+        <g id="Ellipse_1340" data-name="Ellipse 1340" transform="translate(222.1 67)" fill="#039" stroke="#039" stroke-width="1">
+          <circle cx="2" cy="2" r="2" stroke="none"/>
+          <circle cx="2" cy="2" r="1.5" fill="none"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

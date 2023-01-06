@@ -1,0 +1,61 @@
+.custModalContainer {
+    z-index: 1;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    position: fixed;
+  }
+
+ 
+  .modal-content {
+    background-color: #fff;
+    margin: auto;
+    padding-top: 1px;
+    margin-top: 1px;
+    padding-bottom: 30px;
+    padding-right: 16px;
+    padding-left: 16px;
+    width: 100%;
+    height: max-content;
+    position: absolute;
+    bottom: 0px;
+    border-radius: 10px 10px 0px 0px;
+  }
+
+  .deActive{
+  padding: 6px 18px 8px 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #727682;
+  background-color: #E1E5EA;
+}
+.active {
+  background-color: #868A94;
+  color: #fff;
+}
+.exchangeButton  {
+  background: none;
+  border-radius: 10px;
+  }
+  
+  .ValidityButton {
+      background: none;
+  }
+  .ProductButton {
+      background: none;
+  }
+  .bseButton{
+      border-radius: 6px;
+      color: red;
+  }
+  .mat-input-element {
+      width: 80%;
+      font-size: 22px;
+  }
+  .caretUpIcon{
+      display: inline;
+      filter: invert(59%) sepia(31%) saturate(930%) hue-rotate(47deg) brightness(93%) contrast(84%);
+  height: 10px;
+  }

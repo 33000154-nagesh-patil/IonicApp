@@ -1,0 +1,12 @@
+{
+	"icon1":"/assets/bottom_tab/home_gray.svg",
+	"label1":"Home",
+	"icon2":"/assets/bottom_tab/dashboard_gray.svg",
+	"label2":"Dashboard",
+	"icon3":"/assets/bottom_tab/invest_gray.svg",
+	"label3":"Invest",
+	"icon4":"/assets/bottom_tab/watchlist_gray.svg",
+	"label4":"Watchlist",
+	"icon5":"/assets/bottom_tab/profile_gray.svg",
+	"label5":"Profile"
+}

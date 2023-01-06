@@ -1,0 +1,233 @@
+<div class="fixed-top">
+<ion-header *ngIf="showHeader">
+  <ion-toolbar class="custBackgroundDynamicColorWhite p-2">
+    <ion-grid>
+      <ion-row class="py-2">
+
+        <ion-col [size]="'6'" class="text-center">
+          <span class="custFontFamilyMuliBold muli-16pt d-flex custPadding flex-start custColorDark">labTest</span>
+        </ion-col>
+        <ion-col [size]="'2'" class="">
+
+          <ion-img [src]="imageList?.search" (click)="toggleID()" class="custSVGIcon  "></ion-img>
+          <span class="custheaderNameSearch">Search</span>
+        </ion-col>
+        <ion-col [size]="'2.5'">
+          <ion-img [src]="imageList?.notificationIcon" class="custSVGIcon "></ion-img>
+          <span class="custheaderName">Notification</span>
+
+        </ion-col>
+        <ion-col [size]="'1.5'" (click)="handleCart()">
+          <ion-img [src]="imageList?.cartIcon"  class="custSVGIcon float-end"></ion-img>
+          <span class="custheaderNameCart">Cart</span>
+
+        </ion-col>
+
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+<ion-header *ngIf="showSerchBar">
+  <ion-toolbar class="custBackgroundDynamicColorWhite p-2">
+    <ion-grid>
+      <ion-row>
+        <ion-col [size]="'0.7'" class="text-center mt-2">
+          <ion-img [src]="imageList?.arrow" class="custKYCImg mt-1" (click)="searchBarBack()"></ion-img>
+        </ion-col>
+        <ion-col [size]="'10'" class="px-3 mt-2">
+          <input type="text" #search (keyup)="clearSearchIcon(my.value)"  #my  [(ngModel)]="searchBar" autocomplete="off"
+            placeholder="Search Courses" class="formControl" />
+        </ion-col>
+        <ion-col [size]="'1'" class="text-center float-end" *ngIf="searchIcon">
+          <ion-img [src]="imageList?.search" class="custKYCImg mt-2"></ion-img>
+        </ion-col >
+        <ion-col [size]="'1'" class="text-center mt-3" *ngIf="closeIcon" (click)="searchBar=''">
+          <ion-img [src]="imageList?.close" class="custCloseIcon float-end"></ion-img>
+        </ion-col>
+
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+</div>
+
+<ion-grid class="p-2 segment">
+
+  <div class="upper-div">
+    <ion-row>
+      <ion-col [size]="'12'">
+        Explore
+      </ion-col>
+    </ion-row>
+    <ion-row class="line">
+      <ion-col [size]="'0.7'" class="custSelected"></ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col [size]="'12'">
+        <span>Discover all lab tests</span>
+      </ion-col>
+    </ion-row>
+  </div>
+
+<ion-row>
+  <ion-col [size]="'6'">
+    <ion-row>
+
+      <ion-col [size]="'0.7'">
+        <ion-img [src]="imageList?.location" class="custImgExpo"></ion-img>
+      </ion-col>
+      <ion-col [size]="'11.3'">
+       <p class="custFontFamilyMuliRegular muli-10pt custLineHight18 custColorBattlePGry px-2" (click)="handleLocation()">Pickup from {{pinCode}}</p>
+      </ion-col>
+    </ion-row>
+  </ion-col>
+
+  <ion-col [size]="'6'" class="float-end">
+
+    <span class="float-end mt-1">
+    <img [src]="imageList?.filterIcon" class="custImgExpo" >
+    <span class="px-2 custFontFamilyMuliBold muli-12pt custLineHight18 custColorDarkishBlue" >{{'filter' | translate}}</span>
+  </span>
+
+  </ion-col>
+</ion-row>
+
+<!-- | filter:searchBar -->
+  <ion-card *ngFor="let x of dataList " class="card cardItem" (click)="handleClick(x?.name, x)">
+    <ion-card-content>
+      <ion-row>
+        <ion-col [size]="'1.5'">
+          <ion-img [src]="imageList?.thyroCare"></ion-img>
+        </ion-col>
+        <ion-col [size]="'9.8'">
+          <ion-row><span class="custFontFamilyMuliRegular muli-14pt custLineHight15 custColorDark">{{x?.name}}</span></ion-row>
+          <ion-row><span class="custFontFamilyMuliRegular muli-10pt custLineHight20 custColorWarmGrey">By Thyrocare Ltd. • Pathology Test</span></ion-row>
+          <ion-row><span class="custFontFamilyMuliRegular muli-10pt custLineHight20 custColorWarmGrey">{{x?.title}}</span></ion-row>
+        </ion-col>
+        <ion-col [size]="'0.7'">
+          <ion-img [src]="imageList?.leftArrowIcon"></ion-img>
+        </ion-col>
+      </ion-row>
+      <ion-row class="mt-3">
+      <ion-col [size]="'4.5'">
+        <ion-row><span class="custFontFamilyMuliRegular muli-10pt custLineHight15 custColorGreyish">Price</span></ion-row>
+        <ion-row class="mt-1"><span class="custFontFamilyMuliSemiBold muli-14pt custLineHight20 custColorDark">{{rupeesSymbol}}{{x?.rate}}</span></ion-row>
+      </ion-col>
+      <ion-col [size]="'4'">
+        <ion-row><span class="custFontFamilyMuliRegular muli-10pt custLineHight15 custColorWarmGrey">E-reports Within</span></ion-row>
+        <ion-row class="mt-1"><span class="custFontFamilyMuliRegular muli-14pt custLineHight18 custColorDark">24 to 30 hours</span></ion-row>
+      </ion-col>
+      <ion-col [size]="'3.5'">
+
+          <ion-row class="flex-end">No. of Tests </ion-row>
+          <ion-row class="flex-end">{{x?.testcount}} </ion-row>
+
+         </ion-col>
+      </ion-row>
+    </ion-card-content>
+  </ion-card>
+
+
+  <ion-infinite-scroll threshold="100px" (ionInfinite)="loadData($event)">
+    <ion-infinite-scroll-content
+      loadingSpinner="bubbles"
+      loadingText="Loading more data...">
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+
+</ion-grid>
+
+
+
+
+
+
+
+
+      <!-- <ion-row>
+          <button type="button"
+          (click)="handleClick(x?.id)"
+          class="custBtnExplore text-capitalize custColorBrightCyan custFontFamilyMuliRegular muli-14pt custButtonOutLine float-end" id="wellnessMutualFund">{{x?.btnText}}</button>
+        </ion-row> -->
+
+ <!-- <lib-footer *ngIf="currentMode" [activeImg]="imageList?.activeTab" [selectedIndex]="'3'"
+    [footerListData]="goldFooterData" [parentTab]="'labTest'"></lib-footer>  -->
+
+
+
+    <!-- header -->
+    <!-- <ion-header *ngIf="showHeader">
+  <ion-toolbar class="custBackgroundDynamicColorWhite fixed-top">
+    <ion-grid>
+      <ion-row>
+
+
+        <ion-col [size]="5" class="custTextAlignCenter">
+
+          <span class="custFontFamilyMuliBold custLineHight40 muli-16pt custColorDark">Lab Tests</span>
+
+
+        </ion-col>
+
+
+
+
+        <ion-col [size]="'2'" id="searchbar">
+          <div class="custTextAlignCenter">
+            <div class="custHeight custProfile">
+              <ion-img [src]="imageList?.search"  (click)="toggleID()" class="custSVGIcon"></ion-img>
+             </div>
+             <p  class="muli-10pt custLineHight28 custFontFamilyMuliSemiBold custColorBattlePGry">{{'search' | translate}}</p>
+          </div>
+        </ion-col>
+
+
+
+        <ion-col [size]="'3'" id="notification">
+          <div class="custTextAlignCenter">
+            <ion-badge class="custBadge custRight" *ngIf="notificationCount > 0">{{notificationCount}}</ion-badge>
+            <div class="custHeight custProfile">
+              <ion-img [src]="imageList?.notificationIcon" class="custSVGIcon"></ion-img>
+             </div>
+             <p  class="muli-10pt custLineHight28 custFontFamilyMuliSemiBold custColorBattlePGry">{{'notifications' | translate}}</p>
+          </div>
+          </ion-col>
+
+
+        <ion-col [size]="'2'"  id="cardWithName">
+
+          <div class="custTextAlignCenter">
+            <ion-badge class="custBadge custRight0" *ngIf="cardCount > 0 ">{{cardCount}}</ion-badge>
+            <div class="custHeight custProfile">
+              <ion-img [src]="imageList?.cartIcon" class="custSVGIcon"></ion-img>
+             </div>
+             <p  class="muli-10pt custLineHight28 custFontFamilyMuliSemiBold custColorBattlePGry">{{'myCart' | translate}}</p>
+          </div>
+         </ion-col>
+
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+<ion-header *ngIf="showSerchBar">
+  <ion-toolbar class="custBackgroundDynamicColorWhite p-2">
+    <ion-grid>
+      <ion-row>
+        <ion-col [size]="'0.7'" class="text-center mt-2">
+          <ion-img [src]="imageList?.arrow" class="custKYCImg mt-1" (click)="searchBarBack()"></ion-img>
+        </ion-col>
+        <ion-col [size]="'10'" class="px-3 mt-2">
+              <input type="text" #search (keyup)="clearSearchIcon(my.value)" #my [(ngModel)]="searchBar" autocomplete="off" placeholder="Search Courses" class="formControl"/>
+        </ion-col>
+        <ion-col [size]="'1'" class="text-center float-end" *ngIf="searchIcon">
+          <ion-img [src]="imageList?.search"  class="custKYCImg mt-2"></ion-img>
+        </ion-col>
+        <ion-col [size]="'1'" class="text-center mt-3" *ngIf="closeIcon">
+          <ion-img [src]="imageList?.close"  class="custCloseIcon float-end" (click)="clearSearchIcon('')"></ion-img>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header> -->

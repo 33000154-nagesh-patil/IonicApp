@@ -1,0 +1,102 @@
+{
+    "":{
+    "heading": "Details",
+    "discription": "Discover for Investments",
+    "Product":"Digigold",
+    "action1":"Add to card",
+     "action2":"Buy",
+    "Chart": {
+        "chart_type": "graph",
+        "row1": [
+            {
+                "lable": "Current Rate/Gram",
+                "value": "₹5251.16"
+            }
+        ],
+        "row2": [
+            {
+                "lable": " as on 19 Mar 2021,12:13pm"
+            }
+        ],
+        "graph": [
+            {
+                "nav": 20,
+                "nav_date": "2021-07-12",
+                "plan_id": 40818
+            },
+            {
+                "nav": 10,
+                "nav_date": "2021-07-12",
+                "plan_id": 40818
+            },
+            {
+                "nav": 60,
+                "nav_date": "2021-07-12",
+                "plan_id": 40818
+            },
+            {
+                "nav": 25,
+                "nav_date": "2021-07-12",
+                "plan_id": 40818
+            },
+            {
+                "nav": 54,
+                "nav_date": "2021-07-12",
+                "plan_id": 40818
+            },
+            {
+                "nav": 20,
+                "nav_date": "2021-07-12",
+                "plan_id": 40818
+            },
+            {
+                "nav": 30,
+                "nav_date": "2021-07-12",
+                "plan_id": 40818
+            }
+        ],
+        "row3": [
+            {
+                "icon": "",
+                "lable": "Invested Amount",
+                "value": "₹700"
+            },
+            {
+                "icon": "DownPerArrow",
+                "lable": "Total Gold Holding",
+                "value": "20 Gm"
+            }
+        ]
+    },
+    "Info": {
+            "heading": "Basic Information",
+            "product": "digigold"
+    },
+    "step": [{
+        "heading":"Benefits Of Digital Commodities",
+        "data":[
+        {
+            "Icon": "",
+            "Steps": "100% Secure",
+            "Disc": "Stored in insured & guarded vaults"
+        },
+        {
+            "Icon": "",
+            "Steps": "Diversify Portfolio",
+            "Disc": "Balance your portfolio. Reduce risk concentration"
+        },
+        {
+            "Icon": "",
+            "Steps": "Step 3",
+            "Disc": "HeyTorus submits transaction to mutual fund company"
+        },
+        {
+            "Icon": "",
+            "Steps": "Step 3",
+            "Disc": "Mutual fund company sends confirmation to you via email and text in 1 working day"
+        }
+    ]
+}
+    ]
+}
+}

@@ -1,0 +1,211 @@
+<ion-app>
+<ion-header >
+  <ion-toolbar class="custBackgroundDynamicColorWhite">
+    <ion-grid>
+      <ion-row>
+        <ion-col  [size]="'1'"  class="text-center mt-1" (click)="dissmiss()">
+          <ion-img [src]="imageList?.arrow" class="custKYCImg mt-2"></ion-img>
+        </ion-col>
+        <ion-col [size]="'10'">
+          <span class="custFontFamilyMuliBold muli-14pt custLineHight40 custColorDark ">All Order List</span>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-segment  scrollable  (ionChange)="segmentChanged($event)"   [value]="segmentValue" color="secondary">
+      <ion-segment-button value="All">
+        <ion-label>All</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="Buy">
+        <ion-label>Buy</ion-label>
+      </ion-segment-button> 
+      <ion-segment-button value="Sell">
+        <ion-label>Sell</ion-label>
+      </ion-segment-button>
+       <ion-segment-button value="InProgress">
+        <ion-label>InProgress</ion-label>
+      </ion-segment-button>
+       <ion-segment-button value="Switch">
+        <ion-label>Switch</ion-label>
+      </ion-segment-button> 
+      <ion-segment-button value="Failed">
+        <ion-label>Failed</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="contentBackground">
+        <ion-grid class="mt-3 contentBackground" *ngIf="segmentValue==='All'" >
+          <ion-card class="mb-3 mt-0"  *ngFor="let TransactionData of  TransectionData">
+            <ion-card-header class="pt-0">
+              <div  class="custBottom d-flex justify-content-end">
+                <!-- <ion-img [src]="imageList?.saveIcon" class="custBookmark"></ion-img> -->
+                <!-- <ion-img [src]="imageList?.saveIcon2" *ngIf="bookmark" class="custBookmark" (click)="changeBookmark()"></ion-img> -->
+              </div> 
+            </ion-card-header>
+            <ion-card-content>
+              <ion-row>
+                <!-- <ion-col class="text-start mt-3 pe-0"> -->
+                  <!-- <input type="checkbox" class="checkbox2" (click)="checkboxClick($event)">     -->
+                  <!-- <ion-checkbox color="secondary" class="mt-1 checkbox" (ionChange)="checkBox()" [checked]="clicked"></ion-checkbox> -->
+                  <!-- </ion-col> -->
+                  <ion-col [size]="'2'" class="ps-0">
+                    <ion-img [src]="TransactionData?.img" class="something"></ion-img>
+                    <!-- <ion-img *ngIf="!(TransactionData?.icon)" src="http://www.logotaglines.com/wp-content/uploads/2016/08/ICICI-Logo.png" class="something"></ion-img> -->
+                  <!-- <img [src]="TransactionData?.icon" width="30px" height="30px" > -->
+  
+                  </ion-col>
+                  <ion-col [size]="'8'">
+                    <ion-row><p class="custFontFamilyMuliRegular muli-24pt custLineHight20 custColorDark">{{TransactionData?.basic_name}}</p></ion-row>
+                    <ion-row><p class="custFontFamilyMuliRegular muli-24pt custLineHight20 custColorDark"></p></ion-row>
+                  </ion-col>
+                  <ion-col [size]="'2'" class="ps-4"  (click)="OrderDetail()">
+                    <ion-img [src]="imageList?.leftArrowIcon" class="custKYCImg"></ion-img>
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col [size]="'4'" class="px-0">
+                  <ion-row><p class="custFontFamilyMuliRegular muli-10pt custLineHight15 mb-0">Date</p></ion-row>
+                  <ion-row class="mt-2"><p class="custFontFamilyRobotoCondensed custFontFamilyMuliITF-Rupee muli-14pt custLineHight18 text-center custColorDark">{{TransactionData?.start_date}}</p></ion-row>
+                </ion-col>
+                <ion-col [size]="'4'" class=" px-0 ">
+                 
+                    <ion-row><p class="custFontFamilyMuliRegular muli-10pt custLineHight15 mb-0">Invest Amount</p></ion-row>
+                    <ion-row class="mt-2"><p class="custFontFamilyRobotoCondensed custFontFamilyMuliITF-Rupee muli-14pt custLineHight18 text-center custColorDark">{{TransactionData?.investMentamount}}</p></ion-row>
+                </ion-col>  
+                <ion-col [size]="'4'">
+                  <ion-row class="ms-2"><p class="custFontFamilyMuliRegular muli-10pt custLineHight15">Status</p></ion-row>
+                  <ion-row class="text-end">
+                    <span class="returnPercent muli-14pt custColorParakeetGreen custFontFamilyRobotoCondensed">{{TransactionData?.feedStatus}}</span>
+                  </ion-row> 
+                </ion-col>
+                </ion-row>
+              </ion-card-content>
+            </ion-card>
+            <ion-row *ngIf="ViewAllBtn">
+              <ion-col class="text-center">
+                <button class="btn btn-s custButtonOutLine text-center custColorBrightCyan"  (click)="getMoreData()"><span class="custColorBrightCyan text-capitalize custFontFamilyMuliRegular muli-16pt">View All</span></button>
+              </ion-col>
+            </ion-row>
+        </ion-grid>
+
+
+         
+      
+        <ion-grid class="mt-3 contentBackground" *ngIf="segmentValue==='Buy'">
+          <ion-card class="mb-3 mt-0" *ngFor="let TransactionData of  TransectionData" (click)="OrderDetail()">
+            <ion-card-header class="pt-0">
+              <div  class="custBottom d-flex justify-content-end">
+                <!-- <ion-img [src]="imageList?.saveIcon" class="custBookmark"></ion-img> -->
+                <!-- <ion-img [src]="imageList?.saveIcon2" *ngIf="bookmark" class="custBookmark" (click)="changeBookmark()"></ion-img> -->
+              </div> 
+            </ion-card-header>
+            <ion-card-content>
+              <ion-row>
+                <!-- <ion-col class="text-start mt-3 pe-0"> -->
+                  <!-- <input type="checkbox" class="checkbox2" (click)="checkboxClick($event)">     -->
+                  <!-- <ion-checkbox color="secondary" class="mt-1 checkbox" (ionChange)="checkBox()" [checked]="clicked"></ion-checkbox> -->
+                  <!-- </ion-col> -->
+                  <ion-col [size]="'2'" class="ps-0">
+                    <ion-img [src]="TransactionData?.img" class="something"></ion-img>
+                             <!-- <ion-img *ngIf="!(TransactionData?.icon)" src="http://www.logotaglines.com/wp-content/uploads/2016/08/ICICI-Logo.png" class="something"></ion-img> -->
+
+                 
+                    <!-- <img [src]="'data:image/jpeg;base64,'+TransactionData?.image" width="30px" height="30px" > -->
+  
+                  </ion-col>
+                  <ion-col [size]="'8'">
+                    <ion-row><p class="custFontFamilyMuliRegular muli-24pt custLineHight20 custColorDark">{{TransactionData?.basic_name}}</p></ion-row>
+                    <ion-row><p class="custFontFamilyMuliRegular muli-24pt custLineHight20 custColorDark"></p></ion-row>
+                  </ion-col>
+                  <ion-col [size]="'2'" class="ps-4" >
+                    <ion-img [src]="imageList?.leftArrowIcon" class="custKYCImg"></ion-img>
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col [size]="'4'" class="px-0">
+                  <ion-row><p class="custFontFamilyMuliRegular muli-10pt custLineHight15 mb-0">Date</p></ion-row>
+                  <ion-row class="mt-2"><p class="custFontFamilyRobotoCondensed custFontFamilyMuliITF-Rupee muli-14pt custLineHight18 text-center custColorDark">{{TransactionData?.start_date}}</p></ion-row>
+                </ion-col>
+                <ion-col [size]="'4'" class=" px-0 ">
+                 
+                    <ion-row><p class="custFontFamilyMuliRegular muli-10pt custLineHight15 mb-0">Invest Amount</p></ion-row>
+                    <ion-row class="mt-2"><p class="custFontFamilyRobotoCondensed custFontFamilyMuliITF-Rupee muli-14pt custLineHight18 text-center custColorDark"> ₹ {{TransactionData?.investMentamount}}</p></ion-row>
+                </ion-col>  
+                <ion-col [size]="'4'">
+                  <ion-row class="ms-2"><p class="custFontFamilyMuliRegular muli-10pt custLineHight15">Status</p></ion-row>
+                  <ion-row class="text-end">
+                    <span class="returnPercent muli-14pt custColorParakeetGreen custFontFamilyRobotoCondensed">{{TransactionData?.feedStatus}}</span>
+                  </ion-row> 
+                </ion-col>
+                </ion-row>
+              </ion-card-content>
+            </ion-card>
+            <ion-row *ngIf="ViewAllBtn">
+              <ion-col class="text-center">
+                <button class="btn btn-s custButtonOutLine text-center custColorBrightCyan"  (click)="getMoreData()"><span class="custColorBrightCyan text-capitalize custFontFamilyMuliRegular muli-16pt">View All</span></button>
+              </ion-col>
+            </ion-row>
+        </ion-grid>
+        
+      
+ 
+        <ion-grid class="mt-3 contentBackground" *ngIf="segmentValue==='Sell'">
+          <ion-card class="mb-3 mt-0" *ngFor="let TransactionData of  TransectionData">
+            <ion-card-header class="pt-0">
+              <div  class="custBottom d-flex justify-content-end">
+                <ion-img [src]="imageList?.saveIcon" class="custBookmark"></ion-img>
+                <!-- <ion-img [src]="imageList?.saveIcon2" *ngIf="bookmark" class="custBookmark" (click)="changeBookmark()"></ion-img> -->
+              </div> 
+            </ion-card-header>
+            <ion-card-content>
+              <ion-row>
+                <!-- <ion-col class="text-start mt-3 pe-0"> -->
+                  <!-- <input type="checkbox" class="checkbox2" (click)="checkboxClick($event)">     -->
+                  <!-- <ion-checkbox color="secondary" class="mt-1 checkbox" (ionChange)="checkBox()" [checked]="clicked"></ion-checkbox> -->
+                  <!-- </ion-col> -->
+                  <ion-col [size]="'2'" class="ps-0">
+                    <ion-img [src]="TransactionData?.img" class="something"></ion-img>
+                  <!-- <img [src]="TransactionData?.icon" width="30px" height="30px" > -->
+                  <!-- <ion-img *ngIf="!(TransactionData?.icon)" src="http://www.logotaglines.com/wp-content/uploads/2016/08/ICICI-Logo.png" class="something"></ion-img> -->
+  
+                  </ion-col>
+                  <ion-col [size]="'8'">
+                    <ion-row><p class="custFontFamilyMuliRegular muli-24pt custLineHight20 custColorDark">{{TransactionData?.basic_name}}</p></ion-row>
+                    <ion-row><p class="custFontFamilyMuliRegular muli-24pt custLineHight20 custColorDark"></p></ion-row>
+                  </ion-col>
+                  <ion-col [size]="'2'" class="ps-4" >
+                    <ion-img [src]="imageList?.leftArrowIcon" class="custKYCImg"></ion-img>
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col [size]="'4'" class="px-0">
+                  <ion-row><p class="custFontFamilyMuliRegular muli-10pt custLineHight15 mb-0">Date</p></ion-row>
+                  <ion-row class="mt-2"><p class="custFontFamilyRobotoCondensed custFontFamilyMuliITF-Rupee muli-14pt custLineHight18 text-center custColorDark">{{TransactionData?.start_date}}</p></ion-row>
+                </ion-col>
+                <ion-col [size]="'4'" class=" px-0 ">
+                 
+                    <ion-row><p class="custFontFamilyMuliRegular muli-10pt custLineHight15 mb-0">Invest Amount</p></ion-row>
+                    <ion-row class="mt-2"><p class="custFontFamilyRobotoCondensed custFontFamilyMuliITF-Rupee muli-14pt custLineHight18 text-center custColorDark">{{TransactionData?.investMentamount}}</p></ion-row>
+                </ion-col>  
+                <ion-col [size]="'4'">
+                  <ion-row class="ms-2"><p class="custFontFamilyMuliRegular muli-10pt custLineHight15">Status</p></ion-row>
+                  <ion-row class="text-end">
+                    <span class="returnPercent muli-14pt custColorParakeetGreen custFontFamilyRobotoCondensed">{{TransactionData?.feedStatus}}</span>
+                  </ion-row> 
+                </ion-col>
+                </ion-row>
+              </ion-card-content>
+            </ion-card>
+            <ion-row *ngIf="ViewAllBtn">
+              <ion-col class="text-center">
+                <button class="btn btn-s custButtonOutLine text-center custColorBrightCyan"  (click)="getMoreData()"><span class="custColorBrightCyan text-capitalize custFontFamilyMuliRegular muli-16pt">View All</span></button>
+              </ion-col>
+            </ion-row>
+        </ion-grid>
+        
+      
+   
+   </ion-content>
+   
+
+</ion-app>

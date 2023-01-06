@@ -1,0 +1,204 @@
+<ion-app>
+  <ion-header>
+    <ion-toolbar class="custBackgroundDynamicColorWhite ion-no-padding">
+      <ion-grid>
+        <ion-row>
+          <ion-col [size]="'1'" (click)="dismissInvest()">
+           <ion-img [src]="imageList?.arrow" class="custInvestArrow"></ion-img>
+          </ion-col>
+          <ion-col [size]="'11'">
+            <ion-row>
+              <ion-col [size]="'2'">
+                <ion-img [src]="imageList?.iciciLogo" class="custSIPIcon mt-1"></ion-img>
+              </ion-col>
+              <ion-col [size]="'10'" class="d-flex flex-column mt-2">
+                <span class="custFontFamilyMuliSemiBold muli-12pt custColorDark custLineHight16">{{SelectedCard?.schemeName}}</span>
+                <!-- <span class="custFontFamilyMuliSemiBold muli-12pt custColorDark custLineHight16"></span> -->
+              </ion-col>
+            </ion-row>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-toolbar>
+  </ion-header>
+
+
+  <ion-content class="contentBackground">
+    <ion-grid class="p-3">
+      <ion-row>
+      <ion-col [size]="'12'" class="custTextAlignCenter mt-3">
+        <span class="custFontFamilyMuliBold muli-16pt custColorDark custLineHight18 custOpacity60">How would you like to redeem?</span>
+      </ion-col>
+      <ion-col [size]="'12'">
+      <ion-row>
+        <ion-col [size]="'3'" class="text-end"></ion-col>
+      <ion-col [size]="'6'">
+        <ion-segment (ionChange)="segmentChanged($event)" [value]="currentTypeOrder" class="custBackgroundColorCyanBlue custBorderRadious h-75 mt-1">
+          <ion-segment-button value="amount" [ngClass]="currentTypeOrder === 'amount'?'custBackgroundColorBrightCyan custColorWhite':'custColorDark custOptacity'" class="custSegment">
+            <ion-label class="custFontFamilyMuliBold muli-12pt custLineHight18 text-capitalize">Amount</ion-label>
+          </ion-segment-button>
+          <ion-segment-button value="grams" [ngClass]="currentTypeOrder === 'grams'?'custBackgroundColorBrightCyan custColorWhite':'custColorDark custOptacity'" class="custSegment">
+            <ion-label class="custFontFamilyMuliBold muli-12pt custLineHight18 text-capitalize">Units</ion-label>
+          </ion-segment-button>
+      </ion-segment>
+    </ion-col>
+    <ion-col [size]="'3'" class="text-start"></ion-col>
+  </ion-row>
+</ion-col>
+</ion-row>
+
+      <ion-row class="mx-4  mt-2">
+        <ion-col class="custTextAlignCenter  " [size]="'12'">
+          <span class="w-100 custFontFamilyMuliBold   custTextAlignCenter muli-12pt  "
+            [ngClass]="currentTypeOrder === 'amount'?' custColorDark':'custColorBattlePGry'">{{'Amount' | translate}}</span>
+          <mat-form-field class="text-center ps-1  w-100  custTextAlignCenter "
+            [ngClass]="showError1?'mat-form-field-invalid custColorcustFadedRed':''">
+            <span class="custFontFamilyRobotoCondensed muli-20pt custColorDark custCurrency custTextAlignCenter  ps-1"
+              [ngClass]="showError1?'custColorcustFadedRed':'custColorDark'"
+              [ngClass]="currentTypeOrder === 'amount'?' custColorDark':'custColorBattlePGry'">₹</span>
+            <input matInput #commaInput type="number" [(ngModel)]="setedAmount" (ngModelChange)="changeUnits()" [disabled]="redeemAll" [disabled]="currentTypeOrder == 'grams'"
+            [disabled]="currentTypeOrder === 'grams'"(keyup)="NotAllowAmount($event)"
+              class="custFontFamilyRobotoCondensed muli-22pt custLineHight40 custColorDark text-center px-1">
+          </mat-form-field>
+        </ion-col>
+        <!-- <ion-col [size]="'2'" class="text-center ">
+          <img [src]="imageList?.InvestLeftArror" class="custImg2 mt-2" *ngIf="currentTypeOrder == 'grams'">
+          <img [src]="imageList?.Investrightarrow" class="custImg2 mt-2" *ngIf="currentTypeOrder == 'amount'">
+        </ion-col> -->
+        <!-- <ion-col class="custTextAlignCenter " [size]="'5'">
+          <span class="w-100 custFontFamilyMuliBold  muli-12pt"
+            [ngClass]="currentTypeOrder === 'grams'?'custColorDark':'custColorBattlePGry'">Units</span>
+               <mat-form-field class=" text-center  w-100"
+            [ngClass]="showError2?'mat-form-field-invalid custColorcustFadedRed':''">
+            <input #commaInput matInput [(ngModel)]="setedUnits" (ngModelChange)="changeAmount()" [disabled]="redeemAll"  [disabled]="currentTypeOrder == 'grams'" type="number"
+              [disabled]="currentTypeOrder === 'amount'" (keyup)="NotAllowUnit($event)"
+              class="custFontFamilyRobotoCondensed muli-24pt custLineHight40 custColorDark text-center">
+          </mat-form-field>
+
+        </ion-col> -->
+        <ion-col [size]="'12'" class="custTextAlignCenter" *ngIf="showError2">
+          <span class="muli-12pt custLineHight18 custColorcustFadedRed custFontFamilyMuliBold">{{'MinError' | translate}} {{availableUnit}} Units</span>
+        </ion-col>
+        <ion-col [size]="'12'" class="custTextAlignCenter" *ngIf="showError1">
+          <span class="muli-12pt custLineHight18 custColorcustFadedRed custFontFamilyMuliBold">{{'MinError' | translate}} {{availableAmount}} </span>
+        </ion-col>
+        <!-- <ion-col [size]="'12'" class="custTextAlignCenter" *ngIf="!showError2 && (currentTypeOrder === 'grams')">
+          <span class="muli-12pt custLineHight18  custColorGreyish custFontFamilyMuliBold">{{'MinError' | translate}} {{availableUnit}} Units</span>
+        </ion-col>
+        <ion-col [size]="'12'" class="custTextAlignCenter" *ngIf="!showError1 && (currentTypeOrder === 'amount')">
+          <span class="muli-12pt custLineHight18 custColorGreyish  custFontFamilyMuliBold">{{'MinError' | translate}} {{availableAmount}} </span>
+        </ion-col> -->
+      </ion-row>
+    </ion-grid>
+
+    <ion-row class="p-3 w-100">
+      <ion-col class="d-flex flex-column text-start">
+        <span class="custFontFamilyMuliRegular custLineHight15 muli-12pt custColorGreyish">Total Redeemable</span>
+        <ion-row class="mt-1">
+        <span class="custFontFamilyMuliRegular muli-14pt custLineHight18 custColorDark">₹{{availableAmount}}({{availableUnit}} units )</span>
+        </ion-row>
+      </ion-col>
+      <ion-col class="text-end mt-3" size="'2'">
+        <span class="custFontFamilyMuliBold muli-12pt custLineHight18 custColorDarkishBlue me-2">Redeem All</span>
+        <ion-checkbox color="secondary" [(ngModel)]="redeemAll" (ngModelChange)="redeemAllFunction()"></ion-checkbox>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="p-2">
+    <ion-card>
+      <ion-card-content>
+        <ion-row class="w-100">
+        <ion-col class="d-flex flex-column text-start">
+          <span class="custFontFamilyMuliRegular custLineHight15 muli-12pt custColorGreyish">Applicable NAV Date</span>
+          <ion-row class="mt-1">
+          <span class="custFontFamilyMuliRegular muli-14pt custLineHight18 custColorDark">12th Apr, 2022</span>
+          </ion-row>
+        </ion-col>
+        <ion-col class="text-end d-flex flex-column">
+          <span class="custFontFamilyMuliRegular custLineHight15 muli-12pt custColorGreyish">Expected Completion</span>
+          <span class="custFontFamilyMuliRegular muli-14pt custLineHight18 custColorDark mt-1">15th Apr, 2022</span>
+          <span class="custFontFamilyMuliRegular custLineHight15 muli-12pt custColorGreyish mt-4">Minimum 1 working day ₹0 Approx. Exit Load
+          <img [src]="imageList?.blueInformation" class="ms-1 solution" (click)="convert()">
+          </span>
+        </ion-col>
+      </ion-row>
+      </ion-card-content>
+    </ion-card>
+  </ion-row>
+
+    <ion-row class="pt-3 px-3 w-100">
+      <span class="custFontFamilyMuliRegular custLineHight15 muli-12pt custColorGreyish">Transfer Amount to</span>
+    </ion-row>
+
+  <ion-row class="p-2">
+    <ion-card class="w-100">
+      <ion-card-content>
+      <ion-row>
+        <ion-col size="1">
+          <ion-radio-group>
+            <ion-radio color="secondary" checked="true" mode="md" class="mt-1"></ion-radio>
+          </ion-radio-group>
+        </ion-col>
+        <ion-col size="2">
+          <!-- <img [src]="x[0].logo" class="custSIPIcon"> -->
+          <img [src]="imageList?.iciciLogo" class="custSIPIcon">
+        </ion-col>
+        <ion-col size="9" class="d-flex flex-column">
+          <span class="custFontFamilyMuliBold muli-14pt custColorDark custLineHight18">ICICI Bank Limited</span>
+          <span class="custFontFamilyMuliRegular muli-12pt custColorTint mt-1 custLineHight18">A/c: ***********5432</span>
+        </ion-col>
+      </ion-row>
+    </ion-card-content>
+    </ion-card>
+  </ion-row>
+
+
+  </ion-content>
+
+  <div class="custBackgroundColorPaleGrey">
+      <ion-row>
+        <ion-col [size]="'12'">
+          <ion-item lines="none" class="contentBackground">
+            <ion-checkbox color="secondary" mode="md"  (click)="term($event)" slot="start" class="ms-0 mt-0"></ion-checkbox>
+              <span class="custFontFamilyMuliRegular muli-10pt custColorWarmGrey custLineHight15">
+                I agree with the&nbsp;
+                <a (click)="clickDisclaimerURL()" class="custColorDarkishBlue">{{'disclaimers' | translate}}</a>&nbsp;{{'and' | translate}}
+                <a (click)="clickTncUrl()"class="custColorDarkishBlue">{{'termsConditions' | translate}}</a>
+              </span>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col [size]="'12'" class="btnPadding pt-0" >
+          <button class="btn custBackgroundColorBrightCyan w-100" (click)="OpenSuccesPage()" [disabled]="!(setedAmount && setedUnits && termTrue)">
+            <span class="text-capitalized custFontFamilyMuliBold muli-16pt custLineHight20 custColorWhite">Redeem</span>
+          </button>
+        </ion-col>
+      </ion-row>
+    </div>
+
+      <div class="custModalContainer" *ngIf="popUp" (click)="hidePopUp()">
+        <div id="showModalSMGSucces" class="modal-content">
+          <ion-row>
+            <ion-col class="text-center">
+              <ion-icon name="chevron-down-outline" style="height:25px; width:25px; color:grey;">
+              </ion-icon>
+            </ion-col>
+          </ion-row>
+
+
+          <ion-row class="pb-2">
+            <ion-col>
+              <span class="custFontFamilyMuliSemiBold muli-14pt custLineHeight22 custColorDark">Approx. Exit Load: ₹0</span>
+            </ion-col>
+          </ion-row>
+          <ion-row class="px-2">
+            <ion-col>
+              <span class="custFontFamilyMuliRegular muli-12pt custLineHeight20 custColorBattlePGry">The actual exit load applicable may be different as it will be the one prevailing at the time of purchase.</span>
+            </ion-col>
+          </ion-row>
+
+      </div>
+      </div>
+
+</ion-app>

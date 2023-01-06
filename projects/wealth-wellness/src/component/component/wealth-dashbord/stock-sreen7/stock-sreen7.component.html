@@ -1,0 +1,62 @@
+<ion-grid class="w-100">
+  <div class="marginT">
+    <ion-searchbar
+      class="padding0"
+      placeholder="Search TCS REL..."
+      show-clear-button="never"
+      enterkeyhint="search"
+      [(ngModel)]="search"
+      #top
+      (keyup)="onKeySearch(top.value)">
+    </ion-searchbar>
+  </div>
+
+  <ion-card
+    class="custBackgroundColorWhite mx-2 my-0"
+    *ngFor="let item of getValue"
+  >
+    <ion-row class="">
+      <ion-col
+        class="custColorDark muli-14pt custFontFamilyMuliSemiBold text-nowrap"
+      >
+        {{ item?.nse_symbol }}
+        <img
+          *ngIf="item.img"
+          src="{{ item.img }}"
+          style="height: 16px; margin-top: -16px"
+        />
+      </ion-col>
+      <ion-col
+        class="custFontFamilyMuliSemiBold custLineHight20 muli-14pt custColorDark text-end text-nowrap"
+      >
+        ₹{{ item?.last_traded_price }}
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col
+        class="custFontFamilyMuliSemiBold custColorParakeetGreen muli-12pt custLineHight16 custColorBattlePGry text-nowrap"
+      >
+        ₹ Qty {{ item?.quantity }}
+        ×
+        {{ item?.last_traded_price }} = ₹
+        {{ item?.quantity * item?.last_traded_price }}
+      </ion-col>
+      <ion-col class="d-flex justify-content-end text-end">
+        <span
+          class="muli-12pt itemCol mb-1 text-end text-nowrap custColorParakeetGreen"
+        >
+          <ion-icon
+            name="caret-up"
+            class="custGreenTick custColorParakeetGreen"
+          ></ion-icon
+          >{{ item?.quantity }} </span
+        >&nbsp;
+        <span
+          class="muli-12pt itemCol mb-3 text-end custFontFamilyRobotoCondensed custColorParakeetGreen text-nowrap"
+          >({{ item?.quantity }}%)</span
+        >
+      </ion-col>
+    </ion-row>
+  </ion-card>
+</ion-grid>

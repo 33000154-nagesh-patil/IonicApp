@@ -1,0 +1,271 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-grid>
+      <ion-row>
+        <ion-col [size]="'1'">
+          <ion-img [src]="imageList?.arrow" class="custArrorSize mt-1 custCenterAlign" *ngIf="!title1"
+            (click)="goback()"></ion-img>
+          <ion-img [src]="imageList?.arrow" class="custArrorSize mt-1 custCenterAlign" *ngIf="title1"
+            (click)="gobackagain()"></ion-img>
+        </ion-col>
+        <ion-col class="custFontFamilyMuliBold muli-16pt" *ngIf="!title1">{{title}}
+        </ion-col>
+        <ion-col class="custFontFamilyMuliBold muli-16pt" *ngIf="title1">{{title1}}
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+<div *ngIf="(title==='Wealth') && !title1">
+  <ion-list class="contentBackground">
+    <ion-item *ngFor="let x of JSONdata;index as i">
+      <ion-row class="w-100 custCenterAlign" (click)="reDirectTo(sub[i].ProductName)">
+        <ion-col [size]="'1'" class="text-start">
+          <ion-img [src]="x?.icons" class="custWealthIcons ion-no-padding"></ion-img>
+        </ion-col>
+        <ion-col [size]="'6'" class="ps-3">
+          <span class="custFontFamilyMuliRegular muli-12pt custColorDark">{{sub[i].ProductName}}</span>
+        </ion-col>
+
+        <ion-col [size]="'4'" class="ion-no-padding">
+          <img
+            [src]="x?.kycStatus == 'KYC-Pending'?imageList?.kycpending :x?.kycStatus == 'KYC-Completed'?imageList?.kycdone:''"
+            class="custKYCimg"><span class="ps-1 custFontFamilyMuliBold muli-8pt"
+            [ngClass]="x?.kycStatus?'custColor'+x?.kycStatus :''">{{x?.kycStatus}}</span>
+        </ion-col>
+        <ion-col [size]="'1'" class="text-end">
+          <img [src]="imageList?.next">
+        </ion-col>
+        <span
+          class="custFontFamilyMuliRegular w-100 custpaddig muli-10pt custLineHight15 custColorGreyish">{{x?.notifyLine}}</span>
+      </ion-row>
+    </ion-item>
+  </ion-list>
+</div>
+
+
+<div *ngIf="(title==='Bank') && !title1">
+  <ion-list class="contentBackground">
+    <ion-item *ngFor="let x of JSONdata;index as i">
+      <ion-row class="w-100 custCenterAlign" (click)="reDirectTo(bankDetails[i].ProductName)">
+        <ion-col [size]="'1'" class="text-start">
+          <ion-img [src]="x?.icons" class="custWealthIcons ion-no-padding"></ion-img>
+        </ion-col>
+
+        <ion-col [size]="'6'" class="ps-3">
+          <span class="custFontFamilyMuliRegular muli-12pt custColorDark">{{bankDetails[i].ProductName}}</span>
+        </ion-col>
+        <ion-col [size]="'4'" class="ion-no-padding">
+          <img
+            [src]="x?.kycStatus == 'KYC-Pending'?imageList?.kycpending :x?.kycStatus == 'KYC-Completed'?imageList?.kycdone:''"
+            class="custKYCimg"><span class="ps-1 custFontFamilyMuliBold muli-8pt"
+            [ngClass]="x?.kycStatus?'custColor'+x?.kycStatus :''">{{x?.kycStatus}}</span>
+        </ion-col>
+        <ion-col [size]="'1'" class="text-end">
+          <img [src]="imageList?.next">
+        </ion-col>
+        <span
+          class="custFontFamilyMuliRegular w-100 custpaddig muli-10pt custLineHight15 custColorGreyish">{{x?.notifyLine}}</span>
+      </ion-row>
+    </ion-item>
+  </ion-list>
+</div>
+
+
+
+<div *ngIf="title1==='Money Maker' || title1==='Money Saver'">
+  <ion-list>
+    <ion-item *ngFor="let x of data;index as i" >
+      <ion-row class="w-100 custCenterAlign" (click)="showCategory(x)">
+        <ion-col [size]="'1'" class="text-start">
+          <ion-img [src]="x?.icons" class="custWealthIcons ion-no-padding"></ion-img>
+        </ion-col>
+        <ion-col class="ps-3" *ngIf="title1=='Money Maker' ">
+          <span class="custFontFamilyMuliRegular muli-12pt custColorDark ">{{x.title}}</span>
+        </ion-col>
+        <ion-col class="ps-3" *ngIf="title1==='Money Saver'">
+          <span class="custFontFamilyMuliRegular muli-12pt custColorDark ">{{x.title}}</span>
+        </ion-col>
+        <ion-col [size]="'4'" class="ion-no-padding">
+          <img
+            [src]="x?.kycStatus == 'KYC-Pending'?imageList?.kycpending :x?.kycStatus == 'KYC-Completed'?imageList?.kycdone:''"
+            class="custKYCimg"><span class="ps-1 custFontFamilyMuliBold muli-8pt"
+            [ngClass]="x?.kycStatus?'custColor'+x?.kycStatus :''">{{x?.kycStatus}}</span>
+        </ion-col>
+        <span class="custFontFamilyMuliRegular w-100 custpaddig muli-10pt custLineHight15 custColorGreyish">
+          {{x?.notifyLine}} </span>
+        <ion-row class="w-100">
+          <ion-item *ngFor="let item of x?.submenu;index as i" class="ms-5  ion-no-padding ps-2 w-100 custBorder" (click)="showCategory(item)">
+            <ion-row class="w-100 custCenterAlign" *ngIf="x?.submenu">
+              <ion-col [size]="'1'" class="text-start ion-no-padding">
+                <ion-img [src]="item?.icons" class="custWealthIcons"></ion-img>
+              </ion-col>
+              <ion-col class="ps-3 py-2">
+                <span class="custFontFamilyMuliRegular muli-12pt custColorDark ">{{item.title}}</span>
+              </ion-col>
+              <span
+                class="custFontFamilyMuliRegular w-100 mb-2 muli-10pt custLineHight15 custColorGreyish">{{item?.notifyLine}}</span>
+            </ion-row>
+          </ion-item>
+        </ion-row>
+      </ion-row>
+    </ion-item>
+  </ion-list>
+</div>
+
+
+
+
+<div *ngIf="(title==='Customer Support') && !title1">
+  <ion-list>
+    <ion-item *ngFor="let x of JSONdata;index as i">
+      <ion-row class="w-100 align-items-center" (click)="gotoFAQ(supportDetails[i].ProductName)">
+        <ion-col [size]="'1'" class="text-start">
+          <ion-img [src]="x?.icons" class="custCustomerSupportIcons ion-no-padding"></ion-img>
+        </ion-col>
+        <ion-col [size]="'10'" class="ps-3 py-4">
+          <span class="custFontFamilyMuliRegular muli-12pt custColorDark">{{supportDetails[i].ProductName}}</span>
+        </ion-col>
+        <ion-col [size]="'1'" class="text-end">
+          <img [src]="imageList?.next">
+        </ion-col>
+      </ion-row>
+    </ion-item>
+  </ion-list>
+</div>
+
+<div *ngIf="(title==='Settings') && !title1">
+  <ion-list>
+    <ion-item *ngFor="let x of JSONdata;index as i">
+      <ion-row class="w-100 align-items-center" (click)="reDirectTo(settingsDet[i].ProductName)">
+        <ion-col [size]="'1'" class="text-start">
+          <ion-img [src]="x?.icons" class="custCustomerSupportIcons ion-no-padding"></ion-img>
+        </ion-col>
+        <ion-col [size]="'8.5'" class="ps-3 py-4">
+          <span class="custFontFamilyMuliRegular muli-12pt custColorDark">{{settingsDet[i].ProductName}}</span>
+        </ion-col>
+        <ion-col [size]="'2.5'" class="text-end" *ngIf="settingsDet[i].ProductName != 'Dark Mode' && settingsDet[i].ProductName != 'Logout'" >
+          <img [src]="imageList?.next">
+        </ion-col>
+        <ion-col [size]="'2.5'" class="custCenterAlign" *ngIf="settingsDet[i].ProductName == 'Dark Mode'">
+          <ion-row class="d-flex custCenterAlign">
+            <ion-toggle mode="ios" checked={{ColorMode}} (ionChange)="changeAppTheme()" color="secondary"></ion-toggle>
+          </ion-row>
+        </ion-col>
+        <ion-col [size]="'2.5'" class="text-end" *ngIf="settingsDet[i].ProductName == 'Logout'">
+          <span class="custFontFamilyMuliRegular muli-12pt custColorGreyish">V1.213</span>
+        </ion-col>
+      </ion-row>
+    </ion-item>
+    <!-- <ion-item>
+      <ion-row class="w-100 align-items-center">
+        <ion-col [size]="'1'" class="text-start">
+          <ion-img [src]="imageList?.themeIcon" class="custCustomerSupportIcons ion-no-padding"></ion-img>
+        </ion-col>
+        <ion-col [size]="'8.5'" class="ps-3 py-4">
+          <span class="custFontFamilyMuliRegular muli-12pt custColorDark">Dark Mode</span>
+        </ion-col>
+        <ion-col [size]="'2.5'" class="custCenterAlign">
+          <ion-row class="d-flex custCenterAlign">
+            <ion-toggle mode="ios" color="secondary"></ion-toggle>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+    </ion-item>
+    <ion-item (click)="navigateTo('Logout')">
+      <ion-row class="w-100 align-items-center">
+        <ion-col [size]="'1'" class="text-start">
+          <ion-img [src]="imageList?.logoutIcon" class="custCustomerSupportIcons ion-no-padding"></ion-img>
+        </ion-col>
+        <ion-col [size]="'8'" class="ps-3 py-4" (click)="reDirectTo($event)">
+          <span class="custFontFamilyMuliRegular custColorDark">Logout</span>
+        </ion-col>
+        <ion-col [size]="'3'" class="text-end">
+          <span class="custFontFamilyMuliRegular muli-12pt custColorGreyish">V1.213</span>
+        </ion-col>
+      </ion-row>
+    </ion-item> -->
+  </ion-list>
+</div>
+
+
+<div *ngIf="title1==='About Us'">
+  <ion-list>
+    <ion-item *ngFor="let x of data; index as i">
+      <ion-row class="w-100 align-items-center">
+        <ion-col [size]="'1'" class="text-start">
+          <ion-img [src]="x?.icons" class="custCustomerSupportIcons ion-no-padding"></ion-img>
+        </ion-col>
+        <ion-col [size]="'10'" class="ps-3 py-4">
+          <span class="custFontFamilyMuliRegular muli-12pt custColorDark">{{about[i].ProductName}}</span>
+        </ion-col>
+        <ion-col [size]="'1'" class="text-end">
+          <img [src]="imageList?.next">
+        </ion-col>
+      </ion-row>
+    </ion-item>
+  </ion-list>
+</div>
+
+
+<div *ngIf="title1==='Manage App Lock'">
+  <ion-list>
+    <ion-item *ngFor="let x of data; index as i">
+      <ion-row class="w-100 align-items-center">
+        <ion-col [size]="'1'" class="text-start">
+          <ion-img [src]="x?.icons" class="custCustomerSupportIcons ion-no-padding"></ion-img>
+        </ion-col>
+        <ion-col [size]="'8.5'" class="ps-3 py-4">
+          <span class="custFontFamilyMuliRegular muli-12pt custColorDark">{{app[i].ProductName}}</span>
+        </ion-col>
+        <ion-col [size]="'2.5'" class="custCenterAlign">
+          <ion-row class="d-flex custCenterAlign">
+            <ion-toggle mode="ios" color="secondary"></ion-toggle>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+    </ion-item>
+  </ion-list>
+</div>
+
+
+<div *ngIf="title1==='Insurance Solutions' || title1==='Instant Loans'">
+  <ion-list>
+    <ion-item *ngFor="let x of data; index as i">
+      <ion-row class="w-100 custCenterAlign" (click)="showCategory(x)">
+        <ion-col [size]="'1'" class="text-start">
+          <ion-img [src]="x?.icons" class="custWealthIcons ion-no-padding"></ion-img>
+        </ion-col>
+        <ion-col class="ps-3" *ngIf="title1!='Instant Loans'">
+          <span class="custFontFamilyMuliRegular muli-12pt custColorDark">{{insSolution[i].ProductName}}</span>
+        </ion-col>
+        <ion-col class="ps-3" *ngIf="title1==='Instant Loans'">
+          <span class="custFontFamilyMuliRegular muli-12pt custColorDark">{{loans[i].ProductName}}</span>
+        </ion-col>
+        <ion-col [size]="'4'" class="ion-no-padding">
+          <img
+            [src]="x?.kycStatus == 'KYC-Pending'?imageList?.kycpending :x?.kycStatus == 'KYC-Completed'?imageList?.kycdone:''"
+            class="custKYCimg"><span class="ps-1 custFontFamilyMuliBold muli-8pt"
+            [ngClass]="x?.kycStatus?'custColor'+x?.kycStatus :''">{{x?.kycStatus}}</span>
+        </ion-col>
+        <span class="custFontFamilyMuliRegular w-100 custpaddig muli-10pt custLineHight15 custColorGreyish">
+          {{x?.notifyLine}} </span>
+        <ion-row class="w-100">
+          <ion-item *ngFor="let item of x?.submenu;index as i" class="ms-5  ion-no-padding ps-2 w-100 custBorder">
+            <ion-row class="w-100 custCenterAlign" *ngIf="x?.submenu">
+              <ion-col [size]="'1'" class="text-start ion-no-padding">
+                <ion-img [src]="item?.icons" class="custWealthIcons"></ion-img>
+              </ion-col>
+              <ion-col class="ps-3" (click)="reDirectTo($event)">
+                <span class="custFontFamilyMuliRegular muli-12pt custColorDark ">{{vehicle[i].ProductName}}</span>
+              </ion-col>
+              <span
+                class="custFontFamilyMuliRegular w-100 mb-2 muli-10pt custLineHight15 custColorGreyish">{{item?.notifyLine}}</span>
+            </ion-row>
+          </ion-item>
+        </ion-row>
+      </ion-row>
+    </ion-item>
+  </ion-list>
+</div>

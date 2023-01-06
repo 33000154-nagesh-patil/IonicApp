@@ -1,0 +1,163 @@
+
+
+<ion-header *ngIf="showHeader">
+  <ion-toolbar class="custBackgroundDynamicColorWhite">
+    <ion-grid>
+      <ion-row>
+
+        <ion-col [size]="5" class="custTextAlignCenter">
+
+          <span class="custFontFamilyMuliBold custLineHight40 muli-16pt custColorDark ">Health</span>
+
+
+        </ion-col>
+
+
+
+        <ion-col [size]="'2'" id="searchbar">
+          <div class="custTextAlignCenter">
+            <div class="custHeight custProfile">
+              <ion-img [src]="imageList?.search"  (click)="toggleID()" class="custSVGIcon"></ion-img>
+             </div>
+             <p  class="muli-10pt custLineHight28 custFontFamilyMuliSemiBold custColorBattlePGry">{{'search' | translate}}</p>
+          </div>
+        </ion-col>
+
+
+        <ion-col [size]="'3'"  id="notification">
+          <div class="custTextAlignCenter">
+            <ion-badge class="custBadge custRight" *ngIf="notificationCount > 0">{{notificationCount}}</ion-badge>
+            <div class="custHeight custProfile">
+              <ion-img [src]="imageList?.notificationIcon" class="custSVGIcon"></ion-img>
+             </div>
+             <p  class="muli-10pt custLineHight28 custFontFamilyMuliSemiBold custColorBattlePGry">{{'notifications' | translate}}</p>
+          </div>
+          </ion-col>
+
+
+        <ion-col [size]="'2'"  id="cardWithName">
+
+          <div class="custTextAlignCenter">
+            <ion-badge class="custBadge custRight0" *ngIf="cardCount > 0 ">{{cardCount}}</ion-badge>
+            <div class="custHeight custProfile">
+              <ion-img [src]="imageList?.cartIcon" class="custSVGIcon"></ion-img>
+             </div>
+             <p  class="muli-10pt custLineHight28 custFontFamilyMuliSemiBold custColorBattlePGry">{{'myCart' | translate}}</p>
+          </div>
+         </ion-col>
+
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-header *ngIf="showSerchBar">
+  <ion-toolbar class="custBackgroundDynamicColorWhite p-2">
+    <ion-grid>
+      <ion-row>
+        <ion-col [size]="'0.7'" class="text-center mt-2">
+          <ion-img [src]="imageList?.arrow" class="custKYCImg mt-1" (click)="searchBarBack()"></ion-img>
+        </ion-col>
+        <ion-col [size]="'10'" class="px-3 mt-2">
+              <input type="text" #search (keyup)="clearSearchIcon()" [(ngModel)]="searchBar" autocomplete="off" placeholder="Search Courses" class="formControl"/>
+        </ion-col>
+        <ion-col [size]="'1'" class="text-center float-end" *ngIf="searchIcon">
+          <ion-img [src]="imageList?.search"  class="custKYCImg mt-2"></ion-img>
+        </ion-col>
+        <ion-col [size]="'1'" class="text-center mt-3" *ngIf="closeIcon">
+          <ion-img [src]="imageList?.close"  class="custCloseIcon float-end" (click)="search.value=''"></ion-img>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+
+
+ <ion-toolbar>
+    <ion-grid >
+      <ion-row>
+
+          <ion-col class="custFontFamilyMuliBold muli-22pt ">Track</ion-col><br>
+
+      </ion-row>
+      <ion-row>
+
+        <ion-col class="custFontFamilyMuliBold muli-12pt">Track your orders</ion-col>
+
+    </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+
+<ion-content>
+  <ion-grid class="shopingPadding">
+    <ion-row >
+
+      <ion-col [size]="'12'">
+        <ion-card  class="custBackgroundColorWhite" *ngFor="let x of data">
+          <ion-card-content (click)="openCardDetails(x?.orderGuId)">
+            <ion-grid class="ion-no-padding">
+              <ion-row class="py-2">
+                <ion-col [size]="'12'">
+                  <ion-row>
+                    <ion-col [size]="'2'">
+                      <ion-img [src]="x?.productImage" class="custImgGold"></ion-img>
+                    </ion-col>
+                    <ion-col [size]="'9'">
+
+                      <span
+                        class="custFontFamilyMuliBold muli-14pt custLineHight20 custColorDark">{{x?.productname}}</span>
+                      <span class="d-flex">
+                        <p class="custFontFamilyMuliRegular muli-10pt custLineHight15 custColorGreyish">{{x?.provider}}
+                        </p>
+                      </span>
+                    </ion-col>
+                    <ion-col [size]="'1'">
+                      <ion-img [src]="imageList?.leftArrowIcon" class="m-3 custArrowIcon"></ion-img>
+                    </ion-col>
+                  </ion-row>
+                </ion-col>
+                <ion-col [size]="'12'">
+                  <ion-row class="ion-no-padding">
+                    <ion-col [size]="'4'">
+                      <span class="custFontFamilyMuliRegular muli-10pt custLineHight15 custColorGreyish">Price</span>
+                      <span
+                        class="custFontFamilyRubikRegular d-block muli-12pt custLineHight18 custColorDark">{{x?.productPrice}}</span>
+                    </ion-col>
+                    <ion-col [size]="'4'" class="ps-4">
+                      <span
+                        class="custFontFamilyMuliRegular muli-10pt custLineHight15 custColorGreyish">E-Reports By</span>
+                      <span
+                        class="custFontFamilyRubikRegular d-block muli-12pt custLineHight18 custColorDark">{{x?.reportBy}}</span>
+                    </ion-col>
+                    <ion-col [size]="'4'" class="statusPadding">
+                      <span
+                        class="custFontFamilyMuliRegular muli-10pt custLineHight15 custColorGreyish">status</span>
+                      <span class="custFontFamilyRubikRegular d-block muli-12pt custLineHight18 custColorDark"
+                        [ngClass]="x?.pending?'custColor'+x?.pending :''">{{x?.status}}</span>
+                    </ion-col>
+                  </ion-row>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </ion-card-content>
+          <ion-row class="custBackgroundColorPaleGrey custbottomheight w-100  text-end p-2">
+            <ion-col class="text-start custFontFamilyMuliBold muli-10pt custColorDarkishBlue">{{x.track}}</ion-col>
+          </ion-row>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>
+  <!-- <ion-footer class="fixed-bottom">
+<lib-footer  [activeImg]="imageList?.activeTab" (getHealthMainPage)="getHealthMainPage($event)" [selectedIndex]="'4'" [footerListData]="mfFooterData" [parentTab]="'Health'"></lib-footer> -->
+<ion-footer>
+
+  <lib-footer (click)="closeModal()" *ngIf="currentMode" [activeImg]="imageList?.activeTab" [selectedIndex]="'4'"
+  [footerListData]="goldFooterData" [parentTab]="'labTest'"></lib-footer>
+</ion-footer>
+
+
+

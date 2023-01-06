@@ -1,0 +1,69 @@
+{
+    "heading": [
+        {
+            "heading": "My Portfolio",
+            "box": true,
+            "discription": "An overview of your Funds"
+        }
+    ],
+
+    "title":"Fund",
+
+    "Cards": [{
+        "heading": "",
+        "description": "",
+        "sub_heading": "",
+        "image": "",
+        "row": [{
+                "Invested Amount": "Rs.1000",
+                "Current Amount": "Rs.1100"
+            },
+            {
+                "Return": "20%",
+                "XIRR": "25%",
+                "Nav":"25.5"
+            }
+            
+        ]
+    }],
+
+    "card": [
+        {
+            "row1": {
+                "icon": "assets/icon/EducationIcon1.svg",
+                "title": "Life Insurance",
+                "description": "15 sections. 135 lectures. 11 hours",
+                "action": "assets/icon/leftArrowIcon.svg"
+            },
+            "row2": {
+                "Price": "Rs.1",
+                "Level": "Beginner"
+            }
+        },
+        {
+            "row1": {
+                "icon": "assets/icon/EducationIcon1.svg",
+                "title": "Life Insurance",
+                "description": "15 sections. 135 lectures. 11 hours",
+                "action": "assets/icon/leftArrowIcon.svg"
+            },
+            "row2": {
+                "Price": "Rs.1",
+                "Level": "Beginner"
+            }
+        },
+        {
+            "row1": {
+                "icon": "assets/icon/EducationIcon1.svg",
+                "title": "Life Insurance",
+                "description": "15 sections. 135 lectures. 11 hours",
+                "action": "assets/icon/leftArrowIcon.svg"
+            },
+            "row2": {
+                "Price": "Rs.1",
+                "Level": "Beginner"
+            }
+        }
+    ]
+    
+}

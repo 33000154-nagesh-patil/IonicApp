@@ -1,0 +1,306 @@
+<ion-grid class="p-2 pt-2">
+  <ion-row>
+
+    <!-- Banner Code -->
+    <ion-col [size]="'12'" class="mfBackground p-2 mb-2">
+      <ion-row class="pt-4 pb-4">
+        <ion-col [size]="'12'" class="custTextAlignCenter ">
+          <span class="custFontFamilyMuliBold muli-16pt custLineHight18 custColorWhite">{{'benefitsDigitalGold' |
+            translate}}</span>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col [size]="'4'">
+          <ion-row>
+            <ion-col [size]="'12'" class="custTextAlignCenter">
+              <ion-img [src]="imageList?.secureIcon" class="custBackgroundColorWater custMFImg"></ion-img>
+            </ion-col>
+            <ion-col [size]="'12'" class="custTextAlignCenter pt-2 pb-2">
+              <span class="custFontFamilyMuliSemiBold muli-12pt custLineHight16 custColorWhite">
+                {{'benefitsDigitalGoldSub1' | translate}}
+              </span>
+            </ion-col>
+          </ion-row>
+        </ion-col>
+        <ion-col [size]="'4'">
+          <ion-row>
+            <ion-col [size]="'12'" class="custTextAlignCenter">
+              <ion-img [src]="imageList?.zeroIcon" class="custBackgroundColorWater custMFImg"></ion-img>
+            </ion-col>
+            <ion-col [size]="'12'" class="custTextAlignCenter pt-2 pb-2">
+              <span class="custFontFamilyMuliSemiBold muli-12pt custLineHight16 custColorWhite">
+                {{'zeroMakingCharges' | translate}}
+              </span>
+            </ion-col>
+          </ion-row>
+        </ion-col>
+        <ion-col [size]="'4'">
+          <ion-row>
+            <ion-col [size]="'12'" class="custTextAlignCenter">
+              <ion-img [src]="imageList?.diversifyPortfolioIcon" class="custBackgroundColorWater custMFImg"></ion-img>
+            </ion-col>
+            <ion-col [size]="'12'" class="custTextAlignCenter pt-2 pb-2">
+              <span class="custFontFamilyMuliSemiBold muli-12pt custLineHight16 custColorWhite">
+                {{'diversifyPortfolio' | translate}}
+              </span>
+            </ion-col>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+    </ion-col>
+    <ion-col [size]="'12'">
+      <span class="muli-22pt custFontFamilyMuliBold custLineHight30 custColorDark text-capitalize">
+        {{'wealth' | translate}} {{'wellness' | translate}}
+      </span>
+    </ion-col>
+    <ion-col [size]="'12'">
+      <ion-row>
+        <ion-col [size]="'2'" class="text-start p-0 m-0">
+          <div class="custBackgroundColorDarkishBlue custBox p-0 m-0"></div>
+        </ion-col>
+      </ion-row>
+    </ion-col>
+    <ion-col [size]="'12'">
+      <p class="custFontFamilyMuliRegular muli-12pt custLineHight18 custColorBattlePGry">{{'wealthWellnessPara' |
+        translate}}</p>
+    </ion-col>
+    <ion-col [size]="'12'">
+      <span class="custFontFamilyMuliBold muli-16pt custLineHight22 custColorDark">{{'moneyMakers' | translate}}</span>
+    </ion-col>
+    <ion-col [size]="'12'">
+
+
+      <ion-card class="custBackgroundColorWhite p-0 m-0">
+        <ion-card-content>
+          <ion-row>
+            <ion-col [size]="'1.5'">
+              <ion-img [src]="imageList?.stockIcon" class="custStockIcon float-start"></ion-img>
+            </ion-col>
+            <ion-col [size]="'10.5'">
+              <span class="custFontFamilyMuliSemiBold custLineHight20 muli-14pt custColorDark">
+                {{'stocks' | translate}}
+              </span>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col [size]="'7'">
+              <span class="custFontFamilyMuliRegular muli-12pt custLineHight16 custColorBattlePGry">{{'wellnessStocks' |
+                translate}}</span>
+            </ion-col>
+            <ion-col [size]="'5'">
+              <button type="button"
+                class="custBtnExplore text-capitalize custColorBrightCyan custFontFamilyMuliRegular muli-14pt custButtonOutLine float-end"
+                (click)="gotoDashBoard('stocks/Dashboard')" id="wellnessStocke">{{'explore' | translate}}</button>
+            </ion-col>
+          </ion-row>
+
+          <!-- <ion-button (click)="addStock()">go to stock</ion-button> -->
+        </ion-card-content>
+      </ion-card>
+
+
+    </ion-col>
+    <ion-col [size]="'12'">
+      <ion-card class="custBackgroundColorWhite p-0 m-0">
+        <ion-card-content>
+          <ion-row>
+            <ion-col [size]="'1.5'">
+              <ion-img [src]="imageList?.mutualIcon" class="custStockIcon float-start"></ion-img>
+            </ion-col>
+            <ion-col [size]="'10.5'">
+              <span class="custFontFamilyMuliSemiBold custLineHight20 muli-14pt custColorDark">
+                {{'Shopping/Wealth/MutualFunds' | translate}}
+              </span>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col [size]="'7'">
+              <span class="custFontFamilyMuliRegular muli-12pt custLineHight16 custColorBattlePGry">{{'wellnessMutual' |
+                translate}}</span>
+            </ion-col>
+            <ion-col [size]="'5'">
+              <button type="button"
+                class="custBtnExplore text-capitalize custColorBrightCyan custFontFamilyMuliRegular muli-14pt custButtonOutLine float-end"
+                (click)="gotoDashBoard('MutualFund')" id="wellnessMutualFund">{{'explore' | translate}}</button>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+<ion-grid class="p-0">
+  <ion-row>
+    <!-- <ion-col [size]="'12'">
+      scrolls part remaining
+    </ion-col> -->
+  </ion-row>
+</ion-grid>
+<ion-grid class="p-0">
+  <ion-row>
+    <ion-col [size]="'12'" class="custDivLinear">
+      <ion-card class="custBackgroundColorWhite custRoboCard">
+        <ion-card-content>
+          <ion-row>
+            <ion-col [size]="'1.5'">
+              <ion-img [src]="imageList?.roboIcon" class="custStockIcon float-start"></ion-img>
+            </ion-col>
+            <ion-col [size]="'10.5'">
+              <span class="custFontFamilyMuliSemiBold custLineHight20 muli-14pt custColorDark">
+                {{'wealthRoboAdvisory' | translate}}
+              </span>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col [size]="'7'">
+              <span class="custFontFamilyMuliRegular muli-12pt custLineHight16 custColorBattlePGry">{{'wellnessRobo' |
+                translate}}</span>
+            </ion-col>
+            <ion-col [size]="'5'">
+              <button type="button"
+                class="custBtnAssist text-capitalize custColorBrightCyan custFontFamilyMuliRegular muli-14pt custButtonOutLine float-end"
+                id="wellnessWealthRobo" (click)="gotoDashBoard('WealthRoboAdvisory')">{{'getAssist' |
+                translate}}</button>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+<ion-grid class="p-0">
+  <ion-row>
+    <!-- <ion-col [size]="'12'">
+      Top Performing remaining
+    </ion-col> -->
+  </ion-row>
+</ion-grid>
+<ion-grid class="p-0">
+  <ion-row>
+    <!-- <ion-col [size]="'12'">
+      Invest In US Stocks remaining
+    </ion-col> -->
+  </ion-row>
+</ion-grid>
+<ion-grid class="p-2">
+  <ion-row>
+    <ion-col [size]="'12'">
+      <span class="custFontFamilyMuliBold muli-16pt custLineHight22 custColorDark">{{'moneySavers' | translate}}</span>
+    </ion-col>
+    <ion-col [size]="'12'">
+      <ion-card class="custBackgroundColorWhite p-0 m-0">
+        <ion-card-content>
+          <ion-row>
+            <ion-col [size]="'1.5'">
+              <ion-img [src]="imageList?.goldIcon" class="custStockIcon float-start"></ion-img>
+            </ion-col>
+            <ion-col [size]="'10.5'">
+              <span class="custFontFamilyMuliSemiBold custLineHight20 muli-14pt custColorDark">
+                {{'gold' | translate}}
+              </span>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col [size]="'7'">
+              <span class="custFontFamilyMuliRegular muli-12pt custLineHight16 custColorBattlePGry">{{'goldInfo' |
+                translate}}</span>
+            </ion-col>
+            <ion-col [size]="'5'">
+              <button type="button"
+                class="custBtnInvest text-capitalize custColorBrightCyan custFontFamilyMuliRegular muli-14pt custButtonOutLine float-end"
+                id="wellnessWealthRobo" (click)="gotoDashBoard('Gold')">{{'buyNow' | translate}}</button>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+<ion-grid>
+  <ion-row>
+    <ion-col [size]="'6'">
+
+
+      <!-- <ion-card class="custBackgroundColorWhite">
+        <ion-card-content>
+          <ion-row>
+            <ion-col [size]="'2'">
+              <ion-img [src]="imageList?.fixDepositIcon" class="custStockIcon float-start"></ion-img>
+            </ion-col>
+            <ion-col [size]="'10'">
+              <span class="custFontFamilyMuliSemiBold custLineHight20 muli-14pt custColorDark">
+                {{'fixedDeposits' | translate}}
+              </span>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col [size]="'12'">
+              <span class="custFontFamilyMuliRegular muli-12pt custLineHight16 custColorBattlePGry">{{'fixedDepositsInfo' | translate}}</span>
+            </ion-col>
+            <ion-col [size]="'12'">
+              <button type="button" class="custBtnExplore text-capitalize custColorBrightCyan custFontFamilyMuliRegular muli-14pt custButtonOutLine" id="wellnessWealthRobo" (click)="gotoDashBoard('FixedDeposits')">{{'explore' | translate}}</button>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card> -->
+
+
+
+    </ion-col>
+    <ion-col [size]="'6'">
+
+      <!-- <ion-card class="custBackgroundColorWhite">
+      <ion-card-content>
+        <ion-row>
+          <ion-col [size]="'2'">
+            <ion-img [src]="imageList?.bondIcon" class="custStockIcon float-start"></ion-img>
+          </ion-col>
+          <ion-col [size]="'10'">
+            <span class="custFontFamilyMuliSemiBold custLineHight20 muli-14pt custColorDark">
+              {{'bonds' | translate}}
+            </span>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col [size]="'12'">
+            <span class="custFontFamilyMuliRegular muli-12pt custLineHight16 custColorBattlePGry">{{'bondInfo' | translate}}</span>
+          </ion-col>
+          <ion-col [size]="'12'">
+            <button type="button" class="custBtnExplore text-capitalize custColorBrightCyan custFontFamilyMuliRegular muli-14pt custButtonOutLine" id="wellnessWealthRobo" (click)="gotoDashBoard('Bond')">{{'explore' | translate}}</button>
+          </ion-col>
+        </ion-row>
+      </ion-card-content>
+    </ion-card> -->
+
+
+    </ion-col>
+  </ion-row>
+</ion-grid>
+<ion-grid class="p-0">
+  <ion-row>
+    <!-- <ion-col [size]="'12'">
+      Funds With Best Returns remaining
+    </ion-col> -->
+  </ion-row>
+</ion-grid>
+<ion-grid class="p-0">
+  <ion-row>
+    <!-- <ion-col [size]="'12'">
+      Insurance Solutions remaining
+    </ion-col> -->
+  </ion-row>
+</ion-grid>
+<ion-grid class="p-0">
+  <ion-row>
+    <!-- <ion-col [size]="'12'">
+      Instant Loans remaining
+    </ion-col> -->
+  </ion-row>
+</ion-grid>
+<ion-grid class="p-0">
+  <ion-row>
+    <!-- <ion-col [size]="'12'">
+      Check your Credit score remaining
+    </ion-col> -->
+  </ion-row>
+</ion-grid>

@@ -1,0 +1,78 @@
+<ion-app>
+  <cap-header [title]="Data?.product" [otherTextName]="Data?.product" [imageList]="imageList" [showArrow]="true"
+    [showLabel]="false" [showImg]="false" [showIndex]="false" [showNotification]="false" [showCartWithName]="true"
+    [notificationCount]="notificationCount" [cartCount]="cartCount" [showSideMenu]="false" [showSearch]="true"
+    [showClose]="false" [showShare]="false" [showWatchList]="false" [paddingSize]="7" [showCartWithoutName]="false"
+    [showStories]="false" [showOtherText]="true" [backUrlName]="">
+  </cap-header>
+  <ion-content class="contentBackground">
+    <ion-grid class="cutsPadding">
+      <ion-row class="pt-4 px-2" *ngIf="Data?.heading && this.routing !='BillPayment'">
+        <ion-col [size]="'12'" class="d-flex flex-column">
+          <span *ngIf="Data?.heading"
+            class="custFontFamilyRobotoCondensed custFontFamilyMuliITF-Rupee muli-22pt custLineHight18 custColorDark m-1">
+            <img *ngIf="environment!='proto'"
+              [src]="'data:image/png;base64,'+Data?.image" width="50px" height="50px" class="me-4">
+              <img *ngIf="environment=='proto'"
+              [src]="Data?.image" width="50px" height="50px" class="me-4">
+              
+              {{Data?.heading}}</span>
+        </ion-col>
+      </ion-row>
+      <ion-row *ngIf="Data?.label">
+        <p class="border p-2 m-2 custColorBattlePGry" *ngFor="let x of Data?.label">{{x}}</p>
+      </ion-row>
+  <app-heading *ngIf="Data?.heading && this.routing =='BillPayment'" [heading]="Data.heading"></app-heading>
+       
+      <app-media *ngIf="Data?.media" [data]='Data'></app-media>
+      <app-CommonCharts *ngIf="Data?.Chart"  [showGraph]="true" [graphData]="Data?.Chart"></app-CommonCharts>
+      <app-common-card *ngIf="Data.Cards" [CardValue]="Data.Cards"></app-common-card>
+      <app-gridtype *ngIf="Data.Grid" [objectContent]="Data.Grid"></app-gridtype>
+      <app-sector *ngIf="Data?.segmentCard" [data]="Data?.segmentCard[0]"></app-sector>
+      <app-infostep *ngIf="Data?.step" [Stepdata]="Data?.step"></app-infostep>
+      <app-progress-bar *ngIf="Data.trackerData" [trackerData]="Data.trackerData"></app-progress-bar>
+      <!-- <app-MBP [secId]="orderId" *ngIf="this.routing =='ST'" ></app-MBP> -->
+      <div *ngIf="billpaymentCards?.card && this.routing !='BillPayment'" >
+        <div *ngFor="let x of billpaymentCards?.card">
+
+          <!-- <ion-col [size]="'12'" *ngIf="x?.title">
+            <span class="muli-14pt custFontFamilyMuliBold custLineHight33 custColorDark text-capitalize">
+              {{x?.title}}
+            </span>
+          </ion-col> -->
+          <cap-card  [card]="x" [Redirect]="'Detail'"></cap-card>
+        </div>
+      </div>
+
+      <div *ngIf="billpaymentCards?.card && this.routing =='BillPayment'" >
+        <div *ngFor="let x of billpaymentCards?.card">
+
+          <!-- <ion-col [size]="'12'" *ngIf="x?.title">
+            <span class="muli-14pt custFontFamilyMuliBold custLineHight33 custColorDark text-capitalize">
+              {{x?.title}}
+            </span>
+          </ion-col> -->
+          <cap-card  [card]="x" [Redirect]="'Order'"></cap-card>
+        </div>
+      </div>
+
+
+
+      <ion-row class="custBackgroundColorWhite w-100 fixed-bottom">
+        
+        <ion-col class="p-3" (click)="InvestNow('BUY')" *ngIf="Data?.action2">
+          <button class="btn h-100 w-100 custBackgroundColorParakeetGreen">
+            <span class="custColorWhite custFontFamilyMuliBold muli-16pt">{{Data?.action2}}</span>
+          </button>
+        </ion-col>
+        <ion-col class="p-3" (click)="InvestNow('SELL')"
+          *ngIf="Data?.action1">
+          <button class="btn h-100 w-100 border border-success">
+            <span class="custColorParakeetGreen custFontFamilyMuliBold muli-16pt">{{Data?.action1}}</span>
+          </button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-content>
+
+</ion-app>

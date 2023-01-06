@@ -1,0 +1,30 @@
+<ion-content>
+  <ion-row class="mx-2">
+    <ion-col>
+      <span
+        class="custColorDark custFontFamilyMuliBold muli-16pt custLineHight20">One step verification process</span>
+      <span>
+        &nbsp;<img [src]="imageList?.iIcon" />
+      </span>
+    </ion-col>
+  </ion-row>
+  <ion-row class="mx-2">
+    <ion-col>
+      <ion-col>
+        <span
+          class="custColorDark custFontFamilyMuliRegular muli-14pt custLineHight58"
+          >Your 6 digit CDSL, PIN is generated and sent on your registered email and mobile number *******144.</span
+        >
+      </ion-col>
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="m-2">
+    <ion-col [size]="''" class="px-1">
+      <button class="btn w-100 text-center custBackgroundColorBrightCyan"(click)="navigateCDSL()">
+        <span class="custColorWhite custFontFamilyMuliBold muli-16pt">Redirecting...</span></button>
+    </ion-col>
+  </ion-row>
+
+  
+</ion-content>

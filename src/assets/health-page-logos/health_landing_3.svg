@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46">
+  <g id="Group_27851" data-name="Group 27851" transform="translate(-270 -169)">
+    <circle id="Ellipse_322" data-name="Ellipse 322" cx="23" cy="23" r="23" transform="translate(270 169)" fill="#d9f5ff"/>
+    <g id="Group_27850" data-name="Group 27850" transform="translate(6356.465 6140.229)">
+      <path id="Icon_awesome-hand-holding-heart" data-name="Icon awesome-hand-holding-heart" d="M19.171,22.775a1.123,1.123,0,0,0-1.445,0l-3.134,2.506a2.159,2.159,0,0,1-1.357.475H9.224a.543.543,0,1,1,0-1.085H11.88a1.129,1.129,0,0,0,1.129-.9A1.086,1.086,0,0,0,11.937,22.5H6.511A3.991,3.991,0,0,0,4,23.392L2.421,24.67H.543A.544.544,0,0,0,0,25.213v3.256a.544.544,0,0,0,.543.543h12.1A2.173,2.173,0,0,0,14,28.537l5.128-4.1A1.085,1.085,0,0,0,19.171,22.775Z" transform="translate(-6075.465 -5965.123)" fill="#44c8f5" stroke="#039" stroke-width="0.5"/>
+      <g id="Group_27849" data-name="Group 27849" transform="translate(-6069.625 -5960.229)">
+        <path id="Icon_awesome-user-alt" data-name="Icon awesome-user-alt" d="M3.821,4.3A2.149,2.149,0,1,0,1.672,2.149,2.15,2.15,0,0,0,3.821,4.3Zm1.91.478H4.909a2.6,2.6,0,0,1-2.176,0H1.91A1.91,1.91,0,0,0,0,6.687v.239a.717.717,0,0,0,.716.716H6.925a.717.717,0,0,0,.716-.716V6.687A1.91,1.91,0,0,0,5.731,4.776Z" transform="translate(5.439 3.184)" fill="#44c8f5" stroke="#039" stroke-width="0.5"/>
+        <g id="Group_27848" data-name="Group 27848" transform="translate(2.543 6.841)">
+          <path id="Path_24386" data-name="Path 24386" d="M18.7,21.807a7.007,7.007,0,0,1-7.008,4.811A7.069,7.069,0,0,1,5.265,21.01" transform="translate(-5.265 -19.36)" fill="none" stroke="#039" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.7"/>
+          <path id="Icon_ionic-md-arrow-dropdown" data-name="Icon ionic-md-arrow-dropdown" d="M0,0,1.91,1.91,3.821,0Z" transform="matrix(-0.914, -0.407, 0.407, -0.914, 15.216, 3.299)" fill="#039"/>
+        </g>
+        <g id="Group_27847" data-name="Group 27847" transform="translate(0 0)">
+          <path id="Path_24389" data-name="Path 24389" d="M5.265,25.832a7.007,7.007,0,0,1,7.008-4.811A7.069,7.069,0,0,1,18.7,26.63" transform="translate(-2.722 -21.01)" fill="none" stroke="#039" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.7"/>
+          <path id="Icon_ionic-md-arrow-dropdown-2" data-name="Icon ionic-md-arrow-dropdown" d="M0,1.91,1.91,0l1.91,1.91Z" transform="translate(3.567 7.197) rotate(-159)" fill="#039"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

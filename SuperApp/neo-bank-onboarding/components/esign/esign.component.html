@@ -1,0 +1,101 @@
+
+
+<ion-content>
+  <div class="pdfv-control custFontFamilyMuliBold muli-14pt d-flex justify-content-between align-items-center">
+    <span> <button (click)="zoomOut()">-</button> Zoom <button (click)="zoomIn()">+</button></span>
+    <span *ngIf="!pdfToggle"><button (click)="downloadPdf()"><span class="custFontFamilyMuliBold muli-12pt">Download</span></button></span>
+    <span class="custFontFamilyMuliBold muli-12pt">
+      Zoom-Scale
+      <select name="zoomScales" [(ngModel)]="zoomScale">
+        <option [value]="o" *ngFor="let o of zoomScales">{{o}}</option>
+      </select>
+    </span>
+  </div>
+  <!-- <div class="pdf-viewer-viewer-window">
+    <pinch-zoom>
+      <pdf-viewer [src]="pdfSource" [zoom]="zoom"
+      class="w-100 h-100" (click)="hide()">
+    </pdf-viewer>
+    </pinch-zoom>
+  </div> -->
+  <div class="pdf-viewer-viewer-window">
+    <pdf-viewer src='https://uat.aqube.rsec.co.in/EsginePreViewPdf/TOR83031508_EsignPreview.pdf' [zoom]="zoom"
+    class="w-100 h-100" (click)="hide()">
+  </pdf-viewer>
+
+  
+<!-- <iframe name= "eventsPage" [src]="ToggalUrl" width="100%" height="80%"></iframe> -->
+<!-- <embed name= "eventsPage" [src]="ToggalUrl" width="100%" height="80%"/>  -->
+</div>
+
+</ion-content>
+
+<div class="modal-content custCenterAlign" *ngIf="showPopUp">
+  <!-- <iframe id="testIframe" width="100%" height="300"></iframe> -->
+  <ion-grid>
+    <ion-row>
+      <p class="custFontFamilyMuliBold muli-16pt px-3">{{'terms&conditions' | translate}}</p>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="1" class="px-3">
+        <ion-checkbox color="secondary" (click)="terms($event)"></ion-checkbox>
+      </ion-col>
+      <ion-col class="muli-16pt custColorDark px-3">{{'terms1' | translate}} {{UserEmail}} {{'terms2' | translate}}</ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="1" class="px-3">
+        <ion-checkbox color="secondary" (click)="terms($event)"></ion-checkbox>
+      </ion-col>
+
+      <ion-col class="muli-16pt custColorDark px-3">{{'conditions' | translate}}
+        <a href="https://nsdl.co.in/about/privacy-policy.php">{{'tService' | translate}}</a>
+        {{'of' | translate}}
+        <a href="https://nsdl.co.in/">{{'nsdl' | translate}}</a>
+      </ion-col>
+
+    </ion-row>
+    <ion-row class="px-3">
+      <button class="btn w-100 text-center custBackgroundColorBrightCyan" (click)="goToNsdl()"
+        [disabled]="ifChecked">{{'esignButton' | translate}}</button>
+    </ion-row>
+  </ion-grid>
+  <div class="custModalContainer p-10" *ngIf="loggedInModal" (click)="successModalClose();">
+    <div  id="showModalSMGSucces" class="modal-content custCenterAlign">
+      <!-- <ion-icon [src]="imageList?.successKYCIcon" class="custImage"></ion-icon> -->
+      <p class="custFontFamilyMuliBold muli-16pt custColorDark text-center p-0 m-0 ion-no-padding">{{ErrorMsg}}</p>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="signNow">
+  <ion-footer *ngIf="!showPopUp" class="custBackgroundColorWhite fixed-bottom custZIndex">
+    <ion-toolbar class="custBackgroundDynamicColorWhite">
+      <ion-row class="px-2" >
+        <ion-button class="w-100 custFontFamilyMuliBold muli-16pt" color="secondary" (click)="popUp()">{{'signnowbtn' |
+          translate}}</ion-button>
+      </ion-row>
+    </ion-toolbar>
+  </ion-footer>
+  </div>
+  <div *ngIf="!signNow">
+    <ion-footer *ngIf="!showPopUp" class="custBackgroundColorWhite fixed-bottom">
+      <!-- <a  href="https://www.google.com" class="w-100 text-decoration-none"> -->
+      <ion-toolbar class="custBackgroundDynamicColorWhite">
+        <ion-row class="px-2" >
+          <ion-button class="w-100 custFontFamilyMuliBold muli-16pt" color="secondary" (click)="exporeApp()" >{{'continue' |
+            translate}}</ion-button>
+        </ion-row>
+      </ion-toolbar>
+    <!-- </a> -->
+    </ion-footer>
+    </div>
+<!-- <ion-footer *ngIf="!showPopUp" class="custBackgroundColorWhite fixed-bottom">
+  <ion-toolbar class="custBackgroundDynamicColorWhite">
+    <ion-row class="px-2">
+      <ion-button class="w-100 custFontFamilyMuliBold muli-16pt" color="secondary" (click)="popUp()">{{'signnowbtn' |
+        translate}}</ion-button>
+    </ion-row>
+  </ion-toolbar>
+</ion-footer> -->

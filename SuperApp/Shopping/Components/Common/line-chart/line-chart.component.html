@@ -1,0 +1,38 @@
+<ion-card>
+
+  <ion-card-header>
+
+    <ion-row *ngFor="let x of lineData?.row1">
+      <ion-col class="d-flex flex-column text-start" *ngFor="let y of x | keyvalue">
+        <span
+          class="custFontFamilyMuliRegular muli-10pt w-100  custColorGreyish"
+          >{{ y.key }}</span
+        >
+        <span
+          class="custFontFamilyRobotoCondensed muli-14pt w-100 custColorDark"
+          >{{ toStirng(y.value) }}</span
+        >
+      </ion-col>
+    </ion-row>
+  </ion-card-header>
+  <ion-card-content>
+    <div class="mb-1">
+      <div style="width: 100%; overflow-x: auto; overflow-y: hidden">
+        <canvas height="230px" id="linechart1" width="0"></canvas>
+      </div>
+    </div>
+
+    <ion-row *ngFor="let x of lineData?.row2">
+      <ion-col class="d-flex flex-column " *ngFor="let y of x | keyvalue">
+        <span
+          class="custFontFamilyMuliRegular muli-10pt w-100 custLineHight28 custColorGreyish "
+          >{{ y?.key }}</span
+        >
+        <span
+          class="custFontFamilyRobotoCondensed muli-14pt w-100 custColorDark"
+          >{{ toStirng(y?.value) }}
+        </span>
+      </ion-col>
+    </ion-row>
+  </ion-card-content>
+</ion-card>

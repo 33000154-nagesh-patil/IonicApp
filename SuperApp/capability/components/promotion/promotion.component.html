@@ -1,0 +1,30 @@
+<div class="px-2 coloredCard" *ngFor="let x of promotion">
+  <ion-row class="custColorDarkishBlue custFontFamilyMuliBold muli-16pt custLineHight18 paddingLeft pt-3">
+    {{x.promoName}}
+  </ion-row>
+  <ion-row class="custColorDarkishBlue custFontFamilyMuliRegularmuli-12pt custLineHight18 paddingLeft pt-3">
+    {{x.promoDesc}}
+  </ion-row>
+
+  <ion-row>
+    <ion-card class="w-100">
+      <ion-card-content class="p-3">
+        <ion-row>
+          <ion-col [size]="'7'">
+            <ion-row class="custColorDark custFontFamilyMuliSemiBold muli-14pt">{{x.promoTitle}}</ion-row>
+            <ion-row class="custColorDark custFontFamilyMuliRegular muli-12pt pt-2">{{x.promoTitleDesc}}</ion-row>
+          </ion-col>
+          <ion-col [size]="'5'" class="pt-3">
+            <img [src]="x.promoIcon" />
+          </ion-col>
+        </ion-row>
+        <ion-row class="marginTop">
+          <ion-col [size]="'4'">
+            <button type="button"
+              class="custBtnExplorer text-capitalize custColorBrightCyan custFontFamilyMuliRegular muli-14pt custButtonOutLine">{{x.promoAction}}</button>
+          </ion-col>
+        </ion-row>
+      </ion-card-content>
+    </ion-card>
+  </ion-row>
+</div>

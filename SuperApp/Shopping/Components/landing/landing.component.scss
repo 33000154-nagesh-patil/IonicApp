@@ -1,0 +1,402 @@
+// Health
+
+.mfBackground{
+    background-image: var(--mf);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.custMFImg{
+    height: 46px;
+    width: 46px;
+}
+.custBtnExplore{
+    height: 30px;
+    position: relative;
+    bottom: 0;
+    border:  1px solid var(--custBrightCyan) !important;
+    border-radius: 4px;
+    background: white !important;
+    text-align: center !important;
+    padding-left: 32px !important;
+    padding-right: 32px !important;
+    float: right;
+}
+.card{
+    height: 132px;
+}
+.cardItem{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+
+}
+.custSelected{
+    color:var(--custBrightCyan) ;
+  }
+
+
+.custGrid{
+    margin: 10px -24px -16px !important;
+    --margin: 0 -24px -16px !important;   
+}
+
+.coloredCard{
+    background-image: linear-gradient(#E2F4FF, #C4E9FF);
+    color: #FFFFFF;
+    height: 260px;
+}
+
+.card{
+    height: 145px;
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: nowrap;
+    height: auto;
+    overflow-x: auto;
+    width: auto;
+}
+
+.mrginTopp {
+    margin-top: -28px;
+}
+
+.custBtnExplorer{
+    height: 30px;
+    border:  1px solid var(--custBrightCyan) !important;
+    border-radius: 4px !important;
+    background: white !important;
+    text-align: center !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+}
+
+.cardHeight {
+    height: 66px;
+}
+
+.card-content-ios{
+    padding: 0px;
+    margin: 0px;
+}
+
+.mrgin {
+    margin-bottom: -5px;
+}
+
+.imgSize {
+    height: 40px;
+    width: 40px;
+    margin-left: 35px;
+}
+
+.pding {
+    padding: 35px;
+}
+
+.cardCustHeight {
+    height: 168px;
+}
+
+.bground {
+    background-color: #F1F1F1;
+}
+
+.mrginTop {
+    margin-top: -4px;
+}
+
+.pdingLeft {
+    padding-left: 35px;
+}
+
+.pdingLeftt {
+    padding-left: 25px;
+}
+
+.cardBottom {
+    margin-bottom: -10px;
+}
+
+// Education
+
+
+.btn{
+    line-height: 1.0 !important;
+    // border-radius: 0.0rem;
+}
+
+    .card-content-md{
+        line-height: 2.5 !important;
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: nowrap;
+        height: auto;
+        overflow-x: auto;
+        width: auto;
+    }
+
+    .muli-7pt{
+        font-size: 7px !important;
+    }
+
+    .imgwidth{
+        width: 65%;
+    }
+    .muli-8pt {
+        font-size: 8px !important;
+    }
+.cuswidth{
+    min-width: 70%;
+}
+
+.custLineHight11 {
+    line-height: 11px;
+}
+
+.custStar{
+    width: 48px;
+    height: 6px;
+    opacity: 1;
+  
+}
+
+// .custPriceMargin{
+// margin-top: -17px;
+// }
+
+
+
+
+.custDesc{
+    margin-left: 7px;
+}
+
+.custStar{
+    margin-left: -23px;
+    padding-top: 2px;
+}
+
+.custContent{
+    margin-left: -30px;
+}
+
+.titleIMG{
+    width: 30px;
+    height: 30px;
+}
+
+.custStarSet{
+    width: 65px;
+    height: 20px;
+}
+
+
+//
+
+.logo{
+width: 35px;
+height: 35px;
+}
+
+.custArrowIcon{
+    height: 14px;
+    width: 10px;
+    // margin-left: 40px;
+}
+
+
+.custProgressBar{
+    max-width: 100%;
+    height: 10px;
+    border-radius: 30px;
+}
+
+ion-progress-bar::part(progress){
+    border-radius: 0px 70px 70px 0px !important;
+}
+
+ion-progress-bar::part(track){
+background-color: #DEDEDE !important;    
+}
+.eduHeight{
+    display: flex;
+  flex-direction: column;
+  padding-bottom: 60px;
+}
+.custBox{
+    height: 4px;
+    width: 20px;
+    border-radius: 0.5px;
+  }
+.footer {
+    position: fixed;
+ 
+    bottom: 0;
+    width: 100%;
+ 
+ }
+ .custTitle{
+    margin-left: 8px;
+    vertical-align: top;
+    padding-left: 8px;
+}
+
+////Rating/////
+
+.star {
+    position: relative;
+    display: inline-block;
+    font-size: 1rem;
+    color: #d3d3d3;
+  }
+  .full {
+    color: rgb(255, 197, 36);
+  }
+  .half {
+    position: absolute;
+    display: inline-block;
+    overflow: hidden;
+    color:  rgb(255, 197, 36);
+  }
+
+//   Wealth
+
+.custBtnExplore{
+    // width: 80px;
+    height: 30px;
+    border:  1px solid var(--custBrightCyan) !important;
+    border-radius: 4px !important;
+    background: white !important;
+    text-align: center !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    float: right;
+}
+.custBtnAssist{
+    // width: 80px;
+    height: 30px;
+    border:  1px solid var(--custBrightCyan) !important;
+    border-radius: 4px !important;
+    background: white !important;
+    text-align: center !important;
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+    float: right;
+}
+.custBtnInvest{
+    // width: 80px;
+    height: 30px;
+    border:  1px solid var(--custBrightCyan) !important;
+    border-radius: 4px !important;
+    background: white !important;
+    text-align: center !important;
+    padding-left: 6px !important;
+    padding-right: 6px !important;
+    float: right;
+}
+.custBox{
+    height: 4px;
+    width: 20px;
+    border-radius: 0.5px;
+}
+.custRoboCard{
+    margin: 8px;
+}
+
+.mfBackground{
+    background-image: var(--mf);
+    background-repeat: no-repeat;
+    background-size: cover;
+    // background-size: 1200px;
+}
+.custMFImg{
+    height: 46px;
+    width: 46px;
+    border-radius: 50%;
+    padding: 10px;
+}
+.custImgGold{
+    height: 38px;
+    width: 38px;
+   
+}
+.custArrowIcon{
+    height: 10px;
+    width: 6px;
+}
+.dot{
+    height: 5px;
+    width: 5px;;
+    border-radius: 50%;
+}
+.result__score {
+    position: relative;
+    max-width: 161px;
+    max-height: 139px;
+    margin: 0 auto;
+  }
+  
+  .circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 161px;
+    height: 161px;
+    border-radius: 50%;
+    transform-origin: 50%;
+    transform: rotate(225.5deg);
+    animation: rotate-line cubic-bezier(0.75, 0, 1, 1) 2s;
+  }
+  
+  .line {
+    position: absolute;
+    top: 42%;
+    left: -12px;
+    width: 57%;
+    height: 2px;
+    border-bottom: 2px solid #000;
+    transform-origin: 110%;
+    transform: rotate(-45deg);
+  }
+  
+  .inner-circle {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    top: 0.8em;
+    left: 0.8em;
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    background: white;
+    z-index: 2;
+  }
+  
+  .score {
+    font-size: 3em;
+    line-height: 1em;
+  }
+  .total {
+    font-size: 0.8em;
+    margin-bottom: 0.3em;
+  }
+  
+  @keyframes rotate-line {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(225.5deg); // max (275 deg * 0.82) (the score)
+    }
+  }
+  

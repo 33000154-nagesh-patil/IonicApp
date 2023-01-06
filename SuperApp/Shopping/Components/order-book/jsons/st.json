@@ -1,0 +1,59 @@
+{
+    "Consumer":[
+        {"name":"Akshay Patil","value":"1234567890"},
+        {"name":"Jayesh Mishra","value":"098765423"},
+        {"name":"Salman Dada","value":"321414414124"}
+    ],
+    "Locations": [
+        {"name":"Home","value":["AddressLine1","AddressLine2","400033"]},
+        {"name":"Office","value":["AddressLine1","AddressLine2","400605"]}
+    ],
+    "itemName":"Tata Power Ltd",
+    "productName":"ST",
+    "productSubtitle":"Live market",
+    "productImage":"",
+    "itemCode":"1158",
+    "unitPrice":"500.00",
+    "taxes":[
+        {"type":"CGST","taxPercentage":"0"},
+        {"type":"SGST","taxPercentage":"0"},
+        {"type":"IGST","taxPercentage":"0"}
+    ],
+    "quantityRegEx":"^([1-9]|[1-9][0-9]|100)$",
+    "editable":"amtEdit",
+    "unitOfQuantity":"",
+    "unitOfAmount":"₹",
+    "tnc":["url","address"],
+    "Validity":0,
+    "walletMargin":false,
+    "availableMargin":5000.00,
+    "txnType":"SELL",
+    "OtherDetails":[],
+    "exchange":{
+      "header":{"name":"Order Type","uxType":"header"},
+      "exchangeType":{
+        "uxType":"toggle",
+        "options":[
+          {"name":"NSE","value":"NSE"},
+          {"name":"BSE","value":"BSE"}
+        ]
+      },
+      "orderType":{
+        "uxType":"buttonRadio",
+        "options":[
+          {"name":"Market","value":"MKT"},
+          {"name":"Limit","value":"LMT"},
+          {"name":"SL-M","value":"SL-M"},
+          {"name":"SL","value":"SL"}
+        ]
+      }
+    },
+    "footerButton":[
+        {
+            "name":"Trade Now",
+            "uxClass":"custBackgroundColorBrightCyan custColorWhite w-100 mx-3 my-2",
+            "value":"confirm"
+        }
+    ],
+    "disable":"!(this.quantity>0&&this.checkbox&&(this.calcAmount()<=this.jsonData.availableMargin))"
+  }

@@ -1,0 +1,182 @@
+<ion-row class="pt-4 px-2">
+  <ion-col [size]="'6'">
+    <span class="muli-22pt custFontFamilyMuliBold custLineHight30 custColorDark text-capitalize">
+      My Portfolio
+    </span>
+  </ion-col>
+  <ion-col [size]="'6'" class="text-end">
+    <img [src]="imageList?.blueEye">
+  </ion-col>
+  <ion-col [size]="'12'">
+    <ion-row>
+      <ion-col [size]="'2'" class="text-start p-0 m-0">
+        <div class="custBackgroundColorDarkishBlue custBox p-0 m-0"></div>
+    </ion-col>
+    </ion-row>
+  </ion-col>
+  
+</ion-row>
+<ion-row class="w-100">
+
+  <ion-col class="custFontFamilyMuliRegular muli-12pt custColorBattlePGry px-3">
+    An overview of your MF investments 
+  </ion-col>
+
+
+    <div class="w-100">
+      <lib-my-portfolio [SumOfCurrantValue]="SumOfCurrantValue" [InvestedAmount]="InvestedAmount" [TotalReturnPer]="TotalReturnPer"></lib-my-portfolio>
+    </div> 
+ 
+
+    
+
+  <ion-row class="pt-4 px-2">
+    <ion-col [size]="'12'">
+      <span class="muli-22pt custFontFamilyMuliBold custLineHight30 custColorDark text-capitalize">
+        Funds in Portfolio
+        
+      </span>
+      <span class="custColorParakeetGreen ustBox p-0 muli-20pt m-0">({{cardCount}})</span>
+    </ion-col>
+    <ion-col [size]="'12'">
+      <ion-row>
+        <ion-col [size]="'2'" class="text-start p-0 m-0">
+          <div class="custBackgroundColorDarkishBlue custBox p-0 m-0"></div>
+      </ion-col>
+      </ion-row>
+    </ion-col>
+    
+  </ion-row>
+  <ion-row class="w-100">
+
+    <ion-col [size]="'9'" class="custFontFamilyMuliRegular muli-12pt custColorBattlePGry px-3">
+      An overview of your investments 
+    </ion-col>
+  
+      
+      <!-- <ion-col [size]="'3'" class="text-end d-flex">
+        <span class="custFontFamilyMuliBold muli-12pt custLineHight18 custColorDarkishBlue w-100">Sort</span>
+        <ion-img [src]="imageList?.sortIcon" class="custImgExpo mx-2"></ion-img>
+      </ion-col> -->
+  
+  
+  </ion-row>
+    <div class="w-100">
+      <lib-funds-portfolio [DummayAPiData]="DummayAPiData" ></lib-funds-portfolio>
+    </div>
+
+
+
+
+<ion-row>
+<ion-col [size]="'12'" class="custFontFamilyMuliBold  muli-16pt px-2">Your Recent Transanctions</ion-col>
+</ion-row>
+
+<ion-card class="w-100">
+<ion-card-content>
+  <ion-row>
+    <ion-col [size]="'4'" (click)="hendler('InProgress')">
+      <ion-row class=" muli-16pt custColorSquash ">01</ion-row>
+      <ion-row class="custFontFamilyMuliSemiBold muli-14pt custColorSquash">In Progress</ion-row>
+    </ion-col>
+    <ion-col [size]="'4'" (click)="hendler('Buy')">
+      <ion-row class=" muli-16pt custColorParakeetGreen">12</ion-row>
+      <ion-row class=" custFontFamilyMuliSemiBold muli-14pt custColorParakeetGreen">Complete</ion-row>
+    </ion-col>
+    <ion-col [size]="'3'" (click)="hendler('Failed')">
+      <ion-row class=" muli-16pt custColorcustFadedRed">01</ion-row>
+      <ion-row class=" custFontFamilyMuliSemiBold muli-14pt custColorcustFadedRed">Failed</ion-row>
+    </ion-col>
+    <ion-col [size]="'1'" (click)="hendler('All')">
+      <ion-img [src]="imageList?.leftArrowIcon" class="m-3 custArrowIcon custColorDarkishBlue"></ion-img>
+    </ion-col>
+  </ion-row>
+</ion-card-content>
+</ion-card>
+<!-- 
+<ion-row>
+<ion-col [size]="'12'" class="custFontFamilyMuliBold  muli-16pt px-2">Continue from where you left</ion-col>
+</ion-row> -->
+
+<!-- <ion-card>
+<ion-card-content>
+  <ion-row>
+    <ion-col [size]="'2'">
+      <img src="assets/dummyMokeIcon/group_14256.png" alt="My Happy SVG" />
+
+    </ion-col>
+    <ion-col [size]="'7'" class="custFontFamilyMuliSemiBold  muli-14pt custColorDark"> ICICI Prudential
+      Focused <br>
+      Bluechip Equity Fund
+    </ion-col>
+    <ion-col [size]="'3'" class="custFontFamilyMuliBold  muli-10pt custColorcustFadedRed">Payment <br>
+      Pending
+    </ion-col>
+  </ion-row>
+</ion-card-content>
+</ion-card> -->
+
+
+<!-- <ion-card class="mb-4">
+<ion-card-content>
+  <ion-row>
+    <ion-col [size]="'2'">
+      <img src="assets/dummyMokeIcon/group_14256.png" alt="My Happy SVG" />
+
+    </ion-col>
+    <ion-col [size]="'7'" class="custFontFamilyMuliSemiBold  muli-14pt custColorDark mt-2">Axis Long Term Equity
+      Fund
+
+    </ion-col>
+    <ion-col [size]="'3'" class="custFontFamilyMuliBold  muli-10pt custColorcustFadedRed mt-2">Payment <br>
+      Pending
+    </ion-col>
+  </ion-row>
+</ion-card-content>
+</ion-card> -->
+
+<!-- <ion-card>
+<ion-card-content>
+  <ion-row>
+    <ion-col [size]="'1'">
+      <img src="assets/dummyMokeIcon/download.svg" class="pt-2"  />
+
+    </ion-col>
+    <ion-col [size]="'11'" class="custFontFamilyMuliSemiBold muli-14pt custColorDark ">Import your external <br>
+      Mutual
+      fund investments </ion-col>
+    <ion-col [size]="'8'" class="custFontFamilyMuliRegular  muli-12pt custColorDark">Manage all your mutual funds in
+    </ion-col>
+    <ion-col [size]="'4'">
+      <button class=" text-center button "> <span
+          class="custColorWhite custFontFamilyMuliRegular muli-14pt ">Import</span></button>
+    </ion-col>
+  </ion-row>
+</ion-card-content>
+</ion-card> -->
+<!-- <ion-row>
+<ion-row class="m-3 h-5">
+<select class="form-select border custblu custFontFamilyMuli muli-18pt custLineHight40"
+  >
+ 
+   
+
+  <option selected class="avi">Personal Details</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select>
+</ion-row>
+
+</ion-row> -->
+
+
+<!-- <button
+class="custAccordion custFontFamilyMuliBold text-capitalize muli-20pt custLineHight38 custColorDark custBackgroundColorPaleGrey p-2 custPointer w-100 "
+(click)="openAccordionPersonalDetails('plan')">oncli<span class="ion-float-end custColorDarkishBlue">
+  <ion-icon [name]="showPlan?'caret-up':'caret-down'"></ion-icon>
+</span></button> -->
+
+
+
+

@@ -1,0 +1,90 @@
+<ion-app>
+  <ion-header class="sticky-top">
+    <ion-toolbar class="custBackgroundDynamicColorWhite  px-2">
+      <ion-grid>
+        <ion-row>
+          <ion-col (click)="goback()" [size]="'1'" class="text-center mt-1">
+            <ion-img [src]="imageList?.arrow" class="custKYCImg mt-2"></ion-img>
+          </ion-col>
+          <ion-col [size]="'11'" class=" ps-2">
+            <span class="custFontFamilyMuliBold muli-14pt custLineHight40 custColorDark ">
+              Bill Payment</span>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-toolbar>
+  </ion-header>
+<!-- <first bill -->
+  <ion-content class="contentBackground">
+    <ion-grid>
+      <ion-row class="p-2">
+        <mat-form-field class="w-100" appearance="outline">
+          <!-- <span matPrefix> </span> -->
+          <input type="text" matInput placeholder="Search here..." name="search" class="custBackgroundColorWhite"
+         (keyup)="getHide($event)">
+          <ion-icon name="mic-outline" matSuffix></ion-icon>
+        </mat-form-field>
+
+<ion-row class="w-100 justify-content-end">
+  <ion-img [src]="imageList?.bharatBillPay"> </ion-img>&nbsp;
+</ion-row>
+<!-- 
+<ion-row *ngIf="hidefavourite">
+        <ion-row>
+          <span class="custFontFamilyMuliBold muli-16pt custLineHight20 custColorDark">
+            Favourite / Set Autopay
+          </span>
+        </ion-row>
+
+        <ion-row class="w-100">
+          <ion-card class="custBackgroundDynamicColorWhite w-100 mx-0">
+
+            <ion-card-header class="custFontFamilyMuliBold custColorBrightCyan muli-12pt">
+              Add Favourite/ Setup Auto Pay
+              <img (click)="goTofavourite()" [src]="imageList?.path" class="custaddImg float-end">
+            </ion-card-header>
+          </ion-card>
+        </ion-row>
+        <ion-row *ngFor="let c of [1,2]" class="w-100">
+          <ion-card class="w-100 custBackgroundDynamicColorWhite mx-0 " >
+            <span *ngIf="c-1" class="custtagColor custColorGreyish float-end custFontFamilyMuliBold p-1">AUTO PAY</span>
+            <ion-row class="py-2">
+              <ion-col [size]="'2'">
+                <ion-img [src]="imageList?.electricity" class="custI"></ion-img>
+              </ion-col>
+              <ion-col [size]="'10'">
+                <span class="custFontFamilyMuliBold muli-14pt custLineHight20 custColorDark">Adani Electricity Mumbai
+                  Limited</span>
+                <span
+                  class="custFontFamilyMuliRegular d-block muli-12pt pt-1 custLineHight15 custColorGreyish">Electricity
+                  | Consumer Number -9810806463
+                </span>
+              </ion-col>
+            </ion-row>
+          </ion-card>
+        </ion-row>
+
+        <ion-row class="py-3 w-100">
+          <ion-col size="4" offset="4" class="custTextAlignCenter">
+            <button class="text-capitalize custTryButton">
+              <span class="custFontFamilyMuliRegular text-center muli-14pt custColorBrightCyan">View all</span>
+            </button>
+          </ion-col>
+        </ion-row>
+
+      </ion-row> -->
+      <P *ngIf="noData">No data found</P>
+        <ion-row class="w-100 custFontFamilyMuliBold muli-16pt custColorDark">Categories</ion-row>
+
+        <ion-grid class="ion-no-padding mb-2">
+          <ion-row class="d-flex justify-content-center">
+            <ion-col  [size]="'4'" *ngFor="let x of items" (click)="getData(x?.billercategoryname)" class="text-center border pt-3">
+              <ion-img class="imgSize " [src]="x?.imagelocation"></ion-img>
+              <span class="muli-12pt custFontFamilyMuliRegular pt-1">{{x?.billercategoryname}}</span>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-row>
+    </ion-grid>
+  </ion-content>
+</ion-app>

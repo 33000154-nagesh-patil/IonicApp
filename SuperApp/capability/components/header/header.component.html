@@ -1,0 +1,134 @@
+<ion-header [translucent]="true" class="custBackgroundColorWhite">
+  <ion-toolbar class="custBackgroundDynamicColorWhite">
+    <ion-grid [ngClass]="(title === 'wealthRoboAdvisory'||title === 'productDescription')?'':'custMarginBottom'">
+      <ion-row>
+        <ion-col [size]="'1'" *ngIf="showArrow &&clickSearch" class="pt-3" (click)="goToBack()" id="goBack">
+          <div class="custTextAlignCenter">
+            <ion-img [src]="imageList?.arrow" class="custWithoutTextImg " [ngClass]="(title === 'wealthRoboAdvisory')?'custMarfinTopWealth':'custMarfinTopWealth'"></ion-img>
+          </div>
+        </ion-col>
+
+
+
+        <ion-col [size]="'2'" *ngIf="showSideMenu &&clickSearch">
+          <div>
+            <ion-menu-button id="menu">
+              <span class="custProfile custHeight"></span>
+              <p class="muli-14pt custFontFamilyRubikRegular custLineHight28 custProfileName text-uppercase">{{profileName}}</p>
+            </ion-menu-button>
+          </div>
+          <p class="muli-10pt custTextAlignCenter custLineHight28 custFontFamilyMuliSemiBold custColorBattlePGry">{{'profile' | translate}}</p>
+        </ion-col>
+
+        <ion-col *ngIf="clickSearch" [size]="paddingSize" class=" mt-2 pt-3">
+          <ion-img [src]="imgURL" *ngIf="showImg"></ion-img>
+          <span *ngIf="showLabel" class="custFontFamilyMuliBold custLineHight40 muli-16pt custColorDark">{{title | translate}}</span>
+          <span *ngIf="showOtherText" class="custFontFamilyMuliBold muli-16pt custColorDark">{{otherTextName}}</span>
+        </ion-col>
+
+        <!-- <ion-col [size]="paddingSize" *ngIf="padding"></ion-col> -->
+
+        <ion-col [size]="paddingSize" id="stories" *ngIf="showStories &&clickSearch">  <!-- [size]="'2'" -->
+          <div class="custTextAlignCenter">
+            <div class="custStorieLine custHeight m-auto" [ngClass]="superMode?'custSuperModeActive':'custSuperMode'">
+              <img [src]="imageList?.userIcon" class="custStoryIcon">
+            </div>
+            <p  class="muli-10pt custLineHight28 custFontFamilyMuliSemiBold custColorBattlePGry">{{'stories' | translate}}</p>
+          </div>
+        </ion-col>
+
+
+        <ion-col [size]="'2'" *ngIf="showIndex &&clickSearch" id="index" >
+          <div class="custTextAlignCenter">
+            <div class="custHeight custProfile">
+              <ion-img [src]="imageList?.index" class="custSVGIcon"></ion-img>
+             </div>
+             <p  class="muli-10pt custLineHight28 custFontFamilyMuliSemiBold custColorBattlePGry">{{'indexes' | translate}}</p>
+          </div>
+        </ion-col>
+        <ion-col [size]="'2.5'" *ngIf="showNotification &&clickSearch" id="notification" (click)="goToNotificationpage()">
+        <div class="custTextAlignCenter">
+
+          <ion-badge class="custBadge custRight" *ngIf="notificationCount > 0">{{notificationCount}}</ion-badge>
+          <div class="custHeight custProfile">
+            <ion-img [src]="imageList?.notificationIcon" class="custSVGIcon"></ion-img>
+           </div>
+           <p  class="muli-10pt custLineHight28 custFontFamilyMuliSemiBold custColorBattlePGry">{{'notifications' | translate}}</p>
+        </div>
+        </ion-col>
+
+        <!--Search icon-->
+        <ion-col [size]="'2'" *ngIf="showSearch &&clickSearch" id="searchbar" (click)="goToGobalSearch()">
+          <div class="custTextAlignCenter">
+            <div class="custHeight custProfile">
+              <ion-img [src]="imageList?.tiaIcon" class="custSVGTiaIcon"></ion-img>
+             </div>
+             <p  class="muli-10pt custLineHight28 custFontFamilyMuliSemiBold custColorBattlePGry">{{'TIA' | translate}}</p>
+          </div>
+        </ion-col>
+
+        <!-- <ion-col [size]="'3'"  >
+          <div class="custTextAlignCenter">
+            <div class="custHeight custProfile">
+              <ion-img [src]="imageList?.searchIcon" class="custSVGIcon"></ion-img>
+             </div>
+             <p  class="muli-10pt custLineHight28 custFontFamilyMuliSemiBold custColorBattlePGry">{{'search' | translate}}</p>
+          </div>
+          </ion-col> -->
+
+
+        <ion-col [size]="'2'"  *ngIf="showCartWithName &&clickSearch " id="cardWithName" (click)="navigateCart()">
+          <!-- Cart Icon -->
+          <!-- <div class="custTextAlignCenter">
+            <ion-badge class="custBadge custRight0" *ngIf="cartCount > 0">{{cartCount}}</ion-badge>
+            <div class="custHeight custProfile">
+              <ion-img [src]="imageList?.cartIcon" class="custSVGIcon"></ion-img>
+             </div>
+             <p  class="muli-10pt custLineHight28 custFontFamilyMuliSemiBold custColorBattlePGry">{{'myCart' | translate}}</p>
+          </div> -->
+
+          <!-- Torus Club Icon -->
+          <div class="custTextAlignCenter" *ngIf="showTorusClub">
+            <div class="custHeight custProfile">
+              <ion-img [src]="imageList?.torusClubIcon"  class="custTorusClubSVGIcon"></ion-img>
+              <div class="badgeCart" *ngIf="cartCount > 0">
+                <ion-img [src]="imageList?.cartBadge"></ion-img>
+              </div>
+             </div>
+             <p  class="muli-10pt custLineHight28 custFontFamilyMuliSemiBold custColorBattlePGry">{{'torusClub' | translate}}</p>
+          </div>
+         </ion-col>
+
+         <ion-col [size]="'2'" *ngIf="showShare &&clickSearch" id="share">
+          <div class="custTextAlignCenter">
+            <ion-img [src]="imageList?.share" class="custWithoutTextImg " [ngClass]="(title === 'productDescription')?'':'mt-3'"></ion-img>
+          </div>
+         </ion-col>
+         <ion-col [size]="'2'" *ngIf="showWatchList &&clickSearch" id="watchlist">
+          <div class="custTextAlignCenter">
+            <ion-img [src]="imageList?.watchList" class="custWithoutTextImg custHeaderMarginTop"></ion-img>
+          </div>
+         </ion-col>
+         <ion-col [size]="'2'" *ngIf="showCartWithoutName  &&clickSearch" id="cardWithoutName" (click)="navigateCart()">
+          <div class="custTextAlignCenter">
+            <ion-badge class="custBadge custRight0" *ngIf="cartCount > 0">{{cartCount}}</ion-badge>
+            <ion-img [src]="imageList?.cartIcon" class="custWithoutTextImg " [ngClass]="(title === 'productDescription')?'':'custHeaderMarginTop'"></ion-img>
+          </div>
+         </ion-col>
+         <ion-col size="11">
+          <mat-form-field appearance="outline" *ngIf="!clickSearch" class="w-100">
+            <input matInput placeholder="search"
+            (keyup)="onKeySearch()" [(ngModel)]="search"    >
+          </mat-form-field>
+         </ion-col>
+         <ion-col [size]="'1'" *ngIf="showClose" id="close" (click)="onClickClose()">
+          <div class="custTextAlignCenter">
+            <ion-img [src]="imageList?.close" class="custWithoutTextImg" style="margin-top: 1.5rem;"></ion-img>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+

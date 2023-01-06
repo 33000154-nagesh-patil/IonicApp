@@ -1,0 +1,316 @@
+{
+    "data":[
+        {
+            "Title":"Wealth",
+            "icon":"assets/icon/wealthIcon.svg",
+            "Categories":[
+                {
+                    "Title":"stock",
+                    "Buttons":[
+                              
+                           {
+                            "text":"NSE & BSE Cash",
+                            "value":"Wealth-stock-NSE & BSE Cash",
+                            "id":"1.1",
+                            "selected":false
+        
+                           }
+                        ,
+                        {
+                            "text":"NSE & BSE FO",
+                            "value":"Wealth-stock-NSE & BSE FO",
+                            "id":"1.2",
+                            
+                            "selected":false
+                        }
+                        ,
+                        {
+                            "text":"NSE & BSE Currency",
+                            "value":"Wealth-stock-NSE & BSE Currency",
+                            "id":"1.3",
+                            
+                            "selected":false
+                        }
+                        ,
+                        {
+                            "text":"MCX",
+                            "value":"Wealth-stock-MCX",
+                            "id":"1.4",
+                            
+                            "selected":false
+                        }
+                        ,
+                        {
+                            "text":"NCDEX",
+                            "value":"Wealth-stock-NCDEX",
+                            "id":"1.5",
+                            
+                            "selected":false
+                        }
+                    ]
+                }
+                ,
+                {
+                    "Title":"Mutual Funds",
+                    "Buttons":[
+                        {
+                            "text":"Direct",
+                            "value":"Wealth-Mutual Funds-Direct",
+                            "id":"2.1",
+                            "selected":false
+                        },
+                        {
+                            "text":"Regular",
+                            "value":"Wealth-Mutual Funds-Regular",
+                            "id":"2.2",
+                            "selected":false
+                        }
+                    ]
+                }
+                ,
+                {
+                    "Title":"Saving Account",
+                    "Buttons":[
+                        {
+                            "text":"Saving Account",
+                            "value":"Wealth-Saving Account-Saving Account",
+                            "id":"3.1",
+                            "selected":false
+                        },
+                        {
+                            "text":"Bill Payment",
+                            "value":"Wealth-Saving Account-Bill Payment",
+                            "id":"3.2",
+                            "selected":false
+                        }
+                    ]
+                }
+                ,
+                {
+                    "Title":"Other Wealth Products",
+                    "Buttons":[
+                        {
+                            "text":"Digi Gold",
+                            "value":"Wealth-Other Wealth Products-Digi Gold",
+                            "id":"4.1",
+                            "selected":false
+                        }
+                        ,
+                        {
+                            "text":"Robo Advisory",
+                            "value":"Wealth-Other Wealth Products-Robo Advisory",
+                            "id":"4.2",
+                            "selected":false
+                        }
+                        ,
+                        {
+                            "text":"Insurance",
+                            "value":"Wealth-Other Wealth Products-Insurance",
+                            "id":"4.3",
+                            "selected":false
+                        }
+                        ,
+                        {
+                            "text":"Bonds & FD",
+                            "value":"Wealth-Other Wealth Products-Bonds & FD",
+                            "id":"4.4",
+                            "selected":false
+                        }
+                        ,
+                        {
+                            "text":"Unlisted",
+                            "value":"Wealth-Other Wealth Products-Unlisted",
+                            "id":"4.5",
+                            "selected":false
+                        }
+                        ,
+                        {
+                            "text":"MLD",
+                            "value":"Wealth-Other Wealth Products-MLD",
+                            "id":"4.6",
+                            "selected":false
+                        }
+                    ]
+                }
+               
+            ]
+        },
+        {
+            "Title":"Torus Pay",
+            "icon":"assets/icon/Toruspay.png",
+            "Categories":[
+                {
+                    "Title":"Net Banking",
+                    "Buttons":[
+                        {
+                            "text":"Net Banking",
+                            "value":"Torus Pay-Net Banking-Net Banking",
+                            "id":"1.1",
+                            "selected":false
+        
+                        }
+                       
+                    ]
+                }
+                ,
+                {
+                    "Title":"Credit Card",
+                    "Buttons":[
+                        {
+                            "text":"Credit Card",
+                            "value":"Torus Pay-Credit Card-Credit Card",
+                            "id":"1.1",
+                            "selected":false
+                        }
+                    ]
+                }
+                ,
+                {
+                    "Title":"Debit Card",
+                    "Buttons":[
+                        {
+                            "text":"Saving Account",
+                            "value":"Torus Pay-Debit Card-Debit Card",
+                            "id":"2.1",
+                            "selected":false
+                        }
+                    ]
+                }
+                ,
+                {
+                    "Title":"Wallet",
+                    "Buttons":[
+                        {
+                            "text":"Digi Gold",
+                            "value":"Torus Pay-Wallet-Wallet",
+                            "id":"3.1",
+                            "selected":false
+                        }
+                        
+                    ]
+                }
+                ,
+                {
+                    "Title":"UPI",
+                    "Buttons":[
+                        {
+                            "text":"UPI",
+                            "value":"Torus Pay-UPI-UPI",
+                            "id":"4.1",
+                            "selected":false
+                        }
+                        
+                    ]
+                }
+                ,
+                {
+                    "Title":"Buy Now Pay Later (BNPL)",
+                    "Buttons":[
+                        {
+                            "text":"Buy Now Pay Later (BNPL)",
+                            "value":"Torus Pay-Buy Now Pay Later (BNPL)Buy Now Pay Later (BNPL)-Buy Now Pay Later (BNPL)",
+                            "id":"5.1",
+                            "selected":false
+                        }
+                        
+                    ]
+                }
+               
+            ]
+        }
+        ,
+        {
+            "Title":"Health",
+            "icon":"assets/icon/health.svg",
+            "Categories":[
+                {
+                    "Title":"Medicines",
+                    "Buttons":[
+                        {
+                            "text":"Medicines",
+                            "value":"Health-Medicines-Medicines",
+                            "id":"1.1",
+                            "selected":false
+        
+                        }
+                       
+                    ]
+                }
+                ,
+                {
+                    "Title":"Lab Test",
+                    "Buttons":[
+                        {
+                            "text":"Lab Test",
+                            "value":"Health-Lab Test-Lab Test",
+                            "id":"2.1",
+                            "selected":false
+                        }
+                    ]
+                }
+                ,
+                {
+                    "Title":"Fitness",
+                    "Buttons":[
+                        {
+                            "text":"Fitness",
+                            "value":"Health-Fitness-Fitness",
+                            "id":"3.1",
+                            "selected":false
+                        }
+                    ]
+                }
+                ,
+                {
+                    "Title":"Doctor Consultation",
+                    "Buttons":[
+                        {
+                            "text":"Doctor Consultation",
+                            "value":"Health-Doctor Consultationt-Doctor Consultation",
+                            "id":"4.1",
+                            "selected":false
+                        }
+                        
+                    ]
+                }
+               
+               
+            ]
+        }
+        ,
+        {
+            "Title":"Education",
+            "icon":"assets/icon/eduIcon.svg",
+            "Categories":[
+                {
+                    "Title":"Courses",
+                    "Buttons":[
+                        {
+                            "text":"Courses",
+                            "value":"Education-Courses-Courses",
+                            "id":"1.1",
+                            "selected":false
+        
+                        }
+                       
+                    ]
+                }
+                ,
+                {
+                    "Title":"Assessment",
+                    "Buttons":[
+                        {
+                            "text":"Assessment",
+                            "value":"Education-Assessment-Assessment",
+                            "id":"2.1",
+                            "selected":false
+                        }
+                    ]
+                }
+                
+               
+               
+            ]
+        }
+    ]
+}

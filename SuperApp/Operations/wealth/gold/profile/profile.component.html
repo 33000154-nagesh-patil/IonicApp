@@ -1,0 +1,93 @@
+<ion-app>
+  <ion-header>
+    <ion-toolbar class="custBackgroundDynamicColorWhite">
+      <ion-grid>
+        <ion-row>
+         
+          <ion-col [size]="'11'">
+            <span class="custFontFamilyMuliBold muli-16pt custColorDark custLineHight40">Profile Details</span>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    
+    <ion-col [size]="'12'" class="pdingleft">
+      <ion-row class="copltmargin">
+        <ion-col [size]="'1'">
+          <h1></h1>
+        </ion-col>
+      </ion-row>
+    </ion-col>
+    <ion-row>
+      <ion-col class="text-center">
+        <img [src]="imageList?.photo" class=" custCircle custFontFamilyMuliBold" />
+      </ion-col>
+    </ion-row>
+  
+    <ion-row class="mt-2">
+      
+      <ion-col [size]="'12'">
+        <ion-row class="muli-16pt custLineHight18 custColorDark custFontFamilyMuliBold text-nowrap">
+          <ion-col class="text-center"> {{name}}</ion-col>
+        
+        </ion-row>
+        <ion-row class="text-nowrap">
+          <ion-col class="muli-16pt custLineHight18 custColorDark custFontFamilyMuliBold mt-2 text-center"> Customer ID :{{custId}}</ion-col>
+          <!-- <ion-col class="muli-16pt custLineHight18 custColorDark custFontFamilyMuliBold mt-2 text-center"> Mobile No. :{{mobileNo}}</ion-col> -->
+          
+          
+        </ion-row>
+      </ion-col>
+    </ion-row>
+  
+  
+  
+
+    <ion-row class="w-100">
+      <mat-accordion class="w-100">
+      <mat-expansion-panel (opened)="panelOpenState = true"
+      (closed)="panelOpenState = false">
+     <mat-expansion-panel-header>
+    <mat-panel-title>
+      Bank Details
+    </mat-panel-title>
+    </mat-expansion-panel-header>
+    <ion-row>
+      <ion-col [size]="'12'" class="custFontFamilyMuliBold">Account No : {{bankAcc}}</ion-col>
+    </ion-row>
+   <ion-row>
+    <ion-col [size]="'12'"  class="custFontFamilyMuliBold">Bank Name : {{bankName}}</ion-col>
+   </ion-row>
+  
+    </mat-expansion-panel>
+     </mat-accordion>
+    </ion-row>
+
+    <ion-row class="w-100">
+      <mat-accordion class="w-100">
+      <mat-expansion-panel (opened)="panelOpenState = true"
+      (closed)="panelOpenState = false">
+     <mat-expansion-panel-header>
+    <mat-panel-title>
+      Personal Details
+    </mat-panel-title>
+    </mat-expansion-panel-header>
+    <ion-row>
+      <ion-col [size]="'12'" class="custFontFamilyMuliBold">Date Of Birth : {{dateofbirth?.split(' ')[0]}}</ion-col>
+    </ion-row>
+   <ion-row>
+    <ion-col [size]="'12'"  class="custFontFamilyMuliBold">Mobile No. : {{MobileNumber}}</ion-col>
+   </ion-row>
+   <ion-row>
+    <ion-col [size]="'12'"  class="custFontFamilyMuliBold">Email ID : {{EmailId}}</ion-col>
+   </ion-row>
+  
+    </mat-expansion-panel>
+     </mat-accordion>
+    </ion-row>
+  </ion-content>
+  <cap-footer [activeImg]="imageList?.activeTab" [selectedIndex]="'5'" [footerListData]="mfFooterData" [parentTab]="'Mutual Fund'">
+  </cap-footer>
+</ion-app>

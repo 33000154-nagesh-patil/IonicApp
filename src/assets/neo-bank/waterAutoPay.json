@@ -1,0 +1,50 @@
+{
+    "controls": [
+      {
+        "name": "provider",
+        "label": "Provider name",
+        "value": "",
+        "type": "select",
+        "options":[
+          "Mumbai-water-supply",
+          "Nashik-water-supply",
+          "Goa-water-supply",
+          "Bangalore-water-supply",
+          "SakiNaka-water-supply"
+        ],
+        "validators": {
+          "required": true
+        }
+      },
+      
+      {
+        "name": "rrNumber",
+        "label": "RR number",
+        "value": "",
+        "type": "number",
+        "validators": {
+          "required": true
+        }
+      },
+      {
+        "name": "consumerNumber",
+        "label": "Consumer number",
+        "value": "",
+        "type": "number",
+        "validators": {
+          "required": true
+        }
+      },
+      {
+        "name": "nickname",
+        "label": "Nick Name",
+        "value": "",
+        "type": "text",
+        "validators": {}
+      }
+      
+      
+      
+      
+    ]
+  }

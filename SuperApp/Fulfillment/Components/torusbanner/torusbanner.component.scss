@@ -1,0 +1,85 @@
+.commonBrandImg{
+  height: 5rem !important;
+  width: 8rem !important;
+}
+
+.custBtnn {
+  background-color: #FBD210;
+  border: 1px solid #E6B400;
+  color: #141B2F;
+  border-radius: 5px;
+  height: 30px;
+  width: 120px;
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+    flex-wrap: nowrap;
+
+    height: auto;
+
+    overflow-x: scroll;
+
+    width: auto;
+}
+
+.mrginTopp {
+  margin-top: -160px;
+}
+
+
+.cardCust {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+
+    .custImgTorus {
+      width: 21px;
+      height: 27px;
+    }
+
+    .custDesImg {
+      margin-top: 25px;
+    }
+
+    .custCardBack {  
+      background-image: url('/assets/icon/croma.png');
+      background-size: 255px 271px;
+    }
+
+
+    .custBtnnss{
+      width: 156px;
+      height: 45px;
+      background-color: #FBD210;
+      border: 1px solid #E6B400;
+      color: #141B2F;
+      border-radius: 5px;
+    }
+
+    .custBtnns{
+      width: 156px;
+      height: 45px;
+      background-color: #fff;
+      border: 1px solid #44C8F5;
+      color: #141B2F;
+      border-radius: 5px;
+    }
+
+    .cardCusts {
+      display: block;
+      margin-left: auto;
+    }
+
+    .cardCustss {
+      display: block;
+      margin-right: auto;
+    }
+
+    .custArrow {
+      height: 20px;
+      width: 25px;
+    }

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Group_22313" data-name="Group 22313" transform="translate(-10 -396)">
+    <rect id="Rectangle_9583" data-name="Rectangle 9583" width="24" height="24" transform="translate(10 396)" fill="#fff"/>
+    <g id="Group_22250" data-name="Group 22250" transform="translate(-84.339 -673.717)">
+      <g id="Group_21578" data-name="Group 21578" transform="translate(100.339 1072)">
+        <path id="Path_21055" data-name="Path 21055" d="M551.231,254.387v5.867l1.784-2.991" transform="translate(-544.004 -253.781)" fill="none" stroke="#039" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path id="Path_21056" data-name="Path 21056" d="M553.025,254.387v5.867l-1.794-2.991" transform="translate(-542.22 -253.781)" fill="none" stroke="#039" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <g id="Rectangle_4" data-name="Rectangle 4" transform="translate(0 13.717)" fill="none" stroke="#44c8f5" stroke-width="1">
+          <path d="M2.5,0h9.25A1.25,1.25,0,0,1,13,1.25v2.5A1.25,1.25,0,0,1,11.75,5H2.5A2.5,2.5,0,0,1,0,2.5v0A2.5,2.5,0,0,1,2.5,0Z" stroke="none"/>
+          <path d="M2.5.5h9.143a.857.857,0,0,1,.857.857V3.643a.857.857,0,0,1-.857.857H2.5a2,2,0,0,1-2-2v0A2,2,0,0,1,2.5.5Z" fill="none"/>
+        </g>
+        <line id="Line_4" data-name="Line 4" x1="7" transform="translate(5.5 16.309)" fill="none" stroke="#039" stroke-linecap="round" stroke-width="1"/>
+        <g id="Rectangle_9511" data-name="Rectangle 9511" transform="translate(0 -0.283)" fill="none" stroke="#44c8f5" stroke-width="1">
+          <path d="M4,0h7a2,2,0,0,1,2,2V17a2,2,0,0,1-2,2H2a2,2,0,0,1-2-2V4A4,4,0,0,1,4,0Z" stroke="none"/>
+          <path d="M4,.5h7A1.5,1.5,0,0,1,12.5,2V17A1.5,1.5,0,0,1,11,18.5H2A1.5,1.5,0,0,1,.5,17V4A3.5,3.5,0,0,1,4,.5Z" fill="none"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

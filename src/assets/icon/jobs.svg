@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="21" viewBox="0 0 22 21">
+  <g id="Group_22281" data-name="Group 22281" transform="translate(-40 -600)">
+    <g id="Rectangle_9490" data-name="Rectangle 9490" transform="translate(40 603)" fill="none" stroke="#44c8f5" stroke-width="1">
+      <rect width="20" height="16" rx="2" stroke="none"/>
+      <rect x="0.5" y="0.5" width="19" height="15" rx="1.5" fill="none"/>
+    </g>
+    <g id="Rectangle_9491" data-name="Rectangle 9491" transform="translate(45.957 600)" fill="none" stroke="#44c8f5" stroke-width="1">
+      <rect width="8" height="4" rx="1" stroke="none"/>
+      <rect x="0.5" y="0.5" width="7" height="3" rx="0.5" fill="none"/>
+    </g>
+    <ellipse id="Ellipse_1349" data-name="Ellipse 1349" cx="6" cy="5.5" rx="6" ry="5.5" transform="translate(50 610)" fill="#fff"/>
+    <path id="search_FILL0_wght400_GRAD0_opsz48" d="M15.391,15.95,12.85,13.616a3.646,3.646,0,0,1-1.161.679,4.063,4.063,0,0,1-1.41.243A4.106,4.106,0,0,1,7.244,13.28,4.161,4.161,0,0,1,6,10.244,4.161,4.161,0,0,1,7.244,7.208,4.087,4.087,0,0,1,10.263,5.95a4.041,4.041,0,0,1,2.994,1.258,4.175,4.175,0,0,1,1.236,3.036,4.227,4.227,0,0,1-.232,1.392,4.272,4.272,0,0,1-.7,1.258L16,15.243Zm-5.129-2.418a3.087,3.087,0,0,0,2.289-.965,3.2,3.2,0,0,0,.945-2.323,3.2,3.2,0,0,0-.945-2.323,3.087,3.087,0,0,0-2.289-.965,3.133,3.133,0,0,0-2.314.965,3.307,3.307,0,0,0,0,4.647,3.133,3.133,0,0,0,2.314.965Z" transform="translate(44.915 603.995)" fill="#039"/>
+  </g>
+</svg>

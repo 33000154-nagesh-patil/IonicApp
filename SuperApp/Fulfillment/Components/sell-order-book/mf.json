@@ -1,0 +1,19 @@
+{   
+    "name":"Augmont Digital gold",
+    "segments":[
+        {
+          "name":"Units",
+          "value":"quantity",
+          "placeHolder":"Enter Quantity",
+          "unit":"gm"
+      },
+      {
+          "name":"Amount",
+          "value":"amount",
+          "placeHolder":"Enter Amount",
+          "unit":"₹"
+      }
+      ],
+      "pricePerUnit":5000,
+      "availableQuantity":12
+}

@@ -1,0 +1,54 @@
+{   
+    "Consumer":[
+        {"name":"Akshay PAtil","value":"1234567890"},
+        {"name":"Jayesh Mishra","value":"098765423"},
+        {"name":"Salman Dada","value":"321414414124"}
+
+    ],
+    "Locations": [
+        {"name":"Home","value":["Address1","Address2"]},
+        {"name":"Office","value":["Address1","Address2"]}
+    ],
+    "productName":"TCS",
+    "productimage":"",
+    "itemCode":"11538",
+    "quantity":"Multiple",
+    "unitPrice":"5000.00",
+    "taxes":[
+        {"type":"CGST","taxPercentage":"0"},
+        {"type":"SGST","taxPercentage":"0"},
+        {"type":"IGST","taxPercentage":"0"}
+    ],
+
+    "quantityEditabe":true,
+    "amountEditabe":false,
+    "amountQuantity":false,
+    "unitOfQuantity":"",
+    "unitOfAmount":"₹",
+    "walletMargin":true,
+    "availableMargin":5000.00,
+    "txnType":"BUY",
+    "OtherDetails":[
+        "OrderType","DeliveryMode","Exchange"
+    ],
+    "OrderType":[
+        {"name":"Market","value":"Market"},
+        {"name":"Limit","value":"Limit"},
+        {"name":"SL","value":"SL"},
+        {"name":"SL-M","value":"SL-M"}
+    ],
+    "DeliveryMode":[
+        {"name":"Intraday","value":"Intraday"},
+        {"name":"Delivery","value":"Delivery"}
+    ],
+    "Exchange":[
+        {"name":"NSE","value":"NSE"},
+        {"name":"BSE","value":"BSE"}
+    ],
+    "orderMode":[
+        {"name":"Regular","value":"Regular"},
+        {"name":"Cover","value":"Cover"},
+        {"name":"AMO","value":"AMO"},
+        {"name":"Basket","value":"Basket"}
+    ]
+}

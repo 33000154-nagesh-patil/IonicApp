@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="39" height="39" viewBox="0 0 39 39">
+  <defs>
+    <clipPath id="clip-path">
+      <circle id="Ellipse_1129" data-name="Ellipse 1129" cx="19.5" cy="19.5" r="19.5" transform="translate(0 -0.314)" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="facebook_icon" data-name="facebook icon" transform="translate(0 0.314)" clip-path="url(#clip-path)">
+    <g id="Group_13118" data-name="Group 13118" transform="translate(-7.343 -7.238)">
+      <circle id="Ellipse_1070" data-name="Ellipse 1070" cx="19.019" cy="19.019" r="19.019" transform="translate(0 25.149) rotate(-41.388)" fill="#314a7e"/>
+      <path id="Path_18285" data-name="Path 18285" d="M107.115,573.256h-3.152V584.5H99.29V573.256H97.068v-3.971H99.29v-2.569c0-1.837.873-4.715,4.714-4.715l3.462.015v3.854h-2.512a.951.951,0,0,0-.991,1.082v2.337h3.56Zm0,0" transform="translate(-75.452 -546.407)" fill="#f1f2f2"/>
+    </g>
+  </g>
+</svg>

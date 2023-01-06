@@ -1,0 +1,133 @@
+
+{
+"" : {
+    "titile":"",
+    "product": "MutualFund",
+    "image":"",
+    "heading": "HDFC Focused 30-G",
+    "lable":[],
+    "action1": "Add to card",
+    "action2": "Invest Now",
+    "Chart": {
+        "row1": [{
+            "Current Return": "24.5"
+        }],
+        "row2": [{
+            "NAV": "₹500",
+            "Rating": 4.5,
+            "Fund Size": "₹2352 Cr"
+        }],
+        "graph": [{
+                "nav": 20,
+                "plan_id": 40818
+            },
+            {
+                "nav": 10,
+                "plan_id": 40818
+            },
+            {
+                "nav": 60,
+                "plan_id": 40818
+            },
+            {
+                "nav": 25,
+                "plan_id": 40818
+            },
+            {
+                "nav": 54,
+                "plan_id": 40818
+            },
+            {
+                "nav": 20,
+                "plan_id": 40818
+            },
+            {
+                "nav": 30,
+                "plan_id": 40818
+            }
+        ],
+        "graphFooter": {
+            "row": {
+                "col1": "Start SIP",
+                "col2": "Compare"
+            }
+        }
+    },
+    "Cards": [
+        {
+        "heading": "Basic Information",
+        "row": [
+            {
+                "Age": "23 Yrs 5M",
+                "Expense rate": "2.72%"
+            },
+            {
+                "Type": "open-ended",
+                "AUM(fund Size)": "₹25 Cr"
+            },
+            {
+                "Risk Grade": "NA",
+                "Return Grade": "NA"
+            },
+            {
+                "Turnover": "83%",
+                "Return Since Launch": "16.69%"
+            },
+            {
+                "Beanchmark": "313"
+            }
+        ]
+      },
+      {
+        "heading": "invest Information",
+        "row": [
+            {
+                "Age": "23 Yrs 5M",
+                "Expense rate": "2.72%"
+            },
+            {
+                "Type": "open-ended",
+                "AUM(fund Size)": "₹25 Cr"
+            },
+            {
+                "Risk Grade": "NA",
+                "Return Grade": "NA"
+            },
+            {
+                "Turnover": "83%",
+                "Return Since Launch": "16.69%"
+            },
+            {
+                "Beanchmark": "313"
+            }
+        ]
+      }
+],
+    "step": [
+        {
+        "heading": "How your money get invested",
+        "data": [
+            {
+                "Icon": "assets/Images/Group_21929.svg",
+                "Steps": "Step 1",
+                "Disc": "Select a scheme"
+            },
+            {
+                "Icon": "assets/Images/Group_21928.svg",
+                "Steps": "Step 2",
+                "Disc": "Open investment account and make payment"
+            },
+            {
+                "Icon": "assets/Images/Group_21927.svg",
+                "Steps": "Step 3",
+                "Disc": "HeyTorus submits transaction to mutual fund company"
+            },
+            {
+                "Icon": "assets/Images/Group_21925.svg",
+                "Steps": "Step 4",
+                "Disc": "Mutual fund company sends confirmation to you via email and text in 1 working day"
+            }
+        ]
+    }]
+}
+}

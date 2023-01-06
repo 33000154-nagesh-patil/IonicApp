@@ -1,0 +1,44 @@
+{
+    "Consumer":[
+        {"name":"Akshay Patil","value":"1234567890"},
+        {"name":"Jayesh Mishra","value":"098765423"},
+        {"name":"Salman Dada","value":"321414414124"}
+    ],
+    "Locations": [
+        {"name":"Home","value":["AddressLine1","AddressLine2","400033"]},
+        {"name":"Office","value":["AddressLine1","AddressLine2","400605"]}
+    ],
+    "itemName":"HDFC Limited",
+    "productName":"Education",
+    "productSubtitle":"Live Market",
+    "productImage":"https://pbs.twimg.com/profile_images/899609798299205633/DZLt0_e2_400x400.jpg",
+    "itemCode":"1158",
+    "unitPrice":"5000.00",
+    "taxes":[
+        {"type":"CGST","taxPercentage":"1.50"},
+        {"type":"SGST","taxPercentage":"1.50"},
+        {"type":"IGST","taxPercentage":"3.0"}
+    ],
+    "quantityRegEx":"^([1-9]|[1-9][0-9]|100)$",
+    "editable":"switch",
+    "unitOfQuantity":"gms",
+    "unitOfAmount":"₹",
+    "tnc":["url","address"],
+    "Validity":0,
+    "walletMargin":false,
+    "availableMargin":5000.00,
+    "txnType":"BUY",
+    "OtherDetails":[],
+    "footerButton":[
+        {
+            "name":"Add To Cart",
+            "uxClass":"custBackgroundColorBrightCyan custColorWhite w-100 mx-3 my-2",
+            "value":"addToCart"
+        },
+        {
+            "name":"Proceed to Checkout",
+            "uxClass":"custBackgroundColorParakeetGreen custColorWhite w-100 mx-3 my-2",
+            "value":"buy"
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+{
+  "__status": "success",
+  "redirects": [
+      {
+          "logic": "PostSave",
+          "name": "Redirect",
+          "referencetype": "loadPage",
+          "reference": "system/Access/Registrations/RegistrationBasic.frm&p1=registration_id&v1=1006672"
+      }
+  ]
+}

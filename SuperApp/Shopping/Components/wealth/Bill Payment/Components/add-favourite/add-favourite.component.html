@@ -1,0 +1,48 @@
+<ion-app>
+  <ion-header class="">
+    <ion-toolbar class="custBackgroundDynamicColorWhite  px-2">
+      <ion-grid>
+        <ion-row>
+          <ion-col  (click)="goback()" [size]="'1'" class="text-center mt-1">
+            <ion-img [src]="imageList?.arrow" class="custKYCImg mt-2"></ion-img>
+          </ion-col>
+          <ion-col [size]="'11'" class=" ps-2">
+            <span class="custFontFamilyMuliBold muli-14pt custLineHight40 custColorDark ">
+              Bill Payment</span>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-toolbar>
+  </ion-header>
+
+  <!-- <second page></second> -->
+
+  <ion-content class="contentBackground">
+    <ion-grid>
+      <ion-row class="p-2">
+        <mat-form-field class="w-100" appearance="outline">
+          <span matPrefix> </span>
+          <input type="text" matInput placeholder="Search here..." name="search" class="custBackgroundColorWhite"
+            [(ngModel)]="search">
+          <ion-icon name="mic-outline" matSuffix></ion-icon>
+        </mat-form-field>
+
+       <ion-row class="w-100 justify-content-end">
+       <ion-img [src]="imageList?.bharatBillPay"> </ion-img>&nbsp;
+       </ion-row>
+
+
+        <ion-row class="w-100 custFontFamilyMuliBold muli-16pt custColorDark">Categories</ion-row>
+
+        <ion-grid class="ion-no-padding">
+          <ion-row class="bodycontent ">
+            <ion-col  [size]="'4'" *ngFor="let x of mydata | filter:search" (click)="getData(x?.tagName)" class="text-center border pt-3">
+              <ion-img class="imgSize " [src]="x?.icons"></ion-img>
+              <span class="muli-12pt custFontFamilyMuliRegular pt-1">{{x?.tagName}}</span>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-row>
+    </ion-grid>
+  </ion-content>
+</ion-app>

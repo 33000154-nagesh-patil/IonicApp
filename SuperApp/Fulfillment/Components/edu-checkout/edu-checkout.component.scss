@@ -1,0 +1,149 @@
+.custProfileName{
+    position: absolute;
+   top:7px;
+}
+.custHeight{
+    height: 30px;
+    width: 30px;
+}
+.custProfile{
+    // background: var(--custwhiteTwo);
+    // border-radius: 50%;
+    padding: 21px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.custSVGIcon{
+    position: absolute;
+    margin: -8px;
+}
+
+.custWithoutTextImg{
+    height: 18px;
+    width: 18px;
+  }
+.custBox{
+    height: 4px;
+    width: 20px;
+    border-radius: 0.5px;
+}
+.custActiveImg{
+    height: 4px;
+    width: auto;
+    
+}
+
+.custSelected{
+    color:var(--custBrightCyan) ;
+  }
+
+.custMarginBottom{
+    margin-bottom: -5px;
+}
+
+  .custHeight1{
+    height: 20px;
+    width: 20px;
+                    
+}
+.line {
+    margin-top: -6px;
+}
+.progo{
+    padding-top:0.65em;
+vertical-align: middle;
+width: max-content;
+}
+.table {
+    background: #EFEFEF 0% 0% no-repeat padding-box;
+    // margin: 10px;
+    // padding-left: 7.5px;
+    // border-spacing: 15px;
+    // justify-content-center:align-items-center;
+  }
+
+.success{
+    position: absolute;
+   top: 50%;
+    font-size: 12px;
+}
+.bottomcontent{
+    // outline: 25px solid #E9EBF0;
+    // background-color: #E9EBF0;
+    // margin-bottom: -20px;
+    // margin-top: 20px;
+    outline: 0px solid #E9EBF0;
+    background-color: #E9EBF0;
+    margin-bottom: -16px;
+    margin-left: -24px;
+    margin-right: -24px;
+    display: flex;
+    vertical-align: middle;
+    // justify-content: center;
+    padding-top: 12px;
+    height: 41px;
+    border-radius: 0px 0px 4px 4px;
+    
+}
+.something{
+    padding: 12px;
+}
+.active{
+    padding-top: 10px;
+    margin-left: 0px;
+
+}
+.custFilterPosition{
+    position: relative;
+    top:-37px;
+    right: 30px;
+    width: 20px;
+    height: 20px;
+}
+.logotick{
+    height: 17px;
+}
+.colorprice{
+    color:#0D152C;
+}
+::ng-deep .mat-expansion-indicator:after {
+    color: var(--custDarkishBlue) !important;
+  }
+
+//   ::ng-deep  .mat-expansion-panel-header{
+//     padding: 0 15px !important;
+// }
+//   ::ng-deep  .mat-expansion-panel-body {
+//     padding: 0 15px 15px 15px !important;
+// }
+.bord{
+    padding: 0 10px !important;
+}
+::ng-deep .mat-expansion-panel-body {
+    padding: 0 16px 16px !important;
+  }
+  mat-expansion-panel-header{
+     padding: 0 16px !important;
+   }
+.text-end{
+    padding-top: 0px;
+    // padding-bottom: 0px;
+}   
+
+.custRemove{
+    height: 10px;
+    width: 10px;
+    margin: 5px;
+}
+.courseIcon{
+    border: 2px solid #DEDEDE;
+    padding: 2px;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+}

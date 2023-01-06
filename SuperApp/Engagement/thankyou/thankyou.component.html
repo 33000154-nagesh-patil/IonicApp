@@ -1,0 +1,254 @@
+<ion-content>
+
+  <!-- Thank you start -->
+  <ion-grid>
+    <ion-row>
+      <ion-img [src]="heading.giftpop"></ion-img>
+    </ion-row>
+
+    <ion-row class="mrginTopp">
+      <ion-col [size]="'12'" class="text-center">
+        <ion-row>
+          <ion-img class="cardCust" src="assets\icon\thankYouTickIcon.svg"></ion-img>
+        </ion-row>
+        <ion-row class="cardCust"><span
+            class="muli-20pt custColorDark custFontFamilyMuliBold">{{heading.heading}}</span></ion-row>
+        <ion-row>
+          <span class="cardCust text-center muli-16pt custColorDark custFontFamilyMuliBold">{{heading.title}}</span>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <!-- Thank you end -->
+
+  <!-- coin start -->
+  <ion-grid *ngIf="heading.torusCoinCard">
+    <ion-card *ngFor="let x of heading.torusCoinCard" class="custCoinBack">
+      <ion-row>
+        <ion-col size="4">
+          <ion-img class="commonBrandImg" [src]="x.icon"></ion-img>
+        </ion-col>
+        <ion-col size="8" class="pt-4">
+          <span class="muli-14pt custColorDark custFontFamilyMuliBold">{{x.title}}</span>
+          <p class="custFontFamilyMuliBold custColorDark muli-20pt">{{x.coins}}</p>
+        </ion-col>
+      </ion-row>
+    </ion-card>
+  </ion-grid>
+  <!-- coin end -->
+
+  <!-- Tracker start -->
+  <ion-card *ngIf="heading.trackerData">
+    <mat-accordion class="w-100 example-headers-align">
+      <mat-expansion-panel class="custBAckGround">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <span class="custFontFamilyMuliBold muli-14pt custLineHight20 custColorDarkShade">Tracker
+            </span>
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <div>
+          <ion-grid>
+
+            <ion-row class="stepper_padding">
+              <ul class="StepProgress mt-3">
+                <li *ngFor="let x of heading.trackerData.data" class="w-100" class="nopadding"
+                  [ngClass]="x?.status==='Done' ?'StepProgress-item is-done':'StepProgress-item current'">
+                  <p class="custFontFamilyMuliBold muli-12pt">{{x?.title}}
+                    <span [ngClass]="x?.status=='Done' ?'custColorParakeetGreen':'custColorParakeetOrange'"
+                      class="float-end custStatusMargin">{{x.status}}</span>
+                  </p>
+                  <p *ngIf="x?.subTitle" class="custFontFamilyMuliRegular muli-10pt custColorGreyish">{{x?.subTitle}}
+                  </p>
+                </li>
+              </ul>
+            </ion-row>
+
+          </ion-grid>
+        </div>
+      </mat-expansion-panel>
+    </mat-accordion>
+  </ion-card>
+  <!-- Tracker end -->
+  <br />
+  <!-- Transaction start -->
+  <ion-card *ngIf="heading.transactionDetails">
+    <mat-accordion class="w-100 example-headers-align">
+      <mat-expansion-panel class="custBAckGround">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <span class="custFontFamilyMuliBold muli-14pt custLineHight20 custColorDarkShade">Transaction
+              Details
+            </span>
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <div>
+          <ion-grid>
+
+            <ion-row>
+              <ion-col [size]="'12'" class="d-flex flex-column">
+                <!-- <span
+                  class="custFontFamilyRobotoCondensed custFontFamilyMuliITF-Rupee muli-18pt custLineHight18 custColorDark m-1"></span> -->
+                <span
+                  class="custFontFamilyMuliRegular muli-14pt custLineHight15 custColorBattlePGry m-1">{{transcationDetails.title}}</span>
+                <span
+                  class="custFontFamilyMuliRegular muli-12pt custLineHight15 custColorBattlePGry m-1">{{transcationDetails.date}}</span>
+              </ion-col>
+            </ion-row>
+            <ion-row *ngFor="let x of heading.transactionDetails.description">
+              <ion-col class="d-flex flex-column" *ngFor="let y of x|keyvalue">
+                <span
+                  class="custFontFamilyMuliRegular muli-12pt custLineHight15 custColorBattlePGry m-1">{{y.key.toString().replace('_','
+                  ')}}</span>
+                <span
+                  class="custFontFamilyRobotoCondensed custFontFamilyMuliITF-Rupee muli-16pt custLineHight18 custColorDark m-1">{{y.value}}</span>
+              </ion-col>
+            </ion-row>
+
+          </ion-grid>
+        </div>
+      </mat-expansion-panel>
+    </mat-accordion>
+  </ion-card>
+  <!-- Transaction end -->
+  <br />
+
+  <!--Recommandation Start-->
+  <div class="coloredCard ">
+    <ion-grid class="px-2 py-4">
+
+      <h2 class="custColorDark muli-16pt custFontFamilyMuliBold mx-2">
+        {{ singleRowCardData.title }}
+      </h2>
+
+      <ion-segment scrollable [(ngModel)]="segment" *ngIf="singleRowCardData.segmentValues[0].title" class="mb-3">
+        <ion-segment-button class="muli-12pt custColorDark custFontFamilyMuliBold "
+          *ngFor="let x of singleRowCardData.segmentValues" [value]="x.title">{{x.title}}</ion-segment-button>
+      </ion-segment>
+
+      <!-- <ion-card class="custBackgroundColorWhite mx-2">
+        <ion-card-content class="border-bottom" *ngFor="let x of singleRowCardData[segment]">
+          <ion-row class="">
+            <ion-col [size]="6" class="custColorDark muli-14pt p-0 custFontFamilyMuliSemiBold text-nowrap">
+              {{ x.row1.col1 }}
+            </ion-col>
+            <ion-col [size]="6"
+              class="custFontFamilyMuliSemiBold p-0 custLineHight20 muli-14pt custColorDark text-end text-nowrap">
+              {{ x.row1.col2 }}
+            </ion-col>
+          </ion-row>
+
+          <ion-row class="">
+            <ion-col class="custFontFamilyMuliSemiBold p-0 muli-12pt custLineHight16 custColorBattlePGry text-nowrap">
+              {{ x.row2.col1 }}
+            </ion-col>
+            <ion-col class="d-flex justify-content-end p-0 text-end">
+              <span class="muli-12pt itemCol mb-1 text-end text-nowrap">
+                <ion-icon name="caret-up" class="custGreenTick"></ion-icon>{{ x.row2.col2 }}
+              </span>&nbsp;
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card> -->
+
+      <div *ngIf="segment != 'Stock'">
+
+        <div *ngFor="let x of singleRowCardData[segment]">
+          <div *ngFor="let y of x.card">
+            <cap-card [card]="y"></cap-card>
+          </div>
+        </div>
+      </div>
+      <div *ngIf="segment == 'Stock'">
+
+        <ion-card class="" *ngFor="let x of singleRowCardData[segment]">
+          <ion-card-content class="p-0 m-0" *ngFor="let y of x.card" class="border-bottom">
+            <ion-row class="p-0 m-0">
+              <ion-col class="custColorDark p-0  muli-14pt custFontFamilyMuliSemiBold text-nowrap">
+                {{ y.row1.title }}
+              </ion-col>
+              <ion-col
+                class="custFontFamilyMuliSemiBold p-0 custLineHight20 muli-14pt custColorDark text-end text-nowrap">
+                ₹{{ y.row1.price }}
+              </ion-col>
+            </ion-row>
+            <ion-row class="p-0 m-0">
+              <ion-col class="custFontFamilyMuliSemiBold p-0 muli-12pt custLineHight16 custColorBattlePGry text-nowrap">
+                {{ y.row2.ExchangeName }}
+              </ion-col>
+              <ion-col class="d-flex justify-content-end p-0 text-end">
+                <span class="muli-12pt itemCol mb-1 text-end text-nowrap custGreenCol">
+                  <ion-icon name="caret-up" class="custGreenTick"></ion-icon>{{ y.row2.lossAndGain }}
+                </span>&nbsp;
+              </ion-col>
+            </ion-row>
+          </ion-card-content>
+
+        </ion-card>
+      </div>
+      <ion-row class="custPosition mt-4">
+        <button class="custheight text-center p-1 custLineHight14 custLineHight18 px-3 "
+          (click)="explore(segment)">Explore 
+           <a href="https://reportscug.reliancesmartmoney.com/BPP/Login.aspx?FormDetails=abcjkjkjkjkkk@#kjkjkjkdjlkjsflkjlfkjsf" class="custColorDarkishBlue text-decoration-none">
+                Go to Business Partner Portal</a>
+        </button>
+      </ion-row>
+    </ion-grid>
+  </div>
+  <!--Recommandation end-->
+
+  <!-- Torus club start  -->
+  <ion-grid>
+    <ion-row class="mt-5"><span class="muli-16pt custColorDark custFontFamilyMuliBold px-3">{{heading.subtitle}}</span>
+    </ion-row>
+    <ion-row><span class="muli-10pt custColorDark custFontFamilyMuliBold px-3">{{heading.subtitles}}</span></ion-row>
+
+    <ion-card class="custCardBack mt-2" *ngFor="let x of card">
+      <ion-row>
+        <ion-col size="6">
+          <ion-img [src]="x.title" class="commonBrandImg"></ion-img>
+          <span class="muli-10pt custColorDark custFontFamilyMuliBold px-3">{{x.subtitle}}</span>
+          <p class="custFontFamilyMuliBold custColorDark muli-34pt pt-2 px-3">₹{{x.prize}}</p>
+          <button class="text-center custBtnn mb-3 mx-3">
+            <span class="custFontFamilyMuliBold muli-11pt">{{x.btn}}</span>
+          </button>
+        </ion-col>
+        <ion-col size="6" class="">
+          <ion-img class="custDesImg" [src]="x.icon"></ion-img>
+        </ion-col>
+      </ion-row>
+    </ion-card>
+
+    <ion-slides>
+      <ion-slide class="card" *ngFor="let x of heading.scrollingCard">
+        <ion-card [ngClass]="x.rewardBackgroundColor">
+
+          <ion-row>
+            <ion-col size="6">
+              <ion-img [src]="x.title" class="commonBrandImg"></ion-img>
+              <span class="custFontFamilyMuliBold muli-10pt">{{x?.subtitle}}</span>
+              <ion-img [src]="x.arrow" class="custArrow"></ion-img>
+            </ion-col>
+            <ion-col size="6" class="px-1">
+              <ion-img [src]="x.icon"></ion-img>
+            </ion-col>
+          </ion-row>
+
+        </ion-card>
+      </ion-slide>
+    </ion-slides>
+  </ion-grid>
+  <!-- Torus club end  -->
+</ion-content>
+
+<ion-footer class="ion-no-border">
+  <ion-toolbar class="contentBackground ">
+    <ion-row class="custCenter">
+      <ion-col class="p-3">
+        <button class="btn w-100 h-100 custBackgroundColorBrightCyan">
+          <span class="custColorWhite custFontFamilyMuliBold muli-16pt">{{heading.exploreBtn}}</span>
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-footer>

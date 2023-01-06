@@ -1,0 +1,397 @@
+<ion-content >
+    <div class="container scroll " id="pdfTable" #pdfTable>
+        
+        
+<!--        
+        <div class="col border  closebtn me-2 ">
+         
+            
+           
+        </div> -->
+    
+     
+            <ion-row class=" w-100">
+                <ion-col  class="" [size]="'3'">
+                    <!-- <img [src]="imageList?.companyLogoTorus" alt="" class="logosize"> -->
+                </ion-col>
+                <ion-col class="">
+                   
+                </ion-col>
+                <ion-col [size]="'3'" class=" text-end"><button (click)="back()" class="   custBackgroundColorBrightCyan custColorWhite btnclose" >Close</button></ion-col>
+            </ion-row>
+            <!-- <img [src]="imageList?.companyLogoTorus" alt="" class="">
+            <button (click)="back()" class="   custBackgroundColorBrightCyan custColorWhite btnclose" >Close</button>
+            <h5 class="" style="text-align: center;">TAX INVOICE</h5>
+            
+            <h5 class="margin " style="text-align: center;">TORUS DIGITAL PRIVATE LIMITED</h5>
+            <p class="margin muli-14pt" style="text-align: center;">Powered By Augmont Goldtech Private Limited</p>
+            <p class="margin muli-14pt" style="text-align: center;">(CIN - U74110MH2021PTC359702)(GSTIN : 27AAICT5914H1Z4)</p>
+            <p class="margin muli-14pt" style="text-align: center;">2nd Floor, ICC Chambers, Saki Vihar Rd, Muranjan Wadi, Marol,
+                 Andheri East, Mumbai, Maharashtra 400072</p>
+            <p class="margin muli-14pt" style="text-align: center;">Phone call : 022 6895 9000</p>
+            <p class="margin muli-14pt" style="text-align: center;">Email: support@heytorus.com</p>
+            
+    
+            <hr style="border: 2px solid black;" /> -->
+<!--     
+            <div class="move">
+                <div style="width: 50%;">
+                    <span><b>Buyer Details:</b></span><br />
+                    <span>{{invoiceData?.userInfo.name}}</span><br />
+                    <span>{{invoiceData?.userInfo?.address}},{{invoiceData?.userInfo?.pincode}}</span><br />
+    
+                    <span>{{invoiceData?.userInfo.mobileNumber}}</span><br />
+                    <span>{{invoiceData?.userInfo.email}}</span><br />
+                    
+                </div>
+                <div class="vertical">
+                    &nbsp; <span><b>Invoice No:</b></span><span> {{invoiceData?.invoiceNumber}}</span><br />
+                    &nbsp; <span><b>Invoice Date:</b></span><span> {{invoiceData?.invoiceDate.split(' ')[0] }}</span><br />
+                    &nbsp; <span><b>PLACE OF SUPPLY:</b></span><br />
+                    &nbsp; <span>Delivered at Sequel's Vault in Mumbai Maharahstra</span>
+                </div>
+            </div><br /> -->
+            <ion-row>
+                <ion-col class="text-center">
+                <h5 class="" style="text-align: center;">TAX INVOICE</h5>
+            
+                <h5 class="margin " style="text-align: center;">TORUS DIGITAL PRIVATE LIMITED</h5>
+                <p class="margin muli-14pt" style="text-align: center;">Powered By Augmont Goldtech Private Limited</p>
+                <p class="margin muli-14pt" style="text-align: center;">(CIN - U74110MH2021PTC359702)(GSTIN : 27AAICT5914H1Z4)</p>
+                <p class="margin muli-14pt" style="text-align: center;">2nd Floor, ICC Chambers, Saki Vihar Rd, Muranjan Wadi, Marol,
+                     Andheri East, Mumbai, Maharashtra 400072</p>
+                <p class="margin muli-14pt" style="text-align: center;">Phone call : 022 6895 9000</p>
+                <p class="margin muli-14pt" style="text-align: center;">Email: support@heytorus.com</p>
+                
+        
+                <hr style="border: 2px solid black;" />
+            </ion-col>
+            </ion-row>
+
+            <table border="1" width="100%" class="mx-2">
+                <tbody>
+                    <tr class="border muli-12pt">
+                        <td class="border">
+                            <div >
+                                 <span><b>Buyer Details:</b></span><br />
+                                 <span>{{invoiceData?.userInfo.name}}</span><br />
+                                 <span>{{invoiceData?.userInfo?.address}},{{invoiceData?.userInfo?.pincode}}</span><br />
+    
+                                 <span>{{invoiceData?.userInfo.mobileNumber}}</span><br />
+                                 <span>{{invoiceData?.userInfo.email}}</span><br />
+                    
+                            </div>
+                        </td>
+                        <td class="border ">
+                            <div > 
+                             <span><b>Invoice No:</b></span><span> {{invoiceData?.invoiceNumber}}</span><br />
+                             <span><b>Invoice Date:</b></span><span> {{invoiceData?.invoiceDate.split(' ')[0] }}</span><br />
+                            <!-- &nbsp; <span><b>PLACE OF SUPPLY:</b></span><br />
+                            &nbsp; <span>Delivered at Sequel's Vault in Mumbai Maharahstra</span> -->
+
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table><br><br>
+
+      
+            <table border="1" width="100%" class="mx-2">
+                <tbody  >
+                    <tr class="border">
+                        <td  class="border muli-12pt">
+                            &nbsp;<b>Srn.</b>
+                        </td>
+                        <td  class="border ">
+                            <p class="margin muli-12pt" >&nbsp;<b>Description</b>
+                            </p>
+                        </td>
+                        <td width="" class="border muli-12pt">
+                            &nbsp;<b>HSN
+                                CODE</b>
+                        </td>
+                        <td width="" class="border">
+                            <p class="margin muli-12pt">&nbsp;<b>Grams</b></p>
+                        </td>
+                        <td width="" class="border muli-12pt">
+                            &nbsp;<b>Rate</b>
+                        </td>
+                        <td width="" class="border">
+                            <p class="margin muli-12pt" >&nbsp;<b>Per</b></p>
+                        </td>
+                        <td width="" class="border">
+                            <p class="margin muli-12pt" >&nbsp;<b>Amount</b></p>
+                        </td>
+                    </tr>
+                </tbody>
+    
+                <tbody >
+                    <tr class="border">
+                        <td  class="border muli-12pt">
+                            &nbsp;1
+                        </td>
+                        <td class="border">
+                            <p class="margin muli-12pt"  >&nbsp;{{invoiceData?.metalType}} - ({{invoiceData?.purity}} - {{invoiceData?.karat}}) - {{invoiceData?.transactionId}}
+                                @ {{invoiceData?.rate}}
+                            </p>
+                        </td>
+                        <td class="border muli-12pt">
+                            &nbsp;{{invoiceData?.hsnCode}}
+                        </td>
+                        <td width="" class="border muli-12pt">
+                            <p class="margin" >&nbsp;{{invoiceData?.quantity}} </p>
+                        </td>
+                        <td width="" class="border muli-12pt">
+                            &nbsp;{{invoiceData?.rate}}
+                        </td>
+                        <td width="" class="border">
+                            <p class="margin muli-12pt" >&nbsp;1
+                                GM</p>
+                        </td>
+                        <td width="" class="border">
+                            <p class="margin muli-12pt" >&nbsp;{{invoiceData?.grossAmount}}</p>
+                        </td>
+                    </tr>
+                </tbody>
+    
+                <tbody >
+                    <tr class="border">
+                        <td width="" class="border">
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                        </td>
+                        <td class="border">
+                            <p class="margin muli-12pt" >&nbsp;<b>TAXABLE VALUE</b>
+                            </p>
+                        </td>
+                        <td width="" class="border">
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                        </td>
+                        <td width="" class="border">
+                            <p class="margin muli-12pt" >&nbsp;{{invoiceData?.quantity}} </p>
+                        </td>
+                        <td width="" class="border">
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                        </td>
+                        <td width="" class="border">
+                            <p class="margin" >&nbsp;</p>
+                        </td>
+                        <td class="border" class="border">
+                            <p class="margin muli-12pt" >&nbsp;{{invoiceData?.grossAmount}}
+                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+    
+                <tbody>
+                    <tr>
+                        <td class="border">
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                        </td>
+                        <td class="border">
+                            <p class="margin muli-12pt" >&nbsp;<b>CGST</b>
+                            </p>
+                        </td>
+                        <td class="border">
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+    
+                        </td>
+                        <td class="border">
+                            <p class="margin" >&nbsp;</p>
+                        </td>
+                        <td class="border muli-12pt">
+                            &nbsp;{{invoiceData?.taxes.taxSplit[0].taxPerc}}
+                        </td>
+                        <td class="border">
+                            <p class="margin" >&nbsp;</p>
+                        </td>
+                        <td class="border">
+                            <p class="margin muli-12pt" >&nbsp;{{invoiceData?.taxes.taxSplit[0].taxAmount}}
+                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+    
+                <tbody>
+                    <tr>
+                        <td class="border">
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                        </td>
+                        <td class="border">
+                            <p class="margin muli-12pt" >&nbsp;<b>SGST</b>
+                            </p>
+                        </td>
+                        <td class="border">
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+    
+                        </td>
+                        <td class="border">
+                            <p class="margin" >&nbsp;</p>
+                        </td>
+                        <td class="border muli-12pt">
+                            &nbsp;{{invoiceData?.taxes.taxSplit[1].taxPerc}}
+                        </td>
+                        <td class="border">
+                            <p class="margin" >&nbsp;</p>
+                        </td>
+                        <td class="border">
+                            <p class="margin muli-12pt" >&nbsp;{{invoiceData?.taxes.taxSplit[1].taxAmount}}</p>
+                        </td>
+                    </tr>
+                </tbody>
+    
+                <tbody>
+                    <tr>
+                        <td class="border">
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                        </td>
+                        <td class="border">
+                            <p class="margin muli-12pt" >&nbsp;<b>IGST</b>
+                            </p>
+                        </td>
+                        <td class="border">
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+    
+                        </td>
+                        <td class="border">
+                            <p class="margin" >&nbsp;</p>
+                        </td>
+                        <td class="border muli-12pt">
+                            &nbsp;{{invoiceData?.taxes.taxSplit[2].taxPerc}}
+                        </td>
+                        <td class="border">
+                            <p class="margin" >&nbsp;</p>
+                        </td>
+                        <td class="border muli-12pt">
+                            <p class="margin muli-12pt" >&nbsp;{{invoiceData?.taxes.taxSplit[2].taxAmount}}</p>
+                        </td>
+                    </tr>
+                </tbody>
+    
+                <tbody>
+                    <tr>
+                        <td class="border muli-12pt">
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                        </td>
+                        <td>
+                            <p class="margin muli-12pt" >&nbsp;<b>GROSS INVOICE AMOUNT</b>
+                            </p>
+                        </td>
+                        <td class="border">
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+    
+                        </td>
+                        <td class="border">
+                            <p class="margin" >&nbsp;</p>
+                        </td>
+                        <td class="border">
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                        </td>
+                        <td class="border">
+                            <p class="margin" >&nbsp;</p>
+                        </td>
+                        <td class="border">
+                            <p class="margin muli-12pt" >&nbsp;{{invoiceData?.netAmount}}</p>
+                        </td>
+                    </tr>
+                </tbody>
+    
+                <tbody>
+                    <tr>
+                        <td class="border">
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                        </td>
+                        <td class="border muli-12pt">
+                            <p class="margin"muli-12pt >&nbsp;<b>DISCOUNT</b>
+                            </p>
+                        </td>
+                        <td class="border">
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+    
+                        </td>
+                        <td class="border">
+                            <p class="margin" >&nbsp;</p>
+                        </td>
+                        <td class="border">
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                        </td>
+                        <td class="border">
+                            <p class="margin" >&nbsp;</p>
+                        </td>
+                        <td class="border">
+                            <p class="margin muli-12pt" >&nbsp;0.00
+                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+    
+                <tbody>
+                    <tr>
+                        <td class="border">
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                        </td>
+                        <td class="border">
+                            <p class="margin muli-12pt" >&nbsp;<b>TOTAL NET PAYABLE</b>
+                            </p>
+                        </td>
+                        <td class="border">
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+    
+                        </td>
+                        <td class="border">
+                            <p class="margin" >&nbsp;</p>
+                        </td>
+                        <td class="border">
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                        </td>
+                        <td class="border">
+                            <p class="margin " >&nbsp;</p>
+                        </td>
+                        <td class="border muli-12pt">
+                            <p class="margin muli-12pt">&nbsp;{{invoiceData?.netAmount}}
+                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        
+            <br />
+
+            <span class="muli-12pt"><b>E. & O. E.:</b></span><br />
+            <!--span class="muli-12pt"><b>Delivery: Ex-office/Showroom/As per Customers request</b></!--span-->
+            <br />
+            <span class="muli-12pt">Terms & Conditions :-</span>
+            <ul class="muli-12pt">
+                <li>Goods once sold will not be returned.</li>
+                <li>Any disputes shall be subject to Mumbai jurisdiction.</li>
+                <li>Our responsibility ceases once the goods are delivered to the customer.</li>
+                <li>I/We hereby certify that my/our registration certificate under the Central Goods and Services Act,
+                    2017 is in
+                    force on the date on which the sales of goods specified in this tax invoice is made by me/us and
+                    that the
+                    transaction of sale covered by this tax invoice has been effected by me/us and it shall be accounted
+                    for in the
+                    turnover of sales while filing of return and the due tax, if any, payable on the sale has been paid
+                    or shall be
+                    paid.</li>
+                <li>This is system generated document hence signature is not required.</li>
+            </ul>
+            <p class="muli-12pt"><b>For Torus Digital Private Limited
+                </b></p>
+            <span class="muli-12pt"><b>Authorised Signatory
+                
+                </b></span>
+    
+        </div>
+        <hr style="border: 2px solid black;" />
+        <ion-row class="w-100">
+            <ion-col class="text-center">
+                <button (click)="downloadAsPDF()" class="muli-12pt custBackgroundColorBrightCyan custColorWhite custButton">Download Invoice</button>
+            </ion-col>
+        </ion-row>
+        
+    
+
+    <!-- <ion-col class="text-center custBackgroundColorDarkBlueShade" > -->
+       
+    <!-- </ion-col> -->
+</ion-content>

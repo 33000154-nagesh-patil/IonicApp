@@ -1,0 +1,76 @@
+.custKYCImg {
+    height: 16px;
+    width: 13px;
+}
+.custUrSign {
+    margin-top: 25px !important;
+}
+.custSignMandatoryMsg {
+    margin-top: 10px !important;
+}
+.custFooterDiv {
+    padding-left: 16px;
+    padding-right: 16px;
+    // margin: 0px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+}
+.custContinueBtn {
+    height: 45px;
+    --background: var(--custBrightCyan) !important;
+}
+.custSelfieIcon {
+    width: 104px;
+    height: 154px;
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    -ms-transform: translateY(-45%) translateX(-50%);
+    transform: translateY(-45%) translateX(-50%);
+}
+.custSelfieImage {
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    -ms-transform: translateY(-45%) translateX(-50%);
+    transform: translateY(-45%) translateX(-50%);
+}
+.tryButton {
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    -ms-transform: translateY(-75%) translateX(-50%);
+    transform: translateY(-170%) translateX(-50%);
+}
+.vertical-center {
+    .fixed-content,
+    .scroll-content {
+        display: flex;
+        align-items: center;
+    }
+}
+.custTryButton {
+    height: 45px;
+    border: 1px solid var(--custBrightCyan);
+    border-radius: 4px;
+    --background: var(--custWhite);
+    --box-shadow: none;
+    text-align: center !important;
+    margin-right: 8px;
+}
+.custLooksBtn {
+    height: 45px;
+    --background: var(--custBrightCyan) !important;
+    --box-shadow: none;
+    margin-left: 8px;
+}

@@ -1,0 +1,147 @@
+<ion-app>
+<ion-header>
+  <ion-toolbar class="custBackgroundDynamicColorWhite">
+    <ion-grid>
+      <ion-row>
+        <!-- <ion-col [size]="'1'" >
+          <ion-img [src]="imageList?.arrow" class="custArrorSize custCenterAlign"></ion-img>
+        </ion-col> -->
+        <ion-col [size]="'12'" class="px-2">
+          <span class="custFontFamilyMuliBold muli-14pt custColorDark custLineHight40">Set MPIN</span>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="contentBackground">
+<form [formGroup]="otpVerificationCodeFormGroup"  (ngSubmit)="onSubmitVerificationAuthentication()" class="example-form h-100">
+  <ion-grid>
+    <ion-row class="px-2 pt-3">
+      <p class="custFontFamilyMuliBold muli-14pt custColorDark">Set 4 digit numeric MPIN</p>
+    </ion-row>
+
+    <ion-row class="px-2">
+      <span class="custFontFamilyMuliBold muli-12pt pt-3 custColorDark">Enter new MPIN</span>
+   <ion-col class="text-end pt-2">
+     <span class="pt-3">
+      <button type="button" mat-button matSuffix mat-icon-button
+      class="custColorDarkishBlue custBackgroundColorPaleGrey" (click)="changeInputType()">
+      <ion-icon class="custeye" [name]="!currentType?'eye-outline':'eye-off-outline'"></ion-icon>
+    </button>
+  </span>
+    <span class="custFontFamilyMuliBold muli-10pt pt-2 custColorDarkishBlue">
+      Show
+    </span>
+  </ion-col>
+    </ion-row>
+    <ion-row class="px-1 pt-0" >
+      <ion-col [size]="'3'">
+        <mat-form-field appearance="outline" class="example-full-width w-100">
+          <input matInput #otp1 id="otp1" formControlName="otp1" [type]="currentType?'text':'password'" (keyup)="(otp1.value.length == 1)?otp2.focus() : ''" class="custInput" maxLength="1" inputmode="numeric">
+        </mat-form-field>
+      </ion-col>
+      <ion-col [size]="'3'">
+        <mat-form-field appearance="outline" class="example-full-width w-100">
+          <input matInput #otp2 id="otp2" formControlName="otp2" type="password" [type]="currentType?'text':'password'" (keyup)="onDigitInput($event);(otp2.value.length == 1)?otp3.focus() : ($event.code === 'Backspace')?otp1.focus():otp2.focus();($event.code === 'Backspace')?otp1.value = '':otp1.value" class="custInput" maxLength="1" inputmode="numeric">
+        </mat-form-field>
+      </ion-col>
+      <ion-col [size]="'3'">
+        <mat-form-field appearance="outline" class="example-full-width w-100">
+          <input matInput #otp3 id="otp3" formControlName="otp3" type="password" [type]="currentType?'text':'password'" (keyup)="(otp3.value.length == 1)?otp4.focus() : ($event.code === 'Backspace')?otp2.focus():otp3.focus();($event.code === 'Backspace')?otp2.value = '':otp2.value" class="custInput" maxLength="1" inputmode="numeric">
+        </mat-form-field>
+      </ion-col>
+      <ion-col [size]="'3'">
+        <mat-form-field appearance="outline" class="example-full-width w-100">
+          <!-- <input matInput #otp4 id="otp4" formControlName="otp4" type="password" [type]="currentType?'text':'password'" (keyup)="(otp4.value.length == 1)?otp4.focus() : ($event.code === 'Backspace')?otp3.focus():otp4.focus();($event.code === 'Backspace')?otp3.value = '':otp3.value" class="custInput" maxLength="1" inputmode="numeric"> -->
+          <input matInput #otp4 id="otp4" formControlName="otp4" type="password" [type]="currentType?'text':'password'" (keyup)="($event.code === 'Backspace')?otp3.focus():otp4.focus();($event.code === 'Backspace')?otp3.value = '':otp3.value" class="custInput" maxLength="1" inputmode="numeric">
+
+        </mat-form-field>
+      </ion-col>
+      <!-- <ion-col [size]="'2'">
+        <mat-form-field appearance="outline" class="example-full-width w-100">
+          <input matInput #otp5 id="otp5" formControlName="otp5" type="password" [type]="currentType?'text':'password'" (keyup)="(otp5.value.length == 1)?otp6.focus() : ($event.code === 'Backspace')?otp4.focus():otp5.focus();($event.code === 'Backspace')?otp4.value = '':otp4.value" class="custInput" maxLength="1" inputmode="numeric">
+        </mat-form-field>
+      </ion-col>
+      <ion-col [size]="'2'">
+        <mat-form-field appearance="outline" class="example-full-width w-100">
+          <input matInput #otp6 id="otp6" formControlName="otp6" type="password" [type]="currentType?'text':'password'" (keyup)="($event.code === 'Backspace')?otp5.focus():otp6.focus();($event.code === 'Backspace')?otp5.value = '':otp5.value" class="custInput" maxLength="1" inputmode="numeric">
+        </mat-form-field>
+      </ion-col> -->
+    </ion-row>
+
+
+
+    <!--  -->
+
+    <ion-row class="px-2">
+      <span class="custFontFamilyMuliBold muli-12pt custColorDark">Re-Enter new MPIN</span>
+    </ion-row>
+   <ion-row>
+      <ion-col [size]="'3'">
+        <mat-form-field appearance="outline" class="example-full-width w-100">
+          <input matInput #otp7 id="otp7" formControlName="otp7" type="password" (keyup)="(otp7.value.length == 1)?otp8.focus() : ''" class="custInput" maxLength="1" inputmode="numeric">
+        </mat-form-field>
+      </ion-col>
+      <ion-col [size]="'3'">
+        <mat-form-field appearance="outline" class="example-full-width w-100">
+          <input matInput #otp8 id="otp8" formControlName="otp8" type="password" (keyup)="onDigitInput($event);(otp8.value.length == 1)?otp9.focus() : ($event.code === 'Backspace')?otp7.focus():otp8.focus();($event.code === 'Backspace')?otp1.value = '':otp7.value" class="custInput" maxLength="1" inputmode="numeric">
+        </mat-form-field>
+      </ion-col>
+      <ion-col [size]="'3'">
+        <mat-form-field appearance="outline" class="example-full-width w-100">
+          <input matInput #otp9 id="otp9" formControlName="otp9" type="password" (keyup)="(otp9.value.length == 1)?otp10.focus() : ($event.code === 'Backspace')?otp8.focus():otp9.focus();($event.code === 'Backspace')?otp8.value = '':otp8.value" class="custInput" maxLength="1" inputmode="numeric">
+        </mat-form-field>
+      </ion-col>
+      <ion-col [size]="'3'">
+        <mat-form-field appearance="outline" class="example-full-width w-100">
+          <!-- <input matInput #otp10 id="otp10" formControlName="otp10" type="password" (keyup)="(otp10.value.length == 1)?otp10.focus() : ($event.code === 'Backspace')?otp9.focus():otp10.focus();($event.code === 'Backspace')?otp9.value = '':otp9.value" class="custInput" maxLength="1" inputmode="numeric"> -->
+          <input matInput #otp10 id="otp10" formControlName="otp10" type="password" (keyup)="($event.code === 'Backspace')?otp9.focus():otp10.focus();($event.code === 'Backspace')?otp9.value = '':otp9.value" class="custInput" maxLength="1" inputmode="numeric">
+          
+        </mat-form-field>
+      </ion-col>
+      <!-- <ion-col [size]="'2'">
+        <mat-form-field appearance="outline" class="example-full-width w-100">
+          <input matInput #otp11 id="otp11" formControlName="otp11" type="password" (keyup)="(otp11.value.length == 1)?otp12.focus() : ($event.code === 'Backspace')?otp10.focus():otp11.focus();($event.code === 'Backspace')?otp10.value = '':otp10.value" class="custInput" maxLength="1" inputmode="numeric">
+        </mat-form-field>
+      </ion-col>
+      <ion-col [size]="'2'">
+        <mat-form-field appearance="outline" class="example-full-width w-100">
+          <input matInput #otp12 id="otp12" formControlName="otp12" type="password" (keyup)="($event.code === 'Backspace')?otp11.focus():otp12.focus();($event.code === 'Backspace')?otp11.value = '':otp11.value" class="custInput" maxLength="1" inputmode="numeric">
+        </mat-form-field>
+      </ion-col> -->
+    </ion-row>
+
+    <ion-row *ngIf="mpinStatusRight">
+      <p
+        class="text-start custFontFamilyMuliBold muli-10pt custColorParakeetGreen d-flex justify-content-start align-items-center ">
+        <span class="px-2">
+          <ion-img [src]="imageList?.kycDone"></ion-img>
+        </span>
+        <span>MPIN has set successfully</span>
+      </p>
+    </ion-row>
+
+    
+    <ion-row *ngIf="mpinStatusFail">
+      <p
+        class="text-start custFontFamilyMuliBold muli-10pt custColorcustFadedRed d-flex justify-content-start align-items-center ">
+        <span class="px-2">
+          <ion-img [src]="imageList?.kycPending"></ion-img>
+        </span>
+        <span>MPIN not match</span>
+      </p>
+    </ion-row>
+  </ion-grid>
+
+  <ion-col [size]="'12'" class="fixed-bottom">
+    <ion-row class="w-100">
+      <ion-col [size]="'12'">
+        <button [disabled]="!otpVerificationCodeFormGroup.valid"  class="btn w-100 text-center custBackgroundColorBrightCyan" ><span
+            class="custColorWhite custFontFamilyMuliBold muli-16pt">Submit</span></button>
+      </ion-col>
+    
+    </ion-row>
+    </ion-col>
+</form>
+</ion-content>
+</ion-app>

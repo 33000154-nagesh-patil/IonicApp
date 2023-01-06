@@ -1,0 +1,11 @@
+<svg id="Component_92_1" data-name="Component 92 – 1" xmlns="http://www.w3.org/2000/svg" width="14.784" height="14.785" viewBox="0 0 14.784 14.785">
+    <defs>
+        <style>
+            .cls-1{fill:#44c8f5}
+        </style>
+    </defs>
+    <path id="Path_16393" data-name="Path 16393" class="cls-1" d="M401.743 425.232h-.616v-.616a.616.616 0 0 0-1.232 0v.616h-4.928v-.616a.616.616 0 0 0-1.232 0v.616h-.616a3.083 3.083 0 0 0-3.08 3.08v7.388a3.083 3.083 0 0 0 3.08 3.08h8.624a3.083 3.083 0 0 0 3.08-3.08v-7.392a3.083 3.083 0 0 0-3.08-3.08zm-10.472 3.08a1.849 1.849 0 0 1 1.848-1.848h8.624a1.849 1.849 0 0 1 1.848 1.848v.616h-12.32zm10.472 9.24h-8.624a1.849 1.849 0 0 1-1.848-1.848v-5.544h12.32v5.54a1.849 1.849 0 0 1-1.848 1.848z" transform="translate(-390.039 -424)"/>
+    <circle id="Ellipse_1293" data-name="Ellipse 1293" class="cls-1" cx="1" cy="1" r="1" transform="translate(2.786 8.392)"/>
+    <circle id="Ellipse_1294" data-name="Ellipse 1294" class="cls-1" cx="1" cy="1" r="1" transform="translate(6.392 8.392)"/>
+    <circle id="Ellipse_1295" data-name="Ellipse 1295" class="cls-1" cx="1" cy="1" r="1" transform="translate(9.999 8.392)"/>
+</svg>

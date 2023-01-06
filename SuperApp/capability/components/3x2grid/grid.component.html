@@ -1,0 +1,27 @@
+<div>
+  <ion-col>
+  <span class="m-2 custFontFamilyMuliBold muli-18pt custLineHight22 custColorDark">{{threeByTwoGridLabel}}</span>
+</ion-col>
+</div>
+<ion-card class="mx-3">
+  <ion-row class="w-100 d-flex flex-row ion-no-margin ion-no-padding">
+    <ion-col [size]="grid.length%3==0?'4':'6'" class="text-center border" *ngFor="let x of grid" (click)="navigateToProductList(x)">
+      <img class="imgSize"  [src]="x?.icon">
+      <p class="muli-12pt custFontFamilyMuliSemiBold custLineHight18 m-2">{{x?.name}}</p>
+    </ion-col>
+  </ion-row>
+</ion-card>
+<ion-row >
+  <ion-col class="text-center">
+<!-- <button (click)="navigateToExplore()" *ngIf="resss == 'Bill Payment'" class="btn w-100 text-center custBackgroundColorWhite custButtonOutLine" >
+
+  <span class="custColorBrightCyan custFontFamilyMuliBold muli-16pt">View More</span>
+
+</button> -->
+<button (click)="navigateToExplore()" *ngIf="threeByTwoGridbtn" class="btn w-100 text-center custBackgroundColorWhite custButtonOutLine" >
+
+  <span class="custColorBrightCyan custFontFamilyMuliBold muli-16pt">{{threeByTwoGridbtn}}</span>
+
+</button>
+</ion-col>
+</ion-row>

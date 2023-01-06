@@ -1,0 +1,104 @@
+<ion-header class="sticky-top">
+  <ion-toolbar>
+    <ion-grid>
+      <ion-row>
+        <ion-col [size]="'1'" (click)="goToBack()" id="goBack">
+          <div class="custTextAlignCenter">
+            <ion-img [src]="imageList?.arrow" class="custArrorSize custWithoutTextImg mt-1"></ion-img>
+          </div>
+        </ion-col>
+        <ion-col class="custFontFamilyMuliBold muli-16pt custColorDark">{{Title}}</ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-sanitize.js"></script>
+</ion-header>
+
+
+<ion-content class="contentBackground pb-5 w-100 h-100" >
+ 
+  <ion-grid >
+
+    <mat-form-field appearance="outline" class="custBackgroundColorWhite custSearch ion-no-padding" floatLabel="never">
+      <input matInput type="text" autocomplete="on"
+        class="custFontFamilyMuliRegular custColorGreyish muli-14pt custLineHight20 text-start ms-3 searchIn"
+         [(ngModel)]="search"   #myTextBox="ngModel" (keydown)="searchMiss($event)"
+        placeholder="Ask a question...." autofill="False" name="search">
+      <ion-icon matSuffix class="me-1 muli-20pt custColorDarkishBlue" ></ion-icon>
+    </mat-form-field>
+ 
+<ion-row class="pt-3">
+      <mat-accordion class="w-100 example-headers-align " *ngFor="let x of allData">
+        <mat-expansion-panel>
+          <mat-expansion-panel-header style="height: auto;" class="custpad">
+            <mat-panel-title>
+              <span class="custFontFamilyMuliBold muli-14pt custLineHight20 custColorDarkShade">{{x?.question}}
+              </span>
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <ion-grid class="ion-no-padding">
+            <ion-row class="bodycontent1" style="border-radius: 4px;">
+              <p class="custFontFamilyMuliRegular muli-12pt mt-2
+               px-3 custColorDark"  [innerHTML]="x?.answer"></p>
+               <ion-row class="p-2 w-100 justify-content-end" *ngIf="x?.requireRedirectionURL!=null">
+                  <a class="muli-14pt custFontFamilyMuliBold custColorDarkishBlue" href={{x.requireRedirectionURL}} target="_blank">Click here</a>&nbsp;&nbsp;
+                  <ion-img src="/assets/icon/clickHereArrow.svg" class="d-inline"></ion-img>
+              </ion-row>
+            </ion-row>
+          </ion-grid>
+        </mat-expansion-panel>
+       
+      </mat-accordion>
+     
+
+    </ion-row>
+
+  </ion-grid>
+  <!-- <p *ngIf="noData" class="text-center muli-20pt">No Data Found</p> -->
+
+
+  <div class="custModalContainer p-10" *ngIf="help">
+    <div  id="showModalSMGSucces" class="modal-content custCenterAlign">
+      <ion-col size="'2'" class="bg-none justify-content-end custClose" (click)="toogle()">
+        <span>
+         <ion-img [src]="imageList?.close" class="custKYCImg"></ion-img>
+        </span>
+      </ion-col>
+      <ion-icon [src]="imageList?.chatUsIcon" class="custImage"></ion-icon>
+      <ion-row class="custFontFamilyMuliBold muli-16pt pb-4">Was this solution helpful ?</ion-row>
+      <ion-row class=" ion-no-padding w-100">
+        <ion-col [size]="'6'" class="ion-no-padding" >
+          <ion-button expand="block" class="text-capitalize custTryButton d-flex justify-content-center" (click)="bot()">
+            <span class="custFontFamilyMuliRegular text-center muli-14pt custColorBrightCyan">Chat With Us</span>
+          </ion-button>
+        </ion-col>
+   
+        <ion-col [size]="'6'" class="ion-no-padding" (click)="onConfirmNo()">
+          <ion-button expand="block" class="text-capitalize text-center custLooksBtn" ><span
+               class="custColorWhite custFontFamilyMuliBold muli-16pt">Yes</span></ion-button>
+        </ion-col>
+      </ion-row>
+    </div>
+  </div>
+
+
+
+  <div class="container" *ngIf="clearAll">
+    <div class="center">
+      <ion-row>
+        <ion-col [size]="'12'">
+          <ion-img class="faceImg" [src]="imageList?.noNotification"></ion-img>
+          <br>
+        </ion-col>
+        <ion-col>
+          <span class="found custFontFamilyMuliBold">No Data found !</span>
+          <br /><br />
+          <!-- <span>We will notify you when something new arrives !</span> -->
+        </ion-col>
+      </ion-row>
+    </div>
+  </div> 
+  
+
+</ion-content>

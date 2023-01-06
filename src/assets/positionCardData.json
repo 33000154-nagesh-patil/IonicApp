@@ -1,0 +1,130 @@
+{
+   "positionCardData": [
+        {
+            "CompanyName": "TCS",
+            "amount": "3251.65",
+            "ordetType": "NSE | Delivery",
+            "percentRate": "22.62(0.23%)",
+            "quantity": "8",
+            "AvgTradePrice": "3250.00",
+            "TotalPL": "6.00",
+            "realisedPL": "2.00",
+            "unrealised": "8.00",
+            "totalBuyQty": "10",
+            "totalSellQty": "2",
+            "BuyAvgPrice": "3250.00",
+            "sellAvgPrice": "3249.00",
+            "BuyValue": "32500.00",
+            "sellValue": "6498.00"
+        },
+        {
+            "CompanyName": "TCS",
+            "amount": "3251.65",
+            "ordetType": "NSE | Intraday",
+            "percentRate": "22.62(0.23%)",
+            "quantity": "-10",
+            "AvgTradePrice": "3250.00",
+            "TotalPL": "10.00",
+            "realisedPL": "0.00",
+            "unrealised": "10.00",
+            "totalBuyQty": "0",
+            "totalSellQty": "10",
+            "BuyAvgPrice": "-",
+            "sellAvgPrice": "3249.00",
+            "BuyValue": "-",
+            "sellValue": "6498.00"
+        },
+        {
+            "CompanyName": "TCS",
+            "amount": "3251.65",
+            "ordetType": "NSE | Intraday",
+            "percentRate": "22.62(0.23%)",
+            "quantity": "10",
+            "AvgTradePrice": "3250.00",
+            "TotalPL": "10.00",
+            "realisedPL": "0.00",
+            "unrealised": "10.00",
+            "totalBuyQty": "10",
+            "totalSellQty": "0",
+            "BuyAvgPrice": "3250.00",
+            "sellAvgPrice": "-",
+            "BuyValue": "32500.00",
+            "sellValue": "-"
+        },
+        {
+            "CompanyName": "TCS",
+            "amount": "3251.65",
+            "ordetType": "NSE | Intraday",
+            "percentRate": "22.62(0.23%)",
+            "quantity": "0",
+            "AvgTradePrice": "3250.00",
+            "TotalPL": "10.00",
+            "realisedPL": "10.00",
+            "unrealised": "0.00",
+            "totalBuyQty": "10",
+            "totalSellQty": "10",
+            "BuyAvgPrice": "3250.00",
+            "sellAvgPrice": "3251.00",
+            "BuyValue": "32500.00",
+            "sellValue": "32510.00"
+        }
+        ,{
+
+        },
+        {
+            
+        }
+    ],
+
+
+    "positioncard":[
+        {
+            "id": "1",
+            "comany": "TCS",
+            "OdType": "NSE | Delivery",
+            "Price": "3251.00",
+            "QTY": "8*3250.00",
+            "percentage": "22.62(0.23%)"
+        },
+        {
+            "id": "1",
+            "comany": "TCS",
+            "OdType": "NSE | Intraday",
+            "Price": "3251.00",
+            "QTY": "-10*3250.00",
+            "percentage": "22.62(0.23%)"
+        },
+        {
+            "id": "3",
+            "comany": "TCS",
+            "OdType": "NSE | Intraday",
+            "Price": "3251.00",
+            "QTY": "10*3250.00",
+            "percentage": "22.62(0.23%)"
+        },
+        {
+            "id": "4",
+            "comany": "TCS",
+            "OdType": "NSE | Intraday",
+            "Price": "3251.00",
+            "QTY": "0",
+            "percentage": "22.62(0.23%)"
+        },
+        {
+            "id": "5",
+            "comany": "TCS",
+            "OdType": "NSE | Bracket",
+            "Price": "3251.00",
+            "QTY": "10*3250.00",
+            "percentage": "22.62(0.23%)"
+        },
+        {
+            "id": "5",
+            "comany": "TCS",
+            "OdType": "NSE | Cover",
+            "Price": "3251.00",
+            "QTY": "10*3250.00",
+            "percentage": "22.62(0.23%)"
+        }
+    ]
+}

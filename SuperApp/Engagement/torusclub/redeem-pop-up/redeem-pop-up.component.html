@@ -1,0 +1,45 @@
+<!-- <div class="mainRedeem"> -->
+<ion-row class="pt-3 justify-content-end px-2">
+  <ion-img [src]="imageList?.close" style="height: 15px; width: 15px;" (click)="goBack()">
+  </ion-img>
+</ion-row>
+<ion-content>
+
+<ion-row class="px-3">
+  <h3>
+    How To Redeem
+  </h3>
+</ion-row>
+
+<ion-row>
+  <ion-col>
+    <div id="showModalSMGSucces">
+      <div class="ms-2 px-3">
+        <ul class="StepProgress mt-2"  *ngFor="let x of redeemstep">
+          <li class="w-100  is-done StepProgress-item d-flex flex-column">
+            <span class="custFontFamilyMuliRegular muli-12pt custColorDark custLineHeight15 m-0">{{x.title}}</span>
+            <p class="custFontFamilyMuliBold muli-16pt"> {{x.description}}</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </ion-col>
+</ion-row>
+<hr>
+
+<ion-row class="px-3">
+  <h3>
+    Offer Details
+  </h3>
+</ion-row>
+<ion-row class="pb-3">
+  <ion-col>
+    <ul class="custPad" *ngFor="let y of redeemdetails">
+      <li>
+        <span class="custFontFamilyMuliRegular muli-12pt custColorDark custLineHeight15 m-0">{{y.list}}</span>
+      </li>
+    </ul>
+  </ion-col>
+  </ion-row>
+</ion-content>
+<!-- </div> -->

@@ -1,0 +1,166 @@
+{
+    "": {
+        "heading": {
+            "heading": "Assessment",
+            "discription": "Discover all Enrolled"
+        },
+        "card": [
+            {
+                "row1": {
+                    "icon": "",
+                    "title": "Life Insurance",
+                    "description": "max 15 sections. 135 lectures. 11 hours",
+                    "action": "assets/icon/leftArrowIcon.svg"
+                },
+                "row2": {
+                    "price": "Enrolled",
+                    "col1": "Price",
+                    "val1": "Enrolled",
+                    "col2": "Ratings",
+                    "val2": 4,
+                    "col3": "Start course",
+                    "val3": "https://prime.torusprimero.com/course/view.php?id=99"
+                }
+            },
+            {
+                "row1": {
+                    "icon": "",
+                    "title": "Mutual Fund",
+                    "description": "max 15 sections. 135 lectures. 11 hours",
+                    "action": "assets/icon/leftArrowIcon.svg"
+                },
+                "row2": {
+                    "price": "Enrolled",
+                    "col1": "Price",
+                    "val1": "Enrolled",
+                    "col2": "Ratings",
+                    "val2": 4,
+                    "col3": "Start course",
+                    "val3": "https://prime.torusprimero.com/course/view.php?id=98"
+                }
+            },
+            {
+                "row1": {
+                    "icon": "",
+                    "title": "Account Executive",
+                    "description": "max 15 sections. 135 lectures. 11 hours",
+                    "action": "assets/icon/leftArrowIcon.svg"
+                },
+                "row2": {
+                    "price": "Enrolled",
+                    "col1": "Price",
+                    "val1": "Enrolled",
+                    "col2": "Ratings",
+                    "val2": 4,
+                    "col3": "Start course",
+                    "val3": "https://prime.torusprimero.com/course/view.php?id=97"
+                }
+            },
+            {
+                "row1": {
+                    "icon": "",
+                    "title": "Goods and Service Taxes",
+                    "description": "max 15 sections. 135 lectures. 11 hours",
+                    "action": "assets/icon/leftArrowIcon.svg"
+                },
+                "row2": {
+                    "price": "Enrolled",
+                    "col1": "Price",
+                    "val1": "Enrolled",
+                    "col2": "Ratings",
+                    "val2": 4,
+                    "col3": "Start course",
+                    "val3": "https://prime.torusprimero.com/course/view.php?id=96"
+                }
+            },
+            {
+                "row1": {
+                    "icon": "",
+                    "title": "FOOD & BEVERAGE",
+                    "description": "max 15 sections. 135 lectures. 11 hours",
+                    "action": "assets/icon/leftArrowIcon.svg"
+                },
+                "row2": {
+                    "price": "Enrolled",
+                    "col1": "Price",
+                    "val1": "Enrolled",
+                    "col2": "Ratings",
+                    "val2": 4,
+                    "col3": "Start course",
+                    "val3": "https://prime.torusprimero.com/course/view.php?id=95"
+                }
+            },
+            {
+                "row1": {
+                    "icon": "",
+                    "title": "Basic Computers",
+                    "description": "max 15 sections. 135 lectures. 11 hours",
+                    "action": "assets/icon/leftArrowIcon.svg"
+                },
+                "row2": {
+                    "price": "Enrolled",
+                    "col1": "Price",
+                    "val1": "Enrolled",
+                    "col2": "Ratings",
+                    "val2": 4,
+                    "col3": "Start course",
+                    "val3": "https://prime.torusprimero.com/course/view.php?id=94"
+                }
+            },
+            
+            {
+                "row1": {
+                    "icon": "",
+                    "title": "Retail Sales",
+                    "description": "max 15 sections. 135 lectures. 11 hours",
+                    "action": "assets/icon/leftArrowIcon.svg"
+                },
+                "row2": {
+                    "price": "Enrolled",
+                    "col1": "Price",
+                    "val1": "Enrolled",
+                    "col2": "Ratings",
+                    "val2": 4,
+                    "col3": "Start course",
+                    "val3": "https://prime.torusprimero.com/course/view.php?id=92"
+                }
+            },
+            {
+                "row1": {
+                    "icon": "",
+                    "title": "Equity Dealer",
+                    "description": "max 15 sections. 135 lectures. 11 hours",
+                    "action": "assets/icon/leftArrowIcon.svg"
+                },
+                "row2": {
+                    "price": "Enrolled",
+                    "col1": "Price",
+                    "val1": "Enrolled",
+                    "col2": "Ratings",
+                    "val2": 4,
+                    "col3": "Start course",
+                    "val3": "https://prime.torusprimero.com/course/view.php?id=91"
+                    
+                }
+            },
+            {
+                "row1": {
+                    "icon": "",
+                    "title": "PEDICURE & MANICURE",
+                    "description": "max 15 sections. 135 lectures. 11 hours",
+                    "action": "assets/icon/leftArrowIcon.svg"
+                },
+                "row2": {
+                    "price": "Enrolled",
+                    "col1": "Price",
+                    "val1": "Enrolled",
+                    "col2": "Ratings",
+                    "val2": 4,
+                    "col3": "Start course",
+                    "val3": "https://prime.torusprimero.com/course/view.php?id=93"
+                    
+                }
+            }
+        ]
+    }
+}

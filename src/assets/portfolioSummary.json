@@ -1,0 +1,40 @@
+{
+  "portfolio Summary":[
+    {
+      "symbol":"TCS",
+      "price":"250.00",
+      "MktUpDown":"",
+      "QTY":"5",
+      "avgPrice":"240.00",
+      "CURRENT VALUE":"300.00",
+      "UNREALIZED P&L":""
+
+
+    },
+    {
+      "symbol":"WIPRO",
+      "price":"250.00",
+      "MktUpDown":"",
+      "QTY":"6",
+      "avgPrice":"240.00",
+      "CURRENT VALUE":"300.00",
+      "UNREALIZED P&L":""
+
+
+    },
+    {
+      "symbol":"SBIIN",
+      "price":"250.00",
+      "MktUpDown":"",
+      "QTY":"7",
+      "avgPrice":"360.00",
+      "CURRENT VALUE":"300.00",
+      "UNREALIZED P&L":""
+
+
+    }
+
+
+  ]
+
+}

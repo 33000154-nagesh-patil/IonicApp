@@ -1,0 +1,32 @@
+{
+  "heading": {
+      "heading": "Explore",
+      "discription": "Discover your fitness activity"
+  },
+  "pickup&filter": [
+      {
+          "icon": "",
+          "title": "Pickup from"
+      },
+      {
+          "icon": "",
+          "title": "Filter"
+      }
+  ],
+  "card": {
+      "row1": {
+          "icon": "",
+          "title": "Hatha Yoga: Flexibility",
+          "description": "by Nandini (12 Sessions). Recorded",
+          "action": ""
+      },
+      "row2": {
+          "col1": "price",
+          "price": 25.00,
+          "col2":"rating",
+          "rating":"",
+          "col3":"prescription",
+          "prescription": ""
+      }
+  }
+}

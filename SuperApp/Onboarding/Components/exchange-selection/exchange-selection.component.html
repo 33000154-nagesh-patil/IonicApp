@@ -1,0 +1,92 @@
+<ion-content class="h-100 w-100 contentBackground">
+  <ion-grid class="d-flex flex-column customPadding CustomMargin">
+    <ion-row class="mx-4 mr-2">
+      <p class="custFontFamilyMuliBold muli-16pt">
+        {{ "segmentPara1" | translate }}
+      </p>
+    </ion-row>
+    <ion-row
+      *ngFor="let x of segments; let i = index"
+      class="custBackgroundColorWhite rounded-2 px-2 mx-4 my-2"
+      [ngClass]="x?.IsChecked ? 'customBorderColor' : ''"
+      [ngClass]="
+        x?.IsDisable ? 'customBorderColor custcheckbox customEquatiBorder' : ''
+      "
+      (click)="getSegmentPara(x?.IsChecked, x)"
+    >
+      <ion-col>
+        <p class="custFontFamilyMuliBold muli-16pt">{{ x.Exchange }}</p>
+        <p class="custFontFamilyMuliBold muli-12pt">{{ x.Description }}</p>
+      </ion-col>
+      <ion-col class="d-flex align-items-center justify-content-end" size="2">
+        <ion-checkbox
+          type="checkbox"
+          mode="ios"
+          class="custcheckbox"
+          [checked]="x?.IsChecked"
+          [disabled]="x?.IsChecked"
+        ></ion-checkbox>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <div
+    class="custModalContainer p-10"
+    *ngIf="loggedInModal"
+    (click)="successModalClose()"
+  >
+    <div id="showModalSMGSucces" class="modal-content custCenterAlign">
+      <!-- <ion-icon [src]="imageList?.successKYCIcon" class="custImage"></ion-icon> -->
+      <p
+        class="custFontFamilyMuliBold muli-16pt custColorDark text-center p-0 m-0 ion-no-padding"
+      >
+        {{ ErrorMsg }}
+      </p>
+    </div>
+  </div>
+</ion-content>
+
+<ion-row class="custommargin d-flex fixed-bottom">
+  <!-- <span class="me-3">
+    <ion-checkbox
+      color="secondary"
+      (click)="termsCheck($event)"
+      class="custTermCheckbox"
+      [checked]="terms"
+    ></ion-checkbox>
+  </span>
+  <span>
+    <p class="w-100 custFontFamilyMuliBold muli-12pt custColorWarmGrey">
+      {{ "bycontinuing" | translate }}
+      <span class="custFontFamilyMuliBold custColorWarmGrey">{{
+        "fATCADetails" | translate
+      }}</span>
+    </p>
+  </span> -->
+
+  <ion-col
+    [size]="'6'"
+    class="ion-no-padding"
+    (click)="skip('ExchangeSelection')"
+  >
+    <ion-button
+      expand="block"
+      class="text-capitalize custTryButton d-flex justify-content-center"
+    >
+      <span
+        class="custFontFamilyMuliRegular text-center muli-14pt custColorBrightCyan"
+        >{{ "skipLabel" | translate }}</span
+      >
+    </ion-button>
+  </ion-col>
+
+  <ion-col [size]="'6'" class="ion-no-padding" (click)="onContinue()">
+    <ion-button
+      expand="block"
+      [disabled]="!continueNext"
+      class="text-capitalize text-center custLooksBtn"
+      ><span class="custColorWhite custFontFamilyMuliBold muli-16pt">{{
+        "continue" | translate
+      }}</span></ion-button
+    >
+  </ion-col>
+</ion-row>

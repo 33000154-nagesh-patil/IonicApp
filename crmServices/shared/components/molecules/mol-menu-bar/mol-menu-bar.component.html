@@ -1,0 +1,23 @@
+<div *ngFor="let item of menuDet" >
+<mat-expansion-panel [class.mat-elevation-z0]="true" [expanded]="item.type=='expand'" *ngIf="item.key=='true'">
+  <mat-expansion-panel-header>
+    <app-icons [iconDetail]="item"></app-icons>
+    <app-label *ngIf="item.title != 'Help'" [labelDetail]="item"></app-label>
+  </mat-expansion-panel-header>
+   <mat-nav-list>
+  <div *ngFor="let submenu of item.value">
+    <mat-list-item *ngIf="submenu.key=='true'" (click)="getMenuData(submenu)">
+      <app-icons [iconDetail]="submenu"></app-icons>
+      <app-label [labelDetail]="submenu" [ngClass]="{'active':tabName == submenu.title}"></app-label>
+    </mat-list-item>
+  </div>
+   </mat-nav-list>
+</mat-expansion-panel>
+</div>
+<div class="fixed-bottom">
+  <ion-row *ngFor="let item of menuDet">
+    <app-label *ngIf="item.title == 'Help'" [labelDetail]="item"></app-label>
+    <app-label *ngIf="item.title == 'Settings'" [labelDetail]="item"></app-label>
+  </ion-row>
+</div>
+

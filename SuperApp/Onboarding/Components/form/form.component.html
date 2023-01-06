@@ -1,0 +1,99 @@
+<ion-app>
+  <cap-header [title]="'Fill Details'" [otherTextName]="'Add Member Details'" [imageList]="imageList" [showArrow]="true"
+  [showLabel]="true" [showImg]="false" [showIndex]="false" [showNotification]="false" [showCartWithName]="true"
+  [cartCount]="cartCount" [showSideMenu]="false" [showSearch]="true" [showClose]="false" [showShare]="false"
+  [showWatchList]="false" [showCartWithoutName]="false" [showStories]="false" [paddingSize]="'7'"
+  [showOtherText]="true" [backUrlName]="">
+</cap-header>
+  <!-- <ion-header class="sticky-top">
+    <ion-toolbar class="custBackgroundDynamicColorWhite  px-2">
+      <ion-grid>
+        <ion-row>
+          <ion-col (click)="goback()" [size]="'1'" class="text-center mt-1">
+            <ion-img [src]="imageList?.arrow" class="custKYCImg mt-2"></ion-img>
+          </ion-col>
+          <ion-col [size]="'11'" class=" ps-2">
+            <span class="custFontFamilyMuliBold muli-14pt custLineHight40 custColorDark ">
+              </span>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-toolbar>
+  </ion-header> -->
+  <ion-content class="contentBackground">
+    <ion-grid class="p-3">
+
+      <ion-row *ngIf="this.insurance=='BillPayment'" class="w-100 myROW">
+        <ion-img src="assets/icon/bharatBillPay.svg" class="img my-3"> </ion-img>
+      </ion-row>
+      <form [formGroup]="myForm">
+        <div *ngFor="let control of JsonFormData ">
+          <ion-row *ngIf="['NUMERIC','ALPHANUMERIC', ].includes(control.type)">
+            <mat-form-field class="w-100" appearance="outline">
+              <mat-label>{{ control.label }}</mat-label>
+              <input matInput  *ngIf="control.type=='NUMERIC'" [formControlName]="control.label" [value]="control.value" type="number">
+              <input matInput *ngIf="control.type=='ALPHANUMERIC'" [formControlName]="control.label" [value]="control.value" type="text">
+            </mat-form-field>
+          </ion-row>
+          <ion-row *ngIf="['select'].includes(control.type)&& this.insurance !='Insurance'">
+            <mat-form-field class="w-100" appearance="outline">
+              <mat-label>{{ control.label }}</mat-label>
+              <mat-select [formControlName]="control.label"   [(ngModel)]="selected">
+                <mat-option *ngFor="let option of operatorArray" [value]="option.operatorName"  (click)="onChange(option.operatorName)">
+                  {{ option.operatorName }}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </ion-row>
+          <ion-row *ngIf="['select'].includes(control.type) && this.insurance=='Insurance'">
+            <mat-form-field class="w-100" appearance="outline">
+              <mat-label>{{ control.label }}</mat-label>
+              <mat-select [formControlName]="control.label">
+                <mat-option *ngFor="let option of control.options" [value]="option">
+                  {{ option }}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </ion-row>
+          <ion-row *ngIf="['date' ].includes(control.type)">
+
+            <mat-form-field class="mat-form-field" appearance="outline" class="w-100">
+
+              <mat-label>{{control.label}}</mat-label>
+
+              <input matInput readonly [matDatepicker]="picker" max="{{todaysDate}}" [formControlName]="control.label"
+                placeholder=DD-MM-YYYY (click)="picker.open()">
+
+              <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+
+              <mat-datepicker #picker></mat-datepicker>
+
+            </mat-form-field>
+
+          </ion-row>
+
+          <ion-row class="" *ngIf="['Radio'].includes(control.type)">
+
+            <label for="ped" class="">{{control.label}}</label>
+  
+            <mat-radio-group class=" w-100 radioGroup mt-4 " [name]="control.label" [formControlName]="control.label">
+  
+              <mat-radio-button  *ngFor="let item of control.radios" 
+  
+                [value]="control.radios[control.radios.indexOf(item)]" class="mx-2">{{
+  
+                control.radios[control.radios.indexOf(item)]}}</mat-radio-button>
+            </mat-radio-group>
+  
+          </ion-row>
+        </div>
+      </form>
+    </ion-grid>
+  </ion-content>
+  <ion-footer class="p-3 custBackgroundColorWhite">
+    <ion-toolbar>
+      <button [disabled]="!myForm.valid" type="submit" (click)="onSubmit(buttonName)"
+        class="w-100 custBackgroundColorBrightCyan btn custMyButton custColorWhite">{{buttonName}}</button>
+    </ion-toolbar>
+  </ion-footer>
+</ion-app>

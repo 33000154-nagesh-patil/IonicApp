@@ -1,0 +1,2259 @@
+{
+    "Postpaid Mobile": {
+        "normal": {
+            "controls": [
+                {
+                    "name": "operator",
+                    "label": "Operator Name",
+                    "value": "Vodafone-IDEA",
+                    "disable": true,
+
+                    "type": "select",
+                    "options": [
+                        "Vodafone-IDEA"
+                    ],
+                    "validators": {
+                        "required": true
+                    }
+                },
+                { 
+                    "name": "state",
+                    "label": "Select State",
+                    "value": "Maharashtra",
+                    "disable": true,
+
+                    "type": "select",
+                    "options": [
+                        "Maharashtra"
+                    ],
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "moNumber",
+                    "label": "Mobile number",
+                    "value": "981085555",
+                    "disable": true,
+
+                    "type": "number",
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "AmountType",
+                    "label": "Amount",
+                    "value": "522",
+                    "disable": true,
+                    "type": "number",
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "nickname",
+                    "label": "Nick Name",
+                    "value": "nope",
+                    "disable": true,
+                    "type": "text",
+                    "validators": {
+                       
+                    }
+                }
+            ],
+            "nextStep": "Proceed To Pay"
+        }
+    },
+    "Electricity": {
+        "normal": {
+            "controls": [
+                {
+                    "name": "operator",
+                    "label": "Provider Name",
+                    "value": "Adani Electricity Mumbai LTD",
+                    "disable": true,
+                    "type": "select",
+                    "options": [
+                        "Adani Electricity Mumbai LTD"
+                    ],
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "ConsumerNumber",
+                    "label": "Consumer Number",
+                    "value": "11111111",
+                    "disable": true,
+                    "type": "number",
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "moNumber",
+                    "label": "Mobile number",
+                    "value": "9811114756",
+                    "disable": true,
+                    "type": "number",
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "AmountType",
+                    "label": "Amount",
+                    "value": "400",
+                    "disable": true,
+                    "type": "number",
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "nickname",
+                    "label": "Nick Name",
+                    "value": "hello",
+                    "disable": true,
+                    "type": "text",
+                    "validators": {
+                        "required": false
+                    }
+                }
+            ],
+            "nextStep": "Proceed To Pay"
+        }
+    },
+    "Broadband": {
+        "normal": {
+            "Air-Connect": [
+
+                {
+                    "name": "operator",
+                    "label": "Operator Name",
+                    "value": "Air-Connect",
+                    "disable": true,
+                    "type": "select",
+                    "options": [
+                        "Air-Connect"
+                    ],
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "Username",
+                    "label": "User Name",
+                    "value": "piyush",
+                    "disable": true,
+                    "type": "text",
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "AmountType",
+                    "label": "Amount",
+                    "value": "400",
+                    "disable": true,
+                    "type": "number",
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "nickname",
+                    "label": "Nick Name",
+                    "value": "tom",
+                    "disable": true,
+
+                    "type": "text",
+                    "validators": {
+                        "required": false
+                    }
+                }
+            ],
+            "Asia Net Broadband": [
+
+                {
+                    "name": "operator",
+                    "label": "Operator Name",
+                    "value": "Asia Net Broadband",
+                    "disable": true,
+                    "type": "select",
+                    "options": [
+                        "Asia Net Broadband"
+                    ],
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "SubCode",
+                    "label": "Sub Code",
+                    "value": "5428",
+                    "disable": true,
+
+                    "type": "number",
+
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "AmountType",
+                    "label": "Amount",
+                    "value": "400",
+                    "disable": true,
+                    "type": "number",
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "nickname",
+                    "label": "Nick Name",
+                    "value": "nope",
+                    "disable": true,
+
+                    "type": "text",
+
+                    "validators": {
+                        "required":false
+                    }
+                }
+            ],
+            "DEN Broadband": [
+
+               
+                {
+                    "name": "operator",
+                    "label": "Operator Name",
+                    "value": "DEN Broadband",
+                    "disable": true,
+                    "type": "select",
+                    "options": [
+                        "DEN Broadband"
+                    ],
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "AccountNumber",
+                    "label": "Account Number",
+                    "value": "875522",
+                    "disable": true,
+
+                    "type": "number",
+                   
+
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "AmountType",
+                    "label": "Amount",
+                    "value": "400",
+                    "disable": true,
+                    "type": "number",
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "nickname",
+                    "label": "Nick Name",
+                    "value": "uhh",
+                    "disable": true,
+
+                    "type": "text",
+
+                    "validators": {
+                        "required":false
+                    }
+                }
+            ],
+            "ACT-Fibernet": [
+
+                {
+                    "name": "operator",
+                    "label": "Operator Name",
+                    "value": "ACT-Fibernet",
+                    "disable": true,
+                    "type": "select",
+                    "options": [
+                        "ACT-Fibernet"
+                    ],
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "AccountNumber",
+                    "label": "Account Number",
+                    "value": "11125",
+                    "disable": true,
+
+                    "type": "number",
+
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "AmountType",
+                    "label": "Amount",
+                    "value": "400",
+                    "disable": true,
+                    "type": "number",
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "nickname",
+                    "label": "Nick Name",
+                    "value": "how",
+                    "disable": true,
+
+                    "type": "text",
+
+                    "validators": {
+                        "required":false
+                    }
+                }
+            ],
+            "nextStep": "Proceed To Pay"
+        }
+    },
+    "DTH": {
+        "normal": {
+            "controls": [
+                {
+                    "name": "operator",
+                    "label": "Operator name",
+                    "value": "Airtel DTH",
+                    "disable": true,
+
+                    "type": "select",
+
+                    "options": [
+                        "Airtel DTH",
+                        "TATA DTH",
+                        "Dish TV DTH"
+                    ],
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "SubscriberNumber",
+                    "label": "Subscriber Number",
+                    "value": "44545",
+                    "disable": true,
+
+                    "type": "number",
+
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "moNumber",
+                    "label": "Mobile number",
+                    "value": "444444444444",
+                    "disable": true,
+
+                    "type": "number",
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "AmountType",
+                    "label": "Enter Amount",
+                    "value": "555",
+                    "disable": true,
+
+                    "type": "number",
+
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "nickname",
+                    "label": "Nick Name",
+                    "value": "jj",
+                    "disable": true,
+
+                    "type": "text",
+
+                    "validators": {}
+                }
+            ],
+            "nextStep": "Proceed To Pay"
+        }
+    },
+    "Piped Gas": {
+        "normal": {
+            "controls": [
+                {
+                    "name": "operator",
+                    "label": "Select Operator",
+                    "value": "Avantika Gas Ltd.",
+                    "disable": true,
+
+                    "type": "select",
+                    "options": [
+                        "Avantika Gas Ltd."
+                     
+                    ],
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "SubscriberNumber",
+                    "label": "Consumer Number",
+                    "value": "458232",
+                    "disable": true,
+
+                    "type": "number",
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "AmountType",
+                    "label": "Amount",
+                    "value": "400",
+                    "disable": true,
+                    "type": "number",
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "nickname",
+                    "label": "Nick Name",
+                    "value": "loi",
+                    "disable": true,
+
+                    "type": "text",
+                    "validators": {}
+                }
+            ],
+            "nextStep": "Proceed To Pay"
+        }
+    },
+    "Landline": {
+        "normal": {
+            "controls": [
+                {
+                    "name": "ProviderName",
+                    "label": "Provider Name",
+                    "value": "Airtel Landline",
+                    "disable": true,
+
+                    "type": "select",
+                    "options": [
+                        "Airtel Landline"
+                       
+                    ],
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "LandlineNumber",
+                    "label": "Landline Number with STD code",
+                    "value": "La8h677594",
+                    "disable": true,
+
+                    "type": "number",
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "AmountType",
+                    "label": "Amount",
+                    "value": "400",
+                    "disable": true,
+                    "type": "number",
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "nickname",
+                    "label": "Nick Name",
+                    "value": "hello",
+                    "disable": true,
+
+                    "type": "text",
+                    "validators": {}
+                }
+            ],
+            "nextStep": "Proceed To Pay"
+        }
+    },
+    "Water": {
+        "normal": {
+            "controls": [
+                {
+                    "name": "ProviderName",
+                    "label": "Select Provider",
+                    "value": "BMC",
+                    "disable": true,
+
+                    "type": "select",
+                    "options": [
+                        "BMC"
+                    ],
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "RRNumber",
+                    "label": "RR Nmuber",
+                    "value": "4782359",
+                    "disable": true,
+
+                    "type": "number",
+                    "validators": {
+                        "required": true
+                    }
+                },
+         
+                {
+                    "name": "consumerNumber",
+                    "label": "Consumer Number/ K Number",
+                    "value": "7859",
+                    "disable": true,
+
+                    "type": "number",
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "AmountType",
+                    "label": "Amount",
+                    "value": "400",
+                    "disable": true,
+                    "type": "number",
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "nickname",
+                    "label": "Nick Name",
+                    "value": "hello",
+                    "disable": true,
+
+                    "type": "text",
+                    "validators": {}
+                }
+            ],
+            "nextStep": "Proceed To Pay"
+        }
+    },
+    "Datacard": {
+        "normal": {
+            "controls": [
+
+               
+                {
+                    "name": "moNumber",
+                    "label": "Mobile number",
+                    "value": "9810806546",
+                    "disable": true,
+
+                    "type": "number",
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "operator",
+                    "label": " Select Operator",
+                    "value": "Vodafone",
+                    "disable": true,
+
+                    "type": "select",
+                    "options": [
+                        "vodafone"
+                       
+                    ],
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "StateType",
+                    "label": "Select State",
+                    "value": "Maharashtra",
+                    "disable": true,
+
+                    "type": "select",
+                    "options": [
+                        "Maharashtra"
+                   
+                    ],
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "AmountType",
+                    "label": "Enter Amount",
+                    "value": "544",
+                    "disable": true,
+
+                    "type": "number",
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "nickname",
+                    "label": "Nick Name",
+                    "value": "hello",
+                    "disable": true,
+
+                    "type": "text",
+                    "validators": {}
+                }
+            ],
+            "nextStep": "Proceed To Pay"
+        }
+    },
+    "Book a Cylinder": {
+        "normal": {
+            "LPG (HPCL)": [
+
+                {
+                    "name": "ProviderName",
+                    "label": "Provider Name",
+                    "value": "LPG (HPCL)",
+                    "disable": true,
+
+                    "type": "select",
+                    "options": [
+                        "LPG (HPCL)"
+                       
+                    ],
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "moNumber",
+                    "label": "Mobile number",
+                    "value": "98102495555",
+                    "disable": true,
+
+                    "type": "number",
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "LPGNumber",
+                    "label": "LPG Number",
+                    "value": "4778852265",
+                    "disable": true,
+                    "type": "number",
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "AmountType",
+                    "label": "Enter Amount",
+                    "value": "544",
+                    "disable": true,
+
+                    "type": "number",
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "nickname",
+                    "label": "Nick Name",
+                    "value": "hello",
+                    "disable": true,
+
+                    "type": "text",
+                    "validators": {}
+                }
+            ],
+            "Indane Gas (Indian Oil)": [
+
+                {
+                    "name": "ProviderName",
+                    "label": "Provider Name",
+                    "value": "Indane Gas (Indian Oil)",
+                    "disable": true,
+
+                    "type": "select",
+                    "options": [
+                        "Indane Gas (Indian Oil)"
+                       
+                    ],
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "LPGNumber",
+                    "label": "LPG Number",
+                    "value": "55262",
+                    "disable": true,
+
+                    "type": "number",
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "moNumber",
+                    "label": "Mobile number",
+                    "value": "4445454654",
+                    "disable": true,
+
+                    "type": "number",
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "AmountType",
+                    "label": "Enter Amount",
+                    "value": "544",
+                    "disable": true,
+
+                    "type": "number",
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "nickname",
+                    "label": "Nick Name",
+                    "value": "hot",
+                    "disable": true,
+
+                    "type": "text",
+                    "validators": {}
+                }
+            ],
+            "Bharat Gas (BPCL)": [
+                {
+                    "name": "ProviderName",
+                    "label": "Provider Name",
+                    "value": "Bharat Gas (BPCL)",
+                    "disable": true,
+
+                    "type": "select",
+                    "options": [
+                        "Bharat Gas (BPCL)"
+                       
+                    ],
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "LPGNumber",
+                    "label": "LPG Number",
+                    "value": "55522",
+                    "disable": true,
+
+                    "type": "number",
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "moNumber",
+                    "label": "Mobile number",
+                    "value": "452896225",
+                    "disable": true,
+
+                    "type": "number",
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "AmountType",
+                    "label": "Enter Amount",
+                    "value": "544",
+                    "disable": true,
+
+                    "type": "number",
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "nickname",
+                    "label": "Nick Name",
+                    "value": "jji",
+                    "disable": true,
+
+                    "type": "text",
+                    "validators": {}
+                }
+            ],
+            "HP Gas (HPCL)": [
+
+                {
+                    "name": "ProviderName",
+                    "label": "Provider Name",
+                    "value": "HP Gas (HPCL)",
+                    "disable": true,
+
+                    "type": "select",
+                    "options": [
+                        "HP Gas (HPCL)"
+                       
+                    ],
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "moNumber",
+                    "label": "Mobile number",
+                    "value": "45265125",
+                    "disable": true,
+
+                    "type": "number",
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "distributorNumber",
+                    "label": "Distributor Number",
+                    "value": "22656461",
+                    "disable": true,
+
+                    "type": "number",
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "consumerNumber",
+                    "label": "Consumer Number",
+                    "value": "3236622",
+                    "disable": true,
+
+                    "type": "number",
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "uniqueNumber",
+                    "label": "Unique Number",
+                    "value": "44545",
+                    "disable": true,
+
+                    "type": "number",
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "AmountType",
+                    "label": "Enter Amount",
+                    "value": "544",
+                    "disable": true,
+
+                    "type": "number",
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "nickname",
+                    "label": "Nick Name",
+                    "value": "hh",
+                    "disable": true,
+
+                    "type": "text",
+                    "validators": {}
+                }
+            ],
+            "nextStep": "Proceed To Pay"
+        }
+    },
+    "Loan Repayment": {
+        "normal": {
+
+            "Aadhar Housing Finance Limited": [
+
+                {
+                    "name": "operator",
+                    "label": "Provider Name",
+                    "value": "Aadhar Housing Finance Limited",
+                    "disable": true,
+                    "type": "select",
+                    "options": [
+                        "Aadhar Housing Finance Limited"
+                    ],
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "ApplicationId",
+                    "label": "Application ID",
+                    "value": "45454",
+                    "disable": true,
+
+                    "type": "text",
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "AmountType",
+                    "label": "Amount",
+                    "value": "522",
+                    "disable": true,
+                    "type": "number",
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "nickname",
+                    "label": "Nick Name",
+                    "value": "nick",
+                    "disable": true,
+
+                    "type": "text",
+                    "validators": {}
+                }
+            ],
+            "ICICI Bank Ltd- Loans": [
+
+                {
+                    "name": "operator",
+                    "label": "Provider Name",
+                    "value": "ICICI Bank Ltd- Loans",
+                    "disable": true,
+                    "type": "select",
+                    "options": [
+                        "ICICI Bank Ltd- Loans"
+                    ],
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "LoanaccountNumber",
+                    "label": "Loan Account Number",
+                    "value": "45461",
+                    "disable": true,
+
+                    "type": "number",
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "AmountType",
+                    "label": "Amount",
+                    "value": "522",
+                    "disable": true,
+                    "type": "number",
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "nickname",
+                    "label": "Nick Name",
+                    "value": "nht",
+                    "disable": true,
+
+                    "type": "text",
+                    "validators": {}
+                }
+            ],
+            "Aavas Financiers Limited": [
+                {
+                    "name": "operator",
+                    "label": "Provider Name",
+                    "value": "Aavas Financiers Limited",
+                    "disable": true,
+                    "type": "select",
+                    "options": [
+                        "Aavas Financiers Limited"
+                    ],
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "ApplicationId",
+                    "label": "Application ID",
+                    "value": "45454",
+                    "disable": true,
+
+                    "type": "text",
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "AmountType",
+                    "label": "Amount",
+                    "value": "522",
+                    "disable": true,
+                    "type": "number",
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "nickname",
+                    "label": "Nick Name",
+                    "value": "hhi",
+                    "disable": true,
+
+                    "type": "text",
+                    "validators": {}
+                }
+            ],
+            "nextStep": "Proceed To Pay"
+        }
+    },
+    "Insurance": {
+        "normal": {
+     
+            "Aditya Birla Health Insurance Co Limited": [
+                {
+                    "name": "operator",
+                    "label": "Provider Name",
+                    "value": "Aditya Birla Health Insurance Co Limited",
+                    "disable": true,
+                    "type": "select",
+                    "options": [
+                        "Aditya Birla Health Insurance Co Limited"
+                    ],
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "policyNumber",
+                    "label": "Policy Number",
+                    "value": "55222",
+                    "disable": true,
+
+                    "type": "number",
+                    "validators": {
+                        "required": true
+                    }
+                },
+       
+               
+                {
+                    "name": "moNumber",
+                    "label": "Customer Mobile Number",
+                    "value": "1111111",
+                    "disable": true,
+
+                    "type": "number",
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "AmountType",
+                    "label": "Amount",
+                    "value": "522",
+                    "disable": true,
+                    "type": "number",
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "nickname",
+                    "label": "Nick Name",
+                    "value": "",
+                    "disable": true,
+
+                    "type": "text",
+                    "validators": {}
+                }
+            ],
+            "BHARTI AXA Life Insurance": [
+                {
+                    "name": "operator",
+                    "label": "Provider Name",
+                    "value": "BHARTI AXA Life Insurance",
+                    "disable": true,
+                    "type": "select",
+                    "options": [
+                        "BHARTI AXA Life Insurance"
+                    ],
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "policyNumber",
+                    "label": "Policy Number",
+                    "value": "555",
+                    "disable": true,
+
+                    "type": "number",
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "AmountType",
+                    "label": "Amount",
+                    "value": "522",
+                    "disable": true,
+                    "type": "number",
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "nickname",
+                    "label": "Nick Name",
+                    "value": "hi",
+                    "disable": true,
+
+                    "type": "text",
+                    "validators": {}
+                }
+            ],
+            "Aviva Life Insurance": [
+                {
+                    "name": "operator",
+                    "label": "Provider Name",
+                    "value": "Aviva Life Insurance",
+                    "disable": true,
+                    "type": "select",
+                    "options": [
+                        "Aviva Life Insurance"
+                    ],
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "policyNumber",
+                    "label": "Policy Number",
+                    "value": "45111526",
+                    "disable": true,
+
+                    "type": "number",
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "AmountType",
+                    "label": "Amount",
+                    "value": "522",
+                    "disable": true,
+                    "type": "number",
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "nickname",
+                    "label": "Nick Name",
+                    "value": "hi",
+                    "disable": true,
+
+                    "type": "text",
+                    "validators": {}
+                }
+            ],
+            "nextStep": "Proceed To Pay"
+        }
+    },
+    "Fastag": {
+        "normal": {
+            "Axis Bank Fast Tag": [
+                {
+                    "name": "operator",
+                    "label": "Provider Name",
+                    "value": "Axis Bank Fast Tag",
+                    "disable": true,
+                    "type": "select",
+                    "options": [
+                        "Axis Bank Fast Tag"
+                    ],
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "vehicleRegNumber",
+                    "label": "Vehicle Registration Number",
+                    "value": "12116464",
+                    "disable": true,
+
+                    "type": "number",
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "AmountType",
+                    "label": "Amount",
+                    "value": "522",
+                    "disable": true,
+                    "type": "number",
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "nickname",
+                    "label": "Nick Name",
+                    "value": "",
+                    "disable": true,
+
+                    "type": "text",
+                    "validators": {}
+                }
+            ],
+            "Karnataka Bank Fast Tag": [
+                {
+                    "name": "operator",
+                    "label": "Provider Name",
+                    "value": "Karnataka Bank Fast Tag",
+                    "disable": true,
+                    "type": "select",
+                    "options": [
+                        "Karnataka Bank Fast Tag"
+                    ],
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "vehicleRegNumber",
+                    "label": "Vehicle Registration Number",
+                    "value": "15445511",
+                    "disable": true,
+
+                    "type": "number",
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "AmountType",
+                    "label": "Amount",
+                    "value": "522",
+                    "disable": true,
+                    "type": "number",
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "nickname",
+                    "label": "Nick Name",
+                    "value": "hi",
+                    "disable": true,
+
+                    "type": "text",
+                    "validators": {}
+                }
+            ],
+            "HDFC Bank Fast Tag": [
+                {
+                    "name": "operator",
+                    "label": "Provider Name",
+                    "value": "HDFC Bank Fast Tag",
+                    "disable": true,
+                    "type": "select",
+                    "options": [
+                        "HDFC Bank Fast Tag"
+                    ],
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "vehicleRegNumber",
+                    "label": "Vehicle Registration Number",
+                    "value": "215115151",
+                    "disable": true,
+
+                    "type": "number",
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "AmountType",
+                    "label": "Amount",
+                    "value": "522",
+                    "disable": true,
+                    "type": "number",
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "nickname",
+                    "label": "Nick Name",
+                    "value": "hi",
+                    "disable": true,
+
+                    "type": "text",
+                    "validators": {}
+                }
+            ],
+            "nextStep": "Proceed To Pay"
+        }
+    },
+    "Education Fees": {
+        "normal": {
+            "controls": [
+                {
+                    "name": "providerName",
+                    "label": " Select Provider",
+                    "value": "Grizzly Vidyalaya",
+                    "disable": true,
+
+                    "type": "select",
+                    "options": [
+                        "Sri Chaitanya Schools - Wagholi",
+                        "D.R. International School",
+                        "Grizzly Vidyalaya"
+                    ],
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "AdmissionNumber",
+                    "label": "Admission Number",
+                    "value": "641148948",
+                    "disable": true,
+
+                    "type": "number",
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "Feetype",
+                    "label": "Fee Type ",
+                    "value": "Annually",
+                    "disable": true,
+
+                    "type": "select",
+                    "options": [
+                        "Partially",
+                        "Annually"
+                    ],
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "AcademicYear",
+                    "label": "Academic Year (YYYY-YYYY)",
+                    "value": "2020",
+                    "disable": true,
+
+                    "type": "text",
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "AmountType",
+                    "label": "Amount",
+                    "value": "522",
+                    "disable": true,
+                    "type": "number",
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "nickname",
+                    "label": "Nick Name",
+                    "value": "hi",
+                    "disable": true,
+
+                    "type": "text",
+                    "validators": {}
+                }
+            ],
+            "nextStep": "Proceed To Pay"
+        }
+    },
+    "Cable TV": {
+        "normal": {
+     
+            "Asianet Digital": [
+                {
+                    "name": "operator",
+                    "label": "Provider Name",
+                    "value": "Asianet Digital",
+                    "disable": true,
+                    "type": "select",
+                    "options": [
+                        "Asianet Digital"
+                    ],
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "subscriberCode",
+                    "label": "Subscriber Code",
+                    "value": "472258922",
+                    "disable": true,
+
+                    "type": "number",
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "AmountType",
+                    "label": "Amount",
+                    "value": "522",
+                    "disable": true,
+                    "type": "number",
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "nickname",
+                    "label": "Nick Name",
+                    "value": "hi",
+                    "disable": true,
+
+                    "type": "text",
+                    "validators": {}
+                }
+            ],
+            "VDV Digital": [
+                {
+                    "name": "operator",
+                    "label": "Provider Name",
+                    "value": "VDV Digital",
+                    "disable": true,
+                    "type": "select",
+                    "options": [
+                        "VDV Digital"
+                    ],
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "customerID",
+                    "label": "Customer ID",
+                    "value": "1122589",
+                    "disable": true,
+
+                    "type": "text",
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "AmountType",
+                    "label": "Amount",
+                    "value": "522",
+                    "disable": true,
+                    "type": "number",
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "nickname",
+                    "label": "Nick Name",
+                    "value": "hi",
+                    "disable": true,
+
+                    "type": "text",
+                    "validators": {}
+                }
+            ],
+            "nextStep": "Proceed To Pay"
+
+        }
+    },
+    "Municipal Taxes": {
+        "normal": {
+ 
+            "Ahmedabad Municipal Corporation": [
+                {
+                    "name": "operator",
+                    "label": "Provider Name",
+                    "value": "Ahmedabad Municipal Corporation",
+                    "disable": true,
+                    "type": "select",
+                    "options": [
+                        "Ahmedabad Municipal Corporation"
+                    ],
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "tenementNumber",
+                    "label": "Tenement Number",
+                    "value": "44548445",
+                    "disable": true,
+
+                    "type": "number",
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "AmountType",
+                    "label": "Amount",
+                    "value": "522",
+                    "disable": true,
+                    "type": "number",
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "nickname",
+                    "label": "Nick Name",
+                    "value": "hi",
+                    "disable": true,
+
+                    "type": "text",
+                    "validators": {}
+                }
+            ],
+            "Nagar Pallika Palia Kalan": [
+                {
+                    "name": "operator",
+                    "label": "Provider Name",
+                    "value": "Nagar Pallika Palia Kalan",
+                    "disable": true,
+                    "type": "select",
+                    "options": [
+                        "Nagar Pallika Palia Kalan"
+                    ],
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "UniqueIdcode",
+                    "label": "Unique ID Code",
+                    "value": "45544164",
+                    "disable": true,
+
+                    "type": "text",
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "AmountType",
+                    "label": "Amount",
+                    "value": "522",
+                    "disable": true,
+                    "type": "number",
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "nickname",
+                    "label": "Nick Name",
+                    "value": "hi",
+                    "disable": true,
+
+                    "type": "text",
+                    "validators": {}
+                }
+            ],
+            "Ponda Municipal Council": [
+                {
+                    "name": "operator",
+                    "label": "Provider Name",
+                    "value": "Ponda Municipal Council",
+                    "disable": true,
+                    "type": "select",
+                    "options": [
+                        "Ponda Municipal Council"
+                    ],
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "houseNumber",
+                    "label": "House Number",
+                    "value": "5",
+                    "disable": true,
+
+                    "type": "text",
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "AmountType",
+                    "label": "Amount",
+                    "value": "522",
+                    "disable": true,
+                    "type": "number",
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "nickname",
+                    "label": "Nick Name",
+                    "value": "hi",
+                    "disable": true,
+
+                    "type": "text",
+                    "validators": {}
+                }
+            ],
+            "Mira Bhayander Municipal Corporation": [
+                {
+                    "name": "operator",
+                    "label": "Provider Name",
+                    "value": "Mira Bhayander Municipal Corporation",
+                    "disable": true,
+                    "type": "select",
+                    "options": [
+                        "Mira Bhayander Municipal Corporation"
+                    ],
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "propertyCode",
+                    "label": "Property Code",
+                    "value": "202",
+                    "disable": true,
+
+                    "type": "text",
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "AmountType",
+                    "label": "Amount",
+                    "value": "522",
+                    "disable": true,
+                    "type": "number",
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "nickname",
+                    "label": "Nick Name",
+                    "value": "",
+                    "disable": true,
+
+                    "type": "text",
+                    "validators": {}
+                }
+            ],
+            "nextStep": "Proceed To Pay"
+        }
+    },
+    "Housing Societies": {
+        "normal": {
+   
+            "Abhushan Residency - C Wing": [
+                {
+                    "name": "operator",
+                    "label": "Provider Name",
+                    "value": "Abhushan Residency - C Wing",
+                    "disable": true,
+                    "type": "select",
+                    "options": [
+                        "Abhushan Residency - C Wing"
+                    ],
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "flatNo",
+                    "label": "Flat No.",
+                    "value": "55",
+                    "disable": true,
+
+                    "type": "number",
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "wingBlockNo",
+                    "label": "Wing Block No.",
+                    "value": "4",
+                    "disable": true,
+
+                    "type": "number",
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "AmountType",
+                    "label": "Amount",
+                    "value": "522",
+                    "disable": true,
+                    "type": "number",
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "nickname",
+                    "label": "Nick Name",
+                    "value": "",
+                    "disable": true,
+
+                    "type": "text",
+                    "validators": {}
+                }
+            ],
+            "Association of Apartment Owners of Star": [
+                {
+                    "name": "operator",
+                    "label": "Provider Name",
+                    "value": "Association of Apartment Owners of Star",
+                    "disable": true,
+                    "type": "select",
+                    "options": [
+                        "Association of Apartment Owners of Star"
+                    ],
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "flatNo",
+                    "label": "Flat No.",
+                    "value": "22",
+                    "disable": true,
+
+                    "type": "number",
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "AmountType",
+                    "label": "Amount",
+                    "value": "522",
+                    "disable": true,
+                    "type": "number",
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "nickname",
+                    "label": "Nick Name",
+                    "value": "",
+                    "disable": true,
+
+                    "type": "text",
+                    "validators": {}
+                }
+            ],
+            "Mayfield Gardens RWA - C Block": [
+                {
+                    "name": "operator",
+                    "label": "Provider Name",
+                    "value": "Mayfield Gardens RWA - C Block",
+                    "disable": true,
+                    "type": "select",
+                    "options": [
+                        "Mayfield Gardens RWA - C Block"
+                    ],
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "header",
+                    "label": "Header",
+                    "value": "2",
+                    "disable": true,
+
+                    "type": "text",
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "customerUniqueId",
+                    "label": "Customer Unique ID",
+                    "value": "45",
+                    "disable": true,
+
+                    "type": "text",
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "AmountType",
+                    "label": "Amount",
+                    "value": "522",
+                    "disable": true,
+                    "type": "number",
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "nickname",
+                    "label": "Nick Name",
+                    "value": "",
+                    "disable": true,
+
+                    "type": "text",
+                    "validators": {}
+                }
+            ],
+            "nextStep": "Proceed To Pay"
+        }
+    },
+    "Clubs and Associations": {
+        "normal": {
+ 
+            "Madhya Pradesh Chamber of Commerce": [
+                {
+                    "name": "operator",
+                    "label": "Provider Name",
+                    "value": "Madhya Pradesh Chamber of Commerce",
+                    "disable": true,
+                    "type": "select",
+                    "options": [
+                        "Madhya Pradesh Chamber of Commerce"
+                    ],
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "groupNumber",
+                    "label": "Group Number",
+                    "value": "",
+                    "disable": true,
+
+                    "type": "number",
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "serialNumber",
+                    "label": "Serial Number",
+                    "value": "145255",
+                    "disable": true,
+
+                    "type": "number",
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "AmountType",
+                    "label": "Amount",
+                    "value": "522",
+                    "disable": true,
+                    "type": "number",
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "nickname",
+                    "label": "Nick Name",
+                    "value": "",
+                    "disable": true,
+
+                    "type": "text",
+                    "validators": {}
+                }
+            ],
+            "Naval Officers Institute": [
+                {
+                    "name": "operator",
+                    "label": "Provider Name",
+                    "value": "Naval Officers Institute",
+                    "disable": true,
+                    "type": "select",
+                    "options": [
+                        "Naval Officers Institute"
+                    ],
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "membershipNumber",
+                    "label": "Membership Number",
+                    "value": "4489",
+                    "disable": true,
+
+                    "type": "number",
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "AmountType",
+                    "label": "Amount",
+                    "value": "522",
+                    "disable": true,
+                    "type": "number",
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "nickname",
+                    "label": "Nick Name",
+                    "value": "",
+                    "disable": true,
+
+                    "type": "text",
+                    "validators": {}
+                }
+            ],
+            "nextStep": "Proceed To Pay"
+        }
+    },
+    "Hospital and Pathology": {
+        "normal": {
+     
+            "B.K. Arogyam and Research Pvt. Ltd.": [
+                {
+                    "name": "operator",
+                    "label": "Provider Name",
+                    "value": "B.K. Arogyam and Research Pvt. Ltd.",
+                    "disable": true,
+                    "type": "select",
+                    "options": [
+                        "B.K. Arogyam and Research Pvt. Ltd."
+                    ],
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "mobileNumber",
+                    "label": "Mobile Number",
+                    "value": "1111115499",
+                    "disable": true,
+
+                    "type": "number",
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "AmountType",
+                    "label": "Amount",
+                    "value": "522",
+                    "disable": true,
+                    "type": "number",
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "nickname",
+                    "label": "Nick Name",
+                    "value": "",
+                    "disable": true,
+
+                    "type": "text",
+                    "validators": {}
+                }
+            ],
+            "Billroth Hospitals Pvt. Ltd.": [
+                {
+                    "name": "operator",
+                    "label": "Provider Name",
+                    "value": "Billroth Hospitals Pvt. Ltd.",
+                    "disable": true,
+                    "type": "select",
+                    "options": [
+                        "Billroth Hospitals Pvt. Ltd."
+                    ],
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "Uhid",
+                    "label": "UHID",
+                    "value": "2548792134972",
+                    "disable": true,
+
+                    "type": "number",
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "AmountType",
+                    "label": "Amount",
+                    "value": "522",
+                    "disable": true,
+                    "type": "number",
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "nickname",
+                    "label": "Nick Name",
+                    "value": "",
+                    "disable": true,
+
+                    "type": "text",
+                    "validators": {}
+                }
+            ],
+            "nextStep": "Proceed To Pay"
+        }
+    },
+    "Municipal Services": {
+        "normal": {
+   
+            "Port Blair Municipal Council": [
+                {
+                    "name": "operator",
+                    "label": "Provider Name",
+                    "value": "Port Blair Municipal Council",
+                    "disable": true,
+                    "type": "select",
+                    "options": [
+                        "Port Blair Municipal Council"
+                    ],
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "shopId",
+                    "label": "Shop ID",
+                    "value": "22",
+                    "disable": true,
+
+                    "type": "text",
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "AmountType",
+                    "label": "Amount",
+                    "value": "522",
+                    "disable": true,
+                    "type": "number",
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "nickname",
+                    "label": "Nick Name",
+                    "value": "",
+                    "disable": true,
+
+                    "type": "text",
+                    "validators": {}
+                }
+            ],
+            "Directorate of Municipal Administration Karnataka": [
+                {
+                    "name": "operator",
+                    "label": "Provider Name",
+                    "value": "Directorate of Municipal Administration Karnataka",
+                    "disable": true,
+                    "type": "select",
+                    "options": [
+                        "Directorate of Municipal Administration Karnataka"
+                    ],
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "challanNumber",
+                    "label": "Challan Number",
+                    "value": "1323469",
+                    "disable": true,
+
+                    "type": "number",
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "AmountType",
+                    "label": "Amount",
+                    "value": "522",
+                    "disable": true,
+                    "type": "number",
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "nickname",
+                    "label": "Nick Name",
+                    "value": "",
+                    "disable": true,
+
+                    "type": "text",
+                    "validators": {}
+                }
+            ],
+            "nextStep": "Proceed To Pay"
+        }
+    },
+    "Subscription": {
+        "normal": {
+     
+            "Ashok Book Centre": [
+                {
+                    "name": "operator",
+                    "label": "Provider Name",
+                    "value": "Ashok Book Centre",
+                    "disable": true,
+                    "type": "select",
+                    "options": [
+                        "Ashok Book Centre"
+                    ],
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "billNo",
+                    "label": "Bill Number",
+                    "value": "45446",
+                    "disable": true,
+
+                    "type": "number",
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "AmountType",
+                    "label": "Amount",
+                    "value": "522",
+                    "disable": true,
+                    "type": "number",
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "nickname",
+                    "label": "Nick Name",
+                    "value": "",
+                    "disable": true,
+
+                    "type": "text",
+                    "validators": {}
+                }
+            ],
+            "FITPASS": [
+                {
+                    "name": "operator",
+                    "label": "Provider Name",
+                    "value": "FITPASS",
+                    "disable": true,
+                    "type": "select",
+                    "options": [
+                        "FITPASS"
+                    ],
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "moNumber",
+                    "label": "Enter Mobile Number",
+                    "value": "646494499",
+                    "disable": true,
+                    "type": "number",
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "AmountType",
+                    "label": "Amount",
+                    "value": "522",
+                    "disable": true,
+                    "type": "number",
+                    "validators": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "nickname",
+                    "label": "Nick Name",
+                    "value": "",
+                    "disable": true,
+
+                    "type": "text",
+                    "validators": {}
+                }
+            ],
+            "nextStep": "Proceed To Pay"
+        }
+    }
+}

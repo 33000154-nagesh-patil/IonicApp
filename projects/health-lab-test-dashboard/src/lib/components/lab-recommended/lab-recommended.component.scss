@@ -1,0 +1,46 @@
+.custGrid{
+    margin: 0 -28px -16px !important;
+    --margin: 0 -24px -16px !important; 
+}
+
+.pdingleft {
+    padding-left: 19px;
+}
+
+.copltmargin{
+    margin-top: -50px;
+}
+
+.copldtmargin{
+    margin-top: -40px;
+}
+
+h1{
+    border-bottom: 4px  solid darkblue;
+}
+
+.card{
+    height: 145px;
+}
+
+.cardItem{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+}
+
+.container {
+    display: flex;
+    flex-wrap: nowrap;
+    height: auto;
+    overflow-x: auto;
+    width: auto;
+}
+
+.mrgtopCard {
+    margin-top: -15px;
+}
+
+.custPding {
+    padding: 8px;
+}

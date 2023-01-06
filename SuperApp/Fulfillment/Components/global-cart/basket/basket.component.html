@@ -1,0 +1,97 @@
+<ion-row *ngIf="item.length > 0" class="w-100">
+  <ion-card class="custBackgroundColorWhite ion-no-margin my-1 w-100">
+    <!-- </ion-col> -->
+    
+    <ion-card-content
+     
+      *ngFor="let x of item"
+    >
+      
+      <ion-row>
+        <ion-col size="3">
+          <div class="courseIcon"></div>
+        </ion-col>
+
+        <ion-col [size]="'7'">
+          <p
+            class="custFontFamilyMuliBold muli-14pt custLineHight20 custColorDark"
+          >
+            {{ x.itemName }}
+          </p>
+
+          <p
+            class="custFontFamilyMuliBold muli-10pt custLineHight15 custColorDark"
+          >
+            {{ x.Product }}
+          </p>
+        </ion-col>
+        <ion-col (click)="remove(x)" class="custColorDark text-center">
+          <img [src]="imageList.dustbin" width="16px" />
+          <!-- Remove -->
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col size="4" class="mt-2 custCenter">
+          <ion-row>
+            <span
+              class="colTypeFont"
+              >Quantity</span
+            >
+          </ion-row>
+          <ion-row>
+            <p
+              class="custFontFamilyMuliBold muli-14pt custLineHight25 custColorDark mt-1"
+            >
+              {{ x.quantity }}
+            </p>
+          </ion-row>
+        </ion-col>
+
+        <ion-col size="4" class="mt-2 custCenter">
+          <ion-row>
+            <span
+            class="colTypeFont"
+              >Unit Price</span
+            >
+          </ion-row>
+          <ion-row>
+            <span
+              class="custFontFamilyMuliBold muli-14pt custLineHight25 custColorDark mt-1"
+              >₹{{ x.unitPrice|currencyCommasHundreds }}</span
+            >
+          </ion-row>
+        </ion-col>
+
+        <ion-col size="4" class="bottom_left1 mt-2 custCenter">
+          <ion-row class="">
+            <span
+            class="colTypeFont"
+              >Total</span
+            >
+          </ion-row>
+          <ion-row>
+            <p
+              class="custFontFamilyMuliBold muli-14pt custLineHight25 custColorDark mt-1"
+            >
+              ₹{{ x.totalAmount|currencyCommasHundreds }}
+            </p>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+      <hr class="m-0" *ngIf="item.indexOf(x) != item.length-1" />
+    </ion-card-content>
+    <ion-row class="subTotal">
+      <div class="" >Subtotal ( {{item.length}} items )</div>
+      <div class="custColorDark" >₹ {{subTotal.toFixed(2)|currencyCommasHundreds}}</div>
+    </ion-row>
+    <ion-row>
+      <button
+        (click)="proceedToPayment()"
+        class="custBackgroundColorBrightCyan custColorWhite btn w-100 m-3"
+      >
+        Place Order
+      </button>
+    </ion-row>
+  </ion-card>
+</ion-row>

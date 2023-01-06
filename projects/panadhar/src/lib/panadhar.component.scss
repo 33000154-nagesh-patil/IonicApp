@@ -1,0 +1,43 @@
+.muli-23pt{
+    font-size: 23px;
+}
+.custborder{
+    border: 1px solid rgba(165, 165,165,0.555);
+}
+.andPosition{
+    background-color: white;
+    border-radius:100% ;
+    position: relative;
+    top:13px;
+    z-index: 1;
+    
+}
+.muli-5pt {
+    font-size: 10px;
+}
+
+.hr{
+    margin-top: -11px;
+    margin-bottom: 45px;
+    width: 100vh;
+    margin-left: -26px;
+    
+}
+
+.outerCircle{
+    width: 14px;
+     height: 14px;
+}
+
+.outerCircle:checked{
+    appearance: none;
+    padding: 2px;
+    background-clip:content-box;
+    border: 1px solid var(--custDarkishBlue);
+    border-radius: 50%;
+    background-color: var(--custBrightCyan);
+}
+
+.closeRoundIcon{   
+    color: #cf2e2e;
+}

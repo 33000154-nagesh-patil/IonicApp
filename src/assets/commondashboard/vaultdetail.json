@@ -1,0 +1,939 @@
+{
+    "": {},
+    "getCartDetails": {
+        "BasketId_2": [
+            {
+                "orderSetId": 25,
+                "product": "MF-RIA",
+                "quantity": 1.00,
+                "unitPrice": 9800.00,
+                "taxAmount": 0.00,
+                "discountAmount": null,
+                "taxDetails": "no",
+                "totalAmount": 9800.00,
+                "groupID": 2,
+                "partnerRegistrationName": "MF-RIA"
+            }
+        ],
+        "BasketId_4": [
+            {
+                "orderSetId": 24,
+                "product": "Stock",
+                "quantity": 1.00,
+                "unitPrice": 9800.00,
+                "taxAmount": 0.00,
+                "discountAmount": null,
+                "taxDetails": "no",
+                "totalAmount": 9800.00,
+                "groupID": 4,
+                "partnerRegistrationName": "Stock"
+            }
+        ],
+        "BasketId_1": [
+            {
+                "orderSetId": 23,
+                "product": "MF-ARN",
+                "quantity": 1.00,
+                "unitPrice": 2500.00,
+                "taxAmount": 0.00,
+                "discountAmount": 0.00,
+                "taxDetails": null,
+                "totalAmount": 2500.00,
+                "groupID": 1,
+                "partnerRegistrationName": "MF-ARN"
+            }
+        ]
+    },
+    "getCartItemCount": {
+        "Status": "1",
+        "Message": "Item Found",
+        "ErrorCode": "0",
+        "ItemsCount": 5
+    },
+    "mutualFund": {
+		"title":"",
+		"image":"assets/Images/Thyrocare.png",
+		"heading": "HDFC Focused 30-G",
+		"lable":["equity","assets"],
+		"price":"",
+		"product": "MutualFund",
+		"action1": "Switch",
+		"action2": "Redeem",
+		"redirect1":"",
+		"redirect2":"Fullfilment/SellOrderBook",
+		"Chart": {
+			   "lable":"Current Value",
+			   "value":"24.50",
+		       "oneDayReturn":"1.50",
+			   "description":"1-day Return as on ",
+			
+			"row2": [{
+				"NAV": "NA",
+				"Rating": 4.5,
+				"Fund Size": "2352 Cr"
+			}],
+			"graph": [{
+					"nav": 20,
+					"plan_id": 40818
+				},
+				{
+					"nav": 10,
+					"plan_id": 40818
+				},
+				{
+					"nav": 60,
+					"plan_id": 40818
+				},
+				{
+					"nav": 25,
+					"plan_id": 40818
+				},
+				{
+					"nav": 54,
+					"plan_id": 40818
+				},
+				{
+					"nav": 20,
+					"plan_id": 40818
+				},
+				{
+					"nav": 30,
+					"plan_id": 40818
+				}
+			],
+         "buttons":["1m","3m","5m","1y","3y","5y"]
+		 
+		},
+		"Cards": [
+            {
+                "row": [
+						{
+                        "Invested Amount": "Rs.1000",
+                        "Current Amount": "Rs.1100"
+                    },
+                    {
+                        "Return": "20%",
+                        "XIRR": "25%",
+                        "Nav": "25.5"
+                    }
+    
+                ]
+            },
+			{
+			"heading": "Fund Information",
+			"row": [
+				{
+					"Age": "23 Yrs 5M",
+					"Expense rate": "2.72%"
+				},
+				{
+					"Type": "open-ended",
+					"AUM(fund Size)": "25%"
+				},
+				{
+					"Risk Gread": "NA",
+					"Return Gread": "NA"
+				},
+				{
+					"Turnover": "83%",
+					"Return Since Launch": "16.69%"
+				},
+				{
+					"Beanchmark": "313"
+				}
+			]
+		  }  
+	],
+		"step": [
+			{
+			"heading": "How your money get invested",
+			"data": [
+				{
+					"Icon": "assets/Images/Group_21929.svg",
+					"Steps": "Step 1",
+					"Disc": "Select a scheme"
+				},
+				{
+					"Icon": "assets/Images/Group_21928.svg",
+					"Steps": "Step 2",
+					"Disc": "Open investment account and make payment"
+				},
+				{
+					"Icon": "assets/Images/Group_21927.svg",
+					"Steps": "Step 3",
+					"Disc": "HeyTorus submits transaction to mutual fund company"
+				},
+				{
+					"Icon": "assets/Images/Group_21925.svg",
+					"Steps": "Step 4",
+					"Disc": "Mutual fund company sends confirmation to you via email and text in 1 working day"
+				}
+			]
+		}]
+	},
+    "las": {  
+		"title":"",
+		"image":"assets/Images/Thyrocare.png",
+		"heading": "Dabur India Limited",
+		"lable":[],
+		"product": "LAS",
+		"action1": "Add to card",
+		"action2": "Explore",
+		"redirect1":"",
+		"redirect2":"Engagement",
+		
+		"Cards": [
+			{
+			   "heading": "Transaction Details",
+                "row": [
+					{
+						"Current Price": "Rs.270",
+						"Current percenteg": "20%"
+					},
+					{
+						"open": "Rs.270.00",
+						"High": "Rs.275.00"
+					},
+					{
+						"Low": "Rs.265.00",
+						"Return Gread": "NA"
+					},
+					{
+						"Pre Close": "Rs.260.00",
+						"Lower-circut": "Rs.281.65"
+					},
+					{
+						"Upper-circut": "Rs.290.00",
+						"52-weeke": "Low-High"
+					}
+    
+                ]
+            },
+			{
+			"heading": "Basic Information",
+			"row": [{
+					"Available Quantity": "50",
+					"Haircut Rate": "20%"
+				},
+				{
+					"Total Loan": "2315.50",
+					"Interest Rate": "5%"
+				},
+				{
+					"EMI": "810"
+				}
+			]
+		}
+	]
+	},
+    "educationJob": {
+        "title":"",
+		"image":"assets/Images/Thyrocare.png",
+		"heading": "Senior Software Developer",
+		"lable":[],
+        "Product": "Jobs",
+        "action1": "Add to card",
+        "action2": "Explore",
+		"redirect1":"",
+		"redirect2":"Engagement",
+        "Cards":[
+            {
+				"heading": "Transaction Detail",
+
+                "row": [{
+                        "Applied Jobs": "5",
+                        "Invest Amount": "Rs.5"
+                    }
+                ]
+            },
+			 {
+            "heading": "Job Details",
+            "row": [
+                {
+                    "Min_Exper": "3 year",
+                    "Salary": "Rs.40,000-Rs.90,000"
+                },
+                {
+                    "Education": "Post Graduate",
+                    "description": "Torus"
+                },
+                {
+                    "Gender": "Male only",
+                    "Experience": "Min. 3 Years"
+                },
+                {
+                    "location": "Gwalior",
+                    "Return Since Launch": "16.69%"
+                }
+            ]
+        }
+	]
+    },
+    "insurance": { 
+		"title":"",
+		"image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUXT6gnAzZyUB3HdjmqbtNTHze61Am4d3jUQ&usqp=CAU",
+		"heading": "Supra Super Top- upr",
+		"lable":[],
+		"product": "Insurance",
+		"action1": "Add to card",
+		"action2": "Explore",
+		"redirect1":"",
+		"redirect2":"Engagement",
+		"Info": {
+			"heading": "Information",
+			"product": "insurance"
+		},
+		"Cards":[ 
+			{    
+				"heading": "Transaction Detail",
+                "row": [{
+                        "Invested Amount": "Rs.1000",
+                        "Current Amount": "Rs.1100"
+                    },
+                    {
+                        "Return": "20%",
+                        "XIRR": "25%",
+                        "Nav": "25.5"
+                    }
+    
+                ]
+            },
+            {
+                "row": [{
+                        "insurance": "5",
+                        "Amount": "Rs.1100"
+                    }
+                ]
+            },
+            {
+			"heading": "Basic Information",
+			"row": [{
+					"Sum Assured": "Rs.45,000.00",
+					"Yearly Premium": "Rs.12,149.00"
+				},
+				{
+					"Type": "Cashless Hosps.",
+					"AUM(fund Size)": "1000"
+				}
+			]
+		}
+    ],
+		"step": [{
+				"heading": "Covered",
+				"data": [{
+						"Icon": "assets/Images/Covered.svg",
+						"Disc": "Benefits if you don't claim"
+					},
+					{
+						"Icon": "assets/Images/Covered.svg",
+						"Disc": "Expenses before Admission"
+					},
+					{
+						"Icon": "assets/Images/Covered.svg",
+						"Disc": "Expenses after Discharge"
+					},
+					{
+						"Icon": "assets/Images/Covered.svg",
+						"Disc": "Restore benefits"
+					},
+					{
+						"Icon": "assets/Images/Covered.svg",
+						"Disc": "Organ donor"
+					},
+					{
+						"Icon": "assets/Images/Covered.svg",
+						"Disc": "Day care treatment"
+					},
+					{
+						"Icon": "assets/Images/Covered.svg",
+						"Disc": "Ayurveda / Homeopathy"
+					},
+					{
+						"Icon": "assets/Images/Covered.svg",
+						"Disc": "Home hospitalisation"
+					}
+				]
+			},
+			{
+				"heading": "Not Covered",
+				"data": [{
+						"Icon": "",
+						"Disc": "Pregnancy cover"
+					},
+					{
+						"Icon": "",
+						"Disc": "Daily hospitalisation allowance"
+					},
+					{
+						"Icon": "",
+						"Disc": "Regular medical expenses (OPD)"
+					}
+				]
+			},
+			{
+				"heading": "Waiting Period",
+				"data": [{
+						"Icon": "",
+						"Steps": "Covered since day 1",
+						"Disc": "Accidental injuries"
+					},
+					{
+						"Icon": "",
+						"Steps": "30 days cooling period",
+						"Disc": "No non- accidental medical condition will be covered for first 30 days"
+					}
+				]
+			},
+			{
+				"heading": "Exclusions",
+				"data": [{
+						"Icon": "",
+						"Steps": "War related injuries"
+					},
+					{
+						"Icon": "",
+						"Steps": "Cosmetic surgery"
+					},
+					{
+						"Icon": "",
+						"Steps": "Lasik eye treatments"
+					},
+					{
+						"Icon": "",
+						"Steps": "Drugs or alcohol abuse"
+					},
+					{
+						"Icon": "",
+						"Steps": "Administrative expenses"
+					},
+					{
+						"Icon": "",
+						"Steps": "Registration fees"
+					}
+				]
+			},
+			{
+				"heading": "Main Features",
+				"data": [{
+						"Icon": "assets/Images/Group_22740.svg",
+						"Disc": "Room Rent: Single Pvt. A/c Room"
+					},
+					{
+						"Icon": "assets/Images/Group_23410.svg",
+						"Disc": "Copay: 0%"
+					},
+					{
+						"Icon": "assets/Images/Group_23441.svg",
+						"Disc": "Waiting period: 3 years"
+					},
+					{
+						"Icon": "assets/Images/Group_27654.svg",
+						"Disc": "Renewal Bonus: 50%"
+					}
+				]
+			}
+		]
+	},
+    "healthLabTest": {
+		"title":"",
+		"image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0vRyqKz2OdMePYk8lNSzS4oVnAoJGBSV_yA&usqp=CAU",
+		"heading": "Fasting Blood Sugar",
+		"lable":[],
+		"Product": "Health",
+		"action1": "Add to card",
+		"action2": "Explore",
+		"redirect1":"",
+		"redirect2":"Engagement",
+		"Info": {
+			"heading": "E-Report",
+			"product": "health"
+		},
+		"Cards": [
+			{
+                "row": [{
+                        "Invested Amount": "Rs.1000",
+                        "Current Amount": "Rs.1100"
+                    },
+                    {
+                        "Return": "20%",
+                        "XIRR": "25%",
+                        "Nav": "25.5"
+                    }
+    
+                ]
+            },
+			{
+			"heading": "Basic Information",
+			"row": [{
+					"Sample required": "Blood",
+					"preparations": "Do not eat drink anything other thsan water for 8-12 hours before the test"
+				},
+				{
+					"Including all texs": "Rs.80"
+				}
+			]
+		}
+	]
+		,
+		"step": [{
+			"heading": "Medical Description",
+			"data": [{
+				"Icon": "",
+				"Steps": "",
+				"Disc": "Fasting Blood Sugar,aslo called the Fasting Plasma Gluose test,measures your fasting blood glucose level.Fasting means you should not eat or drink for 8 hours"
+			}]
+		}]
+	},
+    "educationCourses": {
+		"title":"",
+		"image":"",
+		"heading": "Mutual Fund",
+		"lable":[],
+		"product": "Education",
+		"action1": "Add to card",
+		"action2": "Explore",
+		"redirect1":"",
+		"redirect2":"Engagement",
+		"media": {
+			"mediatype": "video",
+			"url": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
+		},
+		"Cards":[ 
+			{
+                "row": [{
+                        "Invested Amount": "Rs.1000",
+                        "Current Amount": "Rs.1100"
+                    },
+                    {
+                        "Return": "20%",
+                        "XIRR": "25%",
+                        "Nav": "25.5"
+                    }
+    
+                ]
+            },
+			{
+			"heading": "Basic Information",
+			"row": [{
+					"Rating": "4.1",
+					"Including all taxes price": "Rs.250"
+				},
+				{
+					"enrolled": "5",
+					"Topics": "10"
+				},
+				{
+					"flexiblity": "Flexible Deadlines",
+					"availability": "100% Online"
+				}
+			]
+		}],
+		"Info": {
+			"heading": "Course Overview",
+			"product": "education"
+		},
+		"step": [
+			{
+			"heading": "Course Content",
+			"data": [{
+					"Icon": "",
+					"Steps": "Topic 1",
+					"Disc": "Introduction to Web Design"
+				},
+				{
+					"Icon": "",
+					"Steps": "Topic 2",
+					"Disc": "Getting started with low fide.."
+				},
+				{
+					"Icon": "",
+					"Steps": "Topic 3",
+					"Disc": "Wireframing Low Fadility"
+				},
+				{
+					"Icon": "",
+					"Steps": "Topic 4",
+					"Disc": "Type color & Icon Introduction"
+				},
+				{
+					"Icon": "",
+					"Steps": "Topic 5",
+					"Disc": "Prototyping a website"
+				}
+			]
+		}
+	]
+	},
+    "digiGold": {
+		"title":"",
+		"image":"",
+		"heading": "Augmont Digital Gold",
+		"lable":[],
+		"product": "Digigold",
+		"action1": "Add to card",
+		"action2": "Sell",
+		"redirect1":"",
+		"redirect2":"Fullfilment/SellOrderBook",
+		"Chart": {
+			"row1": [{
+				"Current Rate/Gram": "5251.16"
+			}],
+			"row2": [{
+				"Invested Amount": "24.20%",
+				"Total Gold Holding": "25gm"
+			}],
+			"graph": [{
+					"nav": 20,
+					"nav_date": "2021-07-12"
+				},
+				{
+					"nav": 10,
+					"nav_date": "2021-07-12"
+				},
+				{
+					"nav": 60,
+					"nav_date": "2021-07-12"
+				},
+				{
+					"nav": 25,
+					"nav_date": "2021-07-12"
+				},
+				{
+					"nav": 54,
+					"nav_date": "2021-07-12"
+				},
+				{
+					"nav": 20,
+					"nav_date": "2021-07-12"
+				},
+				{
+					"nav": 30,
+					"nav_date": "2021-07-12"
+				}
+			]
+
+		},
+		"Cards":[
+			{
+                "row": [{
+                        "Invested Amount": "Rs.1000",
+                        "Current Amount": "Rs.1100"
+                    },
+                    {
+                        "Return": "20%",
+                        "XIRR": "25%",
+                        "Nav": "25.5"
+                    }
+    
+                ]
+            }
+		],
+		"Info": {
+			"heading": "Basic Information",
+			"product": "digigold"
+		},
+		"step": [{
+			"heading": "Benefits Of Digital Commodities",
+			"data": [{
+					"Icon": "assets/Images/Group_21929.svg",
+					"Steps": "100% Secure",
+					"Disc": "Stored in insured & guarded vaults"
+				},
+				{
+					"Icon": "assets/Images/Group_21928.svg",
+					"Steps": "Diversify Portfolio",
+					"Disc": "Balance your portfolio. Reduce risk concentration"
+				}
+
+			]
+		}]
+	},
+    "educationAssessment":{
+		"title":"",
+		"image":"",
+		"heading": "Mutual Fund",
+		"description":"",
+		"lable":[],
+		"product": "Assessment",
+		"action1": "",
+		"action2": "Explore",
+		"redirect1":"",
+		"redirect2":"Engagement",
+		"Cards": [ {
+			"row": [{
+					"Invested Amount": "Rs.1000",
+					"Current Amount": "Rs.1100"
+				},
+				{
+					"Return": "20%",
+					"XIRR": "25%",
+					"Nav": "25.5"
+				}
+
+			]
+		},
+			{
+			"heading": "Basic Information",
+			"description": "Max",
+			"sub_heading": "Mutual Fund",
+			"image": "",
+			"row": [{
+					"Rating": "4.1",
+					"Including all taxes price": "Rs.250"
+				},
+				{
+					"enrolled": "5",
+					"Topics": "10"
+				},
+				{
+					"flexiblity": "Flexible Deadlines",
+					"availability": "100% Online"
+				}
+			]
+		}],
+		"Info": {
+			"heading": "Basic Information",
+			"product": "Assessment"
+		},
+		"step": [{
+			"heading": "Course Content",
+			"data": [{
+					"Icon": "",
+					"Steps": "Topic 1",
+					"Disc": "troduction to Web Design"
+				},
+				{
+					"Icon": "",
+					"Steps": "Topic 2",
+					"Disc": "Getting started with low fide.."
+				},
+				{
+					"Icon": "",
+					"Steps": "Topic 3",
+					"Disc": "Wireframing Low Fadility"
+				},
+				{
+					"Icon": "",
+					"Steps": "Topic 4",
+					"Disc": "Type color & Icon Introduction"
+				},
+				{
+					"Icon": "",
+					"Steps": "Topic 5",
+					"Disc": "Prototyping a website"
+				}
+			]
+		},
+		{
+			"heading": "Assessment Description",
+			"data": [{
+					"Icon": "",
+					"Steps": "",
+					"Disc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.d"
+				}
+				
+			]
+		},
+		{
+			"heading": "Pre requisite",
+			"data": [{
+					"Icon": "",
+					"Steps": "",
+					"Disc": "Windows, Mac, and Linux are all supported"
+				},
+				{
+					"Icon": "",
+					"Steps": "",
+					"Disc": "Setup and installation instructions"
+				},
+				{
+					"Icon": "",
+					"Steps": "",
+					"Disc": "No previous experience is needed"
+				},
+				{
+					"Icon": "",
+					"Steps": "",
+					"Disc": "Your enthusiasm to learn this"
+				},
+				{
+					"Icon": "",
+					"Steps": "Topic 5",
+					"Disc": "Prototyping a website"
+				}
+			]
+		}
+	]
+	},
+    "stock":  {
+		"title":"",
+		"image":"",
+		"heading": "TATA STEEL",
+		"description":"",
+		"lable":[],
+		"product": "ITC",
+		"action1": "",
+		"action2": "Sell",
+		"redirect1":"",
+		"redirect2":"Fullfilment/SellOrderBook",
+		"Chart": {
+			"row1": [{
+				"Current Value": "Rs.1100"
+			}],
+			"row2": [{
+				"Invested Amount": "Rs.1000",
+				"Return": "25%",
+				"XIRR": 25
+			}],
+			"graph": [{
+					"nav": 20
+				},
+				{
+					"nav": 10
+				},
+				{
+					"nav": 60
+				},
+				{
+					"nav": 25
+				},
+				{
+					"nav": 54
+				},
+				{
+					"nav": 20
+				},
+				{
+					"nav": 30
+				}
+			],
+			"graph_footer": {
+				"row": {
+					"col1": "Start SIP",
+					"col2": "Compare"
+				}
+			}
+		},
+		"Cards":[ 
+			{
+                "row": [{
+                        "Invested Amount": "Rs.1000",
+                        "Current Amount": "Rs.1100"
+                    },
+                    {
+                        "Return": "20%",
+                        "XIRR": "25%",
+                        "Nav": "25.5"
+                    }
+    
+                ]
+            },{
+			"heading": "Basic Information",
+			"description": "",
+			"sub_heading": "TATA STEEL",
+			"image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYfuXve65rbaj8VdLppNHD8a-dyraDH9W0lA&usqp=CAU",
+			"row": [{
+					"Current Price": "Rs.270",
+					"Current percenteg": "20%"
+				},
+				{
+					"open": "Rs.270.00",
+					"High": "Rs.275.00"
+				},
+				{
+					"Low": "Rs.265.00",
+					"Return Gread": "NA"
+				},
+				{
+					"Pre Close": "Rs.260.00",
+					"Lower-circut": "Rs.281.65"
+				},
+				{
+					"Upper-circut": "Rs.290.00",
+					"52-weeke": "Low-High"
+				}
+			]
+		}],
+		"step": [{
+			"heading": "News",
+			"data": [{
+					"Icon": "",
+					"Steps": "1 Day ago 30:04:09",
+					"Disc": "the Download of corporate actions data is done after close"
+				},
+				{
+					"Icon": "",
+					"Steps": "1 Day ago 30:04:09",
+					"Disc": "Closerse Ex.Dates etc. for the week is downloads on fridays"
+				},
+				{
+					"Icon": "",
+					"Steps": "1 Day ago 30:04:09",
+					"Disc": "HeyTorus submits transaction to mutual fund company"
+				},
+				{
+					"Icon": "",
+					"Steps": "1 Day ago 30:04:09",
+					"Disc": "the data will not be updateed on that PC. Further . they are advised"
+				}
+			]
+		}]
+	}, 
+    "healthMedicine": {
+		"title":"",
+		"image":"",
+		"heading": "Dolo 650mg Strip of 15 Tablets",
+		"description":"Munufactured by Micro Labs Ltd.",
+		"lable":[],
+		"product": "Health",
+		"action1": "Add to card",
+		"action2": "Explore",
+		"redirect1":"",
+		"redirect2":"Engagement",
+		"media": {
+			"mediatype": "image",
+			"url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7tg2WMDQIM1Wgwm0Zw1LrXLbmDkqOAP9JKA&usqp=CAU"
+		},
+		"Cards": [
+			{
+                "row": [{
+                        "Invested Amount": "Rs.1000",
+                        "Current Amount": "Rs.1100"
+                    },
+                    {
+                        "Return": "20%",
+                        "XIRR": "25%",
+                        "Nav": "25.5"
+                    }
+    
+                ]
+            },
+			{
+			"heading": "Basic Information",
+			"row": [{
+				"Rating": "3.0",
+				"Including all texs": "Rs.80"
+			}]
+		}
+	],
+		"step": [{
+			"heading": "Medical Description",
+			"data": [{
+					"Icon": "",
+					"Steps": "",
+					"Disc": "Dolo 650 tablet is a pain-relieving medicine. it also helps reduce fever. Dolo 650 contains a paracetamol as its active ingredient. Dolo 650 tablet is used for a wide range."
+				},
+				{
+					"Icon": "",
+					"Steps": "More Medicine with composition",
+					"Disc": "Paracetamol / Acetaminophen (650.0 mg)"
+				},
+				{
+					"Icon": "",
+					"Steps": "Therapeutic classification:",
+					"Disc": "ANALGESIC / ANTIPYRETIC"
+				}
+			]
+		}]
+	}
+}

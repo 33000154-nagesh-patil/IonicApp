@@ -1,0 +1,60 @@
+<lib-header [title]="title" [imageList]="imageList" [showArrow]="false" [showLabel]="true" [showImg]="false" [imgURL]="labelIcon"
+[showIndex]="false" [showNotification]="true" [showCartWithName]="true" [notificationCount]="notificationCount" [cardCount]="cartCount" [showSideMenu]="false" [showSearch]="true" [showClose]="false" [showShare]="false" [showWatchList]="false" [showCartWithoutName]="false" [showStories]="false" [otherTextName]="otherTextName" [showOtherText]="true" [superMode]="currentMode" [backUrlName]=""></lib-header>
+
+<ion-content class="h-100 w-100 contentBackground">
+  <ion-grid class="ion-no-padding">
+    <ion-row>
+      <ion-col [size]="'12'" class="mfBackground p-4">
+        <ion-row class="pt-4 pb-4">
+          <ion-col [size]="'12'" class="custTextAlignCenter ">
+            <span class="custFontFamilyMuliBold muli-16pt custLineHight18 custColorWhite">{{'mfDashboardTopNotification' | translate}}</span>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col [size]="'4'">
+            <ion-row>
+              <ion-col [size]="'12'" class="custTextAlignCenter">
+                <ion-img [src]="imageList?.mfDashboardIcon1" class="custMFImg"></ion-img>
+              </ion-col>
+              <ion-col [size]="'12'" class="custTextAlignCenter pt-2 pb-2">
+                <span class="custFontFamilyMuliSemiBold muli-12pt custLineHight16 custColorWhite">
+                  {{'ZeroCommisions' | translate}}
+                </span>
+              </ion-col>
+            </ion-row>
+          </ion-col>
+          <ion-col [size]="'4'">
+            <ion-row>
+              <ion-col [size]="'12'" class="custTextAlignCenter">
+                <ion-img [src]="imageList?.mfDashboardIcon2" class="custMFImg"></ion-img>
+              </ion-col>
+              <ion-col [size]="'12'" class="custTextAlignCenter pt-2 pb-2">
+                <span class="custFontFamilyMuliSemiBold muli-12pt custLineHight16 custColorWhite">
+                  {{'UptoReturns' | translate}}
+                </span>
+              </ion-col>
+            </ion-row>
+          </ion-col>
+          <ion-col [size]="'4'">
+            <ion-row>
+              <ion-col [size]="'12'" class="custTextAlignCenter">
+                <ion-img [src]="imageList?.mfDashboardIcon3" class="custMFImg"></ion-img>
+              </ion-col>
+              <ion-col [size]="'12'" class="custTextAlignCenter pt-2 pb-2">
+                <span class="custFontFamilyMuliSemiBold muli-12pt custLineHight16 custColorWhite">
+                  {{'FastPaperless' | translate}}
+                </span>
+              </ion-col>
+            </ion-row>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  
+  <!-- <ion-content class="contentBackground"> -->
+    <lib-product-list [imageList]="imageList" [listOfData]="healthData"  [currentMoneySymbols]="currentMoneySymbols" (sendDataToParent)="redirectTCardDetails($event)" [parentModule]="'Health'"></lib-product-list>
+  <!-- </ion-content> -->
+</ion-content>
+
+<lib-footer *ngIf="currentMode" [activeImg]="imageList?.activeTab" (getHealthMainPage)="getHealthMainPage($event)" [selectedIndex]="'2'" [footerListData]="mfFooterData" [parentTab]="'Health'"></lib-footer>

@@ -1,0 +1,245 @@
+{
+    "Orderlist": [
+        "AMC",
+        "SchemeName",
+        "Category",
+        "Rating",
+        "Risk",
+        "InvestmentType",
+        "PlanType",
+        "SortBy"
+    ],
+    "AMC": [
+        {
+            "name": "ICICI Mutual Fund",
+            "hasLayer": []
+        },
+        {
+            "name": "Axis Mutual Fund",
+            "hasLayer": []
+        },
+        {
+            "name": "DSP Mutual Fund",
+            "hasLayer": []
+        },
+        {
+            "name": "Edelwesis Mutual Fund",
+            "hasLayer": []
+        },
+        {
+            "name": "Canara Robeco Mutual Fund",
+            "hasLayer": []
+        },
+        {
+            "name": "Essel Mutual Fund",
+            "hasLayer": []
+        },
+        {
+            "name": "Franklin Templeton Mutual Fund",
+            "hasLayer": []
+        },
+        {
+            "name": "ICICI Prudential",
+            "hasLayer": []
+        }
+    ],
+   
+    "SchemeName": [
+        {
+            "name": "ICICI Prudential Technology Fund - Growth",
+            "hasLayer": []
+        },
+        {
+            "name": "SBI Equity Hybrid Fund-Growth",
+            "hasLayer": []
+        },
+        {
+            "name": "SBI Infrastructure Fund - Growth",
+            "hasLayer": []
+        },
+        {
+            "name": "UTI India Consumer Fund Regular Plan - Growth",
+            "hasLayer": []
+        },
+        {
+            "name": "L&T Tax Advantage Fund Direct - Growth",
+            "hasLayer": []
+        }
+    ],
+   
+    "Category": [
+        {
+            "name": "DebtSchemes",
+            "hasLayer": [
+                {
+                    "name": "Contra",
+                    "hasLayer":[]
+                },
+                {
+                    "name": "Dividend Yield",
+                    "hasLayer":[]
+
+                },
+                {
+                    "name": "ELSS",
+                    "hasLayer":[]
+
+                },
+                {
+                    "name": "Flexi Cap",
+                    "hasLayer":[]
+
+                }
+            ]
+        },
+        {
+            "name": "Equity Schemes",
+            "hasLayer": [
+                {
+                    "name": "Contra",
+                    "hasLayer":[]
+
+                },
+                {
+                    "name": "Dividend Yield",
+                    "hasLayer":[]
+
+                },
+                {
+                    "name": "ELSS",
+                    "hasLayer":[]
+
+                },
+                {
+                    "name": "Flexi Cap",
+                    "hasLayer":[]
+
+                }
+            ]
+        },
+        {
+            "name": "Contra",
+            "hasLayer": []
+        },
+        {
+            "name": "Dividend Yield",
+            "hasLayer": []
+        },
+        {
+            "name": "ELSS",
+            "hasLayer": []
+        },
+        {
+            "name": "Flexi Cap",
+            "hasLayer": []
+        },
+        {
+            "name": "Hybrid Schemes",
+            "hasLayer": [
+                {
+                    "name": "Contra"
+                },
+                {
+                    "name": "Dividend Yield"
+                },
+                {
+                    "name": "ELSS"
+                },
+                {
+                    "name": "Flexi Cap"
+                }
+            ]
+        },
+        {
+            "name": "Others Schemes",
+            "hasLayer": [
+                {
+                    "name": "Contra"
+                },
+                {
+                    "name": "Dividend Yield"
+                },
+                {
+                    "name": "ELSS"
+                },
+                {
+                    "name": "Flexi Cap"
+                }
+            ]
+        }
+    ],
+    "Rating": [
+        {
+            "name": "fiveStar",
+            "icon": "assets/icon/fiveStarRating.svg"
+        },
+        {
+            "name": "fourStar",
+            "icon": "assets/icon/fourStarRating.svg"
+        },
+        {
+            "name": "threeStar",
+            "icon": "assets/icon/threeStarRating.svg"
+        },
+        {
+            "name": "twoStar",
+            "icon": "assets/icon/twoStarRating.svg"
+        },
+        {
+            "name": "oneStar",
+            "icon": "assets/icon/oneStarRating.svg"
+        }
+    ],
+    "Risk": [
+        {
+            "name": "Low",
+            "hasLayer": []
+        },
+        {
+            "name": "Moderately",
+            "hasLayer": []
+        },
+        {
+            "name": "High",
+            "hasLayer": []
+        },
+        {
+            "name": "Very High",
+            "hasLayer": []
+        }
+    ],
+    "InvestmentType": [
+        {
+            "name": "SIP",
+            "hasLayer": []
+        },
+        {
+            "name": "One Time",
+            "hasLayer": []
+        }
+    ],
+    "PlanType": [
+        {
+            "name": "Direct",
+            "hasLayer": []
+        },
+        {
+            "name": "Regular",
+            "hasLayer": []
+        },
+        {
+            "name": "All",
+            "hasLayer": []
+        }
+    ],
+    "SortBy": [
+        {
+            "name": "Ratings - High to Low",
+            "hasLayer": []
+        },
+        {
+            "name": "Returns - High to Low",
+            "hasLayer": []
+        }
+    ]
+}

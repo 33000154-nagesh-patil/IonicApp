@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <g id="Group_20998" data-name="Group 20998" transform="translate(91 6563)">
+    <g id="Group_20989" data-name="Group 20989" transform="translate(-247 -6593.008)">
+      <g id="Group_20984" data-name="Group 20984" transform="translate(-52.385 -33.992)">
+        <path id="Path_21012" data-name="Path 21012" d="M-7898.4-11892.4s-1.517,6.146,0,9.59a7.32,7.32,0,0,0,2.671,3.531,6.266,6.266,0,0,0,3.4.656c3.124,0,4.822-.743,6.43-4.187s0-9.59,0-9.59" transform="translate(8111.459 11961.5)" fill="none" stroke="#44c8f5" stroke-width="1"/>
+        <path id="Path_21013" data-name="Path 21013" d="M-7892.132-11878.623s-1.041,4.737,2.159,6.892,7.343,1.152,8.953-.733a6.231,6.231,0,0,0,1.466-4.031c.023-.029,0-5.5,0-5.5" transform="translate(8111.459 11961.5)" fill="none" stroke="#44c8f5" stroke-width="1"/>
+        <g id="Ellipse_1338" data-name="Ellipse 1338" transform="translate(229.385 75)" fill="#039" stroke="#039" stroke-width="1">
+          <circle cx="2.5" cy="2.5" r="2.5" stroke="none"/>
+          <circle cx="2.5" cy="2.5" r="2" fill="none"/>
+        </g>
+        <g id="Ellipse_1341" data-name="Ellipse 1341" transform="translate(212.5 67)" fill="#039" stroke="#039" stroke-width="1">
+          <circle cx="2" cy="2" r="2" stroke="none"/>
+          <circle cx="2" cy="2" r="1.5" fill="none"/>
+        </g>
+        <g id="Ellipse_1340" data-name="Ellipse 1340" transform="translate(222.1 67)" fill="#039" stroke="#039" stroke-width="1">
+          <circle cx="2" cy="2" r="2" stroke="none"/>
+          <circle cx="2" cy="2" r="1.5" fill="none"/>
+        </g>
+      </g>
+    </g>
+    <g id="Group_20990" data-name="Group 20990" transform="translate(-286 -7064)">
+      <g id="Group_20086" data-name="Group 20086" transform="translate(163)">
+        <g id="Rectangle_9229" data-name="Rectangle 9229" transform="translate(32 501)" fill="none" stroke="#707070" stroke-width="0.5" opacity="0">
+          <rect width="30" height="30" stroke="none"/>
+          <rect x="0.25" y="0.25" width="29.5" height="29.5" fill="none"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

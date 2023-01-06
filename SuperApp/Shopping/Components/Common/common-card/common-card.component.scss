@@ -1,0 +1,30 @@
+.margindown{
+    margin-bottom: -10px;
+}
+.paddingmin{
+    margin-left: -10px;
+}
+.custPaddingLeft{
+    padding-left: 5px;
+}
+.star {
+    top: -5px;
+    position: relative;
+    display: inline-block;
+    font-size: 1rem;
+    color: #d3d3d3;
+  }
+  .full {
+    top: -5px;
+    color: rgb(255, 197, 36);
+  }
+  .half {
+    position: absolute;
+    display: inline-block;
+    overflow: hidden;
+    color:  rgb(255, 197, 36);
+  }
+  .custImg{
+    width: 40px;
+    height: 40px;
+  }

@@ -1,0 +1,27 @@
+<ion-content class="contentBackground">
+  <ion-grid class="preview">
+    <ion-row class="p-2 ">
+      <ion-col size="12">
+        <ion-img [src]="caputuredImage"   class="m-50 align-item-center"></ion-img>
+      </ion-col>
+    </ion-row>
+    
+    <ion-row class="ion-no-padding fixed-bottom p-2">
+      <ion-col [size]="'6'" class="ion-no-padding">
+        <ion-button expand="block" class="text-capitalize custTryButton d-flex justify-content-center" (click)="tryAgain()">
+          <span class="custFontFamilyMuliRegular text-center muli-14pt custColorBrightCyan">{{'tryAgain'
+            | translate}}</span>
+          </ion-button>
+        </ion-col>
+        
+      <ion-col [size]="'6'" class="ion-no-padding">
+        <ion-button expand="block" class="text-capitalize text-center custLooksBtn" (click)="looksGood()"><span
+            class="custColorWhite custFontFamilyMuliBold muli-16pt">{{'looksGoodLabel' |
+            translate}}</span></ion-button>
+      </ion-col>
+    </ion-row>
+    
+  </ion-grid>
+</ion-content>
+
+<input #userInput style="position: absolute; width: 0; height: 0; opacity: 0" type="file" (change)="imagePreview($event)" class="fileInput" accept="image/png, image/jpeg">

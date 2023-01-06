@@ -1,0 +1,113 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-grid>
+      <ion-row>
+        <ion-col [size]="'0.7'" class="text-center mt-2" (click)="backToSetting()">
+          <ion-img [src]="imageList?.arrow" class="custWithoutTextImg"></ion-img>
+        </ion-col>
+        <ion-col [size]="'8'">
+          <span class="custFontFamilyMuliBold muli-16pt custLineHight40  custColorBlack px-3">change password</span>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="contentBackground">
+  <ion-row class="mx-3 mt-3 my-3">
+    <mat-form-field appearance="outline" class="w-100 ">
+      <mat-label class="muli-16pt text-nowrap ">Current Password</mat-label>
+      <input matInput [type]="hide ? 'password' : 'text'">
+      <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+        [attr.aria-pressed]="hide" class="custBackgroundColorWhite">
+        <ion-icon name="eye-outline" class="custBackgroundColorWhite"></ion-icon>
+      </button>
+    </mat-form-field>
+  </ion-row>
+
+  <ion-row class="mx-3 my-3">
+    <mat-form-field appearance="outline" class="w-100">
+      <mat-label class="muli-16pt text-nowrap">New Password</mat-label>
+      <input matInput [type]="hide ? 'password' : 'text'">
+      <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+        [attr.aria-pressed]="hide" class="custBackgroundColorWhite">
+        <ion-icon name="eye-outline" class="custBackgroundColorWhite"></ion-icon>
+      </button>
+    </mat-form-field>
+  </ion-row>
+
+  <ion-row class="mx-3 my-3">
+    <mat-form-field appearance="outline" class="w-100">
+      <mat-label class="muli-16pt text-nowrap">Confirm Password</mat-label>
+      <input matInput [type]="hide ? 'password' : 'text'">
+      <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+        [attr.aria-pressed]="hide" class="custBackgroundColorWhite">
+        <ion-icon name="eye-outline" class="custBackgroundColorWhite"></ion-icon>
+      </button>
+    </mat-form-field>
+  </ion-row>
+
+  <ion-row class="mx-1">
+    <p class="m-0 custFontFamilyMuliBold muli-12pt custLineHight15 custColorBattlePGry px-3">Password Policy</p>
+  </ion-row>
+
+  <ion-row class="mx-1 mt-3">
+    <ion-col [size]="1" class="ps-3">
+      <img [src]="imageList?.BlueTick" class="mb-4 p-0">
+    </ion-col>
+    <ion-col [size]="11" class="p-0">
+      <p class="m-0 p-0 custFontFamilyMuliRegular muli-12pt custLineHight33 custColorBattlePGry">You will have to change
+        your password compulsorily every 60 calendar days</p>
+    </ion-col>
+  </ion-row>
+  <ion-row class="mx-1 ">
+    <ion-col [size]="1" class="ps-3">
+      <img [src]="imageList?.BlueTick" class="mb-4 p-0">
+    </ion-col>
+    <ion-col [size]="11" class="p-0">
+      <p class="m-0 p-0 custFontFamilyMuliRegular muli-12pt custLineHight33 custColorBattlePGry">The password should be
+        minimum 6 characters and maximum of 12 characters</p>
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="mx-1 ">
+    <ion-col [size]="1" class="ps-3">
+      <img [src]="imageList?.BlueTick" class="mb-4 p-0">
+    </ion-col>
+    <ion-col [size]="11" class="p-0">
+      <p class="m-0 p-0 custFontFamilyMuliRegular muli-12pt custLineHight33 custColorBattlePGry">The password can not be
+        same as user id or part of your user id</p>
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="mx-1 ">
+    <ion-col [size]="1" class="ps-3">
+      <img [src]="imageList?.BlueTick" class="mb-4 p-0">
+    </ion-col>
+    <ion-col [size]="11" class="p-0">
+      <p class="m-0 p-0 custFontFamilyMuliRegular muli-12pt custLineHight33 custColorBattlePGry">Change password can not
+        be the same as the immediate previous password</p>
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="mx-1 ">
+    <ion-col [size]="1" class="ps-3">
+      <img [src]="imageList?.BlueTick" class="mb-4 p-0">
+    </ion-col>
+    <ion-col [size]="11" class="p-0">
+      <p class="m-0 p-0 custFontFamilyMuliRegular muli-12pt custLineHight33 custColorBattlePGry">The password should be
+        a combination of characters sets: Alphabets (A-Z) (a-z), Numbers (0-9) and special characters
+        (!,@,#,$,%,^,&,-,_,=)</p>
+    </ion-col>
+  </ion-row>
+</ion-content>
+
+<ion-footer>
+  <ion-row class="m-3">
+    <ion-col>
+      <button class="btn w-100 text-center custBackgroundColorBrightCyan">
+        <span class="custColorWhite custFontFamilyMuliBold muli-16pt">Submit</span>
+      </button>
+    </ion-col>
+  </ion-row>
+</ion-footer>

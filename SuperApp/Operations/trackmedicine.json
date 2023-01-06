@@ -1,0 +1,135 @@
+{
+    "card": [
+        {
+            "cardTitle": "Patient Name:Pankaj",
+            "cardSubTitle": "Patient Address:Mumbai",
+            "cardRowData": [
+                
+                {
+                    "col1": {
+                        "colConfig": "d-block justify-content-start",
+                        "p": "Dolo-650",
+                        "pConfig": "custFontFamilyMuliBold muli-16pt custLineHight20 custColorDark",
+                        "span": "",
+                        "spanConfig": "custFontFamilyMuliRegular d-block muli-14pt custLineHight22 custColorGreyish"
+                    },
+                    "col2": {
+                        "colConfig": "d-block justify-content-end",
+                        "p": "By Metropolis Healthcare Ltd. Pathology",
+                        "pConfig": "",
+                        "span": "",
+                        "spanConfig": "custFontFamilyMuliRegular  muli-14pt custLineHight15 custColorDark"
+                    }
+                }
+            ],
+            "cardBottom": [
+                {
+                    "col1": "Download Invoice",
+                    "col1Config": "text-start custFontFamilyMuliBold muli-12pt custColorDarkishBlue",
+                    "col2": "",
+                    "col2Config": "text-start custFontFamilyMuliBold muli-12pt custColorDarkishBlue text-end"
+                }
+            ]
+        },
+        {
+            "grayBackGround":true,
+            "cardTitle": "Price Details",
+            "cardSubTitle": "",
+            "cardRowData": [
+                {
+                    "col1": {
+                        "colConfig": "d-block justify-content-start",
+                        "p": "Order Id",
+                        "pConfig": "custFontFamilyMuliBold muli-16pt custLineHight20 custColorDark",
+                        "span": "P005047498547",
+                        "spanConfig": "custFontFamilyMuliRegular d-block muli-14pt custLineHight22 custColorGreyish"
+                    },
+                    "col2": {
+                        "colConfig": "d-block justify-content-end",
+                        "p": "Time Slot",
+                        "pConfig": "",
+                        "span": "14th March, 01:00 PM - 02:00 PM",
+                        "spanConfig": "custFontFamilyMuliRegular  muli-14pt custLineHight15 custColorDark"
+                    }
+                },
+                {
+                    "col1": {
+                        "colConfig": "d-block justify-content-start",
+                        "p": "Price",
+                        "pConfig": "custFontFamilyMuliBold muli-16pt custLineHight20 custColorDark",
+                        "span": "240.00",
+                        "spanConfig": "custFontFamilyMuliRegular d-block muli-14pt custLineHight22 custColorGreyish"
+                    },
+                    "col2": {
+                        "colConfig": "d-block justify-content-end",
+                        "p": "Quantity",
+                        "pConfig": "float-end",
+                        "span": "2",
+                        "spanConfig": "custFontFamilyMuliRegular  muli-14pt custLineHight15 custColorDark"
+                    }
+                },
+                {
+                    "col1": {
+                        "colConfig": "d-block justify-content-start",
+                        "p": "Grand Total",
+                        "pConfig": "custFontFamilyMuliBold muli-16pt custLineHight20 custColorDark",
+                        "span": "240",
+                        "spanConfig": "custFontFamilyMuliRegular d-block muli-14pt custLineHight22 custColorGreyish"
+                    },
+                    "col2": {
+                        "colConfig": "d-block justify-content-end",
+                        "p": "Total Savings",
+                        "pConfig": "",
+                        "span": "50",
+                        "spanConfig": "custFontFamilyMuliRegular  muli-14pt custLineHight15 custColorDark"
+                    }
+                },
+                {
+                    "col1": {
+                        "colConfig": "d-block justify-content-start",
+                        "p": "Transaction ID",
+                        "pConfig": "custFontFamilyMuliBold muli-16pt custLineHight20 custColorDark",
+                        "span": "A-Hm-FH347-FGHK-347928",
+                        "spanConfig": "custFontFamilyMuliRegular d-block muli-14pt custLineHight22 custColorGreyish"
+                    },
+                    "col2": {
+                        "colConfig": "d-block justify-content-end",
+                        "p": "",
+                        "pConfig": "",
+                        "span": "",
+                        "spanConfig": "custFontFamilyMuliRegular  muli-14pt custLineHight15 custColorDark"
+                    }
+                }
+            ]
+        }
+       
+    ],
+    "progressBar": [
+        {
+            "Status": "Pass",
+            "span": "11 Mar 2022, 4:55 PM via UPI",
+            "Document": "Order Placed"
+        },
+        {
+            "Status": "Pending",
+            "span": "",
+            "Document": "Order Dispatch"
+        },
+        {
+            "Status": "Pending",
+            "span": "",
+            "Document": "Order Shipped"
+        },
+        {
+            "Status": "pending",
+            "span": "",
+            "Document": "Order out for delivery"
+        },
+        {
+            "Status": "pending",
+            "span": "",
+            "Document": "Order deliverd"
+        }
+        
+    ]
+}

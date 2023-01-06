@@ -1,0 +1,325 @@
+{
+    "categoryLanding": {
+        "torusClub": {
+            "banner": {
+                "contentType": "banner",
+                "Title": "TORUS CLUB",
+                "data": 
+                    {
+                        "giftBoxIcon": "assets/icon/giftBox.svg",                    
+                        "torusClubIcon": "assets/icon/torusClubIconWithWhiteBackground.svg",                   
+                        "subTitle": "Jackpots, Vouchers & Gift Cards",                    
+                        "contentDescription": "Play and win assured rewards on each of the games below",                    
+                        "action": "Play Now"
+                    }
+                    
+                
+            }
+        },
+        "Wealth": {
+            "banner": {
+                "contentType": "banner",
+                "Title": "Complete Wealth Wellness Offerings",
+                "data": [
+                    {
+                        "icon": "assets/health-page-logos/Confidential.svg",
+                        "subTitle": "Neo Banking"
+                    },
+                    {
+                        "icon": "assets/health-page-logos/Access to Doctor.svg",
+                        "subTitle": "Broking"
+                    },
+                    {
+                        "icon": "assets/health-page-logos/Integrated lab.svg",
+                        "subTitle": "Mutual Fund"
+                    }
+                ]
+            },
+            "heading": [
+                {
+                    "heading": "Hey, User",
+                    "box": false,
+                    "discription": "Here are today's recommended action for you"
+                },
+                {
+                    "heading": "Wealth Wellness",
+                    "box": true,
+                    "discription": "offering products to help you make informed investment decisions"
+                }
+            ],
+            "body": [
+                {
+                    "type": "grid",
+                    "config": {
+                        "row": "1",
+                        "col": "12",
+                        "width": "",
+                        "height": "165px",
+                        "layoutType": "vertical",
+                        "row2col1": "8",
+                        "row2col2": "4"
+                    },
+                    "contentType": "grid",
+                    "class": "12",
+                    "Title": "Money Makers",
+                    "content": [
+                        {
+                            "icon": "assets/icon/stockIcon.svg",
+                            "cardTitle": "Stock",
+                            "cardDescription": "Enjoy zero trading cost in cash segment. F&O at Rs 10 per order",
+                            "action": "Explore"
+                        },
+                        {
+                            "icon": "assets/icon/mutualIcon.svg",
+                            "cardTitle": "Mutual Fund",
+                            "cardDescription": "invest in direct mutual fund for free",
+                            "action": "Explore"
+                        },
+                        {
+                            "icon": "assets/icon/roboIcon.svg",
+                            "cardTitle": "Wealth Robo Advisory",
+                            "cardDescription": "Get real time assistance by our robo advisory",
+                            "action": "Explore",
+                            "coloredCard":true
+                        },
+                        {
+                            "icon": "assets/icon/mutualIcon.svg",
+                            "cardTitle": "Neo Bank",
+                            "cardDescription": "Open Account",
+                            "action": "Explore"
+                        },
+                        {
+                            "icon": "assets/icon/B.svg",
+                            "cardTitle": "Bill Payments",
+                            "cardDescription": "Pay Bill",
+                            "action": "Explore"
+                        },
+                        {
+                            "icon": "assets/icon/roboIcon.svg",
+                            "cardTitle": "Loans",
+                            "cardDescription": "Enjoy zero trading costs in cash segment. F&O at D10 per order",
+                            "action": "Explore"
+                        }
+                    ]
+                },
+                {
+                    "type": "grid",
+                    "contentType": "grid",
+                    "class": "12",
+                    "Title": "Money Saver",
+                    "config": {
+                        "row": "1",
+                        "col": "12",
+                        "width": "",
+                        "height": "165px",
+                        "layoutType": "vertical"
+                    },
+                    "content": [
+                        {
+                            "icon": "assets/icon/goldIcon.svg",
+                            "cardTitle": "Gold",
+                            "cardDescription": "Build your gold savings with 24k 99.99% purity gold",
+                            "action": "Explore"
+                        },
+                        {
+                            "icon": "assets/icon/insurancedashboardIcon.svg",
+                            "cardTitle": "Insurance",
+                            "cardDescription": "Invest in direct mutual fund for free",
+                            "action": "Explore"
+                        }
+                    ]
+                }
+            ]
+        },
+        "Health": {
+            "banner": {
+                "contentType": "banner",
+                "Title": "In-clinic Doctor Appointments",
+                "data": [
+                    {
+                        "icon": "assets/health-page-logos/Confidential.svg",
+                        "subTitle": "Completely Confidential"
+                    },
+                    {
+                        "icon": "assets/health-page-logos/Access to Doctor.svg",
+                        "subTitle": "24 * 7 Access to  Doctors"
+                    },
+                    {
+                        "icon": "assets/health-page-logos/Integrated lab.svg",
+                        "subTitle": "Integrated Lab"
+                    }
+                ]
+            },
+            "heading": [
+                {
+                    "heading": "Health Wellness",
+                    "discription": "Health product to ensure wellness"
+                }
+            ],
+            "body": [
+                {
+                    "type": "grid",
+                    "contentType": "2x2 Grid",
+                    "class": "6",
+                    "config": {
+                        "row": "1",
+                        "col": "6",
+                        "width": "",
+                        "height": "165px",
+                        "layoutType": "vertical"
+                    },
+                    "content": [
+                        {
+                            "icon": "assets/health-page-logos/Confidential.svg",
+                            "cardTitle": "Medicine",
+                            "cardDescription": "1,00,000+ medicines",
+                            "action": "Explore"
+                        },
+                        {
+                            "icon": "assets/health-page-logos/Access to Doctor.svg",
+                            "cardTitle": "Lab Test",
+                            "cardDescription": "Home Collection",
+                            "action": "Explore"
+                        },
+                        {
+                            "icon": "assets/health-page-logos/Integrated lab.svg",
+                            "cardTitle": "Fitness",
+                            "cardDescription": "Daily workout",
+                            "action": "Explore"
+                        },
+                        {
+                            "icon": "assets/health-page-logos/Integrated lab.svg",
+                            "cardTitle": "Consultation",
+                            "cardDescription": "Videos & Voice calls",
+                            "action": "Explore"
+                        }
+                    ]
+                },
+                {
+                    "contentType": "promotionCard",
+                    "Title": "In the Spotlight",
+                    "contentDescription": "Explore deals, offers, health update and more",
+                    "content": [
+                        {
+                            "promoName": "In the Spotlight",
+                            "promoDesc": "Explore deals,offers, health updates and more",
+                            "promoTitle": "Health Card & Discounts",
+                            "promoTitleDesc": "Up to 50% discount MRI, CT scan,insurance cover",
+                            "promoIcon": "assets/Images/Mask Group 99.png",
+                            "promoAction": "Buy Now"
+                        }
+                    ]
+                }
+            ]
+        },
+        "Career": {
+            "banner": {
+                "contentType": "banner",
+                "Title": "Why Study In Torus Primero?",
+                "data": [
+                    {
+                        "icon": "assets/education/Group2.svg",
+                        "subTitle": "Cost Effective"
+                    },
+                    {
+                        "icon": "assets/education/Group3.svg",
+                        "subTitle": "Self Management"
+                    },
+                    {
+                        "icon": "assets/education/Group1.svg",
+                        "subTitle": "Flexible Schedule"
+                    }
+                ]
+            },
+            "heading": [
+                {
+                    "heading": "Education Wellness",
+                    "discription": "Education product to ensure wellness"
+                }
+            ],
+            "body": [
+                {
+                    "type": "grid",
+                    "config": {
+                        "row": "1",
+                        "col": "6",
+                        "width": "",
+                        "height": "165px",
+                        "layoutType": "vertical"
+                    },
+                    "contentType": "2x1 Grid",
+                    "class": "6",
+                    "Title": "Courses",
+                    "content": [
+                        {
+                            "icon": "assets/icon/Courses.svg",
+                            "cardTitle": "Courses",
+                            "cardDescription": "Skill courses for you",
+                            "action": "Explore"
+                        },
+                        {
+                            "icon": "assets/icon/Assesment.svg",
+                            "cardTitle": "Assessment",
+                            "cardDescription": "Learn courses",
+                            "action": "Explore"
+                        }
+                    ]
+                },
+                {
+                "type": "grid",
+                    "config": {
+                        "row": "1",
+                        "col": "12",
+                        "width": "",
+                        "height": "165px",
+                        "layoutType": "vertical"
+                    },
+                    "contentType": "grid",
+                    "class": "6",
+                    "Title": "",
+                    "content":[{
+                            "icon": "assets/icon/jobs.svg",
+                            "cardTitle": "Jobs",
+                            "cardDescription": "Get opportunity to build your correct",
+                            "action": "Explore"
+                        }]
+                        
+                    }
+            ]
+        },
+        "lifeStyle": {
+            "heading": [
+                {
+                    "heading": "Hey, User",
+                    "discription": "Here are today's recommended action for you"
+                },
+                {
+                    "heading": "Lifestyle",
+                    "discription": "Make purchase to enhance your living style"
+                }
+            ],
+            "body": [
+                {
+                    "contentType": "Input",
+                    "Title": "null",
+                    "PlaceHolder": "Search",
+                    "prfixIcon": "icon",
+                    "prfixText": ""
+                },
+                {
+                    "contentType": "1x1 Grid",
+                    "class": "12",
+                    "Title": "Shopping",
+                    "content": [
+                        {
+                            "icon": "Example: amazon icon",
+                            "cardTitle": "Amazon",
+                            "cardDescription": "",
+                            "action": ""
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

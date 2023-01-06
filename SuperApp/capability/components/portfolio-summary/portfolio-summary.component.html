@@ -1,0 +1,16 @@
+<ion-card *ngIf="PortFolioSummary?.wellnessPercentage?.percentage">
+  <ion-row>
+      <ion-col class="muli-12pt custFontFamilyMuliSemiBold custColorBattlePGry p-2">
+         <div>Hello,<span class="muli-16pt custFontFamilyMuliBold custColorBold p-2">{{PortFolioSummary?.userName}},</span></div> 
+          <div>{{PortFolioSummary?.wellnessTitle}} </div>
+          {{PortFolioSummary?.wellnessScore}}
+      </ion-col>
+      <ion-col class="d-flex justify-content-end align-item-center p-2">
+          <div class="CustCss text-center p-2">
+              <div  class="muli-10pt custFontFamilyMuliBold custColorWhite text-center">{{PortFolioSummary?.wellnessPercentage?.percentage}}</div>
+              <div  class="muli-10pt custFontFamilyMuliBold custColorWhite text-center">{{PortFolioSummary?.wellnessPercentage?.grade}}</div>
+
+          </div>
+      </ion-col>
+  </ion-row>
+</ion-card>

@@ -1,0 +1,62 @@
+.custInvestArrow{
+    height: 14px;
+    width: 14px;
+    margin-top: 12px;
+  }
+  .custImgSucc{
+    height: 15px;   
+}
+.success{
+    position: absolute;
+   top: 50%;
+    font-size: 12px;
+}
+.custImgGold{
+  height: 38px;
+  width: 38px;
+ 
+}
+
+.custpadding{
+  padding: 10px 10px 0 10px;
+}
+
+::ng-deep .mat-expansion-panel-body {
+  padding: 0 16px 16px !important;
+}
+mat-expansion-panel-header{
+   padding: 0 16px !important;
+ }
+ .info{
+   margin-top: -20px;
+   border-radius: 5px;
+ }
+ ::ng-deep .mat-expansion-indicator, .mat-expansion-indicator:after {
+  color: green;}
+  .bottomcontent{
+    // outline: 25px solid #E9EBF0;
+    // background-color: #E9EBF0;
+    // margin-bottom: -20px;
+    // margin-top: 20px;
+    outline: 0px solid #E9EBF0;
+    background-color: #E9EBF0;
+    margin-bottom: -18px;
+    margin-left: -24px;
+    margin-right: -24px;
+    display: flex;
+    vertical-align: middle;
+   padding-left: 16px;
+    padding-top: 12px;
+    height: 41px;
+    border-radius: 0px 0px 4px 4px;
+}
+.custAdd{
+  margin-bottom: 0px;  
+ }
+ .change{
+  margin-left: 148px;
+}
+.change1{
+  margin-left: 137px;
+
+}

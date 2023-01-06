@@ -1,0 +1,558 @@
+{
+    "subHeader": {
+            
+                "id": "",
+                "title": "Lead Assignment",
+                "icon": "",
+                "type": "",
+                "cssx": "",
+                "uxClass": "muli-34pt",
+                "des": "",
+                "key": "",
+                "value": [
+                    {
+                        "id": "",
+                        "title": "",
+                        "icon": "",
+                        "type": "",
+                        "cssx": "",
+                        "uxClass": "",
+                        "des": "",
+                        "key": "",
+                        "value": ""
+                    }
+                ]
+    },
+    "search": {
+        "id": "",
+        "title": "Search",
+        "icon": "",
+        "type": "",
+        "cssx": "",
+        "uxClass": "px-3",
+        "des": [],
+        "key": "",
+        "showHide": [],
+        "value": [
+            {
+                "id": "",
+                "title": "From Date",
+                "icon": "",
+                "type": "calender",
+                "cssx": "",
+                "uxClass": "",
+                "des": [],
+                "key": "",
+                "validators": {
+                    "required": true
+                },
+                "value": ""
+            },
+            {
+                "id": "",
+                "title": "To Date",
+                "icon": "",
+                "type": "calender",
+                "cssx": "",
+                "uxClass": "",
+                "des": [],
+                "key": "",
+                "validators": {
+                    "required": true
+                },
+                "value": ""
+            },
+            {
+                "id": "",
+                "title": "Mobile Number/Email ID",
+                "icon": "",
+                "type": "ALPHANUMERIC",
+                "cssx": "",
+                "uxClass": "",
+                "des": [],
+                "key": "",
+                "validators": {
+                    "required": true
+                },
+                "value": ""
+            },
+            {
+                "id": "",
+                "title": "Submit",
+                "icon": "",
+                "type": "submit",
+                "cssx": "",
+                "uxClass": "",
+                "des": [],
+                "key": "",
+                "validators": "",
+                "value": ""
+            }
+        ]
+    },
+    "table": {
+        "id": "",
+            "title": "Total Cases",
+            "icon": "",
+            "type": "",
+            "cssx": "",
+            "uxClass": "muli-30pt p-2 pt-2 custFontFamilyMuliSemiBold custColorDark",
+            "des": [ {
+                "id": "",
+                "title": "Assign To",
+                "icon": "",
+                "type": "dropDown",
+                "cssx": "",
+                "uxClass": "muli-16pt",
+                "des": [],
+                "key": "",
+                "validators": {
+                    "required": true
+                },
+                "value": "",
+                "options": [
+                    "Last 7 Days",
+                    "Last 30 Days",
+                    "Last 90 Days",
+                    "custom"
+                ]
+            }],
+            "key": "",
+            "validators": "",
+            "options": "",
+            "value": [
+            {
+                "LeadID": {
+                    "id": "",
+                    "title": "L123456",
+                    "icon": "",
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "",
+                    "des": [],
+                    "key": "",
+                    "validators": "",
+                    "options": [],
+                    "value": ""
+                },
+                "LeadName": {
+                    "id": "",
+                    "title": "Pratham",
+                    "icon": "",
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "",
+                    "des": [],
+                    "key": "",
+                    "validators": "",
+                    "options": [],
+                    "value": ""
+                },
+                "EmailID": {
+                    "id": "",
+                    "title": "partham@gmail.com",
+                    "icon": "",
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "",
+                    "des": [],
+                    "key": "",
+                    "validators": "",
+                    "options": [],
+                    "value": ""
+                },
+                "LeadOwner": {
+                    "id": "",
+                    "title": "Partham",
+                    "icon": "",
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "",
+                    "des": [],
+                    "key": "",
+                    "validators": "",
+                    "options": [],
+                    "value": ""
+                },
+                "MobileNumber": {
+                    "id": "",
+                    "title": "7058982028",
+                    "icon": "",
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "",
+                    "des": [],
+                    "key": "",
+                    "validators": "",
+                    "options": [],
+                    "value": ""
+                },
+                "Product": {
+                    "id": "",
+                    "title": "Digital Gold",
+                    "icon": "",
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "",
+                    "des": [],
+                    "key": "",
+                    "validators": "",
+                    "options": [],
+                    "value": ""
+                },
+                "LeadSource": {
+                    "id": "",
+                    "title": "Facebook",
+                    "icon": "",
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "",
+                    "des": [],
+                    "key": "",
+                    "validators": "",
+                    "options": [],
+                    "value": ""
+                },
+                "Campaign": {
+                    "id": "",
+                    "title": "Social Media",
+                    "icon": "",
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "",
+                    "des": [],
+                    "key": "",
+                    "validators": "",
+                    "options": [],
+                    "value": ""
+                },
+                "KRAVerified": {
+                    "id": "",
+                    "title": "Yes",
+                    "icon": "",
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "",
+                    "des": [],
+                    "key": "",
+                    "validators": "",
+                    "options": [],
+                    "value": ""
+                },
+                "Status": {
+                    "id": "",
+                    "title": "Call Ringing",
+                    "icon": "",
+                    "type": "dropDown",
+                    "cssx": "",
+                    "uxClass": "",
+                    "des": [],
+                    "key": "",
+                    "validators": "",
+                    "options": [
+                        "Enable",
+                        "Disable"
+                    ],
+                    "value": ""
+                },
+                "CreatedOn": {
+                    "id": "",
+                    "title": "07/02/2022",
+                    "icon": "",
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "",
+                    "des": [],
+                    "key": "",
+                    "validators": "",
+                    "options": [],
+                    "value": ""
+                },
+                "CreatedBy": {
+                    "id": "",
+                    "title": "system",
+                    "icon": "",
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "",
+                    "des": [],
+                    "key": "",
+                    "validators": "",
+                    "options": [],
+                    "value": ""
+                },
+                "ModifiedOn": {
+                    "id": "",
+                    "title": "26/08/2022",
+                    "icon": "",
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "",
+                    "des": [],
+                    "key": "",
+                    "validators": "",
+                    "options": [],
+                    "value": ""
+                },
+                "ModifiedBy": {
+                    "id": "",
+                    "title": "System",
+                    "icon": "",
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "",
+                    "des": [],
+                    "key": "",
+                    "validators": "",
+                    "options": [],
+                    "value": ""
+                },
+                "Reason": {
+                    "id": "",
+                    "title": "Duplicate Mobile Number",
+                    "icon": "",
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "",
+                    "des": [],
+                    "key": "",
+                    "validators": "",
+                    "options": [],
+                    "value": ""
+                },
+                "Action": {
+                    "id": "",
+                    "title": "",
+                    "icon": [
+                        "call",
+                        "email"
+                    ],
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "",
+                    "des": [],
+                    "key": "",
+                    "validators": "",
+                    "options": [],
+                    "value": ""
+                }
+            },
+            {
+                "LeadID": {
+                    "id": "",
+                    "title": "L123456",
+                    "icon": "",
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "",
+                    "des": [],
+                    "key": "",
+                    "validators": "",
+                    "options": [],
+                    "value": ""
+                },
+                "LeadName": {
+                    "id": "",
+                    "title": "Pratham",
+                    "icon": "",
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "",
+                    "des": [],
+                    "key": "",
+                    "validators": "",
+                    "options": [],
+                    "value": ""
+                },
+                "EmailID": {
+                    "id": "",
+                    "title": "partham@gmail.com",
+                    "icon": "",
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "",
+                    "des": [],
+                    "key": "",
+                    "validators": "",
+                    "options": [],
+                    "value": ""
+                },
+                "LeadOwner": {
+                    "id": "",
+                    "title": "Partham",
+                    "icon": "",
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "",
+                    "des": [],
+                    "key": "",
+                    "validators": "",
+                    "options": [],
+                    "value": ""
+                },
+                "MobileNumber": {
+                    "id": "",
+                    "title": "7058982028",
+                    "icon": "",
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "",
+                    "des": [],
+                    "key": "",
+                    "validators": "",
+                    "options": [],
+                    "value": ""
+                },
+                "Product": {
+                    "id": "",
+                    "title": "Digital Gold",
+                    "icon": "",
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "",
+                    "des": [],
+                    "key": "",
+                    "validators": "",
+                    "options": [],
+                    "value": ""
+                },
+                "LeadSource": {
+                    "id": "",
+                    "title": "Facebook",
+                    "icon": "",
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "",
+                    "des": [],
+                    "key": "",
+                    "validators": "",
+                    "options": [],
+                    "value": ""
+                },
+                "Campaign": {
+                    "id": "",
+                    "title": "Social Media",
+                    "icon": "",
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "",
+                    "des": [],
+                    "key": "",
+                    "validators": "",
+                    "options": [],
+                    "value": ""
+                },
+                "KRAVerified": {
+                    "id": "",
+                    "title": "Yes",
+                    "icon": "",
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "",
+                    "des": [],
+                    "key": "",
+                    "validators": "",
+                    "options": [],
+                    "value": ""
+                },
+                "Status": {
+                    "id": "",
+                    "title": "Call Ringing",
+                    "icon": "",
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "",
+                    "des": [],
+                    "key": "",
+                    "validators": "",
+                    "options": [
+                        "Enable",
+                        "Disable"
+                    ],
+                    "value": ""
+                },
+                "CreatedOn": {
+                    "id": "",
+                    "title": "07/02/2022",
+                    "icon": "",
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "",
+                    "des": [],
+                    "key": "",
+                    "validators": "",
+                    "options": [],
+                    "value": ""
+                },
+                "CreatedBy": {
+                    "id": "",
+                    "title": "system",
+                    "icon": "",
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "",
+                    "des": [],
+                    "key": "",
+                    "validators": "",
+                    "options": [],
+                    "value": ""
+                },
+                "ModifiedOn": {
+                    "id": "",
+                    "title": "26/08/2022",
+                    "icon": "",
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "",
+                    "des": [],
+                    "key": "",
+                    "validators": "",
+                    "options": [],
+                    "value": ""
+                },
+                "ModifiedBy": {
+                    "id": "",
+                    "title": "System",
+                    "icon": "",
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "",
+                    "des": [],
+                    "key": "",
+                    "validators": "",
+                    "options": [],
+                    "value": ""
+                },
+                "Reason": {
+                    "id": "",
+                    "title": "Duplicate Mobile Number",
+                    "icon": "",
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "",
+                    "des": [],
+                    "key": "",
+                    "validators": "",
+                    "options": [],
+                    "value": ""
+                },
+                "Action": {
+                    "id": "",
+                    "title": "",
+                    "icon": [
+                        "call",
+                        "email"
+                    ],
+                    "type": "",
+                    "cssx": "",
+                    "uxClass": "",
+                    "des": [],
+                    "key": "",
+                    "validators": "",
+                    "options": [],
+                    "value": ""
+                }
+            }
+        ]
+    }
+}

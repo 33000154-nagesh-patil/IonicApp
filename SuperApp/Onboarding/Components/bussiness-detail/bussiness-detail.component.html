@@ -1,0 +1,128 @@
+  <ion-app>
+  <ion-header>
+  <ion-toolbar class="custBackgroundDynamicColorWhite">
+    <ion-grid>
+      <ion-row>
+        <ion-col [size]="'1'" class="text-center mt-1" (click)="goback()">
+          <ion-img [src]="imageList?.arrow" class="custKYCImg mt-2"></ion-img>
+        </ion-col>
+        <ion-col [size]="'10'" class="text-start mt-2">
+          <span class="custFontFamilyMuliBold muli-16pt ">Business Detail</span>
+        </ion-col>
+
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form [formGroup]="bussinessDetailForm" (ngSubmit)="getBusinessDetail()">
+
+    <ion-grid class="mx-2">
+
+      <ion-row class="muli-16pt custMargin custColorDark mt-2  custFontFamilyMuliBold custMargin10">
+        Contact Info
+      </ion-row>
+      <ion-row class="custColorDark muli-14pt mt-1">
+        compelete and Submit Form
+      </ion-row>
+      <ion-row class="mt-3">
+        <mat-form-field appearance="outline" class="w-100">
+          <mat-label class="custColorGreyish">Enter Business PAN</mat-label>
+          <input class="w-100" type="text" matInput formControlName="pan"
+            [(ngModel)]="torusPayData.enterBusinessownersPan">
+        </mat-form-field>
+      </ion-row>
+      <ion-row class="mt-3">
+        <mat-form-field appearance="outline" class="w-100">
+          <mat-label class="custColorGreyish">Enter PAN of the one of the directors</mat-label>
+          <input class="w-100" type="text" matInput formControlName="pan" [(ngModel)]="torusPayData.panOftheDirector">
+        </mat-form-field>
+      </ion-row>
+      <ion-row class="mt-3">
+        <mat-form-field appearance="outline" class="w-100">
+          <mat-label class="custColorGreyish">Enter PAN Owner's Name</mat-label>
+          <input class="w-100" type="text" matInput formControlName="panName" [(ngModel)]="torusPayData.panOwnersame">
+        </mat-form-field>
+      </ion-row>
+      <ion-row class="mt-3">
+        <mat-form-field appearance="outline" class="w-100">
+          <mat-label class="custColorGreyish">Enter CIN</mat-label>
+          <input class="w-100" type="text" matInput formControlName="CIN" [(ngModel)]="torusPayData.enterCin">
+        </mat-form-field>
+      </ion-row>
+      <ion-row class="mt-3">
+        <mat-form-field appearance="outline" class="w-100">
+          <mat-label class="custColorGreyish">Enter Billing Label</mat-label>
+          <input class="w-100" type="text" matInput formControlName="billing"
+            [(ngModel)]="torusPayData.enterBillinglabel">
+        </mat-form-field>
+      </ion-row>
+      <ion-row class="mt-3">
+        <mat-form-field appearance="outline" class="w-100">
+          <mat-label class="custColorGreyish">Address</mat-label>
+          <input class="w-100" type="text" matInput formControlName="address" [(ngModel)]="torusPayData.address">
+        </mat-form-field>
+      </ion-row>
+      <ion-row class="mt-3">
+        <mat-form-field appearance="outline" class="w-100">
+          <mat-label class="custColorGreyish">Pincode</mat-label>
+          <input class="w-100" type="text" matInput formControlName="pincode" [(ngModel)]="torusPayData.pincode" (input)="inputValidator($event)">
+        </mat-form-field>
+      </ion-row>
+      <ion-row>
+        <mat-form-field appearance="outline" class="w-100" matInput>
+          <mat-label class="custColorGreyish">State</mat-label>
+          <mat-select [(ngModel)]="torusPayData.State" formControlName="state" >
+            <mat-option value="Andaman and Nicobar" *ngFor="let item of state" [value]="item.statename">{{item.statename}}
+            </mat-option>
+
+          </mat-select>
+        </mat-form-field>
+      </ion-row>
+
+
+      <ion-row>
+        <mat-form-field appearance="outline" class="w-100">
+          <mat-label class="custColorGreyish">City</mat-label>
+          <mat-select [(ngModel)]="torusPayData.city" formControlName="city">
+            <mat-option value="Mumbai" *ngFor="let item of city" [value]="item.district">{{item.district}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </ion-row>
+
+
+      <ion-row class="form-check">
+        <ion-checkbox checked="true" class="form-check-input" (click)="onTermsChecked($event)" value="" id="defaultCheck1">
+
+        </ion-checkbox>
+        <label class="form-check-label custColorGreyish">
+          Operational Address same as above
+        </label>
+      </ion-row>
+      <ion-row class="form-check">
+        <ion-checkbox checked="true" class="form-check-input" (click)="onTermsChecked($event)" value="" id="defaultCheck1">
+
+        </ion-checkbox>
+        <label class="form-check-label custColorGreyish">
+          I agree to Razorpay Terms & Condition
+        </label>
+      </ion-row>
+
+
+      <ion-footer class="fixed-bottom">
+      <ion-row class="m-2">
+        <button class="btn w-100 custHeightBtn  text-center custBackgroundColorBrightCyan " type="submit"
+          [disabled]="!bussinessDetailForm.valid" [disabled]="ifChecked" (click)="getBusinessDetail()">
+          <span  class="custColorWhite custFontFamilyMuliBold muli-16pt">Continue</span>
+        </button>
+      </ion-row>
+      </ion-footer>
+    </ion-grid>
+
+  </form>
+
+</ion-content>
+</ion-app>
+

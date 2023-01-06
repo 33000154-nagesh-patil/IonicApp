@@ -1,0 +1,156 @@
+{
+    "objectContent": [
+
+        {
+            "contentType": "cardList",
+            "Title": "Recommended Courses",
+            "card": [
+                {
+                    "row1": {
+                        "icon": "assets/icon/Commonicon1.png",
+                        "title": "Basic Computer",
+                        "description": "",
+                        "action": "assets/icon/leftArrowIcon.svg"
+                    },
+                    "row2": {
+                        "col1":  "Price",
+                        "val1": "RS.1",
+                        "col2": "Ratings",
+                        "val2": "4",
+                        "col3": "Level",
+                        "val3": "Beginner"
+                    }
+                },
+                {
+                    "row1": {
+                        "icon": "assets/icon/Commonicon2.png",
+                        "title": "Retail",
+                        "description": "",
+                        "action": "assets/icon/leftArrowIcon.svg"
+                    },
+                    "row2": {
+                        "col1":  "Price",
+                        "val1": "RS.1",
+                        "col2": "Ratings",
+                        "val2": "4",
+                        "col3": "Level",
+                        "val3": "Beginner"
+                    }
+                },
+                {
+                    "row1": {
+                        "icon": "assets/icon/Commonicon3.png",
+                        "title": "Life Insurance",
+                        "description": "",
+                        "action": "assets/icon/leftArrowIcon.svg"
+                    },
+                    "row2": {
+                        "col1":  "Price",
+                        "val1": "RS.1",
+                        "col2": "Ratings",
+                        "val2": "4",
+                        "col3": "Level",
+                        "val3": "Beginner"
+                    }
+                }
+               
+            ]
+        },
+        {
+            "contentType": "cardList",
+            "Title": "Ongoing Courses",
+            "card": [
+                {
+                    "row1": {
+                        "icon": "assets/icon/Commonicon1.png",
+                        "title": "Life Insurance",
+                        "description": "",
+                        "action": "assets/icon/leftArrowIcon.svg"
+                    },
+                    "row2": {
+                        "col1": "started course",
+                        "val1": "22nd Feb, 2022",
+                        "col2": "",
+                        "val2": "",
+                        "col3": "Completion Percentage",
+                        "val3": "80% completed"
+                    }
+                },
+                {
+                    "row1": {
+                        "icon": "assets/icon/Commonicon2.png",
+                        "title": "Mutual Fund",
+                        "description": "",
+                        "action": "assets/icon/leftArrowIcon.svg"
+                    },
+                    "row2": {
+                        "col1": "started course",
+                        "val1": "22nd Feb, 2022",
+                        "col2": "",
+                        "val2": "",
+                        "col3": "Completion Percentage",
+                        "val3": "80% completed"
+                    }
+                },
+                {
+                    "row1": {
+                        "icon": "assets/icon/Commonicon3.png",
+                        "title": "Basic Computer",
+                        "description": "",
+                        "action": "assets/icon/leftArrowIcon.svg"
+                    },
+                    "row2": {
+                        "col1": "started course",
+                        "val1": "22nd Feb, 2022",
+                        "col2": "",
+                        "val2": "",
+                        "col3": "Completion Percentage",
+                        "val3": "80% completed"
+                    }
+                }
+               
+            ]
+        },
+        {
+            "contentType": "cardList",
+            "Title": "Completed Courses",
+            "card": [
+                {
+                    "row1": {
+                        "icon": "assets/icon/Commonicon1.png",
+                        "title": "Account Executive",
+                        "description": "",
+                        "action": "assets/icon/leftArrowIcon.svg"
+                    },
+                    "row2": {
+                        "col1": "Completed Course",
+                        "val1": "18th Jan, 2022",
+                        "col2": "CompletionPercentage",
+                        "val2": "100% completed",
+                        "col3": "Watch Again",
+                        "val3": ""
+                    }
+                },
+                {
+                    "row1": {
+                        "icon": "assets/icon/Commonicon2.png",
+                        "title": "Equity Dealer",
+                        "description": "",
+                        "action": "assets/icon/leftArrowIcon.svg"
+                    },
+                    "row2": {
+                        "col1": "Completed Course",
+                        "val1": "18th Jan, 2022",
+                        "col2": "CompletionPercentage",
+                        "val2": "100% completed",
+                        "col3": "Watch Again",
+                        "val3": ""
+                    }
+                }
+              
+               
+            ]
+        }
+      
+    ]
+}

@@ -1,0 +1,89 @@
+{
+    "Status": 1,
+    "ErrorCode": 0,
+    "MessageType": "I",
+    "Message": "Success",
+    "DocumentList": [
+        {
+            "Sequence": "1",
+            "Document": "PAN",
+            "path":"/PAN",
+            "Status": "Pending"
+        },
+        {
+            "Sequence": "2",
+            "Document": "mPin",
+            "path":"/mPin",
+            "Status": "Pending"
+        },
+        {
+            "Sequence": "3",
+            "Document": "walletSuccess",
+            "path":"/walletSuccess",
+            "Status": "Pending"
+        },
+   
+        {   
+            "Sequence": "4",
+            "Document": "simBinding",
+            "path":"/simBinding",
+            "Status": "Pending"
+        },
+        {
+            "Sequence": "5",
+            "Document": "Selfie",
+            "path":"/Selfie",
+            "Status": "Pending"
+        },
+        {
+            "Sequence": "6",
+            "Document": "WetSign",
+            "path":"/WetSign",
+            "Status": "Pending"
+        },
+        {
+            "Sequence": "7",
+            "Document": "neoPersonalDetails",
+            "path":"/neoPersonalDetails",
+            "Status": "Pending"
+        },
+        {
+            "Sequence": "8",
+            "Document": "otherDetails",
+            "path":"/otherDetails",
+            "Status": "Pending"
+        },
+       {
+            "Sequence": "9",
+            "Document": "Nominee",
+            "path":"/Nominee",
+            "Status": "Pending"
+        },
+        {
+            "Sequence": "10",
+            "Document": "AadharEsign",
+            "path":"/AadharEsign",
+            "Status": "Pending"
+        },
+        {
+            "Sequence": "11",
+            "Document": "neoOtpVerification",
+            "path":"/neoOtpVerification",
+            "Status": "Pending"
+        },
+        {
+            "Sequence": "12",
+            "Document": "neoSuccess",
+            "path":"/neoSuccess",
+            "Status": "Pending"
+        }
+     
+    ],
+    "EsignStatus": 0,
+    "PdfPath": null,
+    "FirstName": "",
+    "MiddleName": "",
+    "LastName": "",
+    "CustomerPanName": "PIYUSH TYAGI",
+    "IsKra": 0
+}

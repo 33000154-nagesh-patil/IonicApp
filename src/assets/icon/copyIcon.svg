@@ -1,0 +1,6 @@
+<svg id="COPY_ICON" data-name="COPY ICON" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+  <g id="copy">
+    <path id="Rectangle-path" d="M11-1H2A3,3,0,0,0-1,2v9a3,3,0,0,0,3,3h9a3,3,0,0,0,3-3V2A3,3,0,0,0,11-1ZM2,12a1,1,0,0,1-1-1V2A1,1,0,0,1,2,1h9a1,1,0,0,1,1,1v9a1,1,0,0,1-1,1Z" transform="translate(1 8)" fill="#039"/>
+    <path id="Shape" d="M10,14h1a3,3,0,0,0,3-3V2a3,3,0,0,0-3-3H2A3,3,0,0,0-1,2V3A1,1,0,0,0,0,4,1,1,0,0,0,1,3V2A1,1,0,0,1,2,1h9a1,1,0,0,1,1,1v9a1,1,0,0,1-1,1H10a1,1,0,0,0,0,2Z" transform="translate(8 1)" fill="#039"/>
+  </g>
+</svg>

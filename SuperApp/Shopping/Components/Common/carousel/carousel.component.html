@@ -1,0 +1,33 @@
+<!-- <ion-content> -->
+  <ion-grid *ngIf="this.data">
+    <ion-slides pager="true" [options]="slideOpts" >
+        <ion-slide  *ngFor="let x of data">
+          <app-creditscore-tracker class="w-100 h-100" [content]="x.content" *ngIf="x.contentType==='creditScore'" ></app-creditscore-tracker>
+          <app-risko-meter class="w-100 h-100" [content]="x.content" *ngIf="x.contentType==='riskometer'"></app-risko-meter>
+          <app-CommonCharts class="w-100 h-100"  [showDonut]="true" [showGraph]="false" [showBar]="false" [donutData]="x" *ngIf="x.contentType == 'Donut'"></app-CommonCharts>
+          <app-CommonCharts class="w-100 h-100" *ngIf="x.graphType === 'bar'" [showDonut]="false" [showGraph]="false" [showBar]="true" [barGraphData]="x"> </app-CommonCharts>
+          <app-line-chart class="w-100 h-100"   *ngIf="x.contentType === 'linearGraph'" [digiBenifit]="x"></app-line-chart>
+        </ion-slide>  
+
+        <!-- <ion-slide *ngIf="x.contentType=='riskometer'">
+        </ion-slide>
+        <ion-slide *ngIf="x.contentType=='Donut'">
+        </ion-slide> -->
+
+
+
+
+        <!-- <ion-slide  >
+          <app-creditscore-tracker [content]="x.content" *ngIf="x.contentType=='creditScore'" ></app-creditscore-tracker>
+          <app-risko-meter [content]="x.content" *ngIf="x.contentType=='riskometer'"></app-risko-meter>
+        </ion-slide> -->
+
+
+
+
+
+
+
+    </ion-slides>
+  </ion-grid>
+<!-- </ion-content> -->

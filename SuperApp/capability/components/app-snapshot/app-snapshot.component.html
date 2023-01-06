@@ -1,0 +1,82 @@
+<!-- <div *ngIf="Data?.Chart">
+  <app-CommanCharts *ngIf="Data?.Chart" [data]="Data.Chart"></app-CommanCharts>
+</div> -->
+
+<!-- <ion-content> -->
+
+<div *ngFor="let x of snapshot">
+  <span class="m-2 custFontFamilyMuliBold muli-18pt custLineHight22 custColorDark">{{x?.title}}</span>
+
+  <div *ngIf="routing == 'ST' || 'RoboAdvisory'">
+    <div *ngIf="x.segmentValues">
+      <app-segment [$data]="x" (explore)="explore($event)"></app-segment>
+    </div>
+  </div>
+  <div *ngIf="routing != 'ST'">
+    <ion-card *ngFor="let y of x?.cardList" >
+      <ion-card-header class="pt-0 ">
+        <div class="custBottom d-flex justify-content-end">
+          <ion-img [src]="imageList?.saveIcon" *ngIf="!y?.row1.selectWatchList" class="custBookmark"
+            (click)="changeBookmark(y)"></ion-img>
+          <ion-img [src]="imageList?.saveIcon2" *ngIf="y?.row1.selectWatchList" class="custBookmark"
+            (click)="changeBookmark(y)"></ion-img>
+        </div>
+      </ion-card-header>
+      <ion-card-content>
+        <!-- ROW ONE -->
+        <ion-row class="w-100 px-1" size="12" (click)="getDetail(y.row1,'')">
+          <ion-col size="3" *ngIf="y?.row1?.icon">
+            <div [ngClass]="y?.row1?.icon? 'icon':'notIcon'">
+              <img [src]="y?.row1?.icon" *ngIf="y?.row1?.icon && environment" />
+          <img [src]="'data:image/png;base64,'+ y?.row1?.icon" *ngIf="y?.row1?.icon && !environment" />
+            </div>
+          </ion-col>
+          <ion-col size="8">
+            <p class="custFontFamilyMuliSemiBold custLineHight20 muli-14pt custColorDark custTitle"
+              *ngIf="y?.row1?.title">
+              {{ y?.row1?.title }}
+            </p>
+            <p class="custFontFamilyMuliRegular muli-10pt custLineHight15 custTitle text-nowrap"
+              *ngIf="y?.row1?.subTitle">
+              {{ y?.row1?.subTitle }}
+            </p>
+            <p class="custFontFamilyMuliRegular muli-10pt custLineHight15 custTitle text-wrap"
+              *ngIf="y?.row1?.description">
+              {{ y?.row1?.description }}
+            </p>
+          </ion-col>
+          <ion-col *ngIf="y?.row1?.button">
+            <button
+              class="text-capitalize custBtnExplore custColorBrightCyan custFontFamilyMuliRegular muli-14pt custButtonOutLine">
+              {{y?.row1?.button}}
+            </button>
+          </ion-col>
+        </ion-row>
+
+        <!-- ROW TWO -->
+        <ion-row class="w-100 px-1 custPositiontop">
+          <ion-col class="d-flex flex-column p-2 mx-2" *ngFor="let x of y?.row2|keyvalue: originalOrder">
+            <p *ngIf="x.key" class="custFontFamilyMuliRegular muli-12pt custLineHight15 text-nowrap">{{x.key}}</p>
+            <p class="custFontFamilyMuliBold custColorDark muli-14pt custLineHight18 custColorDark float-end text-nowrap"
+              *ngIf="x.key == 'Returns' && x.value != null"
+              [ngClass]="x.value<0?'custColorcustFadedRed':'custColorParakeetGreen'">
+              <img [src]="x.value<0?'assets/icon/redDownArrow.svg':'assets/icon/green-up-arrow.svg'" class="arrow">
+              {{x.value}}
+            </p>
+            <p class="custFontFamilyMuliBold custColorDark muli-14pt custLineHight18 custColorDark float-end text-nowrap"
+              *ngIf="x.key != 'Returns'">
+              {{x.value.toString().replace('â‚¹', '₹')}}
+          </ion-col>
+        </ion-row>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-row [size]="'12'" *ngIf="x?.cta && routing != 'RoboAdvisory'" class="text-center pb-2 cta">
+      <button class="custheight text-center custBtnExplore custLineHight14 custLineHight18 px-3 "
+        (click)="explore(x?.title)">{{x.cta}}</button>
+    </ion-row>
+  </div>
+</div>
+
+
+<!-- </ion-content> -->

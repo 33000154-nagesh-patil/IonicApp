@@ -1,0 +1,96 @@
+
+{
+    "BULK" :[
+        {
+          "title": "ITC",
+          "description": "NSE",
+          "sold":"Bought",
+          "date1":"2021 May 28",
+          "amount": "2,44,00,000 @ 627.00",
+          "date2": "2021 June 10"
+    
+        },
+        {
+            "title": "TCS",
+            "description": "NSE",
+            "sold":"Bought",
+            "date1":"2021 May 28",
+            "amount": "2,44,00,000 @ 627.00",
+            "date2": "2021 June 10"
+    
+        },
+        {
+            "title": "ONGC",
+            "description": "NSE",
+            "sold":"Sold",
+            "date1":"2021 May 28",
+            "amount": "2,44,00,000 @ 627.00",
+            "date2": "2021 June 10"
+    
+        },{
+            "title": "IOC",
+            "description": "NSE",
+            "sold":"Bought",
+            "date1":"2021 May 28",
+            "amount": "2,44,00,000 @ 627.00",
+            "date2": "2021 June 10"
+    
+        },{
+            "title": "SBI",
+            "description": "NSE",
+            "sold":"Sold",
+            "date1":"2021 May 28",
+            "amount": "2,44,00,000 @ 627.00",
+            "date2": "2021 June 10"
+    
+        }
+        ],
+
+
+        "BLOCK" :[
+          {
+            "title": "Nifty Midcop Select",
+          "description": "NSE",
+          "sold":"Bought",
+          "date1":"2021 May 28",
+          "amount": "2,44,00,000 @ 627.00",
+          "date2": "2021 June 10"
+      
+          },
+          {
+            "title": "Nifty Midcop Select",
+          "description": "NSE",
+          "sold":"Bought",
+          "date1":"2021 May 28",
+          "amount": "2,44,00,000 @ 627.00",
+          "date2": "2021 June 10"
+      
+          },
+          {
+            "title": "Nifty Midcop Select",
+          "description": "NSE",
+          "sold":"Bought",
+          "date1":"2021 May 28",
+          "amount": "2,44,00,000 @ 627.00",
+          "date2": "2021 June 10"
+      
+          },{
+            "title": "Nifty Midcop Select",
+          "description": "NSE",
+          "sold":"Bought",
+          "date1":"2021 May 28",
+          "amount": "2,44,00,000 @ 627.00",
+          "date2": "2021 June 10"
+      
+          },{
+            "title": "Nifty Midcop Select",
+          "description": "NSE",
+          "sold":"Bought",
+          "date1":"2021 May 28",
+          "amount": "2,44,00,000 @ 627.00",
+          "date2": "2021 June 10"
+      
+          }
+      
+          ]
+}

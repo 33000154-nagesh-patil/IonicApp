@@ -1,0 +1,40 @@
+{
+    "productName":"MF",
+    "name":"Mutual Fund",
+    "segments":[
+        {
+            "name":"SIP",
+            "value":"sip",
+            "placeHolder":"Enter Amount",
+            "unit":"₹"
+        },
+        {
+            "name":"LumpSum",
+            "value":"lumpSum",
+            "placeHolder":"Enter Amount",
+            "unit":"₹"
+        }
+    ],
+    "pricePerUnit":"1",
+    "taxes":[
+        {"type":"CGST","taxPercentage":"1.5"},
+        {"type":"SGST","taxPercentage":"1.5"},
+        {"type":"IGST","taxPercentage":"3.0"}
+    ],
+    "buttons":{
+        "sip":[
+            {"name":"+ ₹1000","value":1000},
+            {"name":"+ ₹5000","value":5000},
+            {"name":"+ ₹10000","value":10000}
+        ],
+        "lumpSum":[
+            {"name":"+ ₹1000","value":1000},
+            {"name":"+ ₹5000","value":5000},
+            {"name":"+ ₹10000","value":10000}
+        ]
+    },
+    "stopWatch":false,
+    "stocks":false,
+    "mf":true,
+    "edCourses":false
+}

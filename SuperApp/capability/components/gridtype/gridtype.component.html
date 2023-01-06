@@ -1,0 +1,140 @@
+<!-- <ion-grid >
+  <div *ngFor="let item of data">
+    <div *ngIf="item.type == 'grid'">
+      <span class="custFontFamilyMuliBold muli-16pt custLineHight22 custColorDark">{{item.label}}</span>
+    <ion-row [ngClass]="item.config.layoutType == 'horizontal'?'container':''">
+      <ion-col [size]="item.config.col" *ngFor="let x of item.data">
+        <ion-card class="custBackgroundColorWhite p-0 m-0 " >
+          <ion-card-content class="backgroundColor"  >
+            <ion-row >
+
+              <ion-col [size]="'10.5'">
+                <p class="custFontFamilyMuliSemiBold custLineHight20 muli-14pt custColorWhite">
+                  {{x.title}}
+                </p>
+                <p
+                  class="custFontFamilyMuliRegular muli-12pt custLineHight16 custColorGreyish">{{x.description}}
+              </p>
+              </ion-col>
+
+            </ion-row>
+            <ion-row>
+              <ion-col [size]="'12'">
+                <button type="button"
+                  class="btn custBtnExplore text-capitalize custColorWhite custFontFamilyMuliRegular muli-14pt custButtonOutLine float-start">{{x.action}}</button>
+                <ion-img [src]="imageList?.growthArrow" class="custStockIcon float-end growthArrow"></ion-img>
+              </ion-col>
+
+
+            </ion-row>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </div>
+  </div>
+</ion-grid> -->
+
+<ion-grid>
+  <div *ngFor="let item of data">
+    <div *ngIf="item.type == 'grid' && item.Title">
+      <span class="custFontFamilyMuliBold muli-18pt custLineHight22 px-2 custColorDark">{{item.Title}}</span>
+    </div>
+    <div *ngIf="item.type == 'grid'">
+      <span class="custFontFamilyMuliBold muli-16pt custLineHight22 custColorDark">{{item?.label}}</span>
+      <ion-row [ngClass]="item?.config?.layoutType == 'horizontal'?'container':''" 
+      >
+        <ion-col  [ngClass]="item?.config?.col==4?'p-0 m-0':''" [size]="item?.config?.col" *ngFor="let x of item?.content" (click)="print(x?.cardTitle,x?.action)" [ngClass]="x.coloredCard==true?'coloredCard':''">
+          <ion-card [ngClass]="item?.config?.col==4?'ion-no-margin ion-no-padding':''">
+            <ion-card-content>
+              <ion-row class="mt-1 mb-1" *ngIf="x?.cardTitle !='Bill Payments'">
+                <ion-img [src]="x?.icon" *ngIf="x?.icon" class="m-1 float-start"></ion-img>
+                <span class="m-1 custFontFamilyMuliBold custLineHight20 muli-13pt custColorDark">
+                  {{x?.cardTitle}}
+                </span>
+              </ion-row>
+              <ion-row  *ngIf="x?.cardTitle=='Bill Payments'" class="mt-1 mb-1">
+                <ion-img [src]="x?.icon" *ngIf="x?.icon" class="m-1 custStockIcon float-start"></ion-img>
+                <span class="m-1 custFontFamilyMuliBold custLineHight20 muli-13pt custColorDark">
+                  {{x?.cardTitle}}
+                </span>
+              </ion-row>
+
+              <ion-row *ngIf="item?.config?.col=='6'">
+                <span
+                  class="custFontFamilyMuliRegular muli-11pt custLineHight16 custColorBattlePGry">{{x?.cardDescription}}
+                  
+                </span>
+              </ion-row>
+              <ion-row *ngIf="item?.config?.col=='6' && x.action">
+                <button type="button"
+                  class="w-100 m-2 custBtnExplore text-capitalize custColorBrightCyan custFontFamilyMuliRegular muli-14pt custButtonOutLine float-end">{{x?.action}}
+                </button>
+              </ion-row>
+              <ion-row *ngIf="item?.config?.col!='6'">
+                <ion-col [size]="item?.config?.row2col1">
+                  <app-cardddynamic *ngIf="x" [data]="x" style="width: 80%;display: inherit;"></app-cardddynamic>
+
+                  <!-- <span
+                  class="custFontFamilyMuliBold muli-12pt custLineHight16 custColorBattlePGry">{{x?. percentChange}}
+                </span> -->
+                </ion-col>
+                <ion-col *ngIf="x?.action" [size]="item?.config?.row2col2">
+                  <button type="button"
+                    class="m-2 custBtnExplore text-capitalize custColorBrightCyan custFontFamilyMuliRegular muli-14pt custButtonOutLine float-end">{{x.action}}
+                  </button>
+                </ion-col>
+              </ion-row>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </div>
+  </div>
+</ion-grid>
+
+<!-- <ion-grid>
+
+  <ion-row *ngFor="let x of objectContent">
+    {{x.Title}}
+    <ion-col [size]="x.class" *ngFor="let content of x.content">
+      <ion-card >
+        {{content.cardTitle}}
+      </ion-card>
+    </ion-col>
+
+  </ion-row>
+</ion-grid> -->
+
+<!-- <ion-row>
+  <ion-col [size]="'6'" *ngFor="let x of data">
+    <ion-card class="custBackgroundColorWhite card cardItem p-2">
+        <ion-row>
+          <ion-col [size]="'3'">
+            <ion-img [src]="x?.logo" class="custStockIcon float-start"></ion-img>
+          </ion-col>
+          <ion-col [size]="'9'">
+            <ion-row>
+              <span class="custFontFamilyMuliSemiBold custLineHight20 muli-14pt custColorDark">
+                {{x?.title}}
+              </span>
+            </ion-row>
+
+          </ion-col>
+        </ion-row>
+        <ion-row>
+            <span
+              class="custFontFamilyMuliRegular muli-10pt custLineHight16 custColorBattlePGry">{{x?.description}}</span>
+        </ion-row>
+        <ion-row>
+          <button type="button"
+            class="w-100 custBtnExplore text-capitalize custColorBrightCyan custFontFamilyMuliRegular muli-14pt custButtonOutLine float-end">Explore
+           </button>
+        </ion-row>
+
+    </ion-card>
+  </ion-col>
+</ion-row> -->
+
+
+

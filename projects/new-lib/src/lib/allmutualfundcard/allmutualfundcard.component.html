@@ -1,0 +1,129 @@
+<ion-row *ngIf="filterWant" >
+  <ion-col [size]="'12'">
+    <ion-row class="filterFixed mb-3">
+      <ion-col [size]="'6'">
+        <ion-row class="d-flex justify-content-center align-items-center">
+          <ion-col [size]="'2'" class="pe-0 ps-2">
+            <ion-img [src]="imageList?.filterIcon" class="custImgExpo text-center mt-2"></ion-img>
+          </ion-col>
+          <ion-col [size]="'10'" class="ps-0" (click)="FilterItem()">
+            <span class="custFontFamilyMuliBold muli-12pt custLineHight18 custColorDarkishBlue">{{'filter' | translate}}</span>
+            <ion-badge class=" custcss" color="secondary">{{countingFilter}}</ion-badge>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+      <ion-col [size]="'6'">
+        <ion-row class="d-flex justify-content-center align-items-center" (click)="ChangeYearlyData()">
+          <ion-col [size]="'10'" class="text-end pe-0 ps-3">
+            <span class="custFontFamilyMuliBold muli-12pt custLineHight18 custColorDarkishBlue">{{returndata}}</span>
+          </ion-col>
+          <ion-col [size]="'2'" class="text-end ps-2">
+            <ion-img [src]="imageList?.sortIcon" class="custImgExpo mt-2"></ion-img>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+  </ion-col>
+</ion-row>
+
+<ion-card class="mb-3 custmargin " *ngFor="let x of mfCardData" >
+  <ion-card-header class="pt-0 ">
+    <div  class="custBottom d-flex justify-content-end">
+      <ion-img [src]="imageList?.saveIcon" *ngIf="x?.plan_id" class="custBookmark" (click)="changeBookmark(x)"></ion-img>
+      <ion-img [src]="imageList?.saveIcon2" *ngIf="!x?.plan_id" class="custBookmark" (click)="changeBookmark(x)"></ion-img>
+    </div>
+  </ion-card-header>
+  <ion-card-content (click)="investsip(x)">
+    <ion-row>
+      <ion-col class="text-start mt-2 px-0" *ngIf="checkNeed">
+        <ion-checkbox color="secondary" class="mt-1 checkbox" (ionChange)="checkBox()" mode="md" [checked]="clicked"></ion-checkbox>
+        </ion-col>
+        <ion-col [size]="'2'" class="ps-0 w-100 d-flex justify-content-end">
+         <ion-img  *ngIf="x?.img" [src]="x.img" class="something"></ion-img>
+        </ion-col>
+        <ion-col [size]="'8'">
+          <ion-row><p class="custFontFamilyMuliRegular muli-24pt custLineHight20 custColorDark mt-2" *ngIf="x?.Funds_title">{{x?.Funds_title}}</p></ion-row>
+          <ion-row><p class="custFontFamilyMuliRegular muli-24pt custLineHight20 custColorDark mt-2" *ngIf="x?.short_name">{{x?.short_name}}</p></ion-row>
+        </ion-col>
+        <ion-col [size]="'2'" class="ps-4 text-end">
+          <ion-img [src]="imageList?.leftArrowIcon" class="custInvestArrow"></ion-img>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col [size]="'3'" class="px-0">
+        <ion-row><p class="custFontFamilyMuliRegular muli-10pt custLineHight15 mb-0">Min.Invest</p></ion-row>
+        <ion-row class="mt-2" *ngIf="x?.minInvest"><p class="custFontFamilyRobotoCondensed custFontFamilyMuliITF-Rupee muli-14pt custLineHight18 text-center custColorDark" >₹{{x?.minInvest}}</p></ion-row>
+        <ion-row class="mt-2" *ngIf="x?.min_initial_investment"><p class="custFontFamilyRobotoCondensed custFontFamilyMuliITF-Rupee muli-14pt custLineHight18 text-center custColorDark">₹{{x?.min_initial_investment}}</p></ion-row>
+      </ion-col>
+      <ion-col [size]="'6'" class=" d-flex flex-column">
+        <ion-row>
+        <p class="custFontFamilyMuliRegular muli-10pt custLineHight15 ion-no-padding ms-2">Category Return</p>
+        </ion-row>
+         <ion-row class="align">
+        <ion-col class="muli-14pt custColorDark  custFontFamilyRobotoCondensed ion-no-padding " *ngIf="returndata=='3Y Returns'">{{x?.min_ret_3year}}%</ion-col>
+        <ion-col class="muli-14pt custColorDark  custFontFamilyRobotoCondensed ion-no-padding " *ngIf="returndata=='5Y Returns'">{{x?.min_ret_5year}}%</ion-col>
+        <ion-col class="muli-14pt custColorDark  custFontFamilyRobotoCondensed ion-no-padding " *ngIf="returndata=='1Y Returns'">{{x?.minPer}}%</ion-col>
+        <ion-col [ngClass]="(x?.minPer == '0')?'negative2':'negative'"  *ngIf="returndata=='1Y Returns'"><ion-progress-bar color="secondary" [value]="(x?.fundPer / 100)"></ion-progress-bar></ion-col>
+        <ion-col [ngClass]="(x?.minPer == '0')?'negative2':'negative'"  *ngIf="returndata=='3Y Returns'"><ion-progress-bar color="secondary" [value]="(x?.ret_3year / 100)"></ion-progress-bar></ion-col>
+        <ion-col [ngClass]="(x?.minPer == '0')?'negative2':'negative'"  *ngIf="returndata=='5Y Returns'"><ion-progress-bar color="secondary" [value]="(x?.ret_5year / 100)"></ion-progress-bar></ion-col>
+        <ion-col class="muli-14pt custColorDark custFontFamilyRobotoCondensed text-start ion-no-padding "*ngIf="returndata=='3Y Returns'">{{x?.max_ret_3year}}%</ion-col>
+        <ion-col class="muli-14pt custColorDark custFontFamilyRobotoCondensed text-start ion-no-padding"  *ngIf="returndata=='5Y Returns'">{{x?.max_ret_5year}}%</ion-col>
+        <ion-col class="muli-14pt custColorDark custFontFamilyRobotoCondensed text-start ion-no-padding" *ngIf="returndata=='1Y Returns'">{{x?.maxPer}}%</ion-col>
+        </ion-row>
+      </ion-col>
+      <ion-col [size]="'3'">
+        <ion-row class="ms-2"><p class="custFontFamilyMuliRegular muli-10pt custLineHight15">Returns</p></ion-row>
+        <ion-row> 
+          <img [src]="imageList?.caretUpSharp" *ngIf="returndata=='1Y Returns' && (x?.fundPer > 0)" class=" something2 mx-1">
+          <span class="returnPercent muli-14pt custColorParakeetGreen custFontFamilyRobotoCondensed" *ngIf="returndata=='1Y Returns' && (x?.fundPer > 0)" >{{x?.fundPer  }}%</span>
+          <img [src]="imageList?.caretUpSharp" *ngIf="returndata=='3Y Returns' && (x?.ret_3year > 0)" class=" something2 mx-1">
+          <span class="returnPercent muli-14pt custColorParakeetGreen custFontFamilyRobotoCondensed" *ngIf="returndata=='3Y Returns' && (x?.ret_3year > 0)" >{{x?.ret_3year}}%</span>
+          <img [src]="imageList?.caretUpSharp" *ngIf="returndata=='5Y Returns' && (x?.ret_5year > 0)" class=" something2 mx-1">
+          <span class="returnPercent muli-14pt custColorParakeetGreen custFontFamilyRobotoCondensed" *ngIf="returndata=='5Y Returns' && (x?.ret_5year > 0)" >{{x?.ret_5year}}%</span>
+          <img *ngIf="returndata=='1Y Returns' && (x?.fundPer <= 0)" [src]="imageList?.redIcon" class="mt-2 mx-1">
+          <span class="returnPercent muli-14pt custFontFamilyRobotoCondensed custColorcustFadedRed" *ngIf="returndata=='1Y Returns' && (x?.fundPer <= 0)" >{{x?.fundPer}}%</span>
+          <img *ngIf="returndata=='3Y Returns' && (x?.ret_3year <= 0)" [src]="imageList?.redIcon" class="mt-2 mx-1">
+          <span class="returnPercent muli-14pt custFontFamilyRobotoCondensed custColorcustFadedRed" *ngIf="returndata=='3Y Returns' && (x?.ret_3year <= 0)" >{{x?.ret_3year}}%</span>
+          <img *ngIf="returndata=='5Y Returns' && (x?.ret_5year <= 0)" [src]="imageList?.redIcon" class="mt-2 mx-1">
+          <span class="returnPercent muli-14pt custFontFamilyRobotoCondensed custColorcustFadedRed" *ngIf="returndata=='5Y Returns' && (x?.ret_5year <= 0)" >{{x?.ret_5year}}%</span>
+        </ion-row>
+      </ion-col>
+      </ion-row>
+    </ion-card-content>
+  </ion-card>
+
+ 
+
+  <ion-row *ngIf="MutualFundPage">
+    <ion-col class="text-center">
+      <button class="btn btn-s custButtonOutLine text-center custColorBrightCyan"  (click)="getInvestPage(header)"><span class="custColorBrightCyan text-capitalize custFontFamilyMuliRegular muli-16pt">View All</span></button>
+    </ion-col>
+  </ion-row>
+  <ion-row *ngIf="FundsInProdfolio">
+    <ion-col class="text-center">
+      <button class="btn btn-s custButtonOutLine text-center custColorBrightCyan"  (click)="getMoreData()"><span class="custColorBrightCyan text-capitalize custFontFamilyMuliRegular muli-16pt">View All</span></button>
+    </ion-col>
+  </ion-row>
+  <div class="custModalContainer p-10" *ngIf="SelectWatchlist">
+    <div id="showModalSMGSucces" class="modal-content custCenterAlign">
+    <ion-row class="w-100">
+      <ion-col >
+        <span class="custColorDark custFontFamilyMuliBold muli-18pt">Existing Watchlist</span>
+      </ion-col>
+      <ion-col >
+        <span class="custColorBattlePGry ustFontFamilyMuliBold muli-18pt">Create Watchlist</span>
+      </ion-col>
+    </ion-row>
+    <ion-row class="w-100">
+      <ion-radio></ion-radio><span>Watchlist</span>
+    </ion-row>
+    
+    <ion-row  class="w-100">
+      <ion-col class=" mb-5 ">
+        <button class="btn w-100 text-center custBackgroundColorBrightCyan" (click)="SelectedWatchList()" >
+          <span class="custColorWhite custFontFamilyMuliBold muli-16pt">Create</span>
+        </button>
+      </ion-col>
+    </ion-row>
+  </div>
+  </div>

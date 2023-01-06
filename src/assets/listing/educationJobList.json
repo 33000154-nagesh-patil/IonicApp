@@ -1,0 +1,52 @@
+{
+    "": {
+        "heading": {
+            "heading": "Jobs",
+            "discription": "Discover all Jobs"
+        },
+        "card": [
+            {
+                "row1": {
+                    "icon": "",
+                    "title": "Chartered Accountant",
+                    "description": "Torus",
+                    "action": ""
+                },
+                "row2": {
+                    "col1": "Price",
+                    "val1": "₹40,000-₹90,000",
+                    "col2": "",
+                    "va12": "Apply Now"
+                }
+            },
+            {
+                "row1": {
+                    "icon": "",
+                    "title": "UI",
+                    "description": "Torus",
+                    "action": ""
+                },
+                "row2": {
+                    "col1": "Price",
+                    "val1": "₹40,000-₹90,000",
+                    "col2": "",
+                    "va12": "Apply Now"
+                }
+            },
+            {
+                "row1": {
+                    "icon": "",
+                    "title": "Backend Developer",
+                    "description": "Torus",
+                    "action": ""
+                },
+                "row2": {
+                    "col1": "Price",
+                    "val1": "₹40,000-₹90,000",
+                    "col2": "",
+                    "va12": "Apply Now"
+                }
+            }
+        ]
+    }
+}

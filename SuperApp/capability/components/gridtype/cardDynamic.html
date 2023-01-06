@@ -1,0 +1,33 @@
+<ng-container *ngIf="item">
+   
+    <span
+  class="custFontFamilyMuliBold muli-12pt custLineHight16"
+  [ngClass]="item.color"
+>
+  {{item?.cardDescription}} </span
+><br />
+<span
+  *ngIf="item.color"
+  class="custFontFamilyMuliBold muli-12pt custLineHight16"
+  [ngClass]="item.color"
+  >{{item.lossAndGain }}
+</span>
+<ion-icon
+  name="caret-up"
+  class="custGreenTick"
+  *ngIf="item.color&&item.lossAndGain > 0"
+></ion-icon>
+<ion-icon
+  name="caret-down"
+  class="custRedTick"
+  *ngIf="item.color&&item.lossAndGain < 0"
+></ion-icon>
+<br />
+<span
+  *ngIf="item.color"
+  class="custFontFamilyMuliBold muli-12pt custLineHight16"
+  [ngClass]="item.color"
+  >{{item.lossAndGainPer}} </span
+><br />
+
+</ng-container>

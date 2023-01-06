@@ -1,0 +1,16 @@
+<ng-container  *ngIf="custDataFlag=='False';else second" >
+  <lib-customerdata [metalType]="metalType" class="w-100 h-100" (custDatastatus)="getcustData($event)"></lib-customerdata>
+</ng-container>
+<ng-template #second>
+  <ng-container  *ngIf="panFlag=='False';else third"  >
+  <lib-pan-card class="w-100 h-100"  [imageList]="imageList" [loginCustomerGuId]="localCustGuId" [currentModuleType]="currentFetcherModule" [panDetails]="pankyc" (getPanStatus)="panEmitted($event)"></lib-pan-card>
+  <!-- <lib-pan-digi-gold [imageList]="imageList" [currentModuleType]="currentFetcherModule" [panDetails]="pankyc" (panDetailsFilled)="panEmitted($event)"></lib-pan-digi-gold> -->
+  </ng-container>
+</ng-template >
+
+<ng-template #third >
+  <ng-container *ngIf="bankFlag=='False'">
+    <lib-bank-details class="w-100 h-100" [loginCustomerGuId]="localCustGuId" [imageList]="imageList" (Bankdetails)="bankEmitted($event);openModal()" [name]="name" [bankDetails]="bankKyc" [currentModuleType]="currentFetcherModule"></lib-bank-details>
+  </ng-container>
+</ng-template>
+

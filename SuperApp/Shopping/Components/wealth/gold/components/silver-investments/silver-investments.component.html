@@ -1,0 +1,53 @@
+<ion-grid class="custGrid">
+  <ion-row>
+    <ion-col [size]="'12'" class="pdingleft">
+      <ion-row class="copltmargin">
+        <ion-col [size]="'1'">
+          <h1></h1>
+        </ion-col>
+      </ion-row>
+    </ion-col>
+    <ion-col [size]="'12'" class="copldtmargin">
+      <p class="muli-12pt custFontFamilyMuliRegular custLineHight22 custColorBattlePGry px-3 mb-0">An overview of your
+        Silver investments</p>
+    </ion-col>
+  </ion-row>
+
+  <ion-card class="p-2">
+
+    <ion-row>
+      <ion-col [size]="'12'" class="mx-2">
+        <ion-row class="custFontFamilyMuliRegular muli-12pt custColorGreyish ">Current Rate/gm</ion-row>
+        <ion-row>
+          <ion-col [size]="'2.5'" class="custFontFamilyRobotoCondensed muli-16pt  custColorDark px-0" >{{rupeesSymbol}}{{price}} </ion-col>
+
+        </ion-row>
+        <ion-row class="custFontFamilyMuliRegular muli-10pt custColorGreyish ">as on {{newDate | date}}</ion-row>
+      </ion-col>
+    </ion-row>
+
+
+    <div class="containerMain">
+      <div [ngStyle]=" aboveValue && { 'width': labelCount*22 + '%' } || belowValue && { 'width': '500px' } ">
+          <div class="container">
+            <canvas height="240px" id="linechart2" width="0"></canvas>
+          </div>
+      </div>
+    </div>
+
+
+    <ion-row>
+      <ion-col [size]="'6'" class=" custFontFamilyMuliRegular muli-12pt custColorGreyish mt-1">Invested Amount</ion-col>
+      <!-- <ion-col [size]="'4'" class=" muli-12pt custColorGreyish mt-1 text-center">Current Value</ion-col> -->
+      <ion-col [size]="'6'" class=" muli-12pt custColorGreyish mt-1 text-end">Total Silver Holdings</ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col [size]="'6'" class="custFontFamilyRobotoCondensed muli-14pt custColorDark pt-0 ">{{rupeesSymbol}}{{silverholding}}</ion-col>
+      <!-- <ion-col [size]="'4'" class=" custFontFamilyRobotoCondensed muli-14pt custColorParakeetGreen pt-0  text-center">{{rupeesSymbol}}79,388.25</ion-col> -->
+      <ion-col [size]="'6'" class=" custFontFamilyRobotoCondensed muli-14pt custColorRed  pt-0 text-end custColorParakeetGreen">{{silverholdinggram}}gm</ion-col>
+    </ion-row>
+
+
+  </ion-card>
+
+</ion-grid>

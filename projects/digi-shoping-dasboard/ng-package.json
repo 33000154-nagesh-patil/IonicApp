@@ -1,0 +1,7 @@
+{
+  "$schema": "../../node_modules/ng-packagr/ng-package.schema.json",
+  "dest": "../../dist/digi-shoping-dasboard",
+  "lib": {
+    "entryFile": "src/projects.ts"
+  }
+}

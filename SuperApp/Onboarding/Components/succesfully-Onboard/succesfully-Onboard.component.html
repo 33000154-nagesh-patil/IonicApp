@@ -1,0 +1,68 @@
+<ion-content class="contentBackground">
+    <ion-grid class="w-100 h-100 custCenterAlign">
+
+      <ion-row class="custCenter w-100">
+        <ion-col [size]="'12'" class="custTextAlignCenter">
+          <ion-img [src]="imageList?.succsessIcon" class="custImgSucc"></ion-img>
+        </ion-col>
+        <ion-col [size]="'12'" class="custPadding ">
+          <!-- <span *ngIf="appName != 'Aqube'"
+            class="custFontFamilyMuliBold muli-22pt custLineHight30 custColorDark">{{'successFullMessage' |
+            translate}}</span> -->
+          <!-- <span *ngIf="appName == 'Aqube'" class="custFontFamilyMuliBold muli-22pt custLineHight30 custColorDark">{{'successFullMessageAq' |
+            translate}}</span> -->
+          <div *ngIf="appName == 'Aqube'"
+            class="custFontFamilyMuliSemiBold muli-22pt custLineHight22 custCenter custColorDark text-start">Thank You,</div><br>
+          <div *ngIf="appName == 'Aqube'"
+            class="custFontFamilyMuliSemiBold muli-16pt custLineHight22 custCenter custColorDark text-start">
+            <!-- {{'successFullMessageAq1'
+            | translate}} -->
+            You are now a registered user.
+            <!-- & have completed following process: -->
+          </div>
+          <div *ngIf="appName == 'Aqube'"
+            class="custFontFamilyMuliSemiBold muli-16pt custLineHight22 custCenter custColorDark text-start">
+            <!-- {{'successFullMessageAq1'
+            | translate}} -->
+            Your account will get open within 48 hours.
+            <!-- & have completed following process: -->
+          </div>
+          <!-- <br> -->
+          <!-- <span *ngIf="appName == 'Aqube'"
+            class="custFontFamilyMuliSemiBold muli-16pt custLineHight30 custColorDark text-center">{{'successFullMessageAq2'
+            | translate}}</span> -->
+        </ion-col>
+      </ion-row>
+      <ion-col [size]="'12'" class="fixed-bottom custPadding" *ngIf="showData">
+        <button class="btn w-100 text-center custBackgroundColorBrightCyan" (click)="ExploreApp()">
+          <!-- <span *ngIf="appName != 'Aqube'"
+            class="custColorWhite custFontFamilyMuliBold muli-16pt">{{'continueAccountSetup' | translate}}</span> -->
+            Explore App
+          <span class="custColorWhite custFontFamilyMuliBold muli-16pt"></span>
+        </button>
+      </ion-col>
+
+      <ion-col [size]="'12'" class="fixed-bottom custPadding" *ngIf="!showData">
+        <button class="btn w-100 text-center custBackgroundColorBrightCyan" (click)="ExploreApp()">
+          <!-- <span *ngIf="appName != 'Aqube'"
+            class="custColorWhite custFontFamilyMuliBold muli-16pt">{{'continueAccountSetup' | translate}}</span> -->
+          <span class="custColorWhite custFontFamilyMuliBold muli-16pt">
+            <a href="https://reportscug.reliancesmartmoney.com/SuperPartnerBPP/SuperAppBpp/LedgerReport.aspx" class="custColorDarkishBlue text-decoration-none">Explore</a>
+            </span>
+        </button>
+      </ion-col>
+
+      <!-- <ion-row class="stepper_padding">
+        <ul class="StepProgress mt-3">
+          <li *ngFor="let x of progressBar" class="w-100"
+            [ngClass]="x?.Status==='Pass' ?'StepProgress-item is-done':'StepProgress-item current'">
+            <p class="custFontFamilyMuliBold muli-16pt">{{x?.OnboardingSteps}}
+            </p>
+            <p *ngIf="x?.span" class="custFontFamilyMuliRegular muli-10pt custLineHight22 custColorGreyish">{{x?.span}}</p>
+          </li>
+        </ul>
+      </ion-row> -->
+    </ion-grid>
+
+
+  </ion-content>

@@ -1,0 +1,1060 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-grid>
+      <ion-row>
+        <ion-col [size]="'0.7'" class="text-center mt-2">
+          <ion-img
+            [src]="imageList?.arrow"
+            class="custWithoutTextImg"
+            (click)="back()"
+          ></ion-img>
+        </ion-col>
+        <ion-col [size]="'8'">
+          <span
+            class="custFontFamilyMuliBold muli-16pt custLineHight40 ml-10 custColorBlack px-3"
+            >{{ stockData?.SYMBOL }}</span
+          >
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="contentBackground">
+  <div class="mt-3 scroll scrollable">
+    <div *ngIf="passme">
+      <ion-row class="mx-3">
+        <ion-col [size]="'4'">
+          <ion-segment
+            (ionChange)="segmentChanged($event)"
+            [(ngModel)]="type"
+            class="custBackgroundColorCyanBlue custBorderRadious"
+          >
+            <ion-segment-button
+              value="S"
+              [ngClass]="
+                type === 'S'
+                  ? 'bgSell custColorWhite'
+                  : 'custColorDark custOptacity'
+              "
+              class="custSegment"
+            >
+              <ion-label
+                class="custFontFamilyMuliBold muli-12pt custLineHight10 text-center text-capitalize"
+              >
+                Sell</ion-label
+              >
+            </ion-segment-button>
+            <ion-segment-button
+              value="B"
+              [ngClass]="
+                type === 'B'
+                  ? 'custBackgroundColorParakeetGreen custColorWhite'
+                  : 'custColorDark custOptacity'
+              "
+              class="custSegment"
+            >
+              <ion-label
+                class="custFontFamilyMuliBold muli-12pt custLineHight14 text-center text-capitalize"
+                >Buy
+              </ion-label>
+            </ion-segment-button>
+          </ion-segment>
+        </ion-col>
+        <ion-col [size]="'8'">
+          <span
+            class="custFontFamilyMuliRegular muli-12pt custLineHight28 float-end custColorWarmGrey1 custFontFamilyMuliBold"
+          >
+            <span
+              class="custFontFamilyMuliBold custColorParakeetGreen muli-22pt"
+            >
+              .</span
+            >
+            Live Market
+          </span>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <ion-card>
+            <ion-row>
+              <ion-col>
+                <ion-row class="text-center margintoggle">
+                  <ion-col
+                    class="text-end"
+                    [ngClass]="
+                      stockText == 'BSE'
+                        ? 'custColorDark'
+                        : 'custColorWarmGrey1'
+                    "
+                  >
+                    <span class="muli-14pt custFontFamilyMuliBold custPosition"
+                      >₹{{ stockData?.LOWER_LIMIT }}</span
+                    >
+                    <span
+                      class="muli-14pt mx-1 custPosition custLineHight18 custFontFamilyMuliBold"
+                      >BSE</span
+                    >
+                  </ion-col>
+                  <ion-col [size]="'2.5'" class="togglePaddtOP text-center">
+                    <ion-toggle
+                      class="me-5 custPsitiontoggle"
+                      [checked]="stockData.EXCHANGE === 'NSE' ? true : false"
+                      (click)="changeColor(color)"
+                    ></ion-toggle>
+                  </ion-col>
+                  <ion-col
+                    class=" "
+                    [ngClass]="
+                      stockText == 'NSE'
+                        ? 'custColorDark'
+                        : 'custColorWarmGrey1'
+                    "
+                  >
+                    <span
+                      class="muli-14pt custLineHight18 custPosition1 custFontFamilyMuliBold"
+                      >{{ stockData.EXCHANGE }}</span
+                    >
+                    <span
+                      class="muli-14pt custLineHight18 custPosition2 custFontFamilyMuliBold"
+                      >₹{{ stockData?.LOWER_LIMIT }}</span
+                    >
+                  </ion-col>
+                </ion-row>
+                <ion-row class="px-2 mt-4 paddpro marginPro1">
+                  <h3 class="muli-16pt custLineHight18">Product</h3>
+                </ion-row>
+
+                <ion-row class="mt-3 buttonPaddingleft">
+                  <ion-col [size]="'12'" class="buttonPaddingleft">
+                    <span
+                      ><button
+                        class="buttonDeliveryIntraday custFontFamilyMuliBold"
+                        (click)="changeButtonCssDelivery()"
+                        [ngClass]="deliveryCss"
+                      >
+                        Delivery
+                      </button>
+                    </span>
+                    <span class="px-2"
+                      ><button
+                        class="buttonDeliveryIntraday custFontFamilyMuliBold"
+                        (click)="changeButtonCssIntraday()"
+                        [ngClass]="intradayCss"
+                      >
+                        Intraday
+                      </button>
+                    </span>
+                    <!-- <span class="px-1"><button class=" buttonDeliveryIntraday  custFontFamilyMuliBold"
+                        (click)="changeButtonCssMargin()" [ngClass]="marginCss">Margin</button>
+                    </span><br /><br /> -->
+
+                    <span class="px-1 mt-3">
+                      <mat-radio-group [(ngModel)]="myModel">
+                        <mat-radio-button
+                          class="custFontFamilyMuliRegular muli-12pt custLineHight18 custColorWarmGrey1 px-2 custFontFamilyMuliBold text text-end"
+                          (click)="stepperCover()"
+                          value="2"
+                          >Cover</mat-radio-button
+                        >
+                        <!-- <mat-radio-button value="1"
+                          class="custFontFamilyMuliRegular muli-12pt custLineHight18 custColorWarmGrey1 paddingRadio text-end custFontFamilyMuliBold px-1"
+                          (click)="stepperBracket()">Bracket</mat-radio-button> -->
+                      </mat-radio-group>
+                    </span>
+                  </ion-col>
+                </ion-row>
+
+                <ion-row class="d-flex justify-content-between mt-4">
+                  <ion-col size="6" class="">
+                    <ion-row>
+                      <ion-col
+                        size="6"
+                        class="custFontFamilyMuliRegular muli-14pt pb-0 custFontFamilyMuliBold"
+                      >
+                        Quantity</ion-col
+                      >
+                      <ion-col
+                        size="6"
+                        class="custFontFamilyMuliRegular muli-10pt custLineHight18 custColorWarmGrey1 custFontFamilyRobotoCondensed text-end pb-0"
+                      >
+                        Lot:1</ion-col
+                      >
+                      <mat-form-field class="newClass">
+                        <button
+                          matPrefix
+                          class="custColorBrightCyan text-end muli-20pt Muli-Bold"
+                          (click)="decrement()"
+                        >
+                          -
+                        </button>
+                        <input
+                          matInput
+                          type="number"
+                          inputmode="numeric"
+                          [(ngModel)]="counter"
+                          class="example-right-align Roboto-Condensed custLineHight22 muli-20pt text-center w-100 custin"
+                        />
+                        <button
+                          matSuffix
+                          class="custColorBrightCyan text-end muli-20pt Muli-Bold"
+                          (click)="increment()"
+                        >
+                          +
+                        </button>
+                      </mat-form-field>
+                    </ion-row>
+                  </ion-col>
+
+                  <ion-col size="6" class="mt-1">
+                    <ion-row class="">
+                      <ion-col
+                        size="6"
+                        class="custFontFamilyMuliRegular muli-14pt custLineHight18 pb-0 custFontFamilyMuliBold"
+                      >
+                        Price</ion-col
+                      >
+                      <ion-col
+                        size="6"
+                        class="custFontFamilyMuliRegular muli-10pt custLineHight18 custColorWarmGrey1 custFontFamilyRobotoCondensed text-end pb-0 custFontFamilyMuliBold"
+                      >
+                        Tick: 0.05</ion-col
+                      >
+
+                      <ion-row class="newClass">
+                        <input
+                          type="number"
+                          inputmode="numeric"
+                          [(ngModel)]="checkHere"
+                          [placeholder]="placeHolder"
+                          #marketValue
+                          class="w-100 example-right-align custMuliFont Muli-regular text-center"
+                          [ngStyle]="{ 'width.px': width }"
+                          (keydown)="resize($event)"
+                        />
+                      </ion-row>
+                      <!-- <input placeholder="Market" class="custTextAlignCenter custFontFamilyMuliBold custColorWarmGrey1 w-100 mt-4" /> -->
+                    </ion-row>
+                  </ion-col>
+                </ion-row>
+
+                <ion-row>
+                  <ion-col
+                    [size]="'4'"
+                    class="custBackground"
+                    [ngClass]="
+                      type === 'S'
+                        ? 'custColorParakeetGreen'
+                        : 'custColorcustFadedRed custColorWhite'
+                    "
+                  >
+                    <span
+                      *ngIf="type === 'S'"
+                      class="custFontFamilyMuliRegular muli-12pt custLineHight18 custColorParakeetGreen custColorDark Muli-Bold custFontFamilyMuliBold"
+                      >Best Ask:{{ currencySymbol }}
+                      {{ BestkAskBuyvalue }}</span
+                    >
+                    <span
+                      *ngIf="type === 'B'"
+                      class="custFontFamilyMuliRegular muli-12pt custLineHight18 custColorcustFadedRed custColorDark Muli-Bold custFontFamilyMuliBold"
+                      >Best Ask:{{ currencySymbol }}
+                      {{ BestkAskSellvalue }}</span
+                    >
+                  </ion-col>
+
+                  <ion-col class="limitmargin text-end">
+                    <mat-checkbox
+                      [checked]="checkHere"
+                      class="example-margin"
+                      (click)="slLimitOrder()"
+                      ><span
+                        class="custFontFamilyMuliRegular muli-14pt custLineHight18"
+                        >Limit price</span
+                      >
+                    </mat-checkbox>
+                  </ion-col>
+                </ion-row>
+
+                <!-- <ion-row class="mt-3">
+                  <ion-col [size]="'8'" class="buttonPaddingleft">
+                    <span class="px-1"><button class=" buttonDeliveryIntraday  custFontFamilyMuliBold"
+                        (click)="margin()" [ngClass]="marginCss">Margin</button>
+                    </span>
+                    <span class="custFontFamilyMuliRegular custColorBattlePGry muli-12pt custLineHight15">Buy upto 4X
+                      times</span>
+                  </ion-col>
+                  <ion-col [size]="'4'" class="mt-2">
+                    <span class="custFontFamilyMuliBold custColorDarkishBlue float-end muli-12pt custLineHight15">Know
+                      more</span>
+                  </ion-col>
+                </ion-row> -->
+
+                <ion-col class="mt-2 mx-1">
+                  <mat-checkbox class="example-margin"
+                    ><span
+                      class="custFontFamilyMuliRegular muli-14pt custLineHight18"
+                      >After Market Order</span
+                    >
+                  </mat-checkbox>
+                </ion-col>
+
+                <div class="wrapper" *ngIf="BracketOrder">
+                  <ul class="StepProgress">
+                    <ion-row *ngFor="let x of bracket">
+                      <li class="StepProgress-item">
+                        <ion-row>
+                          <ion-col [size]="'5'">
+                            <ion-row
+                              class="muli-14pt custColorDark custFontFamilyMuliBold"
+                              >{{ x.SLprice }}</ion-row
+                            >
+                            <ion-row
+                              class="custFontFamilyRobotoCondensed muli-10pt custColorWarmGrey1"
+                            >
+                              {{ x.Range }}{{ x.RangeValue }}
+                            </ion-row>
+                          </ion-col>
+
+                          <ion-col [size]="'4'" class="muli-14pt text-center">
+                            <input
+                              placeholder=""
+                              class="custFontFamilyMuliBold inputWidth"
+                              (change)="change($event)"
+                              [value]="x.Slvalue"
+                            />
+                          </ion-col>
+                          <ion-col [size]="'3'" class="text-end">
+                            <ion-row
+                              class="custFontFamilyRobotoCondensed muli-10pt custColorWarmGrey1 px-4 text-end custFontFamilyMuliBold"
+                            >
+                              Tick:0.05</ion-row
+                            >
+                          </ion-col>
+                        </ion-row>
+                      </li>
+                    </ion-row>
+                  </ul>
+                </div>
+
+                <div class="wrapper" *ngIf="CoverOrder">
+                  <ul class="StepProgress">
+                    <ion-row *ngFor="let x of cover">
+                      <li class="StepProgress-item">
+                        <ion-row>
+                          <ion-col [size]="'5'">
+                            <ion-row
+                              class="muli-14pt custColorDark custFontFamilyMuliBold"
+                              >{{ x.SLprice }}</ion-row
+                            >
+                            <ion-row
+                              class="custFontFamilyRobotoCondensed muli-10pt custColorWarmGrey1"
+                            >
+                              {{ x.Range }}{{ x.RangeValue }}
+                            </ion-row>
+                          </ion-col>
+
+                          <ion-col [size]="'4'" class="muli-14pt text-center">
+                            <input
+                              placeholder=""
+                              class="custFontFamilyMuliBold inputWidth"
+                              [value]="x.Slvalue"
+                            />
+                          </ion-col>
+                          <ion-col [size]="'3'" class="text-end">
+                            <ion-row
+                              class="custFontFamilyRobotoCondensed muli-10pt custColorWarmGrey1 px-4 text-end custFontFamilyMuliBold"
+                            >
+                              Tick:0.05</ion-row
+                            >
+                          </ion-col>
+                        </ion-row>
+                      </li>
+                    </ion-row>
+                  </ul>
+                </div>
+
+                <div *ngIf="TriggerPriceOn">
+                  <ion-row>
+                    <ion-col [size]="'3'"></ion-col>
+                    <ion-col [size]="'4'">
+                      <ion-row
+                        class="custFontFamilyMuliRegular muli-12pt custColorDark"
+                        >Trigger Price</ion-row
+                      >
+                    </ion-col>
+                    <ion-col [size]="'1'">
+                      <ion-row
+                        class="custFontFamilyRobotoCondensed muli-10pt custColorWarmGrey1 px-2 text-end custFontFamilyMuliBold"
+                      >
+                        Tick:0.05</ion-row
+                      >
+                    </ion-col>
+                    <ion-col [size]="'4'"></ion-col>
+                  </ion-row>
+                  <ion-row>
+                    <ion-col [size]="'3'"></ion-col>
+                    <ion-col [size]="'6'" class="plT marginInputtriggerOn">
+                      <input
+                        placeholder=""
+                        class="custTextAlignCenter custFontFamilyMuliBold inputWidth"
+                        (change)="change($event)"
+                      />
+                    </ion-col>
+                    <ion-col [size]="'3'"></ion-col>
+                  </ion-row>
+                </div>
+                <ion-row class="martAdd">
+                  <ion-col [size]="'12'" class="martAdd">
+                    <h1>
+                      <ion-row>
+                        <ion-col [size]="'6'" class="">
+                          <span
+                            class="muli-14pt custLineHight18 text-end custFontFamilyMuliBold"
+                            >Advanced Option</span
+                          >
+
+                          <span
+                            class="custFontFamilyRobotoCondensed muli-14pt custLineHight18 custColorBrightCyan px-1 advanceIcon"
+                            (click)="toggleShow()"
+                            *ngIf="plusIcon"
+                          >
+                            <ion-icon name="add" class="mt-2"></ion-icon>
+                          </span>
+                          <span
+                            class="custFontFamilyRobotoCondensed muli-14pt custLineHight18 custColorBrightCyan px-1 advanceIcon"
+                            (click)="toggleHide()"
+                            *ngIf="minusIcon"
+                          >
+                            <ion-icon
+                              name="remove-outline"
+                              class="mt-2"
+                            ></ion-icon>
+                          </span>
+                        </ion-col>
+                        <ion-col [size]="'6'" class="text-end">
+                          <span
+                            *ngIf="MarketOrder"
+                            class="custFontFamilyRobotoCondensed muli-14pt custLineHight18 text-end custColorWarmGrey1 custFontFamilyMuliBold text-end"
+                            >Market Order</span
+                          >
+                          <span
+                            *ngIf="BracketOrder"
+                            class="custFontFamilyRobotoCondensed muli-14pt custLineHight18 text-end custColorWarmGrey1 custFontFamilyMuliBold text-end"
+                            >Bracket Order</span
+                          >
+                          <span
+                            *ngIf="CoverOrder"
+                            class="custFontFamilyRobotoCondensed muli-14pt custLineHight18 text-end custColorWarmGrey1 custFontFamilyMuliBold text-end"
+                            >Cover Order</span
+                          >
+                          <span
+                            *ngIf="LimitOrder"
+                            class="custFontFamilyRobotoCondensed muli-14pt custLineHight18 text-end custColorWarmGrey1 custFontFamilyMuliBold text-end"
+                            >S/L Limit order</span
+                          >
+                        </ion-col>
+                      </ion-row>
+                    </h1>
+                  </ion-col>
+                </ion-row>
+                <div *ngIf="isShown" class="TRiggermarginTop">
+                  <ion-row>
+                    <ion-col [size]="'12'">
+                      <ion-row>
+                        <ion-col [size]="'4'">
+                          <span
+                            class="custFontFamilyMuliBold muli-14pt custLineHight20"
+                            >Trigger Price</span
+                          >
+                        </ion-col>
+                        <ion-col [size]="'4'">
+                          <ion-segment
+                            (ionChange)="segmentOnOff($event)"
+                            class="custBackgroundColorCyanBlue custBorderRadious"
+                          >
+                            <ion-segment-button
+                              value="On"
+                              [ngClass]="
+                                currentType === 'On'
+                                  ? 'custBackgroundColorBlue1 custColorWhite'
+                                  : 'custColorDark custOptacity'
+                              "
+                              class="custSegment"
+                              (click)="OnnOff()"
+                            >
+                              <ion-label
+                                class="custFontFamilyMuliBold muli-12pt custLineHight10 text-center text-capitalize"
+                                >Off
+                              </ion-label>
+                            </ion-segment-button>
+                            <ion-segment-button
+                              value="Off"
+                              [ngClass]="
+                                currentType === 'Off'
+                                  ? 'custBackgroundColorBlue1 custColorWhite'
+                                  : 'custColorDark custOptacity'
+                              "
+                              class="custSegment"
+                              (click)="OffOnn()"
+                            >
+                              <ion-label
+                                class="custFontFamilyMuliBold muli-12pt custLineHight14 text-center text-capitalize"
+                                >On
+                              </ion-label>
+                            </ion-segment-button>
+                          </ion-segment>
+                        </ion-col>
+                      </ion-row>
+                    </ion-col>
+                  </ion-row>
+                  <ion-row class="mt-3">
+                    <ion-col [size]="'6'">
+                      <ion-row>
+                        <p
+                          class="ion-no-margin custFontFamilyMuliBold muli-14pt custLineHight20"
+                        >
+                          Validity
+                        </p>
+                      </ion-row>
+                      <ion-row class="mt-2">
+                        <mat-radio-group>
+                          <mat-radio-button
+                            value="3"
+                            checked="true"
+                            class="custFontFamilyMuliRegular muli-12pt custLineHight18 custColorWarmGrey1 paddingRadio custFontFamilyMuliBold"
+                            (click)="ShowTrigger()"
+                            >Day</mat-radio-button
+                          >
+                          <mat-radio-button
+                            class="custFontFamilyMuliRegular muli-12pt custLineHight18 custColorWarmGrey1 px-3 custFontFamilyMuliBold"
+                            value="4"
+                            (click)="HideTrigger()"
+                            >IOC</mat-radio-button
+                          >
+                        </mat-radio-group>
+                      </ion-row>
+                    </ion-col>
+                    <ion-col [size]="'6'" class="" *ngIf="isTrigger">
+                      <ion-row>
+                        <p
+                          class="ion-no-margin custFontFamilyMuliBold muli-14pt custLineHight20"
+                        >
+                          Dis Qty
+                        </p>
+                      </ion-row>
+                      <mat-form-field class="newClass">
+                        <button
+                          class="custColorBrightCyan text-end muli-20pt Muli-Bold"
+                          (click)="Triggerdecrement()"
+                        >
+                          -
+                        </button>
+                        <input
+                          matInput
+                          type="number"
+                          [(ngModel)]="TriggerCounter"
+                          class="example-right-align Roboto-Condensed custLineHight22 muli-22pt text-center"
+                        />
+                        <button
+                          matSuffix
+                          class="custColorBrightCyan text-end muli-20pt Muli-Bold"
+                          (click)="Triggerincrement()"
+                        >
+                          +
+                        </button>
+                      </mat-form-field>
+                    </ion-col>
+                  </ion-row>
+                </div>
+              </ion-col>
+            </ion-row>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+
+      <ion-row class="custBackground">
+        <ion-col [size]="'12'">
+          <ion-row>
+            <ion-col
+              [size]="'1'"
+              class="text-center mt-2 custFontFamilyRobotoCondensed muli-18pt custLineHight18 custColorBrightCyan px-2"
+            >
+              <ion-icon name="reload-outline" class="v"></ion-icon>
+            </ion-col>
+            <ion-col [size]="'6'">
+              <ion-row>
+                <span
+                  class="custFontFamilyRobotoCondensed muli-12pt custLineHight18 custColorWarmGrey1"
+                  >Margin Required</span
+                >
+                <span
+                  class="custFontFamilyRobotoCondensed muli-12pt custLineHight18 custColorWarmGrey1 thick px-1"
+                >
+                  <ion-icon name="alert-circle-outline"></ion-icon>
+                </span>
+                <span
+                  class="custFontFamilyRobotoCondensed muli-12pt custLineHight18 custColorDark thick px-1"
+                  >₹{{ MarginReuired }}</span
+                >
+              </ion-row>
+              <ion-row>
+                <span
+                  class="custFontFamilyRobotoCondensed muli-12pt custLineHight18 custColorWarmGrey1"
+                  >Available Margin</span
+                >
+                <span
+                  class="custFontFamilyRobotoCondensed muli-12pt custLineHight18 custColorWarmGrey1 thick px-1"
+                >
+                  <ion-icon name="alert-circle-outline"></ion-icon>
+                </span>
+                <span
+                  class="custFontFamilyRobotoCondensed muli-12pt custLineHight18 custColorDark thick px-1"
+                  >₹{{ availableToInvest }}</span
+                >
+              </ion-row>
+            </ion-col>
+            <ion-col [size]="'5'" class="text-end mt-1">
+              <span
+                class="custFontFamilyRobotoCondensed muli-18pt custLineHight18 fontColor mt-3 thick"
+              >
+                <ion-icon
+                  name="add-circle-outline"
+                  class="custFontFamilyMuliBold addIcon"
+                ></ion-icon>
+              </span>
+              <span
+                class="muli-16pt custLineHight18 fontColor mt-3 px-2 thick"
+                (click)="AddFunds()"
+                >Add Funds</span
+              >
+            </ion-col>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+
+      <!-- Buy and Sell Option -->
+      <!-- <ion-footer>
+        <ion-row class="marbom byuSellpadding">
+          <ion-col [size]="'12'">
+            <button *ngIf="type=='B'" class="w-100 custHeightButton custBackgroundColorParakeetGreen custColorWhite"
+              (click)="Confirm()" [disabled]="!counter">Buy</button>
+
+            <button (click)="sell()" *ngIf="type=='S'" class=" w-100 custHeightButton bgSell custColorWhite"
+              [disabled]="!counter">Sell</button>
+          </ion-col>
+        </ion-row>
+      </ion-footer> -->
+    </div>
+
+    <div class="custModalContainer p-10" *ngIf="isMargin">
+      <div id="showModalSMGSucces" class="modal-content">
+        <ion-row class="mt-0">
+          <ion-col [size]="'5.5'"> </ion-col>
+          <ion-col [size]="'1'">
+            <ion-img
+              [src]="imageList?.arrow"
+              class="custInvestArrow custRotation text-center custColorGreyish"
+              (click)="MarginClose()"
+             ></ion-img>
+          </ion-col>
+          <ion-col [size]="'5.5'"> </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <h2
+            class="muli-14pt custLineHight18 custFontFamilyMuliBold marginRequired"
+          >
+            Margin Required
+          </h2>
+        </ion-row>
+        <ion-row>
+          <span class="muli-12pt custLineHight18 custColorGreyish"
+            >Funds require to place order as per the order type & product type
+            selected</span
+          ><br />
+        </ion-row>
+      </div>
+    </div>
+
+    <div class="custModalContainer p-10" *ngIf="isAvailable">
+      <div id="showModalSMGSucces" class="modal-content">
+        <ion-row class="mt-0">
+          <ion-col [size]="'5.5'"> </ion-col>
+          <ion-col [size]="'1'">
+            <ion-img
+              [src]="imageList?.arrow"
+              class="custInvestArrow custRotation text-center custColorGreyish"
+              (click)="MarginClose()"
+            ></ion-img>
+          </ion-col>
+          <ion-col [size]="'5.5'"> </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <h2
+            class="muli-14pt custLineHight18 custFontFamilyMuliBold marginRequired"
+          >
+            Available Required
+          </h2>
+        </ion-row>
+        <ion-row>
+          <span class="muli-12pt custLineHight18 custColorGreyish"
+            >Funds required to place order as per the order type &</span
+          ><br />
+          <h2
+            class="custFontFamilyRobotoCondensed muli-12pt custLineHight18 custColorGreyish"
+          >
+            product type selected
+          </h2>
+        </ion-row>
+      </div>
+    </div>
+    <div class="custModalContainer p-10" *ngIf="errmsg">
+      <div id="showModalSMGSucces" class="modal-content">
+        <ion-row>
+          <ion-col [size]="'11'"></ion-col>
+          <ion-col [size]="'1'">
+            <ion-img
+              [src]="imageList?.cancelButton"
+              class="custInvestArrow custRotation text-center custColorGreyish"
+              (click)="MarginClose()"
+            ></ion-img>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <span
+              class="custFontFamilyMuliRegular muli-16pt custLineHight18 custFontFamilyMuliBold custColorcustFadedRed"
+              >Note:</span
+            >
+            <span
+              class="custFontFamilyMuliRegular muli-14pt custLineHight18 custFontFamilyMuliBold custColorcustFadedRed"
+              >Quantity cannot be zero</span
+            >
+          </ion-col>
+        </ion-row>
+      </div>
+    </div>
+
+    <!-- Order confirmation -->
+
+    <div
+      class="custModalContainer p-10 fixed-bottom"
+      *ngIf="coverOrderconfirmation"
+    >
+      <div id="showModalSMGSucces" class="modal-content">
+        <ion-row class="mt-4">
+          <ion-col [size]="12">
+            <p
+              class="m-0 muli-12pt custFontFamilyMuliBold custColorDarkishBlue text-end"
+            >
+              <img
+                [src]="imageList?.modify"
+                class="mb-2 custFontFamilyMuliBold"
+                (click)="modify()"
+              />&nbsp; Modify
+            </p>
+          </ion-col>
+        </ion-row>
+        <ion-row class="mt-1 border-bottom">
+          <ion-col [size]="6">
+            <p
+              class="m-0 muli-16pt custFontFamilyRobotoCondensed custFontFamilyMuliBold custColorDark"
+            >
+              {{ stockData?.SYMBOL }}
+            </p>
+            <p class="m-0 muli-12pt custFontFamilyMuliRegular custColorGreyish">
+              {{ stockData.EXCHANGE }} &nbsp;<button
+                class="muli-10pt custFontFamilyMuliRegular custColorBattlePGry custBackgroundColorCyanBlue px-2 py-0.5 rounded"
+              >
+                Buy
+              </button>
+            </p>
+          </ion-col>
+          <ion-col [size]="6">
+            <p
+              class="m-0 muli-14pt custFontFamilyMuliBold custColorDark text-end"
+            >
+              ₹234.65<span
+                class="m-0 muli-12pt custFontFamilyMuliBold custColorDark text-end"
+                >65</span
+              >
+            </p>
+            <p
+              class="m-0 custFontFamilyRobotoCondensed muli-14pt custColorParakeetGreen text-end"
+            >
+              22.62<span
+                class="m-0 muli-12pt custFontFamilyRobotoCondensed custColorParakeetGreen text-end"
+              >
+                (0.23%)</span
+              >
+            </p>
+          </ion-col>
+        </ion-row>
+        <ion-row class="mt-2">
+          <ion-col [size]="4">
+            <p class="m-0 muli-10pt custFontFamilyMuliRegular custColorGreyish">
+              Qty
+            </p>
+            <p class="m-0 muli-14pt custFontFamilyMuliBold custColorDark">1</p>
+          </ion-col>
+          <ion-col [size]="4">
+            <p class="m-0 muli-10pt custFontFamilyMuliRegular custColorGreyish">
+              Price
+            </p>
+            <p class="m-0 muli-14pt custFontFamilyMuliBold custColorDark">
+              ₹230.50
+            </p>
+          </ion-col>
+          <ion-col [size]="4">
+            <p class="m-0 muli-10pt custFontFamilyMuliRegular custColorGreyish">
+              Status
+            </p>
+            <p class="m-0 muli-14pt custFontFamilyMuliBold custColorDark">
+              ₹230.50
+            </p>
+          </ion-col>
+        </ion-row>
+
+        <div class="stepper my-2">
+          <ul class="nav nav-tabs">
+            <li role="presentation">
+              <a aria-controls="stepper-step-1">
+                <span class="round-tab"></span>
+              </a>
+            </li>
+            <li role="presentation" class="disabled">
+              <a aria-controls="stepper-step-2">
+                <span class="round-tab"></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <ion-row class="mt-2">
+          <ion-col [size]="4">
+            <p class="m-0 muli-10pt custFontFamilyMuliRegular custColorGreyish">
+              S/L Trigger Price
+            </p>
+            <p class="m-0 muli-14pt custFontFamilyMuliBold custColorDark">
+              ₹230.50
+            </p>
+          </ion-col>
+          <ion-col [size]="4">
+            <p class="m-0 muli-10pt custFontFamilyMuliRegular custColorGreyish">
+              S/L Limit Price
+            </p>
+            <p class="m-0 muli-14pt custFontFamilyMuliBold custColorDark">
+              ₹230.50
+            </p>
+          </ion-col>
+          <ion-col [size]="4">
+            <p class="m-0 muli-10pt custFontFamilyMuliRegular custColorGreyish">
+              Product
+            </p>
+            <p class="m-0 muli-14pt custFontFamilyMuliBold custColorDark">
+              Cover Order
+            </p>
+          </ion-col>
+        </ion-row>
+        <ion-row class="mt-2">
+          <ion-col [size]="4">
+            <p class="m-0 muli-10pt custFontFamilyMuliRegular custColorGreyish">
+              Validity
+            </p>
+            <p class="m-0 muli-14pt custFontFamilyMuliBold custColorDark">
+              Day
+            </p>
+          </ion-col>
+          <!-- <ion-col [size]="4">
+            <p class="m-0 muli-10pt custFontFamilyMuliRegular custColorGreyish">Product</p>
+            <p class="m-0  muli-14pt custFontFamilyRobotoCondensed custColorDark">Bracket Order</p>
+          </ion-col>
+          <ion-col [size]="4">
+            <p class="m-0 muli-10pt custFontFamilyMuliRegular custColorGreyish ">Product</p>
+            <p class="m-0 muli-14pt custFontFamilyRobotoCondensed custColorDark ">Cover Order</p>
+          </ion-col> -->
+        </ion-row>
+        <ion-row class="mt-3 custBackgroundColor3">
+          <ion-col
+            [size]="12"
+            class="text-center custBackgroundColorlittleGray py-2"
+          >
+            <p class="m-0 muli-10pt custFontFamilyMuliRegular custColorGreyish">
+              Funds to be blocked
+              <span
+                class="m-0 muli-10pt custFontFamilyRobotoCondensed custColorDark"
+                >₹234.65</span
+              >
+            </p>
+          </ion-col>
+        </ion-row>
+        <ion-row class="mt-1">
+          <ion-col class=" ">
+            <button
+              class="btn w-100 text-center custBackgroundColorParakeetGreen"
+            >
+              <span
+                class="custColorWhite custFontFamilyMuliBold muli-16pt"
+                (click)="confirmOrder()"
+                >Confirm</span
+              >
+            </button>
+          </ion-col>
+        </ion-row>
+      </div>
+    </div>
+
+    <div class="custModalContainer p-10 fixed-bottom" *ngIf="isConfirmation">
+      <div id="showModalSMGSucces" class="modal-content">
+        <ion-row>
+          <ion-col class="text-end custcolorModify mt-3">
+            <img
+              [src]="imageList?.modify"
+              class="custInvestArrow1 custRotation custColorGreyish"
+              (click)="modify()"
+            />Modify
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col [size]="'6'">
+            <h5
+              class="muli-16pt custLineHight28 custColorDark custFontFamilyMuliBold px-1"
+            >
+              {{ stockData?.SYMBOL }}
+            </h5>
+          </ion-col>
+          <ion-col [size]="'6'" class="text-end">
+            <span class="muli-16pt custColorDark custFontFamilyMuliBold px-1"
+              >₹{{ stockData?.TICK }}</span
+            >
+          </ion-col>
+        </ion-row>
+        <ion-row class="mx-2">
+          <ion-col
+            size=""
+            class="custFontFamilyMuliRegular muli-12pt custColorGreyish"
+            >{{ stockData.EXCHANGE }} |
+            {{ this.page == "I" ? "Intraday" : "Delivery"
+            }}<span
+              ><button
+                class="rounded-2 custFontFamilyRobotoCondensed muli-10pt custBackgroundColorCyanBlue custColorBattlePGry ms-1"
+              >
+                type
+              </button></span
+            >
+          </ion-col>
+          <ion-col class="text-end custColorParakeetGreen muli-12pt"
+            ><span><img [src]="imageList?.greenIcon" /></span
+            >{{ stockData?.LOWER_LIMIT }} ({{ stockData?.LOWER_LIMIT }}%)
+          </ion-col>
+        </ion-row>
+        <hr class="mx-2 mt-0" />
+        <ion-row>
+          <ion-col [size]="'4'" class="custColorWarmGrey1 muli-10pt"
+            >Qty</ion-col
+          >
+          <ion-col [size]="'4'" class="custColorWarmGrey1 muli-10pt text-center"
+            >Price</ion-col
+          >
+          <ion-col [size]="'4'" class="custColorWarmGrey1 muli-10pt text-end"
+            >value</ion-col
+          >
+        </ion-row>
+
+        <ion-row>
+          <ion-col
+            [size]="'4'"
+            class="custColorDark custFontFamilyMuliBold muli-14pt mt-0"
+            >{{ counter }}</ion-col
+          >
+          <ion-col
+            [size]="'4'"
+            class="custColorDark custFontFamilyMuliBold muli-14pt text-center mt-0"
+          >
+            {{ currencySymbol }} {{ BSECMP }}</ion-col
+          >
+          <ion-col
+            [size]="'4'"
+            class="custColorDark custFontFamilyMuliBold muli-14pt text-end mt-0"
+            >₹{{ MarginReuired }}
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col [size]="'4'" class="custColorWarmGrey1 muli-10pt"
+            >Dis.Qty</ion-col
+          >
+          <ion-col [size]="'4'" class="custColorWarmGrey1 muli-10pt text-center"
+            >Product</ion-col
+          >
+          <ion-col [size]="'4'" class="custColorWarmGrey1 muli-10pt text-end"
+            >order Type</ion-col
+          >
+        </ion-row>
+
+        <ion-row>
+          <ion-col
+            [size]="'4'"
+            class="custColorDark custFontFamilyMuliBold muli-14pt"
+            >{{ TriggerCounter }}</ion-col
+          >
+          <ion-col
+            [size]="'4'"
+            class="custColorDark custFontFamilyMuliBold muli-14pt text-center"
+            >Delivery</ion-col
+          >
+          <ion-col
+            [size]="'4'"
+            class="custColorDark custFontFamilyMuliBold muli-14pt text-end"
+            >₹{{ stockData?.TICK }}
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col [size]="'4'" class="custColorWarmGrey1 muli-10pt"
+            >Validity</ion-col
+          >
+        </ion-row>
+        <ion-row>
+          <ion-col
+            [size]="'4'"
+            class="custColorDark custFontFamilyMuliBold muli-14pt mt-0"
+            >Day</ion-col
+          >
+        </ion-row>
+        <ion-row>
+          <ion-col
+            [size]="'12'"
+            class="custBackground muli-12pt custColorWarmGrey1 text-center mb-3"
+          >
+            Funds To be blocked
+            <span class="custColorDark custFontFamilyMuliBold"
+              >₹{{ stockData?.TICK }}</span
+            >
+          </ion-col>
+        </ion-row>
+      </div>
+    </div>
+  </div>
+</ion-content>
+<ion-footer>
+  <ion-row>
+    <ion-col [size]="'12'" *ngIf="hideBuySell">
+      <button
+        *ngIf="type == 'B'"
+        class="btn w-100 h-100 custFontFamilyMuliBold muli-16pt custLineHight20 custColorWhite custBackgroundColorParakeetGreen"
+        (click)="confirmOrder()"
+      >
+        Buy
+      </button>
+      <button
+        *ngIf="type == 'S'"
+        class="btn w-100 h-100 custFontFamilyMuliBold muli-16pt custLineHight20 custColorWhite bgSell"
+        (click)="confirmOrder()"
+      >
+        Sell
+      </button>
+    </ion-col>
+  </ion-row>
+</ion-footer>

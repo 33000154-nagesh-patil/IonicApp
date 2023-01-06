@@ -1,0 +1,30 @@
+{
+  "qualification" : {
+  "data": [
+    {
+      "ID": "5ab974f4-bae9-4eaa-8bbf-ead949575482",
+      "TEXT": "HighSchool",
+      "Type": " Qualification"
+    },
+    {
+      "ID": "5ab974f4-bae9-4eaa-8bbf-ead94957548a",
+      "TEXT": "Intermediate",
+      "Type": " Qualification"
+    },
+    {
+      "ID": "5ab974f4-bae9-4eaa-8bbf-ead949575483",
+      "TEXT": "Graduate",
+      "Type": " Qualification"
+    },
+    {
+      "ID": "5ab974f4-bae9-4eaa-8bbf-ead94957548b",
+      "TEXT": "Post Graduate",
+      "Type": " Qualification"
+    }
+  ],
+  "Status": 1,
+  "ErrorCode": 0,
+  "Message": "Success",
+  "MessageType": "I"
+}
+}

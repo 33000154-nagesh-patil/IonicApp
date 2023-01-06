@@ -1,0 +1,75 @@
+.Check {
+  height: 14px;
+  width: 14px;
+}
+
+.custColorWarmGrey1 {
+  color: #adb2bb;
+}
+
+.marginleft {
+  margin-left: 10px;
+}
+
+.copltmargin {
+  margin-top: -50px;
+}
+
+.custCircle {
+  background: var(--custwhiteTwo);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+}
+
+.custClientDetails {
+  height: 24px;
+  width: 24px;
+}
+
+.pdingleft {
+  padding-left: 17px;
+}
+
+.border {
+  border: 1px solid #44c8f5 !important;
+}
+
+.custSVGIcon {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  margin: -8px;
+}
+
+.myClass {
+  z-index: 9;
+  position: absolute;
+  width: 100%;
+  height: fit-content;
+  background-color: white;
+  box-shadow: #141b2f 0px 0px 10px;
+  box-sizing: border-box;
+  border-top: #888 solid 1px;
+}
+
+.custProfile {
+  background: var(--custwhiteTwo);
+  border-radius: 50%;
+  padding: 21px;
+}
+
+.custHeight {
+  height: 42px;
+  width: 42px;
+}
+
+.custHeading {
+  height: 80px;
+}
+
+h1 {
+  border-bottom: 4px solid darkblue;
+  padding-top: 25px;
+}

@@ -1,0 +1,96 @@
+{
+    "Banner": [
+        {
+            "img1":"assets/icon/Group_10695.svg",
+            "img2":"assets/icon/Group_10707.svg",
+            "img3":"assets/icon/Group_11498.svg",
+            "img6":"assets/icon/Group_14076.svg",
+            "img7":"assets/icon/Group_14077.svg",
+            "img8":"assets/icon/Group_14078.svg",
+            "img9":"assets/icon/Group_13801.svg",
+            "img10":"assets/icon/Group_13803.svg",
+            "img11":"assets/icon/Group_13804.svg",
+            "img13":"assets/icon/Group_138011.svg",
+            "img14":"assets/icon/Group_138031.svg",
+            "img15":"assets/icon/Group_138041.svg",
+            "img16":"assets/icon/Group_14315.svg",
+            "img17":"assets/icon/Group_12595.svg",
+            "img18":"assets/icon/Group_13397.svg",
+            "img19":"assets/icon/Group_12486.svg"
+        },
+        {
+            "topRated":"Top Rated",
+            "fund":"Funds",
+            "Categoury":"Categoury",
+            "winners":"Winners",
+            "newfund":"New Fund",
+            "offers":"Offers",
+            "betterThan":"Better than",
+            "fds":"FDs",
+            "top":"Top",
+            "amcs":"AMCs",
+            "higher":"Higher",
+            "returns":"Returns",
+            "thebiggestrisk":"The biggest risk of all is not taking one",
+            "warrenbuffet":"- Warren Buffet",
+            "upsanddowns":"Ups & downs are normal. Those who keep investing through ups & downs get the best returns",
+            "dontcancel":"Don’t Cancel"
+        }
+    ],
+    "Mfcard": [
+        {
+            "logo":"assets/dummyMokeIcon/group_14256.png",
+            "title1":"ICICI Prudential Focused",
+            "title2":"Bluechip Equity Fund",
+            "mininvest":"500",
+            "percent1":"51.20",
+            "percent2":"22.20",
+            "returnspercent":"22.20"
+        },
+        {
+            "logo":"assets/icon/Group_13913.svg",
+            "title1":"Franklin India Multi Asset",
+            "title2":"Solution Fund Direct Growth",
+            "mininvest":"500",
+            "percent1":"51.20",
+            "percent2":"22.20",
+            "returnspercent":"22.20"
+        },
+        {
+            "logo":"assets/icon/Group_13918.svg",
+            "title1":"Axis Long Term Equity Fund",
+            "title2":"",
+            "mininvest":"500",
+            "percent1":"51.20",
+            "percent2":"22.20",
+            "returnspercent":"22.20"
+        },
+        {
+            "logo":"assets/icon/Group_1234.svg",
+            "title1":"Tata Digital India Direct",
+            "title2":"Growth Fund",
+            "mininvest":"500",
+            "percent1":"51.20",
+            "percent2":"22.20",
+            "returnspercent":"22.20"
+        }
+    ],
+    "gridcards": [
+        {
+            "title":"Top Rated Funds",
+            "icon":"assets/icon/Group_10695.svg",
+            "title1":"Category Winners",
+            "icon1":"assets/icon/Group_11498.svg",
+            "title2":"New Fund Offers",
+            "icon2":"assets/icon/Group_10707.svg"
+        },
+        {
+            "title":"Better than FDs",
+            "icon":"assets/icon/Group_14076.svg",
+            "title1":"Top AMCs",
+            "icon1":"assets/icon/Group_14077.svg",
+            "title2":"Higher Returns",
+            "icon2":"assets/icon/Group_14078.svg"
+        }
+    ]
+}

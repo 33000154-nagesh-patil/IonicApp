@@ -1,0 +1,63 @@
+{
+    "statusCode": 200,
+    "message": "Invoice fetched successfully",
+    "result": {
+        "data": {
+            "invoiceNumber": "GTD0723180",
+            "userInfo": {
+                "name": "roopa",
+                "address": "near metro station marol navpada",
+                "city": null,
+                "state": "Maharashtra",
+                "pincode": "400059",
+                "email": "roopa@gmail.com",
+                "mobileNumber": "9820538889",
+                "uniqueId": "TOR35156861"
+            },
+            "transactionId": "TD418916578679097250149450",
+            "quantity": "0.1891",
+            "metalType": "gold",
+            "hsnCode": "711419",
+            "rate": "5132.64",
+            "unitType": "Gram",
+            "grossAmount": "970.87",
+            "netAmount": "1000.00",
+            "taxes": {
+                "totalTaxAmount": "29.13",
+                "taxSplit": [
+                    {
+                        "type": "CGST",
+                        "taxPerc": "1.50",
+                        "taxAmount": "14.56"
+                    },
+                    {
+                        "type": "SGST",
+                        "taxPerc": "1.50",
+                        "taxAmount": "14.56"
+                    },
+                    {
+                        "type": "IGST",
+                        "taxPerc": "0.00",
+                        "taxAmount": "0.00"
+                    }
+                ]
+            },
+            "tcsInfo": {
+                "tcsPerc": "0",
+                "tcsAmount": "0"
+            },
+            "discount": [
+                {
+                    "type": "percentage",
+                    "title": "tcs",
+                    "value": "0",
+                    "amount": "0",
+                    "description": "TCS discount"
+                }
+            ],
+            "invoiceDate": "15-07-2022 12:21:49",
+            "purity": "999",
+            "karat": "24K"
+        }
+    }
+}

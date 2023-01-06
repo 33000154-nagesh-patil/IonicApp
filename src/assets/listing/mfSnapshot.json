@@ -1,0 +1,270 @@
+{
+	"": {
+		"title": "Top Rated Fund",
+		"card": [{
+				"row1": {
+					"icon": "assets/icon/hdfc.png",
+					"title": "HDFC Focused 30-G",
+					"action": "assets/icon/leftArrowIcon.svg",
+					"selectWatchList": false
+				},
+				"row2": {
+					"Returns": 18.65,
+					"Category Return": "-7.10% - 20.25%",
+					"Min.Invest": "₹5000"
+				}
+			},
+			{
+				"row1": {
+					"icon": "assets/icon/hdfc.png",
+					"title": "HDFC Focused 30-G",
+					"action": "assets/icon/leftArrowIcon.svg",
+					"selectWatchList": false
+				},
+				"row2": {
+					"Returns": 18.65,
+					"Category Return": "-7.10% - 20.25%",
+					"Min.Invest": "₹5000"
+				}
+			},
+			{
+				"row1": {
+					"icon": "assets/icon/hdfc.png",
+					"title": "HDFC Focused 30-G",
+					"action": "assets/icon/leftArrowIcon.svg",
+					"selectWatchList": false
+				},
+				"row2": {
+					"Returns": 18.65,
+					"Category Return": "-7.10% - 20.25%",
+					"Min.Invest": "₹5000"
+				}
+			},
+			{
+				"row1": {
+					"icon": "assets/icon/hdfc.png",
+					"title": "HDFC Focused 30-G",
+					"action": "assets/icon/leftArrowIcon.svg",
+					"selectWatchList": false
+				},
+				"row2": {
+					"Returns": 18.65,
+					"Category Return": "-7.10% - 20.25%",
+					"Min.Invest": "₹5000"
+				}
+			},
+			{
+				"row1": {
+					"icon": "assets/icon/hdfc.png",
+					"title": "HDFC Focused 30-G",
+					"action": "assets/icon/leftArrowIcon.svg",
+					"selectWatchList": false
+				},
+				"row2": {
+					"Returns": 18.65,
+					"Category Return": "-7.10% - 20.25%",
+					"Min.Invest": "₹5000"
+				}
+			}
+		]
+	},
+
+	"snapShot": {
+		"heading": [{
+			"heading": "Invest",
+			"box": true,
+			"discription": "Discover Mutual Funds for Investments"
+		}],
+		"pickupAndfilter": [{
+			"filterIcon": "assets/icon/filterIcon.svg",
+			"filterTitle": "Filter"
+		}],
+		"card": [{
+				"title": "Top Rated Fund",
+				"cardList": [{
+						"row1": {
+							"icon": "assets/icon/hdfc.png",
+							"title": "HDFC Focused 30-G",
+							"action": "assets/icon/leftArrowIcon.svg",
+							"selectWatchList": false
+						},
+						"row2": {
+							"Returns": 18.65,
+							"Category Return": "-7.10% - 20.25%",
+							"Min.Invest": "₹5000"
+						}
+					},
+					{
+						"row1": {
+							"icon": "assets/icon/icici.png",
+							"title": "ICICI Focused 30-G",
+							"action": "assets/icon/leftArrowIcon.svg",
+							"selectWatchList": false
+						},
+						"row2": {
+							"Returns": -18,
+							"Category Return": "-7.10% - 20.25%",
+							"Min.Invest": "₹5000"
+						}
+					}
+				],
+				"cta": "Explore"
+			},
+			{
+				"title": "Tax Savers",
+				"cardList": [{
+						"row1": {
+							"icon": "assets/icon/hdfc.png",
+							"title": "HDFC Focused 30-G",
+							"action": "assets/icon/leftArrowIcon.svg",
+							"selectWatchList": false
+						},
+						"row2": {
+							"Returns": 18.65,
+							"Category Return": "-7.10% - 20.25%",
+							"Min.Invest": "₹5000"
+						}
+					},
+					{
+						"row1": {
+							"icon": "assets/icon/icici.png",
+							"title": "ICICI Focused 30-G",
+							"action": "assets/icon/leftArrowIcon.svg",
+							"selectWatchList": false
+						},
+						"row2": {
+							"Returns": -18,
+							"Category Return": "-7.10% - 20.25%",
+							"Min.Invest": "₹5000"
+						}
+					}
+				],
+				"cta": "Explore"
+			},
+			{
+				"title": "New Fund Offers",
+				"cardList": [{
+						"row1": {
+							"icon": "assets/icon/hdfc.png",
+							"title": "HDFC Focused 30-G",
+							"action": "assets/icon/leftArrowIcon.svg",
+							"selectWatchList": false
+						},
+						"row2": {
+							"Returns": 18.65,
+							"Category Return": "-7.10% - 20.25%",
+							"Min.Invest": "₹5000"
+						}
+					},
+					{
+						"row1": {
+							"icon": "assets/icon/icici.png",
+							"title": "ICICI Focused 30-G",
+							"action": "assets/icon/leftArrowIcon.svg",
+							"selectWatchList": false
+						},
+						"row2": {
+							"Returns": 18.65,
+							"Category Return": "-7.10% - 20.25%",
+							"Min.Invest": "₹5000"
+						}
+					}
+				],
+				"cta": "Explore"
+			},
+			{
+				"title": "Annual Return Fund",
+				"cardList": [{
+						"row1": {
+							"icon": "assets/icon/hdfc.png",
+							"title": "HDFC Focused 30-G",
+							"action": "assets/icon/leftArrowIcon.svg",
+							"selectWatchList": false
+						},
+						"row2": {
+							"Returns": 18.65,
+							"Category Return": "-7.10% - 20.25%",
+							"Min.Invest": "₹5000"
+						}
+					},
+					{
+						"row1": {
+							"icon": "assets/icon/icici.png",
+							"title": "ICICI Focused 30-G",
+							"action": "assets/icon/leftArrowIcon.svg",
+							"selectWatchList": false
+						},
+						"row2": {
+							"Returns": -18,
+							"Category Return": "-7.10% - 20.25%",
+							"Min.Invest": "₹5000"
+						}
+					}
+				],
+				"cta": "Explore"
+			},
+			{
+				"title": "Wealth Builder",
+				"cardList": [{
+						"row1": {
+							"icon": "assets/icon/hdfc.png",
+							"title": "HDFC Focused 30-G",
+							"action": "assets/icon/leftArrowIcon.svg",
+							"selectWatchList": false
+						},
+						"row2": {
+							"Returns": 18.65,
+							"Category Return": "-7.10% - 20.25%",
+							"Min.Invest": "₹5000"
+						}
+					},
+					{
+						"row1": {
+							"icon": "assets/icon/icici.png",
+							"title": "ICICI Focused 30-G",
+							"action": "assets/icon/leftArrowIcon.svg",
+							"selectWatchList": false
+						},
+						"row2": {
+							"Returns": -1,
+							"Category Return": "-7.10% - 20.25%",
+							"Min.Invest": "₹5000"
+						}
+					}
+				],
+				"cta": "Explore"
+			},
+			{
+				"title": "Steady Income",
+				"cardList": [{
+						"row1": {
+							"icon": "assets/icon/hdfc.png",
+							"title": "HDFC Focused 30-G",
+							"action": "assets/icon/leftArrowIcon.svg",
+							"selectWatchList": false
+						},
+						"row2": {
+							"Returns": 18.65,
+							"Category Return": "-7.10% - 20.25%",
+							"Min.Invest": "₹5000"
+						}
+					},
+					{
+						"row1": {
+							"icon": "assets/icon/icici.png",
+							"title": "ICICI Focused 30-G",
+							"action": "assets/icon/leftArrowIcon.svg",
+							"selectWatchList": false
+						},
+						"row2": {
+							"Returns": 18.65,
+							"Category Return": "-7.10% - 20.25%",
+							"Min.Invest": "₹5000"
+						}
+					}
+				],
+				"cta": "Explore"
+			}
+		]
+	}
+}

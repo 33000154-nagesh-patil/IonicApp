@@ -1,0 +1,304 @@
+<ion-header>
+  <ion-toolbar class="custBackgroundDynamicColorWhite">
+    <ion-grid>
+      <ion-row>
+        <ion-col *ngIf="appName != 'Aqube'" [size]="'1'" (click)="gotoBack()" class="text-center mt-1">
+          <ion-img [src]="imageList?.arrow" class="custKYCImg mt-2"></ion-img>
+        </ion-col>
+        <ion-col *ngIf="appName != 'Aqube'" [size]="'10'" class="text-center">
+          <span class="custFontFamilyMuliBold muli-14pt custLineHight40 custColorDark ">{{'setupInvestmentAccount'
+            | translate}}</span>
+        </ion-col>
+        <ion-col *ngIf="appName == 'Aqube'" [size]="'12'" class="text-center">
+          <span class="custFontFamilyMuliBold muli-14pt custLineHight40 custColorDark ">{{'setupInvestmentAccount'
+            | translate}}</span>
+        </ion-col>
+        <ion-col *ngIf="appName != 'Aqube'" [size]="'1'" class="text-center mt-1" (click)="dismiss(false)">
+          <ion-img [src]="imageList?.close" class="custKYCImg mt-2"></ion-img>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+<!-- <ion-progress-bar color="success" [value]="progressValue" *ngIf="currentStatus != 'successContainer'">
+</ion-progress-bar> -->
+
+<ion-content class="customBackgroundColor h-100 p-4">
+
+  <div class="p-2">
+    <div class="row" *ngIf="currentStatus === 'successContainer'">
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2" class="customSvg">
+        <circle class="path circle" fill="none" stroke-width="8" stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1" />
+        <polyline class="path check" fill="none" stroke-width="8" stroke-linecap="round" stroke-miterlimit="10"
+          points="100.2,40.2 51.5,88.8 29.8,67.5 " />
+      </svg>
+      <div class="col-md-12">
+        <h4 class="customFont custTextCenter">{{'congratulations'|translate}}</h4>
+        <h4 class="customFont custTextCenter">{{strName}}</h4>
+        <p class="custFontFamilyMuliRegular custTextCenter svgFont">{{'startInvesting'|translate}}</p>
+      </div>
+      <div class="col-md-12 custFooterDiv">
+        <ion-button expand="block" class="text-capitalize text-center custContinueBtn" (click)="exploreNow()">
+          <span class="custColorWhite custFontFamilyMuliBold muli-16pt">{{'explore'|translate}}</span>
+        </ion-button>
+      </div>
+      <!-- <div class="col-md-12 customButtonContainer">
+        <button type="button" class="btn custButtonColor w-100 customFont" (click)="exploreNow()">Explore</button>
+      </div> -->
+    </div>
+    <div class="row" *ngIf="currentStatus === 'Digilocker'">
+      <div class="col-md-12">
+        <h6 class="customFont custTextCenter">{{digiHeader}}</h6>
+        <p class="custFontFamilyMuliRegular custTextCenter svgFont">{{digipara}}</p>
+      </div>
+
+      <div class="col-md-12 custFooterDiv">
+        <ion-card class="custBackgroundColorWhite">
+          <ion-card-header>
+            <h4 class="custTextCenter customFont customSpanColor">{{digiSubHeader}}</h4>
+          </ion-card-header>
+          <ion-card-content class="custIonContent">
+            <p class="custTextCenter custFontFamilyMuliRegular custSize">{{digiSubPara}}</p>
+          </ion-card-content>
+        </ion-card>
+
+        <ion-button expand="block" class="text-capitalize text-center custContinueBtn" (click)="showAadhaarContainer()">
+          <span class="custColorWhite custFontFamilyMuliBold muli-16pt">{{digiButtonText}}</span>
+        </ion-button>
+      </div>
+
+    </div>
+    <form [formGroup]="AadharNumFb" novalidate>
+      <ion-grid *ngIf="currentStatus === 'AccountDetails'">
+        <!-- <ion-row>
+          <mat-form-field appearance="outline" class="w-100 ">
+            <mat-label class="text-capitalize">{{"documentType"|translate}}</mat-label>
+            <mat-select>
+              <mat-option>{{'selectDocType'|translate}}</mat-option>
+              <mat-option value="1" selected>{{'adhaarCard'|translate}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </ion-row> -->
+        <ion-row class="mt-2">
+          <mat-form-field appearance="outline" class="w-100 ">
+            <img matPrefix class="custImgBox" src="assets/icon/identification.svg">
+            <input formControlName="AadharNumber" matInput placeholder="Aadhaar Number" (keyup)="onKeyAdhar($event)"
+              type="text" inputmode="numeric" maxlength="12"
+              class="custBox custFontFamilyMuliRegular muli-16pt custLineHight18 custColorDark w-75">
+          </mat-form-field>
+        </ion-row>
+        <!-- <div class="col-md-12">
+          <div>
+            <span class="customFont custSpanText">{{"documentType"|translate}}</span>
+          </div>
+          <select class="form-select p-3 customSelect customFont" aria-label="Document Type">
+            <option>{{'selectDocType'|translate}}</option>
+            <option value="1" selected>{{'adhaarCard'|translate}}</option>
+          </select>
+        </div> -->
+        <!-- <div class="col-md-12 mt-4">
+          <div class="col-auto">
+            <div class="input-group">
+              <div class="input-group-text custBox"><img class="custImgBox" src="assets/icon/identification.svg"></div>
+              <input type="number" formControlName="AadharNumber" class="form-control p-3 customFont custInput"
+                id="autoSizingInputGroup" placeholder="Aadhaar Number" [(ngModel)]="AadharNo"  >
+            </div>
+          </div>
+        </div> -->
+        <ion-row class="col-md-12 mt-3 custTextCenter justify-content-center">
+          <!-- <span (click)="selectImage()" *ngIf="isCordovaStatus">
+            <label class="customFont">Or </label>
+            <span>
+              <img class="custImg" src="assets/icon/scan_darkish_blue.svg" alt="QR" id="img-qr">
+              <label class="customSpanColor fw-bold customFont">Scan ID</label>
+            </span>
+          </span> -->
+          <!-- for pc -->
+          <!-- <span (click)="top.click()" *ngIf="!isCordovaStatus">
+            <label class="customFont">Or </label>
+            <span>
+              <img class="custImg" src="assets/icon/scan_darkish_blue.svg" alt="QR" id="img-qr">
+              <label class="customSpanColor fw-bold customFont">Scan ID</label>
+            </span>
+            <input type="file" (change)="imagePreview($event)" #top style="display: none;">
+          </span> -->
+        </ion-row>
+        <ion-row>
+          <div class="col-md-12 mt-3 custTextCenter" *ngIf="currentImg">
+            <ion-img [src]="currentImg" class="m-50 text-center"></ion-img>
+          </div>
+          <div class="col-md-12 mt-3 custTextCenter w-100" *ngIf="showCaptcha">
+            <ion-row class="w-100 custRowCaptcha">
+              <!-- <ion-col [size]="'9'">
+                <ion-img [src]="captchaImg" class="text-center custSelfieImage"> </ion-img>
+              </ion-col>
+              <ion-col [size]="'3'">
+                <p class="custBox custFontFamilyMuliRegular text-center muli-16pt custLineHight18 custColorDark" (click)="tryAgain()">Try Again</p>
+              </ion-col> -->
+
+              <ion-img [src]="captchaImg" class="text-center custSelfieImage"> </ion-img>
+              <p *ngIf="captchBlank" class="custFontFamilyMuliRegular custTryAgain muli-16pt custColorDark"
+                (click)="tryAgain()">Try Again</p>
+            </ion-row>
+
+            <div class="input-group">
+              <input type="text" formControlName="captchaText" class="form-control p-3 customFont custInput custMartop"
+                id="inputCaptcha" placeholder="Enter above Captcha">
+            </div>
+          </div>
+        </ion-row>
+        <!-- </div> -->
+        <ion-row class="col-md-12 custFooterDiv">
+          <ion-button expand="block" *ngIf="!showCaptcha" [disabled]="!AadharNumFb.controls.AadharNumber.valid" class="text-capitalize text-center custContinueBtn"
+            (click)="showMobileOTP()">
+            <span class="custColorWhite custFontFamilyMuliBold muli-16pt">Proceed for
+              Aadhaar</span>
+          </ion-button>
+
+          
+
+          <!-- <ion-button expand="block" *ngIf="showCaptcha" class="text-capitalize text-center custContinueBtn"
+            (click)="validateCaptcha()">
+            <span class="custColorWhite custFontFamilyMuliBold muli-16pt">Validate Captcha</span>
+          </ion-button> -->
+        </ion-row>
+        <ion-row class="col-md-12 fixed-bottom custBottomBtn" *ngIf="showCaptcha" >
+          <ion-col [size]="'6'" class="ion-no-padding" *ngIf="showCaptcha" >
+            <ion-button expand="block" class="text-capitalize custTryButton d-flex justify-content-center"
+              (click)="getSkip()">
+              <span class="custFontFamilyMuliRegular text-center muli-14pt custColorBrightCyan">{{'skipLable'
+                | translate}}</span>
+            </ion-button>
+          </ion-col>
+  
+          <ion-col [size]="'6'" class="ion-no-padding" *ngIf="showCaptcha" >
+            <ion-button expand="block" class="text-capitalize text-center custLooksBtn" (click)="validateCaptcha()"><span
+                class="custColorWhite custFontFamilyMuliBold muli-16pt">Validate</span></ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </form>
+  </div>
+</ion-content>
+
+<div class="custModalContainer p-10" *ngIf="loggedInModal">
+  <div id="showModalSMGSucces" class="modal-content custCenterAlign">
+    <!-- <ion-icon [src]="imageList?.successKYCIcon" class="custImage"></ion-icon> -->
+    <p class="custFontFamilyMuliBold muli-16pt custColorDark text-center p-0 m-0 ion-no-padding">{{ErrorMsg}}</p>
+  </div>
+</div>
+<div id="OTPModal" class="custModalContainer p-10" *ngIf="showOTPModal">
+  <div id="showModalSMGSucces" class="modal-content1">
+    <!-- <ion-icon name="close-outline" class="close" (click)="closeOtp();"></ion-icon> -->
+    <!-- <ion-icon [src]="imageList?.successKYCIcon" class="custImage"></ion-icon> -->
+
+    <ion-row class="p-0 m-0 ion-no-padding">
+      <ion-col [size]="'11'" class="text-center p-0 m-0 ion-no-padding">
+        <p class="custFontFamilyMuliBold muli-12pt custColorDark text-center p-0 m-0 ion-no-padding">{{'otpSent' |
+          translate}}
+          {{'registerMobileNumber'|translate}}</p>
+      </ion-col>
+
+      <ion-col [size]="'1'" class="text-center align-middle p-0 m-0 ion-no-padding">
+        <ion-icon name="close-outline" class="text-end p-0 m-0 ion-no-padding" (click)="closeOtp();"></ion-icon>
+      </ion-col>
+
+    </ion-row>
+
+
+    <form [formGroup]="PhoneVerificationForm">
+      <ion-row>
+        <ion-col class="text-center ion-no-padding" [size]="'2'">
+          <ion-input class="cc_otp" type="password" inputmode="numeric" formControlName="otp1" #otp1 required="true"
+            maxLength="1" (keyup)="otpController($event,otp2,'')">
+          </ion-input>
+        </ion-col>
+
+        <ion-col class="text-center ion-no-padding" [size]="'2'">
+          <ion-input class="cc_otp" type="password" inputmode="numeric" formControlName="otp2" #otp2 required="true"
+            maxLength="1" (keyup)="otpController($event,otp3,otp1)">
+          </ion-input>
+        </ion-col>
+
+        <ion-col class="text-center ion-no-padding" [size]="'2'">
+          <ion-input class="cc_otp" type="password" inputmode="numeric" formControlName="otp3" #otp3 required="true"
+            maxLength="1" (keyup)="otpController($event,otp4,otp2)">
+          </ion-input>
+        </ion-col>
+
+        <ion-col class="text-center ion-no-padding" [size]="'2'">
+          <ion-input class="cc_otp" type="password" inputmode="numeric" formControlName="otp4" #otp4 required="true"
+            maxLength="1" (keyup)="otpController($event,otp5,otp3)">
+          </ion-input>
+        </ion-col>
+
+        <ion-col class="text-center ion-no-padding" [size]="'2'">
+          <ion-input class="cc_otp" type="password" inputmode="numeric" formControlName="otp5" #otp5 required="true"
+            maxLength="1" (keyup)="otpController($event,otp6,otp4)">
+          </ion-input>
+        </ion-col>
+
+        <ion-col class="text-center ion-no-padding" [size]="'2'">
+          <ion-input class="cc_otp" type="password" inputmode="numeric" formControlName="otp6" #otp6 required="true"
+            maxLength="1" (keyup)="otpController($event,'',otp5)">
+          </ion-input>
+        </ion-col>
+
+      </ion-row>
+      <p
+        class="text-center custFontFamilyMuliBold muli-12pt custLineHight18 text-center custColorDarkishBlue text-capitalize custButtonBackground">
+        {{'resendLable' | translate}}</p>
+
+      <ion-row>
+        <ion-col [size]="'6'" class="ion-no-padding">
+          <ion-button expand="block" class="text-capitalize custTryButton d-flex justify-content-center"
+            (click)="getSkip()">
+            <span class="custFontFamilyMuliRegular text-center muli-14pt custColorBrightCyan">{{'skipLable'
+              | translate}}</span>
+          </ion-button>
+        </ion-col>
+
+        <ion-col [size]="'6'" class="ion-no-padding">
+          <ion-button expand="block" class="text-capitalize text-center custLooksBtn" (click)="getOTP()"><span
+              class="custColorWhite custFontFamilyMuliBold muli-16pt">{{'continue' |
+              translate}}</span></ion-button>
+        </ion-col>
+      </ion-row>
+    </form>
+  </div>
+</div>
+<div class="custModalContainer p-10" *ngIf="showOTPModal1">
+  <div id="showModalSMGSucces" class="modal-content custCenterAlign">
+    <ion-icon [src]="imageList?.successKYCIcon" class="custImage"></ion-icon>
+    <p class="custFontFamilyMuliBold muli-22pt custColorDark text-center p-0 m-0 ion-no-padding">{{'success'|translate}}
+    </p>
+    <p class="custFontFamilyMuliRegular muli-14pt custColorDark text-center p-0 mb-0 custMargin16 ion-no-padding">
+      {{'notifyOnSuccess'|translate}}</p>
+    <div class="col-12 customButtonContainer custSucessButton custMargin27">
+      <button type="button" class="btn custButtonColor w-100 customFont ">{{'okay'|translate}}</button>
+    </div>
+  </div>
+</div>
+
+<div class="custModalContainer p-10" *ngIf="skipFlag">
+  <div class="modal-content">
+    <ion-row class="text-center">
+      <p class="custFontFamilyMuliBold muli-16pt px-2">{{'aadharskip' | translate}}</p>
+    </ion-row>
+    <br>
+    <ion-row class=" ion-no-padding w-100">
+      <ion-col [size]="'6'" class="ion-no-padding" (click)="skipCancel()">
+        <ion-button expand="block" class="text-capitalize custTryButton d-flex justify-content-center">
+          <span class="custFontFamilyMuliRegular text-center muli-14pt custColorBrightCyan">{{'cancel' |
+            translate}}</span>
+        </ion-button>
+      </ion-col>
+
+      <ion-col [size]="'6'" class="ion-no-padding" (click)="yesSkip()">
+        <ion-button expand="block" class="text-capitalize text-center custLooksBtn"><span
+            class="custColorWhite custFontFamilyMuliBold muli-16pt">{{'yesskip' | translate}}</span></ion-button>
+      </ion-col>
+    </ion-row>
+  </div>
+</div>

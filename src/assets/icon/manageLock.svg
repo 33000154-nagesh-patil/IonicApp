@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Group_22361" data-name="Group 22361" transform="translate(-4045 -2239)">
+    <rect id="Rectangle_9612" data-name="Rectangle 9612" width="24" height="24" transform="translate(4045 2239)" fill="#fff"/>
+    <g id="Group_22274" data-name="Group 22274" transform="translate(4031 2133.5)">
+      <g id="Group_20941" data-name="Group 20941" transform="translate(18 107)">
+        <path id="lock_1_" data-name="lock (1)" d="M17.65,9.35V7.25a5.25,5.25,0,0,0-10.5,0v2.1A3.15,3.15,0,0,0,4,12.5v7.35A3.15,3.15,0,0,0,7.15,23h10.5a3.15,3.15,0,0,0,3.15-3.15V12.5A3.15,3.15,0,0,0,17.65,9.35Zm-8.4-2.1a3.15,3.15,0,0,1,6.3,0v2.1H9.25Zm9.642,12.6a1.5,1.5,0,0,1-1.242,1.33H7.15a1.549,1.549,0,0,1-1.289-1.33V12.5A1.518,1.518,0,0,1,7.15,11.2h10.5a1.469,1.469,0,0,1,1.242,1.3Z" transform="translate(-4 -2)" fill="#44c8f5"/>
+        <path id="lock_1_2" data-name="lock (1)" d="M11.426,11.9a1.564,1.564,0,0,0-1.05,2.74V16.1a1.05,1.05,0,0,0,2.1,0V14.641a1.565,1.565,0,0,0-1.05-2.741Z" transform="translate(-3.026 -0.35)" fill="#039"/>
+      </g>
+    </g>
+  </g>
+</svg>

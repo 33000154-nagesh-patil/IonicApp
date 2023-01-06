@@ -1,0 +1,113 @@
+{
+    "messages": [
+        {
+            "id": 0,
+            "user": "sender",
+            "msg": "How can I help you today ?",
+            "btn": [
+                {
+                    "name": "General Query",
+                    "disabled": false
+                },
+                {
+                    "name": "Raise a Complaint",
+                    "disabled": true
+                }
+            ],
+            "chatEnd":0,
+            "thumbs":"false",
+            "msg1": "Select an appropriate option"
+        }
+    ],
+    "generalQuery": [
+        {
+            "id": 0,
+            "user": "sender",
+            "msg": "Please select the category",            
+            "btn": [
+                {
+                    "name": "Wealth",
+                    "disabled": false
+                },
+                {
+                    "name": "Health",
+                    "disabled": true
+                },
+                {
+                    "name": "Education",
+                    "disabled": true
+                },
+                {
+                    "name": "Lifestyle",
+                    "disabled": true
+                },
+                {
+                    "name": "General",
+                    "disabled": true
+                },
+                {
+                    "name": "Bank",
+                    "disabled": true
+                }
+            ],
+            "chatEnd":0,
+            "thumbs":"false",
+            "msg1": ""
+
+        }
+    ],
+    "kyc": [
+        {
+            "id": 0,
+            "user": "sender",
+            "msg": "To Complete your KYC, go to MF KYC and tap on the specific options you wish to update.",
+            "btn": [
+                {
+                    "name": "Yes"
+                },
+                {
+                    "name": "No"
+                }
+            ],
+            "chatEnd":0,
+            "thumbs":"false",
+            "msg1": "Is there anything else that I can help you with?"
+        }
+    ],
+    "kycNo": [
+        {
+            "id": 2,
+            "user": "sender",
+            "msg": "Was this solution helpful ?",
+            "btn": [ ],
+            "chatEnd":0,
+            "thumbs":"true",
+            "msg1": ""
+        }
+    ],
+    "wealth": [
+        {
+            "id": 0,
+            "user": "sender",
+            "msg": "Please select your desired option",
+            "btn": [
+                {
+                    "name": "KYC"
+                },
+                {
+                    "name": "Investment"
+                },
+                {
+                    "name": "Wallet"
+                },
+                {
+                    "name": "Raise a Ticket"
+                }
+            ],
+            "chatEnd":0,
+            "thumbs":"false",
+            "msg1": ""
+        }
+    ]
+    
+}

@@ -1,0 +1,107 @@
+.custBtn{
+    border: 1px solid var(--custBrightCyan);
+    border-radius: 4px;
+    width: 100%;
+}
+.custHeaderPatch{
+    font-size: 8px;
+    background-color: #E4E5EB;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+  
+}
+.custDet{
+    text-overflow: ellipsis;
+white-space: nowrap;
+overflow: hidden;
+}
+.custStatus{
+    // padding-left: 10px;
+    margin-right: 25px;
+}
+.custArrorSize{
+    height: 16px;
+    width: 13px;
+  }
+.custGreen{
+    color: #29AD00;
+}
+.custOrange{
+    color: #EE9C15;
+}
+.custHold{
+    color: #C04C31;
+}
+.custPending{
+    color: #FC750E;
+}
+
+.custImgSize{
+    width: 25.76px;
+    height: 19.41px;
+    margin-bottom: -45px;
+}
+
+
+
+
+
+.tab button{
+    font-family: "Muli-Regular";
+    font-size: 12px !important;
+    height: 32px;
+    width: 98px;
+    opacity:0.8;
+    background-color: #D9DEE3;
+    color:#727682;    
+    border-radius: 4px;
+    border: 1px solid #D9DEE3;
+}
+
+
+
+.tab button.active{   
+   background-color: #44c8f5; 
+   color:#FFFFFF;
+   border-color:#44C8F5; 
+}
+
+.container {
+    height: 500px;
+    position: relative;
+  }
+
+  .center {
+    width:360px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.found{
+    text-align: center;
+    padding-right: 33px;
+
+   //  padding-left: 25px;
+   //  padding-top: 5px;
+ }
+
+ .faceImg{
+    height: 100px;
+    width: 100px;
+    margin-left: 110px;
+ }
+
+
+ .custBackGroundLightBlue{
+    background:rgba(192, 233, 236, 0.8)
+}

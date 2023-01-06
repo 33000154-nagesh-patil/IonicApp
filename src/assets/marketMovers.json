@@ -1,0 +1,165 @@
+
+{
+    "Gainers" :[
+        {
+          "title": "ITC",
+          "description": "NSE",
+          "amount": "3251.00",
+          "rate": 22.62,
+          "percent": " (0.23%)"
+    
+        },
+        {
+          "title": "TCS",
+          "description": "NSE",
+          "amount": "3251.00",
+          "rate": 22.62,
+          "percent": " (0.23%)"
+    
+        },
+        {
+          "title": "ONGC",
+          "description": "NSE",
+          "amount": "3251.00",
+          "rate":22.62 ,
+          "percent": " (0.23%)"
+    
+        },{
+          "title": "IOC",
+          "description": "NSE",
+          "amount": "3251.00",
+          "rate": 22.62,
+          "percent": " (0.23%)"
+    
+        },{
+          "title": "SBI",
+          "description": "NSE",
+          "amount": "3251.00",
+          "rate": 22.62,
+          "percent": " (0.23%)"
+    
+        }
+        ],
+
+
+        "Losers" :[
+          {
+            "title": "BSE Bharat 22",
+            "description": "BSE",
+            "amount": "4,118.55",
+            "rate": 444.93,
+            "percent": " (0.78%)"
+      
+          },
+          {
+            "title": "BSE Sensex",
+            "description": "BSE",
+            "amount": "40,405.20",
+            "rate": 107.35,
+            "percent": " (0.25%)"
+      
+          },
+          {
+            "title": "BSE Midcop Select",
+            "description": "BSE",
+            "amount": "7934.10",
+            "rate": 112.50,
+            "percent": " (0.20%)"
+      
+          },{
+            "title": "BSE Sensex Next 50",
+            "description": "BSE",
+            "amount": "17,218.20",
+            "rate": 100.90,
+            "percent": " (0.06%)"
+      
+          },{
+            "title": "BSE Sensex 50",
+            "description": "BSE",
+            "amount": "10,313.40",
+            "rate": 105.80,
+            "percent": " (0.62%)"
+      
+          },{
+            "title": "BSE Smallcap Select",
+            "description": "BSE",
+            "amount": "21,212.40",
+            "rate": 125.80,
+            "percent": " (0.23%)"
+      
+          },{
+            "title": "BSE Largecap",
+            "description": "BSE",
+            "amount": "17,427.80",
+            "rate": 143.20,
+            "percent": " (0.75%)"
+      
+          },{
+            "title": "BSE Largecap",
+            "description": "BSE",
+            "amount": "17,427.80",
+            "rate": 143.20,
+            "percent": " (0.75%)"
+      
+          }],
+          "Volume" :[
+            {
+              "title": "BSE Bharat 22",
+              "description": "BSE",
+              "amount": "4,118.55",
+              "rate": 444.93,
+              "percent": " (0.78%)"
+        
+            },
+            {
+              "title": "BSE Sensex",
+              "description": "BSE",
+              "amount": "40,405.20",
+              "rate": 107.35,
+              "percent": " (0.25%)"
+        
+            },
+            {
+              "title": "BSE Midcop Select",
+              "description": "BSE",
+              "amount": "7934.10",
+              "rate": 112.50,
+              "percent": " (0.20%)"
+        
+            },{
+              "title": "BSE Sensex Next 50",
+              "description": "BSE",
+              "amount": "17,218.20",
+              "rate": 100.90,
+              "percent": " (0.06%)"
+        
+            },{
+              "title": "BSE Sensex 50",
+              "description": "BSE",
+              "amount": "10,313.40",
+              "rate": 105.80,
+              "percent": " (0.62%)"
+        
+            },{
+              "title": "BSE Smallcap Select",
+              "description": "BSE",
+              "amount": "21,212.40",
+              "rate": 125.80,
+              "percent": " (0.23%)"
+        
+            },{
+              "title": "BSE Largecap",
+              "description": "BSE",
+              "amount": "17,427.80",
+              "rate": 143.20,
+              "percent": " (0.75%)"
+        
+            },{
+              "title": "BSE Largecap",
+              "description": "BSE",
+              "amount": "17,427.80",
+              "rate": 143.20,
+              "percent": " (0.75%)"
+        
+            }]
+}

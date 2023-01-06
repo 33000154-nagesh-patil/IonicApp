@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-toolbar class="custBackgroundDynamicColorWhite">
+    <ion-grid>
+      <ion-row>
+        <ion-col [size]="'12'" class="text-center">
+          <span class="custFontFamilyMuliBold muli-14pt custLineHight40 custColorDark ">{{'setupInvestmentAccount'
+            | translate}}</span>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <form [formGroup]="dobValidationForm" (ngSubmit)="onDobContinue()" novalidate>
+      <ion-row class="custIndexBottom">
+  
+        <ion-col>
+          <p class="custFontFamilyMuliBold muli-16pt custLineHight22 custColorDark ion-padding-horizontal"> {{'enterDOB'
+            | translate }}</p>
+          <p class="custFontFamilyMuliRegular muli-12pt custLineHight16 custColorDark ion-padding-horizontal pb-3">
+            {{'dobPAN' | translate }}</p>
+  
+          <mat-form-field class="mat-form-field" appearance="outline" class="w-100">
+            <mat-label>{{'dob' | translate}}</mat-label>
+            <input matInput readonly [matDatepicker]="picker" max="{{maxDate}}" formControlName="dob"
+              placeholder=DD-MM-YYYY required (click)="picker.open()">
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field>
+        </ion-col>
+      </ion-row>
+      <ion-row class="fixed-bottom">
+        <ion-col [size]="'12'" class="text-center">
+          <span class="custFontFamilyMuliRegular muli-14pt custColorGreyish custLineHight15 d-inline-flex">
+            <ion-icon name="gift-outline" class="custLock"></ion-icon>
+            {{'dobGifts' | translate }}
+          </span>
+        </ion-col>
+        <!-- <ion-col [size]="'12'">
+         <button class="btn w-100 text-center custBackgroundColorBrightCyan" [disabled]="dobValidationForm.invalid">
+            <span class="custColorWhite custFontFamilyMuliBold muli-16pt">{{'btnContinue' | translate}}</span>
+          </button>
+        </ion-col> -->
+        <ion-col [size]="'12'" class="pb-3 px-3">
+          <button class="btn w-100 text-center custBackgroundColorBrightCyan"><span
+              class="custColorWhite custFontFamilyMuliBold muli-16pt">{{'continue' | translate}}</span></button>
+        </ion-col>
+      </ion-row>
+    </form>
+  </ion-grid>
+</ion-content>
+

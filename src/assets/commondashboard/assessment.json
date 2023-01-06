@@ -1,0 +1,105 @@
+{
+
+	"": {
+		"heading": "Details",
+		"discription": "Discover for all Assessment",
+		"Product": "Assessment",
+		"action1": "Add to card",
+		"action2": "Start To Assissment",
+		"name": "Mutual Fund",
+		"price": "250",
+		"Cards": {
+			"heading": "Basic Information",
+			"description": "Max",
+			"sub_heading": "Mutual Fund",
+			"image": "",
+			"row": [{
+					"Rating": "4.1",
+					"Including all taxes price": "Rs.250"
+				},
+				{
+					"enrolled": "5",
+					"Topics": "10"
+				},
+				{
+					"flexiblity": "Flexible Deadlines",
+					"availability": "100% Online"
+				}
+			]
+		},
+		"Info": {
+			"heading": "Basic Information",
+			"product": "Assessment"
+		},
+		"step": [{
+				"heading": "Course Content",
+				"data": [{
+						"Icon": "",
+						"Steps": "Topic 1",
+						"Disc": "troduction to Web Design"
+					},
+					{
+						"Icon": "",
+						"Steps": "Topic 2",
+						"Disc": "Getting started with low fide.."
+					},
+					{
+						"Icon": "",
+						"Steps": "Topic 3",
+						"Disc": "Wireframing Low Fadility"
+					},
+					{
+						"Icon": "",
+						"Steps": "Topic 4",
+						"Disc": "Type color & Icon Introduction"
+					},
+					{
+						"Icon": "",
+						"Steps": "Topic 5",
+						"Disc": "Prototyping a website"
+					}
+				]
+			},
+			{
+				"heading": "Assessment Description",
+				"data": [{
+						"Icon": "",
+						"Steps": "",
+						"Disc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.d"
+					}
+
+				]
+			},
+			{
+				"heading": "Pre requisite",
+				"data": [{
+						"Icon": "",
+						"Steps": "",
+						"Disc": "Windows, Mac, and Linux are all supported"
+					},
+					{
+						"Icon": "",
+						"Steps": "",
+						"Disc": "Setup and installation instructions"
+					},
+					{
+						"Icon": "",
+						"Steps": "",
+						"Disc": "No previous experience is needed"
+					},
+					{
+						"Icon": "",
+						"Steps": "",
+						"Disc": "Your enthusiasm to learn this"
+					},
+					{
+						"Icon": "",
+						"Steps": "Topic 5",
+						"Disc": "Prototyping a website"
+					}
+				]
+			}
+
+		]
+	}
+}

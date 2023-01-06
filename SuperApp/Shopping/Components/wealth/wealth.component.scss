@@ -1,0 +1,68 @@
+.custBtnExplore{
+    // width: 80px;
+    height: 30px;
+    border:  1px solid var(--custBrightCyan) !important;
+    border-radius: 4px !important;
+    background: white !important;
+    text-align: center !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    float: right;
+}
+.custBtnAssist{
+    // width: 80px;
+    height: 30px;
+    border:  1px solid var(--custBrightCyan) !important;
+    border-radius: 4px !important;
+    background: white !important;
+    text-align: center !important;
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+    float: right;
+}
+.custBtnInvest{
+    // width: 80px;
+    height: 30px;
+    border:  1px solid var(--custBrightCyan) !important;
+    border-radius: 4px !important;
+    background: white !important;
+    text-align: center !important;
+    padding-left: 6px !important;
+    padding-right: 6px !important;
+    float: right;
+}
+.custBox{
+    height: 4px;
+    width: 20px;
+    border-radius: 0.5px;
+}
+.custRoboCard{
+    margin: 8px;
+}
+
+.mfBackground{
+    background-image: var(--mf);
+    background-repeat: no-repeat;
+    background-size: cover;
+    // background-size: 1200px;
+}
+.custMFImg{
+    height: 46px;
+    width: 46px;
+    border-radius: 50%;
+    padding: 10px;
+}
+.custImgGold{
+    height: 38px;
+    width: 38px;
+   
+}
+.custArrowIcon{
+    height: 10px;
+    width: 6px;
+}
+.dot{
+    height: 5px;
+    width: 5px;;
+    border-radius: 50%;
+}

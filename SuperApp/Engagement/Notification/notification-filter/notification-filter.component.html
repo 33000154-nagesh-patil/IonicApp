@@ -1,0 +1,109 @@
+<ion-header class="fixed-top">
+  <ion-toolbar>
+    <ion-grid>
+      <ion-row>
+        <ion-col [size]="'1'" id="goBack">
+          <div class="custTextAlignCenter">
+            <ion-img [src]="imageList?.arrow" class=" custInvestArrow" (click)=" back()"></ion-img>
+          </div>
+        </ion-col>
+        <ion-col class="custFontFamilyMuliBold muli-16pt custColorDark">Filter</ion-col>
+        
+        <ion-col size="3" class="custFontFamilyMuliBold muli-14pt custColorDarkishBlue  me-2 text-end"
+          (click)="clearAll()">Clear All</ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid class="pt-5 h-100">
+    <ion-row class=" h-100">
+
+      <ion-col size="5" class="custBorder border">
+        <ion-row *ngFor="let item of filterKey" class="py-4 ps-3 border-bottom custFontFamilyMuliBold muli-14pt mt-2 "
+          (click)="filterSelected(item)" [ngClass]="(filterKey1==item)&&!showDate?'custColorDarkishBlue':''">
+          {{item}}
+          <ion-icon *ngIf="filter[item].length > 0 " name="radio-button-on" class="custColorBrightCyan"></ion-icon>
+        </ion-row>
+        <ion-row class="py-4 ps-3 border-bottom custFontFamilyMuliBold muli-14pt mt-2" (click)="showDateFilter()">
+          <ion-col>
+            <span [ngClass]="showDate?'custColorDarkishBlue':''">Date</span>
+            <ion-icon *ngIf="fromDate || toDate" name="radio-button-on" class="custColorBrightCyan"></ion-icon>
+          </ion-col>
+        </ion-row>
+
+      </ion-col>
+
+      <ion-col class="border" *ngIf="!showDate">
+        <ion-row class="py-4 ps-3 d-flex align-items-center  border-bottom custFontFamilyMuliBold mt-2 muli-12pt"
+          *ngFor="let x of filterVal">
+          <ion-checkbox color="secondary" mode="ios" class="me-3 custCircle" (click)="selectFilter(x)" *ngIf="true"
+            [(ngModel)]="filter[filterKey1][x]"></ion-checkbox>
+          <span class="custFontFamilyMuliRegular muli-12pt"
+            [ngClass]="(filterVal==x)?'custColorDarkishBlue':''">{{x}}</span>
+          <!-- <ion-img *ngIf="filterKey1=='Ratings'" [src]="filterVal1?.x"></ion-img> -->
+        </ion-row>
+      </ion-col>
+
+      <ion-col size='3' *ngIf="showDate">
+        <ion-row class="d-flex align-items-center p-3 border-bottom custFontFamilyMuliRegular w-100">
+          <span class="custFontFamilyMuliRegular muli-14pt custMargin">
+
+            <mat-form-field appearance="outline" class="w-85 ">
+              <mat-label >From Date</mat-label>
+              <input matInput readonly [matDatepicker]="FromDate" [(ngModel)]="fromDate" >
+              <mat-datepicker-toggle matSuffix [for]="FromDate"></mat-datepicker-toggle>
+              <mat-datepicker #FromDate>
+                <mat-datepicker-actions>
+                  <!-- <button mat-button matDatepickerCancel class="custButton1">Cancel</button> -->
+                  <button mat-button matDatepickerApply class="custButton">Done</button>
+                </mat-datepicker-actions>
+              </mat-datepicker>              
+            </mat-form-field>
+
+            <br />
+
+            <mat-form-field appearance="outline" class="w-85 ">
+              <mat-label >To Date</mat-label>
+              <input matInput readonly [matDatepicker]="ToDate" [(ngModel)]="toDate" >
+              <mat-datepicker-toggle matSuffix [for]="ToDate"></mat-datepicker-toggle>
+              <mat-datepicker #ToDate>
+                <mat-datepicker-actions>
+                  <!-- <button mat-button matDatepickerCancel class="custButton1">Cancel</button> -->
+                  <button mat-button matDatepickerApply class="custButton">Done</button>
+                </mat-datepicker-actions>
+              </mat-datepicker>
+              
+            </mat-form-field>
+          </span>
+        </ion-row>
+      </ion-col>
+
+
+
+
+
+
+
+
+
+
+    </ion-row>
+    <ion-row class="border fixed-bottom">
+      <ion-col [size]="'6'" class="ion-no-padding" (click)="cancel()">
+        <ion-button expand="block" class="text-capitalize custTryButton d-flex justify-content-center">
+          <span class="custFontFamilyMuliRegular text-center muli-14pt custColorBrightCyan">{{'cancel' |
+            translate}}</span>
+        </ion-button>
+      </ion-col>
+
+      <ion-col [size]="'6'" class="ion-no-padding" (click)="apply()">
+        <ion-button expand="block" class="text-capitalize text-center custLooksBtn"><span
+            class="custColorWhite custFontFamilyMuliBold muli-16pt">Apply</span></ion-button>
+      </ion-col>
+
+
+    </ion-row>
+  </ion-grid>
+</ion-content>

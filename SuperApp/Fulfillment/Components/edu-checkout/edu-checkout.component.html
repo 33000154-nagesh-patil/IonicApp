@@ -1,0 +1,158 @@
+<ion-app >
+  <ion-header >
+    <ion-toolbar class="custBackgroundDynamicColorWhite">
+      <ion-grid class="p-0">
+        <ion-row>
+          <ion-col (click)="goBack()" [size]="'1'" class="my-auto" id="goBack">
+            <ion-img [src]="imageList?.arrow" class="custKYCImg mt-0 custHeight1"></ion-img>
+          </ion-col>
+          <ion-col [size]="'9'" class="text-left my-auto">
+            <span class="custFontFamilyMuliBold muli-18pt custLineHight40 custColorDarkShade ">Checkout</span>
+          </ion-col>
+          <ion-col [size]="'2'">
+            <div class="custHeight2 custProfile">
+              <img [src]="imageList?.shopingcarT" class="custSVGIcon">
+            </div>
+
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-toolbar>
+  </ion-header>
+
+
+
+  <ion-content class="contentBackground">
+    <ion-grid class="ion-no-padding p-1">
+      <ion-row class="margin " *ngIf="grandTotal!=0">
+        <mat-accordion class="example-headers-align w-100 mt-4 m-3">
+          <mat-expansion-panel>
+            <mat-expansion-panel-header #my  class="mb-2" >
+              <mat-panel-title class="d-flex flex-row mt-2">
+                <h2 class="custFontFamilyMuliBold  muli-14pt custLineHight22 custColorDark ion-no-margin"
+                  [ngClass]="true?'active':'active'">Price Details</h2>
+
+
+              </mat-panel-title>
+              <mat-panel-description class="flex-grow-0 pt-3">
+                <p class="custFontFamilyMuliBold muli-14pt custLineHight20 custColorLightblack">₹&nbsp;{{grandTotal| currencyCommasHundreds}}</p>
+              </mat-panel-description>
+
+            </mat-expansion-panel-header>
+            <ion-row class="" *ngFor="let x of checkoutData" >
+              <ion-col size="8" class="ion-no-padding">
+                <p class="mb-0 custFontFamilyMuliRegular muli-14pt custLineHight20 custColorDark " *ngIf="checkoutData.indexOf(x)==0">Item MRP ( {{checkoutData.length}} Item )</p>
+              </ion-col>
+              <ion-col size="4" class="text-end" >
+                <p class="mb-0  custFontFamilyMuliBold muli-14pt custLineHight20 custColorLightblack">₹&nbsp;{{x?.totalAmount| currencyCommasHundreds}}</p>
+              </ion-col>
+
+            </ion-row>
+            <ion-row class="">
+              <ion-col size="8" class="ion-no-padding">
+                <h1 class="custFontFamilyMuliBold  muli-14pt custLineHight22 custColorDark">Grand Total</h1>
+              </ion-col>
+              <ion-col size="4" class="text-end">
+                <p class="custFontFamilyMuliBold muli-14pt custLineHight20 custColorLightblack">₹&nbsp;{{grandTotal| currencyCommasHundreds}}</p>
+              </ion-col>
+            </ion-row>
+            <!-- <div class="bottomcontent " *ngIf=" my.value">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <img class="logotick "[src]="imageList?.Accept">&nbsp;
+              <p class="custFontFamilyMuliBold muli-12pt custLineHight18 custColorParakeetGreen textline"> Yay!
+                You've saved ₹50 on your shopping </p>
+            </div> -->
+          </mat-expansion-panel>
+
+        </mat-accordion>
+      </ion-row>
+
+      <ion-row class="" *ngFor="let x of checkoutData">
+        <ion-col [size]="'12'">
+          <ion-card class="custBackgroundColorWhite something ">
+            <ion-card-content class="bord">
+              <ion-row>
+                <ion-col size="2" >
+                  <div class="courseIcon">
+                    <!-- <img [src]="'data:image/jpeg;base64,' +x.icon"> -->
+                    <img src="https://m.media-amazon.com/images/I/61nQDb0lrBL._UL1000_.jpg" *ngIf="x?.product=='DigiGold'">
+                    <img src="https://www.orowealth.com/static/images/amcs/icici.png" *ngIf="x?.product?.split('-')[0]=='MF'">
+                    <img src="https://thumbs.dreamstime.com/b/education-icon-isolated-white-background-graduation-cap-simbol-flat-style-simple-abstract-place-icon-black-vector-110069750.jpg"
+                    *ngIf="x?.product=='Education'">
+                    <img src="https://icons.veryicon.com/png/o/business/circular-multi-color-function-icon/health-health.png" *ngIf="x?.product=='Health'">
+                  </div>
+                </ion-col>
+
+                <ion-col [size]="'7'" >
+                  <p  class="custFontFamilyMuliBold muli-14pt custLineHight20  custColorDark mt-0">
+                    {{x?.itemName}}
+                  </p>
+
+
+                  <p  class="custFontFamilyMuliBold muli-10pt custLineHight15 custColorDark ">{{x?.product}}</p>
+                  <!-- <ion-row >
+                    <p class="custFontFamilyMuliRegular muli-10pt
+                  custLineHight15 custColorlightgray text-nowrap custTitle">15 sections • 146 lectures
+                    </p>
+                  </ion-row> -->
+                </ion-col>
+                <!-- <ion-col [size]="'3'" (click)="remove(x)" >
+                  <img [src]="imageList?.dustbin" class="custRemove"><span class="custFontFamilyMuliBold muli-12pt custLineHight18 custColorDarkishBlue">Remove</span>
+                </ion-col> -->
+
+                <ion-col size="4" class="mt-2">
+                  <ion-row>
+                    <span class="custFontFamilyMuliRegular muli-12pt custLineHight16 custColorGreyish">Quantity</span>
+                  </ion-row>
+                  <ion-row>
+                    <p  class="custFontFamilyMuliBold muli-14pt custLineHight25 custColorLightblack mt-1">{{x?.quantity}}</p>
+
+                  </ion-row>
+                </ion-col>
+                <!-- <ion-col size="4" class="mt-2" >
+                  <ion-row>
+                    <span class="custFontFamilyMuliRegular muli-12pt custLineHight16 custColorGreyish">Ratings</span>
+                  </ion-row>
+                  <ion-row>
+                    <ngb-rating [(rate)]="x.averageRatings" [readonly]="true" [starTemplate]="starTemplate" [max]="5"></ngb-rating>
+                    <ng-template #starTemplate let-fill="fill">
+                        <span class="star" [class.full]="fill === 100">
+                          <span class="half" [style.width.%]="fill">&starf;</span>&starf;
+                        </span>
+                      </ng-template>
+                  </ion-row>
+                </ion-col> -->
+                <ion-col size="4" class="mt-2" >
+                  <ion-row>
+                    <span class="custFontFamilyMuliRegular muli-12pt custLineHight16 custColorGreyish">Unit Price</span>
+                  </ion-row>
+                  <ion-row>
+                    <span class="custFontFamilyMuliBold muli-14pt custLineHight25 custColorLightblack mt-1">{{x?.unitPrice}}</span>
+                  </ion-row>
+                </ion-col>
+
+                <ion-col size="4" class="bottom_left1 mt-2" >
+                  <ion-row class="">
+                    <span class="custFontFamilyMuliRegular muli-12pt custLineHight16 custColorGreyish">Total</span>
+                  </ion-row>
+                  <ion-row>
+                    <p class="custFontFamilyMuliBold muli-14pt custLineHight25 custColorLightblack mt-1">{{x?.totalAmount}}</p>
+                  </ion-row>
+                </ion-col>
+
+              </ion-row>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+
+      </ion-row>
+    </ion-grid>
+
+  </ion-content>
+  <ion-footer class=""  *ngIf="checkoutData?.length>0">
+    <ion-toolbar class="p-3">
+      <button class="btn w-100 text-center custBackgroundColorBrightCyan"
+        (click)="pay();"><span class="custColorWhite
+          custFontFamilyMuliBold muli-16pt">Proceed To Payment</span></button>
+    </ion-toolbar>
+  </ion-footer>
+</ion-app>

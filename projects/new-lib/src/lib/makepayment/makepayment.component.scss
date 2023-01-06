@@ -1,0 +1,129 @@
+.custKYCImg{
+    height: 16px;
+    width: 13px;
+}
+::ng-deep .mat-tab-label {
+    height: 35px !important;
+    min-height: 5px !important;
+    margin: 3px !important;
+    width: 100% !important;
+    min-width: 5px !important;
+}
+.custVerification3{
+    height: 30px;
+    width: 28px;
+}
+.custImgSucc{
+  width: 12px;
+  height: 12px;
+}
+.StepProgress {
+  position: relative;
+  padding-left: 45px;
+  list-style: none;
+  
+  &-item {
+    position: relative;
+    counter-increment: list;
+    
+    &:not(:last-child) {
+      padding-bottom: 20px;
+    }
+    
+    &::before {
+      display: inline-block;
+      content: '';
+      position: absolute;
+      left: -30px;
+      height: 100%;
+      width: 10px;
+    }
+    
+    &::after {
+      content: '';
+      // display: inline-block;
+      position: absolute;
+      top: 0;
+      left: -39px;
+      width: 20px;
+      height: 20px;
+      // border: 2px solid var(--custWhite);
+      // border-radius: 50%;
+      // background-color: var(--custWhite);
+    }
+    
+    &.is-done {
+      &::before {
+        border-left: 2px dashed var(--custParakeetGreen);
+        margin-top: 12px;
+      }
+      &::after {
+        background-image: url("../../../../../src/assets/icon/Group_12745.svg");
+        background-repeat: no-repeat;
+        top: 4px;
+      //   font-size: 12px;
+      //   color: var(--custWhite);
+        width:20px;
+        height:20px;
+        text-align: center;
+      //   border: 2px solid var(--custParakeetGreen);
+      //   background-color: var(--custParakeetGreen);
+      }
+    }
+    
+    &.current {
+      &::before {
+        border-left: 2px dashed  #DEDEDE;
+        margin-top: 20px;
+        width: 10px;
+        height: 86%;
+      }
+      
+      &::after {
+          background-image: url("../../../../../src/assets/icon/greenColor.svg");
+          background-repeat: no-repeat;
+         top: 4px;
+         width:20px;
+         height:20px;
+        // top: -4px;
+        left: -39px;
+      //   font-size: 14px;
+        text-align: center;
+      //   color: var(--custParakeetGreen);
+      //   border: 2px solid var(--custBattlePGry);
+      //   background-color: var(--custWhite);
+      }
+    }
+    
+    &.comming {
+      &::before {
+        border-left: 2px dashed  #DEDEDE;
+        margin-top: 20px;
+        width: 10px;
+        height: 86%;
+      }
+      
+      &::after {
+          background-image: url("../../../../../src/assets/icon/orangeColor.svg");
+          background-repeat: no-repeat;
+          z-index: 1;
+         top: 4px;
+         width:20px;
+         height:20px;
+        // top: -4px;
+        left: -39px;
+      //   font-size: 14px;
+        text-align: center;
+      //   color: var(--custParakeetGreen);
+      //   border: 2px solid var(--custBattlePGry);
+      //   background-color: var(--custWhite);
+      }
+    }
+  }
+    
+    strong {
+      display: block;
+    }
+  
+
+  }

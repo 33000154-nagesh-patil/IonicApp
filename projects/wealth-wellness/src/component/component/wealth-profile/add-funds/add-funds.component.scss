@@ -1,0 +1,130 @@
+input {
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: #44c8f5
+  }
+  input:focus {
+    border-color: #44c8f5
+  }
+  
+
+  input[type="checkbox"].toggle {
+    opacity: 0;
+    position: absolute;
+    left: -9000px;
+    top: -9000px;
+  }
+
+  input[type="checkbox"].toggle + label {
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  input[type="checkbox"].toggle + label::before {
+    content: "";
+    width: 2em;
+    height: 1em;
+    background-color: rgb(24, 126, 160)
+  }
+  .custColorWarmGrey1{
+    color: #adb2bb;
+    }
+    .margin1Top{
+      margin-top: -26px;
+      // padding-left: 50px;
+    }
+    .paddinf1left{
+      padding-left: 60px;
+    }
+    .custColordarkBlue{
+      color: rgb(19, 106, 219);
+    }
+    .margincard12{
+      margin-top: -15px;
+      // margin-bottom: -11px;
+    }
+
+    .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle {
+      border-color: #1228cf;
+  }
+  .custModalContainer {
+    z-index: 1;
+    left: 0;
+    // top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    // background-color: var(--custDark);
+    //  opacity: 0.4;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+  }
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 16px;
+    padding-left: 16px;
+    border: 1px solid #888;
+    width: 100%;
+    height: max-content;
+    position: absolute;
+    bottom: 0px;
+    border-radius: 10px 10px 0px 0px;
+  }
+  .heightGpay{
+    height: 46px;
+    width: 60px;
+  }
+  .heightPhonepay{
+    height: 66px;
+    width: 80px;
+  }
+  .heightBhim{
+    height: 56px;
+    width: 70px;
+  }
+  .Axis{
+    height: 40px;
+    padding-top: 7px;
+    padding-left: 1px;
+  }
+  h1 {
+    border-bottom: 1px solid #dcdbdd
+  }
+
+  .custWithoutTextImg{
+    height: 18px;
+    width: 18px;
+  }
+
+  .custBanks{
+    height: 46px;
+    width: 60px;
+  }
+.imgHeight{
+  height: 36px;
+}
+.GapyMar{
+  margin-top: -15px;
+  margin-bottom: -14px;
+}
+.GapyMar1{
+  margin-top: -25px;
+  margin-bottom: -20px;
+}
+:host ::ng-deep .mat-radio-outer-circle{
+  border-color: var(----custDarkishBlue) !important ;
+}
+:host ::ng-deep .mat-radio-inner-circle{
+  background-color: var(--custBrightCyan) !important ;
+}
+
+// .btn{
+//   width: 328px;
+//           height: 45px;
+// }

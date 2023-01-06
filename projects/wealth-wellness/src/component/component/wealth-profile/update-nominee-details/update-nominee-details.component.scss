@@ -1,0 +1,23 @@
+:host ::ng-deep .mat-radio-outer-circle{
+    border-color: var(----custDarkishBlue) !important ;
+  }
+  :host ::ng-deep .mat-radio-inner-circle{
+    background-color: var(--custBrightCyan) !important ;
+  }
+
+
+  .custColorWarmGrey1{
+    color: #adb2bb;
+    }
+
+    ::ng-deep .mat-select-panel{
+      margin-top: 50px !important;
+    }
+    ::ng-deep .mat-select-arrow {
+      color: #fff !important;
+    }
+
+    .custWithoutTextImg{
+      height: 18px;
+      width: 18px;
+    }

@@ -1,0 +1,158 @@
+<ion-header class="sticky-top">
+  <ion-toolbar>
+    <ion-grid>
+
+      <ion-row class="w-100 d-flex justify-content-between">
+        <ion-col [size]="'1'"class="mt-1" (click)="goBack()">
+          <ion-img [src]="imageList?.arrow" class="custKYCImg mt-2"></ion-img>
+        </ion-col>
+        <ion-col [size]="'4'"class="mt-1 text-start">
+          <span class="muli-14pt">All Rewards
+          </span>
+        </ion-col>
+
+        <ion-col [size]="'3.5'" class="text-end">
+          <img [src]="headerData?.coinImg" class="px-2"/>
+          <span class="muli-14pt custFontFamilyMuliBold custColorDark">
+            {{headerData?.coins}}
+          </span>
+        </ion-col>
+
+        <ion-col [size]="'3.5'" class="text-end">
+          <img [src]="headerData?.prizeImg" class="px-2"/>
+          <span class="muli-14pt custFontFamilyMuliBold custColorDark">
+            {{headerData?.prize}}
+          </span>
+        </ion-col>
+      </ion-row>
+
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+      <ion-row class="containerr">
+        <ion-col [size]="'6'"  *ngFor="let text of buttonText" class="ion-no-padding" (click)="onTabClick(text.rewards)">
+          <ion-card [ngClass]="{'active': tabName === text.rewards}">
+            <ion-card-content>
+              <ion-row>
+                <ion-col size="6">
+                  <ion-img [src]="text?.logo" class="titleIMG float-start "></ion-img>
+                </ion-col>
+                <ion-col size="6" class="">
+                  <span
+                    class="custFontFamilyMuliSemiBold custLineHight20 muli-14pt text-center custColorDark mt-1 text-nowrap">
+                    {{text.rewards}}
+                  </span><br>
+                  <span
+                    class="custFontFamilyMuliSemiBold muli-22pt text-center custColorDark custDesc">{{text.count}}</span>
+                </ion-col>
+
+              </ion-row>
+
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+
+
+      <ion-row class="p-1">
+        <span class="muli-16pt custColorDark custFontFamilyMuliBold pt-4">
+         Your winnings
+        </span><span class="muli-14pt custColorBrightCyan pt-4">(Active:32)</span>
+      </ion-row>
+
+    <div *ngIf="tabName==='All types'">
+
+
+
+      <div *ngFor="let x of allRewardsCards">
+      <!-- <button style="background-color: transparent;"> -->
+        <ion-card [ngClass]="x.validity==='locked'?'custBackgroundGrey':x.backGroundColor" [disabled]="x.validity==='locked'">
+          <ion-card-content>
+            <div *ngIf="x?.cardType !='cashBack'">
+            <ion-row>
+              <ion-col size="8" class="py-2">
+                <p class="custColorDark custFontFamilyMuliBold muli-16pt">{{x.cardDes}}</p>
+              </ion-col>
+              <ion-col size="4" class="justify-content-end">
+                <ion-img [src]="x.brandIcon" class="custImgSize d-block"></ion-img>
+              </ion-col>
+            </ion-row>
+            <ion-row class="" style="border: 2px dashed grey;">
+              <ion-col></ion-col>
+              <ion-col size="7" class="py-3">
+                <span class="custColorDark custFontFamilyMuliRegular muli-8pt">{{x.codeTitle}}</span>
+                <span class="custColorDark d-block custFontFamilyMuliBold muli-16pt">{{x.voucherCode}}</span>
+              </ion-col>
+              <ion-col size="4" class="justify-content-end py-3">
+                <button class="custFontFamilyMuliBold muli-14pt" [ngClass]="x.validity==='locked'?'custBtnDis':'custBtn'" [disabled]="x.validity==='locked'" (click)="copyCardCode(x.notificationType)">Copy</button>
+              </ion-col>
+            </ion-row>
+           <ion-row>
+            <button class="muli-14pt pt-2 custFontFamilyMuliBold custDetailButton" [ngClass]="x.validity==='locked'?'custColorGreyish':'custColorDarkishBlue'" [disabled]="x.validity=='locked'" (click)="openSubBrandPopUp(x)">Details</button>
+           </ion-row>
+           </div>
+           <ion-row *ngIf="x?.cardType==='cashBack'">
+            <ion-col size="8" class="">
+              <p class="custColorDark custFontFamilyMuliBold muli-16pt">{{x.cardDes}}</p>
+            </ion-col>
+            <ion-col size="4" class="justify-content-end">
+              <ion-img [src]="x.brandIcon" class="custImgSize1 d-inline"></ion-img>
+            </ion-col>
+          </ion-row>
+          <ion-row *ngIf="x?.cardType==='cashBack'">
+            <button class="muli-14pt pt-2 custFontFamilyMuliBold custDetailButton" [ngClass]="x.validity==='locked'?'custColorGreyish':'custColorDarkishBlue'" [disabled]="x.validity=='locked'" (click)="openSubBrandPopUp(x)">View</button>
+          </ion-row>
+          </ion-card-content>
+          <ion-row class="d-flex justify-content-end custSlot" style="border-radius: 6px;">
+            <span class="muli-8pt p-1" [ngClass]="x.validity==='locked'?'custBackgroundColorAva1':'custBackgroundColorAva'">{{x.validityDate}}</span>
+          </ion-row>
+        </ion-card>
+      <!-- </button> -->
+      </div>
+    </div>
+<!--
+ <div *ngIf="tabName==='Jackpots'">
+      <div *ngFor="let x of notificationDataMonth">
+        <ion-card>
+          <span
+            class="custFontFamilyMuliBold custHeaderPatch float-end custColorDark uppercase">{{x.notificationType}}</span>
+          <ion-card-content>
+            <ion-row>
+              <ion-col size="2">
+                <img src="{{x.notificationIcon}}" class="custImgSize" />
+              </ion-col>
+              <ion-col size="10">
+                <p class="muli-14pt custFontFamilyMuliRegular">{{x.orderStatus}}</p>
+                <p class="custColorDark custFontFamilyMuliBold muli-12pt">{{x.notificationDescription}}</p>
+                <p class="custFontFamilyMuliRegular muli-12pt d-block justify-content-start text-nowrap mt-2">
+                  {{x.notificationDate}}
+                </p>
+              </ion-col>
+            </ion-row>
+          </ion-card-content>
+        </ion-card>
+      </div>
+    </div> -->
+
+    <!-- <div class="container" *ngIf="tabName==='Cashback'">
+      <div class="center">
+        <ion-row>
+          <ion-col [size]="'12'">
+            <ion-img class="faceImg" [src]="imageList?.noNotification"></ion-img>
+            <br>
+          </ion-col>
+          <ion-col>
+            <span class="found custFontFamilyMuliBold">No Notifications found !</span>
+            <br /><br />
+            <span>We will notify you when something new arrives !</span>
+          </ion-col>
+        </ion-row>
+      </div>
+    </div>  -->
+
+
+  <!-- </ion-grid> -->
+</ion-content>

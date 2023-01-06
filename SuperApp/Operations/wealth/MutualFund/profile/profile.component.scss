@@ -1,0 +1,42 @@
+.NameHolder {
+    width: 57px;
+    height: 57px;
+    margin: 15px 10px 15px 12px; // top, right, bottom, left
+
+    background: var(--custwhiteTwo);
+    border-radius: 50%;
+
+    .nameFlCenter{
+        vertical-align: sub;
+    }
+}
+
+.custPanContainer{
+    background-image: linear-gradient(to right, var(--custDarkishBlue) , var(--custBrightCyan));
+}
+
+.custeye{
+    position: relative;
+    bottom: 5px;
+}
+
+.mat-expansion-panel-header {
+    padding-left: 13px !important;
+}
+
+.mat-expansion-panel:not([class*=mat-elevation-z]) {
+    box-shadow: none;
+}
+.backArrow{
+    height: 18px;
+    width: 10px;
+}
+
+::ng-deep .mat-expansion-indicator::after {
+    color: blue !important;
+}
+
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
+    background-color: var(--custWhite);
+    border-radius: 5px;
+  }

@@ -1,0 +1,218 @@
+<ion-header>
+  <ion-toolbar class="custBackgroundDynamicColorWhite">
+    <ion-grid>
+      <ion-row>
+        <ion-col *ngIf="appName != 'Aqube'" [size]="'1'" (click)="gotoBack()" class="text-center mt-1">
+          <ion-img [src]="imageList?.arrow" class="custKYCImg mt-2"></ion-img>
+        </ion-col>
+        <ion-col *ngIf="appName != 'Aqube'" [size]="'10'" class="text-center">
+          <span class="custFontFamilyMuliBold muli-14pt custLineHight40 custColorDark ">{{'setupInvestmentAccount'
+            | translate}}</span>
+        </ion-col>
+        <ion-col *ngIf="appName == 'Aqube'" [size]="'12'" class="text-center">
+          <span class="custFontFamilyMuliBold muli-14pt custLineHight40 custColorDark ">{{'setupInvestmentAccount'
+            | translate}}</span>
+        </ion-col>
+        <ion-col *ngIf="appName != 'Aqube'" [size]="'1'" class="text-center mt-1" (click)="dismiss(false)">
+          <ion-img [src]="imageList?.close" class="custKYCImg mt-2"></ion-img>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid class="contentBackground z-index-0 scroll">
+
+    <form [formGroup]="panAdharDetails">
+
+      <ion-row>
+        <ion-col [size]="'12'" class="text-center">
+          <span class="custFontFamilyMuliBold muli-14pt custLineHight18 custColorDark">{{'panadharsubheading' |
+            translate}}</span>
+        </ion-col>
+      </ion-row>
+      <ion-card class="panButton">
+        <ion-card-content>
+          <ion-row>
+            <ion-col>
+              <ion-grid>
+                <!-- Pan Card start -->
+
+
+                <ion-row class="w-100 d-flex flex-column align-items-center">
+
+                  <ion-img [src]="copPAN" class="custKYCImg mt-2 w-25 h-25"></ion-img>
+                  <span
+                    class="custFontFamilyMuliBold muli-16pt mt-3 mb-1 custLineHight18 custColorDark">{{'panadharpantitle'
+                    | translate}}</span>
+                </ion-row>
+                <ion-row>
+                  <ion-col>
+                    <button class="btn w-100 text-center custButtonOutLine custColorBrightCyan custBtnExplore"
+                      (click)="takePicturePAN()">
+
+                      <span class="custColorBrightCyan custFontFamilyMuliBold muli-12pt">{{'panadharbtntakepic' |
+                        translate}}</span>
+                    </button>
+                  </ion-col>
+                  <!-- <ion-col>
+                    <button class="btn w-100 text-center custButtonOutLine custColorBrightCyan custBtnExplore"
+                      (click)="uploadPicturePAN();file.click()">
+                      <input type="file" #file (change)="takePictureAdhar(file.files[0])" style="display: none;">
+                      <span class="custColorBrightCyan custFontFamilyMuliBold muli-12pt">{{'panadharbtnuploadpic' |
+                        translate}}</span></button>
+                  </ion-col> -->
+                  <ion-col>
+                    <button class="btn w-100 text-center custButtonOutLine custColorBrightCyan custBtnExplore"
+                      *ngIf="!isCordovaStatus" (click)="top.click()">
+                      <input type="file" (change)="imagePreview($event,0)" #top style="display: none;" name="filename">
+                      <span class="custColorBrightCyan custFontFamilyMuliBold muli-12pt">Upload Photo</span></button>
+
+                    <button class="btn w-100 text-center custButtonOutLine custColorBrightCyan custBtnExplore"
+                      *ngIf="isCordovaStatus" (click)="uploadPicturePAN()">
+                      <span class="custColorBrightCyan custFontFamilyMuliBold muli-12pt">Upload Photo</span></button>
+                  </ion-col>
+                </ion-row>
+                <!-- Pan card end here  -->
+
+                <ion-row class="d-flex justify-content-center">
+                  <span class="p-3 custborder andPosition muli-5pt">{{'panadharand' | translate}}</span>
+                </ion-row>
+                <hr class="hr" />
+
+                <!-- Adhard card start here -->
+
+                <ion-row class="d-flex justify-content-center">
+
+                  <ion-col class="w-100 d-flex flex-column align-items-center justify-content-center">
+                    <ion-img [src]="copAdharFront" class="custKYCImg mt-3 h-25"></ion-img>
+                    <span class=" w-100 custFontFamilyMuliBold muli-12pt text-center custLineHight18 custColorDark">
+                      <input type="radio" class="outerCircle" formControlName="adharType" checked name="adharType"
+                        value="frontSide">
+                      <label for="adhargrp" class="ms-2 mt-3 muli-16pt"> {{'panadharadharfront' | translate}} </label>
+                    </span>
+                  </ion-col>
+
+                  <ion-col class="w-100 d-flex flex-column  justify-content-center">
+                    <ion-img [src]="copAdhar" class="custKYCImg mt-3 h-25"></ion-img>
+                    <span class=" w-100 custFontFamilyMuliBold muli-12pt  text-center custLineHight18 custColorDark">
+                      <input type="radio" class="outerCircle" formControlName="adharType" name="adharType"
+                        value="backSide">
+                      <label for="adhargrp" class="ms-2 mt-3 muli-16pt"> {{'panadharadharback' | translate}} </label>
+                    </span>
+                  </ion-col>
+                </ion-row>
+
+
+                <ion-row class="w-100 d-flex flex-column align-items-center">
+                  <span class="custFontFamilyMuliBold muli-16pt custLineHight18 custColorDark">{{'aadharpantitle' |
+                    translate}}</span>
+                </ion-row>
+                <ion-row>
+                  <ion-col>
+                    <button class="btn w-100 text-center custButtonOutLine custColorBrightCyan custBtnExplore"
+                      (click)="take()">
+                      <span class="custColorBrightCyan custFontFamilyMuliBold muli-12pt">{{'panadharbtntakepic' |
+                        translate}}</span>
+                    </button>
+                  </ion-col>
+                  <ion-col>
+                    <button class="btn w-100 text-center custButtonOutLine custColorBrightCyan custBtnExplore"
+                      *ngIf="!isCordovaStatus" (click)="top.click()">
+                      <input type="file" (change)="imagePreview($event,1)" #top style="display: none;" name="filename">
+                      <span class="custColorBrightCyan custFontFamilyMuliBold muli-12pt">Upload Photo</span></button>
+
+                    <button class="btn w-100 text-center custButtonOutLine custColorBrightCyan custBtnExplore"
+                      *ngIf="isCordovaStatus" (click)="select()">
+                      <span class="custColorBrightCyan custFontFamilyMuliBold muli-12pt">Upload Photo</span></button>
+                  </ion-col>
+
+                </ion-row>
+                <!-- Adhard card end here -->
+                <p class="text-center w-100 muli-10pt" id="CustColor">{{'frontBackMandatoryMsg' | translate}}</p>
+
+                <div style="display: none;">
+
+                  <ion-row class="d-flex justify-content-center">
+                    <span class="p-3 custborder andPosition muli-5pt">{{'panadharand' | translate}}</span>
+                  </ion-row>
+                  <hr class="hr" />
+
+                  <ion-row>
+                    <ion-col [size]="'12'" class="text-center">
+                      <span class="custFontFamilyMuliBold muli-14pt custLineHight18 custColorDark">{{'incomeSubheading'
+                        |
+                        translate}}</span>
+                    </ion-col>
+                  </ion-row><br>
+
+                  <ion-row>
+                    <mat-form-field appearance="outline" class="w-100 ">
+                      <mat-label class="text-capitalize">{{'selectIncomeProof' | translate}}</mat-label>
+                      <mat-select>  
+                        <!-- formControlName="incomeProofDetails" -->
+                        <mat-option  value="ITR Acknowledgment">ITR Acknowledgment</mat-option>
+                        <mat-option value="Annual A/c">Annual A/c</mat-option>
+                        <mat-option value="Salary slip(last 3 months)">Salary slip(last 3 months)</mat-option>
+                        <mat-option value="Form 16">Form 16</mat-option>
+                        <mat-option value="Net worth Certificate">Net worth Certificate</mat-option>
+                        <mat-option value="Demat A/c holding statement">Demat A/c holding statement</mat-option>
+                        <mat-option value="Bank A/c statement(last 6 months)">Bank A/c statement(last 6 months)
+                        </mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                  </ion-row>
+                  <ion-row class="w-100 d-flex flex-column align-items-center">
+                    <ion-img [src]="incomeProof" class="custKYCImg mt-3 h-25"></ion-img>
+                  </ion-row><br>
+                  <ion-row class="mt-3">
+                    <ion-col>
+                      <button class="btn w-100 text-center custButtonOutLine custColorBrightCyan custBtnExplore"
+                        (click)="takePictureIncome()">
+
+                        <span class="custColorBrightCyan custFontFamilyMuliBold muli-12pt">{{'panadharbtntakepic' |
+                          translate}}</span>
+                      </button>
+                    </ion-col>
+                    <ion-col>
+                      <button class="btn w-100 text-center custButtonOutLine custColorBrightCyan custBtnExplore"
+                        *ngIf="!isCordovaStatus" (click)="top.click()">
+                        <input type="file" (change)="imagePreview($event,2)" #top style="display: none;"
+                          name="filename">
+                        <span class="custColorBrightCyan custFontFamilyMuliBold muli-12pt">Upload Photo</span></button>
+
+                      <button class="btn w-100 text-center custButtonOutLine custColorBrightCyan custBtnExplore"
+                        *ngIf="isCordovaStatus" (click)="uploadPicturePAN()">
+                        <span class="custColorBrightCyan custFontFamilyMuliBold muli-12pt">Upload Photo</span></button>
+                    </ion-col>
+                  </ion-row>
+                </div>
+              </ion-grid>
+            </ion-col>
+          </ion-row>
+
+
+
+        </ion-card-content>
+      </ion-card>
+
+    </form>
+  </ion-grid>
+</ion-content>
+
+<div class="custModalContainer p-10" *ngIf="loggedInModal" (click)="successModalClose();">
+  <div  id="showModalSMGSucces" class="modal-content custCenterAlign">
+    <!-- <ion-icon [src]="imageList?.successKYCIcon" class="custImage"></ion-icon> -->
+    <p class="custFontFamilyMuliBold muli-16pt custColorDark text-center p-0 m-0 ion-no-padding">{{ErrorMsg}}</p>
+  </div>
+</div>
+
+<ion-row class="fixed-bottom custBackgroundColorWhite" *ngIf="!loggedInModal" >
+  <ion-col class="p-4">
+    <button class="btn w-100 text-center custBackgroundColorBrightCyan" [disabled]="!panAdharDetails.valid"
+      (click)="onSubmitPanAdhar()">
+      <span class="custColorWhite custFontFamilyMuliBold ">{{'continue' | translate}}</span>
+    </button>
+  </ion-col>
+</ion-row>

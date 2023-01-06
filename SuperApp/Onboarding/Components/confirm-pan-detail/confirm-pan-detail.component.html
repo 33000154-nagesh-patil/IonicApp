@@ -1,0 +1,86 @@
+
+<ion-content class="contentBackground">
+  <ion-grid class="p-3 ">
+    <ion-row>
+      <ion-col [size]="'12'">
+        <span class="custFontFamilyMuliBold muli-16pt custLineHight18 custColorDark">{{'confirmDetails' |
+          translate}}</span>
+      </ion-col>
+      <ion-col [size]="'12'">
+        <mat-form-field appearance="outline" class="example-full-width w-100 ">
+          <input matInput class="custInputWidth custFontFamilyMuliRegular muli-14pt custLineHight24 custColorDark"
+            [type]="'text'" [ngModel]="currentInputPan" maxlength="10" [disabled]="true" [ngModelOptions]="{standalone: true}">
+          <button mat-button matSuffix mat-icon-button class="custBackgroundColorWhite custColorGreyish mb-1"
+            (click)="changeInputType()">
+            <ion-icon class="custeye" [name]="!currentType?'eye-outline':'eye-off-outline'"></ion-icon>
+          </button>
+        </mat-form-field>
+        <span class="d-inline-flex mt-2">
+          <ion-img [src]="imageList?.successKYCIcon" class="custSuccessIcon"></ion-img><span
+            class="custFontFamilyMuliBold muli-10pt custColorParakeetGreen custMargin5">{{'sucessPAN' |
+            translate}}</span>
+        </span>
+      </ion-col>
+      <ion-col [size]="'12'">
+        <span class="custFontFamilyMuliRegular muli-14pt custLineHight20">{{'panNotification' | translate}}</span>
+      </ion-col>
+      <ion-col [size]="'12'">
+        <ion-row>
+          <ion-col [size]="'2'">
+            <ion-img [src]="imageList?.panUserIcon" class="custPAnIcon mt-1"></ion-img>
+          </ion-col>
+          <ion-col [size]="'10'">
+            <span class="custFontFamilyMuliRegular muli-12pt custLineHight18 custColorBattlePGry">{{'panName' |
+              translate}}</span><br>
+            <span
+              class="custFontFamilyMuliBold muli-12pt custLineHight18 custColorDark text-uppercase">{{panUserName}}</span>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+      <ion-col [size]="'12'">
+        <mat-radio-group [(ngModel)]="residentStatus">
+          <mat-radio-button value="IN-Indian" [checked]='true'
+            class="custFontFamilyMuliRegular muli-12pt custLineHight18 custColorBattlePGry">
+            {{'resident1' | translate}}</mat-radio-button><br>
+          <!-- <mat-radio-button class="custFontFamilyMuliRegular muli-12pt custLineHight18 custColorBattlePGry mt-3"
+            value="Other">{{'resident2' | translate}}</mat-radio-button> -->
+        </mat-radio-group>
+      </ion-col>
+    </ion-row>
+    <ion-row class="fixed-bottom">
+      <ion-col [size]="'12'" class="text-center">
+        <span class="custFontFamilyMuliRegular muli-10pt custColorGreyish custLineHight15 d-inline-flex">
+          <ion-img [src]="imageList?.lockIcon" class="custLock"></ion-img> {{'paninfo3' | translate}}
+        </span>
+      </ion-col>
+
+      <!-- <ion-col [size]="'6'" class="pb-3" (click)="skip('ConfirmPanDetail')">
+        <ion-button expand="block" class="text-capitalize custTryButton d-flex justify-content-center">
+          <span class="custFontFamilyMuliRegular text-center muli-16pt custColorBrightCyan">{{'skipLabel' |
+            translate}}</span>
+        </ion-button>
+      </ion-col> -->
+
+      <ion-col [size]="'12'" class="pb-3" (click)="postCollectionPANData()">
+        <ion-button expand="block" class="text-capitalize text-center custLooksBtn"><span
+            class="custColorWhite custFontFamilyMuliBold muli-16pt">{{'cAc' | translate}}</span></ion-button>
+      </ion-col>
+
+
+      <!-- <ion-col [size]="'12'" class="pb-3 px-3">
+        <button class="btn w-100 text-center custBackgroundColorBrightCyan" (click)="postCollectionPANData()"><span
+            class="custColorWhite custFontFamilyMuliBold muli-16pt">{{'cAc' | translate}}</span></button>
+      </ion-col> -->
+    </ion-row>
+  
+  </ion-grid>
+</ion-content>
+
+<div class="custModalContainer p-10" *ngIf="loggedInModal" (click)="successModalClose();">
+  <div id="showModalSMGSucces" class="modal-content custCenterAlign">
+    <!-- <ion-icon [src]="imageList?.successKYCIcon" class="custImage"></ion-icon> -->
+    <p class="custFontFamilyMuliBold muli-16pt custColorDark text-center p-0 m-0 ion-no-padding">{{ErrorMsg}}</p>
+  </div>
+</div>
+
+

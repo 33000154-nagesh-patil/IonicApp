@@ -1,0 +1,138 @@
+<!-- <lib-header [title]="title" [imageList]="imageList" [showArrow]="false" [showLabel]="true" [showImg]="false" [imgURL]="labelIcon"
+[showIndex]="false" [showNotification]="true" [showCartWithName]="true" [notificationCount]="notificationCount" [cardCount]="cartCount" [showSideMenu]="false" [showSearch]="true" [showClose]="false" [showShare]="false" [showWatchList]="false" [showCartWithoutName]="false" [showStories]="false" [otherTextName]="otherTextName" [showOtherText]="true" [superMode]="currentMode" [backUrlName]=""></lib-header> -->
+
+<ion-content>
+  <ion-grid class="ion-no-padding">
+    <ion-row>
+      <ion-col [size]="'12'" class="mfBackground p-4">
+        <ion-row class="pt-4 pb-4">
+          <ion-col [size]="'12'" class="custTextAlignCenter ">
+            <span class="custFontFamilyMuliBold muli-16pt custLineHight18 custColorWhite">{{'healthTopNotification' |
+              translate}}</span>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col [size]="'4'">
+            <ion-row>
+              <ion-col [size]="'12'" class="custTextAlignCenter">
+                <ion-img [src]="imageList?.healthIcon1" class="custMFImg"></ion-img>
+              </ion-col>
+              <ion-col [size]="'12'" class="custTextAlignCenter pt-2 pb-2">
+                <span class="custFontFamilyMuliSemiBold muli-12pt custLineHight16 custColorWhite">
+                  {{'completelyConfidential' | translate}}
+                </span>
+              </ion-col>
+            </ion-row>
+          </ion-col>
+          <ion-col [size]="'4'"> 
+            <ion-row>
+              <ion-col [size]="'12'" class="custTextAlignCenter">
+              <ion-img [src]="imageList?.healthIcon2" class="custMFImg"></ion-img>
+              </ion-col>
+              <ion-col [size]="'12'" class="custTextAlignCenter pt-2 pb-2">
+                <span class="custFontFamilyMuliSemiBold muli-12pt custLineHight16 custColorWhite">
+                  {{'accessToDoctors' | translate}}
+                </span>
+              </ion-col>
+            </ion-row>
+          </ion-col>
+          <ion-col [size]="'4'">
+            <ion-row>
+              <ion-col [size]="'12'" class="custTextAlignCenter">
+                <ion-img [src]="imageList?.healthIcon3" class="custMFImg"></ion-img>
+              </ion-col>
+              <ion-col [size]="'12'" class="custTextAlignCenter pt-2 pb-2">
+                <span class="custFontFamilyMuliSemiBold muli-12pt custLineHight16 custColorWhite">
+                  {{'integratedLab' | translate}}
+                </span>
+              </ion-col>
+            </ion-row>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid class="p-2 pt-4">
+    <ion-row>
+      <ion-col [size]="'12'">
+        <span class="muli-22pt custFontFamilyMuliBold custLineHight30 custColorDark text-capitalize">
+          {{'health' | translate}} {{'wellness' | translate}}
+        </span>
+      </ion-col>
+      <ion-col [size]="'12'">
+        <ion-row>
+          <ion-col [size]="'1'" class="custBackgroundColorDarkishBlue "></ion-col>
+        </ion-row>
+      </ion-col>
+      <ion-col [size]="'12'">
+        <p class="custFontFamilyMuliRegular muli-12pt custLineHight28 custColorDark">{{'healthWellnessPara' |
+          translate}}
+        </p>
+      </ion-col>
+    </ion-row>
+     
+      <ion-row>
+      <ion-col [size]="'6'" *ngFor="let x of data">
+        <ion-card class="custBackgroundColorWhite card cardItem p-2">
+            <ion-row>
+              <ion-col [size]="'3'">
+                <ion-img [src]="x?.logo" class="custStockIcon float-start"></ion-img>
+              </ion-col>
+              <ion-col [size]="'9'">
+                <ion-row>
+                  <span class="custFontFamilyMuliSemiBold custLineHight20 muli-14pt custColorDark">
+                    {{x?.title}}
+                  </span>
+                </ion-row>
+             
+              </ion-col>
+            </ion-row>
+            <ion-row>
+                <span
+                  class="custFontFamilyMuliRegular muli-10pt custLineHight16 custColorBattlePGry">{{x?.description}}</span>
+            </ion-row>
+            <ion-row>
+              <button (click)="handleClick(x?.id)" type="button"
+                class="w-100 custBtnExplore text-capitalize custColorBrightCyan custFontFamilyMuliRegular muli-14pt custButtonOutLine float-end">Explore
+               </button>
+            </ion-row>
+
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+<ion-grid class="custGrid">
+    <div class="px-2 coloredCard">
+      <ion-row class="custColorDarkishBlue custFontFamilyMuliBold muli-16pt custLineHight18 pdingLeftt pt-3">In the Spotlight
+      </ion-row>
+      <ion-row class="custColorDarkishBlue custFontFamilyMuliRegularmuli-12pt custLineHight18 pdingLeftt pt-3">Explore deals,
+        offers, health updates and more</ion-row>
+
+      <ion-row>
+        <ion-card class="w-100">
+          <ion-card-content class="p-3">
+            <ion-row>
+              <ion-col [size]="'7'">
+                <ion-row class="custColorDark custFontFamilyMuliSemiBold muli-14pt">Health Card & Discounts</ion-row>
+                <ion-row class="custColorDark custFontFamilyMuliRegular muli-12pt pt-2">Up to 50% discount MRI, CT scan,
+                  insurance cover</ion-row>
+              </ion-col>
+              <ion-col [size]="'5'" class="pt-3">
+                <img src="assets\Images\Mask Group 99.png" />
+              </ion-col>
+            </ion-row>
+            <ion-row class="mrginTopp">
+              <ion-col [size]="'4'">
+                <button type="button"
+                
+                  class="custBtnExplorer text-capitalize custColorBrightCyan custFontFamilyMuliRegular muli-14pt custButtonOutLine" >Buy
+                  Now</button>
+              </ion-col>
+            </ion-row>
+          </ion-card-content>
+        </ion-card>
+      </ion-row>
+    </div>
+  </ion-grid>
+  </ion-grid>
+</ion-content>

@@ -1,0 +1,100 @@
+.matRadioButtonFemale{
+    padding-left: 50px;
+}
+.bottom{
+    margin-bottom: 45%;
+    margin-left: -5px;
+    margin-right: -4px;
+}
+
+.marginBottom{
+    margin-bottom: 45%;
+}
+.noMargin{
+    margin-bottom: 0%;
+}
+
+.outerCircle{
+    width: 18px;
+    height: 18px;
+}
+.outerCircle:checked{
+    appearance: none;
+    padding: 4px;
+    background-clip: content-box;
+    border: 1px solid var(--custDarkishBlue);
+    border-radius: 50%;
+    background-color: var(--custBrightCyan);
+}
+
+.nomineeList{
+    list-style: none;
+    padding: 0px;
+}
+
+.trashIcon{
+    float: right;
+}
+
+.rangeBar{
+    padding: 5.9px;
+}
+.active{
+    color: var(--custBrightCyan);
+    font-size: larger;
+}
+
+:host ::ng-deep .mat-radio-outer-circle{
+    border-color: var(--custDarkishBlue) !important ;
+  }
+  :host ::ng-deep .mat-radio-inner-circle{
+    background-color: var(--custBrightCyan) !important ;
+  }
+
+.paddingRadio{
+  padding-right: 5px;
+}
+::ng-deep .mat-select-panel::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+::ng-deep .mat-select-panel::-webkit-scrollbar:vertical {
+    width: 11px;
+}
+
+::ng-deep .mat-select-panel::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    border: 2px solid var(--custWhite); /* should match background, can't be transparent */
+    background-color: var(--custGray);
+}
+.custModalContainer {
+    z-index: 1;
+    left: 0;
+    // top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    // background-color: var(--custDark);
+    //  opacity: 0.4;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 16px;
+    padding-left: 16px;
+    border: 1px solid #888;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    border-radius: 10px 10px 0px 0px;
+}
+.custImage{
+    height: 45px;
+    width: 45px;
+    margin-bottom: 20px;
+}

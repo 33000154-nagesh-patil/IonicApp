@@ -1,0 +1,147 @@
+{
+    "heading": {
+        "heading": "Invest",
+        "discription": "Discover Mutual Funds for Investments"
+    },
+    "grid": [
+        {
+            "name": "Top Rated Fund",
+            "icon": "assets/icon/group1.svg"
+        },
+        {
+            "name": "Tax Savers",
+            "icon": "assets/icon/group2.svg"
+        },
+        {
+            "name": "New Fund Offers",
+            "icon": "assets/icon/group3.svg"
+        },
+        {
+            "name": "Annual Return Fund",
+            "icon": "assets/education/Group1.svg"
+        },
+        {
+            "name": "Wealth Builder",
+            "icon": "assets/education/Group2.svg"
+        },
+        {
+            "name": "Steady Income",
+            "icon": "assets/education/Group3.svg"
+        }
+    ],
+    "card": [
+        {
+            "title": "Top Rated Fund",
+            "row1": {
+                "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjwR_qwwP-PgM2uGa5crh8YvIhpV_yc7LNXA&usqp=CAU",
+                "title": "HDFC Focused 30-G",
+                "action": "assets/icon/leftArrowIcon.svg"
+            },
+            "row2": {
+                "col1": "Min.Invest",
+                "val1": "₹5000",
+                "col2": "Category Return",
+                "val2": "-7.10% - 20.25%",
+                "col3": "Returns",
+                "val3": "18.65%"
+            }
+        },
+        {
+            "title": "Tax Savers",
+            "row1": {
+                "icon": "",
+                "title": "HDFC Focused 30-G",
+                "action": "assets/icon/leftArrowIcon.svg"
+            },
+            "row2": {
+                "col1": "Min.Invest",
+                "val1": "₹5000",
+                "col2": "Category Return",
+                "val2": "-7.10% - 20.25%",
+                "col3": "Returns",
+                "val3": "18.65%"
+            }
+        },
+        {
+            "title": "New Fund Offers",
+            "row1": {
+                "icon": "",
+                "title": "HDFC Focused 30-G",
+                "action": "assets/icon/leftArrowIcon.svg"
+            },
+            "row2": {
+                "col1": "Min.Invest",
+                "val1": "₹5000",
+                "col2": "Category Return",
+                "val2": "-7.10% - 20.25%",
+                "col3": "Returns",
+                "val3": "18.65%"
+            }
+        },
+        {
+            "title": "Annual Return Fund",
+            "row1": {
+                "icon": "",
+                "title": "HDFC Focused 30-G",
+                "action": "assets/icon/leftArrowIcon.svg"
+            },
+            "row2": {
+                "col1": "Min.Invest",
+                "val1": "₹5000",
+                "col2": "Category Return",
+                "val2": "-7.10% - 20.25%",
+                "col3": "Returns",
+                "val3": "18.65%"
+            }
+        },
+        {
+            "title": "Wealth Builder",
+            "row1": {
+                "icon": "",
+                "title": "HDFC Focused 30-G",
+                "action": "assets/icon/leftArrowIcon.svg"
+            },
+            "row2": {
+                "col1": "Min.Invest",
+                "val1": "₹5000",
+                "col2": "Category Return",
+                "val2": "-7.10% - 20.25%",
+                "col3": "Returns",
+                "val3": "18.65%"
+            }
+        },
+        {
+            "title": "Steady Income",
+            "row1": {
+                "icon": "",
+                "title": "HDFC Focused 30-G",
+                "action": "assets/icon/leftArrowIcon.svg"
+            },
+            "row2": {
+                "col1": "Min.Invest",
+                "val1": "₹5000",
+                "col2": "Category Return",
+                "val2": "-7.10% - 20.25%",
+                "col3": "Returns",
+                "val3": "18.65%"
+            }
+        },
+        {
+            "title": "Wealth Builder",
+            "row1": {
+                "icon": "",
+                "title": "HDFC Focused 30-G",
+                "action": "assets/icon/leftArrowIcon.svg"
+            },
+            "row2": {
+                "col1": "Min.Invest",
+                "val1": "₹5000",
+                "col2": "Category Return",
+                "val2": "-7.10% - 20.25%",
+                "col3": "Returns",
+                "val3": "18.65%"
+            }
+        }
+
+    ]
+}

@@ -1,0 +1,165 @@
+<ion-header class="fixed-top">
+  <ion-toolbar>
+    <ion-grid>
+      <ion-row>
+        <ion-col class="d-flex">
+          <ion-col size="1" (click)="goToBack()">
+            
+              <ion-img [src]="imageList?.arrow" class="custArrorSize mt-1 custCenterAlign" ></ion-img>
+          
+          </ion-col>
+          <ion-col class="custFontFamilyMuliBold muli-16pt pt-3">Select Patient Details</ion-col>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content class="contentBackground">
+  <ion-grid class="align-items-center h-100 py-5 px-3">
+    <ion-col [size]="'12'" (click)="openDetailPage()">
+      <ion-row class="w-100 pt-2 mt-3">
+
+        <button class="btn w-100 text-center custButtonOutLine custBtnExplore">
+          <span class=" custColorBrightCyan custColorWhite custFontFamilyMuliBold muli-16pt">Add New Details</span>
+        </button>
+
+      </ion-row>
+    </ion-col>
+    <ion-row>
+      <p class="w-100 muli-16pt custPad custColorDark custFontFamilyMuliBold">
+        Saved Details
+      </p>
+    </ion-row>
+
+
+    <!-- <ion-card> -->
+    <!-- <ion-card-content class="p-3"> -->
+<!-- 
+    <ion-grid class="custBackgroundColorWhite px-2">
+      <ion-row *ngFor="let items of dataForPatientSelection">
+
+        <ion-col [size]="'6'" class="pt-2">
+          <span class="custFontFamilyMuliRegular muli-10pt custLineHight15 custColorGreyish">Patient Name {{items.addressId}}</span>
+          <span class="custFontFamilyRubikRegular d-block muli-12pt custLineHight18 custColorDark">{{items.name}}</span>
+        </ion-col>
+
+        <ion-col [size]="'6'" class="text-end">
+          <mat-radio-group [(ngModel)]="chosenItemForAddressType">
+           <mat-radio-button [value]="items.name"
+              class="custFontFamilyMuliRegular muli-12pt custColorDarkishBlue custLineHight18">
+            </mat-radio-button>
+          </mat-radio-group> 
+        </ion-col> -->
+
+       
+        <!-- <ion-col [size]="'4.5'" class="text-center pt-2">
+          <span class="custFontFamilyMuliRegular muli-10pt custLineHight15 custColorGreyish">Patient Name{{items.addressId}} </span>
+          <span
+            class="custFontFamilyRubikRegular d-block muli-12pt custLineHight18 custColorDark">{{items.name}}</span>
+        </ion-col> -->
+
+<!-- 
+        <ion-col [size]="'6'" class="pt-2 d-block justify-content-start">
+          <span class="custFontFamilyMuliRegular muli-10pt custLineHight20 custColorGreyish">Age
+          </span>
+          <address class="custFontFamilyRubikRegular muli-12pt custLineHight18 custColorDark custAdd ">
+            {{items.age}}
+          </address>
+
+        </ion-col>
+        <ion-col [size]="'6'" class="pt-2 d-block text-end">
+
+          <span class="custFontFamilyMuliRegular muli-10pt custLineHight20 custColorGreyish">Gender
+          </span>
+          <address class="custFontFamilyRubikRegular muli-12pt custLineHight18 custColorDark custAdd ">
+            {{items.gender}}
+          </address>
+        </ion-col> -->
+        <div *ngFor="let items of dataForPatientSelection">
+        <ion-card  (click)="item(items)">
+          <ion-card-content>
+
+          
+            <ion-row>
+
+    
+                <ion-col [size]="'6'">
+                  <span class="custFontFamilyMuliRegular muli-12pt custLineHight15 custColorGreyish">Patient
+                    Name</span><br>
+                  <span
+                    class="custFontFamilyRubikRegular muli-14pt custLineHight18 custColorDarkBlack">{{items?.first_Name}}</span><br>
+                </ion-col>
+
+                
+                <ion-col [size]="'6'" class="text-end">
+                  <mat-radio-group name="1" >
+                   <mat-radio-button name="1" value="1"
+                      class="custFontFamilyMuliRegular muli-12pt custColorDarkishBlue custLineHight18">
+                    </mat-radio-button>
+                  </mat-radio-group> 
+                </ion-col> 
+
+            
+
+              
+              <!-- <ion-col [size]="'3'" class="pt-3">
+                
+              </ion-col> -->
+              <ion-col [size]="'6'">
+                <span class="custFontFamilyMuliRegular muli-12pt custLineHight15 custColorGreyish pt-5">Age
+                </span><br>
+                <span
+                  class="custFontFamilyMuliRegular muli-14pt custLineHight18 custColorDarkBlack">{{items?.age}}
+                </span>
+              </ion-col>
+              <ion-col [size]="'6'" class="text-end">
+    
+                <span
+                  class="custFontFamilyMuliRegular  muli-12pt custLineHight15 custColorGreyish ">Gender</span><br>
+                <span
+                  class="custFontFamilyMuliRegular  muli-14pt custLineHight18 custColorDarkBlack ">{{items?.gender}}</span>
+              </ion-col>
+    
+    
+            </ion-row>
+    
+    
+            <ion-row class="border-bottom w-100 pb-2">
+              <ion-col [size]="'6'" class="d-flex justify-content-start " (click)="deleteAddress(items.ID)">
+                <ion-img [src]="imageList?.delete" class="custDel"></ion-img>
+                <span class=" custFontFamilyMuliBold muli-10pt px-2 custColorDarkishBlue">Delete</span>
+              </ion-col>
+              <ion-col [size]="'6'" class="d-flex justify-content-end" (click)="openDetailPage()">
+                <ion-img [src]="imageList?.edit" class="custEdt"></ion-img>
+                <span class="custFontFamilyMuliBold muli-10pt px-2 custColorDarkishBlue">Edit</span>
+              </ion-col>
+            </ion-row>
+    
+          </ion-card-content>
+        </ion-card>
+
+        </div>
+        
+
+
+    <!-- </ion-card-content> -->
+    <!-- </ion-card> -->
+
+
+
+      </ion-grid>
+      </ion-content>
+      <ion-footer>
+<ion-col [size]="'12'" class="fixed-bottom mt-2 contentBackground"(click)="openSlotPage()">
+  <ion-row class="px-2 w-100">
+
+    <button class="btn w-100 text-center custBackgroundColorBrightCyan"><span
+        class="custColorWhite custFontFamilyMuliBold muli-16pt" >Continue</span></button>
+
+  </ion-row>
+</ion-col>
+</ion-footer>
+
+

@@ -1,0 +1,41 @@
+{
+    "listofsilver": [
+        {
+            "tRansaction": "buy",
+            "weight": 0.2,
+            "amount": 436.11,
+            "createdOnDate": "2022-06-08",
+            "pricePerGram": 5205.87
+        },
+        {
+            "tRansaction": "buy",
+            "weight": 0.3,
+            "amount": 736.82,
+            "createdOnDate": "2022-06-07",
+            "pricePerGram": 5211.79
+        },
+        {
+            "tRansaction": "buy",
+            "weight": 0.1,
+            "amount": 564.19,
+            "createdOnDate": "2022-06-06",
+            "pricePerGram": 5205.67
+        },
+        {
+            "tRansaction": "buy",
+            "weight": 0.1,
+            "amount": 535.99,
+            "createdOnDate": "2022-06-05",
+            "pricePerGram": 5203.83
+        },
+        {
+            "tRansaction": "buy",
+            "weight": 0.2,
+            "amount": 536.1,
+            "createdOnDate": "2022-06-04",
+            "pricePerGram": 5204.85
+        }
+    ],
+    "totalInvestmentAmount": 2145.21,
+    "totalgrams": 0.4
+}

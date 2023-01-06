@@ -1,0 +1,33 @@
+<div>
+  <div *ngIf="create" >
+    <ion-row>
+      <ion-col class="mb-3">
+        <span class="custColorDark custFontFamilyMuliBold muli-18pt">Create Watchlist</span>
+      </ion-col>
+    </ion-row>
+    <ion-row class="mb-1">
+      <mat-form-field class="w-100 h-100" appearance="outline">
+        <input class="custFontFamilyMuliRegular muli-16pt" [(ngModel)]="APIWatchlistName" name="watchlistName"
+          matInput placeholder="Watchlist Name">
+      </mat-form-field>
+    </ion-row>
+    <ion-row>
+      <ion-col class=" mb-5 ">
+        <button class="btn w-100 text-center custBackgroundColorBrightCyan" (click)="CreatebuttonWatchList()" [disabled]="!APIWatchlistName">
+          <span class="custColorWhite custFontFamilyMuliBold muli-16pt">Create</span>
+        </button>
+      </ion-col>
+    </ion-row>
+  </div>
+  <div *ngIf="!create" >
+    <ion-img [src]="imageList?.succsessIcon" class="custSVGIcon mt-2"></ion-img>
+    <span class="custFontFamilyMuliBold d-flex justify-content-center muli-18pt mt-2">{{message}}</span>
+    <ion-row>
+      <ion-col class="myButton">
+        <button class="btn w-100 text-center custBackgroundColorBrightCyan" (click)="dismiss()">
+          <span class="custColorWhite custFontFamilyMuliBold muli-16pt">Ok</span>
+        </button>
+      </ion-col>
+    </ion-row>
+  </div>
+</div>

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
+  <g id="Group_21928" data-name="Group 21928" transform="translate(-1482 -22403)">
+    <g id="Group_21923" data-name="Group 21923" transform="translate(1446 20304.566)">
+      <g id="Ellipse_538" data-name="Ellipse 538" transform="translate(36 2098.434)" fill="#fff" stroke="#aceaff" stroke-width="1">
+        <circle cx="18" cy="18" r="18" stroke="none"/>
+        <circle cx="18" cy="18" r="17.5" fill="none"/>
+      </g>
+      <g id="login" transform="translate(44 2108.131)">
+        <g id="Group_11528" data-name="Group 11528" transform="translate(4.962)">
+          <g id="Group_11527" data-name="Group 11527">
+            <path id="Path_15531" data-name="Path 15531" d="M158.9,0h-7.8a1.775,1.775,0,0,0-1.772,1.772V6.025a.354.354,0,1,0,.709,0V1.772A1.065,1.065,0,0,1,151.105.709h7.8a1.065,1.065,0,0,1,1.063,1.063V14.531a1.065,1.065,0,0,1-1.063,1.063h-7.8a1.065,1.065,0,0,1-1.063-1.063V10.278a.354.354,0,1,0-.709,0v4.253a1.775,1.775,0,0,0,1.772,1.772h7.8a1.775,1.775,0,0,0,1.772-1.772V1.772A1.774,1.774,0,0,0,158.9,0Z" transform="translate(-149.333)" fill="#039"/>
+          </g>
+        </g>
+        <g id="Group_11530" data-name="Group 11530" transform="translate(0 7.797)">
+          <g id="Group_11529" data-name="Group 11529">
+            <path id="Path_15532" data-name="Path 15532" d="M11.7,234.667H.354a.354.354,0,1,0,0,.709H11.7a.354.354,0,1,0,0-.709Z" transform="translate(0 -234.667)" fill="#039"/>
+          </g>
+        </g>
+        <g id="Group_11532" data-name="Group 11532" transform="translate(9.215 5.672)">
+          <g id="Group_11531" data-name="Group 11531">
+            <path id="Path_15533" data-name="Path 15533" d="M280.059,172.934l-2.126-2.126a.354.354,0,1,0-.5.5l1.876,1.876-1.876,1.876a.355.355,0,0,0,.5.5l2.126-2.126A.355.355,0,0,0,280.059,172.934Z" transform="translate(-277.328 -170.704)" fill="#039"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <rect id="Rectangle_9419" data-name="Rectangle 9419" width="36" height="36" transform="translate(1482 22403)" fill="none"/>
+  </g>
+</svg>

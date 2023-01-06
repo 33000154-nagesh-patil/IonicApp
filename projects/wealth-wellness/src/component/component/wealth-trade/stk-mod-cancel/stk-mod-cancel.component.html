@@ -1,0 +1,259 @@
+<div>
+  <div>
+
+
+    <ion-row class="mt-0 text-center">
+      <ion-col [size]="'5'"></ion-col>
+      <ion-col [size]="'2'" class="text-center px-4">
+        <ion-img [src]="imageList?.arrow" class="custInvestArrow custRotation  custColorGreyish"
+          (click)="profileModalClose()"></ion-img>
+      </ion-col>
+      <ion-col [size]="'5'"></ion-col>
+    </ion-row>
+    <ion-row class="tataMargin">
+      <ion-col [size]="'6'">
+        <h5 class=" muli-16pt custLineHight28 custColorDark custFontFamilyMuliBold p-0 m-0">{{stockData.symbol}}</h5>
+      </ion-col>
+      <ion-col [size]="'6'" class="text-end m-0">
+        <span class=" muli-16pt  custColorDark custFontFamilyMuliBold px-1 text-end m-0">{{stockData.price}}</span>
+      </ion-col>
+    </ion-row>
+    <ion-row class="mx-2 mb-2">
+      <ion-col size="" class="custFontFamilyMuliRegular muli-12pt custColorGreyish p-0">{{stockData.exchange}} |
+        {{(stockData?.product_name=='CNC')?'Delivery':stockData?.product_name}}<span><button
+            class="rounded-2 custFontFamilyRobotoCondensed muli-10pt custBackgroundColorCyanBlue custColorBattlePGry ms-1">Buy</button></span>
+      </ion-col>
+      <ion-col class="text-end custColorParakeetGreen muli-12pt p-0"><span><img
+            [src]="imageList?.greenIcon"></span>22.35(0.22%)
+      </ion-col>
+    </ion-row>
+    <hr class="mx-2 mt-0">
+
+
+    <ion-row class="justify-content-between mt-5">
+      <ion-col size="6" class="">
+        <ion-row>
+          <ion-col size="6" class="custFontFamilyMuliRegular muli-14pt pb-0 custFontFamilyMuliBold">Quantity</ion-col>
+          <ion-col size="6"
+            class="custFontFamilyMuliRegular muli-10pt custLineHight18 custColorWarmGrey1 custFontFamilyRobotoCondensed text-end pb-0">
+            Lot:{{stockData.lot_size}}</ion-col>
+          <mat-form-field class="newClass">
+            <button class="custColorBrightCyan text-end muli-20pt Muli-Bold" (click)="decrement()">-</button>
+            <input matInput type="number" [(ngModel)]="counter"
+              class="example-right-align Roboto-Condensed custLineHight22 muli-22pt text-center w-100">
+            <button matSuffix class=" custColorBrightCyan text-end muli-20pt Muli-Bold"
+              (click)=" increment()">+</button>
+          </mat-form-field>
+        </ion-row>
+      </ion-col>
+
+      <ion-col size="6" class="mt-1">
+        <ion-row class="">
+          <ion-col size="6" class="custFontFamilyMuliRegular muli-14pt custLineHight18 pb-0 custFontFamilyMuliBold ">
+            Price</ion-col>
+          <ion-col size="6"
+            class="custFontFamilyMuliRegular muli-10pt custLineHight18 custColorWarmGrey1 custFontFamilyRobotoCondensed text-end pb-0 custFontFamilyMuliBold">
+            Tick:{{stockData.tick_size}}</ion-col>
+
+
+          <!-- <input matInput type="number" 
+                class="example-right-align Roboto-Condensed custLineHight22 muli-22pt text-center w-100" [(ngModel)]="limitPrice" placeholder="{{stockData.price}}"> -->
+          <ion-row class="newClass">
+
+            <input type="text" inputmode="numeric" [placeholder]="placeHolder" #marketValue
+              class="example-right-align Roboto-Condensed custLineHight22 custMuliFont  text-center w-100"
+              [(ngModel)]="limitPrice" [ngStyle]="{'width.px': width}" (keydown)="resize($event)">
+          </ion-row>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+
+
+      <ion-col class="limitmargin text-end">
+        <!-- <mat-checkbox [checked]="checkMe" class="example-margin" [(ngModal)]="limitPriceValue" (click)="myfun()"></mat-checkbox>
+           -->
+        <mat-checkbox [checked]="limitPrice" class="example-margin" (click)="myfun()"><span
+            class="custFontFamilyMuliRegular muli-14pt custLineHight18">Limit price</span>
+        </mat-checkbox>
+      </ion-col>
+    </ion-row>
+
+
+
+
+
+
+
+    <div *ngIf="TriggerPriceOn">
+      <ion-row>
+        <ion-col [size]="'3'"></ion-col>
+
+        <ion-col [size]="'4'">
+          <ion-row class="custFontFamilyMuliRegular muli-12pt custColorDark">{{'TriggerPrice'|translate}}</ion-row>
+        </ion-col>
+        <ion-col [size]="'1'">
+          <ion-row
+            class="custFontFamilyRobotoCondensed muli-10pt custColorWarmGrey1 px-2 text-end custFontFamilyMuliBold">
+            Tick:{{stockData.tick_size}}</ion-row>
+        </ion-col>
+        <ion-col [size]="'4'"></ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col [size]="'3'"></ion-col>
+        <ion-col [size]="'6'" class="plT marginInputtriggerOn">
+          <input placeholder="" class="custTextAlignCenter custFontFamilyMuliBold inputWidth" [value]="value" />
+        </ion-col>
+        <ion-col [size]="'3'"></ion-col>
+      </ion-row>
+    </div>
+
+
+    <ion-row class="martAdd">
+      <ion-col [size]="'12'" class="martAdd ">
+        <h1>
+          <ion-row>
+            <ion-col [size]="'6'" class="">
+              <span class="muli-14pt custLineHight18 text-end  custFontFamilyMuliBold text-end">Advanced Option</span>
+
+              <span class="custFontFamilyRobotoCondensed muli-14pt custLineHight18 custColorBrightCyan px-1 advanceIcon"
+                (click)="toggleShow()" *ngIf="plusIcon">
+                <ion-icon name="add" class="mt-2 "></ion-icon>
+              </span>
+              <span class="custFontFamilyRobotoCondensed muli-14pt custLineHight18 custColorBrightCyan px-1 advanceIcon"
+                (click)="toggleHide()" *ngIf="minusIcon">
+                <ion-icon name="remove-outline" class="mt-2 "></ion-icon>
+              </span>
+            </ion-col>
+            <ion-col [size]="'6'" class="text-end">
+              <span *ngIf="MarketOrder"
+                class="custFontFamilyRobotoCondensed muli-14pt custLineHight18 text-end custColorWarmGrey1 custFontFamilyMuliBold text-end">Market
+                Order</span>
+              <span *ngIf="BracketOrder"
+                class="custFontFamilyRobotoCondensed muli-14pt custLineHight18 text-end custColorWarmGrey1 custFontFamilyMuliBold text-end">Bracket
+                Order</span>
+              <span *ngIf="CoverOrder"
+                class="custFontFamilyRobotoCondensed muli-14pt custLineHight18 text-end custColorWarmGrey1 custFontFamilyMuliBold text-end ">Cover
+                Order</span>
+              <span
+                class="custFontFamilyRobotoCondensed muli-14pt custLineHight18 text-end custColorWarmGrey1 custFontFamilyMuliBold text-end ">Limit
+                order</span>
+            </ion-col>
+          </ion-row>
+        </h1>
+      </ion-col>
+    </ion-row>
+
+    <div *ngIf="isShown" class="TRiggermarginTop">
+      <ion-row>
+        <ion-col [size]="'12'">
+          <ion-row>
+            <ion-col [size]="'4'">
+              <span class="custFontFamilyMuliBold muli-14pt custLineHight20">{{'TriggerPrice'|translate}}</span>
+            </ion-col>
+            <ion-col [size]="'4'">
+              <ion-segment (ionChange)="segmentOnOff($event)" class="custBackgroundColorCyanBlue custBorderRadious">
+                <ion-segment-button value="On"
+                  [ngClass]="currentType === 'On'?'custBackgroundColorBlue1 custColorWhite':'custColorDark custOptacity'"
+                  class="custSegment " (click)="OnnOff()">
+                  <ion-label class="custFontFamilyMuliBold muli-12pt custLineHight10 text-center text-capitalize">Off
+                  </ion-label>
+                </ion-segment-button>
+                <ion-segment-button value="Off"
+                  [ngClass]="currentType === 'Off'?'custBackgroundColorBlue1 custColorWhite':'custColorDark custOptacity'"
+                  class="custSegment" (click)="OffOnn()">
+                  <ion-label class="custFontFamilyMuliBold muli-12pt custLineHight14 text-center text-capitalize">On
+                  </ion-label>
+                </ion-segment-button>
+              </ion-segment>
+            </ion-col>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+
+      <ion-row class="mt-3">
+        <ion-col [size]="'6'">
+          <ion-row>
+            <p class="ion-no-margin custFontFamilyMuliBold muli-14pt custLineHight20">Validity</p>
+          </ion-row>
+          <ion-row class="mt-2">
+            <mat-radio-group>
+              <mat-radio-button value="3" checked='true'
+                class="custFontFamilyMuliRegular muli-12pt custLineHight18 custColorWarmGrey1 paddingRadio custFontFamilyMuliBold"
+                (click)="ShowTrigger()">Day</mat-radio-button>
+              <mat-radio-button
+                class="custFontFamilyMuliRegular muli-12pt custLineHight18 custColorWarmGrey1 px-3 custFontFamilyMuliBold"
+                value="4" (click)="HideTrigger()">IOC</mat-radio-button>
+            </mat-radio-group>
+          </ion-row>
+        </ion-col>
+        <ion-col [size]="'6'" class="" *ngIf="isTrigger">
+          <ion-row>
+            <p class="ion-no-margin custFontFamilyMuliBold muli-14pt custLineHight20">Dis Qty</p>
+          </ion-row>
+          <mat-form-field class="newClass ">
+            <button class="custColorBrightCyan text-end muli-20pt Muli-Bold" (click)="Triggerdecrement()">-</button>
+            <input matInput type="number" [(ngModel)]="TriggerCounter"
+              class="example-right-align Roboto-Condensed custLineHight22 muli-22pt text-center">
+            <button matSuffix class=" custColorBrightCyan text-end muli-20pt Muli-Bold"
+              (click)=" Triggerincrement()">+</button>
+          </mat-form-field>
+        </ion-col>
+      </ion-row>
+    </div>
+    <ion-row class="custBackground mt-4">
+      <ion-col [size]="'12'">
+        <ion-row>
+          <ion-col [size]="'1'"
+            class="text-center mt-2 custFontFamilyRobotoCondensed muli-18pt custLineHight18 custColorBrightCyan px-2 ">
+            <ion-icon name="reload-outline" class="v"></ion-icon>
+          </ion-col>
+          <ion-col [size]="'6'">
+            <ion-row>
+              <span class="custFontFamilyRobotoCondensed muli-12pt custLineHight18 custColorWarmGrey1">Margin
+                Required</span>
+              <span class="custFontFamilyRobotoCondensed muli-12pt custLineHight18 custColorWarmGrey1 thick px-1">
+                <ion-icon name="alert-circle-outline"></ion-icon>
+              </span>
+              <span class="custFontFamilyRobotoCondensed muli-12pt custLineHight18 custColorDark thick px-1">₹
+                {{MarginReuired}}</span>
+            </ion-row>
+            <ion-row>
+              <span class="custFontFamilyRobotoCondensed muli-12pt custLineHight18 custColorWarmGrey1">Available
+                Margin</span>
+              <span class="custFontFamilyRobotoCondensed muli-12pt custLineHight18 custColorWarmGrey1 thick px-1">
+                <ion-icon name="alert-circle-outline"></ion-icon>
+              </span>
+              <span class="custFontFamilyRobotoCondensed muli-12pt custLineHight18 custColorDark thick px-1">₹
+                234.65</span>
+            </ion-row>
+
+          </ion-col>
+          <!-- <ion-col [size]="'5'" class="text-end mt-1 ">
+   
+              <span class="custFontFamilyRobotoCondensed muli-18pt custLineHight18 fontColor mt-3 thick  "><ion-icon name="add-circle-outline" class="custFontFamilyMuliBold addIcon"></ion-icon></span>
+              <span class="muli-16pt custLineHight18 fontColor mt-3 px-2 thick" (click)="AddFunds()">Add Funds</span>
+            
+            </ion-col> -->
+
+
+        </ion-row>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class=" mt-4">
+      <button (click)="buy()" *ngIf="stockData.txn_type == 'B'"
+        class="btn  w-100 h-100 custBackgroundColorParakeetGreen custColorWhite py-2 ">
+        Modify
+      </button>
+      <button (click)="sell()" *ngIf="stockData.txn_type == 'S'" class="btn  w-100 h-100  bgSell custColorWhite py-2 ">
+        Modify
+      </button>
+    </ion-row>
+
+    
+
+
+
+  </div>
+</div>

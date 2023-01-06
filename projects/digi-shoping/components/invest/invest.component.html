@@ -1,0 +1,94 @@
+
+
+<ion-content class="contentBackground">
+  <ion-grid class="mt-3">
+ <ion-col [size]="'12'" class=" ion-padding pt-5">
+  <span class="custFontFamilyMuliBold muli-16pt custLineHight18 custColorDarkShade">{{'exploreDigitalCommodities' | translate}}</span>
+</ion-col>
+<ion-col [size]="'12'" class="p-2">
+ <ion-card class="custBackgroundColorWhite" (click)="navigateToInvestDeatailsGold()">
+  <ion-card-content >
+    <!-- (click)="navigateToCart(x)" -->
+    <ion-grid>
+      <ion-row>
+        <ion-col [size]="'12'">
+          <ion-row>
+            <ion-col [size]="'2'">
+              <ion-img [src]="imageList?.Logogold" class="custImgGold"></ion-img>
+            </ion-col>
+            <ion-col [size]="'9'">
+              <span class="custFontFamilyMuliRegular muli-14pt custLineHight20 custColorDark">Augmont Digital Gold</span><br>
+              <span class="d-flex">
+                <p class="custFontFamilyMuliRegular muli-10pt custLineHight15 custColorWarmGrey custOpacity80">24K .</p>
+                <p class="custBackgroundColorWarmGrey custOpacity80 dot m-1"></p>
+                <p class="custFontFamilyMuliRegular muli-10pt custLineHight15 custColorWarmGrey custOpacity80">99.99% Purity</p>
+              </span>
+            </ion-col>
+            <ion-col [size]="'1'">
+              <img [src]="imageList?.leftArrowIcon" class="m-3 custArrowIcon" >
+            </ion-col>
+          </ion-row>
+        </ion-col>
+        <ion-col [size]="'12'">
+          <ion-row>
+            <ion-col [size]="'6'">
+              <span class="custFontFamilyMuliRegular muli-10pt custLineHight15 custColorGreyish">{{'buyingPrice' | translate}}</span><br>
+              <span class="custFontFamilyRubikRegular muli-14pt custLineHight18 custColorParakeetGreen">{{currencySymbol}} {{GoldSilverData?.gBuy}}</span>
+            </ion-col>
+            <ion-col [size]="'6'">
+              <span class="custFontFamilyMuliRegular muli-10pt custLineHight15 custColorGreyish">{{'sellingPrice' | translate}}</span><br>
+              <span class="custFontFamilyRubikRegular muli-14pt custLineHight18 custColorDark">{{currencySymbol}} {{GoldSilverData?.gSell}}</span>
+            </ion-col>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card-content>
+ </ion-card>
+</ion-col>
+
+
+
+<ion-col [size]="'12'" class="p-2">
+ <ion-card class="custBackgroundColorWhite" (click)="navigateToInvestDeatilsSilver()">
+  <ion-card-content >
+
+    <ion-grid>
+      <ion-row>
+        <ion-col [size]="'12'">
+          <ion-row>
+            <ion-col [size]="'2'">
+              <ion-img [src]="imageList?.digitelSilver" class="custImgGold"></ion-img>
+            </ion-col>
+            <ion-col [size]="'9'">
+              <span class="custFontFamilyMuliRegular muli-14pt custLineHight20 custColorDark">Augmont Digital Silver</span><br>
+              <span class="d-flex">
+                <p class="custFontFamilyMuliRegular muli-10pt custLineHight15 custColorWarmGrey custOpacity80">24K .</p>
+                <p class="custBackgroundColorWarmGrey custOpacity80 dot m-1"></p>
+                <p class="custFontFamilyMuliRegular muli-10pt custLineHight15 custColorWarmGrey custOpacity80">99.99% Purity</p>
+              </span>
+            </ion-col>
+            <ion-col [size]="'1'">
+              <img [src]="imageList?.leftArrowIcon" class="m-3 custArrowIcon" >
+            </ion-col>
+          </ion-row>
+        </ion-col>
+        <ion-col [size]="'12'">
+          <ion-row>
+            <ion-col [size]="'6'">
+              <span class="custFontFamilyMuliRegular muli-10pt custLineHight15 custColorGreyish">{{'buyingPrice' | translate}}</span><br>
+              <span class="custFontFamilyRubikRegular muli-14pt custLineHight18 custColorParakeetGreen">{{currencySymbol}} {{GoldSilverData?.sBuy}}</span>
+            </ion-col>
+            <ion-col [size]="'6'">
+              <span class="custFontFamilyMuliRegular muli-10pt custLineHight15 custColorGreyish">{{'sellingPrice' | translate}}</span><br>
+              <span class="custFontFamilyRubikRegular muli-14pt custLineHight18 custColorDark">{{currencySymbol}} {{GoldSilverData?.sSell}}</span>
+            </ion-col>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card-content>
+ </ion-card>
+</ion-col>
+
+

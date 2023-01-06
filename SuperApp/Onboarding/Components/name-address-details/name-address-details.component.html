@@ -1,0 +1,361 @@
+<ion-content class="contentBackground">
+  <ion-grid>
+    <form
+      [formGroup]="addressForm"
+      (ngSubmit)="getAddressDetails()"
+      class="segment p-3 custMarBtm"
+    >
+      <ion-row>
+        <ion-col [size]="'12'">
+          <span class="custFontFamilyMuliBold muli-16pt custColorDark"
+            >Details Required
+          </span>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col [size]="'4'" (click)="fatherChange()"
+          ><input name="relation" type="radio" checked /><span class="px-2"
+            >Father</span
+          ></ion-col
+        >
+        <ion-col [size]="'4'" (click)="spouseChange()"
+          ><input name="relation" type="radio" /><span class="px-2"
+            >Spouse</span
+          ></ion-col
+        >
+        <!-- <ion-col [size]="'4'" (click)="motherChange()"><input name="relation" type="radio" ><span class="px-2">Mother
+          </span></ion-col> -->
+      </ion-row>
+
+      <ion-row>
+        <ion-col [size]="'4'">
+          <mat-form-field
+            appearance="outline"
+            class="w-100 custHeightCss"
+            (click)="getSalutationMasterDetails('Salutation')"
+          >
+            <mat-label>Prefix</mat-label>
+            <mat-select
+              formControlName="prefix"
+              name="prefix"
+              id="prefix"
+              [(ngModel)]="formData.prefix"
+              #salutation
+            >
+              <mat-option *ngFor="let item of salutationList" [value]="item.ID">
+                {{ item.TEXT }}</mat-option
+              >
+            </mat-select>
+            <mat-error *ngIf="checkError('prefix', 'required')">
+              prefix is Required
+            </mat-error>
+          </mat-form-field>
+        </ion-col>
+
+        <ion-col [size]="'8'">
+          <mat-form-field appearance="outline" class="w-100">
+            <mat-label *ngIf="ffName">Father First Name</mat-label>
+            <mat-label *ngIf="sfName">Spouse First Name</mat-label>
+            <!-- <mat-label *ngIf="mfName">Mother First Name</mat-label> -->
+
+            <input
+              class="w-100"
+              type="text"
+              matInput
+              formControlName="firstName"
+              required
+            />
+            <mat-error *ngIf="checkError('firstName', 'required')">
+              First Name is Required
+            </mat-error>
+          </mat-form-field>
+        </ion-col>
+
+        <!-- </ion-row> -->
+        <mat-form-field appearance="outline" class="w-100">
+          <!-- <mat-label>Middle Name</mat-label> -->
+          <mat-label *ngIf="ffName">Father Middle Name</mat-label>
+          <mat-label *ngIf="sfName">Spouse Middle Name</mat-label>
+          <!-- <mat-label *ngIf="mfName">Mother Middle Name</mat-label> -->
+          <input
+            class="w-100"
+            type="text"
+            matInput
+            formControlName="middleName"
+            
+          />
+          <!-- <mat-error *ngIf="checkError('middleName','required')">
+          Middle Name is Required
+        </mat-error> -->
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="w-100">
+          <!-- <mat-label>Last Name</mat-label> -->
+          <mat-label *ngIf="ffName">Father Last Name</mat-label>
+          <mat-label *ngIf="sfName">Spouse Last Name</mat-label>
+          <!-- <mat-label *ngIf="mfName">Mother Last Name</mat-label> -->
+          <input
+            class="w-100"
+            type="text"
+            matInput
+            formControlName="lastName"
+            required
+          />
+          <mat-error *ngIf="checkError('lastName', 'required')">
+            Last Name is Required
+          </mat-error>
+        </mat-form-field>
+      </ion-row>
+
+      <ion-row>
+        <p class="custFontFamilyMuliBold muli-16pt custColorDark">Mother</p>
+      </ion-row>
+
+      <ion-col [size]="'8'">
+        <mat-form-field appearance="outline" class="w-100">
+          <mat-label>Mother First Name</mat-label>
+
+          <input
+            class="w-100"
+            type="text"
+            matInput
+            formControlName="motherFirstName"
+          />
+        </mat-form-field>
+      </ion-col>
+      <mat-form-field appearance="outline" class="w-100">
+        <mat-label>Mother Middle Name</mat-label>
+        <input
+          class="w-100"
+          type="text"
+          matInput
+          formControlName="motherMiddleName"
+        />
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="w-100">
+        <mat-label>Mother Last Name</mat-label>
+        <input
+          class="w-100"
+          type="text"
+          matInput
+          formControlName="motherLastName"
+        />
+      </mat-form-field>
+
+      <ion-row>
+        <p class="custFontFamilyMuliBold muli-16pt custColorDark">
+          Your Occupation
+        </p>
+      </ion-row>
+
+      <mat-form-field
+        appearance="outline"
+        class="w-100 custHeightCss"
+        (click)="getOccupationMasterDetails('Occupation')"
+      >
+        <mat-label>Select Your Occupation</mat-label>
+        <mat-select
+          #occupationDrop
+          name="occupation"
+          formControlName="occupation"
+          [(ngModel)]="formData.occupation"
+          name="occupation"
+          id="occupation"
+          required
+        >
+          <mat-option *ngFor="let item of occupationList" [value]="item.ID">
+            {{ item.TEXT }}</mat-option
+          >
+        </mat-select>
+        <!-- <input  class="w-100" type="text" matInput formControlName="city"> -->
+        <mat-error *ngIf="checkError('occupation', 'required')">
+          Occupation is Required
+        </mat-error>
+      </mat-form-field>
+
+      <ion-row>
+        <p class="custFontFamilyMuliBold muli-16pt custColorDark">
+          Correspondance Address
+        </p>
+      </ion-row>
+
+      <mat-form-field appearance="outline" class="w-100">
+        <mat-label>Address Line 1 </mat-label>
+        <input
+          class="w-100"
+          type="text"
+          matInput
+          formControlName="addressLine1"
+          minlength="10"
+          required
+        />
+        <mat-error *ngIf="checkError('addressLine1', 'required')">
+          Address is Required
+        </mat-error>
+        <mat-error *ngIf="checkError('addressLine1', 'minlength')">
+          Your address must be at least 10 characters long
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="w-100">
+        <mat-label>Address Line 2 </mat-label>
+        <input
+          class="w-100"
+          type="text"
+          matInput
+          formControlName="addressLine2"
+          minlength="10"
+          required
+        />
+        <mat-error *ngIf="checkError('addressLine2', 'required')">
+          Address is Required
+        </mat-error>
+        <mat-error *ngIf="checkError('addressLine2', 'minlength')">
+          Your address must be at least 10 characters long
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="w-100 custHeightCss">
+        <mat-label>Pincode</mat-label>
+        <input
+          class="w-100"
+          type="text"
+          matInput
+          formControlName="correspondancePinCode"
+          maxlength="6"
+          minlength="6"
+          inputmode="numeric"
+          name="correspondancePinCode"
+          id="correspondancePinCode"
+          [(ngModel)]="formData.correspondancePinCode"
+          (input)="inputValidator($event)"
+          required
+        />
+        <mat-error *ngIf="checkError('correspondancePinCode', 'required')">
+          Pincode is Required
+        </mat-error>
+        <mat-error *ngIf="checkError('correspondancePinCode', 'pattern')">
+          Pincode is invalid
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="w-100 custHeightCss">
+        <mat-label>City</mat-label>
+        <mat-select
+          #cityDrop
+          formControlName="correspondanceCity"
+          [(ngModel)]="formData.correspondanceCity"
+          name="correspondanceCity"
+          id="correspondanceCity"
+          required
+        >
+          <mat-option *ngFor="let item of city" [value]="item.district">
+            {{ item.district }} &nbsp; {{ item.office }}</mat-option
+          >
+        </mat-select>
+        <!-- <input  class="w-100" type="text" matInput formControlName="city"> -->
+        <mat-error *ngIf="checkError('correspondanceCity', 'required')">
+          City is Yequired
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field
+        appearance="outline"
+        class="w-100 custHeightCss"
+        (click)="getStateMasterDetails('State', null)"
+      >
+        <mat-label>State</mat-label>
+        <mat-select
+          #stateDrop
+          name="StateType"
+          formControlName="correspondanceState"
+          name="correspondanceState"
+          id="correspondanceState"
+          [(ngModel)]="formData.correspondanceState"
+          required
+        >
+          <mat-option *ngFor="let item of state" [value]="item.statename">
+            {{ item.statename }}</mat-option
+          >
+          <!-- <mat-option>44</mat-option> -->
+        </mat-select>
+        <mat-error *ngIf="checkError('correspondanceState', 'required')">
+          State is Required
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="w-100 custHeightCss">
+        <mat-label>Country</mat-label>
+        <mat-select
+          name="CountryType"
+          formControlName="correspondanceCountry"
+          [(ngModel)]="formData.correspondanceCountry"
+          name="correspondanceCountry"
+          #countryDrop
+          id="correspondanceCountry"
+          required
+        >
+          <mat-option [value]="'India'">India</mat-option>
+        </mat-select>
+        <!-- <input  class="w-100" type="text" matInput formControlName="city"> -->
+        <mat-error *ngIf="checkError('correspondanceCountry', 'required')">
+          Country is required
+        </mat-error>
+      </mat-form-field>
+
+      <!-- <mat-form-field appearance="outline" class="w-100 ">
+        <mat-label>District </mat-label>
+        <input class="w-100" type="text" matInput formControlName="district" required>
+        <mat-error *ngIf="checkError('district','required')">
+          District is Required
+        </mat-error>
+        <mat-error *ngIf="checkError('district','minlength')">
+          Your district must be at least 4 characters long
+        </mat-error>
+      </mat-form-field> -->
+    </form>
+  </ion-grid>
+</ion-content>
+
+<ion-row class="custFooterDiv contentBackground">
+  <!-- <ion-button expand="block" class="text-capitalize text-center custContinueBtn m-0 p-0"
+  [disabled]="!addressForm.valid"
+     (click)="onContinue()"><span
+      class="custColorWhite custFontFamilyMuliBold muli-16pt">{{'continue' |
+      translate}}</span></ion-button> -->
+
+  <!-- <ion-col [size]="'6'" class="pb-1" (click)="skip('NameAddressDetails')">
+        <ion-button expand="block" class="text-capitalize custTryButton d-flex justify-content-center">
+          <span class="custFontFamilyMuliRegular text-center muli-16pt custColorBrightCyan">{{'skipLabel' |
+            translate}}</span>
+        </ion-button>
+      </ion-col> -->
+
+  <ion-col [size]="'12'" class="pb-1" >
+    <ion-button
+      [disabled]="!addressForm.valid"
+      expand="block" (click)="onContinue()"
+      class="text-capitalize text-center custLooksBtn"
+      ><span class="custColorWhite custFontFamilyMuliBold muli-14pt">{{
+        "continue" | translate
+      }}</span></ion-button
+    >
+  </ion-col>
+</ion-row>
+
+<div
+  class="custModalContainer p-10"
+  *ngIf="loggedInModal"
+  (click)="successModalClose()"
+>
+  <div id="showModalSMGSucces" class="modal-content custCenterAlign">
+    <!-- <ion-icon [src]="imageList?.successKYCIcon" class="custImage"></ion-icon> -->
+    <p
+      class="custFontFamilyMuliBold muli-16pt custColorDark text-center p-0 m-0 ion-no-padding"
+    >
+      {{ ErrorMsg }}
+    </p>
+  </div>
+</div>

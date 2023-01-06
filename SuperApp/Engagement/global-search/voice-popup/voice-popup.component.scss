@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+
+.dot-typing {
+  position: relative;
+  left: -9999px;
+  width: 8px;
+  height: 8px;
+  border-radius: 5px;
+  background-color: #003399;
+  color: #003399;
+  box-shadow: 9984px 0 0 0 #003399, 9999px 0 0 0 #003399, 10014px 0 0 0 #003399;
+  animation: dotTyping 1.5s infinite linear;
+}
+
+@keyframes dotTyping {
+  0% {
+    box-shadow: 9984px 0 0 0 #003399, 9999px 0 0 0 #003399, 10014px 0 0 0 #003399;
+  }
+  16.667% {
+    box-shadow: 9984px -10px 0 0 #003399, 9999px 0 0 0 #003399, 10014px 0 0 0 #003399;
+  }
+  33.333% {
+    box-shadow: 9984px 0 0 0 #003399, 9999px 0 0 0 #003399, 10014px 0 0 0 #003399;
+  }
+  50% {
+    box-shadow: 9984px 0 0 0 #003399, 9999px -10px 0 0 #003399, 10014px 0 0 0 #003399;
+  }
+  66.667% {
+    box-shadow: 9984px 0 0 0 #003399, 9999px 0 0 0 #003399, 10014px 0 0 0 #003399;
+  }
+  83.333% {
+    box-shadow: 9984px 0 0 0 #003399, 9999px 0 0 0 #003399, 10014px -10px 0 0 #003399;
+  }
+  100% {
+    box-shadow: 9984px 0 0 0 #003399, 9999px 0 0 0 #003399, 10014px 0 0 0 #003399;
+  }
+}
+
+.custText {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 23px;
+  color: #807878;
+}
+
+.snippet {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.clased {
+  text-align: right;
+}
+
+.custTorus {
+  height: 40px;
+  width: 70px;
+  display: block;
+  margin: 40px auto 0;
+}
+
+.custMic {
+  width: 80px;
+  height: 80px;
+  display: block;
+  margin: 40px auto 0;
+}
+
+.custDoneText {
+  margin-top: -22px;
+}
+
+svg {
+  width: 80px;
+  height: 80px;
+  display: block;
+  margin: 40px auto 0;
+}
+
+.path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 0;
+  &.circle {
+    -webkit-animation: dash .9s ease-in-out;
+    animation: dash .9s ease-in-out;
+  }
+  &.check {
+    stroke-dashoffset: -100;
+    -webkit-animation: dash-check .9s .35s ease-in-out forwards;
+    animation: dash-check .9s .35s ease-in-out forwards;
+  }
+}
+
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 1000;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes dash-check {
+  0% {
+    stroke-dashoffset: -100;
+  }
+  100% {
+    stroke-dashoffset: 900;
+  }
+}
+
+
+
+

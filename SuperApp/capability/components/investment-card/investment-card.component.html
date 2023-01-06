@@ -1,0 +1,21 @@
+<ion-grid>
+
+<ion-slides pager="true" [options]="slideOpts" class="py-3">
+  <ion-slide *ngFor="let x of investmentCard">
+
+    <ion-card>
+      <ion-card-content>
+        <ion-row>
+          <ion-col><ion-img [src]="x?.image"></ion-img></ion-col>
+          <ion-col class="text-center"><span class="custColorDark custFontFamilyMuliBold muli-16pt mt-2">{{x?.title}}</span></ion-col>
+          <ion-col class="text-center "><button class="custBackgroundColorBrightCyan muli-14pt custFontFamilyMuliRegular custColorWhite p-2 mt-3 rounded-2 custCenter">{{x?.action}}</button></ion-col>
+        </ion-row>
+      </ion-card-content>
+    </ion-card>
+  </ion-slide>
+</ion-slides>
+
+
+
+
+    </ion-grid>

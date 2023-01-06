@@ -1,0 +1,455 @@
+{
+    "subHeader": {
+
+                "id": "",
+                "title": "Case Details",
+                "icon": "",
+                "type": "",
+                "cssx": "",
+                "uxClass": "muli-34pt",
+                "des": "",
+                "key": "",
+                "value": [
+                    {
+                        "id": "",
+                        "title": "+ Create New Lead",
+                        "icon": "",
+                        "type": "",
+                        "cssx": "",
+                        "uxClass": "btn custColorWhite custBackgroundColorBrightCyan",
+                        "des": "",
+                        "key": "",
+                        "value": ""
+                    }
+                ]
+    },
+    "search": {
+        "id": "",
+        "title": "Search",
+        "icon": "",
+        "type": "",
+        "cssx": "",
+        "uxClass": "px-3",
+        "des": [],
+        "key": "",
+        "showHide": [],
+        "value": [
+            {
+                "id": "",
+                "title": "From Date",
+                "icon": "",
+                "type": "calender",
+                "cssx": "",
+                "uxClass": "",
+                "des": [],
+                "key": "",
+                "validators": {
+                    "required": true
+                },
+                "value": ""
+            },
+            {
+                "id": "",
+                "title": "To Date",
+                "icon": "",
+                "type": "calender",
+                "cssx": "",
+                "uxClass": "",
+                "des": [],
+                "key": "",
+                "validators": {
+                    "required": true
+                },
+                "value": ""
+            },
+            {
+                "id": "",
+                "title": "Mobile Number/Email ID",
+                "icon": "",
+                "type": "ALPHANUMERIC",
+                "cssx": "",
+                "uxClass": "",
+                "des": [],
+                "key": "",
+                "validators": {
+                    "required": true
+                },
+                "value": ""
+            },
+            {
+                "id": "",
+                "title": "Submit",
+                "icon": "",
+                "type": "submit",
+                "cssx": "",
+                "uxClass": "",
+                "des": [],
+                "key": "",
+                "validators": "",
+                "value": ""
+            }
+        ]
+    },
+    "table": {
+      "id": "",
+          "title": "Total Cases",
+          "count":"30",
+          "icon": "",
+          "type": "",
+          "cssx": "",
+          "uxClass": "muli-30pt p-1 pt-2 custFontFamilyMuliSemiBold custColorDark",
+          "des": [
+          {
+              "id": "",
+              "title": "",
+              "icon": "assets/icon/menuIcon/Dashboard.svg",
+              "type": "icon",
+              "cssx": "",
+              "uxClass": "",
+              "des": [],
+              "key": "",
+              "validators": {
+                  "required": true
+              },
+              "value": ""
+          },
+          {
+              "id": "",
+              "title": "",
+              "icon": "assets/icon/menuIcon/Dashboard.svg",
+              "type": "icon",
+              "cssx": "",
+              "uxClass": "",
+              "des": [],
+              "key": "",
+              "validators": {
+                  "required": true
+              },
+              "value": ""
+          }],
+          "key": "",
+          "validators": "",
+          "options": "",
+          "value": [
+          {
+              "Case Number": {
+                  "id": "",
+                  "title": "C123456",
+                  "icon": "",
+                  "type": "",
+                  "cssx": "",
+                  "uxClass": "",
+                  "des": [],
+                  "key": "",
+                  "validators": "",
+                  "options": [],
+                  "value": ""
+              },
+              "Customer Name": {
+                  "id": "",
+                  "title": "Pratham P.",
+                  "icon": "",
+                  "type": "",
+                  "cssx": "",
+                  "uxClass": "",
+                  "des": [],
+                  "key": "",
+                  "validators": "",
+                  "options": [],
+                  "value": ""
+              },
+              "Customer ID": {
+                  "id": "",
+                  "title": "ABC12345",
+                  "icon": "",
+                  "type": "",
+                  "cssx": "",
+                  "uxClass": "",
+                  "des": [],
+                  "key": "",
+                  "validators": "",
+                  "options": [],
+                  "value": ""
+              },
+              "Mobile Number": {
+                  "id": "",
+                  "title": "9345562784",
+                  "icon": "",
+                  "type": "",
+                  "cssx": "",
+                  "uxClass": "",
+                  "des": [],
+                  "key": "",
+                  "validators": "",
+                  "options": [],
+                  "value": ""
+              },
+              "Email ID": {
+                  "id": "",
+                  "title": "abc@gmail.com",
+                  "icon": "",
+                  "type": "",
+                  "cssx": "",
+                  "uxClass": "",
+                  "des": [],
+                  "key": "",
+                  "validators": "",
+                  "options": [],
+                  "value": ""
+              },
+              "KYC Verified": {
+                  "id": "",
+                  "title": "Yes",
+                  "icon": "",
+                  "type": "",
+                  "cssx": "",
+                  "uxClass": "",
+                  "des": [],
+                  "key": "",
+                  "validators": "",
+                  "options": [],
+                  "value": ""
+              },
+              "Category": {
+                  "id": "",
+                  "title": "Wealth",
+                  "icon": "",
+                  "type": "",
+                  "cssx": "",
+                  "uxClass": "",
+                  "des": [],
+                  "key": "",
+                  "validators": "",
+                  "options": [],
+                  "value": ""
+              },
+              "Actions": {
+                  "id": "",
+                  "title": "assets/icon/menuIcon/Dashboard.svg",
+                  "icon": "assets/icon/menuIcon/Dashboard.svg",
+                  "type": "",
+                  "cssx": "",
+                  "uxClass": "",
+                  "des": [],
+                  "key": "",
+                  "validators": "",
+                  "options": [],
+                  "value": ""
+              }
+          },
+          {
+            "Case Number": {
+                "id": "",
+                "title": "C123456",
+                "icon": "",
+                "type": "",
+                "cssx": "",
+                "uxClass": "",
+                "des": [],
+                "key": "",
+                "validators": "",
+                "options": [],
+                "value": ""
+            },
+            "Customer Name": {
+                "id": "",
+                "title": "Pratham P.",
+                "icon": "",
+                "type": "",
+                "cssx": "",
+                "uxClass": "",
+                "des": [],
+                "key": "",
+                "validators": "",
+                "options": [],
+                "value": ""
+            },
+            "Customer ID": {
+                "id": "",
+                "title": "ABC12345",
+                "icon": "",
+                "type": "",
+                "cssx": "",
+                "uxClass": "",
+                "des": [],
+                "key": "",
+                "validators": "",
+                "options": [],
+                "value": ""
+            },
+            "Mobile Number": {
+                "id": "",
+                "title": "9345562784",
+                "icon": "",
+                "type": "",
+                "cssx": "",
+                "uxClass": "",
+                "des": [],
+                "key": "",
+                "validators": "",
+                "options": [],
+                "value": ""
+            },
+            "Email ID": {
+                "id": "",
+                "title": "abc@gmail.com",
+                "icon": "",
+                "type": "",
+                "cssx": "",
+                "uxClass": "",
+                "des": [],
+                "key": "",
+                "validators": "",
+                "options": [],
+                "value": ""
+            },
+            "KYC Verified": {
+                "id": "",
+                "title": "Yes",
+                "icon": "",
+                "type": "",
+                "cssx": "",
+                "uxClass": "",
+                "des": [],
+                "key": "",
+                "validators": "",
+                "options": [],
+                "value": ""
+            },
+            "Category": {
+                "id": "",
+                "title": "Wealth",
+                "icon": "",
+                "type": "",
+                "cssx": "",
+                "uxClass": "",
+                "des": [],
+                "key": "",
+                "validators": "",
+                "options": [],
+                "value": ""
+            },
+            "Actions": {
+                "id": "",
+                "title": "assets/icon/menuIcon/Dashboard.svg",
+                "icon": "assets/icon/menuIcon/Dashboard.svg",
+                "type": "",
+                "cssx": "",
+                "uxClass": "",
+                "des": [],
+                "key": "",
+                "validators": "",
+                "options": [],
+                "value": ""
+            }
+          },
+          {
+            "Case Number": {
+                "id": "",
+                "title": "C123456",
+                "icon": "",
+                "type": "",
+                "cssx": "",
+                "uxClass": "",
+                "des": [],
+                "key": "",
+                "validators": "",
+                "options": [],
+                "value": ""
+            },
+            "Customer Name": {
+                "id": "",
+                "title": "Pratham P.",
+                "icon": "",
+                "type": "",
+                "cssx": "",
+                "uxClass": "",
+                "des": [],
+                "key": "",
+                "validators": "",
+                "options": [],
+                "value": ""
+            },
+            "Customer ID": {
+                "id": "",
+                "title": "ABC12345",
+                "icon": "",
+                "type": "",
+                "cssx": "",
+                "uxClass": "",
+                "des": [],
+                "key": "",
+                "validators": "",
+                "options": [],
+                "value": ""
+            },
+            "Mobile Number": {
+                "id": "",
+                "title": "9345562784",
+                "icon": "",
+                "type": "",
+                "cssx": "",
+                "uxClass": "",
+                "des": [],
+                "key": "",
+                "validators": "",
+                "options": [],
+                "value": ""
+            },
+            "Email ID": {
+                "id": "",
+                "title": "abc@gmail.com",
+                "icon": "",
+                "type": "",
+                "cssx": "",
+                "uxClass": "",
+                "des": [],
+                "key": "",
+                "validators": "",
+                "options": [],
+                "value": ""
+            },
+            "KYC Verified": {
+                "id": "",
+                "title": "Yes",
+                "icon": "",
+                "type": "",
+                "cssx": "",
+                "uxClass": "",
+                "des": [],
+                "key": "",
+                "validators": "",
+                "options": [],
+                "value": ""
+            },
+            "Category": {
+                "id": "",
+                "title": "Wealth",
+                "icon": "",
+                "type": "",
+                "cssx": "",
+                "uxClass": "",
+                "des": [],
+                "key": "",
+                "validators": "",
+                "options": [],
+                "value": ""
+            },
+            "Actions": {
+                "id": "",
+                "title": "assets/icon/menuIcon/Dashboard.svg",
+                "icon": "assets/icon/menuIcon/Dashboard.svg",
+                "type": "",
+                "cssx": "",
+                "uxClass": "",
+                "des": [],
+                "key": "",
+                "validators": "",
+                "options": [],
+                "value": ""
+            }
+          }
+      ]
+  }
+
+}

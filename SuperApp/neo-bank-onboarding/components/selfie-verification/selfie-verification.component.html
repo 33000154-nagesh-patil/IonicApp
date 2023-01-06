@@ -1,0 +1,45 @@
+
+<ion-content class="contentBackground vertical-center">
+  <p class="custFontFamilyMuliBold muli-16pt custLineHight18 custColorDark custUrSign text-center">
+    {{'selfieVerificationLabel' | translate}}</p>
+  <p *ngIf="!selfiUploaded"
+    class="custFontFamilyMuliRegular muli-14pt custLineHight20 custColorDark custSignMandatoryMsg text-center">
+    {{'takePhotoYourself' | translate}}</p>
+
+  <p *ngIf="selfiUploaded"
+    class="custFontFamilyMuliRegular muli-14pt custLineHight20 custColorDark custSignMandatoryMsg text-center">
+    {{'takePhotoYourselfOrUpload' | translate}}</p>
+
+  <ion-img [src]="!selfiUploaded? imageList?.selfieIcon : currentImg"
+    [ngClass]="(selfiUploaded)?'custSelfieImage m-50 text-center':'custSelfieIcon m-50 text-center'"
+    class="custSelfieIcon m-50 text-center"></ion-img>
+</ion-content>
+
+<div class="custFooterDiv">
+  <ion-button *ngIf="!selfiUploaded" expand="block" class="text-capitalize text-center custContinueBtn m-0 p-0"
+    (click)="onTakePicture()"><span class="custColorWhite custFontFamilyMuliBold muli-16pt">{{'takePictureLabel' |
+      translate}}</span></ion-button>
+      <!-- <input type="file" (change)="imagePreview($event,1)" #top
+      style="display: none; visibility: hidden; z-index: 0;" name="filename"> -->
+  <ion-row *ngIf="selfiUploaded" class="ion-no-padding">
+    <ion-col [size]="'6'" class="ion-no-padding">
+      <ion-button expand="block" class="text-capitalize custTryButton d-flex justify-content-center"
+        (click)="tryAgain()">
+        <span class="custFontFamilyMuliRegular text-center muli-14pt custColorBrightCyan">{{'tryAgain'
+          | translate}}</span>
+      </ion-button>
+    </ion-col>
+
+    <ion-col [size]="'6'" class="ion-no-padding">
+      <ion-button expand="block" class="text-capitalize text-center custLooksBtn" (click)="looksGood()"><span
+          class="custColorWhite custFontFamilyMuliBold muli-16pt">{{'looksGoodLabel' |
+          translate}}</span></ion-button>
+    </ion-col>
+  </ion-row>
+  <div class="custModalContainer p-10" *ngIf="loggedInModal" (click)="successModalClose();">
+    <div id="showModalSMGSucces" class="modal-content custCenterAlign">
+      <!-- <ion-icon [src]="imageList?.successKYCIcon" class="custImage"></ion-icon> -->
+      <p class="custFontFamilyMuliBold muli-16pt custColorDark text-center p-0 m-0 ion-no-padding">{{ErrorMsg}}</p>
+    </div>
+  </div>
+</div>

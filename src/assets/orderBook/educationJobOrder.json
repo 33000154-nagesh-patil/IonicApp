@@ -1,0 +1,26 @@
+{
+    "productName":"Education",
+    "name":"Web Development",
+    "segments":[
+        {
+            "name":"Amount/Quantity",
+            "value":"quantity",
+            "placeHolder":"Enter Quantity",
+            "unit":""
+        }
+    ],
+    "pricePerUnit":"200",
+    "taxes":[
+        {"type":"CGST","taxPercentage":"0.0"},
+        {"type":"SGST","taxPercentage":"0.0"},
+        {"type":"IGST","taxPercentage":"0.0"}
+    ],
+    "buttons":{
+        "quantity":[]
+    },
+    "stopWatch":false,
+    "stocks":false,
+    "mf":false,
+    "edCourses":true,
+    "incDecButton":false
+}

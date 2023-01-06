@@ -1,0 +1,146 @@
+{
+  "": {
+    "Orderlist": [
+      "Exchange",
+      "Action",
+      "Product",
+      "Order status",
+      "Asset class",
+      "SortBy"
+    ],
+    "Exchange": [
+      {
+        "name": "NSE",
+        "hasLayer": []
+      },
+      {
+        "name": "BSE",
+        "hasLayer": []
+      },
+      {
+        "name": "NSECDS",
+        "hasLayer": []
+      },
+      {
+        "name": "MCX",
+        "hasLayer": []
+      },
+      {
+        "name": "NCDEX",
+        "hasLayer": []
+      }
+    ],
+    "Action": [
+      {
+        "name": "Buy",
+        "hasLayer": []
+      },
+      {
+        "name": "Sell",
+        "hasLayer": []
+      }
+    ],
+    "Product": [
+      {
+        "name": "Delivery",
+        "hasLayer": []
+      },
+      {
+        "name": "Intraday",
+        "hasLayer": []
+      },
+      {
+        "name": "MTF",
+        "hasLayer": []
+      }
+    ],
+    "Order Status": [
+      {
+        "name": "Pending",
+        "hasLayer": []
+      },
+      {
+        "name": "Executed",
+        "hasLayer": []
+      },
+      {
+        "name": "Cancelled",
+        "hasLayer": []
+      },
+      {
+        "name": "Modified",
+        "hasLayer": []
+      },
+      {
+        "name": "Rejected",
+        "hasLayer": []
+      }
+    ],
+    "Asset Class": [
+      {
+        "name": "Equity",
+        "hasLayer": []
+      },
+      {
+        "name": "Derivative",
+        "hasLayer": []
+      },
+      {
+        "name": "Currency",
+        "hasLayer": []
+      },
+      {
+        "name": "Commodity",
+        "hasLayer": []
+      }
+    ],
+    "SortBy": [
+      {
+        "name": "Price - High to Low",
+        "hasLayer": []
+      },
+      {
+        "name": "Price - Low to High",
+        "hasLayer": []
+      },
+      {
+        "name": "A to Z",
+        "hasLayer": []
+      },
+      {
+        "name": "Z to A",
+        "hasLayer": []
+      },
+      {
+        "name": "By Date",
+        "hasLayer": []
+      },
+      {
+        "name": "By Volume",
+        "hasLayer": []
+      },
+      {
+        "name": "By quantity",
+        "hasLayer": []
+      },
+      {
+        "name": "Unrealized P&L",
+        "hasLayer": []
+      },
+      {
+        "name": "Unrealized P&L%",
+        "hasLayer": []
+      },
+      {
+        "name": "Last traded price",
+        "hasLayer": []
+      },
+      {
+        "name": "Day P&L",
+        "hasLayer": []
+      }
+    ]
+  }
+}
+
+

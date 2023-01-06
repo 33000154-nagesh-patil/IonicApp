@@ -1,0 +1,44 @@
+<ion-content>
+  <ion-row class="mx-2">
+    <ion-col>
+      <span
+        class="custColorDark custFontFamilyMuliBold muli-16pt custLineHight20"
+        >One step verification process</span
+      >
+      <span> &nbsp;<img [src]="imageList?.iIcon" /> </span>
+    </ion-col>
+  </ion-row>
+  <ion-row class="mx-2">
+    <ion-col>
+      <ion-col>
+        <span
+          class="custColorDark custFontFamilyMuliRegular muli-14pt custLineHight58"
+          >You will be redirect to the CDSL website to verify your
+          transaction.<br />
+          Use TPIN sent on SMS and email by CDSL.</span
+        >
+      </ion-col>
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="m-2">
+    <ion-col [size]="'6'">
+      <button
+        class="btn w-100 h-100 py-2 text-center custColorBrightCyan custButtonOutLine"
+      >
+        Regenerate TPIN
+      </button>
+    </ion-col>
+    <ion-col [size]="'6'">
+      <button (click)="proceed()"
+        class="btn w-100 h-100 py-2 text-center custColorWhite custBackgroundColorBrightCyan"
+      >
+        Proceed
+      </button>
+    </ion-col>
+  </ion-row>
+
+
+
+  
+</ion-content>

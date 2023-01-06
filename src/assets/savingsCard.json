@@ -1,0 +1,25 @@
+{
+"beneficiary": [
+ {
+     "id":1,
+  "accountHolder":"Hazik Zubair Chilmai",
+  "bankDetails":"HDFC Bank -",
+  "accountNumber":"05431140035276"
+ },
+ { 
+     "id":2,
+  "accountHolder":"Narendra ",
+  "bankDetails":"SBI Bank -",
+  "accountNumber":"05431144444444"
+
+ },
+ 
+ { 
+     "id":3,
+  "accountHolder":"Aniruddh",
+  "bankDetails":"HDFC Bank -",
+  "accountNumber":"0543114333333"
+
+ }
+]
+}

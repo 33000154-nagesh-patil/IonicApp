@@ -1,0 +1,49 @@
+.myROW{
+    display: flex;
+    justify-content: end;
+}
+
+.custBtnBrows {
+color: #0f4880;
+position: absolute;
+ bottom: 15px;
+  right: 12px;
+}
+.file-upload-button {
+//     background-color:white;
+//     color: blue;
+//     height: 2rem;
+//     overflow: hidden;
+//     position: relative;
+//     width: 4rem;
+
+//   &::after {
+//     content: 'Attach File';
+//     color:blue;
+//     font-size: 3rem;
+//     text-align: center;
+//   }S
+background-color:white;
+color: blue;
+height: 20px;
+width: 100px;
+overflow: hidden;
+&::after {
+    //     content: 'Attach File';
+content: "Upload";
+}
+
+  input[type="file"] {
+        font-size: 100px;
+        left: 0;
+        opacity: 0;
+        position: absolute;
+        top: 0;
+    }
+}
+
+  
+
+
+
+

@@ -1,0 +1,76 @@
+{
+    "data": [
+        {
+            "prodType": "STOCKS",
+            "ticketId": "256789",
+            "issueDetail": "I have a Issue with my order placed on 03/03/2002. My Portfolio report is not generated yet.",
+            "issueType": "Fund Transfer",
+            "issueDate": "03/03/2022",
+            "status": "Resolved"
+        },
+        {
+            "prodType": "MUTUAL FUNDS",
+            "ticketId": "255769",
+            "issueDetail": "I have a Issue with my order placed on 03/03/2002. My Portfolio report is not generated yet.",
+            "issueType": "NAV Allocation",
+            "issueDate": "01/02/2022",
+            "status": "In Progress"
+        },
+        {
+            "prodType": "LAB TEST",
+            "ticketId": "285638",
+            "issueDetail": "I have a Issue with my order placed on 03/03/2002. My Portfolio report is not generated yet.",
+            "issueType": "Test Report",
+            "issueDate": "12/12/2021",
+            "status": "On-hold"
+        },
+        {
+            "prodType": "LAB TEST",
+            "ticketId": "183238",
+            "issueDetail": "I have a Issue with my order placed on 03/03/2002. My Portfolio report is not generated yet.",
+            "issueType": "Test Report",
+            "issueDate": "09/11/2021",
+            "status": "Pending"
+        },
+        {
+            "prodType": "STOCKS",
+            "ticketId": "256789",
+            "issueDetail": "I have a Issue with my order placed on 03/03/2002. My Portfolio report is not generated yet.",
+            "issueType": "Fund Transfer",
+            "issueDate": "03/03/2022",
+            "status": "Resolved"
+        },
+        {
+            "prodType": "STOCKS",
+            "ticketId": "256789",
+            "issueDetail": "I have a Issue with my order placed on 03/03/2002. My Portfolio report is not generated yet.",
+            "issueType": "Fund Transfer",
+            "issueDate": "03/03/2022",
+            "status": "Resolved"
+        },
+        {
+            "prodType": "STOCKS",
+            "ticketId": "256789",
+            "issueDetail": "I have a Issue with my order placed on 03/03/2002. My Portfolio report is not generated yet.",
+            "issueType": "Fund Transfer",
+            "issueDate": "03/03/2022",
+            "status": "Resolved"
+        }
+    ],
+    "detail": [
+        {
+            "issueDate": "19 Mar 2021, 4:55 PM",
+            "status": "Resolved"
+        },
+        {
+            "issueDate": "11 Mar 2021, 4:55 PM",
+            "status": "In Progress",
+            "comments": "Your request has been processed, our technical team is working on it. Kindly provide us your order ID."
+        },
+        {
+            "issueDate": "11 Mar 2021, 4:55 PM",
+            "status": "Pending",
+            "comments": "Your request has been processed, our technical team is working on it. Kindly provide us your order ID."
+        }
+    ]
+}

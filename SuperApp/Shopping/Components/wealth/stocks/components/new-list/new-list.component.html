@@ -1,0 +1,134 @@
+<ion-header>
+  <ion-toolbar class="custBackgroundDynamicColorWhite p-2">
+    <ion-grid>
+      <ion-row>
+        <ion-col [size]="'0.7'" class="text-center mt-2">
+          <ion-img [src]="imageList?.arrow" class="custKYCImg mt-1" (click)="dismiss()"></ion-img>
+        </ion-col>
+        <ion-col [size]="'10'" class="px-3 mt-2">
+          <input type="text" [(ngModel)]="search" autocomplete="off" placeholder="Search Stocks" class="formControl" />
+        </ion-col>
+        <ion-col [size]="'1'" class="text-center float-end">
+          <ion-img [src]="imageList?.search" class="custKYCImg mt-2"></ion-img>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="contentBackground">
+
+  <ion-row>
+    <ion-col class="m-0 p-0">
+      <p class="mx-3 p-0 custColorDark muli-16pt custFontFamilyMuliBold">Selected</p>
+    </ion-col>
+  </ion-row>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-card class="custBackgroundColorWhite p-0 m-1">
+          <ion-card-content class="mb-0 pb-0">
+            <ion-row class="p-0 m-0">
+              <ion-col [size]="6" class="custColorDark muli-14pt custLineHight18 custFontFamilyMuliRegular">
+                <p class="m-0 p-0">Nifty 50</p>
+              </ion-col>
+              <ion-col [size]="6" class="custFontFamilyMuliSemiBold custLineHight20 muli-14pt custColorDark text-end ">
+                <p class=" me-3 p-0">16,139.00</p>
+              </ion-col>
+            </ion-row>
+            <ion-row class="p-0 m-0">
+              <ion-col [size]="6" class="custColorBattlePGry  muli-12pt custLineHight15 custFontFamilyMuliRegular">
+                <p class="m-0 p-0">NSE</p>
+              </ion-col>
+              <ion-col [size]="6"
+                class="custFontFamilyMuliRegular custLineHight18 muli-14pt custColorParakeetGreen text-end">
+                <p class=" me-3 p-0">22.62.00<span
+                    class="custFontFamilyMuliRegular custLineHight15 muli-12pt custColorParakeetGreen text-end">(0.23%)</span>
+                </p>
+              </ion-col>
+            </ion-row>
+            <hr class="m-0" />
+          </ion-card-content>
+
+          <ion-img [src]="imageList?.DltImg" class="custDelIcon float-end"></ion-img>
+
+          <ion-card-content class="mb-0 pb-0">
+            <ion-row class="p-0 m-0">
+              <ion-col [size]="6" class="custColorDark muli-14pt custLineHight18 custFontFamilyMuliRegular">
+                <p class="m-0 p-0">Bank Nifty</p>
+              </ion-col>
+              <ion-col [size]="6" class="custFontFamilyMuliSemiBold custLineHight20 muli-14pt custColorDark text-end ">
+                <p class=" me-3 p-0">34,920.30</p>
+              </ion-col>
+            </ion-row>
+
+
+            <ion-row class="p-0 m-0">
+              <ion-col [size]="6" class="custColorBattlePGry muli-12pt custLineHight15 custFontFamilyMuliRegular">
+                <p class="m-0 p-0">NSE</p>
+              </ion-col>
+              <ion-col [size]="6"
+                class="custFontFamilyMuliRegular  muli-14pt custColorParakeetGreen text-end">
+                <p class=" me-3 p-0 custLineHight10">22.62.00<span
+                    class="custFontFamilyMuliRegular custLineHight10 muli-12pt custColorParakeetGreen text-end">(0.23%)</span>
+                </p>
+              </ion-col>
+            </ion-row>
+            <hr class="m-0" />
+          </ion-card-content>
+
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-row>
+    <ion-col class="m-0 p-0">
+      <p class="mx-3 p-0 custColorDark muli-16pt custFontFamilyMuliBold">Options</p>
+    </ion-col>
+  </ion-row>
+
+
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-card class="custBackgroundColorWhite p-0 m-1">
+          <ion-card-content class="mb-0 pb-0" *ngFor="let list of options">
+            <ion-row class="p-0 m-0">
+              <ion-col [size]="6" class="custColorDark muli-14pt custFontFamilyMuliRegular">
+                <p class="m-0 p-0">{{list.title}}</p>
+              </ion-col>
+            </ion-row>
+            <ion-row class="p-0 m-0">
+              <ion-col [size]="6" class="custColorBattlePGry muli-12pt custFontFamilyMuliRegular">
+                <p class="m-0 p-0">{{list.data}}</p>
+              </ion-col>
+              <ion-col [size]="6"
+                class="custFontFamilyMuliRegular custLineHight20 muli-18pt custColorParakeetGreen text-end">
+                <ion-img [src]="imageList?.plusIcon" class="custAddIcon float-end" *ngIf="!selectedExchange"
+                  (click)="selectExc()"></ion-img>
+                <ion-img [src]="imageList?.greenTick" class="custAddIcon float-end" *ngIf="selectedExchange"
+                  (click)="selectExc()"></ion-img>
+              </ion-col>
+
+            </ion-row>
+            <hr class="m-0" />
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+
+
+
+  <ion-row class="fixed-bottom">
+    <ion-col class="p-3">
+      <button class="btn p-1 w-100 text-center custBackgroundColorBrightCyan"><span
+          class="custColorWhite custFontFamilyMuliBold muli-16pt">Save</span></button>
+    </ion-col>
+  </ion-row>
+
+</ion-content>

@@ -1,0 +1,325 @@
+<ion-header class="fixed-top">
+  <ion-toolbar class="custBackgroundDynamicColorWhite">
+    <ion-grid>
+      <ion-row>
+        <ion-col [size]="'1'" (click)="back1()" class="">
+          <ion-img [src]="imageList?.arrow" class="custInvestArrow" ></ion-img>
+        </ion-col>
+        <ion-col [size]="'11'">
+          <ion-row>
+            <ion-col [size]="'2'">
+              <ion-img *ngIf="metalType == 'gold'" [src]="imageList?.Logogold" class="custSIPIcon ms-2 "></ion-img>
+              <ion-img *ngIf="metalType == 'silver'" [src]="imageList?.digitelSilver" class="custSIPIcon ms-2 ">
+              </ion-img>
+              <!-- <ion-img *ngIf="!commodity" [src]="data1?.logo" class="custSIPIcon ms-2 ">
+              </ion-img> -->
+            </ion-col>
+            <ion-col [size]="'10'" class="mt-1">
+              <span *ngIf="metalType == 'gold'"
+                class="custFontFamilyMuliBold muli-12pt custColorDark custLineHight16 ">{{'augmontdigitalgold' |
+                translate}}</span>
+              <span *ngIf="metalType == 'silver'"
+                class="custFontFamilyMuliBold muli-12pt custColorDark custLineHight16 ">{{'augmontdigitalSilver' |
+                translate}}</span>
+              <!-- <span *ngIf="!commodity"
+                class="custFontFamilyMuliBold muli-12pt custColorDark custLineHight16 ">{{data1?.title}}</span> -->
+            </ion-col>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="h-100 w-100 contentBackground">
+  <ion-grid class=" pt-5 mt-3">
+    <ion-row class="mt-2">
+      <ion-col [size]="'2'"></ion-col>
+      <ion-col [size]="'8'" class="pt-4 text-center ps-1 pe-1">
+        <ion-segment (ionChange)="segmentChanged($event)" class="custBackgroundColorCyanBlue custBorderRadious">
+          <ion-segment-button value="amount"
+            [ngClass]="currentTypeOrder === 'amount'?'custBackgroundColorBrightCyan custColorWhite':'custColorDark custOptacity'"
+            class="custSegment ">
+            <ion-label *ngIf="_type == 'buy'"
+              class="custFontFamilyMuliBold muli-12pt custLineHight14 text-center text-capitalize">
+              {{'buyInAmount' |
+              translate}}</ion-label>
+            <ion-label *ngIf="_type == 'sell'"
+              class="custFontFamilyMuliBold muli-12pt custLineHight14 text-center text-capitalize">
+              {{'sellInAmount' |
+              translate}}</ion-label>
+          </ion-segment-button>
+          <ion-segment-button value="grams"
+            [ngClass]="currentTypeOrder === 'grams'?'custBackgroundColorBrightCyan custColorWhite':'custColorDark custOptacity'"
+            class="custSegment ">
+            <ion-label *ngIf="_type == 'buy'"
+              class="custFontFamilyMuliBold muli-12pt custLineHight14 text-center text-capitalize">
+              {{'buyInGrams'|translate}}
+            </ion-label>
+            <ion-label *ngIf="_type == 'sell'"
+              class="custFontFamilyMuliBold muli-12pt custLineHight14 text-center text-capitalize">
+              {{'sellInGrams'|translate}}
+            </ion-label>
+          </ion-segment-button>
+        </ion-segment>
+      </ion-col>
+      <ion-col [size]="'2'"></ion-col>
+    </ion-row>
+
+    <!-- <form [formGroup]="digiform"> -->
+    <ion-row class="mx-4  mt-2">
+      <ion-col class="custTextAlignCenter  " [size]="'5'">
+        <span class="w-100 custFontFamilyMuliBold  muli-12pt  "
+          [ngClass]="currentTypeOrder === 'amount'?' custColorDark':'custColorWarmGrey'">{{'Amount' | translate}}</span>
+        <mat-form-field class="text-center ps-1  w-100  "
+          [ngClass]="showError?'mat-form-field-invalid custColorcustFadedRed':''">
+          <span class="custFontFamilyRobotoCondensed muli-20pt custColorDark custCurrency  ps-1"
+            [ngClass]="showError?'custColorcustFadedRed':'custColorDark'"
+            [ngClass]="currentTypeOrder === 'amount'?' custColorDark':'custColorWarmGrey'">{{currencySymbol}}</span>
+          <input matInput #commaInput type="text" [value]="setedAmount" [disabled]="currentTypeOrder == 'grams'" #amount
+            (keyup)="calAmountToGram($event)" (keypress)="numberOnly($event)" inputmode='decimal' autocomplete="off"
+            class="custFontFamilyRobotoCondensed muli-22pt custLineHight40 custColorDark  text-start px-1">
+        </mat-form-field>
+
+
+
+      </ion-col>
+      <ion-col [size]="'2'" class="text-center ">
+        <img [src]="imageList?.InvestLeftArror" class="custImg2 mt-2" *ngIf="currentTypeOrder == 'grams'">
+        <img [src]="imageList?.Investrightarrow" class="custImg2 mt-2" *ngIf="currentTypeOrder == 'amount'">
+      </ion-col>
+      <ion-col class="custTextAlignCenter " [size]="'5'">
+        <span class="w-100 custFontFamilyMuliBold  muli-12pt"
+          [ngClass]="currentTypeOrder === 'grams'?' custColorDark':'custColorWarmGrey'">{{'Weight' | translate }}</span>
+        <mat-form-field class=" text-center  w-100"
+          [ngClass]="showError?'mat-form-field-invalid custColorcustFadedRed':''">
+          <input #commaInput matInput [value]="setedGrams" [disabled]="currentTypeOrder == 'grams'" type="text" inputmode='decimal'
+            [disabled]="currentTypeOrder == 'amount'" #gm (input)="calGramToAmount($event)"
+            (keypress)="numberOnly($event)" autocomplete="off"
+            class="custFontFamilyRobotoCondensed muli-24pt custLineHight40 custColorDark">
+          <span class="custFontFamilyRobotoCondensed muli-14pt custGM custColorDark me-2"
+            [ngClass]="showError?'custColorcustFadedRed':'custColorDark'"
+            [ngClass]="currentTypeOrder === 'grams'?' custColorDark':'custColorWarmGrey'">{{'gm' |translate}}</span>
+        </mat-form-field>
+
+
+
+      </ion-col>
+    </ion-row>
+    <!-- </form> -->
+
+    <ion-row class="w-100  text-center  " *ngIf="currentTypeOrder == 'amount'">
+      <ion-col class="text-center custCallV">
+
+        <button class="btn btn-sm custBackgroundColorCyanBlue me-2 custWidthBtn" (click)="setAmount(1000)">
+          <span class="custFontFamilyRobotoCondensed muli-12pt custLineHight18 custColorBattlePGry">+ {{currencySymbol}}
+            1,000</span>
+        </button>
+
+        <button class="btn btn-sm  custBackgroundColorCyanBlue custWidthBtn" (click)="setAmount(5000)">
+          <span class="custFontFamilyRobotoCondensed muli-12pt custLineHight18 custColorBattlePGry">+ {{currencySymbol}}
+            5,000</span>
+        </button>
+
+        <button class="btn btn-sm custBackgroundColorCyanBlue ms-2 custWidthBtn" (click)="setAmount(10000)">
+          <span class="custFontFamilyRobotoCondensed muli-12pt custLineHight18 custColorBattlePGry">+ {{currencySymbol}}
+            10,000</span>
+        </button>
+
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="w-100  text-center" *ngIf="currentTypeOrder == 'grams'">
+      <ion-col class="text-center custCallV">
+        <button class="btn btn-sm custBackgroundColorCyanBlue me-2  custWidthBtn" (click)="setGram(0.5)">
+          <span class="custFontFamilyRobotoCondensed muli-12pt custLineHight18 custColorBattlePGry">+ 0.5{{'gm' |
+            translate }}</span>
+        </button>
+
+
+        <button class="btn btn-sm  custBackgroundColorCyanBlue custWidthBtn" (click)="setGram(1)">
+          <span class="custFontFamilyRobotoCondensed muli-12pt custLineHight18 custColorBattlePGry">+ 1{{'gm' |
+            translate }}</span>
+        </button>
+
+        <button class="btn btn-sm custBackgroundColorCyanBlue ms-2 custWidthBtn" (click)="setGram(5)">
+          <span class="custFontFamilyRobotoCondensed muli-12pt custLineHight18 custColorBattlePGry">+ 5{{'gm' |
+            translate }}</span>
+        </button>
+
+      </ion-col>
+    </ion-row>
+
+    <ion-row *ngIf="_type == 'sell'" class="custmesg">
+      <ion-col [size]="'12'" class="ion-margin-horizontal d-flex justify-content-center mt-2 text-center  "
+        *ngIf="moreThanError">
+        <span class="muli-10pt custLineHight22 custColorcustFadedRed custFontFamilyMuliBold me-5  ">{{'sellError' |
+          translate}}</span>
+      </ion-col>
+    </ion-row>
+    <ion-row *ngIf="_type == 'sell'" class="custmesg">
+      <ion-col [size]="'12'" class="ion-margin-horizontal d-flex justify-content-center mt-2 text-center  "
+        *ngIf="minsellError">
+        <span class="muli-10pt custLineHight22 custColorcustFadedRed custFontFamilyMuliBold me-5  ">{{'minsellError' |
+          translate}}</span>
+      </ion-col>
+    </ion-row>
+    <ion-row *ngIf="_type == 'buy'" class="custmesg">
+      <ion-col [size]="'12'" class="ion-margin-horizontal d-flex justify-content-center mt-2 text-center  "
+        *ngIf="maxamountmsg">
+        <span class="muli-10pt custLineHight22 custColorcustFadedRed custFontFamilyMuliBold me-5  ">{{'maxInvestError' |
+          translate}}</span>
+      </ion-col>
+      <ion-col [size]="'12'" class="ion-margin-horizontal d-flex justify-content-center mt-2 text-center  "
+        *ngIf="minamountmsg">
+        <span class="muli-10pt custLineHight22 custColorcustFadedRed custFontFamilyMuliBold me-5  ">{{'minInvestError' |
+          translate}}</span>
+      </ion-col>
+    </ion-row>
+
+
+    <ion-row class="fixed-bottom custZIndex mt-0 ">
+      <ion-col [size]="'12'" class="mt-0 text-start" *ngIf="_type == 'buy'">
+        <ion-item lines="none" class="contentBackground ion-no-padding ">
+          <ion-checkbox color="secondary" slot="start" class="custCheckMargin custTermCheckbox" mode="md"
+            (click)="checkbox($event)" id="checkBoxPolicy"></ion-checkbox>
+          <p class="custFontFamilyMuliBold muli-10pt custColorWarmGrey custLineHight15 ion-no-margin ">
+            {{'sipInfo2' | translate}}&nbsp;
+            <span><a href="https://www.augmont.com/disclaimer" class="  custColorDarkishBlue text-decoration-none">{{'disclaimers' | translate}}</a></span>
+            {{'and' | translate}}
+            <a href="https://www.augmont.com/terms-conditions" class=" custColorDarkishBlue text-decoration-none">{{'termsConditions' | translate}}</a>&nbsp;{{'oftorus'
+            | translate}}
+          </p>
+        </ion-item>
+      </ion-col>
+
+      <ion-card class="w-100 m-2 mx-3 ">
+        <ion-row class="  m-2">
+          <ion-col [size]="'12'" *ngIf="_type == 'sell'  ">
+            <ion-row>
+              <ion-col [size]="'6'">
+                <span class="custFontFamilyMuliRegular muli-12pt custColorTintShade custLineHight28">{{'availableToSell'
+                  |
+                  translate}}</span>
+              </ion-col>
+              <ion-col [size]="'6'" class="text-end">
+                <span *ngIf="currentTypeOrder == 'grams'"
+                  class="custFontFamilyRobotoCondensed muli-16pt custLineHight18 custColorDarkishBlue">{{avalablegram}}
+                  <p class="d-inline muli-12pt">{{'gm' | translate }}</p>
+                </span>
+                <span *ngIf="currentTypeOrder == 'amount'"
+                  class="custFontFamilyRobotoCondensed muli-16pt custLineHight18 custColorDarkishBlue">{{currencySymbol}}{{avalableAmount
+                  | currencyCommasHundreds}}
+                </span>
+              </ion-col>
+            </ion-row>
+            <hr class="m-1">
+          </ion-col>
+
+          <ion-col [size]="'7'" class="">
+            <span class="custFontFamilyRobotoCondensed muli-14pt custLineHight18 custColorDark " *ngIf="_type == 'sell'">
+              {{currencySymbol}}{{price}}/{{'gm' | translate }} 
+              <!-- <p 
+                class="d-inline custFontFamilyMuliBold muli-10pt custColorWarmGrey custLineHight15">
+                &nbsp;&nbsp; + {{currencySymbol}}{{'IGST' | translate}}</p> -->
+            </span>
+            <span class="custFontFamilyRobotoCondensed muli-14pt custLineHight18 custColorDark "  *ngIf="_type == 'buy'">
+              {{currencySymbol}}{{price}}/{{'gm' | translate }} <p
+                class="d-inline custFontFamilyMuliBold muli-10pt custColorWarmGrey custLineHight15">
+                &nbsp;&nbsp; + {{'IGST' | translate}}</p>
+            </span>
+          </ion-col>
+          <ion-col [size]="'5'" class=" text-end" *ngIf="stopWatch">
+            <img [src]="imageList?.Stopwatch" alt="">
+            <ion-col [size]="'5'" class="muli-10pt custFontFamilyBold "> {{'validfor' | translate}} <span
+                class="custColorDark custFontFamilyMuliBold">{{minutes}}:{{leftTimeResendOTP}} {{'mins' |
+                translate}}</span> </ion-col>
+          </ion-col>
+        </ion-row>
+      </ion-card>
+
+      <ion-col [size]="'12'" class="btnPadding">
+        <button class="btn custBackgroundColorBrightCyan w-100 py-2" *ngIf="_type == 'buy'" 
+          [disabled]="!((nextStep&&amount.value&&gm.value&&gm.value!='0'&&amount.value!='0') && !(minamountmsg)
+          && !(maxamountmsg))">
+          <span class="text-capitalized custFontFamilyMuliRegular muli-16pt custLineHight20 custColorWhite" (click)="navigateToCart()">{{'buyNow' |
+            translate}}</span>
+        </button>
+        <button class="btn custBackgroundColorBrightCyan w-100" *ngIf="_type == 'sell'" (click)="openPop()"
+          [disabled]="!((!nextStep1&&!moreThanError)&&gm.value&&amount.value&&amount.value!='0'&& !(minsellError))">
+          <span class="text-capitalized custFontFamilyMuliRegular muli-16pt custLineHight20 custColorWhite">{{'sellNow'
+            |
+            translate}}</span>
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+
+<div class="custModalContainer  rounded-3 " *ngIf="pop">
+  <div id="showModalSMGSucces" class="modal-content modConmart p-10" >
+   
+<ion-row class="mt-3">
+    <ion-col [size]="'6'" class="">
+      <span class="custFontFamilyRobotoCondensed muli-14pt custLineHight18 custColorDark " *ngIf="_type == 'sell'">
+        {{currencySymbol}}{{price | currencyCommasHundreds}}/{{'gm' | translate }}
+         <!-- <p
+          class="d-inline custFontFamilyMuliBold muli-10pt custColorWarmGrey custLineHight15">
+          &nbsp;&nbsp; + {{currencySymbol}}{{'IGST' | translate}}</p> -->
+      </span>
+    </ion-col>
+    <ion-col [size]="'6'" class=" text-end" >
+      <img [src]="imageList?.Stopwatch" alt="">
+      <ion-col [size]="'5'" class="muli-10pt custFontFamilyBold "> {{'validfor' | translate}} <span
+          class="custColorDark custFontFamilyMuliBold">{{minutes}}:{{leftTimeResendOTP}} {{'mins' |
+          translate}}</span> </ion-col>
+    </ion-col>
+  </ion-row>
+  <hr>
+  <p>Choose destination bank account</p>
+  <ion-row>
+    <ion-row class="">
+        <ion-row>
+          <ion-col size="1">
+            <ion-radio-group>
+              <ion-radio color="secondary" mode="md" class="mt-1" (click)="enablebutton()"></ion-radio>
+            </ion-radio-group>
+          </ion-col>
+          <ion-col size="2">
+            <img [src]="imageList?.icici" class="custSIPIcon ms-1">
+          </ion-col>
+          <ion-col size="9" class="d-flex flex-column">
+            <span class="custFontFamilyMuliBold muli-14pt custColorDark custLineHight18">{{bankName}}</span>
+            <span class="custFontFamilyMuliRegular muli-12pt custColorTint mt-1 custLineHight18">{{bankAcc}}</span>
+          </ion-col>
+        </ion-row>
+ 
+    </ion-row>
+  </ion-row>
+  <p>Amount will be deposited within 2 working days</p>
+  <button (click)="openPaymentPopUp()" class="w-100 btn custBackgroundColorBrightCyan custColorWhite" [disabled]="enablebtn">Confirm</button>
+
+
+  </div>
+</div>
+<div class="custModalContainer  rounded-3 " *ngIf="bankdataerrorpopup">
+  <div id="showModalSMGSucces" class="modal-content modConmart p-10" >
+     Unable to retrive bank details please try again!
+
+     <button (click)="backToSellPage()">Ok</button>
+
+   </div>
+   
+    </div>
+    <!-- <div class="custModalContainer  rounded-3 " *ngIf="pricechangemsg">
+      <div id="showModalSMGSucces" class="modal-content modConmart p-10" >
+        price changed please sell at updated price!
+    
+         <button (click)="backToSellPage()">Ok</button>
+    
+       </div>
+       
+        </div> -->
+<!-- 
+(click)="openPaymentPopUp(data) -->

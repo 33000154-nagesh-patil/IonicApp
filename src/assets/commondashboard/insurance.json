@@ -1,0 +1,187 @@
+{
+"" :{
+    "heading": "Details",
+    "discription": "Discover for Investments",
+    "Product":"Insurance",
+    "action1":"Add to card",
+     "action2":"Invest Now",
+    "Info": {
+        "heading": {
+            "Subtitle": "Basic Information",
+            "Subdescription": "suminformation"
+        },
+        "StaticType": {
+            "Type": "Insurance"
+        }
+    },
+    "Cards": [
+        {
+            "cardType": "value",
+            "heading": "",
+            "description": "",
+            "button":"Buy Plan",
+           
+             
+            "rows": [
+                {
+                    "col_In_row": [
+                        {    
+                            
+                            "subheading":"Aditya Birla Supra Super Top - up",
+                             "img":" "
+                        }
+                    ]
+                },
+                { 
+                    
+                    "col_In_row": [
+                        {
+                            "icon": "",
+                            "lable": "Sum Assured",
+                            "value": "₹45,000.00"
+                        },
+                        {
+                            "icon": "",
+                            "lable": "Yearly Premium",
+                            "value": "₹12,149.00"
+                        }
+                    ]
+                },
+                {
+                    "col_In_row": [
+                        {
+                            "icon": "",
+                            "lable": "Cashless Hosps.",
+                            "value": "1000"
+                        }
+                    ]
+                }
+            ]
+    }
+],
+"step":[
+ {
+    "heading": "Covered",
+    "data": [
+        {
+            "Icon": "",
+            "Disc": "Benefits if you don't claim"
+        },
+        {
+            "Icon": "",
+            "Disc": "Expenses before Admission"
+        },
+        {
+            "Icon": "",
+            "Disc": "Expenses after Discharge"
+        },
+        {
+            "Icon": "",
+            "Disc": "Restore benefits"
+        },
+        {
+            "Icon": "",
+            "Disc": "Organ donor"
+        },
+        {
+            "Icon": "",
+            "Disc": "Day care treatment"
+        },
+        {
+            "Icon": "",
+            "Disc": "Ayurveda / Homeopathy"
+        },
+        {
+            "Icon": "",
+            "Disc": "Home hospitalisation"
+        }
+    ]
+},
+{
+    "heading": "Not Covered",
+    "data": [
+        {
+            "Icon": "",
+            "Disc": "Pregnancy cover"
+        },
+        {
+            "Icon": "",
+            "Disc": "Daily hospitalisation allowance"
+        },
+        {
+            "Icon": "",
+            "Disc": "Regular medical expenses (OPD)"
+        }
+    ]
+},
+{
+    "heading": "Waiting Period",
+    "data": [
+        {
+            "Icon": "",
+            "Steps":"Covered since day 1",
+            "Disc": "Accidental injuries"
+        },
+        {
+            "Icon": "",
+            "Steps":"30 days cooling period",
+            "Disc": "No non- accidental medical condition will be covered for first 30 days"
+        }
+    ]
+},
+{
+    "heading": "Exclusions",
+    "data": [
+        {
+            "Icon": "",
+            "Steps":"War related injuries"
+        },
+        {
+            "Icon": "",
+            "Steps":"Cosmetic surgery"
+        },
+        {
+            "Icon": "",
+            "Steps":"Lasik eye treatments"
+        },
+        {
+            "Icon": "",
+            "Steps":"Drugs or alcohol abuse"
+        }, {
+            "Icon": "",
+            "Steps":"Administrative expenses"
+        },
+        {
+            "Icon": "",
+            "Steps":"Registration fees"
+        }
+    ]
+},
+{
+    "heading": "Main Features",
+    "data": [
+        {
+            "Icon": "",
+            "Disc": "Room Rent: Single Pvt. A/c Room"
+
+        },
+        {
+            "Icon": "",
+            "Disc": "Copay: 0%"
+
+        },
+        {
+            "Icon": "",
+            "Disc": "Waiting period: 3 years"
+
+        },
+        {
+            "Icon": "",
+            "Disc": "Renewal Bonus: 50%"
+
+        }
+    ]
+}
+]
+}
+}

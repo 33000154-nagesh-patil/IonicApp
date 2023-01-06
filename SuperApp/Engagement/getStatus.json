@@ -1,0 +1,857 @@
+{
+    "": {},
+    "torusClubDashboard": {
+        "Header": {
+            "heading": "Torus Earnings",
+            "title": "Torus Coins",
+            "coins": "35,755",
+            "coinImg": "/assets/icon/torusCoin.svg",
+            "subtitle": "CashBack",
+            "prize": "35,755",
+            "prizeImg": "/assets/icon/cashBack.svg",
+            "rewardsImg": "/assets/icon/allRewards.svg",
+            "scrollTitles": [
+                {
+                    "title": "All"
+                },
+                {
+                    "title": "Shopping"
+                },
+                {
+                    "title": "Travel"
+                },
+                {
+                    "title": "Music"
+                },
+                {
+                    "title": "Subscription"
+                },
+                {
+                    "title": "F&B"
+                },
+                {
+                    "title": "Electronics"
+                },
+                {
+                    "title": "Lifestyle"
+                },
+                {
+                    "title": "Health"
+                },
+                {
+                    "title": "Charity"
+                }
+            ]
+        },
+        "allData": [
+            {
+                "Title": "JackPot Rewards",
+                "count": "12",
+                "rewardDetail": "Spin and win vouchers,coins and big prizes",
+                "col": "9",
+                "type": "grid",
+                "size": "custSizeJackpot",
+                "jackpotReward": [
+                    {
+                        "desImg": "/assets/icon/cromaDesIcon.svg",
+                        "rewardBackgroundColor": "cromaBAckGroundImg",
+                        "cardType": "jackPot",
+                        "title": "/assets/icon/cromaIcon.svg",
+                        "des": "win an air Conditioner worth",
+                        "prize": "₹38,000",
+                        "btnName": "Claim Now",
+                        "btnColor": "btnColor"
+                    },
+                    {
+                        "desImg": "/assets/icon/makemytripDesIcon.svg",
+                        "rewardBackgroundColor": "mytripBAckGroundImg",
+                        "cardType": "jackPot",
+                        "title": "/assets/icon/makemyTripIcon.svg",
+                        "des": "win free flight tickets worth",
+                        "prize": "₹50,000",
+                        "btnName": "Claim Now",
+                        "btnColor": "btnColor"
+                    },
+                    {
+                        "desImg": "/assets/icon/tanishqDesIcon.svg",
+                        "rewardBackgroundColor": "tanishqBAckGroundImg",
+                        "cardType": "jackPot",
+                        "title": "/assets/icon/tanishqIcon.svg",
+                        "des": "win wedding jewllery worth",
+                        "prize": "₹45,000",
+                        "btnName": "Claim Now",
+                        "btnColor": "btnColor"
+                    }
+                ]
+            },
+            {
+                "Title": "Upcoming JackPot Rewards",
+                "count": "12",
+                "rewardDetail": "Spin and win vouchers,coins and big prizes",
+                "col": "9",
+                "type": "grid",
+                "size": "custSizeUpcomingJackpot",
+                "jackpotReward": [
+                    {
+                        "desImg": "/assets/icon/tanishqDesIcon.svg",
+                        "rewardBackgroundColor": "tanishqBAckGroundImg",
+                        "cardType": "upcomingJackPot",
+                        "title": "/assets/icon/nikeIcon.svg",
+                        "des": "win a Nike air Max 90 worth",
+                        "prize": "₹38,000",
+                        "btnName": "🔒Locked",
+                        "availability": "Available from 22Mar",
+                        "btnColor": "btnColorLock"
+                    },
+                    {
+                        "desImg": "/assets/icon/cromaDesIcon.svg",
+                        "rewardBackgroundColor": "cromaBAckGroundImg",
+                        "cardType": "upcomingJackPot",
+                        "title": "/assets/icon/flipkartIcon.svg",
+                        "des": "win a Shopping gift card worth",
+                        "prize": "₹38,000",
+                        "btnName": "🔒Locked",
+                        "availability": "Available from 22Mar",
+                        "btnColor": "btnColorLock"
+                    },
+                    {
+                        "desImg": "/assets/icon/makemytripDesIcon.svg",
+                        "rewardBackgroundColor": "mytripBAckGroundImg",
+                        "cardType": "upcomingJackPot",
+                        "title": "/assets/icon/makemyTripIcon.svg",
+                        "des": "win free flight tickets worth",
+                        "prize": "₹38,000",
+                        "btnName": "🔒Locked",
+                        "availability": "Available from 22Mar",
+                        "btnColor": "btnColorLock"
+                    }
+                ]
+            },
+            {
+                "Title": "Vouchers",
+                "count": "24",
+                "rewardDetail": "Play and win assured voucher on these brands",
+                "col": "7",
+                "type": "grid",
+                "size": "custSizeVoucher",
+                "jackpotReward": [
+                    {
+                        "desImg": "/assets/icon/lakmeDesIcon.svg",
+                        "rewardBackgroundColor": "custBackgroundBlue",
+                        "cardType": "voucher",
+                        "title": "/assets/icon/lakmeIcon.svg",
+                        "des": "Get a chance to win discount voucher upto",
+                        "prize": "40% Off",
+                        "btnName": "Claim Now",
+                        "btnColor": "btnColor"
+                    },
+                    {
+                        "desImg": "/assets/icon/fasttrackDecIcon.svg",
+                        "rewardBackgroundColor": "custBackgroundLightOrange",
+                        "cardType": "voucher",
+                        "title": "/assets/icon/fasttrackIcon.svg",
+                        "des": "Get a chance to win discount voucher upto",
+                        "prize": "60% off",
+                        "btnName": "Claim Now",
+                        "btnColor": "btnColor"
+                    },
+                    {
+                        "desImg": "/assets/icon/myntraDesIcon.svg",
+                        "rewardBackgroundColor": "custBackgroundPink",
+                        "cardType": "voucher",
+                        "title": "/assets/icon/myntraIcon.svg",
+                        "des": "Get a chance to win discount voucher upto",
+                        "prize": "50% off",
+                        "btnName": "Claim Now",
+                        "btnColor": "btnColor"
+                    }
+                ]
+            },
+            {
+                "Title": "Gift Cards",
+                "count": "24",
+                "rewardDetail": "Play and win assured voucher on these brands",
+                "col": "7",
+                "type": "grid",
+                "size": "custSizeGiftCard",
+                "jackpotReward": [
+                    {
+                        "desImg": "/assets/icon/curefitDesIcon.svg",
+                        "rewardBackgroundColor": "custBackgroundLightGreen",
+                        "cardType": "gift",
+                        "title": "/assets/icon/curefitIcon.svg",
+                        "des": "win Cultpass Live free subscription for",
+                        "prize": "6 months",
+                        "btnName": "Claim Now",
+                        "btnColor": "btnColor"
+                    },
+                    {
+                        "desImg": "/assets/icon/torusDesIcon.svg",
+                        "rewardBackgroundColor": "custBackgroundLightBlue",
+                        "cardType": "gift",
+                        "title": "/assets/icon/torusIcon.svg",
+                        "des": "win torus Trader Pack free subscription for",
+                        "prize": "1 year",
+                        "btnName": "Claim Now",
+                        "btnColor": "btnColor"
+                    },
+                    {
+                        "desImg": "/assets/icon/amazonDesIcon.svg",
+                        "rewardBackgroundColor": "custBackgroundBlueshGreen",
+                        "cardType": "gift",
+                        "title": "/assets/icon/amazonIcon.svg",
+                        "des": "Get a chance to win gift card worth",
+                        "prize": "₹5,000",
+                        "btnName": "Claim Now",
+                        "btnColor": "btnColor"
+                    }
+                ]
+            },
+            {
+                "Title": "Cash Back Rewards",
+                "count": "8",
+                "rewardDetail": "Unlock cashback rewards by investing more",
+                "col": "8",
+                "type": "grid",
+                "size": "custSizeGiftCard",
+                "jackpotReward": [
+                    {
+                        "desImg": "/assets/icon/threeGreenNotesIcon.svg",
+                        "rewardBackgroundColor": "custBackgrouncashBack",
+                        "cardType": "cashBack",
+                        "title1": "Earn up to",
+                        "des": "",
+                        "prize": "₹1,000",
+                        "btnName": "Claim Now",
+                        "availability": "",
+                        "btnColor": "btnColor"
+                    },
+                    {
+                        "desImg": "/assets/icon/threeGreenNotesIcon.svg",
+                        "rewardBackgroundColor": "custBackgrouncashBack",
+                        "cardType": "cashBack",
+                        "title1": "Earn up to",
+                        "des": "",
+                        "prize": "₹5,000",
+                        "btnName": "🔒Locked",
+                        "btnColor": "btnColorLock"
+                    },
+                    {
+                        "desImg": "/assets/icon/threeGreenNotesIcon.svg",
+                        "rewardBackgroundColor": "custBackgrouncashBack",
+                        "cardType": "cashBack",
+                        "title1": "Earn up to",
+                        "des": "",
+                        "prize": "₹10,000",
+                        "btnName": "🔒Locked",
+                        "btnColor": "btnColorLock"
+                    }
+                ]
+            },
+            {
+                "Title": "Our Brand Partners",
+                "count": "32",
+                "rewardDetail": "Choose a brand to view all of their available rewards  ",
+                "col": "6",
+                "type": "grid",
+                "size": "custSizeGiftCard",
+                "jackpotReward": [
+                    {
+                        "rewardBackgroundColor": "",
+                        "cardType": "",
+                        "title": "",
+                        "des": "",
+                        "prize": "",
+                        "btnName": "",
+                        "availability": "",
+                        "brandImg": "/assets/icon/MyntraBrand.svg",
+                        "subBrand": [
+                            {
+                                "desImg": "",
+                                "rewardBackgroundColor": "mytripBAckGroundImg",
+                                "cardType": "",
+                                "title": "/assets/icon/myntraIcon.svg",
+                                "des": "Get a chance to win shopping gifts worth",
+                                "prize": "₹50,000",
+                                "btnName": "Claim Now",
+                                "btnColor": "btnColor"
+                            },
+                            {
+                                "desImg": "",
+                                "rewardBackgroundColor": "custBackgroundPink",
+                                "cardType": "",
+                                "title": "/assets/icon/myntraIcon.svg",
+                                "des": "Get a chance to win shopping gifts worth",
+                                "prize": "₹50,000",
+                                "btnName": "Claim Now",
+                                "btnColor": "btnColor"
+                            }
+                        ]
+                    },
+                    {
+                        "rewardBackgroundColor": "",
+                        "cardType": "",
+                        "title": "",
+                        "des": "",
+                        "prize": "",
+                        "btnName": "",
+                        "availability": "",
+                        "brandImg": "/assets/icon/cromaImg.svg"
+                    },
+                    {
+                        "rewardBackgroundColor": "",
+                        "cardType": "",
+                        "title": "",
+                        "des": "",
+                        "prize": "",
+                        "btnName": "",
+                        "brandImg": "/assets/icon/flipKartImg.svg"
+                    },
+                    {
+                        "rewardBackgroundColor": "",
+                        "cardType": "",
+                        "title": "",
+                        "des": "",
+                        "prize": "",
+                        "btnName": "",
+                        "brandImg": "/assets/icon/hidesignImg.svg"
+                    },
+                    {
+                        "rewardBackgroundColor": "",
+                        "cardType": "",
+                        "title": "",
+                        "des": "",
+                        "prize": "",
+                        "btnName": "",
+                        "brandImg": "/assets/icon/myntraImg.svg"
+                    },
+                    {
+                        "rewardBackgroundColor": "",
+                        "cardType": "",
+                        "title": "",
+                        "des": "",
+                        "prize": "",
+                        "btnName": "",
+                        "brandImg": "/assets/icon/shoperStopImg.svg"
+                    },
+                    {
+                        "rewardBackgroundColor": "",
+                        "cardType": "",
+                        "title": "",
+                        "des": "",
+                        "prize": "",
+                        "btnName": "",
+                        "brandImg": "/assets/icon/tanishqImg.svg"
+                    },
+                    {
+                        "rewardBackgroundColor": "",
+                        "cardType": "",
+                        "title": "",
+                        "des": "",
+                        "prize": "",
+                        "btnName": "",
+                        "brandImg": "/assets/icon/titanImg.svg"
+                    },
+                    {
+                        "rewardBackgroundColor": "",
+                        "cardType": "",
+                        "title": "",
+                        "des": "",
+                        "prize": "",
+                        "btnName": "",
+                        "brandImg": "/assets/icon/uberImg.svg"
+                    },
+                    {
+                        "rewardBackgroundColor": "",
+                        "cardType": "",
+                        "title": "",
+                        "des": "",
+                        "prize": "",
+                        "btnName": "",
+                        "brandImg": "/assets/icon/urbenLadderImg.svg"
+                    }
+                ]
+            },
+            {
+                "Title": "Refer & Earn",
+                "count": "8",
+                "rewardDetail": "Refer a friend and earn assured cashback when they invest here",
+                "col": "12",
+                "type": "grid",
+                "size": "custSizeGiftCard",
+                "jackpotReward": [
+                    {
+                        "rewardBackgroundColor": "custBackgroundLightBlue",
+                        "cardType": "",
+                        "title": "",
+                        "des": "",
+                        "prize": "",
+                        "btnName": "Refer Now",
+                        "availability": "",
+                        "btnColor": "btnColor",
+                        "brandImg": "/assets/icon/referAndEarnImg.svg"
+                    }
+                ]
+            }
+        ]
+    },
+    "torusRewards": {
+        "allrewardsbtn": [
+            {
+                "rewards": "All types",
+                "count": "17",
+                "logo": "assets/icon/all types icon.svg"
+            },
+            {
+                "rewards": "Jackpots",
+                "count": "04",
+                "logo": "assets/icon/jackpots icon.svg"
+            },
+            {
+                "rewards": "Vouchers",
+                "count": "03",
+                "logo": "assets/icon/vouchers icon.svg"
+            },
+            {
+                "rewards": "Gifts",
+                "count": "04",
+                "logo": "assets/icon/gifts icon.svg"
+            },
+            {
+                "rewards": "Cashback",
+                "count": "06",
+                "logo": "assets/icon/cashback icon.svg"
+            }
+        ],
+        "allrewardscarddata": [
+            {
+                "cardDesImg": "/assets/icon/cromaDesIcon.svg",
+                "validity": "",
+                "backGroundColor": "custBackgroundBlueshGreen",
+                "voucherCode": "JHCHBJSXBSVA",
+                "cardType": "",
+                "codeTitle": "Your voucher code",
+                "cardDes": "Win an air conditioner worth ₹38,000",
+                "validityDate": "Expire in 22 days",
+                "brandIcon": "/assets/icon/cromaIcon.svg"
+            },
+            {
+                "cardDesImg": "/assets/icon/makemytripDesIcon.svg",
+                "validity": "",
+                "backGroundColor": "custBackgroundPink",
+                "voucherCode": "JHCHBJSXBSVA",
+                "cardType": "",
+                "codeTitle": "Your voucher code",
+                "cardDes": "Win a free flight ticket worth ₹50,000",
+                "validityDate": "Expire in 22 days",
+                "brandIcon": "/assets/icon/makemyTripIcon.svg"
+            },
+            {
+                "cardDesImg": "/assets/icon/tanishqDesIcon.svg",
+                "validity": "",
+                "backGroundColor": "custBackgroundBlueshGreen",
+                "voucherCode": "JHCHBJSXBSVA",
+                "cardType": "",
+                "codeTitle": "Your voucher code",
+                "cardDes": "Win an air conditioner worth ₹38,000",
+                "validityDate": "Expire in 22 days",
+                "brandIcon": "/assets/icon/cromaIcon.svg"
+            },
+            {
+                "cardDesImg": "",
+                "validity": "",
+                "backGroundColor": "custBackgroundLightGreen",
+                "voucherCode": "JHCHBJSXBSVA",
+                "cardType": "",
+                "codeTitle": "Your voucher code",
+                "cardDes": "You won voucher worth 40% off",
+                "validityDate": "Expire in 22 days",
+                "brandIcon": "/assets/icon/curefitIcon.svg"
+            },
+            {
+                "cardDesImg": "",
+                "validity": "",
+                "backGroundColor": "custBackgroundPink",
+                "voucherCode": "JHCHBJSXBSVA",
+                "cardType": "",
+                "codeTitle": "Your voucher code",
+                "cardDes": "You won voucher worth 50% off",
+                "validityDate": "Expire in 22 days",
+                "brandIcon": "/assets/icon/Nykaa icon.svg"
+            },
+            {
+                "cardDesImg": "",
+                "validity": "",
+                "backGroundColor": "custBackgroundCashBack",
+                "voucherCode": "",
+                "cardType": "cashBack",
+                "codeTitle": "",
+                "cardDes": "You won cashback of ₹250 on referrals",
+                "validityDate": "Expire in 22 days",
+                "brandIcon": "/assets/icon/threeGreenNotesIcon.svg"
+            },
+            {
+                "cardDesImg": "",
+                "validity": "",
+                "backGroundColor": "custBackgroundLightBlue",
+                "voucherCode": "JHCHBJSXBSVA",
+                "cardType": "",
+                "codeTitle": "Your voucher code",
+                "cardDes": "You won free 1 month subscrition",
+                "validityDate": "Expire in 22 days",
+                "brandIcon": "/assets/icon/torusIcon.svg"
+            },
+            {
+                "cardDesImg": "",
+                "validity": "",
+                "backGroundColor": "custBackgroundLightOrange",
+                "voucherCode": "JHCHBJSXBSVA",
+                "cardType": "",
+                "codeTitle": "Your voucher code",
+                "cardDes": "You won gift card worth ₹38,000",
+                "validityDate": "Expire in 22 days",
+                "brandIcon": "/assets/icon/myntraIcon.svg"
+            },
+            {
+                "cardDesImg": "",
+                "validity": "locked",
+                "backGroundColor": "custBackgroundLightOrange",
+                "voucherCode": "JHCHBJSXBSVA",
+                "cardType": "",
+                "codeTitle": "Your voucher code",
+                "cardDes": "You won voucher worth 50% off",
+                "validityDate": "Expire in 22 days",
+                "brandIcon": "/assets/icon/lakmeIcon.svg"
+            },
+            {
+                "cardDesImg": "",
+                "validity": "",
+                "backGroundColor": "custBackgroundLightGreen",
+                "voucherCode": "JHCHBJSXBSVA",
+                "cardType": "",
+                "codeTitle": "Your voucher code",
+                "cardDes": "You won free cultpass subscription for 6 months",
+                "validityDate": "Expire in 22 days",
+                "brandIcon": "/assets/icon/curefitIcon.svg"
+            },
+            {
+                "cardDesImg": "",
+                "validity": "",
+                "backGroundColor": "custBackgroundCashBack",
+                "voucherCode": "",
+                "cardType": "cashBack",
+                "codeTitle": "",
+                "cardDes": "You won cashback of ₹250 on referrals",
+                "validityDate": "Expire in 22 days",
+                "brandIcon": "/assets/icon/threeGreenNotesIcon.svg"
+            },
+            {
+                "cardDesImg": "",
+                "validity": "locked",
+                "backGroundColor": "",
+                "voucherCode": "JHCHBJSXBSVA",
+                "cardType": "",
+                "codeTitle": "Your voucher code",
+                "cardDes": "You won gift card worth ₹18,000",
+                "validityDate": "Expire in 22 days",
+                "brandIcon": "/assets/icon/flipkartIcon.svg"
+            }
+        ]
+    },
+    "torusReferals": {
+        "bannerImg": "/assets/icon/illustration - 1.svg",
+        "bannerTitle1": "Sucessfull Feferrals",
+        "referalIcon": "/assets/icon/successful referals.svg",
+        "profileCountMin": "3",
+        "profileCountMax": "12",
+        "bannerTitle2": "Cashback Earned",
+        "prizeICon": "/assets/icon/rupees icon.svg",
+        "prize": "750",
+        "whatsappIcon": "/assets/icon/whatsapp icon.svg",
+        "btn": "Refer via WhatsApp",
+        "subtitle": "Your voucher code",
+        "code": "FLIPTORUS2402F",
+        "copyIcon": "/assets/icon/copyIcon.svg",
+        "referSteps": [
+            {
+                "step": "1",
+                "description": "Refer your friends to Torus"
+            },
+            {
+                "step": "2",
+                "description": "Once they open an account and do their first transaction."
+            },
+            {
+                "step": "3",
+                "description": "You will get ₹250 and your friends get 1 month free Torus subscription"
+            }
+        ],
+        "referWhatsapp": {
+            "title": "Hi! I am sending you free 1 month Subscription. Sign Up on Torus App using this link and… claim this subscription and other rewards on your first transaction. https://bit.ly/1sNZMwL",
+            "icon": "/assets/icon/copyIcon.svg",
+            "subtitle": "Friends yet to join Aqube",
+            "viewBtn": "View all",
+            "contactList": [
+                {
+                    "icon": "/assets/icon/profile.png",
+                    "name": "Pratik",
+                    "mobile": "+91 9922224499"
+                },
+                {
+                    "icon": "/assets/icon/profile.png",
+                    "name": "Pratik",
+                    "mobile": "+91 9922224499"
+                },
+                {
+                    "icon": "/assets/icon/profile.png",
+                    "name": "Pratik",
+                    "mobile": "+91 9922224499"
+                }
+            ]
+        }
+    },
+    "gamesDetail": {
+        "jackpot": {
+            "btn": "Spin",
+            "spinCount": "2",
+            "points": "1,000",
+            "slots": [
+                "slot_box1",
+                "slot_box2",
+                "slot_box3"
+            ],
+            "jackpotIcons": [
+                {
+                    "icon": "/assets/icon/coconut water icon (1) (1).svg",
+                    "num": "1"
+                },
+                {
+                    "icon": "/assets/icon/diamond icon (1) (1).svg",
+                    "num": "2"
+                },
+                {
+                    "icon": "/assets/icon/money bag icon (1) (1).svg",
+                    "num": "3"
+                },
+                {
+                    "icon": "/assets/icon/seven icon (1) (1).svg",
+                    "num": "4"
+                },
+                {
+                    "icon": "/assets/icon/torus coin icon (1) (1).svg",
+                    "num": "5"
+                },
+                {
+                    "icon": "/assets/icon/ball icon (1) (1).svg",
+                    "num": "6"
+                }
+            ]
+        },
+        "voucher": {
+            "pie1": "10% off",
+            "pie2": "20% off",
+            "pie3": "30% off",
+            "pie4": "40% off",
+            "description": "Spin the wheel and win voucher",
+            "btn": "Spin",
+            "points": "1,000"
+        },
+        "giftCard": {
+            "giftCap": "/assets/icon/gift - upper part (1).svg",
+            "giftBox": "/assets/icon/giftn-bottom part (1).svg",
+            "description": "Spin the wheel and win voucher",
+            "points": "1,000"
+        },
+        "cashBack": {
+            "cashIcon": "/assets/icon/Group 20931.svg",
+            "cashBoxIcon": "/assets/icon/sliderBox.svg",
+            "description": "Slide coin up into the slot to win cashback rewards",
+            "points": "1,000"
+        }
+    },
+    "torusWinnerPrize": {
+        "jackPot": {
+            "description": "Yay! You won a shopping gift card worth",
+            "prize": "38,000",
+            "torusReedem": {
+                "redeemsteps": [
+                    {
+                        "title": "Step 1",
+                        "description": "Click on ‘Redeem Now’ or visit Myntra website or app"
+                    },
+                    {
+                        "title": "Step 2",
+                        "description": "Add products to card and click on checkout"
+                    },
+                    {
+                        "title": "Step 3",
+                        "description": "Enter the voucher code in the box labelled ‘Discount Code’"
+                    }
+                ],
+                "offerdetails": [
+                    {
+                        "list": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    },
+                    {
+                        "list": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                    },
+                    {
+                        "list": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+                    }
+                ],
+                "redeemcode": [
+                    {
+                        "title": "Congrats! You won a shopping gift card worth",
+                        "prize": "₹38,000",
+                        "subtitle": "Your voucher code",
+                        "code": "FLIPTORUS2402F"
+                    }
+                ]
+            }
+        },
+        "voucher": {
+            "pie": "4",
+            "description": "Congrats! You won a voucher worth",
+            "prize": "40% off",
+            "torusReedem": {
+                "redeemsteps": [
+                    {
+                        "title": "Step 1",
+                        "description": "Click on ‘Redeem Now’ or visit Myntra website or app"
+                    },
+                    {
+                        "title": "Step 2",
+                        "description": "Add products to card and click on checkout"
+                    },
+                    {
+                        "title": "Step 3",
+                        "description": "Enter the voucher code in the box labelled ‘Discount Code’"
+                    }
+                ],
+                "offerdetails": [
+                    {
+                        "list": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    },
+                    {
+                        "list": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                    },
+                    {
+                        "list": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+                    }
+                ],
+                "redeemcode": [
+                    {
+                        "title": "Congrats! You won a shopping gift card worth",
+                        "prize": "₹38,000",
+                        "subtitle": "Your voucher code",
+                        "code": "FLIPTORUS2402F"
+                    }
+                ]
+            }
+        },
+        "giftBox": {
+            "description": "Congrats! You won free cultpass subscription for",
+            "prize": "6 months",
+            "torusReedem": {
+                "redeemsteps": [
+                    {
+                        "title": "Step 1",
+                        "description": "Click on ‘Redeem Now’ or visit Myntra website or app"
+                    },
+                    {
+                        "title": "Step 2",
+                        "description": "Add products to card and click on checkout"
+                    },
+                    {
+                        "title": "Step 3",
+                        "description": "Enter the voucher code in the box labelled ‘Discount Code’"
+                    }
+                ],
+                "offerdetails": [
+                    {
+                        "list": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    },
+                    {
+                        "list": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                    },
+                    {
+                        "list": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+                    }
+                ],
+                "redeemcode": [
+                    {
+                        "title": "Congrats! You won a shopping gift card worth",
+                        "prize": "₹38,000",
+                        "subtitle": "Your voucher code",
+                        "code": "FLIPTORUS2402F"
+                    }
+                ]
+            }
+        },
+        "cashBack": {
+            "description": "Congrats! You won",
+            "prize": "1,000",
+            "torusReedem": {
+                "redeemsteps": [
+                    {
+                        "title": "Step 1",
+                        "description": "Click on ‘Redeem Now’ or visit Myntra website or app"
+                    },
+                    {
+                        "title": "Step 2",
+                        "description": "Add products to card and click on checkout"
+                    },
+                    {
+                        "title": "Step 3",
+                        "description": "Enter the voucher code in the box labelled ‘Discount Code’"
+                    }
+                ],
+                "offerdetails": [
+                    {
+                        "list": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    },
+                    {
+                        "list": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                    },
+                    {
+                        "list": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+                    }
+                ],
+                "redeemcode": [
+                    {
+                        "title": "Congrats! You won a shopping gift card worth",
+                        "prize": "₹38,000",
+                        "subtitle": "Your voucher code",
+                        "code": "FLIPTORUS2402F"
+                    }
+                ]
+            }
+        }
+    },
+    "torusReferDetail": {
+        "btnClose": "Cancel",
+        "btnSubmit": "Submit",
+        "allSteps": [
+            {
+                "step": "1",
+                "description": "Refer your friend to Torus"
+            },
+            {
+                "step": "2",
+                "description": "Once they open an account and do their first transaction"
+            },
+            {
+                "step": "3",
+                "description": "You will get coins and your friend will get 1 month subscription"
+            }
+        ]
+    },
+    "refercontactDetails":{
+        "status":"1",
+        "sucessIcon":"/assets/icon/yellowTick.svg",
+        "title":"You have refered to",
+        "description":"On successfull conversion,you'll find your winnings after Cashback Rewards",
+        "exploreBtn": "Explore More",
+        "rewardBtn": "View Rewards"
+      }
+}

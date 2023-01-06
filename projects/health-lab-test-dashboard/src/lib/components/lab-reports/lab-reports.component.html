@@ -1,0 +1,104 @@
+<ion-grid class="custGrid">
+  <ion-row>
+    <ion-col [size]="'12'" class="pdingleft">
+      <ion-row class="copltmargin">
+        <ion-col [size]="'1'">
+          <h1></h1>
+        </ion-col>
+      </ion-row>
+    </ion-col>
+    <ion-col [size]="'12'" class="copldtmargin">
+      <p class="muli-12pt custFontFamilyMuliRegular custLineHight22 custColorBattlePGry px-3 mb-0">An overview of your
+        test results</p>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col [size]="'12'">
+      <mat-form-field appearance="outline" class="input w-100">
+        <mat-label>Patient's Name</mat-label> 
+        <!-- <ion-icon matSuffix name="chevron-down-outline"></ion-icon> -->
+        <mat-select>
+          <mat-option value="ganesh">Ganesh</mat-option>
+          <mat-option value="kumar">Kumar</mat-option>
+          <mat-option value="aravnd">Aravind</mat-option>
+        </mat-select>
+        <!-- <mat-error *ngIf="checkError('annualIncome', 'required')">
+          {{ "annual income is required" | translate }}
+        </mat-error> -->
+      </mat-form-field>
+    </ion-col>
+  </ion-row>
+
+
+
+  <ion-row class="container">
+    <ion-col [size]="'12'" *ngFor="let x of data">
+      <ion-card>
+        <ion-card-content class="custPding">
+          <ion-row>
+            <ion-col [size]="'2'" class="mt-1">
+              <ion-img [src]="x?.icon"></ion-img>
+            </ion-col>
+            <ion-col [size]="'10'">
+              <ion-row><span class="muli-14pt custFontFamilyMuliBold custLineHight22 custColorDark">{{ x?.testname }}</span></ion-row>
+              <ion-row><span class="muli-10pt custFontFamilyMuliSemiBold custLineHight216 custColorBattlePGry">{{ x?.testdescription }}</span></ion-row>
+              <ion-row><span class="muli-10pt custFontFamilyMuliSemiBold custLineHight216 custColorBattlePGry">{{ x?.laboratoryname }}</span></ion-row>
+            </ion-col>
+          </ion-row>
+
+           
+          <ion-row class="mt-2">
+            <ion-col [size]="'4'">
+            <ion-row><p class="custFontFamilyMuliRegular muli-12pt custLineHight15 custColorGreyish">Price</p></ion-row>
+            <ion-row><p class="custFontFamilyMuliSemiBold muli-14pt custLineHight20 text-center custColorDark">{{rupeesSymbol}}{{x?.price}}</p></ion-row>
+          </ion-col>
+          <ion-col [size]="'5'">
+            <ion-row><p class="custFontFamilyMuliRegular muli-12pt custLineHight15 custColorGreyish">E-Reports By</p></ion-row>
+            <ion-row><p class="custFontFamilyMuliSemiBold muli-14pt custLineHight15 custColorDark">{{ x?.ereportwithin }}</p></ion-row>
+          </ion-col>  
+          <ion-col [size]="'3'">
+            <ion-row class="float-end"><p class="custFontFamilyMuliRegular muli-12pt custLineHight15 custColorGreyish">No. of Tests</p></ion-row>
+            <ion-row class="custFontFamilyMuliSemiBold muli-14pt custLineHight15 custColorDark float-end">{{ x?.nooftests }}</ion-row>
+          </ion-col>
+          </ion-row>
+
+        </ion-card-content>
+        
+        <ion-footer>
+          <ion-row class="bground">
+            <ion-col [size]="'6'" class="px-3">
+              <span><img src="assets\icon\Union 5 (1).svg" class="mrginTop"/></span>
+              <span class="muli-12pt custFontFamilyMuliBold custLineHight14 custColorDarkishBlue px-1">Delete</span>
+            </ion-col>
+            <ion-col [size]="'6'" class="px-3" >
+              <span class="muli-12pt custFontFamilyMuliBold custLineHight14 custColorDarkishBlue float-end">Download Report</span>
+            </ion-col>
+          </ion-row>
+        </ion-footer>
+       
+      </ion-card>
+    </ion-col>
+  </ion-row>
+
+  
+  <ion-row>
+    <ion-col [size]="'4.5'"></ion-col >
+    <ion-col [size]="'3'"  class="text-center" *ngIf="!isView" (click)="ViewMore(isView)" >
+      <button class="custBackgroundColorWhite" >
+        <span class="custColorDarkishBlue custFontFamilyMuliBold muli-12pt custLineHight18">View More</span>
+      </button>
+    </ion-col>
+    <ion-col [size]="'4.5'"></ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col [size]="'5.5'"></ion-col>
+    <ion-col [size]="'1'" class="text-center"  (click)="ViewMore(isView)"   ng-click="rotateImg = !rotateImg"s>
+      <img src="assets\Images\Component 56 – 1 (1).svg" class="dropdown " [@rotatedState]='state'  />
+    </ion-col>
+    <ion-col [size]="'5.5'"></ion-col>
+  </ion-row>
+
+  
+</ion-grid>

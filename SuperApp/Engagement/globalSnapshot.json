@@ -1,0 +1,273 @@
+{
+    "": {},
+    "snapShot": {
+        "card": [
+            {
+                "title": "Digi Gold",
+                "cardList": [
+                    {
+                        "row1": {
+                            "icon": "assets/icon/Augmont.svg",
+                            "title": "Augmont Digital Gold",
+                            "description": "24K. 99.99% Purity",
+                            "action": "assets/icon/leftArrowIcon.svg",
+                            "selectWatchList": false
+                        },
+                        "row2": {
+                            "Buying Price / gm": "₹5251.16",
+                            "Selling Price / gm": "₹5400.64"
+                        }
+                    },
+                    {
+                        "row1": {
+                            "icon": "assets/icon/digitelSilver.svg",
+                            "title": "Augmont Digital Silver",
+                            "description": "24K. 99.99% Purity",
+                            "action": "assets/icon/leftArrowIcon.svg",
+                            "selectWatchList": false
+                        },
+                        "row2": {
+                            "Buying Price / gm": "₹64.16",
+                            "Selling Price / gm": "₹62.30"
+                        }
+                    }
+                ],
+                "cta": "Explore"
+            },
+            {
+                "title": "Mutual Fund",
+                "cardList": [
+                    {
+                        "row1": {
+                            "icon": "assets/icon/hdfc.png",
+                            "title": "HDFC Focused 30-G",
+                            "action": "assets/icon/leftArrowIcon.svg",
+                            "selectWatchList": false
+                        },
+                        "row2": {
+                            "Returns": 18.65,
+                            "Category Return": "-7.10% - 20.25%",
+                            "Min.Invest": "₹5000"
+                        }
+                    },
+                    {
+                        "row1": {
+                            "icon": "assets/icon/icici.png",
+                            "title": "ICICI Focused 30-G",
+                            "action": "assets/icon/leftArrowIcon.svg",
+                            "selectWatchList": false
+                        },
+                        "row2": {
+                            "Returns": -18,
+                            "Category Return": "-7.10% - 20.25%",
+                            "Min.Invest": "₹5000"
+                        }
+                    }
+                ],
+                "cta": "Explore"
+            },
+            {
+                "title": "Lab Test",
+                "cardList": [
+                    {
+                        "row1": {
+                            "icon": "assets/Images/Thyrocare.png",
+                            "title": "Fasting Blood Sugar",
+                            "description": "By Thyrocare Ltd. Pathology Test",
+                            "action": "assets/icon/leftArrowIcon.svg",
+                            "selectWatchList": false
+                        },
+                        "row2": {
+                            "No. of Tests": 1,
+                            "E-reports Within": "24 to 30 hours",
+                            "Price": "₹1000"
+                        }
+                    },
+                    {
+                        "row1": {
+                            "icon": "assets/Images/Thyrocare.png",
+                            "title": "Fasting Blood Sugar",
+                            "description": "By Thyrocare Ltd. Pathology Test",
+                            "action": "assets/icon/leftArrowIcon.svg",
+                            "selectWatchList": false
+                        },
+                        "row2": {
+                            "No. of Tests": 1,
+                            "E-reports Within": "24 to 30 hours",
+                            "Price": "₹1000"
+                        }
+                    }
+                ],
+                "cta": "Explore"
+            },
+            {
+                "title": "Medicine",
+                "cardList": [
+                    {
+                        "row1": {
+                            "icon": "assets/Images/Thyrocare.png",
+                            "title": "Dolo-650 Tablet",
+                            "description": "by Micro Labs. 15 Tablets strip",
+                            "action": "assets/icon/leftArrowIcon.svg",
+                            "selectWatchList": false
+                        },
+                        "row2": {
+                            "Ratings": "4",
+                            "Prescription": "Not Required",
+                            "Price": "₹25.00"
+                        }
+                    },
+                    {
+                        "row1": {
+                            "icon": "assets/Images/Thyrocare.png",
+                            "title": "Dolo-650 Tablet",
+                            "description": "by Micro Labs. 15 Tablets strip",
+                            "action": "assets/icon/leftArrowIcon.svg",
+                            "selectWatchList": false
+                        },
+                        "row2": {
+                            "Ratings": "4",
+                            "Prescription": "Required",
+                            "Price": "₹25.00"
+                        }
+                    }
+                ],
+                "cta": "Explore"
+            },
+            {
+                "title": "Assesments",
+                "cardList": [
+                    {
+                        "row1": {
+                            "icon": "assets/icon/Commonicon1.png",
+                            "title": "Goods & Services Tax - Assessment",
+                            "description": "By Abrar Hussain",
+                            "action": "assets/icon/leftArrowIcon.svg",
+                            "selectWatchList": false
+                        },
+                        "row2": {
+                            "Ratings": "4",
+                            "Level": "Beginner",
+                            "Price": "₹1"
+                        }
+                    },
+                    {
+                        "row1": {
+                            "icon": "assets/icon/Commonicon2.png",
+                            "title": "Basic Computer - Assessment",
+                            "description": "By Abrar Hussain",
+                            "action": "assets/icon/leftArrowIcon.svg",
+                            "selectWatchList": false
+                        },
+                        "row2": {
+                            "Ratings": "4",
+                            "Level": "Medium",
+                            "Price": "₹1"
+                        }
+                    }
+                ],
+                "cta": "Explore"
+            },
+            {
+                "title": "Courses",
+                "cardList": [
+                    {
+                        "row1": {
+                            "icon": "assets/icon/Commonicon2.png",
+                            "title": "Mutual Funds",
+                            "subTitle": "Max",
+                            "description": "15 sections. 135 lectures. 11 hours",
+                            "action": "assets/icon/leftArrowIcon.svg",
+                            "selectWatchList": false
+                        },
+                        "row2": {
+                            "Ratings": "4",
+                            "Level": "Beginner",
+                            "Price": "₹1"
+                        }
+                    },
+                    {
+                        "row1": {
+                            "icon": "assets/icon/Commonicon3.png",
+                            "title": "Equity Dealer",
+                            "subTitle": "Max",
+                            "description": "15 sections. 135 lectures. 11 hours",
+                            "action": "assets/icon/leftArrowIcon.svg",
+                            "selectWatchList": false
+                        },
+                        "row2": {
+                            "Ratings": "4",
+                            "Level": "Intermediate",
+                            "Price": "₹1"
+                        }
+                    }
+                ],
+                "cta": "Explore"
+            },
+            {
+                "title": "Jobs",
+                "cardList": [
+                    {
+                        "row1": {
+                            "icon": "assets/icon/EducationIcon1.svg",
+                            "title": "Web Designer and Developer",
+                            "description": "GOLS Group",
+                            "action": "assets/icon/leftArrowIcon.svg",
+                            "selectWatchList": false
+                        },
+                        "row2": {
+                            "Package": "3-6LPA",
+                            "Experience": "0-2 Years",
+                            "Location": "Navi Mumbai"
+                        }
+                    },
+                    {
+                        "row1": {
+                            "icon": "assets/icon/EducationIcon1.svg",
+                            "title": "Web Designer and Developer",
+                            "description": "GOLS Group",
+                            "action": "assets/icon/leftArrowIcon.svg",
+                            "selectWatchList": false
+                        },
+                        "row2": {
+                            "Package": "3-6LPA",
+                            "Experience": "0-2 Years",
+                            "Location": "Navi Mumbai"
+                        }
+                    }
+                ],
+                "cta": "Explore"
+            },
+            {
+                "title": "Stocks",
+                "cardList": [
+                    {
+                        "row1": {
+                            "title": "TATA STEEL",
+                            "price": "Rs.107.75",
+                            "selectWatchList": false
+                        },
+                        "row2": {
+                            "ExchangeName": "NSE",
+                            "lossAndGain": "0.63",
+                            "lossAndGainPer": "(0.2%)"
+                        }
+                    },
+                    {
+                        "row1": {
+                            "title": "TCS",
+                            "price": "Rs.3151.00",
+                            "selectWatchList": false
+                        },
+                        "row2": {
+                            "ExchangeName": "NSE",
+                            "lossAndGain": "0.80",
+                            "lossAndGainPer": "(1.4%)"
+                        }
+                    }
+                ],
+                "cta": "Explore"
+            }
+        ]
+    }
+}

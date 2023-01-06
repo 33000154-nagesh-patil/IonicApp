@@ -1,0 +1,93 @@
+
+.star {
+    position: relative;
+    display: inline-block;
+    font-size: 1rem;
+    color: #d3d3d3;
+  }
+  .full {
+    color: rgb(255, 197, 36);
+  }
+  .half {
+    position: absolute;
+    display: inline-block;
+    overflow: hidden;
+    color:  rgb(255, 197, 36);
+  }
+  .colorFooter{
+    background-color: #EDF0F5;
+  }
+  .custBAck{
+    background-color: #d5d7dc;
+  }
+  .segment{
+    margin-top: 100px;
+}
+
+.custBadge{
+    position: absolute;
+    // border-radius: 2px;
+   
+  }
+  .custRight10{
+    right: 10px;
+  }
+  .custRight0{
+    right: 0px;
+  }
+
+  .contentClass{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.custCenter{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.courseIcon{
+  border: 2px solid #DEDEDE;
+  padding: 2px;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.productName{
+  position: absolute;
+    right: 0;
+    background-color: #E4E5EB;
+    padding: 5px;
+    padding-left: 15px;
+    border-radius: 0px 0px 0px 10px;
+}
+.thisProduct{
+  width: 100% !important;
+  position: absolute;
+  top: 0;
+}
+.colTypeFont{
+  text-align: left;
+font: normal normal normal 12px/15px Muli-Regular;
+letter-spacing: 0px;
+color: #B2B2B2;
+opacity: 1;
+}
+.subTotal{
+  display: flex;
+  justify-content: space-between;
+  margin-inline: 25px;
+  background-color: #EDF0F5;
+  color: #999999;
+  padding: 3px;
+  font-size: medium;
+  border-radius: 6px;
+  padding-inline: 10px;
+}

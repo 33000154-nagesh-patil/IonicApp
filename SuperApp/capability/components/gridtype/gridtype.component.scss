@@ -1,0 +1,66 @@
+.backgroundColor{
+    background-color: #0f2b64;
+}
+.growthArrow{
+    height: 75px;
+    width: 130px;
+}
+.container {
+    display: flex;
+    flex-wrap: nowrap;
+    height: auto;
+    overflow-x: auto;
+    width: 30em;
+    margin-left: -21px;
+}
+
+.custStockIcon{
+
+    height: 25px;
+    width: 25px;
+    position: relative;
+    top: 0px;
+}
+.muli-13pt{
+    font-size: 13px !important;
+}
+.muli-11pt{
+    font-size: 11px !important;
+}
+.custGreenTick{
+    color: #33cf03;
+      height: 12px;
+      width: 12px;
+    }
+  
+    .custRedTick{
+      color: #d60000;
+      height: 12px;
+      width: 12px;
+    }
+
+// .gridData{
+//     // display: flex;
+//     // flex-wrap: wrap;
+//     flex: 0 0 calc(calc(6 / var(--ion-grid-columns, 12)) * 100%);
+//     width: calc(calc(6 / var(--ion-grid-columns, 12)) * 100%);
+//     max-width: calc(calc(6 / var(--ion-grid-columns, 12)) * 100%);
+// }
+
+.custBtnExplore{
+    height: 30px;
+    position: relative;
+    bottom: 0;
+    border:  1px solid var(--custBrightCyan) !important;
+    border-radius: 4px;
+    background: white !important;
+    text-align: center !important;
+    // padding-left: 32px !important;
+    // padding-right: 32px !important;
+    float: right;
+}
+
+.coloredCard{
+    background-image: linear-gradient(#E2F4FF, #C4E9FF);
+    color: #FFFFFF;
+}

@@ -1,0 +1,126 @@
+<ion-app>
+  <ion-header>
+    <ion-toolbar>
+      <!-- <ion-col size="12" class=""> -->
+      
+        <button (click)="gotoBack()" class="custBackgroundColorWhite" >
+          <ion-icon name="chevron-back-outline" class="custColorDarkishBlue custFontFamilyMuliRegular muli-24pt custLineHight16"></ion-icon>
+          PAN Details
+        </button>
+      
+        
+      <!-- </ion-col> -->
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="contentBackground" *ngIf="showFirstStep">
+    <ion-grid class="p-3">
+      <ion-card class="custPanContainer">
+        <ion-card-header>
+          <ion-card-title class="custFontFamilyMuliBold muli-16pt custLineHight22 custColorWhite">
+            {{'enterPAN' | translate}}
+          </ion-card-title>
+          <ion-card-subtitle class="custFontFamilyMuliRegular muli-12pt custLineHight16 custColorWhite">
+            {{'panInfo' | translate}}
+          </ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>
+          <ion-grid class="ion-no-padding">
+            <ion-row>
+              <ion-col [size]="'12'">
+                <mat-form-field appearance="outline" class="w-100 ">
+                  <input matInput
+                    class="custInputWidth custFontFamilyMuliRegular muli-14pt custLineHight24 custColorGreyish uppercase"
+                    [placeholder]="'enterPAN' | translate" [type]="'text'" maxlength="10" value="currentInputPan"
+                    [ngModel]="currentInputEncoded" (keyup)="onKeyPan($event)" [disabled]="currentType">
+                  <button mat-button matSuffix mat-icon-button
+                    class="custBackgroundColorWhite custColorGreyish mb-1" (click)="changeInputType()">
+                    <ion-icon class="custeye" [name]="!currentType?'eye-outline':'eye-off-outline'"></ion-icon>
+                  </button>
+                </mat-form-field>
+              </ion-col>
+              <ion-col [size]="'12'" *ngIf="showPatternError">
+                <span *ngIf="showPatternError"
+                  class="muli-12pt custColorcustFadedRed custFontFamilyMuliBold">{{'panPatternMessage'
+                  | translate}}</span>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-card-content>
+      </ion-card>
+    </ion-grid>
+
+   
+
+    <ion-grid *ngIf="showNextStep">
+      <form [formGroup]="dobValidationForm" (ngSubmit)="onDobContinue()" novalidate>
+        <ion-row class="custIndexBottom">
+  
+          <ion-col>
+            <p class="custFontFamilyMuliBold muli-16pt custLineHight22 custColorDark ion-padding-horizontal"> {{'enterDOB'
+              | translate }}</p>
+            <p class="custFontFamilyMuliRegular muli-12pt custLineHight16 custColorDark ion-padding-horizontal pb-3">
+              {{'dobPAN' | translate }}</p>
+  
+            <mat-form-field class="mat-form-field" appearance="outline" class="w-100">
+              <mat-label>{{'dob' | translate}}</mat-label>
+              <input matInput readonly [matDatepicker]="picker" max="{{maxDate}}" formControlName="dob"
+                placeholder=DD-MM-YYYY required (click)="picker.open()">
+              <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+              <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field>
+          </ion-col>
+        </ion-row>
+        <ion-row class="fixed-bottom">
+          <ion-col [size]="'12'" class="text-center">
+            <span class="custFontFamilyMuliRegular muli-14pt custColorGreyish custLineHight15 d-inline-flex">
+              <ion-icon name="gift-outline" class="custLock"></ion-icon>
+              {{'dobGifts' | translate }}
+            </span>
+          </ion-col>
+          <!-- <ion-col [size]="'12'">
+           <button class="btn w-100 text-center custBackgroundColorBrightCyan" [disabled]="dobValidationForm.invalid">
+              <span class="custColorWhite custFontFamilyMuliBold muli-16pt">{{'btnContinue' | translate}}</span>
+            </button>
+          </ion-col> -->
+          <ion-col [size]="'12'" class="pb-3 px-3">
+            <button class="btn w-100 text-center custBackgroundColorBrightCyan"><span
+                class="custColorWhite custFontFamilyMuliBold muli-16pt">{{'continue' | translate}}</span></button>
+          </ion-col>
+        </ion-row>
+      </form>
+    </ion-grid>
+
+    
+  </ion-content>
+  <ion-footer>
+    <div class="custBackgroundColorPaleGrey">
+      <ion-col [size]="'12'">
+        <p class="custFontFamilyMuliRegular muli-14pt custLineHight20 custColorDark ion-padding-horizontal">{{'panInfo1'
+          | translate}}</p>
+      </ion-col>
+      <ion-col [size]="'12'">
+        <ion-item lines="none" class="contentBackground ion-no-padding">
+          <ion-checkbox color="secondary" [checked]="policyCheckBox" slot="start" class="ion-margin mt-0"
+            (ionChange)="checkboxClick($event)" id="checkBoxPolicy"></ion-checkbox>
+          <p class="custFontFamilyMuliRegular muli-10pt custColorWarmGrey custLineHight15">
+            {{'paninfo2' | translate}}
+            <a (click)="clickDisclaimerURL()" class="custColorDarkishBlue">{{'disclaimers' |
+              translate}}</a>&nbsp;{{'and' | translate}}
+            <a (click)="clickTncUrl()" class="custColorDarkishBlue">{{'termsConditions' | translate}}</a>
+          </p>
+        </ion-item>
+      </ion-col>
+      <ion-col [size]="6" offset="3" class="custTextAlignCenter">
+        <span class="custFontFamilyMuliRegular muli-14pt custColorGreyish custLineHight15 d-inline-flex">
+          <ion-img [src]="imageList?.lockIcon" class="custLock"></ion-img> {{'paninfo3' | translate}}
+        </span>
+      </ion-col>
+    </div>
+    <ion-toolbar class="p-3">
+      <button class="btn w-100 text-center custBackgroundColorBrightCyan" (click)="onSubmitPAN()" id="submitPan"><span
+        class="custColorWhite custFontFamilyMuliBold muli-16pt">{{'continue' | translate}}</span></button>
+    </ion-toolbar>
+  </ion-footer>
+</ion-app>
+<button (click)="onContinue()">click</button>
+

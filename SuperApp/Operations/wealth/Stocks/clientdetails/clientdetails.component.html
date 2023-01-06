@@ -1,0 +1,92 @@
+<cap-header title="client Details" otherTextName="client Details" [imageList]="imageList" [showArrow]="true" [showLabel]="true"
+[showImg]="false" [showIndex]="false" [showNotification]="false" [showCartWithName]="true"
+[showSideMenu]="false" [showSearch]="true" [showClose]="false" [showShare]="false" [showWatchList]="false"
+[showCartWithoutName]="false" [showStories]="false" [paddingSize]="'7'" [showOtherText]="false" [backUrlName]="">
+</cap-header>
+<ion-content class="overflow-scroll contentBackground">
+      <ion-card>
+        <ion-row class="ion-no-padding">
+          <ion-col size="3">
+            <div class="NameHolder custLineHight46 text-center p-0 align-content-center align-items-center">
+              <p class="custFontFamilyMuliBold custColorDark muli-18pt d-inline-block custLineHight38 nameFlCenter">Hr
+              </p>
+            </div>
+          </ion-col>
+          <ion-col class="d-flex align-items-center pl-10" size="8.5">
+            <div>
+              <p class="custFontFamilyMuliBold custColorDark mt-0 mb-0 ml-20 muli-14pt ">hey, {{Funds.HolderName}}</p>
+            </div>
+          </ion-col>
+        </ion-row>
+        <div *ngFor="let x of Funds.profileInfo">
+        <ion-row class="my-1">
+          <ion-col [size]="'10'" >
+            <p class="px-3">{{x.title}}</p>
+            <p class="px-3 paragMarginTop custFontFamilyMuliBold muli-14pt custLineHight40  custColorDark">{{x.value}}
+            </p>
+          </ion-col>
+          <ion-col [size]="'2'">
+            <ion-img [src]="imageList?.modify" class="custWithoutTextImg" ></ion-img>
+          </ion-col>
+        </ion-row>
+        </div>
+      </ion-card>
+          <ion-card>
+            <ion-row>
+              <ion-col class="mb-3 mt-3">
+                <p class=" px-3 custColorDark muli-14pt custLineHight18 custFontFamilyMuliBold ">Bank Details</p>
+              </ion-col>
+            </ion-row>
+            <ion-row  class="marginrow" *ngFor="let x of Funds.BankDetails">
+              <ion-col>
+                <p class="px-3">{{x.title}}</p>
+                <p class="px-3 paragMarginTop custFontFamilyMuliBold muli-14pt custLineHight40  custColorDark">
+                  {{x.value}}</p>
+              </ion-col>
+            </ion-row>
+          </ion-card>
+          <ion-card>
+            <ion-row>
+              <ion-col class="mb-3 mt-3">
+                <p class=" px-3 custColorDark muli-14pt custLineHight18 custFontFamilyMuliBold ">Branch Details</p>
+              </ion-col>
+            </ion-row>
+            <ion-row  class="marginrow" *ngFor="let x of Funds.BranchDetails">
+              <ion-col>
+                <p class="px-3">{{x.title}}</p>
+                <p class="px-3 paragMarginTop custFontFamilyMuliBold muli-14pt custLineHight40  custColorDark">
+                  {{x.value}}</p>
+              </ion-col>
+            </ion-row>
+          </ion-card>
+          <ion-card>
+            <ion-row>
+              <ion-col class="mb-3 mt-3">
+                <p class=" px-3 custColorDark muli-14pt custLineHight18 custFontFamilyMuliBold ">Demat Details</p>
+              </ion-col>
+            </ion-row>
+            <ion-row  class="marginrow" *ngFor="let x of Funds.DematDetails">
+              <ion-col>
+                <p class="px-3">{{x.title}}</p>
+                <p class="px-3 paragMarginTop custFontFamilyMuliBold muli-14pt custLineHight40  custColorDark">
+                  {{x.value}}</p>
+              </ion-col>
+            </ion-row>
+          </ion-card>
+          <ion-card>
+            <ion-row>
+              <ion-col class="mb-3 mt-3">
+                <p class=" px-3 custColorDark muli-14pt custLineHight18 custFontFamilyMuliBold ">Nominee Details</p>
+              </ion-col>
+            </ion-row>
+            <ion-row  class="marginrow" *ngFor="let x of Funds.NomineeDetails">
+              <ion-col>
+                <p class="px-3">{{x.title}}</p>
+                <p class="px-3 paragMarginTop custFontFamilyMuliBold muli-14pt custLineHight40  custColorDark">
+                  {{x.value}}</p>
+              </ion-col>
+            </ion-row>
+          </ion-card>
+</ion-content>
+<cap-footer  [activeImg]="imageList?.activeTab" [selectedIndex]="'5'"
+  [footerListData]="footerListData" [parentTab]="'listing'"></cap-footer>

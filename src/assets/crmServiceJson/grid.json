@@ -1,0 +1,339 @@
+{
+
+    "data": [
+        {
+            "LeadID": {
+                "title": "L123456",
+                "type": "text",
+                "icon": "",
+                "data":[]
+            },
+            "LeadName":
+            {
+                "title":"Rizwan P.",
+                "type": "text",
+                "icon": "",
+                "data":[]
+            } ,
+            "EmailID":
+            {
+                "title": "riz@gmail.com",
+                "type": "text",
+                "icon": "",
+                "data":[]
+            } ,
+            "LeadOwner":
+            {
+                "title":"Rizwan Patel",
+                "type": "text",
+                "icon": "",
+                "data":[]
+            }  ,
+            "MobileNumber":
+            {
+                "title":"9096522122",
+                "type": "text",
+                "icon": "",
+                "data":[]
+            }  ,
+            "Product":
+            {
+                "title":"Digital Gold",
+                "type": "text",
+                "icon": "",
+                "data":[]
+            }  ,
+            "LeadSource":
+            {
+                "title":"Facebook",
+                "type": "text",
+                "icon": "",
+                "data":[]
+            }  ,
+            "Campaign":
+            {
+                "title":"Social Media",
+                "type": "text",
+                "icon": "",
+                "data":[]
+            }  ,
+            "KRAVerified":
+            {
+                "title":"Yes",
+                "type": "text",
+                "icon": "",
+                "data":[]
+            }  ,
+            "Status":
+            {
+                "title":"Call Ringing",
+                "type": "dropDown",
+                "icon": "",
+                "data":["Enable","Disable"]
+            }  ,
+            "CreatedOn":
+            {
+                "title":"07/02/2022",
+                "type": "text",
+                "icon": "",
+                "data":[]
+            }  ,
+            "CreatedBy":
+            {
+                "title":"sysytem",
+                "type": "text",
+                "icon": "",
+                "data":[]
+            }  ,
+            "ModifiedOn":
+            {
+                "title":"26/08/2022",
+                "type": "text",
+                "icon": "",
+                "data":[]
+            }  ,
+            "ModifiedBy":
+            {
+                "title": "System",
+                "type": "text",
+                "icon": "",
+                "data":[]
+            } ,
+            "Reason":{
+                "title":"Duplicate Mobile Number",
+                "type":"text",
+                "icon":"",
+                "data":[]
+            },
+            "Action":{
+                "title":"",
+                "type":"",
+                "icon":["call","email"],
+                "data":""
+            }
+        },
+        {
+            "LeadID": {
+                "title": "L123456",
+                "type": "text",
+                "icon": "",
+                "data":[]
+            },
+            "LeadName":
+            {
+                "title":"Rizwan P.",
+                "type": "text",
+                "icon": "",
+                "data":[]
+            } ,
+            "EmailID":
+            {
+                "title": "riz@gmail.com",
+                "type": "text",
+                "icon": "",
+                "data":[]
+            } ,
+            "LeadOwner":
+            {
+                "title":"Rizwan Patel",
+                "type": "text",
+                "icon": "",
+                "data":[]
+            }  ,
+            "MobileNumber":
+            {
+                "title":"9096522122",
+                "type": "text",
+                "icon": "",
+                "data":[]
+            }  ,
+            "Product":
+            {
+                "title":"Digital Gold",
+                "type": "text",
+                "icon": "",
+                "data":[]
+            }  ,
+            "LeadSource":
+            {
+                "title":"Facebook",
+                "type": "text",
+                "icon": "",
+                "data":[]
+            }  ,
+            "Campaign":
+            {
+                "title":"Social Media",
+                "type": "text",
+                "icon": "",
+                "data":[]
+            }  ,
+            "KRAVerified":
+            {
+                "title":"Yes",
+                "type": "text",
+                "icon": "",
+                "data":[]
+            }  ,
+            "Status":
+            {
+                "title":"Call Ringing",
+                "type": "dropDown",
+                "icon": "",
+                "data":["deba","sis"]
+            }  ,
+            "CreatedOn":
+            {
+                "title":"07/02/2022",
+                "type": "text",
+                "icon": "",
+                "data":[]
+            }  ,
+            "CreatedBy":
+            {
+                "title":"sysytem",
+                "type": "text",
+                "icon": "",
+                "data":[]
+            }  ,
+            "ModifiedOn":
+            {
+                "title":"26/08/2022",
+                "type": "text",
+                "icon": "",
+                "data":[]
+            }  ,
+            "ModifiedBy":
+            {
+                "title": "System",
+                "type": "text",
+                "icon": "",
+                "data":[]
+            } ,
+            "Reason":{
+                "title":"Invalid Mobile Number",
+                "type":"text",
+                "icon":"",
+                "data":[]
+            },
+            "Action":{
+                "title":"",
+                "type":"",
+                "icon":["call","email"],
+                "data":""
+            }
+        },
+        {
+            "LeadID": {
+                "title": "L123456",
+                "type": "text",
+                "icon": "",
+                "data":[]
+            },
+            "LeadName":
+            {
+                "title":"Rizwan P.",
+                "type": "text",
+                "icon": "",
+                "data":[]
+            } ,
+            "EmailID":
+            {
+                "title": "riz@gmail.com",
+                "type": "text",
+                "icon": "",
+                "data":[]
+            } ,
+            "LeadOwner":
+            {
+                "title":"Rizwan Patel",
+                "type": "text",
+                "icon": "",
+                "data":[]
+            }  ,
+            "MobileNumber":
+            {
+                "title":"9096522122",
+                "type": "text",
+                "icon": "",
+                "data":[]
+            }  ,
+            "Product":
+            {
+                "title":"Digital Gold",
+                "type": "text",
+                "icon": "",
+                "data":[]
+            }  ,
+            "LeadSource":
+            {
+                "title":"Facebook",
+                "type": "text",
+                "icon": "",
+                "data":[]
+            }  ,
+            "Campaign":
+            {
+                "title":"Social Media",
+                "type": "text",
+                "icon": "",
+                "data":[]
+            }  ,
+            "KRAVerified":
+            {
+                "title":"Yes",
+                "type": "text",
+                "icon": "",
+                "data":[]
+            }  ,
+            "Status":
+            {
+                "title":"Call Ringing",
+                "type": "text",
+                "icon": "",
+                "data":[]
+            }  ,
+            "CreatedOn":
+            {
+                "title":"07/02/2022",
+                "type": "text",
+                "icon": "",
+                "data":[]
+            }  ,
+            "CreatedBy":
+            {
+                "title":"sysytem",
+                "type": "text",
+                "icon": "",
+                "data":[]
+            }  ,
+            "ModifiedOn":
+            {
+                "title":"26/08/2022",
+                "type": "text",
+                "icon": "",
+                "data":[]
+            }  ,
+            "ModifiedBy":
+            {
+                "title": "System",
+                "type": "text",
+                "icon": "",
+                "data":[]
+            } ,
+            "Reason":{
+                "title":"Invalid Mobile Number",
+                "type":"text",
+                "icon":"",
+                "data":[]
+            },
+            "Action":{
+                "title":"",
+                "type":"",
+                "icon":["call","email"],
+                "data":""
+            }
+        }
+     
+    ]
+}

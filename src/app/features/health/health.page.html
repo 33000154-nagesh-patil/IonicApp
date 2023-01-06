@@ -1,0 +1,24 @@
+<!-- <lib-header [title]="" [imageList]="imageList" [showArrow]="false" [showLabel]="false" [showImg]="false" [imgURL]="labelIcon"
+[showIndex]="false" [showNotification]="true" [showCartWithName]="true" [notificationCount]="notificationCount" [cardCount]="cartCount" [showSideMenu]="true" [showSearch]="false" [showClose]="false" [showShare]="false" [showWatchList]="false" [showCartWithoutName]="false" [showStories]="true" [otherTextName]="otherTextName" [showOtherText]="true" [superMode]="currentMode" [backUrlName]=""></lib-header>
+<ion-content class="h-100 w-100 contentBackground">
+    <lib-health [imageList]="imageList" [errorList]="errorList" [currentMoneySymbols]="currentMoneySymbols" [healthData]="healthData" [StepperData]="healthDataStepper" [healthCategoryData]="healthCategory"></lib-health>
+</ion-content>
+<lib-fab-button [superMode]="currentMode" [fabIcon]="imageList?.fabLogo"></lib-fab-button>
+<lib-footer *ngIf="currentMode" [activeImg]="imageList?.activeTab" [selectedIndex]="'2'" [footerListData]="wellnessFooterData" [parentTab]="'wellness'"></lib-footer> -->
+
+
+
+
+<lib-header [title]="" [imageList]="imageList" [showArrow]="false" [showLabel]="false" [showImg]="false"
+    [imgURL]="labelIcon" [showIndex]="false" [showNotification]="true" [showCartWithName]="true"
+    [notificationCount]="notificationCount" [cardCount]="cartCount" [showSideMenu]="true" [showSearch]="false"
+    [showClose]="false" [showShare]="false" [showWatchList]="false" [showCartWithoutName]="false" [showStories]="true"
+    [otherTextName]="otherTextName" [showOtherText]="true" [superMode]="currentMode" [backUrlName]="" [Health]="true"></lib-header>
+<ion-content class="h-100 w-100 contentBackground">
+    <app-health-wellness></app-health-wellness>
+    <!-- <lib-health [imageList]="imageList" [errorList]="errorList" [currentMoneySymbols]="currentMoneySymbols"
+        [healthData]="healthData" [StepperData]="healthDataStepper" [healthCategoryData]="healthCategory"></lib-health> -->
+</ion-content>
+<!-- <lib-fab-button [superMode]="currentMode" [fabIcon]="imageList?.fabLogo"></lib-fab-button> -->
+<lib-footer *ngIf="currentMode" [activeImg]="imageList?.activeTab" [selectedIndex]="'2'"
+    [footerListData]="wellnessFooterData" [parentTab]="'wellness'"></lib-footer>

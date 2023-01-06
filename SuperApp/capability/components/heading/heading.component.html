@@ -1,0 +1,37 @@
+<ion-row *ngFor="let el of heading" class="m-2">
+  <ion-row>
+    <span *ngIf="el.heading != 'Hey, User';else name"
+    
+      class="mb-2 px-1 muli-22pt custFontFamilyMuliBold custLineHight32 custColorDark text-capitalize leftside"
+    >
+    {{el.heading}}
+    </span>
+    <ng-template #name>
+      <ng-container *ngIf="userName|async as name">
+        <span 
+    
+      class="mb-2 px-1 muli-22pt custFontFamilyMuliBold custLineHight32 custColorDark text-capitalize leftside"
+    >
+    {{'Hey, '+name.firstName}}
+    </span>
+      </ng-container>
+    </ng-template>
+  </ion-row>
+  <ion-col [size]="'12'" *ngIf="el.box" class="ion-no-padding pl-1">
+    <ion-row>
+      <ion-col [size]="'2'" class="text-start p-0 m-0">
+        <div class="custBackgroundColorDarkishBlue custBox p-0 m-0"></div>
+      </ion-col>
+    </ion-row>
+  </ion-col>
+  <ion-col [size]="'12'" class="mt-2" *ngIf="el.discription">
+    <span class="muli-12pt custLineHight18 custColorBattlePGry"
+      >{{el.discription}}</span>
+  </ion-col>
+    <ion-col *ngIf="el?.icon" class="float-end">
+      <img
+      [src]="el?.icon"
+    />
+    </ion-col>
+</ion-row>
+<!-- <span>*ngIf="userName|async as name"</span> -->

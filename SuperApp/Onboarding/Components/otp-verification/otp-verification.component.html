@@ -1,0 +1,63 @@
+<ion-app>
+  <ion-header>
+    <ion-toolbar class="custBackgroundDynamicColorWhite">
+      <ion-grid>
+        <ion-row>
+             <ion-col  [size]="'11'">
+            <span class="custFontFamilyMuliBold ps-3 muli-14pt custColorDark custLineHight40">Otp Verification</span>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+<form [formGroup]="otpVerificationCodeFormGroup"  (ngSubmit)="onSubmitVerificationAuthentication()" class="example-form h-100" >
+  <ion-grid>
+      <div class=" pt-2">
+    <p class="custColorDark custFontFamilyMuliRegular muli-14pt custLineHight20 text-center" >We have sent an OTP to +91 1234567890</p>
+  </div>
+    <ion-row>
+      <ion-col [size]="'2'">
+        <mat-form-field appearance="outline" class="example-full-width w-100">
+          <input matInput #otp1 id="otp1" formControlName="otp1" type="password" (keyup)="(otp1.value.length == 1)?otp2.focus() : ''" class="custInput" maxLength="1" inputmode="numeric">
+        </mat-form-field>
+      </ion-col>
+      <ion-col [size]="'2'">
+        <mat-form-field appearance="outline" class="example-full-width w-100">
+          <input matInput #otp2 id="otp2" formControlName="otp2" type="password" (keyup)="onDigitInput($event);(otp2.value.length == 1)?otp3.focus() : ($event.code === 'Backspace')?otp1.focus():otp2.focus();($event.code === 'Backspace')?otp1.value = '':otp1.value" class="custInput" maxLength="1" inputmode="numeric">
+        </mat-form-field>
+      </ion-col>
+      <ion-col [size]="'2'">
+        <mat-form-field appearance="outline" class="example-full-width w-100">
+          <input matInput #otp3 id="otp3" formControlName="otp3" type="password" (keyup)="(otp3.value.length == 1)?otp4.focus() : ($event.code === 'Backspace')?otp2.focus():otp3.focus();($event.code === 'Backspace')?otp2.value = '':otp2.value" class="custInput" maxLength="1" inputmode="numeric">
+        </mat-form-field>
+      </ion-col>
+      <ion-col [size]="'2'">
+        <mat-form-field appearance="outline" class="example-full-width w-100">
+          <input matInput #otp4 id="otp4" formControlName="otp4" type="password" (keyup)="(otp4.value.length == 1)?otp5.focus() : ($event.code === 'Backspace')?otp3.focus():otp4.focus();($event.code === 'Backspace')?otp3.value = '':otp3.value" class="custInput" maxLength="1" inputmode="numeric">
+        </mat-form-field>
+      </ion-col>
+      <ion-col [size]="'2'">
+        <mat-form-field appearance="outline" class="example-full-width w-100">
+          <input matInput #otp5 id="otp5" formControlName="otp5" type="password" (keyup)="(otp5.value.length == 1)?otp6.focus() : ($event.code === 'Backspace')?otp4.focus():otp5.focus();($event.code === 'Backspace')?otp4.value = '':otp4.value" class="custInput" maxLength="1" inputmode="numeric">
+        </mat-form-field>
+      </ion-col>
+      <ion-col [size]="'2'">
+        <mat-form-field appearance="outline" class="example-full-width w-100">
+          <input matInput #otp6 id="otp6" formControlName="otp6" type="password" (keyup)="($event.code === 'Backspace')?otp5.focus():otp6.focus();($event.code === 'Backspace')?otp5.value = '':otp5.value" class="custInput" maxLength="1" inputmode="numeric">
+        </mat-form-field>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <div class="text-center h-75 custMarginTop">
+    <ion-button [disabled]="showResendButton" (click)="resendOTP()" class="custFontFamilyMuliBold muli-12pt custLineHight18 text-center custColorDarkishBlue text-capitalize custButtonBackground" id="resetButton"> {{'ResendOTP' | translate}} <p *ngIf="showResendButton" class="mt-3 p-1">in {{ countDown | async }}</p></ion-button>
+  </div>
+  <div class="position-absolute bottom-0 w-100">
+    <!-- <ion-button type="submit" [disabled]="!verificationCodeFormGroup.valid"  class="custButton w-100" id="submitOTP"> <span class="custFontFamilyMuliBold muli-16pt text-center custColorWhite text-capitalize">{{'continue' | translate}}</span></ion-button> -->
+    <button type="submit" id="submitOTP" [disabled]="!otpVerificationCodeFormGroup.valid"
+      class="btn custBtn btnBoxShadow custBackgroundColorBrightCyan muli-16pt custFontFamilyMuliBold custColorWhite">{{'continue'
+      | translate}}</button>
+  </div>
+</form>
+</ion-content>
+</ion-app>

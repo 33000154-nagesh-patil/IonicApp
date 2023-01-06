@@ -1,0 +1,12 @@
+<svg id="dots" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+  <rect id="Rectangle_9580" data-name="Rectangle 9580" width="25" height="25" fill="none"/>
+  <circle id="Ellipse_305" data-name="Ellipse 305" cx="2.5" cy="2.5" r="2.5" transform="translate(20)" fill="#fff"/>
+  <circle id="Ellipse_308" data-name="Ellipse 308" cx="2.5" cy="2.5" r="2.5" fill="#fff"/>
+  <circle id="Ellipse_311" data-name="Ellipse 311" cx="2.5" cy="2.5" r="2.5" transform="translate(10)" fill="#fff"/>
+  <circle id="Ellipse_306" data-name="Ellipse 306" cx="2.5" cy="2.5" r="2.5" transform="translate(20 20)" fill="#fff"/>
+  <circle id="Ellipse_310" data-name="Ellipse 310" cx="2.5" cy="2.5" r="2.5" transform="translate(0 20)" fill="#fff"/>
+  <circle id="Ellipse_313" data-name="Ellipse 313" cx="2.5" cy="2.5" r="2.5" transform="translate(10 20)" fill="#fff"/>
+  <circle id="Ellipse_307" data-name="Ellipse 307" cx="2.5" cy="2.5" r="2.5" transform="translate(20 10)" fill="#fff"/>
+  <circle id="Ellipse_309" data-name="Ellipse 309" cx="2.5" cy="2.5" r="2.5" transform="translate(0 10)" fill="#fff"/>
+  <circle id="Ellipse_312" data-name="Ellipse 312" cx="2.5" cy="2.5" r="2.5" transform="translate(10 10)" fill="#fff"/>
+</svg>

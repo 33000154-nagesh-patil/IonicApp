@@ -1,0 +1,25 @@
+{
+  "productName":"Health",
+  "name":"Fasting Blood Sugar",
+  "segments":[
+      {
+          "name":"Amount/Quantity",
+          "value":"quantity",
+          "placeHolder":"Enter Quantity",
+          "unit":""
+      }
+  ],
+  "pricePerUnit":"80",
+  "taxes":[
+      {"type":"CGST","taxPercentage":"0.0"},
+      {"type":"SGST","taxPercentage":"0.0"},
+      {"type":"IGST","taxPercentage":"0.0"}
+  ],
+  "buttons":{
+      "quantity":[]
+  },
+  "stopWatch":false,
+  "stocks":false,
+  "mf":false,
+  "edCourses":true
+}

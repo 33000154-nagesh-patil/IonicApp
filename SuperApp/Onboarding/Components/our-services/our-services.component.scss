@@ -1,0 +1,27 @@
+.custWithoutTextImg{
+    height: 18px;
+    width: 18px;
+  }
+  .custwealtphIconImg{
+    height: 50px;
+    width: 50px;
+  }
+  .mat-expansion-panel-header{
+    padding: 0px 15px;
+    margin-top: 8px;
+  }
+  .boxed label {
+    display: inline-block;
+    width: auto;
+    padding: 10px;
+    border: solid 2px #ccc;
+    transition: all 0.3s;
+  }
+  
+  .boxed input[type="radio"] {
+    display: none;
+  }
+  
+//   .boxed input[type="radio"]:checked + label {
+//     background-color: aqua;
+//   }

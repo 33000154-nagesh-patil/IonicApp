@@ -1,0 +1,200 @@
+
+.custHeaderPatch{
+    font-size: 8px;
+    background-color: #E4E5EB;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+  
+}
+.custDet{
+    text-overflow: ellipsis;
+white-space: nowrap;
+overflow: hidden;
+}
+.custStatus{
+    // padding-left: 10px;
+    margin-right: 25px;
+}
+.custArrorSize{
+    height: 16px;
+    width: 13px;
+  }
+.custGreen{
+    color: #29AD00;
+}
+.custOrange{
+    color: #EE9C15;
+}
+.custHold{
+    color: #C04C31;
+}
+.custPending{
+    color: #FC750E;
+}
+
+.custImgSize{
+    width: 90px;
+    height: 30px;
+}
+.custImgSize1{
+    padding-top: 30px;
+    width: 125px;
+    height: 110px;
+    // z-index: -4;
+}
+.custBtn{
+    width: 50px;
+    height: 38px;
+    background-color: #FDE20B;
+    border: 2px solid #FBD210;
+    border-radius: 5px  ;
+}
+.custBtnDis{
+    width: 50px;
+    height: 38px;
+    background-color: #EBEBEB;
+    border: 2px solid #DEDEDE;
+    border-radius: 5px  ;
+}
+
+
+
+
+ ion-card{
+    font-family: "Muli-Regular";
+    font-size: 12px !important;
+    opacity:0.8;
+    background-color: #FFFFFF;
+    color:#2D2D2D;    
+    border-radius: 4px;
+    border: 0.5px solid black;
+}
+
+
+
+ ion-card.active{   
+   background-color: #E1E4E8; 
+   color:#2D2D2D;
+   border-color:#E1E4E8; 
+}
+
+.container {
+    height: 500px;
+    position: relative;
+  }
+
+  .center {
+    width:360px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.found{
+    text-align: center;
+    padding-right: 33px;
+
+   //  padding-left: 25px;
+   //  padding-top: 5px;
+ }
+
+ .faceImg{
+    height: 100px;
+    width: 100px;
+    margin-left: 110px;
+ }
+
+
+ .custImg{
+    height: 25px;
+    width: 25px;
+}
+.css1{
+    margin-left: -24px;
+}
+.img{
+    display: flex;
+    justify-content: flex-end;
+}
+.custImg1{
+    height: 35px;
+    width: 35px;
+}
+.custImg2{
+    height: 90px;
+    width: 90px;
+}
+.custKYCImg{
+    height: 16px;
+    width: 13px;
+    display:flex;
+    justify-content: start !important  ;
+
+}
+.custPad{
+    padding-right: 10px;
+}
+.containerr{
+    display: flex;
+    flex-wrap: nowrap;
+    height: auto;
+    overflow-x: auto;
+    width: auto;
+}
+.custDesc{
+    margin-left: 7px;
+}
+.titleIMG{
+    height: 45px;
+    width: 45px;
+}
+.custBackgroundBlueshGreen{
+    background-image: linear-gradient(to right,#AFECE9 , #BCF9F6);
+  }
+  .custBackgroundPink{
+  
+    background-image: linear-gradient(to right,#FECCE5 , #FFE0EF);
+}
+.custBackgroundLightGreen{
+
+    background-image: linear-gradient(to right,#DBE9AC , #E8F6B9);
+  }
+  .custBackgroundLightBlue{
+
+    background-image: linear-gradient(to right,#C1E7FF , #D9F0FF);
+  }
+  .custBackgroundLightOrange{
+  
+    background-image: linear-gradient(to right,#FED3BF, #FFE4D8);
+}
+.custBackgroundGrey{
+  
+    background-image: linear-gradient(to right,#DEDEDE, #EBEBEB);
+}
+.custBackgroundCashBack{
+  
+    background-image: linear-gradient(to right,#BCF2CF, #C9FFDC);
+}
+  .custBackgroundColorAva{
+    background-color: #EF405B;
+    color: white;
+  }
+  .custBackgroundColorAva1{
+    background-color: grey;
+    color: #EBEBEB;
+  }
+  .custSlot{
+    padding-right: 30px;
+  }
+  .custDetailButton{
+    background-color: transparent;
+  }

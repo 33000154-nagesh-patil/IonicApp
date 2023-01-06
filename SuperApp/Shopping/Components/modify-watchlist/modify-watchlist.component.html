@@ -1,0 +1,88 @@
+<ion-header [translucent]="true" class="custBackgroundColorWhite ">
+  <ion-toolbar class="custBackgroundDynamicColorWhite">
+    <ion-grid>
+      <ion-row>
+        <ion-col [size]="'1'" (click)="dismiss()" id="goBack">
+          <ion-img [src]="imageList?.arrow" class=" custWithoutTextImg mt-3"></ion-img>
+        </ion-col>
+        <ion-col [size]="3" class="custFontFamilyMuliBold muli-16pt custColorDark my-3 text-nowrap">
+          Edit Watchlist
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content class="contentBackground">
+  <ion-grid>
+    <ion-row class="p-0 m-0 px-1">
+      <ion-col class="p-0 m-0">
+        <ion-card class="custBackgroundColorWhite">
+          <ion-row>
+            <ion-col>
+              <p class="m-0 pt-3 px-2">Name</p>
+            </ion-col>
+            <ion-col class="custColorDark custFontFamilyMuliSemiBold muli-14pt">
+              <mat-form-field appearance="outline" class="w-100 mb-2">
+                <input matInput type="text" autocomplete="on" [placeholder]="watchList" autofill="false"
+                  [(ngModel)]="watchListNewName">
+              </mat-form-field>
+            </ion-col>
+            <ion-col class="d-flex">
+              <img [src]="imageList?.brownPencile" class="custWithoutTextImg mt-3 me-2">
+
+              <img [src]="imageList?.DltImg" *ngIf="watchList !== 'Nifty 50'" (click)="deleteWatchlistName()" class="custWithoutTextImg mt-3">
+            </ion-col>
+          </ion-row>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid>
+    <ion-row class="p-0">
+      <ion-col class="p-0">
+        <div cdkDropList class="example-list" (cdkDropListDropped)="drop($event)">
+          <div class="muli-14pt custFontFamilyMuliSemiRegular custColorDark"
+            cdkDrag>
+            <ion-card class="custBackgroundColorWhite py-2 my-3">
+              <ion-row>
+                <ion-col [size]="1" class="custFontFamilyMuliSemiRegular custColorGreyish muli-14pt">
+                  <span cdkDragHandle class="px-2 ">
+                    <img [src]="imageList?.ThreeLine" class="mt-2">
+                  </span>
+                </ion-col>
+                <ion-col [size]="10" class="custColorDark custFontFamilyMuliSemiBold muli-14pt ps-0">
+                  &nbsp;&nbsp;&nbsp;SYMBOL
+                  <p class="custFontFamilyMuliSemiRegular custColorGreyish muli-12pt m-0">&nbsp;&nbsp;&nbsp;nse</p>
+                </ion-col>
+                <ion-col [size]="1"  *ngIf="watchList !== 'Nifty 50'">
+                  <img [src]="imageList?.DltImg" (click)="deleteItem(movie)" class="mt-2">
+                </ion-col>
+              </ion-row>
+            </ion-card>
+          </div>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+<ion-footer>
+  <ion-row class="" *ngIf="create">
+    <ion-col [size]="'12'" class=" px-2">
+      <button (click)="updateWatchList()"
+        class="btn w-100 h-100 custFontFamilyMuliBold muli-16pt custLineHight20 custColorWhite custBackgroundColorBrightCyan">Save</button>
+    </ion-col>
+  </ion-row>
+
+
+  <ion-row class="" *ngIf="!create">
+    <ion-img [src]="imageList?.succsessIcon" class="custSVGIcon"></ion-img>
+    <span class="custFontFamilyMuliBold custRemove muli-18pt text-nowrap">{{watchlistRemoveMsg}}</span>
+    <ion-col [size]="'12'" class=" px-2 mt-3">
+      <button (click)="dismissmessage()"
+        class="btn w-100 h-100 custFontFamilyMuliBold muli-16pt custLineHight20 custColorWhite custBackgroundColorBrightCyan">Ok</button>
+    </ion-col>
+  </ion-row>
+</ion-footer>

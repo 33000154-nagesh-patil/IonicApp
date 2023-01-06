@@ -1,0 +1,87 @@
+.custPopImgHeight{
+    height: 18px;
+    width: 18px;
+}
+.custMarginSpace{
+    margin: 2px 0 0 10px;
+}
+
+.ion-color-light {
+    --ion-color-contrast: var(--custColorBrightCyan) !important;
+}
+.sub{
+    background-color: red;
+    border-radius: none;
+
+}
+.cusModalContainer{
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+   // background-color: var(--custDark);
+  //  opacity: 0.4;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+}
+.backArrow{
+    height: 18px;
+    width: 10px;
+}
+
+
+.custPopImgHeight{
+    height: 18px;
+    width: 18px;
+}
+.custMarginSpace{
+    margin: 2px 0 0 10px;
+}
+.custImgExpo{
+    height: 14.43px;
+    width: 23px;
+}
+
+.backgrd {
+    background-color: #EEEEEE;
+}
+
+.host {
+    box-shadow: none !important; 
+}
+.g.raphael-group-bAWiVuZc{
+    display: none;
+}
+
+.custButtonOutLine2 {
+    border-color: var(--custParakeetGreen) !important;
+}
+.Equity-btn {
+    border-radius: 4px;
+    cursor: pointer;
+    color: #727682;
+    background-color: transparent;
+  }
+  .active {
+    background-color: #44c8f5;
+    color: #fff;
+  }
+  .something2 {
+    display: inline;
+    margin-top: 2px;
+    filter: invert(59%) sepia(31%) saturate(930%) hue-rotate(47deg) brightness(93%) contrast(84%);
+    height: 10px;
+}
+
+.Colorboxing {
+    border-radius: 4px;
+    width: 30px;
+    background-color: #F2F2F2;
+}
+
+.custImageSize {
+    height: 58px;
+    width: 58px;
+}

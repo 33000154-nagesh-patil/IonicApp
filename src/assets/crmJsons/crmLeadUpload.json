@@ -1,0 +1,52 @@
+{
+    "subHeader": {
+        "id": "",
+        "title": "Lead Bulk Upload",
+        "icon": "",
+        "type": "",
+        "cssx": "",
+        "uxClass": "muli-34pt",
+        "des": "",
+        "key": "",
+        "value": [
+            {
+                "id": "",
+                "title": "",
+                "icon": "",
+                "type": "",
+                "cssx": "",
+                "uxClass": "",
+                "des": "",
+                "key": "",
+                "value": ""
+            }
+        ]
+    },
+    "search": {
+        "id": "",
+        "title": "Search",
+        "icon": "",
+        "type": "",
+        "cssx": "",
+        "uxClass": "px-3",
+        "des": [],
+        "key": "",
+        "showHide": [],
+        "value": [
+            {
+                "id": "",
+                "title": "",
+                "icon": "",
+                "type": "file",
+                "cssx": "",
+                "uxClass": "",
+                "des": [],
+                "key": "",
+                "validators": {
+                    "required": true
+                },
+                "value": ""
+            }
+        ]
+    }
+}

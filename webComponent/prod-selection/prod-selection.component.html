@@ -1,0 +1,27 @@
+
+  <ion-header style="height: 66px; background-color: white;">
+    <ion-row>
+      <ion-col size="4">
+        Torus
+      </ion-col>
+      <ion-col>
+        
+      </ion-col>
+    </ion-row>
+  </ion-header>
+  <ion-content class="text-center">
+    <div class="container-fluid">
+      <h1 class="heading">Welcome to TORUS</h1>
+      <p class="main">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet modi incidunt</p>
+      <ion-row class="px-5">
+        <ion-col size="3" *ngFor="let x of products" >
+          <ion-card class="card" (click)="goToProduct(x.routLink)">
+            <h4 class="title">{{x.title}}</h4>
+            <img class="explore" src="/assets/icon/Rectangle.svg" alt="">
+            <p class="text">Explore</p>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    
+    </div>
+</ion-content>

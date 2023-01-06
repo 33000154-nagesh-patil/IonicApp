@@ -1,0 +1,19 @@
+<!doctype html>
+<svg viewBox="579.406 246.642 15.6 15.6" width="15.6" height="15.6">
+  <g id="Group_21953" data-name="Group 21953" transform="matrix(1, 0, 0, 1, 4950.706128, -3579.058159)">
+    <g id="Rectangle_9483" data-name="Rectangle 9483" transform="translate(-4372 3825)" fill="#fff" stroke="#dedfe4" stroke-width="1.4">
+      <rect x="0.7" y="0.7" width="15.6" height="15.6" rx="3.3" fill="none"></rect>
+    </g>
+    <line id="Line_740" data-name="Line 740" y2="1.594" transform="translate(-4368.5 3835.203)" fill="none" stroke="#dedfe4" stroke-linecap="round" stroke-width="1.2"></line>
+    <line id="Line_741" data-name="Line 741" y2="1.594" transform="translate(-4368.5 3830.203)" fill="none" stroke="#dedfe4" stroke-linecap="round" stroke-width="1.2"></line>
+    <g id="Group_21949" data-name="Group 21949" transform="translate(-4366.202 3829.583)">
+      <line id="Line_732" data-name="Line 732" y2="7.835" transform="translate(3.917)" fill="none" stroke="#dedfe4" stroke-linecap="round" stroke-width="1"></line>
+      <line id="Line_733" data-name="Line 733" x1="7.835" transform="translate(0 3.917)" fill="none" stroke="#dedfe4" stroke-linecap="round" stroke-width="1"></line>
+      <line id="Line_734" data-name="Line 734" y1="5.424" x2="6.027" transform="translate(0.904 1.205)" fill="none" stroke="#dedfe4" stroke-linecap="round" stroke-width="1"></line>
+      <line id="Line_735" data-name="Line 735" y1="5.424" x2="6.027" transform="translate(6.629 0.904) rotate(90)" fill="none" stroke="#dedfe4" stroke-linecap="round" stroke-width="1"></line>
+      <g id="Ellipse_1344" data-name="Ellipse 1344" transform="translate(0.489 0.489)" fill="#fff" stroke="#dedfe4" stroke-width="1.2">
+        <circle cx="3.421" cy="3.421" r="2.821" fill="none"></circle>
+      </g>
+    </g>
+  </g>
+</svg>

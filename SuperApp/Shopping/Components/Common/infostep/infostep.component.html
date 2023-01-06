@@ -1,0 +1,24 @@
+
+ <ion-grid *ngFor="let x of Stepdata">
+  <p class="muli-16pt custFontFamilyMuliBold custLineHight22 custColorDark px-2" *ngIf="x?.heading">{{x?.heading}}</p>
+<ion-card class="mt-3 cusPadding">
+  <div >
+    <ul class="mt-2">
+      <li class="w-100 mb-4 pe-2 d-flex flex-row" *ngFor="let y of x?.data">
+        <!-- <p *ngIf="!y?.Icon" class="Icon"></p> -->
+        <img [src]="y?.Icon" class="custImage me-2" *ngIf="y?.Icon">
+        <!-- <img [src]="'data:image/png;base64,'+y?.Icon" class="custImage me-2" *ngIf="y?.Icon && !environment ">  -->
+        <div class="d-flex flex-column">
+        <span class="custFontFamilyMuliRegular muli-12pt custColorGreyish custLineHeight15">{{y?.Steps}}</span>
+        <span class="custFontFamilyMuliSemiBold muli-14pt custLineHeight18 custColorDark">{{y?.Disc}}</span>
+         </div>
+      </li>
+    </ul>
+  </div>
+ </ion-card>
+ </ion-grid>
+
+
+
+
+

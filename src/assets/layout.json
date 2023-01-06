@@ -1,0 +1,375 @@
+[
+   {
+      "type": "banner",
+      "icon": "",
+      "label": "Banner",
+      "rightLabel": "",
+      "config": {
+         "row": "1",
+         "col": "12",
+         "width": "",
+         "height": "250px",
+         "layoutType": "full"
+      },
+      "data": [
+         {
+            "label": "",
+            "url": "https://png.pngtree.com/thumb_back/fh260/background/20190813/pngtree-horizontal-vector-halloween-banner-background-with-grunge-border-image_297712.jpg",
+            "icon": "",
+            "title": "Title from banner",
+            "description": "To performing schemas across categories",
+            "action": "Invest Now",
+            "price": "",
+            "dif": "",
+            "status": "",
+            "timePeriod": "",
+            "watchlist": "",
+            "watchlistState": ""
+         },
+         {
+            "label": "",
+            "url": "https://png.pngtree.com/thumb_back/fh260/background/20190813/pngtree-horizontal-vector-halloween-banner-background-with-grunge-border-image_297712.jpg",
+            "icon": "",
+            "title": "Title from banner",
+            "description": "To performing schemas across categories",
+            "action": "Invest Now",
+            "price": "",
+            "dif": "",
+            "status": "",
+            "timePeriod": "",
+            "watchlist": "",
+            "watchlistState": ""
+         }
+      ]
+   },
+
+   {
+      "type": "list",
+      "icon": "",
+      "label": "Money Makers",
+      "rightLabel": "",
+      "config": {
+         "row": "1",
+         "col": "12",
+         "width": "",
+         "height": "100px",
+         "layoutType": "verticle"
+      },
+      "data": [
+         {
+            "label": "",
+            "url": "",
+            "icon": "https://cdn.zeplin.io/60a5fc059289442bc47e7527/assets/E4519EF4-9F81-4610-916B-6091EC741FBB.svg",
+            "title": "Mutual Funds",
+            "description": "Invest in direct mutual funds for free",
+            "action": "Invset Now",
+            "price": "",
+            "dif": "",
+            "status": "",
+            "timePeriod": "",
+            "watchlist": "",
+            "watchlistState": ""
+         },
+         {
+            "label": "",
+            "url": "",
+            "icon": "https://cdn.zeplin.io/60a5fc059289442bc47e7527/assets/510F0494-7E84-4B33-A6B9-E67F28835E9F.svg",
+            "title": "Stock",
+            "description": "Enjoy zero trading costs in cash segment. F&O at D10 per order",
+            "action": "Explore",
+            "price": "",
+            "dif": "",
+            "status": "",
+            "timePeriod": "",
+            "watchlist": "",
+            "watchlistState": ""
+         }
+      ]
+   },
+   {
+      "type": "list",
+      "icon": "https://cdn.zeplin.io/60a5fc059289442bc47e7527/assets/8AD2F9AD-D43B-4993-BD25-E336DA4A6022.svg",
+      "label": "Top Performing",
+      "rightLabel": "See all",
+      "config": {
+         "row": "1",
+         "col": "10",
+         "width": "",
+         "height": "135px",
+         "layoutType": "horizontal"
+      },
+      "data": [
+         {
+            "label": "Mutual Funds",
+            "url": "",
+            "icon": "https://cdn.zeplin.io/60a5fc059289442bc47e7527/assets/131E2771-6723-4BA7-A9C6-8E03B5EC7FBF.png",
+            "title": "ICICI Prudential Focused Bluechip Equity ",
+            "description": "Build your US stocks portfolio",
+            "action": "Invest Now",
+            "price": "122.2143",
+            "dif": "0.03 (0.2%)",
+            "status": "loss",
+            "timePeriod": "as on 08 April 2021, 03:00pm",
+            "watchlist": "https://cdn.zeplin.io/60a5fc059289442bc47e7527/assets/C8240AAF-97C7-4482-880B-937497EB051E.svg",
+            "watchlistState": "false"
+         },
+         {
+            "label": "Stocks",
+            "url": "",
+            "icon": "https://cdn.zeplin.io/60a5fc059289442bc47e7527/assets/131E2771-6723-4BA7-A9C6-8E03B5EC7FBF.png",
+            "title": "ICICI Prudential Focused Bluechip Equity Fund Salman Dada",
+            "description": "Build your US stocks portfolio",
+            "action": "Invest Now",
+            "price": "122.2143",
+            "dif": "0.03 (0.2%)",
+            "status": "loss",
+            "timePeriod": "as on 08 April 2021, 03:00pm",
+            "watchlist": "https://cdn.zeplin.io/60a5fc059289442bc47e7527/assets/C8240AAF-97C7-4482-880B-937497EB051E.svg",
+            "watchlistState": "false"
+         },
+         {
+            "label": "Stocks",
+            "url": "",
+            "icon": "https://cdn.zeplin.io/60a5fc059289442bc47e7527/assets/131E2771-6723-4BA7-A9C6-8E03B5EC7FBF.png",
+            "title": "ICICI Prudential Focused Bluechip Equity Fund Rizwan Patel",
+            "description": "Build your US stocks portfolio",
+            "action": "Invest Now",
+            "price": "122.2143",
+            "dif": "0.03 (0.2%)",
+            "status": "loss",
+            "timePeriod": "as on 08 April 2021, 03:00pm",
+            "watchlist": "https://cdn.zeplin.io/60a5fc059289442bc47e7527/assets/C8240AAF-97C7-4482-880B-937497EB051E.svg",
+            "watchlistState": "false"
+         }
+      ]
+   },
+
+   {
+      "type": "grid",
+      "icon": "",
+      "label": "Grid",
+      "rightLabel": "",
+      "config": {
+         "row": "1",
+         "col": "5",
+         "width": "",
+         "height": "165px",
+         "layoutType": "horizontal"
+      },
+      "data": [
+         {
+            "label": "",
+            "url": "",
+            "icon": "https://cdn.zeplin.io/60a5fc059289442bc47e7527/assets/8EE00868-C6ED-4AD7-AAD1-57B5124DB3EB.svg",
+            "healthCarePic": "assets/dummyMokeIcon/group_11650.png",
+            "title": "US Stocks",
+            "healthtitle": "Mutual funds or shares, where should I invest?",
+            "description": "Build your US stocks portfolio",
+            "healthdescription": "",
+            "action": "Open Account",
+            "price": "",
+            "dif": "",
+            "status": "",
+            "timePeriod": "",
+            "watchlist": "",
+            "watchlistState": ""
+         },
+         {
+            "label": "",
+            "url": "",
+            "icon": "https://cdn.zeplin.io/60a5fc059289442bc47e7527/assets/3C3EEEF2-C857-4C29-995A-E5DEBB38E1DC.svg",
+            "healthCarePic": "assets/dummyMokeIcon/group_14236.png",
+            "healthtitle": "Factors to consider for ETF Investments",
+            "title": "Baskets",
+            "description": "Thematic baskets  exclusively for you",
+            "healthdescription": "",
+            "action": "Explore",
+            "price": "",
+            "dif": "",
+            "status": "",
+            "timePeriod": "",
+            "watchlist": "",
+            "watchlistState": ""
+         },
+         {
+            "label": "",
+            "url": "",
+            "icon": "https://cdn.zeplin.io/60a5fc059289442bc47e7527/assets/3C3EEEF2-C857-4C29-995A-E5DEBB38E1DC.svg",
+            "healthCarePic": "assets/dummyMokeIcon/group_11650.png",
+            "healthtitle": "In Clinic Doctor Appointments",
+            "title": "Baskets",
+            "description": "Thematic baskets  exclusively for you",
+            "healthdescription": "",
+            "action": "Explore",
+            "price": "",
+            "dif": "",
+            "status": "",
+            "timePeriod": "",
+            "watchlist": "",
+            "watchlistState": ""
+         },
+         {
+            "label": "",
+            "url": "",
+            "icon": "https://cdn.zeplin.io/60a5fc059289442bc47e7527/assets/8EE00868-C6ED-4AD7-AAD1-57B5124DB3EB.svg",
+            "healthCarePic": "assets/dummyMokeIcon/group_14236.png",
+            "healthtitle": "In Clinic Doctor Appointments",
+            "title": "Baskets",
+            "description": "Thematic baskets  exclusively for you",
+            "healthdescription": "",
+            "action": "Explore",
+            "price": "",
+            "dif": "",
+            "status": "",
+            "timePeriod": "",
+            "watchlist": "",
+            "watchlistState": ""
+         }
+      ]
+   },
+
+   {
+      "type": "grid",
+      "icon": "",
+      "label": "Grid",
+      "rightLabel": "",
+      "config": {
+         "row": "1",
+         "col": "6",
+         "width": "",
+         "height": "165px",
+         "layoutType": ""
+      },
+      "data": [
+         {
+            "label": "",
+            "url": "",
+            "icon": "https://cdn.zeplin.io/60a5fc059289442bc47e7527/assets/8EE00868-C6ED-4AD7-AAD1-57B5124DB3EB.svg",
+            "healthCarePic": "assets/dummyMokeIcon/mask_group_34.png",
+            "title": "US Stocks",
+            "healthtitle": "Instant Video Consultation",
+            "description": "Build your US stocks portfolio",
+            "healthdescription": "Connect with qualified doctors in 60 secs",
+            "action": "Open Account",
+            "price": "",
+            "dif": "",
+            "status": "",
+            "timePeriod": "",
+            "watchlist": "",
+            "watchlistState": ""
+         },
+         {
+            "label": "",
+            "url": "",
+            "icon": "https://cdn.zeplin.io/60a5fc059289442bc47e7527/assets/3C3EEEF2-C857-4C29-995A-E5DEBB38E1DC.svg",
+            "healthCarePic": "assets/dummyMokeIcon/mask_group_7.png",
+            "healthtitle": "In Clinic Doctor Appointments",
+            "title": "Baskets",
+            "description": "Thematic baskets  exclusively for you",
+            "healthdescription": "Book appointment with top doctors near you",
+            "action": "Explore",
+            "price": "",
+            "dif": "",
+            "status": "",
+            "timePeriod": "",
+            "watchlist": "",
+            "watchlistState": ""
+         },
+         {
+            "label": "",
+            "url": "",
+            "icon": "https://cdn.zeplin.io/60a5fc059289442bc47e7527/assets/3C3EEEF2-C857-4C29-995A-E5DEBB38E1DC.svg",
+            "healthCarePic": "assets/dummyMokeIcon/mask_group_7.png",
+            "healthtitle": "In Clinic Doctor Appointments",
+            "title": "Baskets",
+            "description": "Thematic baskets  exclusively for you",
+            "healthdescription": "Book appointment with top doctors near you",
+            "action": "Explore",
+            "price": "",
+            "dif": "",
+            "status": "",
+            "timePeriod": "",
+            "watchlist": "",
+            "watchlistState": ""
+         },
+         {
+            "label": "",
+            "url": "",
+            "icon": "https://cdn.zeplin.io/60a5fc059289442bc47e7527/assets/8EE00868-C6ED-4AD7-AAD1-57B5124DB3EB.svg",
+            "healthCarePic": "assets/dummyMokeIcon/mask_group_7.png",
+            "healthtitle": "In Clinic Doctor Appointments",
+            "title": "Baskets",
+            "description": "Thematic baskets  exclusively for you",
+            "healthdescription": "Book appointment with top doctors near you",
+            "action": "Explore",
+            "price": "",
+            "dif": "",
+            "status": "",
+            "timePeriod": "",
+            "watchlist": "",
+            "watchlistState": ""
+         }
+      ]
+   },
+   
+   {
+      "type": "semigrid",
+      "icon": "",
+      "label": "Semi-Grid",
+      "rightLabel": "",
+      "config": {
+         "row": "1",
+         "col": "6",
+         "width": "",
+         "height": "165px",
+         "layoutType": "horizontal"
+      },
+      "data": [
+         {
+            "label": "",
+            "url": "",
+            "icon": "https://cdn.zeplin.io/60a5fc059289442bc47e7527/assets/8EE00868-C6ED-4AD7-AAD1-57B5124DB3EB.svg",
+            "healthCarePic": "assets/dummyMokeIcon/mask_group_10.png",
+            "title": "Lab tests & checkups",
+            "description": "",
+            "action": "",
+            "price": "",
+            "dif": "",
+            "status": "",
+            "timePeriod": "",
+            "watchlist": "",
+            "watchlistState": ""
+         },
+         {
+            "label": "",
+            "url": "",
+            "icon": "https://cdn.zeplin.io/60a5fc059289442bc47e7527/assets/8EE00868-C6ED-4AD7-AAD1-57B5124DB3EB.svg",
+            "healthCarePic": "assets/dummyMokeIcon/mask_group_9.png",
+            "title": "Medicines & Essentials",
+            "description": "",
+            "action": "",
+            "price": "",
+            "dif": "",
+            "status": "",
+            "timePeriod": "",
+            "watchlist": "",
+            "watchlistState": ""
+         },
+         {
+            "label": "",
+            "url": "",
+            "icon": "https://cdn.zeplin.io/60a5fc059289442bc47e7527/assets/8EE00868-C6ED-4AD7-AAD1-57B5124DB3EB.svg",
+            "healthCarePic": "assets/dummyMokeIcon/mask_group_9.png",
+            "title": "Medicines & Essentials",
+            "description": "",
+            "action": "",
+            "price": "",
+            "dif": "",
+            "status": "",
+            "timePeriod": "",
+            "watchlist": "",
+            "watchlistState": ""
+         }
+      ]
+   }
+]

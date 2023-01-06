@@ -1,0 +1,88 @@
+{
+    
+    "objectContent": [
+        {
+            "contentType": "promotionCard",
+            "Title": "In the Spotlight",
+            "contentDescription": "Explore deals, offers, health update and more",
+            "content": [
+                {
+                    "promoName": "In the Spotlight",
+                    "promoDesc": "Explore deals,offers, health updates and more",
+                    "promoTitle": "Health Card & Discounts",
+                    "promoTitleDesc": "Up to 50% discount MRI, CT scan,insurance cover",
+                    "promoIcon": "assets/Images/Mask Group 99.png",
+                    "promoAction": "Buy Now"
+                }
+            ]
+        },
+        {
+            "contentType": "cardList",
+            "Title": "Explore Tests",
+            "card": [
+                {
+                    "row1": {
+                        "icon": "",
+                        "title": "Fasting Blood Sugar",
+                        "description": "By Thyrocare Ltd. Pathology Test",
+                        "action": "assets/icon/leftArrowIcon.svg"
+                    },
+                    "row2": {
+                        "col1": "price",
+                        "val1": 1000,
+                        "col2": "E-reports Within",
+                        "val2": "24 to 30 hours",
+                        "col3": "No. of Tests",
+                        "val3": 1
+                    }
+                },
+                {
+                    "row1": {
+                        "icon": "",
+                        "title": "Fasting Blood Sugar",
+                        "description": "By Thyrocare Ltd. Pathology Test",
+                        "action": "assets/icon/leftArrowIcon.svg"
+                    },
+                    "row2": {
+                        "col1": "price",
+                        "val1": 1000,
+                        "col2": "E-reports Within",
+                        "val2": "24 to 30 hours",
+                        "col3": "No. of Tests",
+                        "val3": 1
+                    }
+                }
+            ]
+        },
+        {
+            "contentType": "3x2 Grid",
+            "Title": "Shop by category",
+            "content": [
+                {
+                    "icon": "assets/icon/Group 22032.svg",
+                    "name": "Women Health"
+                },
+                {
+                    "icon": "assets/icon/Group 22036.svg",
+                    "name": "Diabetes"
+                },
+                {
+                    "icon": "assets/icon/Group 22037.svg",
+                    "name": "Covid 19"
+                },
+                {
+                    "icon": "assets/icon/Group 22039.svg",
+                    "name": "Senior Citizen"
+                },
+                {
+                    "icon": "assets/icon/Group 22040.svg",
+                    "name": "Fever"
+                },
+                {
+                    "icon": "assets/icon/Group 22043.svg",
+                    "name": "Full Body Checkup"
+                }
+            ]
+        }
+    ]
+}

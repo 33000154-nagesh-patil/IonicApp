@@ -1,0 +1,163 @@
+<!-- <lib-header [title]="title" [imageList]="imageList" [showArrow]="true" [showLabel]="true" [showImg]="false"
+  [imgURL]="labelIcon" [showIndex]="true" [showNotification]="true" [showCartWithName]="true"
+  [notificationCount]="notificationCount" [cardCount]="cartCount" [showSideMenu]="false" [showSearch]="false"
+  [showClose]="false" [showShare]="false" [showWatchList]="false" [showCartWithoutName]="false" [showStories]="false"
+  [otherTextName]="textName" [showOtherText]="true"  [backUrlName]=""></lib-header> -->
+<ion-header [translucent]="true" class="custBackgroundColorWhite">
+  <ion-toolbar class="custBackgroundDynamicColorWhite">
+    <ion-grid>
+      <ion-row>
+        <ion-col [size]="'1'" id="goBack">
+          <ion-img
+            [src]="imageList?.arrow"
+            (click)="goBack()"
+            class="custWithoutTextImg mt-3"
+          ></ion-img>
+        </ion-col>
+        <ion-col
+          [size]="3"
+          class="custFontFamilyMuliBold muli-16pt custColorDark my-3 text-nowrap"
+        >
+          Portfolio
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="contentBackground">
+  <ion-row class="mt-2">
+    <ion-col
+      class="muli-16pt custColorBattlePGry custFontFamilyMuliBold custLineHight18 px-3"
+    >
+      Holdings
+    </ion-col>
+  </ion-row>
+
+  <ion-card class="cardBackground m-3">
+    <div class="p-0 m-1 custColorGreyish">
+      <ion-row class="custMargin mx-2">
+        <ion-col
+          [size]="7"
+          class="custFontFamilyMuliBold custColorDark custLineHight20 muli-14pt pe-5 text-start text-nowrap custLineHight13"
+        >
+          Invested Value
+        </ion-col>
+
+        <ion-col
+          [size]="5"
+          class="custFontFamilyMuliBold custColorDark custLineHight20 muli-14pt pe-5 text-start text-nowrap custLineHight13"
+        >
+          Current Value
+        </ion-col>
+      </ion-row>
+
+      <ion-row class="custMargin mx-2">
+        <ion-col
+          [size]="7"
+          class="custFontFamilyMuliSemiBold muli-16pt custColorDark text-nowrap custLineHight21"
+        >
+          ₹ {{ investedStockValue }}
+        </ion-col>
+
+        <ion-col
+          [size]="5"
+          class="custFontFamilyMuliSemiBold muli-16pt custColorGreen text-nowrap custLineHight21"
+        >
+          <ion-icon name="caret-up" class="custGreenTick"></ion-icon> ₹
+          {{ currentStock }}
+        </ion-col>
+      </ion-row>
+
+      <hr class="my-1" />
+
+      <ion-row class="pb-0 mb-0 custMargin mx-2">
+        <ion-col
+          [size]="7"
+          class="muli-14pt custColorDark custFontFamilyMuliBold text-nowrap custLineHight20 custLineHight13"
+        >
+          Unrealised Gain & Loss
+        </ion-col>
+
+        <ion-col
+          [size]="5"
+          class="custFontFamilyMuliBold custColorDark custLineHight20 muli-14pt pe-5 text-end text-nowrap custLineHight13"
+        >
+          Todays's Gain & Loss
+        </ion-col>
+      </ion-row>
+
+      <ion-row class="custMargin mx-2">
+        <ion-col
+        [size]="7"
+        class="custFontFamilyMuliSemiBold muli-16pt text-nowrap custLineHight20"
+      >
+        <span
+          class="muli-14pt custLineHight21 mb-1 text-end text-nowrap"
+        >
+          <ion-icon name="caret-up" class="custGreenTick"></ion-icon
+          ><span class="custcol"> ₹ {{UnrealizedGainAndLossValue}} </span> </span
+        >&nbsp;
+        <!-- <span class="muli-12pt custLineHight16 itemCol mb-3 text-end  text-nowrap">0</span> -->
+      </ion-col>
+
+        <ion-col
+          [size]="5"
+          class="custFontFamilyMuliSemiBold muli-16pt text-nowrap custLineHight20"
+        >
+          <span
+            class="muli-14pt custLineHight21 itemCol mb-1 text-end text-nowrap custColorGreen"
+          >
+            <ion-icon name="caret-up" class="custGreenTick"></ion-icon>₹
+            {{ todayGainAndLossValuePercent }} </span
+          >&nbsp;
+          <!-- <span class="muli-12pt custLineHight16 itemCol mb-3 text-end  text-nowrap custColorGreen">0</span>-->
+        </ion-col>
+      </ion-row>
+    </div>
+  </ion-card>
+  <ion-row>
+    <ion-col [size]="'12'" class="w-100">
+      <lib-stock-sreen7></lib-stock-sreen7>
+    </ion-col>
+  </ion-row>
+
+
+
+  <ion-card class="custBackgroundColorWhite mx-3 my-0" *ngFor="let x of getHoldings;index as i" >
+    <ion-row class="">
+      <ion-col
+        class="custColorDark muli-14pt custFontFamilyMuliSemiBold text-nowrap"
+      >
+        {{x.nse_symbol}}
+      </ion-col>
+      <ion-col
+        class="custFontFamilyMuliSemiBold custLineHight20 muli-14pt custColorDark text-end text-nowrap"
+      >
+        ₹ {{x.last_traded_price}}
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col
+        class="custFontFamilyMuliSemiBold muli-12pt custLineHight16 custColorBattlePGry text-nowrap"
+      >
+        <span
+          class="custFontFamilyMuliSemiBold muli-12pt custLineHight16 custColorBattlePGry text-nowrap"
+          >Qty </span
+        >
+        <span
+          class="custFontFamilyMuliSemiBold muli-12pt custLineHight16 custColorBattlePGry text-nowrap"
+          >{{x.quantity}} × ₹ {{x.cost_price}} = ₹ {{totalArr[i]}}</span
+        >
+      </ion-col>
+      <ion-col class="d-flex justify-content-end text-end">
+        <span class="muli-12pt itemCol mb-1 text-end text-nowrap">
+          <ion-icon name="caret-up" class="custGreenTick"></ion-icon
+          >28.62 </span
+        >&nbsp;
+        <span class="muli-12pt itemCol mb-3 text-end text-nowrap">(0.23%)</span>
+      </ion-col>
+    </ion-row>
+    <hr class="m-0" />
+  </ion-card>
+</ion-content>

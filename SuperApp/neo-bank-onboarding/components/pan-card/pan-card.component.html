@@ -1,0 +1,349 @@
+
+<ion-content class="contentBackground">
+  <div class="custDiv" *ngIf="showFirstStep">
+    <ion-grid *ngIf="showFirstStep">
+      <!--*ngIf="!showNextStep"-->
+      <ion-row class="custIndexTop">
+        <ion-col [size]="'12'">
+          <ion-card class="custPanContainer">
+            <ion-card-header>
+              <ion-card-title class="custFontFamilyMuliBold muli-16pt custLineHight22 custColorWhite">
+                {{'enterPAN' | translate}}
+              </ion-card-title>
+              <ion-card-subtitle class="custFontFamilyMuliRegular muli-12pt custLineHight16 custColorWhite">
+                {{'panInfo' | translate}}
+              </ion-card-subtitle>
+            </ion-card-header>
+            <ion-card-content>
+              <ion-grid class="ion-no-padding">
+                <ion-row>
+                  <ion-col [size]="'12'">
+                    <mat-form-field appearance="outline" class="example-full-width w-100 "
+                      [ngClass]="(showRequiredError ||showPatternError )?'mat-form-field-invalid custColorcustFadedRed':''">
+                      <input matInput
+                        class="custInputWidth custFontFamilyMuliRegular muli-14pt custLineHight24 custColorGreyish uppercase"
+                        [placeholder]="'enterPAN' | translate" [type]="'text'" maxlength="10" value="currentInputPan"
+                        [ngModel]="currentInputEncoded" (keyup)="onKeyPan($event)" [disabled]="currentType">
+                      <button mat-button matSuffix mat-icon-button
+                        class="custBackgroundColorWhite custColorGreyish mb-1" (click)="changeInputType()">
+                        <ion-icon class="custeye" [name]="!currentType?'eye-outline':'eye-off-outline'"></ion-icon>
+                      </button>
+                    </mat-form-field>
+                  </ion-col>
+                  <ion-col [size]="'12'" *ngIf="showRequiredError || showPatternError">
+                    <span *ngIf="showRequiredError"
+                      class="muli-12pt custColorcustFadedRed custFontFamilyMuliBold">{{'panErrorMessage' |
+                      translate }}</span>
+                    <span *ngIf="showPatternError"
+                      class="muli-12pt custColorcustFadedRed custFontFamilyMuliBold">{{'panPatternMessage'
+                      | translate}}</span>
+                  </ion-col>
+                  <ion-col [size]="'12'" class="text-center">
+                    <span class="custFontFamilyMuliRegular custLineHight24 custColorWhite muli-12pt d-inline-flex"
+                      (click)="selectImage()" *ngIf="isCordovaStatus">{{'or' | translate}}&nbsp; <ion-img
+                        [src]="imageList?.scanIconWhite" class="custScan custMargin"></ion-img> &nbsp; <span
+                        class="custFontFamilyMuliBold muli-14pt custLineHight18 custColorWhite">{{'scan' |
+                        translate}}</span></span>
+
+                    <span class="custFontFamilyMuliRegular custLineHight24 custColorWhite muli-12pt d-inline-flex"
+                      (click)="top.click()" *ngIf="!isCordovaStatus">
+                      <span><input type="file" (change)="imagePreview($event,1)" #top
+                          style="display: none; visibility: hidden; z-index: 0;" name="filename"></span>
+                      {{'or' | translate}}&nbsp; <ion-img [src]="imageList?.scanIconWhite" class="custScan custMargin">
+                      </ion-img> &nbsp; <span
+                        class="custFontFamilyMuliBold muli-14pt custLineHight18 custColorWhite">{{'scan' |
+                        translate}}</span></span>
+                  </ion-col>
+                </ion-row>
+
+              </ion-grid>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+        <!-- <ion-col [size]="'12'" *ngIf="appName === 'Aqube'">
+          <ion-card class="custPanContainerAqube">
+            <ion-card-header>
+              <ion-card-title class="custFontFamilyMuliBold muli-16pt custLineHight22 custColorDark">
+                {{'enterDOBLabel' | translate}}
+              </ion-card-title>
+              <ion-card-subtitle class="custFontFamilyMuliRegular muli-12pt custLineHight16 custColorDark">
+                {{'asMentionedPanLabel' | translate}}
+              </ion-card-subtitle>
+            </ion-card-header>
+            <ion-card-content>
+              <ion-grid class="ion-no-padding">
+                <ion-row>
+                  <ion-col [size]="'12'">
+
+                    <mat-form-field appearance="outline" class="example-form-field w-100">
+                      <input matInput [matDatepicker]="datepicker" [max]="maxDate"
+                        class="custInputWidth custFontFamilyMuliRegular muli-14pt custLineHight24 custColorDark uppercase"
+                        [placeholder]="'enterUrDobHint' | translate">
+                      <mat-datepicker-toggle matSuffix [for]="datepicker"></mat-datepicker-toggle>
+                      <mat-datepicker #datepicker>
+                        <mat-datepicker-actions>
+                          <button mat-button matDatepickerCancel
+                            class="custDatePickBtn custFontFamilyMuliRegular muli-14pt custLineHight24 custColorDark">Cancel</button>
+                          <button mat-raised-button color="primary" matDatepickerApply
+                            class="custDatePickBtn custFontFamilyMuliRegular muli-14pt custLineHight24 custColorDark">Apply</button>
+                        </mat-datepicker-actions>
+                      </mat-datepicker>
+                    </mat-form-field>
+                  </ion-col>
+                  <ion-col [size]="'12'" *ngIf="showRequiredError || showPatternError">
+                    <span *ngIf="showRequiredError"
+                      class="muli-12pt custLineHight18 custColorcustFadedRed custFontFamilyMuliBold">{{'dobErrorMessage' |
+                      translate }}</span>
+                    <span *ngIf="showPatternError"
+                      class="muli-12pt custLineHight18 custColorcustFadedRed custFontFamilyMuliBold">{{'dobPatternMessage'
+                      | translate}}</span>
+                  </ion-col>
+                </ion-row>
+
+                <ion-row>
+                  <ion-col [size]="'12'">
+
+                  </ion-col>
+                </ion-row>
+
+              </ion-grid>
+            </ion-card-content>
+          </ion-card>
+        </ion-col> -->
+        <ion-col [size]="'12'" *ngIf="currentImg">
+          <ion-card class="custBackgroundColorWhite">
+            <ion-card-content>
+              <ion-grid class="ion-no-padding">
+                <ion-row>
+                  <ion-col [size]="'12'">
+                    <ion-img class="custCurrentImg" [src]="currentImg"></ion-img>
+                  </ion-col>
+                  <ion-col [size]="'12'" class="pt-3">
+                    <button class="btn w-100 text-center custBackgroundColorBrightCyan" id="deletePanImg"
+                      (click)="deleteImg()">
+                      <span class="custColorWhite custFontFamilyMuliBold muli-16pt">{{'delete' | translate}}</span>
+                    </button>
+                  </ion-col>
+                </ion-row>
+              </ion-grid>
+
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+
+    </ion-grid>
+  </div>
+  <div class="custDivFooter" *ngIf="showFirstStep">
+    <ion-row>
+      <ion-col [size]="'12'">
+        <p class="custFontFamilyMuliRegular muli-14pt custLineHight20 custColorDark ion-padding-horizontal">{{'panInfo1'
+          | translate}}</p>
+      </ion-col>
+      <ion-col [size]="'12'">
+        <ion-item lines="none" class="contentBackground ion-no-padding">
+          <ion-checkbox color="secondary" [checked]="policyCheckBox" slot="start" class="ion-margin mt-0"
+            (ionChange)="checkboxClick($event)" id="checkBoxPolicy"></ion-checkbox>
+          <p class="custFontFamilyMuliRegular muli-10pt custColorWarmGrey custLineHight15">
+            {{'paninfo2' | translate}}
+            <a (click)="clickDisclaimerURL()" class="custColorDarkishBlue">{{'disclaimers' |
+              translate}}</a>&nbsp;{{'and' | translate}}
+            <a (click)="clickTncUrl()" class="custColorDarkishBlue">{{'termsConditions' | translate}}</a>
+          </p>
+        </ion-item>
+      </ion-col>
+      <ion-col [size]="'12'" class="text-center">
+        <span class="custFontFamilyMuliRegular muli-10pt custColorGreyish custLineHight15 d-inline-flex">
+          <ion-img [src]="imageList?.lockIcon" class="custLock"></ion-img> {{'paninfo3' | translate}}
+        </span>
+      </ion-col>
+
+      <!-- <ion-col [size]="'12'" *ngIf="appName === 'Aqube'">
+          <ion-row>
+            <ion-col [size]="'1'">
+              <ion-img [src]="imageList?.lockIcon" class="custLock"></ion-img>
+            </ion-col>
+            <ion-col [size]="'11'">
+              <p class="custFontFamilyMuliRegular muli-10pt custColorWarmGrey custLineHight15 p-0 m-0">
+                {{'moreGiftWaiting' | translate}}
+              </p>
+            </ion-col>
+          </ion-row>
+
+        </ion-col>
+
+        <ion-col [size]="'12'" *ngIf="appName === 'Aqube'">
+          <ion-row>
+            <ion-col [size]="'1'">
+              <ion-img [src]="imageList?.lockIcon" class="custLock"></ion-img>
+            </ion-col>
+            <ion-col [size]="'11'">
+              <p class="custFontFamilyMuliRegular muli-10pt custColorWarmGrey custLineHight15 p-0 m-0">
+                {{'moreCongratulations' | translate}}
+              </p>
+            </ion-col>
+          </ion-row>
+        </ion-col> -->
+
+      <ion-col [size]="'12'" class="pb-3 px-3">
+        <button [disabled]="!isValid" class="btn w-100 text-center custBackgroundColorBrightCyan" (click)="onSubmitPAN()" id="submitPan"><span
+            class="custColorWhite custFontFamilyMuliBold muli-16pt">{{'continue' | translate}}</span></button>
+      </ion-col>
+    </ion-row>
+  </div>
+
+  <ion-grid *ngIf="showNextStep">
+    <form [formGroup]="dobValidationForm" (ngSubmit)="onDobContinue()" novalidate>
+      <ion-row class="custIndexBottom">
+
+        <ion-col>
+          <p class="custFontFamilyMuliBold muli-16pt custLineHight22 custColorDark ion-padding-horizontal"> {{'enterDOB'
+            | translate }}</p>
+          <p class="custFontFamilyMuliRegular muli-12pt custLineHight16 custColorDark ion-padding-horizontal pb-3">
+            {{'dobPAN' | translate }}</p>
+
+          <mat-form-field class="mat-form-field" appearance="outline" class="w-100">
+            <mat-label>{{'dob' | translate}}</mat-label>
+            <input matInput readonly [matDatepicker]="picker" max="{{maxDate}}" formControlName="dob"
+              placeholder=DD-MM-YYYY required (click)="picker.open()">
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field>
+        </ion-col>
+      </ion-row>
+      <ion-row class="fixed-bottom">
+        <ion-col [size]="'12'" class="text-center">
+          <span class="custFontFamilyMuliRegular muli-14pt custColorGreyish custLineHight15 d-inline-flex">
+            <ion-icon name="gift-outline" class="custLock"></ion-icon>
+            {{'dobGifts' | translate }}
+          </span>
+        </ion-col>
+        <!-- <ion-col [size]="'12'">
+         <button class="btn w-100 text-center custBackgroundColorBrightCyan" [disabled]="dobValidationForm.invalid">
+            <span class="custColorWhite custFontFamilyMuliBold muli-16pt">{{'btnContinue' | translate}}</span>
+          </button>
+        </ion-col> -->
+        <ion-col [size]="'12'" class="pb-3 px-3">
+          <button class="btn w-100 text-center custBackgroundColorBrightCyan"><span
+              class="custColorWhite custFontFamilyMuliBold muli-16pt">{{'continue' | translate}}</span></button>
+        </ion-col>
+      </ion-row>
+    </form>
+  </ion-grid>
+
+
+  <ion-grid *ngIf="showConfirmNextStep" class="p-3">
+    <ion-row>
+      <ion-col [size]="'12'">
+        <span class="custFontFamilyMuliBold muli-16pt custLineHight18 custColorDark">{{'confirmDetails' |
+          translate}}</span>
+      </ion-col>
+      <ion-col [size]="'12'">
+        <mat-form-field appearance="outline" class="example-full-width w-100 ">
+          <input matInput class="custInputWidth custFontFamilyMuliRegular muli-14pt custLineHight24 custColorDark"
+            [type]="'text'" [ngModel]="currentInputPan" maxlength="10" [disabled]="true">
+          <button mat-button matSuffix mat-icon-button class="custBackgroundColorWhite custColorGreyish mb-1"
+            (click)="changeInputType()">
+            <!-- <ion-icon class="custeye" [name]="!currentType?'eye-outline':'eye-off-outline'"></ion-icon> -->
+          </button>
+        </mat-form-field>
+        <span class="d-inline-flex mt-2">
+          <ion-img [src]="imageList?.successKYCIcon" class="custSuccessIcon"></ion-img><span
+            class="custFontFamilyMuliBold muli-10pt custColorParakeetGreen custMargin5">{{'sucessPAN' |
+            translate}}</span>
+        </span>
+      </ion-col>
+      <ion-col [size]="'12'">
+        <span class="custFontFamilyMuliRegular muli-14pt custLineHight20">{{'panNotification' | translate}}</span>
+      </ion-col>
+      <ion-col [size]="'12'">
+        <ion-row>
+          <ion-col [size]="'2'">
+            <ion-img [src]="imageList?.panUserIcon" class="custPAnIcon mt-1"></ion-img>
+          </ion-col>
+          <ion-col [size]="'10'">
+            <span class="custFontFamilyMuliRegular muli-12pt custLineHight18 custColorBattlePGry">{{'panName' |
+              translate}}</span><br>
+            <span
+              class="custFontFamilyMuliBold muli-12pt custLineHight18 custColorDark text-uppercase">{{panUserName}}</span>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+      <ion-col [size]="'12'">
+        <mat-radio-group [(ngModel)]="residentStatus">
+          <mat-radio-button value="IN-Indian"
+            class="custFontFamilyMuliRegular muli-12pt custLineHight18 custColorBattlePGry">
+            {{'resident1' | translate}}</mat-radio-button><br>
+          <!-- <mat-radio-button class="custFontFamilyMuliRegular muli-12pt custLineHight18 custColorBattlePGry mt-3"
+            value="Other">{{'resident2' | translate}}</mat-radio-button> -->
+        </mat-radio-group>
+      </ion-col>
+    </ion-row>
+    <ion-row class="fixed-bottom">
+      <ion-col [size]="'12'" class="text-center">
+        <span class="custFontFamilyMuliRegular muli-10pt custColorGreyish custLineHight15 d-inline-flex">
+          <ion-img [src]="imageList?.lockIcon" class="custLock"></ion-img> {{'paninfo3' | translate}}
+        </span>
+      </ion-col>
+      <ion-col [size]="'12'" class="pb-3 px-3">
+        <button class="btn w-100 text-center custBackgroundColorBrightCyan" (click)="onSubmitPANOtherInfo()"><span
+            class="custColorWhite custFontFamilyMuliBold muli-16pt">{{'cAc' | translate}}</span></button>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+
+</ion-content>
+<div class="custModalContainer p-10" *ngIf="loggedInModal" (click)="successModalClose();">
+  <div id="showModalSMGSucces" class="modal-content custCenterAlign">
+    <!-- <ion-icon [src]="imageList?.successKYCIcon" class="custImage"></ion-icon> -->
+    <p class="custFontFamilyMuliBold muli-16pt custColorDark text-center p-0 m-0 ion-no-padding">{{ErrorMsg}}</p>
+    <!-- <ion-col *ngIf="seedingFail" [size]="'12'" class="pb-3 px-3">
+        <button class="btn w-100 text-center custBackgroundColorBrightCyan" (click)="onSubmitPANOtherInfo()"><span
+            class="custColorWhite custFontFamilyMuliBold muli-16pt">{{'cAc' | translate}}</span></button>
+      </ion-col> -->
+  </div>
+</div>
+
+<div class="custModalContainer p-10" *ngIf="seeding">
+  <div class="modal-content">
+    <div class="custDivSeedingFail ">
+      <div class="custCenterAlign">
+        <ion-icon [src]="imageList?.alertTriangle" class="custImage"></ion-icon>
+      </div>
+      <!-- <p class="custFontFamilyMuliBold muli-16pt custColorDark custCenterAlign">{{'seedingTitle' | translate}}</p> -->
+      <p class="custFontFamilyMuliBold muli-16pt custColorDark custCenterAlign">{{'linkingTitle' | translate}}</p>
+      <ion-col [size]="'12'" class="px-3">
+
+        <p class="muli-16pt ">{{'linkPanMandMsg' | translate}}</p>
+        <p class="muli-16pt ">{{'linkToAvoidMsg' | translate}}</p>
+        
+        <p class="muli-16pt ">{{'toLinkWit' | translate}}</p>
+        <p><a href="https://eportal.incometax.gov.in/iec/foservices/#/pre-login/bl-link-aadhaar">{{'panLinkUrl' | translate}}</a></p>
+        <!-- <p class="muli-16pt ">{{'seedingDetail' | translate}}</p> -->
+        <!-- <p class="muli-16pt custStep">{{'step1' | translate}}<a
+            href="https://eportal.incometax.gov.in/iec/foservices/#/pre-login/bl-link-aadhaar">{{'incomeTax' |
+            translate}}</a>{{'step11' | translate}}</p>
+        <p class="muli-16pt custStep">{{'step2' | translate}}</p>
+        <p class="muli-16pt custStep">{{'step3' | translate}}</p>
+        <p class="muli-16pt custStep">{{'step4' | translate}}</p>
+        <p class="muli-16pt custStep">{{'step5' | translate}}</p>
+        <p class="muli-16pt custStep">{{'step6' | translate}}</p>
+        <p class="muli-16pt custStep">{{'step7' | translate}}</p>
+        <p class="muli-16pt custStep">{{'step8' | translate}}</p> -->
+      </ion-col>
+    </div>
+    <ion-col [size]="'12'" class="px-1"  (click)="getSkip()">
+      <ion-button expand="block" class="text-capitalize custTryButton d-flex justify-content-center">
+        <span class="custFontFamilyMuliRegular text-center muli-14pt custColorBrightCyan">{{'skipLabel' | translate}}</span>
+      </ion-button>
+    </ion-col>
+    <ion-col [size]="'12'" class="px-1">
+      <button class="btn w-100 text-center custBackgroundColorBrightCyan" (click)="onOK()"><span
+          class="custColorWhite custFontFamilyMuliBold muli-16pt">{{'okText' | translate}}</span></button>
+    </ion-col>
+  </div>
+</div>
+
+
+

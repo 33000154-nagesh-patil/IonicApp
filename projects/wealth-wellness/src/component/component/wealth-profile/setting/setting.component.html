@@ -1,0 +1,208 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-grid>
+      <ion-row>
+        <ion-col [size]="'0.7'" class="text-center mt-2" (click)="backToSetting()">
+          <ion-img [src]="imageList?.arrow" class="custWithoutTextImg"></ion-img>
+        </ion-col>
+        <ion-col [size]="'8'">
+          <span
+            class="custFontFamilyMuliBold muli-16pt custLineHight40  custColorBlack px-3 text-nowrap">Settings</span>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card>
+
+    <ion-row (click)="changePassword()" class="m-3">
+      <ion-col [size]="6">
+        <p class="p-0 custFontFamilyMuliBold muli-14pt m-0 custLineHight18 custColorDark text-nowrap">Change
+          Password</p>
+      </ion-col>
+      <ion-col [size]="6" class="d-flex justify-content-end ">
+        <img [src]="imageList?.arrow" class="rotateArrow">
+      </ion-col>
+    </ion-row>
+
+    <hr class="my-2" />
+
+    <ion-row (click)="GoToLinks()" class="m-3">
+      <ion-col [size]="6">
+        <p class="p-0 custFontFamilyMuliBold muli-14pt m-0 custLineHight18 custColorDark text-nowrap">Links</p>
+      </ion-col>
+      <ion-col [size]="6" class="d-flex justify-content-end">
+        <img [src]="imageList?.arrow" class="rotateArrow">
+      </ion-col>
+    </ion-row>
+
+    <hr class="my-2" />
+
+
+    <ion-row (click)="GoToSebiRegistration()" class="m-3">
+      <ion-col [size]="6">
+        <p class="p-0 custFontFamilyMuliBold muli-14pt m-0 custLineHight18 custColorDark text-nowrap">SEBI
+          Registration</p>
+      </ion-col>
+      <ion-col [size]="6" class="d-flex justify-content-end">
+        <img [src]="imageList?.arrow" class="rotateArrow">
+      </ion-col>
+    </ion-row>
+
+    <hr class="my-2" />
+
+    <ion-row class="m-3" (click)="showMkrStatus()">
+      <ion-col [size]="6">
+        <p class="p-0 custFontFamilyMuliBold muli-14pt m-0 custLineHight18 custColorDark text-nowrap">Market Status
+        </p>
+      </ion-col>
+
+      <ion-col [size]="6" class="d-flex justify-content-end">
+        <img [src]="imageList?.arrow" [ngClass]="showMarketStatus?'downArrow':'rotateArrow'">
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="custMargin16 d-block" *ngIf="showMarketStatus">
+
+      <hr class="my-2" />
+
+      <ion-row class="my-2">
+        <ion-col [size]="6">
+          <span class="ms-2 text-nowrap"> NSE </span>
+        </ion-col>
+        <ion-col [size]="6">
+          <span class="d-flex justify-content-end me-1 text-nowrap custColorParakeetGreen"*ngIf="!status">Open</span>
+          <span class="d-flex justify-content-end me-1 text-nowrap custColorcustFadedRed" *ngIf="status">Closed</span>
+
+        </ion-col>
+      </ion-row>
+
+      <hr class="my-2" />
+
+      <ion-row class="my-2">
+        <ion-col [size]="6">
+          <span class="ms-2 text-nowrap"> BSE </span>
+        </ion-col>
+        <ion-col [size]="6">
+          <span class="d-flex justify-content-end me-1 text-nowrap custColorParakeetGreen"*ngIf="!status1">Open</span>
+          <span class="d-flex justify-content-end me-1 text-nowrap custColorcustFadedRed"*ngIf="status1">Closed</span>
+
+        </ion-col>
+      </ion-row>
+      <hr class="my-2" />
+
+      <ion-row class="my-2">
+        <ion-col [size]="6">
+          <span class="ms-2 text-nowrap"> MCX </span>
+        </ion-col>
+        <ion-col [size]="6">
+          <span class="d-flex justify-content-end me-1 text-nowrap custColorParakeetGreen"*ngIf="!status2">Open</span>
+          <span class="d-flex justify-content-end me-1 text-nowrap custColorcustFadedRed"*ngIf="status2">Closed</span>
+
+        </ion-col>
+      </ion-row>
+      <hr class="my-2" />
+
+      <ion-row class="my-2">
+        <ion-col [size]="6">
+          <span class="ms-2 text-nowrap"> NCDEX </span>
+        </ion-col>
+        <ion-col [size]="6">
+          <span class="d-flex justify-content-end me-1 text-nowrap custColorParakeetGreen" *ngIf="!status3">Open</span>
+          <span class="d-flex justify-content-end me-1 text-nowrap custColorcustFadedRed"*ngIf="status3">Closed</span>
+
+        </ion-col>
+      </ion-row>
+    </ion-row>
+
+    <hr class="my-2" />
+
+    <ion-row class="m-3" (click)="GoToMemberDetails()">
+      <ion-col [size]="6">
+        <p class="p-0 custFontFamilyMuliBold muli-14pt m-0 custLineHight18 custColorDark text-nowrap">Member
+          Details</p>
+      </ion-col>
+      <ion-col [size]="6" class="d-flex justify-content-end">
+        <img [src]="imageList?.arrow" [ngClass]="showMemberDetails?'downArrow':'rotateArrow'">
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="custMargin16 d-block" *ngIf="showMemberDetails">
+
+      <hr class="my-2" />
+
+      <ion-row class="my-2">
+        <ion-col [size]="6">
+          <span class="ms-2 text-nowrap"> Broker Name </span>
+        </ion-col>
+        <ion-col [size]="6">
+          <span class="d-flex justify-content-end me-1 text-nowrap custColorDarkishBlue">Reliance Securities Ltd.</span>
+        </ion-col>
+      </ion-row>
+
+      <hr class="my-2" />
+
+      <ion-row class="my-2">
+        <ion-col [size]="6">
+          <span class="ms-2 text-nowrap"> Member ID </span>
+        </ion-col>
+        <ion-col [size]="6">
+          <span class="d-flex justify-content-end me-1 text-nowrap custColorDarkishBlue">12348 </span>
+        </ion-col>
+      </ion-row>
+    </ion-row>
+
+    <hr class="my-2" />
+
+    <ion-row class="m-3" (click)="GoToExchangeMsg()">
+      <ion-col [size]="6">
+        <p class="p-0 custFontFamilyMuliBold muli-14pt m-0 custLineHight18 custColorDark text-nowrap">Exchange
+          Messages</p>
+      </ion-col>
+      <ion-col [size]="6" class="d-flex justify-content-end">
+        <img [src]="imageList?.arrow" class="rotateArrow">
+      </ion-col>
+    </ion-row>
+
+    <hr class="my-2" />
+
+    <ion-row class="m-3" (click)="GotoOptionCal()">
+      <ion-col [size]="6">
+        <p class="p-0 custFontFamilyMuliBold muli-14pt m-0 custLineHight18 custColorDark text-nowrap">Option
+          Calculator</p>
+      </ion-col>
+      <ion-col [size]="6" class="d-flex justify-content-end">
+        <img [src]="imageList?.arrow" class="rotateArrow">
+      </ion-col>
+    </ion-row>
+
+    <hr class="my-2" />
+
+
+    <ion-row class="m-3" (click)="GoToThemeChange()">
+      <ion-col [size]="6">
+        <p class="p-0 custFontFamilyMuliBold muli-14pt m-0 custLineHight18 custColorDark text-nowrap">Theme Change
+        </p>
+      </ion-col>
+      <ion-col [size]="6" class="d-flex justify-content-end">
+        <img [src]="imageList?.arrow" class="rotateArrow ">
+      </ion-col>
+    </ion-row>
+
+    <hr class="my-2" />
+
+    <ion-row class="m-3" (click)="GoToManageAppLock()">
+      <ion-col [size]="6">
+        <p class="p-0 custFontFamilyMuliBold muli-14pt m-0 custLineHight18 custColorDark text-nowrap">Manage App
+          Lock</p>
+      </ion-col>
+      <ion-col [size]="6" class="d-flex justify-content-end">
+        <img [src]="imageList?.arrow" class="rotateArrow">
+      </ion-col>
+    </ion-row>
+
+  </ion-card>
+</ion-content>

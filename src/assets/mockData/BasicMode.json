@@ -1,0 +1,93 @@
+{
+	"filterTab":[
+	{
+		"tabName":"Mutual Fund",
+		"tabID":"tb1"
+	},
+	{
+		"tabName":"Stock",
+		"tabID":"tb2"
+	},
+	{
+		"tabName":"Digital Gold",
+		"tabID":"tb3"
+	},
+	{
+		"tabName":"Bonds",
+		"tabID":"tb4"
+	},
+	{
+		"tabName":"Loan",
+		"tabID":"tb5"
+	},
+	{
+		"tabName":"Insurance",
+		"tabID":"tb6"
+	},
+	{
+		"tabName":"Fixed Deposit",
+		"tabID":"tb7"
+	}
+	], 
+	"exploreFunds":[
+      {
+         "title":"Explore Funds",
+         "filterIcon":"https://cdn.zeplin.io/60a5fc059289442bc47e7527/assets/172CA21E-DF75-4478-84C1-BAEE6377F549.svg",
+         "return":"1Y Returns",
+         "exploreFundsList":[
+            {
+               "productLogo":"https://cdn.zeplin.io/60a5fc059289442bc47e7527/assets/131E2771-6723-4BA7-A9C6-8E03B5EC7FBF.png",
+               "productName":"ICICI Prudential Focused Bluechip Equity Fund",
+               "pinState":"true",
+               "minInvLabel":"Min. invest",
+               "catReturnLabel":"Category Return",
+               "returnLabel":"Return",
+               "minInvValue":"₹500",
+               "catReturnFrom":"51.20%",
+               "catReturnTo":"22.20%",
+               "returnValue":"22.62%",
+               "returnStatus":"bearish"
+            },
+            {
+               "productLogo":"https://cdn.zeplin.io/60a5fc059289442bc47e7527/assets/B871C356-E067-4585-B623-567B55D27C92.png",
+               "productName":"Franklin India Multi Asset Solution Fund Direct Growth",
+               "pinState":"false",
+               "minInvLabel":"Min. invest",
+               "catReturnLabel":"Category Return",
+               "returnLabel":"Return",
+               "minInvValue":"₹500",
+               "catReturnFrom":"51.20%",
+               "catReturnTo":"22.20%",
+               "returnValue":"22.62%",
+               "returnStatus":"bullish"
+            },
+            {
+               "productLogo":"https://cdn.zeplin.io/60a5fc059289442bc47e7527/assets/7FCFDEAA-6530-4B38-8BF5-349FFB99F9FC.png",
+               "productName":"Axis Long Term Equity Fund",
+               "pinState":"true",
+               "minInvLabel":"Min. invest",
+               "catReturnLabel":"Category Return",
+               "returnLabel":"Return",
+               "minInvValue":"₹500",
+               "catReturnFrom":"51.20%",
+               "catReturnTo":"22.20%",
+               "returnValue":"22.62%",
+               "returnStatus":"bearish"
+            },
+            {
+               "productLogo":"https://cdn.zeplin.io/60a5fc059289442bc47e7527/assets/C2E9B3C3-FA33-4299-ADD4-1721F072325B.png",
+               "productName":"Tata Digital India Direct Growth Fund",
+               "pinState":"false",
+               "minInvLabel":"Min. invest",
+               "catReturnLabel":"Category Return",
+               "returnLabel":"Return",
+               "minInvValue":"₹500",
+               "catReturnFrom":"51.20%",
+               "catReturnTo":"22.20%",
+               "returnValue":"22.62%",
+               "returnStatus":"bullish"
+            }
+         ]
+      }
+   ]
+}

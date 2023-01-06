@@ -1,0 +1,51 @@
+{
+    "Consumer":[
+        {"name":"Akshay Patil","value":"1234567890"},
+        {"name":"Jayesh Mishra","value":"098765423"},
+        {"name":"Salman Dada","value":"321414414124"}
+    ],
+    "Locations": [
+        {"name":"Home","value":["AddressLine1","AddressLine2","400033"]},
+        {"name":"Office","value":["AddressLine1","AddressLine2","400605"]}
+    ],
+    "itemName":"Glucose - Fasting",
+    "productName":"Health",
+    "productSubtitle":"Also known as Fasting Blood Sugar (FBS)",
+    "productImage":"https://media.istockphoto.com/vectors/health-medical-logo-vector-id1321617070?k=20&m=1321617070&s=612x612&w=0&h=eoFfORNXdUXGSV1xPAJVBHN_hUhXs9-5b-oHz1BTg5c=",
+    "itemCode":"1158",
+    "unitPrice":"3000.00",
+    "taxes":[
+        {"type":"CGST","taxPercentage":"0"},
+        {"type":"SGST","taxPercentage":"0"},
+        {"type":"IGST","taxPercentage":"0"}
+    ],
+    "quantityRegEx":"^([1-9]|[1-9][0-9]|100)$",
+    "editable":"qty",
+    "unitOfQuantity":"Nos",
+    "unitOfAmount":"₹",
+    "tnc":["url","address"],
+    "Validity":0,
+    "walletMargin":false,
+    "availableMargin":5000.00,
+    "txnType":"BUY",
+    "OtherDetails":[
+        [   
+        {"name":"Pathalogy Slot","uxType":"header"},
+        {"label":"Date","value":"2022-01-01","uxType":"DatePicker"},
+        {"label":"Slot Time","value":"01-01-am","uxType":"TimePicker"}  
+    ]
+    ],
+    "footerButton":[
+        {
+            "name":"Add To Cart",
+            "uxClass":"custBackgroundColorBrightCyan custColorWhite w-100 mx-3 my-2",
+            "value":"addToCart"
+        },
+        {
+            "name":"Proceed to Checkout",
+            "uxClass":"custBackgroundColorParakeetGreen custColorWhite w-100 mx-3 my-2",
+            "value":"buy"
+        }
+    ],
+    "disable":"!(this.quantity>0&&this.checkbox&&this.timeSlot)"
+}

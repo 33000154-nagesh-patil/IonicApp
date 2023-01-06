@@ -1,0 +1,16 @@
+{
+    "statusCode": 200,
+    "message": "User Bank Detail List retrieved successfully.",
+    "result": [
+        {
+            "userBankId": "D9x3DW75",
+            "uniqueId": "TOR5729152",
+            "bankId": null,
+            "bankName": null,
+            "accountNumber": "50100463022610",
+            "accountName": "HDFC BANK",
+            "ifscCode": "HDFC0000012",
+            "status": "active"
+        }
+    ]
+}

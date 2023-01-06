@@ -1,0 +1,38 @@
+{
+  "Status": "1",
+  "Message": "Success",
+  "data": [
+      {
+          "orderGuId": "B7905F0D-AA8E-46ED-9097-E06801B0E916",
+          "patientId": 11,
+          "addressDetailId": 67,
+          "custGuId": "671AE4D8-8627-4493-8A8E-019AEAEC60B8",
+          "amount": 656.0,
+          "cgstAmount": 2.0,
+          "sgstAmount": 3.0,
+          "igstamount": 4.0,
+          "totalamount": 700.0,
+          "discountamount": 20.0,
+          "discountpercent": 30.0,
+          "productName": null,
+          "offeringguid": "71551928-E69B-4214-9EC3-BB5431A9D61C",
+          "productid": "XXX777",
+          "units": 29.0,
+          "productimage": "Very Good",
+          "productdescription": null,
+          "vendorid": "Himbdhjd653523",
+          "vendorname": "asdfghjkl",
+          "firstName": "Abc",
+          "middleName": null,
+          "lastName": null,
+          "addressLine1": "Nagpur",
+          "addressLine2": "",
+          "addressLine3": null,
+          "pincode": "2345",
+          "city": "Nagpur",
+          "state": "Maharashtra",
+          "country": "India"
+      }
+  ],
+  "ErrorCode": "0"
+}

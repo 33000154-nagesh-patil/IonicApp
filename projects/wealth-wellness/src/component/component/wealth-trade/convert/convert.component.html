@@ -1,0 +1,63 @@
+
+<div class="custModalContainer  custBackgroundColorWhite " >
+  <div id="showModalSMGSucces" class="modal-content modConmart" *ngFor="let x of Data">
+
+
+    <ion-row>
+      <ion-col class="text-center">
+        <ion-icon name="chevron-down-outline" style="height:25px; width:25px; color:grey;" (click)="hidePopUp()">
+        </ion-icon>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="mt-2">
+      <ion-col [size]="6">
+        <p class="m-0 muli-16pt custFontFamilyMuliRegular custColorDark">{{x.CompanyName}}</p>
+        <p class="m-0 muli-12pt custFontFamilyMuliRegular custColorGreyish">{{x.CompanyType}}</p>
+      </ion-col>
+      <ion-col [size]="6">
+        <p class="m-0 muli-14pt custFontFamilyMuliRegular custColorDark text-end">{{x.companyPrice}}<span
+          class="m-0 muli-12pt custFontFamilyMuliRegular custColorDark text-end">.00</span></p>
+        <p class="m-0 muli-14pt custFontFamilyMuliRegular custColorParakeetGreen text-end">{{x.CompanyTypeAmount}}<span
+            class="m-0 muli-12pt custFontFamilyMuliRegular custColorParakeetGreen text-end">{{x.CompanyTypeAmounts}}</span></p>
+      </ion-col>
+    </ion-row>
+
+    <hr class="m-1" />
+    <ion-row>
+      <ion-col [size]="6">
+        <p class="m-0 muli-12pt custFontFamilyMuliRegular custColorDark">{{x.ConvertIntraday}}</p>
+      </ion-col>
+      <ion-col [size]="6">
+        <p class="m-0 muli-10pt custFontFamilyMuliRegular custColorGreyish text-end">  {{x.ConvertIntradayTotalQuantity}}{{x.IntradayTotalQuantity}}</p>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="mb-5">
+      <ion-col [size]="6" >
+        <button class="mx-0 deActive custFontFamilyMuliBold custMktBtnColor  muli-12pt " (click)="btnIntraday('Full')"
+          [ngClass]="{'active': btnTypeAll == 'Full'}">{{x.btnFull}}</button>
+        <button class="mx-2 deActive custFontFamilyMuliBold  muli-12pt" (click)="btnIntraday('Partial')" [(ngModel)]="checkHere"
+          [ngClass]="{'active': btnTypeAll == 'Partial'}">{{x.btnPartial}}</button>
+      </ion-col>
+
+      <ion-col size="6" class="m-0 p-0">
+          <mat-form-field class="w-100" >
+            <button  class="custColorBrightCyan text-end muli-20pt Muli-Bold" >-</button>
+            <input matInput type="number" 
+              class="example-right-align Roboto-Condensed custLineHight22 muli-22pt text-center">
+            <button matSuffix class="custColorBrightCyan text-end muli-20pt Muli-Bold" >+</button>
+          </mat-form-field>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="fixed-bottom">
+      <ion-col class="p-3">
+        <button class="btn p-2 w-100 text-center custBackgroundColorBrightCyan" (click)="convertToDelivery()"><span
+            class="custColorWhite custFontFamilyMuliBold muli-16pt">{{x.btnConvert}}</span></button>
+      </ion-col>
+    </ion-row>
+
+    
+  </div>
+</div>

@@ -1,0 +1,57 @@
+ [
+        {
+            "status1": "1",
+            "timeslot": "8am-9am",
+            "slotId": "A"
+        },
+        {
+            "status1": "1",
+            "timeslot": "9am-10am",
+            "slotId": "B"
+        },
+        {
+            "status1": "1",
+            "timeslot": "10am-11am",
+            "slotId": "C"
+        },
+        {
+            "status1": "1",
+            "timeslot": "11am-12pm",
+            "slotId": "D"
+        },
+        {
+            "status1": "1",
+            "timeslot": "12pm-1pm",
+            "slotId": "E"
+        },
+        {
+            "status1": "1",
+            "timeslot": "2pm-3pm",
+            "slotId": "F"
+        },
+        {
+            "status1": "0",
+            "timeslot": "3pm-4pm",
+            "slotId": "G"
+        },
+        {
+            "status1": "1",
+            "timeslot": "4pm-5pm",
+            "slotId": "H"
+        },
+        {
+            "status1": "1",
+            "timeslot": "5pm-6pm",
+            "slotId": "I"
+        },
+        {
+            "status1": "1",
+            "timeslot": "6pm-7pm",
+            "slotId": "J"
+        },
+        {
+            "status1": "1",
+            "timeslot": "7pm-8pm",
+            "slotId": "K"
+        }
+    ]

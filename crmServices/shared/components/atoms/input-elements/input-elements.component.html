@@ -1,0 +1,70 @@
+<ion-row>
+<form [formGroup]="myForm">
+
+  <ion-col *ngFor="let control of inputValue" [size]="control.cssx">
+
+    <ion-col *ngIf="
+          [
+            'ALPHANUMERIC',
+            'NUMERIC',
+
+          ].includes(control.type)
+        ">
+
+      <mat-form-field class="w-100" appearance="outline" class="mat-form-field">
+        <mat-label [ngClass]="control.uxClass">{{ control.title }}</mat-label>
+        <input matInput [type]="control.type" [formControlName]="control.title" [value]="control.value">
+      </mat-form-field>
+
+    </ion-col>
+
+    <ion-col *ngIf="['calender' ].includes(control.type)">
+      <mat-form-field class="mat-form-field" appearance="outline">
+        <mat-label [ngClass]="control.uxClass">{{control.title}}</mat-label>
+        <input matInput readonly [matDatepicker]="picker" max="{{todaysDate}}" [formControlName]="control.title"
+          placeholder=DD-MM-YYYY (click)="picker.open()">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+    </ion-col>
+
+
+
+    <ion-col *ngIf="
+              [
+                'dropDown'
+              ].includes(control.type)
+            ">
+      <mat-form-field appearance="outline">
+      <mat-label [ngClass]="control.uxClass">{{ control.title }}</mat-label>
+        <mat-select [formControlName]="control.title">
+          <mat-option *ngFor="let option of control.options;index as i" [value]="option">
+            {{ option }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </ion-col>
+
+    <ion-col *ngIf="
+          [
+          'file'
+          ].includes(control.type)
+          ">
+      <mat-form-field appearance="outline" class="mat-form-field">
+        <mat-label>{{ control.title }}</mat-label>
+        <input [type]="control.type" [formControlName]="control.title" [value]="control.value">
+      </mat-form-field>
+    </ion-col>
+
+
+  <ion-col *ngIf="
+  [
+  'submit'
+  ].includes(control.type)
+  ">
+    <button type="submit" [disabled]="!myForm.valid"
+      class="custBackgroundColorBrightCyan btn custColorWhite pb-2">{{ control.title }}</button>
+  </ion-col>
+  </ion-col>
+</form>
+</ion-row>

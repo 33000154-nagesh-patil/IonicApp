@@ -1,0 +1,32 @@
+{
+  "name": "FASTING BLOOD SUGAR",
+  "description": "Also Known as Fasting Blood Sugar",
+  "ereportwithin": "20-40 hours",
+  "samplerRequired": "Blood",
+  "preparations": "Do not eat drink anything other than water for 8-12 hours before the test",
+  "summary": "Fasting Blood Sugar,aslo called the Fasting Plasma Gluose test,measures your fasting blood glucose level.Fasting means you should not eat or drink for 8 hours",
+  "offer": "Flat 18% Off on all Lab Test booking",
+  "product1": [
+      {
+          "item_rate_id": 14003,
+          "item_rate": 100,
+          "item_quantity": "1",
+          "item_cost": 100,
+          "tax_inclusive": "YES"
+      },
+      {
+          "item_rate_id": 13089,
+          "item_rate": 100,
+          "item_quantity": "1",
+          "item_cost": 10,
+          "tax_inclusive": "YES"
+      },
+      {
+          "item_rate_id": 13090,
+          "item_rate": 100,
+          "item_quantity": "1",
+          "item_cost": 100,
+          "tax_inclusive": "YES"
+      }
+  ]
+}

@@ -1,0 +1,127 @@
+<!-- <ion-content class="w-100 h-100 contentBackground" >
+  <ion-grid class="p-3 d-flex center w-100">
+    <ion-col class="text-center " size="12" >
+      <ion-row class="custCenterAlign icon" >
+        <ion-icon [src]="imageList?.successKYCIcon" class="custImage"></ion-icon>
+      </ion-row>
+      <h1 class="custFontFamilyMuliBold muli-22pt custLineHight30 custColorBlack">
+        Congratulations!
+      </h1>
+      <h1 class="custFontFamilyMuliRegular muli-20pt custLineHight30 custColorGreyish">
+        {{message}}
+      </h1>
+    </ion-col>
+  </ion-grid>
+</ion-content>   -->
+
+<ion-content class="contentBackground">
+  <ion-grid class="h-100">
+  <ion-img [src]="imageList?.successKYCIcon" class="center-block  custImage p-2  w-25 mt-3"></ion-img>
+  <ion-row class="muli-22pt custFontFamilyMuliBold custLineHight30 ion-justify-content-center">Hi Sagar Suresh Pathak,
+  </ion-row>
+  <ion-row class="muli-26pt custFontFamilyMuliBold custLineHight28 ion-justify-content-center">Welcome to super app
+  </ion-row>
+
+  <ion-card class="px-2">
+    <ion-card-content class="ion-no-padding">
+      <ion-grid class="h-100">
+
+
+        <ion-row class="custCenterAlign">
+
+          <ion-img [src]="imageList?.neoWalletIcon"></ion-img>
+
+          <ion-row>
+            <p class="custFontFamilyMuliBold muli-16pt px-4 custLineHight24 custColorDark">
+              Your free wallet is created and ready to use!
+            </p>
+          </ion-row>
+
+          <ion-row>
+            <span class="custFontFamilyMuliSemiBold muli-14pt custLineHight24 custColorDark">
+              Your device registration is successful!
+            </span>
+          </ion-row>
+
+
+
+
+          <ion-row class="mt-3">
+            <span class="custFontFamilyMuliBold muli-14pt px-3 custLineHight24 custColorDark">
+              Upgrade now to Saving Account and get 1000 Torus club coins instantly!
+            </span>
+          </ion-row>
+          <ion-row class="ps-2 mt-3">
+            <ion-row class="mt-3" class="ion-no-padding">
+              <ion-col [size]="'1.5'">
+                <span>
+                  <ion-img [src]="imageList?.neoTick" class="img"> </ion-img>
+                </span>
+              </ion-col>
+              <ion-col>
+                <span class="custFontFamilyMuliSemiBold muli-14pt ">Make payments instantly forget cash, forget
+                  cheques.</span>
+              </ion-col>
+            </ion-row>
+
+            <ion-row>
+              <ion-col [size]="'1.5'">
+                <ion-img [src]="imageList?.neoTick" class="img"></ion-img>
+              </ion-col>
+              <ion-col>
+                <span class="custFontFamilyMuliSemiBold muli-14pt">Pay bills instantly recharge immediately</span>
+              </ion-col>
+            </ion-row>
+
+            <ion-row>
+              <ion-col [size]="'1.5'">
+                <ion-img [src]="imageList?.neoTick" class="img"></ion-img>
+              </ion-col>
+              <ion-col>
+                <span class="custFontFamilyMuliSemiBold muli-14pt">Link your trading account with saving bank and enjoy
+                  safety and Convenience</span>
+              </ion-col>
+            </ion-row>
+
+
+            <ion-row>
+              <ion-col [size]="'1.5'">
+                <ion-img [src]="imageList?.neoTick" class="img"> </ion-img>
+              </ion-col>
+              <ion-col>
+                <span class="custFontFamilyMuliSemiBold muli-14pt ">Get an advanced Debit card and get discounts
+                  offers</span>
+              </ion-col>
+            </ion-row>
+          </ion-row>
+          <ion-row class="w-100 fixed bottom mb-2">
+            <ion-col [size]="'12'" (click)="upgrade()">
+              <button class=" w-100 btn text-center custBackgroundColorBrightCyan">
+                <span class="custColorWhite p-2 custFontFamilyMuliBold muli-16pt">Upgrade Now</span>
+              </button>
+      
+            </ion-col>
+          </ion-row>
+
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
+
+
+
+
+  <ion-row class="w-100 p-2">
+    <ion-col [size]="'12'">
+      <button class="w-100 btn mt-2  text-center custBackgroundColorWhite btn1" (click)="dismiss()">
+        <span class="custColorBrightCyan custFontFamilyMuliBold muli-16pt">Explore App</span>
+      </button>
+    </ion-col>
+
+  </ion-row>
+
+
+</ion-grid>
+
+</ion-content>
+

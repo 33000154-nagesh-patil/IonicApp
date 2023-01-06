@@ -1,0 +1,252 @@
+<ion-app>
+  <ion-header>
+    <ion-toolbar class="custBackgroundDynamicColorWhite  px-2">
+      <ion-grid>
+        <ion-row>
+          <ion-col [size]="'1'" class="text-center mt-1">
+            <ion-img [src]="imageList?.arrow" class="custKYCImg mt-2"></ion-img>
+          </ion-col>
+          <ion-col [size]="'11'" class=" ps-2">
+            <span class="custFontFamilyMuliBold muli-14pt custLineHight40 custColorDark ">
+              Set Auto Pay</span>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-toolbar>
+  </ion-header>
+
+
+
+  <ion-content class="contentBackground">
+    <ion-grid class="px-3">
+      <form [formGroup]="ionicForm">
+      <ion-img [src]="imageList?.bharatBillPay" class="img my-3"> </ion-img>&nbsp;
+
+
+
+      <ion-row class="mt-3">
+        <span class="custFontFamilyMuliBold  muli-16pt custLineHight40 custColorDark">Paying For</span>
+      </ion-row>
+      <ion-row class="w-100">
+        <ion-card class="w-100 custBackgroundDynamicColorWhite mx-0 ">
+          <ion-row class="py-2">
+            <ion-col [size]="'2'">
+              <ion-img [src]="imageList?.electricity" class="custI"></ion-img>
+            </ion-col>
+            <ion-col [size]="'10'">
+              <span class="custFontFamilyMuliBold muli-14pt custLineHight20 custColorDark">Vodafone-Idea</span>
+              <span
+                class="custFontFamilyMuliRegular d-block muli-12pt pt-1 custLineHight15 custColorGreyish">Postpaid
+                | Consumer Number -9810806463
+              </span>
+            </ion-col>
+          </ion-row>
+        </ion-card>
+      </ion-row>
+
+
+      <ion-row class="mt-2">
+        <span class="custFontFamilyMuliBold  muli-16pt custLineHight40 custColorDark">Paying From</span>
+      </ion-row>
+      <ion-row class="w-100">
+        <ion-card class="w-100 custBackgroundDynamicColorWhite mx-0 ">
+          <ion-row class="py-2">
+            <ion-col [size]="'2'">
+              <ion-img [src]="imageList?.electricity" class="custI"></ion-img>
+            </ion-col>
+            <ion-col [size]="'10'">
+              <span class="custFontFamilyMuliBold muli-14pt custLineHight20 custColorDark">NSDL payment Bank
+              </span>
+              <span class="custFontFamilyMuliRegular d-block muli-12pt pt-1 custLineHight15 custColorGreyish">Account
+                -9810806463
+              </span>
+            </ion-col>
+          </ion-row>
+        </ion-card>
+      </ion-row>
+
+
+      <ion-row class="mt-2">
+        <span class="custFontFamilyMuliBold  muli-16pt custLineHight40 custColorDark">Autopay Type</span>
+      </ion-row>
+
+      <ion-row>
+        <mat-radio-group [(ngModel)]="selectBill"  [ngModelOptions]="{standalone: true}">
+          <mat-radio-button value="0"
+            class="custFontFamilyMuliSemiBold  muli-16pt custLineHight40 custColorDark">
+            Entire Bill amount
+
+          </mat-radio-button>
+          <mat-radio-button value="1"
+            class="custFontFamilyMuliSemiBold  muli-16pt custLineHight40 custColorDark">
+            Don't allow more than
+
+          </mat-radio-button>
+
+        </mat-radio-group>
+      </ion-row>
+
+
+      <ion-row class="mt-2" *ngIf="selectBill== 1">
+        <mat-form-field appearance="outline" class="w-100"> 
+        <mat-label class="w-25">Enter Amount
+          
+        </mat-label>
+        <input  type="number" inputmode="numeric"  required  matInput class="custFontFamilyMuliRegular muli-16pt" formControlName="AmountType">
+        </mat-form-field>
+        </ion-row>
+
+
+      <ion-row class="mt-2">
+        <span class="custFontFamilyMuliSemiBold muli-10pt custLineHight16 custColorGreyish">
+          Your bill will be paid 2 days before the due date by debiting your NSDL Bank Payments Bank account.
+        </span>
+      </ion-row>
+      <ion-row class="">
+        <span class="custFontFamilyMuliSemiBold muli-10pt custLineHight16 custColorGreyish">
+          Please maintain sufficient balance. If your bill amount is more than the limit set by you then the bill will
+          not be paid.
+        </span>
+      </ion-row>
+
+
+    </form>
+    </ion-grid>
+
+
+
+
+    
+
+  
+
+
+
+
+
+    <ion-row class="fixed-bottom px-2">
+      <ion-col [size]="'12'">
+        <button (click)="goToAutopayAdded()" class="btn w-100 mt-2 text-center custBackgroundColorBrightCyan">
+          <span class="custColorWhite custFontFamilyMuliBold muli-16pt">Continue</span>
+        </button>
+      </ion-col>
+    </ion-row>
+
+  </ion-content>
+</ion-app>
+
+
+
+
+
+
+
+<div class="custModalContainer" *ngIf="declairation">
+  <div class="modal-content">
+
+    <ion-row>
+      <span class="custFontFamilyMuliBold muli-16pt custLineHight22 custColorBlack">
+        Auto Pay
+      </span>
+    </ion-row>
+
+    <ion-row class="my-2">
+      <span class="custFontFamilyMuliBold muli-14pt custLineHight22 custColorBlack">
+        Why is the auto pay feature?
+      </span>
+    </ion-row>
+
+    <ion-row>
+      <span class="custFontFamilyMuliSemiBold muli-12pt custLineHight22 custColorGreyish">
+        Auto Pay enables you to pay your bills automatically without missing the dur date.
+      </span>
+    </ion-row>
+
+    <ion-row class="my-2">
+      <span class="custFontFamilyMuliBold muli-14pt custLineHight22 custColorBlack">
+        How does Auto Pay work?
+      </span>
+    </ion-row>
+
+    <ion-row>
+      <span class="custFontFamilyMuliSemiBold muli-12pt custLineHight22 custColorGreyish">
+        Once you have setup an Auto Pay. Bank will fetch your bill details 2 days before the due date and pay the bill
+        from your NSDL Payments Bank account on or 2 days before due date.
+      </span>
+    </ion-row>
+
+
+    <ion-row class="my-2">
+      <span class="custFontFamilyMuliBold muli-14pt custLineHight22 custColorBlack">
+        Can I define an upper limit for payment?
+      </span>
+    </ion-row>
+
+    <ion-row>
+      <span class="custFontFamilyMuliSemiBold muli-12pt custLineHight22 custColorGreyish">
+        Yes, you can either choose to pay complete bill amount or set up a limit while opting for auto pay. In case you
+        have opted for limit, and bill amount is above the limit, then automatic bill payment shall not be done.
+      </span>
+    </ion-row>
+
+
+    <ion-row class="my-2">
+      <span class="custFontFamilyMuliBold muli-14pt custLineHight22 custColorBlack">
+        Will I get a confirmation when my bill is paid?
+      </span>
+    </ion-row>
+
+
+    <ion-row>
+      <span class="custFontFamilyMuliSemiBold muli-12pt custLineHight22 custColorGreyish">
+        Yes, SMS confirmation will be sent to you after successful bill payment.
+      </span>
+    </ion-row>
+
+    <ion-row class="my-2">
+      <span class="custFontFamilyMuliBold muli-14pt custLineHight22 custColorBlack">
+        Will there be any extra fee for using Auto Pay?
+      </span>
+    </ion-row>
+
+
+    <ion-row>
+      <span class="custFontFamilyMuliSemiBold muli-12pt custLineHight22 custColorGreyish">
+        No, there will not be any extra fee for using Auto Pay.
+      </span>
+    </ion-row>
+
+    <ion-row class="my-2">
+      <span class="custFontFamilyMuliBold muli-14pt custLineHight22 custColorBlack">
+        Can I disable/ modify Auto Pay?
+      </span>
+    </ion-row>
+
+
+    <ion-row>
+      <span class="custFontFamilyMuliSemiBold muli-12pt custLineHight22 custColorGreyish">
+        Yes , you can go to 'Reacharge & Bill Pay' section and click on 'Add Favourite' Button.
+      </span>
+    </ion-row>
+
+
+
+    
+      <ion-row class="px-2 w-100">
+        <ion-col [size]="'12'">
+          <button class="btn w-100 text-center custButtonOutLine custBtnExplore" (click)="cancel()">
+            <span class=" custColorBrightCyan custColorWhite custFontFamilyMuliBold muli-16pt">Cancel</span>
+          </button>
+        </ion-col>
+      </ion-row>
+      <ion-row class="px-2 w-100 custmargin">
+        <ion-col [size]="'12'">
+          <button (click)="hide()" class="btn w-100 text-center custBackgroundColorBrightCyan"><span
+              class="custColorWhite custFontFamilyMuliBold muli-16pt">Continue</span></button>
+        </ion-col>
+      </ion-row>
+
+
+
+  </div>
+</div>

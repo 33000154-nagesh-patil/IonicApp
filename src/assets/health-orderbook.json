@@ -1,0 +1,57 @@
+{
+  "productName":"Health",
+  "name":"Fasting blood Sugar",
+  "segments":[
+      {
+          "name":"Quantity",
+          "value":"units",
+          "unit":"number"
+      },
+      {
+          "name":"Price",
+          "value":"amount",
+          "unit":"₹"
+      }
+  ],
+  "pricePerUnit":"120",
+  "taxes":[
+      {"type":"CGST","taxPercentage":"1.5"},
+      {"type":"SGST","taxPercentage":"1.5"},
+      {"type":"IGST","taxPercentage":"3.0"}
+  ],
+
+  "objectContent":[
+    {
+    "contentType":"mat-accordian",
+    "Title":"Patient Detail",
+    "detail": [
+      {
+          "firstname": "Sonali",
+          "middleName": "",
+          "lastname": "patil",
+          "age": 30,
+          "gender": "female",
+          "relation": "Sister",
+          "tokenid": "1"
+      }
+  ]
+},
+{
+  "contentType":"mat-accordian",
+  "Title":"Patient Address",
+  "address": [
+    {
+        "addressLine1": "Mumbai",
+        "addressLine2": "",
+        "addressLine3": "",
+        "pincode": "123",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "country": "India",
+        "otherdetails": "{Mob_no=35274935, Address_type=Office}",
+        "tokenid": "1"
+    }
+]
+}
+]
+}

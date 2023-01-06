@@ -1,0 +1,46 @@
+{
+    "controls": [
+      {
+        "name": "operator",
+        "label": "Operator name",
+        "value": "",
+        "type": "select",
+        "options":[
+          "Vodafone-IDEA","Airtel","JIO","BSNL"
+        ],
+        "validators": {
+          "required": true
+        }
+      },
+      {
+        "name": "state",
+        "label": "Select State",
+        "value": "",
+        "type": "select",
+        "options":[
+          "Maharashtra","Uttar-pradesh","Jharkhand","Goa"
+        ],
+        "validators": {
+          "required": true
+        }
+      },
+      {
+        "name": "moNumber",
+        "label": "Mobile number",
+        "value": "",
+        "type": "number",
+        "validators": {
+          "required": true
+          
+        }
+      },
+      {
+        "name": "nickname",
+        "label": "Nick Name",
+        "value": "",
+        "type": "text",
+        "validators": {}
+      }
+      
+    ]
+  }

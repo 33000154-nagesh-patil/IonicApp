@@ -1,0 +1,264 @@
+{
+
+ "category" : [
+    {
+        "icons": "assets/icon/prepaid.svg",
+        "tagName":"Prepaid Mobile"
+    },
+    {
+        "icons": "assets/icon/postpaid.svg",
+        "tagName":"Postpaid Mobile"
+
+    },
+    {
+        "icons": "assets/icon/DTH.svg",
+        "tagName":"DTH"
+
+    },
+    {
+        "icons": "assets/icon/electricity.svg",
+        "tagName":"Electricity"
+
+    },
+    {
+        "icons": "assets/icon/pipedGas.svg",
+        "tagName":"Piped Gas"
+
+    },
+
+    {
+        "icons": "assets/icon/landline.svg",
+        "tagName":"Landline"
+
+    },
+    {
+        "icons": "assets/icon/water.svg",
+        "tagName":"Water"
+
+    },
+    {
+        "icons": "assets/icon/datacard.svg",
+        "tagName":"Datacard"
+
+    },
+    {
+        "icons": "assets/icon/broadband.svg",
+        "tagName":"Broadband"
+
+    },
+    {
+        "icons": "assets/icon/cylinder.svg",
+        "tagName":"Book a Cylinder"
+
+    },
+    {
+        "icons": "assets/icon/loanRepayment.svg",
+        "tagName":"Loan Repayment"
+
+    },
+    {
+        "icons": "assets/icon/insurance.svg",
+        "tagName":"Insurance"
+
+
+    },
+    {
+        "icons": "assets/icon/fasttag.svg",
+        "tagName":"Fastag"
+
+    },
+    {
+        "icons": "assets/icon/stampDuty.svg",
+        "tagName":"Stamp Duty"
+
+    },
+    {
+        "icons": "assets/icon/education-fees.svg",
+        "tagName":"Education Fees"
+
+    },
+    {
+        "icons": "assets/icon/cable.svg",
+        "tagName":"Cable TV"
+
+    },
+    {
+        "icons": "assets/icon/muncipalTaxes.svg",
+        "tagName":"Municipal Taxes"
+
+    },
+    {
+        "icons": "assets/icon/housingSocieties.svg",
+        "tagName":"Housing Societies"
+
+    },
+    {
+        "icons": "assets/icon/creditCard.svg",
+        "tagName":"Credit Card"
+
+    },
+    {
+        "icons": "assets/icon/clubsAndAssociation.svg",
+        "tagName":"Clubs and Associations"
+
+    },
+    {
+        "icons": "assets/icon/healthInsurance.svg",
+        "tagName":"Health Insurance"
+
+    },
+    {
+        "icons": "assets/icon/hospital&pathalogy.svg",
+        "tagName":"Hospital and Pathology"
+
+    },
+    {
+        "icons": "assets/icon/MunicipalService.svg",
+        "tagName":"Municipal Services"
+
+    },
+    {
+        "icons": "assets/icon/subscription.svg",
+        "tagName":"Subscription"
+
+    }
+
+ ],
+
+ "Welcome": [
+
+    {
+      "img1":"assets/icon/successIcon.svg",
+      "sim":"Idea",
+      "state":"Maharashtra",
+      "num":8445877900,
+      "num2":7643977498,
+      "view":"View Plan:-499",
+      "explore":"Explore Plan"
+    },
+    {
+      "img1":"assets/icon/successIcon.svg",
+      "sim":"Idea",
+      "state":"Uttrakhand",
+      "num":8445877901,
+      "num2":7643977498,
+      "view":"View Plan:-399",
+      "explore":"Explore plan"
+    }
+  ],
+
+  "Recommended" :[
+    {
+      "title1": "Plan",
+      "duration": "Validity",
+      "title2": "Talk Time",
+      "rate":" 496",
+      "days": " 28 days",
+      "limit":"Unlimited"
+
+    },
+    {
+      "title1": "Plan",
+      "duration": "Validity",
+      "title2": "Talk Time",
+      "rate":" 4000000",
+      "days": " 28 days",
+      "limit":"Unlimited"
+
+    },
+    {
+      "title1": "Plan",
+      "duration": "Validity",
+      "title2": "Talk Time",
+      "rate":" 496",
+      "days": " 28 days",
+      "limit":"Unlimited"
+
+    }, {
+      "title1": "Plan",
+      "duration": "Validity",
+      "title2": "Talk Time",
+      "rate":" 496",
+      "days": " 28 days",
+      "limit":"Unlimited"
+
+    }
+    ],
+
+
+    "Special" :[
+      {
+        "title1": "Plan",
+        "duration": "Validity",
+        "title2": "Talk Time",
+        "rate":" 496",
+        "days": " 28 days",
+        "limit":"Unlimited"
+
+      },
+      {
+        "title1": "Plan",
+        "duration": "Validity",
+        "title2": "Talk Time",
+        "rate":" 496",
+        "days": " 28 days",
+        "limit":"Unlimited"
+
+      },
+      {
+        "title1": "Plan",
+        "duration": "Validity",
+        "title2": "Talk Time",
+        "rate":" 496",
+        "days": " 28 days",
+        "limit":"Unlimited"
+
+      },        {
+        "title1": "Plan",
+        "duration": "Validity",
+        "title2": "Talk Time",
+        "rate":" 496",
+        "days": " 28 days",
+        "limit":"Unlimited"
+
+      }],
+      "International" :[
+        {
+          "title1": "Plan",
+          "duration": "Validity",
+          "title2": "Talk Time",
+          "rate":" 496",
+          "days": " 28 days",
+          "limit":"Unlimited"
+
+        },
+        {
+          "title1": "Plan",
+          "duration": "Validity",
+          "title2": "Talk Time",
+          "rate":" 496",
+          "days": " 28 days",
+          "limit":"Unlimited"
+
+        },
+        {
+          "title1": "Plan",
+          "duration": "Validity",
+          "title2": "Talk Time",
+          "rate":" 496",
+          "days": " 28 days",
+          "limit":"Unlimited"
+
+        },        {
+          "title1": "Plan",
+          "duration": "Validity",
+          "title2": "Talk Time",
+          "rate":"496",
+          "days":"28 days",
+          "limit":"Unlimited"
+
+        }]
+
+
+
+}

@@ -1,0 +1,378 @@
+{
+    "profile": {
+        "CustGuId": "",
+        "IdentityGuId": "",
+        "CustomerId": "",
+        "SocialClientId": "",
+        "SalutationGuId": "",
+        "FirstName": "",
+        "MiddleName": "",
+        "LastName": "",
+        "Gender": "",
+        "DateOfBirth": "",
+        "EmailId": "",
+        "MobileNo": "",
+        "CurrencyGuId": "",
+        "Language": "",
+        "SourceGuId": "",
+        "ExpiryDate": "",
+        "CreatedBy": "",
+        "CreatedOnDate": "",
+        "IsActive": "",
+        "AnnualIncome": "",
+        "MaritalStatus": "",
+        "IsIndianResident": "",
+        "ResidentialDetails": {
+            "HomeOwnership": "",
+            "OfficePhoneNumber": "",
+            "OfficeAddress": ""
+        },
+        "VehicleDetails": {
+            "VehicleType": "",
+            "CarBrand": "",
+            "CarModel": "",
+            "ModelVariant": ""
+        },
+        "BusinessDetails": {
+            "CompanyName": "",
+            "CompanyPAN": "",
+            "CompanyWebSite": "",
+            "OfficeEmailAddress": "",
+            "OfficePhoneNumber": "",
+            "OfficePinCode": "",
+            "OfficeAddress": ""
+        },
+        "FamilyDetails": {
+            "FamilyMembers": [
+                {
+                    "Name": "",
+                    "Gender": "",
+                    "RelationShip": "",
+                    "AnnualIncome": "",
+                    "MobileNumber": "",
+                    "EmailId": ""
+                }
+            ]
+        },
+        "PanCard": {
+            "PanCardNumber": "",
+            "PanCardImg": ""
+        },
+        "AdharaCard": {
+            "AdharaCardNumber": "",
+            "AdharaCardImg": ""
+        },
+        "BankDetails": {
+            "BankName": "",
+            "AccountType": "",
+            "AccountNumber": "",
+            "RetireMentAge": ""
+        },
+        "MutualFunds": {
+            "IsKYCComplete": "0",
+            "IsPanCard": "0",
+            "IsAdharaCard": "0",
+            "IsBankDetails": "0"
+        },
+        "Stocks": {
+            "IsKYCComplete": "0",
+            "IsPanCard": "0",
+            "IsAdharaCard": "0",
+            "IsBankDetails": "0"
+        },
+        "UsStocks": {
+            "IsKYCComplete": "0",
+            "IsPanCard": "0",
+            "IsAdharaCard": "0",
+            "IsBankDetails": "0"
+        },
+        "Baskets": {
+            "IsKYCComplete": "0",
+            "IsPanCard": "0",
+            "IsAdharaCard": "0",
+            "IsBankDetails": "0"
+        },
+        "Gold": {
+            "IsKYCComplete": "0",
+            "IsPanCard": "0",
+            "IsAdharaCard": "0",
+            "IsBankDetails": "0"
+        },
+        "FixedDeposits": {
+            "IsKYCComplete": "0",
+            "IsPanCard": "0",
+            "IsAdharaCard": "0",
+            "IsBankDetails": "0"
+        },
+        "Bonds": {
+            "IsKYCComplete": "0",
+            "IsPanCard": "0",
+            "IsAdharaCard": "0",
+            "IsBankDetails": "0"
+        }
+    },
+    "exploreFund": {
+        "ErrorCode": 0,
+        "Message": "Success",
+        "MessageType": "I",
+        "Status": 1,
+        "Result": [
+            {
+                "Id": "1",
+                "Logo": "assets/dummyMokeIcon/group_14256.png",
+                "Title": "ICICI Prudential Focused Bluechip Equity Fund",
+                "Props": {
+                    "IsWatchList": "1",
+                    "MinInvestment": "500",
+                    "CategoryReturn": "51.20",
+                    "schemeReturn": "22.20",
+                    "Return_1Y": "22.62",
+                    "Return_3M": "22.62",
+                    "Return_6M": "22.62",
+                    "Return_1D": "22.62",
+                    "Return": "22.62"
+                }
+            },
+            {
+                "id": "2",
+                "Logo": "assets/dummyMokeIcon/Franklin-Templeton.png",
+                "Title": "Franklin India Multi Asset Solution Fund Direct Growth",
+                "Props": {
+                    "IsWatchList": "0",
+                    "MinInvestment": "500",
+                    "CategoryReturn": "51.20",
+                    "schemeReturn": "22.20",
+                    "Return_1Y": "22.62",
+                    "Return_3M": "22.62",
+                    "Return_6M": "22.62",
+                    "Return_1D": "22.62",
+                    "Return": "22.62"
+                }
+            },
+            {
+                "id": "3",
+                "Logo": "assets/dummyMokeIcon/Axis-Bank-Recruitment.png",
+                "Title": "Axis Long Term Equity Fund",
+                "Props": {
+                    "IsWatchList": "1",
+                    "MinInvestment": "500",
+                    "CategoryReturn": "51.20",
+                    "schemeReturn": "22.20",
+                    "Return_1Y": "22.62",
+                    "Return_3M": "22.62",
+                    "Return_6M": "22.62",
+                    "Return_1D": "22.62",
+                    "Return": "22.62"
+                }
+            },
+            {
+                "id": "4",
+                "Logo": "assets/dummyMokeIcon/group_14256.png",
+                "Title": "ICICI Prudential Focused Bluechip Equity Fund",
+                "Props": {
+                    "IsWatchList": "0",
+                    "MinInvestment": "500",
+                    "CategoryReturn": "51.20",
+                    "schemeReturn": "22.20",
+                    "Return_1Y": "22.62",
+                    "Return_3M": "22.62",
+                    "Return_6M": "22.62",
+                    "Return_1D": "22.62",
+                    "Return": "22.62"
+                }
+            }
+        ]
+    },
+    "wealthRoboAdvisory": {
+        "yourIncome": "95625360",
+        "yourExpenses": "956253",
+        "yourAssets": "625360",
+        "yourLiabilities": "95625",
+        "goalsAchievable": "4/4",
+        "yourSurplus": "95625360",
+        "yourNetworth": "625360",
+        "yourCreditScore": "742"
+    },
+    "planningTrack": {
+        "amountInvested": "95625360",
+        "bouquetValue": "0.00",
+        "startDate": "Tue Nov 23 2021 16:34:34 GMT+0530 (India Standard Time)",
+        "endDate": "Tue Nov 23 2021 16:34:34 GMT+0530 (India Standard Time)",
+        "totalCorpus": "625360",
+        "trackModal": [
+            {
+                "name": "Fixed Income",
+                "amount": "250000",
+                "percentage": "18%"
+            },
+            {
+                "name": "Equities",
+                "amount": "305160",
+                "percentage": "22%"
+            },
+            {
+                "name": "Other | Alternative",
+                "amount": "28000",
+                "percentage": "2%"
+            },
+            {
+                "name": "Money Market Instrument",
+                "amount": "76848",
+                "percentage": "6%"
+            },
+            {
+                "name": "Cash",
+                "amount": "700000",
+                "percentage": "51%"
+            }
+        ]
+    },
+    "planningTransact": {
+        "total": "1360008",
+        "percentage": "100",
+        "proposedMonthlyInvestments": "5876253",
+        "existingInvestments": "1320558",
+        "yourRiskAppetite": "Moderately Aggressive (Medium Term)",
+        "labels": [
+            "Fixed Income",
+            "Equities",
+            "Other | Alternative",
+            "Money Market Instrument",
+            "Cash"
+        ],
+        "data": [
+            250000,
+            305160,
+            28000,
+            76848,
+            700000
+        ]
+    },
+    "digiGold": [
+        {
+            "id": "1",
+            "Logo": "assets/dummyMokeIcon/group_15133.jpg",
+            "Title": "Digital Gold",
+            "Type": "Gold",
+            "Price": [
+                {
+                    "Buy": "4948.02",
+                    "BuyGst": "148.44",
+                    "Sell": "4786.55",
+                    "Return": "11",
+                    "Date": "Tue Dec 21 2021 12:01:32 GMT+0530",
+                    "MinAmount": "1"
+                }
+            ],
+            "Props": {
+                "JewelleryType": "coin",
+                "ProductWeight": "1.00",
+                "Purity": "999.00",
+                "typeK": "24K",
+                "Taxes": [
+                    {
+                        "taxPerc": "1.50",
+                        "type": "CGSST"
+                    },
+                    {
+                        "taxPerc": "1.50",
+                        "type": "SGSST"
+                    }
+                ]
+            },
+            "array1": [
+                "FAAA",
+                "99.90% Purity"
+            ]
+        },
+        {
+            "id": "2",
+            "Logo": "assets/dummyMokeIcon/group_15220.jpg",
+            "Title": "Digital Silver",
+            "Type": "Silver",
+            "Price": {
+                "Buy": "61",
+                "BuyGst": "3",
+                "Sell": "64"
+            },
+            "Props": {
+                "JewelleryType": "coin",
+                "ProductWeight": "1.00",
+                "Purity": "999.00"
+            }
+        }
+    ],
+    "orderList": {
+        "Result": [
+            {
+                "id": "1",
+                "Logo": "assets/dummyMokeIcon/group_15133.jpg",
+                "Title": "Digital Gold",
+                "Type": "Gold",
+                "Price": {
+                    "Buy": "61",
+                    "BuyGst": "3",
+                    "Sell": "64"
+                },
+                "Props": {
+                    "JewelleryType": "coin",
+                    "ProductWeight": "1.00",
+                    "Purity": "999.00"
+                }
+            },
+            {
+                "id": "2",
+                "Logo": "assets/dummyMokeIcon/group_15133.jpg",
+                "Title": "Digital Gold",
+                "Type": "Gold",
+                "Price": {
+                    "Buy": "61",
+                    "BuyGst": "3",
+                    "Sell": "64"
+                },
+                "Props": {
+                    "JewelleryType": "coin",
+                    "ProductWeight": "1.00",
+                    "Purity": "999.00"
+                }
+            }
+        ]
+    },
+    "healthCategory": [
+        {
+            "Logo": "assets/dummyMokeIcon/mask_group_10.png",
+            "Title": "Lab tests & checkups"
+        },
+        {
+            "Logo": "assets/dummyMokeIcon/mask_group_34.png",
+            "Title": "Medicines & Essentials"
+        }
+    ],
+    "goldUserData": {
+        "Title": "Augmont Digital Gold",
+        "InvestmentAmount": "4000",
+        "TotalProductWeight": "20",
+        "KaratType": "24K",
+        "Purity": "99.90",
+        "TransactionList": [
+            {
+                "TransactionID": "1",
+                "TransactionType": "Sold",
+                "Date": "Thu Dec 23 2021 14:34:56 GMT+0530",
+                "ProductWeight": "1",
+                "ProductAmount": "100",
+                "CurrentGoldPrice": "4000",
+                "TransactionAmount": "80"
+            },
+            {
+                "TransactionID": "2",
+                "TransactionType": "Invested",
+                "Date": "Thu Dec 23 2021 14:34:56 GMT+0530",
+                "ProductWeight": "1",
+                "ProductAmount": "100",
+                "CurrentGoldPrice": "4000",
+                "TransactionAmount": "80"
+            }
+        ]
+    }
+}

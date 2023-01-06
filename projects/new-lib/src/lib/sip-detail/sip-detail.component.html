@@ -1,0 +1,114 @@
+<ion-header class="custHead fixed-top">
+  <ion-toolbar class="custBackgroundDynamicColorWhite">
+    <ion-grid>
+      <ion-row>
+        <ion-col [size]="'1'" class="text-center mt-1">
+          <ion-img [src]="imageList?.arrow" class="backArrow " (click)="onCancelSIP()"></ion-img>
+        </ion-col>
+        <ion-col [size]="'11'">
+          <span
+            class="custFontFamilyMuliBold muli-16pt custLineHight40 custColorDark"
+            >{{'sipDetail' | translate}}</span
+          >
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-row class="pt-5 mt-4 ms-2">
+  <span class="custFontFamilyMuliRegular muli-12pt  custColorDark custLineHight18">SIP ID:,<span class="custFontFamilyMuliBold muli-12pt  custColorDark custLineHight18">234691273518</span></span>
+
+  <!-- <span class="custFontFamilyMuliRegular muli-12pt  custColorDark custLineHight18">{{'sipId' | translate}}</span> -->
+  </ion-row>
+  <ion-card class="mt-2">
+    <ion-card-content>
+      <ion-row>
+      <ion-col [size]="'9'">
+        <span class="custFontFamilyMuliRegular muli-14pt custLineHight20 custColorDark">{{SIPDetailData?.Funds_title}}</span>
+      </ion-col>
+      <ion-col [size]="'3'" class="text-end">
+        <span class="custFontFamilyMuliITF-Rupee custFontFamilyRobotoCondensed muli-14pt custLineHight18 custColorDark">₹{{SIPDetailData?.minInvest}}</span>
+      </ion-col>
+    </ion-row>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-content>
+      <ion-grid>
+        <ion-row>
+          <ion-col [size]="'2'" class="text-start mt-1">
+            <ion-img [src]="imageList?.iciciLogo" class="custiciciicon"></ion-img>
+          </ion-col>
+          <ion-col [size]="'7'" class="text-start">
+            <ion-row>
+            <span class="custFontFamilyMuliBold muli-13pt custLineHight19 custColorDark">{{'iciciBank' | translate}}</span>
+            <span class="custFontFamilyMuliRegular muli-12pt custLineHight18 custColorTint">{{'iciciAc' | translate}}</span>
+            <span class="custFontFamilyMuliRegular  muli-10pt custLineHight15 custColorWarmGrey">{{'autopayId' | translate}}</span>
+          </ion-row>
+          </ion-col>
+          <ion-col [size]="'3'" class="text-end mt-1">
+            <span class="custFontFamilyMuliRegular muli-10pt custLineHeight13 custColorParakeetGreen">{{'Approved' | translate}}</span>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
+
+  <span class="custFontFamilyMuliBold muli-12pt custLineHeight20 custColorBattlePGry ms-2">{{'sipJourney' | translate}}</span>
+<div *ngFor="let x of SIPJourney">
+<ion-row >
+  <ion-col [size]="'4'" class=" text-end">
+    <span class="custFontFamilyMuliRegular muli-10pt custColorWarmGrey custLineHight15">{{x.Date}}</span>
+  </ion-col>
+  <ion-col [size]="'1'" class="">
+    
+    <ion-img [src]="imageList?.process1" *ngIf="x.Status==='Paid'" class="custLogo1 pb-n2 pt-1"></ion-img>
+    <ion-img [src]="imageList?.process2" *ngIf="x.Status==='NextDue'" class="custLogo1 pb-n2 pt-1"></ion-img>
+    <ion-img [src]="imageList?.dottedLine" class="custLog ms-1 pb-n3 " *ngIf="x!=message[message.length-1]"></ion-img>
+  </ion-col>
+  
+  <ion-col [size]="'7'" >
+    <span class="custFontFamilyMuliBold muli-12pt custColorTint custLineHight18">{{x.Status}}</span>&nbsp;
+    <span class="custFontFamilyMuliRegular muli-10pt custColorWarmGrey custLineHight15">{{x.Investment}} instalment</span>
+  </ion-col>    
+</ion-row>
+</div>
+<!-- <div class="one ws-5"></div> -->
+
+<ion-row class="fixed-bottom">
+    <ion-col [size]="'12'" class="pb-3 " (click)="EditSIPData()">
+      <button class="btn custButtonOutLine w-100 text-center custColorBrightCyan" id="submitPan"><span class="custColorBrightCyan text-capitalize custFontFamilyMuliBold muli-16pt">Edit SIP</span></button>
+    </ion-col>
+    <ion-col [size]="'12'" class="pb-3">
+      <button class="btn w-100 text-center custBackgroundColorBrightCyan" (click)="onSubmit()" id="submitPan"><span class="custColorWhite custFontFamilyMuliBold text-capitalize muli-16pt">{{'investMore' | translate}}</span></button>
+    </ion-col>
+  </ion-row> 
+</ion-content>
+
+<!-- <div class="custModalContainer p-10" *ngIf="CancelPopUp" >
+  <div  id="showModalSMGSucces" class="modal-content custCenterAlign">
+    <ion-row>
+      <ion-col class="text-center">
+        <img [src]="x.Banner[0].img16" class="manImg">
+      </ion-col>
+    </ion-row>
+  
+    <ion-row>
+      <ion-col class="text-center d-flex flex-column">
+        <span class="custFontFamilyMuliBold muli-16pt custLineHeight22 custColorDark">"{{x.Banner[1].thebiggestrisk}}"</span>
+        <span class="custFontFamilyMuliRegular muli-12pt custLineHeight12 mt-2">{{x.Banner[1].warrenbuffet}}</span>
+        <span class="custFontFamilyMuliRegular muli-12pt custLineHeight12 mt-4 mx-5">{{x.Banner[1].upsanddowns}}</span>
+      </ion-col>
+    </ion-row>
+  
+    <ion-row class="mt-3 w-100">
+      <ion-col [size]="'12'" >
+        <button class="btn custButtonOutLine w-100 text-center custColorBrightCyan"><span class="custColorBrightCyan text-capitalize  custFontFamilyMuliBold muli-16pt">Edit SIP</span></button>
+      </ion-col>
+      <ion-col [size]="'12'"  (click)="NotCancel()">
+        <button class="btn w-100 text-center custBackgroundColorBrightCyan"><span class="custColorWhite custFontFamilyMuliBold text-capitalize muli-16pt">{{x.Banner[1].dontcancel}}</span></button>
+      </ion-col>
+    </ion-row>
+  </div>
+</div> -->

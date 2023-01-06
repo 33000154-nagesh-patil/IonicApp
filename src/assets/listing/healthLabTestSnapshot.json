@@ -1,0 +1,152 @@
+{
+	"": {
+		"title": "Explore Packages",
+		"card": [
+			{
+				"row1": {
+					"icon": "assets/Images/Thyrocare.png",
+					"title": "Fasting Blood Sugar",
+					"description": "By Thyrocare Ltd. Pathology Test",
+					"action": "assets/icon/leftArrowIcon.svg",
+					"selectWatchList": false
+				},
+				"row2": {
+					"No. of Tests": 1,
+					"E-reports Within": "24 to 30 hours",
+					"Price": "₹1000"
+				}
+			},
+			{
+				"row1": {
+					"icon": "assets/Images/Thyrocare.png",
+					"title": "Fasting Blood Sugar",
+					"description": "By Thyrocare Ltd. Pathology Test",
+					"action": "assets/icon/leftArrowIcon.svg",
+					"selectWatchList": false
+				},
+				"row2": {
+					"No. of Tests": 1,
+					"E-reports Within": "24 to 30 hours",
+					"Price": "₹1000"
+				}
+			},
+			{
+				"row1": {
+					"icon": "assets/Images/Thyrocare.png",
+					"title": "Fasting Blood Sugar",
+					"description": "By Thyrocare Ltd. Pathology Test",
+					"action": "assets/icon/leftArrowIcon.svg",
+					"selectWatchList": false
+				},
+				"row2": {
+					"No. of Tests": 1,
+					"E-reports Within": "24 to 30 hours",
+					"Price": "₹1000"
+				}
+			},
+			{
+				"row1": {
+					"icon": "assets/Images/Thyrocare.png",
+					"title": "Fasting Blood Sugar",
+					"description": "By Thyrocare Ltd. Pathology Test",
+					"action": "assets/icon/leftArrowIcon.svg",
+					"selectWatchList": false
+				},
+				"row2": {
+					"No. of Tests": 1,
+					"E-reports Within": "24 to 30 hours",
+					"Price": "₹1000"
+				}
+			}
+		]
+	},
+	"snapShot": {
+		"heading": [
+			{
+				"heading": "Explore",
+				"box": true,
+				"discription": "Discover all Lab test"
+			}
+		],
+		"pickupAndfilter": [
+			{
+				"pickUpIcon": "assets/health-page-logos/Icon material-location-on.svg",
+				"pickUpTitle": "Pickup from"
+			},
+			{
+				"filterIcon": "assets/icon/filterIcon.svg",
+				"filterTitle": "Filter"
+			}
+		],
+		"card": [
+			{
+				"title": "Explore Packages",
+				"cardList": [
+					{
+						"row1": {
+							"icon": "assets/Images/Thyrocare.png",
+							"title": "Fasting Blood Sugar",
+							"description": "By Thyrocare Ltd. Pathology Test",
+							"action": "assets/icon/leftArrowIcon.svg",
+							"selectWatchList": false
+						},
+						"row2": {
+							"No. of Tests": 1,
+							"E-reports Within": "24 to 30 hours",
+							"Price": "₹1000"
+						}
+					},
+					{
+						"row1": {
+							"icon": "assets/Images/Thyrocare.png",
+							"title": "Fasting Blood Sugar",
+							"description": "By Thyrocare Ltd. Pathology Test",
+							"action": "assets/icon/leftArrowIcon.svg",
+							"selectWatchList": false
+						},
+						"row2": {
+							"No. of Tests": 1,
+							"E-reports Within": "24 to 30 hours",
+							"Price": "₹1000"
+						}
+					}
+				],
+				"cta": "Explore"
+			},
+			{
+				"title": "Explore Tests",
+				"cardList": [
+					{
+						"row1": {
+							"icon": "assets/Images/Thyrocare.png",
+							"title": "Fasting Blood Sugar",
+							"description": "By Thyrocare Ltd. Pathology Test",
+							"action": "assets/icon/leftArrowIcon.svg",
+							"selectWatchList": false
+						},
+						"row2": {
+							"No. of Tests": 1,
+							"E-reports Within": "24 to 30 hours",
+							"Price": "₹1000"
+						}
+					},
+					{
+						"row1": {
+							"icon": "assets/Images/Thyrocare.png",
+							"title": "Fasting Blood Sugar",
+							"description": "By Thyrocare Ltd. Pathology Test",
+							"action": "assets/icon/leftArrowIcon.svg",
+							"selectWatchList": false
+						},
+						"row2": {
+							"No. of Tests": 1,
+							"E-reports Within": "24 to 30 hours",
+							"Price": "₹1000"
+						}
+					}
+				],
+				"cta": "Explore"
+			}
+		]
+	}
+}

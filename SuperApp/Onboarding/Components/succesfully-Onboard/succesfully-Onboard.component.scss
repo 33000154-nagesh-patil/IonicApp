@@ -1,0 +1,110 @@
+.custImgSucc{
+    height: 47px;
+    width: 47px;
+}
+
+.custPadding{
+    padding: 15px;
+}
+
+
+.StepProgress {
+    position: relative;
+    padding-left: 45px;
+    list-style: none;
+    
+    &::before {
+      display: inline-block;
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 15px;
+      width: 30px;
+      height: 100%;
+      border-left: 2px dashed var(--custWhite);
+    }
+    
+    &-item {
+      position: relative;
+      counter-increment: list;
+      
+      &:not(:last-child) {
+        padding-bottom: 20px;
+      }
+      
+      &::before {
+        display: inline-block;
+        content: '';
+        position: absolute;
+        left: -30px;
+        height: 100%;
+        width: 10px;
+      }
+      
+      &::after {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: -40px;
+        width: 12px;
+        height: 12px;
+        border: 2px solid var(--custWhite);
+        border-radius: 50%;
+        background-color: var(--custWhite);
+      }
+      
+      &.is-done {
+        &::before {
+          border-left: 2px dashed var(--CustLightGreen);
+          margin-top: 5px;
+        }
+        &::after {
+          content: "🗸";
+          font-size: 12px;
+          color: var(--custWhite);
+          width:20px;
+          height:20px;
+          text-align: center;
+          border: 2px solid var(--CustLightGreen);
+          background-color: var(--CustLightGreen);
+        }
+      }
+      
+      &.current {
+        &::before {
+          border-left: 2px dashed  var(--custBattlePGry);
+          margin-top: 5px;
+        }
+        
+        &::after {
+          content: "";
+          padding-top: 1px;
+           width:20px;
+           height:20px;
+          top: -4px;
+          left: -39px;
+          font-size: 14px;
+          text-align: center;
+          color: var(--CustLightGreen);
+          border: 2px solid var(--custBattlePGry);
+          background-color: var(--custWhite);
+        }
+      }
+    }
+    
+    strong {
+      display: block;
+    }
+  
+
+  }
+
+  .stepper_padding{
+    padding-bottom: 2em;
+  }
+  .custCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

@@ -1,0 +1,25 @@
+<ion-grid>
+
+
+
+      <ion-card>
+        <ion-card-content>
+          <ion-row >
+            <ion-col class="text-center" ><img [src]="data?.image" class="custSizeImg"/></ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col class="text-center" [size]="'12'"><span class="custColorDark custFontFamilyMuliBold muli-16pt mt-2">{{data?.title}}</span></ion-col>
+            <ion-col class="text-center" [size]="'12'"><span class="custColorDark custFontFamilyMuliBold muli-16pt mt-2">{{data?.subTitle}}</span></ion-col>
+
+          </ion-row>
+          <ion-row>
+            <ion-col class="text-center "><button class="custBackgroundColorBrightCyan muli-14pt custFontFamilyMuliRegular custColorWhite p-2 mt-3 rounded-2 custCenter">{{data?.action}}</button></ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+
+
+
+
+
+      </ion-grid>

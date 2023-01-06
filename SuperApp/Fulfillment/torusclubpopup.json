@@ -1,0 +1,43 @@
+{
+    "landing":
+      {
+        "giftpop":"/assets/icon/fataka.svg",
+        "title":"Congrats! You won",
+        "icon":"/assets/icon/torusT.svg",
+        "prize":"2,300 coins",
+        "subtitle": "Win exciting rewards",
+        "subtitles": "Stand a chance to win coin, cashback, vouchers or gift.",
+        "scrollingCard": [
+          {
+            "title":"/assets/icon/curefitIcon.svg",
+            "subtitle":"Win Cultpass Live free subscription for 6 months",
+            "icon":"/assets/icon/curefitDesIcon.svg",
+            "arrow":"/assets/icon/arrow1.svg"
+          },
+          {
+            "title":"/assets/icon/lakmeIcon.svg",
+            "subtitle":"Win discount voucher upto 40% off",
+            "icon":"/assets/icon/lakmeDesIcon.svg",
+            "arrow":"/assets/icon/arrow1.svg"
+          },
+          {
+            "title":"",
+            "subtitle":"Earn up to",
+            "icon":"/assets/icon/threeGreenNotesIcon.svg",
+            "arrow":"/assets/icon/arrow1.svg"
+          }
+        ],
+        "card": [
+          {
+            "title":"/assets/icon/cromaIcon.svg",
+            "subtitle":"Win an air conditioner worth",
+            "prize":"38,000",
+            "icon":"/assets/icon/cromaDesIcon.svg",
+            "btn":"Claim Now"
+          }
+        ],
+        "closeBtn":"Close",
+        "torusBtn":"Go To Torus Club"
+      }
+  }
+  

@@ -1,0 +1,18 @@
+[
+    {
+        "id": "1",
+        "Logo": "assets/dummyMokeIcon/group_15133.jpg",
+        "Title": "Augmont Digital Gold",
+        "Type": "Gold",
+        "Price": [
+            {
+                "WeightoFGold": "2.0000",
+                "BuyAmount": "10538.74",
+                "Gst": "316.16",
+                "GrandTotal": "10854.90"
+            
+            }
+         ]
+        }
+        
+]

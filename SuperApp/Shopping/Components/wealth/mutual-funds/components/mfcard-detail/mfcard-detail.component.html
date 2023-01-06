@@ -1,0 +1,828 @@
+<ion-app>
+  <ion-header>
+    <ion-toolbar class="custBackgroundDynamicColorWhite">
+      <ion-grid>
+        <ion-row>
+          <ion-col [size]="'1'" class="text-center mt-1" (click)="dissmis()">
+            <ion-img [src]="imageList?.arrow" class="backArrow"></ion-img>
+          </ion-col>
+          <ion-col [size]="'11'" class="text-end">
+            <img [src]="imageList?.share" class="mx-3">
+            <img [src]="imageList?.watchList" class="mx-3">
+            <img [src]="imageList?.cartIcon" (click)="openCart()" class="ms-3">
+            <ion-badge color="warning" mode="md" class="custColorWhite">{{cartCount}}</ion-badge>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="contentBackground">
+    <ion-grid class="p-2">
+      <ion-row class="w-100">
+        <ion-col [size]="'2'">
+          <!-- <img [src]="selectedCard?.icon" class="custImageSize"/> -->
+          <img [src]="selectedCard.img" class="mt-2">
+        </ion-col>
+        <ion-col *ngIf="selectedCard?.Funds_title" class="custFontFamilyMuliBold  muli-20pt custColorDark">
+          {{selectedCard?.Funds_title}}</ion-col>
+        <ion-col *ngIf="selectedCard?.basic_name" class="custFontFamilyMuliBold  muli-20pt custColorDark">
+          {{selectedCard?.basic_name}}</ion-col>
+
+
+      </ion-row>
+      <ion-row class="p-2">
+        <div class="m-2 border rounded contentBackground">
+          <span
+            class="custFontFamilyRobotoCondensed muli-12pt custLineHight18 custColorBattlePGry p-2">{{basicDetail?.primary_category_name}}</span>
+        </div>
+        <div class="m-2 border rounded contentBackground">
+          <span
+            class="custFontFamilyRobotoCondensed muli-12pt custLineHight18 custColorBattlePGry p-2">{{basicDetail?.category_name}}</span>
+        </div>
+      </ion-row>
+
+      <ion-card class="host">
+        <ion-card-content>
+          <ion-col class="custBackgroundColorWhite">
+            <ion-row *ngIf="Rate" class="custFontFamilyMuliBold muli-16pt custColorDark custLineHight15 mb-1">{{Rate}}
+            </ion-row>
+            <ion-row *ngIf="!Rate" class="custFontFamilyMuliBold muli-16pt custColorDark custLineHight15 mb-1">NA
+              <!-- <span  class="custFontFamilyMuliRegular muli-12pt custColorcustFadedRed custLineHight15">{{basicDetail?.ret_1day}}%</span> -->
+            </ion-row>
+            <ion-row
+              class="custFontFamilyMuliRegular muli-12pt custColorRed custLineHight15 ">
+              <img [src]="imageList?.caretUpSharp" class="something2 pe-1" *ngIf="basicDetail?.ret_1day > 0">
+              <img [src]="imageList?.redIcon" *ngIf="basicDetail?.ret_1day < 0">
+              <span *ngIf="(basicDetail?.ret_1day < 0)"
+                class="custFontFamilyMuliRegular muli-12pt custColorcustFadedRed custLineHight15">{{basicDetail?.ret_1day}}%</span>
+              <span *ngIf="(basicDetail?.ret_1day >= 0)"
+                class="custFontFamilyMuliRegular muli-12pt custColorParakeetGreen custLineHight15">{{basicDetail?.ret_1day}}%</span>
+              &nbsp;1-Day Return as on {{basicDetail?.return_date}}
+            </ion-row>
+            <ion-row *ngIf="basicDetail?.ret_1day == null"
+              class="custFontFamilyMuliRegular muli-12pt custColorRed custLineHight15 ">
+              <span class="custFontFamilyMuliRegular muli-12pt custColorcustFadedRed custLineHight15">NA</span>
+            </ion-row>
+            <!-- <ion-col  >
+          <ion-row><p class="custFontFamilyMuliRegular muli-12pt custLineHight15 mb-0">NAV</p></ion-row>
+          <ion-row class="mt-2"><p class="custFontFamilyRobotoCondensed custFontFamilyMuliITF-Rupee muli-16pt custLineHight18 text-center custColorDark">500.023</p></ion-row>
+        </ion-col>
+        <ion-col  >
+          <ion-row><p class="custFontFamilyMuliRegular muli-12pt custLineHight15 mb-0">Rating</p></ion-row>
+          <ion-row class="mt-2"><button class="custFontFamilyRobotoCondensed custFontFamilyMuliITF-Rupee muli-16pt custLineHight18 text-center custColorDark">5</button></ion-row>
+        </ion-col>
+        <ion-col >
+          <ion-row><p class="custFontFamilyMuliRegular muli-12pt custLineHight15 mb-0">Fund Size</p></ion-row>
+          <ion-row class="mt-2"><p class="custFontFamilyRobotoCondensed custFontFamilyMuliITF-Rupee muli-16pt custLineHight18 text-center custColorDark">24,235 Cr</p></ion-row>
+        </ion-col>  -->
+          </ion-col>
+          <div class="mb-1">
+            <canvas id="linechart2"></canvas>
+            <ion-row class="w-100">
+              <ion-col class="d-flex justify-content-between">
+                <button class="Equity-btn btn w-100 custFontFamilyMuliBold muli-10pt p-1"
+                  [ngClass]="{'active':Buttondata  == '1m'}" (click)="activebutton('1m',0)">1m</button>
+                <button class="Equity-btn btn w-100 custFontFamilyMuliBold muli-10pt p-1"
+                  [ngClass]="{'active':Buttondata  == '3m'}" (click)="activebutton('3m',2)">3m</button>
+                <button class="Equity-btn btn w-100 custFontFamilyMuliBold muli-10pt p-1"
+                  [ngClass]="{'active': Buttondata == '6m'}" (click)="activebutton('6m',6)">6m</button>
+                <button class="Equity-btn btn w-100 custFontFamilyMuliBold muli-10pt p-1"
+                  [ngClass]="{'active':Buttondata  == '1y'}" (click)="activebutton('1y',1)">1y</button>
+                <button class="Equity-btn btn w-100 custFontFamilyMuliBold muli-10pt p-1"
+                  [ngClass]="{'active': Buttondata == '3y'}" (click)="activebutton('3y',3)">3y</button>
+                <button class="Equity-btn btn w-100 custFontFamilyMuliBold muli-10pt p-1"
+                  [ngClass]="{'active':Buttondata  == '5y'}" (click)="activebutton('5y',5)">5y</button>
+                <button class="Equity-btn btn w-100 custFontFamilyMuliBold muli-10pt p-1"
+                  [ngClass]="{'active':Buttondata  == 'Max'}" (click)="activebutton('Max',10)">Max</button>
+              </ion-col>
+            </ion-row>
+          </div>
+        </ion-card-content>
+        <ion-row class="backgrd">
+          <ion-col class="backgrd p-3" (click)="Buyit()"><span
+              class=" custFontFamilyMuliSemiBold muli-12pt custLineHight15 custColorDarkishBlue">Start SIP</span></ion-col>
+          <ion-col class="text-end backgrd p-3" (click)="compareCompany()"><span
+              class=" custFontFamilyMuliSemiBold muli-12pt custLineHight15 custColorDarkishBlue">Compare</span></ion-col>
+        </ion-row>
+      </ion-card>
+      <!-- <ion-row class="p-2">
+<button *ngIf="!addincart"  class="btn w-100 custButtonOutLine2 text-center custBackgroundColorWhite" (click)="Addtocart(selectedCard)">
+  <span  *ngIf="!addincart" class="custColorParakeetGreen custFontFamilyMuliBold  muli-16pt">Add To Cart</span>
+</button>
+<button   *ngIf="addincart"class="btn w-100 custButtonOutLine2 text-center custBackgroundColorWhite" >
+  <span   class="custColorParakeetGreen custFontFamilyMuliBold  muli-16pt">Added To Cart</span>
+</button>
+</ion-row> -->
+
+      <ion-card class="mt-2">
+        <ion-card-content>
+          <ion-row>
+            <ion-col class="d-flex flex-column">
+              <span class="custFontFamilyMuliRegular muli-12pt custLineHight15 custColorBattlePGry mb-1">NAV</span>
+              <span
+                class="custFontFamilyMuliRegular muli-14pt custLineHight18 custColorDark">₹{{basicDetail?.nav}}</span>
+                <span class="custFontFamilyMuliRegular muli-10pt custLineHight15 custColorBattlePGry">As on
+                  {{basicDetail?.asOnDate}}</span>
+            </ion-col>
+            <ion-col class="d-flex flex-column">
+              <span class="custFontFamilyMuliRegular muli-12pt custLineHight15 custColorBattlePGry mb-1">Rating</span>
+              <div class="Colorboxing text-center" *ngIf="basicDetail?.fund_rating && !(basicDetail?.fund_rating == 'Not Rated')">
+              <span 
+                class="custFontFamilyMuliRegular muli-14pt custLineHight18 custColorDark">{{basicDetail?.fund_rating}}&nbsp;<img *ngIf="!(basicDetail?.fund_rating == 'Not Rated')"
+                  [src]="imageList?.yellowStar"></span>
+              </div>
+              <span *ngIf="basicDetail?.fund_rating == 'Not Rated'"
+                class="custFontFamilyMuliRegular muli-14pt custLineHight18 custColorDark">{{basicDetail?.fund_rating}}</span>
+              <span *ngIf="!basicDetail?.fund_rating"
+                class="custFontFamilyRobotoCondensed custFontFamilyMuliITF-Rupee muli-16pt custLineHight18 custColorDark">NA</span>
+            </ion-col>
+            <ion-col class="d-flex flex-column">
+              <span class="custFontFamilyMuliRegular muli-12pt custLineHight15 custColorBattlePGry mb-1">Fund
+                Size</span>
+              <span
+                class="custFontFamilyMuliRegular muli-14pt custLineHight18 custColorDark">₹{{basicDetail?.aum}}
+                Cr</span>
+            </ion-col>
+          </ion-row>
+          <ion-row class="mt-1">
+            <ion-col>
+              <span
+                class="custFontFamilyRobotoCondensed custFontFamilyMuliITF-Rupee muli-16pt custLineHight18 custColorDark">Returns</span>
+            </ion-col>
+            <ion-col class="text-end">
+              <span class="custFontFamilyMuliRegular muli-12pt custLineHight15 custColorBattlePGry">1Y</span>
+            </ion-col>
+            <ion-col class="text-end">
+              <span class="custFontFamilyMuliRegular muli-12pt custLineHight15 custColorBattlePGry">3Y</span>
+            </ion-col>
+            <ion-col class="text-end">
+              <span class="custFontFamilyMuliRegular muli-12pt custLineHight15 custColorBattlePGry">5Y</span>
+            </ion-col>
+            <ion-col class="text-center">
+              <span class="custFontFamilyMuliRegular muli-12pt custLineHight15 custColorBattlePGry">All</span>
+            </ion-col>
+
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <span class="custFontFamilyMuliRegular muli-12pt custLineHight18 custColorBattlePGry">Fund Returns</span>
+            </ion-col>
+            <ion-col class="text-end">
+              <span
+                class="custFontFamilyRobotoCondensed muli-12pt custLineHight16 custColorDark">{{fundDetail?.fundRet1}}</span>
+            </ion-col>
+            <ion-col class="text-end">
+              <span
+                class="custFontFamilyRobotoCondensed muli-12pt custLineHight16 custColorDark">{{fundDetail?.fundRet3}}</span>
+            </ion-col>
+            <ion-col class="text-end">
+              <span
+                class="custFontFamilyRobotoCondensed muli-12pt custLineHight16 custColorDark">{{fundDetail?.fundRet5}}</span>
+            </ion-col>
+            <ion-col class="text-center">
+              <span
+                class="custFontFamilyRobotoCondensed muli-12pt custLineHight16 custColorDark">{{fundDetail?.fundRetMax}}</span>
+            </ion-col>
+
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <span class="custFontFamilyMuliRegular muli-12pt custLineHight18 custColorBattlePGry">Category
+                Average</span>
+            </ion-col>
+            <ion-col class="text-end">
+              <span
+                class="custFontFamilyRobotoCondensed muli-12pt custLineHight16 custColorDark">{{fundDetail?.catAvg1}}%</span>
+            </ion-col>
+            <ion-col class="text-end">
+              <span
+                class="custFontFamilyRobotoCondensed muli-12pt custLineHight16 custColorDark">{{fundDetail?.catAvg3}}%</span>
+            </ion-col>
+            <ion-col class="text-end">
+              <span
+                class="custFontFamilyRobotoCondensed muli-12pt custLineHight16 custColorDark">{{fundDetail?.catAvg5}}%</span>
+            </ion-col>
+            <ion-col class="text-center">
+              <span *ngIf="!(fundDetail?.catAvgMax == '0')"
+                class="custFontFamilyRobotoCondensed muli-12pt custLineHight16 custColorDark">{{fundDetail?.catAvgMax}}%</span>
+              <span *ngIf="fundDetail?.catAvgMax == '0'"
+                class="custFontFamilyRobotoCondensed muli-12pt custLineHight16 custColorDark">NA</span>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <span class="custFontFamilyMuliRegular muli-12pt custLineHight18 custColorBattlePGry">Rank Within</span>
+            </ion-col>
+            <ion-col class="text-end">
+              <span *ngIf="basicDetail?.rank_1year"
+                class="custFontFamilyRobotoCondensed muli-12pt custLineHight16 custColorDark">{{basicDetail?.rank_1year}}</span>
+              <span *ngIf="!basicDetail?.rank_1year"
+                class="custFontFamilyRobotoCondensed muli-12pt custLineHight16 custColorDark">NA</span>
+            </ion-col>
+            <ion-col class="text-end">
+              <span *ngIf="basicDetail?.rank_3year"
+                class="custFontFamilyRobotoCondensed muli-12pt custLineHight16 custColorDark">{{basicDetail?.rank_3year}}</span>
+              <span *ngIf="!basicDetail?.rank_3year"
+                class="custFontFamilyRobotoCondensed muli-12pt custLineHight16 custColorDark">NA</span>
+            </ion-col>
+            <ion-col class="text-end">
+              <span *ngIf="basicDetail?.rank_5year"
+                class="custFontFamilyRobotoCondensed muli-12pt custLineHight16 custColorDark">{{basicDetail?.rank_5year}}</span>
+              <span *ngIf="!basicDetail?.rank_5year"
+                class="custFontFamilyRobotoCondensed muli-12pt custLineHight16 custColorDark">NA</span>
+            </ion-col>
+            <ion-col class="text-center">
+              <span *ngIf="basicDetail?.rank_10year"
+                class="custFontFamilyRobotoCondensed muli-12pt custLineHight16 custColorDark">{{basicDetail?.rank_10year}}</span>
+              <span *ngIf="!basicDetail?.rank_10year"
+                class="custFontFamilyRobotoCondensed muli-12pt custLineHight16 custColorDark">NA</span>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-row class="p-2">
+        <ion-col>
+          <span class="custFontFamilyMuliBold muli-16pt custLineHight40 custColorDark">Investment Details</span>
+        </ion-col>
+      </ion-row>
+
+      <ion-card>
+        <ion-card-content>
+          <ion-row>
+            <ion-col>
+              <ion-row *ngIf="basicDetail?.lock_in == false">
+                <ion-col [size]="1" class="mb-0 ion-no-padding"><img [src]="imageList?.openLock"></ion-col>
+                <ion-col [size]="11"
+                  class="custFontFamilyMuliSemiBold muli-14pt custLineHight18 text-start custColorDark px-1 py-0">
+                  No<br>Lock-in</ion-col>
+              </ion-row>
+              <ion-row *ngIf="basicDetail?.lock_in == true">
+                <ion-col [size]="1" class="mb-0 ion-no-padding"><img [src]="imageList?.LockedLock"></ion-col>
+                <ion-col [size]="11"
+                  class="custFontFamilyMuliSemiBold muli-14pt custLineHight18 text-start custColorDark px-1 pt-3">
+                  Lock-in ({{basicDetail?.lockin_period}})</ion-col>
+              </ion-row>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <ion-row>
+                <p class="custFontFamilyMuliRegular muli-12pt custLineHight15 custColorBattlePGry mb-0">Min One Time
+                  Amt.</p>
+              </ion-row>
+              <ion-row>
+                <p
+                  class="custFontFamilyRobotoCondensed custFontFamilyMuliITF-Rupee muli-16pt custLineHight18 text-center custColorDark">
+                  ₹{{basicDetail?.min_initial_investment}}</p>
+              </ion-row>
+            </ion-col>
+            <ion-col>
+              <ion-row>
+                <p class="custFontFamilyMuliRegular muli-12pt custLineHight15 custColorBattlePGry mb-0">Min Addl Amt.
+                </p>
+              </ion-row>
+              <ion-row>
+                <p
+                  class="custFontFamilyRobotoCondensed custFontFamilyMuliITF-Rupee muli-16pt custLineHight18 text-center custColorDark">
+                  ₹{{basicDetail?.min_subsequent_investment}}</p>
+              </ion-row>
+            </ion-col>
+
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <ion-row>
+                <p class="custFontFamilyMuliRegular muli-12pt custLineHight15 custColorBattlePGry mb-0">Min SIP Amt.</p>
+              </ion-row>
+              <ion-row>
+                <p
+                  class="custFontFamilyRobotoCondensed custFontFamilyMuliITF-Rupee muli-16pt custLineHight18 text-center custColorDark">
+                  ₹{{basicDetail?.min_subsequent_sip_investment}}</p>
+              </ion-row>
+            </ion-col>
+            <ion-col>
+              <ion-row>
+                <p class="custFontFamilyMuliRegular muli-12pt custLineHight15 custColorBattlePGry mb-0">Min Withdrawl
+                  Amt.</p>
+              </ion-row>
+              <ion-row>
+                <p
+                  class="custFontFamilyRobotoCondensed custFontFamilyMuliITF-Rupee muli-16pt custLineHight18 text-center custColorDark">
+                  ₹{{basicDetail?.min_withdrawl_amount}}</p>
+              </ion-row>
+            </ion-col>
+
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <ion-row>
+                <p class="custFontFamilyMuliRegular muli-12pt custLineHight15 custColorBattlePGry mb-0">Exit Load</p>
+              </ion-row>
+              <ion-row>
+                <p
+                  class="custFontFamilyRobotoCondensed custFontFamilyMuliITF-Rupee muli-16pt custLineHight18 text-start custColorDark">
+                  {{basicDetail?.exit_load}}</p>
+              </ion-row>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+      <!-- //////////////////////////////////////////////// -->
+      <ion-row class="p-2">
+        <ion-col>
+          <span class="custFontFamilyMuliBold muli-16pt custLineHight40 custColorDark">Basic Details</span>
+        </ion-col>
+      </ion-row>
+      <ion-card>
+        <ion-card-content>
+          <ion-row>
+            <ion-col>
+              <ion-row>
+                <p class="custFontFamilyMuliRegular muli-12pt custLineHight15 custColorBattlePGry mb-0">Age</p>
+              </ion-row>
+              <ion-row>
+                <p
+                  class="custFontFamilyRobotoCondensed custFontFamilyMuliITF-Rupee muli-16pt custLineHight18 text-center custColorDark">
+                  {{basicDetail?.age}}</p>
+              </ion-row>
+              <ion-row>
+                <p class="custFontFamilyMuliRegular muli-10pt custLineHight15 custColorBattlePGry mb-0">Since
+                  {{basicDetail?.sinceDate}}</p>
+              </ion-row>
+
+            </ion-col>
+            <ion-col>
+              <ion-row>
+                <p class="custFontFamilyMuliRegular muli-12pt custLineHight15 custColorBattlePGry mb-0">Expense ratio
+                </p>
+              </ion-row>
+              <ion-row>
+                <p
+                  class="custFontFamilyRobotoCondensed custFontFamilyMuliITF-Rupee muli-16pt custLineHight18 text-center custColorDark">
+                  {{basicDetail?.expense_ratio}}%</p>
+              </ion-row>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <ion-row>
+                <p class="custFontFamilyMuliRegular muli-12pt custLineHight15 custColorBattlePGry mb-0">Type</p>
+              </ion-row>
+              <ion-row>
+                <p
+                  class="custFontFamilyRobotoCondensed custFontFamilyMuliITF-Rupee muli-16pt custLineHight18 text-center custColorDark">
+                  {{basicDetail?.type_name}}</p>
+              </ion-row>
+            </ion-col>
+            <ion-col>
+              <ion-row>
+                <p class="custFontFamilyMuliRegular muli-12pt custLineHight15 custColorBattlePGry mb-0">AUM (Fund Size)
+                </p>
+              </ion-row>
+              <ion-row>
+                <p
+                  class="custFontFamilyRobotoCondensed custFontFamilyMuliITF-Rupee muli-16pt custLineHight18 text-center custColorDark">
+                  ₹{{basicDetail?.aum}} Cr</p>
+              </ion-row>
+            </ion-col>
+
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <ion-row>
+                <p class="custFontFamilyMuliRegular muli-12pt custLineHight15 custColorBattlePGry mb-0">Risk Grade</p>
+              </ion-row>
+              <ion-row *ngIf="!(basicDetail?.risk_grade == '0')">
+                <p
+                  class="custFontFamilyRobotoCondensed custFontFamilyMuliITF-Rupee muli-16pt custLineHight18 text-center custColorDark">
+                  {{basicDetail?.risk_grade}}</p>
+              </ion-row>
+              <ion-row *ngIf="basicDetail?.risk_grade == '0'">
+                <p
+                  class="custFontFamilyRobotoCondensed custFontFamilyMuliITF-Rupee muli-16pt custLineHight18 text-center custColorDark">
+                  NA</p>
+              </ion-row>
+            </ion-col>
+            <ion-col>
+              <ion-row>
+                <p class="custFontFamilyMuliRegular muli-12pt custLineHight15 custColorBattlePGry mb-0">Return Grade</p>
+              </ion-row>
+              <ion-row *ngIf="basicDetail?.return_grade && !(basicDetail?.return_grade == '0')">
+                <p
+                  class="custFontFamilyRobotoCondensed custFontFamilyMuliITF-Rupee muli-16pt custLineHight18 text-center custColorDark">
+                  {{basicDetail?.return_grade}}</p>
+              </ion-row>
+              <ion-row *ngIf="!basicDetail?.return_grade || basicDetail?.return_grade == '0'">
+                <p
+                  class="custFontFamilyRobotoCondensed custFontFamilyMuliITF-Rupee muli-16pt custLineHight18 text-center custColorDark">
+                  NA</p>
+              </ion-row>
+            </ion-col>
+
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <ion-row>
+                <p class="custFontFamilyMuliRegular muli-12pt custLineHight15 custColorBattlePGry mb-0">Turnover</p>
+              </ion-row>
+              <ion-row>
+                <p
+                  class="custFontFamilyRobotoCondensed custFontFamilyMuliITF-Rupee muli-16pt custLineHight18 text-center custColorDark">
+                  {{basicDetail?.turnover_ratio}}%</p>
+              </ion-row>
+            </ion-col>
+            <ion-col>
+              <ion-row>
+                <p class="custFontFamilyMuliRegular muli-12pt custLineHight15 custColorBattlePGry mb-0">Return since
+                  Launch</p>
+              </ion-row>
+              <ion-row>
+                <p
+                  class="custFontFamilyRobotoCondensed custFontFamilyMuliITF-Rupee muli-16pt custLineHight18 text-center custColorDark">
+                  {{basicDetail?.ret_since_launch}}%</p>
+              </ion-row>
+            </ion-col>
+
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <ion-row>
+                <p class="custFontFamilyMuliRegular muli-12pt custLineHight15 custColorBattlePGry mb-0">Benchmark</p>
+              </ion-row>
+              <ion-row>
+                <p
+                  class="custFontFamilyRobotoCondensed custFontFamilyMuliITF-Rupee muli-16pt custLineHight18 text-center custColorDark">
+                  {{basicDetail?.benchmark}}</p>
+              </ion-row>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+
+      <!-- ///////////////////////////////////////////// -->
+
+
+      <ion-row class="d-flex justify-content-center p-2">
+        <ion-col [size]="'12'">
+          <span class="custFontFamilyMuliBold muli-16pt custLineHight40 custColorDark">Assets allocation</span>
+        </ion-col>
+        <!-- <ion-col [size]="'6'" class="text-end d-flex align-items-center">
+    <span class="custFontFamilyMuliBold muli-12pt custLineHight18 custColorDarkishBlue w-100">Top Holdings</span>
+    <ion-img [src]="imageList?.sortIcon" class="custImgExpo mx-2"></ion-img>
+  </ion-col> -->
+      </ion-row>
+
+      <ion-card>
+        <ion-card-header class="p-0">
+          <ion-segment (ionChange)="segmentChanged($event)" [value]="segmentValue">
+            <ion-segment-button value="friends"
+              [ngClass]="segmentValue === 'friends'?'custColorDark':'custColorBattlePGry'">
+              <ion-label class="custFontFamilyMuliSemiBold muli-14pt custLineHight18 text-capitalize">Equity
+                {{equityRate}}</ion-label>
+            </ion-segment-button>
+            <ion-segment-button value="enemies"
+              [ngClass]="segmentValue === 'enemies'?'custColorDark':'custColorBattlePGry'">
+              <ion-label class="custFontFamilyMuliSemiBold muli-14pt custLineHight18 text-capitalize">Debt 
+                {{debtRate}}</ion-label>
+            </ion-segment-button>
+            <ion-segment-button value="other"
+              [ngClass]="segmentValue === 'other'?'custColorDark':'custColorBattlePGry'">
+              <ion-label class="custFontFamilyMuliSemiBold muli-14pt custLineHight18 text-capitalize">Others
+                {{othersRate}}</ion-label>
+            </ion-segment-button>
+          </ion-segment>
+        </ion-card-header>
+        <ion-card-content>
+          <ion-row *ngIf="segmentValue==='friends'">
+            <ion-row class="w-100" *ngFor="let x of equty">
+              <ion-row class="w-100 mt-2">
+                <ion-col [size]="'8'"
+                  class="text-start custFontFamilyMuliRegular muli-12pt custLineHight18 custColorDark">{{x?.typeDesc}}
+                </ion-col>
+                <ion-col [size]="'4'" class="text-end">{{x?.allocationPercentage}}%</ion-col>
+              </ion-row>
+              <ion-row class="w-100">
+                <ion-col>
+                  <ion-progress-bar color="warning" [value]="(x?.allocationPercentage / 100)"></ion-progress-bar>
+                </ion-col>
+              </ion-row>
+            </ion-row>
+              <ion-row class="w-100 my-5" *ngIf="!equty">
+                <ion-col [size]="'12'" 
+                  class="text-center custFontFamilyMuliSemiBold muli-16pt custLineHight24 custColorGreyish">
+                  Equity allocation is not available for this fund
+                </ion-col>
+              </ion-row>
+          </ion-row>
+          <ion-row *ngIf="segmentValue==='enemies'">
+            <ion-row class="w-100" *ngFor="let x of dept">
+              <ion-row class="w-100 mt-2">
+                <ion-col [size]="'8'"
+                  class="text-start custFontFamilyMuliRegular muli-12pt custLineHight18 custColorDark">{{x?.typeDesc}}
+                </ion-col>
+                <ion-col [size]="'4'" class="text-end">{{x?.allocationPercentage}}%</ion-col>
+              </ion-row>
+              <ion-row class="w-100">
+                <ion-col>
+                  <ion-progress-bar color="danger" [value]="(x?.allocationPercentage / 100)"></ion-progress-bar>
+                </ion-col>
+              </ion-row>
+            </ion-row>
+            <ion-row class="w-100 my-5" *ngIf="!dept">
+              <ion-col [size]="'12'"
+                class="text-center custFontFamilyMuliSemiBold muli-16pt custLineHight24 custColorGreyish">
+                Debt allocation is not available for this fund
+              </ion-col>
+            </ion-row>
+          </ion-row>
+          <ion-row *ngIf="segmentValue==='other'">
+            <ion-row class="w-100" *ngFor="let x of others">
+              <ion-row class="w-100 mt-2">
+                <ion-col [size]="'8'"
+                  class="text-start custFontFamilyMuliRegular muli-12pt custLineHight18 custColorDark">{{x?.typeDesc}}
+                </ion-col>
+                <ion-col [size]="'4'" class="text-end">{{x?.allocationPercentage}}%</ion-col>
+              </ion-row>
+              <ion-row class="w-100">
+                <ion-col>
+                  <ion-progress-bar color="danger" [value]="(x?.allocationPercentage / 100)"></ion-progress-bar>
+                </ion-col>
+              </ion-row>
+            </ion-row>
+            <ion-row class="w-100 my-5" *ngIf="!others[0]">
+              <ion-col [size]="'12'"
+                class="text-center custFontFamilyMuliSemiBold muli-16pt custLineHight24 custColorGreyish">
+                Others allocation is not available for this fund
+              </ion-col>
+            </ion-row>
+          </ion-row>
+        </ion-card-content>
+        <div *ngIf="equty && segmentValue==='friends'">
+        <p class="text-center mb-0 custFontFamilyMuliRegular muli-12pt custLineHight18 custColorDarkishBlue w-100"
+          (click)="getMoreData()">{{showButton}}</p>
+        <ion-row (click)="getMoreData()">
+          <ion-col class="text-center mb-1">
+            <img *ngIf="showButton == 'Show More'" [src]="imageList?.showMore">
+            <img *ngIf="showButton == 'Show Less'" [src]="imageList?.showLess">
+          </ion-col>
+        </ion-row>
+        </div>
+        <div *ngIf="dept && segmentValue==='enemies'">
+        <p class="text-center mb-0 custFontFamilyMuliRegular muli-12pt custLineHight18 custColorDarkishBlue w-100"
+          (click)="getMoreData()">{{showButton}}</p>
+        <ion-row (click)="getMoreData()">
+          <ion-col class="text-center mb-1">
+            <img *ngIf="showButton == 'Show More'" [src]="imageList?.showMore">
+            <img *ngIf="showButton == 'Show Less'" [src]="imageList?.showLess">
+          </ion-col>
+        </ion-row>
+        </div>
+        <div *ngIf="others && segmentValue==='other'">
+        <p class="text-center mb-0 custFontFamilyMuliRegular muli-12pt custLineHight18 custColorDarkishBlue w-100"
+          (click)="getMoreData()">{{showButton}}</p>
+        <ion-row (click)="getMoreData()">
+          <ion-col class="text-center mb-1">
+            <img *ngIf="showButton == 'Show More'" [src]="imageList?.showMore">
+            <img *ngIf="showButton == 'Show Less'" [src]="imageList?.showLess">
+          </ion-col>
+        </ion-row>
+        </div>
+      </ion-card>
+
+      <!-- ///////////////////////////////////////////////////////// -->
+
+      <ion-row class="p-2">
+        <ion-col>
+          <span class="custFontFamilyMuliBold muli-16pt custLineHight40 custColorDark">Riskometer</span>
+        </ion-col>
+      </ion-row>
+
+      <ion-card>
+        <ion-card-content>
+          <ion-row>
+            <ion-col class="text-center d-flex flex-column mb-3">
+              <span class="custFontFamilyMuliSemiBold muli-12pt custLineHight18 custColorDark">Investors understand that
+                their principal will be at</span>
+              <span class="custFontFamilyMuliSemiBold muli-14pt custLineHight18 custColorcustFadedRed">{{riskImageShow}}
+                Risk</span>
+            </ion-col>
+          </ion-row>
+          <img *ngIf="riskImageShow=='Low'" [src]="imageList?.riskoMeterLow" class="w-100">
+          <img *ngIf="riskImageShow=='Very High'" [src]="imageList?.riskoMeterVHigh" class="w-100">
+          <img *ngIf="riskImageShow=='Moderate'" [src]="imageList?.riskoMeterMod" class="w-100">
+          <img *ngIf="riskImageShow=='High'" [src]="imageList?.riskoMeterHigh" class="w-100">
+          <img *ngIf="riskImageShow=='Moderately High'" [src]="imageList?.riskoMeterMHigh" class="w-100">
+          <img *ngIf="riskImageShow=='Low to Moderate'" [src]="imageList?.riskoMeterLHigh" class="w-100">
+
+          <!-- <div id="chart-container"  ></div> -->
+          <ion-row class="mt-2">
+            <ion-col class="text-center">
+              <span class="custFontFamilyMuliRegular muli-12pt custLineHight18 custColorDark">Level of risk in the
+                scheme</span>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+
+      <!-- ???????????????????????????????????????????????????????????? -->
+
+      <ion-row class="p-2">
+        <ion-col>
+          <span class="custFontFamilyMuliBold muli-16pt custLineHight40 custColorDark">Scheme Holding Summary</span>
+        </ion-col>
+      </ion-row>
+
+      <ion-card>
+        <ion-card-header class="p-0">
+          <ion-segment (ionChange)="segmentChanged2($event)" [value]="segmentValue1">
+            <ion-segment-button value="Sectors"
+              [ngClass]="segmentValue1 === 'Sectors'?'custColorDark':'custColorBattlePGry'">
+              <ion-label class="custFontFamilyMuliSemiBold muli-14pt custLineHight18 text-capitalize">Sectors
+              </ion-label>
+            </ion-segment-button>
+            <ion-segment-button value="Companies"
+              [ngClass]="segmentValue1 === 'Companies'?'custColorDark':'custColorBattlePGry'">
+              <ion-label class="custFontFamilyMuliSemiBold muli-14pt custLineHight18 text-capitalize">Companies
+              </ion-label>
+            </ion-segment-button>
+            <ion-segment-button value="Instruments"
+              [ngClass]="segmentValue1 === 'Instruments'?'custColorDark':'custColorBattlePGry'">
+              <ion-label class="custFontFamilyMuliSemiBold muli-14pt custLineHight18 text-capitalize">Instruments
+              </ion-label>
+            </ion-segment-button>
+          </ion-segment>
+        </ion-card-header>
+        <ion-card-content>
+         <ion-row *ngIf="segmentValue1==='Sectors'">
+          <ion-col class="text-start mt-2">
+            <ion-row>
+              <p class="custFontFamilyMuliRegular muli-12pt custLineHight15 custColorBattlePGry mb-0">Scheme asset size
+              </p>
+            </ion-row>
+            <ion-row>
+              <p
+                class="custFontFamilyRobotoCondensed custFontFamilyMuliITF-Rupee muli-16pt custLineHight18 text-center custColorDark">
+                ₹{{basicDetail?.aum}} Cr</p>
+            </ion-row>
+          </ion-col>
+          <ion-col class="text-start mt-2">
+            <ion-row>
+              <p class="custFontFamilyMuliRegular muli-12pt custLineHight15 custColorBattlePGry mb-0">As on date
+              </p>
+            </ion-row>
+            <ion-row>
+              <p
+                class="custFontFamilyRobotoCondensed custFontFamilyMuliITF-Rupee muli-16pt custLineHight18 text-center custColorDark">
+                {{riskometer?.Sector[0]?.asOnDate}}</p>
+            </ion-row>
+          </ion-col>
+         </ion-row>
+          <ion-row *ngIf="segmentValue1==='Sectors'">
+            <ion-row class="w-100" *ngFor="let x of sector">
+              <ion-row class="w-100 mt-2">
+                <ion-col [size]="'8'"
+                  class="text-start custFontFamilyMuliRegular muli-12pt custLineHight18 custColorDark">{{x?.mastDesc}}
+                </ion-col>
+                <ion-col [size]="'4'" class="text-end">{{x?.allocationpercetage}}%</ion-col>
+              </ion-row>
+              <ion-row class="w-100">
+                <ion-col>
+                  <ion-progress-bar color="danger" [value]="(x?.allocationpercetage / 100)"></ion-progress-bar>
+                </ion-col>
+              </ion-row>
+            </ion-row>
+            <ion-row class="w-100 my-5" *ngIf="!sector">
+              <ion-col [size]="'12'" 
+                class="text-center custFontFamilyMuliSemiBold muli-16pt custLineHight24 custColorGreyish">
+                Sector summary is not available for this fund
+              </ion-col>
+            </ion-row>
+          </ion-row>
+          <ion-row *ngIf="segmentValue1==='Companies'">
+            <ion-row class="w-100" *ngFor="let x of company">
+              <ion-row class="w-100 mt-2">
+                <ion-col [size]="'8'"
+                  class="text-start custFontFamilyMuliRegular muli-12pt custLineHight18 custColorDark">{{x?.mastDesc}}
+                </ion-col>
+                <ion-col [size]="'4'" class="text-end">{{x?.allocationpercetage}}%</ion-col>
+              </ion-row>
+              <ion-row class="w-100">
+                <ion-col>
+                  <ion-progress-bar color="danger" [value]="(x?.allocationpercetage / 100)"></ion-progress-bar>
+                </ion-col>
+              </ion-row>
+            </ion-row>
+            <ion-row class="w-100 my-5" *ngIf="!company[0]">
+              <ion-col [size]="'12'" 
+                class="text-center custFontFamilyMuliSemiBold muli-16pt custLineHight24 custColorGreyish">
+                Company summary is not available for this fund
+              </ion-col>
+            </ion-row>
+          </ion-row>
+          <ion-row *ngIf="segmentValue1==='Instruments'">
+            <ion-row class="w-100" *ngFor="let x of industry">
+              <ion-row class="w-100 mt-2">
+                <ion-col [size]="'8'"
+                  class="text-start custFontFamilyMuliRegular muli-12pt custLineHight18 custColorDark">{{x?.mastDesc}}
+                </ion-col>
+                <ion-col [size]="'4'" class="text-end">{{x?.allocationpercetage}}%</ion-col>
+              </ion-row>
+              <ion-row class="w-100">
+                <ion-col>
+                  <ion-progress-bar color="danger" [value]="(x?.allocationpercetage / 100)"></ion-progress-bar>
+                </ion-col>
+              </ion-row>
+            </ion-row>
+            <ion-row class="w-100 my-5" *ngIf="!industry[0]">
+              <ion-col [size]="'12'" 
+                class="text-center custFontFamilyMuliSemiBold muli-16pt custLineHight24 custColorGreyish">
+                Industry summary is not available for this fund
+              </ion-col>
+            </ion-row>
+          </ion-row>
+        </ion-card-content>
+        <div *ngIf="sector && segmentValue1==='Sectors'">
+          <p class="text-center mb-0 custFontFamilyMuliRegular muli-12pt custLineHight18 custColorDarkishBlue w-100"
+            (click)="getMoreData1()">{{showButton1}}</p>
+          <ion-row (click)="getMoreData1()">
+            <ion-col class="text-center mb-1">
+              <img *ngIf="showButton1 == 'Show More'" [src]="imageList?.showMore">
+              <img *ngIf="showButton1 == 'Show Less'" [src]="imageList?.showLess">
+            </ion-col>
+          </ion-row>
+          </div>
+        <div *ngIf="company && segmentValue1==='Companies'">
+          <p class="text-center mb-0 custFontFamilyMuliRegular muli-12pt custLineHight18 custColorDarkishBlue w-100"
+            (click)="getMoreData1()">{{showButton1}}</p>
+          <ion-row (click)="getMoreData1()">
+            <ion-col class="text-center mb-1">
+              <img *ngIf="showButton1 == 'Show More'" [src]="imageList?.showMore">
+              <img *ngIf="showButton1 == 'Show Less'" [src]="imageList?.showLess">
+            </ion-col>
+          </ion-row>
+          </div>
+        <div *ngIf="industry&& segmentValue1==='Instruments'">
+          <p class="text-center mb-0 custFontFamilyMuliRegular muli-12pt custLineHight18 custColorDarkishBlue w-100"
+            (click)="getMoreData1()">{{showButton1}}</p>
+          <ion-row (click)="getMoreData1()">
+            <ion-col class="text-center mb-1">
+              <img *ngIf="showButton1 == 'Show More'" [src]="imageList?.showMore">
+              <img *ngIf="showButton1 == 'Show Less'" [src]="imageList?.showLess">
+            </ion-col>
+          </ion-row>
+          </div>
+      </ion-card>
+    </ion-grid>
+  </ion-content>
+
+
+  <div *ngIf="showModal">
+    <div class="cusModalContainer">
+      <ion-grid class="fixed-bottom mb-5">
+        <ion-row>
+          <ion-col [size]="'12'" class="mb-2" (click)="Buyit()">
+            <button class="btn custBackgroundColorWhite custTextAlignCenter d-flex p-2">
+              <ion-img [src]="imageList?.startSipIcon" class="custPopImgHeight"></ion-img>
+              <span class="custFontFamilyMuliSemiBold muli-10pt custColorDark custMarginSpace">{{'startSIP' |
+                translate}}</span>
+            </button>
+          </ion-col>
+          <ion-col [size]="'12'" class="mb-2">
+            <button class="btn custBackgroundColorWhite custTextAlignCenter d-flex p-2">
+              <ion-img [src]="imageList?.addToCard" class="custPopImgHeight"></ion-img>
+              <span class="custFontFamilyMuliSemiBold muli-10pt custColorDark custMarginSpace">{{'addToCart' |
+                translate}}</span>
+            </button>
+          </ion-col>
+          <ion-col [size]="'12'" class="mb-2" (click)="compareCompany()">
+            <button class="btn custBackgroundColorWhite custTextAlignCenter d-flex p-2">
+              <ion-img [src]="imageList?.compareicon" class="custPopImgHeight"></ion-img>
+              <span class="custFontFamilyMuliSemiBold muli-10pt custColorDark custMarginSpace">{{'compare' |
+                translate}}</span>
+            </button>
+          </ion-col>
+          <ion-col [size]="'12'" class="mb-3">
+            <button class="btn custBackgroundColorWhite custTextAlignCenter d-flex p-2">
+              <ion-img [src]="imageList?.productShareIcon" class="custPopImgHeight"></ion-img>
+              <span class="custFontFamilyMuliSemiBold muli-10pt custColorDark custMarginSpace">{{'share' |
+                translate}}</span>
+            </button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+  </div>
+  <ion-row class="custBackgroundColorWhite w-100">
+    <!-- <ion-col [size]="'2'" (click)="openModal()">
+        <button type="button" class="btn custButtonOutLine custColorBrightCyan custButtonHeight custBackgroundColorWhite">
+            <img [src]="showModal?imageList?.closePopUpIcon:imageList?.addIcon" class="custAddIconHeight">
+        </button>
+    </ion-col> -->
+    <ion-col [size]="'12'" class="p-3" (click)="Buyit()">
+      <button class="btn h-100 w-100 custBackgroundColorParakeetGreen">
+        <span class="custColorWhite custFontFamilyMuliBold muli-16pt">{{'buyNow' | translate}}</span>
+      </button>
+    </ion-col>
+  </ion-row>
+</ion-app>

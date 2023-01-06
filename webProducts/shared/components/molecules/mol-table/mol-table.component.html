@@ -1,0 +1,51 @@
+<div class="mat-elevation-z8">
+  <ion-card class="custBackgroundColorWhite" >
+    <ion-row class="d-flex justify-content-space-between">
+      <ion-col>
+    <span [ngClass]="table.uxClass">{{table.title}}</span>
+  </ion-col>
+    <div *ngFor="let control of table.des">
+    
+    <div *ngIf="control.type=='dropDown'">
+    <mat-form-field appearance="outline">
+      <mat-label [ngClass]="control.uxClass">{{ control.title }}</mat-label>
+      <mat-select formControlName="control.title">
+        <mat-option *ngFor="let option of control.options;index as i" [value]="option">
+          {{ option }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+  <div class="text-center pt-3" *ngIf="control.type=='icon'">
+    <app-icons  [iconDetail]="control"></app-icons>
+  </div>
+  </div>
+</ion-row>
+  </ion-card>
+  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 table-wrapper" style="width: 100%; border: none;" >
+    <div class="sliding-background ">
+      <ng-container [matColumnDef]="column" *ngFor="let column of displayedColumns" class="">
+        <th mat-header-cell *matHeaderCellDef class="custFontFamilyMuliBold custFontColor p-2">
+         <span>{{column}}</span>
+        </th>
+        <td mat-cell *matCellDef="let row of dataArray" class="p-2">
+          <span *ngIf="column =='LeadID'"  class="custTitle custFontFamilyMuliBold" (click)="getParticularDetail(row)">{{row[column].title}}</span>
+          <span *ngIf="row[column].type !='dropDown' && column !='LeadID'">{{row[column].title}}</span>
+          <div class="" *ngIf="row[column].type =='dropDown'">
+            <mat-select>
+              <mat-option *ngFor="let option of row[column].options" value="x"> {{option}} </mat-option>
+            </mat-select>
+          </div>
+          <div *ngIf="row[column].icon != null" class="d-flex">
+          <mat-icon class="custActionButton" *ngFor="let icons of row[column].icon">{{icons}}</mat-icon> 
+          <!-- <img [src]="icons"> -->
+        </div>
+        </td>
+      </ng-container>
+    </div>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+  </table>
+  </div>

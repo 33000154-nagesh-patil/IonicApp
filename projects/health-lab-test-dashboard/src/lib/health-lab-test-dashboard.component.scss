@@ -1,0 +1,36 @@
+
+.custInvestArrow{
+    height: 50%;
+    width: 25px;
+    transform: rotate(90deg);
+    
+}
+.custRotation{
+    transform: rotate(90deg);
+}
+
+.mat-expansion-panel-header {
+    height: 110px;
+}
+
+.custContent{
+    padding: 0 -24px -16px !important;
+    --padding: 0 -24px -16px !important;
+}
+.mat-expansion-panel-body {
+    --padding: 0;
+}
+
+// ::ng-deep .mat-expansion-indicator::after {
+//     background-image: url("../../../assets/Images/down_arrow.svg") ;
+
+//     color: #003399 ;
+// }
+
+.custBody{
+background-color: #4e6de6;
+}
+.segment{
+    margin-top: -24px;
+}
+

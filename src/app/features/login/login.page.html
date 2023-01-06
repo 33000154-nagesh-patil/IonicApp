@@ -1,0 +1,9 @@
+<lib-loginList [environmentAPILib]="environmentAPI" [currentDeviceLib]="currentDevice" [imageListLib]="imageList"
+    [errorListLib]="errorList" [gmailAuthenticationLib]="gmailAuthentication"
+    [mobileAuthenticationLib]="mobileAuthentication" [faceBookAuthenticationLib]="faceBookAuthentication"
+    [instagramAuthenticationLib]="instagramAuthentication" [otherAuthenticationLib]="otherAuthentication"
+    [currentCountryAuthenticationLib]="currentCountryAuthentication"
+    (sendLoggingDataLoginPage)="sendTodashboard($event)"
+    (sendLoggingDataCustMobileDetail)="sendToDashboardCustMobileDetail($event)"
+    (sendLoggingDataMobileLoginPage)="sendTodashboardMobile($event)" [currentLanguageLib]="currentLanguage" (sendReferralCode)="sendReferral($event)">
+</lib-loginList>

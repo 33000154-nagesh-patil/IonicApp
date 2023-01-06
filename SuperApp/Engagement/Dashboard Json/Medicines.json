@@ -1,0 +1,146 @@
+{
+    "KYCPending":[
+        {
+        "icon":"assets/icon/pendingIcon.svg",
+        "title":"KYC - Pending"
+    }
+],
+"objectContent": [
+    {
+        "contentType": "promotionCard",
+        "content": [
+            {
+                "promoName": "In the Spotlight",
+                "promoDesc": "Explore deals,offers, health updates and more",
+                "promoTitle": "Health Card & Discounts",
+                "promoTitleDesc": "Up to 50% discount MRI, CT scan,insurance cover",
+                "promoIcon": "assets/Images/Mask Group 99.png",
+                "promoAction": "Buy Now"
+            }
+        ]
+    },
+    {
+        "type": "grid",
+        "config": {
+            "row": "1",
+            "col": "12",
+            "width": "",
+            "height": "120px",
+            "layoutType": "vertical",
+            "row2col1": "8",
+            "row2col2": "4"
+        },
+        "contentType": "grid",
+        "class": "12",
+        "Title": "",
+        "content": [
+            {
+                "icon": "",
+                "cardTitle": "Order with prescription",
+                "cardDescription": "Upload the prescription & we confirm the rest",
+                "action": "Upload"
+            }
+        ]
+    },
+    {
+        "contentType": "3x2 Grid",
+        "Title": "Shop by category",
+        "content": [
+            {
+                "icon": "assets/icon/Group 22032.svg",
+                "name": "Covid Essentials"
+            },
+            {
+                "icon": "assets/icon/Group 22036.svg",
+                "name": "Healthcare Devices"
+            },
+            {
+                "icon": "assets/icon/Group 22037.svg",
+                "name": "Health Food & Drinks"
+            },
+            {
+                "icon": "assets/icon/Group 22039.svg",
+                "name": "Personal Care"
+            },
+            {
+                "icon": "assets/icon/Group 22040.svg",
+                "name": "Aurvedic Care"
+            },
+            {
+                "icon": "assets/icon/Group 22043.svg",
+                "name": "Mother & Baby Care"
+            }
+        ]
+    },
+    {
+        "contentType": "3x2 Grid",
+        "Title": "Shop by health concerns",
+        "content": [
+            {
+                "icon": "assets/icon/Group 22032.svg",
+                "name": "Covid Care"
+            },
+            {
+                "icon": "assets/icon/Group 22036.svg",
+                "name": "Diabetes"
+            },
+            {
+                "icon": "assets/icon/Group 22037.svg",
+                "name": "Cardiology"
+            },
+            {
+                "icon": "assets/icon/Group 22039.svg",
+                "name": "Eye Care"
+            },
+            {
+                "icon": "assets/icon/Group 22040.svg",
+                "name": "Respiratory Care"
+            },
+            {
+                "icon": "assets/icon/Group 22043.svg",
+                "name": "Pain Relief"
+            }
+        ]
+    },
+    {
+        "contentType": "cardList",
+        "Title": "Explore Medicines",
+        "card": [
+            {
+                "row1": {
+                    "icon": "",
+                    "title": "Dolo- 650 ",
+                    "description": "By Micro Labs. 15 Tablets Strip",
+                    "action": "assets/icon/leftArrowIcon.svg"
+                },
+                "row2": {
+                    "col1": "price",
+                    "val1": 25,
+                    "col2": "Rating",
+                    "val2": "3",
+                    "col3": "Prescription",
+                    "val3": "Required"
+                }
+            },
+            {
+                "row1": {
+                    "icon": "",
+                    "title": "Dettol Antiseptic Liquid",
+                    "description": "By Dettol Bottle of 550 ML",
+                    "action": "assets/icon/leftArrowIcon.svg"
+                },
+                "row2": {
+                    "col1": "price",
+                    "val1": 250,
+                    "col2": "Rating",
+                    "val2": "4",
+                    "col3": "Prescription",
+                    "val3": "Not Required"
+                }
+            }
+        ],
+        
+        "cta": "Explore"
+    }
+]
+}

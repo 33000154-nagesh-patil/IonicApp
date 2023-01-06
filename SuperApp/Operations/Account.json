@@ -1,0 +1,204 @@
+{
+  "title":"profile",
+  "image":"",
+  "profileName":"Hey Rajesh",
+  "viewprofile":"view profile",
+  "icon":"",
+  "kyc":"KYC-Investment Ready",
+  "cardtitle":"you haven't invested in any stocks",
+  "cardSubtitle":"Today is a good day start investing",
+  "action":"start investing",
+
+  "profile":[
+    {
+      "icon":"",
+      "title":"client Details",
+      "value":"clientDetails"
+    },
+    {
+      "icon":"",
+      "title":"Funds",
+      "value":"Funds"
+    },
+    {
+      "icon":"",
+      "title":"Historical Reports",
+      "value":"HistoricalReports"
+    },
+    {
+      "icon":"",
+      "title":"Settings",
+      "value":"Settings"
+    },
+    {
+      "icon":"",
+      "title":"Refer $ Earn",
+      "value":"ReferEarn"
+    },
+    {
+      "icon":"",
+      "title":"customer support",
+      "value":"customerSupport"
+    }
+  ],
+  "clientDetails":{
+    "header":"Client Details",
+    "prifileImg":"",
+    "HolderName":"",
+    "profileInfo":[
+      {
+        "title":"User ID",
+        "value":"R391522"
+      },
+      {
+        "title":"Email ID",
+        "value":"parab.rajesh@torus.com"
+      },
+      {
+        "title":"Mobile Number",
+        "value":"9892924558"
+      },
+      {
+        "title":"Date of Birth",
+        "value":"17 Aug 1990"
+      },
+      {
+        "title":"Permanent Address",
+        "value":"W?/O Anil Boga, near Ashish industry, prabhadevi, dadar"
+      },
+      {
+        "title":"Correspondence Address",
+        "value":"W?/O Anil Boga, near Ashish industry, prabhadevi, dadar"
+      },
+      {
+        "title":"Client Code",
+        "value":"R391522"
+      },
+      {
+        "title":"PAN Number",
+        "value":"ASTPB3338L"
+      },
+      {
+        "title":"Income Range",
+        "value":"Rs. 1 Lac to 5 Lac"
+      },
+      {
+        "title":"Status",
+        "value":"Dormant"
+      }
+    ]
+  },
+    "BranchDetails":[
+
+      {
+        "title":"Branch Name",
+        "value":"Borivali"
+      },
+      {
+        "title":"RM Name",
+        "value":"Sachin Kumar"
+      },
+      {
+        "title":"RM Mobile Number",
+        "value":"9892924558"
+      },
+      {
+        "title":"RM Email ID",
+        "value":"Kumar.sachin@torus.com"
+      },
+      {
+        "title":"Branch Address",
+        "value":"W?/O Anil Boga, near Ashish industry, prabhadevi, dadar"
+      }
+    ],
+    "DematDetails":[
+      {
+        "title":"Depositary Name",
+        "value":"CDSL"
+      },
+      {
+        "title":"Demat Account",
+        "value":"1304140010190351"
+      },
+      {
+        "title":"SEBI Payout Frequency",
+        "value":"Quarterly"
+      },
+      {
+        "title":"Running Account Authorization Date",
+        "value":"09 Aug 2022"
+      }
+    ],
+    "BankDetails":[
+      {
+        "title":"Bank Name",
+        "value":"HDFC Bank Ltd."
+      },
+      {
+        "title":"Account Number",
+        "value":"05461050013527"
+      },
+      {
+        "title":"Bank Branch",
+        "value":"11 Anjana Apt_HDFC0000546"
+      },
+      {
+        "title":"MICR Code",
+        "value":"HDFC0000546"
+      },
+      {
+        "title":"IFSC Code",
+        "value":"HDFC0000546"
+      }
+    ],
+    "NomineeDetails":[
+      {
+        "title":"Full Name",
+        "value":"Sagar Ramesh Parab"
+      },
+      {
+        "title":"Gender",
+        "value":"Male"
+      },
+      {
+        "title":"Relationship",
+        "value":"Brother"
+      },
+      {
+        "title":"Date of Birth",
+        "value":"10 Oct 1990"
+      },
+      {
+        "title":"Percentage Allocation",
+        "value":"30"
+      },
+      {
+        "title":"PAN Card Number",
+        "value":"BUPR3750G"
+      }
+
+    ],
+    "Download":[
+      {
+        "title":"KYC Form",
+        "icon":""
+      },
+      {
+        "title":"POA",
+        "icon":""
+      },
+      {
+        "title":"Supporting Documents",
+        "icon":""
+      },
+      {
+        "title":"Change Request Form",
+        "icon":""
+      },
+      {
+        "title":"Product Details",
+        "icon":""
+      }
+    ]
+
+}

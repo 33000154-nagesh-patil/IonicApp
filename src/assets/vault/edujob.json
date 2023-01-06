@@ -1,0 +1,54 @@
+{    
+
+    "redirectTo":"",
+    "heading": [
+        {
+            "heading": "Learn",
+            "box": true,
+            "discription": "An overview of your courses"
+        }
+    ],
+    "title":"Courses",
+    
+    "card": [
+        {
+            "row1": {
+                "icon": "assets/icon/EducationIcon1.svg",
+                "title": "Life Insurance",
+                "description": "15 sections. 135 lectures. 11 hours",
+                "action": "assets/icon/leftArrowIcon.svg"
+            },
+            "row2": {
+                "Price": "Rs.1",
+                "Level": "Beginner",
+                "Status": "Completed"
+            }
+        },
+        {
+            "row1": {
+                "icon": "assets/icon/EducationIcon1.svg",
+                "title": "Life Insurance",
+                "description": "15 sections. 135 lectures. 11 hours",
+                "action": "assets/icon/leftArrowIcon.svg"
+            },
+            "row2": {
+                "Price": "Rs.1",
+                "Level": "Beginner",
+                "Status": "Completed"
+            }
+        },
+        {
+            "row1": {
+                "icon": "assets/icon/EducationIcon1.svg",
+                "title": "Life Insurance",
+                "description": "15 sections. 135 lectures. 11 hours",
+                "action": "assets/icon/leftArrowIcon.svg"
+            },
+            "row2": {
+                "Price": "Rs.1",
+                "Level": "Beginner",
+                "Status": "Completed"
+            }
+        }
+    ]
+}

@@ -1,0 +1,49 @@
+.custKYCImg{
+    height: 16px;
+    width: 13px;
+}
+.custaddImg{
+    height: 20px;
+    width: 18px;
+}
+::ng-deep  .mat-form-field-appearance-outline .mat-form-field-outline     {
+    
+    background-color: white !important;
+}
+::ng-deep  .mat-form-field-infix {
+
+    border-top: 0.5em solid transparent;
+}
+
+.custTryButton {
+    height: 28px;
+    border: 1px solid var(--custBrightCyan);
+    border-radius: 4px;
+    --box-shadow: none;
+    // text-align: center !important;
+    // margin-right: 8px;
+}
+
+.custPosition{
+
+    display: flex;
+
+    justify-items: center;
+
+}
+.imgSize{
+    display: flex;
+    justify-content: center;
+    height: 23px;
+    width: 23px;
+    margin-left: 50px;
+}
+.custI{
+    height: 50px;
+    width: 40px; 
+}
+.img{
+    float: right;
+    margin-right: 20px;
+    height:30px;
+  }

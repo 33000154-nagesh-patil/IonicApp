@@ -1,0 +1,81 @@
+.muli-23pt{
+    font-size: 23px;
+}
+.custborder{
+    border: 1px solid var(--custLightGrey);
+}
+.andPosition{
+    background-color: var(--custWhite);
+    border-radius:100% ;
+    position: relative;
+    top:13px;
+    z-index: 1;
+   
+}
+.muli-5pt {
+    font-size: 10px;
+}
+#CustColor{
+    color:var(--custLightGrey);
+    font-size: clamp(0.2rem,calc(5vw +0.5rem), 0.8rem) !important;
+}
+
+hr{
+    margin-top: -11px;
+    margin-bottom: 45px;
+    width: 100;
+   
+}
+
+.outerCircle{
+    width: 14px;
+     height: 14px;
+}
+
+.outerCircle:checked{
+    appearance: none;
+    padding: 2px;
+    background-clip:content-box;
+    border: 1px solid var(--custDarkishBlue);
+    border-radius: 50%;
+    background-color: var(--custBrightCyan);
+}
+
+.closeRoundIcon{  
+    color: var(--custRed) ;
+}
+.panButton{
+    height: clamp(60px,80%,120px);
+    width: clamp(100vw,80%,120px);
+    margin-bottom: clamp(20vh,10%,20px);
+}
+.custModalContainer {
+    z-index: 1;
+    left: 0;
+    // top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    // background-color: var(--custDark);
+    //  opacity: 0.4;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 16px;
+    padding-left: 16px;
+    border: 1px solid #888;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    border-radius: 10px 10px 0px 0px;
+}
+.scroll{
+    height: 85%;
+    overflow-y: scroll;
+}

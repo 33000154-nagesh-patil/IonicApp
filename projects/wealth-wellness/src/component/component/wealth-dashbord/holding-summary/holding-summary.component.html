@@ -1,0 +1,91 @@
+<div class="h-100">
+  <lib-gold-holdings></lib-gold-holdings>
+</div>
+
+<ion-card class="cardBackground m-3">
+  <div class="p-0 m-1 custColorGreyish">
+    <ion-row class="custMargin">
+      <ion-col
+        [size]="7"
+        class="custFontFamilyMuliBold custColorDark custLineHight20 muli-14pt pe-5 text-start text-nowrap custLineHight13"
+      >
+        Invested Value
+      </ion-col>
+
+      <ion-col
+        [size]="5"
+        class="custFontFamilyMuliBold custColorDark custLineHight20 muli-14pt pe-5 text-start text-nowrap custLineHight13"
+      >
+        Current Value
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="custMargin">
+      <ion-col
+        [size]="7"
+        class="custFontFamilyMuliSemiBold muli-16pt custColorDark text-nowrap custLineHight21"
+      >
+        ₹ {{investedStockValue}}
+      </ion-col>
+
+      <ion-col
+        [size]="5"
+        class="custFontFamilyMuliSemiBold muli-16pt custColorGreen text-nowrap custLineHight21"
+      >
+        <ion-icon name="caret-up" class="custGreenTick"></ion-icon> ₹ {{currentStock}}
+      </ion-col>
+    </ion-row>
+
+    <hr class="my-1" />
+
+    <ion-row class="pb-0 mb-0 custMargin">
+      <ion-col
+        [size]="7"
+        class="muli-14pt custColorDark custFontFamilyMuliBold text-nowrap custLineHight20 custLineHight13"
+      >
+        Unrealised Gain & Loss
+      </ion-col>
+
+      <ion-col
+        [size]="5"
+        class="custFontFamilyMuliBold custColorDark custLineHight20 muli-14pt pe-5 text-end text-nowrap custLineHight13"
+      >
+        Todays's Gain & Loss
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="custMargin">
+      <ion-col
+        [size]="7"
+        class="custFontFamilyMuliSemiBold muli-16pt text-nowrap custLineHight20"
+      >
+        <span
+          class="muli-14pt custLineHight21 mb-1 text-end text-nowrap"
+        >
+          <ion-icon name="caret-up" class="custGreenTick"></ion-icon
+          ><span class="custcol"> ₹ {{UnrealizedGainAndLossValue}} </span> </span
+        >&nbsp;
+        <!-- <span class="muli-12pt custLineHight16 itemCol mb-3 text-end  text-nowrap">0</span> -->
+      </ion-col>
+
+      <ion-col
+        [size]="5"
+        class="custFontFamilyMuliSemiBold muli-16pt text-nowrap custLineHight20"
+      >
+        <span
+          class="muli-14pt custLineHight21 itemCol mb-1 text-end text-nowrap custColorGreen"
+        >
+          <ion-icon name="caret-up" class="custGreenTick"></ion-icon>₹ {{todayGainAndLossValuePercent}} </span
+        >&nbsp;
+        <!-- <span class="muli-12pt custLineHight16 itemCol mb-3 text-end  text-nowrap custColorGreen">0</span>-->
+      </ion-col>
+    </ion-row>
+  </div>
+</ion-card>
+
+<ion-row class="custPosition mb-3">
+  <button class="custheight text-center" (click)="Explore()">Explore</button>
+</ion-row>
+<ion-col [size]="'12'" *ngIf="ExploreScreen" class="w-100">
+  <lib-stock-sreen7></lib-stock-sreen7>
+</ion-col>

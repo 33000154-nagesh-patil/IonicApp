@@ -1,0 +1,203 @@
+<ion-app>
+  <ion-header>
+    <ion-toolbar class="custBackgroundDynamicColorWhite  px-2">
+      <ion-grid>
+        <ion-row>
+          <ion-col (click)="back()" [size]="'1'" class="text-center mt-1">
+            <ion-img [src]="imageList?.arrow" class="custKYCImg mt-2"></ion-img>
+          </ion-col>
+          <ion-col [size]="'11'" class=" ps-2">
+            <span class="custFontFamilyMuliBold muli-14pt custLineHight40 custColorDark ">
+              Prepaid Mobile</span>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <ion-grid class="p-2">
+      <ion-img [src]="imageList?.bharatBillPay" class="img my-3"> </ion-img>&nbsp;
+      <ion-row class="w-100">
+        <ion-segment [(ngModel)]="segment" (ionChange)="segmentChanged(segment)" scrollable="true">
+          <ion-segment-button value="Recommended">
+            <ion-label class="custFontFamilyMuliBold muli-14pt custColorDark">Recommended</ion-label>
+          </ion-segment-button>
+          <ion-segment-button value="Special">
+            <ion-label class="custFontFamilyMuliBold muli-14pt custColorDark">Special Recharge</ion-label>
+          </ion-segment-button>
+          <ion-segment-button value="International">
+            <ion-label class="custFontFamilyMuliBold muli-14pt custColorDark">International</ion-label>
+          </ion-segment-button>
+        </ion-segment>
+      </ion-row>
+
+      <div *ngFor="let item of data" class="mt-2">
+        <ion-row>
+          <ion-col>
+            <ion-card class="custBackgroundColorWhite p-0 m-1 custCardHeight">
+              <ion-card-content class="mb-0 pb-0">
+
+                <ion-row>
+                  <ion-col>
+                    <mat-radio-button>
+
+                    </mat-radio-button>
+                  </ion-col>
+                  <ion-col
+                    class="custFontFamilyMuliSemiBold muli-12pt custLineHight16 custColorBattlePGry  text-nowrap">
+                    {{item.title1}}
+                  </ion-col>
+
+                  <ion-col class="d-flex justify-content-end text-end">
+
+                    <span class="muli-12pt itemCol mb-1 text-end  text-nowrap">{{item.duration}}</span>
+                  </ion-col>
+
+                  <ion-col class="d-flex justify-content-end">
+
+                    {{item.title2}}
+                  </ion-col>
+
+                </ion-row>
+
+                <ion-row>
+                  <ion-col>
+
+                  </ion-col>
+                  <ion-col
+                    class="custFontFamilyMuliSemiBold muli-12pt custLineHight16 custColorBattlePGry  text-nowrap">
+                    {{item.rate}}
+                  </ion-col>
+
+                  <ion-col class="d-flex justify-content-end text-end">
+
+                    <span class="muli-12pt itemCol mb-1 text-end  text-nowrap">{{item.days}}</span>
+                  </ion-col>
+
+                  <ion-col class="d-flex justify-content-end">
+
+                    {{item.limit}}
+                  </ion-col>
+
+                </ion-row>
+
+
+              </ion-card-content>
+              <ion-row class="custBackgroundColorPaleGrey custbottomheight w-100  text-startp-2">
+                <ion-col class="text-start custFontFamilyMuliBold muli-10pt custColorDarkishBlue">View Plans</ion-col>
+              </ion-row>
+            </ion-card>
+
+          </ion-col>
+
+        </ion-row>
+      </div>
+
+
+
+    </ion-grid>
+  </ion-content>
+  <ion-footer>
+    <ion-row class="custPadding16 buttonHeight">
+      <button class="btn w-100 text-center custBackgroundColorBrightCyan" type="submit">
+        <span class="custColorWhite custFontFamilyMuliBold muli-16pt">Continue</span>
+      </button>
+    </ion-row>
+  </ion-footer>
+</ion-app>
+
+
+
+
+
+
+
+<div class="   custModalContainer" *ngIf="popUp">
+  <div id="showModalSMGSucces" class=" modal-content">
+    <ion-row>
+      <ion-col class="text-center">
+        <ion-icon class="" name="chevron-down-outline" style="height:25px; width:25px; color:grey;"
+          (click)="hidePopUp()">
+        </ion-icon>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+
+      <ion-col class="custFontFamilyMuliSemiBold muli-12pt custLineHight16 custColorBattlePGry  text-nowrap">
+        {{popData.title1}}
+      </ion-col>
+
+      <ion-col class="d-flex justify-content-end text-end">
+        <!-- <ion-img [src]="imageList?.greenIcon" style="height: 4px; width: 20px;margin-top: 7px;" class="ps-1">
+          </ion-img> -->
+        <span class="muli-12pt itemCol mb-1 text-end  text-nowrap">{{popData.duration}}</span>
+      </ion-col>
+
+      <ion-col class="d-flex justify-content-end">
+
+        {{popData.title2}}
+      </ion-col>
+
+    </ion-row>
+
+    <ion-row>
+
+      <ion-col class="custFontFamilyMuliSemiBold muli-12pt custLineHight16 custColorBattlePGry  text-nowrap">
+        {{popData.rate}}
+      </ion-col>
+
+      <ion-col class="d-flex justify-content-end text-end">
+        <!-- <ion-img [src]="imageList?.greenIcon" style="height: 4px; width: 20px;margin-top: 7px;" class="ps-1">
+          </ion-img> -->
+        <span class="muli-12pt itemCol mb-1 text-end  text-nowrap">{{popData.days}}</span>
+      </ion-col>
+
+      <ion-col class="d-flex justify-content-end">
+
+        {{popData.limit}}
+      </ion-col>
+
+    </ion-row>
+    <br>
+
+    <ion-row>
+      Benefits
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        Pack Validity
+      </ion-col>
+      <ion-col>
+        100 minutes
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        Total Data
+      </ion-col>
+      <ion-col>
+        56 GB
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        SMS
+      </ion-col>
+      <ion-col>
+        100 SMS /day
+      </ion-col>
+    </ion-row>
+    <br>
+
+    <ion-row>
+      Covered countries
+    </ion-row>
+    <ion-row>
+      Bangladesh, Bhutan, Myanmar, Nepal , SriLanka
+    </ion-row>
+
+
+  </div>
+</div>

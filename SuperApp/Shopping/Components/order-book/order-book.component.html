@@ -1,0 +1,515 @@
+<!-- <ion-app (click)="appClick($event)" [ngClass]="content"> -->
+
+<cap-header [title]="'orderBook'" [otherTextName]="'orderBook'" [imageList]="imageList" [showArrow]="true"
+  [showLabel]="true" [showImg]="false" [showIndex]="false" [showNotification]="false" [showCartWithName]="true"
+  [cartCount]="cartCount" [showSideMenu]="false" [showSearch]="true" [showClose]="false" [showShare]="false"
+  [showWatchList]="false" [showCartWithoutName]="false" [showStories]="false" [paddingSize]="'7'"
+  [showOtherText]="false" [backUrlName]="">
+</cap-header>
+<ion-content class="contentBackground">
+
+
+  <ion-grid class="p-2" style="min-height: 80%;">
+    <span class="muli-12pt custColorDarkishBlue p-2"
+      *ngIf="['BillPayment','Insurance','Las','MF','NB'].includes(breadCrumb.split('/')[1])"
+      (click)="getLink()">Prerequisite</span>
+    <ion-row>
+      <ion-col (click)="profileClicked()">
+        <ion-icon name="person-circle" class="custColorGreyish"></ion-icon>
+        <span class="muli-12pt custColorGreyish">
+          {{(jsonData?.Consumer[selectedConsumer]?.name.length>12)?
+          jsonData?.Consumer[selectedConsumer]?.name.substring(0, 9) + "...":
+          jsonData?.Consumer[selectedConsumer]?.name}}</span>
+        <ion-icon name="chevron-down-outline"></ion-icon>
+      </ion-col>
+      <ion-col class="text-end" (click)="locationClicked()">
+        <ion-icon name="location" class="custColorGreyish"></ion-icon>
+        <span class="muli-12pt custColorGreyish">
+          {{jsonData?.Location[selectedLocation]?.name }}{{""}}
+
+          {{(jsonData?.Location[selectedLocation]?.value[2]?.length>6)?
+          jsonData?.Location[selectedLocation]?.value[2].split(",")
+          [jsonData?.Location[selectedLocation]?.value[2].split(",").length-1]:
+          jsonData?.Location[selectedLocation]?.value[2]
+
+          }}
+        </span>
+        <ion-icon name="chevron-down-outline"></ion-icon>
+      </ion-col>
+    </ion-row>
+    <ion-row *ngIf="jsonData?.exchange">
+      <ion-card class="w-100">
+        <ion-card-content>
+          <ion-row>
+            <ion-col class="muli-16pt custColorDark custFontFamilyMuliRegular custLineHight20">
+              {{jsonData?.exchange.header.name}}</ion-col>
+            <ion-col class="text-end">
+              <ion-segment [(ngModel)]="currentSegment" class="segmant" (ngModelChange)="segmentChanged()">
+                <ion-segment-button *ngFor="let x of jsonData?.exchange?.exchangeType.options" [value]="x.value">
+                  {{x.name}}
+                </ion-segment-button>
+              </ion-segment>
+            </ion-col>
+
+          </ion-row>
+          <ion-row>
+            <button *ngFor="let x of jsonData?.exchange?.orderType?.options" class="px-2 py-2 rounded m-1"
+              style="width: 4.5rem;" [ngClass]="orderType==x.value?'custBackgroundColorBrightCyan custColorWhite':''"
+              (click)="setOrderType(x)">{{x.name}}</button>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+    </ion-row>
+    <ion-row>
+      <ion-card class="w-100">
+        <ion-card-content>
+          <ion-row>
+            <ion-col size="2" *ngIf="jsonData?.productImage" class="custCenter">
+              <ion-img
+                [src]="['https:','http:','assets'].includes(jsonData?.productImage.split('/')[0])?jsonData?.productImage:'data:image/png;base64,'+ jsonData?.productImage"
+                class="productImage"></ion-img>
+            </ion-col>
+            <ion-col>
+              <ion-row class="muli-14pt custColorDark custFontFamilyMuliRegular custLinehight20">
+                {{jsonData?.itemName}}
+              </ion-row>
+              <ion-row class="custColorGreyish muli-10pt custFontFamilyMuliRegular ">
+                {{jsonData?.productSubtitle}}
+              </ion-row>
+            </ion-col>
+          </ion-row>
+          <ion-row class="custCenter">
+            <ion-col size="6" class="matCol custCenter ">
+              <mat-form-field name="Quantity" (click)="switchDisable(jsonData?.editable,'quantity')">
+                <!-- <span matSuffix>{{jsonData?.unitOfQuantity}}</span> -->
+
+                <button class="custBackgroundColorPaleGrey rounded" style="min-width: 10px" matSuffix
+                  (click)="changeQuantity('+')">
+                  +
+                </button>
+                <button class="custBackgroundColorPaleGrey rounded" matPrefix (click)="changeQuantity('-')">
+                  -
+                </button>
+                <input matInput type="number"  autocomplete="off" class="text-center muli-16pt custLineHight16" #quantityInput [disabled]="quantityDisable"
+                  [(ngModel)]="quantity" (keypress)="numberOnly($event)" (keyup)="keyQuantity()">
+                <mat-label class="custCenter custFontFamilyMuliRegular ">Quantity</mat-label>
+              </mat-form-field>
+            </ion-col>
+            <ion-col size="6" class="matCol custCenter">
+              <mat-form-field name="Amount" (click)="switchDisable(jsonData?.editable,'amount')">
+                <button class="custBackgroundColorPaleGrey rounded" matPrefix *ngIf="jsonData?.editable != 'amtEdit'">
+                  {{jsonData?.unitOfAmount}}
+                </button>
+                <div *ngIf="jsonData?.editable == 'amtEdit'" class="text-center">
+                  <div *ngIf="!['MKT','SL-M'].includes(orderType)">
+                    <span class="custColorBattlePGry muli-16pt custLineHight16 custFontFamilyMuliBold  ">{{jsonData?.unitOfAmount}}</span>
+                    <span class="custColorDark muli-16pt custLineHight16 ">{{unitPrice}}</span>
+                  </div>
+                  <div *ngIf="['MKT','SL-M'].includes(orderType)" (click)="setOrderType({
+                    'name': 'Limit',
+                    'value': 'LMT'
+                })">
+                    Market
+                  </div>
+                </div>
+                <input matInput type="number" style="height: 0px;opacity:0;position: absolute;" *ngIf="jsonData?.editable == 'amtEdit'" class="text-center"
+                  [(ngModel)]="unitPrice" (keyup)="keyAmount()"  (keypress)="numberWithDecimal($event)" #amountInput
+                  [disabled]="amountDisable" />
+                <input matInput type="number"  autocomplete="off" *ngIf="jsonData?.editable != 'amtEdit'" class="text-center muli-16pt custLineHight16"
+                  [(ngModel)]="totalAmount" (keyup)="keyAmount()" #amountInput [disabled]="amountDisable" />
+                <mat-label *ngIf="jsonData?.editable != 'amtEdit'" class="custCenter custFontFamilyMuliRegular ">Amount</mat-label>
+              </mat-form-field>
+            </ion-col>
+          </ion-row>
+          <!-- ////Edit -->
+          <ion-row *ngIf="jsonData?.allRedeem && currentSegment=='onetime'">
+            <ion-row class="custFontFamilyMuliBold muli-12pt ">
+              <ion-checkbox class="redeemAll" (click)='redeemAll($event)'></ion-checkbox>{{jsonData?.allRedeem}}<img
+                [src]="imageList.information" class="informationIcon">
+            </ion-row>
+          </ion-row>
+
+
+          <!-- ////Edit -->
+          <div *ngIf="jsonData?.productName=='ST'">
+            <ion-row>
+              <div class="custBackgroundColorPaleGrey p-1 rounded"
+                [ngClass]="jsonData?.txnType=='BUY'?'custColorParakeetGreen':'custColorcustFadedRed'">
+                Best {{jsonData?.txnType=='BUY'?'BID':'ASK'}} {{jsonData?.unitOfAmount}} {{bestPrice}}</div>
+            </ion-row>
+            <ion-row class="mt-3">
+              <span class="custColorDark muli-12pt custFontFamilyMuliRegular ">Product</span>
+            </ion-row>
+            <ion-row>
+              <button class="px-2 py-2 rounded m-1" style="width: 4.5rem;"
+                [ngClass]="deliveryMode=='I'?'custBackgroundColorBrightCyan custColorWhite':''"
+                (click)="setDelivery('I')">Intraday</button>
+              <button class="px-2 py-2 rounded m-1" style="width: 4.5rem;"
+                [ngClass]="deliveryMode=='C'?'custBackgroundColorBrightCyan custColorWhite':''"
+                (click)="setDelivery('C')">Delivery</button>
+              <button class="px-2 py-2 rounded m-1" style="width: 4.5rem;"
+                [ngClass]="deliveryMode=='F'?'custBackgroundColorBrightCyan custColorWhite':''"
+                (click)="setDelivery('F')">MTF</button>
+                <button class="px-2 py-2 rounded m-1" style="width: 4.5rem;"
+                [ngClass]="deliveryMode=='M'?'custBackgroundColorBrightCyan custColorWhite':''"
+                (click)="setDelivery('M')">FO</button>
+            </ion-row>
+            <ion-row>
+            </ion-row>
+          </div>
+        </ion-card-content>
+        <div class="custBackgroundColorWhiteThree" *ngIf="jsonData?.Validity">
+          <ion-grid>
+            <ion-row>
+              <ion-col size="7" class="muli-12pt">Current Rate: <span class="custColorDark  custFontFamilyMuliBold">₹
+                {{unitPrice}}/gms</span><span class="custColorDark  custFontFamilyMuliBold" *ngIf="jsonData.txnType=='BUY'">&nbsp;+ {{jsonData.taxes[2].taxPercentage}}% {{jsonData.taxes[2].type}}
+                </span></ion-col>
+
+              <ion-col class="text-end muli-12pt">
+                <ion-icon name="time-outline" class="custColorDarkishBlue"></ion-icon>
+                valid for <span class="custColorDark custFontFamilyMuliBold">{{minutes}}:{{seconds}} mins</span>
+              </ion-col>
+            </ion-row>
+              <ion-row *ngIf="jsonData.availableUnit>=0">
+              <ion-col size="7" class="muli-12pt">Available To Sell </ion-col>
+              <ion-col class="text-end muli-12pt">
+                <span class="custColorDark custFontFamilyMuliBold">{{jsonData.availableUnit}}gms</span>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </div>
+      </ion-card>
+      <div *ngIf="jsonData?.Validity || jsonData?.redeemableUnits || jsonData?.redeemableAmount" class="w-100 ">
+<ion-row *ngIf="totalAmount>200000 && jsonData?.Validity"  class="custCenter custColorcustFadedRed">
+Yoy Can not {{jsonData.txnType}} more than 200000 !
+</ion-row>
+        <ion-row *ngIf="quantity>(jsonData.availableUnit) || (quantity>(jsonData?.redeemableUnits) &&  totalAmount>(jsonData?.redeemableAmount))"
+          class="custCenter custColorcustFadedRed ">
+          You can not {{jsonData.txnType}} more than you have !
+        </ion-row>
+      </div>
+      <!-- ///Edit -->
+
+      <ion-card class="w-100" *ngIf="jsonData?.redeemCard">
+        <ion-card-content >
+          <ion-row class="w-100">
+            <ion-col [size]="6" *ngFor="let x of jsonData?.redeemCard">
+              <span class="custFontFamilyMuliRegular text-center muli-10pt">
+                {{x?.amountTitle}}</span>
+                <span class=" d-block custFontFamilyMuliRegular custColorDark muli-14pt">
+                  {{x?.Amount?x?.Amount:x?.Units}}</span>
+                </ion-col>
+          </ion-row>
+
+
+        </ion-card-content>
+      </ion-card>
+
+
+
+      <ion-card class="w-100 p-2" *ngIf="jsonData?.redeemFolio">
+        <ion-card-content>
+          <ion-row class="custFontFamilyMuliBold muli-12pt my-2">{{jsonData?.redeemFolio.title}}</ion-row>
+          <ion-row class="custFontFamilyMuliRegular muli-10pt my-1">Fund purchased in Folio No.
+            :{{jsonData?.redeemFolio.folioNumber}} </ion-row>
+          <ion-row class="custFontFamilyMuliRegular muli-10pt my-1">To change folio number Click on <span
+              class="custFontFamilyMuliRegular muli-10pt ms-1 custColorDarkishBlue">{{jsonData?.redeemFolio.manageFolio}}</span>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+
+
+
+      <ion-card class="w-100 custBackgroundColorWhiteThree" *ngIf="jsonData?.redeemTimeTaken">
+        <ion-card-content>
+          <ion-row class="custFontFamilyMuliRegular  muli-10pt w-100 ">{{jsonData?.redeemTimeTaken.workingDays}}
+          </ion-row>
+          <ion-row>
+            <ion-col><span class="text-end custFontFamilyMuliRegular muli-10pt ">
+                {{jsonData?.redeemTimeTaken.approxTax}} <img [src]="imageList.information"
+                  class="informationIcon"></span></ion-col>
+            <ion-col><span
+                class="text-end custFontFamilyMuliRegular muli-10pt text-end ">{{jsonData?.redeemTimeTaken.approxExitLoad}}
+                <img [src]="imageList.information" class="informationIcon"></span></ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+
+
+
+      <!-- bank -->
+      <ion-row *ngIf="jsonData?.bank" class="w-100">
+        <ion-card class="w-100 p-3" *ngFor="let x of jsonData?.bank">
+          <ion-card-content>
+
+            <ion-row class="custFontFamilyMuliBold muli-12pt my-2">{{x.transferTitle}}</ion-row>
+            <ion-row>
+              <ion-col size="1">
+                <mat-radio-group>
+                  <mat-radio-button  color="primary"></mat-radio-button>
+                </mat-radio-group>
+              </ion-col>
+              <ion-col size="2" *ngIf="x.bankImage" class="custCenter">
+                <ion-img [src]="x?.bankImage" class="productImage"></ion-img>
+              </ion-col>
+              <ion-col>
+                <ion-row class="muli-14pt custColorDark custFontFamilyMuliRegular custLinehight20">
+                  {{x?.bankName}}
+                </ion-row>
+                <ion-row class="custColorGreyish muli-10pt custFontFamilyMuliRegular ">
+                  {{x?.bankNumber}}
+                </ion-row>
+              </ion-col>
+            </ion-row>
+          </ion-card-content>
+        </ion-card>
+      </ion-row>
+
+      <!-- end---- -->
+
+
+
+
+
+
+
+      <ion-card class="w-100 marginCard" *ngIf="jsonData?.productName=='ST'">
+        <ion-row class="m-3">
+          <ion-col size="8">
+            <ion-row class="custFontFamilyMuliRegular muli-10pt  ">Margin Required</ion-row>
+            <ion-row class="custFontFamilyMuliRegular muli-12pt ">{{jsonData?.unitOfAmount}}{{calcAmount()}}</ion-row>
+          </ion-col>
+          <ion-col size="4">
+            <ion-row><span class="text-end custFontFamilyMuliRegular muli-10pt ">Available Funds</span></ion-row>
+            <ion-row><span
+                class="text-end custFontFamilyMuliRegular muli-12pt ">{{jsonData?.unitOfAmount}}{{getAvailableFund()}}</span>
+
+            </ion-row>
+          </ion-col>
+        </ion-row>
+      </ion-card>
+      <div *ngIf="currentSegment=='sip'">
+        <ion-card>
+          <ion-card-content>
+            <ion-row>
+              <ion-col [size]="'6'" class="custFontFamilyMuliSemiBold muli-14pt custColorBattlePGry custLineHight15">
+                Select Frequency</ion-col>
+              <ion-col [size]="'6'" class="custFontFamilyMuliSemiBold muli-14pt custColorBattlePGry custLineHight15">SIP
+                Start Date</ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col [size]="'6'">
+                <mat-form-field class="w-100 yourMat" appearance="outline">
+                  <mat-label>Daily</mat-label>
+                  <!-- <ion-icon matSuffix name="chevron-down-outline"></ion-icon> -->
+                  <mat-select formControlName="Frequency">
+                    <mat-option *ngFor="let option of options;index as i" [value]="option">
+                      {{ option.item }}
+                    </mat-option>
+                  </mat-select>
+                </mat-form-field>
+              </ion-col>
+              <ion-col [size]="'6'">
+                <mat-form-field appearance="outline" class="w-100" (click)="FromDate.open()">
+                  <mat-label>Date</mat-label>
+                  <!-- <span matSuffix>1st of Every Month</span> -->
+                  <input matInput readonly [matDatepicker]="FromDate" (dateChange)="onDateChange($event)">
+                  <mat-datepicker-toggle matSuffix [for]="FromDate">
+                    <mat-icon matDatepickerToggleIcon>
+                      <svg *ngIf="!DatePicker" id="Group_12115" data-name="Group 12115"
+                        xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19">
+                        <path id="Path_15958" data-name="Path 15958"
+                          d="M16.551,1.484H14.844V.594a.594.594,0,0,0-1.187,0v.891H5.344V.594a.594.594,0,0,0-1.187,0v.891H2.449A2.452,2.452,0,0,0,0,3.934V16.551A2.452,2.452,0,0,0,2.449,19h14.1A2.452,2.452,0,0,0,19,16.551V3.934A2.452,2.452,0,0,0,16.551,1.484ZM2.449,2.672H4.156v.594a.594.594,0,0,0,1.188,0V2.672h8.313v.594a.594.594,0,0,0,1.188,0V2.672h1.707a1.263,1.263,0,0,1,1.262,1.262v1.41H1.188V3.934A1.263,1.263,0,0,1,2.449,2.672Zm14.1,15.141H2.449a1.263,1.263,0,0,1-1.262-1.262V6.531H17.813v10.02A1.263,1.263,0,0,1,16.551,17.813Z"
+                          fill="#b2b2b2" />
+                        <path id="Path_15964" data-name="Path 15964"
+                          d="M12.84,16.922H10.461a.461.461,0,1,1,0-.922H12.84a.461.461,0,1,1,0,.922Z"
+                          transform="translate(-7.15 -6.5)" fill="#b2b2b2" />
+                        <path id="Path_15967" data-name="Path 15967"
+                          d="M12.84,16.922H10.461a.461.461,0,1,1,0-.922H12.84a.461.461,0,1,1,0,.922Z"
+                          transform="translate(-7.15 -2.243)" fill="#b2b2b2" />
+                        <path id="Path_15963" data-name="Path 15963"
+                          d="M12.84,16.922H10.461a.461.461,0,1,1,0-.922H12.84a.461.461,0,1,1,0,.922Z"
+                          transform="translate(-2.15 -6.5)" fill="#b2b2b2" />
+                        <path id="Path_15966" data-name="Path 15966"
+                          d="M12.84,16.922H10.461a.461.461,0,1,1,0-.922H12.84a.461.461,0,1,1,0,.922Z"
+                          transform="translate(-2.15 -2.243)" fill="#b2b2b2" />
+                        <path id="Path_15962" data-name="Path 15962"
+                          d="M12.84,16.922H10.461a.461.461,0,1,1,0-.922H12.84a.461.461,0,1,1,0,.922Z"
+                          transform="translate(2.85 -6.5)" fill="#b2b2b2" />
+                        <path id="Path_15965" data-name="Path 15965"
+                          d="M12.84,16.922H10.461a.461.461,0,1,1,0-.922H12.84a.461.461,0,1,1,0,.922Z"
+                          transform="translate(2.85 -2.243)" fill="#b2b2b2" />
+                      </svg>
+                      <img src="assets/icon/glowCalendarIcon.svg" *ngIf="DatePicker">
+                    </mat-icon>
+                  </mat-datepicker-toggle>
+
+                  <mat-datepicker #FromDate></mat-datepicker>
+                </mat-form-field>
+              </ion-col>
+            </ion-row>
+            <ion-row class="ps-1">
+              <ion-checkbox color="secondary"></ion-checkbox>
+              <span class="px-3 custColorBattlePGry custFontFamilyMuliSemiBold muli-14pt custLineHight16">First Order
+                Today</span>
+            </ion-row>
+            <ion-row class="mt-3">
+              <ion-col class="custFontFamilyMuliSemiBold muli-14pt custColorBattlePGry custLineHight15">No. of
+                Installments <img src="assets/icon/blueInformation.svg" class="mx-1">
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col [size]="'6'">
+                <mat-form-field class="w-100 yourMat" appearance="outline" formControlName="Perpetual">
+                  <!-- <mat-label>Perpetual</mat-label> -->
+                  <!-- <ion-icon matSuffix name="chevron-down-outline"></ion-icon> -->
+                  <mat-select [(ngModel)]="Instalment">
+                    <mat-option *ngFor="let option of Perpetualoptions;index as i" [value]="option.item">
+                      {{ option.item }}
+                    </mat-option>
+                  </mat-select>
+                </mat-form-field>
+              </ion-col>
+              <ion-col [size]="'6'">
+                <mat-form-field appearance="outline" name="noOfInstallment" class="d-block">
+                  <!-- <span matSuffix>{{jsonData?.unitOfQuantity}}</span> -->
+
+                  <button class="custBackgroundColorPaleGrey rounded" style="min-width: 10px" matSuffix [disabled]="Instalment == 'Perpetual'"
+                    (click)="changeInstallment('+')">
+                    +
+                  </button>
+                  <button class="custBackgroundColorPaleGrey rounded" matPrefix (click)="changeInstallment('-')" [disabled]="Instalment == 'Perpetual'">
+                    -
+                  </button>
+                  <input matInput type="text" class="text-center" [disabled]="Instalment == 'Perpetual'"
+                    [(ngModel)]="noOfInstallment" (keypress)="numberOnly($event)" (keyup)="keyInstallment()">
+                  <!-- <mat-label class="custCenter custFontFamilyMuliRegular ">Quantity</mat-label> -->
+                </mat-form-field>
+              </ion-col>
+            </ion-row>
+          </ion-card-content>
+          <div class="p-3 custBackgroundColorPaleGrey">
+            <p class="custColorWarmGrey custFontFamilyMuliRegular muli-12pt custLineHight15">First order will go today
+              and the next SIP will go on the selected date.</p>
+            <span class="custColorWarmGrey custFontFamilyMuliRegular muli-12pt custLineHight15">Applicable NAV date:
+              Once amount is credit to AMC's Bank</span>
+          </div>
+        </ion-card>
+      </div>
+      <div *ngIf="currentSegment=='sip' || currentSegment=='lumpSum'" class="w-100">
+        <ion-card>
+          <ion-card-content>
+            <ion-row class="d-flex flex-column">
+              <span class="custColorBattlePGry custFontFamilyMuliSemiBold muli-14pt custLineHight16 mb-2">Folio</span>
+              <span class="custColorWarmGrey custFontFamilyMuliRegular muli-12pt custLineHight16">
+                First Fund purchase in Folio Number: New Folio
+              </span>
+            </ion-row>
+          </ion-card-content>
+        </ion-card>
+        <ion-card>
+          <ion-card-content>
+            <p class="custColorBattlePGry custFontFamilyMuliSemiBold muli-14pt custLineHight16">Divident Type</p>
+            <ion-row class="w-100">
+              <ion-col [size]="'6'" *ngFor="let items of controls">
+                <mat-radio-group name="dividentType" [ngModel]="dividentType" [ngModelOptions]="{standalone: true}">
+                  <mat-radio-button class="custColorDark custFontFamilyMuliRegular muli-14pt custLineHight15"
+                    color="primary" name="dividentType" [value]="items.name">{{items.name}}</mat-radio-button>
+                </mat-radio-group>
+              </ion-col>
+            </ion-row>
+          </ion-card-content>
+        </ion-card>
+      </div>
+
+      <ion-card *ngFor="let item of jsonData?.OtherDetails" class="w-100">
+        <ion-card-content *ngFor="let x of item">
+
+          <span *ngIf="x.uxType=='header'" class="muli-20pt custColorDark m-2">{{x.name}}</span>
+
+          <mat-form-field appearance="outline" *ngIf="x.uxType=='DatePicker'" class="w-100 ">
+            <mat-label>Date</mat-label>
+            <input matInput [matDatepicker]="FromDate" [min]="todayDate" [value]="todayDate" (dateChange)="onDateChange($event)"
+              (click)="FromDate.open()">
+            <mat-datepicker-toggle matSuffix [for]="FromDate">
+              <mat-icon matDatepickerToggleIcon class="datePickerH">
+                <svg id="Group_12115" data-name="Group 12115"  xmlns="http://www.w3.org/2000/svg" width="19" height="19"
+                  viewBox="0 0 19 19">
+                  <path id="Path_15958" data-name="Path 15958"
+                    d="M16.551,1.484H14.844V.594a.594.594,0,0,0-1.187,0v.891H5.344V.594a.594.594,0,0,0-1.187,0v.891H2.449A2.452,2.452,0,0,0,0,3.934V16.551A2.452,2.452,0,0,0,2.449,19h14.1A2.452,2.452,0,0,0,19,16.551V3.934A2.452,2.452,0,0,0,16.551,1.484ZM2.449,2.672H4.156v.594a.594.594,0,0,0,1.188,0V2.672h8.313v.594a.594.594,0,0,0,1.188,0V2.672h1.707a1.263,1.263,0,0,1,1.262,1.262v1.41H1.188V3.934A1.263,1.263,0,0,1,2.449,2.672Zm14.1,15.141H2.449a1.263,1.263,0,0,1-1.262-1.262V6.531H17.813v10.02A1.263,1.263,0,0,1,16.551,17.813Z"
+                    fill="#b2b2b2" />
+                  <path id="Path_15964" data-name="Path 15964"
+                    d="M12.84,16.922H10.461a.461.461,0,1,1,0-.922H12.84a.461.461,0,1,1,0,.922Z"
+                    transform="translate(-7.15 -6.5)" fill="#b2b2b2" />
+                  <path id="Path_15967" data-name="Path 15967"
+                    d="M12.84,16.922H10.461a.461.461,0,1,1,0-.922H12.84a.461.461,0,1,1,0,.922Z"
+                    transform="translate(-7.15 -2.243)" fill="#b2b2b2" />
+                  <path id="Path_15963" data-name="Path 15963"
+                    d="M12.84,16.922H10.461a.461.461,0,1,1,0-.922H12.84a.461.461,0,1,1,0,.922Z"
+                    transform="translate(-2.15 -6.5)" fill="#b2b2b2" />
+                  <path id="Path_15966" data-name="Path 15966"
+                    d="M12.84,16.922H10.461a.461.461,0,1,1,0-.922H12.84a.461.461,0,1,1,0,.922Z"
+                    transform="translate(-2.15 -2.243)" fill="#b2b2b2" />
+                  <path id="Path_15962" data-name="Path 15962"
+                    d="M12.84,16.922H10.461a.461.461,0,1,1,0-.922H12.84a.461.461,0,1,1,0,.922Z"
+                    transform="translate(2.85 -6.5)" fill="#b2b2b2" />
+                  <path id="Path_15965" data-name="Path 15965"
+                    d="M12.84,16.922H10.461a.461.461,0,1,1,0-.922H12.84a.461.461,0,1,1,0,.922Z"
+                    transform="translate(2.85 -2.243)" fill="#b2b2b2" />
+                </svg>
+
+              </mat-icon>
+            </mat-datepicker-toggle>
+
+            <mat-datepicker #FromDate></mat-datepicker>
+          </mat-form-field>
+          <mat-form-field appearance="outline" class="w-100"  *ngIf="x.uxType=='TimePicker'">
+            <mat-label>Slot Time</mat-label>
+            <!-- <mat-select [(ngModel)]="timeSlot" (ngModelChange)="timeChange()"> -->
+            <mat-select [(ngModel)]="timeSlot">
+              <mat-option *ngFor="let option of x.value" [value]="option">
+                {{ option }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </ion-card-content>
+
+      </ion-card>
+    </ion-row>
+  </ion-grid>
+  <ion-item class="contentBackground " lines="none" style="position: unset;bottom: 0;" *ngIf="jsonData?.tnc.length">
+
+    <ion-checkbox color="secondary" checked="true" (ionChange)="checkboxqqw($event)" slot="start" class="ion-margin">
+    </ion-checkbox>
+    <p class="mt-3">
+      <span class="custFontFamilyMuliRegular muli-12pt custColorBrownishGrey">
+        By continuing. I agree with the
+        <a (click)="clickTncUrl(jsonData?.tnc[0])" class="custColorDarkishBlue">Disclaimers</a>
+        and <a (click)="clickTncUrl(jsonData?.tnc[1])" class="custColorDarkishBlue">
+          Terms & Conditions</a> of Torus
+      </span>
+    </p>
+  </ion-item>
+</ion-content>
+
+<ion-footer class="ion-no-border">
+  <ion-toolbar class="contentBackground ">
+    <ion-row *ngFor="let x of jsonData?.footerButton" class="custCenter">
+      <button mat-raised-button [disabled]="myDisable(jsonData.disable)" [ngClass]="x.uxClass"
+        [ngClass]="x.loading?x.uxClass+' loader':x.uxClass" (click)="buttonClicked(x)">
+        <span *ngIf="!x.loading">{{x.name}}</span>
+        <mat-spinner *ngIf="x.loading" [diameter]="30" class="spin"></mat-spinner>
+      </button>
+    </ion-row>
+    <button></button>
+    <button></button>
+  </ion-toolbar>
+</ion-footer>
+
+<!-- </ion-app> -->
+<!--
+  class="custBackgroundColorBrightCyan custColorWhite w-100 mx-3 my-2"
+  class="custBackgroundColorParakeetGreen custColorWhite w-100 mx-3 my-2"
+  class="custBackgroundRedButton w-100 mx-3 my-2"
+
+-->

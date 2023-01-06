@@ -1,0 +1,384 @@
+{
+    "Orderlist": [
+        {
+            "name":"Course Category",
+             "selected":true
+        }, {
+            "name":"Level",
+             "selected":false
+        }, {
+            "name":"Price",
+             "selected":false
+        }, {
+            "name":"Status",
+             "selected":false
+        }, {
+            "name":"Ratings",
+             "selected":false
+        }, {
+            "name":"Sort By",
+             "selected":false
+        }
+    ],
+    "CourseCategory": [
+        {
+            "name": "Mutual Fund",
+            "id": 1,
+            "select": false
+        },
+        {
+            "name": "Beauty & Wellness",
+            "id": 1,
+            "select": false
+        },
+        {
+            "name": "Life Insurance",
+            "id": 1,
+            "select": false
+        },
+        {
+            "name": "Basic of Computer",
+            "id": 1,
+            "select": false
+        },
+        {
+            "name": "Travel & Hospitality",
+            "id": 1,
+            "select": false
+        },
+        {
+            "name": "Equity Dealer",
+            "id": 1,
+            "select": false
+        },
+        {
+            "name": "Retail Sales",
+            "id": 1,
+            "select": false
+        }
+    ],
+    "Level": [
+        {
+            "name": "Beginner",
+            "id": 1,
+            "select": false
+        },
+        {
+            "name": "Intermediate",
+            "id": 1,
+            "select": false
+        },
+        {
+            "name": "Advanced",
+            "id": 1,
+            "select": false
+        }
+    ],
+    "Price": [
+        {
+            "name": "0-1000",
+            "id": 1,
+            "select": false
+        },
+        {
+            "name": "1000-2000",
+            "id": 1,
+            "select": false
+        },
+        {
+            "name": "2000-3000",
+            "id": 1,
+            "select": false
+        },
+        {
+            "name": "3000-4000",
+            "id": 1,
+            "select": false
+        },
+        {
+            "name": "4000 above",
+            "id": 1,
+            "select": false
+        }
+    ],
+    "Status": [
+        {
+            "name": "Yet to Start",
+            "id": 1,
+            "select": false
+        },
+        {
+            "name": "Ongoing",
+            "id": 1,
+            "select": false
+        },
+        {
+            "name": "Completed",
+            "id": 1,
+            "select": false
+        }
+    ],
+    "Ratings": [
+        {
+            "5": "assets/icon/fivestar.svg",
+            "id": 1,
+            "select": false
+        },
+        {
+            "4": "assets/icon/fourstar.svg",
+            "id": 1,
+            "select": false
+        },
+        {
+            "3": "assets/icon/threestar.svg",
+            "id": 1,
+            "select": false
+        },
+        {
+            "2": "assets/icon/twostar.svg",
+            "id": 1,
+            "select": false
+        },
+        {
+            "1": "assets/icon/onestar.svg",
+            "id": 1,
+            "select": false
+        }
+    ],
+    "SortBy": [
+        {
+            "name": "Date-Recent to Old",
+            "id": 1,
+            "select": false
+        },
+        {
+            "name": "Date-Old to Recent",
+            "id": 1,
+            "select": false
+        },
+        {
+            "name": "Price-High to Low",
+            "id": 1,
+            "select": false
+        },
+        {
+            "name": "Price Low to High",
+            "id": 1,
+            "select": false
+        }
+    ],
+
+
+    "Orderlist1":["Brand","Discount","Uses","ProductType","Availability", "Age", "SortBy"],
+
+  "Brand":[
+      {
+          "name":"Dr Med",
+          "id": 1,
+          "select":true
+        },
+        {
+            "name":"Dr Ortho",
+            "id": 2,
+            "select":false
+        },
+        {
+            "name":"Flemingo",
+            "id": 3,
+            "select":false
+        },
+        {
+            "name":"Tata 1mg",
+            "id": 4,
+            "select":false
+        },
+        {
+            "name":"Rexo",
+            "id": 5,
+            "select":false
+        },
+        {
+            "name":"Baidyanath",
+            "id": 6,
+            "select":false
+        },
+        {
+            "name":"Entros",
+            "id": 7,
+            "select":false
+        },
+        {
+            "name":"Jiva",
+            "id": 8,
+            "select":false
+        },
+        {
+            "name":"Amrutanjan",
+            "id": 9,
+            "select":false
+        }
+    ],
+    "Discount":[
+        {
+            "name":"Less than 10%",
+            "id": 1,
+            "select":true
+          },
+          {
+              "name":"10% and above",
+              "id": 2,
+              "select":false
+          },
+          {
+              "name":"20% and above",
+              "id": 3,
+              "select":false
+          },
+          {
+            "name":"30% and above",
+            "id": 4,
+            "select":false
+        },
+        {
+            "name":"40% and above",
+            "id": 5,
+            "select":false
+        }
+
+      ],
+      "Uses":[
+        {
+            "name":"Skin Care",
+            "id": 1,
+            "select":true
+          },
+          {
+              "name":"Cough & Cold",
+              "id": 2,
+              "select":false
+          },
+          {
+              "name":"Women Care",
+              "id": 3,
+              "select":false
+          },
+          {
+              "name":"Kidney Care",
+              "id": 4,
+              "select":false
+          },
+          {
+              "name":"Stomach Care",
+              "id": 5,
+              "select":false
+          },
+          {
+            "name":"First Aid",
+            "id": 6,
+            "select":false
+        },
+        {
+            "name":"Immunity Booster",
+            "id": 7,
+            "select":false
+        },
+        {
+            "name":"Men Care",
+            "id": 8,
+            "select":false
+        },
+        {
+            "name":"Men Care",
+            "id": 9,
+            "select":false
+        }
+
+      ],
+      "ProductType":[
+        {
+            "name":"Liquid",
+            "id": 1,
+            "select":true
+          },
+          {
+              "name":"Tablet",
+              "id": 2,
+              "select":false
+          },
+          {
+              "name":"Gel",
+              "id": 3,
+              "select":false
+          },
+          {
+            "name":"Oil",
+            "id": 4,
+            "select":false
+        },
+        {
+            "name":"Capsule",
+            "id": 5,
+            "select":false
+        },
+        {
+            "name":"Spray",
+            "id": 6,
+            "select":false
+        },
+        {
+            "name":"Balm",
+            "id": 7,
+            "select":false
+        },
+         {
+            "name":"Cream",
+            "id": 8,
+            "select":false
+        },
+        {
+            "name":"Patch",
+            "id": 9,
+            "select":false
+        }
+      ],
+      "Availability":[
+        {
+            "name":"Including out of stock",
+            "id": 1,
+            "select":true
+          },
+          {
+              "name":"Excluding out of stock",
+              "id": 2,
+              "select":false
+          }
+
+      ],
+
+      "Age":[
+        {
+            "name":"All",
+            "id": 1,
+            "select":true
+          },
+          {
+              "name":"Elder",
+              "id": 2,
+              "select":false
+          },
+          {
+            "name":"Adult",
+            "id": 3,
+            "select":false
+        },
+        {
+            "name":"Child",
+            "id": 4,
+            "select":false
+        }
+
+      ]
+
+      
+
+    }

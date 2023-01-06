@@ -1,0 +1,33 @@
+.custImage{
+    height: 47px;
+    width: 47px;
+}
+
+.center-block {
+    display: flex;
+    justify-content: center;
+  }
+
+ 
+  .imgIcon{
+    position: relative;
+    top: 5px;
+    // float: left;
+    // margin-right: 10px;
+    height: 15px;
+    width: 15px;
+  }
+
+ ::ng-deep .mat-expansion-panel-body {
+    padding: 0 16px 16px !important;
+}
+// ::ng-deep.mat-expansion-panel-header{
+//   background-color:#f6f7fb !important;
+// }
+.custExpColour{
+  color: #434959;
+}
+.custDebitIcon{
+  height: 188px;
+  width: 328px;
+}

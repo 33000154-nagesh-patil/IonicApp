@@ -1,0 +1,43 @@
+{
+    "Consumer":[
+        {"name":"Akshay PAtil","value":"1234567890"},
+        {"name":"Jayesh Mishra","value":"098765423"},
+        {"name":"Salman Dada","value":"321414414124"}
+
+    ],
+    "Locations": [
+        {"name":"Home","value":["AddressLine1","AddressLine2"]},
+        {"name":"Office","value":["AddressLine1","AddressLine2"]}
+    ],
+    "productName":"HDFC Limited",
+    "productimage":"https://pbs.twimg.com/profile_images/899609798299205633/DZLt0_e2_400x400.jpg",
+    "itemCode":"1158",
+    "quantity":"Multiple",
+    "unitOfQuantity":"gm",
+    "unitOfAmount":"₹",
+    "tnc":true,
+    "unitPrice":"5000.00",
+    "taxes":[
+        {"type":"CGST","taxPercentage":"1.5"},
+        {"type":"SGST","taxPercentage":"1.5"},
+        {"type":"IGST","taxPercentage":"3.0"}
+    ],
+
+    "quantityEditabe":true,
+    "amountEditabe":false,
+    "amountQuantity":true,
+
+    "walletMargin":false,
+    "availableMargin":5000.00,
+    "txnType":"BUY",
+    "OtherDetails":[
+        "OrderType","LockPrice","Validity","BlockId"
+    ],
+    "OrderType":[
+        {"name":"Gram","value":"gram"},
+        {"name":"Amount","value":"amount"}
+    ],
+    "Validity":3000000,
+    "LockPrice":5000.00,
+    "BlockId":"dasd1244"
+}

@@ -1,0 +1,51 @@
+.custImageSize{
+    height: 100px;
+    width: 100px;
+    }
+    .btncolor{
+    
+        border-radius: 5px;
+        
+    }
+.move{
+    display: flex;
+    font-size: small;
+}
+.margin{
+    margin: 0px;
+}
+.vertical{
+    border-left: 2px solid black;
+}
+.border{
+    border-right: 1px solid black;
+}
+.top{
+    margin-top: 15px;
+}
+div.scroll{
+   overflow-y: auto;
+
+}
+.closebtn{
+    margin-left: 800px;
+}
+.logosize{
+    width: 50px;
+    height: 50px;
+ 
+
+}
+.logosize1{
+    width: 40px;
+    height: 25px;
+}
+
+
+@media (min-width:393px){
+    .closebtn{
+        margin-left: 300px;
+    margin-top: -49px;
+    } 
+
+}

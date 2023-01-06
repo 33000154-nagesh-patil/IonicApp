@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="42.999" height="55.457" viewBox="0 0 42.999 55.457">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.091" y1="0.325" x2="0.888" y2="0.711" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#90cc27"/>
+      <stop offset="1" stop-color="#628e16"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.214" y1="0.203" x2="0.914" y2="0.585" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fddeb0"/>
+      <stop offset="1" stop-color="#eab970"/>
+    </linearGradient>
+  </defs>
+  <g id="coconut_water_icon" data-name="coconut water icon" transform="translate(-12.646 -0.083)">
+    <path id="Path_24008" data-name="Path 24008" d="M274.81,20.778a.826.826,0,0,1-.812-.97L276.38,6.524A5.427,5.427,0,0,1,279.7,2.43l5.685-2.3a.825.825,0,0,1,.618,1.528l-5.684,2.3A3.786,3.786,0,0,0,278,6.818L275.62,20.1A.825.825,0,0,1,274.81,20.778Z" transform="translate(-237.863 0)" fill="#7a6d79"/>
+    <path id="Path_24009" data-name="Path 24009" d="M285.674,20.778a.826.826,0,0,0,.813-.97L284.1,6.524a5.427,5.427,0,0,0-3.324-4.094L275.1.135a.825.825,0,0,0-.618,1.528l5.684,2.3a3.786,3.786,0,0,1,2.319,2.859L284.864,20.1A.825.825,0,0,0,285.674,20.778Z" transform="translate(-253.708 0)" fill="#7a6d79"/>
+    <path id="Path_24010" data-name="Path 24010" d="M103.449,171.268a21.5,21.5,0,1,1-41.132-8.922l3.841-4.92,1.608-2.057a3.3,3.3,0,0,1,2.6-1.269H93.533a3.3,3.3,0,0,1,2.6,1.269l5.449,6.977A21.439,21.439,0,0,1,103.449,171.268Z" transform="translate(-47.805 -137.084)" fill="url(#linear-gradient)"/>
+    <path id="Path_24011" data-name="Path 24011" d="M116.695,162.346c-1.7.759-2.381,2.27-5.1,2.27-3.628,0-3.628-2.694-7.266-2.694s-3.628,2.694-7.265,2.694-3.628-2.694-7.265-2.694-3.628,2.694-7.264,2.694c-2.721,0-3.408-1.512-5.1-2.27l5.45-6.977a3.3,3.3,0,0,1,2.6-1.269h23.166a3.3,3.3,0,0,1,2.6,1.269Z" transform="translate(-62.918 -137.084)" fill="url(#linear-gradient-2)"/>
+  </g>
+</svg>

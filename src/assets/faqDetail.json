@@ -1,0 +1,1291 @@
+{
+    "General-Data": [
+        {
+            "id": 1,
+            "Question": "How do I login into the App?",
+            "Answer": "Follow below steps to login:\n\n1. Enter User ID\n2. Enter Password\n3. Set 2FA (MPIN)\n4. Click on the Login button",
+            "CTA": "Login"
+        },
+        {
+            "id": 2,
+            "Question": "On subsequent logins do I need to enter all the login credentials?",
+            "Answer": "No, on subsequent logins you need not enter all your login credentials, you just need to enter your MPIN.\n\nNote: If you have set Face ID OR Finger Print OR Touch ID instead of MPIN by going to Post Login > Menu > Settings > Manage App Lock, then the above MPIN will be replaced with the same.\n",
+            "CTA": null
+        },
+        {
+            "id": 3,
+            "Question": "If I don't remember my password, how do I generate a new password?",
+            "Answer": "You can reset your password through login screen > Forgot Password. \nYou will receive a system generated password via OTP on your registered Mobile No from which you can set your desired password.\n\nClick here to Reset Password",
+            "CTA": "Reset Password"
+        },
+        {
+            "id": 4,
+            "Question": "I forgot my User ID, how do I retreive it?",
+            "Answer": "You can retrieve your User ID through login screen> Forgot User ID. Will receive your User ID via OTP on your registered Mobile No. \n\nClick here to Retrieve your User ID",
+            "CTA": "Retrieve your User ID"
+        },
+        {
+            "id": 5,
+            "Question": "How can I login with different user from handset?",
+            "Answer": "If you wish to login with different user from same handset, just click on Switch Account on the login screen.\n\nClick here to Switch Account",
+            "CTA": "Swtich Account"
+        },
+        {
+            "id": 6,
+            "Question": "How do I manually change my password?",
+            "Answer": "To manually change your password, just click on Menu > Settings > Change Password post login into the App.\n\nClick here to Change your Password",
+            "CTA": "Change your Password"
+        },
+        {
+            "id": 7,
+            "Question": "Can I login through Android & iOS both?",
+            "Answer": "Yes, you can login through Android & iOS both.\n\nClick here to Login",
+            "CTA": "Login"
+        },
+        {
+            "id": 8,
+            "Question": "Can I login with same User ID on different devices?",
+            "Answer": "No, you cannot login with same User ID from different devices.\n",
+            "CTA": null
+        },
+        {
+            "id": 9,
+            "Question": "On next trading day, do I have to enter all my credentials?",
+            "Answer": "No, on next trading day you won't have to enter all your credentials, you just need to enter your previously set MPIN OR Face ID OR FingerPrint OR Touch ID to login.\n",
+            "CTA": null
+        },
+        {
+            "id": 10,
+            "Question": "Where can I view my Notifications?",
+            "Answer": "You can view your Notifications in the Notifications section on the top bar of the App.\n\nClick here to view your Notifications",
+            "CTA": "Notifications"
+        },
+        {
+            "id": 11,
+            "Question": "How do I Log Out?",
+            "Answer": " You can logout by clicking on the logout button under Menu post login.",
+            "CTA": null
+        },
+        {
+            "id": 12,
+            "Question": "Can I login from two devices at the same time?",
+            "Answer": "No, you cannot login from two devices at the same time with a single ID.",
+            "CTA": null
+        },
+        {
+            "id": 13,
+            "Question": "Will I get logged out if my session is inactive for an hour?",
+            "Answer": "No, you will not get logged out if your session is inactive for an hour.",
+            "CTA": null
+        },
+        {
+            "id": 14,
+            "Question": "Will I get logged out if I kill the app and relaunch it?",
+            "Answer": "No, you will not get logged out if you kill the app and relaunch.",
+            "CTA": null
+        },
+        {
+            "id": 15,
+            "Question": "Will you help in tax filing?",
+            "Answer": "No, we do not help in tax filing."
+        },
+        {
+            "id": 16,
+            "Question": "What if I want to discontinue with your services? What are the consequences and process?",
+            "Answer": "It would be disheartening to see you go. However, if you are unhappy with our services, you can send us an email with the reason post which we will delete your account."
+        },
+        {
+            "id": 17,
+            "Question": "How does an NRI’s execution takes place and how does investments work out for them?",
+            "Answer": "An NRI can invest via the NRE or NRO account. "
+        },
+        {
+            "id": 18,
+            "Question": "Do you provide offline services?",
+            "Answer": "No, we do not provide offline services."
+        },
+        {
+            "id": 19,
+            "Question": "If I don’t implement the advice through you, will the renewal fee be waived off?",
+            "Answer": "To continue availing our services, you are required to pay the fees regardless of whether or not you implemented our advice."
+        }
+    ],
+    "Funds-Data": [
+        {
+            "id": 1,
+            "Question": "What is meant by Funds?",
+            "Answer": "Funds means the money available in your Trading Account which you can use to purchase securities.",
+            "CTA": null
+        },
+        {
+            "id": 2,
+            "Question": "Where can I view my Funds?",
+            "Answer": "You can view your funds under Menu > Funds\n\nClick here to View Funds",
+            "CTA": "View Funds"
+        },
+        {
+            "id": 3,
+            "Question": "What are modes of Funds Transfer?",
+            "Answer": "You can transfer your funds through UPI, Net Banking, NEFT\/RTGS\/IMPS.\n\nClick here to Add Funds",
+            "CTA": "Ad Funds"
+        },
+        {
+            "id": 4,
+            "Question": "Can I transfer my funds through Google Pay?",
+            "Answer": "Yes, you can transfer your funds via Google Pay.\n\nNote: While transferring funds via UPI you will be able to see other UPI options as well.\n\nClick here to Add Funds through UPI mode",
+            "CTA": null
+        },
+        {
+            "id": 5,
+            "Question": "How can I transfer my funds through Net Banking?",
+            "Answer": "You can transfer funds from your bank account to trading account using ‘Net Banking’ option in the Funds Section. \nYou have to insert the amount you wish to transfer. You will be redirected to your online banking page registered with us from where you can transfer the funds. \n\nClick here to Add Funds through Net Banking mode",
+            "CTA": null
+        },
+        {
+            "id": 6,
+            "Question": "How can I transfer my funds through NEFT\/RTGS\/IMPS?",
+            "Answer": "You can transfer funds from your bank account to trading account using ‘NEFT\/RTGS\/IMPS’ option from the Funds section. Just follow the mentioned process and transfer your funds successfully.\n\nNote: Transfer time for ‘NEFT\/RTGS\/IMPS’ - Upto 24 hrs\n\nClick here to Add Funds through NEFT\/RTGS\/IMPS mode",
+            "CTA": null
+        },
+        {
+            "id": 7,
+            "Question": "How much time does it take for funds to reflect into my trading account?",
+            "Answer": "It’s an instantaneous process; the moment funds are transferred they reflect in your trading account, provided there is no network issue.\n\nClick here to view your Status of your Funds Transfer",
+            "CTA": "Fund Transfer"
+        },
+        {
+            "id": 8,
+            "Question": "How much time will it take for funds to reflect into my bank account post withdrawal request?",
+            "Answer": "Yes, amount withdrawn will get reflected in your bank account on immediate basis.\n\nClick here to view your Status of your Funds Withdrawn",
+            "CTA": "Funds Withdrawn"
+        },
+        {
+            "id": 9,
+            "Question": "Can Transfer and Withdrawal be done on same day?",
+            "Answer": "Yes, Transfer and Withdrawal can be done on same day.\n\nClick here to Add Funds",
+            "CTA": "Add Funds"
+        },
+        {
+            "id": 10,
+            "Question": "Where can I view the status of my transactions?",
+            "Answer": "Yes, you can view the status of your transactions in the Status section under Transaction History.\n\nClick here to your Payment History",
+            "CTA": "Payment History"
+        },
+        {
+            "id": 11,
+            "Question": "Can I modify the withdrawal amount if status is shown as successful?",
+            "Answer": "No, once successful status is shown against your withdrawal amount under Transaction History, you cannot modify your amount.\n\nClick here to Modify Your Withadrawal Amount from Payment History",
+            "CTA": "Modify Your Withdrawal Amount"
+        },
+        {
+            "id": 12,
+            "Question": "Can I cancel my transaction if status is shown as Successful?",
+            "Answer": "No, once Successful status is shown against your withdrawal amount under Transaction History, you cannot delete your withdrawal transaction.\n\nClick here to Delete Your withadrawal Transaction from Payment History",
+            "CTA": null
+        },
+        {
+            "id": 13,
+            "Question": "Can I modify the withdrawal amount if status is shown as In Process?",
+            "Answer": "Yes, you can modify your withdrawal amount until the status is In Process.\n\nClick here to Modify Your Withadrawal Amount from Payment History",
+            "CTA": "Modify Your Withdrawal Amount"
+        },
+        {
+            "id": 14,
+            "Question": "Can I delete my withdrawal transaction?",
+            "Answer": "Yes, you can delete your withdrawal transaction until the status is shown as In Process.\n\nClick here to Delete Your Withdrawal Transaction from Payment History.",
+            "CTA": "Delete Your Withdrawal Transaction"
+        },
+        {
+            "id": 15,
+            "Question": "Can I transfer more funds than available in my trading account to bank account?",
+            "Answer": "No, you cannot transfer more funds than available in your trading account to your mapped bank account with us.\n\nClick here to Add Funds",
+            "CTA": "Add Funds"
+        },
+        {
+            "id": 16,
+            "Question": "How much time does it take for funds to reflect into my bank account?",
+            "Answer": "It’s an instantaneous process; the moment funds are transferred they reflect in your bank account, provided there is no network issue.\n\nClick here to view your Status of your Withdrawal Amount",
+            "CTA": "Withdrawal Amount"
+        },
+        {
+            "id": 17,
+            "Question": "Where can I view my transaction history?",
+            "Answer": "You can view your Transaction History under Menu > Funds > View your Payment History.\n\nClick here to view your Payment History",
+            "CTA": "Payment History"
+        },
+        {
+            "id": 18,
+            "Question": "Where can I view my Deposits & Withdrawals?",
+            "Answer": "You can view your Deposits & Withdrawals both under Transaction History.\n\nClick here to view your Deposits & Withdrawals",
+            "CTA": "Deposits & Withdrawals"
+        },
+        {
+            "id": 19,
+            "Question": "Where can I view reason for my failed transactions?",
+            "Answer": "You can view reason for failed transactions in Remarks section under Transaction History.\n\nClick here to view your Status of your Failed Transactions",
+            "CTA": "Failed Transactions"
+        }
+    ],
+    "Mutual Funds-Data": [
+        {
+            "id": 1,
+            "Question": "Will I be able to buy and sell Mutual Funds through your platform?",
+            "Answer": "Yes, you can buy and sell mutual funds on our platform."
+        },
+        {
+            "id": 2,
+            "Question": "Is there any minimum amount for investment?",
+            "Answer": "No, there is no minimum investment amount. You can invest according to your convenience."
+        },
+        {
+            "id": 3,
+            "Question": "How frequently do you monitor my portfolio?",
+            "Answer": "Our team of experts review your portfolio every 6 months and rebalance it accordingly. We ensure that your financial planning is in sync with your personal and professional life trajectory. "
+        },
+        {
+            "id": 4,
+            "Question": "I have had the worst experience investing in mutual funds. Will you suggest me other asset classes?",
+            "Answer": "- Yes, we will be suggesting you instruments like capital bonds, money market instruments, and tax savings schemes such as NPS and PPF."
+        },
+        {
+            "id": 5,
+            "Question": "Do you advise or accommodate any structured, alternative, or high return yielding investment opportunities\/options?",
+            "Answer": "No, we do not advise on any such products."
+        },
+        {
+            "id": 6,
+            "Question": "How does offline execution work?",
+            "Answer": "We do not have offline execution. The execution of your advice is completely online through our platform to buy, sell, redeem or switch your funds."
+        },
+        {
+            "id": 7,
+            "Question": "What is the brokerage commission that you take?",
+            "Answer": "We do not take brokerage from you; instead the AMC directly pays us a certain percentage in the form of commission."
+        },
+        {
+            "id": 8,
+            "Question": "How do we diversify the portfolio if the client does not have goals?",
+            "Answer": "We diversify the portfolio basis the risk profile in such a manner that inflation does not erode the value of your capital."
+        },
+        {
+            "id": 9,
+            "Question": "What if I don’t want to do any risk profiling and just want to do one-time investment?",
+            "Answer": "As per regulatory guidelines, we would require you to share with us minimum details of your current financial health to conduct risk profiling post which we can devise an investment plan."
+        },
+        {
+            "id": 10,
+            "Question": "Will the NAV of mutual fund portfolios be updated on daily basis on your platform? ",
+            "Answer": "Yes, the NAV is updated on a daily basis."
+        },
+        {
+            "id": 11,
+            "Question": "What is Torus Robo Advisory SIP Mandate?",
+            "Answer": "Torus Robo Advisory SIP Mandate is registered centrally at client level rather than with one Mutual Fund. Being a common mandate, it will be available for transactions across all Mutual Funds. This mandate can be used for all your SIP and Lumpsum transactions across any Mutual Fund. Once the mandate is registered, the unique AYID is all that the investor needs to quote for making lump sum transactions and new SIP registration."
+        },
+        {
+            "id": 12,
+            "Question": "What are the benefits of Torus Robo Advisory SIP Mandate?",
+            "Answer": "Torus Robo Advisory SIP Mandate brings the following significant benefits:\n•      One-time registration \n•      Investment through any mode\n•      Convenience to register new SIP\/ renew SIP quickly \n•      Debit instruction can be presented for any date, any number of transactions across any MF"
+        },
+        {
+            "id": 13,
+            "Question": "How, will I come to know about the successful registration of Torus Robo Advisory SIP Mandate? ",
+            "Answer": "After successful registration, a confirmation SMS\/email will be sent to you."
+        },
+        {
+            "id": 14,
+            "Question": "How do I cancel Torus Robo Advisory SIP Mandate registration?",
+            "Answer": "You can request for cancellation of the Torus Robo Advisory SIP Mandate facility by submitting the ‘One Time Debit Mandate Form’ and indicate cancellation."
+        },
+        {
+            "id": 15,
+            "Question": "Do I need to have an account with any specific bank to register for Torus Robo Advisory SIP Mandate facility?",
+            "Answer": "No, the Torus Robo Advisory Mandate facility is not restricted to a particular bank\/ branch\/ location. As long as a bank is participating in the NACH (National Automated Clearing House) system, you can register Torus Robo Advisory SIP Mandate facility."
+        },
+        {
+            "id": 16,
+            "Question": "Can I transact for any amount once the mandate is registered?",
+            "Answer": "Investor needs to provide an upper limit amount in the mandate form. This limit is applicable for every debit instruction that is presented to the bank account."
+        },
+        {
+            "id": 17,
+            "Question": "How do I register for Torus Robo Advisory SIP Mandate? Do I have to be an investor for registering Common Mandate?",
+            "Answer": "You do not have to be an existing investor to register for this. You can provide the Torus Robo Advisory SIP Mandate along with your Goal enabler Form."
+        },
+        {
+            "id": 18,
+            "Question": "In how many days will Torus Robo Advisory SIP Mandate get registered?",
+            "Answer": "Mandate can be registered instantly through net banking. Physical Mandate registration varies from bank to bank. It can take from 12 days to 30 days. "
+        },
+        {
+            "id": 19,
+            "Question": "What is process after successful registration of Torus Robo Advisory SIP Mandate? Will the money be deducted from my bank account?",
+            "Answer": "No, this facility is just an enabler of auto debit facility and the actual money will be deducted only after the implementation starts and the investor confirms the purchase of SIP and gives an authentication online."
+        },
+        {
+            "id": 20,
+            "Question": "How many SIPs can I register through this facility?",
+            "Answer": "There is no restriction on the number of SIPs that can be registered through this facility."
+        },
+        {
+            "id": 21,
+            "Question": "Do you’ll offer trial period?",
+            "Answer": "We don’t offer any trial period. Once you sign up, you have free access to the basic version. This will help you understand your current financial\nstate."
+        },
+        {
+            "id": 22,
+            "Question": "I want to invest a lumpsum amount and I don’t want any paid services of Torus Robo Advisory. Can Torus Robo Advisory help me in this regard?",
+            "Answer": "No, we are fee based advisory services."
+        },
+        {
+            "id": 23,
+            "Question": "As it is an online portal, do you provide 24\/7 customer support and live chat support?",
+            "Answer": "No, we are not available 24\/7, we work from Mon to Sat, 09: 30 AM to 06: 30 PM (IST) and are closed on Sundays."
+        }
+    ],
+    "Stocks-Data": [
+        {
+            "id": 1,
+            "Question": "What are the market timings?",
+            "Answer": "Equity Segment:\n\n09:00 AM to 09:07 AM – Pre-market\n09:08 AM to 09:14:59 AM – AMO\n09:15 AM to 03:30 PM– Normal trading\n03:40 PMto 04:00 PM– Post-market\n\nFNO Segment:\n\n09:15 AM to 03:30 PM– Normal trading\n\nNote: All new IPOs are listed on the exchange at 10:00 AM. The pre-open session is from 09:00 AMto 10:00 AM.",
+            "CTA": null
+        },
+        {
+            "id": 2,
+            "Question": "What are pre market sessions and orders?",
+            "Answer": "Pre-open session: A pre-open session allows you to place orders between 09:00 AM to 09:15 AM. It was started by NSE to minimize volatility of securities during market open every day. You can place limit orders\/market orders. For the first 8 minutes, (between 09:00 AM and 09:08 AM) the orders are collected, modified or cancelled. The order collection window can close at any time between 09:07 AM and 09:08 AM. Once the window closes at 09:15 AM, new orders cannot be placed. The orders placed are matched and trades are confirmed. You can place orders during the order collection period only on the equity segment.\n\nClick here to Place an Order",
+            "CTA": "Place an Order"
+        },
+        {
+            "id": 3,
+            "Question": "What are post market sessions and orders?",
+            "Answer": "Post market session is similar to pre-market orders. The session timing is from 03:40 PM to 04:00 PM. An investor can place buy\/sell orders in equity (delivery segment using the CNC product code) at the market price. Note that even if you place a market order, it will be placed at the exchange at the closing price. For example, if the closing price of Reliance at 03:00 PM is 800 and if you place a market order post 03:40 PM, you will get the share at 800.\n\nClick here to Place an Order",
+            "CTA": "Place an Order"
+        },
+        {
+            "id": 4,
+            "Question": "How can I buy\/ sell stocks\/ contracts?",
+            "Answer": "Tap on your desired scrip and it will redirect you to the quote screen. Enter your desired quantity, price, choose product type, order type and validity. Place and confirm your order.\n\n\nClick here to Buy\/Sell a Stock\/ Contract",
+            "CTA": "Buy\/ Sell "
+        },
+        {
+            "id": 5,
+            "Question": "How can I perform quick buy\/ sell of stocks\/ contracts?",
+            "Answer": "To place a quick buy\/ sell order, simply right swipe on your desired scrip to place a quick buy order or left swipe to place a quick sell order.\n\nClick here to know Quick Buy \/ Sell a Stock\/ Contract",
+            "CTA": "Quick Buy\/ Sell"
+        },
+        {
+            "id": 6,
+            "Question": "What is a Cash N Carry (CNC) Order?",
+            "Answer": "Cash N Carry order is buying shares and holding them for some time in your demat account. It is a delivery-based trading, where the client is required to bring in 100% margin in the form of cash for buy orders and should have sufficient holdings for sell orders unless squaring off an existing open position.\n\nClick here to Place an Order",
+            "CTA": "Place an Order"
+        },
+        {
+            "id": 7,
+            "Question": "What is an Intraday (MIS) Order?",
+            "Answer": "Intraday order is buying or selling a security with the intention of squaring-off the position on the same day.\nIncase you do not square off your position, the exchange will square it off at a predetermined time.\n\nClick here to Place an Order",
+            "CTA": "Place an Order"
+        },
+        {
+            "id": 8,
+            "Question": "What is an NRML Order?",
+            "Answer": "NRML Order is margin-based trading product where the open positions will not be squared-off subject to other surveillance and risk management & settlement rules. \nThe clients will have to make the payment for obligation arising out of such trade within the settlement period stipulated for such trades, failing which recovery proceedings shall be initiated as mentioned in the policy.\n\nClick here to Place an Order",
+            "CTA": "Place an Order"
+        },
+        {
+            "id": 9,
+            "Question": "What is a Limit Order?",
+            "Answer": "A limit order is an order to buy or sell a stock at a specific price.\n\nClick here to Place an Order",
+            "CTA": "Place an Order"
+        },
+        {
+            "id": 10,
+            "Question": "What is a Market Order?",
+            "Answer": "A market order is a buy or sell order to be executed immediately at the current market prices.\n\nClick here to Place an Order",
+            "CTA": "Place an Order"
+        },
+        {
+            "id": 11,
+            "Question": "What is the difference between Limit and Market Orders?",
+            "Answer": "In a Limit Order the buying price or selling price is specified and the trade is executed only when the price is met. \nIn contrast, a Market Order gets executed at the current market price. \n \nClick here to Place an Order",
+            "CTA": "Place an Order"
+        },
+        {
+            "id": 12,
+            "Question": "What is a Stop Loss Limit Order?",
+            "Answer": "A stop-loss limit order is a buy\/sell order that can help you limit your losses in case the prices move against your trade. If you are buying a stock, then you will have to add a sell stop-loss similarly, if you are selling a stock, you will have to add a buy stop loss. The stop loss limit order is sent to the exchange after the \"Limit Order\" trigger is hit, i.e. the trade price needs to be defined by the user. Here, you need to enter the stop loss trigger price and stop loss limit price.\n\nClick here to Place an Order",
+            "CTA": "Place an Order"
+        },
+        {
+            "id": 13,
+            "Question": "What is a Stop Loss Market Order?",
+            "Answer": "A stop-loss market order is a buy\/sell order that can help you limit your losses in case the prices move against your trade. If you are buying a stock, then you will have to add a sell stop-loss, similarly, if you are selling a stock, you will have to add a buy stop-loss. A stop-loss market order is referred to as market if touched order, as soon as the trigger price is reached, a market order is generated and executed at the market rate immediately. \nHere you need to enter only stop-loss trigger price.\n\nClick here to Place an Order",
+            "CTA": "Place an Order"
+        },
+        {
+            "id": 14,
+            "Question": "What is a Disclosed Quantity Order?",
+            "Answer": "A disclosed quantity order allows you to declare only a part of the actual order that you want to buy\/sell. Once you specify the disclosed quantity, the order is sent to the exchange and only the disclosed part is shown on the market screen. The disclosed quantity should be atleast 10% of the order quantity in equity segment. For FNO segment, disclosed quantity is not applicable.\n\nClick here to Place an Order",
+            "CTA": "Place an Order"
+        },
+        {
+            "id": 15,
+            "Question": "What is an Day Order?",
+            "Answer": "A Day Order, as the name suggests, is an order which is valid for the day on which it is entered. If the order is not matched during the day, it gets cancelled at the end of the trading day.\n\nClick here to Place an Order",
+            "CTA": "Place an Order"
+        },
+        {
+            "id": 16,
+            "Question": "What is an Immediate or Cancel Order (IOC)?",
+            "Answer": "An Immediate Or Cancel (IOC) order, as the name suggests, which has to be executed as soon as it is released in the market. If does not, then the order gets cancelled immediately.\n\nClick here to Place an Order",
+            "CTA": "Place an Order"
+        },
+        {
+            "id": 17,
+            "Question": "Can I place an order a day before the trading session (AMO Order)?",
+            "Answer": "Yes, you can place AMO orders for the next trading day.\nAMO orders can be placed normally like a regular buy\/sell order. \n\nClick here to Place an Order",
+            "CTA": "Place an Order"
+        },
+        {
+            "id": 18,
+            "Question": "What is an After Market Order (AMO)?",
+            "Answer": "AMO orders are Orders that are placed post market closure.  \nThey can be placed only in following:\n\nEquity enabled Product Types - CNC & MIS\nFNO enabled Product Types - Carry Forward & MIS\nEquity enabled Order Types - Limit\nFNO enabled Order Types - Limit\n\nClick here to Place an Order",
+            "CTA": "Place an Order"
+        },
+        {
+            "id": 19,
+            "Question": "What are the timings for placing After Market Order (AMO)?",
+            "Answer": "You can place AMO Order from 05:30 PM till 9.00 AM (T+1 Day).\n\nClick here to Place an Order",
+            "CTA": "Place an Order"
+        },
+        {
+            "id": 20,
+            "Question": "How can I modify my order?",
+            "Answer": "To Modify your Order follow below steps: \n \n1.Click Orders tab from footer\n2. Tap on desired scrip\/ contract which you want to modify\n\nNote: Only Pending Orders can be modified. Executed Orders cannot be modified.\n\nClick here to Modify your Order",
+            "CTA": "Modify your Order"
+        },
+        {
+            "id": 21,
+            "Question": "Why is my order pending?",
+            "Answer": "Orders can be pending due to reasons like change in market price or low number of buyers\/sellers.\n\nClick here to View the Status of your Order",
+            "CTA": "Status of your Order"
+        },
+        {
+            "id": 22,
+            "Question": "How can I know the status of my order?",
+            "Answer": "To view the status of your order: \n\n- Click on the orders tab from the footer\n- Check the status against your respective order.\n\nNote: You can filter your order status clicking on the filter option.\n \nClick here to View the Status of your Order",
+            "CTA": "Status of your Order"
+        },
+        {
+            "id": 23,
+            "Question": "How can I cancel my order?",
+            "Answer": "To Cancel your order follow below steps: \n\n- Click Orders tab from footer\n- Tap on desired scrip\/ contract which you want to Cancel\n\nNote: Only Pending Orders can be cancelled. Executed Orders cannot be cancelled.\n\nClick here to Cancel your Order",
+            "CTA": "Cancel your Order"
+        },
+        {
+            "id": 24,
+            "Question": "Where can I view my Order Trail?",
+            "Answer": "To view your Order Trail, follow below steps:\n\n- Tap on Orders from footer\n- Tap on desired scrip \/ contract card > Click on Order Trail\n\nClick here to View the Status of your Order",
+            "CTA": "Status of your Order"
+        },
+        {
+            "id": 25,
+            "Question": "Can I convert my CNC position to NRML or MIS?",
+            "Answer": "To convert your positions follow below steps: \n\n- Click on Orders from Footer > Select Positions tab\n- Tap on desired stocks which you want to Convert\n\nClick here to Convert your Positions",
+            "CTA": "Convert your Position"
+        },
+        {
+            "id": 26,
+            "Question": "How can I know the status of my open\/ closed positions?",
+            "Answer": "To view the status of your Open Positions: \n \n- Click the Orders tab from footer > Select Positions tab\n- If Net Quantity is > than 0 (Positive) OR < than 0 (Negative), your order is Open\n- If Net Quantity is = 0, your order is Closed\n \nClick here to View your Positions",
+            "CTA": "View your Position"
+        },
+        {
+            "id": 27,
+            "Question": "I had bought shares under CNC yesterday, where would they reflect?",
+            "Answer": "Shares will reflect under Portfolio tab on T+1 day available in Footer > Orders > Positions.\n\nClick here to View Portfolio",
+            "CTA": "View Portfolio"
+        },
+        {
+            "id": 28,
+            "Question": "Can shares bought on T day be sold on T+1 day?",
+            "Answer": "Yes, shares bought on T day can be sold on T+1 day. \nHowever, you might face a short sell risk if the shares are not received before pay-in. In case of settlement holiday on T+1 day, the shares bought on T day will not reflect in the client holdings and thus cannot be sold.\n\nClick here to View Portfolio",
+            "CTA": "View Portfolio"
+        },
+        {
+            "id": 29,
+            "Question": "Is partial conversion possible?",
+            "Answer": "Yes, partial conversion is possible. You have to change the quantity in the position conversion window while selecting the product type.\nFor example: \nIf you have 10 quantity buy position in MIS of Reliance, you can partially convery 5 quantity into CNC buy, 3 quantity into NRML and leave the balance 2 quantity as open in MIS buy.\n\nClick here to Convert your Positions",
+            "CTA": "Convert your Position"
+        },
+        {
+            "id": 30,
+            "Question": "Is full conversion possible?",
+            "Answer": "Yes, full conversion is possible.\nYou have to select full option in convert screen from positions book and your whole quantity whill be converted from MIS to NRML\/ CNC or viceversa.\n \nClick here to Convert your Positions",
+            "CTA": "Convert your Position"
+        },
+        {
+            "id": 31,
+            "Question": "I want my intraday short position in MIS to be converted into delivery sell transaction?",
+            "Answer": "You can convert your MIS position into CNC\/NRML position prior to 03:20 PM(square off time). Post 03:20 PMconversion functionality would be disabled for all MIS trades.\n\nClick here to Convert your Positions",
+            "CTA": "Convert your Position"
+        },
+        {
+            "id": 32,
+            "Question": "I have a sell position in MIS-Cash segment I am unable to convert the same, why?",
+            "Answer": "Your MIS position can be converted into either CNC or NRML.\n\nTo convert into CNC, you must have the holding of the same stock. You cannot convert into NRML as short selling is not allowed i.e. if you have NRML buy position today then only NRML sell is allowed.\n\nClick here to Convert your Positions",
+            "CTA": "Convert your Position"
+        },
+        {
+            "id": 33,
+            "Question": "Why am I unable to convert my F&O position into CNC?",
+            "Answer": "For F&O segment MIS and NRML product are enabled. \n CNC product has no relevance in F&O segment.\n\nClick here to Convert your Positions",
+            "CTA": "Convert your Position"
+        },
+        {
+            "id": 34,
+            "Question": "Can I convert my carry forward position in Futures & Options?",
+            "Answer": "Yes, you can convert your carry forward position into MIS given that the contract is available for MIS trading.\n\nClick here to Convert your Positions",
+            "CTA": "Convert your Position"
+        },
+        {
+            "id": 35,
+            "Question": "Can I convert my position from NSE exchange to BSE exchange?",
+            "Answer": "No, you cannot swap exchanges in any circumstances. Conversion is available to swap only products within the same exchange i.e. NRML, MIS & CNC.\n\nClick here to Convert your Positions",
+            "CTA": "Convert your Position"
+        },
+        {
+            "id": 36,
+            "Question": "Why did my order get rejected?",
+            "Answer": "Orders can get rejected due to multiple reasons including insufficient margin, incorrect use of order type, stock not available for trading, etc. \n\nClick here to Place a New Order",
+            "CTA": "Place a New Order"
+        },
+        {
+            "id": 37,
+            "Question": "What should I do if my order got rejected due to insufficient funds?",
+            "Answer": "You can either add funds or increase margin through the Funds tab available in the Menu of the app or Pledge your existing holdings if available. \n\nClick here to Add Funds",
+            "CTA": "Add Funds"
+        },
+        {
+            "id": 38,
+            "Question": "What is margin shortfall\/ limit issue?",
+            "Answer": "Margin shortfall occurs when you hold onto positions in your trading account without having sufficient margin. \nPenalties are levied on Margin\/ MTM shortfall.\n\nClick here to Increase Margin",
+            "CTA": "Increase Margin"
+        },
+        {
+            "id": 39,
+            "Question": "What should I do if my order got rejected as the stock is in square-off (T+7) today?",
+            "Answer": "If the selected stock is in square-off (T+7) today, you may not be able to trade for that particular day. You will be allowed Only Square Off your existing positions \/ holdings.\n\nClick here to Square off your Positions",
+            "CTA": "Square off your Position"
+        },
+        {
+            "id": 40,
+            "Question": "What are the timings for Intraday Square-Off?",
+            "Answer": "Below are the timings for Intraday Square-Off:\n\nEquity Segment: 03:10 PM\nFutures & Options Segment: 03:10 PM\n\nClick here to Square Off your Positions",
+            "CTA": "Square off your Position"
+        },
+        {
+            "id": 41,
+            "Question": "Why was my position squared off?",
+            "Answer": "Intraday trades will auto squared off at 03:10 PM for Cash segment & F&O segment.\n\nFollowing are the reasons why your position got squared off:\n- Intraday trades will be squared off if you lose 50% of your Available Margin\n- If the shares bought using Margin are down by more than 50% of your funds balance, square off will be done on the same trading day\n- If you fail to full pay or pledge shares bought under margin product, the shares will be squared off after 7 days\n- If your account goes under debit\/negative balance, then your shares will be squared off after 7 days.\n\nClick here to Square Off your Positions",
+            "CTA": "Square off your Position"
+        },
+        {
+            "id": 42,
+            "Question": "Why was my Intraday Position not squared off?",
+            "Answer": "Your intraday position was not squared off due to the follwing reasons:\n- There might be an upper\/lower circuit in that stock\n- In case you have bought the stock and the sahre is in the lower circuit, your shares will be sold on the next trading day\n- In case you have short sold the share & there is a upper circuit on the share the shares will be auctioned. \n\nClick here to see your Positions",
+            "CTA": "Positions"
+        },
+        {
+            "id": 43,
+            "Question": "Why was my stop loss order executed even though the price did not breach my trigger?",
+            "Answer": "Since you are able to see just one tick per second, you may not be able to see the price when the stop-loss limit is breached and the trade is executed.\n\nClick here to Place an Order",
+            "CTA": "Place an Order"
+        },
+        {
+            "id": 44,
+            "Question": "Why did my Limit Order get executed at market price?",
+            "Answer": "This might have happened if you have tried to sell at a price lower than the current market price. In such a situation, the system considers it as a market order and executes it at the current price.\n\nClick here to Place an Order",
+            "CTA": "Place an Order"
+        },
+        {
+            "id": 45,
+            "Question": "Why did my market order in the pre-open session become a limit order?",
+            "Answer": "In the pre-open session, all unmatched market orders are carried over to the normal market with their original timestamp as limit orders at the equilibrium price. \nIf the opening-price is not discovered, market orders will be carried over at the previous day’s closing price. \n\nClick here to Place an Order",
+            "CTA": "Place an Order"
+        },
+        {
+            "id": 46,
+            "Question": "Can I sell any stocks bought in CNC on the same day?",
+            "Answer": "Yes, you can sell the stocks bought in CNC on the same day. In such a case brokerage shall be charged as applicable to intraday trades.\n\nClick here to sell your CNC Order",
+            "CTA": "CNC Order"
+        },
+        {
+            "id": 47,
+            "Question": "Can I take MIS Position in all scrip in cash segment and all contracts in F&O?",
+            "Answer": "No, only selected scrip in cash segment and selected contracts in F&O are available for trading in MIS.\n\nClick here to Place an Order",
+            "CTA": "Place an Order"
+        },
+        {
+            "id": 48,
+            "Question": "How do I know which scrip and contracts are available for MIS trading?",
+            "Answer": "The below mentioned segment-wise classification will enable you to understand our MIS Basket:\n\n- Cash Segment: Only selected scrip in cash segment\n- F&O - Stock Futures: All contracts with selected expiry are available for trading in MIS (Current month expiry contracts)\n- F&O - Index Futures: Only current month NIFTY and BANKNIFTY index future contracts are available for trading in MIS\n- F&O – Nifty Options: Only current week and monthly expiry contracts of selected Nifty strike price and expiry are available for trading in MIS\n\n The criteria for selection of strikes is as follows:\nNifty, 4% up and down from Current price. The range changes to 2% on expiry day.\n\nClick here to Place an Order",
+            "CTA": "Place an Order"
+        },
+        {
+            "id": 49,
+            "Question": "Why some scrip\/contracts in Cash\/F&O segment are not allowed to trade in MIS?",
+            "Answer": "While selecting scrip and contracts for MIS there are various parameters that are evaluated by the Risk Team, for example: liquidity, impact cost, volatility, open interest, price band, VaR, etc. Those scrip\/contracts not fulfilling the benchmark set by Risk Team are not included in the MIS basket.\n\nClick here to Place an Order",
+            "CTA": "Place an Order"
+        },
+        {
+            "id": 50,
+            "Question": "What will happen to my open position in MIS?",
+            "Answer": "All open MIS positions are squared off at 03:20 PM by the risk team on best effort basis, if the same is not squared off by the client.\n\nClick here to View Positions",
+            "CTA": "View Positions"
+        },
+        {
+            "id": 51,
+            "Question": "What if my position is not squared off?",
+            "Answer": "MIS open positions are squared off on a best effort basis. A position may remain open due to circuit in the scrip\/contract or other such issues. In such a scenario client would be responsible for the trading obligations arising out of any such open MIS position.\n\nClick here to View Positions",
+            "CTA": "View Positions"
+        },
+        {
+            "id": 52,
+            "Question": "What are illiquid scrip\/Illiquid contract?",
+            "Answer": "Illiquid Scrip (Cash) –  Scrip in cash segment which have been put in caution list by exchange and are subject to monitoring from broker\/exchange.\n\nIlliquid Contracts (F&O)  –  Contracts identified by exchange and termed illiquid due to very low liquidity, open interest, etc. with minimal or no trading in them.\n\nClick here to Place an Order",
+            "CTA": "Place an Order"
+        },
+        {
+            "id": 53,
+            "Question": "Is trading allowed in illiquid scrip\/contract?",
+            "Answer": "Yes, one can trade in illiquid scrip\/contract but it is subject to strict vigilence from risk team and well as from the exchange.\n\nClick here to Place an Order",
+            "CTA": "Place an Order"
+        },
+        {
+            "id": 54,
+            "Question": "What are Far-Away contracts?",
+            "Answer": "F&O contracts come with current month, next month and far-month expiry contracts. To break it down, all contracts other than current and next month are known as far-away contracts.\n\nClick here to Place an Order",
+            "CTA": "Place an Order"
+        },
+        {
+            "id": 55,
+            "Question": "What is peak margin?",
+            "Answer": "Peak Margin is the minimum margin that must be collected by brokers from their clients before placing any intraday\/ delivery order in the cash and derivatives segment.\n\nClick here to Place an Order",
+            "CTA": "Place an Order"
+        },
+        {
+            "id": 56,
+            "Question": "How do you calculate peak Margin? ",
+            "Answer": "In order to calculate the peak margin position intraday, clearing corporations takes a minimum of four random snapshots in the day of all margins; the highest of these snapshots becomes the peak upfront margin requirement of the day.\n\nClick here to Place an Order",
+            "CTA": "Place an Order"
+        },
+        {
+            "id": 57,
+            "Question": "What is peak margin obligation?",
+            "Answer": "As per SEBI's Peak Margin norms, w.e.f. Sept 1st 2021, traders are expected to have full 100% of the peak margin requirement available with the broker i.e intraday leverage for Equity Cash would be 5x (Max) Exposure limit and F&O Intraday leverage would be 1x margin limit going forward.\n\nClick here to Place an Order",
+            "CTA": "Place an Order"
+        },
+        {
+            "id": 58,
+            "Question": "How is the penalty calculated in Peak Margin?",
+            "Answer": "Penalty is calcuated in the following manner:\n\n- If there is a debit balance per segment per day, and margin amount is less than 1 lac or margin short fall amount is less than 10% of the requirement, then 0.5% penalty on shortage amount will be levied. \n\n- If the shortfall is greater than 1 lac or margin short fall amount is more than 10% of the requirement then 1% penalty on shortage amount would be levied.\n\n- 0.5% of penalty will be levied for first 3 days of debit. If the shortfall continues to 4th day then the penalty of 5% will be levied for each day from 4th day onwards. \n\n- If short\/non-collection of margins for a client takes place for more than 5 days in a month, then penalty of 5% of the shortfall amount shall be levied for each day, during the month, beyond the 5th day of shortfall. \n\n- If the shortfall is caused due to movement of 3% or more in nifty on any trading day then the shortage penalty will be charged only if shortfall continues to T+2 days.\n\nClick here to Place an Order",
+            "CTA": "Place an Order"
+        },
+        {
+            "id": 59,
+            "Question": "How to avoid penalty on shortfall?",
+            "Answer": "By depositing cheque (Cheque date should be trade date) for Margin Shortfall\/ Peak shortfall [whichever is higher] or by transferring funds (For MTM Loss & Delivery\/ Additional Margin Shortfall) before T+2 for Cash & T+1 for FNO. \n\nClick here to Place an Order",
+            "CTA": "Place an Order"
+        },
+        {
+            "id": 60,
+            "Question": "How much leverage will I get to trade in cash segment for Cover Order & Bracket Order & MIS intraday product?",
+            "Answer": "Now client will get up to 5 times leverage in cash segment. \n\nFor Example: If client is having Rs 100, he will be able to create exposure up to worth Rs 500.\n\nClick here to Place an Order",
+            "CTA": "Place an Order"
+        },
+        {
+            "id": 61,
+            "Question": "How much leverage I will get to trade in FNO segment intraday?",
+            "Answer": "Now client will get up to 1 time leverage in FNO segment. \n\nFor example: If client brings in Rs 100 he will be able to create margin position worth Rs 100 only.\n\nClick here to Place an Order",
+            "CTA": "Place an Order"
+        },
+        {
+            "id": 62,
+            "Question": "What is security in Ban Period?",
+            "Answer": "The derivative contracts in which the market-wide position limit has crossed 95% are moved to ban period. Only square-off orders are permitted when a security is in ban period.\n\nClick here to Place an Order",
+            "CTA": "Place an Order"
+        },
+        {
+            "id": 63,
+            "Question": "Can I trade in security in Ban Period?",
+            "Answer": "Yes, but the trades can be placed only under MIS product. Remember no carry-forward position is allowed when a security is in ban period.\n\nNote: Only in MIS, future orders could be placed successfully, option orders in ban period security would get rejected. MIS orders are squared off at the stipulated time of 15:20 hrs.\n\nClick here to Place an Order",
+            "CTA": "Place an Order"
+        },
+        {
+            "id": 64,
+            "Question": "I want to create a new position in Ban Period security & carry-forward the same.",
+            "Answer": "You cannot carry forward a new position in the security that is in ban period as the penalty is levied from exchange. The penalty is Rs. 5000 per lot per day from exchange.\n\nClick here to Place an Order",
+            "CTA": "Place an Order"
+        },
+        {
+            "id": 65,
+            "Question": "Till what day will I be able to trade & create fresh position in physical delivery stock?",
+            "Answer": "You can trade up-to one day before expiry date, on expiry day the contract will be put on square-off mode wherein you can only square off the open positions & cannot create fresh position.\n\nClick here to Place an Order",
+            "CTA": "Place an Order"
+        },
+        {
+            "id": 66,
+            "Question": "When RISK will liquidate physical delivery position?",
+            "Answer": "The client position on expiry day will be liquidated after 11:00 AM on best effort basis.\n\nClick here to Place an Order",
+            "CTA": "Place an Order"
+        },
+        {
+            "id": 67,
+            "Question": "When will the Risk team execute the square off for NORMAL (NRML)-CASH\/T7?",
+            "Answer": "T7 liquidation is carried out from 11:00 AM onwards.\n\nClick here to View Positions",
+            "CTA": "View Positions"
+        },
+        {
+            "id": 68,
+            "Question": "In NRML, Can my position in FNO segment be liquidated instead of my DP holding?",
+            "Answer": "No, only your stock from your DP holding will be liquidated to recover your outstanding debit as reflecting under T7 and T7 plus bucket.\n\nClick here to View Positions",
+            "CTA": "View Positions"
+        },
+        {
+            "id": 69,
+            "Question": "What will happen on T7th day if my debit is outstanding?",
+            "Answer": "If your debit is outstanding on T7th day: \n- You will be blocked for trading in the particular exchange in which debit has reached T7 and beyond. Only CNC sell orders will be allowed.\n- Liquidation will be carried out in client’s account from 11:00 AM onwards by risk team.\n- Post liquidation you are allowed to trade in MIS and CO product in cash segment as well as he can trade in F&O segment. \n\nNote: Option – Buy would not be allowed in F&O.\n\nClick here to Place an Order",
+            "CTA": "Place an Order"
+        },
+        {
+            "id": 70,
+            "Question": "Can I square off my open FNO position when my debit reaches T7?",
+            "Answer": "Yes, even if your debit has reached T7 you are allowed to place square-off orders for your FNO positions. \n\nNote: No fresh position can be created in FNO.\n\nClick here to View Positions",
+            "CTA": "View Positions"
+        },
+        {
+            "id": 71,
+            "Question": "I have squared off my FNO position, but I still cannot trade in MIS.",
+            "Answer": "To clear your T7 debit only CNC sell (delivery sell) trades are considered.\n\nClick here to View Positions",
+            "CTA": "View Positions"
+        },
+        {
+            "id": 72,
+            "Question": "How is SPAN Margin computed and blocked?",
+            "Answer": "SPAN margin is computed at exchange level. The margins are revised by exchange through SPAN files provided at regular intervals. \nA broker has no role in deciding the quantum of margin to be blocked towards SPAN margin.\n\nClick here to View Limits",
+            "CTA": "View Limits"
+        },
+        {
+            "id": 73,
+            "Question": "Is it compulsory to maintain SPAN Margin and Exposure Margin if I have FNO position?",
+            "Answer": "Yes, maintenance of SPAN and exposure margin is mandatory by exchange failing to penalty will be levied.\n\nClick here to View Limits",
+            "CTA": "View Limits"
+        },
+        {
+            "id": 74,
+            "Question": "How much penalty is charged in case of Exchange Shortfall?",
+            "Answer": "Penalty amount depends on factors like:\n\nShortfall amount\nCondition 1: If the Shortfall amount is less than Rs 1 lakh AND Less than 10% of applicable margin then, 0.5% of shortfall amount will be levied as penalty.\nCondition 2: If the Shortfall amount is greater than Rs 1 lakh OR More than 10% of applicable margin then, 1% of shortfall amount will be levied as penalty.\n\n\nWhether the shortfall has continued for 3 consecutive days:\nIf the shortfall in account continues for more than 3 consecutive days, then penalty of 5 % of the shortfall amount should be levied each day as penalty.\n\nIf shortfall has been more than 5 days in a month:\nIf the shortfall in account has been for more than 5 times in a month, then penalty of 5 % of the shortfall amount should be levied each day, beyond 5th day as penalty.\n\nClick here to View Limits",
+            "CTA": "View Limits"
+        },
+        {
+            "id": 75,
+            "Question": "I had sufficient margin still I was charged shortfall penalty, why?\n",
+            "Answer": "As per exchange requirement, ledger should have margin at least equivalent to span and exposure margin requirement at the day of taking position. Exchange provides span file 5 times a day. There is always a chance that the margin requirement gets increased after position has been taken.\nFurther, MTM requirement is also to be reported to exchange, which needs to be cleared by T+1 Day, or else penalty would be levied.\n\nClick here to View Limits",
+            "CTA": "View Limits"
+        },
+        {
+            "id": 76,
+            "Question": "What is a Cover Order (CO)? ",
+            "Answer": "Cover Order is normally a 2 leg order. 1st leg will have an option to place Limit  as well as Market Order and 2nd leg will act as a Stop Loss Order.\nA margin-based product where the client is able to take a position and also place a cover order for the position specifying the Stop Loss Trigger Price (SLTP) to minimise loss. \n\nE.g: You place a buy cover order on a stock. The buy order is placed either as a market order or limit order whereas simultaneously you are prompted to feed in the ‘Stop Loss Trigger Price and Stop Loss Limit Price’ (within a pre-decided price range). Once the price touches the trigger price the order is converted into a market order for sell. The order will not be executed without feeding in the trigger price.\n\nClick here to Place an Order",
+            "CTA": "Place an Order"
+        },
+        {
+            "id": 77,
+            "Question": "In Cover Order, can Stop Loss order be modified once the first leg is executed?",
+            "Answer": "Once the first leg is executed, Stop Loss Order can be modified till such time it doesn’t reaches the trigger price. If you modify the Stop Loss Order, margin requirement will be recalculated and blocked accordingly.\n\nClick here to View Orders",
+            "CTA": "View Orders"
+        },
+        {
+            "id": 78,
+            "Question": "Is order modification allowed in Cover Orders?",
+            "Answer": "Order modification is allowed for 1st leg order only if the order is not traded and is in pending status. Order modification is allowed for 2nd leg stop loss order only if is not traded.\n\nClick here to View Orders",
+            "CTA": "View Orders"
+        },
+        {
+            "id": 79,
+            "Question": "In Cover Order, can Stop Loss order be cancelled?",
+            "Answer": "If first leg of the order is traded\/executed, then Stop Loss oOrder cannot be cancelled. However, Stop Loss can be converted to Market Order.\n\nClick here to View Orders",
+            "CTA": "View Orders"
+        },
+        {
+            "id": 80,
+            "Question": "In case of Cover Order, will my Stop Loss & 1st leg order displayed at one go?",
+            "Answer": "If first leg of the order is pending, then Stop Loss Order will be in passive mode and will not be displayed to the customer.\nIf first leg of the order is traded\/executed, then Stop Loss Order will be in active mode and will be displayed to the customer and sent to exchange.\n\nClick here to View Orders",
+            "CTA": "View Orders"
+        },
+        {
+            "id": 81,
+            "Question": "In case of Cover Order, is the Stop Loss Range different for different scrip?",
+            "Answer": "Stop Loss Range is specified at scrip level & varies from scrip to scrip.\n\nClick here to Place an Order",
+            "CTA": "Place an Order"
+        },
+        {
+            "id": 82,
+            "Question": "On what basis is margin requirement calculated for Cover Order?",
+            "Answer": "Margin requirement is calculated on the basis of difference between LTP (while placing the order) & the trigger price specified. X multiple (Multiple will be defined) of such difference will be blocked as margin.\n\nExample:\nRIL is trading at Rs.750. RSL has specified the Stop Loss Range as 4% and Multiple as 2. Client places a cover order to buy Reliance while specifying the trigger for the second leg as Rs.730.\nMargin Blocking: Difference between LTP and trigger price (750 – 730) is Rs.20. Margin will be blocked as 2 times of Rs. 20 which comes as Rs. 40.\n\nIn percentage terms margin is blocked as 5.33% resulting in to an exposure of approx. 18.73 times.\n\nNote: Minimum margin to be blocked for cover order in case user enters a trigger price which is less than the minimum stop loss percentage specified. \n\nClick here to Place an Order",
+            "CTA": "Place an Order"
+        },
+        {
+            "id": 83,
+            "Question": "Can I take exposure against collateral (Approved Stocks) for placing a Cover Order?",
+            "Answer": "Yes, you can take exposure against collateral.\n\nClick here to Place an Order",
+            "CTA": "Place an Order"
+        },
+        {
+            "id": 84,
+            "Question": "Can I convert securities purchased\/sold under Cover Order?",
+            "Answer": "No, positions taken under cover order cannot be converted to any other product.\n\nClick here to View Positions",
+            "CTA": "View Positions"
+        },
+        {
+            "id": 85,
+            "Question": "Till what time can the order be placed under Cover Order?",
+            "Answer": "Orders can be placed any time prior to 03:10 PM. All the open orders get squared off after this time by surveillance team.\n\nClick here to Place an Order",
+            "CTA": "Place an Order"
+        },
+        {
+            "id": 86,
+            "Question": "Can I buy\/sell stock and index futures in MIS product who has open position in cover order?",
+            "Answer": "Yes, you can can buy\/ sell stock and index futures in MIS product. However such position should be squared-off before 03:20 pm.\n\nClick here to Place an Order",
+            "CTA": "Place an Order"
+        },
+        {
+            "id": 87,
+            "Question": "Can I trade in NRML product if I have open positions in Cover Order?",
+            "Answer": "Yes, you can trade in stock or index futures\/options in NRML product. However normal margin will be levied as specified by exchange.\n\nClick here to Place an Order",
+            "CTA": "Place an Order"
+        },
+        {
+            "id": 88,
+            "Question": "What if my Cover Order position is not squared off?",
+            "Answer": "Cover order open positions are squared off on a best effort basis. A position may remain open due to circuit in the scrip\/contract or other such issues.\nIn such a scenario you would be responsible for the trading obligations arising out of any such open CO position.\n\nClick here to View Positions",
+            "CTA": "View Positions"
+        },
+        {
+            "id": 89,
+            "Question": "Which scrip will be allowed in Cover Orders?",
+            "Answer": "Select scrips are allowed to trade in cover order. \n\nClick here to Place an Order",
+            "CTA": "Place an Order"
+        },
+        {
+            "id": 90,
+            "Question": "What if position remain open & stop loss order is not executed till 03:30 PM?",
+            "Answer": "Risk team will run Auto-Square-Off @ 03:15 PM. All the open positions will be squared off & pending orders will get cancelled. \nNo new position will be allowed after the square-off process begins.\n\nClick here to View Positions",
+            "CTA": "View Positions"
+        },
+        {
+            "id": 91,
+            "Question": "What is a Bracket Order (BO)? ",
+            "Answer": "Bracket Order is normally a 3 leg order. 1st leg will have an option to place limit  as well as market order (Position Initiation Order), 2nd leg will act as a stop loss order & 3rd leg will act as a profit order.\n\nThe bracket order is used to implement an exit plan where one order is designed to take profits and the other is designed to cut losses.\n\nBracket Orders can save a lot of time which is spent placing separate orders. Bracket Orders are an effective way to manage risk and lock in a profit on an order that is yet to execute.\n\nA bracket order is a special 3-leg order type which allows traders to place the main order as well as the stop-loss and the profit taking order, all in a single click. The margins for BO product are similar to Cover Order (CO). \nThere are three legs of Bracket order – initiation order, stop-loss order and square-off order.\n\nClick here to Place an Order",
+            "CTA": "Place an Order"
+        },
+        {
+            "id": 92,
+            "Question": "Which scrip will be allowed in Bracket Orders?",
+            "Answer": "Select scrip are allowed to trade in Bracket Order. \n\nClick here to Place an Order",
+            "CTA": "Place an Order"
+        },
+        {
+            "id": 93,
+            "Question": "On what basis is margin requirement calculated for Bracket Order?",
+            "Answer": "The calculation is exactly the same as in cover order.\n\nClick here to Place an Order",
+            "CTA": "Place an Order"
+        },
+        {
+            "id": 94,
+            "Question": "Is order modification allowed in Bracket Orders?",
+            "Answer": "Order modification is allowed for stop loss leg as well as square off leg.\n\nClick here to Place an Order",
+            "CTA": "Place an Order"
+        },
+        {
+            "id": 95,
+            "Question": "How to exit Bracket Order?",
+            "Answer": "If the initiation order is executed upon exiting the Bracket Order, the square off order will automatically get executed at market price and the stop loss order will be cancelled.\n\nClick here to View Orders",
+            "CTA": "View Orders"
+        },
+        {
+            "id": 96,
+            "Question": "How is reverse leg executed in Bracket Orders?",
+            "Answer": "The execution of square-off order and stop loss order are two mutually exclusive events and the execution of one will automatically cancel the other order. Partial execution of one leg of the order automatically modifies the quantity of the other leg order.\n\nClick here to View Orders",
+            "CTA": "View Orders"
+        },
+        {
+            "id": 97,
+            "Question": "Is order cancellation allowed in Bracket Orders?",
+            "Answer": "Order modification is allowed for 1st leg order only if the order is not traded and is in pending status.Order modification is allowed for 2nd leg Stop Loss Order and 3rd leg Profit Order only if is not traded.\n\nClick here to View Orders",
+            "CTA": "View Orders"
+        },
+        {
+            "id": 98,
+            "Question": "Can I convert securities purchased\/sold under Bracket Order?",
+            "Answer": "No, positions taken under bracket order cannot be converted to any other product.\n\nClick here to View Positions",
+            "CTA": "View Positions"
+        },
+        {
+            "id": 99,
+            "Question": "What if position remain open & stop loss order & profit booking order not executed till 03:30 PM?",
+            "Answer": "RMS team will run Auto-Square-Off @ 03:15 PM. All the open positions will be squared off & pending orders will get cancelled. No new position will be allowed after the square-off has started.\n\nClick here to View Positions",
+            "CTA": "View Positions"
+        },
+        {
+            "id": 100,
+            "Question": "In case of Bracket Order, will my Stop Loss, Profit Order & 1st leg order be displayed at one go?",
+            "Answer": "If first leg of the order is pending, then Stop Loss & Profit order will be in passive mode and will not be displayed to the customer. \nIf first leg of the order is traded\/executed, then Stop Loss & Profit Order will be in active mode and will be displayed to the customer and sent to exchange.\n\nClick here to View Orders",
+            "CTA": "View Orders "
+        },
+        {
+            "id": 101,
+            "Question": "In case of Bracket Order, is the Stop Loss & Profit range different for different scrip?",
+            "Answer": "Stop Loss & Profit Range is specified at scrip level & varies from scrip to scrip.\n\nClick here to Place an Order",
+            "CTA": "Place an Order"
+        },
+        {
+            "id": 102,
+            "Question": "What is an Order Book?",
+            "Answer": "An Order book is a report that contains all the orders that you have placed during the day.\n\nClick here to view your Orders ",
+            "CTA": "Orders"
+        },
+        {
+            "id": 103,
+            "Question": "What are the types of orders in an order book?",
+            "Answer": "Types of orders:\nExecuted, Partially Executed, Rejected, Cancelled.\n\nClick here to view your Orders",
+            "CTA": "Orders"
+        },
+        {
+            "id": 104,
+            "Question": "What is Trade Book?",
+            "Answer": "A trade book is a report that contains all the trades that have been executed for the day.\n\nClick here to view your Trades",
+            "CTA": "Trades"
+        },
+        {
+            "id": 105,
+            "Question": "What is the significance of trade book?",
+            "Answer": "Trade book contains all your trades for the day and helps you distinguish between a non-executed order and an executed trade.\n\nClick here to view your Trades",
+            "CTA": "Trades"
+        },
+        {
+            "id": 106,
+            "Question": "Can I buy more of the same stock from trade book?",
+            "Answer": "Yes, you can Add More shares through Trades i.e. place same order which auto-populated with the previous selected exchange & scrip\/ contract on the Place Order screen.\n\nClick here to view your Trades",
+            "CTA": "Trades"
+        },
+        {
+            "id": 107,
+            "Question": "What is the difference between Orders & Trades?",
+            "Answer": "The primary difference between Order book and Trade book is that Order book has all the un-executed orders and Trade book has all executed orders.",
+            "CTA": null
+        },
+        {
+            "id": 108,
+            "Question": "What is Net Position?",
+            "Answer": "A Net Position is a report that gives the details of your open positions (intraday or otherwise) along with your Total P&L, Realised and Unrealised P&L, options to square off your trade, convert your position and add more trades.\n\nClick here to View Your Positions",
+            "CTA": "View your Position"
+        },
+        {
+            "id": 109,
+            "Question": "Can I square off more than my existing position?",
+            "Answer": "No, you cannot square off more than your existing position.\n\nClick here to square off your Positions",
+            "CTA": "Positions"
+        },
+        {
+            "id": 110,
+            "Question": "Can I buy more shares from Positions?",
+            "Answer": "Yes, you can Add More Trades through Positions i.e. place same order which auto-populates your previous selected exchange & scrip\/ contract on Place Order screen.\n\nClick here to Add More Trades from your Positions",
+            "CTA": "Add More Trades"
+        },
+        {
+            "id": 111,
+            "Question": "Can I square off or convert open and close positions?",
+            "Answer": "You can only square off or convert your open positions (Full Quantity or Partial Quantity) and not for closed positions (Zero Quantity). For closed positions, square off and convert will be disabled.\n\nClick here to Square Off Your Positions",
+            "CTA": "Square off your Position"
+        },
+        {
+            "id": 112,
+            "Question": "Will my Total, Realised and Unrealised P&L update on real time basis under Positions?",
+            "Answer": "Yes, your Total, Realised and Unrealised P&L updation will be on real time basis under Positions.\n\nClick here to View Your Positions",
+            "CTA": "View your Position"
+        },
+        {
+            "id": 113,
+            "Question": "What are ETFs?",
+            "Answer": "ETF (Exchange Traded Fund) is a type of security that tracks an index, sector, commodity or an asset which can be traded on the exchage just like stocks.\n\nClick here to view List of ETFs ",
+            "CTA": "List of ETFs"
+        },
+        {
+            "id": 114,
+            "Question": "Can I trade in ETFs?",
+            "Answer": "Yes, you can trade in ETFs.\n\nClick here to view List of ETFs",
+            "CTA": "List of ETFs"
+        },
+        {
+            "id": 115,
+            "Question": "Will I get a bifurcation of ETFs?",
+            "Answer": "Yes, you will get a bifurcation of ETFs as follows:\n\nEquity\nDebt\nGold\nGlobal\n\nClick here to view List of ETFs",
+            "CTA": "List of ETFs"
+        },
+        {
+            "id": 116,
+            "Question": "How many scrips \/ contracts can I add per wathlist?",
+            "Answer": "You can add upto 50 scrips \/ contracts per watchlist\n\nClick here to Add Scrips \/ Contracts to your Watchlist",
+            "CTA": "Add Scrips \/ Contracts\n2. Watchlist"
+        },
+        {
+            "id": 117,
+            "Question": "Can I create a new watchlist?",
+            "Answer": "No, you cannot create new watchlist as you already have multiple watchlist features.\n\nClick here to view Watchlist",
+            "CTA": "Watchlist"
+        },
+        {
+            "id": 118,
+            "Question": "Can I rename my watchlist?",
+            "Answer": "Yes, you can rename your Watchlist.\n\n1. Long press on any of the scrips\/ contracts card\n2. Edit Watchlist screen will pop-up\n3. Rename your Watchlist and click on the Save button\n\nClick here to rename your Watchlist",
+            "CTA": "Watchlist"
+        },
+        {
+            "id": 119,
+            "Question": "Can I delete watchlist?",
+            "Answer": "No, you cannot delete your Watchlist\n\nClick here to view Watchlist",
+            "CTA": "Watchlist"
+        },
+        {
+            "id": 120,
+            "Question": "Can I sort & filter my watchlist?",
+            "Answer": "Yes, you can sort & filter your Watchlist\n\nClick here to sort & filter your Watchlist",
+            "CTA": "Watchlist"
+        },
+        {
+            "id": 121,
+            "Question": "Can I rearrange my scrips\/ contracts in my watchlist?",
+            "Answer": "Yes, you can rearrange scrips\/ contracts from your watchlist\n\n1. Long press on any of the scrips\/ contracts card\n2. Edit watchlist screen will pop-up\n3. Reaarange your scrips\/ contracts and click on the Save button\n\nClick here to rearrange scrips\/ contracts from your Watchlist",
+            "CTA": "Watchlist"
+        },
+        {
+            "id": 122,
+            "Question": "Can I delete scrips\/ contracts from my watchlist?",
+            "Answer": "Yes, you can delete scrips\/ contracts from your watchlist\n\n1. Long press on any of the scrips\/ contracts card\n2. Edit watchlist screen will pop-up\n3. Delete your scrips\/ contracts and click on Save button\n\nClick here to delete scrips\/ contracts from your Watchlist",
+            "CTA": "Watchlist"
+        },
+        {
+            "id": 123,
+            "Question": "Can I get real time rates without logging in?",
+            "Answer": "No, without log in, you will not get real time rates updation.\n\nNOTE: A note will be displyed at the bottom of the screen above footer as \"Rates are delayed by 15 minutes\"\n\nClick here to Login",
+            "CTA": "Login"
+        },
+        {
+            "id": 124,
+            "Question": "Where can I find my KYC status?",
+            "Answer": "You can view your KYC status as KYC - Investment Ready \/ KYC pending in the Menu of the App\n\nClick here to view your KYC Status",
+            "CTA": "KYC Status"
+        }
+    ],
+    "LAS-Data": [
+        {
+            "id": 1,
+            "Question": "Do I get an account statement?",
+            "Answer": "Yes, monthly account statements will be sent to you.\n\n\nClick here to get your Account Statement.",
+            "CTA": "Account Statement"
+        },
+        {
+            "id": 2,
+            "Question": "How do I get a TRF booklet?",
+            "Answer": "In order to get a Transfer Request Form (TRF), please submit a TRF request and we will courier it to your registered address.\n\n\nClick here to Apply for TRF.",
+            "CTA": null
+        },
+        {
+            "id": 3,
+            "Question": "What if my TRF booklet is lost?",
+            "Answer": "Incase your TRF booklet gets lost, please get in touch with our customer service team so that we can ensure no unauthorised transactions are carried out.\n\nClick here to Report Loss of TRF booklet.",
+            "CTA": null
+        },
+        {
+            "id": 4,
+            "Question": "What is the minimum loan value?",
+            "Answer": "The minimum loan value is Rs. XX\n\n\nClick here to Apply for LAS.",
+            "CTA": "Apply for LAS"
+        },
+        {
+            "id": 5,
+            "Question": "How do I pay interest on my LAS account?",
+            "Answer": "You can simply service your interest payable at monthly intervals through credits in your overdraft account. (As per RBI guidelines DBOD.NO.BP.BC 10\/21.04.048\/2004)\n\nClick here to Repay your LAS.",
+            "CTA": null
+        },
+        {
+            "id": 6,
+            "Question": "How frequently will be protfolio be re-valued?",
+            "Answer": "We conduct re-valuation on a weekly basis, unless there is a sudden correction in the market wherein we conduct an interm re-valuation.",
+            "CTA": null
+        },
+        {
+            "id": 7,
+            "Question": "Would the shares be held in my name?",
+            "Answer": "Yes, the shares will be in your name as well as benefits such as rights, dividends and bonuses.",
+            "CTA": null
+        },
+        {
+            "id": 8,
+            "Question": "Is my overdraft limit fixed?",
+            "Answer": "Your overdraft limit will vary as per the market condtions as we will priodically review your portfolio to determine it.\n\n\nClick here to Check Loan Amount Limit.",
+            "CTA": null
+        },
+        {
+            "id": 9,
+            "Question": "Will there be a penalty if there is insufficient balance?",
+            "Answer": "Yes, in case of insufficient balance, a penalty of Rs. XX will be charged per month.",
+            "CTA": null
+        },
+        {
+            "id": 10,
+            "Question": "What will be the interest rate on my loan amount?",
+            "Answer": "All floating rates will be linked to REPO rates. The interest rate offered to you will be REPO rate plus spread. \n\nNote: \n- REPO rate is revised every 3 months\n- TFM has sole discretion to decide the spread over the REPO rate",
+            "CTA": null
+        },
+        {
+            "id": 11,
+            "Question": "How do I contact you'll for LAS?",
+            "Answer": "You can apply online via the App for LAS.\n\nClick here to Apply for LAS.\n\n",
+            "CTA": "Apply for LAS"
+        },
+        {
+            "id": 12,
+            "Question": "How do I repay my LAS?",
+            "Answer": "You can repay your loan online via the App.\n\nClick here to Repay your LAs.",
+            "CTA": "Repay your LAs"
+        },
+        {
+            "id": 13,
+            "Question": "How do I pledge my securities?",
+            "Answer": "You have to submit a pledge request with your DP (Depository Participant), with whom you have a demat account. Once your DP correctly initiates the pledge request in favour of TFM, the limit will be set withing XX hours.\n\n\nClick here to Pledge Securities.",
+            "CTA": null
+        },
+        {
+            "id": 14,
+            "Question": "Can I get LAS for shares that are in materialised form?",
+            "Answer": "Yes, but you have to dematerialise them first in order to avail LAS.\n\n\nClick here to Apply for LAS.",
+            "CTA": "Apply for LAS"
+        },
+        {
+            "id": 15,
+            "Question": "Will more shares be updated in the approved list?",
+            "Answer": "Yes, the approved list gets updated periodically.\n\nClick here to check the Approved List.",
+            "CTA": "Approved List"
+        },
+        {
+            "id": 16,
+            "Question": "What are the documents requried to apply for LAS?",
+            "Answer": null,
+            "CTA": null
+        },
+        {
+            "id": 17,
+            "Question": "What is (LAS) Loan Against Securities?",
+            "Answer": "Loan Against Seurities means a loan borrowed against marketable securities in which the customer pledges his investments in favour of the lender and borrows funds to meet their financial requirements.\n\nClick here to Apply for LAS.",
+            "CTA": null
+        },
+        {
+            "id": 18,
+            "Question": "What are the various types of LAS?",
+            "Answer": "Following are the types of LAS:\n- Loan Against Shares\n- Loan Against Bonds\n- Loan Against Mutual Funds\n- Loan Against Insurance Policies*\n- Loan Against ESOP Financing\n- Loan Against IPO Financing\n- Loan Against FMPs\n\n\nClick here to Appy for LAS.",
+            "CTA": null
+        },
+        {
+            "id": 19,
+            "Question": "Can I foreclose my LAS?",
+            "Answer": "Yes, you can foreclose your LAS by paying the interest and principal amount in full.\n\nClick here to Foreclose LAS.",
+            "CTA": "Foreclose LAS"
+        },
+        {
+            "id": 20,
+            "Question": "Can I make part payments for my LAS?",
+            "Answer": "Yes, you can choose the part payment opton.\n\nClick here to Repay your LAS.",
+            "CTA": "Repay your LAs"
+        },
+        {
+            "id": 21,
+            "Question": "What are the pledge charges?",
+            "Answer": "Pledge charges vary from DP to DP. The common pledge charges are 0.4% of the pledge amount.\n\nClick here to Apply for LAS.",
+            "CTA": "Apply for LAS"
+        },
+        {
+            "id": 22,
+            "Question": "How can I know my eligiblity for LAS?",
+            "Answer": "We conduct a review of your application and basis that sanction the loan.\n\nClick here to Apply for LAS.",
+            "CTA": "Apply for LAS"
+        },
+        {
+            "id": 23,
+            "Question": "How is the loan eligibility amount calculated?",
+            "Answer": "The loan eligibility amount is being calculated on the following fators:\n- Vested Price\n- Market Price\n- Margin of Shares\n\nClick here to Apply for LAS.",
+            "CTA": null
+        }
+    ],
+    "Robo Wealth Advisory-Data": [
+        {
+            "id": 1,
+            "Question": "How is my data secure?",
+            "Answer": "We are certified by DIGICERT, SSL-128-bit encryption algorithm to secure all our client information, which is the same data security used by banks. Only you and the assigned Certified Financial Planner can access your data. "
+        },
+        {
+            "id": 2,
+            "Question": "Are you registered with SEBI?",
+            "Answer": "Yes, we are a SEBI registered investment advisor wide registration number: XXXXXXXXXXX."
+        },
+        {
+            "id": 3,
+            "Question": "Do you have any other branch? ",
+            "Answer": "We are digital only platform however you can contact us on ********* for any help required. "
+        }
+    ],
+    "Financial Advisory-Data": [
+        {
+            "id": 1,
+            "Question": "I want to invest in a ULIP as I believe that there are low charges levied on the policies now and where I could get good return and I will get benefit from insurance and investments.",
+            "Answer": "It is a misconception that ULIP comes with lower charges. ULIPS are directly linked with the markets and out of the premium paid, only a certain amount is being invested towards the market whereas the remaining amount is being deducted towards various commissions. "
+        },
+        {
+            "id": 2,
+            "Question": "Do you advise on equity?",
+            "Answer": "We do advise on equity. However, the exposure to equity is primarily through Mutual Funds."
+        },
+        {
+            "id": 3,
+            "Question": "Do you advice on real estate?",
+            "Answer": "Yes, we do advise on Real Estate depending on the goals and risk appetite. "
+        },
+        {
+            "id": 4,
+            "Question": "Do you advice on estate planning?",
+            "Answer": "We do not cover estate planning completely but a part of it which is WILL planning."
+        },
+        {
+            "id": 5,
+            "Question": "Will the planner be the same person for lifetime?",
+            "Answer": "Your financial planning is AI driven with zero human dependency. Even if the financial planner changes, there would be no change in your plan and its implementation."
+        },
+        {
+            "id": 6,
+            "Question": "Are the returns guaranteed? Do you guys definitely repair my financial health from any current form I am now in?",
+            "Answer": "No, the returns are not guaranteed. Before giving any advice, we will assess your current financial health and suggest you accordingly."
+        },
+        {
+            "id": 7,
+            "Question": "Can I change the allocated financial planner if I am not satisfied?",
+            "Answer": "Yes, you can change your financial planner. "
+        },
+        {
+            "id": 8,
+            "Question": "Do you guys do Financial Planning by video chat or only on phone? What is the main source of communication to your clients? Do you guys use Skype\/Google Hangout?",
+            "Answer": "We provide services online via video call or by phone call. "
+        }
+    ]
+}

@@ -1,0 +1,574 @@
+<ion-content class="contentBackground">
+
+  <!-- Health -->
+  <div *ngIf="health">
+
+    <ion-grid class="ion-no-padding">
+      <app-banner [banner]="banner"></app-banner>
+    </ion-grid>
+    <ion-grid class="p-2 pt-4">
+
+      <app-heading [heading]="heading"></app-heading>
+
+      <ion-row>
+        <ion-col [size]="'6'" *ngFor="let x of data">
+          <ion-card class="custBackgroundColorWhite card cardItem p-2">
+            <ion-row>
+              <ion-col [size]="'3'">
+                <ion-img [src]="x?.logo" class="custStockIcon float-start"></ion-img>
+              </ion-col>
+              <ion-col [size]="'9'">
+                <ion-row>
+                  <span class="custFontFamilyMuliSemiBold custLineHight20 muli-14pt custColorDark">
+                    {{x?.title}}
+                  </span>
+                </ion-row>
+
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <span
+                class="custFontFamilyMuliRegular muli-10pt custLineHight16 custColorBattlePGry">{{x?.description}}</span>
+            </ion-row>
+            <ion-row>
+              <button (click)="navigateTo('/Labtest')"
+                class="w-100 custBtnExplore text-capitalize custColorBrightCyan custFontFamilyMuliRegular muli-14pt custButtonOutLine float-end">Explore
+              </button>
+            </ion-row>
+
+          </ion-card>
+        </ion-col>
+      </ion-row>
+
+      <ion-grid class="custGrid">
+        <app-promotion></app-promotion>
+      </ion-grid>
+    </ion-grid>
+  </div>
+
+  <!-- Education -->
+
+  <!-- <ion-grid class="custBackgroundColorPaleGrey">
+  <ion-row>
+    <ion-col [size]="'12'" class="mfBackground p-4">
+      <ion-row class="pt-4 pb-4">
+        <ion-col [size]="'12'" class="custTextAlignCenter">
+          <span
+            class="custFontFamilyMuliBold muli-16pt custLineHight18 custColorWhite"
+            >Why Study In Torus Primero?</span
+          >
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col [size]="'4'">
+          <ion-row>
+            <ion-col [size]="'12'" class="custTextAlignCenter">
+              <ion-img
+                [src]="imageList?.group3ED"
+                class="custMFImg"
+              ></ion-img>
+            </ion-col>
+            <ion-col [size]="'12'" class="custTextAlignCenter pt-2 pb-2">
+              <span
+                class="custFontFamilyMuliSemiBold muli-12pt custLineHight16 custColorWhite"
+              >
+                Cost <br />Effective
+              </span>
+            </ion-col>
+          </ion-row>
+        </ion-col>
+        <ion-col [size]="'4'">
+          <ion-row>
+            <ion-col [size]="'12'" class="custTextAlignCenter">
+              <ion-img
+                [src]="imageList?.group2ED"
+                class="custMFImg"
+              ></ion-img>
+            </ion-col>
+            <ion-col [size]="'12'" class="custTextAlignCenter pt-2 pb-2">
+              <span
+                class="custFontFamilyMuliSemiBold muli-12pt custLineHight16 custColorWhite"
+              >
+                Self <br />
+                Management
+              </span>
+            </ion-col>
+          </ion-row>
+        </ion-col>
+        <ion-col [size]="'4'">
+          <ion-row>
+            <ion-col [size]="'12'" class="custTextAlignCenter">
+              <ion-img
+                [src]="imageList?.group1ED"
+                class="custMFImg"
+              ></ion-img>
+            </ion-col>
+            <ion-col [size]="'12'" class="custTextAlignCenter pt-2 pb-2">
+              <span
+                class="custFontFamilyMuliSemiBold muli-12pt custLineHight16 custColorWhite"
+              >
+                Flexible <br />
+                Schedule
+              </span>
+            </ion-col>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+    </ion-col>
+  </ion-row>
+  <ion-row class="p-2 pt-4">
+    <ion-col [size]="'12'">
+      <span
+        class="muli-22pt custFontFamilyMuliBold custLineHight30 custColorDark text-capitalize"
+      >
+        Education Wellness
+      </span>
+    </ion-col>
+    <ion-col [size]="'12'" class=" ">
+      <ion-row>
+        <ion-col [size]="'2'" class="text-start p-0 m-0">
+          <div class="custBackgroundColorDarkishBlue custBox p-0 m-0"></div>
+        </ion-col>
+      </ion-row>
+    </ion-col>
+    <ion-col [size]="'12'">
+      <span
+        class="custFontFamilyMuliBold muli-12pt custLineHight28 text-capitalize"
+        >Education Product To Ensure Wellness
+      </span>
+    </ion-col>
+  </ion-row>
+
+  <div>
+    <div>
+      <ion-row>
+        <ion-col [size]="'6'" class="leftside">
+          <span
+            class="custFontFamilyMuliBold muli-16pt custLineHight22 custColorDark"
+            >Courses</span
+          >
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col [size]="'6'" class="ion-no-padding">
+          <ion-card 
+            (click)="navigateTo('/Courses')" >
+            <ion-card-content>
+              <ion-row>
+                <ion-col size="3">
+                  <ion-img
+                    [src]="imageList?.logo"
+                    class="titleIMG float-start"
+                  ></ion-img>
+                </ion-col>
+
+                <ion-col size="4" class="d-flex justify-content-start">
+                  <span
+                    class="custFontFamilyMuliSemiBold custLineHight20 muli-14pt custColorDark float-start mt-1 text-nowrap"
+                  >
+                    Courses
+                  </span>
+                </ion-col>
+              </ion-row>
+
+              <ion-row>
+                <span
+                  class="custFontFamilyMuliRegular muli-10pt custColorBattlePGry custDesc text-nowrap"
+                  >Skill courses for you</span
+                >
+              </ion-row>
+
+              <ion-row>
+                <ion-col>
+                  <button
+                    class="btn w-100 custButtonOutLine custColorBrightCyan"
+                  >
+                    <span
+                      class="custColorBrightCyan custFontFamilyMuliBold muli-12pt"
+                      >Explore</span
+                    >
+                  </button>
+                </ion-col>
+              </ion-row>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+        <ion-col
+          [size]="'6'"
+          class="ion-no-padding"
+          routerLinkActive="active"
+        >
+          <ion-card>
+            <ion-card-content>
+              <ion-row>
+                <ion-col size="3">
+                  <ion-img
+                    [src]="imageList?.logo2"
+                    class="titleIMG float-start"
+                  ></ion-img>
+                </ion-col>
+                <ion-col size="4" class="d-flex justify-content-start">
+                  <span
+                    class="custFontFamilyMuliSemiBold custLineHight20 muli-14pt custColorDark float-start mt-1 text-nowrap"
+                  >
+                    Assessment
+                  </span>
+                </ion-col>
+              </ion-row>
+
+              <ion-row>
+                <span
+                  class="custFontFamilyMuliRegular muli-10pt custColorBattlePGry custDesc text-nowrap"
+                  >Learn interesting courses</span
+                >
+              </ion-row>
+
+              <ion-row>
+                <ion-col>
+                  <button
+                    class="btn w-100 custButtonOutLine custColorBrightCyan"
+                  >
+                    <span
+                      class="custColorBrightCyan custFontFamilyMuliBold muli-12pt"
+                      >Explore</span
+                    >
+                  </button>
+                </ion-col>
+              </ion-row>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </div>
+  </div>
+
+  changes card structure changes
+  <div>
+    <div>
+      <ion-row>
+        <ion-col>
+          <span
+            class="custFontFamilyMuliBold muli-16pt custLineHight22 custColorDark"
+            >Trending Courses</span
+          >
+        </ion-col>
+      </ion-row>
+
+      <ion-row class="container">
+        <ion-col
+          [size]="12"
+          class="ion-no-padding mb-5"
+          *ngFor="let x of dataList"
+          (click)="navigatecourselist(x.id)"
+          >
+          <ion-card>
+            <ion-card-content class="">
+              <ion-row>
+                <ion-col [size]="'2'">
+                  <ion-img
+                    [src]="'data:image/jpeg;base64,' + x.icon"
+                    class="float-start logo"
+                  ></ion-img>
+                </ion-col>
+                <ion-col class="">
+                  <p
+                    class="custFontFamilyMuliSemiBold custLineHight20 muli-14pt custColorDark custTitle"
+                  >
+                    {{ x.displayName }}
+                  </p>
+                  <p
+                    class="custFontFamilyMuliRegular muli-10pt custLineHight15 custTitle text-nowrap"
+                  >
+                    {{ x.authorName }}
+                  </p>
+                  <p
+                    class="custFontFamilyMuliRegular muli-10pt custLineHight15 custColorlightgray custTitle"
+                  >
+                    {{ x.section }} Sections • {{ x.totalLectures }} Lectures
+                    • {{ x.duration }} Hours
+                  </p>
+                </ion-col>
+                <ion-col [size]="'1'">
+                  <img
+                    [src]="imageList?.leftArrowIcon"
+                    class="mt-3 custArrowIcon"
+                  />
+                </ion-col>
+              </ion-row>
+
+              <ion-row class="w-100">
+                <ion-col size="4">
+                  <p
+                    class="custFontFamilyMuliRegular muli-12pt custLineHight15 text-nowrap mt-2"
+                  >
+                    Price
+                  </p>
+                  <p
+                    class="custFontFamilyMuliBold muli-14pt custLineHight18 custColorDark text-nowrap"
+                  >
+                    ₹{{ x.price }}
+                  </p>
+                </ion-col>
+                <ion-col class="d-block justify-content-start mt-2" size="3">
+                  <p
+                    class="custFontFamilyMuliRegular muli-12pt custLineHight15 text-nowrap"
+                  >
+                    Ratings
+                  </p>
+                  <p class="custFontFamilyMuliRegular custLineHight15">
+                    <ngb-rating
+                      [(rate)]="x.averageRatings"
+                      [readonly]="true"
+                      [starTemplate]="starTemplate"
+                      [max]="5"
+                    ></ngb-rating>
+                    <ng-template #starTemplate let-fill="fill">
+                      <span class="star" [class.full]="fill === 100">
+                        <span class="half" [style.width.%]="fill"
+                          >&starf;</span
+                        >&starf;
+                      </span>
+                    </ng-template>
+                  </p>
+                </ion-col>
+                <ion-col size="5">
+                  <ion-row class="d-flex justify-content-end">
+                    <p
+                      class="custFontFamilyMuliRegular muli-12pt custLineHight15 float-end mt-2"
+                    >
+                      Level
+                    </p>
+                  </ion-row>
+                  <ion-row class="d-flex justify-content-end">
+                    <p
+                      class="custFontFamilyMuliBold muli-14pt custLineHight18 custColorDark float-end"
+                    >
+                      {{ x.level }}
+                    </p>
+                  </ion-row>
+                </ion-col>
+              </ion-row>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </div>
+  </div>
+</ion-grid> -->
+
+  <!-- Wealth -->
+
+  <!-- <ion-grid class="p-2 pt-4">
+  <ion-row>
+    <ion-col [size]="'12'">
+      <span class="custFontFamilyMuliBold muli-24pt custLineHight40 custColorDark custOpacity60">{{'hey' | translate}},
+        {{userFirstName}}</span>
+      <p class="custFontFamilyMuliRegular muli-14pt custLineHight28 custColorBattlePGry">{{'wellnessUserNotification' |
+        translate}}</p>
+    </ion-col>
+
+
+    <ion-col [size]="'12'">
+      <span class="muli-22pt custFontFamilyMuliBold custLineHight30 custColorDark text-capitalize">
+        {{'wealth' | translate}} {{'wellness' | translate}}
+      </span>
+    </ion-col>
+    <ion-col [size]="'12'">
+      <ion-row>
+        <ion-col [size]="'2'" class="text-start p-0 m-0">
+          <div class="custBackgroundColorDarkishBlue custBox p-0 m-0"></div>
+      </ion-col>
+      </ion-row>
+    </ion-col>
+    <ion-col [size]="'12'">
+      <p class="custFontFamilyMuliRegular muli-12pt custLineHight18 custColorBattlePGry">{{'wealthWellnessPara' |
+        translate}}</p>
+    </ion-col>
+    <ion-col [size]="'12'">
+      <span class="custFontFamilyMuliBold muli-16pt custLineHight22 custColorDark">{{'moneyMakers' | translate}}</span>
+    </ion-col>
+    <ion-col [size]="'12'">
+
+
+      <ion-card class="custBackgroundColorWhite p-0 m-0">
+        <ion-card-content>
+          <ion-row>
+            <ion-col [size]="'1.5'">
+              <ion-img [src]="imageList?.stockIcon" class="custStockIcon float-start"></ion-img>
+            </ion-col>
+            <ion-col [size]="'10.5'">
+              <span class="custFontFamilyMuliSemiBold custLineHight20 muli-14pt custColorDark">
+                {{'stocks' | translate}}
+              </span>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col [size]="'7'">
+              <span class="custFontFamilyMuliRegular muli-12pt custLineHight16 custColorBattlePGry">{{'wellnessStocks' |
+                translate}}</span>
+            </ion-col>
+            <ion-col [size]="'5'">
+              <button type="button"
+                class="custBtnExplore text-capitalize custColorBrightCyan custFontFamilyMuliRegular muli-14pt custButtonOutLine float-end"
+                (click)="navigateTo('/Stocks')" id="wellnessStocke">{{'explore' | translate}}</button>
+            </ion-col>
+          </ion-row>
+
+        </ion-card-content>
+      </ion-card>
+
+
+    </ion-col>
+    <ion-col [size]="'12'">
+      <ion-card class="custBackgroundColorWhite p-0 m-0">
+        <ion-card-content>
+          <ion-row>
+            <ion-col [size]="'1.5'">
+              <ion-img [src]="imageList?.mutualIcon" class="custStockIcon float-start"></ion-img>
+            </ion-col>
+            <ion-col [size]="'10.5'">
+              <span class="custFontFamilyMuliSemiBold custLineHight20 muli-14pt custColorDark">
+                {{'mutualFunds' | translate}}
+              </span>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col [size]="'7'">
+              <span class="custFontFamilyMuliRegular muli-12pt custLineHight16 custColorBattlePGry">{{'wellnessMutual' |
+                translate}}</span>
+            </ion-col>
+            <ion-col [size]="'5'">
+              <button type="button"
+                class="custBtnExplore text-capitalize custColorBrightCyan custFontFamilyMuliRegular muli-14pt custButtonOutLine float-end"
+                (click)="navigateTo('/MutualFunds')" id="wellnessMutualFund">{{'explore' | translate}}</button>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+<ion-grid class="p-0">
+  <ion-row>
+  </ion-row>
+</ion-grid>
+<ion-grid class="p-0">
+  <ion-row>
+    <ion-col [size]="'12'" class="custDivLinear">
+      <ion-card class="custBackgroundColorWhite custRoboCard">
+        <ion-card-content>
+          <ion-row>
+            <ion-col [size]="'1.5'">
+              <ion-img [src]="imageList?.roboIcon" class="custStockIcon float-start"></ion-img>
+            </ion-col>
+            <ion-col [size]="'10.5'">
+              <span class="custFontFamilyMuliSemiBold custLineHight20 muli-14pt custColorDark">
+                {{'wealthRoboAdvisory' | translate}}
+              </span>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col [size]="'7'">
+              <span class="custFontFamilyMuliRegular muli-12pt custLineHight16 custColorBattlePGry">{{'wellnessRobo' |
+                translate}}</span>
+            </ion-col>
+            <ion-col [size]="'5'">
+              <button type="button"
+                class="custBtnAssist text-capitalize custColorBrightCyan custFontFamilyMuliRegular muli-14pt custButtonOutLine float-end"
+                id="wellnessWealthRobo" (click)="navigateTo('/RoboAdvisory')">{{'getAssist' |
+                translate}}</button>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+<ion-grid class="p-0">
+  <ion-row>
+  </ion-row>
+</ion-grid>
+<ion-grid class="p-0">
+  <ion-row>
+  </ion-row>
+</ion-grid>
+<ion-grid class="p-2">
+  <ion-row>
+    <ion-col [size]="'12'">
+      <span class="custFontFamilyMuliBold muli-16pt custLineHight22 custColorDark">{{'moneySavers' | translate}}</span>
+    </ion-col>
+    <ion-col [size]="'12'">
+      <ion-card class="custBackgroundColorWhite p-0 m-0">
+        <ion-card-content>
+          <ion-row>
+            <ion-col [size]="'1.5'">
+              <ion-img [src]="imageList?.goldIcon" class="custStockIcon float-start"></ion-img>
+            </ion-col>
+            <ion-col [size]="'10.5'">
+              <span class="custFontFamilyMuliSemiBold custLineHight20 muli-14pt custColorDark">
+                {{'gold' | translate}}
+              </span>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col [size]="'7'">
+              <span class="custFontFamilyMuliRegular muli-12pt custLineHight16 custColorBattlePGry">{{'goldInfo' |
+                translate}}</span>
+            </ion-col>
+            <ion-col [size]="'5'">
+              <button type="button"
+                class="custBtnInvest text-capitalize custColorBrightCyan custFontFamilyMuliRegular muli-14pt custButtonOutLine float-end"
+                id="wellnessWealthRobo" (click)="navigateTo('/Gold')">{{'buyNow' | translate}}</button>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+</ion-grid> -->
+
+
+  <!-- Lifestyle -->
+
+  <!-- <ion-grid class="p-2 pt-4">
+  <ion-row>
+    <ion-col [size]="'12'">
+      <span class="custFontFamilyMuliBold muli-24pt custLineHight40 custColorDark custOpacity60">{{'hey' | translate}}, {{userFirstName}}</span>
+      <p class="custFontFamilyMuliRegular muli-14pt custLineHight28 custColorBattlePGry">{{'wellnessUserNotification' | translate}}</p>
+    </ion-col>
+    <ion-col [size]="'12'">
+      <span class="muli-22pt custFontFamilyMuliBold custLineHight30 custColorDark text-capitalize">
+        {{'lifestyle' | translate}}
+      </span>
+    </ion-col>
+    <ion-col [size]="'12'">
+      <ion-row>
+        <ion-col [size]="'1'" class="custBackgroundColorDarkishBlue"></ion-col>
+      </ion-row>
+    </ion-col>
+    <ion-col [size]="'12'">
+      <p class="custFontFamilyMuliRegular muli-12pt custLineHight18 custColorBattlePGry">{{'lifestyleDetails' | translate}}</p>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+     <ion-col>
+    <ion-searchbar showCancelButton="never" showClearButton="never" placeholder="Search"></ion-searchbar>
+  </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col [size]="'12'" ion-no-padding>
+      <span class="custFontFamilyMuliBold muli-16pt">{{'shopping' | translate}}</span>
+    </ion-col>
+  </ion-row>
+  <ion-row> -->
+  <!-- <ion-col>
+      <a (click)="goToAmazon()"><img class="imgSize" src="assets/Images/amazon.png"/></a>
+    </ion-col>
+  </ion-row>
+</ion-grid> -->
+
+
+
+
+</ion-content>

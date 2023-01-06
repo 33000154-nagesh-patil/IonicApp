@@ -1,0 +1,207 @@
+.custKYCImg{
+    height: 16px;
+    width: 13px;
+    display:flex;
+    justify-content: start !important  ;
+}
+
+.custImgSize{
+    justify-content: center;
+    padding: 25px;
+  }
+  .custPos{
+    position: relative;
+    bottom:80px
+  }
+
+  .custImg{
+    height: 25px;
+    width: 25px;
+}
+.css1{
+    margin-left: -24px;
+}
+.img{
+    display: flex;
+    justify-content: flex-end;
+}
+.custImg1{
+    height: 35px;
+    width: 35px;
+}
+.custImg2{
+    height: 90px;
+    width: 90px;
+}
+
+// .custProfile{
+//     padding: 21px;
+// }
+.custBackGround{
+    background-color: #F3F3F3;
+}
+.custBackgroundBlue{
+  
+    background-image: linear-gradient(#CDE0FF, #E1EDFF );
+}
+.custBackgroundLightOrange{
+  
+    background-image: linear-gradient(#FED3BF, #FFE4D8);
+}
+.custBackgroundPink{
+  
+    background-image: linear-gradient(#FECCE5 , #FFE0EF);
+}
+.custBackgroundLightGreen{
+
+  background-image: linear-gradient(#DBE9AC , #E8F6B9);
+}
+.custBackgroundLightBlue{
+
+  background-image: linear-gradient(#C1E7FF , #D9F0FF);
+}
+.custBackgroundBlueshGreen{
+
+  background-image: linear-gradient(#AFECE9 , #BCF9F6);
+}
+.custBackgrouncashBack{
+
+  background-image: linear-gradient(#BCF2CF, #C9FFDC);
+}
+.btnColor{
+    background-color: #FDE20B;
+    border: 2px solid #FBD210;
+    border-radius: 2px  ;
+}
+
+.btnColorLock{
+    background-color: #F3F3F3;
+    border: 2px solid #C4C4C4;
+    border-radius: 2px  ;
+}
+section {
+    position: relative;
+  }
+  
+//   section img {
+//     position: absolute;
+    // width: 200px;
+//   }
+  .bottom{
+    
+    // display: none;
+    animation-name: faded;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-direction: alternate;
+
+  }
+  @keyframes faded {
+    0% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 0;
+    }
+    75% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .top {
+    animation-name: fade;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-direction: alternate;
+  }
+  
+  @keyframes fade {
+    0% {
+      opacity: 1;
+    }
+    25% {
+      opacity: 1;
+    }
+    75% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  // .top {
+  //   animation: MoveUpDown 2s linear infinite;
+  // }
+  
+  // @keyframes MoveUpDown {
+  //   0%, 100% {
+  //     bottom: 0;
+  //   }
+  //   50% {
+  //     bottom: 100px;
+  //   }
+  // }
+
+
+.container{
+    display: flex;
+    flex-wrap: nowrap;
+    height: auto;
+    overflow-x: auto;
+    width: auto;
+}
+.custBack{
+    background-color: #E1E5E9;
+    height: 4px;
+}
+.commonBrandImg{
+  height: 3.2rem !important;
+  width: 6rem !important;
+}
+
+.custDes{
+    // text-overflow: ellipsis;
+white-space: nowrap;
+// overflow: hidden;
+}
+.custSizeJackpot{
+    height: 181px;
+    width: 188px;
+}
+.custSizeUpcomingJackpot{
+    height: 181px;
+    width: 170px;
+}
+.custSizeVoucher{
+    height: 181px;
+    width: 170px;
+}
+.custSizeGiftCard{
+    height: 181px;
+    width: 170px;
+}
+.custBackgroundColorAva{
+  background-color: #EF405B;
+  color: white;
+}
+
+.cromaBAckGroundImg{
+background-image: url('/assets/icon/croma.png');
+background-size: 255px 271px;
+}
+.mytripBAckGroundImg{
+background-image: url('/assets/icon/mytrip.png');
+background-size: 255px 271px;
+}
+.tanishqBAckGroundImg{
+background-image: url('/assets/icon/tanishq.png');
+background-size: 255px 271px;
+
+}
+
+.custHei{
+  height: 255px;
+}

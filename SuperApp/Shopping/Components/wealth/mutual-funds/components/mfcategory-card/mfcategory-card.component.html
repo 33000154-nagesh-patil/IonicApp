@@ -1,0 +1,95 @@
+<ion-header >
+  <ion-toolbar class="custBackgroundDynamicColorWhite">
+    <ion-grid>
+      <ion-row>
+        <ion-col [size]="'1'" class="text-center mt-1" (click)="backF()">
+          <ion-img [src]="imageList?.arrow" class="backArrow mt-2"></ion-img>
+        </ion-col>
+        <ion-col [size]="'8'">
+          <span
+            class="custFontFamilyMuliBold muli-16pt custLineHight40 custColorDark"
+            >{{headerName}}</span
+          >
+        </ion-col>
+        <ion-col [size]="'3'" class="mt-2 text-end">
+      
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+<!-- <lib-header [title]="title" [imageList]="imageList" [showArrow]="false" [showLabel]="true" [showImg]="false" [imgURL]="labelIcon"
+[showIndex]="false" [showNotification]="true" [showCartWithName]="true" [notificationCount]="notificationCount" [cardCount]="cartCount" [showSideMenu]="false" [showSearch]="true" [showClose]="false" [showShare]="false" [showWatchList]="false" [showCartWithoutName]="false" [showStories]="false" [otherTextName]="textName" [showOtherText]="false" [superMode]="currentMode" [backUrlName]=""></lib-header>
+ <ion-row class="pt-4 px-2">
+  <ion-col [size]="'12'">
+    <span class="muli-22pt custFontFamilyMuliBold custLineHight30 custColorDark text-capitalize">
+      Explore
+    </span>
+  </ion-col>
+  <ion-col [size]="'12'">
+    <ion-row>
+      <ion-col [size]="'2'" class="text-start p-0 m-0">
+        <div class="custBackgroundColorDarkishBlue custBox p-0 m-0"></div>
+    </ion-col>
+    </ion-row>
+  </ion-col>
+  <ion-col [size]="'12'">
+    <span class="custFontFamilyMuliRegular muli-12pt custLineHight18 custColorBattlePGry">Discover {{headerName}} for Investments</span>
+  </ion-col>
+</ion-row>    -->
+<ion-content>
+  <div *ngIf="emptyCart">
+    <ion-row class="mt-5 pt-5"></ion-row>
+    <ion-row class="mt-5 pt-5"></ion-row>
+    <ion-row class="mt-5 pt-3">
+      <ion-col class="text-center">
+        <img [src]="imageList?.faceIcon">
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="text-center d-flex flex-column">
+        <span class="custFontFamilyMuliBold muli-16pt custLineHight22 custColorDark">No NFOs are currently live</span>
+        <span class="custFontFamilyMuliRegular muli-12pt custLineHight18 custColorDark mt-2">NFOs are first subscription offerings for new mutual funds.</span>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="text-center">
+      </ion-col>
+    </ion-row>
+  </div>
+  <ion-grid *ngIf="!emptyCart">
+    <!-- <ion-row>
+      <ion-col [size]="'12'">
+        <ion-row> 
+          <ion-col [size]="'6'">
+            <ion-row class="d-flex justify-content-center">
+              <ion-col [size]="'2'" class="pe-0">
+                <ion-img [src]="imageList?.filterIcon" class="custImgExpo mt-2"></ion-img>
+              </ion-col>
+              <ion-col [size]="'10'" class="ps-0" (click)="FilterItem()">
+                <span class="custFontFamilyMuliBold muli-12pt custLineHight18 custColorDarkishBlue">{{'filter' | translate}}</span>
+              </ion-col>
+            </ion-row>
+          </ion-col>
+          <ion-col [size]="'6'">
+            <ion-row class="d-flex justify-content-center">
+              <ion-col [size]="'10'" class="text-end pe-0 ps-3"><span class="custFontFamilyMuliBold muli-12pt custLineHight18 custColorDarkishBlue">{{'1YReturns' | translate}}</span></ion-col>
+              <ion-col [size]="'2'" class="text-end ps-2">
+                <ion-img [src]="imageList?.sortIcon" class="custImgExpo mt-2"></ion-img>
+              </ion-col>
+            </ion-row>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+    </ion-row> -->
+   
+    <lib-allmutualfundcard  #card  [filterWant]='true' [imageList]="imageList" [header]="' '"></lib-allmutualfundcard>
+    <ion-infinite-scroll threshold="100px" (ionInfinite)="onScroll($event)">
+      <ion-infinite-scroll-content style="--color: #56a1ce;"
+        loadingSpinner="crescent"
+        loadingText="Fetching More Mutual Funds Please Wait...">
+      </ion-infinite-scroll-content>
+    </ion-infinite-scroll>
+
+</ion-grid> 
+</ion-content>

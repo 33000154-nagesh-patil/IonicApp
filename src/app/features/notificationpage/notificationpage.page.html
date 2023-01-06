@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-grid>
+      <ion-row>
+        <ion-col [size]="'1'" (click)="goToBack()" id="goBack">
+          <div class="custTextAlignCenter">
+            <ion-img [src]="imageList?.arrow" class="custArrorSize custWithoutTextImg mt-1"></ion-img>
+          </div>
+        </ion-col>
+        <ion-col class="custFontFamilyMuliBold muli-16pt custColorDark" >
+          <span class="custFontFamilyMuliBold muli-16pt"> Notification</span>
+          <span>
+            <ion-badge color="secondary" mode="ios">99+</ion-badge>
+          </span>
+        </ion-col>
+        <ion-col class="d-flex justify-content-end align-items-center" (click)="gotoFilter()">
+          <label><img src="assets/icon/filterIcon.svg"></label>&nbsp;
+          <span class="custFontFamilyMuliBold muli-12pt custColorDarkishBlue">Filter</span>
+          <ion-badge color="secondary" mode="ios" class="filterBadge">{{filterSelectionCount}}</ion-badge>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content class="contentBackground">
+
+  <app-notification-new></app-notification-new>
+</ion-content>
+
+
+

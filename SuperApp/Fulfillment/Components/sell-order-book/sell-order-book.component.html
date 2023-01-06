@@ -1,0 +1,344 @@
+<!-- <ion-app>
+  <cap-header [title]="title" 
+   [imageList]="imageList"
+    [showArrow]="true" 
+    [showLabel]="true" 
+  [showCartWithName]="true" 
+   [cartCount]="cartCount"
+  [showSearch]="true" 
+  [paddingSize]="'7'" 
+  ></cap-header>
+  <ion-content class="contentBackground" >
+    <ion-grid class="p-3">
+      <ion-row class="custCenter mt-4">
+        <ion-segment class="ion-justify-content-center" (ionChange)="changeSegment($event)" [(ngModel)]="currentSegment">
+          <ion-segment-button *ngFor="let segment of jsonData.segments"
+            [ngClass]="currentSegment == segment.value?'custBackgroundColorBrightCyan custColorWhite':'custColorDark custOptacity'"
+                class="custSegment " 
+            [class.mat-raised-button]="currentSegment == segment.value"
+            [value]="segment.value">{{segment.name}}</ion-segment-button>
+        </ion-segment>
+      </ion-row>
+      <ion-row class="custCenter mt-4" >
+          <span *ngIf="currentSegment=='grams'||currentSegment=='quantity'" class="custColorBattlePGry muli-30pt" >₹</span>
+          <span class="custColorDark muli-30pt">
+            {{displayResult}}
+          </span>
+          <span *ngIf="currentSegment=='amount'" class="custColorBattlePGry">gm</span>
+      </ion-row>
+      <ion-row class="custCenter mt-4" >
+        
+        <mat-form-field name="input" floatLabel="never" >
+            <button matPrefix mat-raised-button color="none" *ngIf="currentSegment=='quantity'" class="custColorBrightCyan " (click)="decrement()">
+              <mat-label class="muli-24pt">-</mat-label>
+            </button>
+            
+            <span matPrefix *ngIf="(currentSegment==jsonData.segments[1]?.value  )&&myInput" class="custColorBattlePGry">{{jsonData.segments[1]?.unit}}</span>
+            <span matSuffix *ngIf="(currentSegment==jsonData.segments[0]?.value  )&&myInput&&jsonData.segments[0]?.unit!='₹'" class="custColorBattlePGry">{{jsonData.segments[0]?.unit}}</span>
+            <input matInput class="text-center muli-22pt" [(ngModel)]="myInput" type="number" (ngModelChange)="keyInput()" (keypress)="numberOnly($event)" [disabled]="jsonData.edCourses">
+            <button matSuffix mat-raised-button color="none" class="custColorBrightCyan " *ngIf="currentSegment=='quantity'" (click)="increment()">
+              <mat-label class="muli-24pt">+</mat-label>
+            </button>
+            <mat-label class="custCenter">
+              {{currentSegment==jsonData.segments[0].value?
+                jsonData.segments[0]?.placeHolder
+                :jsonData.segments[1]?.placeHolder}}
+            </mat-label>
+            
+          </mat-form-field>
+        
+      </ion-row>
+    </ion-grid>
+    
+  </ion-content>
+  <ion-footer>
+    <ion-toolbar class="p-3">
+
+    <ion-row class="custCenter">
+       <ion-card class="w-100">
+        <ion-row>
+          <ion-col text-left>Available {{currentSegment}}</ion-col>
+          <ion-col class="text-right">
+            {{(currentSegment==jsonData.segments[1]?.value )?jsonData.segments[1]?.unit:''}}</ion-col>
+            {{displayAvailable}}
+            {{(currentSegment==jsonData.segments[0]?.value )?jsonData.segments[0]?.unit:''}}
+        </ion-row>
+       </ion-card>
+    </ion-row>
+      <ion-row>
+        <button mat-raised-button [disabled]="disableButton"
+        class="btn custBackgroundColorBrightCyan custColorWhite w-100"
+        (click)="buyNow()">{{'checkOut' | translate}}</button>
+      </ion-row>
+    </ion-toolbar>
+  </ion-footer>
+</ion-app> -->
+
+
+<ion-app (click)="appClick($event)" [ngClass]="content">
+    
+  <cap-header [title]="'orderBook'" [otherTextName]="'orderBook'" [imageList]="imageList" [showArrow]="true" [showLabel]="true"
+  [showImg]="false" [showIndex]="false" [showNotification]="false" [showCartWithName]="true" [cartCount]="cartCount"
+  [showSideMenu]="false" [showSearch]="true" [showClose]="false" [showShare]="false" [showWatchList]="false"
+  [showCartWithoutName]="false" [showStories]="false" [paddingSize]="'7'" [showOtherText]="false" [backUrlName]="">
+ </cap-header>
+ <ion-content class="contentBackground" >
+ 
+  <!-- <span><a routerLink="/Shopping/prerequisite">Prerequisite</a></span> -->
+ 
+  <!-- <span><a routerLink="/Onboarding/prerequisite">Prerequisite</a></span> -->
+ <!-- <span class="muli-12pt custColorDarkishBlue" (click)="getLink()">Prerequsite</span> -->
+  <ion-grid class="p-2">
+    <ion-row>
+      <ion-col class="ms-2" >
+        <ion-icon name="person-circle" class="custColorGreyish"></ion-icon>
+        <span class="muli-12pt custColorGreyish">
+          {{(jsonData?.Consumer[selectedConsumer].name.length>12)?
+            jsonData?.Consumer[selectedConsumer].name.substring(0, 9) + "...":
+            jsonData?.Consumer[selectedConsumer].name}}</span>
+        <ion-icon name="chevron-down-outline" (click)="profileClicked()"></ion-icon>
+      </ion-col>
+      <ion-col class="text-end">
+        <ion-icon name="chevron-down-outline" (click)="locationClicked()"></ion-icon>
+        <span class="muli-12pt custColorGreyish">
+          {{jsonData?.Location[selectedLocation].name +","+jsonData?.Location[selectedLocation].value[2]}}
+        </span>
+      </ion-col>
+    </ion-row>
+    <ion-row *ngIf="jsonData?.exchange">
+      <ion-card class="w-100">
+        <ion-card-content>
+          <ion-row>
+            <ion-col>{{jsonData?.exchange.header.name}}</ion-col>
+            <ion-col class="text-end">
+              <ion-segment [(ngModel)]="currentSegment" class="segmant" (ngModelChange)="segmentChanged()">
+                <ion-segment-button *ngFor="let x of jsonData?.exchange?.exchangeType.options" [value]="x.value">
+                  {{x.name}}
+                </ion-segment-button>
+              </ion-segment>
+            </ion-col>
+ 
+          </ion-row>
+          <ion-row>
+            <button *ngFor="let x of jsonData?.exchange?.orderType?.options" class="px-2 py-2 rounded m-1" style="width: 4.5rem;" [ngClass]="orderType==x.value?'custBackgroundColorBrightCyan custColorWhite':''" (click)="setOrderType(x.value)">{{x.name}}</button>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+    </ion-row>
+    <ion-row>
+      <ion-card class="w-100">
+        <ion-card-content>
+          <ion-row>
+            <ion-col size="2" *ngIf="jsonData?.productImage" class="custCenter">
+              <ion-img
+                [src]="jsonData?.productImage"
+                class="productImage"
+              ></ion-img>
+            </ion-col>
+            <ion-col>
+              <ion-row class="muli-16pt custColorDark custFontFamilyMuliRegular ">
+                {{jsonData?.itemName}}
+              </ion-row>
+              <ion-row class="custColorGreyish muli-10pt custFontFamilyMuliRegular ">
+                {{jsonData?.productSubtitle}}
+              </ion-row>
+            </ion-col>
+          </ion-row>
+          <ion-row class="custCenter">
+            <ion-col size="6" class="matCol custCenter ">
+              <mat-form-field name="Quantity" (click)="switchDisable(jsonData?.editable,'quantity')">
+                <span matSuffix>{{jsonData?.unitOfQuantity}}</span>
+ 
+                <button
+                  class="custBackgroundColorPaleGrey rounded"
+                  style="min-width: 10px"
+                  matSuffix (click)="changeQuantity('+')"
+                >
+                  +
+                </button>
+                <button class="custBackgroundColorPaleGrey rounded" matPrefix
+                (click)="changeQuantity('-')">
+                  -
+                </button>
+                <input matInput type="text" class="text-center" #quantityInput [disabled]="quantityDisable" 
+                [(ngModel)]="quantity"  (keypress)="numberOnly($event)" (keyup)="keyQuantity()" >
+                <mat-label class="custCenter custFontFamilyMuliRegular ">Quantity</mat-label>
+              </mat-form-field>
+            </ion-col>
+            <ion-col size="6" class="matCol custCenter">
+              <mat-form-field name="Amount" (click)="switchDisable(jsonData?.editable,'amount')">
+                <button class="custBackgroundColorPaleGrey rounded" matPrefix>
+                  {{jsonData?.unitOfAmount}}
+                </button>
+                <input matInput type="text" class="text-center" [(ngModel)]="totalAmount" (keyup)="keyAmount()" #amountInput [disabled]="amountDisable" />
+                <mat-label class="custCenter custFontFamilyMuliRegular ">Amount</mat-label>
+              </mat-form-field>
+            </ion-col>
+          </ion-row>
+          <div *ngIf="jsonData?.productName=='ST'">
+            <ion-row>
+              <div class="custBackgroundColorPaleGrey p-2 rounded" 
+              [ngClass]="jsonData?.txnType=='BUY'?'custColorParakeetGreen':'custColorcustFadedRed'">
+              Best {{jsonData?.txnType=='BUY'?'BID':'ASK'}} {{jsonData?.unitOfAmount}} {{unitPrice}}</div>
+            </ion-row>
+            <ion-row>
+              <span class="custColorDark muli-14pt">Product</span>
+            </ion-row>
+            <ion-row>
+              <button class="px-2 py-2 rounded m-1" style="width: 4.5rem;" [ngClass]="deliveryMode=='I'?'custBackgroundColorBrightCyan custColorWhite':''" (click)="setDelivery('I')">Intraday</button>
+              <button class="px-2 py-2 rounded m-1" style="width: 4.5rem;" [ngClass]="deliveryMode=='C'?'custBackgroundColorBrightCyan custColorWhite':''" (click)="setDelivery('C')">Delivery</button>
+              <button class="px-2 py-2 rounded m-1" style="width: 4.5rem;" [ngClass]="deliveryMode=='F'?'custBackgroundColorBrightCyan custColorWhite':''" (click)="setDelivery('F')">MTF</button>
+            </ion-row>
+            <ion-row>
+ 
+            </ion-row>
+          </div>
+        </ion-card-content>
+        <div class="custBackgroundColorWhiteThree" *ngIf="jsonData?.Validity">
+          <ion-grid>
+            <ion-row>
+              <ion-col size="7" class="muli-12pt">Current Rate: <span class="custColorDark  custFontFamilyMuliBold">₹ {{unitPrice}}/gm</span></ion-col>
+ 
+          <ion-col  class="text-end muli-12pt">
+            <ion-icon name="time-outline" class="custColorDarkishBlue"></ion-icon>
+            valid for <span class="custColorDark custFontFamilyMuliBold">{{minutes}}:{{seconds}} mins</span></ion-col>
+            </ion-row>
+          </ion-grid>
+        </div>
+      </ion-card>
+      <ion-card class="w-100 marginCard" *ngIf="jsonData?.productName=='ST'">
+        <ion-card-content>
+          <ion-grid>
+            <ion-row>
+              <ion-col size="6">
+                <ion-row>Margin Required</ion-row>
+                <ion-row>{{jsonData?.unitOfAmount}}{{calcAmount()}}</ion-row>
+              </ion-col>
+              <ion-col size="6" >
+                <ion-row ><span class="text-end">Available Funds</span></ion-row>
+                <ion-row><span class="text-end">{{jsonData?.unitOfAmount}}{{jsonData?.availableMargin}}</span></ion-row>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-card-content>
+      </ion-card>
+      <div *ngIf="currentSegment=='sip'">
+        <ion-card class=" p-2" >
+          <mat-form-field appearance="outline"  class="w-100" (click)="FromDate.open()">
+            <mat-label >Select Installment Date</mat-label>
+            <span matSuffix>1st of Every Month</span>
+            <input matInput readonly [matDatepicker]="FromDate" 
+            (dateChange)="onDateChange($event)" 
+             >
+            <mat-datepicker-toggle matSuffix [for]="FromDate" >
+              <mat-icon matDatepickerToggleIcon>
+                <svg *ngIf="!DatePicker" id="Group_12115" data-name="Group 12115" xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19">
+                  <path id="Path_15958" data-name="Path 15958" d="M16.551,1.484H14.844V.594a.594.594,0,0,0-1.187,0v.891H5.344V.594a.594.594,0,0,0-1.187,0v.891H2.449A2.452,2.452,0,0,0,0,3.934V16.551A2.452,2.452,0,0,0,2.449,19h14.1A2.452,2.452,0,0,0,19,16.551V3.934A2.452,2.452,0,0,0,16.551,1.484ZM2.449,2.672H4.156v.594a.594.594,0,0,0,1.188,0V2.672h8.313v.594a.594.594,0,0,0,1.188,0V2.672h1.707a1.263,1.263,0,0,1,1.262,1.262v1.41H1.188V3.934A1.263,1.263,0,0,1,2.449,2.672Zm14.1,15.141H2.449a1.263,1.263,0,0,1-1.262-1.262V6.531H17.813v10.02A1.263,1.263,0,0,1,16.551,17.813Z" fill="#b2b2b2"/>
+                  <path id="Path_15964" data-name="Path 15964" d="M12.84,16.922H10.461a.461.461,0,1,1,0-.922H12.84a.461.461,0,1,1,0,.922Z" transform="translate(-7.15 -6.5)" fill="#b2b2b2"/>
+                  <path id="Path_15967" data-name="Path 15967" d="M12.84,16.922H10.461a.461.461,0,1,1,0-.922H12.84a.461.461,0,1,1,0,.922Z" transform="translate(-7.15 -2.243)" fill="#b2b2b2"/>
+                  <path id="Path_15963" data-name="Path 15963" d="M12.84,16.922H10.461a.461.461,0,1,1,0-.922H12.84a.461.461,0,1,1,0,.922Z" transform="translate(-2.15 -6.5)" fill="#b2b2b2"/>
+                  <path id="Path_15966" data-name="Path 15966" d="M12.84,16.922H10.461a.461.461,0,1,1,0-.922H12.84a.461.461,0,1,1,0,.922Z" transform="translate(-2.15 -2.243)" fill="#b2b2b2"/>
+                  <path id="Path_15962" data-name="Path 15962" d="M12.84,16.922H10.461a.461.461,0,1,1,0-.922H12.84a.461.461,0,1,1,0,.922Z" transform="translate(2.85 -6.5)" fill="#b2b2b2"/>
+                  <path id="Path_15965" data-name="Path 15965" d="M12.84,16.922H10.461a.461.461,0,1,1,0-.922H12.84a.461.461,0,1,1,0,.922Z" transform="translate(2.85 -2.243)" fill="#b2b2b2"/>
+                </svg>
+                <img src="assets/icon/glowCalendarIcon.svg" *ngIf="DatePicker">
+            </mat-icon>
+            </mat-datepicker-toggle>
+            
+            <mat-datepicker #FromDate></mat-datepicker>              
+          </mat-form-field>
+        </ion-card>
+        <ion-card>
+          <ion-card-content>
+            <ion-row>
+              <ion-col>
+                <div>1st SIP Payment</div>
+                <div>Today</div>
+              </ion-col>
+              <ion-col class="text-end">
+                <div>Next SIP Payment</div>
+                <div>{{'16th May 2021'}}</div>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              First purchase will be done today<br> Next SIP will be on the selected date <br>Applicable NAV date: Once amount is credited to AMC’s bank
+            </ion-row>
+          </ion-card-content>
+        </ion-card>
+      </div>
+      
+      <ion-card *ngFor="let item of jsonData?.OtherDetails" class="w-100">
+        <ion-card-content *ngFor="let x of item">
+          
+        <span *ngIf="x.uxType=='header'" class="muli-20pt custColorDark m-2">{{x.name}}</span>
+        
+        <mat-form-field appearance="outline" *ngIf="x.uxType=='DatePicker'" class="w-100  ">
+          <mat-label >Date</mat-label>
+          <input matInput readonly [matDatepicker]="FromDate" [value]="x.value"
+          (dateChange)="onDateChange($event)" 
+          (click)="FromDate.open()" >
+          <mat-datepicker-toggle matSuffix [for]="FromDate">
+            <mat-icon matDatepickerToggleIcon>
+              <svg id="Group_12115" data-name="Group 12115" xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19">
+                <path id="Path_15958" data-name="Path 15958" d="M16.551,1.484H14.844V.594a.594.594,0,0,0-1.187,0v.891H5.344V.594a.594.594,0,0,0-1.187,0v.891H2.449A2.452,2.452,0,0,0,0,3.934V16.551A2.452,2.452,0,0,0,2.449,19h14.1A2.452,2.452,0,0,0,19,16.551V3.934A2.452,2.452,0,0,0,16.551,1.484ZM2.449,2.672H4.156v.594a.594.594,0,0,0,1.188,0V2.672h8.313v.594a.594.594,0,0,0,1.188,0V2.672h1.707a1.263,1.263,0,0,1,1.262,1.262v1.41H1.188V3.934A1.263,1.263,0,0,1,2.449,2.672Zm14.1,15.141H2.449a1.263,1.263,0,0,1-1.262-1.262V6.531H17.813v10.02A1.263,1.263,0,0,1,16.551,17.813Z" fill="#b2b2b2"/>
+                <path id="Path_15964" data-name="Path 15964" d="M12.84,16.922H10.461a.461.461,0,1,1,0-.922H12.84a.461.461,0,1,1,0,.922Z" transform="translate(-7.15 -6.5)" fill="#b2b2b2"/>
+                <path id="Path_15967" data-name="Path 15967" d="M12.84,16.922H10.461a.461.461,0,1,1,0-.922H12.84a.461.461,0,1,1,0,.922Z" transform="translate(-7.15 -2.243)" fill="#b2b2b2"/>
+                <path id="Path_15963" data-name="Path 15963" d="M12.84,16.922H10.461a.461.461,0,1,1,0-.922H12.84a.461.461,0,1,1,0,.922Z" transform="translate(-2.15 -6.5)" fill="#b2b2b2"/>
+                <path id="Path_15966" data-name="Path 15966" d="M12.84,16.922H10.461a.461.461,0,1,1,0-.922H12.84a.461.461,0,1,1,0,.922Z" transform="translate(-2.15 -2.243)" fill="#b2b2b2"/>
+                <path id="Path_15962" data-name="Path 15962" d="M12.84,16.922H10.461a.461.461,0,1,1,0-.922H12.84a.461.461,0,1,1,0,.922Z" transform="translate(2.85 -6.5)" fill="#b2b2b2"/>
+                <path id="Path_15965" data-name="Path 15965" d="M12.84,16.922H10.461a.461.461,0,1,1,0-.922H12.84a.461.461,0,1,1,0,.922Z" transform="translate(2.85 -2.243)" fill="#b2b2b2"/>
+              </svg>
+              
+          </mat-icon>
+          </mat-datepicker-toggle>
+          
+          <mat-datepicker #FromDate></mat-datepicker>              
+        </mat-form-field>
+        <ion-item *ngIf="x.uxType=='TimePicker'">
+          <ion-label>Slot Time</ion-label>
+          <ion-datetime displayFormat="hh A" [value]="x.value" [(ngModel)]="timeSlot" (ionChange)="onTimeChange($event)"></ion-datetime>
+        </ion-item>
+        </ion-card-content>
+        
+      </ion-card>
+    </ion-row>
+  </ion-grid>
+  
+ </ion-content>
+ 
+ <ion-footer class="ion-no-border" >
+  
+  <ion-toolbar class="contentBackground ">
+    <ion-item class="contentBackground " *ngIf="jsonData?.tnc.length">
+      
+      <ion-checkbox color="secondary" checked="true"
+       (ionChange)="checkboxqqw($event)" slot="start" class="ion-margin"></ion-checkbox>
+            <p class="mt-3">
+              <span class="custFontFamilyMuliRegular muli-12pt custColorBrownishGrey">
+                  By continuing. I agree with the 
+                  <a (click)="clickTncUrl(jsonData?.tnc[0])" class="custColorDarkishBlue">Disclaimers</a>
+                   and <a (click)="clickTncUrl(jsonData?.tnc[1])" class="custColorDarkishBlue">
+                    Terms & Conditions</a> of Torus
+              </span>
+            </p>
+    </ion-item>
+    <ion-row *ngFor="let x of jsonData?.footerButton">
+      <button mat-raised-button [disabled]="myDisable(jsonData.disable)"
+      [ngClass]="x.uxClass" (click)="buttonClicked(x.value)">
+      {{x.name}}</button></ion-row>
+    
+  </ion-toolbar>
+ </ion-footer>
+ <div id="myModal" class="modal" *ngIf="profile">
+   <div class="modal-content custCenterAlign" >
+     
+   </div>
+   </div>
+   </ion-app>
+ <!--
+   class="custBackgroundColorBrightCyan custColorWhite w-100 mx-3 my-2"
+   class="custBackgroundColorParakeetGreen custColorWhite w-100 mx-3 my-2"
+   class="custBackgroundRedButton w-100 mx-3 my-2"
+ 
+ -->
+ 

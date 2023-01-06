@@ -1,0 +1,37 @@
+{
+    "": {
+        "heading": {
+            "heading": "Explore Digital Commodities"
+        },
+        "card": [
+            {
+                "row1": {
+                    "icon": "",
+                    "title": "Augmont Digital Gold",
+                    "description": "24K. 99.99% Purity",
+                    "action": "assets/icon/leftArrowIcon.svg"
+                },
+                "row2": {
+                    "col1": "Buying Price/gm",
+                    "val1": "₹5251.16",
+                    "col2": "Selling Price/gm",
+                    "val2": "₹54.64"
+                }
+            },
+            {
+                "row1": {
+                    "icon": "",
+                    "title": "Augmont Digital Gold",
+                    "description": "24K. 99.99% Purity",
+                    "action": "assets/icon/leftArrowIcon.svg"
+                },
+                "row2": {
+                    "col1": "Buying Price/gm",
+                    "val1": "₹5251.16",
+                    "col2": "Selling Price/gm",
+                    "val2": "₹54.64"
+                }
+            }
+        ]
+    }
+}

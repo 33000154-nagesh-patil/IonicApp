@@ -1,0 +1,24 @@
+{
+    "exploreFund": {
+    "ErrorCode": 0,
+    "Message": "Success",
+    "MessageType": "I",
+    "Status": 1,
+    "Result": [
+        {
+            "Date": "01 May 2021",
+            "Logo": "assets/Images/green.svg",
+            "Logo2": "assets/Images/dotted_line.svg",
+            "Title": "PAID",
+            "instalment":"1st instalment"
+        },
+        {
+            "Date": "01 Jun 2021",
+            "Logo": "assets/Images/orange.svg",
+            "Logo2": "assets/Images/dotted_line.svg",
+            "Title": "NEXT DUE",
+            "instalment":"2nd instalment"
+        }
+    ]
+}
+}

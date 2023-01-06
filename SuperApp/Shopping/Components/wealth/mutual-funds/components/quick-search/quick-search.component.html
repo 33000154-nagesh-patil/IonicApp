@@ -1,0 +1,101 @@
+
+    <ion-row class="w-100 d-flex justify-content-center align-items-center" >
+      <ion-col size="'4'" class="text-center ms-3"><ion-img [src]="imageList?.arrow" (click)="dissmis()" class="custKYCImg mt-2 text-center"></ion-img></ion-col>
+        <ion-col> <ion-searchbar (keyup)="getdata($event)" placeholder="Search by Funds name"
+          ></ion-searchbar></ion-col>
+    </ion-row>
+<ion-content class="contentBackground" *ngIf="!Searchvalue">
+  <ion-grid class="m-1">
+    <ion-row class="mt-1">
+      <ion-col [size]="6" class=" muli-16pt custFontFamilyMuliBold custDark ">
+        Quick Search
+      </ion-col>
+      <ion-col [size]="6" class=" reset-btn text-end custColorDarkishBlue custFontFamilyMuliBold  muli-12pt" (click)="resetAll()">
+        <span>Reset</span>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <div class="">
+    <div class="m-3 muli-12pt">
+      <p class="custColorBattlePGry muli-12pt ">Fund Category</p>
+    </div>
+  </div>
+
+  <div class="m-2 ">
+    <button class="mx-1 Equity-btn custFontFamilyMuliBold muli-12pt" (click)="getfundCategory('Equity')"
+      [ngClass]="{'active': a == 'Equity'}">Equity</button>
+    <button class="mx-1 Equity-btn custFontFamilyMuliBold muli-12pt" (click)="getfundCategory('Hybrid')"
+      [ngClass]="{'active': b == 'Hybrid'}">Hybrid</button>
+    <button class="mx-1 Equity-btn custFontFamilyMuliBold  muli-12pt" (click)="getfundCategory('Debt')"
+      [ngClass]="{'active': c == 'Debt'}">Debt</button>
+    <button class="mx-1 Equity-btn custFontFamilyMuliBold muli-12pt" (click)="getfundCategory('Tax')"
+      [ngClass]="{'active': d == 'Tax'}">Tax
+      Saver</button>
+  </div>
+
+  <div class="m-3 muli-12pt  ">
+    <p class="custColorBattlePGry ">Fund Type</p>
+  </div>
+
+  <div class="m-2 ">
+    <button class="mx-1 Equity-btn custFontFamilyMuliBold  muli-12pt " (click)="getfundType('growth')"
+      [ngClass]="{'active': e == 'growth'}">Growth</button>
+    <button class="mx-1 Equity-btn custFontFamilyMuliBold  muli-12pt" (click)="getfundType('divident')"
+      [ngClass]="{'active': f == 'divident'}">IDCW</button>
+  </div>
+
+  <div class="m-3 muli-12pt ">
+    <p class="custColorBattlePGry">Minimum Investment</p>
+  </div>
+
+  <div class="m-2 ">
+    <button class="mx-1 Equity-btn custFontFamilyMuliBold  muli-12pt" (click)="getInvestment('five')"
+      [ngClass]="{'active': g == 'five'}">
+      < = ₹500</button>
+        <button class="mx-1 Equity-btn custFontFamilyMuliBold  muli-12pt" (click)="getInvestment('fiveToTwo')"
+          [ngClass]="{'active': h == 'fiveToTwo'}">₹500
+          - ₹2000</button>
+        <button class="mx-1 Equity-btn custFontFamilyMuliBold  muli-12pt" (click)="getInvestment('Two')"
+          [ngClass]="{'active': i == 'Two'}">>
+          ₹2000</button>
+  </div>
+
+  <!-- <div class="m-3 muli-12pt  ">
+    <p class="custColorBattlePGry ">Rated By</p>
+  </div>
+
+  <div class="m-2 ">
+    <button class="mx-1 Equity-btn custFontFamilyMuliBold muli-12pt " (click)="getRated('mrngStar')"
+      [ngClass]="{'active': research == 'mrngStar'}">Morningstar</button>
+    <button class="mx-1 Equity-btn custFontFamilyMuliBold  muli-12pt" (click)="getRated('mrngValue')"
+      [ngClass]="{'active': research == 'mrngValue'}">Value
+      Research</button>
+  </div> -->
+
+  <div class="m-3 muli-12pt  ">
+    <p class="custColorBattlePGry ">Rating</p>
+  </div>
+
+  <div class="m-2  ">
+<img [src]="imageList?.star5" (click)="btnStar5()"  class="m-2">
+  <img [src]="imageList?.star4" (click)="btnStar4()" class="m-2" >
+   <img [src]="imageList?.star3"  (click)="btnStar3()" class="m-2" >
+   <img [src]="imageList?.star2"  (click)="btnStar2()" class="m-2" >
+   <img [src]="imageList?.star1"  (click)="btnStar1()"class="m-2" >
+  </div>
+
+
+  <ion-row class="fixed-bottom">
+    <ion-col class="p-3" (click)="ViewAll()">
+      <button class="btn w-100 text-center custBackgroundColorBrightCyan"><span
+          class="custColorWhite custFontFamilyMuliBold muli-16pt" >Search</span></button>
+    </ion-col>
+  </ion-row>
+
+
+</ion-content>
+<ion-content *ngIf="Searchvalue" >
+  <lib-allmutualfundcard [jsonData]="filterCardData " [filterWant]='false' [imageList]="imageList" ></lib-allmutualfundcard>
+ 
+</ion-content>

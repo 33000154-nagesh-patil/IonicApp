@@ -1,0 +1,98 @@
+<ion-card class="ion-no-margin ion-margin-top">
+  <ion-card-header>
+    <ion-card-title class="custFontFamilyMuliBold">{{'currentAssetsPlanning' | translate}}</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content class="ion-no-padding">
+    <ion-grid class="ion-margin">
+      <ion-row>
+        <ion-col size="12" size-sm>
+          <ion-card class="ion-no-margin">
+            <ion-card-content class="ion-no-padding">
+              <ion-row class="custFontFamilyMuliBold">
+                <ion-col class="ion-text-start">{{'name' | translate}}</ion-col>
+                <ion-col class="ion-text-end">{{'amount' | translate}}</ion-col>
+                <ion-col class="ion-text-end">{{'percentage' | translate}}</ion-col>
+              </ion-row>
+              <ion-row *ngFor="let x of transactData?.trackModal; index as i"  class="custFontFamilyMuliRegular">
+                <ion-col (click)="showModal(x.name)" class="custColorDarkishBlue custPointer ion-text-start text-decoration-underline">{{ x.name }}</ion-col>
+                <ion-col class="ion-text-end">{{ x.amount | currencyCommasHundreds }}</ion-col>
+                <ion-col class="ion-text-end">{{ x.percentage }}</ion-col>
+              </ion-row>
+              <ion-row class="custFontFamilyMuliSemiBold">
+                <ion-col  class="ion-text-start">{{'total' | translate}}</ion-col>
+                <ion-col  class="ion-text-end">{{collectionData?.total | currencyCommasHundreds}}</ion-col>
+                <ion-col  class="ion-text-end">{{collectionData?.percentage}}%</ion-col>
+              </ion-row>
+            </ion-card-content>
+          </ion-card>
+          
+        </ion-col>
+        <ion-col size="12" size-sm>
+          <canvas #barCanvas></canvas>
+        </ion-col>
+      </ion-row>
+      
+    </ion-grid>
+  </ion-card-content>
+</ion-card>
+
+<ion-card class="ion-no-margin ion-margin-top">
+  <ion-card-header>
+    <ion-card-title class="custFontFamilyMuliBold">{{'recommendedAssetsAllocation' | translate}}</ion-card-title>
+  </ion-card-header>
+  <ion-card-content class="ion-no-padding">
+    <ion-grid>
+      <ion-row class="custDecoration custFontFamilyMuliBold">
+        <ion-col size="12" size-md (click)="openRecommended('recommendedBouquet',1)">
+          {{'recommendedBouquet' | translate}}
+        </ion-col>
+        <ion-col size="12" size-md (click)="openRecommended('recast',2)">
+          {{'recast' | translate}}
+        </ion-col>
+        <ion-col size="12" size-md (click)="openRecommended('finalBouquet',3)">
+          {{'finalBouquet' | translate}}
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card-content>
+</ion-card>
+
+<ion-card class="ion-no-margin ion-margin-top">
+  <ion-card-header>
+    <ion-card-title class="custFontFamilyMuliBold">{{'recommendedNPSAllocation' | translate}}</ion-card-title>
+    <ion-card-subtitle class="custBorder">
+      <ion-row class="ion-text-center ">
+        <ion-col size="4" size-md>
+          <ion-row>
+            <ion-col size="12"><span class="custFontFamilyMuliRegular">{{'yourRiskAppetite' | translate}}</span></ion-col>
+            <ion-col size="12"><span class="custFontFamilyMuliBold">{{collectionData?.yourRiskAppetite}}</span></ion-col>
+          </ion-row>
+        </ion-col>
+        <ion-col size="4" size-md>
+          <ion-row>
+            <ion-col size="12"><span class="custFontFamilyMuliRegular">{{'proposedMonthlyInvestments' | translate}}</span></ion-col>
+            <ion-col size="12"><span class="custFontFamilyMuliBold"><span>{{currentMoneySymbols?.currencySymbol}}</span> {{collectionData?.proposedMonthlyInvestments | currencyCommasHundreds}}</span></ion-col>
+          </ion-row>
+        
+        </ion-col>
+        <ion-col size="4" size-md>
+          <ion-row>
+            <ion-col size="12"><span class="custFontFamilyMuliRegular">{{'existingInvestments' | translate}}</span></ion-col>
+            <ion-col size="12"><span class="custFontFamilyMuliBold"><span>{{currentMoneySymbols?.currencySymbol}}</span> {{collectionData?.existingInvestments | currencyCommasHundreds}}</span></ion-col>
+          </ion-row>
+        
+        </ion-col>
+      </ion-row>
+    </ion-card-subtitle>
+  </ion-card-header>
+  <ion-card-content class="ion-no-padding">
+    <ion-grid>
+      <ion-row>
+        <ion-col size="12" size-md (click)="openRecommended('recommendedBouquet',1)">
+          <canvas #doughnutCanvasRecommended></canvas>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card-content>
+</ion-card>

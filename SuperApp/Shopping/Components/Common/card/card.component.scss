@@ -1,0 +1,334 @@
+.custBtnExplore{
+    // width: 80px;
+    height: 30px;
+    border:  1px solid var(--custBrightCyan) !important;
+    border-radius: 4px !important;
+    background: white !important;
+    text-align: center !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    float: right;
+}
+
+.custBookmark {
+    height: 28px;
+    width: 18px;
+    margin-right: 5px;
+    position: absolute;
+}
+
+.btn{
+    line-height: 1.0 !important;
+    border-radius: 0.0rem;
+}
+
+.w-70 {
+    width: 70% !important;
+}
+
+.custArrowIcon{
+    height: 18px;
+    width: 20px;
+    white-space: nowrap;
+    cursor: pointer;
+
+}
+
+.custCenterImg{
+    text-align:center;
+}
+
+
+
+.border-bottom{
+    border-bottom: 1px solid #DEDEDE;
+}
+
+.custFilter{
+    cursor: pointer;
+
+}
+
+.search{
+    height: 40px;
+    margin-right: 5px;
+}
+
+.logo{
+    width: 46px;
+    height: 46px;
+    opacity: 1;
+    // margin-right: 5px;
+}
+
+.custFilterPosition{
+    position: relative;
+    top:-37px;
+    right: 30px;
+    width: 20px;
+    height: 20px;
+    }
+
+.searchbar{
+    border-radius: 4px;
+    height: 46px;
+    box-shadow: 0px 9px -21px #ebebeb;
+}
+
+
+mat-form-field {
+   width: 95%;
+   margin-left: 5px;
+   height: 46px;
+}
+
+.border {
+   border: 1px solid #44c8f5!important;
+}
+
+.custsort{
+    padding-left: 110px;
+}
+
+
+sc-ion-searchbar-md-h {
+    --background: var(--ion-background-color, #fff);
+    --border-radius: 9px !important;
+    --box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    --cancel-button-color: var(--ion-color-step-900, #1a1a1a);
+    --clear-button-color: initial;
+    --color: var(--ion-color-step-850, #262626);
+    --icon-color: var(--ion-color-step-600, #666666);
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background: inherit;
+}
+.custTitle{
+    margin-left: -10px;
+    vertical-align: top;
+}
+
+.formControl{
+    border:none;
+    background-color: transparent;
+    resize: none;
+    outline: none;
+}
+
+.formControl::placeholder  {
+    font-size: 14px;
+  }
+
+  .custKYCImgone{
+    height: 16px;
+    width: 17px;
+    margin-left: 5px;
+    margin-top: 3px;
+    cursor: pointer;
+
+}
+.bgNotification{
+    height: 40px;
+    width: 16px;
+    border-radius: 50%;
+    background-color: #f3f3f3;
+    margin-bottom: 5px;
+}
+
+.custPadding{
+    padding-left: 5px;
+}
+
+.custBox{
+    height: 4px;
+    width: 20px;
+    border-radius: 0.5px;
+}
+
+.custCloseIcon{
+    height: 14px;
+    width: 14px;
+}
+
+
+//@at-root
+
+.custRatings{
+    position: relative;
+    right: 10px;
+}
+
+
+.eduHeight{
+    display: flex;
+    flex-direction: column;
+}
+.custSVGIcon{
+    position: absolute;
+    margin: -8px;
+}
+
+.custPosition{
+    position: relative;
+    top: 60px;
+}
+.custHeight{
+    height: 42px;
+    width: 42px;
+}
+.custProfileName{
+    position: absolute;
+   top:7px;
+}
+.Left_side_filter{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.icon{
+    border: 2px solid #DEDEDE;
+    padding: 2px;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+}
+.notIcon{
+    display: none;
+}
+
+.custPositionbtm{
+    position: relative;
+    bottom: 5px;
+}
+
+.custPositiontop{
+    position: relative;
+    top: 5px;
+}
+
+.custHeightc{
+    padding-bottom: 10px;
+}
+
+.custheaderName{
+    font-size: 10px;
+    position: relative;
+    top: 24px;
+    right: 10px;
+}
+
+.custheaderNameSearch{
+    font-size: 10px;
+    position: relative;
+    top: 24px;
+    right: 5px;
+}
+
+.custheaderNameCart{
+    font-size: 10px;
+    position: relative;
+    top: 24px;
+    right: -1px;
+}
+
+
+.custBadge{
+    position: absolute;
+
+        /* color: blue; */
+        z-index: 1;
+        /* padding-top: 4px; */
+        margin-top: -16px;
+        /* margin-right: -1px; */
+        margin-left: 20px;
+
+
+  }
+
+  .custProfile{
+    background: var(--custwhiteTwo);
+    border-radius: 50%;
+    padding: 21px;
+  }
+
+.custSVGIconnotification{
+    position: absolute;
+    margin-left: 14px;
+}
+
+//Rating
+.star {
+    position: relative;
+    display: inline-block;
+    font-size: 1rem;
+    color: #d3d3d3;
+  }
+  .full {
+    color: rgb(255, 197, 36);
+  }
+  .half {
+    position: absolute;
+    display: inline-block;
+    overflow: hidden;
+    color:  rgb(255, 197, 36);
+  }
+
+.columnRev{
+    display: flex;
+    flex-direction: column;
+}
+.custGreenTick{
+  color: #33cf03;
+    height: 12px;
+    width: 12px;
+  }
+
+  .custRedTick{
+    color: #d60000;
+    height: 12px;
+    width: 12px;
+  }
+  .custColorGain{
+    color: #29AD00;
+  }
+
+  .arrow{
+    height: 5px;
+  }
+
+
+  .custModalContainer {
+    z-index: 1;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+}
+.modal-content {
+    background-color: var(--custWhite);
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    padding-right: 16px;
+    padding-left: 16px;
+    border: 1px solid #888;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+
+
+
+
+

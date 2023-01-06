@@ -1,0 +1,184 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-grid>
+      <ion-row>
+        <ion-col [size]="'0.7'" class="text-center mt-2" (click)="backToSetting()">
+          <ion-img [src]="imageList?.arrow" class="custWithoutTextImg"></ion-img>
+        </ion-col>
+        <ion-col [size]="'8'">
+          <span class="custFontFamilyMuliBold muli-16pt custLineHight40 ml-10 custColorBlack px-3">
+            Option Calculator</span>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="contentBackground">
+
+  <ion-card class="">
+    <ion-row class="mt-2">
+      <ion-col [size]="11">
+        <p class="m-0 px-2 custFontFamilyMuliRegular muli-14pt custLineHight18 custColorDark">
+          NIFTY
+          &nbsp;<span class="custFontFamilyMuliRegular muli-10pt custLineHight13 custColorBattlePGry">NFO</span>
+        </p>
+        <p class="m-0 px-2 py-1 custFontFamilyMuliRegular muli-10pt custLineHight13 custColorBattlePGry">
+          24 Jun 2021 3:04:09
+        </p>
+      </ion-col>
+      <ion-col [size]="1">
+
+      </ion-col>
+    </ion-row>
+    <hr class="mx-3 my-1 custColorBattlePGry " />
+
+    <ion-row class="mt-2">
+      <ion-col [size]="8">
+        <p class="m-0 px-2 custFontFamilyMuliRegular muli-12pt custLineHight15 custColorBattlePGry">
+          Current Price (Futures)
+        </p>
+        <p class="m-0 px-2 py-1 custFontFamilyMuliRegular muli-14pt custLineHight18 custColorDark">
+          ₹15,792.35
+        </p>
+      </ion-col>
+      <ion-col [size]="4">
+        <p class="m-0 px-2 custFontFamilyMuliRegular muli-12pt custLineHight15 custColorBattlePGry">
+          Premium
+        </p>
+        <p class="m-0 px-2 py-1 custFontFamilyMuliRegular muli-14pt custLineHight18 custColorDark">
+          ₹26.00
+        </p>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col [size]="8">
+        <p class="m-0 px-2 custFontFamilyMuliRegular muli-12pt custLineHight15 custColorBattlePGry">
+          IV
+        </p>
+        <p class="m-0 px-2 py-1 custFontFamilyMuliRegular muli-14pt custLineHight18 custColorDark">
+          6.86%
+        </p>
+      </ion-col>
+      <ion-col [size]="4">
+        <p class="m-0 px-2 custFontFamilyMuliBold muli-12pt custLineHight15 custColorDarkishBlue">
+          View &
+        </p>
+        <p class="m-0 px-2 py-1 custFontFamilyMuliBold muli-12pt custLineHight15 custColorDarkishBlue">
+          Edit Inputs
+        </p>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+
+  <ion-row class="mx-3 backgroundCol rounded">
+    <ion-col [size]="3" class="px-2">
+      <p class=" my-1 custFontFamilyMuliRegular muli-12pt custLineHight15 custColorBattlePGry">Parameters</p>
+    </ion-col>
+    <ion-col [size]="3" class="px-2">
+      <p class=" my-1  custFontFamilyMuliRegular muli-12pt custLineHight15 custColorBattlePGry text-end">Call</p>
+    </ion-col>
+    <ion-col [size]="3" class="px-2">
+      <p class=" my-1  custFontFamilyMuliRegular muli-12pt custLineHight15 custColorBattlePGry text-end">Put</p>
+    </ion-col>
+    <ion-col [size]="3" class="px-2">
+      <p class=" my-1  custFontFamilyMuliRegular muli-12pt custLineHight15 custColorBattlePGry text-end">Straddle</p>
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="mx-3">
+    <ion-col [size]="3" class="px-2">
+      <p class=" m-0 p-0 custFontFamilyMuliRegular muli-14pt custLineHight36 custColorDark">Theoretical Option Price</p>
+    </ion-col>
+    <ion-col [size]="3" class="px-2">
+      <p class=" m-0 py-2 custFontFamilyMuliRegular muli-14pt custLineHight36 custColorDark text-end">0.00</p>
+    </ion-col>
+    <ion-col [size]="3" class="px-2">
+      <p class=" m-0 py-2 custFontFamilyMuliRegular muli-14pt custLineHight36 custColorDark text-end">7.65</p>
+    </ion-col>
+    <ion-col [size]="3" class="px-2">
+      <p class=" m-0 py-2 custFontFamilyMuliRegular muli-14pt custLineHight36 custColorDark text-end">7.65</p>
+    </ion-col>
+  </ion-row>
+  <hr class="mx-3 my-0" />
+
+  <ion-row class="mx-3">
+    <ion-col [size]="3" class="px-2">
+      <p class=" m-0 py-2 custFontFamilyMuliRegular muli-14pt custLineHight36 custColorDark">Delta</p>
+    </ion-col>
+    <ion-col [size]="3" class="px-2">
+      <p class=" m-0 py-2 custFontFamilyMuliRegular muli-14pt custLineHight36 custColorDark text-end">0.00</p>
+    </ion-col>
+    <ion-col [size]="3" class="px-2">
+      <p class=" m-0 py-2 custFontFamilyMuliRegular muli-14pt custLineHight36 custColorDark text-end">7.65</p>
+    </ion-col>
+    <ion-col [size]="3" class="px-2">
+      <p class=" m-0 py-2 custFontFamilyMuliRegular muli-14pt custLineHight36 custColorDark text-end">7.65</p>
+    </ion-col>
+  </ion-row>
+  <hr class="mx-3 my-0" />
+
+  <ion-row class="mx-3">
+    <ion-col [size]="3" class="px-2">
+      <p class=" m-0 py-2 custFontFamilyMuliRegular muli-14pt custLineHight36 custColorDark">Gamma</p>
+    </ion-col>
+    <ion-col [size]="3" class="px-2">
+      <p class=" m-0 py-2 custFontFamilyMuliRegular muli-14pt custLineHight36 custColorDark text-end">0.00</p>
+    </ion-col>
+    <ion-col [size]="3" class="px-2">
+      <p class=" m-0 py-2 custFontFamilyMuliRegular muli-14pt custLineHight36 custColorDark text-end">7.65</p>
+    </ion-col>
+    <ion-col [size]="3" class="px-2">
+      <p class=" m-0 py-2 custFontFamilyMuliRegular muli-14pt custLineHight36 custColorDark text-end">7.65</p>
+    </ion-col>
+  </ion-row>
+  <hr class="mx-3 my-0" />
+
+  <ion-row class="mx-3">
+    <ion-col [size]="3" class="px-2">
+      <p class=" m-0 py-2 custFontFamilyMuliRegular muli-14pt custLineHight36 custColorDark">Theta</p>
+    </ion-col>
+    <ion-col [size]="3" class="px-2">
+      <p class=" m-0 py-2 custFontFamilyMuliRegular muli-14pt custLineHight36 custColorDark text-end">0.00</p>
+    </ion-col>
+    <ion-col [size]="3" class="px-2">
+      <p class=" m-0 py-2 custFontFamilyMuliRegular muli-14pt custLineHight36 custColorDark text-end">7.65</p>
+    </ion-col>
+    <ion-col [size]="3" class="px-2">
+      <p class=" m-0 py-2 custFontFamilyMuliRegular muli-14pt custLineHight36 custColorDark text-end">7.65</p>
+    </ion-col>
+  </ion-row>
+  <hr class="mx-3 my-0" />
+
+  <ion-row class="mx-3">
+    <ion-col [size]="3" class="px-2">
+      <p class=" m-0 py-2 custFontFamilyMuliRegular muli-14pt custLineHight36 custColorDark">Vega</p>
+    </ion-col>
+    <ion-col [size]="3" class="px-2">
+      <p class=" m-0 py-2 custFontFamilyMuliRegular muli-14pt custLineHight36 custColorDark text-end">0.00</p>
+    </ion-col>
+    <ion-col [size]="3" class="px-2">
+      <p class=" m-0 py-2 custFontFamilyMuliRegular muli-14pt custLineHight36 custColorDark text-end">7.65</p>
+    </ion-col>
+    <ion-col [size]="3" class="px-2">
+      <p class=" m-0 py-2 custFontFamilyMuliRegular muli-14pt custLineHight36 custColorDark text-end">7.65</p>
+    </ion-col>
+  </ion-row>
+  <hr class="mx-3 my-0" />
+  <ion-row class="mx-3">
+    <ion-col [size]="3" class="px-2">
+      <p class=" m-0 py-2 custFontFamilyMuliRegular muli-14pt custLineHight36 custColorDark">RHO</p>
+    </ion-col>
+    <ion-col [size]="3" class="px-2">
+      <p class=" m-0 py-2 custFontFamilyMuliRegular muli-14pt custLineHight36 custColorDark text-end">0.00</p>
+    </ion-col>
+    <ion-col [size]="3" class="px-2">
+      <p class=" m-0 py-2 custFontFamilyMuliRegular muli-14pt custLineHight36 custColorDark text-end">7.65</p>
+    </ion-col>
+    <ion-col [size]="3" class="px-2">
+      <p class=" m-0 py-2 custFontFamilyMuliRegular muli-14pt custLineHight36 custColorDark text-end">7.65</p>
+    </ion-col>
+  </ion-row>
+  <hr class="mx-3 my-0" />
+</ion-content>

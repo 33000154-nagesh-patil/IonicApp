@@ -1,0 +1,38 @@
+<ion-content>
+<ion-grid class="w-100 h-100">
+  <ion-row>
+<ion-col class="heading">Saved Profile</ion-col>
+<ion-col class="text-end linkClass" (click)="AddProfile()">Add Profile</ion-col>
+  </ion-row>
+  <ion-row class="">
+    
+  <ion-list class="w-100 h-100">
+    
+    <ion-card class="p-0" *ngFor="let x of jsonData.Consumer;index as i" 
+    [ngClass]="selected==jsonData.Consumer.indexOf(x)?'activeClass':''">
+      <ion-card-content class="muli-16pt custColorDark">
+        <ion-row>
+          <ion-col size="10">
+            {{x.name}}
+          </ion-col>
+          <ion-col class="text-end radio" (click)="setConsumer(jsonData.Consumer.indexOf(x))">
+            <label><input type="radio" [checked]="selected==jsonData.Consumer.indexOf(x)?true:false"><span></span></label>
+          </ion-col>
+        </ion-row>
+        <span class="muli-12pt custColorGreyish">{{x.age}}</span>,&nbsp;
+        <span class="muli-12pt custColorGreyish">{{['Male','Female'].includes(x.gender)?x.gender[0]:x.gender}}</span>
+      </ion-card-content>
+      <ion-row class="m-0 p-1 custBackgroundColorPaleGrey">
+        <ion-col class="text-start custColorDarkishBlue muli-12pt" [ngStyle]="jsonData.Consumer.indexOf(x)==0?{color:'grey'}:{}">
+          <span class="custFontFamilyMuliBold" (click)="DeletAddress(i,x?.custRelationID)">Delete</span>
+        </ion-col>
+        <ion-col class="text-end custColorDarkishBlue muli-12pt">
+          <span class="custFontFamilyMuliBold" (click)="EditProfile(x)">Edit</span>
+        </ion-col>
+      </ion-row>
+    </ion-card>
+  </ion-list>
+
+  </ion-row>
+</ion-grid>
+</ion-content>

@@ -1,0 +1,99 @@
+<ion-content class="contentBackground" >
+  <ion-row>
+    <ion-segment class="custHeight" [(ngModel)]="segment">
+      <ion-segment-button value="Gold" (click)="Gold()">
+        <ion-label class="custFontFamilyMuliSemiBold muli-14pt custLineHight18 custColorDarkShade text"
+          >Gold</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="Silver" (click)="Silver()">
+        <ion-label class="custFontFamilyMuliSemiBold muli-14pt custLineHight18 custColorDarkShade text"
+          >Silver</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+  </ion-row>
+
+
+
+  <div *ngIf="gold" class="mrginTop">
+      <ion-col [size]="'12'">
+        <mat-accordion class="example-headers-align">
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                <span class="custFontFamilyMuliBold  muli-22pt custLineHight40 custColorDark">My Gold Investments</span>
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+
+
+            <div class="custContent">
+             <lib-gold-investments></lib-gold-investments>
+            </div>
+
+          </mat-expansion-panel>
+
+
+
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                <span class="custFontFamilyMuliBold  muli-22pt custLineHight40 custLineHight75 custColorDark ">Holdings</span>
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+
+            <div class="custContent">
+              <lib-gold-holdings></lib-gold-holdings>
+            </div>
+
+          </mat-expansion-panel>
+
+        </mat-accordion>
+      </ion-col>
+
+      <div>
+        <lib-benifits></lib-benifits>
+      </div>
+    </div>
+
+
+
+  <div *ngIf="silver" class="mrginTop">
+      <ion-col [size]="'12'">
+        <mat-accordion class="example-headers-align">
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                <span class="custFontFamilyMuliBold  muli-22pt custLineHight40 custColorDark">My Silver Investments</span>
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+
+
+            <div class="custContent">
+             <lib-silver-investments></lib-silver-investments>
+            </div>
+
+          </mat-expansion-panel>
+
+
+
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                <span class="custFontFamilyMuliBold  muli-22pt custLineHight40 custLineHight75 custColorDark">Holdings</span>
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+
+            <div class="custContent">
+             <lib-silver-holdings></lib-silver-holdings>
+            </div>
+
+          </mat-expansion-panel>
+
+        </mat-accordion>
+      </ion-col>
+
+      <div>
+        <lib-benifits></lib-benifits>
+      </div>
+    </div>
+
+</ion-content>

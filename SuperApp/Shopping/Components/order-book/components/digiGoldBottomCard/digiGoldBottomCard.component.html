@@ -1,0 +1,57 @@
+<!-- <div>
+  <ion-list>
+    <ion-item-sliding  class="w-100 p-2 " *ngFor="let x of jsonData.Location">
+      <ion-item (click)="setConsumer(jsonData.Location.indexOf(x))">
+        <ion-card class="w-100">
+          <ion-card-content>
+            {{x.name}}<br>
+            <div *ngFor="let y of x.value">{{y}}</div>
+          </ion-card-content>
+          <ion-icon name="checkmark-circle" class="custColorBrightCyan"  *ngIf="selected==jsonData.Location.indexOf(x)"></ion-icon>
+        </ion-card>
+        
+      </ion-item>
+      <ion-item-options side="end">
+        <ion-item-option color="danger" expandable>Delete</ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+</div> -->
+<ion-grid class="w-100">
+  <ion-row>
+<ion-col class="heading">Saved Address</ion-col>
+<ion-col class="text-end linkClass" (click)="addAddress()">Add Address</ion-col>
+  </ion-row>
+  <ion-row >
+    
+  <ion-list class="w-100 ">
+   
+    <ion-card class="p-0" *ngFor="let x of jsonData.Location;index as i" (click)="setConsumer(jsonData.Location.indexOf(x))" 
+    [ngClass]="selected==jsonData.Location.indexOf(x)?'activeClass':''">
+      <ion-card-content class="muli-14pt custColorDark">
+        <ion-row class="muli-16pt custColorDark custFontFamilyMuliBold mb-2">
+            <ion-col>
+              {{x.name}}
+            </ion-col>
+            <ion-col class="text-end radio">
+              <label><input type="radio" [checked]="selected==jsonData.Location.indexOf(x)?true:false"><span></span></label>
+            </ion-col>
+        </ion-row>
+        <ion-row class="muli-12pt custColorGreyish">Address</ion-row>
+        <ion-row *ngFor="let y of x.value">{{y}}</ion-row>
+        <ion-row class="muli-12pt custColorGreyish">Phone Number</ion-row>
+        <ion-row>{{jsonData.Location[jsonData.Location.indexOf(x)].contact}}</ion-row>
+      </ion-card-content>
+      <ion-row class="m-0 p-1 custBackgroundColorPaleGrey">
+        <ion-col class="text-start custColorDarkishBlue muli-12pt" [ngStyle]="jsonData.Location.indexOf(x)==0?{color:'grey'}:{}">
+          <span class="custFontFamilyMuliBold" (click)="deleteProfile(i,x.AddressId)">Delete</span>
+        </ion-col>
+        <ion-col class="text-end custColorDarkishBlue muli-12pt" >
+          <span class="custFontFamilyMuliBold" (click)="editAddress(x)">Edit</span>
+        </ion-col>
+      </ion-row>
+    </ion-card>
+  </ion-list>
+
+  </ion-row>
+</ion-grid>

@@ -1,0 +1,28 @@
+{
+    "data": [
+        {
+            "icons": "assets/icon/google.svg",
+            "title": "Mutual Fund",
+            "kycStatus":"KYC-Complete",
+            "notifyLine":"Your account is verified by Aqube. Start Investing"
+        },
+        {
+            "icons": "assets/icon/google.svg",
+            "title": "Stocks",
+            "kycStatus":"KYC-Complete",
+            "notifyLine":"Get your KYC done today and start investing"
+        },
+        {
+            "icons": "assets/icon/google.svg",
+            "title": "US Stocks",
+            "kycStatus":"KYC-Pending",
+            "notifyLine":"Get your KYC done today and start investing"
+        },
+        {
+            "icons": "assets/icon/google.svg",
+            "title": "Baskets",
+            "kycStatus":"KYC-Pending",
+            "notifyLine":"Get your KYC done today and start investing"
+        }
+    ]
+}

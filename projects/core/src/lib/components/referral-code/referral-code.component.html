@@ -1,0 +1,45 @@
+<!-- 
+<ion-grid class=" w-100">
+  <ion-row>
+    <ion-col [size]="'10'" class="text-center p-0 m-0 ion-no-padding">
+      <p class="custFontFamilyMuliBold muli-16pt custColorDark text-center p-0 m-0 ion-no-padding">Have a referral code?</p>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col [size]="'12'" class="text-center">
+      <mat-form-field appearance="outline" class="w-100 "
+        [ngClass]="(showRequiredError ||showPatternError )?'mat-form-field-invalid custColorcustFadedRed':''">
+        <mat-label class="text-capitalize">Enter referral code</mat-label>
+        <input matInput formControlName="referralCode"
+          class="custInputWidth custFontFamilyMuliRegular muli-16pt custLineHight18 custColorDark" id="referralCode"
+          [placeholder]="'referralCode' | translate" [type]="'text'" name="profileData.FirstName"
+          [(ngModel)]="profileData.FirstName">
+        <mat-error *ngIf="checkError('referralCode', 'required')"><span
+            class="custFontFamilyMuliSemiBold muli-12pt text-start text-capitalize custLineHight16">Referral code is required</span></mat-error>
+      </mat-form-field>
+    </ion-col>
+  </ion-row>
+
+  <div class="custFooterDiv">
+    <ion-row class="ion-no-padding">
+      <ion-col [size]="'6'" class="ion-no-padding">
+        <ion-button expand="block" class="text-capitalize custTryButton d-flex justify-content-center"
+          (click)="clear()">
+          <span class="custFontFamilyMuliRegular text-center muli-14pt custColorBrightCyan">{{'skipLabel'
+            | translate}}</span>
+        </ion-button>
+      </ion-col>
+
+      <ion-col [size]="'6'" class="ion-no-padding">
+        <ion-button expand="block" class="text-capitalize text-center custContinueBtn" [disabled]="isCanvasBlank()" (click)="save()"><span
+            class="custColorWhite custFontFamilyMuliBold muli-16pt">{{'confirm' |
+            translate}}</span></ion-button>
+      </ion-col>
+    </ion-row>
+  </div>
+</ion-grid> -->
+<!-- <div class="custModalContainer p-10"> -->
+  <div id="showModalSMGSucces" class="modal-content custCenterAlignUpdate">
+    hello
+  </div>
+<!-- </div> -->

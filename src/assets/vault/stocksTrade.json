@@ -1,0 +1,94 @@
+{
+    "objectContent": [
+        {
+            "contentType": "singleRowCard",
+            "title": "Market Movers",
+            "Orders": [
+                {
+                    "row1": {
+                        "symbol": "ITC",
+                        "price": "Rs3251.00"
+                    },
+                    "row2": {
+                        "exchange": "NSE",
+                        "col2": "22.62(0.05%)"
+                    }
+                },
+                {
+                    "row1": {
+                        "symbol": "ONGC",
+                        "price": "Rs368.00"
+                    },
+                    "row2": {
+                        "exchange": "NSE",
+                        "col2": "67.60(0.2%)"
+                    }
+                }
+            ],
+            "Trades": [
+                {
+                    "row1": {
+                        "symbol": "LTI",
+                        "price": "Rs501.00"
+                    },
+                    "row2": {
+                        "exchange": "NSE",
+                        "col2": "11.00(0.03%)"
+                    }
+                },
+                {
+                    "row1": {
+                        "symbol": "SBIN",
+                        "price": "Rs603.40"
+                    },
+                    "row2": {
+                        "exchange": "NSE",
+                        "col2": "03.00(0.01%)"
+                    }
+                }
+            ],
+            "Positions": [
+                {
+                    "row1": {
+                        "symbol": "HP",
+                        "price": "Rs120.10"
+                    },
+                    "row2": {
+                        "exchange": "NSE",
+                        "col2": "Rs876.00"
+                    },
+                    "row3": {
+                        "col1": "Net Qty 2*240.20"
+                    }
+                },
+                {
+                    "row1": {
+                        "symbol": "KPMG",
+                        "price": "Rs70.00"
+                    },
+                    "row2": {
+                        "exchange": "NSE",
+                        "col2": "10.44(0.21%)"
+                    },
+                    "row3": {
+                        "col1": "Net Qty 2*140.20"
+                    }
+                }
+            ],
+            "segmentValues": [
+                {
+                    "title": "Orders",
+                    "value": "Orders"
+                },
+                {
+                    "title": "Trades",
+                    "value": "Trades"
+                },
+                {
+                    "title": "Positions",
+                    "value": "Positions"
+                }
+            ]
+        }
+    ]
+}

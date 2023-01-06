@@ -1,0 +1,1283 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>rsm documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">rsm documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  WebCamComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>projects/core/src/lib/components/web-cam/web-cam.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>web-cam</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./web-cam.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./web-cam.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#allowCameraSwitch" >allowCameraSwitch</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#deviceId" >deviceId</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#errors" >errors</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#multipleWebcamsAvailable" >multipleWebcamsAvailable</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#nextWebcam" >nextWebcam</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#showWebcam" >showWebcam</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#trigger" >trigger</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#videoOptions" >videoOptions</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#webcamImage" >webcamImage</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#cameraWasSwitched" >cameraWasSwitched</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#handleImage" >handleImage</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#handleInitError" >handleInitError</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#showNextWebcam" >showNextWebcam</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#toggleWebcam" >toggleWebcam</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#triggerSnapshot" >triggerSnapshot</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Outputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#webImage" >webImage</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <h6><b>Accessors</b></h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <ul class="index-list">
+                                <li>
+                                    <a href="#triggerObservable" >triggerObservable</a>
+                                </li>
+                                <li>
+                                    <a href="#nextWebcamObservable" >nextWebcamObservable</a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(modal: ModalController)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">projects/core/src/lib/components/web-cam/web-cam.component.ts:22</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>modal</td>
+                                                  
+                                                        <td>
+                                                                    <code>ModalController</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+    <section>
+    <h3 id="outputs">Outputs</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="webImage"></a>
+                        <b>webImage</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://angular.io/api/core/EventEmitter" target="_blank" >EventEmitter</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">projects/core/src/lib/components/web-cam/web-cam.component.ts:13</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="cameraWasSwitched"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>cameraWasSwitched</b></span>
+                        <a href="#cameraWasSwitched"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>cameraWasSwitched(deviceId: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="70"
+                            class="link-to-prism">projects/core/src/lib/components/web-cam/web-cam.component.ts:70</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>deviceId</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="handleImage"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>handleImage</b></span>
+                        <a href="#handleImage"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>handleImage(webcamImage: WebcamImage)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="64"
+                            class="link-to-prism">projects/core/src/lib/components/web-cam/web-cam.component.ts:64</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>webcamImage</td>
+                                    <td>
+                                            <code>WebcamImage</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="handleInitError"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>handleInitError</b></span>
+                        <a href="#handleInitError"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>handleInitError(error: WebcamInitError)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="53"
+                            class="link-to-prism">projects/core/src/lib/components/web-cam/web-cam.component.ts:53</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>error</td>
+                                    <td>
+                                            <code>WebcamInitError</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="34"
+                            class="link-to-prism">projects/core/src/lib/components/web-cam/web-cam.component.ts:34</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showNextWebcam"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>showNextWebcam</b></span>
+                        <a href="#showNextWebcam"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>showNextWebcam(directionOrDeviceId: boolean | string)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="57"
+                            class="link-to-prism">projects/core/src/lib/components/web-cam/web-cam.component.ts:57</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>directionOrDeviceId</td>
+                                    <td>
+                                            <code>boolean | string</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="toggleWebcam"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>toggleWebcam</b></span>
+                        <a href="#toggleWebcam"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>toggleWebcam()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="49"
+                            class="link-to-prism">projects/core/src/lib/components/web-cam/web-cam.component.ts:49</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="triggerSnapshot"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>triggerSnapshot</b></span>
+                        <a href="#triggerSnapshot"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>triggerSnapshot()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="41"
+                            class="link-to-prism">projects/core/src/lib/components/web-cam/web-cam.component.ts:41</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="allowCameraSwitch"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>allowCameraSwitch</b></span>
+                        <a href="#allowCameraSwitch"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>true</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">projects/core/src/lib/components/web-cam/web-cam.component.ts:15</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="deviceId"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>deviceId</b></span>
+                        <a href="#deviceId"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">projects/core/src/lib/components/web-cam/web-cam.component.ts:17</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="errors"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>errors</b></span>
+                        <a href="#errors"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>WebcamInitError[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">projects/core/src/lib/components/web-cam/web-cam.component.ts:22</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="multipleWebcamsAvailable"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>multipleWebcamsAvailable</b></span>
+                        <a href="#multipleWebcamsAvailable"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">projects/core/src/lib/components/web-cam/web-cam.component.ts:16</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="nextWebcam"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>nextWebcam</b></span>
+                        <a href="#nextWebcam"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Subject&lt;boolean | string&gt;</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new Subject&lt;boolean|string&gt;()</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">projects/core/src/lib/components/web-cam/web-cam.component.ts:32</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showWebcam"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>showWebcam</b></span>
+                        <a href="#showWebcam"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>true</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">projects/core/src/lib/components/web-cam/web-cam.component.ts:14</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="trigger"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>trigger</b></span>
+                        <a href="#trigger"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Subject&lt;void&gt;</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new Subject&lt;void&gt;()</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">projects/core/src/lib/components/web-cam/web-cam.component.ts:30</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="videoOptions"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>videoOptions</b></span>
+                        <a href="#videoOptions"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>MediaTrackConstraints</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>{
+    // width: {ideal: 1024},
+    // height: {ideal: 576}
+  }</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">projects/core/src/lib/components/web-cam/web-cam.component.ts:18</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="webcamImage"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>webcamImage</b></span>
+                        <a href="#webcamImage"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>WebcamImage</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>null</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">projects/core/src/lib/components/web-cam/web-cam.component.ts:27</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="accessors">
+        Accessors
+    </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="triggerObservable"></a>
+                        <span class="name"><b>triggerObservable</b><a href="#triggerObservable"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>triggerObservable()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="75" class="link-to-prism">projects/core/src/lib/components/web-cam/web-cam.component.ts:75</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="nextWebcamObservable"></a>
+                        <span class="name"><b>nextWebcamObservable</b><a href="#nextWebcamObservable"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>nextWebcamObservable()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="79" class="link-to-prism">projects/core/src/lib/components/web-cam/web-cam.component.ts:79</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+</section>
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {Component, EventEmitter, OnInit, Output} from &#x27;@angular/core&#x27;;
+import {Subject, Observable} from &#x27;rxjs&#x27;;
+import {WebcamImage, WebcamInitError, WebcamUtil} from &#x27;ngx-webcam&#x27;;
+import { ModalController } from &#x27;@ionic/angular&#x27;;
+
+@Component({
+  selector: &#x27;web-cam&#x27;,
+  templateUrl: &#x27;./web-cam.component.html&#x27;,
+  styleUrls: [&#x27;./web-cam.component.scss&#x27;]
+})
+export class WebCamComponent implements OnInit {
+  // toggle webcam on/off
+  @Output() webImage &#x3D; new EventEmitter(); 
+  public showWebcam &#x3D; true;
+  public allowCameraSwitch &#x3D; true;
+  public multipleWebcamsAvailable &#x3D; false;
+  public deviceId: string;
+  public videoOptions: MediaTrackConstraints &#x3D; {
+    // width: {ideal: 1024},
+    // height: {ideal: 576}
+  };
+  public errors: WebcamInitError[] &#x3D; [];
+constructor(private modal:ModalController){
+
+}
+  // latest snapshot
+  public webcamImage: WebcamImage &#x3D; null;
+
+  // webcam snapshot trigger
+  private trigger: Subject&lt;void&gt; &#x3D; new Subject&lt;void&gt;();
+  // switch to next / previous / specific webcam; true/false: forward/backwards, string: deviceId
+  private nextWebcam: Subject&lt;boolean|string&gt; &#x3D; new Subject&lt;boolean|string&gt;();
+
+  public ngOnInit(): void {
+    WebcamUtil.getAvailableVideoInputs()
+      .then((mediaDevices: MediaDeviceInfo[]) &#x3D;&gt; {
+        this.multipleWebcamsAvailable &#x3D; mediaDevices &amp;&amp; mediaDevices.length &gt; 1;
+      });
+  }
+
+  public triggerSnapshot(): void {
+    this.trigger.next();
+    this.webImage.emit(this.webcamImage.imageAsDataUrl);
+    console.log(&quot;clicked&quot;);
+    this.modal.dismiss(this.webcamImage)
+    
+  }
+
+  public toggleWebcam(): void {
+    this.showWebcam &#x3D; !this.showWebcam;
+  }
+
+  public handleInitError(error: WebcamInitError): void {
+    this.errors.push(error);
+  }
+
+  public showNextWebcam(directionOrDeviceId: boolean|string): void {
+    // true &#x3D;&gt; move forward through devices
+    // false &#x3D;&gt; move backwards through devices
+    // string &#x3D;&gt; move to device with given deviceId
+    this.nextWebcam.next(directionOrDeviceId);
+  }
+
+  public handleImage(webcamImage: WebcamImage): void {
+    console.info(&#x27;received webcam image&#x27;, webcamImage);
+    this.webcamImage &#x3D; webcamImage;
+    
+  }
+
+  public cameraWasSwitched(deviceId: string): void {
+    console.log(&#x27;active device: &#x27; + deviceId);
+    this.deviceId &#x3D; deviceId;
+  }
+
+  public get triggerObservable(): Observable&lt;void&gt; {
+    return this.trigger.asObservable();
+  }
+
+  public get nextWebcamObservable(): Observable&lt;boolean|string&gt; {
+    return this.nextWebcam.asObservable();
+  }
+}</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div style&#x3D;&quot;text-align:center&quot;&gt;
+
+  &lt;div class&#x3D;&quot;w-100 h-100&quot;&gt;
+    &lt;webcam [height]&#x3D;&quot;500&quot; [width]&#x3D;&quot;500&quot; [trigger]&#x3D;&quot;triggerObservable&quot; (imageCapture)&#x3D;&quot;handleImage($event)&quot;
+            [allowCameraSwitch]&#x3D;&quot;allowCameraSwitch&quot; [switchCamera]&#x3D;&quot;nextWebcamObservable&quot;
+            [videoOptions]&#x3D;&quot;videoOptions&quot;
+            [imageQuality]&#x3D;&quot;1&quot;
+            (cameraSwitched)&#x3D;&quot;cameraWasSwitched($event)&quot;
+            (initError)&#x3D;&quot;handleInitError($event)&quot;
+    &gt;&lt;/webcam&gt;
+    &lt;br/&gt;
+    &lt;button class&#x3D;&quot;actionBtn&quot; (click)&#x3D;&quot;triggerSnapshot();&quot;&gt;Take A Snapshot&lt;/button&gt;
+    &lt;!-- &lt;button class&#x3D;&quot;actionBtn&quot; (click)&#x3D;&quot;toggleWebcam();&quot;&gt;Toggle Webcam&lt;/button&gt; --&gt;
+    &lt;br/&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./web-cam.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss"></code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div style="text-align:center">  <div class="w-100 h-100">    <webcam [height]="500" [width]="500" [trigger]="triggerObservable" (imageCapture)="handleImage($event)"            [allowCameraSwitch]="allowCameraSwitch" [switchCamera]="nextWebcamObservable"            [videoOptions]="videoOptions"            [imageQuality]="1"            (cameraSwitched)="cameraWasSwitched($event)"            (initError)="handleInitError($event)"    ></webcam>    <br/>    <button class="actionBtn" (click)="triggerSnapshot();">Take A Snapshot</button>    <!-- <button class="actionBtn" (click)="toggleWebcam();">Toggle Webcam</button> -->    <br/>  </div></div></div>'
+    var COMPONENTS = [{'name': 'AadharOnboardKycComponent', 'selector': 'app-aadhar-onboard-kyc'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'BankDetailsComponent', 'selector': 'lib-bank-details'},{'name': 'BuySellComponent', 'selector': 'app-buy-sell'},{'name': 'ContainerViewPage', 'selector': 'app-container-view'},{'name': 'CoreComponent', 'selector': 'lib-core'},{'name': 'CustomModalComponent', 'selector': 'lib-custom-modal'},{'name': 'DashboardPage', 'selector': 'app-dashboard'},{'name': 'DigiLockerAadharComponent', 'selector': 'app-digi-locker-aadhar'},{'name': 'EducationCategoryDashboardComponent', 'selector': 'app-education-category-dashboard'},{'name': 'EducationComponent', 'selector': 'lib-education'},{'name': 'EducationPage', 'selector': 'app-education'},{'name': 'EsignComponent', 'selector': 'app-esign'},{'name': 'ExchangeSelectionComponent', 'selector': 'app-exchange-selection'},{'name': 'ExploreFundsComponent', 'selector': 'app-explore-funds'},{'name': 'FabButtonComponent', 'selector': 'lib-fab-button'},{'name': 'FooterComponent', 'selector': 'lib-footer'},{'name': 'GoldComponent', 'selector': 'lib-gold'},{'name': 'GoldDashboardComponent', 'selector': 'lib-gold-dashboard'},{'name': 'GoldInvestmentDashboardComponent', 'selector': 'lib-gold-investment-dashboard'},{'name': 'GoldInvestmentDetailsComponent', 'selector': 'lib-goldInvestmentDetails'},{'name': 'GoldInvestmentDetailsPage', 'selector': 'app-gold-investment-details'},{'name': 'GoldPage', 'selector': 'app-gold'},{'name': 'HeaderComponent', 'selector': 'lib-header'},{'name': 'HealthCategoryComponent', 'selector': 'lib-health-category'},{'name': 'HealthComponent', 'selector': 'lib-health'},{'name': 'HealthPage', 'selector': 'app-health'},{'name': 'IncomeProofComponent', 'selector': 'app-income-proof'},{'name': 'InformationComponent', 'selector': 'lib-information'},{'name': 'IntroComponent', 'selector': 'lib-intro'},{'name': 'InvestmentDetailsComponent', 'selector': 'app-investment-details'},{'name': 'InvestmentDetailsTransactionComponent', 'selector': 'app-investment-details-transaction'},{'name': 'InvestmentPlanningComponent', 'selector': 'lib-investment-planning'},{'name': 'InvestmentPlanningTrackComponent', 'selector': 'lib-investment-planning-track'},{'name': 'InvestmentPlanningTransactComponent', 'selector': 'lib-investment-planning-transact'},{'name': 'InvestSIPComponent', 'selector': 'lib-invest-sip'},{'name': 'KycGoldComponent', 'selector': 'app-kyc-gold'},{'name': 'KycStepsMFComponent', 'selector': 'app-kyc-steps-mf'},{'name': 'LifestyleComponent', 'selector': 'lib-lifestyle'},{'name': 'LifestylePage', 'selector': 'app-lifestyle'},{'name': 'LoginAuthenticationComponent', 'selector': 'lib-login-authentication'},{'name': 'LoginListComponent', 'selector': 'lib-loginList'},{'name': 'LoginPage', 'selector': 'app-login'},{'name': 'ManuallySignComponent', 'selector': 'app-manually-sign'},{'name': 'MutualFundsComponent', 'selector': 'lib-mutualFunds'},{'name': 'MutualFundsPage', 'selector': 'app-mutual-funds'},{'name': 'NameAddressDetailsComponent', 'selector': 'app-name-address-details'},{'name': 'NomineeDetailsComponent', 'selector': 'app-nominee-details'},{'name': 'NsdlComponent', 'selector': 'app-nsdl'},{'name': 'OrderDetailsComponent', 'selector': 'app-order-details'},{'name': 'OrdersComponent', 'selector': 'app-orders'},{'name': 'PanadharComponent', 'selector': 'lib-panadhar'},{'name': 'PanCardComponent', 'selector': 'lib-pan-card'},{'name': 'PaymentConfirmationComponent', 'selector': 'app-payment-confirmation'},{'name': 'PersonalDetailsComponent', 'selector': 'app-personal-details'},{'name': 'PlanningRecommendedModalComponent', 'selector': 'lib-planning-recommended-modal'},{'name': 'PlanningTrackModalComponent', 'selector': 'lib-planning-track-modal'},{'name': 'PlanningTranslateModalComponent', 'selector': 'lib-planning-translate-modal'},{'name': 'PortfolioInsigthsComponent', 'selector': 'lib-portfolioInsigths'},{'name': 'PreviewImageComponent', 'selector': 'app-preview-image'},{'name': 'ProductDetailsComponent', 'selector': 'lib-productDetails'},{'name': 'ProductDetailsPage', 'selector': 'app-product-details'},{'name': 'ProductListComponent', 'selector': 'lib-product-list'},{'name': 'SelfieVerificationComponent', 'selector': 'app-selfie-verification'},{'name': 'SignatureUploadComponent', 'selector': 'app-signature-upload'},{'name': 'SignInComponent', 'selector': 'lib-sign-in'},{'name': 'SplashScreenComponent', 'selector': 'lib-splash-screen'},{'name': 'StepeerOnbordingComponent', 'selector': 'app-stepeer-onbording'},{'name': 'StocksComponent', 'selector': 'lib-stocks'},{'name': 'StocksPage', 'selector': 'app-stocks'},{'name': 'SubmenuComponent', 'selector': 'lib-submenu'},{'name': 'UpdateProfileComponent', 'selector': 'app-update-profile'},{'name': 'UploadAadharPanComponent', 'selector': 'app-upload-aadhar-pan'},{'name': 'VerificationCodeComponent', 'selector': 'lib-verification-code'},{'name': 'WealthRoboAdvisoryComponent', 'selector': 'lib-wealthRoboAdvisory'},{'name': 'WealthRoboAdvisoryPage', 'selector': 'app-wealth-robo-advisory'},{'name': 'WealthWellnessComponent', 'selector': 'lib-wealthWellness'},{'name': 'WebCamComponent', 'selector': 'web-cam'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'WebCamComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'WebCamComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

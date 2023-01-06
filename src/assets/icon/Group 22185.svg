@@ -1,0 +1,18 @@
+<svg id="Group_22185" data-name="Group 22185" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <rect id="Rectangle_9517" data-name="Rectangle 9517" width="30" height="30" fill="none"/>
+  <g id="Group_22112" data-name="Group 22112" transform="translate(20.98 25.271) rotate(-178)">
+    <path id="Subtraction_10" data-name="Subtraction 10" d="M3.6,0A3.6,3.6,0,1,0,7.2,3.6,3.6,3.6,0,0,0,3.6,0Zm0,5.4A1.8,1.8,0,1,1,5.4,3.6,1.8,1.8,0,0,1,3.6,5.4Z" transform="translate(0 0)" fill="#039"/>
+    <path id="Subtraction_11" data-name="Subtraction 11" d="M.72,23.39H0V0H.72a1,1,0,0,1,1,1V22.39A1,1,0,0,1,.72,23.39Z" transform="translate(4.41 1.474) rotate(-34)" fill="#039"/>
+  </g>
+  <g id="Rectangle_9516" data-name="Rectangle 9516" transform="translate(4.821 5.549)" fill="#fff" stroke="#44c8f5" stroke-width="0.8">
+    <rect width="24.928" height="13.006" stroke="none"/>
+    <rect x="0.4" y="0.4" width="24.128" height="12.206" fill="none"/>
+  </g>
+  <text id="TAX" transform="translate(21.873 13.596)" fill="#44c8f5" font-size="5" font-family="Muli-Bold, Muli" font-weight="700"><tspan x="-4" y="0">TAX</tspan></text>
+  <line id="Line_851" data-name="Line 851" y2="11.922" transform="translate(11.868 6.092)" fill="none" stroke="#44c8f5" stroke-width="0.8" stroke-dasharray="2 1"/>
+  <path id="Path_20936" data-name="Path 20936" d="M3.2,1.054H2.833A1.148,1.148,0,0,0,2.617.489H3.2A.245.245,0,1,0,3.2,0H.252a.245.245,0,1,0,0,.489H1.369a.811.811,0,0,1,.82.564H.252a.252.252,0,0,0,0,.5H2.164a.885.885,0,0,1-.9.512H.469a.246.246,0,0,0,0,.492h.748c.5.019.716.234.842.821.1.437.172.721.229.891a1.229,1.229,0,0,0,.275.537.3.3,0,0,0,.431-.406.025.025,0,0,0,0,0A7.1,7.1,0,0,1,2.66,3.213a1.14,1.14,0,0,0-.6-.881,1.175,1.175,0,0,0,.738-.775h.4a.252.252,0,0,0,0-.5Z" transform="translate(6.474 9.621)" fill="#44c8f5"/>
+  <g id="Group_22111" data-name="Group 22111" transform="matrix(0.966, -0.259, 0.259, 0.966, 0, 6.895)">
+    <path id="Subtraction_10-2" data-name="Subtraction 10" d="M3.6,7.2A3.6,3.6,0,1,1,7.2,3.6,3.6,3.6,0,0,1,3.6,7.2Zm0-5.4A1.8,1.8,0,1,0,5.4,3.6,1.8,1.8,0,0,0,3.6,1.8Z" transform="translate(0 13.668)" fill="#039"/>
+    <path id="Subtraction_11-2" data-name="Subtraction 11" d="M.72,23.39H0V0H.72a1,1,0,0,1,1,1V22.39A1,1,0,0,1,.72,23.39Z" transform="matrix(0.829, 0.559, -0.559, 0.829, 17.49, 0)" fill="#039"/>
+  </g>
+</svg>

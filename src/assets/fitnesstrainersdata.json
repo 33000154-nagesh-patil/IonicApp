@@ -1,0 +1,35 @@
+[
+    {  
+        "id":"1",
+        "logo":"assets/icon/Group 21719 (1).svg",
+        "title":"Hatha Yoga: Flexibility",
+        "description":"by Aaditi Thakur",
+        "subdescription":"Full Body | 50 min",
+        "mode":"Live",
+        "caloriesburn":"250",
+        "level":"Beginner"
+    
+    },
+    {  
+        "id":"2",
+        "logo":"assets/icon/Group 21729 (1).svg",
+        "title":"Dance: Step It Up",
+        "description":"by Aaditi Thakur",
+        "subdescription":"Full Body | 60 min",
+        "mode":"Live",
+        "caloriesburn":"350",
+        "level":"Intermediate"
+    
+    },
+    {  
+        "id":"3",
+        "logo":"assets/icon/Group 21719 (1).svg",
+        "title":"Hatha Yoga: Flexibility",
+        "description":"by Aaditi Thakur",
+        "subdescription":"Full Body | 50 min",
+        "mode":"Live",
+        "caloriesburn":"250",
+        "level":"Beginner"
+    
+    }
+]

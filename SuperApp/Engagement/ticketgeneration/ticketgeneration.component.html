@@ -1,0 +1,85 @@
+<ion-app>
+  <ion-row class="muli-16pt custFontFamilyMuliBold ms-3"
+    >Raise a Ticket</ion-row
+  >
+  <ion-content class="custBackgroundColorWhite">
+    <ion-grid class="p-3">
+      <form [formGroup]="ionicForm">
+        <ion-row>
+          <mat-form-field class="w-100" appearance="outline">
+            <mat-label> Select Category * </mat-label>
+            <!-- <input matInput formControlName="name"/> -->
+            <mat-select
+            formControlName="category"
+            >
+              <mat-option *ngFor="let ops of categorydetail"  [value]="ops">{{ops}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </ion-row>
+
+        <ion-row>
+          <mat-form-field class="w-100" appearance="outline">
+            <mat-label>Select Sub - Category</mat-label>
+            <mat-select
+            formControlName="subcategory"
+              [(ngModel)]="productvariables"
+            >
+              <mat-option [value]="productvariables">{{
+                productvariables
+              }}</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </ion-row>
+
+        <ion-row>
+          <mat-form-field  class="w-100" appearance="outline" >
+            <mat-label >Enter Issue type</mat-label >
+            <input formControlName="issuetype" matInput />
+          </mat-form-field>
+        </ion-row>
+
+        <ion-row>
+          <mat-form-field class="w-100" appearance="outline">
+            <mat-label> Enter Issue Description *</mat-label>
+
+            <textarea formControlName="description" matInput class="text-start">
+            </textarea>
+          </mat-form-field>
+        </ion-row>
+
+        <ion-row class="d-flex">
+          <ion-col [size]="'6'" class="">
+            <span class="justify-content-start">Please add files here</span>
+          </ion-col>
+
+          <!-- <ion-col class="text-start">Please add files here</ion-col>
+            <ion-col class="text-end custColorDarkishBlue">Attach file</ion-col> -->
+
+          <!-- <label class="">
+              <input type="file" accept=".csv , .xlsx , .xls" class="custPoppins" (change)="onFilechange($event)" />
+            </label> -->
+          <ion-col [size]="'6'">
+            <button class="file-upload-button">
+              <input
+                type="file"
+                #fileInput
+                (change)="onFileSelect(fileInput)"
+              />
+            </button>
+            <span class="file-info">{{ fileInfo }}</span>
+          </ion-col>
+        </ion-row>
+        
+        <ion-footer class="p-3 fixed-bottom">
+          <button type="submit"
+            [disabled]="!ionicForm.valid"
+            (click)="SubmitDetails()"
+            class="w-100 custBackgroundColorBrightCyan btn custMyButton custColorWhite"
+          >
+            Submit
+          </button>
+        </ion-footer>
+      </form>
+    </ion-grid>
+  </ion-content>
+</ion-app>

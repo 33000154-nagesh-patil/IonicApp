@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="17.048" height="19.865" viewBox="0 0 17.048 19.865">
+  <g id="Group_20949" data-name="Group 20949" transform="translate(-15.985 -289.896)">
+    <g id="Layer_2" data-name="Layer 2" transform="translate(10.78 288.78)">
+      <path id="Path_20940" data-name="Path 20940" d="M20.367,20.982H7.062a1.857,1.857,0,0,1-1.857-1.857L5.22,3.077A1.857,1.857,0,0,1,7.077,1.22h9.041a.817.817,0,0,1,.817.817V6.112a.353.353,0,0,0,.353.353h4.125a.817.817,0,0,1,.808.808l-.015,11.88A1.857,1.857,0,0,1,20.367,20.982ZM7.077,2.641a.436.436,0,0,0-.436.436L6.626,19.153a.436.436,0,0,0,.436.436h13.3a.436.436,0,0,0,.436-.436l.015-11.276h-3.54a1.746,1.746,0,0,1-1.736-1.746v-3.5ZM21.394,7.886Z" fill="#44c8f5"/>
+      <path id="Path_20941" data-name="Path 20941" d="M0,0,1.347.395l.046,6.813-.167.957L0,7.99Z" transform="translate(15.413 2.118) rotate(-46)" fill="#44c8f5"/>
+    </g>
+    <line id="Line_438" data-name="Line 438" x2="4" transform="translate(20.517 299.5)" fill="none" stroke="#039" stroke-linecap="round" stroke-width="1.5"/>
+    <line id="Line_439" data-name="Line 439" x2="8" transform="translate(20.517 302.5)" fill="none" stroke="#039" stroke-linecap="round" stroke-width="1.5"/>
+    <line id="Line_440" data-name="Line 440" x2="8" transform="translate(20.517 305.5)" fill="none" stroke="#039" stroke-linecap="round" stroke-width="1.5"/>
+  </g>
+</svg>

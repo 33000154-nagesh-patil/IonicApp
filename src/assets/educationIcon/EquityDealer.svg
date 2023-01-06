@@ -1,0 +1,7 @@
+<svg id="pie-chart" xmlns="http://www.w3.org/2000/svg" width="27.326" height="27.203" viewBox="0 0 27.326 27.203">
+  <g id="bounding-box">
+    <path id="shape" d="M0,0H27.326V27.2H0Z" fill="none" fill-rule="evenodd"/>
+  </g>
+  <path id="Combined-Shape" d="M46.791,36.527H35.329v-11.4a10.843,10.843,0,1,0,11.462,11.4Z" transform="translate(-22.24 -22.355)" fill="none" stroke="#44c8f5" stroke-width="1" fill-rule="evenodd"/>
+  <path id="Combined-Shape-Copy" d="M135,15.129v9.923h9.923A10.491,10.491,0,0,0,135,15.129Z" transform="translate(-118.836 -14.105)" fill="none" stroke="#4066b2" stroke-width="1" fill-rule="evenodd"/>
+</svg>

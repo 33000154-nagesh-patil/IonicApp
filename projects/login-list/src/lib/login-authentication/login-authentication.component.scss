@@ -1,0 +1,44 @@
+::ng-deep .mat-form-field {
+    font-family: "Muli-Regular";
+    font-size: 16px;
+    line-height: 18px;
+    .mat-form-field-outline{
+        height: 56px;
+        background:var(--custWhite);
+    }
+    .mat-form-field-infix{
+        top:-5px
+    }
+}
+
+
+.custSpan{
+    position: relative;
+    top: -10px;
+}
+
+.custMargin{
+    margin: 1px;
+}
+
+.custMarginTop{
+    margin-top: -10px;
+}
+
+.custButton{
+    --background: var(--custBrightCyan);
+    height: 45px;
+}
+.custBtn{
+    margin-right: 100px;
+    width: 92%;
+    margin-bottom: 16px;
+}
+.custLabel{
+    position: relative;
+    // top: 3px;
+}
+.custSpan{
+    position: relative;
+    top: -9px;
+}

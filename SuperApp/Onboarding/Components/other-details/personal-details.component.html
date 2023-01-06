@@ -1,0 +1,83 @@
+
+
+<ion-content class="contentBackground">
+
+  <form class="pt-3 pb-5" (ngSubmit)="submitted()">
+
+    <ion-grid class="w-100">
+      <ion-row class="px-4 py-2 contentBackground custFontFamilyMuliBold muli-16pt w-100">
+        {{'gender'| translate}}
+      </ion-row>
+      <ion-row class="px-4">
+        <ion-col *ngFor="let items of gender">
+          <mat-radio-group name="Male" [(ngModel)]="chosenItemForGender">
+            <mat-radio-button class="custFontFamilyMuliRegular muli-16pt" name="Male" [value]="items.name"
+              (click)="getGender(items.name)">{{items.name}}</mat-radio-button>
+          </mat-radio-group>
+        </ion-col>
+      </ion-row>
+
+    </ion-grid>
+
+
+    <ion-grid class="w-100">
+      <ion-row class="px-4 py-2 contentBackground custFontFamilyMuliBold muli-16pt w-100">
+        {{'maritalstatus'| translate}}
+      </ion-row>
+      <ion-row class="px-4">
+        <ion-col *ngFor="let items of maritalstatus">
+
+          <mat-radio-group name="marital" [(ngModel)]="chosenItemForMarital">
+            <mat-radio-button class="custFontFamilyMuliRegular muli-16pt" name="marital" [value]="items.name"
+              (click)="getMarital(items.name)">{{items.name}}</mat-radio-button>
+          </mat-radio-group>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+
+    <ion-grid class="w-100">
+      <ion-row class="px-4 py-2 contentBackground custFontFamilyMuliBold muli-16pt w-100">
+        {{'IncomeGroup'| translate}}
+      </ion-row>
+      <ion-row class="px-4">
+        <ion-col *ngFor="let items of income" size="6">
+          <mat-radio-group name="Incm" [(ngModel)]="chosenItemForIncome">
+            <mat-radio-button class="custFontFamilyMuliRegular muli-16pt" name="Incm" [value]="items.name"
+              (click)="getIncome(items.name)">{{items.name}}</mat-radio-button>
+          </mat-radio-group>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <ion-grid class="w-100">
+      <ion-row class="px-4 py-2 contentBackground custFontFamilyMuliBold muli-16pt w-100">
+        {{'Tradingexp'| translate}}
+      </ion-row>
+      <ion-row class="px-4">
+        <ion-col *ngFor="let items of tradingExp" size="6">
+
+          <mat-radio-group name="trading" [(ngModel)]="chosenItemForTradingExp">
+            <mat-radio-button class="custFontFamilyMuliRegular muli-16pt" [value]="items.name"
+              (click)="getExp(items.name)">{{items.name}}</mat-radio-button>
+          </mat-radio-group>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </form>
+
+  <div class="custModalContainer p-10" *ngIf="loggedInModal" (click)="successModalClose();">
+    <div  id="showModalSMGSucces" class="modal-content custCenterAlign">
+      <!-- <ion-icon [src]="imageList?.successKYCIcon" class="custImage"></ion-icon> -->
+      <p class="custFontFamilyMuliBold muli-16pt custColorDark text-center p-0 m-0 ion-no-padding">{{ErrorMsg}}</p>
+    </div>
+  </div>
+</ion-content>
+<ion-footer class="custBackgroundColorWhite fixed-bottom ">
+  <ion-row class="m-2">
+    <button (click)="onContinue()"
+      class="btn text-center w-100 personalDetailsPagebutton muli-16pt custFontFamilyMuliBold"
+      [disabled]="continueNextPage">{{'continue' |
+      translate}}</button>
+  </ion-row>
+</ion-footer>

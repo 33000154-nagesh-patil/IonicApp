@@ -1,0 +1,127 @@
+<ion-header>
+  <ion-toolbar class="custBackgroundDynamicColorWhite">
+    <ion-grid>
+      <ion-row>
+        <ion-col [size]="'0.8'" class="text-center mt-1">
+          <ion-img [src]="imageList?.arrow" class="custKYCImg mt-1"></ion-img>
+        </ion-col>
+        <ion-col [size]="'10'" class="text-center">
+          <span class="custFontFamilyMuliBold muli-18pt custLineHight40 custColorBattlePGry">{{'panadharheading' | translate}}</span>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+<!-- {{'setupInvestmentAccount' | translate}} -->
+
+<ion-grid class="contentBackground">
+  <form [formGroup]="panAdharDetails">
+    <ion-row>
+      <ion-col [size]="'12'" class="text-center">
+        <span class="custFontFamilyMuliBold muli-14pt custLineHight18 custColorDark">{{'panadharsubheading' | translate}}</span>
+      </ion-col>
+    </ion-row>
+
+    <ion-card>
+      <ion-card-content>
+        <ion-row>
+          <ion-col>
+            <ion-grid>
+               <!-- Pan Card start -->
+
+              <!--  For identify file location in phonestorage 
+                  <ion-row>
+                <ion-col [size]="'12'">
+                  <p>File Location: {{pathPAN}}</p>
+                </ion-col>
+              </ion-row> -->
+              
+              <ion-row class="w-100 d-flex flex-column align-items-center">
+                  <!-- <ion-img [src]="imageList?.panUserIcon" class="custKYCImg mt-2"></ion-img> -->
+                  <!-- <ion-img [src]="imageList?.closeRoundIcon" class="custKYCImg mt-2 w-25 h-25 closeRoundIcon"></ion-img> -->
+                  <ion-img [src]="copPAN" class="custKYCImg mt-2 w-25 h-25"></ion-img>
+                  <span class="custFontFamilyMuliBold muli-12pt custLineHight18 custColorDark">{{'panadharpantitle' | translate}}</span>
+              </ion-row>
+              <ion-row>
+                <ion-col>
+                  <button class="btn w-100 text-center custButtonOutLine custColorBrightCyan custBtnExplore" (click)="takePicturePAN()">
+                    <span class="custColorBrightCyan custFontFamilyMuliBold muli-12pt">{{'panadharbtntakepic' | translate}}</span>
+                  </button>
+                </ion-col>
+                <ion-col>
+                  <button class="btn w-100 text-center custButtonOutLine custColorBrightCyan custBtnExplore" (click)="uploadPicturePAN()">
+                    <span class="custColorBrightCyan custFontFamilyMuliBold muli-12pt">{{'panadharbtnuploadpic' | translate}}</span></button>
+                </ion-col>
+              </ion-row>
+              <!-- Pan card end here  -->
+
+              <ion-row class="d-flex justify-content-center">
+                <span class="p-3 custborder andPosition muli-5pt">{{'panadharand' | translate}}</span>
+              </ion-row>
+              <hr class="hr"/>
+
+              <!-- Adhard card start here -->
+
+              <ion-row >
+              <!-- <ion-col [size]="'3'">
+                <ion-img  [src]="copAdharFront" class="custKYCImg mt-2"></ion-img>
+                <span class="custFontFamilyMuliBold muli-12pt custLineHight18 custColorDark">&nbsp;
+                  <input type="radio" class="outerCircle" formControlName="adharType" checked name="adharType" value="frontSide">
+                 <label for="adhargrp" class="ms-2 muli-16pt"> Front Side </label>
+                </span>
+              </ion-col>
+              <ion-col [size]="'3'">
+                <ion-img [src]="copAdharFront" class="custKYCImg mt-2"></ion-img>
+                <span class="custFontFamilyMuliBold muli-12pt custLineHight18 custColorDark">&nbsp;
+                  <input type="radio" class="outerCircle" formControlName="adharType" checked name="adharType" value="frontSide">
+                 <label for="adhargrp" class="ms-2 muli-16pt"> Front Side </label>
+                </span>
+              </ion-col> -->
+                <ion-col  class="w-100 d-flex flex-column align-items-center" >
+                  <ion-img [src]="copAdharFront" class="custKYCImg mt-3 h-25"></ion-img>
+                  <span class="custFontFamilyMuliBold muli-12pt custLineHight18 custColorDark">&nbsp;
+                    <input type="radio" class="outerCircle" formControlName="adharType" checked name="adharType" value="frontSide">
+                   <label for="adhargrp" class="ms-2 muli-16pt"> {{'panadharadharfront' | translate}} </label>
+                  </span>
+                </ion-col>
+                <ion-col >
+                  <ion-img [src]="copAdhar" class="custKYCImg mt-3 h-25"></ion-img>
+                  <span class="custFontFamilyMuliBold muli-12pt custLineHight18 custColorDark">&nbsp;
+                    <input type="radio" class="outerCircle" formControlName="adharType" name="adharType" value="backSide">
+                   <label for="adhargrp" class="ms-2 muli-16pt"> {{'panadharadharback' | translate}} </label>
+                  </span>
+                </ion-col>
+              </ion-row>
+
+              <ion-row>
+                <ion-col>
+                  <button class="btn w-100 text-center custButtonOutLine custColorBrightCyan custBtnExplore" (click)="take()">
+                    <span class="custColorBrightCyan custFontFamilyMuliBold muli-12pt">{{'panadharbtntakepic' | translate}}</span>
+                  </button>
+                </ion-col>
+                <ion-col>
+                  <button class="btn w-100 text-center custButtonOutLine custColorBrightCyan custBtnExplore" (click)="select()">
+                    <span class="custColorBrightCyan custFontFamilyMuliBold muli-12pt">{{'panadharbtnuploadpic' | translate}}</span>
+                  </button>
+                </ion-col>
+              </ion-row>
+              <!-- Adhard card end here -->
+
+            </ion-grid>
+          </ion-col>
+        </ion-row>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-row class="bottom">
+      <ion-col class="p-4">
+        <button class="btn w-100 text-center custBackgroundColorBrightCyan" [disabled]="btnDisabled" (click)="onSubmitPanAdhar()">
+          <!--  -->
+          <span class="custColorWhite custFontFamilyMuliBold muli-16pt">{{'panadharbtncontinue' | translate}}</span>
+        </button>
+      </ion-col>
+    </ion-row>
+
+  </form>
+</ion-grid>

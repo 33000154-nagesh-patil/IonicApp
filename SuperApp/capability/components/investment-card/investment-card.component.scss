@@ -1,0 +1,11 @@
+.custCenterAlign {
+    display: block;
+}
+
+  ion-slides {
+    .swiper-pagination.swiper-pagination-bullets {
+        bottom: -4px;
+        width: 20%;
+        margin-left: 40%;
+    }
+}

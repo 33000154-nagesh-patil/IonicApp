@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="42.5" height="42.5" viewBox="0 0 42.5 42.5">
+  <g id="cashback_icon" data-name="cashback icon" transform="translate(-125.214 -154.215)">
+    <path id="Path_23931" data-name="Path 23931" d="M21.25,0A21.25,21.25,0,1,1,0,21.25,21.25,21.25,0,0,1,21.25,0Z" transform="translate(125.214 154.215)" fill="#f6f7fb"/>
+    <g id="Group_24006" data-name="Group 24006" transform="translate(11049.663 -16508.438)">
+      <path id="Path_23932" data-name="Path 23932" d="M-10909.575,16682.537v8.658h2.021l.742-.832,7.351,2.211,9.483-2.82.567-1.1-1.249-.389-7.5.775-2.006-.387,1.069-.812-.612-1.867-2.533-1.25-3.962-.875-1.59-1.033Z" transform="translate(-1.285 -1.307)" fill="#aceaff"/>
+      <rect id="Rectangle_10772" data-name="Rectangle 10772" width="4" height="8.8" transform="translate(-10915.2 16681.6)" fill="#fff"/>
+      <path id="Path_23933" data-name="Path 23933" d="M24.208,21.68,16,22.366v-.98A2.782,2.782,0,0,0,14,18.7l-6.05-1.814A1.2,1.2,0,0,0,6.8,16H.4a.4.4,0,0,0-.4.4v8.8a.4.4,0,0,0,.4.4H6.8a1.2,1.2,0,0,0,1.086-.7l6.386,1.916a4.379,4.379,0,0,0,2.655-.04l7.793-2.6a1.286,1.286,0,0,0-.512-2.5ZM4.8,24.8H.8v-8h4Zm2.4-.4a.4.4,0,0,1-.4.4H5.6v-8H6.8a.4.4,0,0,1,.4.4Zm17.268-.978-7.794,2.6a3.582,3.582,0,0,1-2.173.034L8,24.1V17.738l5.774,1.732A1.99,1.99,0,0,1,15.2,21.386v.823l-3.451-1.381a.4.4,0,1,0-.3.742l4,1.6h.01a.4.4,0,0,0,.059.011.407.407,0,0,0,.08.015.018.018,0,0,0,.014,0s.013,0,.02,0l8.64-.72a.485.485,0,0,1,.194.944Z" transform="translate(-10916 16664.801)" fill="#0d3399"/>
+      <g id="Ellipse_1364" data-name="Ellipse 1364" transform="translate(-10899.2 16676)" fill="#fff" stroke="#0d3399" stroke-width="1">
+        <circle cx="4" cy="4" r="4" stroke="none"/>
+        <circle cx="4" cy="4" r="3.5" fill="none"/>
+      </g>
+      <text id="D" transform="translate(-10895.2 16681.801)" fill="#0d3399" stroke="rgba(0,0,0,0)" stroke-width="1" font-size="4" font-family="ITFRupee, ITF Rupee"><tspan x="-1.048" y="0">D</tspan></text>
+    </g>
+  </g>
+</svg>
