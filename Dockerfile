@@ -14,7 +14,7 @@ RUN npm cache clean --force
 COPY . .
 RUN npm install
 RUN npm install -g @ionic/cli
-RUN ionic build --prod
+# RUN ionic build
 
 ### STAGE 2:RUN ###
 # Defining nginx image to be used
